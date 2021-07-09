@@ -61,7 +61,8 @@ refinemodifierchart = {
 	"Green Tome": {"Effect": [0, 0, 0, 0, 0], "Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
 	"Bow": {"Effect": [0, 0, 0, 0, 0], "Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
 	"Dagger": {"Effect": [0, 0, 0, 0, 0], "Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Staff": {"Dazzling": [0, 0, 0, 0, 0], "Wrathful": [0, 0, 0, 0, 0]}
+	"Staff": {"Dazzling": [0, 0, 0, 0, 0], "Wrathful": [0, 0, 0, 0, 0], "Effect": [0, 0, 0, 0, 0]},
+	"Colorless Staff": {"Dazzling": [0, 0, 0, 0, 0], "Wrathful": [0, 0, 0, 0, 0], "Effect": [0, 0, 0, 0, 0]}
 }
 
 summonerranks = {

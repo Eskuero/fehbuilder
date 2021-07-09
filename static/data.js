@@ -77,15 +77,23 @@ function updateRefine(weapon) {
 	opt.innerHTML = "None";
 	selectrefines.appendChild(opt);
 	if (weapons[weapon]["upgrades"]) {
-		if (weapons[weapon]["WeaponType"] == "Staff") {
-			var opt = document.createElement('option');
-			opt.value = "Dazzling";
-			opt.innerHTML = "Dazzling";
-			selectrefines.appendChild(opt);
-			var opt = document.createElement('option');
-			opt.value = "Wrathful";
-			opt.innerHTML = "Wrathful";
-			selectrefines.appendChild(opt);
+		if (weapons[weapon]["WeaponType"].includes("Staff")) {
+			// Staffs cannot have normal refines and special ones
+			if (weapons[weapon]["specialIcon"].includes("Wrathful")) {
+				var opt = document.createElement('option');
+				opt.value = "Dazzling";
+				opt.innerHTML = "Dazzling";
+				selectrefines.appendChild(opt);
+				var opt = document.createElement('option');
+				opt.value = "Wrathful";
+				opt.innerHTML = "Wrathful";
+				selectrefines.appendChild(opt);
+			 } else {
+				var opt = document.createElement('option');
+				opt.value = "Effect";
+				opt.innerHTML = "Effect";
+				selectrefines.appendChild(opt);
+			 }
 			return
 		}
 		if (weapons[weapon]["specialIcon"]) {
