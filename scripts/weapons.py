@@ -23,9 +23,6 @@ with open("patchin.json", "r") as datasource:
 # Smaller dictionary
 weaponslite = {weapon: weapons[weapon] for weapon in weapons}
 
-print(weaponslite)
-exit(0)
-
 for i in range(0, len(weaponlist)):
 	# Download the edit wiki page (it's lighter and easier to parse plaintext) for each weapon to grab additional data 
 	weaponpage = bs4.BeautifulSoup(requests.get(wikiurl + weaponlist[i].select('a')[0].get('href') + "?action=edit").text, 'html.parser')
@@ -43,6 +40,7 @@ for i in range(0, len(weaponlist)):
 	}
 	# For client-side we only need to know if the weapon has an effect refine and if it's refinable in general
 	weaponslite[titlename] = {
+		"WeaponType": re.search(r'(.*?weaponType.*?)\n', data)[0].strip().split("=")[1],
 		"specialIcon": weapons[titlename]["specialIcon"],
 		"upgrades": weapons[titlename]["upgrades"]
 	}
@@ -53,4 +51,4 @@ with open("../data/weapons.json", "w") as outfile:
 
 # Store a list just for browser usage
 with open("../static/weapons.json", "w") as outfile:
-    json.dump(weaponslite, outfile)
+    json.dump({weapon: weapons[weapon] for weapon in sorted(weapons)}, outfile)

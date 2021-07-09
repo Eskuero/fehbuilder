@@ -133,7 +133,7 @@ def getimage():
 		# Print weapon info
 		if hero["weapon"]:
 			# By default we always use the basic weapon icon or the predefined stat boosters ones
-			icon = hero["refine"] + "-Refine.png" if hero["refine"] in ["Atk", "Spd", "Def", "Res"] else "weapon-Refine.png"
+			icon = hero["refine"] + "-Refine.png" if hero["refine"] in ["Atk", "Spd", "Def", "Res", "Wrathful", "Dazzling"] else "weapon-Refine.png"
 			# If the icon is an special effect we might have to download it
 			if hero["refine"] == "Effect":
 				# Check if the heroes art is already in the temporal folder for speeding up requests from the wiki
