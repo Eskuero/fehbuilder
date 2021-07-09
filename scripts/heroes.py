@@ -35,11 +35,18 @@ for i in range(0, len(herolist)):
 	# Strip the hero title string of the Editing part and store it for later lookups
 	titlename = re.search(r'Infobox\n(.*?Name.*?)\n', data)[0].strip().split("=")[1].lstrip() + ": " + re.search(r'(.*?Title.*?)\n', data)[0].strip().split("=")[1].lstrip()
 	print(str(i) + ". " + titlename)
-	
+
 	# Download the wiki page for the face art since we can't reliably get the real link because it appears to be in folders with random numbers
 	artpage = bs4.BeautifulSoup(requests.get(wikiurl + '/wiki/File:' + unidecode.unidecode(titlename).replace(": ", "_").replace(" ", "_").replace("'", "").replace("\"", "") + "_Face.webp").text, 'html.parser')
 	# Grab the link for the fullart picture
 	picture = artpage.select_one('div.fullImageLink').select_one('a').get('href').split("/revision")[0]
+	
+	if re.search(r'(.*?resplendentArtist.*?)\n', data):
+		artpage = bs4.BeautifulSoup(requests.get(wikiurl + '/wiki/File:' + unidecode.unidecode(titlename).replace(": ", "_").replace(" ", "_").replace("'", "").replace("\"", "") + "_Resplendent_Face.webp").text, 'html.parser')
+		# Grab the link for the fullart picture
+		resplendent = artpage.select_one('div.fullImageLink').select_one('a').get('href').split("/revision")[0]
+	else:
+		resplendent = None
 
 	# Update the hero dictionary with a new unit
 	heroes[titlename] = {
@@ -47,6 +54,7 @@ for i in range(0, len(herolist)):
 		"WeaponType": re.search(r'(.*?WeaponType.*?)\n', data)[0].strip().split("=")[1],
 		"moveType": re.search(r'(.*?MoveType.*?)\n', data)[0].strip().split("=")[1],
 		"frontArt": picture,
+		"resplendent": resplendent,
 		# Since we already stripped stats and growths of the newline we just need to split by = and grab the second value
 		# ['', 'Lv1HP=17', 'Lv1ATK=7', 'Lv1SPD=8', 'Lv1DEF=8', 'Lv1RES=6']
 		"stats": {

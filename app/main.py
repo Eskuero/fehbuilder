@@ -57,24 +57,31 @@ def getimage():
 			"passiveC": flask.request.args.get('passiveC') if flask.request.args.get('passiveC') != "None" else "",
 			"passiveS": flask.request.args.get('passiveS') if flask.request.args.get('passiveS') != "None" else "",
 			"summoner": flask.request.args.get('summoner') if flask.request.args.get('summoner') != "None" else "",
-			"blessing": flask.request.args.get('blessing') if flask.request.args.get('blessing') != "None" else ""
+			"blessing": flask.request.args.get('blessing') if flask.request.args.get('blessing') != "None" else "",
+			"attire": True if flask.request.args.get('attire') != "Normal" else False
 		}
 		print(hero)
 		# For any support level we change the bg
 		if hero["summoner"]:
 			bg = Image.open("../data/img/other/summonerbg.png")
 			canvas.paste(bg, (-173, 0))
+		# Decide the art to print, even if the user choose resplendent we make sure art for it exists
+		heroart = heroes[name]["resplendent"] if hero["attire"] and heroes[name]["resplendent"] else heroes[name]["frontArt"]
 		# Check if the heroes art is already in the temporal folder for speeding up requests from the wiki
-		if (pathlib.Path("../data/img/heroes/" + name + ".webp").is_file()):
-			art = Image.open("../data/img/heroes/" + name + ".webp")
+		if (pathlib.Path("../data/img/heroes/" + name + ("_Resplendent.webp" if hero["attire"] and heroes[name]["resplendent"] else ".webp")).is_file()):
+			art = Image.open("../data/img/heroes/" + name + ("_Resplendent.webp" if hero["attire"] and heroes[name]["resplendent"] else ".webp"))
 		else:
 			# Grab and paste the heroes art in the image
-			response = requests.get(heroes[name]["frontArt"])
+			response = requests.get(heroart)
 			art = Image.open(io.BytesIO(response.content)).resize((1330, 1596))
-			art.save("../data/img/heroes/" + name + ".webp", 'WEBP')
+			art.save("../data/img/heroes/" + name + ("_Resplendent.webp" if hero["attire"] and heroes[name]["resplendent"] else ".webp"), 'WEBP')
 		canvas.paste(art, (-305, 0), art)
 		# Paste the foregroud UI
 		canvas.paste(fg, (0, 0), fg)
+		# Print the resplendent icon
+		if hero["attire"]:
+			resplendent = Image.open("../data/img/other/resplendent.png")
+			canvas.paste(resplendent, (270, 490), resplendent)
 		# Initialize the drawing rectacle and font
 		font = ImageFont.truetype("../data/" + config["fontfile"], 35)
 		draw = ImageDraw.Draw(canvas)
@@ -98,6 +105,8 @@ def getimage():
 			statsmodifier = [x+y for x,y in zip(statsmodifier, utilities.passivemodifiers[hero["passiveA"]])]
 		if hero["passiveS"] in utilities.passivemodifiers:
 			statsmodifier = [x+y for x,y in zip(statsmodifier, utilities.passivemodifiers[hero["passiveS"]])]
+		if hero["attire"]:
+			statsmodifier = [x+y for x,y in zip(statsmodifier, [2, 2, 2, 2, 2])]
 		# Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers)
 		font = ImageFont.truetype("../data/" + config["fontfile"], 26)
 		draw.text((265, 805), str(stats["HP"] + statsmodifier[0]), font=font, anchor="ra", fill="#fffaaf", stroke_width=3, stroke_fill="#0a2533")

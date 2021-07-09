@@ -27,7 +27,8 @@ def download():
 		print(some)
 		# Grab and paste the heroes art in the image
 		response = requests.get(other[some])
-		art = Image.open(io.BytesIO(response.content)).resize((1067, 1280))
+		size = (1067, 1280) if "bg" in some else (80, 79)
+		art = Image.open(io.BytesIO(response.content)).resize(size)
 		art.save("../data/img/other/" + some + ".png", 'PNG')
 
 icons = {
@@ -84,7 +85,8 @@ blessings = {
 
 other = {
 	"normalbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/9d/BG_DetailedStatus.png",
-	"summonerbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/5c/Summoner_Support_Background.png"
+	"summonerbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/5c/Summoner_Support_Background.png",
+	"resplendent": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b8/Icon_GodWear_L.png"
 }
 
 download()
