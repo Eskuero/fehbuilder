@@ -1,0 +1,30 @@
+body {
+	display: flex;
+	flex-direction: row;
+}
+
+/* Go no further tha 98% of the height for the img preview */
+#fakecanvas {
+	height: 98vh;
+	width: auto;
+}
+
+#form {
+	padding: 1.5em 0 0 1.5em;
+}
+
+select, button {
+	margin-bottom: 1em;
+	padding: 0.5em 0.5em;
+	text-transform: uppercase;
+}
+
+@media screen and (orientation:portrait) {
+	body { 
+		flex-direction: column;
+	}
+	#fakecanvas {
+		width: 98vw;
+		height: auto;
+	}
+}

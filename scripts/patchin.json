@@ -1,0 +1,76 @@
+{
+	"heroes": {
+		"Caeda: Sea-Blossom Pair": {
+			"WeaponType": "Green Axe",
+			"moveType": "Cavalry",
+			"frontArt": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/6/60/Caeda_Sea-Blossom_Pair_Face.webp",
+			"stats": {"HP": 17, "Atk": 7, "Spd": 12, "Def": 7, "Res": 6},
+			"growths": {"HP": 50, "Atk": 60, "Spd": 70, "Def": 45, "Res": 50}
+		},
+		"Freyja: Fleeting Summer": {
+			"WeaponType": "Colorless Beast",
+			"moveType": "Cavalry",
+			"frontArt": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/f/f4/Freyja_Fleeting_Summer_Face.webp",
+			"stats": {"HP": 16, "Atk": 9, "Spd": 13, "Def": 7, "Res": 6},
+			"growths": {"HP": 55, "Atk": 70, "Spd": 70, "Def": 45, "Res": 35}
+		},
+		"Freyr: Estival Dreams": {
+			"WeaponType": "Red Beast",
+			"moveType": "Cavalry",
+			"frontArt": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/f/f5/Freyr_Estival_Dreams_Face.webp",
+			"stats": {"HP": 17, "Atk": 12, "Spd": 3, "Def": 8, "Res": 9},
+			"growths": {"HP": 55, "Atk": 60, "Spd": 30, "Def": 70, "Res": 60}
+		},
+		"Ogma: Blade on Leave": {
+			"WeaponType": "Blue Lance",
+			"moveType": "Infantry",
+			"frontArt": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/3/3d/Ogma_Blade_on_Leave_Face.webp",
+			"stats": {"HP": 18, "Atk": 8, "Spd": 10, "Def": 11, "Res": 6},
+			"growths": {"HP": 60, "Atk": 70, "Spd": 65, "Def": 55, "Res": 35}
+		},
+		"Norne: Seaside Volunteer": {
+			"WeaponType": "Blue Lance",
+			"moveType": "Infantry",
+			"frontArt": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/7/76/Norne_Seaside_Volunteer_Face.webp",
+			"stats": {"HP": 18, "Atk": 9, "Spd": 9, "Def": 9, "Res": 8},
+			"growths": {"HP": 55, "Atk": 65, "Spd": 70, "Def": 50, "Res": 45}
+		}
+	},
+	"weapons": {
+		"Dolphin-Dive Axe": {"WeaponType": "Axe", "statModifiers": "0,19,0,0,0", "specialIcon": false, "upgrades": false},
+		"Brightmare Horn": {"WeaponType": "Beast", "statModifiers": "0,14,3,0,0", "specialIcon": false, "upgrades": false},
+		"Raydream Horn": {"WeaponType": "Beast", "statModifiers": "0,17,0,0,0", "specialIcon": false, "upgrades": false},
+		"Raydream Horn": {"WeaponType": "Beast", "statModifiers": "0,17,0,0,0", "specialIcon": false, "upgrades": false},
+		"Trident": {"WeaponType": "Lance", "statModifiers": "0,10,0,0,0", "specialIcon": false, "upgrades": false},
+		"Trident+": {"WeaponType": "Lance", "statModifiers": "0,14,0,0,0", "specialIcon": false, "upgrades": true},
+		"Shellpoint Lance": {"WeaponType": "Lance", "statModifiers": "0,10,0,0,0", "specialIcon": false, "upgrades": false},
+		"Shellpoint Lance+": {"WeaponType": "Lance", "statModifiers": "0,14,0,0,0", "specialIcon": false, "upgrades": true}
+	},
+	"passives": {
+		"A": {
+			"Def/Res Catch 1": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/4/4f/Def_Res_Catch_1.png",
+			"Def/Res Catch 2": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/82/Def_Res_Catch_2.png",
+			"Def/Res Catch 3": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/c8/Def_Res_Catch_3.png",
+			"Def/Res Catch 4": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a9/Def_Res_Catch_4.png"
+		},
+		"B": {
+			"Flow Refresh 1": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/ae/Flow_Refresh_1.png",
+			"Flow Refresh 2": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/09/Flow_Refresh_2.png",
+			"Flow Refresh 3": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/6/62/Flow_Refresh_3.png"
+		},
+		"C": {
+			"Threat. Spd/Def 1": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/00/Threat._Spd_Def_1.png",
+			"Threat. Spd/Def 2": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/ac/Threat._Spd_Def_2.png"
+		},
+		"S": {
+			"Spd/Res Form 1": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/9e/Spd_Res_Form_1.png",
+			"Spd/Res Form 2": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/3/3e/Spd_Res_Form_2.png",
+			"Spd/Res Form 3": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/03/Spd_Res_Form_3.png",
+			"Infantry Rush 1": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/0f/Infantry_Rush_1.png",
+			"Infantry Rush 2": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/29/Infantry_Rush_2.png",
+			"Infantry Rush 3": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/4/4a/Infantry_Rush_3.png"
+		}
+	},
+	"assists": [],
+	"specials": []
+}
