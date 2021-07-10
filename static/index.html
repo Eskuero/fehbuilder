@@ -3,127 +3,238 @@
 		<title>FE Heroes Unit Builder</title>
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="style.css" />
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<img id="fakecanvas" src="/get_image.png" />
 		<div id="form">
-			<span>Hero: </span>
-			<select id="selectheroes"></select>
-			<br />
-			<span>Merges: </span>
-			<select id="merges">
-				<option value="0">0</option>
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-				<option value="8">8</option>
-				<option value="9">9</option>
-				<option value="10">10</option>
-			</select>
-			<span>Dragonflowers: </span>
-			<select id="flowers">
-				<option value="0">0</option>
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-				<option value="8">8</option>
-				<option value="9">9</option>
-				<option value="10">10</option>
-				<option value="11">11</option>
-				<option value="12">12</option>
-				<option value="13">13</option>
-				<option value="14">14</option>
-				<option value="15">15</option>
-			</select>
-			<span>Attire: </span>
-			<select id="attire">
-				<option value="Normal">Normal</option>
-				<option value="Resplendent">Resplendent</option>
-			</select>
-			<br />
-			<span>Boon: </span>
-			<select id="boons">
-				<option value="None">None</option>
-				<option value="HP">HP</option>
-				<option value="Atk">Atk</option>
-				<option value="Spd">Spd</option>
-				<option value="Def">Def</option>
-				<option value="Res">Res</option>
-			</select>
-			<span>Bane: </span>
-			<select id="banes">
-				<option value="None">None</option>
-				<option value="HP">HP</option>
-				<option value="Atk">Atk</option>
-				<option value="Spd">Spd</option>
-				<option value="Def">Def</option>
-				<option value="Res">Res</option>
-			</select>
-			<br />
-			<span>Weapon: </span>
-			<select id="weapon" onchange="updateRefine(this.value)">
-				<option value="None">None</option>
-			</select>
-			<span>Refine: </span>
-			<select id="refine">
-				<option value="None">None</option>
-			</select>
-			<br />
-			<span>Special: </span>
-			<select id="special">
-				<option value="None">None</option>
-			</select>
-			<span>Assist: </span>
-			<select id="assist">
-				<option value="None">None</option>
-			</select>
-			<br />
-			<span>A: </span>
-			<select id="Askill">
-				<option value="None">None</option>
-			</select>
-			<span>B: </span>
-			<select id="Bskill">
-				<option value="None">None</option>
-			</select>
-			<br />
-			<span>C: </span>
-			<select id="Cskill">
-				<option value="None">None</option>
-			</select>
-			<span>S: </span>
-			<select id="Sskill">
-				<option value="None">None</option>
-			</select>
-			<br />
-			<span>Blessing: </span>
-			<select id="blessing">
-				<option value="None">None</option>
-				<option value="Fire">Fire</option>
-				<option value="Water">Water</option>
-				<option value="Wind">Wind</option>
-				<option value="Earth">Earth</option>
-				<option value="Astra">Astra</option>
-				<option value="Light">Light</option>
-				<option value="Dark">Dark</option>
-				<option value="Anima">Anima</option>
-			</select>
-			<span>Summoner Support: </span>
-			<select id="summoner">
-				<option value="None">None</option>
-				<option value="C">C</option>
-				<option value="B">B</option>
-				<option value="A">A</option>
-				<option value="S">S</option>
-			</select>
+			<section class="ml-2">
+				<div class="row mb-3">
+					<h4>Unit</h4>
+				</div>
+				<div class="row mb-3">
+					<div class="col-2 col-form-label">
+						<label>Hero: </label>
+					</div>
+					<div class="col-8">
+						<select id="selectheroes"></select>
+					</div>
+				</div>
+				<div class="row mb-3">
+					<div class="col-2 col-form-label">
+						<span>Merges: </span>
+					</div>
+					<div class="col-8">
+						<select id="merges">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+					</div>
+				</div>
+				<div class="row mb-3">
+					<div class="col-2 col-form-label">
+						<label>Flowers: </label>
+					</div>
+					<div class="col-8">
+						<select id="flowers">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+						</select>
+					</div>
+				</div>
+				<div class="row mb-3">
+					<div class="col-2 col-form-label">
+						<label>Attire: </label>
+					</div>
+					<div class="col-8">
+						<select id="attire">
+							<option value="Normal">Normal</option>
+							<option value="Resplendent">Resplendent</option>
+						</select>
+					</div>
+				</div>
+				<div class="row mb-3">
+					<div class="col-2 col-form-label">
+						<label>Boon: </label>
+					</div>
+					<div class="col-8">
+						<select id="boons">
+							<option value="None">None</option>
+							<option value="HP">HP</option>
+							<option value="Atk">Atk</option>
+							<option value="Spd">Spd</option>
+							<option value="Def">Def</option>
+							<option value="Res">Res</option>
+						</select>
+					</div>
+				</div>
+				<div class="row mb-3">
+					<div class="col-2 col-form-label">		
+						<label>Bane: </label>
+					</div>
+					<div class="col-8">
+						<select id="banes">
+							<option value="None">None</option>
+							<option value="HP">HP</option>
+							<option value="Atk">Atk</option>
+							<option value="Spd">Spd</option>
+							<option value="Def">Def</option>
+							<option value="Res">Res</option>
+						</select>
+					</div>
+				</div>
+			</section>
+
+			<section class="ml-1">
+				<div class="row mb-3">
+					<h4>Skills</h4>
+				</div>
+				<div class="row mb-3">
+					<div class="col-2 col-form-label">	
+						<label>Weapon: </label>
+					</div>
+					<div class="col-8">
+						<select id="weapon" onchange="updateRefine(this.value)">
+							<option value="None">None</option>
+						</select>
+					</div>
+				</div>
+				<div class="row mb-3">
+					<div class="col-2 col-form-label">	
+						<label>Refine: </label>
+					</div>
+					<div class="col-8">
+						<select id="refine">
+							<option value="None">None</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<div class="col-2 col-form-label">	
+						<label>Special: </label>
+					</div>
+					<div class="col-8">
+						<select id="special">
+							<option value="None">None</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<div class="col-2 col-form-label">	
+						<label>Assist: </label>
+					</div>
+					<div class="col-8">
+						<select id="assist">
+							<option value="None">None</option>
+						</select>
+					</div>
+				</div>
+
+				
+				<div class="row mb-3">
+					<div class="col-2 col-form-label">	
+						<span>A: </span>
+					</div>
+					<div class="col-8">
+						<select id="Askill">
+							<option value="None">None</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<div class="col-2 col-form-label">	
+						<span>B: </span>
+					</div>
+					<div class="col-8">
+						<select id="Bskill">
+							<option value="None">None</option>
+						</select>
+					</div>
+				</div>
+	
+				<div class="row mb-3">
+					<div class="col-2 col-form-label">
+						<span>C: </span>
+					</div>
+					<div class="col-8">
+						<select id="Cskill">
+							<option value="None">None</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<div class="col-2 col-form-label">		
+						<span>S: </span>
+					</div>
+					<div class="col-8">
+						<select id="Sskill">
+							<option value="None">None</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<div class="col-2 col-form-label">
+						<label>Blessing: </label>
+					</div>
+					<div class="col-8">
+						<select id="blessing">
+							<option value="None">None</option>
+							<option value="Fire">Fire</option>
+							<option value="Water">Water</option>
+							<option value="Wind">Wind</option>
+							<option value="Earth">Earth</option>
+							<option value="Astra">Astra</option>
+							<option value="Light">Light</option>
+							<option value="Dark">Dark</option>
+							<option value="Anima">Anima</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<div class="col-2 col-form-label">
+						<label>Summoner Support: </label>
+					</div>
+					<div class="col-8">
+						<select id="summoner">
+							<option value="None">None</option>
+							<option value="C">C</option>
+							<option value="B">B</option>
+							<option value="A">A</option>
+							<option value="S">S</option>
+						</select>
+					</div>
+				</div>
+			</section>
 			<br />
 			<button onclick="reload()">Generate hero</button>
 		</div>
