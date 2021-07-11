@@ -108,7 +108,7 @@ function reload() {
 function updatedragonflowers() {
 	// Default for cheating mode is 15
 	flowers = 15;
-	// First delete them all except the None element
+	// First delete them all except the 0 element
 	while (selectflowers.lastChild && selectflowers.childElementCount > 1) {
         selectflowers.removeChild(selectflowers.lastChild);
     }
