@@ -146,7 +146,7 @@ def getimage():
 					response = requests.get(skills["weapons"][hero["weapon"]]["specialIcon"])
 					art = Image.open(io.BytesIO(response.content)).resize((44, 44))
 					art.save("../data/img/icons/" + hero["weapon"] + "-Effect.png", 'PNG')
-					icon = hero["weapon"] + "-Effect.png"
+				icon = hero["weapon"] + "-Effect.png"
 			weaponicon = Image.open("../data/img/icons/" + icon)
 			canvas.paste(weaponicon, (370, 797), weaponicon)
 			draw.text((420, 805), hero["weapon"], font=font, fill="#82f546" if hero["refine"] else "#ffffff", stroke_width=3, stroke_fill="#0a2533")
