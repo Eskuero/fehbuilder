@@ -4,7 +4,6 @@ import requests
 import io
 import json
 import pathlib
-import bs4
 
 # Import out external file of utilities
 import utilities
@@ -16,16 +15,12 @@ with open("config.json", "r") as config:
 	config = json.load(config)
 
 # Load all heroes data from the json file
-with open("../data/heroes.json", "r") as datasource:
+with open("../data/units.json", "r") as datasource:
 	heroes = json.load(datasource)
 
-# Load all weapons data from the json file
-with open("../data/weapons.json", "r") as datasource:
-	weapons = json.load(datasource)
-
-# Load all weapons data from the json file
-with open("../data/passives.json", "r") as datasource:
-	passives = json.load(datasource)
+# Load all skills data from the json file
+with open("../data/skills.json", "r") as datasource:
+	skills = json.load(datasource)
 
 @app.route('/get_image.png')
 def getimage():
@@ -43,7 +38,7 @@ def getimage():
 		# Populate a dictionary with all the data we got
 		hero = {
 			"name": name.split(":")[0],
-			"title": name.split(":")[1].lstrip(),
+			"title": name.split(":")[1].lstrip() if ":" in name else "Enemy",
 			"boon": flask.request.args.get('boon') if flask.request.args.get('boon') != "None" else None,
 			"bane": flask.request.args.get('bane') if flask.request.args.get('bane') != "None" else None,
 			"merges": flask.request.args.get('merges') or 0,
@@ -99,12 +94,12 @@ def getimage():
 		# Obtain the calculated stats to draw
 		stats = utilities.statcalc(heroes[name]["stats"], heroes[name]["growths"], hero["boon"], hero["bane"], int(hero["merges"]), int(hero["flowers"]))
 		# We have a couple of stats modifiers based on weapon, summoner support and maybe not completely parsed A/S skills that we must add
-		statsmodifier = utilities.weaponmodifiers(hero["weapon"], weapons[hero["weapon"]] if hero["weapon"] else None, hero["refine"])
+		statsmodifier = utilities.weaponmodifiers(hero["weapon"], skills["weapons"][hero["weapon"]] if hero["weapon"] else None, hero["refine"])
 		statsmodifier = [x+y for x,y in zip(statsmodifier, utilities.summonerranks[hero["summoner"]] if hero["summoner"] else [0,0,0,0,0])]
-		if hero["passiveA"] in utilities.passivemodifiers:
-			statsmodifier = [x+y for x,y in zip(statsmodifier, utilities.passivemodifiers[hero["passiveA"]])]
-		if hero["passiveS"] in utilities.passivemodifiers:
-			statsmodifier = [x+y for x,y in zip(statsmodifier, utilities.passivemodifiers[hero["passiveS"]])]
+		if hero["passiveA"] in skills["passives"]["A"]:
+			statsmodifier = [x+y for x,y in zip(statsmodifier, skills["passives"]["A"][hero["passiveA"]]["statModifiers"])]
+		if hero["passiveS"] in skills["passives"]["S"]:
+			statsmodifier = [x+y for x,y in zip(statsmodifier, skills["passives"]["S"][hero["passiveS"]]["statModifiers"])]
 		if hero["attire"]:
 			statsmodifier = [x+y for x,y in zip(statsmodifier, [2, 2, 2, 2, 2])]
 		# Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers)
@@ -146,24 +141,12 @@ def getimage():
 			# If the icon is an special effect we might have to download it
 			if hero["refine"] == "Effect":
 				# Check if the heroes art is already in the temporal folder for speeding up requests from the wiki
-				if (pathlib.Path("../data/img/icons/" + weapons[hero["weapon"]]["specialIcon"].replace(" ", "_")).is_file()):
-					art = Image.open("../data/img/icons/" + weapons[hero["weapon"]]["specialIcon"].replace(" ", "_"))
-					icon = weapons[hero["weapon"]]["specialIcon"].replace(" ", "_")
-				else:
-					# Obtain the special effect icon URL from the wiki
-					try:
-						iconurl = bs4.BeautifulSoup(requests.get("https://feheroes.fandom.com/wiki/File:" + weapons[hero["weapon"]]["specialIcon"].replace(" ", "_")).text, 'html.parser').select_one('div.fullImageLink').select_one('a').get('href').split("/revision")[0]
-						# Download, resize and cache the picture
-						response = requests.get(iconurl)
-						art = Image.open(io.BytesIO(response.content)).resize((44, 44))
-						art.save("../data/img/icons/" + weapons[hero["weapon"]]["specialIcon"].replace(" ", "_"), 'PNG')
-					except:
-						print("Weapon " + hero["weapon"] + " reports having special icon " + weapons[hero["weapon"]]["specialIcon"] + " but we failed download and save for whatever reason")
-					else:
-						icon = weapons[hero["weapon"]]["specialIcon"].replace(" ", "_")
-			# Small ellypse behind the icon to give it depth
-			if "weapon" not in icon:
-				draw.ellipse((370, 797, 412, 839), fill=(0, 0, 0))
+				if not (pathlib.Path("../data/img/icons/" + hero["weapon"] + "-Effect.png").is_file()):
+					# Download, resize and cache the special effect refine picture
+					response = requests.get(skills["weapons"][hero["weapon"]]["specialIcon"])
+					art = Image.open(io.BytesIO(response.content)).resize((44, 44))
+					art.save("../data/img/icons/" + hero["weapon"] + "-Effect.png", 'PNG')
+					icon = hero["weapon"] + "-Effect.png"
 			weaponicon = Image.open("../data/img/icons/" + icon)
 			canvas.paste(weaponicon, (370, 797), weaponicon)
 			draw.text((420, 805), hero["weapon"], font=font, fill="#82f546" if hero["refine"] else "#ffffff", stroke_width=3, stroke_fill="#0a2533")
@@ -172,49 +155,49 @@ def getimage():
 		draw.text((420, 853), hero["assist"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 		draw.text((420, 903), hero["special"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 		# If the passive is not the list we skip it
-		if hero["passiveA"] in passives["A"]:
+		if hero["passiveA"] in skills["passives"]["A"]:
 			# Check if the icon art is already in the temporal folder for speeding up requests from the wiki
 			if (pathlib.Path("../data/img/icons/" + hero["passiveA"].replace(" ", "_").replace("/", "_") + ".png").is_file()):
 				art = Image.open("../data/img/icons/" + hero["passiveA"].replace(" ", "_").replace("/", "_") + ".png")
 			else:
 				# Download, resize and cache the picture
-				response = requests.get(passives["A"][hero["passiveA"]])
+				response = requests.get(skills["passives"]["A"][hero["passiveA"]]["icon"])
 				art = Image.open(io.BytesIO(response.content)).resize((48, 48))
 				art.save("../data/img/icons/" + hero["passiveA"].replace(" ", "_").replace("/", "_") + ".png", 'PNG')
 			canvas.paste(art, (369, 943), art)
 			draw.text((420, 953), hero["passiveA"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 		# If the passive is not the list we skip it
-		if hero["passiveB"] in passives["B"]:
+		if hero["passiveB"] in skills["passives"]["B"]:
 			# Check if the icon art is already in the temporal folder for speeding up requests from the wiki
 			if (pathlib.Path("../data/img/icons/" + hero["passiveB"].replace(" ", "_").replace("/", "_") + ".png").is_file()):
 				art = Image.open("../data/img/icons/" + hero["passiveB"].replace(" ", "_").replace("/", "_") + ".png")
 			else:
 				# Download, resize and cache the picture
-				response = requests.get(passives["B"][hero["passiveB"]])
+				response = requests.get(skills["passives"]["B"][hero["passiveB"]]["icon"])
 				art = Image.open(io.BytesIO(response.content)).resize((46, 46))
 				art.save("../data/img/icons/" + hero["passiveB"].replace(" ", "_").replace("/", "_") + ".png", 'PNG')
 			canvas.paste(art, (369, 993), art)
 			draw.text((420, 1003), hero["passiveB"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 		# If the passive is not the list we skip it
-		if hero["passiveC"] in passives["C"]:
+		if hero["passiveC"] in skills["passives"]["C"]:
 			# Check if the icon art is already in the temporal folder for speeding up requests from the wiki
 			if (pathlib.Path("../data/img/icons/" + hero["passiveC"].replace(" ", "_").replace("/", "_") + ".png").is_file()):
 				art = Image.open("../data/img/icons/" + hero["passiveC"].replace(" ", "_").replace("/", "_") + ".png")
 			else:
 				# Download, resize and cache the picture
-				response = requests.get(passives["C"][hero["passiveC"]])
+				response = requests.get(skills["passives"]["C"][hero["passiveC"]]["icon"])
 				art = Image.open(io.BytesIO(response.content)).resize((48, 48))
 				art.save("../data/img/icons/" + hero["passiveC"].replace(" ", "_").replace("/", "_") + ".png", 'PNG')
 			canvas.paste(art, (369, 1043), art)
 			draw.text((420, 1053), hero["passiveC"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 		# If the passive is not the list we skip it
-		if hero["passiveS"] in passives["S"]:
+		if hero["passiveS"] in skills["passives"]["S"]:
 			# Check if the icon art is already in the temporal folder for speeding up requests from the wiki
 			if (pathlib.Path("../data/img/icons/" + hero["passiveS"].replace(" ", "_").replace("/", "_") + ".png").is_file()):
 				art = Image.open("../data/img/icons/" + hero["passiveS"].replace(" ", "_").replace("/", "_") + ".png")
 			else:
 				# Download, resize and cache the picture
-				response = requests.get(passives["S"][hero["passiveS"]])
+				response = requests.get(skills["passives"]["S"][hero["passiveS"]]["icon"])
 				art = Image.open(io.BytesIO(response.content)).resize((48, 48))
 				art.save("../data/img/icons/" + hero["passiveS"].replace(" ", "_").replace("/", "_") + ".png", 'PNG')
 			canvas.paste(art, (369, 1093), art)

@@ -14,7 +14,7 @@ The application is still in a rough state so the code quality is low and may con
 
 You can host this app yourself by following the next steps (no technical explication or configuration examples are provided for now):
 1. Clone this source code
-2. Run the heroes.py, weapons.py, downloadimages.py, assistsandspecials.py and passives.py from the scripts folder to obtain the most recent data from the wiki (the current one as of 09/07/2021 is included in this repo)
+2. Run the units.py and passives.py from the scripts folder to obtain the most recent data from the wiki (the current one as of 09/07/2021 is included in this repo)
 3. Ideally you want to replace the Roboto font included under the data folder with the Heroes own font for more fidelity. However I'm uncertain of the nature of the license for that file so it cannot be shared and it's up to you to look it up.
 4. Setup nginx/apache or whatever your webserver of choice is to serve the static folder normally
 5. Setup the python application so it listens and serves the image generation requests. A Dockerfile is provided for ease of setup
