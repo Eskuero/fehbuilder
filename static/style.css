@@ -1,22 +1,48 @@
 body {
-	display: flex;
-	flex-direction: row;
+	display: block;
+
+	/* CSS for future background image. */
+	/* background-image:url("../assets/BG_Brave.png");
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;  */
 }
 
 /* Go no further tha 98% of the height for the img preview */
 #fakecanvas {
 	height: 98vh;
-	width: auto;
+	width: 100%;
 }
+
+@media (min-width: 1300px) {
+	.container {
+	  max-width: 1300px !important;
+	}
+  }
+
+  @media (min-width: 1600px) {
+	.container {
+	  max-width: 1400px !important;
+	}
+  }
 
 #form {
 	padding: 1.5em;
+}
+
+.col-form-label > img {
+	width: 28px;
 }
 
 select, button {
 	margin-bottom: 1em;
 	padding: 0.5em 0.5em;
 	text-transform: uppercase;
+}
+
+.select2-results__options {
+	max-height: 290px !important;
 }
 
 @media screen and (orientation:portrait) {

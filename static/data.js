@@ -20,6 +20,18 @@ selectattire = document.getElementById('attire');
 // Where we show the image
 var canvas = document.getElementById('fakecanvas');
 
+$(document).ready(function() {
+    $('select').select2({
+		theme: "bootstrap4",
+	});
+	$(".s2-select-without-search").select2({
+		minimumResultsForSearch: Infinity,
+		theme: "bootstrap4",
+	});
+});
+
+$('.select2-search').select2('open');
+
 // Fetch all data from each json
 fetch('heroes.json')
 	.then(res => res.json())
@@ -67,6 +79,14 @@ function populate(select, info) {
 function reload() {
 	document.getElementById('fakecanvas').src = "/get_image.png?name=" + encodeURIComponent(selectheroes.value) + "&merges=" + selectmerges.value + "&flowers=" + selectflowers.value + "&boon=" + selectboons.value + "&bane=" + selectbanes.value + "&weapon=" + encodeURIComponent(selectweapons.value) + "&refine=" + selectrefines.value + "&assist=" + encodeURIComponent(selectassists.value) + "&special=" + encodeURIComponent(selectspecials.value) + "&passiveA=" + encodeURIComponent(selectA.value) + "&passiveB=" + encodeURIComponent(selectB.value) + "&passiveC=" + encodeURIComponent(selectC.value) + "&passiveS=" + encodeURIComponent(selectS.value) + "&blessing=" + selectblessings.value + "&summoner=" + selectsummoner.value + "&attire=" + selectattire.value
 }
+
+
+container.on('open', function () {
+	self.$search.attr('tabindex', 0);
+	//self.$search.focus(); remove this line
+	setTimeout(function () { self.$search.focus(); }, 10);//add this line
+  
+  });
 
 function updateRefine(weapon) {
 	// Clear all children on the refine select first
