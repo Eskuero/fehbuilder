@@ -80,6 +80,7 @@ while not stop:
 				skills["weapons"][skill["Name"]] = {
 					# Split the weapon types by commas to make later checks easier
 					"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),
+					"moveType": skill["CanUseMove"].replace(",  ", ",").split(","),
 					"statModifiers": [int(x) for x in skill["StatModifiers"].split(",")],
 					"upgrades": False,
 					"specialIcon": False
@@ -135,7 +136,7 @@ skillslite = {
 	"weapons": {
 		weaponname: {
 			property: value
-			for property, value in properties.items() if property in ["specialIcon", "upgrades", "WeaponType"]
+			for property, value in properties.items() if property in ["specialIcon", "upgrades", "WeaponType", "moveType"]
 		} 
 		for weaponname, properties in skills["weapons"].items()
     },
