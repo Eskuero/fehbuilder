@@ -42,13 +42,12 @@ while not stop:
 		break
 	seals += [seal["Skill"] for seal in [entry["title"] for entry in data["cargoquery"]]]
 
-# Parameters to send the API whe requesting the whole list of skills (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=Name,Scategory,Icon,StatModifiers,CanUseMove,CanUseWeapon,RefinePath&limit=max&offset=0&format=json)
+# Parameters to send the API whe requesting the whole list of skills (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=Name,Scategory,StatModifiers,CanUseMove,CanUseWeapon,group_concat(Icon)=Icon,group_concat(RefinePath)=refines&group_by=Name&limit=max&offset=0&format=json)
 params = dict(
     action = 'cargoquery',
     tables = 'Skills',
-    fields = 'Name,Scategory,Icon,StatModifiers,CanUseMove,CanUseWeapon,RefinePath',
-# TODO: find a way to reduce the query size without too much hassle
-# where = 'RefinePath is NULL OR RefinePath="Skill1"',
+    fields = 'Name,Scategory,group_concat(Icon)=Icon,StatModifiers,CanUseMove,CanUseWeapon,RefinePath,group_concat(RefinePath)=refines',
+    group_by = "Name",
     limit = 'max',
     offset = -500,
     format = 'json'
@@ -70,21 +69,17 @@ while not stop:
 		print(skill["Name"])
 		# Weapon type handling
 		if skill["Scategory"] == "weapon":
-			# If we already saved the weapon to the final dict this means it's duplicated because it has refines
-			if skill["Name"] in skills["weapons"]:
-				skills["weapons"][skill["Name"]]["upgrades"] = True
-				# Additionally, if the refine path is of class skill1 this means we have a custom icon and an effect refine
-				if skill["RefinePath"] == "skill1":
-					skills["weapons"][skill["Name"]]["specialIcon"] = utils.obtaintrueurl(skill["Icon"]) if utils.obtaintrueurl(skill["Icon"]) else "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/82/Icon_Skill_Weapon.png"
-			else:
-				skills["weapons"][skill["Name"]] = {
-					# Split the weapon types by commas to make later checks easier
-					"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),
-					"moveType": skill["CanUseMove"].replace(",  ", ",").split(","),
-					"statModifiers": [int(x) for x in skill["StatModifiers"].split(",")],
-					"upgrades": False,
-					"specialIcon": False
-				}
+			skills["weapons"][skill["Name"]] = {
+				# Split the weapon types by commas to make later checks easier
+				"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),
+				"moveType": skill["CanUseMove"].replace(",  ", ",").split(","),
+				"statModifiers": [int(x) for x in skill["StatModifiers"].split(",")],
+				"specialIcon": False,
+				"upgrades": True if skill["refines"] != "" else False
+			}
+			# If we had upgrades and a skill1 string is on the refine list we have a custom icon and an additional effect
+			if skills["weapons"][skill["Name"]]["upgrades"] and "skill1" in skill["refines"]:
+				skills["weapons"][skill["Name"]]["specialIcon"] = utils.obtaintrueurl(skill["Icon"].split(",")[0]) if utils.obtaintrueurl(skill["Icon"].split(",")[0]) else "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/82/Icon_Skill_Weapon.png"
 		# Assist type handling
 		if skill["Scategory"] == "assist":
 			# Because assists have no restrictions based on weapon or movement we just store them
