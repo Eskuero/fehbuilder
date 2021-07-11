@@ -28,7 +28,12 @@
 									<label>Hero: </label>
 								</div>
 								<div class="col-9">
-									<select class="s2-select" style="width: 100%" id="selectheroes" ></select>
+									<select class="s2-select" style="width: 100%" id="selectheroes" onChange="populateall()" >
+                  <option value="None">None</value>
+                  <br>
+                  <span>Legal mode: </span>
+			            <input type="checkbox" id="legality" onChange="populateall()" checked>
+                  </select>
 								</div>
 							</div>
 							<div class="row mb-2">
@@ -57,22 +62,7 @@
 								</div>
 								<div class="col-9">
 									<select class="s2-select-without-search" style="width: 100%" id="flowers">
-										<option value="0">0</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-										<option value="6">6</option>
-										<option value="7">7</option>
-										<option value="8">8</option>
-										<option value="9">9</option>
-										<option value="10">10</option>
-										<option value="11">11</option>
-										<option value="12">12</option>
-										<option value="13">13</option>
-										<option value="14">14</option>
-										<option value="15">15</option>
+                      <option value="0">0</value>
 									</select>
 								</div>
 							</div>
@@ -128,7 +118,7 @@
 									<img class="img-fluid" src="../assets/weapon.png"  />
 								</div>
 								<div class="col-9">
-									<select class="s2-select" style="width: 100%" id="weapon" onchange="updateRefine(this.value)">
+									<select class="s2-select" style="width: 100%" id="weapon" onchange="updateRefine()">
 										<option value="None">None</option>
 									</select>
 								</div>
