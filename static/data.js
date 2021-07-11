@@ -48,6 +48,8 @@ function populateall() {
 	populate(selectS, skills["passives"]["S"], Object.keys(skills["passives"]["S"]))
     // Make sure we do not end with an invalid refine option setup
     updateRefine()
+	// Add only the required amount of flowers
+	updatedragonflowers()
 }
 
 function populate(select, data, list, bypass) {
@@ -100,7 +102,34 @@ function populate(select, data, list, bypass) {
 }
 
 function reload() {
-	document.getElementById('fakecanvas').src = "/get_image.png?name=" + encodeURIComponent(selectheroes.value) + "&merges=" + selectmerges.value + "&flowers=" + selectflowers.value + "&boon=" + selectboons.value + "&bane=" + selectbanes.value + "&weapon=" + encodeURIComponent(selectweapons.value) + "&refine=" + selectrefines.value + "&assist=" + encodeURIComponent(selectassists.value) + "&special=" + encodeURIComponent(selectspecials.value) + "&passiveA=" + encodeURIComponent(selectA.value) + "&passiveB=" + encodeURIComponent(selectB.value) + "&passiveC=" + encodeURIComponent(selectC.value) + "&passiveS=" + encodeURIComponent(selectS.value) + "&blessing=" + selectblessings.value + "&summoner=" + selectsummoner.value + "&attire=" + selectattire.value
+	document.getElementById('fakecanvas').src = "/get_image.png?name=" + encodeURIComponent(selectheroes.value) + "&merges=" + selectmerges.value + "&flowers=" + selectflowers.value + "&boon=" + selectboons.value + "&bane=" + selectbanes.value + "&weapon=" + encodeURIComponent(selectweapons.value) + "&refine=" + selectrefines.value + "&assist=" + encodeURIComponent(selectassists.value) + "&special=" + encodeURIComponent(selectspecials.value) + "&passiveA=" + encodeURIComponent(selectA.value) + "&passiveB=" + encodeURIComponent(selectB.value) + "&passiveC=" + encodeURIComponent(selectC.value) + "&passiveS=" + encodeURIComponent(selectS.value) + "&blessing=" + selectblessings.value + "&summoner=" + selectsummoner.value + "&attire=" + selectattire.value;
+}
+
+function updatedragonflowers() {
+	// Default for cheating mode is 15
+	flowers = 15;
+	// First delete them all except the None element
+	while (selectflowers.lastChild && selectflowers.childElementCount > 1) {
+        selectflowers.removeChild(selectflowers.lastChild);
+    }
+    if (legality.checked == true && selectheroes.value != "None") {
+		// Default for new heroes is at least 5
+		flowers = 5;
+		release = new Date(units[selectheroes.value]["AdditionDate"]);
+		if (release < new Date('2020-08-18')) {
+			flowers += 5;
+			if (release < new Date('2019-02-06') && units[selectheroes.value]["moveType"] == "Infantry") {
+				flowers += 5;
+			}
+		}
+	}
+	// Loop for each flower allowed
+	for (i = 1; i <= flowers; i++) {
+		var opt = document.createElement('option');
+		opt.value = i;
+		opt.innerHTML = i;
+		selectflowers.appendChild(opt);
+	}
 }
 
 function updateRefine() {
