@@ -27,6 +27,15 @@ body {
 	}
   }
 
+.checkbox-xl {
+	width: 16px; 
+	height: 16px;
+	}
+
+.ver-align-mid {
+	vertical-align:middle;
+	}
+
 #form {
 	padding: 1.5em;
 }
