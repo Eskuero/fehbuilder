@@ -1,5 +1,5 @@
 // Dicts for info
-var skills;
+var units, skills;
 // All selects we have available
 selectheroes = document.getElementById('selectheroes');
 selectmerges = document.getElementById('merges');
@@ -17,6 +17,7 @@ selectS = document.getElementById('Sskill');
 selectblessings = document.getElementById('blessing');
 selectsummoner = document.getElementById('summoner');
 selectattire = document.getElementById('attire');
+legality = document.getElementById('legality');
 // Where we show the image
 var canvas = document.getElementById('fakecanvas');
 
@@ -24,37 +25,86 @@ var canvas = document.getElementById('fakecanvas');
 fetch('units.json')
 	.then(res => res.json())
 	.then((out) => {
-		populate(selectheroes, Object.keys(out))
+		// We store the skills for basic checks within the browser
+		units = out
+		populate(selectheroes, units, Object.keys(units), true)
 }).catch(err => console.error(err));
 fetch('skills.json')
 	.then(res => res.json())
 	.then((out) => {
 		// We store the skills for basic checks within the browser
 		skills = out
-		populate(selectweapons, Object.keys(skills["weapons"]))
-		populate(selectspecials, Object.keys(skills["specials"]))
-		populate(selectassists, Object.values(skills["assists"]))
-		populate(selectA, Object.keys(skills["passives"]["A"]))
-		populate(selectB, Object.keys(skills["passives"]["B"]))
-		populate(selectC, Object.keys(skills["passives"]["C"]))
-		populate(selectS, Object.keys(skills["passives"]["S"]))
+		populateall()
 }).catch(err => console.error(err));
 
-function populate(select, info) {
-	// Add as much options to the select as heroes we have
-	info.forEach((value) => {
-		var opt = document.createElement('option');
-		opt.value = value;
-		opt.innerHTML = value;
-		select.appendChild(opt);
-	});
+function populateall() {
+	// We go through all the selects
+	populate(selectweapons, skills["weapons"], Object.keys(skills["weapons"]))
+	populate(selectspecials, skills["specials"], Object.keys(skills["specials"]))
+	populate(selectassists, skills["assists"], Object.keys(skills["assists"]))
+	populate(selectA, skills["passives"]["A"], Object.keys(skills["passives"]["A"]))
+	populate(selectB, skills["passives"]["B"], Object.keys(skills["passives"]["B"]))
+	populate(selectC, skills["passives"]["C"], Object.keys(skills["passives"]["C"]))
+	populate(selectS, skills["passives"]["S"], Object.keys(skills["passives"]["S"]))
+    // Make sure we do not end with an invalid refine option setup
+    updateRefine()
+}
+
+function populate(select, data, list, bypass) {
+	// First delete them all except the None element
+	while (select.lastChild && select.childElementCount > 1) {
+        select.removeChild(select.lastChild);
+    }
+	// For enabled legality we only add the options that match move and type restrictions (also bypass for the units select)
+	if (legality.checked == true && ! bypass && selectheroes.value != "None") {
+		// By default we do not add the skill
+		add = false
+		weapontype = units[selectheroes.value]["WeaponType"]
+		movetype = units[selectheroes.value]["moveType"]
+		list.forEach((value) => {
+			// Check if the skills has weapon restrictions and if it does check if we meet them
+			if ("WeaponType" in data[value]) {
+				if (data[value]["WeaponType"].includes(weapontype)) {
+					add = true;
+				// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
+				} else {
+					return;
+				}
+			}
+			// Check if the skills has movement restrictions and if it does check if we meet them so we just skip this iteration
+			if ("moveType" in data[value]) {
+				if (data[value]["moveType"].includes(movetype)) {
+					add = true;
+				// If it doesn't contain out movement type we cannot use it regardless of if we met weapon type
+				} else {
+					return;
+				}
+			}
+			// Arriving at this check with a true add value measn we can add the option
+			if (add) {
+				var opt = document.createElement('option');
+				opt.value = value;
+				opt.innerHTML = value;
+				select.appendChild(opt);
+			}
+		});
+	// If we are cheating we just add as much options as we have to everything and anything
+	} else {
+		list.forEach((value) => {
+			var opt = document.createElement('option');
+			opt.value = value;
+			opt.innerHTML = value;
+			select.appendChild(opt);
+		});
+	}
 }
 
 function reload() {
 	document.getElementById('fakecanvas').src = "/get_image.png?name=" + encodeURIComponent(selectheroes.value) + "&merges=" + selectmerges.value + "&flowers=" + selectflowers.value + "&boon=" + selectboons.value + "&bane=" + selectbanes.value + "&weapon=" + encodeURIComponent(selectweapons.value) + "&refine=" + selectrefines.value + "&assist=" + encodeURIComponent(selectassists.value) + "&special=" + encodeURIComponent(selectspecials.value) + "&passiveA=" + encodeURIComponent(selectA.value) + "&passiveB=" + encodeURIComponent(selectB.value) + "&passiveC=" + encodeURIComponent(selectC.value) + "&passiveS=" + encodeURIComponent(selectS.value) + "&blessing=" + selectblessings.value + "&summoner=" + selectsummoner.value + "&attire=" + selectattire.value
 }
 
-function updateRefine(weapon) {
+function updateRefine() {
+	weapon = selectweapons.value
 	// Clear all children on the refine select first
 	while (selectrefines.lastChild) {
         selectrefines.removeChild(selectrefines.lastChild);
@@ -63,7 +113,9 @@ function updateRefine(weapon) {
 	opt.value = "None";
 	opt.innerHTML = "None";
 	selectrefines.appendChild(opt);
-	console.log(skills["weapons"][weapon])
+	if (weapon == "None") {
+		return;
+	}
 	if (skills["weapons"][weapon]["upgrades"]) {
 		if (skills["weapons"][weapon]["WeaponType"].includes("Colorless Staff")) {
 			// Staffs cannot have normal refines and special ones

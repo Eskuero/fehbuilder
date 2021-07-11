@@ -11,7 +11,7 @@ skills = {
 		"C": {},
 		"S": {}
 	},
-	"assists": [],
+	"assists": {},
 	"specials": {}
 }
 # Base URL for api requests
@@ -79,7 +79,7 @@ while not stop:
 			else:
 				skills["weapons"][skill["Name"]] = {
 					# Split the weapon types by commas to make later checks easier
-					"WeaponType": skill["CanUseWeapon"].replace(", ", ",").split(", "),
+					"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),
 					"statModifiers": [int(x) for x in skill["StatModifiers"].split(",")],
 					"upgrades": False,
 					"specialIcon": False
@@ -87,11 +87,15 @@ while not stop:
 		# Assist type handling
 		if skill["Scategory"] == "assist":
 			# Because assists have no restrictions based on weapon or movement we just store them
-			skills["assists"].append(skill["Name"])
+			skills["assists"][skill["Name"]] = {
+				"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(",")
+			}
 		# Special type handling
 		if skill["Scategory"] == "special":
 			# Because specials have no restrictions based on movement we just store the weapon restrictions
-			skills["specials"][skill["Name"]] = skill["CanUseWeapon"].replace(", ", ",").split(", ")
+			skills["specials"][skill["Name"]] = {
+				"WeaponType": skill["CanUseWeapon"].replace(", ", ",").split(", ")
+			}
 		# Passive type handling
 		if skill["Scategory"] in ["passivea", "passiveb", "passivec"]:
 			# Get the category in our format (last character capitalized)
@@ -100,8 +104,8 @@ while not stop:
 			skills["passives"][truecategorie][skill["Name"]] = {
 				"icon": utils.obtaintrueurl(skill["Icon"]),
 				"statModifiers": [0, 0, 0, 0, 0] if skill["StatModifiers"] == "" else [int(x) for x in skill["StatModifiers"].split(",")],
-				"weapon": skill["CanUseWeapon"].replace(", ", ",").split(", "),
-				"movement": skill["CanUseMove"].replace(", ", ",").split(", ")
+				"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),
+				"moveType": skill["CanUseMove"].replace(",  ", ",").split(",")
 			}
 		# Seals type handling
 		if skill["Scategory"] == "sacredseal":
@@ -109,8 +113,8 @@ while not stop:
 			skills["passives"]["S"][skill["Name"]] = {
 				"icon": utils.obtaintrueurl(skill["Icon"]),
 				"statModifiers": [0, 0, 0, 0, 0] if skill["StatModifiers"] == "" else [int(x) for x in skill["StatModifiers"].split(",")],
-				"weapon": skill["CanUseWeapon"].replace(", ", ",").split(", "),
-				"movement": skill["CanUseMove"].replace(", ", ",").split(", ")
+				"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),
+				"moveType": skill["CanUseMove"].replace(",  ", ",").split(",")
 			}
 
 # Complete the seals data
@@ -141,7 +145,7 @@ skillslite = {
 		passivecategory: {
 			passive: {
 				property: value
-				for property, value in properties.items() if property in ["weapon", "movement"]
+				for property, value in properties.items() if property in ["WeaponType", "moveType"]
 			} 
 			for passive, properties in skills["passives"][passivecategory].items()
 		}

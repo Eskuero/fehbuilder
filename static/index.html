@@ -8,7 +8,11 @@
 		<img id="fakecanvas" src="/get_image.png" />
 		<div id="form">
 			<span>Hero: </span>
-			<select id="selectheroes"></select>
+			<select id="selectheroes" onChange="populateall()">
+				<option value="None">None</value>
+			</select>
+			<span>Legal mode: </span>
+			<input type="checkbox" id="legality" onChange="populateall()" checked>
 			<br />
 			<span>Merges: </span>
 			<select id="merges">
@@ -69,7 +73,7 @@
 			</select>
 			<br />
 			<span>Weapon: </span>
-			<select id="weapon" onchange="updateRefine(this.value)">
+			<select id="weapon" onchange="updateRefine()">
 				<option value="None">None</option>
 			</select>
 			<span>Refine: </span>
