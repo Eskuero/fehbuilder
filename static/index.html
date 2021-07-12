@@ -121,7 +121,7 @@
 									<img class="img-fluid" src="assets/refine.png"  />
 								</div>
 								<div class="col-9">
-									<select class="s2-select" style="width: 100%" id="refine">
+									<select class="s2-select-without-search" style="width: 100%" id="refine">
 										<option value="None">None</option>
 									</select>
 								</div>
@@ -232,19 +232,19 @@
 								<h4>Options</h4>
 							</div>
 							<div class="row mb-1 align-items-center">
-								<div class="col-5 col-md-2 col-form-label text-md-right">
+								<div class="col-3 col-md-2 col-form-label text-md-right">
 									<label class="mb-0">Cheats: </label>
 								</div>
-								<div class="col-2">
+								<div class="col-1">
 									<input type="checkbox" class="checkbox-xl" id="cheats" onChange="populateall()">
+								</div>
+								<div class="col-7" col-md-2>
+									<a href="#fakecanvas">
+										<button class="btn btn-primary" onclick="reload()">Generate hero</button>
+									</a>
 								</div>
 							</div>
 						</section>
-						<div class="row mb-1">
-							<div class="col-12">
-								<button class="btn btn-primary" onclick="reload()">Generate hero</button>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>

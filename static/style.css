@@ -1,17 +1,18 @@
 body {
 	display: block;
+	height: 100%;
 
 	/* CSS for future background image. */
-	/* background-image:url("../assets/BG_Brave.png");
+	background-image: url("assets/BG_Brave.png");
 
 	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;  */
+	/*background-repeat: no-repeat;*/
+	background-size: cover;
 }
 
 /* Go no further tha 98% of the height for the img preview */
 #fakecanvas {
-	height: 98vh;
+	height: 100vh;
 }
 
 @media (min-width: 1300px) {
@@ -24,7 +25,7 @@ body {
 	.container {
 		max-width: 1400px !important;
 	}
-	}
+}
 
 .checkbox-xl {
 	width: 18px; 
@@ -32,11 +33,19 @@ body {
 }
 
 .ver-align-mid {
-	vertical-align:middle;
+	vertical-align: middle;
+}
+h4 {
+	text-decoration: underline;
 }
 
 #form {
+	min-height: 100vh;
+	height: auto;
 	padding: 1.5em;
+	background-color: rgba(14, 51, 69, 0.6);
+	font-weight: bold;
+	color: white;
 }
 
 .col-form-label > img {
