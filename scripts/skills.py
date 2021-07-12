@@ -2,6 +2,33 @@ import requests
 import json
 import utils
 
+# Falchion
+falchiondata = {
+	"Falchion (Awakening)": {
+		"WeaponType": ["Red Sword"],
+		"moveType": ["Infantry", "Armored",  "Cavalry",  "Flying"],
+		"statModifiers": [0, 16, 0, 0, 0],
+		"specialIcon": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/9f/Falchion_Awakening_W.png",
+		"upgrades": True,
+		"exclusive": True
+	},
+	"Falchion (Gaiden)": {
+		"WeaponType": ["Red Sword"],
+		"moveType": ["Infantry", "Armored",  "Cavalry",  "Flying"],
+		"statModifiers": [0, 16, 0, 0, 0],
+		"specialIcon": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/dd/Falchion_Gaiden_W.png",
+		"upgrades": True,
+		"exclusive": True
+	},
+	"Falchion (Mystery)": {
+		"WeaponType": ["Red Sword"],
+		"moveType": ["Infantry", "Armored",  "Cavalry",  "Flying"],
+		"statModifiers": [0, 16, 0, 0, 0],
+		"specialIcon": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b0/Falchion_Mystery_W.png",
+		"upgrades": True,
+		"exclusive": True
+	}
+}
 # We store all the data in a single dict
 skills = {
 	"weapons": {},
@@ -35,6 +62,10 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 	print(skill["Name"])
 	# Weapon type handling
 	if skill["Scategory"] == "weapon":
+		# We are hardcoding Falchion so we don't parse it normally
+		if skill["Name"] == "Falchion":
+			skills["weapons"].update(falchiondata)
+			continue
 		skills["weapons"][skill["Name"]] = {
 			# Split the weapon types by commas to make later checks easier
 			"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),

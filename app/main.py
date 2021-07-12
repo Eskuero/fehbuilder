@@ -151,6 +151,9 @@ def getimage():
 				icon = hero["weapon"] + "-Effect.png"
 			weaponicon = Image.open("../data/img/icons/" + icon)
 			canvas.paste(weaponicon, (370, 797), weaponicon)
+			# Hack Falchion name since we show the user the real name but display should be the same
+			if "Falchion (" in hero["weapon"]:
+				hero["weapon"] = "Falchion"
 			draw.text((420, 805), hero["weapon"], font=font, fill="#82f546" if hero["refine"] else "#ffffff", stroke_width=3, stroke_fill="#0a2533")
 
 		# Print assist and special info
