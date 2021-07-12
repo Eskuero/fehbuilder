@@ -11,3 +11,22 @@ def obtaintrueurl(filename):
 	except:
 		# The referenced data art is probably incorrect and we couldn't get a full url, return here false and let the caller handle fallback values
 		return False
+
+def retrieveapidata(params):
+	# Base URL for api requests
+	url = "https://feheroes.fandom.com/api.php"
+	stop = False
+	info = []
+	while not stop:
+		# We can only request 500 entries everytime so we increment it everytime we enter the loop
+		params["offset"] += 500
+		response = requests.get(url = url, params = params)
+		data = response.json()
+		# If we got less than 500 entries that means this is the last iteration
+		if len(data["cargoquery"]) < 500:
+			stop = True
+		# Just in case we reach the end on a perfect mutliplier of 500
+		if len(data["cargoquery"]) == 0:
+			break
+		info += data["cargoquery"]
+	return info
