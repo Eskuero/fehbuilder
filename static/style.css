@@ -12,7 +12,6 @@ body {
 /* Go no further tha 98% of the height for the img preview */
 #fakecanvas {
 	height: 98vh;
-	width: 100%;
 }
 
 @media (min-width: 1300px) {
