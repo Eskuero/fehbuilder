@@ -21,6 +21,18 @@ legality = document.getElementById('legality');
 // Where we show the image
 var canvas = document.getElementById('fakecanvas');
 
+$(document).ready(function() {
+    $('select').select2({
+		theme: "bootstrap4",
+	});
+	$(".s2-select-without-search").select2({
+		minimumResultsForSearch: Infinity,
+		theme: "bootstrap4",
+	});
+});
+
+$('.select2-search').select2('open');
+
 // Fetch all data from each json
 fetch('units.json')
 	.then(res => res.json())
@@ -132,8 +144,11 @@ function updatedragonflowers() {
 	}
 }
 
+
+
 function updateRefine() {
 	weapon = selectweapons.value
+
 	// Clear all children on the refine select first
 	while (selectrefines.lastChild) {
         selectrefines.removeChild(selectrefines.lastChild);
