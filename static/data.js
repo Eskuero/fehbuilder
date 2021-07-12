@@ -97,7 +97,7 @@ function populate(select, data, list, bypass) {
 			}
 			// Check if the skill is exclusive and if it does check if it's included on the units basekit
 			if (data[value]["exclusive"]) {
-				if (basekit.includes(value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\(|\)/g, ""))) {
+				if (basekit.includes(value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\(|\)/g, "").replace("'", ""))) {
 					add = true;
 				// If it isn't on the unit basekit he can't use it regarless of other conditions so we skip this iteration
 				} else {
