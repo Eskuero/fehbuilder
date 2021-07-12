@@ -42,11 +42,11 @@ while not stop:
 		break
 	seals += [seal["Skill"] for seal in [entry["title"] for entry in data["cargoquery"]]]
 
-# Parameters to send the API whe requesting the whole list of skills (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=Name,Scategory,StatModifiers,CanUseMove,CanUseWeapon,group_concat(Icon)=Icon,group_concat(RefinePath)=refines&group_by=Name&limit=max&offset=0&format=json)
+# Parameters to send the API whe requesting the whole list of skills (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=Name,Scategory,StatModifiers,CanUseMove,CanUseWeapon,Exclusive,group_concat(Icon)=Icon,group_concat(RefinePath)=refines&group_by=Name&limit=max&offset=0&format=json)
 params = dict(
     action = 'cargoquery',
     tables = 'Skills',
-    fields = 'Name,Scategory,group_concat(Icon)=Icon,StatModifiers,CanUseMove,CanUseWeapon,RefinePath,group_concat(RefinePath)=refines',
+    fields = 'Name,Scategory,group_concat(Icon)=Icon,StatModifiers,CanUseMove,CanUseWeapon,RefinePath,Exclusive,group_concat(RefinePath)=refines',
     group_by = "Name",
     limit = 'max',
     offset = -500,
@@ -75,7 +75,8 @@ while not stop:
 				"moveType": skill["CanUseMove"].replace(",  ", ",").split(","),
 				"statModifiers": [int(x) for x in skill["StatModifiers"].split(",")],
 				"specialIcon": False,
-				"upgrades": True if skill["refines"] != "" else False
+				"upgrades": True if skill["refines"] != "" else False,
+				"exclusive": True if skill["Exclusive"] == "1" else False
 			}
 			# If we had upgrades and a skill1 string is on the refine list we have a custom icon and an additional effect
 			if skills["weapons"][skill["Name"]]["upgrades"] and "skill1" in skill["refines"]:
@@ -84,13 +85,15 @@ while not stop:
 		if skill["Scategory"] == "assist":
 			# Because assists have no restrictions based on weapon or movement we just store them
 			skills["assists"][skill["Name"]] = {
-				"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(",")
+				"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),
+				"exclusive": True if skill["Exclusive"] == "1" else False
 			}
 		# Special type handling
 		if skill["Scategory"] == "special":
 			# Because specials have no restrictions based on movement we just store the weapon restrictions
 			skills["specials"][skill["Name"]] = {
-				"WeaponType": skill["CanUseWeapon"].replace(", ", ",").split(", ")
+				"WeaponType": skill["CanUseWeapon"].replace(", ", ",").split(", "),
+				"exclusive": True if skill["Exclusive"] == "1" else False
 			}
 		# Passive type handling
 		if skill["Scategory"] in ["passivea", "passiveb", "passivec"]:
@@ -101,7 +104,8 @@ while not stop:
 				"icon": utils.obtaintrueurl(skill["Icon"]),
 				"statModifiers": [0, 0, 0, 0, 0] if skill["StatModifiers"] == "" else [int(x) for x in skill["StatModifiers"].split(",")],
 				"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),
-				"moveType": skill["CanUseMove"].replace(",  ", ",").split(",")
+				"moveType": skill["CanUseMove"].replace(",  ", ",").split(","),
+				"exclusive": True if skill["Exclusive"] == "1" else False
 			}
 		# Seals type handling
 		if skill["Scategory"] == "sacredseal":
@@ -110,7 +114,8 @@ while not stop:
 				"icon": utils.obtaintrueurl(skill["Icon"]),
 				"statModifiers": [0, 0, 0, 0, 0] if skill["StatModifiers"] == "" else [int(x) for x in skill["StatModifiers"].split(",")],
 				"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),
-				"moveType": skill["CanUseMove"].replace(",  ", ",").split(",")
+				"moveType": skill["CanUseMove"].replace(",  ", ",").split(","),
+				"exclusive": True if skill["Exclusive"] == "1" else False
 			}
 
 # Complete the seals data
@@ -131,7 +136,7 @@ skillslite = {
 	"weapons": {
 		weaponname: {
 			property: value
-			for property, value in properties.items() if property in ["specialIcon", "upgrades", "WeaponType", "moveType"]
+			for property, value in properties.items() if property in ["specialIcon", "upgrades", "WeaponType", "moveType", "exclusive"]
 		} 
 		for weaponname, properties in skills["weapons"].items()
     },
@@ -141,7 +146,7 @@ skillslite = {
 		passivecategory: {
 			passive: {
 				property: value
-				for property, value in properties.items() if property in ["WeaponType", "moveType"]
+				for property, value in properties.items() if property in ["WeaponType", "moveType", "exclusive"]
 			} 
 			for passive, properties in skills["passives"][passivecategory].items()
 		}

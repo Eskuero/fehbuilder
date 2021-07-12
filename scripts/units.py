@@ -8,7 +8,63 @@ url = "https://feheroes.fandom.com/api.php"
 # We store all the data in a single dict
 heroes = {}
 
-# Parameters to send the API whe requesting the whole list of heroes for data (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Units&fields=_pageName=Page,WeaponType,MoveType,Artist,ActorEN,AdditionDate&limit=max&format=json)
+# Parameters to send the API whe requesting the whole list of weapon evolutions (https://feheroes.fandom.com/api.php?action=cargoquery&tables=WeaponEvolutions&fields=BaseWeapon,EvolvesInto&limit=max&offset=0&format=json)
+params = dict(
+    action = 'cargoquery',
+    tables = 'WeaponEvolutions',
+    fields = 'BaseWeapon,EvolvesInto',
+    limit = 'max',
+    offset = -500,
+    format = 'json'
+)
+weaponevolutions = {}
+stop = False
+while not stop:
+	# We can only request 500 entries everytime so we increment it everytime we enter the loop
+	params["offset"] += 500
+	response = requests.get(url = url, params = params)
+	data = response.json()
+	# If we got less than 500 entries that means this is the last iteration
+	if len(data["cargoquery"]) < 500:
+		stop = True
+	# Just in case we reach the end on a perfect mutliplier of 500
+	if len(data["cargoquery"]) == 0:
+		break
+	# Get skill data every time individually before upon entering the loop
+	for weapon in [entry["title"] for entry in data["cargoquery"]]:
+		weaponevolutions[weapon["BaseWeapon"]] = weapon["EvolvesInto"]
+
+# Parameters to send the API whe requesting the whole list of heroes for their base skills (https://feheroes.fandom.com/api.php?action=cargoquery&tables=UnitSkills&fields=_pageName=Name,group_concat(skill)=skills&group_by=Name&limit=max&offset=0&format=json)
+params = dict(
+    action = 'cargoquery',
+    tables = 'UnitSkills',
+    fields = '_pageName=Name,group_concat(skill)=skills',
+    group_by = 'Name',
+    limit = 'max',
+    offset = -500,
+    format = 'json'
+)
+heroskills = {}
+stop = False
+while not stop:
+	# We can only request 500 entries everytime so we increment it everytime we enter the loop
+	params["offset"] += 500
+	response = requests.get(url = url, params = params)
+	data = response.json()
+	# If we got less than 500 entries that means this is the last iteration
+	if len(data["cargoquery"]) < 500:
+		stop = True
+	# Just in case we reach the end on a perfect mutliplier of 500
+	if len(data["cargoquery"]) == 0:
+		break
+	# Get skill data every time individually before upon entering the loop
+	for hero in [entry["title"] for entry in data["cargoquery"]]:
+		heroskills[hero["Name"]] = hero["skills"].split(",")
+		# If any of the skills for the hero has an evolution available add it to the list
+		for item in [item for item in heroskills[hero["Name"]] if item in weaponevolutions]:
+			heroskills[hero["Name"]].append(weaponevolutions[item])
+
+# Parameters to send the API whe requesting the whole list of heroes for data (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Units&fields=_pageName=Name,WeaponType,MoveType,Artist,ActorEN,AdditionDate&limit=max&format=json)
 params = dict(
     action = 'cargoquery',
     tables = 'Units',
@@ -103,7 +159,8 @@ while not stop:
 			"moveType": herodata[hero["Name"]]["MoveType"],
 			"AdditionDate": herodata[hero["Name"]]["AdditionDate"],
 			"frontArt": utils.obtaintrueurl(hero["Name"] + ("_BtlFace.png" if ":" not in hero["Name"] else "_Face.webp")),
-			"resplendent": utils.obtaintrueurl(hero["Name"] + "_Resplendent_Face.webp") if hero["Name"] in resplendentlist else False
+			"resplendent": utils.obtaintrueurl(hero["Name"] + "_Resplendent_Face.webp") if hero["Name"] in resplendentlist else False,
+			"basekit": heroskills[hero["Name"]] if hero["Name"] in heroskills else []
 		}
 
 with open("../data/units.json", "w") as outfile:
@@ -113,7 +170,7 @@ with open("../data/units.json", "w") as outfile:
 heroeslite = {
 	heroname: {
 		property: value
-		for property, value in properties.items() if property in ["WeaponType", "moveType", "AdditionDate"]
+		for property, value in properties.items() if property in ["WeaponType", "moveType", "AdditionDate", "basekit"]
 	} 
 	for heroname, properties in heroes.items()
 }

@@ -75,6 +75,7 @@ function populate(select, data, list, bypass) {
 		add = false
 		weapontype = units[selectheroes.value]["WeaponType"]
 		movetype = units[selectheroes.value]["moveType"]
+		basekit = units[selectheroes.value]["basekit"]
 		list.forEach((value) => {
 			// Check if the skills has weapon restrictions and if it does check if we meet them
 			if ("WeaponType" in data[value]) {
@@ -90,6 +91,15 @@ function populate(select, data, list, bypass) {
 				if (data[value]["moveType"].includes(movetype)) {
 					add = true;
 				// If it doesn't contain out movement type we cannot use it regardless of if we met weapon type
+				} else {
+					return;
+				}
+			}
+			// Check if the skill is exclusive and if it does check if it's included on the units basekit
+			if (data[value]["exclusive"]) {
+				if (basekit.includes(value.normalize("NFD").replace(/[\u0300-\u036f]/g, ""))) {
+					add = true;
+				// If it isn't on the unit basekit he can't use it regarless of other conditions so we skip this iteration
 				} else {
 					return;
 				}
