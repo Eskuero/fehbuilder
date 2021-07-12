@@ -16,24 +16,24 @@ body {
 
 @media (min-width: 1300px) {
 	.container {
-	  max-width: 1300px !important;
+		max-width: 1300px !important;
 	}
-  }
+}
 
-  @media (min-width: 1600px) {
+@media (min-width: 1600px) {
 	.container {
-	  max-width: 1400px !important;
+		max-width: 1400px !important;
 	}
-  }
+	}
 
 .checkbox-xl {
 	width: 18px; 
 	height: 18px;
-	}
+}
 
 .ver-align-mid {
 	vertical-align:middle;
-	}
+}
 
 #form {
 	padding: 1.5em;
