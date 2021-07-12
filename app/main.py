@@ -134,8 +134,13 @@ def getimage():
 			canvas.paste(flowericon, (289, 727), flowericon)
 			draw.text((345, 742), "+", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 			draw.text((364, 744), hero["flowers"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
-		font = ImageFont.truetype("../data/" + config["fontfile"], 23)
 
+		# Paste the exp indicator
+		expindicator = Image.open("../data/img/base/expindicator.png")
+		canvas.paste(expindicator, (418, 732) if int(hero["flowers"]) > 0 else (271, 732), expindicator)
+
+
+		font = ImageFont.truetype("../data/" + config["fontfile"], 23)
 		# Print weapon info
 		if hero["weapon"]:
 			# By default we always use the basic weapon icon or the predefined stat boosters ones
