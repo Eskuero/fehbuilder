@@ -14,17 +14,17 @@
 	<body>
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-xl-5" style="text-align: center">
-					<img id="fakecanvas" src="/get_image.png" class="img-fluid" alt="FEH Unit Builder" />
+				<div class="col-12 col-lg-6" style="text-align: center">
+					<img id="fakecanvas" src="https://feh.fromshado.ws/get_image.png" class="img-fluid" alt="FEH Unit Builder" />
 				</div>
-				<div class="col-12 col-xl-7">
+				<div class="col-12 col-lg-6">
 					<div id="form">
 						<section class="ml-2">
 							<div class="row mb-2">
 								<h4>Unit</h4>
 							</div>
 							<div class="row mb-2">
-								<div class="col-3 col-form-label text-md-right">
+								<div class="col-3 col-md-2 col-form-label text-md-right">
 									<label>Hero: </label>
 								</div>
 								<div class="col-9">
@@ -34,7 +34,7 @@
 								</div>
 							</div>
 							<div class="row mb-2 align-items-center">
-								<div class="col-3 col-form-label text-md-right">
+								<div class="col-3 col-md-2 col-form-label text-md-right">
 									<label class="mb-0">Legal mode: </label>
 								</div>
 								<div class="col-9">
@@ -42,10 +42,21 @@
 								</div>
 							</div>
 							<div class="row mb-2">
-								<div class="col-3 col-form-label text-md-right">
-									<label>Merges: </label>
+								<div class="col-3 col-md-2 col-form-label text-md-right">
+									<label>Attire: </label>
 								</div>
 								<div class="col-9">
+									<select class="s2-select-without-search" style="width: 100%" id="attire">
+										<option value="Normal">Normal</option>
+										<option value="Resplendent">Resplendent</option>
+									</select>
+								</div>
+							</div>
+							<div class="row mb-2">
+								<div class="col-3 col-md-2 col-form-label text-md-right">
+									<label>Merges: </label>
+								</div>
+								<div class="col-3">
 									<select class="s2-select-without-search" style="width: 100%" id="merges">
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -60,33 +71,20 @@
 										<option value="10">10</option>
 									</select>
 								</div>
-							</div>
-							<div class="row mb-2">
-								<div class="col-3 col-form-label text-md-right">
+								<div class="col-3 col-md-2 col-form-label text-md-right">
 									<label>Flowers: </label>
 								</div>
-								<div class="col-9">
+								<div class="col-3">
 									<select class="s2-select-without-search" style="width: 100%" id="flowers">
                       					<option value="0">0</value>
 									</select>
 								</div>
 							</div>
 							<div class="row mb-2">
-								<div class="col-3 col-form-label text-md-right">
-									<label>Attire: </label>
-								</div>
-								<div class="col-9">
-									<select class="s2-select-without-search" style="width: 100%" id="attire">
-										<option value="Normal">Normal</option>
-										<option value="Resplendent">Resplendent</option>
-									</select>
-								</div>
-							</div>
-							<div class="row mb-2">
-								<div class="col-3 col-form-label text-md-right">
+								<div class="col-3 col-md-2 col-form-label text-md-right">
 									<label>Boon: </label>
 								</div>
-								<div class="col-9">
+								<div class="col-3">
 									<select class="s2-select-without-search" style="width: 100%" id="boons">
 										<option value="None">None</option>
 										<option value="HP">HP</option>
@@ -96,12 +94,10 @@
 										<option value="Res">Res</option>
 									</select>
 								</div>
-							</div>
-							<div class="row mb-2">
-								<div class="col-3 col-form-label text-md-right">		
+								<div class="col-3 col-md-2 col-form-label text-md-right">		
 									<label>Bane: </label>
 								</div>
-								<div class="col-9">
+								<div class="col-3">
 									<select class="s2-select-without-search" style="width: 100%" id="banes">
 										<option value="None">None</option>
 										<option value="HP">HP</option>
@@ -119,7 +115,7 @@
 								<h4>Skills</h4>
 							</div>
 							<div class="row mb-2">
-								<div class="col-3 col-form-label text-md-right">	
+								<div class="col-3 col-md-2 col-form-label text-md-right">	
 									<img class="img-fluid" src="assets/weapon.png"  />
 								</div>
 								<div class="col-9">
@@ -129,7 +125,7 @@
 								</div>
 							</div>
 							<div class="row mb-2">
-								<div class="col-3 col-form-label text-md-right">	
+								<div class="col-3 col-md-2 col-form-label text-md-right">	
 									<img class="img-fluid" src="assets/refine.png"  />
 								</div>
 								<div class="col-9">
@@ -140,7 +136,7 @@
 							</div>
 
 							<div class="row mb-2">
-								<div class="col-3 col-form-label text-md-right">	
+								<div class="col-3 col-md-2 col-form-label text-md-right">	
 									<img class="img-fluid" src="assets/assist.png"/>
 								</div>
 								<div class="col-9">
@@ -151,7 +147,7 @@
 							</div>
 
 							<div class="row mb-2">
-								<div class="col-3 col-form-label text-md-right">	
+								<div class="col-3 col-md-2 col-form-label text-md-right">	
 									<img class="img-fluid" src="assets/special.png"/>
 								</div>
 								<div class="col-9">
@@ -162,7 +158,7 @@
 							</div>
 							
 							<div class="row mb-2">
-								<div class="col-3 col-form-label text-md-right">	
+								<div class="col-3 col-md-2 col-form-label text-md-right">	
 									<img class="img-fluid" src="assets/skill-a.png"/>
 								</div>
 								<div class="col-9">
@@ -173,7 +169,7 @@
 							</div>
 
 							<div class="row mb-2">
-								<div class="col-3 col-form-label text-md-right">	
+								<div class="col-3 col-md-2 col-form-label text-md-right">	
 									<img class="img-fluid" src="assets/skill-b.png"/>
 								</div>
 								<div class="col-9">
@@ -184,7 +180,7 @@
 							</div>
 				
 							<div class="row mb-2">
-								<div class="col-3 col-form-label text-md-right">
+								<div class="col-3 col-md-2 col-form-label text-md-right">
 									<img class="img-fluid" src="assets/skill-c.png"/>
 								</div>
 								<div class="col-9">
@@ -195,7 +191,7 @@
 							</div>
 
 							<div class="row mb-2">
-								<div class="col-3 col-form-label text-md-right">		
+								<div class="col-3 col-md-2 col-form-label text-md-right">		
 									<img class="img-fluid" src="assets/seal.png"/>
 								</div>
 								<div class="col-9">
@@ -206,7 +202,7 @@
 							</div>
 
 							<div class="row mb-2">
-								<div class="col-3 col-form-label text-md-right">
+								<div class="col-3 col-md-2 col-form-label text-md-right">
 									<label>Blessing: </label>
 								</div>
 								<div class="col-9">
@@ -225,7 +221,7 @@
 							</div>
 
 							<div class="row mb-2">
-								<div class="col-3 col-form-label text-md-right">
+								<div class="col-3 col-md-2 col-form-label text-md-right">
 									<label>Sum. Support: </label>
 								</div>
 								<div class="col-9">
@@ -249,7 +245,6 @@
 			</div>
 		</div>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
