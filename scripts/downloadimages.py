@@ -17,12 +17,12 @@ def download():
 		size = (44, 44) if "Refine" in icon else ((60, 60) if "flower" in icon else (32, 32))
 		art = Image.open(io.BytesIO(response.content)).resize(size)
 		art.save("../data/img/icons/" + icon + ".png", 'PNG')
-	for blessing in blessings:
-		print(blessing)
+	for bigicon in bigicons:
+		print(bigicon)
 		# Grab and paste the heroes art in the image
-		response = requests.get(blessings[blessing])
+		response = requests.get(bigicons[bigicon])
 		art = Image.open(io.BytesIO(response.content)).resize((147, 160))
-		art.save("../data/img/other/" + blessing + ".png", 'PNG')
+		art.save("../data/img/other/" + bigicon + ".png", 'PNG')
 	for some in other:
 		print(some)
 		# Grab and paste the heroes art in the image
@@ -72,7 +72,7 @@ icons = {
 	"Wrathful-Refine": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/4/42/Wrathful_Staff_W.png",
 	"weapon-Refine": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/82/Icon_Skill_Weapon.png"
 }
-blessings = {
+bigicons = {
 	"Water-Blessing": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/2e/Icon_LegendWater.png",
 	"Fire-Blessing": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/c5/Icon_LegendFire.png",
 	"Wind-Blessing": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/28/Icon_LegendWind.png",
@@ -80,7 +80,11 @@ blessings = {
 	"Light-Blessing": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/51/Icon_LegendLight.png",
 	"Dark-Blessing": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/7/72/Icon_LegendDark.png",
 	"Astra-Blessing": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/7/7b/Icon_LegendHeaven.png",
-	"Anima-Blessing": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/df/Icon_LegendLogic.png"
+	"Anima-Blessing": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/df/Icon_LegendLogic.png",
+	"Support-C": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/88/Icon_Support_Summoner_C.png",
+	"Support-B": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/aa/Icon_Support_Summoner_B.png",
+	"Support-A": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a2/Icon_Support_Summoner_A.png",
+	"Support-S": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/8a/Icon_Support_Summoner_S.png"
 }
 
 other = {
