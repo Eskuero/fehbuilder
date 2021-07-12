@@ -60,6 +60,8 @@ def getimage():
 		if hero["summoner"]:
 			bg = Image.open("../data/img/other/summonerbg.png")
 			canvas.paste(bg, (-173, 0))
+			# Position for the summoner support icon, we may override this later
+			summonerpos = (575, 570)
 		# Decide the art to print, even if the user choose resplendent we make sure art for it exists
 		heroart = heroes[name]["resplendent"] if hero["attire"] and heroes[name]["resplendent"] else heroes[name]["frontArt"]
 		# Check if the heroes art is already in the temporal folder for speeding up requests from the wiki
@@ -206,6 +208,11 @@ def getimage():
 		if hero["blessing"] in ["Dark", "Light", "Anima", "Astra", "Fire", "Water", "Earth", "Wind"]:
 			blessingicon = Image.open("../data/img/other/" + hero["blessing"] + "-Blessing.png")
 			canvas.paste(blessingicon, (575, 570), blessingicon)
+			# If whe printed a blessing the summoner support position icon must go further to the left
+			summonerpos = (450, 570)
+		if hero["summoner"]:
+			summonericon = Image.open("../data/img/other/Support-" + hero["summoner"] + ".png")
+			canvas.paste(summonericon, summonerpos, summonericon)
 	else:
 		# We arrived here without a proper hero name so paste the foregroud UI and say bye
 		canvas.paste(fg, (0, 0), fg)
