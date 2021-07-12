@@ -70,7 +70,7 @@ function populate(select, data, list, bypass) {
         select.removeChild(select.lastChild);
     }
 	// For enabled legality we only add the options that match move and type restrictions (also bypass for the units select)
-	if (legality.checked == true && ! bypass && selectheroes.value != "None") {
+	if (cheats.checked == false && ! bypass && selectheroes.value != "None") {
 		// By default we do not add the skill
 		add = false
 		weapontype = units[selectheroes.value]["WeaponType"]
@@ -134,7 +134,7 @@ function updatedragonflowers() {
 	while (selectflowers.lastChild && selectflowers.childElementCount > 1) {
         selectflowers.removeChild(selectflowers.lastChild);
     }
-    if (legality.checked == true && selectheroes.value != "None") {
+    if (cheats.checked == false && selectheroes.value != "None") {
 		// Default for new heroes is at least 5
 		flowers = 5;
 		release = new Date(units[selectheroes.value]["AdditionDate"]);
