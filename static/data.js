@@ -18,6 +18,7 @@ selectblessings = document.getElementById('blessing');
 selectsummoner = document.getElementById('summoner');
 selectattire = document.getElementById('attire');
 cheats = document.getElementById('cheats');
+bestskills = document.getElementById('bestskills');
 // Where we show the image
 var canvas = document.getElementById('fakecanvas');
 
@@ -81,9 +82,11 @@ function populate(select, data, list, bypass) {
 	}
 	if (selectheroes.value != "None") {
 		// Hero info for possible later checks
-		weapontype = units[selectheroes.value]["WeaponType"]
-		movetype = units[selectheroes.value]["moveType"]
-		basekit = units[selectheroes.value]["basekit"]
+		weapontype = units[selectheroes.value]["WeaponType"];
+		movetype = units[selectheroes.value]["moveType"];
+		basekit = units[selectheroes.value]["basekit"];
+		// This skills have abnormal SP cost but are the highest of their family each so hardcode them for possible later checks
+		abnormalskills = ["Attack +3", "Defense +3", "Resistance +3", "Speed +3", "Drag Back", "Hit and Run", "Lunge", "Knock Back", "Axe Experience 3", "Axe Valor 3", "B Tome Exp. 3", "B Tome Valor 3", "Beast Exp. 3", "Beast Valor 3", "Bow Exp. 3", "Bow Valor 3", "Dagger Exp. 3", "Dagger Valor 3", "Dragon Valor 3", "G Tome Exp. 3", "G Tome Valor 3", "Lance Exp. 3", "Lance Valor 3", "R Tome Exp. 3", "R Tome Valor 3", "Staff Exp. 3", "Staff Valor 3", "Sword Exp. 3", "Sword Valor 3"];
 	// If no hero is selected we have nothing to do
 	} else {
 		return;
@@ -92,8 +95,33 @@ function populate(select, data, list, bypass) {
 	list.forEach((value) => {
 		// If we arrived here we might or might not have to do checks so enable adding the skill by default
 		add = true
+		if (bestskills.checked == true) {
+			// Best skills mode is disabled so now we conditionally enable the skill so the default value must be false
+			add = false
+			// Skip it if another skill of the same category has a + sign at the end
+			if (value + "+" in data) {
+				return;
+			}
+			// For weapons the anything with more than 200 SP is valid since that's the value for prerequisites of the Steel Axes
+			if (value in skills["weapons"] && data[value]["cost"] > 200) {
+				add = true;
+			// For assists our checks are more complex. For assists that only score 150 we add them only if they are not base rallies
+			} else if (value in skills["assists"] && (data[value]["cost"] > 150 || ! value.includes("Rally"))) {
+				add = true;
+			// Specials are fine as long as they cost more than 100 SP (Base versions of the boosting ones are worth 100 and the ones for AoE are 150) except for Heavenly Light because is the only upgrade from Imbue
+			} else if (value in skills["specials"] && (data[value]["cost"] > 150 || value == "Heavenly Light")) {
+				add = true;
+			// Passives are a bit more complex but for starters anything bigger than 150 is fine except for the hardcoded skills
+			} else if ((value in skills["passives"]["A"] || value in skills["passives"]["B"] || value in skills["passives"]["C"] || value in skills["passives"]["S"])
+				&& (data[value]["cost"] > 150 || abnormalskills.includes(data))) {
+				add = true;
+			// If we met no condition we can't print the weapon
+			} else {
+				return;
+			}
+		}
 		if (cheats.checked == false) {
-			// Cheat mode is disabled so now we conditionally enable the skill and the default value must be false
+			// Cheat mode is disabled so now we conditionally enable the skill and the default value must be false even if we might have passed bestskills checks
 			add = false
 			// Check if the skills has weapon restrictions and if it does check if we meet them
 			if ("WeaponType" in data[value]) {

@@ -231,17 +231,21 @@
 							<div class="row mb-1">
 								<h4>Options</h4>
 							</div>
-							<div class="row mb-1 align-items-center">
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<label class="mb-0">Cheats: </label>
-								</div>
-								<div class="col-1">
-									<input type="checkbox" class="checkbox-xl" id="cheats" onChange="populateall()">
-								</div>
-								<div class="col-7" col-md-2>
-									<a href="#fakecanvas">
-										<button class="btn btn-primary" onclick="reload()">Generate hero</button>
-									</a>
+							<div class="row mb-1">
+								<div class="options">
+									<div>
+										<label class="mb-0">Cheats: </label>
+										<input type="checkbox" class="checkbox-xl" id="cheats" onChange="populateall()">
+									</div>
+									<div>
+										<label class="mb-0">Best skills: </label>
+										<input type="checkbox" class="checkbox-xl" id="bestskills" onChange="populateall()" checked>
+									</div>
+									<div>
+										<a href="#fakecanvas">
+											<button class="btn btn-primary" onclick="reload()">Generate hero</button>
+										</a>
+									</div>
 								</div>
 							</div>
 						</section>

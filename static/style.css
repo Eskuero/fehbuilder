@@ -29,6 +29,14 @@ body {
 	height: 18px;
 }
 
+.options {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	white-space: nowrap;
+	gap: 1em 2em;
+}
+
 .ver-align-mid {
 	vertical-align: middle;
 }
