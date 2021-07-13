@@ -17,7 +17,7 @@ selectS = document.getElementById('Sskill');
 selectblessings = document.getElementById('blessing');
 selectsummoner = document.getElementById('summoner');
 selectattire = document.getElementById('attire');
-legality = document.getElementById('legality');
+cheats = document.getElementById('cheats');
 // Where we show the image
 var canvas = document.getElementById('fakecanvas');
 
@@ -69,14 +69,32 @@ function populate(select, data, list, bypass) {
 	while (select.lastChild && select.childElementCount > 1) {
         select.removeChild(select.lastChild);
     }
-	// For enabled legality we only add the options that match move and type restrictions (also bypass for the units select)
-	if (cheats.checked == false && ! bypass && selectheroes.value != "None") {
-		// By default we do not add the skill
-		add = false
+    // If indicated to bypass don't do checks for this select, print everything and leave
+    if (bypass) {
+		list.forEach((value) => {
+			var opt = document.createElement('option');
+			opt.value = value;
+			opt.innerHTML = value;
+			select.appendChild(opt);
+		});
+		return;
+	}
+	if (selectheroes.value != "None") {
+		// Hero info for possible later checks
 		weapontype = units[selectheroes.value]["WeaponType"]
 		movetype = units[selectheroes.value]["moveType"]
 		basekit = units[selectheroes.value]["basekit"]
-		list.forEach((value) => {
+	// If no hero is selected we have nothing to do
+	} else {
+		return;
+	}
+	// For disabled cheats we only add the options that match move/ type restrictions and exclusive skills
+	list.forEach((value) => {
+		// If we arrived here we might or might not have to do checks so enable adding the skill by default
+		add = true
+		if (cheats.checked == false) {
+			// Cheat mode is disabled so now we conditionally enable the skill and the default value must be false
+			add = false
 			// Check if the skills has weapon restrictions and if it does check if we meet them
 			if ("WeaponType" in data[value]) {
 				if (data[value]["WeaponType"].includes(weapontype)) {
@@ -104,23 +122,15 @@ function populate(select, data, list, bypass) {
 					return;
 				}
 			}
-			// Arriving at this check with a true add value measn we can add the option
-			if (add) {
-				var opt = document.createElement('option');
-				opt.value = value;
-				opt.innerHTML = value;
-				select.appendChild(opt);
-			}
-		});
-	// If we are cheating we just add as much options as we have to everything and anything
-	} else {
-		list.forEach((value) => {
+		}
+		// Arriving at this check with a true add value measn we can add the option
+		if (add) {
 			var opt = document.createElement('option');
 			opt.value = value;
 			opt.innerHTML = value;
 			select.appendChild(opt);
-		});
-	}
+		}
+	});
 }
 
 function reload() {
