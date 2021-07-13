@@ -1,12 +1,9 @@
 body {
 	display: block;
 	height: 100%;
-
-	/* CSS for future background image. */
 	background-image: url("assets/BG_Brave.png");
-
 	background-position: center;
-	/*background-repeat: no-repeat;*/
+	background-attachment: fixed;
 	background-size: cover;
 }
 
