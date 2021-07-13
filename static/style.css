@@ -67,4 +67,7 @@ select, button {
 		width: 98vw;
 		height: auto;
 	}
+	#form {
+		min-height: auto;
+	}
 }
