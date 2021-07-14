@@ -14,7 +14,8 @@ def download():
 		print(icon)
 		# Grab and paste the heroes art in the image
 		response = requests.get(icons[icon])
-		size = (44, 44) if "Refine" in icon else ((60, 60) if "flower" in icon else (32, 32))
+		# FIXME: This is becoming a real mess
+		size = (44, 44) if "Refine" in icon else ((60, 60) if "flower" in icon else ((48, 48) if "fallback" in icon else (32, 32)))
 		art = Image.open(io.BytesIO(response.content)).resize(size)
 		art.save("../data/img/icons/" + icon + ".png", 'PNG')
 	for bigicon in bigicons:
@@ -70,7 +71,11 @@ icons = {
 	"Res-Refine": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/50/Resistance_Plus_W.png",
 	"Dazzling-Refine": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/5c/Dazzling_Staff_W.png",
 	"Wrathful-Refine": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/4/42/Wrathful_Staff_W.png",
-	"weapon-Refine": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/82/Icon_Skill_Weapon.png"
+	"weapon-Refine": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/82/Icon_Skill_Weapon.png",
+	"fallback-skillA": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/10/Icon_Skill_Passive_A.png",
+	"fallback-skillB": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/ca/Icon_Skill_Passive_B.png",
+	"fallback-skillC": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/01/Icon_Skill_Passive_C.png",
+	"fallback-skillS": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/9c/Icon_Skill_Passive_S.png"
 }
 bigicons = {
 	"Water-Blessing": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/2e/Icon_LegendWater.png",

@@ -71,9 +71,13 @@ def getimage():
 			art = Image.open("../data/img/heroes/" + name + ("_Resplendent.webp" if hero["attire"] and heroes[name]["resplendent"] else ".webp"))
 		else:
 			# Grab and paste the heroes art in the image
-			response = requests.get(heroart)
-			art = Image.open(io.BytesIO(response.content)).resize((1330, 1596))
-			art.save("../data/img/heroes/" + name + ("_Resplendent.webp" if hero["attire"] and heroes[name]["resplendent"] else ".webp"), 'WEBP')
+			try:
+				response = requests.get(heroart)
+				art = Image.open(io.BytesIO(response.content)).resize((1330, 1596))
+				art.save("../data/img/heroes/" + name + ("_Resplendent.webp" if hero["attire"] and heroes[name]["resplendent"] else ".webp"), 'WEBP')
+			# If anything went wrong on downloading and parsing the image fall back to an error one
+			except:
+				art = Image.open("../data/img/base/missigno.png")
 		canvas.paste(art, (-305, 0), art)
 		# Paste the foregroud UI
 		canvas.paste(fg, (0, 0), fg)
@@ -173,9 +177,12 @@ def getimage():
 				art = Image.open("../data/img/icons/" + hero["passiveA"].replace(" ", "_").replace("/", "_") + ".png")
 			else:
 				# Download, resize and cache the picture
-				response = requests.get(skills["passives"]["A"][hero["passiveA"]]["icon"])
-				art = Image.open(io.BytesIO(response.content)).resize((48, 48))
-				art.save("../data/img/icons/" + hero["passiveA"].replace(" ", "_").replace("/", "_") + ".png", 'PNG')
+				try:
+					response = requests.get(skills["passives"]["A"][hero["passiveA"]]["icon"])
+					art = Image.open(io.BytesIO(response.content)).resize((48, 48))
+					art.save("../data/img/icons/" + hero["passiveA"].replace(" ", "_").replace("/", "_") + ".png", 'PNG')
+				except:
+					art = Image.open("../data/img/icons/fallback-skillA.png")
 			canvas.paste(art, (369, 943), art)
 			draw.text((420, 953), hero["passiveA"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 		# If the passive is not the list we skip it
@@ -185,9 +192,12 @@ def getimage():
 				art = Image.open("../data/img/icons/" + hero["passiveB"].replace(" ", "_").replace("/", "_") + ".png")
 			else:
 				# Download, resize and cache the picture
-				response = requests.get(skills["passives"]["B"][hero["passiveB"]]["icon"])
-				art = Image.open(io.BytesIO(response.content)).resize((46, 46))
-				art.save("../data/img/icons/" + hero["passiveB"].replace(" ", "_").replace("/", "_") + ".png", 'PNG')
+				try:
+					response = requests.get(skills["passives"]["B"][hero["passiveB"]]["icon"])
+					art = Image.open(io.BytesIO(response.content)).resize((46, 46))
+					art.save("../data/img/icons/" + hero["passiveB"].replace(" ", "_").replace("/", "_") + ".png", 'PNG')
+				except:
+					art = Image.open("../data/img/icons/fallback-skillB.png")
 			canvas.paste(art, (369, 993), art)
 			draw.text((420, 1003), hero["passiveB"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 		# If the passive is not the list we skip it
@@ -197,9 +207,12 @@ def getimage():
 				art = Image.open("../data/img/icons/" + hero["passiveC"].replace(" ", "_").replace("/", "_") + ".png")
 			else:
 				# Download, resize and cache the picture
-				response = requests.get(skills["passives"]["C"][hero["passiveC"]]["icon"])
-				art = Image.open(io.BytesIO(response.content)).resize((48, 48))
-				art.save("../data/img/icons/" + hero["passiveC"].replace(" ", "_").replace("/", "_") + ".png", 'PNG')
+				try:
+					response = requests.get(skills["passives"]["C"][hero["passiveC"]]["icon"])
+					art = Image.open(io.BytesIO(response.content)).resize((48, 48))
+					art.save("../data/img/icons/" + hero["passiveC"].replace(" ", "_").replace("/", "_") + ".png", 'PNG')
+				except:
+					art = Image.open("../data/img/icons/fallback-skillC.png")
 			canvas.paste(art, (369, 1043), art)
 			draw.text((420, 1053), hero["passiveC"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 		# If the passive is not the list we skip it
@@ -209,9 +222,12 @@ def getimage():
 				art = Image.open("../data/img/icons/" + hero["passiveS"].replace(" ", "_").replace("/", "_") + ".png")
 			else:
 				# Download, resize and cache the picture
-				response = requests.get(skills["passives"]["S"][hero["passiveS"]]["icon"])
-				art = Image.open(io.BytesIO(response.content)).resize((48, 48))
-				art.save("../data/img/icons/" + hero["passiveS"].replace(" ", "_").replace("/", "_") + ".png", 'PNG')
+				try:
+					response = requests.get(skills["passives"]["S"][hero["passiveS"]]["icon"])
+					art = Image.open(io.BytesIO(response.content)).resize((48, 48))
+					art.save("../data/img/icons/" + hero["passiveS"].replace(" ", "_").replace("/", "_") + ".png", 'PNG')
+				except:
+					art = Image.open("../data/img/icons/fallback-skillS.png")
 			canvas.paste(art, (369, 1093), art)
 			draw.text((420, 1103), hero["passiveS"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 		# If the blessing is not valid we skip it
