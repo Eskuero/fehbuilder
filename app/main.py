@@ -4,6 +4,7 @@ import requests
 import io
 import json
 import pathlib
+from datetime import datetime
 
 # Import out external file of utilities
 import utilities
@@ -55,7 +56,8 @@ def getimage():
 			"blessing": flask.request.args.get('blessing') if flask.request.args.get('blessing') != "None" else "",
 			"attire": True if flask.request.args.get('attire') != "Normal" else False
 		}
-		print(hero)
+		now = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+		print(now + " - " + str(hero))
 		# For any support level we change the bg
 		if hero["summoner"]:
 			bg = Image.open("../data/img/other/summonerbg.png")
