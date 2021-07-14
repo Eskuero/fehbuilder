@@ -121,9 +121,9 @@ def getimage():
 		draw.text((265, 1052), "9999", font=font, anchor="ra", fill="#82f546", stroke_width=3, stroke_fill="#0a2533")
 		draw.text((265, 1100), "7000", font=font, anchor="ra", fill="#82f546", stroke_width=3, stroke_fill="#0a2533")
 		# Print the move type and weapon type icons
-		movetype = Image.open("../data/img/icons/" + heroes[name]["moveType"].lstrip() + "-move.png")
+		movetype = Image.open("../data/img/other/" + heroes[name]["moveType"].lstrip() + "-move.png")
 		canvas.paste(movetype, (229, 743), movetype)
-		weapontype = Image.open("../data/img/icons/" + heroes[name]["WeaponType"].lstrip() + ".png")
+		weapontype = Image.open("../data/img/other/" + heroes[name]["WeaponType"].lstrip() + "-weapon.png")
 		canvas.paste(weapontype, (20, 742), weapontype)
 
 		# If we have merges we add the text next to the level
@@ -136,7 +136,7 @@ def getimage():
 			font = ImageFont.truetype("../data/" + config["fontfile"], 25)
 			flowerholder = Image.open("../data/img/base/flowerholder.png")
 			canvas.paste(flowerholder, (271, 732), flowerholder)
-			flowericon = Image.open("../data/img/icons/" + heroes[name]["moveType"].lstrip() + "-flower.png")
+			flowericon = Image.open("../data/img/other/" + heroes[name]["moveType"].lstrip() + "-flower.png")
 			canvas.paste(flowericon, (289, 727), flowericon)
 			draw.text((345, 742), "+", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 			draw.text((364, 744), hero["flowers"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
@@ -181,7 +181,7 @@ def getimage():
 					# Download, resize and cache the picture
 					try:
 						response = requests.get(skills["passives"][category][hero["passive" + category]]["icon"])
-						art = Image.open(io.BytesIO(response.content)).resize((48, 48))
+						art = Image.open(io.BytesIO(response.content)).resize((44, 44))
 						art.save("../data/img/icons/" + hero["passive" + category].replace(" ", "_").replace("/", "_") + ".png", 'PNG')
 					except:
 						art = Image.open("../data/img/icons/fallback-skill" + category + ".png")

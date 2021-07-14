@@ -67,8 +67,8 @@ def weaponmodifiers(name, weapon, refine):
 
 # Define the positions where each passive must render
 passiverender = {
-	"A": {"icon": (369, 943), "text": (420, 953)},
-	"B": {"icon": (369, 993), "text": (420, 1003)},
+	"A": {"icon": (369, 945), "text": (420, 953)},
+	"B": {"icon": (369, 994), "text": (420, 1003)},
 	"C": {"icon": (369, 1043), "text": (420, 1053)},
 	"S": {"icon": (369, 1093), "text": (420, 1103)}
 }
