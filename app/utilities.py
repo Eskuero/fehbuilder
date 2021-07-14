@@ -51,6 +51,29 @@ def statcalc(stats, growths, boon, bane, merges, flowers):
 		"Res": truelevel1["Res"] + math.trunc(39 * (math.trunc(truegrowth["Res"] * 1.140000001) / 100))
 	}
 
+def weaponmodifiers(name, weapon, refine):
+	# Not multiplier (in case no check is met)
+	stats = [0, 0, 0, 0, 0]
+	# Obtain the normal values from the base weapon
+	if weapon:
+		stats = [int(x) for x in weapon["statModifiers"]]
+	# If the weapon is refined then add with the values
+	if refine:
+		stats = [x+y for x,y in zip(stats, refinemodifierchart[weapon["WeaponType"][0]][refine])]
+		# This list of weapons are brave melee of the triangle axe-lance-sword and suffer a -1 penalty when refining for Atk so we check this
+		if name in ["Amiti", "Arden's Blade", "Cherche's Axe", "Hewn Lance", "Rowdy Sword"] and refine == "Atk":
+			stats[1] -= 1
+	return stats
+
+# Define the positions where each passive must render
+passiverender = {
+	"A": {"icon": (369, 943), "text": (420, 953)},
+	"B": {"icon": (369, 993), "text": (420, 1003)},
+	"C": {"icon": (369, 1043), "text": (420, 1053)},
+	"S": {"icon": (369, 1093), "text": (420, 1103)}
+}
+
+# Base ruleset for refine visual stats depending on weapon type
 refinemodifierchart = {
 	"Red Sword": {"Effect": [3, 0, 0, 0, 0], "Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
 	"Blue Lance": {"Effect": [3, 0, 0, 0, 0], "Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
@@ -73,23 +96,10 @@ refinemodifierchart = {
 	"Colorless Staff": {"Dazzling": [0, 0, 0, 0, 0], "Wrathful": [0, 0, 0, 0, 0], "Effect": [0, 0, 0, 0, 0]}
 }
 
+# Visible stats from having Summoner Support
 summonerranks = {
 	"C": [3, 0, 0, 0, 2],
 	"B": [4, 0, 0, 2, 2],
 	"A": [4, 0, 2, 2, 2],
 	"S": [5, 2, 2, 2, 2]
 }
-
-def weaponmodifiers(name, weapon, refine):
-	# Not multiplier (in case no check is met)
-	stats = [0, 0, 0, 0, 0]
-	# Obtain the normal values from the base weapon
-	if weapon:
-		stats = [int(x) for x in weapon["statModifiers"]]
-	# If the weapon is refined then add with the values
-	if refine:
-		stats = [x+y for x,y in zip(stats, refinemodifierchart[weapon["WeaponType"][0]][refine])]
-		# This list of weapons are brave melee of the triangle axe-lance-sword and suffer a -1 penalty when refining for Atk so we check this
-		if name in ["Amiti", "Arden's Blade", "Cherche's Axe", "Hewn Lance", "Rowdy Sword"] and refine == "Atk":
-			stats[1] -= 1
-	return stats

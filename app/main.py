@@ -145,7 +145,6 @@ def getimage():
 		expindicator = Image.open("../data/img/base/expindicator.png")
 		canvas.paste(expindicator, (418, 732) if int(hero["flowers"]) > 0 else (271, 732), expindicator)
 
-
 		font = ImageFont.truetype("../data/" + config["fontfile"], 23)
 		# Print weapon info
 		if hero["weapon"]:
@@ -170,66 +169,25 @@ def getimage():
 		# Print assist and special info
 		draw.text((420, 853), hero["assist"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 		draw.text((420, 903), hero["special"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
-		# If the passive is not the list we skip it
-		if hero["passiveA"] in skills["passives"]["A"]:
-			# Check if the icon art is already in the temporal folder for speeding up requests from the wiki
-			if (pathlib.Path("../data/img/icons/" + hero["passiveA"].replace(" ", "_").replace("/", "_") + ".png").is_file()):
-				art = Image.open("../data/img/icons/" + hero["passiveA"].replace(" ", "_").replace("/", "_") + ".png")
-			else:
-				# Download, resize and cache the picture
-				try:
-					response = requests.get(skills["passives"]["A"][hero["passiveA"]]["icon"])
-					art = Image.open(io.BytesIO(response.content)).resize((48, 48))
-					art.save("../data/img/icons/" + hero["passiveA"].replace(" ", "_").replace("/", "_") + ".png", 'PNG')
-				except:
-					art = Image.open("../data/img/icons/fallback-skillA.png")
-			canvas.paste(art, (369, 943), art)
-			draw.text((420, 953), hero["passiveA"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
-		# If the passive is not the list we skip it
-		if hero["passiveB"] in skills["passives"]["B"]:
-			# Check if the icon art is already in the temporal folder for speeding up requests from the wiki
-			if (pathlib.Path("../data/img/icons/" + hero["passiveB"].replace(" ", "_").replace("/", "_") + ".png").is_file()):
-				art = Image.open("../data/img/icons/" + hero["passiveB"].replace(" ", "_").replace("/", "_") + ".png")
-			else:
-				# Download, resize and cache the picture
-				try:
-					response = requests.get(skills["passives"]["B"][hero["passiveB"]]["icon"])
-					art = Image.open(io.BytesIO(response.content)).resize((46, 46))
-					art.save("../data/img/icons/" + hero["passiveB"].replace(" ", "_").replace("/", "_") + ".png", 'PNG')
-				except:
-					art = Image.open("../data/img/icons/fallback-skillB.png")
-			canvas.paste(art, (369, 993), art)
-			draw.text((420, 1003), hero["passiveB"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
-		# If the passive is not the list we skip it
-		if hero["passiveC"] in skills["passives"]["C"]:
-			# Check if the icon art is already in the temporal folder for speeding up requests from the wiki
-			if (pathlib.Path("../data/img/icons/" + hero["passiveC"].replace(" ", "_").replace("/", "_") + ".png").is_file()):
-				art = Image.open("../data/img/icons/" + hero["passiveC"].replace(" ", "_").replace("/", "_") + ".png")
-			else:
-				# Download, resize and cache the picture
-				try:
-					response = requests.get(skills["passives"]["C"][hero["passiveC"]]["icon"])
-					art = Image.open(io.BytesIO(response.content)).resize((48, 48))
-					art.save("../data/img/icons/" + hero["passiveC"].replace(" ", "_").replace("/", "_") + ".png", 'PNG')
-				except:
-					art = Image.open("../data/img/icons/fallback-skillC.png")
-			canvas.paste(art, (369, 1043), art)
-			draw.text((420, 1053), hero["passiveC"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
-		# If the passive is not the list we skip it
-		if hero["passiveS"] in skills["passives"]["S"]:
-			# Check if the icon art is already in the temporal folder for speeding up requests from the wiki
-			if (pathlib.Path("../data/img/icons/" + hero["passiveS"].replace(" ", "_").replace("/", "_") + ".png").is_file()):
-				art = Image.open("../data/img/icons/" + hero["passiveS"].replace(" ", "_").replace("/", "_") + ".png")
-			else:
-				# Download, resize and cache the picture
-				try:
-					response = requests.get(skills["passives"]["S"][hero["passiveS"]]["icon"])
-					art = Image.open(io.BytesIO(response.content)).resize((48, 48))
-					art.save("../data/img/icons/" + hero["passiveS"].replace(" ", "_").replace("/", "_") + ".png", 'PNG')
-				except:
-					art = Image.open("../data/img/icons/fallback-skillS.png")
-			canvas.paste(art, (369, 1093), art)
-			draw.text((420, 1103), hero["passiveS"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+
+		# Render all the passives
+		for category in utilities.passiverender.keys():
+			# If the passive is not the list we skip it
+			if hero["passive" + category] in skills["passives"][category]:
+				# Check if the icon art is already in the temporal folder for speeding up requests from the wiki
+				if (pathlib.Path("../data/img/icons/" + hero["passive" + category].replace(" ", "_").replace("/", "_") + ".png").is_file()):
+					art = Image.open("../data/img/icons/" + hero["passive" + category].replace(" ", "_").replace("/", "_") + ".png")
+				else:
+					# Download, resize and cache the picture
+					try:
+						response = requests.get(skills["passives"][category][hero["passive" + category]]["icon"])
+						art = Image.open(io.BytesIO(response.content)).resize((48, 48))
+						art.save("../data/img/icons/" + hero["passive" + category].replace(" ", "_").replace("/", "_") + ".png", 'PNG')
+					except:
+						art = Image.open("../data/img/icons/fallback-skill" + category + ".png")
+				canvas.paste(art, utilities.passiverender[category]["icon"], art)
+				draw.text(utilities.passiverender[category]["text"], hero["passive" + category], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+
 		# If the blessing is not valid we skip it
 		if hero["blessing"] in ["Dark", "Light", "Anima", "Astra", "Fire", "Water", "Earth", "Wind"]:
 			blessingicon = Image.open("../data/img/other/" + hero["blessing"] + "-Blessing.png")
