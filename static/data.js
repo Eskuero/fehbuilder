@@ -40,7 +40,7 @@ fetch('units.json')
 	.then((out) => {
 		// We store the skills for basic checks within the browser
 		units = out
-		populate(selectheroes, units, Object.keys(units), true)
+		populate(selectheroes, units, true)
 }).catch(err => console.error(err));
 fetch('skills.json')
 	.then(res => res.json())
@@ -52,27 +52,29 @@ fetch('skills.json')
 
 function populateall() {
 	// We go through all the selects
-	populate(selectweapons, skills["weapons"], Object.keys(skills["weapons"]))
-	populate(selectspecials, skills["specials"], Object.keys(skills["specials"]))
-	populate(selectassists, skills["assists"], Object.keys(skills["assists"]))
-	populate(selectA, skills["passives"]["A"], Object.keys(skills["passives"]["A"]))
-	populate(selectB, skills["passives"]["B"], Object.keys(skills["passives"]["B"]))
-	populate(selectC, skills["passives"]["C"], Object.keys(skills["passives"]["C"]))
-	populate(selectS, skills["passives"]["S"], Object.keys(skills["passives"]["S"]))
+	populate(selectweapons, skills["weapons"])
+	populate(selectspecials, skills["specials"])
+	populate(selectassists, skills["assists"])
+	populate(selectA, skills["passives"]["A"])
+	populate(selectB, skills["passives"]["B"])
+	populate(selectC, skills["passives"]["C"])
+	populate(selectS, skills["passives"]["S"])
     // Make sure we do not end with an invalid refine option setup
     updateRefine()
 	// Add only the required amount of flowers
 	updatedragonflowers()
 }
 
-function populate(select, data, list, bypass) {
+function populate(select, data, bypass) {
+	// Get current value to restore it back if possible
+	previousvalue = select.value
 	// First delete them all except the None element
 	while (select.lastChild && select.childElementCount > 1) {
         select.removeChild(select.lastChild);
     }
     // If indicated to bypass don't do checks for this select, print everything and leave
     if (bypass) {
-		list.forEach((value) => {
+		Object.keys(data).forEach((value) => {
 			var opt = document.createElement('option');
 			opt.value = value;
 			opt.innerHTML = value;
@@ -90,14 +92,14 @@ function populate(select, data, list, bypass) {
 		return;
 	}
 	// For disabled cheats we only add the options that match move/ type restrictions and exclusive skills
-	list.forEach((value) => {
+	Object.keys(data).forEach((value) => {
 		// If we arrived here we might or might not have to do checks so enable adding the skill by default
 		add = true
-		// The entire logic is processed on the python scripts so we just have to check the value set for the corresponding property
-		if (bestskills.checked == true && ! data[value]["isMax"]) {
+		// The entire logic is processed on the python scripts so we just have to check the value set for the corresponding property. Previous values might go through the bestskills check since if we have enabled it after selecting a lower tier skill we don't go to erase it
+		if (bestskills.checked == true && ! data[value]["isMax"] && value != previousvalue) {
 			return;
 		}
-		if (cheats.checked == false) {
+		if (cheats.checked == false && value != previousvalue) {
 			// Cheat mode is disabled so now we conditionally enable the skill and the default value must be false even if we might have passed bestskills checks
 			add = false
 			// Check if the skills has weapon restrictions and if it does check if we meet them
@@ -136,6 +138,10 @@ function populate(select, data, list, bypass) {
 			select.appendChild(opt);
 		}
 	});
+	// Restore the previous value if it's available on the updated select
+	if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
+		select.value = previousvalue;
+	}
 }
 
 function reload() {
@@ -143,6 +149,8 @@ function reload() {
 }
 
 function updatedragonflowers() {
+	// Get current value to restore it back if possible
+	previousvalue = selectflowers.value
 	// Default for cheating mode is 15
 	flowers = 15;
 	// First delete them all except the 0 element
@@ -167,11 +175,17 @@ function updatedragonflowers() {
 		opt.innerHTML = i;
 		selectflowers.appendChild(opt);
 	}
+	// Restore the previous value if it's available on the updated select
+	if ([...selectflowers.options].map(opt => opt.value).includes(previousvalue)) {
+		selectflowers.value = previousvalue;
+	}
 }
 
 
 
 function updateRefine() {
+	// Get current value to restore it back if possible
+	previousvalue = selectrefines.value
 	weapon = selectweapons.value
 
 	// Clear all children on the refine select first
@@ -217,5 +231,9 @@ function updateRefine() {
 			opt.innerHTML = stat;
 			selectrefines.appendChild(opt);
 		});
+	}
+	// Restore the previous value if it's available on the updated select
+	if ([...selectrefines.options].map(opt => opt.value).includes(previousvalue)) {
+		selectrefines.value = previousvalue;
 	}
 }
