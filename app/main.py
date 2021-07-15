@@ -27,7 +27,7 @@ with open("../data/skills.json", "r") as datasource:
 def getimage():
 	# Create new image
 	canvas = Image.new("RGBA", (720, 1280))
-	# Open the basic fg and bg images
+	# Open the basic bg image
 	fg = Image.open("../data/img/base/foreground.png")
 	bg = Image.open("../data/img/other/normalbg.png")
 	# Paste the background first than anything UI
@@ -54,7 +54,8 @@ def getimage():
 			"passiveS": flask.request.args.get('passiveS') if flask.request.args.get('passiveS') != "None" else "",
 			"summoner": flask.request.args.get('summoner') if flask.request.args.get('summoner') != "None" else "",
 			"blessing": flask.request.args.get('blessing') if flask.request.args.get('blessing') != "None" else "",
-			"attire": True if flask.request.args.get('attire') != "Normal" else False
+			"attire": True if flask.request.args.get('attire') != "Normal" else False,
+			"appui": False if flask.request.args.get('appui') == "false" else True
 		}
 		now = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
 		print(now + " - " + str(hero))
@@ -80,6 +81,8 @@ def getimage():
 				art = Image.open("../data/img/base/missigno.png")
 		canvas.paste(art, (-305, 0), art)
 		# Paste the foregroud UI
+		if hero["appui"]:
+			fg = Image.open("../data/img/base/foreground-ui.png")
 		canvas.paste(fg, (0, 0), fg)
 		# Print the resplendent icon
 		if hero["attire"]:
@@ -91,6 +94,11 @@ def getimage():
 		# Write the title and name using an horizontally centered anchor to avoid going out of bounds
 		draw.text((188, 585), hero["title"], font=font, anchor="mm", stroke_width=3, stroke_fill=(50, 30, 10))
 		draw.text((222, 659), hero["name"], font=font, anchor="mm", stroke_width=3, stroke_fill=(50, 30, 10))
+		# Print the artist and actor names if appui enabled
+		if hero["appui"]:
+			font = ImageFont.truetype("../data/" + config["fontfile"], 21)
+			draw.text((47, 1212), heroes[name]["actor"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+			draw.text((47, 1241), heroes[name]["artist"], font=font, fill="#ffffff",stroke_width=3, stroke_fill="#0a2533")
 		# First write the static text for each stat (normal anchoring)
 		font = ImageFont.truetype("../data/" + config["fontfile"], 25)
 		draw.text((115, 805), "HP", font=font, fill="#b1ecfa" if hero["boon"] == "HP" else ("#f0a5b3" if hero["bane"] == "HP" and int(hero["merges"]) == 0 else "#ffffff"), stroke_width=3, stroke_fill="#0a2533")

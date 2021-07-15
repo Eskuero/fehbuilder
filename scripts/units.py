@@ -35,7 +35,7 @@ for hero in [entry["title"] for entry in utils.retrieveapidata(params)]:
 params = dict(
     action = 'cargoquery', limit = 'max', offset = -500, format = 'json',
     tables = 'Units',
-    fields = '_pageName=Name,WeaponType,MoveType,AdditionDate'
+    fields = '_pageName=Name,WeaponType,MoveType,Artist,ActorEN,AdditionDate'
 )
 herodata = {}
 stop = False
@@ -52,6 +52,15 @@ resplendentlist = []
 # Get skill data every time individually before upon entering the loop
 for hero in [entry["title"]["Name"] for entry in utils.retrieveapidata(params)]:
 	resplendentlist.append(hero)
+
+# Parameters to send the API whe requesting the whole list of artists (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Artists&fields=Name,NameUSEN&limit=max&format=json)
+params = dict(
+    action = 'cargoquery', limit = 'max', offset = -500, format = 'json',
+    tables = 'Artists',
+    fields = 'Name,NameUSEN'
+)
+# Store the english name equivalent for each JP one
+artistsnames = {artist["Name"]: artist["NameUSEN"] for artist in [entry["title"] for entry in utils.retrieveapidata(params)]}
 
 # Parameters to send the API whe requesting the whole list of heroes for stats (https://feheroes.fandom.com/api.php?action=cargoquery&tables=UnitStats&fields=_pageName=Name,Lv1HP5,Lv1Atk5,Lv1Spd5,Lv1Def5,Lv1Res5,HPGR3,AtkGR3,SpdGR3,DefGR3,ResGR3&limit=max&format=json)
 params = dict(
@@ -82,7 +91,9 @@ for hero in [entry["title"] for entry in utils.retrieveapidata(params)]:
 		"AdditionDate": herodata[hero["Name"]]["AdditionDate"],
 		"frontArt": utils.obtaintrueurl(hero["Name"] + ("_BtlFace.png" if ":" not in hero["Name"] else "_Face.webp")),
 		"resplendent": utils.obtaintrueurl(hero["Name"] + "_Resplendent_Face.webp") if hero["Name"] in resplendentlist else False,
-		"basekit": heroskills[hero["Name"]] if hero["Name"] in heroskills else []
+		"basekit": heroskills[hero["Name"]] if hero["Name"] in heroskills else [],
+		"artist": artistsnames[herodata[hero["Name"]]["Artist"]] if herodata[hero["Name"]]["Artist"] in artistsnames else "",
+		"actor": herodata[hero["Name"]]["ActorEN"].replace(",", " + ")
 	}
 
 with open("../data/units.json", "w") as outfile:
@@ -93,7 +104,7 @@ heroeslite = {
 	heroname: {
 		property: value
 		for property, value in properties.items() if property in ["WeaponType", "moveType", "AdditionDate", "basekit"]
-	} 
+	}
 	for heroname, properties in heroes.items()
 }
 
