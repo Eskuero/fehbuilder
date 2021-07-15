@@ -50,6 +50,36 @@ params = dict(
 )
 seals = [seal["Skill"] for seal in [entry["title"] for entry in utils.retrieveapidata(params)]]
 
+# Parameters to send the API whe requesting the list of skills grouped by family (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=group_concat(Name)=FamilyMembers,SP,Scategory&group_by=GroupName&limit=max&offset=0&format=json)
+params = dict(
+    action = 'cargoquery', limit = 'max', offset = -500, format = 'json',
+    tables = 'Skills',
+    fields = 'group_concat(Name)=FamilyMembers,SP,Scategory',
+    group_by = 'GroupName'
+)
+# We will use this list later to check which skills are considered max value of their family
+maxskills = []
+for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
+	# For weapons the anything with more than 200 SP is valid since that's the value for prerequisites of the Steel Axes
+	if skill["Scategory"] == "weapon" and int(skill["SP"]) > 200:
+		maxskills.append(sorted(skill["FamilyMembers"].split(","))[-1])
+	# For assists our checks are more complex. For assists that only score 150 we add them only if they are not base rallies.
+	elif skill["Scategory"] == "assist" and (int(skill["SP"]) > 150 or "Rally" not in skill["FamilyMembers"]):
+		maxskills.append(sorted(skill["FamilyMembers"].split(","))[-1])
+	# Specials are fine as long as they cost more than 100 SP (Base versions of the boosting ones are worth 100 and the ones for AoE are 150) except for Heavenly Light because is the only upgrade from Imbue
+	elif skill["Scategory"] == "special" and (int(skill["SP"]) > 150 or "Heavenly Light" in skill["FamilyMembers"]):
+		maxskills.append(sorted(skill["FamilyMembers"].split(","))[-1])
+	# Arriving here means the skill is a passive and has a well defined family and the skill we add depends on their size
+	elif skill["Scategory"] in ["passivea", "passiveb", "passivec", "sacredseal"]:
+		family = sorted(skill["FamilyMembers"].split(","))
+		# We always add the last member unless there are four, then we also add the second last because tier 3 ones are available by themselves except Ideals and Catchs (yet!)
+		maxskills.append(family[-1])
+		if len(family) == 4:
+			maxskills.append(family[-2])
+
+# Now ignore every skill that has a clone ending with "+" (refinable inheritable or improved specials/assists) or " II" (those are remix prf)
+maxskills = [skill for skill in maxskills if (skill + "+") not in maxskills and (skill + " II") not in maxskills]
+
 # Parameters to send the API whe requesting the whole list of skills (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=Name,Scategory,StatModifiers,CanUseMove,CanUseWeapon,Exclusive,group_concat(Icon)=Icon,group_concat(RefinePath)=refines,SP&group_by=Name&limit=max&offset=0&format=json)
 params = dict(
     action = 'cargoquery', limit = 'max', offset = -500, format = 'json',
@@ -74,7 +104,7 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 			"specialIcon": False,
 			"upgrades": True if skill["refines"] != "" else False,
 			"exclusive": True if skill["Exclusive"] == "1" else False,
-			"cost": int(skill["SP"])
+			"isMax": True if skill["Name"] in maxskills else False
 		}
 		# If we had upgrades and a skill1 string is on the refine list we have a custom icon and an additional effect
 		if skills["weapons"][skill["Name"]]["upgrades"] and "skill1" in skill["refines"]:
@@ -85,7 +115,7 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 		skills["assists"][skill["Name"]] = {
 			"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),
 			"exclusive": True if skill["Exclusive"] == "1" else False,
-			"cost": int(skill["SP"])
+			"isMax": True if skill["Name"] in maxskills else False
 		}
 	# Special type handling
 	if skill["Scategory"] == "special":
@@ -93,7 +123,7 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 		skills["specials"][skill["Name"]] = {
 			"WeaponType": skill["CanUseWeapon"].replace(", ", ",").split(", "),
 			"exclusive": True if skill["Exclusive"] == "1" else False,
-			"cost": int(skill["SP"])
+			"isMax": True if skill["Name"] in maxskills else False
 		}
 	# Passive type handling
 	if skill["Scategory"] in ["passivea", "passiveb", "passivec"]:
@@ -106,7 +136,7 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 			"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),
 			"moveType": skill["CanUseMove"].replace(",  ", ",").split(","),
 			"exclusive": True if skill["Exclusive"] == "1" else False,
-			"cost": int(skill["SP"])
+			"isMax": True if skill["Name"] in maxskills else False
 		}
 	# Seals type handling
 	if skill["Scategory"] == "sacredseal":
@@ -117,7 +147,7 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 			"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),
 			"moveType": skill["CanUseMove"].replace(",  ", ",").split(","),
 			"exclusive": True if skill["Exclusive"] == "1" else False,
-			"cost": int(skill["SP"])
+			"isMax": True if skill["Name"] in maxskills else False
 		}
 
 # Complete the seals data
@@ -138,7 +168,7 @@ skillslite = {
 	"weapons": {
 		weaponname: {
 			property: value
-			for property, value in properties.items() if property in ["specialIcon", "upgrades", "WeaponType", "moveType", "exclusive", "cost"]
+			for property, value in properties.items() if property in ["specialIcon", "upgrades", "WeaponType", "moveType", "exclusive", "isMax"]
 		} 
 		for weaponname, properties in skills["weapons"].items()
     },
@@ -148,7 +178,7 @@ skillslite = {
 		passivecategory: {
 			passive: {
 				property: value
-				for property, value in properties.items() if property in ["WeaponType", "moveType", "exclusive", "cost"]
+				for property, value in properties.items() if property in ["WeaponType", "moveType", "exclusive", "isMax"]
 			} 
 			for passive, properties in skills["passives"][passivecategory].items()
 		}
