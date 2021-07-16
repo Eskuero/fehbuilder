@@ -1,5 +1,4 @@
 import requests
-import bs4
 import io
 import pathlib
 from PIL import Image
