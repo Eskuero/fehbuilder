@@ -71,7 +71,9 @@ params = dict(
 # Get skill data every time individually before upon entering the loop
 for hero in [entry["title"] for entry in utils.retrieveapidata(params)]:
 	print(hero["Name"])
-	heroes[hero["Name"]] = {
+	# This redefinition exists exclusive because of bikini Tharja quotation marks, what a joke
+	truename = hero["Name"].replace("&quot;", '"')
+	heroes[truename] = {
 		"stats": {
 			"HP": int(hero["Lv1HP5"]),
 			"Atk": int(hero["Lv1Atk5"]),
@@ -89,8 +91,8 @@ for hero in [entry["title"] for entry in utils.retrieveapidata(params)]:
 		"WeaponType": herodata[hero["Name"]]["WeaponType"],
 		"moveType": herodata[hero["Name"]]["MoveType"],
 		"AdditionDate": herodata[hero["Name"]]["AdditionDate"],
-		"frontArt": utils.obtaintrueurl(hero["Name"] + ("_BtlFace.png" if ":" not in hero["Name"] else "_Face.webp")),
-		"resplendent": utils.obtaintrueurl(hero["Name"] + "_Resplendent_Face.webp") if hero["Name"] in resplendentlist else False,
+		"frontArt": utils.obtaintrueurl(truename + ("_BtlFace.png" if ":" not in truename else "_Face.webp")),
+		"resplendent": utils.obtaintrueurl(truename + "_Resplendent_Face.webp") if hero["Name"] in resplendentlist else False,
 		"basekit": heroskills[hero["Name"]] if hero["Name"] in heroskills else [],
 		"artist": artistsnames[herodata[hero["Name"]]["Artist"]] if herodata[hero["Name"]]["Artist"] in artistsnames else "",
 		"actor": herodata[hero["Name"]]["ActorEN"].replace(",", " + ")

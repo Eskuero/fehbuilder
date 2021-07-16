@@ -3,13 +3,19 @@ import requests
 import unidecode
 
 def obtaintrueurl(filename):
-	# Cleaned up name for the file
-	name = unidecode.unidecode(filename).replace(" ", "_").replace(":", "").replace("?", "").replace("'", "")
-	# Download the wiki page for the icon art since we can't reliably get the real link because it appears to be in folders with random numbers
-	artpage = bs4.BeautifulSoup(requests.get("https://feheroes.fandom.com/wiki/File:" + name).text, 'html.parser')
+	# Parameters to send the API whe requesting the image info (https://feheroes.fandom.com/api.php?action=query&prop=imageinfo&titles=File:Distant%20Counter.png&iiprop=url&format=json)
+	params = dict(
+		action = 'query', format = 'json',
+		prop = "imageinfo",
+		titles = "File:" + unidecode.unidecode(filename).replace(" ", "_").replace(":", "").replace("?", "").replace("'", "").replace('"', ''),
+		iiprop = 'url'
+	)
 	try:
-		# We get the full url by reading the doc item href value
-		return artpage.select_one("a[href*=" + name.replace(".", "\.")[-20:] + "]").get('href').split("/revision")[0]
+		# Obtain URL info
+		images = requests.get(url = "https://feheroes.fandom.com/api.php", params = params).json()["query"]["pages"]
+		# The response json isn't very convenient for single image queries so we must enter a loop and return with the first value
+		for k, v in images.items():
+			return images[k]["imageinfo"][0]["url"] + "&format=original"
 	except:
 		# The referenced data art is probably incorrect and we couldn't get a full url, return here false and let the caller handle fallback values
 		return False
