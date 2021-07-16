@@ -90,7 +90,7 @@ def getimage():
 		# Print the resplendent icon
 		if hero["attire"]:
 			resplendent = Image.open("../data/img/other/resplendent.png")
-			canvas.paste(resplendent, (270, 490), resplendent)
+			canvas.paste(resplendent, (262, 492), resplendent)
 		# Write the title and name using an horizontally centered anchor to avoid going out of bounds
 		draw.text((188, 585), hero["title"], font=font, anchor="mm", stroke_width=3, stroke_fill=(50, 30, 10))
 		draw.text((222, 659), hero["name"], font=font, anchor="mm", stroke_width=3, stroke_fill=(50, 30, 10))
