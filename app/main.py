@@ -59,6 +59,9 @@ def getimage():
 		}
 		now = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
 		print(now + " - " + str(hero))
+		# Initialize the drawing rectacle and font
+		font = ImageFont.truetype("../data/" + config["fontfile"], 35)
+		draw = ImageDraw.Draw(canvas)
 		# For any support level we change the bg
 		if hero["summoner"]:
 			bg = Image.open("../data/img/other/summonerbg.png")
@@ -88,17 +91,20 @@ def getimage():
 		if hero["attire"]:
 			resplendent = Image.open("../data/img/other/resplendent.png")
 			canvas.paste(resplendent, (270, 490), resplendent)
-		# Initialize the drawing rectacle and font
-		font = ImageFont.truetype("../data/" + config["fontfile"], 35)
-		draw = ImageDraw.Draw(canvas)
 		# Write the title and name using an horizontally centered anchor to avoid going out of bounds
 		draw.text((188, 585), hero["title"], font=font, anchor="mm", stroke_width=3, stroke_fill=(50, 30, 10))
 		draw.text((222, 659), hero["name"], font=font, anchor="mm", stroke_width=3, stroke_fill=(50, 30, 10))
 		# Print the artist and actor names if appui enabled
 		if hero["appui"]:
 			font = ImageFont.truetype("../data/" + config["fontfile"], 21)
-			draw.text((47, 1212), heroes[name]["actor"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
-			draw.text((47, 1241), heroes[name]["artist"], font=font, fill="#ffffff",stroke_width=3, stroke_fill="#0a2533")
+			# If the hero is truly a resplendent one we might have data for it
+			if hero["attire"] and heroes[name]["resplendent"]:
+				# Add a fallback to original actor if none is provided because that means they didn't change it
+				draw.text((47, 1212), heroes[name]["actorresplendent"] if heroes[name]["actorresplendent"] != "" else heroes[name]["actor"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+				draw.text((47, 1241), heroes[name]["artistresplendent"], font=font, fill="#ffffff",stroke_width=3, stroke_fill="#0a2533")
+			else:
+				draw.text((47, 1212), heroes[name]["actor"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+				draw.text((47, 1241), heroes[name]["artist"], font=font, fill="#ffffff",stroke_width=3, stroke_fill="#0a2533")
 		# First write the static text for each stat (normal anchoring)
 		font = ImageFont.truetype("../data/" + config["fontfile"], 25)
 		draw.text((115, 805), "HP", font=font, fill="#b1ecfa" if hero["boon"] == "HP" else ("#f0a5b3" if hero["bane"] == "HP" and int(hero["merges"]) == 0 else "#ffffff"), stroke_width=3, stroke_fill="#0a2533")

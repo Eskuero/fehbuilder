@@ -42,16 +42,19 @@ stop = False
 for hero in [entry["title"] for entry in utils.retrieveapidata(params)]:
 	herodata[hero["Name"]] = hero
 
-# Parameters to send the API whe requesting the whole list of resplendent heroes (https://feheroes.fandom.com/api.php?action=cargoquery&tables=ResplendentHero&fields=_pageName=Name&limit=max&format=json)
+# Parameters to send the API whe requesting the whole list of resplendent heroes (https://feheroes.fandom.com/api.php?action=cargoquery&tables=ResplendentHero&fields=_pageName=Name,Artist,ActorEN&limit=max&format=json)
 params = dict(
     action = 'cargoquery', limit = 'max', offset = -500, format = 'json',
     tables = 'ResplendentHero',
-    fields = '_pageName=Name'
+    fields = '_pageName=Name,Artist,ActorEN'
 )
-resplendentlist = []
+resplendentlist = {}
 # Get skill data every time individually before upon entering the loop
-for hero in [entry["title"]["Name"] for entry in utils.retrieveapidata(params)]:
-	resplendentlist.append(hero)
+for hero in [entry["title"] for entry in utils.retrieveapidata(params)]:
+	resplendentlist[hero["Name"]] = {
+		"artist": hero["Artist"],
+		"actor": hero["ActorEN"]
+	}
 
 # Parameters to send the API whe requesting the whole list of artists (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Artists&fields=Name,NameUSEN&limit=max&format=json)
 params = dict(
@@ -92,10 +95,12 @@ for hero in [entry["title"] for entry in utils.retrieveapidata(params)]:
 		"moveType": herodata[hero["Name"]]["MoveType"],
 		"AdditionDate": herodata[hero["Name"]]["AdditionDate"],
 		"frontArt": utils.obtaintrueurl(truename + ("_BtlFace.png" if ":" not in truename else "_Face.webp")),
-		"resplendent": utils.obtaintrueurl(truename + "_Resplendent_Face.webp") if hero["Name"] in resplendentlist else False,
-		"basekit": heroskills[hero["Name"]] if hero["Name"] in heroskills else [],
 		"artist": artistsnames[herodata[hero["Name"]]["Artist"]] if herodata[hero["Name"]]["Artist"] in artistsnames else "",
-		"actor": herodata[hero["Name"]]["ActorEN"].replace(",", " + ")
+		"actor": herodata[hero["Name"]]["ActorEN"].replace(",", " + "),
+		"resplendent": utils.obtaintrueurl(truename + "_Resplendent_Face.webp") if hero["Name"] in resplendentlist else False,
+		"artistresplendent": artistsnames[resplendentlist[hero["Name"]]["artist"]] if hero["Name"] in resplendentlist else False,
+		"actorresplendent": resplendentlist[hero["Name"]]["actor"] if hero["Name"] in resplendentlist else False,
+		"basekit": heroskills[hero["Name"]] if hero["Name"] in heroskills else []
 	}
 
 with open("../data/units.json", "w") as outfile:
