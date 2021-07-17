@@ -1,12 +1,6 @@
 # FEH BUILDER
 Tool that mimics hero builds from the Fire Emblem Heroes game. It uses the Pillow Python library for generating the picture after the user interacts and send the data on a webpage.
-Although the app allows hotfixes all hero/weapon/passive data is obtained by parsing the following items from the public non-official wiki, so please help maintain this tool by keeping the wiki updated:
-- https://feheroes.fandom.com/wiki/Sacred_Seals
-- https://feheroes.fandom.com/wiki/Weapons
-- https://feheroes.fandom.com/wiki/Specials 
-- https://feheroes.fandom.com/wiki/Assists
-- https://feheroes.fandom.com/wiki/List_of_Heroes
-- https://feheroes.fandom.com/wiki/Passives
+All hero/weapon/passive data is obtained by querying the public non-official wiki API, so please help maintain this tool by keeping the wiki updated
 
 The application is still in a rough state so the code quality is low and may contain bugs on stat calculation, missing icons for the skills/weapons and a long etc. Please use the report bug feature on this repository.
 
@@ -14,7 +8,7 @@ The application is still in a rough state so the code quality is low and may con
 
 You can host this app yourself by following the next steps (no technical explication or configuration examples are provided for now):
 1. Clone this source code
-2. Run the units.py and passives.py from the scripts folder to obtain the most recent data from the wiki (the current one as of 09/07/2021 is included in this repo)
+2. Run the units.py, skills.py, downloadimages.py and other.py from the scripts folder to obtain the most recent data from the wiki (the current one as of 18/07/2021 is included in this repo)
 3. Ideally you want to replace the Roboto font included under the data folder with the Heroes own font for more fidelity. However I'm uncertain of the nature of the license for that file so it cannot be shared and it's up to you to look it up.
 4. Setup nginx/apache or whatever your webserver of choice is to serve the static folder normally
 5. Setup the python application so it listens and serves the image generation requests. A Dockerfile is provided for ease of setup
