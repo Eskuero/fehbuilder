@@ -18,7 +18,7 @@ def download():
 		# By default we save on the "other" folder
 		location = "../data/img/other/"
 		# Refine icons are to be in the same location and size as any other passive
-		if "Refine" in icon or "fallback" in icon:
+		if "Refine" in icon:
 			location = "../data/img/icons/"
 		# Download the art image and resize it according to the set config
 		art = Image.open(io.BytesIO(response.content)).resize(dimensions)
@@ -67,11 +67,11 @@ icons = {
 	"Dazzling-Refine": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/5c/Dazzling_Staff_W.png?44?44",
 	"Wrathful-Refine": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/4/42/Wrathful_Staff_W.png?44?44",
 	"weapon-Refine": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/82/Icon_Skill_Weapon.png?44?44",
-	# Fallback skills
-	"fallback-skillA": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/10/Icon_Skill_Passive_A.png?44?44",
-	"fallback-skillB": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/ca/Icon_Skill_Passive_B.png?44?44",
-	"fallback-skillC": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/01/Icon_Skill_Passive_C.png?44?44",
-	"fallback-skillS": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/9c/Icon_Skill_Passive_S.png?44?44",
+	# Category indicator for skill icons
+	"indicator-skillA": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/6/68/Passive_Icon_A.png?21?21",
+	"indicator-skillB": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/6/6a/Passive_Icon_B.png?21?21",
+	"indicator-skillC": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/84/Passive_Icon_C.png?21?21",
+	"indicator-skillS": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/6/6f/Passive_Icon_S.png?21?21",
 	# Blessings
 	"Water-Blessing": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/2e/Icon_LegendWater.png?147?160",
 	"Fire-Blessing": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/c5/Icon_LegendFire.png?147?160",

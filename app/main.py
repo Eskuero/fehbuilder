@@ -48,14 +48,14 @@ def getimage():
 			"bane": flask.request.args.get('bane') if flask.request.args.get('bane') != "None" else None,
 			"merges": flask.request.args.get('merges') or 0,
 			"flowers": flask.request.args.get('flowers') or 0,
-			"weapon": flask.request.args.get('weapon') if flask.request.args.get('weapon') != "None" else None,
+			"weapon": flask.request.args.get('weapon') if flask.request.args.get('weapon') in skills["weapons"] else "-",
 			"refine": flask.request.args.get('refine') if flask.request.args.get('refine') != "None" else None,
-			"assist": flask.request.args.get('assist') if flask.request.args.get('assist') != "None" else "",
-			"special": flask.request.args.get('special') if flask.request.args.get('special') != "None" else "",
-			"passiveA": flask.request.args.get('passiveA') if flask.request.args.get('passiveA') != "None" else "",
-			"passiveB": flask.request.args.get('passiveB') if flask.request.args.get('passiveB') != "None" else "",
-			"passiveC": flask.request.args.get('passiveC') if flask.request.args.get('passiveC') != "None" else "",
-			"passiveS": flask.request.args.get('passiveS') if flask.request.args.get('passiveS') != "None" else "",
+			"assist": flask.request.args.get('assist') if flask.request.args.get('assist') in skills["assists"] else "-",
+			"special": flask.request.args.get('special') if flask.request.args.get('special') in skills["specials"] else "-",
+			"passiveA": flask.request.args.get('passiveA') if flask.request.args.get('passiveA') in skills["passives"]["A"] else "-",
+			"passiveB": flask.request.args.get('passiveB') if flask.request.args.get('passiveB') in skills["passives"]["B"] else "-",
+			"passiveC": flask.request.args.get('passiveC') if flask.request.args.get('passiveC') in skills["passives"]["C"] else "-",
+			"passiveS": flask.request.args.get('passiveS') if flask.request.args.get('passiveS') in skills["passives"]["S"] else "-",
 			"summoner": flask.request.args.get('summoner') if flask.request.args.get('summoner') != "None" else "",
 			"blessing": flask.request.args.get('blessing') if flask.request.args.get('blessing') != "None" else "",
 			"attire": True if flask.request.args.get('attire') != "Normal" else False,
@@ -120,9 +120,11 @@ def getimage():
 		draw.text((115, 1003), "Res", font=font, fill="#b1ecfa" if hero["boon"] == "Res" else ("#f0a5b3" if hero["bane"] == "Res" and int(hero["merges"]) == 0 else "#ffffff"), stroke_width=3, stroke_fill="#0a2533")
 
 		# Obtain the calculated stats to draw
-		stats = utilities.statcalc(heroes[name]["stats"], heroes[name]["growths"], hero["boon"], hero["bane"], int(hero["merges"]), int(hero["flowers"]))
+		statsmodifier = utilities.statcalc(heroes[name]["stats"], heroes[name]["growths"], hero["boon"], hero["bane"], int(hero["merges"]), int(hero["flowers"]))
 		# We have a couple of stats modifiers based on weapon, summoner support and maybe not completely parsed A/S skills that we must add
-		statsmodifier = utilities.weaponmodifiers(hero["weapon"], skills["weapons"][hero["weapon"]] if hero["weapon"] else None, hero["refine"])
+		if hero["weapon"] in skills["weapons"]:
+			weaponmodifier = utilities.weaponmodifiers(hero["weapon"], skills["weapons"][hero["weapon"]] if hero["weapon"] else None, hero["refine"])
+			statsmodifier = [x+y for x,y in zip(statsmodifier, weaponmodifier)]
 		statsmodifier = [x+y for x,y in zip(statsmodifier, utilities.summonerranks[hero["summoner"]] if hero["summoner"] else [0,0,0,0,0])]
 		if hero["passiveA"] in skills["passives"]["A"]:
 			statsmodifier = [x+y for x,y in zip(statsmodifier, skills["passives"]["A"][hero["passiveA"]]["statModifiers"])]
@@ -142,11 +144,11 @@ def getimage():
 					statsmodifier = [x+(y*int(ally[1])) for x,y in zip(statsmodifier, other["blessed"][hero["blessing"]][ally[0]])]
 		# Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers)
 		font = ImageFont.truetype("../data/" + config["fontfile"], 26)
-		draw.text((265, 805), str(stats["HP"] + statsmodifier[0]), font=font, anchor="ra", fill="#fffaaf", stroke_width=3, stroke_fill="#0a2533")
-		draw.text((265, 854), str(stats["Atk"] + statsmodifier[1]), font=font, anchor="ra", fill="#fffaaf", stroke_width=3, stroke_fill="#0a2533")
-		draw.text((265, 903), str(stats["Spd"] + statsmodifier[2]), font=font, anchor="ra", fill="#fffaaf", stroke_width=3, stroke_fill="#0a2533")
-		draw.text((265, 953), str(stats["Def"] + statsmodifier[3]), font=font, anchor="ra", fill="#fffaaf", stroke_width=3, stroke_fill="#0a2533")
-		draw.text((265, 1002), str(stats["Res"] + statsmodifier[4]), font=font, anchor="ra", fill="#fffaaf", stroke_width=3, stroke_fill="#0a2533")
+		draw.text((265, 805), str(statsmodifier[0]), font=font, anchor="ra", fill="#fffaaf", stroke_width=3, stroke_fill="#0a2533")
+		draw.text((265, 854), str(statsmodifier[1]), font=font, anchor="ra", fill="#fffaaf", stroke_width=3, stroke_fill="#0a2533")
+		draw.text((265, 903), str(statsmodifier[2]), font=font, anchor="ra", fill="#fffaaf", stroke_width=3, stroke_fill="#0a2533")
+		draw.text((265, 953), str(statsmodifier[3]), font=font, anchor="ra", fill="#fffaaf", stroke_width=3, stroke_fill="#0a2533")
+		draw.text((265, 1002), str(statsmodifier[4]), font=font, anchor="ra", fill="#fffaaf", stroke_width=3, stroke_fill="#0a2533")
 		# TODO: SP and HM for now are not customizable
 		draw.text((265, 1052), "9999", font=font, anchor="ra", fill="#82f546", stroke_width=3, stroke_fill="#0a2533")
 		draw.text((265, 1100), "7000", font=font, anchor="ra", fill="#82f546", stroke_width=3, stroke_fill="#0a2533")
@@ -176,8 +178,8 @@ def getimage():
 		canvas.paste(expindicator, (418, 732) if int(hero["flowers"]) > 0 else (271, 732), expindicator)
 
 		font = ImageFont.truetype("../data/" + config["fontfile"], 23)
-		# Print weapon info
-		if hero["weapon"]:
+		# If the weapon is valid try to print an icon
+		if hero["weapon"] in skills["weapons"]:
 			# By default we always use the basic weapon icon or the predefined stat boosters ones
 			icon = hero["refine"] + "-Refine.png" if hero["refine"] in ["Atk", "Spd", "Def", "Res", "Wrathful", "Dazzling"] else "weapon-Refine.png"
 			# If the icon is an special effect we might have to download it
@@ -194,7 +196,12 @@ def getimage():
 			# Hack Falchion name since we show the user the real name but display should be the same
 			if "Falchion (" in hero["weapon"]:
 				hero["weapon"] = "Falchion"
-			draw.text((420, 805), hero["weapon"], font=font, fill="#82f546" if hero["refine"] else "#ffffff", stroke_width=3, stroke_fill="#0a2533")
+		# If not just print the basic icon
+		else:
+			weaponicon = Image.open("../data/img/icons/weapon-Refine.png")
+			canvas.paste(weaponicon, (370, 797), weaponicon)
+		# We always paste the text because it might as well be unarmed and have a "-"
+		draw.text((420, 805), hero["weapon"], font=font, fill="#82f546" if hero["refine"] else "#ffffff", stroke_width=3, stroke_fill="#0a2533")
 
 		# Print assist and special info
 		draw.text((420, 853), hero["assist"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
@@ -202,7 +209,7 @@ def getimage():
 
 		# Render all the passives
 		for category in utilities.passiverender.keys():
-			# If the passive is not the list we skip it
+			# If the passive is not the list we skip trying to download an image
 			if hero["passive" + category] in skills["passives"][category]:
 				# Check if the icon art is already in the temporal folder for speeding up requests from the wiki
 				if (pathlib.Path("../data/img/icons/" + hero["passive" + category].replace(" ", "_").replace("/", "_") + ".png").is_file()):
@@ -214,9 +221,14 @@ def getimage():
 						art = Image.open(io.BytesIO(response.content)).resize((44, 44))
 						art.save("../data/img/icons/" + hero["passive" + category].replace(" ", "_").replace("/", "_") + ".png", 'PNG')
 					except:
-						art = Image.open("../data/img/icons/fallback-skill" + category + ".png")
+						# We failed to download the icon for this skill :(
+						print("Failed to download icon for " + hero["passive" + category])
 				canvas.paste(art, utilities.passiverender[category]["icon"], art)
-				draw.text(utilities.passiverender[category]["text"], hero["passive" + category], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+			# We always write the text because it might be a simple "-"
+			draw.text(utilities.passiverender[category]["text"], hero["passive" + category], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+			# Print the category indicator
+			indicator = Image.open("../data/img/other/indicator-skill" + category + ".png")
+			canvas.paste(indicator, utilities.passiverender[category]["indicator"], indicator)
 
 		# If the blessing is not valid we skip it
 		if hero["blessing"] in ["Dark", "Light", "Anima", "Astra", "Fire", "Water", "Earth", "Wind"]:

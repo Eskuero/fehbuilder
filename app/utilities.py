@@ -43,13 +43,13 @@ def statcalc(stats, growths, boon, bane, merges, flowers):
 		truelevel1[list(truelevel1.keys())[stat]] += 1
 		stat = 0 if stat == 4 else stat + 1
 	# The the growth from level 1 to 40 is calculating by trunc(39 x trunc(growth value * rarity)/100))
-	return {
-		"HP": truelevel1["HP"] + math.trunc(39 * (math.trunc(truegrowth["HP"] * 1.140000001) / 100)),
-		"Atk": truelevel1["Atk"] + math.trunc(39 * (math.trunc(truegrowth["Atk"] * 1.140000001) / 100)),
-		"Spd": truelevel1["Spd"] + math.trunc(39 * (math.trunc(truegrowth["Spd"] * 1.140000001) / 100)),
-		"Def": truelevel1["Def"] + math.trunc(39 * (math.trunc(truegrowth["Def"] * 1.140000001) / 100)),
-		"Res": truelevel1["Res"] + math.trunc(39 * (math.trunc(truegrowth["Res"] * 1.140000001) / 100))
-	}
+	return [
+		truelevel1["HP"] + math.trunc(39 * (math.trunc(truegrowth["HP"] * 1.140000001) / 100)),
+		truelevel1["Atk"] + math.trunc(39 * (math.trunc(truegrowth["Atk"] * 1.140000001) / 100)),
+		truelevel1["Spd"] + math.trunc(39 * (math.trunc(truegrowth["Spd"] * 1.140000001) / 100)),
+		truelevel1["Def"] + math.trunc(39 * (math.trunc(truegrowth["Def"] * 1.140000001) / 100)),
+		truelevel1["Res"] + math.trunc(39 * (math.trunc(truegrowth["Res"] * 1.140000001) / 100))
+	]
 
 def weaponmodifiers(name, weapon, refine):
 	# Not multiplier (in case no check is met)
@@ -67,10 +67,10 @@ def weaponmodifiers(name, weapon, refine):
 
 # Define the positions where each passive must render
 passiverender = {
-	"A": {"icon": (369, 945), "text": (420, 953)},
-	"B": {"icon": (369, 994), "text": (420, 1003)},
-	"C": {"icon": (369, 1043), "text": (420, 1053)},
-	"S": {"icon": (369, 1093), "text": (420, 1103)}
+	"A": {"icon": (369, 945), "text": (420, 953), "indicator": (396, 966)},
+	"B": {"icon": (369, 994), "text": (420, 1003), "indicator": (396, 1016)},
+	"C": {"icon": (369, 1043), "text": (420, 1053), "indicator": (396, 1066)},
+	"S": {"icon": (369, 1093), "text": (420, 1103), "indicator": (396, 1116)}
 }
 
 # Base ruleset for refine visual stats depending on weapon type
