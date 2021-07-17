@@ -55,6 +55,7 @@ def getimage():
 			"summoner": flask.request.args.get('summoner') if flask.request.args.get('summoner') != "None" else "",
 			"blessing": flask.request.args.get('blessing') if flask.request.args.get('blessing') != "None" else "",
 			"attire": True if flask.request.args.get('attire') != "Normal" else False,
+			"bonusunit": True if flask.request.args.get('bonusunit') == "yes" else False,
 			"appui": False if flask.request.args.get('appui') == "false" else True
 		}
 		now = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
@@ -124,6 +125,8 @@ def getimage():
 			statsmodifier = [x+y for x,y in zip(statsmodifier, skills["passives"]["S"][hero["passiveS"]]["statModifiers"])]
 		if hero["attire"]:
 			statsmodifier = [x+y for x,y in zip(statsmodifier, [2, 2, 2, 2, 2])]
+		if hero["bonusunit"]:
+			statsmodifier = [x+y for x,y in zip(statsmodifier, [10, 4, 4, 4, 4])]
 		# Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers)
 		font = ImageFont.truetype("../data/" + config["fontfile"], 26)
 		draw.text((265, 805), str(stats["HP"] + statsmodifier[0]), font=font, anchor="ra", fill="#fffaaf", stroke_width=3, stroke_fill="#0a2533")
