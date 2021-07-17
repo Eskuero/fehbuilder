@@ -61,15 +61,17 @@ h4 {
 	padding: 0.25em 0 0 0;
 	height: 100%;
 }
-/*select, button {
-	margin-bottom: 1em;
-	padding: 0.5em 0.5em;
-	text-transform: uppercase;
-}
 
-.select2-results__options {
-	max-height: 290px !important;
-}*/
+.links {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 0.5em;
+	margin-right: 1.5em;
+}
+.links > * {
+	padding-left: 0.5em;
+}
 
 @media screen and (orientation:portrait) {
 	body { 
