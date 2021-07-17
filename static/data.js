@@ -1,5 +1,5 @@
 // Dicts for info
-var units, skills;
+var units, skills, other;
 // All selects we have available
 selectheroes = document.getElementById('selectheroes');
 selectmerges = document.getElementById('merges');
@@ -18,6 +18,7 @@ selectblessings = document.getElementById('blessing');
 selectsummoner = document.getElementById('summoner');
 selectattire = document.getElementById('attire');
 selectbonusunit = document.getElementById('bonusunit');
+selectallies = document.getElementById('allies');
 cheats = document.getElementById('cheats');
 bestskills = document.getElementById('bestskills');
 appui = document.getElementById('appui');
@@ -25,9 +26,11 @@ appui = document.getElementById('appui');
 var canvas = document.getElementById('fakecanvas');
 
 $(document).ready(function() {
-    $('select').select2({
+	// Do not apply the boostrap theme on the multiselect it looks real broken
+	$('select:not(#allies)').select2({
 		theme: "bootstrap4",
 	});
+	$('#allies').select2({});
 	$(".s2-select-without-search").select2({
 		minimumResultsForSearch: Infinity,
 		theme: "bootstrap4",
@@ -40,7 +43,7 @@ $('.select2-search').select2('open');
 fetch('units.json')
 	.then(res => res.json())
 	.then((out) => {
-		// We store the skills for basic checks within the browser
+		// We store the heroes for basic checks within the browser
 		units = out
 		populate(selectheroes, units, true)
 }).catch(err => console.error(err));
@@ -50,6 +53,12 @@ fetch('skills.json')
 		// We store the skills for basic checks within the browser
 		skills = out
 		populateall()
+}).catch(err => console.error(err));
+fetch('other.json')
+	.then(res => res.json())
+	.then((out) => {
+		// We store other data for basic checks within the browser
+		other = out
 }).catch(err => console.error(err));
 
 function populateall() {
@@ -147,7 +156,63 @@ function populate(select, data, bypass) {
 }
 
 function reload() {
-	document.getElementById('fakecanvas').src = "/get_image.png?name=" + encodeURIComponent(selectheroes.value) + "&merges=" + selectmerges.value + "&flowers=" + selectflowers.value + "&boon=" + selectboons.value + "&bane=" + selectbanes.value + "&weapon=" + encodeURIComponent(selectweapons.value) + "&refine=" + selectrefines.value + "&assist=" + encodeURIComponent(selectassists.value) + "&special=" + encodeURIComponent(selectspecials.value) + "&passiveA=" + encodeURIComponent(selectA.value) + "&passiveB=" + encodeURIComponent(selectB.value) + "&passiveC=" + encodeURIComponent(selectC.value) + "&passiveS=" + encodeURIComponent(selectS.value) + "&blessing=" + selectblessings.value + "&summoner=" + selectsummoner.value + "&attire=" + selectattire.value + "&appui=" + appui.checked + "&bonusunit=" + selectbonusunit.value;
+	// Obtain the list of support heroes
+	allies = "";
+	for (i = 0; i < selectallies.selectedOptions.length; i++) {
+		allies += selectallies.selectedOptions[i].value + "|"
+	}
+	document.getElementById('fakecanvas').src = "/get_image.png?name=" + encodeURIComponent(selectheroes.value) + "&merges=" + selectmerges.value + "&flowers=" + selectflowers.value + "&boon=" + selectboons.value + "&bane=" + selectbanes.value + "&weapon=" + encodeURIComponent(selectweapons.value) + "&refine=" + selectrefines.value + "&assist=" + encodeURIComponent(selectassists.value) + "&special=" + encodeURIComponent(selectspecials.value) + "&passiveA=" + encodeURIComponent(selectA.value) + "&passiveB=" + encodeURIComponent(selectB.value) + "&passiveC=" + encodeURIComponent(selectC.value) + "&passiveS=" + encodeURIComponent(selectS.value) + "&blessing=" + selectblessings.value + "&summoner=" + selectsummoner.value + "&attire=" + selectattire.value + "&appui=" + appui.checked + "&bonusunit=" + selectbonusunit.value + "&allies=" + encodeURIComponent(allies);
+}
+
+function reblessed() {
+	// First delete all allies
+	while (selectallies.lastChild) {
+        selectallies.removeChild(selectallies.lastChild);
+    }
+	// Get the Blessing type and stop if we disabled it
+	blessing = selectblessings.value
+	if (blessing == "None") {
+		selectallies.disabled = true
+		return;
+	}
+	selectallies.disabled = false
+	// Now get list of heroes valid for that type of blessing
+	blessed = other["blessed"][blessing]
+	for (i = 0; i < blessed.length; i++) {
+		// Depending on the type of blessing there's a limit on allies
+		var max = (["Anima", "Light", "Dark", "Astra"].includes(blessing)) ? 5 : 3;
+		// Add an option for each value
+		for (j = 1; j <= max; j++) {
+			var opt = document.createElement('option');
+			opt.value = blessed[i] + ";" + j;
+			opt.innerHTML = blessed[i] + " x" + j;
+			selectallies.appendChild(opt);
+		}
+	}
+}
+
+function checkallies() {
+	// Depending on the type of blessing there's a limit on allies
+	var max = (["Anima", "Light", "Dark", "Astra"].includes(selectblessings.value)) ? 5 : 3;
+	// Detect the amount of currently deployed
+	allies = 0;
+	for (i = 0; i < selectallies.selectedOptions.length; i++) {
+		allies += parseInt(selectallies.selectedOptions[i].value.split(';')[1])
+	}
+	remaining = max - allies
+	// Now for every option in the select disable those that are too big for the amount of slots for allies we have remaining
+	for (i = 0; i < selectallies.options.length; i++) {
+		// Ignore entries that are already selected
+		if (!selectallies.options[i].selected) {
+			// Disable the entry if the associated multiplier is too big to be selected later
+			if (parseInt(selectallies.options[i].value.split(";")[1]) > remaining) {
+				selectallies.options[i].disabled = true;
+			// Otherwise enable it
+			} else {
+				selectallies.options[i].disabled = false;
+			}
+		}
+	}
 }
 
 function updatedragonflowers() {
@@ -182,8 +247,6 @@ function updatedragonflowers() {
 		selectflowers.value = previousvalue;
 	}
 }
-
-
 
 function updateRefine() {
 	// Get current value to restore it back if possible

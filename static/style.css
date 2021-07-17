@@ -56,8 +56,12 @@ h4 {
 .col-form-label > img {
 	width: 28px;
 }
-
-select, button {
+.select2-selection.select2-selection--multiple {
+	color: black;
+	padding: 0.25em 0 0 0;
+	height: 100%;
+}
+/*select, button {
 	margin-bottom: 1em;
 	padding: 0.5em 0.5em;
 	text-transform: uppercase;
@@ -65,7 +69,7 @@ select, button {
 
 .select2-results__options {
 	max-height: 290px !important;
-}
+}*/
 
 @media screen and (orientation:portrait) {
 	body { 

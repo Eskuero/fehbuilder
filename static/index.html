@@ -216,7 +216,7 @@
 									<img class="img-fluid" src="assets/blessings.png"/>
 								</div>
 								<div class="col-4">
-									<select class="s2-select-without-search" style="width: 100%" id="blessing">
+									<select class="s2-select-without-search" style="width: 100%" id="blessing" onChange="reblessed()">
 										<option value="None">None</option>
 										<option value="Fire">Fire</option>
 										<option value="Water">Water</option>
@@ -235,6 +235,15 @@
 									<select class="s2-select-without-search" style="width: 100%" id="bonusunit">
 										<option value="no">No</option>
 										<option value="yes">Yes</option>
+									</select>
+								</div>
+							</div>
+							<div class="row mb-1">
+								<div class="col-3 col-md-2 col-form-label text-md-right">
+									<img class="img-fluid" src="assets/pairup.png"/>
+								</div>
+								<div class="col-9">
+									<select class="s2-select" style="width: 100%" id="allies" multiple="multiple" onChange="checkallies()" disabled>
 									</select>
 								</div>
 							</div>

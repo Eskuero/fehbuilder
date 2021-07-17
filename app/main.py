@@ -23,6 +23,10 @@ with open("../data/units.json", "r") as datasource:
 with open("../data/skills.json", "r") as datasource:
 	skills = json.load(datasource)
 
+# Load other data from the json file
+with open("../data/other.json", "r") as datasource:
+	other = json.load(datasource)
+
 @app.route('/get_image.png')
 def getimage():
 	# Create new image
@@ -56,6 +60,7 @@ def getimage():
 			"blessing": flask.request.args.get('blessing') if flask.request.args.get('blessing') != "None" else "",
 			"attire": True if flask.request.args.get('attire') != "Normal" else False,
 			"bonusunit": True if flask.request.args.get('bonusunit') == "yes" else False,
+			"allies": flask.request.args.get('allies') if flask.request.args.get('allies') != "" else False,
 			"appui": False if flask.request.args.get('appui') == "false" else True
 		}
 		now = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
@@ -127,6 +132,14 @@ def getimage():
 			statsmodifier = [x+y for x,y in zip(statsmodifier, [2, 2, 2, 2, 2])]
 		if hero["bonusunit"]:
 			statsmodifier = [x+y for x,y in zip(statsmodifier, [10, 4, 4, 4, 4])]
+		# Calculate the visible buffs you get for each allied mythic or legendary
+		if hero["allies"] and hero["blessing"] in ["Dark", "Light", "Anima", "Astra", "Fire", "Water", "Earth", "Wind"]:
+			allies = hero["allies"].split("|")
+			for ally in allies:
+				ally = ally.split(";")
+				# For each hero with a valid blessing we add the visible buffs and multiply for the amount of that ally
+				if ally[0] in other["blessed"][hero["blessing"]]:
+					statsmodifier = [x+(y*int(ally[1])) for x,y in zip(statsmodifier, other["blessed"][hero["blessing"]][ally[0]])]
 		# Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers)
 		font = ImageFont.truetype("../data/" + config["fontfile"], 26)
 		draw.text((265, 805), str(stats["HP"] + statsmodifier[0]), font=font, anchor="ra", fill="#fffaaf", stroke_width=3, stroke_fill="#0a2533")
