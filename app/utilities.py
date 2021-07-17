@@ -57,12 +57,12 @@ def weaponmodifiers(name, weapon, refine):
 	# Obtain the normal values from the base weapon (or the additional effect weapon if refined for that)
 	if weapon:
 		stats = [int(x) for x in (weapon["statModifiers"] if refine != "Effect" else weapon["specialstatModifiers"])]
-	# If the weapon is refined then add with the values
-	if refine:
-		stats = [x+y for x,y in zip(stats, refinemodifierchart[weapon["WeaponType"][0]][refine])]
-		# This list of weapons are brave melee of the triangle axe-lance-sword and suffer a -1 penalty when refining for Atk so we check this
-		if name in ["Amiti", "Arden's Blade", "Cherche's Axe", "Hewn Lance", "Rowdy Sword"] and refine == "Atk":
-			stats[1] -= 1
+		# If the weapon is refined then add with the values
+		if refine in refinemodifierchart[weapon["WeaponType"][0]]:
+			stats = [x+y for x,y in zip(stats, refinemodifierchart[weapon["WeaponType"][0]][refine])]
+			# This list of weapons are brave melee of the triangle axe-lance-sword and suffer a -1 penalty when refining for Atk so we check this
+			if name in ["Amiti", "Arden's Blade", "Cherche's Axe", "Hewn Lance", "Rowdy Sword"] and refine == "Atk":
+				stats[1] -= 1
 	return stats
 
 # Define the positions where each passive must render
@@ -75,25 +75,25 @@ passiverender = {
 
 # Base ruleset for refine visual stats depending on weapon type
 refinemodifierchart = {
-	"Red Sword": {"Effect": [3, 0, 0, 0, 0], "Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
-	"Blue Lance": {"Effect": [3, 0, 0, 0, 0], "Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
-	"Green Axe": {"Effect": [3, 0, 0, 0, 0], "Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
-	"Red Breath": {"Effect": [3, 0, 0, 0, 0], "Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
-	"Green Breath": {"Effect": [3, 0, 0, 0, 0], "Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
-	"Blue Breath": {"Effect": [3, 0, 0, 0, 0], "Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
-	"Colorless Breath": {"Effect": [3, 0, 0, 0, 0], "Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
-	"Blue Tome": {"Effect": [0, 0, 0, 0, 0], "Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Red Tome": {"Effect": [0, 0, 0, 0, 0], "Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Green Tome": {"Effect": [0, 0, 0, 0, 0], "Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Blue Bow": {"Effect": [0, 0, 0, 0, 0], "Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Red Bow": {"Effect": [0, 0, 0, 0, 0], "Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Green Bow": {"Effect": [0, 0, 0, 0, 0], "Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Colorless Bow": {"Effect": [0, 0, 0, 0, 0], "Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Red Dagger": {"Effect": [0, 0, 0, 0, 0], "Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Blue Dagger": {"Effect": [0, 0, 0, 0, 0], "Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Green Dagger": {"Effect": [0, 0, 0, 0, 0], "Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Colorless Dagger": {"Effect": [0, 0, 0, 0, 0], "Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Colorless Staff": {"Dazzling": [0, 0, 0, 0, 0], "Wrathful": [0, 0, 0, 0, 0], "Effect": [0, 0, 0, 0, 0]}
+	"Red Sword": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
+	"Blue Lance": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
+	"Green Axe": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
+	"Red Breath": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
+	"Green Breath": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
+	"Blue Breath": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
+	"Colorless Breath": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
+	"Blue Tome": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"Red Tome": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"Green Tome": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"Blue Bow": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"Red Bow": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"Green Bow": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"Colorless Bow": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"Red Dagger": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"Blue Dagger": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"Green Dagger": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"Colorless Dagger": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"Colorless Staff": {"Dazzling": [0, 0, 0, 0, 0], "Wrathful": [0, 0, 0, 0, 0]}
 }
 
 # Visible stats from having Summoner Support
