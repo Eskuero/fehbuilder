@@ -80,11 +80,12 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 # Now ignore every skill that has a clone ending with "+" (refinable inheritable or improved specials/assists) or " II" (those are remix prf)
 maxskills = [skill for skill in maxskills if (skill + "+") not in maxskills and (skill + " II") not in maxskills]
 
-# Parameters to send the API whe requesting the whole list of skills (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=Name,Scategory,StatModifiers,CanUseMove,CanUseWeapon,Exclusive,group_concat(Icon)=Icon,group_concat(RefinePath)=refines,SP&group_by=Name&limit=max&offset=0&format=json)
+# Parameters to send the API whe requesting the whole list of skills (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=Name,Scategory,group_concat(StatModifiers%20separator%20%27;%27)=StatModifiers,CanUseMove,CanUseWeapon,group_concat(Exclusive)=Exclusive,group_concat(ifnull(concat(Icon),%20%27%27))=Icon,group_concat(ifnull(concat(RefinePath),%20%27%27))=refines,SP&group_by=Name&limit=max&offset=0&format=json)
 params = dict(
     action = 'cargoquery', limit = 'max', offset = -500, format = 'json',
     tables = 'Skills',
-    fields = 'Name,Scategory,group_concat(Icon)=Icon,StatModifiers,CanUseMove,CanUseWeapon,RefinePath,Exclusive,group_concat(RefinePath)=refines,SP',
+# We group concat all values for statsmodifiers, exclusivity, icons and refinepaths to be able to consistently identify which values are the ones for the weapon at base (we basically get the index for a NULL refinepath when filling the dicttionary)
+    fields = "Name,Scategory,group_concat(StatModifiers separator ';')=StatModifiers,CanUseMove,CanUseWeapon,group_concat(Exclusive)=Exclusive,group_concat(ifnull(concat(Icon), ''))=Icon,group_concat(ifnull(concat(RefinePath), ''))=refines,SP",
     group_by = "Name"
 )
 # Get skill data every time individually before upon entering the loop
@@ -96,19 +97,25 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 		if skill["Name"] == "Falchion":
 			skills["weapons"].update(falchiondata)
 			continue
+		# The position where the refine path is empty is the index of the base weapon
+		index = skill["refines"].split(",").index('')
 		skills["weapons"][skill["Name"]] = {
 			# Split the weapon types by commas to make later checks easier
 			"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),
 			"moveType": skill["CanUseMove"].replace(",  ", ",").split(","),
-			"statModifiers": [int(x) for x in skill["StatModifiers"].split(",")],
+			"statModifiers": [int(x) for x in skill["StatModifiers"].split(";")[index].split(",")],
 			"specialIcon": False,
+			"specialstatModifiers": [0, 0, 0, 0, 0],
 			"upgrades": True if skill["refines"] != "" else False,
-			"exclusive": True if skill["Exclusive"] == "1" else False,
+			"exclusive": True if skill["Exclusive"].split(",")[index] == "1" else False,
 			"isMax": True if skill["Name"] in maxskills else False
 		}
-		# If we had upgrades and a skill1 string is on the refine list we have a custom icon and an additional effect
+		# If we had upgrades and a skill1 string is on the refine list we have a custom icon and maybe additional visible stats (Mystletain, Axe of Virility have Fury 3)
 		if skills["weapons"][skill["Name"]]["upgrades"] and "skill1" in skill["refines"]:
-			skills["weapons"][skill["Name"]]["specialIcon"] = utils.obtaintrueurl(skill["Icon"].split(",")[0]) if utils.obtaintrueurl(skill["Icon"].split(",")[0]) else "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/82/Icon_Skill_Weapon.png"
+			# This is the index where the skill1 icon is specified
+			effectindex = skill["refines"].split(",").index("skill1")
+			skills["weapons"][skill["Name"]]["specialIcon"] = utils.obtaintrueurl(skill["Icon"].split(",")[effectindex]) if utils.obtaintrueurl(skill["Icon"].split(",")[effectindex]) else "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/82/Icon_Skill_Weapon.png"
+			skills["weapons"][skill["Name"]]["specialstatModifiers"] = skill["StatModifiers"].split(";")[effectindex].split(",")
 	# Assist type handling
 	if skill["Scategory"] == "assist":
 		# Because assists have no restrictions based on weapon or movement we just store them

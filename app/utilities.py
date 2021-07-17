@@ -54,9 +54,9 @@ def statcalc(stats, growths, boon, bane, merges, flowers):
 def weaponmodifiers(name, weapon, refine):
 	# Not multiplier (in case no check is met)
 	stats = [0, 0, 0, 0, 0]
-	# Obtain the normal values from the base weapon
+	# Obtain the normal values from the base weapon (or the additional effect weapon if refined for that)
 	if weapon:
-		stats = [int(x) for x in weapon["statModifiers"]]
+		stats = [int(x) for x in (weapon["statModifiers"] if refine != "Effect" else weapon["specialstatModifiers"])]
 	# If the weapon is refined then add with the values
 	if refine:
 		stats = [x+y for x,y in zip(stats, refinemodifierchart[weapon["WeaponType"][0]][refine])]
