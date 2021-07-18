@@ -9,24 +9,30 @@ falchiondata = {
 		"moveType": ["Infantry", "Armored",  "Cavalry",  "Flying"],
 		"statModifiers": [0, 16, 0, 0, 0],
 		"specialIcon": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/9f/Falchion_Awakening_W.png",
+		"specialstatModifiers": [3, 16, 0, 0, 0],
 		"upgrades": True,
-		"exclusive": True
+		"exclusive": True,
+		"isMax": True
 	},
 	"Falchion (Gaiden)": {
 		"WeaponType": ["Red Sword"],
 		"moveType": ["Infantry", "Armored",  "Cavalry",  "Flying"],
 		"statModifiers": [0, 16, 0, 0, 0],
 		"specialIcon": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/dd/Falchion_Gaiden_W.png",
+		"specialstatModifiers": [3, 16, 0, 0, 0],
 		"upgrades": True,
-		"exclusive": True
+		"exclusive": True,
+		"isMax": True
 	},
 	"Falchion (Mystery)": {
 		"WeaponType": ["Red Sword"],
 		"moveType": ["Infantry", "Armored",  "Cavalry",  "Flying"],
 		"statModifiers": [0, 16, 0, 0, 0],
 		"specialIcon": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b0/Falchion_Mystery_W.png",
+		"specialstatModifiers": [3, 16, 0, 0, 0],
 		"upgrades": True,
-		"exclusive": True
+		"exclusive": True,
+		"isMax": True
 	}
 }
 # We store all the data in a single dict
