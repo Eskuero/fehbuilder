@@ -53,7 +53,7 @@ fetch('units.json')
 	.then((out) => {
 		// We store the heroes for basic checks within the browser
 		units = out
-		populate(selectheroes, units, true)
+		populate(selectheroes, units, true, true)
 }).catch(err => console.error(err));
 fetch('skills.json')
 	.then(res => res.json())
@@ -69,22 +69,22 @@ fetch('other.json')
 		other = out
 }).catch(err => console.error(err));
 
-function populateall() {
+function populateall(clean) {
 	// We go through all the selects
-	populate(selectweapons, skills["weapons"])
-	populate(selectspecials, skills["specials"])
-	populate(selectassists, skills["assists"])
-	populate(selectA, skills["passives"]["A"])
-	populate(selectB, skills["passives"]["B"])
-	populate(selectC, skills["passives"]["C"])
-	populate(selectS, skills["passives"]["S"])
+	populate(selectweapons, skills["weapons"], clean)
+	populate(selectspecials, skills["specials"], clean)
+	populate(selectassists, skills["assists"], clean)
+	populate(selectA, skills["passives"]["A"], clean)
+	populate(selectB, skills["passives"]["B"], clean)
+	populate(selectC, skills["passives"]["C"], clean)
+	populate(selectS, skills["passives"]["S"], clean)
     // Make sure we do not end with an invalid refine option setup
     updateRefine()
 	// Add only the required amount of flowers
 	updatedragonflowers()
 }
 
-function populate(select, data, bypass) {
+function populate(select, data, clean, bypass) {
 	// Get current value to restore it back if possible
 	previousvalue = select.value
 	// First delete them all except the None element
@@ -115,10 +115,10 @@ function populate(select, data, bypass) {
 		// If we arrived here we might or might not have to do checks so enable adding the skill by default
 		add = true
 		// The entire logic is processed on the python scripts so we just have to check the value set for the corresponding property. Previous values might go through the bestskills check since if we have enabled it after selecting a lower tier skill we don't go to erase it
-		if (bestskills.checked == true && ! data[value]["isMax"] && value != previousvalue) {
+		if (bestskills.checked == true && ! data[value]["isMax"] && (value != previousvalue || clean)) {
 			return;
 		}
-		if (cheats.checked == false && value != previousvalue) {
+		if (cheats.checked == false && (value != previousvalue || clean)) {
 			// Cheat mode is disabled so now we conditionally enable the skill and the default value must be false even if we might have passed bestskills checks
 			add = false
 			// Check if the skills has weapon restrictions and if it does check if we meet them

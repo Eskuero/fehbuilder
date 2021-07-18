@@ -34,7 +34,7 @@
 									<label>Hero: </label>
 								</div>
 								<div class="col-9">
-									<select class="s2-select" style="width: 100%" id="selectheroes" onChange="populateall()" >
+									<select class="s2-select" style="width: 100%" id="selectheroes" onChange="populateall(true)" >
                   						<option value="None">None</value>
 									</select>
 								</div>
@@ -325,11 +325,11 @@
 								<div class="options">
 									<div>
 										<label class="mb-0">Cheats: </label>
-										<input type="checkbox" class="checkbox-xl" id="cheats" onChange="populateall()">
+										<input type="checkbox" class="checkbox-xl" id="cheats" onChange="populateall(false)">
 									</div>
 									<div>
 										<label class="mb-0">Best skills: </label>
-										<input type="checkbox" class="checkbox-xl" id="bestskills" onChange="populateall()" checked>
+										<input type="checkbox" class="checkbox-xl" id="bestskills" onChange="populateall(false)" checked>
 									</div>
 									<div>
 										<label class="mb-0">App UI: </label>
