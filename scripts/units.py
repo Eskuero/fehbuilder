@@ -94,10 +94,20 @@ for hero in [entry["title"] for entry in utils.retrieveapidata(params)]:
 		"WeaponType": herodata[hero["Name"]]["WeaponType"],
 		"moveType": herodata[hero["Name"]]["MoveType"],
 		"AdditionDate": herodata[hero["Name"]]["AdditionDate"],
-		"frontArt": utils.obtaintrueurl(truename + ("_BtlFace.png" if ":" not in truename else "_Face.webp")),
+		"art": {
+			"Portrait": utils.obtaintrueurl(truename + ("_BtlFace.png" if ":" not in truename else "_Face.webp")),
+			"Attack": utils.obtaintrueurl(truename + ("_BtlFace.png" if ":" not in truename else "_BtlFace.webp")),
+			"Special": utils.obtaintrueurl(truename + ("_BtlFace.png" if ":" not in truename else "_BtlFace_C.webp")),
+			"Damage": utils.obtaintrueurl(truename + ("_BtlFace.png" if ":" not in truename else "_BtlFace_D.webp"))
+		},
 		"artist": artistsnames[herodata[hero["Name"]]["Artist"]] if herodata[hero["Name"]]["Artist"] in artistsnames else "",
 		"actor": herodata[hero["Name"]]["ActorEN"].replace(",", " + "),
-		"resplendent": utils.obtaintrueurl(truename + "_Resplendent_Face.webp") if hero["Name"] in resplendentlist else False,
+		"resplendentart": {
+			"Portrait": utils.obtaintrueurl(truename + "_Resplendent_Face.webp") if hero["Name"] in resplendentlist else False,
+			"Attack": utils.obtaintrueurl(truename + "_Resplendent_BtlFace.webp") if hero["Name"] in resplendentlist else False,
+			"Special": utils.obtaintrueurl(truename + "_Resplendent_BtlFace_C.webp") if hero["Name"] in resplendentlist else False,
+			"Damage": utils.obtaintrueurl(truename + "_Resplendent_BtlFace_D.webp") if hero["Name"] in resplendentlist else False
+		},
 		"artistresplendent": artistsnames[resplendentlist[hero["Name"]]["artist"]] if hero["Name"] in resplendentlist else False,
 		"actorresplendent": resplendentlist[hero["Name"]]["actor"] if hero["Name"] in resplendentlist else False,
 		"basekit": heroskills[hero["Name"]] if hero["Name"] in heroskills else []

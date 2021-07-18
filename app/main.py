@@ -64,6 +64,8 @@ def getimage():
 			"buffs": flask.request.args.get('buffs') if flask.request.args.get('buffs') else False,
 			"sp": flask.request.args.get('sp') if flask.request.args.get('sp') else "9999",
 			"hm": flask.request.args.get('hm') if flask.request.args.get('hm') else "7000",
+			"artstyle": flask.request.args.get('artstyle') if flask.request.args.get('artstyle') in ["Portrait", "Attack", "Special", "Damage"] else "Portrait",
+			"offset": int(flask.request.args.get('offset')) if flask.request.args.get('offset').isdigit() else 0,
 			"appui": False if flask.request.args.get('appui') == "false" else True
 		}
 		now = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
@@ -85,20 +87,22 @@ def getimage():
 			# Position for the summoner support icon, we may override this later
 			summonerpos = (575, 570)
 		# Decide the art to print, even if the user choose resplendent we make sure art for it exists
-		heroart = heroes[name]["resplendent"] if hero["attire"] and heroes[name]["resplendent"] else heroes[name]["frontArt"]
+		heroart = heroes[name]["resplendentart"][hero["artstyle"]] if hero["attire"] and heroes[name]["resplendentart"][hero["artstyle"]] else heroes[name]["art"][hero["artstyle"]]
+		# Decide on the filename we will use to save and retrieve this particular hero and pose
+		filename = name + ("_Resplendent_" + hero["artstyle"] + ".webp" if hero["attire"] and heroes[name]["resplendentart"][hero["artstyle"]] else "_" + hero["artstyle"] + ".webp")
 		# Check if the heroes art is already in the temporal folder for speeding up requests from the wiki
-		if (pathlib.Path("../data/img/heroes/" + name + ("_Resplendent.webp" if hero["attire"] and heroes[name]["resplendent"] else ".webp")).is_file()):
-			art = Image.open("../data/img/heroes/" + name + ("_Resplendent.webp" if hero["attire"] and heroes[name]["resplendent"] else ".webp"))
+		if (pathlib.Path("../data/img/heroes/" + filename).is_file()):
+			art = Image.open("../data/img/heroes/" + filename)
 		else:
 			# Grab and paste the heroes art in the image
 			try:
 				response = requests.get(heroart)
 				art = Image.open(io.BytesIO(response.content)).resize((1330, 1596))
-				art.save("../data/img/heroes/" + name + ("_Resplendent.webp" if hero["attire"] and heroes[name]["resplendent"] else ".webp"), 'WEBP')
+				art.save("../data/img/heroes/" + filename, 'WEBP')
 			# If anything went wrong on downloading and parsing the image fall back to an error one
 			except:
 				art = Image.open("../data/img/base/missigno.png")
-		canvas.paste(art, (-305, 0), art)
+		canvas.paste(art, (-305, 0 - hero["offset"]), art)
 		# Paste the foregroud UI
 		if hero["appui"]:
 			fg = Image.open("../data/img/base/foreground-ui.png")
@@ -114,7 +118,7 @@ def getimage():
 		if hero["appui"]:
 			font = ImageFont.truetype("../data/" + config["fontfile"], 21)
 			# If the hero is truly a resplendent one we might have data for it
-			if hero["attire"] and heroes[name]["resplendent"]:
+			if hero["attire"] and heroes[name]["resplendentart"]["Portrait"]:
 				# Add a fallback to original actor if none is provided because that means they didn't change it
 				draw.text((47, 1212), heroes[name]["actorresplendent"] if heroes[name]["actorresplendent"] != "" else heroes[name]["actor"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 				draw.text((47, 1241), heroes[name]["artistresplendent"], font=font, fill="#ffffff",stroke_width=3, stroke_fill="#0a2533")
