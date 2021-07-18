@@ -243,6 +243,8 @@ def getimage():
 		# We arrived here without a proper hero name so paste the foregroud UI and say bye
 		canvas.paste(fg, (0, 0), fg)
 
+	# We completed all rendering so now we can drop the Alpha channel
+	canvas = canvas.convert("RGB")
 	# Save the image tp a byte element to return to the browser
 	img_io = io.BytesIO()
 	canvas.save(img_io, 'PNG')
