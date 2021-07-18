@@ -44,6 +44,11 @@ h4 {
 	text-decoration: underline;
 }
 
+.form-control {
+	text-align: center;
+	padding: 0 0 !important;
+}
+
 #form {
 	min-height: 100vh;
 	height: auto;

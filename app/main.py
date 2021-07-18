@@ -61,10 +61,18 @@ def getimage():
 			"attire": True if flask.request.args.get('attire') != "Normal" else False,
 			"bonusunit": True if flask.request.args.get('bonusunit') == "yes" else False,
 			"allies": flask.request.args.get('allies') if flask.request.args.get('allies') != "" else False,
+			"buffs": flask.request.args.get('buffs') if flask.request.args.get('buffs') else False,
 			"appui": False if flask.request.args.get('appui') == "false" else True
 		}
 		now = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
 		print(now + " - " + str(hero))
+		# Make sure we received a proper string of buffs as expected
+		if len(flask.request.args.get('buffs').split(";")) == 4:
+			try:
+				hero["buffs"] = [0] + [int(x) for x in flask.request.args.get('buffs').split(";")]
+			except:
+				print("Received invalid buff string (" + flask.request.args.get('buffs') + ") so we default to 0 to everything")
+				hero["buffs"] = [0, 0, 0, 0, 0]
 		# Initialize the drawing rectacle and font
 		font = ImageFont.truetype("../data/" + config["fontfile"], 35)
 		draw = ImageDraw.Draw(canvas)
@@ -121,7 +129,7 @@ def getimage():
 
 		# Obtain the calculated stats to draw
 		statsmodifier = utilities.statcalc(heroes[name]["stats"], heroes[name]["growths"], hero["boon"], hero["bane"], int(hero["merges"]), int(hero["flowers"]))
-		# We have a couple of stats modifiers based on weapon, summoner support and maybe not completely parsed A/S skills that we must add
+		# We have a couple of stats modifiers based on weapon, summoner support, attire, bonus unit, visible buffs and maybe not completely parsed A/S skills that we must add
 		if hero["weapon"] in skills["weapons"]:
 			weaponmodifier = utilities.weaponmodifiers(hero["weapon"], skills["weapons"][hero["weapon"]] if hero["weapon"] else None, hero["refine"])
 			statsmodifier = [x+y for x,y in zip(statsmodifier, weaponmodifier)]
@@ -134,6 +142,7 @@ def getimage():
 			statsmodifier = [x+y for x,y in zip(statsmodifier, [2, 2, 2, 2, 2])]
 		if hero["bonusunit"]:
 			statsmodifier = [x+y for x,y in zip(statsmodifier, [10, 4, 4, 4, 4])]
+		statsmodifier = [x+y for x,y in zip(statsmodifier, hero["buffs"])]
 		# Calculate the visible buffs you get for each allied mythic or legendary
 		if hero["allies"] and hero["blessing"] in ["Dark", "Light", "Anima", "Astra", "Fire", "Water", "Earth", "Wind"]:
 			allies = hero["allies"].split("|")
@@ -145,10 +154,10 @@ def getimage():
 		# Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers)
 		font = ImageFont.truetype("../data/" + config["fontfile"], 26)
 		draw.text((265, 805), str(statsmodifier[0]), font=font, anchor="ra", fill="#fffaaf", stroke_width=3, stroke_fill="#0a2533")
-		draw.text((265, 854), str(statsmodifier[1]), font=font, anchor="ra", fill="#fffaaf", stroke_width=3, stroke_fill="#0a2533")
-		draw.text((265, 903), str(statsmodifier[2]), font=font, anchor="ra", fill="#fffaaf", stroke_width=3, stroke_fill="#0a2533")
-		draw.text((265, 953), str(statsmodifier[3]), font=font, anchor="ra", fill="#fffaaf", stroke_width=3, stroke_fill="#0a2533")
-		draw.text((265, 1002), str(statsmodifier[4]), font=font, anchor="ra", fill="#fffaaf", stroke_width=3, stroke_fill="#0a2533")
+		draw.text((265, 854), str(statsmodifier[1]), font=font, anchor="ra", fill="#64e6f0" if hero["buffs"][1] > 0 else ("#ff506e" if hero["buffs"][1] < 0 else "#fffaaf"), stroke_width=3, stroke_fill="#0a2533")
+		draw.text((265, 903), str(statsmodifier[2]), font=font, anchor="ra", fill="#64e6f0" if hero["buffs"][2] > 0 else ("#ff506e" if hero["buffs"][2] < 0 else "#fffaaf"), stroke_width=3, stroke_fill="#0a2533")
+		draw.text((265, 953), str(statsmodifier[3]), font=font, anchor="ra", fill="#64e6f0" if hero["buffs"][3] > 0 else ("#ff506e" if hero["buffs"][3] < 0 else "#fffaaf"), stroke_width=3, stroke_fill="#0a2533")
+		draw.text((265, 1002), str(statsmodifier[4]), font=font, anchor="ra", fill="#64e6f0" if hero["buffs"][4] > 0 else ("#ff506e" if hero["buffs"][4] < 0 else "#fffaaf"), stroke_width=3, stroke_fill="#0a2533")
 		# TODO: SP and HM for now are not customizable
 		draw.text((265, 1052), "9999", font=font, anchor="ra", fill="#82f546", stroke_width=3, stroke_fill="#0a2533")
 		draw.text((265, 1100), "7000", font=font, anchor="ra", fill="#82f546", stroke_width=3, stroke_fill="#0a2533")
