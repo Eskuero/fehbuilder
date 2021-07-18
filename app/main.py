@@ -62,6 +62,8 @@ def getimage():
 			"bonusunit": True if flask.request.args.get('bonusunit') == "yes" else False,
 			"allies": flask.request.args.get('allies') if flask.request.args.get('allies') != "" else False,
 			"buffs": flask.request.args.get('buffs') if flask.request.args.get('buffs') else False,
+			"sp": flask.request.args.get('sp') if flask.request.args.get('sp') else "9999",
+			"hm": flask.request.args.get('hm') if flask.request.args.get('hm') else "7000",
 			"appui": False if flask.request.args.get('appui') == "false" else True
 		}
 		now = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
@@ -158,9 +160,9 @@ def getimage():
 		draw.text((265, 903), str(statsmodifier[2]), font=font, anchor="ra", fill="#64e6f0" if hero["buffs"][2] > 0 else ("#ff506e" if hero["buffs"][2] < 0 else "#fffaaf"), stroke_width=3, stroke_fill="#0a2533")
 		draw.text((265, 953), str(statsmodifier[3]), font=font, anchor="ra", fill="#64e6f0" if hero["buffs"][3] > 0 else ("#ff506e" if hero["buffs"][3] < 0 else "#fffaaf"), stroke_width=3, stroke_fill="#0a2533")
 		draw.text((265, 1002), str(statsmodifier[4]), font=font, anchor="ra", fill="#64e6f0" if hero["buffs"][4] > 0 else ("#ff506e" if hero["buffs"][4] < 0 else "#fffaaf"), stroke_width=3, stroke_fill="#0a2533")
-		# TODO: SP and HM for now are not customizable
-		draw.text((265, 1052), "9999", font=font, anchor="ra", fill="#82f546", stroke_width=3, stroke_fill="#0a2533")
-		draw.text((265, 1100), "7000", font=font, anchor="ra", fill="#82f546", stroke_width=3, stroke_fill="#0a2533")
+		# Print the amount of SP and HM
+		draw.text((265, 1052), hero["sp"], font=font, anchor="ra", fill="#82f546" if hero["sp"] == "9999" else "#fffaaf", stroke_width=3, stroke_fill="#0a2533")
+		draw.text((265, 1100), hero["hm"], font=font, anchor="ra", fill="#82f546" if hero["hm"] == "7000" else "#fffaaf", stroke_width=3, stroke_fill="#0a2533")
 		# Print the move type and weapon type icons
 		movetype = Image.open("../data/img/other/" + heroes[name]["moveType"].lstrip() + "-move.png")
 		canvas.paste(movetype, (229, 743), movetype)
