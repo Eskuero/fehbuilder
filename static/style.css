@@ -49,7 +49,7 @@ h4 {
 	padding: 0 0 !important;
 }
 
-#form {
+.form {
 	min-height: 100vh;
 	height: auto;
 	padding: 1.5em;
@@ -86,7 +86,7 @@ h4 {
 		width: 98vw;
 		height: auto;
 	}
-	#form {
+	.form {
 		min-height: auto;
 	}
 }
