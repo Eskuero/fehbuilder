@@ -48,13 +48,22 @@ skills = {
 	"specials": {}
 }
 
-# Parameters to send the API whe requesting the whole list of seals (https://feheroes.fandom.com/api.php?action=cargoquery&tables=SacredSealCosts&fields=Skill&limit=max&offset=0&format=json)
+# Parameters to send the API whe requesting the whole list of seals (https://feheroes.fandom.com/api.php?action=cargoquery&tables=SacredSealCosts&fields=group_concat(Skill)=Skills&group_by=_pageName&limit=max&offset=0&format=json)
 params = dict(
     action = 'cargoquery', limit = 'max', offset = -500, format = 'json',
     tables = 'SacredSealCosts',
-    fields = 'Skill'
+    fields = 'group_concat(Skill)=Skills',
+    group_by = '_pageName'
 )
-seals = [seal["Skill"] for seal in [entry["title"] for entry in utils.retrieveapidata(params)]]
+maxseals = []
+seals = []
+for seal in [entry["title"] for entry in utils.retrieveapidata(params)]:
+	# All seals for the family
+	family = sorted(seal["Skills"].split(","))
+	# Add the whole lsit to the seals list
+	seals += family
+	# But only the last of each to the max list
+	maxseals += family[-1:]
 
 # Parameters to send the API whe requesting the list of skills grouped by family (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=group_concat(Name)=FamilyMembers,SP,Scategory&group_by=GroupName&limit=max&offset=0&format=json)
 params = dict(
@@ -76,7 +85,7 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 	elif skill["Scategory"] == "special" and (int(skill["SP"]) > 150 or "Heavenly Light" in skill["FamilyMembers"]):
 		maxskills.append(sorted(skill["FamilyMembers"].split(","))[-1])
 	# Arriving here means the skill is a passive and has a well defined family and the skill we add depends on their size
-	elif skill["Scategory"] in ["passivea", "passiveb", "passivec", "sacredseal"]:
+	elif skill["Scategory"] in ["passivea", "passiveb", "passivec"]:
 		family = sorted(skill["FamilyMembers"].split(","))
 		# We always add the last member unless there are four, then we also add the second last because tier 3 ones are available by themselves except Ideals and Catchs (yet!)
 		maxskills.append(family[-1])
@@ -160,7 +169,7 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 			"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),
 			"moveType": skill["CanUseMove"].replace(",  ", ",").split(","),
 			"exclusive": True if skill["Exclusive"] == "1" else False,
-			"isMax": True if skill["Name"] in maxskills else False
+			"isMax": True if skill["Name"] in maxseals else False
 		}
 
 # Complete the seals data
@@ -169,6 +178,8 @@ for seal in seals:
 	passives = skills["passives"]["A"] | skills["passives"]["B"] | skills["passives"]["C"]
 	if seal in passives:
 		skills["passives"]["S"][seal] = passives[seal]
+		skills["passives"]["S"][seal]["isMax"] = True if seal in maxseals else False
+
 # Make sure they end properly ordered
 skills["passives"]["S"] = {seal: skills["passives"]["S"][seal] for seal in sorted(skills["passives"]["S"])}
 
