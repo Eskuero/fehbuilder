@@ -120,8 +120,8 @@ def getimage():
 			# If the hero is truly a resplendent one we might have data for it
 			if hero["attire"] and heroes[name]["resplendentart"]["Portrait"]:
 				# Add a fallback to original actor if none is provided because that means they didn't change it
-				draw.text((47, 1212), heroes[name]["actorresplendent"] if heroes[name]["actorresplendent"] != "" else heroes[name]["actor"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
-				draw.text((47, 1241), heroes[name]["artistresplendent"], font=font, fill="#ffffff",stroke_width=3, stroke_fill="#0a2533")
+				draw.text((47, 1212), heroes[name]["actorresplendent"] if heroes[name]["actorresplendent"] else heroes[name]["actor"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+				draw.text((47, 1241), heroes[name]["artistresplendent"] if heroes[name]["artistresplendent"] else "", font=font, fill="#ffffff",stroke_width=3, stroke_fill="#0a2533")
 			else:
 				draw.text((47, 1212), heroes[name]["actor"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 				draw.text((47, 1241), heroes[name]["artist"], font=font, fill="#ffffff",stroke_width=3, stroke_fill="#0a2533")
