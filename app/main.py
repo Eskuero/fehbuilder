@@ -168,7 +168,7 @@ def getimage():
 		# If the weapon is valid try to print an icon
 		if hero["weapon"] != "-":
 			# By default we always use the basic weapon icon or the predefined stat boosters ones
-			icon = hero["refine"] + "-Refine.png" if hero["refine"] in ["Atk", "Spd", "Def", "Res", "Wrathful", "Dazzling"] else "weapon-Refine.png"
+			icon = "other/" + hero["refine"] + "-Refine.png" if hero["refine"] in ["Atk", "Spd", "Def", "Res", "Wrathful", "Dazzling"] else "other/weapon-Refine.png"
 			# If the icon is an special effect we might have to download it
 			if hero["refine"] == "Effect":
 				# Check if the heroes art is already in the temporal folder for speeding up requests from the wiki
@@ -177,15 +177,15 @@ def getimage():
 					response = requests.get(skills["weapons"][hero["weapon"]]["specialIcon"])
 					art = Image.open(io.BytesIO(response.content)).resize((44, 44))
 					art.save("../data/img/icons/" + hero["weapon"] + "-Effect.png", 'PNG')
-				icon = hero["weapon"] + "-Effect.png"
-			weaponicon = Image.open("../data/img/icons/" + icon)
+				icon = "icons/" + hero["weapon"] + "-Effect.png"
+			weaponicon = Image.open("../data/img/" + icon)
 			canvas.paste(weaponicon, (370, 797), weaponicon)
 			# Hack Falchion name since we show the user the real internal name but rendering should be clean
 			if "Falchion (" in hero["weapon"]:
 				hero["weapon"] = "Falchion"
 		# If not just print the basic icon
 		else:
-			weaponicon = Image.open("../data/img/icons/weapon-Refine.png")
+			weaponicon = Image.open("../data/img/other/weapon-Refine.png")
 			canvas.paste(weaponicon, (370, 797), weaponicon)
 		# We always paste the text because it might as well be unarmed and have a "-"
 		draw.text((420, 805), hero["weapon"], font=font, fill="#82f546" if hero["refine"] else "#ffffff", stroke_width=3, stroke_fill="#0a2533")

@@ -17,9 +17,6 @@ def download():
 		dimensions = (int(icons[icon].split("?")[1]), int(icons[icon].split("?")[2]))
 		# By default we save on the "other" folder
 		location = "../data/img/other/"
-		# Refine icons are to be in the same location and size as any other passive
-		if "Refine" in icon:
-			location = "../data/img/icons/"
 		# Download the art image and resize it according to the set config
 		art = Image.open(io.BytesIO(response.content)).resize(dimensions)
 		art.save(location + icon + ".png", 'PNG')
