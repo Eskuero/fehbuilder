@@ -1,6 +1,85 @@
 import json
 import math
 
+# Hero request squeleton definition
+hero = {
+	"name": False, "title": False, "boon": False, "bane": False, "merges": False, "flowers": False, "weapon": False, "refine": False, "assist": False, "special": False, "passiveA": False, "passiveB": False, "passiveC": False, "passiveS": False, "summoner": False, "blessing": False, "attire": False, "bonusunit": False, "allies": False, "buffs": False, "sp": False, "hm": False, "artstyle": False, "offset": False, "appui": False,
+}
+
+def herosanitization(heroes, skills, name, args):
+	for prop in hero:
+		value = args.get(prop)
+		# It's safe to assume the provided values for the hero name and title are correct since we checked they do exist
+		if prop == "name":
+			hero[prop] = name.split(":")[0]
+		elif prop == "title":
+			hero[prop] = name.split(":")[1].lstrip() if ":" in name else "Enemy"
+		# Banes and boons are valid within a set amount of values
+		elif prop in ["boon", "bane"]:
+			hero[prop] = value if value in ["HP", "Atk", "Spd", "Def", "Res"] else None
+		# If merges are not provided default to 0, if provided but not a valid digit default to 0, if valid but above 10 default to 10, anything else should be fine
+		elif prop == "merges":
+			hero[prop] = 0 if not value else (0 if not value.isdigit() else (10 if int(value) > 10 else int(value)))
+		# If flowers are not provided default to 0, if provided but not a valid digit default to 0, if valid but above 15 default to 15, anything else should be fine
+		elif prop == "flowers":
+			hero[prop] = 0 if not value else (0 if not value.isdigit() else (15 if int(value) > 15 else int(value)))
+		# Weapon must exist in our data otherwise we don't print it
+		elif prop == "weapon":
+			hero[prop] = value if value in skills["weapons"] else "-"
+		# Refine can only be from a certain set
+		elif prop == "refine":
+			hero[prop] = value if value in ["Effect", "Atk", "Spd", "Def", "Res", "Dazzling", "Wrathful"] else None
+		# Assists and specials must exist in our data otherwise we don't print it
+		elif prop in ["assist", "special"]:
+			hero[prop] = value if value in skills[prop + "s"] else "-"
+		# Passives must exist in our data otherwise we don't print it
+		elif prop in ["passiveA", "passiveB", "passiveC", "passiveS"]:
+			hero[prop] = value if value in skills["passives"][prop[-1:]] else "-"
+		# Summoner support rank can only be of C, B, A or S
+		elif prop == "summoner":
+			hero[prop] = value if value in summonerranks else None
+		# Blessing can only be of this set of 8
+		elif prop == "blessing":
+			hero[prop] = value if value in ["Dark", "Light", "Anima", "Astra", "Fire", "Water", "Earth", "Wind"] else None
+		# The attire can only be Resplendent or Normal
+		elif prop == "attire":
+			hero[prop] = True if value == "Resplendent" else False
+		# Bonus can only be yes or no
+		elif prop == "bonusunit":
+			hero[prop] = True if value == "yes" else False
+		# For allies we add the list provided unless nothing is provided in which case we add an empty string
+		elif prop == "allies":
+			hero[prop] = value if value else ""
+		# For buffs if nothing is provided we default to an empty list, if something is provided it must be a string that when split by ; has a length of 4, being each element a valid int between -99 and 99
+		elif prop == "buffs":
+			if not value:
+				hero[prop] = [0, 0, 0, 0, 0]
+			elif len(value.split(";")) != 4:
+				hero[prop] = [0, 0, 0, 0, 0]
+			else:
+				hero[prop] = [0]
+				for x in value.split(";"):
+					try:
+						hero[prop].append(-99 if int(x) < -99 else (99 if int(x) > 99 else int(x)))
+					except:
+						hero[prop].append(0)
+		# If SP count is not provided default to 9999, if provided but not a valid digit default to 9999, if valid but above 9999 default to 9999, anything else should be fine
+		elif prop == "sp":
+			hero[prop] = 9999 if not value else (9999 if not value.isdigit() else (9999 if int(value) > 9999 else int(value)))
+		# If HM count is not provided default to 7000, if provided but not a valid digit default to 7000, if valid but above 7000 default to 7000, anything else should be fine
+		elif prop == "hm":
+			hero[prop] = 7000 if not value else (7000 if not value.isdigit() else (7000 if int(value) > 7000 else int(value)))
+		# For art style default to portrait unless a valid value is received
+		elif prop == "artstyle":
+			hero[prop] = value if value in ["Portrait", "Attack", "Special", "Damage"] else "Portrait"
+		# If offset valie is not provided default to 0, if provided but not a valid digit default to 0, if valid but above 300 default to 300, anything else should be fine
+		elif prop == "offset":
+			hero[prop] = 0 if not value else (0 if not value.isdigit() else (300 if int(value) > 300 else int(value)))
+		# For app ui default to render unless told otherwise
+		elif prop == "appui":
+			hero[prop] = False if value == "false" else True
+	return hero
+
 def statcalc(stats, growths, boon, bane, merges, flowers):
 	# We are not allowing other than 5 star rarity so we hardcore 1.14% multiplier
 	# "stats": {"HP": 18, "Atk": 7, "Spd": 8, "Def": 6, "Res": 5}, "growths": {"HP": 45, "Atk": 50, "Spd": 60, "Def": 35, "Res": 50}, "boons": {"HP": 5, "Atk": -5, "Spd": 0, "Def": 0, "Res": -5}}

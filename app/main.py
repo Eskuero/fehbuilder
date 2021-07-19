@@ -37,46 +37,16 @@ def getimage():
 	# Paste the background first than anything UI
 	canvas.paste(bg, (-173, 0), bg)
 
-	# Get the hero name to draw, we skip entirely if none is provided
+	# Get the hero name to draw, we skip entirely if none is provided, it doesn't exist in our data or the request length is unexpectedly long
 	name = flask.request.args.get('name')
-	if name is not None and name in heroes:
-		# Populate a dictionary with all the data we got
-		hero = {
-			"name": name.split(":")[0],
-			"title": name.split(":")[1].lstrip() if ":" in name else "Enemy",
-			"boon": flask.request.args.get('boon') if flask.request.args.get('boon') != "None" else None,
-			"bane": flask.request.args.get('bane') if flask.request.args.get('bane') != "None" else None,
-			"merges": flask.request.args.get('merges') or 0,
-			"flowers": flask.request.args.get('flowers') or 0,
-			"weapon": flask.request.args.get('weapon') if flask.request.args.get('weapon') in skills["weapons"] else "-",
-			"refine": flask.request.args.get('refine') if flask.request.args.get('refine') != "None" else None,
-			"assist": flask.request.args.get('assist') if flask.request.args.get('assist') in skills["assists"] else "-",
-			"special": flask.request.args.get('special') if flask.request.args.get('special') in skills["specials"] else "-",
-			"passiveA": flask.request.args.get('passiveA') if flask.request.args.get('passiveA') in skills["passives"]["A"] else "-",
-			"passiveB": flask.request.args.get('passiveB') if flask.request.args.get('passiveB') in skills["passives"]["B"] else "-",
-			"passiveC": flask.request.args.get('passiveC') if flask.request.args.get('passiveC') in skills["passives"]["C"] else "-",
-			"passiveS": flask.request.args.get('passiveS') if flask.request.args.get('passiveS') in skills["passives"]["S"] else "-",
-			"summoner": flask.request.args.get('summoner') if flask.request.args.get('summoner') != "None" else "",
-			"blessing": flask.request.args.get('blessing') if flask.request.args.get('blessing') != "None" else "",
-			"attire": True if flask.request.args.get('attire') != "Normal" else False,
-			"bonusunit": True if flask.request.args.get('bonusunit') == "yes" else False,
-			"allies": flask.request.args.get('allies') if flask.request.args.get('allies') != "" else False,
-			"buffs": flask.request.args.get('buffs') if flask.request.args.get('buffs') else False,
-			"sp": flask.request.args.get('sp') if flask.request.args.get('sp') else "9999",
-			"hm": flask.request.args.get('hm') if flask.request.args.get('hm') else "7000",
-			"artstyle": flask.request.args.get('artstyle') if flask.request.args.get('artstyle') in ["Portrait", "Attack", "Special", "Damage"] else "Portrait",
-			"offset": int(flask.request.args.get('offset')) if flask.request.args.get('offset').isdigit() else 0,
-			"appui": False if flask.request.args.get('appui') == "false" else True
-		}
+	if name is not None and name in heroes and len(str(flask.request)) < 1000:
+		# Sanitize all the data we got fro the user
+		hero = utilities.herosanitization(heroes, skills, name, flask.request.args)
+		# Print the data we will use for logging purposes
 		now = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+		print()
 		print(now + " - " + str(hero))
-		# Make sure we received a proper string of buffs as expected
-		if len(flask.request.args.get('buffs').split(";")) == 4:
-			try:
-				hero["buffs"] = [0] + [int(x) for x in flask.request.args.get('buffs').split(";")]
-			except:
-				print("Received invalid buff string (" + flask.request.args.get('buffs') + ") so we default to 0 to everything")
-				hero["buffs"] = [0, 0, 0, 0, 0]
+
 		# Initialize the drawing rectacle and font
 		font = ImageFont.truetype("../data/" + config["fontfile"], 35)
 		draw = ImageDraw.Draw(canvas)
@@ -86,8 +56,6 @@ def getimage():
 			canvas.paste(bg, (-173, 0))
 			# Position for the summoner support icon, we may override this later
 			summonerpos = (575, 570)
-		# Decide the art to print, even if the user choose resplendent we make sure art for it exists
-		heroart = heroes[name]["resplendentart"][hero["artstyle"]] if hero["attire"] and heroes[name]["resplendentart"][hero["artstyle"]] else heroes[name]["art"][hero["artstyle"]]
 		# Decide on the filename we will use to save and retrieve this particular hero and pose
 		filename = name + ("_Resplendent_" + hero["artstyle"] + ".webp" if hero["attire"] and heroes[name]["resplendentart"][hero["artstyle"]] else "_" + hero["artstyle"] + ".webp")
 		# Check if the heroes art is already in the temporal folder for speeding up requests from the wiki
@@ -96,6 +64,8 @@ def getimage():
 		else:
 			# Grab and paste the heroes art in the image
 			try:
+				# Decide the art to download, even if the user choose resplendent we make sure art for it exists or fallback to the normal instead
+				heroart = heroes[name]["resplendentart"][hero["artstyle"]] if hero["attire"] and heroes[name]["resplendentart"][hero["artstyle"]] else heroes[name]["art"][hero["artstyle"]]
 				response = requests.get(heroart)
 				art = Image.open(io.BytesIO(response.content)).resize((1330, 1596))
 				art.save("../data/img/heroes/" + filename, 'WEBP')
@@ -136,27 +106,29 @@ def getimage():
 		# Obtain the calculated stats to draw
 		statsmodifier = utilities.statcalc(heroes[name]["stats"], heroes[name]["growths"], hero["boon"], hero["bane"], int(hero["merges"]), int(hero["flowers"]))
 		# We have a couple of stats modifiers based on weapon, summoner support, attire, bonus unit, visible buffs and maybe not completely parsed A/S skills that we must add
-		if hero["weapon"] in skills["weapons"]:
-			weaponmodifier = utilities.weaponmodifiers(hero["weapon"], skills["weapons"][hero["weapon"]] if hero["weapon"] else None, hero["refine"])
+		if hero["weapon"] != "-":
+			weaponmodifier = utilities.weaponmodifiers(hero["weapon"], skills["weapons"][hero["weapon"]], hero["refine"])
 			statsmodifier = [x+y for x,y in zip(statsmodifier, weaponmodifier)]
-		statsmodifier = [x+y for x,y in zip(statsmodifier, utilities.summonerranks[hero["summoner"]] if hero["summoner"] else [0,0,0,0,0])]
-		if hero["passiveA"] in skills["passives"]["A"]:
-			statsmodifier = [x+y for x,y in zip(statsmodifier, skills["passives"]["A"][hero["passiveA"]]["statModifiers"])]
-		if hero["passiveS"] in skills["passives"]["S"]:
-			statsmodifier = [x+y for x,y in zip(statsmodifier, skills["passives"]["S"][hero["passiveS"]]["statModifiers"])]
+		if hero["summoner"]:
+			statsmodifier = [x+y for x,y in zip(statsmodifier, utilities.summonerranks[hero["summoner"]])]
+		# Append passives visible stats
+		for category in ["A", "S"]:
+			if hero["passive" + category] != "-":
+				statsmodifier = [x+y for x,y in zip(statsmodifier, skills["passives"][category][hero["passive" + category]]["statModifiers"])]
 		if hero["attire"]:
 			statsmodifier = [x+y for x,y in zip(statsmodifier, [2, 2, 2, 2, 2])]
 		if hero["bonusunit"]:
 			statsmodifier = [x+y for x,y in zip(statsmodifier, [10, 4, 4, 4, 4])]
+		# Add the normal visible buffs
 		statsmodifier = [x+y for x,y in zip(statsmodifier, hero["buffs"])]
-		# Calculate the visible buffs you get for each allied mythic or legendary
-		if hero["allies"] and hero["blessing"] in ["Dark", "Light", "Anima", "Astra", "Fire", "Water", "Earth", "Wind"]:
+		# Calculate the visible stats you get for each allied mythic or legendary
+		if hero["allies"] and hero["blessing"]:
 			allies = hero["allies"].split("|")
 			for ally in allies:
 				ally = ally.split(";")
-				# For each hero with a valid blessing we add the visible buffs and multiply for the amount of that ally
-				if ally[0] in other["blessed"][hero["blessing"]]:
-					statsmodifier = [x+(y*int(ally[1])) for x,y in zip(statsmodifier, other["blessed"][hero["blessing"]][ally[0]])]
+				# For each hero with a valid blessing we add the visible buffs and multiply for the amount of that ally if a quantity is provided (TODO: This should be moved to the sanitizer)
+				if ally[0] in other["blessed"][hero["blessing"]] and len(ally) == 2:
+					statsmodifier = [x+(y*int(ally[1]) if ally[1].isdigit() else 0) for x,y in zip(statsmodifier, other["blessed"][hero["blessing"]][ally[0]])]
 		# Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers)
 		font = ImageFont.truetype("../data/" + config["fontfile"], 26)
 		draw.text((265, 805), str(statsmodifier[0]), font=font, anchor="ra", fill="#fffaaf", stroke_width=3, stroke_fill="#0a2533")
@@ -165,8 +137,8 @@ def getimage():
 		draw.text((265, 953), str(statsmodifier[3]), font=font, anchor="ra", fill="#64e6f0" if hero["buffs"][3] > 0 else ("#ff506e" if hero["buffs"][3] < 0 else "#fffaaf"), stroke_width=3, stroke_fill="#0a2533")
 		draw.text((265, 1002), str(statsmodifier[4]), font=font, anchor="ra", fill="#64e6f0" if hero["buffs"][4] > 0 else ("#ff506e" if hero["buffs"][4] < 0 else "#fffaaf"), stroke_width=3, stroke_fill="#0a2533")
 		# Print the amount of SP and HM
-		draw.text((265, 1052), hero["sp"], font=font, anchor="ra", fill="#82f546" if hero["sp"] == "9999" else "#fffaaf", stroke_width=3, stroke_fill="#0a2533")
-		draw.text((265, 1100), hero["hm"], font=font, anchor="ra", fill="#82f546" if hero["hm"] == "7000" else "#fffaaf", stroke_width=3, stroke_fill="#0a2533")
+		draw.text((265, 1052), str(hero["sp"]), font=font, anchor="ra", fill="#82f546" if hero["sp"] == 9999 else "#fffaaf", stroke_width=3, stroke_fill="#0a2533")
+		draw.text((265, 1100), str(hero["hm"]), font=font, anchor="ra", fill="#82f546" if hero["hm"] == 7000 else "#fffaaf", stroke_width=3, stroke_fill="#0a2533")
 		# Print the move type and weapon type icons
 		movetype = Image.open("../data/img/other/" + heroes[name]["moveType"].lstrip() + "-move.png")
 		canvas.paste(movetype, (229, 743), movetype)
@@ -174,27 +146,27 @@ def getimage():
 		canvas.paste(weapontype, (20, 742), weapontype)
 
 		# If we have merges we add the text next to the level
-		if int(hero["merges"]) > 0:
+		if hero["merges"] > 0:
 			font = ImageFont.truetype("../data/" + config["fontfile"], 25)
-			draw.text((165, 742), "+", font=font, fill="#82f546" if hero["merges"] == "10" else "#ffffff", stroke_width=3, stroke_fill="#0a2533")
-			draw.text((184, 744), hero["merges"], font=font, fill="#82f546" if hero["merges"] == "10" else "#ffffff", stroke_width=3, stroke_fill="#0a2533")
+			draw.text((165, 742), "+", font=font, fill="#82f546" if hero["merges"] == 10 else "#ffffff", stroke_width=3, stroke_fill="#0a2533")
+			draw.text((184, 744), str(hero["merges"]), font=font, fill="#82f546" if hero["merges"] == 10 else "#ffffff", stroke_width=3, stroke_fill="#0a2533")
 		# If we have flowers we add another box with the number
-		if int(hero["flowers"]) > 0:
+		if hero["flowers"] > 0:
 			font = ImageFont.truetype("../data/" + config["fontfile"], 25)
 			flowerholder = Image.open("../data/img/base/flowerholder.png")
 			canvas.paste(flowerholder, (271, 732), flowerholder)
 			flowericon = Image.open("../data/img/other/" + heroes[name]["moveType"].lstrip() + "-flower.png")
 			canvas.paste(flowericon, (289, 727), flowericon)
 			draw.text((345, 742), "+", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
-			draw.text((364, 744), hero["flowers"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+			draw.text((364, 744), str(hero["flowers"]), font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 
 		# Paste the exp indicator
 		expindicator = Image.open("../data/img/base/expindicator.png")
-		canvas.paste(expindicator, (418, 732) if int(hero["flowers"]) > 0 else (271, 732), expindicator)
+		canvas.paste(expindicator, (418, 732) if hero["flowers"] > 0 else (271, 732), expindicator)
 
 		font = ImageFont.truetype("../data/" + config["fontfile"], 23)
 		# If the weapon is valid try to print an icon
-		if hero["weapon"] in skills["weapons"]:
+		if hero["weapon"] != "-":
 			# By default we always use the basic weapon icon or the predefined stat boosters ones
 			icon = hero["refine"] + "-Refine.png" if hero["refine"] in ["Atk", "Spd", "Def", "Res", "Wrathful", "Dazzling"] else "weapon-Refine.png"
 			# If the icon is an special effect we might have to download it
@@ -208,7 +180,7 @@ def getimage():
 				icon = hero["weapon"] + "-Effect.png"
 			weaponicon = Image.open("../data/img/icons/" + icon)
 			canvas.paste(weaponicon, (370, 797), weaponicon)
-			# Hack Falchion name since we show the user the real name but display should be the same
+			# Hack Falchion name since we show the user the real internal name but rendering should be clean
 			if "Falchion (" in hero["weapon"]:
 				hero["weapon"] = "Falchion"
 		# If not just print the basic icon
@@ -225,16 +197,18 @@ def getimage():
 		# Render all the passives
 		for category in utilities.passiverender.keys():
 			# If the passive is not the list we skip trying to download an image
-			if hero["passive" + category] in skills["passives"][category]:
+			if hero["passive" + category] != "-":
+				# Decide on the name of the icon
+				iconname = hero["passive" + category].replace(" ", "_").replace("/", "_") + ".png"
 				# Check if the icon art is already in the temporal folder for speeding up requests from the wiki
-				if (pathlib.Path("../data/img/icons/" + hero["passive" + category].replace(" ", "_").replace("/", "_") + ".png").is_file()):
-					art = Image.open("../data/img/icons/" + hero["passive" + category].replace(" ", "_").replace("/", "_") + ".png")
+				if (pathlib.Path("../data/img/icons/" + iconname).is_file()):
+					art = Image.open("../data/img/icons/" + iconname)
 				else:
 					# Download, resize and cache the picture
 					try:
 						response = requests.get(skills["passives"][category][hero["passive" + category]]["icon"])
 						art = Image.open(io.BytesIO(response.content)).resize((44, 44))
-						art.save("../data/img/icons/" + hero["passive" + category].replace(" ", "_").replace("/", "_") + ".png", 'PNG')
+						art.save("../data/img/icons/" + iconname, 'PNG')
 					except:
 						# We failed to download the icon for this skill :(
 						print("Failed to download icon for " + hero["passive" + category])
@@ -245,12 +219,13 @@ def getimage():
 			indicator = Image.open("../data/img/other/indicator-skill" + category + ".png")
 			canvas.paste(indicator, utilities.passiverender[category]["indicator"], indicator)
 
-		# If the blessing is not valid we skip it
-		if hero["blessing"] in ["Dark", "Light", "Anima", "Astra", "Fire", "Water", "Earth", "Wind"]:
+		# If blessed print the icon
+		if hero["blessing"]:
 			blessingicon = Image.open("../data/img/other/" + hero["blessing"] + "-Blessing.png")
 			canvas.paste(blessingicon, (575, 570), blessingicon)
 			# If whe printed a blessing the summoner support position icon must go further to the left
 			summonerpos = (450, 570)
+		# If summoner supported print the icon
 		if hero["summoner"]:
 			summonericon = Image.open("../data/img/other/Support-" + hero["summoner"] + ".png")
 			canvas.paste(summonericon, summonerpos, summonericon)
