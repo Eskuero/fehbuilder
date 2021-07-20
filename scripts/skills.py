@@ -153,7 +153,7 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 		if skills["weapons"][skill["Name"]]["upgrades"] and "skill1" in skill["refines"]:
 			# This is the index where the skill1 icon is specified
 			effectindex = skill["refines"].split(",").index("skill1")
-			skills["weapons"][skill["Name"]]["specialIcon"] = utils.obtaintrueurl(skill["Icon"].split(",")[effectindex]) if utils.obtaintrueurl(skill["Icon"].split(",")[effectindex]) else "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/82/Icon_Skill_Weapon.png"
+			skills["weapons"][skill["Name"]]["specialIcon"] = utils.obtaintrueurl([skill["Icon"].split(",")[effectindex]])[0] if utils.obtaintrueurl([skill["Icon"].split(",")[effectindex]])[0] else "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/82/Icon_Skill_Weapon.png"
 			skills["weapons"][skill["Name"]]["specialstatModifiers"] = skill["StatModifiers"].split(";")[effectindex].split(",")
 	# Assist type handling
 	if skill["Scategory"] == "assist":
@@ -177,7 +177,7 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 		truecategorie = skill["Scategory"][-1].capitalize()
 		# Obtain the true url by parsing the html page for it
 		skills["passives"][truecategorie][skill["Name"]] = {
-			"icon": utils.obtaintrueurl(skill["Icon"]),
+			"icon": utils.obtaintrueurl([skill["Icon"]])[0],
 			"statModifiers": [0, 0, 0, 0, 0] if skill["StatModifiers"] == "" else [int(x) for x in skill["StatModifiers"].split(",")],
 			"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),
 			"moveType": skill["CanUseMove"].replace(",  ", ",").split(","),
@@ -188,7 +188,7 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 	if skill["Scategory"] == "sacredseal":
 		# Obtain the true url by parsing the html page for it
 		skills["passives"]["S"][skill["Name"]] = {
-			"icon": utils.obtaintrueurl(skill["Icon"]),
+			"icon": utils.obtaintrueurl([skill["Icon"]])[0],
 			"statModifiers": [0, 0, 0, 0, 0] if skill["StatModifiers"] == "" else [int(x) for x in skill["StatModifiers"].split(",")],
 			"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),
 			"moveType": skill["CanUseMove"].replace(",  ", ",").split(","),

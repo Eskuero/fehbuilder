@@ -76,6 +76,17 @@ for hero in [entry["title"] for entry in utils.retrieveapidata(params)]:
 	print(hero["Name"])
 	# This redefinition exists exclusive because of bikini Tharja quotation marks, what a joke
 	truename = hero["Name"].replace("&quot;", '"')
+	# Request a list of all the art for this hero in one go
+	availableart = utils.obtaintrueurl([
+		truename + ("_BtlFace.png" if ":" not in truename else "_Face.webp"),
+		truename + ("_BtlFace.png" if ":" not in truename else "_BtlFace.webp"),
+		truename + ("_BtlFace.png" if ":" not in truename else "_BtlFace_C.webp"),
+		truename + ("_BtlFace.png" if ":" not in truename else "_BtlFace_D.webp"),
+		truename + "_Resplendent_Face.webp",
+		truename + "_Resplendent_BtlFace.webp",
+		truename + "_Resplendent_BtlFace_C.webp",
+		truename + "_Resplendent_BtlFace_D.webp"
+	])
 	heroes[truename] = {
 		"stats": {
 			"HP": int(hero["Lv1HP5"]),
@@ -95,18 +106,18 @@ for hero in [entry["title"] for entry in utils.retrieveapidata(params)]:
 		"moveType": herodata[hero["Name"]]["MoveType"],
 		"AdditionDate": herodata[hero["Name"]]["AdditionDate"],
 		"art": {
-			"Portrait": utils.obtaintrueurl(truename + ("_BtlFace.png" if ":" not in truename else "_Face.webp")),
-			"Attack": utils.obtaintrueurl(truename + ("_BtlFace.png" if ":" not in truename else "_BtlFace.webp")),
-			"Special": utils.obtaintrueurl(truename + ("_BtlFace.png" if ":" not in truename else "_BtlFace_C.webp")),
-			"Damage": utils.obtaintrueurl(truename + ("_BtlFace.png" if ":" not in truename else "_BtlFace_D.webp"))
+			"Portrait": availableart[0],
+			"Attack": availableart[1],
+			"Special": availableart[2],
+			"Damage": availableart[3],
 		},
 		"artist": artistsnames[herodata[hero["Name"]]["Artist"]] if herodata[hero["Name"]]["Artist"] in artistsnames else "",
 		"actor": herodata[hero["Name"]]["ActorEN"].replace(",", " + "),
 		"resplendentart": {
-			"Portrait": utils.obtaintrueurl(truename + "_Resplendent_Face.webp") if hero["Name"] in resplendentlist else False,
-			"Attack": utils.obtaintrueurl(truename + "_Resplendent_BtlFace.webp") if hero["Name"] in resplendentlist else False,
-			"Special": utils.obtaintrueurl(truename + "_Resplendent_BtlFace_C.webp") if hero["Name"] in resplendentlist else False,
-			"Damage": utils.obtaintrueurl(truename + "_Resplendent_BtlFace_D.webp") if hero["Name"] in resplendentlist else False
+			"Portrait": availableart[4],
+			"Attack": availableart[5],
+			"Special": availableart[6],
+			"Damage": availableart[7],
 		},
 		"artistresplendent": artistsnames[resplendentlist[hero["Name"]]["artist"]] if hero["Name"] in resplendentlist and resplendentlist[hero["Name"]]["artist"] in artistsnames else False,
 		"actorresplendent": resplendentlist[hero["Name"]]["actor"] if hero["Name"] in resplendentlist else False,
