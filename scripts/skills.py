@@ -119,6 +119,17 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 # Now ignore every skill that has a clone ending with "+" (refinable inheritable or improved specials/assists) or " II" (those are remix prf)
 maxskills = [skill for skill in maxskills if (skill + "+") not in maxskills and (skill + " II") not in maxskills]
 
+
+# Parameters to send the API whe requesting the whole list of shiny skills (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=Name&where=Scategory+in+(%22passivea%22,%20%22passivec%22)+and+SP=300+and+exclusive=0+and+Name+not+like+'%253'+and+Name+not+like+'%25Counter'+and+Name+not+like+'%25Foil'+and+Name+not+like+'%25Ward'&limit=max&offset=0&format=json)
+params = dict(
+    action = 'cargoquery', limit = 'max', offset = -500, format = 'json',
+    tables = 'Skills',
+    fields = "Name",
+    where = "Scategory in ('passivea','passivec') and SP=300 and exclusive=0 and Name not like '%3' and Name not like '%Counter' and Name not like '%Foil' and Name not like '%Ward'"
+)
+# This is the list of skills who have shiny borders (This is any skill for A or C category that isn't exclusive, costs 300 SP and doesn't end on 3, Counter, Foil or Ward (for now lol))
+shinyskills = [skill['Name'] for skill in [entry["title"] for entry in utils.retrieveapidata(params)]]
+
 # Parameters to send the API whe requesting the whole list of skills (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=Name,Scategory,group_concat(StatModifiers%20separator%20%27;%27)=StatModifiers,CanUseMove,CanUseWeapon,group_concat(Exclusive)=Exclusive,group_concat(ifnull(concat(Icon),%20%27%27))=Icon,group_concat(ifnull(concat(RefinePath),%20%27%27))=refines,SP&group_by=Name&limit=max&offset=0&format=json)
 params = dict(
     action = 'cargoquery', limit = 'max', offset = -500, format = 'json',
@@ -180,6 +191,7 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 			"icon": utils.obtaintrueurl([skill["Icon"]])[0],
 			"statModifiers": [0, 0, 0, 0, 0] if skill["StatModifiers"] == "" else [int(x) for x in skill["StatModifiers"].split(",")],
 			"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),
+			"shiny": True if skill["Name"] in shinyskills else False,
 			"moveType": skill["CanUseMove"].replace(",  ", ",").split(","),
 			"exclusive": True if skill["Exclusive"] == "1" else False,
 			"isMax": True if skill["Name"] in maxskills else False
