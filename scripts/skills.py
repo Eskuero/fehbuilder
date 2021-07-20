@@ -2,37 +2,61 @@ import requests
 import json
 import utils
 
-# Falchion
-falchiondata = {
-	"Falchion (Awakening)": {
-		"WeaponType": ["Red Sword"],
-		"moveType": ["Infantry", "Armored",  "Cavalry",  "Flying"],
-		"statModifiers": [0, 16, 0, 0, 0],
-		"specialIcon": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/9f/Falchion_Awakening_W.png",
-		"specialstatModifiers": [3, 16, 0, 0, 0],
-		"upgrades": True,
-		"exclusive": True,
-		"isMax": True
+# Falchion and Missiletainn
+hadcordeddata = {
+	"Falchion": {
+		"Falchion (Awakening)": {
+			"WeaponType": ["Red Sword"],
+			"moveType": ["Infantry", "Armored",  "Cavalry",  "Flying"],
+			"statModifiers": [0, 16, 0, 0, 0],
+			"specialIcon": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/9f/Falchion_Awakening_W.png",
+			"specialstatModifiers": [3, 16, 0, 0, 0],
+			"upgrades": True,
+			"exclusive": True,
+			"isMax": True
+		},
+		"Falchion (Gaiden)": {
+			"WeaponType": ["Red Sword"],
+			"moveType": ["Infantry", "Armored",  "Cavalry",  "Flying"],
+			"statModifiers": [0, 16, 0, 0, 0],
+			"specialIcon": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/dd/Falchion_Gaiden_W.png",
+			"specialstatModifiers": [3, 16, 0, 0, 0],
+			"upgrades": True,
+			"exclusive": True,
+			"isMax": True
+		},
+		"Falchion (Mystery)": {
+			"WeaponType": ["Red Sword"],
+			"moveType": ["Infantry", "Armored",  "Cavalry",  "Flying"],
+			"statModifiers": [0, 16, 0, 0, 0],
+			"specialIcon": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b0/Falchion_Mystery_W.png",
+			"specialstatModifiers": [3, 16, 0, 0, 0],
+			"upgrades": True,
+			"exclusive": True,
+			"isMax": True
+		}
 	},
-	"Falchion (Gaiden)": {
-		"WeaponType": ["Red Sword"],
-		"moveType": ["Infantry", "Armored",  "Cavalry",  "Flying"],
-		"statModifiers": [0, 16, 0, 0, 0],
-		"specialIcon": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/dd/Falchion_Gaiden_W.png",
-		"specialstatModifiers": [3, 16, 0, 0, 0],
-		"upgrades": True,
-		"exclusive": True,
-		"isMax": True
-	},
-	"Falchion (Mystery)": {
-		"WeaponType": ["Red Sword"],
-		"moveType": ["Infantry", "Armored",  "Cavalry",  "Flying"],
-		"statModifiers": [0, 16, 0, 0, 0],
-		"specialIcon": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b0/Falchion_Mystery_W.png",
-		"specialstatModifiers": [3, 16, 0, 0, 0],
-		"upgrades": True,
-		"exclusive": True,
-		"isMax": True
+	"Missiletainn": {
+		"Missiletainn (Sword)": {
+			"WeaponType": ["Red Sword"],
+			"moveType": ["Infantry", "Armored",  "Cavalry",  "Flying"],
+			"statModifiers": [0, 16, 0, 0, 0],
+			"specialIcon": False,
+			"specialstatModifiers": [0, 0, 0, 0, 0],
+			"upgrades": False,
+			"exclusive": True,
+			"isMax": True
+		},
+		"Missiletainn (Tome)": {
+			"WeaponType": ["Blue Tome"],
+			"moveType": ["Infantry", "Armored",  "Cavalry",  "Flying"],
+			"statModifiers": [0, 14, 0, 0, 0],
+			"specialIcon": False,
+			"specialstatModifiers": [0, 0, 0, 0, 0],
+			"upgrades": False,
+			"exclusive": True,
+			"isMax": True
+		}
 	}
 }
 # We store all the data in a single dict
@@ -109,8 +133,8 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 	# Weapon type handling
 	if skill["Scategory"] == "weapon":
 		# We are hardcoding Falchion so we don't parse it normally
-		if skill["Name"] == "Falchion":
-			skills["weapons"].update(falchiondata)
+		if skill["Name"] in ["Falchion", "Missiletainn"]:
+			skills["weapons"].update(hadcordeddata[skill["Name"]])
 			continue
 		# The position where the refine path is empty is the index of the base weapon
 		index = skill["refines"].split(",").index('')
