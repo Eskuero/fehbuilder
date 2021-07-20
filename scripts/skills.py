@@ -203,6 +203,7 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 			"icon": utils.obtaintrueurl([skill["Icon"]])[0],
 			"statModifiers": [0, 0, 0, 0, 0] if skill["StatModifiers"] == "" else [int(x) for x in skill["StatModifiers"].split(",")],
 			"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),
+			"shiny": False,
 			"moveType": skill["CanUseMove"].replace(",  ", ",").split(","),
 			"exclusive": True if skill["Exclusive"] == "1" else False,
 			"isMax": True if skill["Name"] in maxseals else False
