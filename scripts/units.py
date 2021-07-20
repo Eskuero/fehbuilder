@@ -108,7 +108,7 @@ for hero in [entry["title"] for entry in utils.retrieveapidata(params)]:
 			"Special": utils.obtaintrueurl(truename + "_Resplendent_BtlFace_C.webp") if hero["Name"] in resplendentlist else False,
 			"Damage": utils.obtaintrueurl(truename + "_Resplendent_BtlFace_D.webp") if hero["Name"] in resplendentlist else False
 		},
-		"artistresplendent": artistsnames[resplendentlist[hero["Name"]]["artist"]] if hero["Name"] in resplendentlist and resplendentlist[hero["Name"]]["artist"]] in artistsnames else False,
+		"artistresplendent": artistsnames[resplendentlist[hero["Name"]]["artist"]] if hero["Name"] in resplendentlist and resplendentlist[hero["Name"]]["artist"] in artistsnames else False,
 		"actorresplendent": resplendentlist[hero["Name"]]["actor"] if hero["Name"] in resplendentlist else False,
 		"basekit": heroskills[hero["Name"]] if hero["Name"] in heroskills else []
 	}
