@@ -180,9 +180,9 @@ def getimage():
 				icon = "icons/" + hero["weapon"] + "-Effect.png"
 			weaponicon = Image.open("../data/img/" + icon)
 			canvas.paste(weaponicon, (370, 797), weaponicon)
-			# Hack Falchion name since we show the user the real internal name but rendering should be clean
-			if "Falchion (" in hero["weapon"]:
-				hero["weapon"] = "Falchion"
+			# Hack Falchion and Missiletain name since we show the user the real internal name for difference but rendering should be clean
+			if "Falchion (" in hero["weapon"] or "Missiletainn (" in hero["weapon"]:
+				hero["weapon"] = hero["weapon"].split("(")[0]
 		# If not just print the basic icon
 		else:
 			weaponicon = Image.open("../data/img/other/weapon-Refine.png")
