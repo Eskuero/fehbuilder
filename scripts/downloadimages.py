@@ -83,6 +83,16 @@ icons = {
 	"Support-B": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/aa/Icon_Support_Summoner_B.png?147?160",
 	"Support-A": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a2/Icon_Support_Summoner_A.png?147?160",
 	"Support-S": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/8a/Icon_Support_Summoner_S.png?147?160",
+	# Favorite marks
+	"favorite_0": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a9/FavoriteMark0.png?90?92",
+	"favorite_1": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b2/FavoriteMark1.png?90?92",
+	"favorite_2": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/9b/FavoriteMark2.png?90?92",
+	"favorite_3": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/0a/FavoriteMark3.png?90?92",
+	"favorite_4": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/81/FavoriteMark4.png?90?92",
+	"favorite_5": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/20/FavoriteMark5.png?90?92",
+	"favorite_6": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/6/6e/FavoriteMark6.png?90?92",
+	"favorite_7": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/17/FavoriteMark7.png?90?92",
+	"favorite_8": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/e/e8/FavoriteMark8.png?90?92",
 	# Other
 	"normalbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/9d/BG_DetailedStatus.png?1067?1280",
 	"summonerbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/5c/Summoner_Support_Background.png?1067?1280",

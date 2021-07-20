@@ -3,7 +3,7 @@ import math
 
 # Hero request squeleton definition
 hero = {
-	"name": False, "title": False, "boon": False, "bane": False, "merges": False, "flowers": False, "weapon": False, "refine": False, "assist": False, "special": False, "passiveA": False, "passiveB": False, "passiveC": False, "passiveS": False, "summoner": False, "blessing": False, "attire": False, "bonusunit": False, "allies": False, "buffs": False, "sp": False, "hm": False, "artstyle": False, "offset": False, "appui": False,
+	"name": False, "title": False, "boon": False, "bane": False, "merges": False, "flowers": False, "weapon": False, "refine": False, "assist": False, "special": False, "passiveA": False, "passiveB": False, "passiveC": False, "passiveS": False, "summoner": False, "blessing": False, "attire": False, "bonusunit": False, "allies": False, "buffs": False, "sp": False, "hm": False, "artstyle": False, "offset": False, "favorite": False, "appui": False
 }
 
 def herosanitization(heroes, skills, name, args):
@@ -75,6 +75,9 @@ def herosanitization(heroes, skills, name, args):
 		# If offset valie is not provided default to 0, if provided but not a valid digit default to 0, if valid but above 300 default to 300, anything else should be fine
 		elif prop == "offset":
 			hero[prop] = 0 if not value else (0 if not value.isdigit() else (300 if int(value) > 300 else int(value)))
+		# For favorite marks if it's a strig numeric from 1 to 8
+		elif prop == "favorite":
+			hero[prop] = value if value in ["1", "2", "3", "4", "5", "6", "7", "8"] else "0"
 		# For app ui default to render unless told otherwise
 		elif prop == "appui":
 			hero[prop] = False if value == "false" else True

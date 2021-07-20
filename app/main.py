@@ -84,7 +84,7 @@ def getimage():
 		# Write the title and name using an horizontally centered anchor to avoid going out of bounds
 		draw.text((188, 585), hero["title"], font=font, anchor="mm", stroke_width=3, stroke_fill=(50, 30, 10))
 		draw.text((222, 659), hero["name"], font=font, anchor="mm", stroke_width=3, stroke_fill=(50, 30, 10))
-		# Print the artist and actor names if appui enabled
+		# Print the artist and actor names, as well as the favorite mark if appui enabled
 		if hero["appui"]:
 			font = ImageFont.truetype("../data/" + config["fontfile"], 21)
 			# If the hero is truly a resplendent one we might have data for it
@@ -95,6 +95,8 @@ def getimage():
 			else:
 				draw.text((47, 1212), heroes[name]["actor"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 				draw.text((47, 1241), heroes[name]["artist"], font=font, fill="#ffffff",stroke_width=3, stroke_fill="#0a2533")
+			favorite = Image.open("../data/img/other/favorite_" + hero["favorite"] + ".png")
+			canvas.paste(favorite, (3, 229), favorite)
 		# First write the static text for each stat (normal anchoring)
 		font = ImageFont.truetype("../data/" + config["fontfile"], 25)
 		draw.text((115, 805), "HP", font=font, fill="#b1ecfa" if hero["boon"] == "HP" else ("#f0a5b3" if hero["bane"] == "HP" and int(hero["merges"]) == 0 else "#ffffff"), stroke_width=3, stroke_fill="#0a2533")
