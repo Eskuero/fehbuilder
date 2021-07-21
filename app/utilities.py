@@ -1,12 +1,11 @@
 import json
 import math
 
-# Hero request squeleton definition
-hero = {
-	"name": False, "title": False, "boon": False, "bane": False, "merges": False, "flowers": False, "weapon": False, "refine": False, "assist": False, "special": False, "passiveA": False, "passiveB": False, "passiveC": False, "passiveS": False, "summoner": False, "blessing": False, "attire": False, "bonusunit": False, "allies": False, "buffs": False, "sp": False, "hm": False, "artstyle": False, "offset": False, "favorite": False, "appui": False
-}
-
 def herosanitization(heroes, skills, name, args):
+	# Hero request squeleton definition
+	hero = {
+		"name": False, "title": False, "boon": False, "bane": False, "merges": False, "flowers": False, "weapon": False, "refine": False, "assist": False, "special": False, "passiveA": False, "passiveB": False, "passiveC": False, "passiveS": False, "summoner": False, "blessing": False, "attire": False, "bonusunit": False, "allies": False, "buffs": False, "sp": False, "hm": False, "artstyle": False, "offset": False, "favorite": False, "appui": False
+	}
 	for prop in hero:
 		value = args.get(prop)
 		# It's safe to assume the provided values for the hero name and title are correct since we checked they do exist
