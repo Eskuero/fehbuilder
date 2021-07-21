@@ -151,8 +151,8 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 		index = skill["refines"].split(",").index('')
 		skills["weapons"][skill["Name"]] = {
 			# Split the weapon types by commas to make later checks easier
-			"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),
-			"moveType": skill["CanUseMove"].replace(",  ", ",").split(","),
+			"WeaponType": [item.strip() for item in skill["CanUseWeapon"].split(",")],
+			"moveType": [item.strip() for item in skill["CanUseMove"].split(",")],
 			"statModifiers": [int(x) for x in skill["StatModifiers"].split(";")[index].split(",")],
 			"specialIcon": False,
 			"specialstatModifiers": [0, 0, 0, 0, 0],
@@ -170,7 +170,7 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 	if skill["Scategory"] == "assist":
 		# Because assists have no restrictions based on weapon or movement we just store them
 		skills["assists"][skill["Name"]] = {
-			"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),
+			"WeaponType": [item.strip() for item in skill["CanUseWeapon"].split(",")],
 			"exclusive": True if skill["Exclusive"] == "1" else False,
 			"isMax": True if skill["Name"] in maxskills else False
 		}
@@ -178,7 +178,7 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 	if skill["Scategory"] == "special":
 		# Because specials have no restrictions based on movement we just store the weapon restrictions
 		skills["specials"][skill["Name"]] = {
-			"WeaponType": skill["CanUseWeapon"].replace(", ", ",").split(", "),
+			"WeaponType": [item.strip() for item in skill["CanUseWeapon"].split(",")],
 			"exclusive": True if skill["Exclusive"] == "1" else False,
 			"isMax": True if skill["Name"] in maxskills else False
 		}
@@ -190,9 +190,9 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 		skills["passives"][truecategorie][skill["Name"]] = {
 			"icon": utils.obtaintrueurl([skill["Icon"]])[0],
 			"statModifiers": [0, 0, 0, 0, 0] if skill["StatModifiers"] == "" else [int(x) for x in skill["StatModifiers"].split(",")],
-			"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),
+			"WeaponType": [item.strip() for item in skill["CanUseWeapon"].split(",")],
 			"shiny": True if skill["Name"] in shinyskills else False,
-			"moveType": skill["CanUseMove"].replace(",  ", ",").split(","),
+			"moveType": [item.strip() for item in skill["CanUseMove"].split(",")],
 			"exclusive": True if skill["Exclusive"] == "1" else False,
 			"isMax": True if skill["Name"] in maxskills else False
 		}
@@ -202,9 +202,9 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 		skills["passives"]["S"][skill["Name"]] = {
 			"icon": utils.obtaintrueurl([skill["Icon"]])[0],
 			"statModifiers": [0, 0, 0, 0, 0] if skill["StatModifiers"] == "" else [int(x) for x in skill["StatModifiers"].split(",")],
-			"WeaponType": skill["CanUseWeapon"].replace(",  ", ",").split(","),
+			"WeaponType": [item.strip() for item in skill["CanUseWeapon"].split(",")],
 			"shiny": False,
-			"moveType": skill["CanUseMove"].replace(",  ", ",").split(","),
+			"moveType": [item.strip() for item in skill["CanUseMove"].split(",")],
 			"exclusive": True if skill["Exclusive"] == "1" else False,
 			"isMax": True if skill["Name"] in maxseals else False
 		}
