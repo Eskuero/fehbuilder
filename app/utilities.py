@@ -9,10 +9,11 @@ def herosanitization(heroes, skills, name, args):
 	for prop in hero:
 		value = args.get(prop)
 		# It's safe to assume the provided values for the hero name and title are correct since we checked they do exist
+		truename = heroes[name]["NameEN"]
 		if prop == "name":
-			hero[prop] = name.split(":")[0]
+			hero[prop] = truename.split(":")[0]
 		elif prop == "title":
-			hero[prop] = name.split(":")[1].lstrip() if ":" in name else "Enemy"
+			hero[prop] = truename.split(":")[1].lstrip() if ":" in truename else "Enemy"
 		# Banes and boons are valid within a set amount of values
 		elif prop in ["boon", "bane"]:
 			hero[prop] = value if value in ["HP", "Atk", "Spd", "Def", "Res"] else None
@@ -24,16 +25,16 @@ def herosanitization(heroes, skills, name, args):
 			hero[prop] = 0 if not value else (0 if not value.isdigit() else (15 if int(value) > 15 else int(value)))
 		# Weapon must exist in our data otherwise we don't print it
 		elif prop == "weapon":
-			hero[prop] = value if value in skills["weapons"] else "-"
+			hero[prop] = value if value in skills["weapons"] else False
 		# Refine can only be from a certain set
 		elif prop == "refine":
 			hero[prop] = value if value in ["Effect", "Atk", "Spd", "Def", "Res", "Dazzling", "Wrathful"] else None
 		# Assists and specials must exist in our data otherwise we don't print it
 		elif prop in ["assist", "special"]:
-			hero[prop] = value if value in skills[prop + "s"] else "-"
+			hero[prop] = value if value in skills[prop + "s"] else False
 		# Passives must exist in our data otherwise we don't print it
 		elif prop in ["passiveA", "passiveB", "passiveC", "passiveS"]:
-			hero[prop] = value if value in skills["passives"][prop[-1:]] else "-"
+			hero[prop] = value if value in skills["passives"][prop[-1:]] else False
 		# Summoner support rank can only be of C, B, A or S
 		elif prop == "summoner":
 			hero[prop] = value if value in summonerranks else None

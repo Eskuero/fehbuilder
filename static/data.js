@@ -97,7 +97,7 @@ function populate(select, data, clean, bypass) {
 		Object.keys(data).forEach((value) => {
 			var opt = document.createElement('option');
 			opt.value = value;
-			opt.innerHTML = value;
+			opt.innerHTML = data[value]["NameEN"];
 			select.appendChild(opt);
 		});
 		return;
@@ -142,7 +142,7 @@ function populate(select, data, clean, bypass) {
 			}
 			// Check if the skill is exclusive and if it does check if it's included on the units basekit
 			if (data[value]["exclusive"]) {
-				if (basekit.includes(value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace("(Sword)", "sword").replace("(Tome)", "tome").replace(/\(|\)/g, "").replace("'", "").replace("ð", "d").replace("·", "").replace(" Θ", "").replace("Ω", "Omega").replace("þ", "th").replace(/^\Þ/, "Th").replace(/^Naga/, "Naga tome"))) {
+				if (basekit.includes(data[value]["NameEN"].normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace("(Sword)", "sword").replace("(Tome)", "tome").replace(/\(|\)/g, "").replace("'", "").replace("ð", "d").replace("·", "").replace(" Θ", "").replace("Ω", "Omega").replace("þ", "th").replace(/^\Þ/, "Th").replace(/^Naga/, "Naga tome"))) {
 					add = true;
 				// If it isn't on the unit basekit he can't use it regarless of other conditions so we skip this iteration
 				} else {
@@ -154,7 +154,7 @@ function populate(select, data, clean, bypass) {
 		if (add) {
 			var opt = document.createElement('option');
 			opt.value = value;
-			opt.innerHTML = value;
+			opt.innerHTML = data[value]["NameEN"];
 			select.appendChild(opt);
 		}
 	});

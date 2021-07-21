@@ -31,11 +31,11 @@ for hero in [entry["title"] for entry in utils.retrieveapidata(params)]:
 	for item in [item for item in heroskills[hero["Name"]] if item in weaponevolutions]:
 		heroskills[hero["Name"]].append(weaponevolutions[item])
 
-# Parameters to send the API whe requesting the whole list of heroes for data (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Units&fields=_pageName=Name,WeaponType,MoveType,Artist,ActorEN,AdditionDate&limit=max&format=json)
+# Parameters to send the API whe requesting the whole list of heroes for data (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Units&fields=_pageName=Name,TagID,WeaponType,MoveType,Artist,ActorEN,AdditionDate&limit=max&format=json)
 params = dict(
     action = 'cargoquery', limit = 'max', offset = -500, format = 'json',
     tables = 'Units',
-    fields = '_pageName=Name,WeaponType,MoveType,Artist,ActorEN,AdditionDate'
+    fields = '_pageName=Name,TagID,WeaponType,MoveType,Artist,ActorEN,AdditionDate'
 )
 herodata = {}
 stop = False
@@ -87,7 +87,8 @@ for hero in [entry["title"] for entry in utils.retrieveapidata(params)]:
 		truename + "_Resplendent_BtlFace_C.webp",
 		truename + "_Resplendent_BtlFace_D.webp"
 	])
-	heroes[truename] = {
+	heroes[herodata[hero["Name"]]["TagID"]] = {
+		"NameEN": truename,
 		"stats": {
 			"HP": int(hero["Lv1HP5"]),
 			"Atk": int(hero["Lv1Atk5"]),
@@ -131,7 +132,7 @@ with open("../data/units.json", "w") as outfile:
 heroeslite = {
 	heroname: {
 		property: value
-		for property, value in properties.items() if property in ["WeaponType", "moveType", "AdditionDate", "basekit"]
+		for property, value in properties.items() if property in ["NameEN", "WeaponType", "moveType", "AdditionDate", "basekit"]
 	}
 	for heroname, properties in heroes.items()
 }

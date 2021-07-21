@@ -5,7 +5,8 @@ import utils
 # Falchion and Missiletainn
 hadcordeddata = {
 	"Falchion": {
-		"Falchion (Awakening)": {
+		"SID_ファルシオン覚醒": {
+			"NameEN": "Falchion (Awakening)",
 			"WeaponType": ["Red Sword"],
 			"moveType": ["Infantry", "Armored",  "Cavalry",  "Flying"],
 			"statModifiers": [0, 16, 0, 0, 0],
@@ -15,7 +16,8 @@ hadcordeddata = {
 			"exclusive": True,
 			"isMax": True
 		},
-		"Falchion (Gaiden)": {
+		"SID_ファルシオン外伝": {
+			"NameEN": "Falchion (Gaiden)",
 			"WeaponType": ["Red Sword"],
 			"moveType": ["Infantry", "Armored",  "Cavalry",  "Flying"],
 			"statModifiers": [0, 16, 0, 0, 0],
@@ -25,7 +27,8 @@ hadcordeddata = {
 			"exclusive": True,
 			"isMax": True
 		},
-		"Falchion (Mystery)": {
+		"SID_ファルシオン": {
+			"NameEN": "Falchion (Mystery)",
 			"WeaponType": ["Red Sword"],
 			"moveType": ["Infantry", "Armored",  "Cavalry",  "Flying"],
 			"statModifiers": [0, 16, 0, 0, 0],
@@ -37,7 +40,8 @@ hadcordeddata = {
 		}
 	},
 	"Missiletainn": {
-		"Missiletainn (Sword)": {
+		"SID_ミステルトィン": {
+			"NameEN": "Missiletainn (Sword)",
 			"WeaponType": ["Red Sword"],
 			"moveType": ["Infantry", "Armored",  "Cavalry",  "Flying"],
 			"statModifiers": [0, 16, 0, 0, 0],
@@ -47,7 +51,8 @@ hadcordeddata = {
 			"exclusive": True,
 			"isMax": True
 		},
-		"Missiletainn (Tome)": {
+		"SID_魔書ミステルトィン": {
+			"NameEN": "Missiletainn (Tome)",
 			"WeaponType": ["Blue Tome"],
 			"moveType": ["Infantry", "Armored",  "Cavalry",  "Flying"],
 			"statModifiers": [0, 14, 0, 0, 0],
@@ -130,12 +135,12 @@ params = dict(
 # This is the list of skills who have shiny borders (This is any skill for A or C category that isn't exclusive, costs 300 SP and doesn't end on 3, Counter, Foil or Ward (for now lol))
 shinyskills = [skill['Name'] for skill in [entry["title"] for entry in utils.retrieveapidata(params)]]
 
-# Parameters to send the API whe requesting the whole list of skills (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=Name,Scategory,group_concat(StatModifiers%20separator%20%27;%27)=StatModifiers,CanUseMove,CanUseWeapon,group_concat(Exclusive)=Exclusive,group_concat(ifnull(concat(Icon),%20%27%27))=Icon,group_concat(ifnull(concat(RefinePath),%20%27%27))=refines,SP&group_by=Name&limit=max&offset=0&format=json)
+# Parameters to send the API whe requesting the whole list of skills (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=Name,TagID,Scategory,group_concat(StatModifiers%20separator%20%27;%27)=StatModifiers,CanUseMove,CanUseWeapon,group_concat(Exclusive)=Exclusive,group_concat(ifnull(concat(Icon),%20%27%27))=Icon,group_concat(ifnull(concat(RefinePath),%20%27%27))=refines,SP&group_by=Name&limit=max&offset=0&format=json)
 params = dict(
     action = 'cargoquery', limit = 'max', offset = -500, format = 'json',
     tables = 'Skills',
 # We group concat all values for statsmodifiers, exclusivity, icons and refinepaths to be able to consistently identify which values are the ones for the weapon at base (we basically get the index for a NULL refinepath when filling the dicttionary)
-    fields = "Name,Scategory,group_concat(StatModifiers separator ';')=StatModifiers,CanUseMove,CanUseWeapon,group_concat(Exclusive)=Exclusive,group_concat(ifnull(concat(Icon), ''))=Icon,group_concat(ifnull(concat(RefinePath), ''))=refines,SP",
+    fields = "Name,TagID,Scategory,group_concat(StatModifiers separator ';')=StatModifiers,CanUseMove,CanUseWeapon,group_concat(Exclusive)=Exclusive,group_concat(ifnull(concat(Icon), ''))=Icon,group_concat(ifnull(concat(RefinePath), ''))=refines,SP",
     group_by = "Name"
 )
 # Get skill data every time individually before upon entering the loop
@@ -149,7 +154,8 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 			continue
 		# The position where the refine path is empty is the index of the base weapon
 		index = skill["refines"].split(",").index('')
-		skills["weapons"][skill["Name"]] = {
+		skills["weapons"][skill["TagID"]] = {
+			"NameEN": skill["Name"],
 			# Split the weapon types by commas to make later checks easier
 			"WeaponType": [item.strip() for item in skill["CanUseWeapon"].split(",")],
 			"moveType": [item.strip() for item in skill["CanUseMove"].split(",")],
@@ -161,15 +167,16 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 			"isMax": True if skill["Name"] in maxskills else False
 		}
 		# If we had upgrades and a skill1 string is on the refine list we have a custom icon and maybe additional visible stats (Mystletain, Axe of Virility have Fury 3)
-		if skills["weapons"][skill["Name"]]["upgrades"] and "skill1" in skill["refines"]:
+		if skills["weapons"][skill["TagID"]]["upgrades"] and "skill1" in skill["refines"]:
 			# This is the index where the skill1 icon is specified
 			effectindex = skill["refines"].split(",").index("skill1")
-			skills["weapons"][skill["Name"]]["specialIcon"] = utils.obtaintrueurl([skill["Icon"].split(",")[effectindex]])[0] if utils.obtaintrueurl([skill["Icon"].split(",")[effectindex]])[0] else "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/82/Icon_Skill_Weapon.png"
-			skills["weapons"][skill["Name"]]["specialstatModifiers"] = skill["StatModifiers"].split(";")[effectindex].split(",")
+			skills["weapons"][skill["TagID"]]["specialIcon"] = utils.obtaintrueurl([skill["Icon"].split(",")[effectindex]])[0] if utils.obtaintrueurl([skill["Icon"].split(",")[effectindex]])[0] else "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/82/Icon_Skill_Weapon.png"
+			skills["weapons"][skill["TagID"]]["specialstatModifiers"] = skill["StatModifiers"].split(";")[effectindex].split(",")
 	# Assist type handling
 	if skill["Scategory"] == "assist":
 		# Because assists have no restrictions based on weapon or movement we just store them
-		skills["assists"][skill["Name"]] = {
+		skills["assists"][skill["TagID"]] = {
+			"NameEN": skill["Name"],
 			"WeaponType": [item.strip() for item in skill["CanUseWeapon"].split(",")],
 			"exclusive": True if skill["Exclusive"] == "1" else False,
 			"isMax": True if skill["Name"] in maxskills else False
@@ -177,7 +184,8 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 	# Special type handling
 	if skill["Scategory"] == "special":
 		# Because specials have no restrictions based on movement we just store the weapon restrictions
-		skills["specials"][skill["Name"]] = {
+		skills["specials"][skill["TagID"]] = {
+			"NameEN": skill["Name"],
 			"WeaponType": [item.strip() for item in skill["CanUseWeapon"].split(",")],
 			"exclusive": True if skill["Exclusive"] == "1" else False,
 			"isMax": True if skill["Name"] in maxskills else False
@@ -187,7 +195,8 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 		# Get the category in our format (last character capitalized)
 		truecategorie = skill["Scategory"][-1].capitalize()
 		# Obtain the true url by parsing the html page for it
-		skills["passives"][truecategorie][skill["Name"]] = {
+		skills["passives"][truecategorie][skill["TagID"]] = {
+			"NameEN": skill["Name"],
 			"icon": utils.obtaintrueurl([skill["Icon"]])[0],
 			"statModifiers": [0, 0, 0, 0, 0] if skill["StatModifiers"] == "" else [int(x) for x in skill["StatModifiers"].split(",")],
 			"WeaponType": [item.strip() for item in skill["CanUseWeapon"].split(",")],
@@ -199,7 +208,8 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 	# Seals type handling
 	if skill["Scategory"] == "sacredseal":
 		# Obtain the true url by parsing the html page for it
-		skills["passives"]["S"][skill["Name"]] = {
+		skills["passives"]["S"][skill["TagID"]] = {
+			"NameEN": skill["Name"],
 			"icon": utils.obtaintrueurl([skill["Icon"]])[0],
 			"statModifiers": [0, 0, 0, 0, 0] if skill["StatModifiers"] == "" else [int(x) for x in skill["StatModifiers"].split(",")],
 			"WeaponType": [item.strip() for item in skill["CanUseWeapon"].split(",")],
@@ -229,7 +239,7 @@ skillslite = {
 	"weapons": {
 		weaponname: {
 			property: value
-			for property, value in properties.items() if property in ["specialIcon", "upgrades", "WeaponType", "moveType", "exclusive", "isMax"]
+			for property, value in properties.items() if property in ["NameEN", "specialIcon", "upgrades", "WeaponType", "moveType", "exclusive", "isMax"]
 		} 
 		for weaponname, properties in skills["weapons"].items()
     },
@@ -239,7 +249,7 @@ skillslite = {
 		passivecategory: {
 			passive: {
 				property: value
-				for property, value in properties.items() if property in ["WeaponType", "moveType", "exclusive", "isMax"]
+				for property, value in properties.items() if property in ["NameEN", "WeaponType", "moveType", "exclusive", "isMax"]
 			} 
 			for passive, properties in skills["passives"][passivecategory].items()
 		}

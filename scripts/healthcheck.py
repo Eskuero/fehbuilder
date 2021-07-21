@@ -11,9 +11,9 @@ with open("../data/skills.json", "r") as datasource:
 for hero in list(heroes.keys()):
 	for art in heroes[hero]["art"]:
 		if not heroes[hero]["art"][art]:
-			print(hero + ": " + art)
+			print(heroes[hero]["NameEN"] + ": " + art)
 
 for tipo in skills["passives"]:
 	for skill in skills["passives"][tipo]:
 		if not skills["passives"][tipo][skill]["icon"]:
-			print(skill)
+			print(skills["passives"][tipo][skill]["NameEN"])

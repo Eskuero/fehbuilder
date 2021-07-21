@@ -108,14 +108,14 @@ def getimage():
 		# Obtain the calculated stats to draw
 		statsmodifier = utilities.statcalc(heroes[name]["stats"], heroes[name]["growths"], hero["boon"], hero["bane"], int(hero["merges"]), int(hero["flowers"]))
 		# We have a couple of stats modifiers based on weapon, summoner support, attire, bonus unit, visible buffs and maybe not completely parsed A/S skills that we must add
-		if hero["weapon"] != "-":
+		if hero["weapon"] :
 			weaponmodifier = utilities.weaponmodifiers(hero["weapon"], skills["weapons"][hero["weapon"]], hero["refine"])
 			statsmodifier = [x+y for x,y in zip(statsmodifier, weaponmodifier)]
 		if hero["summoner"]:
 			statsmodifier = [x+y for x,y in zip(statsmodifier, utilities.summonerranks[hero["summoner"]])]
 		# Append passives visible stats
 		for category in ["A", "S"]:
-			if hero["passive" + category] != "-":
+			if hero["passive" + category]:
 				statsmodifier = [x+y for x,y in zip(statsmodifier, skills["passives"][category][hero["passive" + category]]["statModifiers"])]
 		if hero["attire"]:
 			statsmodifier = [x+y for x,y in zip(statsmodifier, [2, 2, 2, 2, 2])]
@@ -168,7 +168,7 @@ def getimage():
 
 		font = ImageFont.truetype("../data/" + config["fontfile"], 23)
 		# If the weapon is valid try to print an icon
-		if hero["weapon"] != "-":
+		if hero["weapon"]:
 			# By default we always use the basic weapon icon or the predefined stat boosters ones
 			icon = "other/" + hero["refine"] + "-Refine.png" if hero["refine"] in ["Atk", "Spd", "Def", "Res", "Wrathful", "Dazzling"] else "other/weapon-Refine.png"
 			# If the icon is an special effect we might have to download it
@@ -183,25 +183,28 @@ def getimage():
 			weaponicon = Image.open("../data/img/" + icon)
 			canvas.paste(weaponicon, (370, 797), weaponicon)
 			# Hack Falchion and Missiletain name since we show the user the real internal name for difference but rendering should be clean
-			if "Falchion (" in hero["weapon"] or "Missiletainn (" in hero["weapon"]:
-				hero["weapon"] = hero["weapon"].split("(")[0]
+			if not all(x in skills["weapons"][hero["weapon"]]["NameEN"] for x in ('Falchion (', 'Missiletainn (')):
+				printableweapon = skills["weapons"][hero["weapon"]]["NameEN"].split("(")[0]
+			else:
+				printableweapon = skills["weapons"][hero["weapon"]]["NameEN"]
 		# If not just print the basic icon
 		else:
+			printableweapon = "-"
 			weaponicon = Image.open("../data/img/other/weapon-Refine.png")
 			canvas.paste(weaponicon, (370, 797), weaponicon)
 		# We always paste the text because it might as well be unarmed and have a "-"
-		draw.text((420, 805), hero["weapon"], font=font, fill="#82f546" if hero["refine"] else "#ffffff", stroke_width=3, stroke_fill="#0a2533")
+		draw.text((420, 805), printableweapon, font=font, fill="#82f546" if hero["refine"] else "#ffffff", stroke_width=3, stroke_fill="#0a2533")
 
 		# Print assist and special info
-		draw.text((420, 853), hero["assist"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
-		draw.text((420, 903), hero["special"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+		draw.text((420, 853), skills["assists"][hero["assist"]]["NameEN"] if hero["assist"] else "-", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+		draw.text((420, 903), skills["specials"][hero["special"]]["NameEN"] if hero["special"] else "-", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 
 		# Render all the passives
 		for category in utilities.passiverender.keys():
 			# If the passive is not the list we skip trying to download an image
-			if hero["passive" + category] != "-":
+			if hero["passive" + category]:
 				# Decide on the name of the icon
-				iconname = hero["passive" + category].replace(" ", "_").replace("/", "_") + ".png"
+				iconname = hero["passive" + category] + ".png"
 				# Check if the icon art is already in the temporal folder for speeding up requests from the wiki
 				if (pathlib.Path("../data/img/icons/" + iconname).is_file()):
 					art = Image.open("../data/img/icons/" + iconname)
@@ -216,7 +219,7 @@ def getimage():
 						print("Failed to download icon for " + hero["passive" + category])
 				canvas.paste(art, tuple(map(sum, zip(utilities.passiverender[category]["icon"], (-2, -2) if skills["passives"][category][hero["passive" + category]]["shiny"] else (0, 0)))), art)
 			# We always write the text because it might be a simple "-"
-			draw.text(utilities.passiverender[category]["text"], hero["passive" + category], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+			draw.text(utilities.passiverender[category]["text"], skills["passives"][category][hero["passive" + category]]["NameEN"] if hero["passive" + category] else "-", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 			# Print the category indicator
 			indicator = Image.open("../data/img/other/indicator-skill" + category + ".png")
 			canvas.paste(indicator, utilities.passiverender[category]["indicator"], indicator)
