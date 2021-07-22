@@ -205,6 +205,11 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 			"exclusive": True if skill["Exclusive"] == "1" else False,
 			"isMax": True if skill["Name"] in maxskills else False
 		}
+		# If the skill is available as a sacred seal we complete their data too
+		if skill["Name"] in seals:
+			skills["passives"]["S"][skill["TagID"]] = skills["passives"][truecategorie][skill["TagID"]]
+			skills["passives"]["S"][skill["TagID"]]["isMax"] = True if skill["Name"] in maxseals else False
+			
 	# Seals type handling
 	if skill["Scategory"] == "sacredseal":
 		# Obtain the true url by parsing the html page for it
@@ -218,17 +223,6 @@ for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
 			"exclusive": True if skill["Exclusive"] == "1" else False,
 			"isMax": True if skill["Name"] in maxseals else False
 		}
-
-# Complete the seals data
-for seal in seals:
-	# Get the data for each categorie
-	passives = skills["passives"]["A"] | skills["passives"]["B"] | skills["passives"]["C"]
-	if seal in passives:
-		skills["passives"]["S"][seal] = passives[seal]
-		skills["passives"]["S"][seal]["isMax"] = True if seal in maxseals else False
-
-# Make sure they end properly ordered
-skills["passives"]["S"] = {seal: skills["passives"]["S"][seal] for seal in sorted(skills["passives"]["S"])}
 
 # Store all the data for internal usage
 with open("../data/skills.json", "w") as outfile:
