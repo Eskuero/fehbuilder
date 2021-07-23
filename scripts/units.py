@@ -56,7 +56,8 @@ for file in files:
 				availableart = [False, False, False, False, False, False, False, False]
 
 			heroes[entry["id_tag"]] = {
-				"stats": [value for value in entry["base_stats"].values()],
+				# The base stats values stored for each hero are so at 3 star rarity (it's safe to bump them by 1 each)
+				"stats": [value+1 for value in entry["base_stats"].values()],
 				"growths": [value for value in entry["growth_rates"].values()],
 				"WeaponType": entry["weapon_type"],
 				"moveType": entry["move_type"],
