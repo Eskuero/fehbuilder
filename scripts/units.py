@@ -16,6 +16,19 @@ engrishname = {
 	for entry in [entry["title"] for entry in utils.retrieveapidata(params)]
 }
 
+# Load all weapon data from the json file
+with open("../data/skills.json", "r") as datasource:
+	weapons = json.load(datasource)["weapons"]
+weaponevolutions = {}
+# Get all the files that contain weapon evolution definitions and loop through them
+files = os.listdir("feh-assets-json/files/assets/Common/SRPG/WeaponRefine/")
+for file in files:
+	with open("feh-assets-json/files/assets/Common/SRPG/WeaponRefine/" + file, "r") as datasource:
+		data = json.load(datasource)
+		# Skip any weapon evolution not in the weapons to avoid adding normal refines
+		for entry in [entry for entry in data if entry["refined"] in weapons]:
+			weaponevolutions[entry["orig"]] = entry["refined"]
+
 # Get all the files that contain unit definitions and loop through them
 files = os.listdir("feh-assets-json/files/assets/Common/SRPG/Person/")
 for file in files:
@@ -60,9 +73,12 @@ for file in files:
 					"Special": availableart[6],
 					"Damage": availableart[7],
 				},
-				# Complete the base kit skipping empty entries (it's provided as a list of list for each rarity unlock but we just need one)
+				# Obtain the base kit skipping empty entries (it's provided as a list of list for each rarity unlock but we just need one)
 				"basekit": [skill for category in entry["skills"] for skill in category if skill]
 			}
+			# Complete the basekit by adding the skills that have weapon evolutions available
+			for item in [item for item in heroes[entry["id_tag"]]["basekit"] if item in weaponevolutions]:
+				heroes[entry["id_tag"]]["basekit"].append(weaponevolutions[item])
 
 # Store all the data for internal usage
 with open("../data/units.json", "w") as outfile:
