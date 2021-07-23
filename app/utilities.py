@@ -1,19 +1,15 @@
 import json
 import math
 
-def herosanitization(heroes, skills, name, args):
+def herosanitization(heroes, skills, languages, name, args):
 	# Hero request squeleton definition
 	hero = {
-		"name": False, "title": False, "boon": False, "bane": False, "merges": False, "flowers": False, "weapon": False, "refine": False, "assist": False, "special": False, "passiveA": False, "passiveB": False, "passiveC": False, "passiveS": False, "summoner": False, "blessing": False, "attire": False, "bonusunit": False, "allies": False, "buffs": False, "sp": False, "hm": False, "artstyle": False, "offset": False, "favorite": False, "appui": False
+		"name": False, "boon": False, "bane": False, "merges": False, "flowers": False, "weapon": False, "refine": False, "assist": False, "special": False, "passiveA": False, "passiveB": False, "passiveC": False, "passiveS": False, "summoner": False, "blessing": False, "attire": False, "bonusunit": False, "allies": False, "buffs": False, "sp": False, "hm": False, "artstyle": False, "offset": False, "favorite": False, "language": False, "appui": False
 	}
 	for prop in hero:
 		value = args.get(prop)
-		# It's safe to assume the provided values for the hero name and title are correct since we checked they do exist
-		truename = heroes[name]["NameEN"]
 		if prop == "name":
-			hero[prop] = truename.split(":")[0]
-		elif prop == "title":
-			hero[prop] = truename.split(":")[1].lstrip() if ":" in truename else "Enemy"
+			hero[prop] = value
 		# Banes and boons are valid within a set amount of values
 		elif prop in ["boon", "bane"]:
 			hero[prop] = value if value in ["HP", "Atk", "Spd", "Def", "Res"] else None
@@ -78,6 +74,9 @@ def herosanitization(heroes, skills, name, args):
 		# For favorite marks if it's a strig numeric from 1 to 8
 		elif prop == "favorite":
 			hero[prop] = value if value in ["1", "2", "3", "4", "5", "6", "7", "8"] else "0"
+		# For language we must just fit within the available ones (fallback to English)
+		elif prop == "language":
+			hero[prop] = value if value in languages.keys() else "USEN"
 		# For app ui default to render unless told otherwise
 		elif prop == "appui":
 			hero[prop] = False if value == "false" else True
@@ -91,19 +90,19 @@ def statcalc(stats, growths, boon, bane, merges, flowers):
 		bane = None
 	# Modify the level 1 stats based on the boons and banes provided
 	truelevel1 = {
-		"HP": stats["HP"] + (-1 if bane == "HP" else (1 if boon == "HP" else 0)),
-		"Atk": stats["Atk"] + (-1 if bane == "Atk" else (1 if boon == "Atk" else 0)),
-		"Spd": stats["Spd"] + (-1 if bane == "Spd" else (1 if boon == "Spd" else 0)),
-		"Def": stats["Def"] + (-1 if bane == "Def" else (1 if boon == "Def" else 0)),
-		"Res": stats["Res"] + (-1 if bane == "Res" else (1 if boon == "Res" else 0))
+		"HP": stats[0] + (-1 if bane == "HP" else (1 if boon == "HP" else 0)),
+		"Atk": stats[1] + (-1 if bane == "Atk" else (1 if boon == "Atk" else 0)),
+		"Spd": stats[2] + (-1 if bane == "Spd" else (1 if boon == "Spd" else 0)),
+		"Def": stats[3] + (-1 if bane == "Def" else (1 if boon == "Def" else 0)),
+		"Res": stats[4] + (-1 if bane == "Res" else (1 if boon == "Res" else 0))
 	}
 	# Modify the growth based on the boons and banes provided
 	truegrowth = {
-		"HP": growths["HP"] + (-5 if bane == "HP" else (5 if boon == "HP" else 0)),
-		"Atk": growths["Atk"] + (-5 if bane == "Atk" else (5 if boon == "Atk" else 0)),
-		"Spd": growths["Spd"] + (-5 if bane == "Spd" else (5 if boon == "Spd" else 0)),
-		"Def": growths["Def"] + (-5 if bane == "Def" else (5 if boon == "Def" else 0)),
-		"Res": growths["Res"] + (-5 if bane == "Res" else (5 if boon == "Res" else 0))
+		"HP": growths[0] + (-5 if bane == "HP" else (5 if boon == "HP" else 0)),
+		"Atk": growths[1] + (-5 if bane == "Atk" else (5 if boon == "Atk" else 0)),
+		"Spd": growths[2] + (-5 if bane == "Spd" else (5 if boon == "Spd" else 0)),
+		"Def": growths[3] + (-5 if bane == "Def" else (5 if boon == "Def" else 0)),
+		"Res": growths[4] + (-5 if bane == "Res" else (5 if boon == "Res" else 0))
 	}
 	# We sort the level 1 stats to see the correct order to apply merges and dragonflowers
 	truelevel1 = {k: v for k, v in sorted(truelevel1.items(), key=lambda item: item[1], reverse=True)}
@@ -133,6 +132,13 @@ def statcalc(stats, growths, boon, bane, merges, flowers):
 		truelevel1["Res"] + math.trunc(39 * (math.trunc(truegrowth["Res"] * 1.140000001) / 100))
 	]
 
+def weapontype(integer):
+	validtypes = ["Red Sword", "Blue Lance", "Green Axe", "Red Bow", "Blue Bow", "Green Bow", "Colorless Bow", "Red Dagger", "Blue Dagger", "Green Dagger", "Colorless Dagger", "Red Tome", "Blue Tome", "Green Tome", "Colorless Tome", "Colorless Staff", "Red Breath", "Blue Breath", "Green Breath", "Colorless Breath", "Red Beast", "Blue Beast", "Green Beast", "Colorless Beast"]
+	# We only need to loop through the length of the list and if for any index the bit is 1 it means we succesfully detected the weapon type.
+	for i in range(0, len(validtypes)):
+		if integer >> i & 1:
+			return i
+
 def weaponmodifiers(name, weapon, refine):
 	# Not multiplier (in case no check is met)
 	stats = [0, 0, 0, 0, 0]
@@ -140,8 +146,8 @@ def weaponmodifiers(name, weapon, refine):
 	if weapon:
 		stats = [int(x) for x in (weapon["statModifiers"] if refine != "Effect" else weapon["specialstatModifiers"])]
 		# If the weapon is refined then add with the values
-		if refine in refinemodifierchart[weapon["WeaponType"][0]]:
-			stats = [x+y for x,y in zip(stats, refinemodifierchart[weapon["WeaponType"][0]][refine])]
+		if refine in refinemodifierchart[str(weapontype(weapon["WeaponType"]))]:
+			stats = [x+y for x,y in zip(stats, refinemodifierchart[str(weapontype(weapon["WeaponType"]))][refine])]
 			# This list of weapons are brave melee of the triangle axe-lance-sword and suffer a -1 penalty when refining for Atk so we check this
 			if name in ["Amiti", "Arden's Blade", "Cherche's Axe", "Hewn Lance", "Rowdy Sword"] and refine == "Atk":
 				stats[1] -= 1
@@ -157,30 +163,30 @@ passiverender = {
 
 # Base ruleset for refine visual stats depending on weapon type
 refinemodifierchart = {
-	"Red Sword": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
-	"Blue Lance": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
-	"Green Axe": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
-	"Red Breath": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
-	"Green Breath": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
-	"Blue Breath": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
-	"Colorless Breath": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
-	"Blue Tome": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Red Tome": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Green Tome": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Colorless Tome": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Blue Bow": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Red Bow": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Green Bow": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Colorless Bow": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Red Dagger": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Blue Dagger": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Green Dagger": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Colorless Dagger": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"Red Beast": {"Atk": [0, 0, 0, 0, 0], "Spd": [0, 0, 0, 0, 0], "Def": [0, 0, 0, 0, 0], "Res": [0, 0, 0, 0, 0]},
-	"Blue Beast": {"Atk": [0, 0, 0, 0, 0], "Spd": [0, 0, 0, 0, 0], "Def": [0, 0, 0, 0, 0], "Res": [0, 0, 0, 0, 0]},
-	"Green Beast": {"Atk": [0, 0, 0, 0, 0], "Spd": [0, 0, 0, 0, 0], "Def": [0, 0, 0, 0, 0], "Res": [0, 0, 0, 0, 0]},
-	"Colorless Beast": {"Atk": [2, 1, 0, 0, 0], "Spd": [0, 0, 0, 0, 0], "Def": [0, 0, 0, 0, 0], "Res": [0, 0, 0, 0, 0]},
-	"Colorless Staff": {"Dazzling": [0, 0, 0, 0, 0], "Wrathful": [0, 0, 0, 0, 0]}
+	"0": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
+	"1": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
+	"2": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
+	"3": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"4": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"5": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"6": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"7": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"8": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"9": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"10": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"11": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"12": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"13": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"14": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
+	"15": {"Dazzling": [0, 0, 0, 0, 0], "Wrathful": [0, 0, 0, 0, 0]},
+	"16": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
+	"17": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
+	"18": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
+	"19": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
+	"20": {"Atk": [0, 0, 0, 0, 0], "Spd": [0, 0, 0, 0, 0], "Def": [0, 0, 0, 0, 0], "Res": [0, 0, 0, 0, 0]},
+	"21": {"Atk": [0, 0, 0, 0, 0], "Spd": [0, 0, 0, 0, 0], "Def": [0, 0, 0, 0, 0], "Res": [0, 0, 0, 0, 0]},
+	"22": {"Atk": [0, 0, 0, 0, 0], "Spd": [0, 0, 0, 0, 0], "Def": [0, 0, 0, 0, 0], "Res": [0, 0, 0, 0, 0]},
+	"23": {"Atk": [2, 1, 0, 0, 0], "Spd": [0, 0, 0, 0, 0], "Def": [0, 0, 0, 0, 0], "Res": [0, 0, 0, 0, 0]}
 }
 
 # Visible stats from having Summoner Support

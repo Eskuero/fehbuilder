@@ -27,6 +27,10 @@ with open("../data/skills.json", "r") as datasource:
 with open("../data/other.json", "r") as datasource:
 	other = json.load(datasource)
 
+# Load all languages from the json file
+with open("../data/languages.json", "r") as datasource:
+	languages = json.load(datasource)
+
 @app.route('/get_image.png')
 def getimage():
 	# Create new image
@@ -41,7 +45,7 @@ def getimage():
 	name = flask.request.args.get('name')
 	if name is not None and name in heroes and len(str(flask.request)) < 1000:
 		# Sanitize all the data we got fro the user
-		hero = utilities.herosanitization(heroes, skills, name, flask.request.args)
+		hero = utilities.herosanitization(heroes, skills, languages, name, flask.request.args)
 		# Print the data we will use for logging purposes
 		now = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
 		print()
@@ -82,19 +86,19 @@ def getimage():
 			resplendent = Image.open("../data/img/other/resplendent.png")
 			canvas.paste(resplendent, (262, 492), resplendent)
 		# Write the title and name using an horizontally centered anchor to avoid going out of bounds
-		draw.text((188, 585), hero["title"], font=font, anchor="mm", stroke_width=3, stroke_fill=(50, 30, 10))
-		draw.text((222, 659), hero["name"], font=font, anchor="mm", stroke_width=3, stroke_fill=(50, 30, 10))
+		draw.text((188, 585), languages[hero["language"]][hero["name"].replace("PID", "MPID_HONOR")], font=font, anchor="mm", stroke_width=3, stroke_fill=(50, 30, 10))
+		draw.text((222, 659), languages[hero["language"]]["M" + hero["name"]], font=font, anchor="mm", stroke_width=3, stroke_fill=(50, 30, 10))
 		# Print the artist and actor names, as well as the favorite mark if appui enabled
 		if hero["appui"]:
 			font = ImageFont.truetype("../data/" + config["fontfile"], 21)
 			# If the hero is truly a resplendent one we might have data for it
 			if hero["attire"] and heroes[name]["resplendentart"]["Portrait"]:
 				# Add a fallback to original actor if none is provided because that means they didn't change it
-				draw.text((47, 1212), heroes[name]["actorresplendent"] if heroes[name]["actorresplendent"] else heroes[name]["actor"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
-				draw.text((47, 1241), heroes[name]["artistresplendent"] if heroes[name]["artistresplendent"] else "", font=font, fill="#ffffff",stroke_width=3, stroke_fill="#0a2533")
+				draw.text((47, 1212), languages[hero["language"]][hero["name"].replace("PID", "MPID_VOICE") + "EX01"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+				draw.text((47, 1241), languages[hero["language"]][hero["name"].replace("PID", "MPID_ILLUST") + "EX01"], font=font, fill="#ffffff",stroke_width=3, stroke_fill="#0a2533")
 			else:
-				draw.text((47, 1212), heroes[name]["actor"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
-				draw.text((47, 1241), heroes[name]["artist"], font=font, fill="#ffffff",stroke_width=3, stroke_fill="#0a2533")
+				draw.text((47, 1212), languages[hero["language"]][hero["name"].replace("PID", "MPID_VOICE")], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+				draw.text((47, 1241), languages[hero["language"]][hero["name"].replace("PID", "MPID_ILLUST")], font=font, fill="#ffffff",stroke_width=3, stroke_fill="#0a2533")
 			favorite = Image.open("../data/img/other/favorite_" + hero["favorite"] + ".png")
 			canvas.paste(favorite, (3, 229), favorite)
 		# First write the static text for each stat (normal anchoring)
@@ -142,9 +146,9 @@ def getimage():
 		draw.text((265, 1052), str(hero["sp"]), font=font, anchor="ra", fill="#82f546" if hero["sp"] == 9999 else "#fffaaf", stroke_width=3, stroke_fill="#0a2533")
 		draw.text((265, 1100), str(hero["hm"]), font=font, anchor="ra", fill="#82f546" if hero["hm"] == 7000 else "#fffaaf", stroke_width=3, stroke_fill="#0a2533")
 		# Print the move type and weapon type icons
-		movetype = Image.open("../data/img/other/" + heroes[name]["moveType"].lstrip() + "-move.png")
+		movetype = Image.open("../data/img/other/" + str(heroes[name]["moveType"]) + "-move.png")
 		canvas.paste(movetype, (229, 743), movetype)
-		weapontype = Image.open("../data/img/other/" + heroes[name]["WeaponType"].lstrip() + "-weapon.png")
+		weapontype = Image.open("../data/img/other/" + str(heroes[name]["WeaponType"]) + "-weapon.png")
 		canvas.paste(weapontype, (20, 742), weapontype)
 
 		# If we have merges we add the text next to the level
@@ -157,7 +161,7 @@ def getimage():
 			font = ImageFont.truetype("../data/" + config["fontfile"], 25)
 			flowerholder = Image.open("../data/img/base/flowerholder.png")
 			canvas.paste(flowerholder, (271, 732), flowerholder)
-			flowericon = Image.open("../data/img/other/" + heroes[name]["moveType"].lstrip() + "-flower.png")
+			flowericon = Image.open("../data/img/other/" + str(heroes[name]["moveType"]) + "-flower.png")
 			canvas.paste(flowericon, (289, 727), flowericon)
 			draw.text((345, 742), "+", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 			draw.text((364, 744), str(hero["flowers"]), font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
@@ -176,17 +180,20 @@ def getimage():
 				# Check if the heroes art is already in the temporal folder for speeding up requests from the wiki
 				if not (pathlib.Path("../data/img/icons/" + hero["weapon"] + "-Effect.png").is_file()):
 					# Download, resize and cache the special effect refine picture
-					response = requests.get(skills["weapons"][hero["weapon"]]["specialIcon"])
-					art = Image.open(io.BytesIO(response.content)).resize((44, 44))
-					art.save("../data/img/icons/" + hero["weapon"] + "-Effect.png", 'PNG')
-				icon = "icons/" + hero["weapon"] + "-Effect.png"
+					try:
+						response = requests.get(skills["weapons"][hero["weapon"]]["specialIcon"])
+						art = Image.open(io.BytesIO(response.content)).resize((44, 44))
+						art.save("../data/img/icons/" + hero["weapon"] + "-Effect.png", 'PNG')
+						icon = "icons/" + hero["weapon"] + "-Effect.png"
+					# Something went wrong downloading the icon (maybe wiki down, maybe invalid data, just report on the log and show the default icon)
+					except:
+						print("Something went wrong downloading special refine icon for " + hero["weapon"])
+				else:
+					icon = "icons/" + hero["weapon"] + "-Effect.png"
 			weaponicon = Image.open("../data/img/" + icon)
 			canvas.paste(weaponicon, (370, 797), weaponicon)
 			# Hack Falchion and Missiletain name since we show the user the real internal name for difference but rendering should be clean
-			if not all(x in skills["weapons"][hero["weapon"]]["NameEN"] for x in ('Falchion (', 'Missiletainn (')):
-				printableweapon = skills["weapons"][hero["weapon"]]["NameEN"].split("(")[0]
-			else:
-				printableweapon = skills["weapons"][hero["weapon"]]["NameEN"]
+			printableweapon = languages[hero["language"]][skills["weapons"][hero["weapon"]]["string"]]
 		# If not just print the basic icon
 		else:
 			printableweapon = "-"
@@ -196,8 +203,8 @@ def getimage():
 		draw.text((420, 805), printableweapon, font=font, fill="#82f546" if hero["refine"] else "#ffffff", stroke_width=3, stroke_fill="#0a2533")
 
 		# Print assist and special info
-		draw.text((420, 853), skills["assists"][hero["assist"]]["NameEN"] if hero["assist"] else "-", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
-		draw.text((420, 903), skills["specials"][hero["special"]]["NameEN"] if hero["special"] else "-", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+		draw.text((420, 853), languages[hero["language"]][skills["assists"][hero["assist"]]["string"]] if hero["assist"] else "-", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+		draw.text((420, 903), languages[hero["language"]][skills["specials"][hero["special"]]["string"]] if hero["special"] else "-", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 
 		# Render all the passives
 		for category in utilities.passiverender.keys():
@@ -212,14 +219,14 @@ def getimage():
 					# Download, resize and cache the picture
 					try:
 						response = requests.get(skills["passives"][category][hero["passive" + category]]["icon"])
-						art = Image.open(io.BytesIO(response.content)).resize((48, 48) if skills["passives"][category][hero["passive" + category]]["shiny"] else (44, 44))
+						art = Image.open(io.BytesIO(response.content)).resize((48, 48) if skills["passives"][category][hero["passive" + category]].get("shiny", False) else (44, 44))
 						art.save("../data/img/icons/" + iconname, 'PNG')
 					except:
 						# We failed to download the icon for this skill :(
 						print("Failed to download icon for " + hero["passive" + category])
-				canvas.paste(art, tuple(map(sum, zip(utilities.passiverender[category]["icon"], (-2, -2) if skills["passives"][category][hero["passive" + category]]["shiny"] else (0, 0)))), art)
+				canvas.paste(art, tuple(map(sum, zip(utilities.passiverender[category]["icon"], (-2, -2) if skills["passives"][category][hero["passive" + category]].get("shiny", False) else (0, 0)))), art)
 			# We always write the text because it might be a simple "-"
-			draw.text(utilities.passiverender[category]["text"], skills["passives"][category][hero["passive" + category]]["NameEN"] if hero["passive" + category] else "-", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+			draw.text(utilities.passiverender[category]["text"], languages[hero["language"]][skills["passives"][category][hero["passive" + category]]["string"]] if hero["passive" + category] else "-", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 			# Print the category indicator
 			indicator = Image.open("../data/img/other/indicator-skill" + category + ".png")
 			canvas.paste(indicator, utilities.passiverender[category]["indicator"], indicator)

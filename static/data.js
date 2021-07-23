@@ -1,5 +1,5 @@
 // Dicts for info
-var units, skills, other;
+var units, skills, other, languages;
 // All selects we have available
 selectheroes = document.getElementById('selectheroes');
 selectmerges = document.getElementById('merges');
@@ -28,6 +28,7 @@ selecthm = document.getElementById('hm');
 selectartstyle = document.getElementById('artstyle');
 selectoffset = document.getElementById('offset');
 selectfavorite = document.getElementById('favorite');
+selectlanguage = document.getElementById('language');
 cheats = document.getElementById('cheats');
 bestskills = document.getElementById('bestskills');
 appui = document.getElementById('appui');
@@ -49,19 +50,26 @@ $(document).ready(function() {
 $('.select2-search').select2('open');
 
 // Fetch all data from each json
-fetch('units.json')
+fetch('languages.json')
 	.then(res => res.json())
 	.then((out) => {
-		// We store the heroes for basic checks within the browser
-		units = out
-		populate(selectheroes, units, true, true)
-}).catch(err => console.error(err));
-fetch('skills.json')
-	.then(res => res.json())
-	.then((out) => {
-		// We store the skills for basic checks within the browser
-		skills = out
-		populateall()
+		// We store languages data for display of strings within the browser
+		languages = out
+		// We can download the rest of the data now that lenguages are available
+		fetch('units.json')
+			.then(res => res.json())
+			.then((out) => {
+				// We store the heroes for basic checks within the browser
+				units = out
+				populate(selectheroes, units, true, true)
+		}).catch(err => console.error(err));
+		fetch('skills.json')
+			.then(res => res.json())
+			.then((out) => {
+				// We store the skills for basic checks within the browser
+				skills = out
+				populateall()
+		}).catch(err => console.error(err));
 }).catch(err => console.error(err));
 fetch('other.json')
 	.then(res => res.json())
@@ -92,14 +100,27 @@ function populate(select, data, clean, bypass) {
 	while (select.lastChild && select.childElementCount > 1) {
         select.removeChild(select.lastChild);
     }
-    // If indicated to bypass don't do checks for this select, print everything and leave
+	// All data to be printed
+	options = {}
+    // If indicated to bypass don't do checks for this select, print everything and leave (this is exclusively for the heroes select)
     if (bypass) {
 		Object.keys(data).forEach((value) => {
-			var opt = document.createElement('option');
-			opt.value = value;
-			opt.innerHTML = data[value]["NameEN"];
-			select.appendChild(opt);
+			options[languages[selectlanguage.value]["M" + value] + ": " + languages[selectlanguage.value][value.replace("PID", "MPID_HONOR")]] = value
 		});
+		// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
+		options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {})
+		// For each entry print an option
+		for (const [string, tag] of Object.entries(options)) {
+			var opt = document.createElement('option');
+			opt.value = tag;
+			// If of type person we also append the title
+			opt.innerHTML = string;
+			select.appendChild(opt);
+		}
+		// Restore the previous value if it's available on the updated select
+		if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
+			select.value = previousvalue;
+		}
 		return;
 	}
 	if (selectheroes.value != "None") {
@@ -123,26 +144,22 @@ function populate(select, data, clean, bypass) {
 			// Cheat mode is disabled so now we conditionally enable the skill and the default value must be false even if we might have passed bestskills checks
 			add = false
 			// Check if the skills has weapon restrictions and if it does check if we meet them
-			if ("WeaponType" in data[value]) {
-				if (data[value]["WeaponType"].includes(weapontype)) {
-					add = true;
-				// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
-				} else {
-					return;
-				}
+			if (data[value]["WeaponType"] >> weapontype & 1) {
+				add = true;
+			// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
+			} else {
+				return;
 			}
 			// Check if the skills has movement restrictions and if it does check if we meet them so we just skip this iteration
-			if ("moveType" in data[value]) {
-				if (data[value]["moveType"].includes(movetype)) {
-					add = true;
-				// If it doesn't contain out movement type we cannot use it regardless of if we met weapon type
-				} else {
-					return;
-				}
+			if (data[value]["moveType"] >> movetype & 1) {
+				add = true;
+			// If it doesn't contain out movement type we cannot use it regardless of if we met weapon type
+			} else {
+				return;
 			}
 			// Check if the skill is exclusive and if it does check if it's included on the units basekit
 			if (data[value]["exclusive"]) {
-				if (basekit.includes(data[value]["NameEN"].normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace("(Sword)", "sword").replace("(Tome)", "tome").replace(/\(|\)/g, "").replace("'", "").replace("ð", "d").replace("·", "").replace(" Θ", "").replace("Ω", "Omega").replace("þ", "th").replace(/^\Þ/, "Th").replace(/^Naga/, "Naga tome"))) {
+				if (basekit.includes(value)) {
 					add = true;
 				// If it isn't on the unit basekit he can't use it regarless of other conditions so we skip this iteration
 				} else {
@@ -152,12 +169,19 @@ function populate(select, data, clean, bypass) {
 		}
 		// Arriving at this check with a true add value measn we can add the option
 		if (add) {
-			var opt = document.createElement('option');
-			opt.value = value;
-			opt.innerHTML = data[value]["NameEN"];
-			select.appendChild(opt);
+			options[languages[selectlanguage.value][data[value]["string"]]] = value;
 		}
 	});
+	// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
+	options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {})
+	// For each entry print an option
+	for (const [string, tag] of Object.entries(options)) {
+		var opt = document.createElement('option');
+		opt.value = tag;
+		// If of type person we also append the title
+		opt.innerHTML = string;
+		select.appendChild(opt);
+	}
 	// Restore the previous value if it's available on the updated select
 	if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
 		select.value = previousvalue;
@@ -173,7 +197,7 @@ function reload() {
 	// Obtain the visible buffs
 	buffs = selectatk.value + ";" + selectspd.value + ";" + selectdef.value + ";" + selectres.value
 	// Change the URL of the img to force it to reload
-	document.getElementById('fakecanvas').src = "/get_image.png?name=" + encodeURIComponent(selectheroes.value) + "&merges=" + selectmerges.value + "&flowers=" + selectflowers.value + "&boon=" + selectboons.value + "&bane=" + selectbanes.value + "&weapon=" + encodeURIComponent(selectweapons.value) + "&refine=" + selectrefines.value + "&assist=" + encodeURIComponent(selectassists.value) + "&special=" + encodeURIComponent(selectspecials.value) + "&passiveA=" + encodeURIComponent(selectA.value) + "&passiveB=" + encodeURIComponent(selectB.value) + "&passiveC=" + encodeURIComponent(selectC.value) + "&passiveS=" + encodeURIComponent(selectS.value) + "&blessing=" + selectblessings.value + "&summoner=" + selectsummoner.value + "&attire=" + selectattire.value + "&appui=" + appui.checked + "&bonusunit=" + selectbonusunit.value + "&allies=" + encodeURIComponent(allies) + "&buffs=" + encodeURIComponent(buffs) + "&sp=" + selectsp.value + "&hm=" + selecthm.value + "&artstyle=" + selectartstyle.value + "&offset=" + selectoffset.value + "&favorite=" + selectfavorite.value;
+	document.getElementById('fakecanvas').src = "/get_image.png?name=" + encodeURIComponent(selectheroes.value) + "&merges=" + selectmerges.value + "&flowers=" + selectflowers.value + "&boon=" + selectboons.value + "&bane=" + selectbanes.value + "&weapon=" + encodeURIComponent(selectweapons.value) + "&refine=" + selectrefines.value + "&assist=" + encodeURIComponent(selectassists.value) + "&special=" + encodeURIComponent(selectspecials.value) + "&passiveA=" + encodeURIComponent(selectA.value) + "&passiveB=" + encodeURIComponent(selectB.value) + "&passiveC=" + encodeURIComponent(selectC.value) + "&passiveS=" + encodeURIComponent(selectS.value) + "&blessing=" + selectblessings.value + "&summoner=" + selectsummoner.value + "&attire=" + selectattire.value + "&appui=" + appui.checked + "&bonusunit=" + selectbonusunit.value + "&allies=" + encodeURIComponent(allies) + "&buffs=" + encodeURIComponent(buffs) + "&sp=" + selectsp.value + "&hm=" + selecthm.value + "&artstyle=" + selectartstyle.value + "&offset=" + selectoffset.value + "&favorite=" + selectfavorite.value + "&language=" + selectlanguage.value;
 }
 
 function reblessed() {
@@ -237,15 +261,7 @@ function updatedragonflowers() {
         selectflowers.removeChild(selectflowers.lastChild);
     }
     if (cheats.checked == false && selectheroes.value != "None") {
-		// Default for new heroes is at least 5
-		flowers = 5;
-		release = new Date(units[selectheroes.value]["AdditionDate"]);
-		if (release < new Date('2020-08-18')) {
-			flowers += 5;
-			if (release < new Date('2019-02-06') && units[selectheroes.value]["moveType"] == "Infantry") {
-				flowers += 5;
-			}
-		}
+		flowers = units[selectheroes.value]["maxflowers"]
 	}
 	// Loop for each flower allowed
 	for (i = 1; i <= flowers; i++) {
@@ -277,9 +293,10 @@ function updateRefine() {
 		return;
 	}
 	if (skills["weapons"][weapon]["upgrades"]) {
-		if (skills["weapons"][weapon]["WeaponType"].includes("Colorless Staff")) {
+		// 15 is the bit for staff weapon
+		if (skills["weapons"][weapon]["WeaponType"] >> 15 & 1) {
 			// Staffs cannot have normal refines and special ones
-			if (skills["weapons"][weapon]["specialIcon"].includes("Wrathful")) {
+			if (! skills["weapons"][weapon]["exclusive"]) {
 				var opt = document.createElement('option');
 				opt.value = "Dazzling";
 				opt.innerHTML = "Dazzling";
@@ -296,7 +313,7 @@ function updateRefine() {
 			 }
 			return
 		}
-		if (skills["weapons"][weapon]["specialIcon"]) {
+		if (skills["weapons"][weapon]["effectrefine"] || false) {
 			var opt = document.createElement('option');
 			opt.value = "Effect";
 			opt.innerHTML = "Effect";
