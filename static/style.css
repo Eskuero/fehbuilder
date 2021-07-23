@@ -12,6 +12,10 @@ body {
 	height: 100vh;
 }
 
+.basekit {
+	background-color: rgb(92, 180, 224);
+}
+
 @media (min-width: 1300px) {
 	.container {
 		max-width: 1300px !important;

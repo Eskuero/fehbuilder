@@ -35,10 +35,18 @@ appui = document.getElementById('appui');
 // Where we show the image
 var canvas = document.getElementById('fakecanvas');
 
+function copyClassesToSelect2(data, container) {
+	if (data.element) {
+		$(container).addClass($(data.element).attr("class"));
+	}
+	return data.text;
+}
+
 $(document).ready(function() {
 	// Do not apply the boostrap theme on the multiselect it looks real broken
 	$('select:not(#allies)').select2({
 		theme: "bootstrap4",
+		templateResult: copyClassesToSelect2
 	});
 	$('#allies').select2({});
 	$(".s2-select-without-search").select2({
@@ -180,6 +188,10 @@ function populate(select, data, clean, bypass) {
 		opt.value = tag;
 		// If of type person we also append the title
 		opt.innerHTML = string;
+		if (basekit.includes(tag)) {
+			console.log(tag)
+			opt.className = "basekit";
+		}
 		select.appendChild(opt);
 	}
 	// Restore the previous value if it's available on the updated select
