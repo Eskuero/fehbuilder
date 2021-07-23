@@ -189,7 +189,6 @@ function populate(select, data, clean, bypass) {
 		// If of type person we also append the title
 		opt.innerHTML = string;
 		if (basekit.includes(tag)) {
-			console.log(tag)
 			opt.className = "basekit";
 		}
 		select.appendChild(opt);
@@ -212,7 +211,15 @@ function reload() {
 	document.getElementById('fakecanvas').src = "/get_image.png?name=" + encodeURIComponent(selectheroes.value) + "&merges=" + selectmerges.value + "&flowers=" + selectflowers.value + "&boon=" + selectboons.value + "&bane=" + selectbanes.value + "&weapon=" + encodeURIComponent(selectweapons.value) + "&refine=" + selectrefines.value + "&assist=" + encodeURIComponent(selectassists.value) + "&special=" + encodeURIComponent(selectspecials.value) + "&passiveA=" + encodeURIComponent(selectA.value) + "&passiveB=" + encodeURIComponent(selectB.value) + "&passiveC=" + encodeURIComponent(selectC.value) + "&passiveS=" + encodeURIComponent(selectS.value) + "&blessing=" + selectblessings.value + "&summoner=" + selectsummoner.value + "&attire=" + selectattire.value + "&appui=" + appui.checked + "&bonusunit=" + selectbonusunit.value + "&allies=" + encodeURIComponent(allies) + "&buffs=" + encodeURIComponent(buffs) + "&sp=" + selectsp.value + "&hm=" + selecthm.value + "&artstyle=" + selectartstyle.value + "&offset=" + selectoffset.value + "&favorite=" + selectfavorite.value + "&language=" + selectlanguage.value;
 }
 
-function reblessed() {
+function reblessed(onlytranslate) {
+	// If we are translating we need to know which options to restore
+	toberestored = []
+	if (onlytranslate) {
+		for (i = 0; i < selectallies.selectedOptions.length; i++) {
+			toberestored.push(selectallies.selectedOptions[i].value)
+		}
+	}
+	console.log(toberestored)
 	// First delete all allies
 	while (selectallies.lastChild) {
         selectallies.removeChild(selectallies.lastChild);
@@ -225,23 +232,35 @@ function reblessed() {
 	}
 	selectallies.disabled = false
 	// Now get list of heroes valid for that type of blessing
-	blessed = other["blessed"][blessing]
+	blessed = other["blessed"][parseInt(blessing)-1]
+	// All data to be printed
+	options = {}
 	for (i = 0; i < blessed.length; i++) {
 		// Depending on the type of blessing there's a limit on allies
-		var max = (["Anima", "Light", "Dark", "Astra"].includes(blessing)) ? 5 : 3;
+		var max = (["5", "6", "7", "8"].includes(blessing)) ? 5 : 3;
 		// Add an option for each value
 		for (j = 1; j <= max; j++) {
-			var opt = document.createElement('option');
-			opt.value = blessed[i] + ";" + j;
-			opt.innerHTML = blessed[i] + " x" + j;
-			selectallies.appendChild(opt);
+			options[languages[selectlanguage.value]["M" + blessed[i]] + ": " + languages[selectlanguage.value][blessed[i].replace("PID", "MPID_HONOR")] + " x" + j] = blessed[i] + ";" + j;
 		}
+	}
+	// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
+	options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {})
+	// For each entry print an option
+	for (const [string, tag] of Object.entries(options)) {
+		var opt = document.createElement('option');
+		opt.value = tag;
+		opt.innerHTML = string;
+		// If we are only translating and the value was selected restore it
+		if (onlytranslate && toberestored.includes(tag)) {
+			opt.selected = true;
+		}
+		selectallies.appendChild(opt);
 	}
 }
 
 function checkallies() {
 	// Depending on the type of blessing there's a limit on allies
-	var max = (["Anima", "Light", "Dark", "Astra"].includes(selectblessings.value)) ? 5 : 3;
+	var max = (["5", "6", "7", "8"].includes(selectblessings.value)) ? 5 : 3;
 	// Detect the amount of currently deployed
 	allies = 0;
 	for (i = 0; i < selectallies.selectedOptions.length; i++) {

@@ -34,9 +34,9 @@ def herosanitization(heroes, skills, languages, name, args):
 		# Summoner support rank can only be of C, B, A or S
 		elif prop == "summoner":
 			hero[prop] = value if value in summonerranks else None
-		# Blessing can only be of this set of 8
+		# Blessing can only be an int of this set of 8
 		elif prop == "blessing":
-			hero[prop] = value if value in ["Dark", "Light", "Anima", "Astra", "Fire", "Water", "Earth", "Wind"] else None
+			hero[prop] = None if not value else (None if not value.isdigit() else (value if int(value) in range(1, 9) else None))
 		# The attire can only be Resplendent or Normal
 		elif prop == "attire":
 			hero[prop] = True if value == "Resplendent" else False

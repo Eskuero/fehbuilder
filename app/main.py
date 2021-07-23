@@ -133,8 +133,8 @@ def getimage():
 			for ally in allies:
 				ally = ally.split(";")
 				# For each hero with a valid blessing we add the visible buffs and multiply for the amount of that ally if a quantity is provided (TODO: This should be moved to the sanitizer)
-				if ally[0] in other["blessed"][hero["blessing"]] and len(ally) == 2:
-					statsmodifier = [x+(y*int(ally[1]) if ally[1].isdigit() else 0) for x,y in zip(statsmodifier, other["blessed"][hero["blessing"]][ally[0]])]
+				if ally[0] in other["blessed"][int(hero["blessing"])-1] and len(ally) == 2:
+					statsmodifier = [x+(y*int(ally[1]) if ally[1].isdigit() else 0) for x,y in zip(statsmodifier, other["blessed"][int(hero["blessing"])-1][ally[0]]["boosts"])]
 		# Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers)
 		font = ImageFont.truetype("../data/" + config["fontfile"], 26)
 		draw.text((265, 805), str(statsmodifier[0]), font=font, anchor="ra", fill="#fffaaf", stroke_width=3, stroke_fill="#0a2533")
