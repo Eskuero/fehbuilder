@@ -27,6 +27,19 @@ params = dict(
 # This is the list of skills who have shiny borders (This is any skill for A or C category that isn't exclusive, costs 300 SP and doesn't end on 3, Counter, Foil or Ward (for now lol))
 shinyskills = [skill['TagID'] for skill in [entry["title"] for entry in utils.retrieveapidata(params)]]
 
+# Obtain the whole list of icons for the passives (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=TagID,Icon&where=Scategory+in+(%27passivea%27,%27passiveb%27,%27passivec%27,%27sacredseal%27)&limit=max&offset=0&format=json)
+params = dict(
+	action = 'cargoquery', limit = 'max', offset = -500, format = 'json',
+	tables = 'Skills',
+	fields = "TagID,Icon",
+	where = "Scategory in ('passivea', 'passiveb', 'passivec', 'sacredseal')"
+)
+# Store a relation of TagID to Icon for each skill
+passiveicons = {
+	entry["TagID"]: entry["Icon"]
+	for entry in [entry["title"] for entry in utils.retrieveapidata(params)]
+}
+
 # Get all the files that contain skill definitions and loop through them
 files = os.listdir("feh-assets-json/files/assets/Common/SRPG/Skill/")
 for file in files:
@@ -47,8 +60,11 @@ for file in files:
 				# For weapons add the might as part of the statsmodifiers for Atk
 				if entry["category"] == 0:
 					skills["weapons"][entry["id_tag"]]["statModifiers"][1] += entry["might"]
-				# For passives check if the skill is the list of shiny ones to properly render the icon
-				if entry["category"] in [3, 4, 5]:
+				if entry["category"] in [3, 4, 5, 6]:
+					# Check if the skill is in the list reported by the wiki to obtain the true URL for the icon if so
+					if entry["id_tag"] in passiveicons:
+						categories[entry["category"]][entry["id_tag"]]["icon"] = utils.obtaintrueurl([passiveicons[entry["id_tag"]]])[0]
+					# Check if the skill is the list of shiny ones to properly render the icon
 					categories[entry["category"]][entry["id_tag"]]["shiny"] = True if entry["id_tag"] in shinyskills else False,
 			# For refines we just store additional data
 			elif entry["refine_base"]:
@@ -58,20 +74,6 @@ for file in files:
 					refines[entry["id_tag"]]["effectrefine"] = True
 					refines[entry["id_tag"]]["specialstatModifiers"] = [value for value in entry["stats"].values()]
 					refines[entry["id_tag"]]["specialstatModifiers"][1] += entry["might"]
-
-# Obtain the whole list of icons for the passives (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=Scategory,TagID,Icon&where=Scategory+in+(%27passivea%27,%27passiveb%27,%27passivec%27,%27sacredseal%27)&limit=max&offset=0&format=json)
-params = dict(
-	action = 'cargoquery', limit = 'max', offset = -500, format = 'json',
-	tables = 'Skills',
-	fields = "Scategory,TagID,Icon",
-	where = "Scategory in ('passivea', 'passiveb', 'passivec', 'sacredseal')"
-)
-# For any skill icon that has a matching ID in our list update the dictionary (if there's a error on the wiki's tagID we might not get it and have to handle it gracesfully on the runtime)
-passives = skills["passives"]["A"] | skills["passives"]["B"] | skills["passives"]["C"] | skills["passives"]["S"]
-for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
-	if skill["TagID"] in passives:
-		category = {"passivea": "A", "passiveb": "B", "passivec": "C", "sacredseal": "S"}[skill["Scategory"]]
-		skills["passives"][category][skill["TagID"]]["icon"] = utils.obtaintrueurl([skill["Icon"]])[0]
 
 # Obtain the whole list of icons for the special refines icons (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=TagID,Icon&where=RefinePath+in+('skill1','skill2')&limit=max&offset=0&format=json)
 params = dict(
