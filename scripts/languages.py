@@ -16,7 +16,7 @@ for language in languages:
 	languages[language] = strings
 
 # Store all the data for internal usage
-with open("../data/languages.json", "w") as outfile:
+with open("fulllanguages.json", "w") as outfile:
     json.dump(languages, outfile)
 
 # Smaller version for browser usage
@@ -27,5 +27,5 @@ languageslite = {
 	}
 	for language, strings in languages.items()
 }
-with open("../static/languages.json", "w") as outfile:
+with open("litelanguages.json", "w") as outfile:
     json.dump(languageslite, outfile)

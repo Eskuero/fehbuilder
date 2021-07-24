@@ -26,8 +26,8 @@ for file in files:
 				}
 				otherlite["blessed"][entry["legendary"]["element"]-1].append(entry["id_tag"])
 
-with open("../data/other.json", "w") as outfile:
+with open("fullother.json", "w") as outfile:
     json.dump(other, outfile)
 
-with open("../static/other.json", "w") as outfile:
+with open("liteother.json", "w") as outfile:
     json.dump(otherlite, outfile)

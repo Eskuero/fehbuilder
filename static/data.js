@@ -58,20 +58,20 @@ $(document).ready(function() {
 $('.select2-search').select2('open');
 
 // Fetch all data from each json
-fetch('languages.json')
+fetch('litelanguages.json')
 	.then(res => res.json())
 	.then((out) => {
 		// We store languages data for display of strings within the browser
 		languages = out
 		// We can download the rest of the data now that lenguages are available
-		fetch('units.json')
+		fetch('liteunits.json')
 			.then(res => res.json())
 			.then((out) => {
 				// We store the heroes for basic checks within the browser
 				units = out
 				populate(selectheroes, units, true, true)
 		}).catch(err => console.error(err));
-		fetch('skills.json')
+		fetch('liteskills.json')
 			.then(res => res.json())
 			.then((out) => {
 				// We store the skills for basic checks within the browser
@@ -79,7 +79,7 @@ fetch('languages.json')
 				populateall()
 		}).catch(err => console.error(err));
 }).catch(err => console.error(err));
-fetch('other.json')
+fetch('liteother.json')
 	.then(res => res.json())
 	.then((out) => {
 		// We store other data for basic checks within the browser

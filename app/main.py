@@ -16,19 +16,19 @@ with open("config.json", "r") as config:
 	config = json.load(config)
 
 # Load all heroes data from the json file
-with open("../data/units.json", "r") as datasource:
+with open("../data/fullunits.json", "r") as datasource:
 	heroes = json.load(datasource)
 
 # Load all skills data from the json file
-with open("../data/skills.json", "r") as datasource:
+with open("../data/fullskills.json", "r") as datasource:
 	skills = json.load(datasource)
 
 # Load other data from the json file
-with open("../data/other.json", "r") as datasource:
+with open("../data/fullother.json", "r") as datasource:
 	other = json.load(datasource)
 
 # Load all languages from the json file
-with open("../data/languages.json", "r") as datasource:
+with open("../data/fulllanguages.json", "r") as datasource:
 	languages = json.load(datasource)
 
 @app.route('/get_image.png')

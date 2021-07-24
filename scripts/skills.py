@@ -37,6 +37,7 @@ for file in files:
 		data = json.load(datasource)
 		# SID_無し is skeleton data for a skill so we ignore
 		for entry in [entry for entry in data if entry["id_tag"] != "SID_無し"]:
+			print(entry["id_tag"])
 			# Store all the data except if it's a refine
 			if not entry["refine_base"] and entry["category"] in range(0, 7):
 				categories[entry["category"]][entry["id_tag"]] = {
@@ -92,7 +93,7 @@ for file in files:
 				skills["passives"]["S"][entry["id_tag"]]["isMax"] = True if not entry["next_seal"] else False
 
 # Store all the data for internal usage
-with open("../data/skills.json", "w") as outfile:
+with open("fullskills.json", "w") as outfile:
     json.dump(skills, outfile)
 
 # Smaller version for browser usage
@@ -117,5 +118,5 @@ skillslite = {
 		for passivecategory in ["A", "B", "C", "S"]
     }
 }
-with open("../static/skills.json", "w") as outfile:
+with open("liteskills.json", "w") as outfile:
     json.dump(skillslite, outfile)

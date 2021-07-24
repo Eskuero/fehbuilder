@@ -17,7 +17,7 @@ engrishname = {
 }
 
 # Load all weapon data from the json file
-with open("../data/skills.json", "r") as datasource:
+with open("fullskills.json", "r") as datasource:
 	weapons = json.load(datasource)["weapons"]
 weaponevolutions = {}
 # Get all the files that contain weapon evolution definitions and loop through them
@@ -36,6 +36,7 @@ for file in files:
 		data = json.load(datasource)
 		# PID_無し is skeleton data for a hero so we ignore it
 		for entry in [entry for entry in data if entry["id_tag"] != "PID_無し"]:
+			print(entry["id_tag"])
 			# If the hero is properly defined on the wiki table get the true name and art
 			if entry["id_tag"] in engrishname:
 				# This redefinition exists exclusive because of bikini Tharja quotation marks, what a joke
@@ -82,7 +83,7 @@ for file in files:
 				heroes[entry["id_tag"]]["basekit"].append(weaponevolutions[item])
 
 # Store all the data for internal usage
-with open("../data/units.json", "w") as outfile:
+with open("fullunits.json", "w") as outfile:
     json.dump(heroes, outfile)
     
 # Smaller version for browser usage
@@ -93,5 +94,5 @@ heroeslite = {
 	}
 	for heroname, properties in heroes.items()
 }
-with open("../static/units.json", "w") as outfile:
+with open("liteunits.json", "w") as outfile:
     json.dump(heroeslite, outfile)
