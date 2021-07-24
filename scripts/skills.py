@@ -50,7 +50,6 @@ for file in files:
 			# Store all the data except if it's a refine
 			if not entry["refine_base"] and entry["category"] in range(0, 7):
 				categories[entry["category"]][entry["id_tag"]] = {
-					"string": entry["name_id"],
 					"WeaponType": entry["wep_equip"],
 					"moveType": entry["mov_equip"],
 					"statModifiers": [value for value in entry["stats"].values()],
@@ -113,7 +112,7 @@ skillslite = {
 	"weapons": {
 		weaponname: {
 			property: value
-			for property, value in properties.items() if property in ["string", "effectrefine", "upgrades", "WeaponType", "moveType", "exclusive", "isMax"]
+			for property, value in properties.items() if property in ["effectrefine", "upgrades", "WeaponType", "moveType", "exclusive", "isMax"]
 		} 
 		for weaponname, properties in skills["weapons"].items()
     },
@@ -123,7 +122,7 @@ skillslite = {
 		passivecategory: {
 			passive: {
 				property: value
-				for property, value in properties.items() if property in ["string", "WeaponType", "moveType", "exclusive", "isMax"]
+				for property, value in properties.items() if property in ["WeaponType", "moveType", "exclusive", "isMax"]
 			} 
 			for passive, properties in skills["passives"][passivecategory].items()
 		}

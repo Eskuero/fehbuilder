@@ -193,7 +193,7 @@ def getimage():
 			weaponicon = Image.open("../data/img/" + icon)
 			canvas.paste(weaponicon, (370, 797), weaponicon)
 			# Hack Falchion and Missiletain name since we show the user the real internal name for difference but rendering should be clean
-			printableweapon = languages[hero["language"]][skills["weapons"][hero["weapon"]]["string"]]
+			printableweapon = languages[hero["language"]]["M" + hero["weapon"]]
 		# If not just print the basic icon
 		else:
 			printableweapon = "-"
@@ -203,8 +203,8 @@ def getimage():
 		draw.text((420, 805), printableweapon, font=font, fill="#82f546" if hero["refine"] else "#ffffff", stroke_width=3, stroke_fill="#0a2533")
 
 		# Print assist and special info
-		draw.text((420, 853), languages[hero["language"]][skills["assists"][hero["assist"]]["string"]] if hero["assist"] else "-", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
-		draw.text((420, 903), languages[hero["language"]][skills["specials"][hero["special"]]["string"]] if hero["special"] else "-", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+		draw.text((420, 853), languages[hero["language"]]["M" + hero["assist"]] if hero["assist"] else "-", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+		draw.text((420, 903), languages[hero["language"]]["M" + hero["special"]] if hero["special"] else "-", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 
 		# Render all the passives
 		for category in utilities.passiverender.keys():
@@ -226,7 +226,7 @@ def getimage():
 						print("Failed to download icon for " + hero["passive" + category])
 				canvas.paste(art, tuple(map(sum, zip(utilities.passiverender[category]["icon"], (-2, -2) if skills["passives"][category][hero["passive" + category]].get("shiny", False) else (0, 0)))), art)
 			# We always write the text because it might be a simple "-"
-			draw.text(utilities.passiverender[category]["text"], languages[hero["language"]][skills["passives"][category][hero["passive" + category]]["string"]] if hero["passive" + category] else "-", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+			draw.text(utilities.passiverender[category]["text"], languages[hero["language"]]["M" + hero["passive" + category]] if hero["passive" + category] else "-", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 			# Print the category indicator
 			indicator = Image.open("../data/img/other/indicator-skill" + category + ".png")
 			canvas.paste(indicator, utilities.passiverender[category]["indicator"], indicator)

@@ -177,7 +177,7 @@ function populate(select, data, clean, bypass) {
 		}
 		// Arriving at this check with a true add value measn we can add the option
 		if (add) {
-			options[languages[selectlanguage.value][data[value]["string"]]] = value;
+			options[languages[selectlanguage.value]["M" + value]] = value;
 		}
 	});
 	// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
