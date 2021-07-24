@@ -103,11 +103,14 @@ def getimage():
 			canvas.paste(favorite, (3, 229), favorite)
 		# First write the static text for each stat (normal anchoring)
 		font = ImageFont.truetype("../data/" + config["fontfile"], 25)
-		draw.text((115, 805), "HP", font=font, fill="#b1ecfa" if hero["boon"] == "HP" else ("#f0a5b3" if hero["bane"] == "HP" and int(hero["merges"]) == 0 else "#ffffff"), stroke_width=3, stroke_fill="#0a2533")
-		draw.text((115, 854), "Atk", font=font, fill="#b1ecfa" if hero["boon"] == "Atk" else ("#f0a5b3" if hero["bane"] == "Atk" and int(hero["merges"]) == 0 else "#ffffff"), stroke_width=3, stroke_fill="#0a2533")
-		draw.text((115, 903), "Spd", font=font, fill="#b1ecfa" if hero["boon"] == "Spd" else ("#f0a5b3" if hero["bane"] == "Spd" and int(hero["merges"]) == 0 else "#ffffff"), stroke_width=3, stroke_fill="#0a2533")
-		draw.text((115, 953), "Def", font=font, fill="#b1ecfa" if hero["boon"] == "Def" else ("#f0a5b3" if hero["bane"] == "Def" and int(hero["merges"]) == 0 else "#ffffff"), stroke_width=3, stroke_fill="#0a2533")
-		draw.text((115, 1003), "Res", font=font, fill="#b1ecfa" if hero["boon"] == "Res" else ("#f0a5b3" if hero["bane"] == "Res" and int(hero["merges"]) == 0 else "#ffffff"), stroke_width=3, stroke_fill="#0a2533")
+		draw.text((115, 805), languages[hero["language"]]["MID_HP"], font=font, fill="#b1ecfa" if hero["boon"] == "HP" else ("#f0a5b3" if hero["bane"] == "HP" and int(hero["merges"]) == 0 else "#ffffff"), stroke_width=3, stroke_fill="#0a2533")
+		draw.text((115, 854), languages[hero["language"]]["MID_ATTACK"], font=font, fill="#b1ecfa" if hero["boon"] == "Atk" else ("#f0a5b3" if hero["bane"] == "Atk" and int(hero["merges"]) == 0 else "#ffffff"), stroke_width=3, stroke_fill="#0a2533")
+		draw.text((115, 903), languages[hero["language"]]["MID_AGILITY"], font=font, fill="#b1ecfa" if hero["boon"] == "Spd" else ("#f0a5b3" if hero["bane"] == "Spd" and int(hero["merges"]) == 0 else "#ffffff"), stroke_width=3, stroke_fill="#0a2533")
+		draw.text((115, 953), languages[hero["language"]]["MID_DEFENSE"], font=font, fill="#b1ecfa" if hero["boon"] == "Def" else ("#f0a5b3" if hero["bane"] == "Def" and int(hero["merges"]) == 0 else "#ffffff"), stroke_width=3, stroke_fill="#0a2533")
+		draw.text((115, 1003), languages[hero["language"]]["MID_RESIST"], font=font, fill="#b1ecfa" if hero["boon"] == "Res" else ("#f0a5b3" if hero["bane"] == "Res" and int(hero["merges"]) == 0 else "#ffffff"), stroke_width=3, stroke_fill="#0a2533")
+		font = ImageFont.truetype("../data/" + config["fontfile"], 24)
+		draw.text((120, 1051), languages[hero["language"]]["MID_SKILL_POINT"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+		draw.text((115, 1101), languages[hero["language"]]["MID_HEROISM_POINT"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 
 		# Obtain the calculated stats to draw
 		statsmodifier = utilities.statcalc(heroes[name]["stats"], heroes[name]["growths"], hero["boon"], hero["bane"], int(hero["merges"]), int(hero["flowers"]))
@@ -150,6 +153,9 @@ def getimage():
 		canvas.paste(movetype, (229, 743), movetype)
 		weapontype = Image.open("../data/img/other/" + str(heroes[name]["WeaponType"]) + "-weapon.png")
 		canvas.paste(weapontype, (20, 742), weapontype)
+		# Print the level string
+		font = ImageFont.truetype("../data/" + config["fontfile"], 24)
+		draw.text((70, 745), languages[hero["language"]]["MID_LEVEL2"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 
 		# If we have merges we add the text next to the level
 		if hero["merges"] > 0:
@@ -169,6 +175,8 @@ def getimage():
 		# Paste the exp indicator
 		expindicator = Image.open("../data/img/base/expindicator.png")
 		canvas.paste(expindicator, (418, 732) if hero["flowers"] > 0 else (271, 732), expindicator)
+		font = ImageFont.truetype("../data/" + config["fontfile"], 24)
+		draw.text((455, 744) if hero["flowers"] > 0 else (308, 744), languages[hero["language"]]["MID_EXP"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 
 		font = ImageFont.truetype("../data/" + config["fontfile"], 23)
 		# If the weapon is valid try to print an icon
