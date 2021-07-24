@@ -95,23 +95,30 @@ function populateall(clean) {
 	populate(selectB, skills["passives"]["B"], clean)
 	populate(selectC, skills["passives"]["C"], clean)
 	populate(selectS, skills["passives"]["S"], clean)
-    // Make sure we do not end with an invalid refine option setup
-    updateRefine()
+	// Make sure we do not end with an invalid refine option setup
+	updateRefine()
 	// Add only the required amount of flowers
 	updatedragonflowers()
+	// Update translations
+	statictranslations()
 }
 
 function populate(select, data, clean, bypass) {
 	// Get current value to restore it back if possible
 	previousvalue = select.value
-	// First delete them all except the None element
-	while (select.lastChild && select.childElementCount > 1) {
-        select.removeChild(select.lastChild);
-    }
+	// First delete them all
+	while (select.lastChild) {
+		select.removeChild(select.lastChild);
+	}
+	// Always add the None option with it's proper translation
+	var opt = document.createElement('option');
+	opt.value = "None";
+	opt.innerHTML = languages[selectlanguage.value]["MSID_H_NONE"];
+	select.appendChild(opt);
 	// All data to be printed
 	options = {}
-    // If indicated to bypass don't do checks for this select, print everything and leave (this is exclusively for the heroes select)
-    if (bypass) {
+	// If indicated to bypass don't do checks for this select, print everything and leave (this is exclusively for the heroes select)
+	if (bypass) {
 		Object.keys(data).forEach((value) => {
 			options[languages[selectlanguage.value]["M" + value] + ": " + languages[selectlanguage.value][value.replace("PID", "MPID_HONOR")]] = value
 		});
@@ -219,11 +226,10 @@ function reblessed(onlytranslate) {
 			toberestored.push(selectallies.selectedOptions[i].value)
 		}
 	}
-	console.log(toberestored)
 	// First delete all allies
 	while (selectallies.lastChild) {
-        selectallies.removeChild(selectallies.lastChild);
-    }
+		selectallies.removeChild(selectallies.lastChild);
+	}
 	// Get the Blessing type and stop if we disabled it
 	blessing = selectblessings.value
 	if (blessing == "None") {
@@ -289,9 +295,9 @@ function updatedragonflowers() {
 	flowers = 15;
 	// First delete them all except the 0 element
 	while (selectflowers.lastChild && selectflowers.childElementCount > 1) {
-        selectflowers.removeChild(selectflowers.lastChild);
-    }
-    if (cheats.checked == false && selectheroes.value != "None") {
+		selectflowers.removeChild(selectflowers.lastChild);
+	}
+	if (cheats.checked == false && selectheroes.value != "None") {
 		flowers = units[selectheroes.value]["maxflowers"]
 	}
 	// Loop for each flower allowed
@@ -314,11 +320,12 @@ function updateRefine() {
 
 	// Clear all children on the refine select first
 	while (selectrefines.lastChild) {
-        selectrefines.removeChild(selectrefines.lastChild);
-    }
-    var opt = document.createElement('option');
+		selectrefines.removeChild(selectrefines.lastChild);
+	}
+	// Always add the None option with it's proper translation
+	var opt = document.createElement('option');
 	opt.value = "None";
-	opt.innerHTML = "None";
+	opt.innerHTML = languages[selectlanguage.value]["MSID_H_NONE"];
 	selectrefines.appendChild(opt);
 	if (weapon == "None") {
 		return;
@@ -350,15 +357,24 @@ function updateRefine() {
 			opt.innerHTML = "Effect";
 			selectrefines.appendChild(opt);
 		}
-		["Atk", "Spd", "Def", "Res"].forEach((stat) => {
+		for (const [tag, string] of Object.entries({"Atk": languages[selectlanguage.value]["MID_ATTACK"], "Spd": languages[selectlanguage.value]["MID_AGILITY"], "Def": languages[selectlanguage.value]["MID_DEFENSE"], "Res": languages[selectlanguage.value]["MID_RESIST"]})) {
 			var opt = document.createElement('option');
-			opt.value = stat;
-			opt.innerHTML = stat;
+			opt.value = tag;
+			opt.innerHTML = string;
 			selectrefines.appendChild(opt);
-		});
+		}
 	}
 	// Restore the previous value if it's available on the updated select
 	if ([...selectrefines.options].map(opt => opt.value).includes(previousvalue)) {
 		selectrefines.value = previousvalue;
 	}
+}
+
+function statictranslations() {
+	document.getElementById("atk").parentElement.children[0].innerHTML = languages[selectlanguage.value]["MID_ATTACK"];
+	document.getElementById("spd").parentElement.children[0].innerHTML = languages[selectlanguage.value]["MID_AGILITY"];
+	document.getElementById("def").parentElement.children[0].innerHTML = languages[selectlanguage.value]["MID_DEFENSE"];
+	document.getElementById("res").parentElement.children[0].innerHTML = languages[selectlanguage.value]["MID_RESIST"];
+	document.getElementById("sp").parentElement.parentElement.children[0].children[0].innerHTML = languages[selectlanguage.value]["MID_SKILL_POINT"] + ":";
+	document.getElementById("hm").parentElement.parentElement.children[0].children[0].innerHTML = languages[selectlanguage.value]["MID_HEROISM_POINT"] + ":";
 }
