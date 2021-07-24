@@ -17,16 +17,6 @@ skills = {
 categories = [skills["weapons"], skills["assists"], skills["specials"], skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"]]
 refines = {}
 
-# TODO: This should be possible to check within the actual entry parsin. Parameters to send the API whe requesting the whole list of shiny skills (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=TagID&where=Scategory+in+(%22passivea%22,%20%22passivec%22)+and+SP=300+and+exclusive=0+and+Name+not+like+%27%253%27+and+Name+not+like+%27%25Counter%27+and+Name+not+like+%27%25Foil%27+and+Name+not+like+%27%25Ward%27&limit=max&offset=0&format=json)
-params = dict(
-    action = 'cargoquery', limit = 'max', offset = -500, format = 'json',
-    tables = 'Skills',
-    fields = "TagID",
-    where = "Scategory in ('passivea','passivec') and SP=300 and exclusive=0 and Name not like '%3' and Name not like '%Counter' and Name not like '%Foil' and Name not like '%Ward'"
-)
-# This is the list of skills who have shiny borders (This is any skill for A or C category that isn't exclusive, costs 300 SP and doesn't end on 3, Counter, Foil or Ward (for now lol))
-shinyskills = [skill['TagID'] for skill in [entry["title"] for entry in utils.retrieveapidata(params)]]
-
 # Obtain the whole list of icons for the passives (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=TagID,Icon&where=Scategory+in+(%27passivea%27,%27passiveb%27,%27passivec%27,%27sacredseal%27)&limit=max&offset=0&format=json)
 params = dict(
 	action = 'cargoquery', limit = 'max', offset = -500, format = 'json',
@@ -63,8 +53,6 @@ for file in files:
 					# Check if the skill is in the list reported by the wiki to obtain the true URL for the icon if so
 					if entry["id_tag"] in passiveicons:
 						categories[entry["category"]][entry["id_tag"]]["icon"] = utils.obtaintrueurl([passiveicons[entry["id_tag"]]])[0]
-					# Check if the skill is the list of shiny ones to properly render the icon
-					categories[entry["category"]][entry["id_tag"]]["shiny"] = True if entry["id_tag"] in shinyskills else False,
 			# For refines we just store additional data
 			elif entry["refine_base"]:
 				refines[entry["id_tag"]] = {"upgrades": True, "baseWeapon": entry["refine_base"]}
