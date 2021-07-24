@@ -5,7 +5,6 @@ from PIL import Image
 
 # Create all temp routes as needed
 pathlib.Path("../data/img/heroes").mkdir(parents=True, exist_ok=True)
-pathlib.Path("../data/img/ui").mkdir(parents=True, exist_ok=True)
 pathlib.Path("../data/img/other").mkdir(parents=True, exist_ok=True)
 
 def download():
