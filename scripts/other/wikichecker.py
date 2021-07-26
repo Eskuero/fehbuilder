@@ -1,6 +1,8 @@
 import json
-import utils
+import sys
 import os
+sys.path.append('.')
+import utils
 # Script to check if the wiki Skils and Tables are missing any data from the dumps, we basically obtain any key, then parse the dumps and check one by one if they are in the list obtained from the cargoquery. We merely load the English locales to be able to print a humar readable string related to the string
 
 # Load all languages from the json file

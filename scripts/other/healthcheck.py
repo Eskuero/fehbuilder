@@ -1,20 +1,21 @@
 import json
 
 # Load all heroes data from the json file
-with open("../data/units.json", "r") as datasource:
+with open("../data/fullunits.json", "r") as datasource:
 	heroes = json.load(datasource)
 
 # Load all skills data from the json file
-with open("../data/skills.json", "r") as datasource:
+with open("../data/fullskills.json", "r") as datasource:
 	skills = json.load(datasource)
 
 # Load all skills data from the json file
-with open("../data/languages.json", "r") as datasource:
+with open("../data/fulllanguages.json", "r") as datasource:
 	languages = json.load(datasource)["USEN"]
 
 print("Heroes normal art (not resplendent):")
 for hero in list(heroes.keys()):
-	for art in heroes[hero]["art"]:
+	# Ignore enemy generic units since they do only have portrait files
+	for art in [art for art in heroes[hero]["art"] if "EID_" not in hero]:
 		if not heroes[hero]["art"][art]:
 			print("     " + languages["M" + hero] + " (" + hero + "): doesn't have art for " + art)
 
