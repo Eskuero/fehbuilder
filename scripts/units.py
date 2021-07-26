@@ -7,14 +7,43 @@ heroes = {}
 
 # Parameters to send the API whe requesting the whole list of heroes name-tag relation (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Units&fields=_pageName=Name,TagID&limit=max&format=json)
 params = dict(
-    action = 'cargoquery', limit = 'max', offset = -500, format = 'json',
-    tables = 'Units',
-    fields = '_pageName=Name,TagID'
+	action = 'cargoquery', limit = 'max', offset = -500, format = 'json',
+	tables = 'Units',
+	fields = '_pageName=Name,TagID'
 )
 engrishname = {
 	entry["TagID"]: entry["Name"]
 	for entry in [entry["title"] for entry in utils.retrieveapidata(params)]
 }
+
+# Get all the files that contain unit definitions and loop through them
+files = os.listdir("feh-assets-json/files/assets/Common/SRPG/Enemy/")
+for file in files:
+	with open("feh-assets-json/files/assets/Common/SRPG/Enemy/" + file, "r") as datasource:
+		data = json.load(datasource)
+		# EID_無し is skeleton data for a enemy so we ignore it. We also ignore the normal bosses
+		for entry in [entry for entry in data if entry["id_tag"] != "EID_無し" and not entry["is_boss"]]:
+			print(entry["id_tag"])
+			# If the hero is properly defined on the wiki table get the true name and art
+			if entry["id_tag"] in engrishname:
+				# Full name of the generic unit
+				arturl = utils.obtaintrueurl([engrishname[entry["id_tag"]] + "_BtlFace.png"])[0]
+			# If the hero is not properly defined we default all art to zeroes (we still will get get within the builder with the fallback missigno)
+			else:
+				arturl = False
+
+			heroes[entry["id_tag"]] = {
+				# The base stats values stored for each hero are so at 3 star rarity (it's safe to bump them by 1 each)
+				"stats": [value+1 for value in entry["base_stats"].values()],
+				"growths": [value for value in entry["growth_rates"].values()],
+				"WeaponType": entry["weapon_type"],
+				"moveType": entry["move_type"],
+				"maxflowers": 15,
+				"art": {"Portrait": arturl, "Attack": False, "Special": False, "Damage": False},
+				"resplendentart": {"Portrait": False, "Attack": False, "Special": False, "Damage": False},
+				# Obtain the base kit skipping empty entries (it's provided as a list of list for each rarity unlock but we just need one)
+				"basekit": []
+			}
 
 # Load all weapon data from the json file
 with open("fullskills.json", "r") as datasource:

@@ -14,7 +14,7 @@ for language in languages:
 		with open("feh-assets-json/files/assets/" + language + "/Message/Data/" + file, "r") as datasource:
 			data = json.load(datasource)
 			# We only add strings related to either skills or units as long as they are not descriptions
-			for string in [string for string in data if (any(substring in string["key"] for substring in ["MPID_", "MSID_"]) and not any(substring in string["key"] for substring in ["MPID_H_", "MSID_H_", "MPID_SEARCH_", "MPID_LEGEND_"])) or string["key"] in basicstrings]:
+			for string in [string for string in data if (any(substring in string["key"] for substring in ["MPID_", "MEID_", "MSID_"]) and not any(substring in string["key"] for substring in ["MPID_H_", "MSID_H_", "MPID_SEARCH_", "MPID_LEGEND_"])) or string["key"] in basicstrings]:
 				strings[string["key"]] = string["value"]
 	languages[language] = strings
 

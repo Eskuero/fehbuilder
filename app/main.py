@@ -86,7 +86,8 @@ def getimage():
 			resplendent = Image.open("../data/img/other/resplendent.png")
 			canvas.paste(resplendent, (262, 492), resplendent)
 		# Write the title and name using an horizontally centered anchor to avoid going out of bounds
-		draw.text((188, 585), languages[hero["language"]][hero["name"].replace("PID", "MPID_HONOR")], font=font, anchor="mm", stroke_width=3, stroke_fill=(50, 30, 10))
+		title = languages[hero["language"]][hero["name"].replace("PID", "MPID_HONOR")] if "PID_" in hero["name"] else "Enemy"
+		draw.text((188, 585), title, font=font, anchor="mm", stroke_width=3, stroke_fill=(50, 30, 10))
 		draw.text((222, 659), languages[hero["language"]]["M" + hero["name"]], font=font, anchor="mm", stroke_width=3, stroke_fill=(50, 30, 10))
 		# Print the artist and actor names, as well as the favorite mark if appui enabled
 		if hero["appui"]:
@@ -97,8 +98,10 @@ def getimage():
 				draw.text((47, 1212), languages[hero["language"]][hero["name"].replace("PID", "MPID_VOICE") + "EX01"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 				draw.text((47, 1241), languages[hero["language"]][hero["name"].replace("PID", "MPID_ILLUST") + "EX01"], font=font, fill="#ffffff",stroke_width=3, stroke_fill="#0a2533")
 			else:
-				draw.text((47, 1212), languages[hero["language"]][hero["name"].replace("PID", "MPID_VOICE")], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
-				draw.text((47, 1241), languages[hero["language"]][hero["name"].replace("PID", "MPID_ILLUST")], font=font, fill="#ffffff",stroke_width=3, stroke_fill="#0a2533")
+				voice = languages[hero["language"]][hero["name"].replace("PID", "MPID_VOICE")] if "PID_" in hero["name"] else ""
+				artist = languages[hero["language"]][hero["name"].replace("PID", "MPID_ILLUST")] if "PID_" in hero["name"] else ""
+				draw.text((47, 1212), voice, font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+				draw.text((47, 1241), artist, font=font, fill="#ffffff",stroke_width=3, stroke_fill="#0a2533")
 			favorite = Image.open("../data/img/other/favorite_" + hero["favorite"] + ".png")
 			canvas.paste(favorite, (3, 229), favorite)
 		# First write the static text for each stat (normal anchoring)

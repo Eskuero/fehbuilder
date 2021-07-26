@@ -120,7 +120,7 @@ function populate(select, data, clean, bypass) {
 	// If indicated to bypass don't do checks for this select, print everything and leave (this is exclusively for the heroes select)
 	if (bypass) {
 		Object.keys(data).forEach((value) => {
-			options[languages[selectlanguage.value]["M" + value] + ": " + languages[selectlanguage.value][value.replace("PID", "MPID_HONOR")]] = value
+			options[languages[selectlanguage.value]["M" + value] + ": " + (languages[selectlanguage.value][value.replace("PID", "MPID_HONOR")] || "Generic")] = value
 		});
 		// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
 		options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {})
