@@ -101,6 +101,8 @@ function populateall(clean) {
 	updatedragonflowers()
 	// Update translations
 	statictranslations()
+	// Make sure we got a valid blessing for locked mythics/legendaries
+	validblessing()
 }
 
 function populate(select, data, clean, bypass) {
@@ -216,6 +218,21 @@ function reload() {
 	buffs = selectatk.value + ";" + selectspd.value + ";" + selectdef.value + ";" + selectres.value
 	// Change the URL of the img to force it to reload
 	document.getElementById('fakecanvas').src = "/get_image.png?name=" + encodeURIComponent(selectheroes.value) + "&merges=" + selectmerges.value + "&flowers=" + selectflowers.value + "&boon=" + selectboons.value + "&bane=" + selectbanes.value + "&weapon=" + encodeURIComponent(selectweapons.value) + "&refine=" + selectrefines.value + "&assist=" + encodeURIComponent(selectassists.value) + "&special=" + encodeURIComponent(selectspecials.value) + "&passiveA=" + encodeURIComponent(selectA.value) + "&passiveB=" + encodeURIComponent(selectB.value) + "&passiveC=" + encodeURIComponent(selectC.value) + "&passiveS=" + encodeURIComponent(selectS.value) + "&blessing=" + selectblessings.value + "&summoner=" + selectsummoner.value + "&attire=" + selectattire.value + "&appui=" + appui.checked + "&bonusunit=" + selectbonusunit.value + "&allies=" + encodeURIComponent(allies) + "&buffs=" + encodeURIComponent(buffs) + "&sp=" + selectsp.value + "&hm=" + selecthm.value + "&artstyle=" + selectartstyle.value + "&offset=" + selectoffset.value + "&favorite=" + selectfavorite.value + "&language=" + selectlanguage.value;
+}
+
+function validblessing() {
+	// Merely check if the heroe is listed as pre-blessed on any of the options
+	for (i = 0; i < other["blessed"].length; i++) {
+		// If it is: change the select, lock it, force-update the allies select and stop
+		if (other["blessed"][i].includes(selectheroes.value)) {
+			selectblessings.value = i + 1;
+			selectblessings.disabled = true;
+			selectblessings.dispatchEvent(new Event('change'));
+			return;
+		}
+	}
+	// If we arrived here that means we completed the loop without finding a match so so make sure the blessing select gets unlocked
+	selectblessings.disabled = false;
 }
 
 function reblessed(onlytranslate) {

@@ -22,7 +22,7 @@ for file in files:
 			if entry["legendary"]["element"] > 0:
 				other["blessed"][entry["legendary"]["element"]-1][entry["id_tag"]] = {
 					"boosts": [value for value in entry["legendary"]["bonus_effect"].values()],
-					"pair-up": True if entry["legendary"]["pair_up"] else False
+					"variant": "-".join([stat for stat, value in entry["legendary"]["bonus_effect"].items() if value > 0 and stat != "hp"]) + ("pairup" if entry["legendary"]["pair_up"] else ("-extrae" if entry["legendary"]["ae_extra"] else ""))
 				}
 				otherlite["blessed"][entry["legendary"]["element"]-1].append(entry["id_tag"])
 
