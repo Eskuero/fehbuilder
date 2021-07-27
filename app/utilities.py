@@ -148,8 +148,8 @@ def weaponmodifiers(name, weapon, refine):
 		# If the weapon is refined then add with the values
 		if refine in refinemodifierchart[str(weapontype(weapon["WeaponType"]))]:
 			stats = [x+y for x,y in zip(stats, refinemodifierchart[str(weapontype(weapon["WeaponType"]))][refine])]
-			# This list of weapons are brave melee of the triangle axe-lance-sword and suffer a -1 penalty when refining for Atk so we check this
-			if name in ["Amiti", "Arden's Blade", "Cherche's Axe", "Hewn Lance", "Rowdy Sword"] and refine == "Atk":
+			# Some weapons are brave melee of the triangle axe-lance-sword and suffer a -1 penalty when refined for Atk so check against them (Amiti, Arden's Blade, Cherche's Axe, Hewn Lance, Rowdy Sword)
+			if name in ["SID_アミーテ", "SID_アーダンの固剣", "SID_セルジュの恐斧", "SID_ドニの朴槍", "SID_明日の聖騎士の剣"] and refine == "Atk":
 				stats[1] -= 1
 	return stats
 
