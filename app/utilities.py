@@ -1,7 +1,7 @@
 import json
 import math
 
-def herosanitization(heroes, skills, languages, name, args):
+def herosanitization(heroes, skills, languages, other, name, args):
 	# Hero request squeleton definition
 	hero = {
 		"name": False, "boon": False, "bane": False, "merges": False, "flowers": False, "weapon": False, "refine": False, "assist": False, "special": False, "passiveA": False, "passiveB": False, "passiveC": False, "passiveS": False, "summoner": False, "blessing": False, "attire": False, "bonusunit": False, "allies": False, "buffs": False, "sp": False, "hm": False, "artstyle": False, "offset": False, "favorite": False, "language": False, "appui": False
@@ -45,7 +45,15 @@ def herosanitization(heroes, skills, languages, name, args):
 			hero[prop] = True if value == "yes" else False
 		# For allies we add the list provided unless nothing is provided in which case we add an empty string
 		elif prop == "allies":
-			hero[prop] = value if value else ""
+			hero[prop] = {}
+			if value:
+				allies = value.split("|")
+				for ally in allies:
+					ally = ally.split(";")
+					# For each hero with a valid blessing we can check if the multiplier is valid
+					if ally[0] in [unit for sublist in [blessing.keys() for blessing in other["blessed"]] for unit in sublist] and len(ally) == 2:
+						# We only add the ally if the second value is a digit between 0 and 5.
+						hero[prop][ally[0]] = hero[prop].get(ally[0], 0) + (0 if not ally[1].isdigit() else (int(ally[1]) if int(ally[1]) in range(1, 6) else 0))
 		# For buffs if nothing is provided we default to an empty list, if something is provided it must be a string that when split by ; has a length of 4, being each element a valid int between -99 and 99
 		elif prop == "buffs":
 			if not value:
