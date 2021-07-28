@@ -387,6 +387,77 @@ function updateRefine() {
 	}
 }
 
+// Data for each build slot
+builds = [
+	["None", false, true, "USEN", "None", "None", [],"0","0","None","None","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0",9999,7000,"Portrait","0","1", true],
+	["None", false, true, "USEN", "None", "None", [],"0","0","None","None","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0",9999,7000,"Portrait","0","1", true],
+	["None", false, true, "USEN", "None", "None", [],"0","0","None","None","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0",9999,7000,"Portrait","0","1", true],
+	["None", false, true, "USEN", "None", "None", [],"0","0","None","None","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0",9999,7000,"Portrait","0","1", true]
+]
+// List of values to be restored (their document element)
+selects = [selectmerges, selectflowers, selectboons, selectbanes, selectrefines, selectspecials, selectassists, selectA, selectB, selectC, selectS, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef, selectres, selectsp, selecthm, selectartstyle, selectoffset, selectfavorite, appui]
+// Which builder slot is active right now
+var buildslot = 0;
+function switchbuild(build) {
+	// First save changes to current slot (heroes, cheats, language, maxskill, weapons and blessings are to be done first because they affect the content of other selects)
+	builds[buildslot][0] = selectheroes.value;
+	builds[buildslot][1] = cheats.checked;
+	builds[buildslot][2] = bestskills.checked;
+	builds[buildslot][3] = selectlanguage.value;
+	builds[buildslot][4] = selectweapons.value;
+	builds[buildslot][5] = selectblessings.value;
+	for (i = 0; i < selectallies.selectedOptions.length; i++) {
+		builds[buildslot][6].push(selectallies.selectedOptions[i].value)
+	}
+	// Now save the rest of the data
+	for (i = 0; i < selects.length; i++) {
+		if (selects[i].type == "checkbox") {
+			builds[buildslot][i+7] = selects[i].checked;
+		} else {
+			builds[buildslot][i+7] = selects[i].value;
+		}
+	}
+	// Switch active slot
+	buildslot = build;
+	// Restore changes to current slot (heroes select, cheats and maxskill setting are to be done first because they affect the content of other selects)
+	selectheroes.value = builds[buildslot][0];
+	cheats.checked = builds[buildslot][1];
+	bestskills.checked = builds[buildslot][2];
+	selectlanguage.value = builds[buildslot][3];
+	// Trigger a rebuild of the selects based on the filters set
+	selectlanguage.dispatchEvent(new Event('change'));
+	// Trigger a rebuild of the refine select based on the selection of weapon
+	selectweapons.value = builds[buildslot][4];
+	selectweapons.dispatchEvent(new Event('change'));
+	// Trigger a rebuild of the allies select based on the selection of blessing
+	selectblessings.value = builds[buildslot][5];
+	selectblessings.dispatchEvent(new Event('change'));
+	for (i = 0; i < selectallies.options.length; i++) {
+		if (builds[buildslot][6].includes(selectallies.options[i].value)) {
+			selectallies.options[i].selected = true;
+		}
+	}
+	selectallies.dispatchEvent(new Event('change'));
+	// Now restore the rest of the data
+	for (i = 0; i < selects.length; i++) {
+		if (selects[i].type == "checkbox") {
+			selects[i].checked = builds[buildslot][i+7];
+		} else {
+			$('#'+selects[i].id).val(builds[buildslot][i+7]).trigger('change');
+		}
+	}
+	// Reload the image
+	reload();
+}
+function slotname() {
+	// Update unit name in the builder tab
+	if (selectheroes.value != "None") {
+		document.getElementById("unitslot").children[buildslot].innerHTML = languages[selectlanguage.value]["M" + selectheroes.value] + ": " + (languages[selectlanguage.value][selectheroes.value.replace("PID", "MPID_HONOR")] || "Generic");
+	} else {
+		document.getElementById("unitslot").children[buildslot].innerHTML = "#" + (buildslot+1) + " Build";
+	}
+}
+
 function statictranslations() {
 	document.getElementById("atk").parentElement.children[0].innerHTML = languages[selectlanguage.value]["MID_ATTACK"];
 	document.getElementById("spd").parentElement.children[0].innerHTML = languages[selectlanguage.value]["MID_AGILITY"];
@@ -394,4 +465,5 @@ function statictranslations() {
 	document.getElementById("res").parentElement.children[0].innerHTML = languages[selectlanguage.value]["MID_RESIST"];
 	document.getElementById("sp").parentElement.parentElement.children[0].children[0].innerHTML = languages[selectlanguage.value]["MID_SKILL_POINT"] + ":";
 	document.getElementById("hm").parentElement.parentElement.children[0].children[0].innerHTML = languages[selectlanguage.value]["MID_HEROISM_POINT"] + ":";
+	slotname();
 }

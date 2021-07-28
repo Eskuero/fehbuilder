@@ -20,24 +20,30 @@
 				</div>
 				<div class="col-12 col-lg-4">
 					<div class="form">
-						<div class="links">
-							<a href="https://github.com/Eskuero/fehbuilder" target="blank">
-								<img class="img-fluid" src="assets/github.png"/>
-							</a>
-							<a href="https://discord.gg/fireemblemheroes" target="blank">
-								<img class="img-fluid" src="assets/discord.png"/>
-							</a>
+						<div id="unitslot">
+							<button onclick="switchbuild(0)">#1 Build</button>
+							<button onclick="switchbuild(1)">#2 Build</button>
+							<button onclick="switchbuild(2)">#3 Build</button>
+							<button onclick="switchbuild(3)">#4 Build</button>
 						</div>
 						<section class="ml-2">
 							<div class="row mb-1">
 								<h4>Unit</h4>
+								<div class="links">
+									<a href="https://github.com/Eskuero/fehbuilder" target="blank">
+										<img class="img-fluid" src="assets/github.png"/>
+									</a>
+									<a href="https://discord.gg/fireemblemheroes" target="blank">
+										<img class="img-fluid" src="assets/discord.png"/>
+									</a>
+								</div>
 							</div>
 							<div class="row mb-1">
 								<div class="col-3 col-md-2 col-form-label text-md-right">
 									<label>Hero: </label>
 								</div>
 								<div class="col-9">
-									<select class="s2-select" style="width: 100%" id="selectheroes" onChange="populateall(true)" >
+									<select class="s2-select" style="width: 100%" id="selectheroes" onChange="populateall(true);slotname()" >
                   						<option value="None">None</value>
 									</select>
 								</div>
