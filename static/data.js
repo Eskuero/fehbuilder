@@ -260,7 +260,7 @@ function reblessed(onlytranslate) {
 	options = {}
 	for (i = 0; i < blessed.length; i++) {
 		// Depending on the type of blessing there's a limit on allies
-		var max = (["5", "6", "7", "8"].includes(blessing)) ? 5 : 3;
+		var max = (["5", "6", "7", "8"].includes(blessing)) ? 6 : 3;
 		// Add an option for each value
 		for (j = 1; j <= max; j++) {
 			options[languages[selectlanguage.value]["M" + blessed[i]] + ": " + languages[selectlanguage.value][blessed[i].replace("PID", "MPID_HONOR")] + " x" + j] = blessed[i] + ";" + j;
@@ -283,7 +283,7 @@ function reblessed(onlytranslate) {
 
 function checkallies() {
 	// Depending on the type of blessing there's a limit on allies
-	var max = (["5", "6", "7", "8"].includes(selectblessings.value)) ? 5 : 3;
+	var max = (["5", "6", "7", "8"].includes(selectblessings.value)) ? 6 : 3;
 	// Detect the amount of currently deployed
 	allies = 0;
 	for (i = 0; i < selectallies.selectedOptions.length; i++) {

@@ -53,7 +53,7 @@ def herosanitization(heroes, skills, languages, other, name, args):
 					# For each hero with a valid blessing we can check if the multiplier is valid
 					if ally[0] in [unit for sublist in [blessing.keys() for blessing in other["blessed"]] for unit in sublist] and len(ally) == 2:
 						# We only add the ally if the second value is a digit between 0 and 5.
-						hero[prop][ally[0]] = hero[prop].get(ally[0], 0) + (0 if not ally[1].isdigit() else (int(ally[1]) if int(ally[1]) in range(1, 6) else 0))
+						hero[prop][ally[0]] = hero[prop].get(ally[0], 0) + (0 if not ally[1].isdigit() else (int(ally[1]) if int(ally[1]) in range(1, 7) else 0))
 		# For buffs if nothing is provided we default to an empty list, if something is provided it must be a string that when split by ; has a length of 4, being each element a valid int between -99 and 99
 		elif prop == "buffs":
 			if not value:
