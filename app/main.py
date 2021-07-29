@@ -226,6 +226,7 @@ def getimage():
 				# Check if the icon art is already in the temporal folder for speeding up requests from the wiki
 				if (pathlib.Path("../data/img/icons/" + iconname).is_file()):
 					art = Image.open("../data/img/icons/" + iconname)
+					canvas.paste(art, tuple(map(sum, zip(utilities.passiverender[category]["icon"], (-2, -2) if art.size[0] > 44 else (0, 0)))), art)
 				else:
 					# Download, resize and cache the picture
 					try:
@@ -234,10 +235,10 @@ def getimage():
 						# If the image size is bigger than 70 these are some tier 4 skills that have shiny borders and their icon must be scaled accordingly
 						art = art.resize((48, 48) if art.size[0] > 70 else (44, 44))
 						art.save("../data/img/icons/" + iconname, 'PNG')
+						canvas.paste(art, tuple(map(sum, zip(utilities.passiverender[category]["icon"], (-2, -2) if art.size[0] > 44 else (0, 0)))), art)
 					except:
 						# We failed to download the icon for this skill :(
 						print("Failed to download icon for " + hero["passive" + category])
-				canvas.paste(art, tuple(map(sum, zip(utilities.passiverender[category]["icon"], (-2, -2) if art.size[0] > 44 else (0, 0)))), art)
 			# We always write the text because it might be a simple "-"
 			draw.text(utilities.passiverender[category]["text"], languages[hero["language"]]["M" + hero["passive" + category]] if hero["passive" + category] else "-", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 			# Print the category indicator
