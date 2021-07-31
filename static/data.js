@@ -94,7 +94,7 @@ function populateall(clean) {
 	populate(selectA, skills["passives"]["A"], clean)
 	populate(selectB, skills["passives"]["B"], clean)
 	populate(selectC, skills["passives"]["C"], clean)
-	populate(selectS, skills["passives"]["S"], clean)
+	populate(selectS, Object.assign({}, skills["passives"]["S"], cheats.checked ? Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"]) : {}), clean)
 	// Make sure we do not end with an invalid refine option setup
 	updateRefine()
 	// Add only the required amount of flowers

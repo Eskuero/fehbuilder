@@ -22,6 +22,7 @@ with open("../data/fullunits.json", "r") as datasource:
 # Load all skills data from the json file
 with open("../data/fullskills.json", "r") as datasource:
 	skills = json.load(datasource)
+	allpassives = skills["passives"]["A"] | skills["passives"]["B"] | skills["passives"]["C"] | skills["passives"]["S"]
 
 # Load other data from the json file
 with open("../data/fullother.json", "r") as datasource:
@@ -124,9 +125,9 @@ def getimage():
 		if hero["summoner"]:
 			statsmodifier = [x+y for x,y in zip(statsmodifier, utilities.summonerranks[hero["summoner"]])]
 		# Append passives visible stats
-		for category in ["A", "S"]:
+		for category in ["A", "B", "C", "S"]:
 			if hero["passive" + category]:
-				statsmodifier = [x+y for x,y in zip(statsmodifier, skills["passives"][category][hero["passive" + category]]["statModifiers"])]
+				statsmodifier = [x+y for x,y in zip(statsmodifier, allpassives[hero["passive" + category]]["statModifiers"])]
 		if hero["attire"]:
 			statsmodifier = [x+y for x,y in zip(statsmodifier, [2, 2, 2, 2, 2])]
 		if hero["bonusunit"]:
@@ -230,7 +231,7 @@ def getimage():
 				else:
 					# Download, resize and cache the picture
 					try:
-						response = requests.get(skills["passives"][category][hero["passive" + category]]["icon"])
+						response = requests.get(allpassives[hero["passive" + category]]["icon"])
 						art = Image.open(io.BytesIO(response.content))
 						# If the image size is bigger than 70 these are some tier 4 skills that have shiny borders and their icon must be scaled accordingly
 						art = art.resize((48, 48) if art.size[0] > 70 else (44, 44))

@@ -30,7 +30,7 @@ def herosanitization(heroes, skills, languages, other, name, args):
 			hero[prop] = value if value in skills[prop + "s"] else False
 		# Passives must exist in our data otherwise we don't print it
 		elif prop in ["passiveA", "passiveB", "passiveC", "passiveS"]:
-			hero[prop] = value if value in skills["passives"][prop[-1:]] else False
+			hero[prop] = value if value in skills["passives"]["A"] | skills["passives"]["B"] | skills["passives"]["C"] | skills["passives"]["S"] else False
 		# Summoner support rank can only be of C, B, A or S
 		elif prop == "summoner":
 			hero[prop] = value if value in summonerranks else None
