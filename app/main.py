@@ -152,9 +152,17 @@ def getimage():
 		# Print the amount of SP and HM
 		draw.text((265, 1052), str(hero["sp"]), font=font, anchor="ra", fill="#82f546" if hero["sp"] == 9999 else "#fffaaf", stroke_width=3, stroke_fill="#0a2533")
 		draw.text((265, 1100), str(hero["hm"]), font=font, anchor="ra", fill="#82f546" if hero["hm"] == 7000 else "#fffaaf", stroke_width=3, stroke_fill="#0a2533")
+		# If we selected an accessory we paste a newer bigger holder and define an offset to push all next items to the right
+		offset = 0
+		if hero["accessory"]:
+			accessoryexpand = Image.open("../data/img/base/accessory-expansion.png")
+			canvas.paste(accessoryexpand, (4, 732), accessoryexpand)
+			accessoryicon = Image.open("../data/img/other/Accesory-" + str(hero["accessory"]) + ".png")
+			canvas.paste(accessoryicon, (256, 743), accessoryicon)
+			offset += 27
 		# Print the move type and weapon type icons
 		movetype = Image.open("../data/img/other/" + str(heroes[name]["moveType"]) + "-move.png")
-		canvas.paste(movetype, (229, 743), movetype)
+		canvas.paste(movetype, (229 if not hero["accessory"] else 223, 743), movetype)
 		weapontype = Image.open("../data/img/other/" + str(heroes[name]["WeaponType"]) + "-weapon.png")
 		canvas.paste(weapontype, (20, 742), weapontype)
 		# Print the level string
@@ -170,17 +178,18 @@ def getimage():
 		if hero["flowers"] > 0:
 			font = ImageFont.truetype("../data/" + config["fontfile"], 25)
 			flowerholder = Image.open("../data/img/base/flowerholder.png")
-			canvas.paste(flowerholder, (271, 732), flowerholder)
+			canvas.paste(flowerholder, (271 + offset, 732), flowerholder)
 			flowericon = Image.open("../data/img/other/" + str(heroes[name]["moveType"]) + "-flower.png")
-			canvas.paste(flowericon, (289, 727), flowericon)
-			draw.text((345, 742), "+", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
-			draw.text((364, 744), str(hero["flowers"]), font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+			canvas.paste(flowericon, (289 + offset, 727), flowericon)
+			draw.text((345 + offset, 742), "+", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+			draw.text((364 + offset, 744), str(hero["flowers"]), font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+			offset += 147
 
 		# Paste the exp indicator
 		expindicator = Image.open("../data/img/base/expindicator.png")
-		canvas.paste(expindicator, (418, 732) if hero["flowers"] > 0 else (271, 732), expindicator)
+		canvas.paste(expindicator, (271 + offset, 732), expindicator)
 		font = ImageFont.truetype("../data/" + config["fontfile"], 24)
-		draw.text((455, 744) if hero["flowers"] > 0 else (308, 744), languages[hero["language"]]["MID_EXP"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+		draw.text((308 + offset, 744), languages[hero["language"]]["MID_EXP"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 
 		font = ImageFont.truetype("../data/" + config["fontfile"], 23)
 		# If the weapon is valid try to print an icon

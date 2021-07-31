@@ -55,6 +55,11 @@ icons = {
 	"21-weapon": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/3/30/Icon_Class_Blue_Beast.png?32?32",
 	"22-weapon": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/d7/Icon_Class_Green_Beast.png?32?32",
 	"23-weapon": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/02/Icon_Class_Colorless_Beast.png?32?32",
+	# Accesories
+	"Accesory-Hat": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/98/Accessory_Type_hat.png?32?32",
+	"Accesory-Hair": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/7/7c/Accessory_Type_hair.png?32?32",
+	"Accesory-Mask": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/ca/Accessory_Type_mask.png?32?32",
+	"Accesory-Tiara": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/db/Accessory_Type_tiara.png?32?32",
 	# Refines
 	"Atk-Refine": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/20/Attack_Plus_W.png?44?44",
 	"Spd-Refine": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/02/Speed_Plus_W.png?44?44",

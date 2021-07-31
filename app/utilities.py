@@ -4,7 +4,7 @@ import math
 def herosanitization(heroes, skills, languages, other, name, args):
 	# Hero request squeleton definition
 	hero = {
-		"name": False, "boon": False, "bane": False, "merges": False, "flowers": False, "weapon": False, "refine": False, "assist": False, "special": False, "passiveA": False, "passiveB": False, "passiveC": False, "passiveS": False, "summoner": False, "blessing": False, "attire": False, "bonusunit": False, "allies": False, "buffs": False, "sp": False, "hm": False, "artstyle": False, "offset": False, "favorite": False, "language": False, "appui": False
+		"name": False, "boon": False, "bane": False, "merges": False, "flowers": False, "weapon": False, "refine": False, "assist": False, "special": False, "passiveA": False, "passiveB": False, "passiveC": False, "passiveS": False, "summoner": False, "blessing": False, "attire": False, "bonusunit": False, "allies": False, "buffs": False, "sp": False, "hm": False, "artstyle": False, "offset": False, "favorite": False, "accessory": False, "language": False, "appui": False
 	}
 	for prop in hero:
 		value = args.get(prop)
@@ -82,6 +82,9 @@ def herosanitization(heroes, skills, languages, other, name, args):
 		# For favorite marks if it's a strig numeric from 1 to 8
 		elif prop == "favorite":
 			hero[prop] = value if value in ["1", "2", "3", "4", "5", "6", "7", "8"] else "0"
+		# For accessories we just match the list
+		elif prop == "accessory":
+			hero[prop] = value if value in ["Hat", "Hair", "Mask", "Tiara"] else None
 		# For language we must just fit within the available ones (fallback to English)
 		elif prop == "language":
 			hero[prop] = value if value in languages.keys() else "USEN"
