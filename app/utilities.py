@@ -150,15 +150,20 @@ def weapontype(integer):
 		if integer >> i & 1:
 			return i
 
-def weaponmodifiers(name, weapon, refine):
+def weaponmodifiers(name, weapon, refine, allpassives):
 	# Not multiplier (in case no check is met)
 	stats = [0, 0, 0, 0, 0]
 	# Obtain the normal values from the base weapon (or the additional effect weapon if refined for that)
 	if weapon:
-		stats = [int(x) for x in (weapon["statModifiers"] if refine != "Effect" else weapon["specialstatModifiers"])]
+		stats = [int(x) for x in weapon["statModifiers"]]
 		# If the weapon is refined then add with the values
 		if refine in refinemodifierchart[str(weapontype(weapon["WeaponType"]))]:
 			stats = [x+y for x,y in zip(stats, refinemodifierchart[str(weapontype(weapon["WeaponType"]))][refine])]
+			# If the weapon has an effect ID and we are refining for it we need to check if it has visible stats on it
+			if weapon.get("effectid", False) and refine == "Effect":
+				# Maybe it's a custom refine and it's not available as a skill so we might fallback to all zeroes
+				modifiers = allpassives[weapon["effectid"]]["statModifiers"] if weapon["effectid"] in allpassives else [0, 0, 0, 0, 0]
+				stats = [x+y for x,y in zip(stats, modifiers)]
 			# Some weapons are brave melee of the triangle axe-lance-sword and suffer a -1 penalty when refined for Atk so check against them (Amiti, Arden's Blade, Cherche's Axe, Hewn Lance, Rowdy Sword)
 			if name in ["SID_アミーテ", "SID_アーダンの固剣", "SID_セルジュの恐斧", "SID_ドニの朴槍", "SID_明日の聖騎士の剣"] and refine == "Atk":
 				stats[1] -= 1
@@ -174,9 +179,9 @@ passiverender = {
 
 # Base ruleset for refine visual stats depending on weapon type
 refinemodifierchart = {
-	"0": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
-	"1": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
-	"2": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
+	"0": {"Effect": [3, 0, 0, 0, 0], "Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
+	"1": {"Effect": [3, 0, 0, 0, 0], "Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
+	"2": {"Effect": [3, 0, 0, 0, 0], "Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
 	"3": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
 	"4": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
 	"5": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
@@ -189,14 +194,14 @@ refinemodifierchart = {
 	"12": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
 	"13": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
 	"14": {"Atk": [2, 1, 0, 0, 0], "Spd": [2, 0, 2, 0, 0], "Def": [2, 0, 0, 3, 0], "Res": [2, 0, 0, 0, 3]},
-	"15": {"Dazzling": [0, 0, 0, 0, 0], "Wrathful": [0, 0, 0, 0, 0]},
-	"16": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
-	"17": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
-	"18": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
-	"19": {"Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
-	"20": {"Atk": [0, 0, 0, 0, 0], "Spd": [0, 0, 0, 0, 0], "Def": [0, 0, 0, 0, 0], "Res": [0, 0, 0, 0, 0]},
-	"21": {"Atk": [0, 0, 0, 0, 0], "Spd": [0, 0, 0, 0, 0], "Def": [0, 0, 0, 0, 0], "Res": [0, 0, 0, 0, 0]},
-	"22": {"Atk": [0, 0, 0, 0, 0], "Spd": [0, 0, 0, 0, 0], "Def": [0, 0, 0, 0, 0], "Res": [0, 0, 0, 0, 0]},
+	"15": {},
+	"16": {"Effect": [3, 0, 0, 0, 0], "Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
+	"17": {"Effect": [3, 0, 0, 0, 0], "Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
+	"18": {"Effect": [3, 0, 0, 0, 0], "Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
+	"19": {"Effect": [3, 0, 0, 0, 0], "Atk": [5, 2, 0, 0, 0], "Spd": [5, 0, 3, 0, 0], "Def": [5, 0, 0, 4, 0], "Res": [5, 0, 0, 0, 4]},
+	"20": {},
+	"21": {},
+	"22": {},
 	"23": {"Atk": [2, 1, 0, 0, 0], "Spd": [0, 0, 0, 0, 0], "Def": [0, 0, 0, 0, 0], "Res": [0, 0, 0, 0, 0]}
 }
 

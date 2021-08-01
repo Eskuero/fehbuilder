@@ -57,11 +57,10 @@ for file in files:
 			# For refines we just store additional data
 			elif entry["refine_base"]:
 				refines[entry["id_tag"]] = {"upgrades": True, "baseWeapon": entry["refine_base"]}
-				# If there's a refine ID this means is an special effect refine and we need additional stat modifiers
+				# If there's a refine ID this means is an special effect refine and we might need additional stat modifiers
 				if entry["refine_id"]:
 					refines[entry["id_tag"]]["effectrefine"] = True
-					refines[entry["id_tag"]]["specialstatModifiers"] = [value for value in entry["stats"].values()]
-					refines[entry["id_tag"]]["specialstatModifiers"][1] += entry["might"]
+					refines[entry["id_tag"]]["effectid"] = entry["refine_id"]
 
 # Obtain the whole list of icons for the special refines icons (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=TagID,Icon&where=RefinePath+in+('skill1','skill2')&limit=max&offset=0&format=json)
 params = dict(
