@@ -32,15 +32,20 @@ with open("../data/fullother.json", "r") as datasource:
 with open("../data/fulllanguages.json", "r") as datasource:
 	languages = json.load(datasource)
 
+# Load all widely used images to save on disk operations
+bgnosupport = Image.open("../data/img/other/normalbg.png")
+bgsupport = Image.open("../data/img/other/summonerbg.png")
+fgui = Image.open("../data/img/base/foreground-ui.png")
+fgnoui = Image.open("../data/img/base/foreground.png")
+resplendent = Image.open("../data/img/other/resplendent.png")
+expindicator = Image.open("../data/img/base/expindicator.png")
+accessoryexpand = Image.open("../data/img/base/accessory-expansion.png")
+flowerholder = Image.open("../data/img/base/flowerholder.png")
+
 @app.route('/get_image.png')
 def getimage():
 	# Create new image
 	canvas = Image.new("RGBA", (720, 1280))
-	# Open the basic bg image
-	fg = Image.open("../data/img/base/foreground.png")
-	bg = Image.open("../data/img/other/normalbg.png")
-	# Paste the background first than anything UI
-	canvas.paste(bg, (-173, 0), bg)
 
 	# Get the hero name to draw, we skip entirely if none is provided, it doesn't exist in our data or the request length is unexpectedly long
 	name = flask.request.args.get('name')
@@ -55,12 +60,11 @@ def getimage():
 		# Initialize the drawing rectacle and font
 		font = ImageFont.truetype("../data/" + config["fontfile"], 35)
 		draw = ImageDraw.Draw(canvas)
-		# For any support level we change the bg
-		if hero["summoner"]:
-			bg = Image.open("../data/img/other/summonerbg.png")
-			canvas.paste(bg, (-173, 0))
-			# Position for the summoner support icon, we may override this later
-			summonerpos = (575, 570)
+
+		# Print the background
+		bg = bgsupport if hero["summoner"] else bgnosupport
+		canvas.paste(bg, (-173, 0), bg)
+
 		# Decide on the filename we will use to save and retrieve this particular hero and pose
 		filename = name + ("_Resplendent_" + hero["artstyle"] + ".webp" if hero["attire"] and heroes[name]["resplendentart"][hero["artstyle"]] else "_" + hero["artstyle"] + ".webp")
 		# Check if the heroes art is already in the temporal folder for speeding up requests from the wiki
@@ -78,18 +82,20 @@ def getimage():
 			except:
 				art = Image.open("../data/img/base/missigno.png")
 		canvas.paste(art, (-305, 0 - hero["offset"]), art)
+
 		# Paste the foregroud UI
-		if hero["appui"]:
-			fg = Image.open("../data/img/base/foreground-ui.png")
+		fg = fgui if hero["appui"] else fgnoui
 		canvas.paste(fg, (0, 0), fg)
+
 		# Print the resplendent icon
 		if hero["attire"]:
-			resplendent = Image.open("../data/img/other/resplendent.png")
 			canvas.paste(resplendent, (262, 492), resplendent)
+
 		# Write the title and name using an horizontally centered anchor to avoid going out of bounds
 		title = languages[hero["language"]][hero["name"].replace("PID", "MPID_HONOR")] if "PID_" in hero["name"] else "Enemy"
 		draw.text((188, 585), title, font=font, anchor="mm", stroke_width=3, stroke_fill=(50, 30, 10))
 		draw.text((222, 659), languages[hero["language"]]["M" + hero["name"]], font=font, anchor="mm", stroke_width=3, stroke_fill=(50, 30, 10))
+
 		# Print the artist and actor names, as well as the favorite mark if appui enabled
 		if hero["appui"]:
 			font = ImageFont.truetype("../data/" + config["fontfile"], 21)
@@ -105,6 +111,7 @@ def getimage():
 				draw.text((47, 1241), artist, font=font, fill="#ffffff",stroke_width=3, stroke_fill="#0a2533")
 			favorite = Image.open("../data/img/other/favorite_" + hero["favorite"] + ".png")
 			canvas.paste(favorite, (3, 229), favorite)
+
 		# First write the static text for each stat (normal anchoring)
 		font = ImageFont.truetype("../data/" + config["fontfile"], 25)
 		draw.text((115, 805), languages[hero["language"]]["MID_HP"], font=font, fill="#b1ecfa" if hero["boon"] == "HP" else ("#f0a5b3" if hero["bane"] == "HP" and int(hero["merges"]) == 0 else "#ffffff"), stroke_width=3, stroke_fill="#0a2533")
@@ -152,10 +159,10 @@ def getimage():
 		# Print the amount of SP and HM
 		draw.text((265, 1052), str(hero["sp"]), font=font, anchor="ra", fill="#82f546" if hero["sp"] == 9999 else "#fffaaf", stroke_width=3, stroke_fill="#0a2533")
 		draw.text((265, 1100), str(hero["hm"]), font=font, anchor="ra", fill="#82f546" if hero["hm"] == 7000 else "#fffaaf", stroke_width=3, stroke_fill="#0a2533")
+
 		# If we selected an accessory we paste a newer bigger holder and define an offset to push all next items to the right
 		offset = 0
 		if hero["accessory"]:
-			accessoryexpand = Image.open("../data/img/base/accessory-expansion.png")
 			canvas.paste(accessoryexpand, (4, 732), accessoryexpand)
 			accessoryicon = Image.open("../data/img/other/Accesory-" + str(hero["accessory"]) + ".png")
 			canvas.paste(accessoryicon, (256, 743), accessoryicon)
@@ -177,7 +184,6 @@ def getimage():
 		# If we have flowers we add another box with the number
 		if hero["flowers"] > 0:
 			font = ImageFont.truetype("../data/" + config["fontfile"], 25)
-			flowerholder = Image.open("../data/img/base/flowerholder.png")
 			canvas.paste(flowerholder, (271 + offset, 732), flowerholder)
 			flowericon = Image.open("../data/img/other/" + str(heroes[name]["moveType"]) + "-flower.png")
 			canvas.paste(flowericon, (289 + offset, 727), flowericon)
@@ -186,7 +192,6 @@ def getimage():
 			offset += 147
 
 		# Paste the exp indicator
-		expindicator = Image.open("../data/img/base/expindicator.png")
 		canvas.paste(expindicator, (271 + offset, 732), expindicator)
 		font = ImageFont.truetype("../data/" + config["fontfile"], 24)
 		draw.text((308 + offset, 744), languages[hero["language"]]["MID_EXP"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
@@ -255,6 +260,8 @@ def getimage():
 			indicator = Image.open("../data/img/other/indicator-skill" + category + ".png")
 			canvas.paste(indicator, utilities.passiverender[category]["indicator"], indicator)
 
+		# X amount to additionally push each icon to the left
+		offsetX = 0
 		# If blessed print the icon
 		if hero["blessing"]:
 			# If the hero is on the list of the blessed ones for that particular blessing it may have an icon variant
@@ -265,14 +272,17 @@ def getimage():
 			blessingicon = Image.open("../data/img/other/" + hero["blessing"] + "-Blessing" + variant + ".png")
 			canvas.paste(blessingicon, (575, 570), blessingicon)
 			# If whe printed a blessing the summoner support position icon must go further to the left
-			summonerpos = (450, 570)
+			offsetX += 125
+
 		# If summoner supported print the icon
 		if hero["summoner"]:
+			# Position for the summoner support icon, we may override this later
 			summonericon = Image.open("../data/img/other/Support-" + hero["summoner"] + ".png")
-			canvas.paste(summonericon, summonerpos, summonericon)
+			canvas.paste(summonericon, (575 - offsetX, 570), summonericon)
 	else:
-		# We arrived here without a proper hero name so paste the foregroud UI and say bye
-		canvas.paste(fg, (0, 0), fg)
+		# We arrived here without a proper hero name so paste the basic bg and fg and say bye
+		canvas.paste(bgnosupport, (-173, 0), bgnosupport)
+		canvas.paste(fgui, (0, 0), fgui)
 
 	# We completed all rendering so now we can drop the Alpha channel
 	canvas = canvas.convert("RGB")

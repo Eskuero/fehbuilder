@@ -16,8 +16,8 @@ def download():
 		dimensions = (int(icons[icon].split("?")[1]), int(icons[icon].split("?")[2]))
 		# By default we save on the "other" folder
 		location = "../data/img/other/"
-		# Download the art image and resize it according to the set config
-		art = Image.open(io.BytesIO(response.content)).resize(dimensions)
+		# Download the art image, make sure it has an alpha channel resize it according to the set config
+		art = Image.open(io.BytesIO(response.content)).convert("RGBA").resize(dimensions)
 		art.save(location + icon + ".png", 'PNG')
 
 icons = {
