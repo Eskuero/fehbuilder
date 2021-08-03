@@ -41,6 +41,7 @@ resplendent = Image.open("../data/img/other/resplendent.png")
 expindicator = Image.open("../data/img/base/expindicator.png")
 accessoryexpand = Image.open("../data/img/base/accessory-expansion.png")
 flowerholder = Image.open("../data/img/base/flowerholder.png")
+duoconversation = Image.open("../data/img/other/DuoConversation.png")
 
 @app.route('/get_image.png')
 def getimage():
@@ -262,6 +263,10 @@ def getimage():
 
 		# X amount to additionally push each icon to the left
 		offsetX = 0
+		# Detect if we are printing more than three icons (this could happen on duo/blessed/summoner supported allies) so we can resize accordingly
+		needsresize = True if hero["blessing"] and hero["summoner"] and hero["name"] in other["duo"] + other["resonant"] else False
+		posY = 570 if not needsresize else 595
+		posX = 575 if not needsresize else 600
 		# If blessed print the icon
 		if hero["blessing"]:
 			# If the hero is on the list of the blessed ones for that particular blessing it may have an icon variant
@@ -270,15 +275,31 @@ def getimage():
 			else:
 				variant = ""
 			blessingicon = Image.open("../data/img/other/" + hero["blessing"] + "-Blessing" + variant + ".png")
-			canvas.paste(blessingicon, (575, 570), blessingicon)
-			# If whe printed a blessing the summoner support position icon must go further to the left
-			offsetX += 125
+			if needsresize:
+				blessingicon = blessingicon.resize((115, 125))
+			canvas.paste(blessingicon, (posX, posY), blessingicon)
+			# If printed a blessing the next's position icon must go further to the left
+			offsetX += 100 if needsresize else 125
+
+		# If is a duo hero print the icon
+		if hero["name"] in other["duo"] + other["resonant"]:
+			specialtype = "Duo" if hero["name"] in other["duo"] else "Resonance"
+			specialicon = Image.open("../data/img/other/" + specialtype + ".png")
+			if needsresize:
+				specialicon = specialicon.resize((115, 125))
+			canvas.paste(specialicon, (posX - offsetX, posY), specialicon)
+			# If printed a duo icon the next's position icon must go further to the left
+			offsetX += 100 if needsresize else 125
+			# If appui is enabled we also print the conversation icon
+			if hero["appui"]:
+				canvas.paste(duoconversation, (3, 322), duoconversation)
 
 		# If summoner supported print the icon
 		if hero["summoner"]:
-			# Position for the summoner support icon, we may override this later
 			summonericon = Image.open("../data/img/other/Support-" + hero["summoner"] + ".png")
-			canvas.paste(summonericon, (575 - offsetX, 570), summonericon)
+			if needsresize:
+				summonericon = summonericon.resize((115, 125))
+			canvas.paste(summonericon, (posX - offsetX, posY), summonericon)
 	else:
 		# We arrived here without a proper hero name so paste the basic bg and fg and say bye
 		canvas.paste(bgnosupport, (-173, 0), bgnosupport)

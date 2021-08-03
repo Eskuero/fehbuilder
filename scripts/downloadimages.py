@@ -148,6 +148,10 @@ icons = {
 	"Support-B": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/aa/Icon_Support_Summoner_B.png?147?160",
 	"Support-A": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a2/Icon_Support_Summoner_A.png?147?160",
 	"Support-S": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/8a/Icon_Support_Summoner_S.png?147?160",
+	# Duo icons
+	"Resonance": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b3/Icon_Resonance.png?147?160",
+	"Duo": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/53/Icon_Duo.png?147?160",
+	"DuoConversation": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/e/e0/DuoConversation.png?90?92",
 	# Favorite marks
 	"favorite_0": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a9/FavoriteMark0.png?90?92",
 	"favorite_1": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b2/FavoriteMark1.png?90?92",
