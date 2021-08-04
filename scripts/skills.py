@@ -56,10 +56,7 @@ for file in files:
 					skills["weapons"][entry["id_tag"]]["statModifiers"][1] += entry["might"]
 				if entry["category"] in [3, 4, 5, 6]:
 					# Check if the skill is in the list reported by the wiki to obtain the true URL for the icon if so
-					categories[entry["category"]][entry["id_tag"]]["icon"] = utils.obtaintrueurl([engrishname["M" + entry["id_tag"]] + ".png"])[0]
-					# If we failed to obtain the icon using their name + _W this might be and old uploaded file that uses a manually set name so we still rely on using cargotables
-					if not categories[entry["category"]][entry["id_tag"]]["icon"] and entry["id_tag"] in passiveicons:
-						categories[entry["category"]][entry["id_tag"]]["icon"] = utils.obtaintrueurl([passiveicons[entry["id_tag"]]])[0]
+					categories[entry["category"]][entry["id_tag"]]["icon"] = engrishname["M" + entry["id_tag"]] + ".png"
 
 			# For refines we just store additional data
 			elif entry["refine_base"]:
@@ -68,10 +65,26 @@ for file in files:
 				if entry["refine_id"] not in [None, "SID_神罰の杖3", "SID_幻惑の杖3"]:
 					refines[entry["id_tag"]]["effectrefine"] = True
 					refines[entry["id_tag"]]["effectid"] = entry["refine_id"]
-					refines[entry["id_tag"]]["specialIcon"] = utils.obtaintrueurl([engrishname["M" + entry["refine_base"]] + "_W.png"])[0]
-					# If we failed to obtain the icon using their name + _W this might be and old uploaded file that uses a manually set name so we still rely on using cargotables
-					if not refines[entry["id_tag"]]["specialIcon"] and entry["id_tag"] in passiveicons:
-						refines[entry["id_tag"]]["specialIcon"] = utils.obtaintrueurl([passiveicons[entry["id_tag"]]])[0]
+					refines[entry["id_tag"]]["icon"] = engrishname["M" + entry["refine_base"]] + "_W.png"
+
+# Loop through every category individually and obtain icons
+categories = [skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"], refines]
+# We must loop through ordered dictionaries to be able to obtain
+for category in categories:
+	sortedcategory = [entry for entry in sorted(category) if category[entry].get("icon", False)]
+	# We can only query 50 items every time
+	offset = 0
+	while offset < len(sortedcategory):
+		icons = []
+		for entry in sortedcategory[offset:offset+50]:
+			icons.append(category[entry]["icon"])
+		# Save all urls in their respective positions
+		for i, url in enumerate(utils.obtaintrueurl(icons)):
+			# If url failed to generate by using the expected filename try grabbing it from the cargo table whenever available
+			if not url and sortedcategory[offset:offset+50][i] in passiveicons:
+				url = utils.obtaintrueurl([passiveicons[sortedcategory[offset:offset+50][i]]])[0]
+			category[sortedcategory[offset:offset+50][i]]["icon"] = url
+		offset += 50
 
 # For each refine defined update the original weapon info
 for refinable in refines:

@@ -208,7 +208,7 @@ def getimage():
 				if not (pathlib.Path("../data/img/icons/" + hero["weapon"] + "-Effect.png").is_file()):
 					# Download, resize and cache the special effect refine picture
 					try:
-						response = requests.get(skills["weapons"][hero["weapon"]]["specialIcon"])
+						response = requests.get(skills["weapons"][hero["weapon"]]["icon"])
 						art = Image.open(io.BytesIO(response.content)).resize((44, 44))
 						art.save("../data/img/icons/" + hero["weapon"] + "-Effect.png", 'PNG')
 						icon = "icons/" + hero["weapon"] + "-Effect.png"
