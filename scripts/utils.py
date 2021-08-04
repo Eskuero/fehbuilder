@@ -11,7 +11,7 @@ def obtaintrueurl(filenames):
 	)
 	# Create the list of titles to ask the API about
 	for filename in filenames:
-		params["titles"] += "File:_" + unidecode.unidecode(filename).replace(" ", "_").replace(":", "").replace("?", "").replace("'", "").replace('"', '') + "|"
+		params["titles"] += "File:_" + unidecode.unidecode(filename).replace(" ", "_").replace(":", "").replace("/", "_").replace("'", "").replace('"', '') + "|"
 	params["titles"] = params["titles"].rstrip("|")
 	# Identify in which position of the list we want to return every url by splitting the original titles in the query
 	requestedtitles = params["titles"].split("|")

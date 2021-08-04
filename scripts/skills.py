@@ -17,12 +17,16 @@ skills = {
 categories = [skills["weapons"], skills["assists"], skills["specials"], skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"]]
 refines = {}
 
-# Obtain the whole list of icons for the passives (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=TagID,Icon&where=Scategory+in+(%27passivea%27,%27passiveb%27,%27passivec%27,%27sacredseal%27)&limit=max&offset=0&format=json)
+# Obtain the whole list of names for the passives to be able to retrieve the icon urls
+with open("fulllanguages.json", "r") as datasource:
+	engrishname = json.load(datasource)["USEN"]
+
+# Obtain the whole list of icons for the passives in case we hit an old skill/passive that doesn't follow expected rules (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=TagID,Icon&where=Scategory+in+(%27passivea%27,%27passiveb%27,%27passivec%27,%27sacredseal%27)+OR+RefinePath=%27skill1%27&limit=max&offset=0&format=json)
 params = dict(
 	action = 'cargoquery', limit = 'max', offset = -500, format = 'json',
 	tables = 'Skills',
 	fields = "TagID,Icon",
-	where = "Scategory in ('passivea', 'passiveb', 'passivec', 'sacredseal')"
+	where = "Scategory in ('passivea', 'passiveb', 'passivec', 'sacredseal') OR RefinePath = 'skill1'"
 )
 # Store a relation of TagID to Icon for each skill
 passiveicons = {
@@ -52,27 +56,22 @@ for file in files:
 					skills["weapons"][entry["id_tag"]]["statModifiers"][1] += entry["might"]
 				if entry["category"] in [3, 4, 5, 6]:
 					# Check if the skill is in the list reported by the wiki to obtain the true URL for the icon if so
-					if entry["id_tag"] in passiveicons:
+					categories[entry["category"]][entry["id_tag"]]["icon"] = utils.obtaintrueurl([engrishname["M" + entry["id_tag"]] + ".png"])[0]
+					# If we failed to obtain the icon using their name + _W this might be and old uploaded file that uses a manually set name so we still rely on using cargotables
+					if not categories[entry["category"]][entry["id_tag"]]["icon"] and entry["id_tag"] in passiveicons:
 						categories[entry["category"]][entry["id_tag"]]["icon"] = utils.obtaintrueurl([passiveicons[entry["id_tag"]]])[0]
+
 			# For refines we just store additional data
 			elif entry["refine_base"]:
 				refines[entry["id_tag"]] = {"upgrades": True, "baseWeapon": entry["refine_base"]}
-				# If there's a refine ID this means is an special effect refine and we might need additional stat modifiers
-				if entry["refine_id"]:
+				# If there's a refine ID this means is an special effect refine and we might need additional stat modifiers (except if the refine is wrathful or dazzling because we already manually have those available)
+				if entry["refine_id"] not in [None, "SID_神罰の杖3", "SID_幻惑の杖3"]:
 					refines[entry["id_tag"]]["effectrefine"] = True
 					refines[entry["id_tag"]]["effectid"] = entry["refine_id"]
-
-# Obtain the whole list of icons for the special refines icons (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=TagID,Icon&where=RefinePath+in+('skill1','skill2')&limit=max&offset=0&format=json)
-params = dict(
-	action = 'cargoquery', limit = 'max', offset = -500, format = 'json',
-	tables = 'Skills',
-	fields = "TagID,Icon",
-	where = "RefinePath in ('skill1', 'skill2')"
-)
-# For any refined icon that has a matching refine in our list update the refines dictionary (if there's a error on the wiki's tagID we might not get it and have to handle it gracesfully on the runtime)
-for skill in [entry["title"] for entry in utils.retrieveapidata(params)]:
-	if skill["TagID"] in refines:
-		refines[skill["TagID"]]["specialIcon"] = utils.obtaintrueurl([skill["Icon"]])[0]
+					refines[entry["id_tag"]]["specialIcon"] = utils.obtaintrueurl([engrishname["M" + entry["refine_base"]] + "_W.png"])[0]
+					# If we failed to obtain the icon using their name + _W this might be and old uploaded file that uses a manually set name so we still rely on using cargotables
+					if not refines[entry["id_tag"]]["specialIcon"] and entry["id_tag"] in passiveicons:
+						refines[entry["id_tag"]]["specialIcon"] = utils.obtaintrueurl([passiveicons[entry["id_tag"]]])[0]
 
 # For each refine defined update the original weapon info
 for refinable in refines:

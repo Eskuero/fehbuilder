@@ -5,16 +5,9 @@ import os
 # We store all the data in a single dict
 heroes = {}
 
-# Parameters to send the API whe requesting the whole list of heroes name-tag relation (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Units&fields=_pageName=Name,TagID&limit=max&format=json)
-params = dict(
-	action = 'cargoquery', limit = 'max', offset = -500, format = 'json',
-	tables = 'Units',
-	fields = '_pageName=Name,TagID'
-)
-engrishname = {
-	entry["TagID"]: entry["Name"]
-	for entry in [entry["title"] for entry in utils.retrieveapidata(params)]
-}
+# Obtain all translations into english to get the defined names
+with open("fulllanguages.json", "r") as datasource:
+	engrishname = json.load(datasource)["USEN"]
 
 # Get all the files that contain unit definitions and loop through them
 files = os.listdir("feh-assets-json/files/assets/Common/SRPG/Enemy/")
@@ -25,12 +18,9 @@ for file in files:
 		for entry in [entry for entry in data if entry["id_tag"] != "EID_無し" and not entry["is_boss"]]:
 			print(entry["id_tag"])
 			# If the hero is properly defined on the wiki table get the true name and art
-			if entry["id_tag"] in engrishname:
-				# Full name of the generic unit
-				arturl = utils.obtaintrueurl([engrishname[entry["id_tag"]] + "_BtlFace.png"])[0]
-			# If the hero is not properly defined we default all art to zeroes (we still will get get within the builder with the fallback missigno)
-			else:
-				arturl = False
+			# Full name of the generic unit
+			truename = engrishname["M" + entry["id_tag"]]
+			arturl = utils.obtaintrueurl([truename + "_BtlFace.png"])[0]
 
 			heroes[entry["id_tag"]] = {
 				# The base stats values stored for each hero are so at 3 star rarity (it's safe to bump them by 1 each)
@@ -66,24 +56,19 @@ for file in files:
 		# PID_無し is skeleton data for a hero so we ignore it
 		for entry in [entry for entry in data if entry["id_tag"] != "PID_無し"]:
 			print(entry["id_tag"])
-			# If the hero is properly defined on the wiki table get the true name and art
-			if entry["id_tag"] in engrishname:
-				# This redefinition exists exclusive because of bikini Tharja quotation marks, what a joke
-				truename = engrishname[entry["id_tag"]].replace("&quot;", '"')
-				# Request a list of all the art for this hero in one go
-				availableart = utils.obtaintrueurl([
-					truename + ("_BtlFace.png" if ":" not in truename else "_Face.webp"),
-					truename + ("_BtlFace.png" if ":" not in truename else "_BtlFace.webp"),
-					truename + ("_BtlFace.png" if ":" not in truename else "_BtlFace_C.webp"),
-					truename + ("_BtlFace.png" if ":" not in truename else "_BtlFace_D.webp"),
-					truename + "_Resplendent_Face.webp",
-					truename + "_Resplendent_BtlFace.webp",
-					truename + "_Resplendent_BtlFace_C.webp",
-					truename + "_Resplendent_BtlFace_D.webp"
-				])
-			# If the hero is not properly defined we default all art to zeroes (we still will get get within the builder with the fallback missigno)
-			else:
-				availableart = [False, False, False, False, False, False, False, False]
+			# This redefinition exists exclusive because of bikini Tharja quotation marks, what a joke
+			truename = engrishname["M" + entry["id_tag"]] + ": " + engrishname[entry["id_tag"].replace("PID", "MPID_HONOR")]
+			# Request a list of all the art for this hero in one go
+			availableart = utils.obtaintrueurl([
+				truename + "_Face.webp",
+				truename + "_BtlFace.webp",
+				truename + "_BtlFace_C.webp",
+				truename + "_BtlFace_D.webp",
+				truename + "_Resplendent_Face.webp",
+				truename + "_Resplendent_BtlFace.webp",
+				truename + "_Resplendent_BtlFace_C.webp",
+				truename + "_Resplendent_BtlFace_D.webp"
+			])
 
 			heroes[entry["id_tag"]] = {
 				# The base stats values stored for each hero are so at 3 star rarity (it's safe to bump them by 1 each)
