@@ -203,12 +203,12 @@ def getimage():
 			# By default we always use the basic weapon icon or the predefined stat boosters ones
 			icon = "other/" + hero["refine"] + "-Refine.png" if hero["refine"] in ["Atk", "Spd", "Def", "Res", "Wrathful", "Dazzling"] else "other/weapon-Refine.png"
 			# If the icon is an special effect we might have to download it
-			if hero["refine"] == "Effect":
+			if hero["refine"] == "Effect" and "Effect" in skills["weapons"][hero["weapon"]]["refines"]:
 				# Check if the heroes art is already in the temporal folder for speeding up requests from the wiki
 				if not (pathlib.Path("../data/img/icons/" + hero["weapon"] + "-Effect.png").is_file()):
 					# Download, resize and cache the special effect refine picture
 					try:
-						response = requests.get(skills["weapons"][hero["weapon"]]["icon"])
+						response = requests.get(skills["weapons"][hero["weapon"]]["refines"]["Effect"]["icon"])
 						art = Image.open(io.BytesIO(response.content)).resize((44, 44))
 						art.save("../data/img/icons/" + hero["weapon"] + "-Effect.png", 'PNG')
 						icon = "icons/" + hero["weapon"] + "-Effect.png"

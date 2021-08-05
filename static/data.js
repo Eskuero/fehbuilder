@@ -348,39 +348,11 @@ function updateRefine() {
 	if (weapon == "None") {
 		return;
 	}
-	if (skills["weapons"][weapon]["upgrades"]) {
-		// 15 is the bit for staff weapon
-		if (skills["weapons"][weapon]["WeaponType"] >> 15 & 1) {
-			// Staffs cannot have normal refines and special ones
-			if (! skills["weapons"][weapon]["exclusive"]) {
-				var opt = document.createElement('option');
-				opt.value = "Dazzling";
-				opt.innerHTML = "Dazzling";
-				selectrefines.appendChild(opt);
-				var opt = document.createElement('option');
-				opt.value = "Wrathful";
-				opt.innerHTML = "Wrathful";
-				selectrefines.appendChild(opt);
-			 } else {
-				var opt = document.createElement('option');
-				opt.value = "Effect";
-				opt.innerHTML = "Effect";
-				selectrefines.appendChild(opt);
-			 }
-			return
-		}
-		if (skills["weapons"][weapon]["effectrefine"] || false) {
-			var opt = document.createElement('option');
-			opt.value = "Effect";
-			opt.innerHTML = "Effect";
-			selectrefines.appendChild(opt);
-		}
-		for (const [tag, string] of Object.entries({"Atk": languages[selectlanguage.value]["MID_ATTACK"], "Spd": languages[selectlanguage.value]["MID_AGILITY"], "Def": languages[selectlanguage.value]["MID_DEFENSE"], "Res": languages[selectlanguage.value]["MID_RESIST"]})) {
-			var opt = document.createElement('option');
-			opt.value = tag;
-			opt.innerHTML = string;
-			selectrefines.appendChild(opt);
-		}
+	for (i = 0; i < skills["weapons"][weapon]["refines"].length; i++) {
+		var opt = document.createElement('option');
+		opt.value = skills["weapons"][weapon]["refines"][i];
+		opt.innerHTML = skills["weapons"][weapon]["refines"][i];
+		selectrefines.appendChild(opt);
 	}
 	// Restore the previous value if it's available on the updated select
 	if ([...selectrefines.options].map(opt => opt.value).includes(previousvalue)) {

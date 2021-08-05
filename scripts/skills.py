@@ -52,19 +52,23 @@ for file in files:
 					# Always default to isMax false for seals since we modify the info later when filling the data
 					"isMax": True if not entry["next_skill"] and entry["category"] != 6 else False
 				}
-				# For weapons add the might as part of the statsmodifiers for Atk
+				# For weapons add the might as part of the statsmodifiers for Atk and emtpy refines definition
 				if entry["category"] == 0:
 					skills["weapons"][entry["id_tag"]]["statModifiers"][1] += entry["might"]
+					skills["weapons"][entry["id_tag"]]["refines"] = {}
 				if entry["category"] in [3, 4, 5, 6]:
 					# Check if the skill is in the list reported by the wiki to obtain the true URL for the icon if so
 					categories[entry["category"]][entry["id_tag"]]["icon"] = engrishname["M" + entry["id_tag"]] + ".png"
 
-			# For refines we just store additional data
+			# For refines we just store them separetely for later processing
 			elif entry["refine_base"]:
-				refines[entry["id_tag"]] = {"upgrades": True, "baseWeapon": entry["refine_base"]}
-				# If there's a refine ID this means is an special effect refine and we might need additional stat modifiers (except if the refine is wrathful or dazzling because we already manually have those available)
+				refines[entry["id_tag"]] = {
+					"baseWeapon": entry["refine_base"],
+					"statModifiers": [value for value in entry["stats"].values()],
+				}
+				refines[entry["id_tag"]]["statModifiers"][1] += entry["might"]
+				# If there's a refine ID this means is an special effect refine and we might need custom icons and effectids
 				if entry["refine_id"] not in [None, "SID_神罰の杖3", "SID_幻惑の杖3"]:
-					refines[entry["id_tag"]]["effectrefine"] = True
 					refines[entry["id_tag"]]["effectid"] = entry["refine_id"]
 					refines[entry["id_tag"]]["icon"] = engrishname["M" + entry["refine_base"]] + "_W.png"
 
@@ -87,9 +91,22 @@ for category in categories:
 			category[sortedcategory[offset:offset+50][i]]["icon"] = url
 		offset += 50
 
+refinenames = {"神": "Wrathful", "幻": "Dazzling", "ATK": "Atk", "AGI": "Spd", "DEF": "Def", "RES": "Res"}
 # For each refine defined update the original weapon info
 for refinable in refines:
-	skills["weapons"][refines[refinable]["baseWeapon"]].update(refines[refinable])
+	# The last part of the refine ID is the one that indicates the type
+	refine = refinable.split("_")[-1]
+	refine = refinenames[refine] if refine in refinenames else "Effect"
+	# Always add the stats modifiers for the particular refine
+	skills["weapons"][refines[refinable]["baseWeapon"]]["refines"][refine] = {
+		"statModifiers": refines[refinable]["statModifiers"]
+	}
+	# For Effect refines we have icons and skill references
+	if refine == "Effect":
+		skills["weapons"][refines[refinable]["baseWeapon"]]["refines"][refine].update({
+			"effectid": refines[refinable]["effectid"],
+			"icon": refines[refinable]["icon"]
+		})
 
 # Complete seals data by getting which skills are available to buy and copying their counterparts data (except for the isMax setting, which depends on if it's the last seal of it's line)
 files = os.listdir("feh-assets-json/files/assets/Common/SRPG/SkillAccessory/")
@@ -111,8 +128,8 @@ with open("fullskills.json", "w") as outfile:
 skillslite = {
 	"weapons": {
 		weaponname: {
-			property: value
-			for property, value in properties.items() if property in ["effectrefine", "upgrades", "WeaponType", "moveType", "exclusive", "isMax"]
+			property: [item for item in value] if property == "refines" else value
+			for property, value in properties.items() if property in ["WeaponType", "moveType", "exclusive", "isMax", "refines"]
 		} 
 		for weaponname, properties in skills["weapons"].items()
     },

@@ -21,8 +21,8 @@ for hero in list(heroes.keys()):
 
 print("\nWeapons +Eff Refine:")
 for weapon in skills["weapons"]:
-	if skills["weapons"][weapon].get("effectrefine", False):
-		if not skills["weapons"][weapon]["icon"]:
+	if skills["weapons"][weapon]["refines"].get("Effect", False):
+		if not skills["weapons"][weapon]["refines"]["Effect"]["icon"]:
 			print("     " + languages["M" + weapon] + " (" + weapon + "): failed to retrieve full URL")
 
 print("\nPassives A, B, C, S:")
