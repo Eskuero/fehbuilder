@@ -37,9 +37,9 @@ def herosanitization(heroes, skills, languages, other, name, args):
 		# Blessing can only be an int of this set of 8
 		elif prop == "blessing":
 			hero[prop] = None if not value else (None if not value.isdigit() else (value if int(value) in range(1, 9) else None))
-		# The attire can only be Resplendent or Normal
+		# The attire can only be Resplendent, Normal or Stats-Only
 		elif prop == "attire":
-			hero[prop] = True if value == "Resplendent" else False
+			hero[prop] = value if value in ["Normal", "Resplendent", "Stats-Only"] else "Normal"
 		# Bonus can only be yes or no
 		elif prop == "bonusunit":
 			hero[prop] = True if value == "yes" else False

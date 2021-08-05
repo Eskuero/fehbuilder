@@ -67,7 +67,7 @@ def getimage():
 		canvas.paste(bg, (-173, 0), bg)
 
 		# Decide on the filename we will use to save and retrieve this particular hero and pose
-		filename = name + ("_Resplendent_" + hero["artstyle"] + ".webp" if hero["attire"] and heroes[name]["resplendentart"][hero["artstyle"]] else "_" + hero["artstyle"] + ".webp")
+		filename = name + ("_Resplendent_" + hero["artstyle"] + ".webp" if hero["attire"] == "Resplendent" and heroes[name]["resplendentart"][hero["artstyle"]] else "_" + hero["artstyle"] + ".webp")
 		# Check if the heroes art is already in the temporal folder for speeding up requests from the wiki
 		if (pathlib.Path("../data/img/heroes/" + filename).is_file()):
 			art = Image.open("../data/img/heroes/" + filename)
@@ -75,7 +75,7 @@ def getimage():
 			# Grab and paste the heroes art in the image
 			try:
 				# Decide the art to download, even if the user choose resplendent we make sure art for it exists or fallback to the normal instead
-				heroart = heroes[name]["resplendentart"][hero["artstyle"]] if hero["attire"] and heroes[name]["resplendentart"][hero["artstyle"]] else heroes[name]["art"][hero["artstyle"]]
+				heroart = heroes[name]["resplendentart"][hero["artstyle"]] if hero["attire"] == "Resplendent" and heroes[name]["resplendentart"][hero["artstyle"]] else heroes[name]["art"][hero["artstyle"]]
 				response = requests.get(heroart)
 				art = Image.open(io.BytesIO(response.content)).resize((1330, 1596))
 				art.save("../data/img/heroes/" + filename, 'WEBP')
@@ -89,7 +89,7 @@ def getimage():
 		canvas.paste(fg, (0, 0), fg)
 
 		# Print the resplendent icon
-		if hero["attire"]:
+		if hero["attire"] in ["Resplendent", "Stats-Only"]:
 			canvas.paste(resplendent, (262, 492), resplendent)
 
 		# Write the title and name using an horizontally centered anchor to avoid going out of bounds
@@ -101,7 +101,7 @@ def getimage():
 		if hero["appui"]:
 			font = ImageFont.truetype("../data/" + config["fontfile"], 21)
 			# If the hero is truly a resplendent one we might have data for it
-			if hero["attire"] and heroes[name]["resplendentart"]["Portrait"]:
+			if hero["attire"] == "Resplendent" and heroes[name]["resplendentart"]["Portrait"]:
 				# Add a fallback to original actor if none is provided because that means they didn't change it
 				draw.text((47, 1212), languages[hero["language"]][hero["name"].replace("PID", "MPID_VOICE") + "EX01"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 				draw.text((47, 1241), languages[hero["language"]][hero["name"].replace("PID", "MPID_ILLUST") + "EX01"], font=font, fill="#ffffff",stroke_width=3, stroke_fill="#0a2533")
@@ -136,7 +136,7 @@ def getimage():
 		for category in ["A", "B", "C", "S"]:
 			if hero["passive" + category]:
 				statsmodifier = [x+y for x,y in zip(statsmodifier, allpassives[hero["passive" + category]]["statModifiers"])]
-		if hero["attire"]:
+		if hero["attire"] in ["Resplendent", "Stats-Only"]:
 			statsmodifier = [x+y for x,y in zip(statsmodifier, [2, 2, 2, 2, 2])]
 		if hero["bonusunit"]:
 			statsmodifier = [x+y for x,y in zip(statsmodifier, [10, 4, 4, 4, 4])]
