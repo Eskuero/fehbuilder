@@ -6,6 +6,7 @@ selectmerges = document.getElementById('merges');
 selectflowers = document.getElementById('flowers');
 selectboons = document.getElementById('boons');
 selectbanes = document.getElementById('banes');
+selectbeast = document.getElementById('beast');
 selectweapons = document.getElementById('weapon');
 selectrefines = document.getElementById('refine');
 selectspecials = document.getElementById('special');
@@ -104,6 +105,8 @@ function populateall(clean) {
 	statictranslations()
 	// Make sure we got a valid blessing for locked mythics/legendaries
 	validblessing()
+	// Disable or enable beast select based on unit
+	beastcheck()
 }
 
 function populate(select, data, clean, bypass) {
@@ -218,7 +221,23 @@ function reload() {
 	// Obtain the visible buffs
 	buffs = selectatk.value + ";" + selectspd.value + ";" + selectdef.value + ";" + selectres.value
 	// Change the URL of the img to force it to reload
-	document.getElementById('fakecanvas').src = "/get_image.png?name=" + encodeURIComponent(selectheroes.value) + "&merges=" + selectmerges.value + "&flowers=" + selectflowers.value + "&boon=" + selectboons.value + "&bane=" + selectbanes.value + "&weapon=" + encodeURIComponent(selectweapons.value) + "&refine=" + selectrefines.value + "&assist=" + encodeURIComponent(selectassists.value) + "&special=" + encodeURIComponent(selectspecials.value) + "&passiveA=" + encodeURIComponent(selectA.value) + "&passiveB=" + encodeURIComponent(selectB.value) + "&passiveC=" + encodeURIComponent(selectC.value) + "&passiveS=" + encodeURIComponent(selectS.value) + "&blessing=" + selectblessings.value + "&summoner=" + selectsummoner.value + "&attire=" + selectattire.value + "&appui=" + appui.checked + "&bonusunit=" + selectbonusunit.value + "&allies=" + encodeURIComponent(allies) + "&buffs=" + encodeURIComponent(buffs) + "&sp=" + selectsp.value + "&hm=" + selecthm.value + "&artstyle=" + selectartstyle.value + "&offset=" + selectoffset.value + "&favorite=" + selectfavorite.value + "&accessory=" + selectaccessory.value + "&language=" + selectlanguage.value;
+	document.getElementById('fakecanvas').src = "/get_image.png?name=" + encodeURIComponent(selectheroes.value) + "&merges=" + selectmerges.value + "&flowers=" + selectflowers.value + "&boon=" + selectboons.value + "&bane=" + selectbanes.value + "&beast=" + selectbeast.value + "&weapon=" + encodeURIComponent(selectweapons.value) + "&refine=" + selectrefines.value + "&assist=" + encodeURIComponent(selectassists.value) + "&special=" + encodeURIComponent(selectspecials.value) + "&passiveA=" + encodeURIComponent(selectA.value) + "&passiveB=" + encodeURIComponent(selectB.value) + "&passiveC=" + encodeURIComponent(selectC.value) + "&passiveS=" + encodeURIComponent(selectS.value) + "&blessing=" + selectblessings.value + "&summoner=" + selectsummoner.value + "&attire=" + selectattire.value + "&appui=" + appui.checked + "&bonusunit=" + selectbonusunit.value + "&allies=" + encodeURIComponent(allies) + "&buffs=" + encodeURIComponent(buffs) + "&sp=" + selectsp.value + "&hm=" + selecthm.value + "&artstyle=" + selectartstyle.value + "&offset=" + selectoffset.value + "&favorite=" + selectfavorite.value + "&accessory=" + selectaccessory.value + "&language=" + selectlanguage.value;
+}
+
+function beastcheck() {
+	// Obtain the weapon category for the unit
+	if (selectheroes.value == "None") {
+		weapontype = false;
+	} else {
+		weapontype = units[selectheroes.value]["WeaponType"];
+	}
+	if (![20, 21, 22, 23].includes(weapontype)) {
+		selectbeast.value = "no";
+		selectbeast.disabled = true;
+		selectbeast.dispatchEvent(new Event('change'));
+	} else {
+		selectbeast.disabled = false;
+	}
 }
 
 function validblessing() {
@@ -362,13 +381,13 @@ function updateRefine() {
 
 // Data for each build slot
 builds = [
-	["None", false, true, "USEN", "None", "None", [],"0","0","None","None","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0",9999,7000,"Portrait","0","1","None", true],
-	["None", false, true, "USEN", "None", "None", [],"0","0","None","None","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0",9999,7000,"Portrait","0","1","None", true],
-	["None", false, true, "USEN", "None", "None", [],"0","0","None","None","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0",9999,7000,"Portrait","0","1","None", true],
-	["None", false, true, "USEN", "None", "None", [],"0","0","None","None","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0",9999,7000,"Portrait","0","1","None", true]
+	["None", false, true, "USEN", "None", "None", [],"0","0","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0",9999,7000,"Portrait","0","1","None", true],
+	["None", false, true, "USEN", "None", "None", [],"0","0","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0",9999,7000,"Portrait","0","1","None", true],
+	["None", false, true, "USEN", "None", "None", [],"0","0","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0",9999,7000,"Portrait","0","1","None", true],
+	["None", false, true, "USEN", "None", "None", [],"0","0","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0",9999,7000,"Portrait","0","1","None", true]
 ]
 // List of values to be restored (their document element)
-selects = [selectmerges, selectflowers, selectboons, selectbanes, selectrefines, selectspecials, selectassists, selectA, selectB, selectC, selectS, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef, selectres, selectsp, selecthm, selectartstyle, selectoffset, selectfavorite, selectaccessory, appui]
+selects = [selectmerges, selectflowers, selectboons, selectbanes, selectbeast, selectrefines, selectspecials, selectassists, selectA, selectB, selectC, selectS, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef, selectres, selectsp, selecthm, selectartstyle, selectoffset, selectfavorite, selectaccessory, appui]
 // Which builder slot is active right now
 var buildslot = 0;
 function switchbuild(build) {

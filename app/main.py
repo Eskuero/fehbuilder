@@ -140,6 +140,8 @@ def getimage():
 			statsmodifier = [x+y for x,y in zip(statsmodifier, [2, 2, 2, 2, 2])]
 		if hero["bonusunit"]:
 			statsmodifier = [x+y for x,y in zip(statsmodifier, [10, 4, 4, 4, 4])]
+		if hero["beast"]:
+			statsmodifier = [x+y for x,y in zip(statsmodifier, [0, 2, 0, 0, 0])]
 		# Add the normal visible buffs
 		statsmodifier = [x+y for x,y in zip(statsmodifier, hero["buffs"])]
 		# Calculate the visible stats you get for each allied mythic or legendary
