@@ -49,7 +49,8 @@ for file in files:
 					"moveType": entry["mov_equip"],
 					"statModifiers": [value for value in entry["stats"].values()],
 					"exclusive": entry["exclusive"],
-					"isMax": True if not entry["next_skill"] else False
+					# Always default to isMax false for seals since we modify the info later when filling the data
+					"isMax": True if not entry["next_skill"] and entry["category"] != 6 else False
 				}
 				# For weapons add the might as part of the statsmodifiers for Atk
 				if entry["category"] == 0:
@@ -90,18 +91,17 @@ for category in categories:
 for refinable in refines:
 	skills["weapons"][refines[refinable]["baseWeapon"]].update(refines[refinable])
 
-# Complete seals data by obtaining which skills ara available to buy and then copy their counterparts data (except for the isMax setting, which depends on if it's the last sela of it's line)
+# Complete seals data by getting which skills are available to buy and copying their counterparts data (except for the isMax setting, which depends on if it's the last seal of it's line)
 files = os.listdir("feh-assets-json/files/assets/Common/SRPG/SkillAccessory/")
 for file in files:
 	with open("feh-assets-json/files/assets/Common/SRPG/SkillAccessory/" + file, "r") as datasource:
 		data = json.load(datasource)
 		# Retrieve all normal skill data to get info because we don't know the category of the skill
-		allpassives = skills["passives"]["A"] | skills["passives"]["B"] | skills["passives"]["C"]
-		for entry in data:
-			# If the skill is available as a sacred seal we complete their data too
-			if entry["id_tag"] in allpassives:
-				skills["passives"]["S"][entry["id_tag"]] = allpassives[entry["id_tag"]]
-				skills["passives"]["S"][entry["id_tag"]]["isMax"] = True if not entry["next_seal"] else False
+		allpassives = skills["passives"]["A"] | skills["passives"]["B"] | skills["passives"]["C"] | skills["passives"]["S"]
+		# SID_無し is skeleton data for a skill so we ignore
+		for entry in [entry for entry in data if entry["id_tag"] != "SID_無し"]:
+			skills["passives"]["S"][entry["id_tag"]] = allpassives[entry["id_tag"]]
+			skills["passives"]["S"][entry["id_tag"]]["isMax"] = True if not entry["next_seal"] else False
 
 # Store all the data for internal usage
 with open("fullskills.json", "w") as outfile:
