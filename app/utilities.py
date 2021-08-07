@@ -4,7 +4,7 @@ import math
 def herosanitization(heroes, skills, languages, other, name, args):
 	# Hero request squeleton definition
 	hero = {
-		"name": False, "boon": False, "bane": False, "merges": False, "flowers": False, "beast": False, "weapon": False, "refine": False, "assist": False, "special": False, "passiveA": False, "passiveB": False, "passiveC": False, "passiveS": False, "summoner": False, "blessing": False, "attire": False, "bonusunit": False, "allies": False, "buffs": False, "sp": False, "hm": False, "artstyle": False, "offset": False, "favorite": False, "accessory": False, "language": False, "appui": False
+		"name": False, "boon": False, "bane": False, "merges": False, "flowers": False, "beast": False, "weapon": False, "refine": False, "assist": False, "special": False, "passiveA": False, "passiveB": False, "passiveC": False, "passiveS": False, "summoner": False, "blessing": False, "attire": False, "bonusunit": False, "allies": False, "buffs": False, "sp": False, "hm": False, "artstyle": False, "offsetY": False, "offsetX": False, "favorite": False, "accessory": False, "language": False, "appui": False
 	}
 	for prop in hero:
 		value = args.get(prop)
@@ -80,7 +80,7 @@ def herosanitization(heroes, skills, languages, other, name, args):
 		elif prop == "artstyle":
 			hero[prop] = value if value in ["Portrait", "Attack", "Special", "Damage"] else "Portrait"
 		# If offset valie is not provided default to 0, if provided but not a valid digit default to 0, if valid but above 300 default to 300, anything else should be fine
-		elif prop == "offset":
+		elif prop in ["offsetY", "offsetX"]:
 			hero[prop] = 0 if not value else (0 if not value.isdigit() else (300 if int(value) > 300 else int(value)))
 		# For favorite marks if it's a strig numeric from 1 to 8
 		elif prop == "favorite":

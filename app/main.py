@@ -82,7 +82,7 @@ def getimage():
 			# If anything went wrong on downloading and parsing the image fall back to an error one
 			except:
 				art = Image.open("../data/img/base/missigno.png")
-		canvas.paste(art, (-305, 0 - hero["offset"]), art)
+		canvas.paste(art, (-305 + hero["offsetX"], 0 - hero["offsetY"]), art)
 
 		# Paste the foregroud UI
 		fg = fgui if hero["appui"] else fgnoui
