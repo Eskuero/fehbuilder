@@ -27,7 +27,7 @@ selectres = document.getElementById('res');
 selectsp = document.getElementById('sp');
 selecthm = document.getElementById('hm');
 selectartstyle = document.getElementById('artstyle');
-selectoffset = document.getElementById('offset');
+selectoffsetY = document.getElementById('offsetY');
 selectfavorite = document.getElementById('favorite');
 selectaccessory = document.getElementById('accessory');
 selectlanguage = document.getElementById('language');
@@ -47,13 +47,11 @@ function copyClassesToSelect2(data, container) {
 $(document).ready(function() {
 	// Do not apply the boostrap theme on the multiselect it looks real broken
 	$('select:not(#allies)').select2({
-		theme: "bootstrap4",
 		templateResult: copyClassesToSelect2
 	});
 	$('#allies').select2({});
 	$(".s2-select-without-search").select2({
-		minimumResultsForSearch: Infinity,
-		theme: "bootstrap4",
+		minimumResultsForSearch: Infinity
 	});
 });
 
@@ -221,7 +219,7 @@ function reload() {
 	// Obtain the visible buffs
 	buffs = selectatk.value + ";" + selectspd.value + ";" + selectdef.value + ";" + selectres.value
 	// Change the URL of the img to force it to reload
-	document.getElementById('fakecanvas').src = "/get_image.png?name=" + encodeURIComponent(selectheroes.value) + "&merges=" + selectmerges.value + "&flowers=" + selectflowers.value + "&boon=" + selectboons.value + "&bane=" + selectbanes.value + "&beast=" + selectbeast.value + "&weapon=" + encodeURIComponent(selectweapons.value) + "&refine=" + selectrefines.value + "&assist=" + encodeURIComponent(selectassists.value) + "&special=" + encodeURIComponent(selectspecials.value) + "&passiveA=" + encodeURIComponent(selectA.value) + "&passiveB=" + encodeURIComponent(selectB.value) + "&passiveC=" + encodeURIComponent(selectC.value) + "&passiveS=" + encodeURIComponent(selectS.value) + "&blessing=" + selectblessings.value + "&summoner=" + selectsummoner.value + "&attire=" + selectattire.value + "&appui=" + appui.checked + "&bonusunit=" + selectbonusunit.value + "&allies=" + encodeURIComponent(allies) + "&buffs=" + encodeURIComponent(buffs) + "&sp=" + selectsp.value + "&hm=" + selecthm.value + "&artstyle=" + selectartstyle.value + "&offset=" + selectoffset.value + "&favorite=" + selectfavorite.value + "&accessory=" + selectaccessory.value + "&language=" + selectlanguage.value;
+	document.getElementById('fakecanvas').src = "/get_image.png?name=" + encodeURIComponent(selectheroes.value) + "&merges=" + selectmerges.value + "&flowers=" + selectflowers.value + "&boon=" + selectboons.value + "&bane=" + selectbanes.value + "&beast=" + selectbeast.value + "&weapon=" + encodeURIComponent(selectweapons.value) + "&refine=" + selectrefines.value + "&assist=" + encodeURIComponent(selectassists.value) + "&special=" + encodeURIComponent(selectspecials.value) + "&passiveA=" + encodeURIComponent(selectA.value) + "&passiveB=" + encodeURIComponent(selectB.value) + "&passiveC=" + encodeURIComponent(selectC.value) + "&passiveS=" + encodeURIComponent(selectS.value) + "&blessing=" + selectblessings.value + "&summoner=" + selectsummoner.value + "&attire=" + selectattire.value + "&appui=" + appui.checked + "&bonusunit=" + selectbonusunit.value + "&allies=" + encodeURIComponent(allies) + "&buffs=" + encodeURIComponent(buffs) + "&sp=" + selectsp.value + "&hm=" + selecthm.value + "&artstyle=" + selectartstyle.value + "&offset=" + selectoffsetY.value + "&favorite=" + selectfavorite.value + "&accessory=" + selectaccessory.value + "&language=" + selectlanguage.value;
 }
 
 function beastcheck() {
@@ -387,7 +385,7 @@ builds = [
 	["None", false, true, "USEN", "None", "None", [],"0","0","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0",9999,7000,"Portrait","0","1","None", true]
 ]
 // List of values to be restored (their document element)
-selects = [selectmerges, selectflowers, selectboons, selectbanes, selectbeast, selectrefines, selectspecials, selectassists, selectA, selectB, selectC, selectS, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef, selectres, selectsp, selecthm, selectartstyle, selectoffset, selectfavorite, selectaccessory, appui]
+selects = [selectmerges, selectflowers, selectboons, selectbanes, selectbeast, selectrefines, selectspecials, selectassists, selectA, selectB, selectC, selectS, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef, selectres, selectsp, selecthm, selectartstyle, selectoffsetY, selectfavorite, selectaccessory, appui]
 // Which builder slot is active right now
 var buildslot = 0;
 function switchbuild(build) {
@@ -451,11 +449,11 @@ function slotname() {
 }
 
 function statictranslations() {
-	document.getElementById("atk").parentElement.children[0].innerHTML = languages[selectlanguage.value]["MID_ATTACK"];
-	document.getElementById("spd").parentElement.children[0].innerHTML = languages[selectlanguage.value]["MID_AGILITY"];
-	document.getElementById("def").parentElement.children[0].innerHTML = languages[selectlanguage.value]["MID_DEFENSE"];
-	document.getElementById("res").parentElement.children[0].innerHTML = languages[selectlanguage.value]["MID_RESIST"];
-	document.getElementById("sp").parentElement.parentElement.children[0].children[0].innerHTML = languages[selectlanguage.value]["MID_SKILL_POINT"] + ":";
-	document.getElementById("hm").parentElement.parentElement.children[0].children[0].innerHTML = languages[selectlanguage.value]["MID_HEROISM_POINT"] + ":";
+	document.getElementById("atk").previousSibling.previousSibling.innerHTML = languages[selectlanguage.value]["MID_ATTACK"];
+	document.getElementById("spd").previousSibling.previousSibling.innerHTML = languages[selectlanguage.value]["MID_AGILITY"];
+	document.getElementById("def").previousSibling.previousSibling.innerHTML = languages[selectlanguage.value]["MID_DEFENSE"];
+	document.getElementById("res").previousSibling.previousSibling.innerHTML = languages[selectlanguage.value]["MID_RESIST"];
+	document.getElementById("sp").previousSibling.previousSibling.innerHTML = languages[selectlanguage.value]["MID_SKILL_POINT"] + ":";
+	document.getElementById("hm").previousSibling.previousSibling.innerHTML = languages[selectlanguage.value]["MID_HEROISM_POINT"] + ":";
 	slotname();
 }

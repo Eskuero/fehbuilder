@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>FE Heroes Unit Builder</title>
@@ -5,429 +6,276 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 		<link rel="stylesheet" href="style.css" />
 
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@x.x.x/dist/select2-bootstrap4.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css" />
 		<link rel="shortcut icon" href="assets/Feh.png" />
 
 	</head>
 	<body>
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-lg-5" style="text-align: center">
-					<img id="fakecanvas" src="/get_image.png" class="img-fluid" alt="FEH Unit Builder" />
+		<div class="contenedor">
+			<img id="fakecanvas" src="/get_image.png" alt="FEH Unit Builder" />
+			<div class="form">
+				<div id="unitslot">
+					<button onclick="switchbuild(0)">#1 Build</button>
+					<button onclick="switchbuild(1)">#2 Build</button>
+					<button onclick="switchbuild(2)">#3 Build</button>
+					<button onclick="switchbuild(3)">#4 Build</button>
 				</div>
-				<div class="col-12 col-lg-4">
-					<div class="form">
-						<div id="unitslot">
-							<button onclick="switchbuild(0)">#1 Build</button>
-							<button onclick="switchbuild(1)">#2 Build</button>
-							<button onclick="switchbuild(2)">#3 Build</button>
-							<button onclick="switchbuild(3)">#4 Build</button>
+				<div class="editing">
+					<section>
+						<div class="row-property" style="align-items: center; justify-content: center; margin-top: 0.5em">
+							<label>Cheats</label>
+							<input type="checkbox" class="checkbox-xl" id="cheats" onChange="populateall(false)">
+							<label>Best skills</label>
+							<input type="checkbox" class="checkbox-xl" id="bestskills" onChange="populateall(false)" checked>
 						</div>
-						<section class="ml-2">
-							<div class="row mb-1">
-								<h4>Unit</h4>
-								<div class="links">
-									<a href="https://github.com/Eskuero/fehbuilder" target="blank">
-										<img class="img-fluid" src="assets/github.png"/>
-									</a>
-									<a href="https://discord.gg/fireemblemheroes" target="blank">
-										<img class="img-fluid" src="assets/discord.png"/>
-									</a>
-								</div>
-							</div>
-							<div class="row mb-1">
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<label>Hero: </label>
-								</div>
-								<div class="col-9">
-									<select class="s2-select" style="width: 100%" id="selectheroes" onChange="populateall(true);slotname()" >
-                  						<option value="None">None</value>
-									</select>
-								</div>
-							</div>
-							<div class="row mb-1">
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<img class="img-fluid" src="assets/resplendent.png"/>
-								</div>
-								<div class="col-9">
-									<select class="s2-select-without-search" style="width: 100%" id="attire">
-										<option value="Normal">Normal</option>
-										<option value="Resplendent">Resplendent</option>
-										<option value="Stats-Only">Stats-Only</option>
-									</select>
-								</div>
-							</div>
-							<div class="row mb-1">
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<img class="img-fluid" src="assets/beasts.png"/>
-								</div>
-								<div class="col-3">
-									<select class="s2-select-without-search" style="width: 100%" id="beast">
-										<option value="no">No</option>
-										<option value="yes">Yes</option>
-									</select>
-								</div>
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<img class="img-fluid" src="assets/summoner.png"/>
-								</div>
-								<div class="col-3">
-									<select class="s2-select-without-search" style="width: 100%" id="summoner">
-										<option value="None">No</option>
-										<option value="C">C</option>
-										<option value="B">B</option>
-										<option value="A">A</option>
-										<option value="S">S</option>
-									</select>
-								</div>
-							</div>
-							<div class="row mb-1">
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<label>Merges: </label>
-								</div>
-								<div class="col-3">
-									<select class="s2-select-without-search" style="width: 100%; margin-left: 1em" id="merges">
-										<option value="0">0</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-										<option value="6">6</option>
-										<option value="7">7</option>
-										<option value="8">8</option>
-										<option value="9">9</option>
-										<option value="10">10</option>
-									</select>
-								</div>
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<label>Flowers:</label>
-								</div>
-								<div class="col-3">
-									<select class="s2-select-without-search" style="width: 100%" id="flowers">
-                      					<option value="0">0</value>
-									</select>
-								</div>
-							</div>
-							<div class="row mb-1">
-								<div class="col-3 col-md-2  col-form-label text-md-right">
-									<label>Boon: </label>
-								</div>
-								<div class="col-3">
-									<select class="s2-select-without-search" style="width: 100%" id="boons">
-										<option value="None">-</option>
-										<option value="HP">HP</option>
-										<option value="Atk">Atk</option>
-										<option value="Spd">Spd</option>
-										<option value="Def">Def</option>
-										<option value="Res">Res</option>
-									</select>
-								</div>
-								<div class="col-3 col-md-2  col-form-label text-md-right">
-									<label>Bane: </label>
-								</div>
-								<div class="col-3">
-									<select class="s2-select-without-search" style="width: 100%" id="banes">
-										<option value="None">-</option>
-										<option value="HP">HP</option>
-										<option value="Atk">Atk</option>
-										<option value="Spd">Spd</option>
-										<option value="Def">Def</option>
-										<option value="Res">Res</option>
-									</select>
-								</div>
-							</div>
-						</section>
-
-						<section class="ml-2 mt-2">
-							<div class="row mb-1">
-								<h4>Skills</h4>
-							</div>
-							<div class="row mb-1">
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<img class="img-fluid" src="assets/weapon.png"  />
-								</div>
-								<div class="col-9">
-									<select class="s2-select" style="width: 100%" id="weapon" onchange="updateRefine()">
-										<option value="None">None</option>
-									</select>
-								</div>
-							</div>
-							<div class="row mb-1">
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<img class="img-fluid" src="assets/refine.png"  />
-								</div>
-								<div class="col-9">
-									<select class="s2-select-without-search" style="width: 100%" id="refine">
-										<option value="None">None</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="row mb-1">
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<img class="img-fluid" src="assets/assist.png"/>
-								</div>
-								<div class="col-9">
-									<select class="s2-select"  style="width: 100%" id="assist">
-										<option value="None">None</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="row mb-1">
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<img class="img-fluid" src="assets/special.png"/>
-								</div>
-								<div class="col-9">
-									<select class="s2-select"  style="width: 100%" id="special">
-										<option value="None">None</option>
-									</select>
-								</div>
-							</div>
-							
-							<div class="row mb-1">
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<img class="img-fluid" src="assets/skill-a.png"/>
-								</div>
-								<div class="col-9">
-									<select class="s2-select"  style="width: 100%" id="Askill">
-										<option value="None">None</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="row mb-1">
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<img class="img-fluid" src="assets/skill-b.png"/>
-								</div>
-								<div class="col-9">
-									<select class="s2-select"  style="width: 100%" id="Bskill">
-										<option value="None">None</option>
-									</select>
-								</div>
-							</div>
-				
-							<div class="row mb-1">
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<img class="img-fluid" src="assets/skill-c.png"/>
-								</div>
-								<div class="col-9">
-									<select class="s2-select" style="width: 100%" id="Cskill">
-										<option value="None">None</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="row mb-1">
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<img class="img-fluid" src="assets/seal.png"/>
-								</div>
-								<div class="col-9">
-									<select class="s2-select" style="width: 100%" id="Sskill">
-										<option value="None">None</option>
-									</select>
-								</div>
-							</div>
-						</section>
-
-						<section class="ml-2 mt-2">
-							<div class="row mb-1">
-								<h4>Coliseum</h4>
-							</div>
-							<div class="row mb-1">
-								<div class="col-2 col-md-2 col-form-label text-md-right">
-									<img class="img-fluid" src="assets/blessings.png"/>
-								</div>
-								<div class="col-4">
-									<select class="s2-select-without-search" style="width: 100%" id="blessing" onChange="reblessed()">
-										<option value="None">None</option>
-										<option value="1">Fire</option>
-										<option value="2">Water</option>
-										<option value="3">Wind</option>
-										<option value="4">Earth</option>
-										<option value="5">Light</option>
-										<option value="6">Dark</option>
-										<option value="7">Astra</option>
-										<option value="8">Anima</option>
-									</select>
-								</div>
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<label>Bonus: </label>
-								</div>
-								<div class="col-3">
-									<select class="s2-select-without-search" style="width: 100%" id="bonusunit">
-										<option value="no">No</option>
-										<option value="yes">Yes</option>
-									</select>
-								</div>
-							</div>
-							<div class="row mb-1">
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<img class="img-fluid" src="assets/pairup.png"/>
-								</div>
-								<div class="col-9">
-									<select class="s2-select" style="width: 100%" id="allies" multiple="multiple" onChange="checkallies()" disabled>
-									</select>
-								</div>
-							</div>
-						</section>
-					</div>
+						<div class="row-property single">
+							<img class="imagelabel" src="assets/language.png" title="Language"/>
+							<select class="s2-select-without-search" id="language" onChange="populate(selectheroes, units, true, true); populateall(false); reblessed(true); statictranslations()">
+								<option value="USEN" selected>English</option>
+								<option value="EUDE">Deutsch</option>
+								<option value="EUES">Español</option>
+								<option value="EUFR">Français</option>
+								<option value="EUIT">Italiano</option>
+								<option value="JPJA">日本語</option>
+								<option value="TWZH">繁體中文</option>
+								<option value="USPT">Português</option>
+							</select>
+						</div>
+					</section>
+					<section>
+						<h2>Unit</h2>
+						<div class="row-property single">
+							<img class="imagelabel" src="assets/kiran.png" title="Hero"/>
+							<select class="s2-select" id="selectheroes" onChange="populateall(true);slotname()" >
+								<option value="None">None</value>
+							</select>
+						</div>
+						<div class="row-property single">
+							<img class="imagelabel" src="assets/resplendent.png" title="Attire"/>
+							<select class="s2-select-without-search" id="attire">
+								<option value="Normal">Normal</option>
+								<option value="Resplendent">Resplendent</option>
+								<option value="Stats-Only">Stats-Only</option>
+							</select>
+						</div>
+						<div class="row-property double">
+							<img class="imagelabel" src="assets/beasts.png" title="Beast transformation"/>
+							<select class="s2-select-without-search" id="beast">
+								<option value="no">No</option>
+								<option value="yes">Yes</option>
+							</select>
+							<img class="imagelabel" src="assets/summoner.png" title="Summoner Support"/>
+							<select class="s2-select-without-search" id="summoner">
+								<option value="None">No</option>
+								<option value="C">C</option>
+								<option value="B">B</option>
+								<option value="A">A</option>
+								<option value="S">S</option>
+							</select>
+						</div>
+						<div class="row-property double">
+							<img class="imagelabel" src="assets/merges.webp" title="Merges"/>
+							<select class="s2-select-without-search" id="merges">
+								<option value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+							<img class="imagelabel" src="assets/flower.png" title="Dragoflowers"/>
+							<select class="s2-select-without-search" id="flowers">
+								<option value="0">0</value>
+							</select>
+						</div>
+						<div class="row-property double">
+							<img class="imagelabel" src="assets/boon.png" title="Boon"/>
+							<select class="s2-select-without-search" id="boons">
+								<option value="None">-</option>
+								<option value="HP">HP</option>
+								<option value="Atk">Atk</option>
+								<option value="Spd">Spd</option>
+								<option value="Def">Def</option>
+								<option value="Res">Res</option>
+							</select>
+							<img class="imagelabel" src="assets/bane.png" title="Bane"/>
+							<select class="s2-select-without-search" id="banes">
+								<option value="None">-</option>
+								<option value="HP">HP</option>
+								<option value="Atk">Atk</option>
+								<option value="Spd">Spd</option>
+								<option value="Def">Def</option>
+								<option value="Res">Res</option>
+							</select>
+						</div>
+					</section>
+					<section>
+						<h2>Skills</h2>
+						<div class="row-property single">
+							<img class="imagelabel" src="assets/weapon.png" title="Weapon"/>
+							<select class="s2-select" id="weapon" onchange="updateRefine()">
+								<option value="None">None</option>
+							</select>
+						</div>
+						<div class="row-property single">
+							<img class="imagelabel" src="assets/refine.png" title="Refine"/>
+							<select class="s2-select-without-search" id="refine">
+								<option value="None">None</option>
+							</select>
+						</div>
+						<div class="row-property single">
+							<img class="imagelabel" src="assets/assist.png" title="Assist"/>
+							<select class="s2-select" id="assist">
+								<option value="None">None</option>
+							</select>
+						</div>
+						<div class="row-property single">
+							<img class="imagelabel" src="assets/special.png" title="Special"/>
+							<select class="s2-select" id="special">
+								<option value="None">None</option>
+							</select>
+						</div>
+						<div class="row-property single">
+							<img class="imagelabel" src="assets/skill-a.png" title="A skill"/>
+							<select class="s2-select" id="Askill">
+								<option value="None">None</option>
+							</select>
+						</div>
+						<div class="row-property single">
+							<img class="imagelabel" src="assets/skill-b.png" title="B skill"/>
+							<select class="s2-select" id="Bskill">
+								<option value="None">None</option>
+							</select>
+						</div>
+						<div class="row-property single">
+							<img class="imagelabel" src="assets/skill-c.png" title="C skill"/>
+							<select class="s2-select" id="Cskill">
+								<option value="None">None</option>
+							</select>
+						</div>
+						<div class="row-property single">
+							<img class="imagelabel" src="assets/seal.png" title="Seal"/>
+							<select class="s2-select" id="Sskill">
+								<option value="None">None</option>
+							</select>
+						</div>
+					</section>
+					<section>
+					<h2>Blessings</h2>
+						<div class="row-property double">
+							<img class="imagelabel" src="assets/blessings.png" title="Blessings" />
+							<select class="s2-select-without-search" id="blessing" onChange="reblessed()">
+								<option value="None">None</option>
+								<option value="1">Fire</option>
+								<option value="2">Water</option>
+								<option value="3">Wind</option>
+								<option value="4">Earth</option>
+								<option value="5">Light</option>
+								<option value="6">Dark</option>
+								<option value="7">Astra</option>
+								<option value="8">Anima</option>
+							</select>
+							<img class="imagelabel" src="assets/bonus.png" title="Bonus Unit" />
+							<select class="s2-select-without-search" id="bonusunit">
+								<option value="no">No</option>
+								<option value="yes">Yes</option>
+							</select>
+						</div>
+						<div style="height: 0.4em"></div>
+						<div class="row-property single cangrow">
+							<img class="imagelabel" src="assets/pairup.png" title="Allies"/>
+							<select class="s2-select" id="allies" multiple="multiple" onChange="checkallies()" disabled>
+							</select>
+						</div>
+					</section>
+					<section>
+						<h2>Buffs / Debuffs</h2>
+						<div class="row-property double">
+							<label>Atk</label>
+							<input type="number" id="atk" min="-99" max="99" value="0">
+							<label>Spd</label>
+							<input type="number" id="spd" min="-99" max="99" value="0">
+						</div>
+						<div class="row-property double">
+							<label>Def</label>
+							<input type="number" id="def" min="-99" max="99" value="0">
+							<label>Res</label>
+							<input type="number" id="res" min="-99" max="99" value="0">
+						</div>
+					</section>
+					<section>
+						<h2>Miscellaneous</h2>
+						<div class="row-property double">
+							<img class="imagelabel" src="assets/sp.png" title="Skill Points"/>
+							<input type="number" id="sp" min="0" max="9999" value="9999">
+							<img class="imagelabel" src="assets/hm.png" title="Hero Merit"/>
+							<input type="number" id="hm" min="0" max="7000" value="7000">
+						</div>
+						<div class="row-property single">
+							<img class="imagelabel" src="assets/brush.png" title="Art Style"/>
+							<select class="s2-select-without-search" id="artstyle">
+								<option value="Portrait">Portrait</option>
+								<option value="Attack">Attack</option>
+								<option value="Special">Special</option>
+								<option value="Damage">Damage</option>
+							</select>
+						</div>
+						<div class="row-property double">
+							<img class="imagelabel" src="assets/up.png" title="Offset in Y"/>
+							<input type="number" id="offsetY" min="0" max="300" value="0">
+							<img class="imagelabel" src="assets/right.png" title="Offset in X"/>
+							<input type="number" id="offsetX" min="0" max="300" value="0">
+						</div>
+						<div class="row-property double">
+							<img class="imagelabel" src="assets/favorite.png" title="Favorite Mark"/>
+							<select class="s2-select-without-search" id="favorite">
+								<option value="0">0</option>
+								<option value="1" selected>1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+							</select>
+							<img class="imagelabel" src="assets/veronica.webp" title="Accessory"/>
+							<select class="s2-select-without-search" id="accessory">
+								<option value="None">None</option>
+								<option value="Hat">Hat</option>
+								<option value="Hair">Hair</option>
+								<option value="Mask">Mask</option>
+								<option value="Tiara">Tiara</option>
+							</select>
+						</div>
+						<div class="row-property">
+							<label class="mb-0">App UI</label>
+							<input type="checkbox" id="appui" checked>
+							<a href="#fakecanvas">
+								<button class="generatebutton" onclick="reload()">Generate hero</button>
+							</a>
+						</div>
+					</section>
 				</div>
-				<div class="col-12 col-lg-3">
-					<div class="form">
-						<section class="ml-2">
-							<div class="row mb-1">
-								<h4>Buffs / Debuffs</h4>
-							</div>
-							<div class="row mb-1">
-								<div class="col-6">
-									<label style="text-align:center; width:100%">Atk</label>
-									<input type="number" class="form-control" id="atk" style="width: 100%" min="-99" max="99" value="0">
-								</div>
-								<div class="col-6">
-									<label style="text-align:center; width:100%">Spd</label>
-									<input type="number" class="form-control" id="spd" style="width: 100%" min="-99" max="99" value="0">
-								</div>
-							</div>
-							<div class="row mb-3">
-								<div class="col-6">
-									<label style="text-align:center; width:100%">Def</label>
-									<input type="number" class="form-control" id="def" style="width: 100%" min="-99" max="99" value="0">
-								</div>
-								<div class="col-6">
-									<label style="text-align:center; width:100%">Res</label>
-									<input type="number" class="form-control" id="res" style="width: 100%" min="-99" max="99" value="0">
-								</div>
-							</div>
-						</section>
-						<section class="ml-2">
-							<div class="row mb-1">
-								<h4>Miscellaneous</h4>
-							</div>
-							<div class="row mb-1">
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<label>SP: </label>
-								</div>
-								<div class="col-9">
-									<input type="number" class="form-control" id="sp" style="width: 100%" min="0" max="9999" value="9999">
-								</div>
-							</div>
-							<div class="row mb-1">
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<label>HM: </label>
-								</div>
-								<div class="col-9">
-									<input type="number" class="form-control" id="hm" style="width: 100%" min="0" max="7000" value="7000">
-								</div>
-							</div>
-							<div class="row mb-1">
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<label>Art: </label>
-								</div>
-								<div class="col-9">
-									<select class="s2-select-without-search" style="width: 100%" id="artstyle">
-										<option value="Portrait">Portrait</option>
-										<option value="Attack">Attack</option>
-										<option value="Special">Special</option>
-										<option value="Damage">Damage</option>
-									</select>
-								</div>
-							</div>
-							<div class="row mb-1">
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<label>Offset: </label>
-								</div>
-								<div class="col-9">
-									<input type="number" class="form-control" id="offset" style="width: 100%" min="0" max="300" value="0">
-								</div>
-							</div>
-							<div class="row mb-1">
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<label>Mark: </label>
-								</div>
-								<div class="col-9">
-									<select class="s2-select-without-search" id="favorite" style="width: 100%">
-										<option value="0">0</option>
-										<option value="1" selected>1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-										<option value="6">6</option>
-										<option value="7">7</option>
-										<option value="8">8</option>
-									</select>
-								</div>
-							</div>
-							<div class="row mb-1">
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<label>Accesory: </label>
-								</div>
-								<div class="col-9">
-									<select class="s2-select-without-search" id="accessory" style="width: 100%">
-										<option value="None">None</option>
-										<option value="Hat">Hat</option>
-										<option value="Hair">Hair</option>
-										<option value="Mask">Mask</option>
-										<option value="Tiara">Tiara</option>
-									</select>
-								</div>
-							</div>
-							<div class="row mb-1">
-								<div class="col-3 col-md-2 col-form-label text-md-right">
-									<label>Lang:</label>
-								</div>
-								<div class="col-9">
-									<select class="s2-select-without-search" id="language" style="width: 100%" onChange="populate(selectheroes, units, true, true); populateall(false); reblessed(true); statictranslations()">
-										<option value="USEN" selected>English</option>
-										<option value="EUDE">Deutsch</option>
-										<option value="EUES">Español</option>
-										<option value="EUFR">Français</option>
-										<option value="EUIT">Italiano</option>
-										<option value="JPJA">日本語</option>
-										<option value="TWZH">繁體中文</option>
-										<option value="USPT">Português</option>
-									</select>
-								</div>
-							</div>
-						</section>
-						<section class="ml-2 mt-2">
-							<div class="row mb-1">
-								<h4>Options</h4>
-							</div>
-							<div class="row mb-1">
-								<div class="options">
-									<div>
-										<label class="mb-0">Cheats: </label>
-										<input type="checkbox" class="checkbox-xl" id="cheats" onChange="populateall(false)">
-									</div>
-									<div>
-										<label class="mb-0">Best skills: </label>
-										<input type="checkbox" class="checkbox-xl" id="bestskills" onChange="populateall(false)" checked>
-									</div>
-									<div>
-										<label class="mb-0">App UI: </label>
-										<input type="checkbox" class="checkbox-xl" id="appui" checked>
-									</div>
-									<div>
-										<a href="#fakecanvas">
-											<button class="btn btn-primary" onclick="reload()">Generate hero</button>
-										</a>
-									</div>
-								</div>
-							</div>
-						</section>
-					</div>
+				<div class="links">
+					<a href="https://github.com/Eskuero/fehbuilder" target="blank">
+						<img class="img-fluid" src="assets/github.png"/>
+					</a>
+					<a href="https://discord.gg/fireemblemheroes" target="blank">
+						<img class="img-fluid" src="assets/discord.png"/>
+					</a>
 				</div>
 			</div>
 		</div>
+		</div>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
         <script src="data.js"></script>  
     </body>
 </html>
