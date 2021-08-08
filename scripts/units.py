@@ -23,8 +23,8 @@ for file in files:
 			arturl = utils.obtaintrueurl([truename + "_BtlFace.png"])[0]
 
 			heroes[entry["id_tag"]] = {
-				# The base stats values stored for each hero are so at 3 star rarity (it's safe to bump them by 1 each)
-				"stats": [value+1 for value in entry["base_stats"].values()],
+				# The base stats values stored for each hero are so at 3 star rarity (it's safe to reduce them all by 1 to match 1* star rarity)
+				"stats": [value-1 for value in entry["base_stats"].values()],
 				"growths": [value for value in entry["growth_rates"].values()],
 				"WeaponType": entry["weapon_type"],
 				"moveType": entry["move_type"],
@@ -71,8 +71,8 @@ for file in files:
 			])
 
 			heroes[entry["id_tag"]] = {
-				# The base stats values stored for each hero are so at 3 star rarity (it's safe to bump them by 1 each)
-				"stats": [value+1 for value in entry["base_stats"].values()],
+				# The base stats values stored for each hero are so at 3 star rarity (it's safe to reduce them all by 1 to match 1* star rarity)
+				"stats": [value-1 for value in entry["base_stats"].values()],
 				"growths": [value for value in entry["growth_rates"].values()],
 				"WeaponType": entry["weapon_type"],
 				"moveType": entry["move_type"],

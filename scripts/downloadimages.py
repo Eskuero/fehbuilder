@@ -162,6 +162,13 @@ icons = {
 	"favorite_6": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/6/6e/FavoriteMark6.png?90?92",
 	"favorite_7": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/17/FavoriteMark7.png?90?92",
 	"favorite_8": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/e/e8/FavoriteMark8.png?90?92",
+	# Rarity
+	"rarity1": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/2d/Icon_Rarity_1.png?53?53",
+	"rarity2": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/55/RarityLine2.png?90?53",
+	"rarity3": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/92/RarityLine3.png?126?53",
+	"rarity4": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/bf/RarityLine4.png?163?53",
+	"rarity5": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a8/RarityLine5.png?200?53",
+	"rarityForma": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/02/RarityLineF.png?200?53",
 	# Other
 	"normalbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/9d/BG_DetailedStatus.png?1067?1280",
 	"summonerbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/5c/Summoner_Support_Background.png?1067?1280",

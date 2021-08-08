@@ -4,12 +4,15 @@ import math
 def herosanitization(heroes, skills, languages, other, name, args):
 	# Hero request squeleton definition
 	hero = {
-		"name": False, "boon": False, "bane": False, "merges": False, "flowers": False, "beast": False, "weapon": False, "refine": False, "assist": False, "special": False, "passiveA": False, "passiveB": False, "passiveC": False, "passiveS": False, "summoner": False, "blessing": False, "attire": False, "bonusunit": False, "allies": False, "buffs": False, "sp": False, "hm": False, "artstyle": False, "offsetY": False, "offsetX": False, "favorite": False, "accessory": False, "language": False, "appui": False
+		"name": False, "rarity": False, "boon": False, "bane": False, "merges": False, "flowers": False, "beast": False, "weapon": False, "refine": False, "assist": False, "special": False, "passiveA": False, "passiveB": False, "passiveC": False, "passiveS": False, "summoner": False, "blessing": False, "attire": False, "bonusunit": False, "allies": False, "buffs": False, "sp": False, "hm": False, "artstyle": False, "offsetY": False, "offsetX": False, "favorite": False, "accessory": False, "language": False, "appui": False
 	}
 	for prop in hero:
 		value = args.get(prop)
 		if prop == "name":
 			hero[prop] = value
+		# Rarities are valid within a set amount of values
+		elif prop == "rarity":
+			hero[prop] = value if value in ["1", "2", "3", "4", "5", "Forma"] else "5"
 		# Banes and boons are valid within a set amount of values
 		elif prop in ["boon", "bane"]:
 			hero[prop] = value if value in ["HP", "Atk", "Spd", "Def", "Res"] else None
@@ -96,19 +99,38 @@ def herosanitization(heroes, skills, languages, other, name, args):
 			hero[prop] = False if value == "false" else True
 	return hero
 
-def statcalc(stats, growths, boon, bane, merges, flowers):
-	# We are not allowing other than 5 star rarity so we hardcore 1.14% multiplier
-	# "stats": {"HP": 18, "Atk": 7, "Spd": 8, "Def": 6, "Res": 5}, "growths": {"HP": 45, "Atk": 50, "Spd": 60, "Def": 35, "Res": 50}, "boons": {"HP": 5, "Atk": -5, "Spd": 0, "Def": 0, "Res": -5}}
+def statcalc(stats, growths, rarity, boon, bane, merges, flowers):
 	# Disable banes in the calculations if we are merged
 	if merges > 0:
 		bane = None
+	# Modify the level 1 stats based on the rarity provided
+	almosttruelevel1 = {"HP": stats[0], "Atk": stats[1], "Spd": stats[2], "Def": stats[3], "Res": stats[4]}
+	# For 3 and 5 star rarity we can simply bump everything by 1 point
+	if rarity >= 3:
+		almosttruelevel1 = {property: value + 1 for property, value in almosttruelevel1.items()}
+	if rarity == 5:
+		almosttruelevel1 = {property: value + 1 for property, value in almosttruelevel1.items()}
+	# For two and four star rarities we have to bump the 2 highest non-HP stats by 1
+	if rarity in [2, 4]:
+		# We sort the level 1 stats to see the correct order to apply rarity stats
+		almosttruelevel1 = {k: v for k, v in sorted(almosttruelevel1.items(), key=lambda item: item[1], reverse=True)}
+		increased = 0
+		for stat in almosttruelevel1:
+			# We ignore HP until 3 or 5 rarity
+			if stat != "HP":
+				almosttruelevel1[stat] += 1
+				# If already increased two stats we stop here
+				increased += 1
+				if increased == 2:
+					break
+
 	# Modify the level 1 stats based on the boons and banes provided
 	truelevel1 = {
-		"HP": stats[0] + (-1 if bane == "HP" else (1 if boon == "HP" else 0)),
-		"Atk": stats[1] + (-1 if bane == "Atk" else (1 if boon == "Atk" else 0)),
-		"Spd": stats[2] + (-1 if bane == "Spd" else (1 if boon == "Spd" else 0)),
-		"Def": stats[3] + (-1 if bane == "Def" else (1 if boon == "Def" else 0)),
-		"Res": stats[4] + (-1 if bane == "Res" else (1 if boon == "Res" else 0))
+		"HP": almosttruelevel1["HP"] + (-1 if bane == "HP" else (1 if boon == "HP" else 0)),
+		"Atk": almosttruelevel1["Atk"] + (-1 if bane == "Atk" else (1 if boon == "Atk" else 0)),
+		"Spd": almosttruelevel1["Spd"] + (-1 if bane == "Spd" else (1 if boon == "Spd" else 0)),
+		"Def": almosttruelevel1["Def"] + (-1 if bane == "Def" else (1 if boon == "Def" else 0)),
+		"Res": almosttruelevel1["Res"] + (-1 if bane == "Res" else (1 if boon == "Res" else 0))
 	}
 	# Modify the growth based on the boons and banes provided
 	truegrowth = {
@@ -137,13 +159,15 @@ def statcalc(stats, growths, boon, bane, merges, flowers):
 		# If we are neutral but merged we increase the first two stats twice
 		truelevel1[list(truelevel1.keys())[stat]] += 1
 		stat = 0 if stat == 4 else stat + 1
+	# Depending on the rarity of the units it has different multipliers
+	raritymultipliers = [0.860000001, 0.930000001, 1, 1.070000001, 1.140000001]
 	# The the growth from level 1 to 40 is calculating by trunc(39 x trunc(growth value * rarity)/100))
 	return [
-		truelevel1["HP"] + math.trunc(39 * (math.trunc(truegrowth["HP"] * 1.140000001) / 100)),
-		truelevel1["Atk"] + math.trunc(39 * (math.trunc(truegrowth["Atk"] * 1.140000001) / 100)),
-		truelevel1["Spd"] + math.trunc(39 * (math.trunc(truegrowth["Spd"] * 1.140000001) / 100)),
-		truelevel1["Def"] + math.trunc(39 * (math.trunc(truegrowth["Def"] * 1.140000001) / 100)),
-		truelevel1["Res"] + math.trunc(39 * (math.trunc(truegrowth["Res"] * 1.140000001) / 100))
+		truelevel1["HP"] + math.trunc(39 * (math.trunc(truegrowth["HP"] * raritymultipliers[rarity-1]) / 100)),
+		truelevel1["Atk"] + math.trunc(39 * (math.trunc(truegrowth["Atk"] * raritymultipliers[rarity-1]) / 100)),
+		truelevel1["Spd"] + math.trunc(39 * (math.trunc(truegrowth["Spd"] * raritymultipliers[rarity-1]) / 100)),
+		truelevel1["Def"] + math.trunc(39 * (math.trunc(truegrowth["Def"] * raritymultipliers[rarity-1]) / 100)),
+		truelevel1["Res"] + math.trunc(39 * (math.trunc(truegrowth["Res"] * raritymultipliers[rarity-1]) / 100))
 	]
 
 def weapontype(integer):

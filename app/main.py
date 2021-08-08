@@ -88,6 +88,12 @@ def getimage():
 		fg = fgui if hero["appui"] else fgnoui
 		canvas.paste(fg, (0, 0), fg)
 
+		# Print the rarity line
+		rarityline = Image.open("../data/img/other/rarity" + hero["rarity"] + ".png")
+		canvas.paste(rarityline, (65, 505), rarityline)
+		# Patch the rarity variable to cater to our later needs
+		hero["rarity"] = 5 if hero["rarity"] == "Forma" else int(hero["rarity"])
+
 		# Print the resplendent icon
 		if hero["attire"] in ["Resplendent", "Stats-Only"]:
 			canvas.paste(resplendent, (262, 492), resplendent)
@@ -125,7 +131,7 @@ def getimage():
 		draw.text((115, 1101), languages[hero["language"]]["MID_HEROISM_POINT"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 
 		# Obtain the calculated stats to draw
-		statsmodifier = utilities.statcalc(heroes[name]["stats"], heroes[name]["growths"], hero["boon"], hero["bane"], int(hero["merges"]), int(hero["flowers"]))
+		statsmodifier = utilities.statcalc(heroes[name]["stats"], heroes[name]["growths"], hero["rarity"], hero["boon"], hero["bane"], int(hero["merges"]), int(hero["flowers"]))
 		# We have a couple of stats modifiers based on weapon, summoner support, attire, bonus unit, visible buffs and maybe not completely parsed A/S skills that we must add
 		if hero["weapon"] :
 			weaponmodifier = utilities.weaponmodifiers(hero["weapon"], skills["weapons"][hero["weapon"]], hero["refine"], allpassives)
