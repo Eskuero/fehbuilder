@@ -3,8 +3,6 @@ date=$(date +"%Y-%m-%d-%H-%M")
 
 echo "Updating FeH dumps... ($(date +"%Y-%m-%d-%H-%M-%S"))" >> fehupdate-$date.log 2>&1
 git submodule update --remote >> fehupdate-$date.log 2>&1
-echo -e "\nDownload runtime backend images... ($(date +"%Y-%m-%d-%H-%M-%S"))" >> fehupdate-$date.log 2>&1
-PYTHONUNBUFFERED=1 python3 downloadimages.py >> fehupdate-$date.log 2>&1
 echo -e "\nRetrieving needed strings... ($(date +"%Y-%m-%d-%H-%M-%S"))" >> fehupdate-$date.log 2>&1
 PYTHONUNBUFFERED=1 python3 languages.py >> fehupdate-$date.log 2>&1
 echo -e "\nParsing all skills... ($(date +"%Y-%m-%d-%H-%M-%S"))" >> fehupdate-$date.log 2>&1
