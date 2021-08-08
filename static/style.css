@@ -13,12 +13,11 @@ body {
 .contenedor {
 	display: flex;
 	gap: 1em;
-	align-items: center;
-	justify-content: center;
 }
 
 #fakecanvas {
 	height: 100vh;
+	margin-left: auto;
 }
 
 .form {
@@ -26,6 +25,7 @@ body {
 	background-color: rgba(14, 51, 69, 0.6);
 	font-weight: bold;
 	color: white;
+	margin-right: auto;
 }
 
 #unitslot {
@@ -136,10 +136,12 @@ h2 {
 	#fakecanvas {
 		height: auto;
 		width: 90%;
+		margin: auto;
 	}
 	.form {
 		min-width: 90%;
 		height: auto;
+		margin: auto;
 	}
 	.editing {
 		display: block;
