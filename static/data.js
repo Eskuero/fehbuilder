@@ -400,6 +400,8 @@ function switchbuild(build) {
 	builds[buildslot][3] = selectlanguage.value;
 	builds[buildslot][4] = selectweapons.value;
 	builds[buildslot][5] = selectblessings.value;
+	// Make sure the allies list is empty before saving to sync new possible deletions
+	builds[buildslot][6] = []
 	for (i = 0; i < selectallies.selectedOptions.length; i++) {
 		builds[buildslot][6].push(selectallies.selectedOptions[i].value)
 	}
