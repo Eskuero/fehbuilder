@@ -184,15 +184,16 @@ def getimage():
 		# Print the level string
 		font = ImageFont.truetype("../data/" + config["fontfile"], 24)
 		draw.text((70, 745), languages[hero["language"]]["MID_LEVEL2"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+		# Print the level 40. It was hardcoded previously so we just do this to make sure it doesn't look off side by side with the merge count
+		font = ImageFont.truetype("../data/" + config["fontfile"], 25)
+		draw.text((126, 745), "40", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 
 		# If we have merges we add the text next to the level
 		if hero["merges"] > 0:
-			font = ImageFont.truetype("../data/" + config["fontfile"], 25)
-			draw.text((165, 742), "+", font=font, fill="#82f546" if hero["merges"] == 10 else "#ffffff", stroke_width=3, stroke_fill="#0a2533")
-			draw.text((184, 744), str(hero["merges"]), font=font, fill="#82f546" if hero["merges"] == 10 else "#ffffff", stroke_width=3, stroke_fill="#0a2533")
+			draw.text((165, 743), "+", font=font, fill="#82f546" if hero["merges"] == 10 else "#ffffff", stroke_width=3, stroke_fill="#0a2533")
+			draw.text((184, 745), str(hero["merges"]), font=font, fill="#82f546" if hero["merges"] == 10 else "#ffffff", stroke_width=3, stroke_fill="#0a2533")
 		# If we have flowers we add another box with the number
 		if hero["flowers"] > 0:
-			font = ImageFont.truetype("../data/" + config["fontfile"], 25)
 			canvas.paste(flowerholder, (271 + offset, 732), flowerholder)
 			flowericon = Image.open("../data/img/other/" + str(heroes[name]["moveType"]) + "-flower.png")
 			canvas.paste(flowericon, (289 + offset, 727), flowericon)
