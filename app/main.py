@@ -103,7 +103,7 @@ def getimage():
 		draw.text((188, 585), title, font=font, anchor="mm", stroke_width=3, stroke_fill=(50, 30, 10))
 		draw.text((222, 659), languages[hero["language"]]["M" + hero["name"]], font=font, anchor="mm", stroke_width=3, stroke_fill=(50, 30, 10))
 
-		# Print the artist and actor names, as well as the favorite mark if appui enabled
+		# Print the artist and actor names, as well as the favorite mark and other minor strings if appui is enabled
 		if hero["appui"]:
 			font = ImageFont.truetype("../data/" + config["fontfile"], 21)
 			# If the hero is truly a resplendent one we might have data for it
@@ -116,8 +116,16 @@ def getimage():
 				artist = languages[hero["language"]][hero["name"].replace("PID", "MPID_ILLUST")] if "PID_" in hero["name"] else ""
 				draw.text((47, 1212), voice, font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 				draw.text((47, 1241), artist, font=font, fill="#ffffff",stroke_width=3, stroke_fill="#0a2533")
+			# Print favorite icon
 			favorite = Image.open("../data/img/other/favorite_" + hero["favorite"] + ".png")
 			canvas.paste(favorite, (3, 229), favorite)
+			# Translate buttons
+			font = ImageFont.truetype("../data/" + config["fontfile"], 24)
+			draw.text((126, 1175), languages[hero["language"]]["MID_UNIT_INFO_TO_SKILLSET"], font=font, anchor="mm", fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+			draw.text((360, 1175), languages[hero["language"]]["MID_UNIT_INFO_TO_SKILLEQUIP"], font=font, anchor="mm", fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+			draw.text((594, 1175), languages[hero["language"]]["MID_UNIT_INFO_TO_SKILLLEARN"], font=font, anchor="mm", fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+			font = ImageFont.truetype("../data/" + config["fontfile"], 26)
+			draw.text((617, 47), languages[hero["language"]]["MID_UNIT_INFO_TO_TALK"], font=font, anchor="mm", fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 
 		# First write the static text for each stat (normal anchoring)
 		font = ImageFont.truetype("../data/" + config["fontfile"], 25)
@@ -205,6 +213,7 @@ def getimage():
 		canvas.paste(expindicator, (271 + offset, 732), expindicator)
 		font = ImageFont.truetype("../data/" + config["fontfile"], 24)
 		draw.text((308 + offset, 744), languages[hero["language"]]["MID_EXP"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+		draw.text((415 + offset, 744), languages[hero["language"]]["MID_UNIT_INFO_EXP_MAX"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 
 		font = ImageFont.truetype("../data/" + config["fontfile"], 23)
 		# If the weapon is valid try to print an icon
