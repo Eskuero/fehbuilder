@@ -48,7 +48,7 @@ function copyClassesToSelect2(data, container) {
 
 $(document).ready(function() {
 	// Do not apply the boostrap theme on the multiselect it looks real broken
-	$('select:not(#allies)').select2({
+	$('.s2-select:not(#allies)').select2({
 		templateResult: copyClassesToSelect2
 	});
 	$('#allies').select2({});
