@@ -19,6 +19,7 @@ body {
 .unitpreview {
 	display: flex;
 	flex-direction: column;
+	width: calc((100vh - 2.5em) * 0.5625);
 }
 #fakecanvas {
 	height: calc(100vh - 2.5em);
