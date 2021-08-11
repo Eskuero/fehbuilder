@@ -27,6 +27,9 @@ with open("../data/fullskills.json", "r") as datasource:
 # Load other data from the json file
 with open("../data/fullother.json", "r") as datasource:
 	other = json.load(datasource)
+	allblessed = {
+		ally: properties for bless in other["blessed"] for ally, properties in bless.items()
+	}
 
 # Load all languages from the json file
 with open("../data/fulllanguages.json", "r") as datasource:
@@ -52,7 +55,7 @@ def getimage():
 	name = flask.request.args.get('name')
 	if name is not None and name in heroes and len(str(flask.request)) < 1000:
 		# Sanitize all the data we got fro the user
-		hero = utilities.herosanitization(heroes, skills, languages, other, name, flask.request.args)
+		hero = utilities.herosanitization(heroes, skills, languages, allblessed, name, flask.request.args)
 		# Print the data we will use for logging purposes
 		now = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
 		print()
@@ -160,12 +163,9 @@ def getimage():
 		statsmodifier = [x+y for x,y in zip(statsmodifier, hero["buffs"])]
 		# Calculate the visible stats you get for each allied mythic or legendary
 		if hero["allies"] and hero["blessing"]:
-			# Legendary/mythics heroes can't boost each other
-			if hero["name"] not in other["blessed"][int(hero["blessing"])-1]:
-				allies = hero["allies"]
-				for ally in allies:
-					# For each hero we add the visible buffs and multiply for the amount of that ally
-					statsmodifier = [x + (y*allies[ally]) for x,y in zip(statsmodifier, other["blessed"][int(hero["blessing"])-1][ally]["boosts"])]
+			for ally in hero["allies"]:
+				# For each hero we add the visible buffs and multiply for the amount of that ally
+				statsmodifier = [x + (y*hero["allies"][ally]) for x,y in zip(statsmodifier, allblessed[ally]["boosts"])]
 		# Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers). Also prevent to number from going below 0
 		font = ImageFont.truetype("../data/" + config["fontfile"], 26)
 		draw.text((265, 805), "0" if statsmodifier[0] < 0 else str(statsmodifier[0]), font=font, anchor="ra", fill="#fffaaf", stroke_width=3, stroke_fill="#0a2533")

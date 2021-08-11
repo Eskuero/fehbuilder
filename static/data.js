@@ -105,6 +105,8 @@ function populateall(clean) {
 	statictranslations()
 	// Make sure we got a valid blessing for locked mythics/legendaries
 	validblessing()
+	// Make sure we don't end with invalid allies on the list
+	reblessed()
 	// Disable or enable beast select based on unit
 	beastcheck()
 }
@@ -257,13 +259,11 @@ function validblessing() {
 	selectblessings.disabled = false;
 }
 
-function reblessed(onlytranslate) {
-	// If we are translating we need to know which options to restore
+function reblessed() {
+	// We need to know which options to restore
 	toberestored = []
-	if (onlytranslate) {
-		for (i = 0; i < selectallies.selectedOptions.length; i++) {
-			toberestored.push(selectallies.selectedOptions[i].value)
-		}
+	for (i = 0; i < selectallies.selectedOptions.length; i++) {
+		toberestored.push(selectallies.selectedOptions[i].value)
 	}
 	// First delete all allies
 	while (selectallies.lastChild) {
@@ -276,19 +276,35 @@ function reblessed(onlytranslate) {
 		return;
 	}
 	selectallies.disabled = false
-	// Now get list of heroes valid for that type of blessing
-	blessed = other["blessed"][parseInt(blessing)-1]
+	// If select is locked that means the hero is preblessed and we need to get a bigger list
+	if (selectblessings.disabled == true) {
+		// Depending on the type of locked blessing we select which allies are available
+		if (parseInt(selectblessings.value) > 4) {
+			blessed = {0: other["blessed"][0], 1: other["blessed"][1], 2: other["blessed"][2], 3:other["blessed"][3]};
+		} else {
+			blessed = {4: other["blessed"][4], 5: other["blessed"][5], 6: other["blessed"][6], 7: other["blessed"][7]};
+		}
+	// Otherwise we get the list of get list of heroes valid for that type of blessing
+	} else {
+		blessed = {[blessing-1]: other["blessed"][parseInt(blessing)-1]}
+	}
 	// All data to be printed
 	options = {}
-	for (i = 0; i < blessed.length; i++) {
-		// Depending on the type of blessing there's a limit on allies
-		var max = (["5", "6", "7", "8"].includes(blessing)) ? 6 : 3;
-		// Add an option for each value
-		for (j = 1; j <= max; j++) {
-			options[languages[selectlanguage.value]["M" + blessed[i]] + ": " + languages[selectlanguage.value][blessed[i].replace("PID", "MPID_HONOR")] + " x" + j] = blessed[i] + ";" + j;
+	for (const [bless, list] of Object.entries(blessed)) {
+		for (i = 0; i < list.length; i++) {
+			// Depending on the type of blessing there's a limit on allies (for preblessed we do the opposite)
+			if (selectblessings.disabled == true) {
+				var max = (["5", "6", "7", "8"].includes(blessing)) ? 3 : 6;
+			} else {
+				var max = (["5", "6", "7", "8"].includes(blessing)) ? 6 : 3;
+			}
+			// Add an option for each value
+			for (j = 1; j <= max; j++) {
+				options[languages[selectlanguage.value]["M" + list[i]] + ": " + languages[selectlanguage.value][list[i].replace("PID", "MPID_HONOR")] + " x" + j] = list[i] + ";" + j + ";" + bless;
+			}
 		}
 	}
-	// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
+	// Sort all the values by visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
 	options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {})
 	// For each entry print an option
 	for (const [string, tag] of Object.entries(options)) {
@@ -296,7 +312,7 @@ function reblessed(onlytranslate) {
 		opt.value = tag;
 		opt.innerHTML = string;
 		// If we are only translating and the value was selected restore it
-		if (onlytranslate && toberestored.includes(tag)) {
+		if (toberestored.includes(tag)) {
 			opt.selected = true;
 		}
 		selectallies.appendChild(opt);
@@ -304,12 +320,21 @@ function reblessed(onlytranslate) {
 }
 
 function checkallies() {
-	// Depending on the type of blessing there's a limit on allies
-	var max = (["5", "6", "7", "8"].includes(selectblessings.value)) ? 6 : 3;
-	// Detect the amount of currently deployed
+	// Depending on the type of blessing there's a limit on allies (for preblessed we do the opposite)
+	if (selectblessings.disabled == true) {
+		var max = (["5", "6", "7", "8"].includes(blessing)) ? 3 : 6;
+	} else {
+		var max = (["5", "6", "7", "8"].includes(blessing)) ? 6 : 3;
+	}
+	// Detect the amount and the blessings of the allies currently deployed
 	allies = 0;
+	blessings = []
 	for (i = 0; i < selectallies.selectedOptions.length; i++) {
-		allies += parseInt(selectallies.selectedOptions[i].value.split(';')[1])
+		values = selectallies.selectedOptions[i].value.split(';')
+		allies += parseInt(values[1])
+		if (!blessings.includes(values[2])) {
+			blessings.push(values[2])
+		}
 	}
 	remaining = max - allies
 	// Now for every option in the select disable those that are too big for the amount of slots for allies we have remaining
@@ -322,6 +347,17 @@ function checkallies() {
 			// Otherwise enable it
 			} else {
 				selectallies.options[i].disabled = false;
+			}
+			// Preblessed have different rules
+			if (selectblessings.disabled == true) {
+				bless = selectallies.options[i].value.split(";")[2]
+				// For mythics if the amount of blessings reached 2 and the blessing for this option is not already selected we disable all of them (seasons only have two)
+				if (parseInt(selectblessings.value) > 4 && blessings.length == 2 && !blessings.includes(bless)) {
+					selectallies.options[i].disabled = true;
+				// For legendaries we disable "opposite" blessings if one is already selected (we can't get dark and light blessings on anima/astra season)
+				} else if ((blessings.some(r=> ["6","7"].includes(r)) && ["4","5"].includes(bless)) || (blessings.some(r=> ["4","5"].includes(r)) && ["6","7"].includes(bless))) {
+					selectallies.options[i].disabled = true;
+				}
 			}
 		}
 	}
