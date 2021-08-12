@@ -159,17 +159,27 @@ def statcalc(stats, growths, rarity, boon, bane, merges, flowers):
 		# If we are neutral but merged we increase the first two stats twice
 		truelevel1[list(truelevel1.keys())[stat]] += 1
 		stat = 0 if stat == 4 else stat + 1
-	# Depending on the rarity of the units it has different multipliers
-	raritymultipliers = [0.860000001, 0.930000001, 1, 1.070000001, 1.140000001]
-	# The the growth from level 1 to 40 is calculating by trunc(39 x trunc(growth value * rarity)/100))
 	return [
-		truelevel1["HP"] + math.trunc(39 * (math.trunc(truegrowth["HP"] * raritymultipliers[rarity-1]) / 100)),
-		truelevel1["Atk"] + math.trunc(39 * (math.trunc(truegrowth["Atk"] * raritymultipliers[rarity-1]) / 100)),
-		truelevel1["Spd"] + math.trunc(39 * (math.trunc(truegrowth["Spd"] * raritymultipliers[rarity-1]) / 100)),
-		truelevel1["Def"] + math.trunc(39 * (math.trunc(truegrowth["Def"] * raritymultipliers[rarity-1]) / 100)),
-		truelevel1["Res"] + math.trunc(39 * (math.trunc(truegrowth["Res"] * raritymultipliers[rarity-1]) / 100))
+		truelevel1["HP"] + generalgrowths[rarity-1][int((truegrowth["HP"] / 5) - 4)],
+		truelevel1["Atk"] + generalgrowths[rarity-1][int((truegrowth["Atk"] / 5) - 4)],
+		truelevel1["Spd"] + generalgrowths[rarity-1][int((truegrowth["Spd"] / 5) - 4)],
+		truelevel1["Def"] + generalgrowths[rarity-1][int((truegrowth["Def"] / 5) - 4)],
+		truelevel1["Res"] + generalgrowths[rarity-1][int((truegrowth["Res"] / 5) - 4)],
 	]
 
+# Growth table from https://feheroes.fandom.com/wiki/Stat_growth (this is hardcoded because deriving the actual values from the base formula is increasingly tricky due aproximations .99999 decimals and such). Theorically we should be able to calculate with (math.trunc(truegrowth["Res"] * raritymultipliers[rarity-1]) / 100)
+generalgrowths = [
+	# 1 star
+	[6, 8, 9, 11, 13, 14, 16, 18, 19, 21, 23, 24, 26, 28, 30],
+	# 2 star
+	[7, 8, 10, 12, 14, 15, 17, 19, 21, 23, 25, 26, 28, 30, 32],
+	# 3 star
+	[7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35],
+	# 4 star
+	[8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 31, 33, 35, 37],
+	# 5 star
+	[8, 10, 13, 15, 17, 19, 22, 24, 26, 28, 30, 33, 35, 37, 39]
+]
 def weapontype(integer):
 	validtypes = ["Red Sword", "Blue Lance", "Green Axe", "Red Bow", "Blue Bow", "Green Bow", "Colorless Bow", "Red Dagger", "Blue Dagger", "Green Dagger", "Colorless Dagger", "Red Tome", "Blue Tome", "Green Tome", "Colorless Tome", "Colorless Staff", "Red Breath", "Blue Breath", "Green Breath", "Colorless Breath", "Red Beast", "Blue Beast", "Green Beast", "Colorless Beast"]
 	# We only need to loop through the length of the list and if for any index the bit is 1 it means we succesfully detected the weapon type.
