@@ -1,5 +1,6 @@
 import json
 import math
+from PIL import Image
 
 def herosanitization(heroes, skills, languages, allblessed, name, args):
 	# Hero request squeleton definition
@@ -87,7 +88,7 @@ def herosanitization(heroes, skills, languages, allblessed, name, args):
 			hero[prop] = 0 if not value else (0 if not value.isdigit() else (300 if int(value) > 300 else int(value)))
 		# For favorite marks if it's a strig numeric from 1 to 8
 		elif prop == "favorite":
-			hero[prop] = value if value in ["1", "2", "3", "4", "5", "6", "7", "8"] else "0"
+			hero[prop] = int(value) if value in ["1", "2", "3", "4", "5", "6", "7", "8"] else 0
 		# For accessories we just match the list
 		elif prop == "accessory":
 			hero[prop] = value if value in ["Hat", "Hair", "Mask", "Tiara"] else None
@@ -215,4 +216,91 @@ summonerranks = {
 	"B": [4, 0, 0, 2, 2],
 	"A": [4, 0, 2, 2, 2],
 	"S": [5, 2, 2, 2, 2]
+}
+
+# Load all widely used images to save on disk operations
+images = {
+	"rarity": {
+		"1": Image.open("../data/img/other/rarity1.png"),
+		"2": Image.open("../data/img/other/rarity2.png"),
+		"3": Image.open("../data/img/other/rarity3.png"),
+		"4": Image.open("../data/img/other/rarity4.png"),
+		"5": Image.open("../data/img/other/rarity5.png"),
+		"Forma": Image.open("../data/img/other/rarityForma.png")
+	},
+	"movetype": [
+		Image.open("../data/img/other/0-move.png"),
+		Image.open("../data/img/other/1-move.png"),
+		Image.open("../data/img/other/2-move.png"),
+		Image.open("../data/img/other/3-move.png")
+	],
+	"flowers": [
+		Image.open("../data/img/other/0-flower.png"),
+		Image.open("../data/img/other/1-flower.png"),
+		Image.open("../data/img/other/2-flower.png"),
+		Image.open("../data/img/other/3-flower.png"),
+	],
+	"weapontype": [
+		Image.open("../data/img/other/0-weapon.png"),
+		Image.open("../data/img/other/1-weapon.png"),
+		Image.open("../data/img/other/2-weapon.png"),
+		Image.open("../data/img/other/3-weapon.png"),
+		Image.open("../data/img/other/4-weapon.png"),
+		Image.open("../data/img/other/5-weapon.png"),
+		Image.open("../data/img/other/6-weapon.png"),
+		Image.open("../data/img/other/7-weapon.png"),
+		Image.open("../data/img/other/8-weapon.png"),
+		Image.open("../data/img/other/9-weapon.png"),
+		Image.open("../data/img/other/10-weapon.png"),
+		Image.open("../data/img/other/11-weapon.png"),
+		Image.open("../data/img/other/12-weapon.png"),
+		Image.open("../data/img/other/13-weapon.png"),
+		Image.open("../data/img/other/14-weapon.png"),
+		Image.open("../data/img/other/15-weapon.png"),
+		Image.open("../data/img/other/16-weapon.png"),
+		Image.open("../data/img/other/17-weapon.png"),
+		Image.open("../data/img/other/18-weapon.png"),
+		Image.open("../data/img/other/19-weapon.png"),
+		Image.open("../data/img/other/20-weapon.png"),
+		Image.open("../data/img/other/21-weapon.png"),
+		Image.open("../data/img/other/22-weapon.png"),
+		Image.open("../data/img/other/23-weapon.png")
+	],
+	"favorite": [
+		Image.open("../data/img/other/favorite_0.png"),
+		Image.open("../data/img/other/favorite_1.png"),
+		Image.open("../data/img/other/favorite_2.png"),
+		Image.open("../data/img/other/favorite_3.png"),
+		Image.open("../data/img/other/favorite_4.png"),
+		Image.open("../data/img/other/favorite_5.png"),
+		Image.open("../data/img/other/favorite_6.png"),
+		Image.open("../data/img/other/favorite_7.png"),
+		Image.open("../data/img/other/favorite_8.png")
+	],
+	"accessory": {
+		"Hat": Image.open("../data/img/other/Accesory-Hat.png"),
+		"Hair": Image.open("../data/img/other/Accesory-Hair.png"),
+		"Mask": Image.open("../data/img/other/Accesory-Mask.png"),
+		"Tiara": Image.open("../data/img/other/Accesory-Tiara.png")
+	},
+	"summoner": {
+		"C": Image.open("../data/img/other/Support-C.png"),
+		"B": Image.open("../data/img/other/Support-B.png"),
+		"A": Image.open("../data/img/other/Support-A.png"),
+		"S": Image.open("../data/img/other/Support-S.png"),
+	},
+	"other": {
+		"bgnosupport": Image.open("../data/img/other/normalbg.png"),
+		"bgsupport": Image.open("../data/img/other/summonerbg.png"),
+		"fgui": Image.open("../data/img/base/foreground-ui.png"),
+		"fgnoui": Image.open("../data/img/base/foreground.png"),
+		"resplendent": Image.open("../data/img/other/resplendent.png"),
+		"expindicator": Image.open("../data/img/base/expindicator.png"),
+		"accessoryexpand": Image.open("../data/img/base/accessory-expansion.png"),
+		"flowerholder": Image.open("../data/img/base/flowerholder.png"),
+		"duoconversation": Image.open("../data/img/other/DuoConversation.png"),
+		"noweapon": Image.open("../data/img/other/weapon-Refine.png"),
+		"Duo": Image.open("../data/img/other/Duo.png"),
+		"Resonance": Image.open("../data/img/other/Resonance.png")
+	}
 }

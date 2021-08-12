@@ -35,17 +35,6 @@ with open("../data/fullother.json", "r") as datasource:
 with open("../data/fulllanguages.json", "r") as datasource:
 	languages = json.load(datasource)
 
-# Load all widely used images to save on disk operations
-bgnosupport = Image.open("../data/img/other/normalbg.png")
-bgsupport = Image.open("../data/img/other/summonerbg.png")
-fgui = Image.open("../data/img/base/foreground-ui.png")
-fgnoui = Image.open("../data/img/base/foreground.png")
-resplendent = Image.open("../data/img/other/resplendent.png")
-expindicator = Image.open("../data/img/base/expindicator.png")
-accessoryexpand = Image.open("../data/img/base/accessory-expansion.png")
-flowerholder = Image.open("../data/img/base/flowerholder.png")
-duoconversation = Image.open("../data/img/other/DuoConversation.png")
-
 @app.route('/get_image.png')
 def getimage():
 	# Create new image
@@ -66,7 +55,7 @@ def getimage():
 		draw = ImageDraw.Draw(canvas)
 
 		# Print the background
-		bg = bgsupport if hero["summoner"] else bgnosupport
+		bg = utilities.images["other"]["bgsupport"] if hero["summoner"] else utilities.images["other"]["bgnosupport"]
 		canvas.paste(bg, (-173, 0), bg)
 
 		# Decide on the filename we will use to save and retrieve this particular hero and pose
@@ -88,18 +77,17 @@ def getimage():
 		canvas.paste(art, (-305 + hero["offsetX"], 0 - hero["offsetY"]), art)
 
 		# Paste the foregroud UI
-		fg = fgui if hero["appui"] else fgnoui
+		fg = utilities.images["other"]["fgui"] if hero["appui"] else utilities.images["other"]["fgnoui"]
 		canvas.paste(fg, (0, 0), fg)
 
 		# Print the rarity line
-		rarityline = Image.open("../data/img/other/rarity" + hero["rarity"] + ".png")
-		canvas.paste(rarityline, (65, 505), rarityline)
+		canvas.paste(utilities.images["rarity"][hero["rarity"]], (65, 505), utilities.images["rarity"][hero["rarity"]])
 		# Patch the rarity variable to cater to our later needs
 		hero["rarity"] = 5 if hero["rarity"] == "Forma" else int(hero["rarity"])
 
 		# Print the resplendent icon
 		if hero["attire"] in ["Resplendent", "Stats-Only"]:
-			canvas.paste(resplendent, (262, 492), resplendent)
+			canvas.paste(utilities.images["other"]["resplendent"], (262, 492), utilities.images["other"]["resplendent"])
 
 		# Write the title and name using an horizontally centered anchor to avoid going out of bounds
 		title = languages[hero["language"]][hero["name"].replace("PID", "MPID_HONOR")] if "PID_" in hero["name"] else "Enemy"
@@ -120,8 +108,7 @@ def getimage():
 				draw.text((47, 1212), voice, font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 				draw.text((47, 1241), artist, font=font, fill="#ffffff",stroke_width=3, stroke_fill="#0a2533")
 			# Print favorite icon
-			favorite = Image.open("../data/img/other/favorite_" + hero["favorite"] + ".png")
-			canvas.paste(favorite, (3, 229), favorite)
+			canvas.paste(utilities.images["favorite"][hero["favorite"]], (3, 229), utilities.images["favorite"][hero["favorite"]])
 			# Translate buttons
 			font = ImageFont.truetype("../data/" + config["fontfile"], 24)
 			draw.text((126, 1175), languages[hero["language"]]["MID_UNIT_INFO_TO_SKILLSET"], font=font, anchor="mm", fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
@@ -180,15 +167,12 @@ def getimage():
 		# If we selected an accessory we paste a newer bigger holder and define an offset to push all next items to the right
 		offset = 0
 		if hero["accessory"]:
-			canvas.paste(accessoryexpand, (4, 732), accessoryexpand)
-			accessoryicon = Image.open("../data/img/other/Accesory-" + str(hero["accessory"]) + ".png")
-			canvas.paste(accessoryicon, (256, 743), accessoryicon)
+			canvas.paste(utilities.images["other"]["accessoryexpand"], (4, 732), utilities.images["other"]["accessoryexpand"])
+			canvas.paste(utilities.images["accessory"][hero["accessory"]], (256, 743), utilities.images["accessory"][hero["accessory"]])
 			offset += 27
 		# Print the move type and weapon type icons
-		movetype = Image.open("../data/img/other/" + str(heroes[name]["moveType"]) + "-move.png")
-		canvas.paste(movetype, (229 if not hero["accessory"] else 223, 743), movetype)
-		weapontype = Image.open("../data/img/other/" + str(heroes[name]["WeaponType"]) + "-weapon.png")
-		canvas.paste(weapontype, (20, 742), weapontype)
+		canvas.paste(utilities.images["movetype"][heroes[name]["moveType"]], (229 if not hero["accessory"] else 223, 743), utilities.images["movetype"][heroes[name]["moveType"]])
+		canvas.paste(utilities.images["weapontype"][heroes[name]["WeaponType"]], (20, 742), utilities.images["weapontype"][heroes[name]["WeaponType"]])
 		# Print the level string
 		font = ImageFont.truetype("../data/" + config["fontfile"], 24)
 		draw.text((70, 745), languages[hero["language"]]["MID_LEVEL2"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
@@ -202,15 +186,14 @@ def getimage():
 			draw.text((184, 745), str(hero["merges"]), font=font, fill="#82f546" if hero["merges"] == 10 else "#ffffff", stroke_width=3, stroke_fill="#0a2533")
 		# If we have flowers we add another box with the number
 		if hero["flowers"] > 0:
-			canvas.paste(flowerholder, (271 + offset, 732), flowerholder)
-			flowericon = Image.open("../data/img/other/" + str(heroes[name]["moveType"]) + "-flower.png")
-			canvas.paste(flowericon, (289 + offset, 727), flowericon)
+			canvas.paste(utilities.images["other"]["flowerholder"], (271 + offset, 732), utilities.images["other"]["flowerholder"])
+			canvas.paste(utilities.images["flowers"][heroes[name]["moveType"]], (289 + offset, 727), utilities.images["flowers"][heroes[name]["moveType"]])
 			draw.text((345 + offset, 742), "+", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 			draw.text((364 + offset, 744), str(hero["flowers"]), font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 			offset += 147
 
 		# Paste the exp indicator
-		canvas.paste(expindicator, (271 + offset, 732), expindicator)
+		canvas.paste(utilities.images["other"]["expindicator"], (271 + offset, 732), utilities.images["other"]["expindicator"])
 		font = ImageFont.truetype("../data/" + config["fontfile"], 24)
 		draw.text((308 + offset, 744), languages[hero["language"]]["MID_EXP"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 		draw.text((415 + offset, 744), languages[hero["language"]]["MID_UNIT_INFO_EXP_MAX"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
@@ -242,8 +225,7 @@ def getimage():
 		# If not just print the basic icon
 		else:
 			printableweapon = "-"
-			weaponicon = Image.open("../data/img/other/weapon-Refine.png")
-			canvas.paste(weaponicon, (370, 797), weaponicon)
+			canvas.paste(utilities.images["other"]["noweapon"], (370, 797), utilities.images["other"]["noweapon"])
 		# We always paste the text because it might as well be unarmed and have a "-"
 		draw.text((420, 805), printableweapon, font=font, fill="#82f546" if hero["refine"] else "#ffffff", stroke_width=3, stroke_fill="#0a2533")
 
@@ -302,7 +284,7 @@ def getimage():
 		# If is a duo hero print the icon
 		if hero["name"] in other["duo"] + other["resonant"]:
 			specialtype = "Duo" if hero["name"] in other["duo"] else "Resonance"
-			specialicon = Image.open("../data/img/other/" + specialtype + ".png")
+			specialicon = utilities.images["other"][specialtype]
 			if needsresize:
 				specialicon = specialicon.resize((115, 125))
 			canvas.paste(specialicon, (posX - offsetX, posY), specialicon)
@@ -310,18 +292,18 @@ def getimage():
 			offsetX += 100 if needsresize else 125
 			# If appui is enabled we also print the conversation icon
 			if hero["appui"]:
-				canvas.paste(duoconversation, (3, 322), duoconversation)
+				canvas.paste(utilities.images["other"]["duoconversation"], (3, 322), utilities.images["other"]["duoconversation"])
 
 		# If summoner supported print the icon
 		if hero["summoner"]:
-			summonericon = Image.open("../data/img/other/Support-" + hero["summoner"] + ".png")
+			summonericon = utilities.images["summoner"][hero["summoner"]]
 			if needsresize:
 				summonericon = summonericon.resize((115, 125))
 			canvas.paste(summonericon, (posX - offsetX, posY), summonericon)
 	else:
 		# We arrived here without a proper hero name so paste the basic bg and fg and say bye
-		canvas.paste(bgnosupport, (-173, 0), bgnosupport)
-		canvas.paste(fgui, (0, 0), fgui)
+		canvas.paste(utilities.images["other"]["bgnosupport"], (-173, 0), utilities.images["other"]["bgnosupport"])
+		canvas.paste(utilities.images["other"]["fgui"], (0, 0), utilities.images["other"]["fgui"])
 
 	# We completed all rendering so now we can drop the Alpha channel
 	canvas = canvas.convert("RGB")
