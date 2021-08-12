@@ -27,9 +27,6 @@ with open("../data/fullskills.json", "r") as datasource:
 # Load other data from the json file
 with open("../data/fullother.json", "r") as datasource:
 	other = json.load(datasource)
-	allblessed = {
-		ally: properties for bless in other["blessed"] for ally, properties in bless.items()
-	}
 
 # Load all languages from the json file
 with open("../data/fulllanguages.json", "r") as datasource:
@@ -44,7 +41,7 @@ def getimage():
 	name = flask.request.args.get('name')
 	if name is not None and name in heroes and len(str(flask.request)) < 1000:
 		# Sanitize all the data we got fro the user
-		hero = utilities.herosanitization(heroes, skills, languages, allblessed, name, flask.request.args)
+		hero = utilities.herosanitization(heroes, skills, languages, other["blessed"], name, flask.request.args)
 		# Print the data we will use for logging purposes
 		now = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
 		print()
@@ -152,7 +149,7 @@ def getimage():
 		if hero["allies"] and hero["blessing"]:
 			for ally in hero["allies"]:
 				# For each hero we add the visible buffs and multiply for the amount of that ally
-				statsmodifier = [x + (y*hero["allies"][ally]) for x,y in zip(statsmodifier, allblessed[ally]["boosts"])]
+				statsmodifier = [x + (y*hero["allies"][ally]) for x,y in zip(statsmodifier, other["blessed"][ally]["boosts"])]
 		# Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers). Also prevent to number from going below 0
 		font = ImageFont.truetype("../data/" + config["fontfile"], 26)
 		draw.text((265, 805), "0" if statsmodifier[0] < 0 else str(statsmodifier[0]), font=font, anchor="ra", fill="#fffa96", stroke_width=3, stroke_fill="#0a2533")
@@ -269,12 +266,9 @@ def getimage():
 		posX = 575 if not needsresize else 600
 		# If blessed print the icon
 		if hero["blessing"]:
-			# If the hero is on the list of the blessed ones for that particular blessing it may have an icon variant
-			if hero["name"] in other["blessed"][int(hero["blessing"])-1]:
-				variant = "-" + other["blessed"][int(hero["blessing"])-1][hero["name"]]["variant"]
-			else:
-				variant = ""
-			blessingicon = Image.open("../data/img/other/" + hero["blessing"] + "-Blessing" + variant + ".png")
+			# If the hero is on the list of the blessed ones for that particular blessing it has icon variant defined (otherwise use the normal one)
+			variant = other["blessed"].get(hero["name"], {}).get("variant", "normal")
+			blessingicon = utilities.images["blessing"][hero["blessing"]-1][variant]
 			if needsresize:
 				blessingicon = blessingicon.resize((115, 125))
 			canvas.paste(blessingicon, (posX, posY), blessingicon)

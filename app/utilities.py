@@ -2,7 +2,7 @@ import json
 import math
 from PIL import Image
 
-def herosanitization(heroes, skills, languages, allblessed, name, args):
+def herosanitization(heroes, skills, languages, blessed, name, args):
 	# Hero request squeleton definition
 	hero = {
 		"name": False, "rarity": False, "boon": False, "bane": False, "merges": False, "flowers": False, "beast": False, "weapon": False, "refine": False, "assist": False, "special": False, "passiveA": False, "passiveB": False, "passiveC": False, "passiveS": False, "summoner": False, "blessing": False, "attire": False, "bonusunit": False, "allies": False, "buffs": False, "sp": False, "hm": False, "artstyle": False, "offsetY": False, "offsetX": False, "favorite": False, "accessory": False, "language": False, "appui": False
@@ -43,7 +43,7 @@ def herosanitization(heroes, skills, languages, allblessed, name, args):
 			hero[prop] = value if value in summonerranks else None
 		# Blessing can only be an int of this set of 8
 		elif prop == "blessing":
-			hero[prop] = None if not value else (None if not value.isdigit() else (value if int(value) in range(1, 9) else None))
+			hero[prop] = None if not value else (None if not value.isdigit() else (int(value) if int(value) in range(1, 9) else None))
 		# The attire can only be Resplendent, Normal or Stats-Only
 		elif prop == "attire":
 			hero[prop] = value if value in ["Normal", "Resplendent", "Stats-Only"] else "Normal"
@@ -58,7 +58,7 @@ def herosanitization(heroes, skills, languages, allblessed, name, args):
 				for ally in allies:
 					ally = ally.split(";")
 					# For each hero with a valid blessing we can check if the multiplier is valid
-					if ally[0] in allblessed and len(ally) > 2:
+					if ally[0] in blessed and len(ally) == 2:
 						# We only add the ally if the second value is a digit between 0 and 5.
 						hero[prop][ally[0]] = hero[prop].get(ally[0], 0) + (0 if not ally[1].isdigit() else (int(ally[1]) if int(ally[1]) in range(1, 7) else 0))
 		# For buffs if nothing is provided we default to an empty list, if something is provided it must be a string that when split by ; has a length of 4, being each element a valid int between -99 and 99
@@ -265,6 +265,92 @@ images = {
 		Image.open("../data/img/other/21-weapon.png"),
 		Image.open("../data/img/other/22-weapon.png"),
 		Image.open("../data/img/other/23-weapon.png")
+	],
+	"blessing": [
+		# Fire
+		{
+			"normal": Image.open("../data/img/other/1-Blessing.png"),
+			"atk": Image.open("../data/img/other/1-Blessing-atk.png"),
+			"spd": Image.open("../data/img/other/1-Blessing-spd.png"),
+			"def": Image.open("../data/img/other/1-Blessing-def.png"),
+			"res": Image.open("../data/img/other/1-Blessing-res.png"),
+			"pairup": Image.open("../data/img/other/1-Blessing-pairup.png")
+		},
+		# Water
+		{
+			"normal": Image.open("../data/img/other/2-Blessing.png"),
+			"atk": Image.open("../data/img/other/2-Blessing-atk.png"),
+			"spd": Image.open("../data/img/other/2-Blessing-spd.png"),
+			"def": Image.open("../data/img/other/2-Blessing-def.png"),
+			"res": Image.open("../data/img/other/2-Blessing-res.png"),
+			"pairup": Image.open("../data/img/other/2-Blessing-pairup.png")
+		},
+		# Wind
+		{
+			"normal": Image.open("../data/img/other/3-Blessing.png"),
+			"atk": Image.open("../data/img/other/3-Blessing-atk.png"),
+			"spd": Image.open("../data/img/other/3-Blessing-spd.png"),
+			"def": Image.open("../data/img/other/3-Blessing-def.png"),
+			"res": Image.open("../data/img/other/3-Blessing-res.png"),
+			"pairup": Image.open("../data/img/other/3-Blessing-pairup.png")
+		},
+		# Earth
+		{
+			"normal": Image.open("../data/img/other/4-Blessing.png"),
+			"atk": Image.open("../data/img/other/4-Blessing-atk.png"),
+			"spd": Image.open("../data/img/other/4-Blessing-spd.png"),
+			"def": Image.open("../data/img/other/4-Blessing-def.png"),
+			"res": Image.open("../data/img/other/4-Blessing-res.png"),
+			"pairup": Image.open("../data/img/other/4-Blessing-pairup.png")
+		},
+		# Light
+		{
+			"normal": Image.open("../data/img/other/5-Blessing.png"),
+			"atk": Image.open("../data/img/other/5-Blessing-atk.png"),
+			"spd": Image.open("../data/img/other/5-Blessing-spd.png"),
+			"def": Image.open("../data/img/other/5-Blessing-def.png"),
+			"res": Image.open("../data/img/other/5-Blessing-res.png"),
+			"atk-extrae": Image.open("../data/img/other/5-Blessing-atk-extrae.png"),
+			"spd-extrae": Image.open("../data/img/other/5-Blessing-spd-extrae.png"),
+			"def-extrae": Image.open("../data/img/other/5-Blessing-def-extrae.png"),
+			"res-extrae": Image.open("../data/img/other/5-Blessing-res-extrae.png"),
+		},
+		# Dark
+		{
+			"normal": Image.open("../data/img/other/6-Blessing.png"),
+			"atk": Image.open("../data/img/other/6-Blessing-atk.png"),
+			"spd": Image.open("../data/img/other/6-Blessing-spd.png"),
+			"def": Image.open("../data/img/other/6-Blessing-def.png"),
+			"res": Image.open("../data/img/other/6-Blessing-res.png"),
+			"atk-extrae": Image.open("../data/img/other/6-Blessing-atk-extrae.png"),
+			"spd-extrae": Image.open("../data/img/other/6-Blessing-spd-extrae.png"),
+			"def-extrae": Image.open("../data/img/other/6-Blessing-def-extrae.png"),
+			"res-extrae": Image.open("../data/img/other/6-Blessing-res-extrae.png"),
+		},
+		# Astra
+		{
+			"normal": Image.open("../data/img/other/7-Blessing.png"),
+			"atk": Image.open("../data/img/other/7-Blessing-atk.png"),
+			"spd": Image.open("../data/img/other/7-Blessing-spd.png"),
+			"def": Image.open("../data/img/other/7-Blessing-def.png"),
+			"res": Image.open("../data/img/other/7-Blessing-res.png"),
+			"atk-extrae": Image.open("../data/img/other/7-Blessing-atk-extrae.png"),
+			"spd-extrae": Image.open("../data/img/other/7-Blessing-spd-extrae.png"),
+			"def-extrae": Image.open("../data/img/other/7-Blessing-def-extrae.png"),
+			"res-extrae": Image.open("../data/img/other/7-Blessing-res-extrae.png"),
+		},
+		# Anima
+		{
+			"normal": Image.open("../data/img/other/8-Blessing.png"),
+			"atk": Image.open("../data/img/other/8-Blessing-atk.png"),
+			"spd": Image.open("../data/img/other/8-Blessing-spd.png"),
+			"def": Image.open("../data/img/other/8-Blessing-def.png"),
+			"res": Image.open("../data/img/other/8-Blessing-res.png"),
+			"atk-extrae": Image.open("../data/img/other/8-Blessing-atk-extrae.png"),
+			"spd-extrae": Image.open("../data/img/other/8-Blessing-spd-extrae.png"),
+			"def-extrae": Image.open("../data/img/other/8-Blessing-def-extrae.png"),
+			"res-extrae": Image.open("../data/img/other/8-Blessing-res-extrae.png"),
+		}
 	],
 	"favorite": [
 		Image.open("../data/img/other/favorite_0.png"),

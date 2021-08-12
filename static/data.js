@@ -247,18 +247,16 @@ function beastcheck() {
 }
 
 function validblessing() {
-	// Merely check if the heroe is listed as pre-blessed on any of the options
-	for (i = 0; i < other["blessed"].length; i++) {
-		// If it is: change the select, lock it, force-update the allies select and stop
-		if (other["blessed"][i].includes(selectheroes.value)) {
-			selectblessings.value = i + 1;
-			selectblessings.disabled = true;
-			selectblessings.dispatchEvent(new Event('change'));
-			return;
-		}
+	// Check if the hero is listed as pre-blessed and update and lock
+	if (other["blessed"][selectheroes.value]) {
+		selectblessings.value = other["blessed"][selectheroes.value]["blessing"];
+		selectblessings.disabled = true;
+		selectblessings.dispatchEvent(new Event('change'));
+		return;
+	// If we didn't found a match make sure the blessing select gets unlocked
+	} else {
+		selectblessings.disabled = false;
 	}
-	// If we arrived here that means we completed the loop without finding a match so so make sure the blessing select gets unlocked
-	selectblessings.disabled = false;
 }
 
 function reblessed() {
@@ -271,39 +269,37 @@ function reblessed() {
 	while (selectallies.lastChild) {
 		selectallies.removeChild(selectallies.lastChild);
 	}
-	// Get the Blessing type and stop if we disabled it
-	blessing = selectblessings.value
-	if (blessing == "None") {
+	// Stop if we did unset the blessing type
+	if (selectblessings.value == "None") {
 		selectallies.disabled = true
 		return;
 	}
+	blessing = parseInt(selectblessings.value)
+	// Make sure the allies select is enabled if arrvied here
 	selectallies.disabled = false
-	// If select is locked that means the hero is preblessed and we need to get a bigger list
-	if (selectblessings.disabled == true) {
-		// Depending on the type of locked blessing we select which allies are available
-		if (parseInt(selectblessings.value) > 4) {
-			blessed = {0: other["blessed"][0], 1: other["blessed"][1], 2: other["blessed"][2], 3:other["blessed"][3]};
-		} else {
-			blessed = {4: other["blessed"][4], 5: other["blessed"][5], 6: other["blessed"][6], 7: other["blessed"][7]};
-		}
-	// Otherwise we get the list of get list of heroes valid for that type of blessing
-	} else {
-		blessed = {[blessing-1]: other["blessed"][parseInt(blessing)-1]}
-	}
 	// All data to be printed
 	options = {}
-	for (const [bless, list] of Object.entries(blessed)) {
-		for (i = 0; i < list.length; i++) {
-			// Depending on the type of blessing there's a limit on allies (for preblessed we do the opposite)
-			if (selectblessings.disabled == true) {
-				var max = (["5", "6", "7", "8"].includes(blessing)) ? 3 : 6;
-			} else {
-				var max = (["5", "6", "7", "8"].includes(blessing)) ? 6 : 3;
+	for (const [hero, properties] of Object.entries(other["blessed"])) {
+		// We skip certain iterations depending on the type of hero and blessing selected
+		// For preblessed we only allow mythics for legendaries and viceversa
+		if (other["blessed"][selectheroes.value]) {
+			if ((blessing > 4 && properties["blessing"] > 4) || (blessing < 5 && properties["blessing"] < 5)) {
+				continue;
 			}
-			// Add an option for each value
-			for (j = 1; j <= max; j++) {
-				options[languages[selectlanguage.value]["M" + list[i]] + ": " + languages[selectlanguage.value][list[i].replace("PID", "MPID_HONOR")] + " x" + j] = list[i] + ";" + j + ";" + bless;
-			}
+		} else if (blessing != properties["blessing"]) {
+			continue;
+		}
+		// Depending on the type of blessing there's a limit on allies (for preblessed we do the opposite). For arena blessings the limit is always 3, for aether raids the limit is 6 for extra slot heroes and 5 for older ones
+		if (other["blessed"][selectheroes.value]) {
+			var max = [5, 6, 7, 8].includes(blessing) ? 3 : (properties["variant"].includes("extrae") ? 6 : 5);
+		} else {
+			var max = [5, 6, 7, 8].includes(blessing) ? (properties["variant"].includes("extrae") ? 6 : 5) : 3;
+		}
+		// If the heroe is for AR attacking reduce the max by one
+		max -= ([5, 7].includes(properties["blessing"])) ? 1 : 0
+		// Add an option for each value
+		for (j = 1; j <= max; j++) {
+			options[languages[selectlanguage.value]["M" + hero] + ": " + languages[selectlanguage.value][hero.replace("PID", "MPID_HONOR")] + " x" + j] = hero + ";" + j;
 		}
 	}
 	// Sort all the values by visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
@@ -322,20 +318,26 @@ function reblessed() {
 }
 
 function checkallies() {
-	// Depending on the type of blessing there's a limit on allies (for preblessed we do the opposite)
-	if (selectblessings.disabled == true) {
-		var max = (["5", "6", "7", "8"].includes(blessing)) ? 3 : 6;
+	blessing = parseInt(selectblessings.value)
+	// Depending on the type of blessing there's a limit on allies (for preblessed we do the opposite). Unlike on the reblessed function right here we hardcode the AR max value to the defense with extra slot and later offset the individual value of each hero inside the checks
+	if (other["blessed"][selectheroes.value]) {
+		var max = [5, 6, 7, 8].includes(blessing) ? 3 : 6;
 	} else {
-		var max = (["5", "6", "7", "8"].includes(blessing)) ? 6 : 3;
+		var max = [5, 6, 7, 8].includes(blessing) ? 6 : 3;
 	}
-	// Detect the amount and the blessings of the allies currently deployed
+	// Detect the amount and the blessings of the allies currently deployed and wheter they unlocked the bonusslot already or not
 	allies = 0;
-	blessings = []
+	blessings = [];
+	bonus = false;
 	for (i = 0; i < selectallies.selectedOptions.length; i++) {
 		values = selectallies.selectedOptions[i].value.split(';')
+		properties = other["blessed"][values[0]]
 		allies += parseInt(values[1])
-		if (!blessings.includes(values[2])) {
-			blessings.push(values[2])
+		if (!blessings.includes(properties["blessing"])) {
+			blessings.push(properties["blessing"])
+		}
+		if (properties["variant"].includes("extrae")) {
+			bonus = true;
 		}
 	}
 	remaining = max - allies
@@ -343,21 +345,29 @@ function checkallies() {
 	for (i = 0; i < selectallies.options.length; i++) {
 		// Ignore entries that are already selected
 		if (!selectallies.options[i].selected) {
+			// Get the properties for the hero
+			properties = other["blessed"][selectallies.options[i].value.split(";")[0]]
+			// This offset basically fixes the amount of copies we are allowed for this particular ally after we pressumed max team a few lines ago
+			// We add one if the blessing of the hero is offensive (Light/Astra) and another if the hero doesn't enable the extra slot
+			offset = 0
+			if ([5, 6, 7, 8].includes(properties["blessing"])) {
+				offset += properties["variant"].includes("extrae") || bonus ? 0 : 1;
+				offset += [5, 7].includes(properties["blessing"]) ? 1 : 0;
+			}
 			// Disable the entry if the associated multiplier is too big to be selected later
-			if (parseInt(selectallies.options[i].value.split(";")[1]) > remaining) {
+			if ((parseInt(selectallies.options[i].value.split(";")[1]) + offset) > remaining) {
 				selectallies.options[i].disabled = true;
 			// Otherwise enable it
 			} else {
 				selectallies.options[i].disabled = false;
 			}
-			// Preblessed have different rules
+			// Preblessed have additional rules
 			if (selectblessings.disabled == true) {
-				bless = selectallies.options[i].value.split(";")[2]
 				// For mythics if the amount of blessings reached 2 and the blessing for this option is not already selected we disable all of them (seasons only have two)
-				if (parseInt(selectblessings.value) > 4 && blessings.length == 2 && !blessings.includes(bless)) {
+				if (parseInt(selectblessings.value) > 4 && blessings.length == 2 && !blessings.includes(properties["blessing"])) {
 					selectallies.options[i].disabled = true;
 				// For legendaries we disable "opposite" blessings if one is already selected (we can't get dark and light blessings on anima/astra season)
-				} else if ((blessings.some(r=> ["6","7"].includes(r)) && ["4","5"].includes(bless)) || (blessings.some(r=> ["4","5"].includes(r)) && ["6","7"].includes(bless))) {
+				} else if ((blessings.some(r=> [6,7].includes(r)) && [4,5].includes(properties["blessing"])) || (blessings.some(r=> [4,5].includes(r)) && [6,7].includes(properties["blessing"]))) {
 					selectallies.options[i].disabled = true;
 				}
 			}
