@@ -85,7 +85,10 @@ def herosanitization(heroes, skills, languages, blessed, name, args):
 			hero[prop] = value if value in ["Portrait", "Attack", "Special", "Damage"] else "Portrait"
 		# If offset valie is not provided default to 0, if provided but not a valid digit default to 0, if valid but above 300 default to 300, anything else should be fine
 		elif prop in ["offsetY", "offsetX"]:
-			hero[prop] = 0 if not value else (0 if not value.isdigit() else (300 if int(value) > 300 else int(value)))
+			try:
+				hero[prop] = -300 if int(value) < -300 else (300 if int(value) > 300 else int(value))
+			except:
+				hero[prop] = 0
 		# For favorite marks if it's a strig numeric from 1 to 8
 		elif prop == "favorite":
 			hero[prop] = int(value) if value in ["1", "2", "3", "4", "5", "6", "7", "8"] else 0
