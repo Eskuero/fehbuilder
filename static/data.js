@@ -60,6 +60,11 @@ $(document).ready(function() {
 	});
 });
 
+// FIXME: Workaround for https://github.com/select2/select2/issues/5993 when using JQuery 3.6
+$(document).on("select2:open", () => {
+	document.querySelector(".select2-container--open .select2-search__field").focus()
+})
+
 // Fetch all data from each json
 fetch('litelanguages.json')
 	.then(res => res.json())
