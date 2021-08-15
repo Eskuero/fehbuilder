@@ -39,6 +39,7 @@ appui = document.getElementById('appui');
 // Where we show the image
 var canvas = document.getElementById('fakecanvas');
 
+// This makes sure dropdown options have their classes carried over (we need it to color basekit)
 function copyClassesToSelect2(data, container) {
 	if (data.element) {
 		$(container).addClass($(data.element).attr("class"));
@@ -46,18 +47,18 @@ function copyClassesToSelect2(data, container) {
 	return data.text;
 }
 
+// Once the document is ready initiate the selects with their required
 $(document).ready(function() {
-	// Do not apply the boostrap theme on the multiselect it looks real broken
-	$('.s2-select:not(#allies)').select2({
-		templateResult: copyClassesToSelect2
+	$('.s2-select').select2({
+		templateResult: copyClassesToSelect2,
+		width: '100%'
 	});
-	$('#allies').select2({});
+	// For small selects do not enable the search box
 	$(".s2-select-without-search").select2({
-		minimumResultsForSearch: Infinity
+		minimumResultsForSearch: Infinity,
+		width: '100%'
 	});
 });
-
-$('.select2-search').select2('open');
 
 // Fetch all data from each json
 fetch('litelanguages.json')
@@ -503,11 +504,5 @@ function slotname() {
 }
 
 function statictranslations() {
-	document.getElementById("atk").previousSibling.previousSibling.innerHTML = languages[selectlanguage.value]["MID_ATTACK"];
-	document.getElementById("spd").previousSibling.previousSibling.innerHTML = languages[selectlanguage.value]["MID_AGILITY"];
-	document.getElementById("def").previousSibling.previousSibling.innerHTML = languages[selectlanguage.value]["MID_DEFENSE"];
-	document.getElementById("res").previousSibling.previousSibling.innerHTML = languages[selectlanguage.value]["MID_RESIST"];
-	document.getElementById("sp").previousSibling.previousSibling.innerHTML = languages[selectlanguage.value]["MID_SKILL_POINT"] + ":";
-	document.getElementById("hm").previousSibling.previousSibling.innerHTML = languages[selectlanguage.value]["MID_HEROISM_POINT"] + ":";
 	slotname();
 }
