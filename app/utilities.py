@@ -20,9 +20,9 @@ def herosanitization(heroes, skills, languages, blessed, name, args):
 		# If merges are not provided default to 0, if provided but not a valid digit default to 0, if valid but above 10 default to 10, anything else should be fine
 		elif prop == "merges":
 			hero[prop] = 0 if not value else (0 if not value.isdigit() else (10 if int(value) > 10 else int(value)))
-		# If flowers are not provided default to 0, if provided but not a valid digit default to 0, if valid but above 15 default to 15, anything else should be fine
+		# If flowers are not provided default to 0, if provided but not a valid digit default to 0, if valid but above 20 default to 20, anything else should be fine
 		elif prop == "flowers":
-			hero[prop] = 0 if not value else (0 if not value.isdigit() else (15 if int(value) > 15 else int(value)))
+			hero[prop] = 0 if not value else (0 if not value.isdigit() else (20 if int(value) > 20 else int(value)))
 		# Transformed beast can only be yes or no
 		elif prop == "beast":
 			hero[prop] = True if value == "yes" else False

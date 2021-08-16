@@ -385,7 +385,7 @@ function updatedragonflowers() {
 	// Get current value to restore it back if possible
 	previousvalue = selectflowers.value
 	// Default for cheating mode is 15
-	flowers = 15;
+	flowers = 20;
 	// First delete them all except the 0 element
 	while (selectflowers.lastChild && selectflowers.childElementCount > 1) {
 		selectflowers.removeChild(selectflowers.lastChild);
