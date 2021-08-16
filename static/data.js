@@ -47,10 +47,40 @@ function copyClassesToSelect2(data, container) {
 	return data.text;
 }
 
+// Custom matcher for search results filtering
+function matchCustom(params, data) {
+	// If there are no search terms, return all of the data
+	if ($.trim(params.term) === '') {
+	return data;
+	}
+
+	// Do not display the item if there is no 'text' property
+	if (typeof data.text === 'undefined') {
+		return null;
+	}
+
+	// `params.term` should be the term that is used for searching
+	// `data.text` is the text that is displayed for the data object
+	if (data.text.toUpperCase().replace("'","").indexOf(params.term.toUpperCase().replace("'","")) > -1) {
+		return data;
+	}
+
+	// If the particular PID for the option is a duo with defined keywords check if any of them match the search
+	if (other["duokeywords"][data.id]) {
+		if (other["duokeywords"][data.id].toUpperCase().indexOf(params.term.toUpperCase()) > -1) {
+			return data;
+		}
+	}
+
+	// Return `null` if the term should not be displayed
+	return null;
+}
+
 // Once the document is ready initiate the selects with their required
 $(document).ready(function() {
 	$('.s2-select').select2({
 		templateResult: copyClassesToSelect2,
+		matcher: matchCustom,
 		width: '100%'
 	});
 	// For small selects do not enable the search box
