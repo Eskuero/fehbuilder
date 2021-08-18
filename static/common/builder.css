@@ -1,5 +1,5 @@
 body {
-	background-image: url("assets/BG_Brave.png");
+	background-image: url("/common/assets/BG_Brave.png");
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
@@ -103,17 +103,11 @@ body {
 #unitslot > button:not(:last-child) {
 	border-right: 1px solid white;
 }
-#unitslot > button:hover, .generatebutton:hover {
+#unitslot > button:hover {
 	color: #fff;
 	background-color: #0069d9;
 	border-color: #0062cc;
 	cursor: pointer;
-}
-.generatebutton {
-	width: auto;
-	height: 2.5em;
-	border-radius: 0.3em;
-	padding: 0 1em 0 1em;
 }
 
 .row-property {

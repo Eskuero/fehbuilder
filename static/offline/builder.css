@@ -1,0 +1,12 @@
+.generatebutton:hover {
+	color: #fff;
+	background-color: #0069d9;
+	border-color: #0062cc;
+	cursor: pointer;
+}
+.generatebutton {
+	width: auto;
+	height: 2.5em;
+	border-radius: 0.3em;
+	padding: 0 1em 0 1em;
+}

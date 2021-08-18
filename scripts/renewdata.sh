@@ -12,5 +12,4 @@ PYTHONUNBUFFERED=1 python3 units.py >> fehupdate-$date.log 2>&1
 echo -e "\nParsing other data... ($(date +"%Y-%m-%d-%H-%M-%S"))" >> fehupdate-$date.log 2>&1
 PYTHONUNBUFFERED=1 python3 other.py >> fehupdate-$date.log 2>&1
 echo -e "\nCopying outputs to their final destination... ($(date +"%Y-%m-%d-%H-%M-%S"))" >> fehupdate-$date.log 2>&1
-mv full*.json ../data/;
-mv lite*.json ../static/;
+mv *.json ../data/;
