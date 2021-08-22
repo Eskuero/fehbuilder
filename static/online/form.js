@@ -17,6 +17,8 @@ fetch('/common/data/fulllanguages.json')
 			.then((out) => {
 				// We store the skills for basic checks within the browser
 				skills = out;
+				// We need to have all skills available as a whole in case we use cheat seals
+				allpassives = Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"])
 				populateall();
 		}).catch(err => console.error(err));
 }).catch(err => console.error(err));
@@ -158,7 +160,7 @@ async function reload() {
 	for (const [category, skill] of Object.entries(passives)) {
 		if (skill) {
 			statsmodifier = statsmodifier.map(function (value, index) {
-				return value + skills["passives"][category][skill]["statModifiers"][index];
+				return value + allpassives[skill]["statModifiers"][index];
 			});
 		}
 	}
@@ -314,7 +316,6 @@ async function reload() {
 	preview.strokeText(assist, 420, 854); preview.fillText(assist, 420, 854);
 	preview.strokeText(special, 420, 904); preview.fillText(special, 420, 904);
 
-	allpassives = Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"])
 	// Render all the passives
 	for (const [category, skill] of Object.entries(passives)) {
 		name = "-"
