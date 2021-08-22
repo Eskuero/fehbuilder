@@ -51,23 +51,26 @@ function copyClassesToSelect2(data, container) {
 function matchCustom(params, data) {
 	// If there are no search terms, return all of the data
 	if ($.trim(params.term) === '') {
-	return data;
+		return data;
 	}
-
-	// Do not display the item if there is no 'text' property
-	if (typeof data.text === 'undefined') {
+	// Do not display the item if there if the entry is null
+	if (typeof data === 'undefined') {
 		return null;
 	}
 
-	// `params.term` should be the term that is used for searching
-	// `data.text` is the text that is displayed for the data object
-	if (data.text.toUpperCase().replace("'","").indexOf(params.term.toUpperCase().replace("'","")) > -1) {
+	// This is the entry we are checking
+	entry = data.text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().replace("'","");
+	// This is the search string we are using
+	search = params.term.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().replace("'","");
+
+	// Check if the search string exists within a certain entry
+	if (entry.indexOf(search) > -1) {
 		return data;
 	}
 
 	// If the particular PID for the option is a duo with defined keywords check if any of them match the search
 	if (other["duokeywords"][data.id]) {
-		if (other["duokeywords"][data.id].toUpperCase().indexOf(params.term.toUpperCase()) > -1) {
+		if (other["duokeywords"][data.id].toUpperCase().indexOf(search) > -1) {
 			return data;
 		}
 	}
