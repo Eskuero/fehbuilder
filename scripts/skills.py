@@ -1,5 +1,4 @@
 import json
-import utils
 import os
 
 # We store all the data in a single dict
@@ -16,23 +15,6 @@ skills = {
 }
 categories = [skills["weapons"], skills["assists"], skills["specials"], skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"]]
 refines = {}
-
-# Obtain the whole list of names for the passives to be able to retrieve the icon urls
-with open("fulllanguages.json", "r") as datasource:
-	engrishname = json.load(datasource)["USEN"]
-
-# Obtain the whole list of icons for the passives in case we hit an old skill/passive that doesn't follow expected rules (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=TagID,Icon&where=Scategory+in+(%27passivea%27,%27passiveb%27,%27passivec%27,%27sacredseal%27)+OR+RefinePath=%27skill1%27&limit=max&offset=0&format=json)
-params = dict(
-	action = 'cargoquery', limit = 'max', offset = -500, format = 'json',
-	tables = 'Skills',
-	fields = "TagID,Icon",
-	where = "Scategory in ('passivea', 'passiveb', 'passivec', 'sacredseal') OR RefinePath = 'skill1'"
-)
-# Store a relation of TagID to Icon for each skill
-passiveicons = {
-	entry["TagID"]: entry["Icon"]
-	for entry in [entry["title"] for entry in utils.retrieveapidata(params)]
-}
 
 # Get all the files that contain skill definitions and loop through them
 files = os.listdir("feh-assets-json/files/assets/Common/SRPG/Skill/")
@@ -56,9 +38,6 @@ for file in files:
 				if entry["category"] == 0:
 					skills["weapons"][entry["id_tag"]]["statModifiers"][1] += entry["might"]
 					skills["weapons"][entry["id_tag"]]["refines"] = {}
-				if entry["category"] in [3, 4, 5, 6]:
-					# Check if the skill is in the list reported by the wiki to obtain the true URL for the icon if so
-					categories[entry["category"]][entry["id_tag"]]["icon"] = engrishname["M" + entry["id_tag"]] + ".png"
 
 			# For refines we just store them separetely for later processing
 			elif entry["refine_base"]:
@@ -67,29 +46,9 @@ for file in files:
 					"statModifiers": [value for value in entry["stats"].values()],
 				}
 				refines[entry["id_tag"]]["statModifiers"][1] += entry["might"]
-				# If there's a refine ID this means is an special effect refine and we might need custom icons and effectids
+				# If there's a refine ID this means is an special effect refine and we might need effectids
 				if entry["refine_id"] not in [None, "SID_神罰の杖3", "SID_幻惑の杖3"]:
 					refines[entry["id_tag"]]["effectid"] = entry["refine_id"]
-					refines[entry["id_tag"]]["icon"] = engrishname["M" + entry["refine_base"]] + "_W.png"
-
-# Loop through every category individually and obtain icons
-categories = [skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"], refines]
-# We must loop through ordered dictionaries to be able to obtain
-for category in categories:
-	sortedcategory = [entry for entry in sorted(category) if category[entry].get("icon", False)]
-	# We can only query 50 items every time
-	offset = 0
-	while offset < len(sortedcategory):
-		icons = []
-		for entry in sortedcategory[offset:offset+50]:
-			icons.append(category[entry]["icon"])
-		# Save all urls in their respective positions
-		for i, url in enumerate(utils.obtaintrueurl(icons)):
-			# If url failed to generate by using the expected filename try grabbing it from the cargo table whenever available
-			if not url and sortedcategory[offset:offset+50][i] in passiveicons:
-				url = utils.obtaintrueurl([passiveicons[sortedcategory[offset:offset+50][i]]])[0]
-			category[sortedcategory[offset:offset+50][i]]["icon"] = url
-		offset += 50
 
 refinenames = {"神": "Wrathful", "幻": "Dazzling", "ATK": "Atk", "AGI": "Spd", "DEF": "Def", "RES": "Res"}
 # For each refine defined update the original weapon info
@@ -101,11 +60,10 @@ for refinable in refines:
 	skills["weapons"][refines[refinable]["baseWeapon"]]["refines"][refine] = {
 		"statModifiers": refines[refinable]["statModifiers"]
 	}
-	# For Effect refines we have icons and skill references
+	# For Effect refines we have skill references
 	if refine == "Effect":
 		skills["weapons"][refines[refinable]["baseWeapon"]]["refines"][refine].update({
-			"effectid": refines[refinable]["effectid"],
-			"icon": refines[refinable]["icon"]
+			"effectid": refines[refinable]["effectid"]
 		})
 
 # Complete seals data by getting which skills are available to buy and copying their counterparts data (except for the isMax setting, which depends on if it's the last seal of it's line)
@@ -124,7 +82,7 @@ for file in files:
 with open("fullskills.json", "w") as outfile:
     json.dump(skills, outfile)
 
-# Smaller version for browser usage
+# Smaller version for offline wiki builder
 skillslite = {
 	"weapons": {
 		weaponname: {

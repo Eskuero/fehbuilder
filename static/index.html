@@ -7,7 +7,7 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu" integrity="sha512-DrLGo7+nxWOBiDzilsojuvovhDumBmh28v3MzWVvxjR+dKipbfHGHHIc+jdafxq6tilSdk/HwzvgMShLs9ZkxQ==" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu" crossorigin="anonymous" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" crossorigin="anonymous">
 
 		<style>
@@ -18,7 +18,7 @@
 				scrollbar-width: none;
 			}
 			body {
-				background-image: url("/common/assets/BG_Brave.png");
+				background-image: url("/common/assets/BG_Brave.webp");
 				background-position: center;
 				background-attachment: fixed;
 				background-size: cover;
@@ -65,18 +65,35 @@
 			li {
 				list-style-position: inside;
 			}
+			.separator {
+				background-color: white;
+				width: 100%;
+				height: 0.1em;
+			}
 		</style>
 		<link rel="shortcut icon" href="/common/assets/Feh.png" />
 	</head>
 	<body>
 		<div class="options">
-			<a href="offline">
+			<a href="/online/">
+				<span class="material-icons">cloud_queue</span>
+				<div>
+					<h3>Online Unit Builder</h3>
+					<li>Faster: Renders in your browser.</li>
+					<li>Less data: Only downloads needed images.</li>
+					<li>Regenerates on every change.</li>
+					<li>Could run into visual glitches.</li>
+				</div>
+			</a>
+			<div class="separator"></div>
+			<a href="/offline/">
 				<span class="material-icons">cloud_off</span>
 				<div>
 					<h3>Offline Unit Builder</h3>
-					<li>Uses cached images to create your unit in the server.</li>
+					<li>Slower: Renders in the server.</li>
+					<li>Heavier: Downloads a ~2.5MB image everytime.</li>
 					<li>Regenerates pressing a button.</li>
-					<li>Slower but work regardless of wiki status.</li>
+					<li>Well defined pipeline that rarely has glitches.</li>
 				</div>
 			</a>
 		</div>

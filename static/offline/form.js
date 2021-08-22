@@ -42,3 +42,32 @@ function reload(scroll = true) {
 		window.scrollTo(0, 0);
 	}
 }
+
+function updateRefine() {
+	// Get current value to restore it back if possible
+	previousvalue = selectrefines.value
+	weapon = selectweapons.value
+
+	// Clear all children on the refine select first
+	while (selectrefines.lastChild) {
+		selectrefines.removeChild(selectrefines.lastChild);
+	}
+	// Always add the None option with it's proper translation
+	var opt = document.createElement('option');
+	opt.value = "None";
+	opt.innerHTML = languages[selectlanguage.value]["MSID_H_NONE"];
+	selectrefines.appendChild(opt);
+	if (weapon == "None") {
+		return;
+	}
+	for (i = 0; i < skills["weapons"][weapon]["refines"].length; i++) {
+		var opt = document.createElement('option');
+		opt.value = skills["weapons"][weapon]["refines"][i];
+		opt.innerHTML = skills["weapons"][weapon]["refines"][i];
+		selectrefines.appendChild(opt);
+	}
+	// Restore the previous value if it's available on the updated select
+	if ([...selectrefines.options].map(opt => opt.value).includes(previousvalue)) {
+		selectrefines.value = previousvalue;
+	}
+}

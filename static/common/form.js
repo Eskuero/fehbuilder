@@ -83,17 +83,12 @@ $(document).ready(function() {
 		matcher: matchCustom,
 		width: '100%'
 	});
-	// For small selects do not enable the search box
-	$(".s2-select-without-search").select2({
-		minimumResultsForSearch: Infinity,
-		width: '100%'
-	});
 });
 
 // FIXME: Workaround for https://github.com/select2/select2/issues/5993 when using JQuery 3.6
 $(document).on("select2:open", () => {
 	document.querySelector(".select2-container--open .select2-search__field").focus()
-})
+});
 
 function populateall(clean) {
 	// We go through all the selects
@@ -231,7 +226,6 @@ function beastcheck() {
 	if (![20, 21, 22, 23].includes(weapontype)) {
 		selectbeast.value = "no";
 		selectbeast.disabled = true;
-		selectbeast.dispatchEvent(new Event('change'));
 	} else {
 		selectbeast.disabled = false;
 	}
@@ -242,7 +236,6 @@ function validblessing() {
 	if (other["blessed"][selectheroes.value]) {
 		selectblessings.value = other["blessed"][selectheroes.value]["blessing"];
 		selectblessings.disabled = true;
-		selectblessings.dispatchEvent(new Event('change'));
 		return;
 	// If we didn't found a match make sure the blessing select gets unlocked
 	} else {
@@ -391,35 +384,6 @@ function updatedragonflowers() {
 	}
 }
 
-function updateRefine() {
-	// Get current value to restore it back if possible
-	previousvalue = selectrefines.value
-	weapon = selectweapons.value
-
-	// Clear all children on the refine select first
-	while (selectrefines.lastChild) {
-		selectrefines.removeChild(selectrefines.lastChild);
-	}
-	// Always add the None option with it's proper translation
-	var opt = document.createElement('option');
-	opt.value = "None";
-	opt.innerHTML = languages[selectlanguage.value]["MSID_H_NONE"];
-	selectrefines.appendChild(opt);
-	if (weapon == "None") {
-		return;
-	}
-	for (i = 0; i < skills["weapons"][weapon]["refines"].length; i++) {
-		var opt = document.createElement('option');
-		opt.value = skills["weapons"][weapon]["refines"][i];
-		opt.innerHTML = skills["weapons"][weapon]["refines"][i];
-		selectrefines.appendChild(opt);
-	}
-	// Restore the previous value if it's available on the updated select
-	if ([...selectrefines.options].map(opt => opt.value).includes(previousvalue)) {
-		selectrefines.value = previousvalue;
-	}
-}
-
 // Data for each build slot
 builds = [
 	["None", false, true, "USEN", "None", "None", [],"5","0","0","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0",9999,7000,"Portrait","0","0","1","None", true],
@@ -459,26 +423,26 @@ function switchbuild(build) {
 	cheats.checked = builds[buildslot][1];
 	bestskills.checked = builds[buildslot][2];
 	selectlanguage.value = builds[buildslot][3];
-	// Trigger a rebuild of the selects based on the filters set
-	selectlanguage.dispatchEvent(new Event('change'));
+	// Trigger a rebuild of the selects based on the language filters set
+	populate(selectheroes, units, true, true); populateall(false); statictranslations();
 	// Trigger a rebuild of the refine select based on the selection of weapon
 	selectweapons.value = builds[buildslot][4];
-	selectweapons.dispatchEvent(new Event('change'));
+	updateRefine();
 	// Trigger a rebuild of the allies select based on the selection of blessing
 	selectblessings.value = builds[buildslot][5];
-	selectblessings.dispatchEvent(new Event('change'));
+	reblessed();
 	for (i = 0; i < selectallies.options.length; i++) {
 		if (builds[buildslot][6].includes(selectallies.options[i].value)) {
 			selectallies.options[i].selected = true;
 		}
 	}
-	selectallies.dispatchEvent(new Event('change'));
+	checkallies();
 	// Now restore the rest of the data
 	for (i = 0; i < selects.length; i++) {
 		if (selects[i].type == "checkbox") {
 			selects[i].checked = builds[buildslot][i+7];
 		} else {
-			$('#'+selects[i].id).val(builds[buildslot][i+7]).trigger('change');
+			$('#'+selects[i].id).val(builds[buildslot][i+7]);
 		}
 	}
 	// Reload the image

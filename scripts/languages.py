@@ -34,7 +34,7 @@ for language in languages:
 with open("fulllanguages.json", "w") as outfile:
     json.dump(languages, outfile)
 
-# Smaller version for browser usage
+# Smaller version for offline wiki builder
 languageslite = {
 	language: {
 		key: string

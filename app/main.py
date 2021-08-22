@@ -1,6 +1,5 @@
 import flask
 from PIL import Image, ImageDraw, ImageFont
-import requests
 import io
 import json
 import pathlib
@@ -56,21 +55,14 @@ def getimage():
 		canvas.paste(bg, (-173, 0), bg)
 
 		# Decide on the filename we will use to save and retrieve this particular hero and pose
-		filename = name + ("_Resplendent_" + hero["artstyle"] + ".webp" if hero["attire"] == "Resplendent" and heroes[name]["resplendentart"][hero["artstyle"]] else "_" + hero["artstyle"] + ".webp")
-		# Check if the heroes art is already in the temporal folder for speeding up requests from the wiki
+		filename = name + ("_Resplendent_" + hero["artstyle"] + ".webp" if hero["attire"] == "Resplendent" else "_" + hero["artstyle"] + ".webp")
+		# Check if the heroes art is already downloaded
 		if (pathlib.Path("../data/img/heroes/" + filename).is_file()):
 			art = Image.open("../data/img/heroes/" + filename)
 		else:
-			# Grab and paste the heroes art in the image
-			try:
-				# Decide the art to download, even if the user choose resplendent we make sure art for it exists or fallback to the normal instead
-				heroart = heroes[name]["resplendentart"][hero["artstyle"]] if hero["attire"] == "Resplendent" and heroes[name]["resplendentart"][hero["artstyle"]] else heroes[name]["art"][hero["artstyle"]]
-				response = requests.get(heroart)
-				art = Image.open(io.BytesIO(response.content)).resize((1330, 1596))
-				art.save("../data/img/heroes/" + filename, 'WEBP')
-			# If anything went wrong on downloading and parsing the image fall back to an error one
-			except:
-				art = Image.open("../data/img/base/missigno.png")
+			# Something went wrong opening the art file, fallback to missigno
+			art = Image.open("../data/img/base/missigno.png")
+			print("Failed to load art for " + name)
 		canvas.paste(art, (-305 + hero["offsetX"], 0 - hero["offsetY"]), art)
 
 		# Paste the foregroud UI
@@ -202,17 +194,10 @@ def getimage():
 			icon = "other/" + hero["refine"] + "-Refine.png" if hero["refine"] in ["Atk", "Spd", "Def", "Res", "Wrathful", "Dazzling"] else "other/weapon-Refine.png"
 			# If the icon is an special effect we might have to download it
 			if hero["refine"] == "Effect" and "Effect" in skills["weapons"][hero["weapon"]]["refines"]:
-				# Check if the heroes art is already in the temporal folder for speeding up requests from the wiki
+				# Check if the heroes art is already in the temporal folder
 				if not (pathlib.Path("../data/img/icons/" + hero["weapon"] + "-Effect.png").is_file()):
-					# Download, resize and cache the special effect refine picture
-					try:
-						response = requests.get(skills["weapons"][hero["weapon"]]["refines"]["Effect"]["icon"])
-						art = Image.open(io.BytesIO(response.content)).resize((44, 44))
-						art.save("../data/img/icons/" + hero["weapon"] + "-Effect.png", 'PNG')
-						icon = "icons/" + hero["weapon"] + "-Effect.png"
-					# Something went wrong downloading the icon (maybe wiki down, maybe invalid data, just report on the log and show the default icon)
-					except:
-						print("Something went wrong downloading special refine icon for " + hero["weapon"])
+					# Something went wrong reading the icon (maybe wiki was down while refreshing)
+					print("Failed to load special refine icon for " + hero["weapon"])
 				else:
 					icon = "icons/" + hero["weapon"] + "-Effect.png"
 			weaponicon = Image.open("../data/img/" + icon)
@@ -236,22 +221,13 @@ def getimage():
 			if hero["passive" + category]:
 				# Decide on the name of the icon
 				iconname = hero["passive" + category] + ".png"
-				# Check if the icon art is already in the temporal folder for speeding up requests from the wiki
+				# Check if the icon art is already downloaded
 				if (pathlib.Path("../data/img/icons/" + iconname).is_file()):
 					art = Image.open("../data/img/icons/" + iconname)
 					canvas.paste(art, tuple(map(sum, zip(utilities.passiverender[category]["icon"], (-2, -2) if art.size[0] > 44 else (0, 0)))), art)
 				else:
-					# Download, resize and cache the picture
-					try:
-						response = requests.get(allpassives[hero["passive" + category]]["icon"])
-						art = Image.open(io.BytesIO(response.content))
-						# If the image size is bigger than 70 these are some tier 4 skills that have shiny borders and their icon must be scaled accordingly
-						art = art.resize((48, 48) if art.size[0] > 70 else (44, 44))
-						art.save("../data/img/icons/" + iconname, 'PNG')
-						canvas.paste(art, tuple(map(sum, zip(utilities.passiverender[category]["icon"], (-2, -2) if art.size[0] > 44 else (0, 0)))), art)
-					except:
-						# We failed to download the icon for this skill :(
-						print("Failed to download icon for " + hero["passive" + category])
+					# We failed to read the icon for this skill :(
+					print("Failed to load icon for " + hero["passive" + category])
 			# We always write the text because it might be a simple "-"
 			draw.text(utilities.passiverender[category]["text"], languages[hero["language"]]["M" + hero["passive" + category]] if hero["passive" + category] else "-", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 			# Print the category indicator

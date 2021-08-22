@@ -13,3 +13,6 @@ echo -e "\nParsing other data... ($(date +"%Y-%m-%d-%H-%M-%S"))" >> fehupdate-$d
 PYTHONUNBUFFERED=1 python3 other.py >> fehupdate-$date.log 2>&1
 echo -e "\nCopying outputs to their final destination... ($(date +"%Y-%m-%d-%H-%M-%S"))" >> fehupdate-$date.log 2>&1
 mv *.json ../data/;
+
+echo -e "\nDownloading missing assets... ($(date +"%Y-%m-%d-%H-%M-%S"))" >> fehupdate-$date.log 2>&1
+PYTHONUNBUFFERED=1 python3 downloadassets.py >> fehupdate-$date.log 2>&1
