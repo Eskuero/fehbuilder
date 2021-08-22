@@ -55,7 +55,7 @@ def getimage():
 		canvas.paste(bg, (-173, 0), bg)
 
 		# Decide on the filename we will use to save and retrieve this particular hero and pose
-		filename = name + ("_Resplendent_" + hero["artstyle"] + ".webp" if hero["attire"] == "Resplendent" else "_" + hero["artstyle"] + ".webp")
+		filename = name + ("_Resplendent_" + hero["artstyle"] + ".webp" if hero["attire"] == "Resplendent" and languages[hero["language"]].get(hero["name"].replace("PID", "MPID_VOICE") + "EX01", False) else "_" + hero["artstyle"] + ".webp")
 		# Check if the heroes art is already downloaded
 		if (pathlib.Path("../data/img/heroes/" + filename).is_file()):
 			art = Image.open("../data/img/heroes/" + filename)
@@ -87,7 +87,7 @@ def getimage():
 		if hero["appui"]:
 			font = ImageFont.truetype("../data/" + config["fontfile"], 21)
 			# If the hero is truly a resplendent one we might have data for it
-			if hero["attire"] == "Resplendent" and heroes[name]["resplendentart"]["Portrait"]:
+			if hero["attire"] == "Resplendent" and languages[hero["language"]].get(hero["name"].replace("PID", "MPID_VOICE") + "EX01", False):
 				# Add a fallback to original actor if none is provided because that means they didn't change it
 				draw.text((47, 1212), languages[hero["language"]][hero["name"].replace("PID", "MPID_VOICE") + "EX01"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 				draw.text((47, 1241), languages[hero["language"]][hero["name"].replace("PID", "MPID_ILLUST") + "EX01"], font=font, fill="#ffffff",stroke_width=3, stroke_fill="#0a2533")

@@ -100,7 +100,7 @@ async function reload() {
 	if (appui.checked) {
 		preview.fillStyle = 'white'; preview.strokeStyle = '#0a2533'; preview.textAlign = 'start'; preview.textBaseline = "top"; preview.font = '21px FeH-Font'; preview.lineWidth = 6;
 		// If the hero is truly a resplendent one we might have data for it
-		if (selectattire.value == "Resplendent" && units[hero]["resplendentart"]["Portrait"]) {
+		if (selectattire.value == "Resplendent" && languages[language][hero.replace("PID", "MPID_VOICE") + "EX01"]) {
 			voice = languages[language][hero.replace("PID", "MPID_VOICE") + "EX01"];
 			artist = languages[language][hero.replace("PID", "MPID_ILLUST") + "EX01"];
 		} else {
