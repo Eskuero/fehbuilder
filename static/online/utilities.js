@@ -110,8 +110,6 @@ function dictsort(dictionary) {
 }
 
 function weaponmodifiers(weapon, refine) {
-	// Merge allpasives together for ease of wide checks
-	allpassives = Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"])
 	// Retrieve weapon data
 	weapon = skills["weapons"][weapon];
 	stats = [0, 0, 0, 0, 0]
