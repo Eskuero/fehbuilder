@@ -97,13 +97,6 @@ function matchCustom(params, data) {
 		return data;
 	}
 
-	// If the particular PID for the option is a duo with defined keywords check if any of them match the search
-	if (other["duokeywords"][data.id]) {
-		if (other["duokeywords"][data.id].toUpperCase().indexOf(search) > -1) {
-			return data;
-		}
-	}
-
 	// Return `null` if the term should not be displayed
 	return null;
 }
