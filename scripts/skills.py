@@ -111,7 +111,7 @@ with open("liteskills.json", "w") as outfile:
 skillscustom = {
 	"weapons": {
 		weaponname: {
-			property: [item for item in value] if property == "refines" else value
+			property: value
 			for property, value in properties.items() if property in ["WeaponType", "moveType", "statModifiers", "isMax", "refines"]
 		} 
 		for weaponname, properties in skills["weapons"].items()
