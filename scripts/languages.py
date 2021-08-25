@@ -1,6 +1,10 @@
 import json
 import os
 
+# Obtain all blessed heroes to allow them in the customlanguages
+with open("fullother.json", "r") as datasource:
+	blessed = json.load(datasource)["blessed"]
+	
 # Big dictionary to store all translations (we're ignoring Spanish (US) and English (EU) as they are probably 99% identical to save same bandwidth)
 languages = {"EUDE": {}, "EUES": {}, "EUFR": {}, "EUIT": {}, "JPJA": {}, "TWZH": {}, "USEN": {}, "USPT": {}}
 
@@ -44,3 +48,15 @@ languageslite = {
 }
 with open("litelanguages.json", "w") as outfile:
     json.dump(languageslite, outfile)
+
+
+# Alternative version for custom unit builder
+languagescustom = {
+	language: {
+		key: string
+		for key, string in strings.items() if not any(substring in key for substring in ["PID", "EID"]) or key.replace("PID_HONOR", "PID").replace("MPID", "PID") in blessed
+	}
+	for language, strings in languages.items()
+}
+with open("customlanguages.json", "w") as outfile:
+    json.dump(languagescustom, outfile)

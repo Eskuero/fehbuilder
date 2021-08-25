@@ -46,6 +46,17 @@ def work():
 	with open("liteother.json", "w") as outfile:
 		json.dump(otherlite, outfile)
 
+	# Altenative version for custom unit builder
+	othercustom = {
+		"blessed": other["blessed"],
+		"duo": other["duo"],
+		"resonant": other["resonant"],
+		"images": images
+	}
+
+	with open("customother.json", "w") as outfile:
+		json.dump(othercustom, outfile)
+
 # We tie each PID with the names of the pairs for duo heroes
 duokeywords = {
 	"PID_\u6bd4\u7ffc\u30ea\u30fc\u30f4": "thrasir \u30b9\u30e9\u30b7\u30eb \u53f2\u83c8\u5e0c\u723e alfonse \u30a2\u30eb\u30d5\u30a9\u30f3\u30b9 \u963f\u723e\u99ae\u65af veronica \u30f4\u30a7\u30ed\u30cb\u30ab \u7dad\u6d1b\u59ae\u5361",

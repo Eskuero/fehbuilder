@@ -106,3 +106,28 @@ skillslite = {
 }
 with open("liteskills.json", "w") as outfile:
     json.dump(skillslite, outfile)
+
+# Altenative version for custom unit builder
+skillscustom = {
+	"weapons": {
+		weaponname: {
+			property: [item for item in value] if property == "refines" else value
+			for property, value in properties.items() if property in ["WeaponType", "moveType", "statModifiers", "isMax", "refines"]
+		} 
+		for weaponname, properties in skills["weapons"].items()
+    },
+	"assists": skills["assists"],
+	"specials": skills["specials"],
+	"passives": {
+		passivecategory: {
+			passive: {
+				property: value
+				for property, value in properties.items() if property in ["WeaponType", "moveType", "statModifiers", "isMax"]
+			} 
+			for passive, properties in skills["passives"][passivecategory].items()
+		}
+		for passivecategory in ["A", "B", "C", "S"]
+    }
+}
+with open("customskills.json", "w") as outfile:
+    json.dump(skillscustom, outfile)
