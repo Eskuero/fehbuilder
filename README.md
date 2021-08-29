@@ -60,6 +60,6 @@ location /get_image.png {
 }
 ```
 ## License
-All Python, Javascript, HTML and CSS code in this repository is licensed under GPL v3. You are free to modify and redistribute it as long as you provide the modified code to the users of your distribution. Please refer to the include LICENSE file for more details.
+All Python and Javascript code in this repository is licensed under AGPL v3. You are free to modify and redistribute it as long as you provide the modified code to the users you make it available to (either via distribution or over a network). Please refer to the include LICENSE file for more details.
 
 The Roboto font included is licensed by Google under Apache License, Version 2.0. Please refer to https://fonts.google.com/specimen/Roboto#license
