@@ -322,7 +322,7 @@ async function reload() {
 		});
 	}
 
-	blessing = selectblessings.value == "None" ? false : parseInt(selectblessings.value);
+	blessing = selectblessings.value == "None" ? false : selectblessings.value;
 	// X amount to additionally push each icon to the left
 	offsetX = 0;
 	// Detect if we are printing more than three icons (this could happen on duo/blessed/summoner supported allies) so we can resize accordingly
@@ -331,9 +331,7 @@ async function reload() {
 	width = needsresize ? 115 : 147; height = needsresize ? 125 : 160;
 	// If blessed print the icon
 	if (blessing) {
-		// If the hero is on the list of the blessed ones for that particular blessing it has icon variant defined (otherwise use the normal one)
-		variant = other["blessed"][hero] ? other["blessed"][hero]["variant"] : "normal";
-		blessingicon = other["images"]["blessing"][blessing-1][variant]
+		blessingicon = "/common/other/" + blessing + ".png";
 		await getimage(blessingicon).then(img => {
 			preview.drawImage(img, posX, posY, width, height);
 		});

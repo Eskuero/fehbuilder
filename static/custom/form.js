@@ -237,7 +237,7 @@ function reblessed() {
 		selectallies.disabled = true
 		return;
 	}
-	blessing = parseInt(selectblessings.value)
+	blessing = parseInt(selectblessings.value.split("-")[0])
 	// Make sure the allies select is enabled if arrvied here
 	selectallies.disabled = false
 	// All data to be printed
@@ -281,7 +281,7 @@ function reblessed() {
 }
 
 function checkallies() {
-	blessing = parseInt(selectblessings.value)
+	blessing = parseInt(selectblessings.value.split("-")[0])
 	// Depending on the type of blessing there's a limit on allies (for preblessed we do the opposite). Unlike on the reblessed function right here we hardcode the AR max value to the defense with extra slot and later offset the individual value of each hero inside the checks
 	if (other["blessed"][selecthero.value]) {
 		var max = [5, 6, 7, 8].includes(blessing) ? 3 : 6;
@@ -327,7 +327,7 @@ function checkallies() {
 			// Preblessed have additional rules
 			if (selectblessings.disabled == true) {
 				// For mythics if the amount of blessings reached 2 and the blessing for this option is not already selected we disable all of them (seasons only have two)
-				if (parseInt(selectblessings.value) > 4 && blessings.length == 2 && !blessings.includes(properties["blessing"])) {
+				if (blessing > 4 && blessings.length == 2 && !blessings.includes(properties["blessing"])) {
 					selectallies.options[i].disabled = true;
 				// For legendaries we disable "opposite" blessings if one is already selected (we can't get dark and light blessings on anima/astra season)
 				} else if ((blessings.some(r=> [6,7].includes(r)) && [4,5].includes(properties["blessing"])) || (blessings.some(r=> [4,5].includes(r)) && [6,7].includes(properties["blessing"]))) {
