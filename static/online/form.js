@@ -226,7 +226,11 @@ async function reload() {
 	];
 	// Add the normal visible buffs
 	statsmodifier = statsmodifier.map(function (value, index) {
-		return value + (value + buffs[index] >= 0 ? buffs[index] : - value);
+		// This is the value that we will have if we add the buffs
+		modifier = value + buffs[index];
+		// The stat cannot go beyond 99 or below 0
+		stat = -1 < modifier ? (modifier < 100 ? modifier : 99) : 0;
+		return stat;
 	});
 
 	// Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers). Also prevent to number from going below 0

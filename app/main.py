@@ -155,13 +155,17 @@ def getimage():
 			for ally in hero["allies"]:
 				# For each hero we add the visible buffs and multiply for the amount of that ally
 				statsmodifier = [x + (y*hero["allies"][ally]) for x,y in zip(statsmodifier, other["blessed"][ally]["boosts"])]
+		# Clean the stats to avoid overflowing beyond 99 or below 0
+		for i in range(len(statsmodifier)):
+			statsmodifier[i] = 0 if statsmodifier[i] < 0 else (99 if statsmodifier[i] > 99 else statsmodifier[i])
+
 		# Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers). Also prevent to number from going below 0
 		font = ImageFont.truetype("../data/" + config["fontfile"], 26)
-		draw.text((265, 805), "0" if statsmodifier[0] < 0 else str(statsmodifier[0]), font=font, anchor="ra", fill="#fffa96", stroke_width=3, stroke_fill="#0a2533")
-		draw.text((265, 854), "0" if statsmodifier[1] < 0 else str(statsmodifier[1]), font=font, anchor="ra", fill="#64e6f0" if hero["buffs"][1] > 0 else ("#ff506e" if hero["buffs"][1] < 0 else "#fffa96"), stroke_width=3, stroke_fill="#0a2533")
-		draw.text((265, 903), "0" if statsmodifier[2] < 0 else str(statsmodifier[2]), font=font, anchor="ra", fill="#64e6f0" if hero["buffs"][2] > 0 else ("#ff506e" if hero["buffs"][2] < 0 else "#fffa96"), stroke_width=3, stroke_fill="#0a2533")
-		draw.text((265, 953), "0" if statsmodifier[3] < 0 else str(statsmodifier[3]), font=font, anchor="ra", fill="#64e6f0" if hero["buffs"][3] > 0 else ("#ff506e" if hero["buffs"][3] < 0 else "#fffa96"), stroke_width=3, stroke_fill="#0a2533")
-		draw.text((265, 1002), "0" if statsmodifier[4] < 0 else str(statsmodifier[4]), font=font, anchor="ra", fill="#64e6f0" if hero["buffs"][4] > 0 else ("#ff506e" if hero["buffs"][4] < 0 else "#fffa96"), stroke_width=3, stroke_fill="#0a2533")
+		draw.text((265, 805), str(statsmodifier[0]), font=font, anchor="ra", fill="#fffa96", stroke_width=3, stroke_fill="#0a2533")
+		draw.text((265, 854), str(statsmodifier[1]), font=font, anchor="ra", fill="#64e6f0" if hero["buffs"][1] > 0 else ("#ff506e" if hero["buffs"][1] < 0 else "#fffa96"), stroke_width=3, stroke_fill="#0a2533")
+		draw.text((265, 903), str(statsmodifier[2]), font=font, anchor="ra", fill="#64e6f0" if hero["buffs"][2] > 0 else ("#ff506e" if hero["buffs"][2] < 0 else "#fffa96"), stroke_width=3, stroke_fill="#0a2533")
+		draw.text((265, 953), str(statsmodifier[3]), font=font, anchor="ra", fill="#64e6f0" if hero["buffs"][3] > 0 else ("#ff506e" if hero["buffs"][3] < 0 else "#fffa96"), stroke_width=3, stroke_fill="#0a2533")
+		draw.text((265, 1002), str(statsmodifier[4]), font=font, anchor="ra", fill="#64e6f0" if hero["buffs"][4] > 0 else ("#ff506e" if hero["buffs"][4] < 0 else "#fffa96"), stroke_width=3, stroke_fill="#0a2533")
 		# Print the amount of SP and HM
 		draw.text((265, 1052), str(hero["sp"]), font=font, anchor="ra", fill="#82f546" if hero["sp"] == 9999 else "#fffa96", stroke_width=3, stroke_fill="#0a2533")
 		draw.text((265, 1100), str(hero["hm"]), font=font, anchor="ra", fill="#82f546" if hero["hm"] == 7000 else "#fffa96", stroke_width=3, stroke_fill="#0a2533")

@@ -178,6 +178,13 @@ async function reload() {
 		});
 	}
 
+	// Patch the final numbers so they don't overdrawn below 0 and beyond 99
+	statsmodifier = statsmodifier.map(function (value, index) {
+		// The stat cannot go beyond 99 or below 0
+		stat = -1 < value ? (value < 100 ? value : 99) : 0;
+		return stat;
+	});
+
 	// Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers). Also prevent to number from going below 0
 	preview.font = 'bold 26px FeH-Font'; preview.textAlign = 'end'; preview.textBaseline = "top"; preview.strokeStyle = '#0a2533'; preview.fillStyle = "#fffa96";
 	// Each stat name is pushed down by 49 pixels with an initial offset of 805
