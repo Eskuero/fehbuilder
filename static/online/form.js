@@ -67,7 +67,7 @@ async function reload() {
 	if (hero) {
 		// If we selected Resplendent and it actually is a legit choose the art
 		attire = (selectattire.value == "Resplendent" && languages[language][hero.replace("PID", "MPID_VOICE") + "EX01"]) ? "_Resplendent_" : "_";
-		await getimage("../common/heroes/" + hero + attire + selectartstyle.value + ".webp", "/common/base/missigno.png").then(img => {
+		await getimage("../common/heroes/" + hero + attire + selectartstyle.value + ".webp", "/common/base/missigno.webp").then(img => {
 			preview.drawImage(img, -305 + parseInt(selectoffsetX.value), 0 - parseInt(selectoffsetY.value));
 		})
 	}
@@ -308,7 +308,7 @@ async function reload() {
 		weaponicon = ["Atk", "Spd", "Def", "Res", "Wrathful", "Dazzling"].includes(refine) ? other["images"]["refines"][refine] : other["images"]["other"]["noweapon"];
 		// If the icon is an special effect we might have to download it
 		if (refine == "Effect" && skills["weapons"][weapon]["refines"]["Effect"]) {
-			weaponicon = "../common/icons/" + weapon + "-Effect.png"
+			weaponicon = "../common/icons/" + weapon + "-Effect.webp"
 		}
 		await getimage(weaponicon).then(img => {
 			preview.drawImage(img, 370, 797, 44, 44);
@@ -338,7 +338,7 @@ async function reload() {
 		name = "-"
 		// If the passive doesn't exist skip
 		if (allpassives[skill]) {
-			await getimage("../common/icons/" + skill + ".png").then(img => {
+			await getimage("../common/icons/" + skill + ".webp").then(img => {
 				// If the image size is bigger than 44 these are some tier 4 skills that have shiny borders and their icon must be and offsetted accordingly
 				iconoffset = img.height > 44 ? -2 : 0;
 				preview.drawImage(img, passiverender[category]["icon"][0] + iconoffset, passiverender[category]["icon"][1] + iconoffset);
@@ -398,7 +398,7 @@ async function reload() {
 	}
 }
 
-async function getimage(url, fallback = "/common/base/oopsie.png") {
+async function getimage(url, fallback = "/common/base/oopsie.webp") {
 	// This premise will not return until the image has fully loaded
 	const imageLoadPromise = new Promise(resolve => {
 		img = new Image();

@@ -11,7 +11,7 @@
 
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" integrity="sha512-aD9ophpFQ61nFZP6hXYu4Q/b/USW7rpLCQLX6Bi0WJHXNO7Js/fUENpBQf/+P4NtpzNX0jSgR5zVvPOJp+W2Kg==" crossorigin="anonymous" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu" crossorigin="anonymous" />
-		<link rel="shortcut icon" href="/common/assets/Feh.png" />
+		<link rel="shortcut icon" href="/common/assets/Feh.webp" />
 
 	</head>
 	<body>
@@ -31,7 +31,7 @@
 						<input type="checkbox" class="checkbox-xl" id="bestskills" onChange="populateall(false)" checked>
 					</div>
 					<div style="display:flex;gap:1em">
-						<img class="imagelabel" src="/common/assets/language.png" title="Language"/>
+						<img class="imagelabel" src="/common/assets/language.webp" title="Language"/>
 						<select class="select-without-search" id="language" onChange="populateall(false);statictranslations();reload()">
 							<option value="USEN" selected>English</option>
 							<option value="EUDE">Deutsch</option>
@@ -48,13 +48,13 @@
 				<h2>Unit</h2>
 				<section>
 					<div class="row-property single">
-						<img class="imagelabel" src="/common/assets/kiran.png" title="Hero name and title"/>
+						<img class="imagelabel" src="/common/assets/kiran.webp" title="Hero name and title"/>
 						<div>
 							<input type="text" id="hero" onchange="reload()" onkeyup="reload()">
 						</div>
 					</div>
 					<div class="row-property double">
-						<img class="imagelabel" src="/common/assets/resplendent.png" title="Attire"/>
+						<img class="imagelabel" src="/common/assets/resplendent.webp" title="Attire"/>
 						<div>
 							<select class="select-without-search" onchange="reload()" id="attire">
 								<option value="Normal">Normal</option>
@@ -62,7 +62,7 @@
 								<option value="Stats-Only">Stats-Only</option>
 							</select>
 						</div>
-						<img class="imagelabel" src="/common/assets/summoner.png" title="Summoner Support"/>
+						<img class="imagelabel" src="/common/assets/summoner.webp" title="Summoner Support"/>
 						<div>
 							<select class="select-without-search" onchange="reload()" id="summoner">
 								<option value="None">No</option>
@@ -74,14 +74,14 @@
 						</div>
 					</div>
 					<div class="row-property double">
-						<img class="imagelabel" src="/common/assets/beasts.png" title="Beast transformation"/>
+						<img class="imagelabel" src="/common/assets/beasts.webp" title="Beast transformation"/>
 						<div>
 							<select class="select-without-search" onchange="reload()" id="beast">
 								<option value="no">No</option>
 								<option value="yes">Yes</option>
 							</select>
 						</div>
-						<img class="imagelabel" src="/common/assets/bonus.png" title="Bonus Unit" />
+						<img class="imagelabel" src="/common/assets/bonus.webp" title="Bonus Unit" />
 						<div>
 							<select class="select-without-search" onchange="reload()" id="bonusunit">
 								<option value="no">No</option>
@@ -106,7 +106,7 @@
 								<option value="10">10</option>
 							</select>
 						</div>
-						<img class="imagelabel" src="/common/assets/flower.png" title="Dragoflowers"/>
+						<img class="imagelabel" src="/common/assets/flower.webp" title="Dragoflowers"/>
 						<div>
 							<select class="select-without-search" onchange="reload()" id="flowers">
 								<option value="0">0</option>
@@ -134,7 +134,7 @@
 						</div>
 					</div>
 					<div class="row-property double">
-						<img class="imagelabel" src="/common/assets/boon.png" title="Boon"/>
+						<img class="imagelabel" src="/common/assets/boon.webp" title="Boon"/>
 						<div>
 							<select class="select-without-search" onchange="reload()" id="boons">
 								<option value="None">-</option>
@@ -145,7 +145,7 @@
 								<option value="Res">Res</option>
 							</select>
 						</div>
-						<img class="imagelabel" src="/common/assets/bane.png" title="Bane"/>
+						<img class="imagelabel" src="/common/assets/bane.webp" title="Bane"/>
 						<div>
 							<select class="select-without-search" onchange="reload()" id="banes">
 								<option value="None">-</option>
@@ -158,7 +158,7 @@
 						</div>
 					</div>
 					<div class="row-property double">
-						<img class="imagelabel" src="/common/other/0-move.png" id="moveicon" title="Move Type"/>
+						<img class="imagelabel" src="/common/other/0-move.webp" id="moveicon" title="Move Type"/>
 						<div>
 							<select class="select-without-search" onchange="changetype(this);reload();populateall(false)" id="movetype">
 								<option value="0">Infantry</option>
@@ -167,7 +167,7 @@
 								<option value="3">Flying</option>
 							</select>
 						</div>
-						<img class="imagelabel" src="/common/other/0-weapon.png" id="weaponicon" title="Weapon Type"/>
+						<img class="imagelabel" src="/common/other/0-weapon.webp" id="weaponicon" title="Weapon Type"/>
 						<div>
 							<select class="select-without-search" onchange="changetype(this);reload();populateall(false)" id="weapontype">
 								<option value="0">Red Sword</option>
@@ -199,14 +199,14 @@
 					</div>
 				</section>
 				<div class="tabs">
-					<img class="imagelabel selected" onclick="swapskill(this,'weapon')" src="/common/assets/weapon.png" title="Weapon"/>
-					<img class="imagelabel" onclick="swapskill(this,'refine')" src="/common/assets/refine.png" title="Refine"/>
-					<img class="imagelabel" onclick="swapskill(this,'assist')" src="/common/assets/assist.png" title="Assist"/>
-					<img class="imagelabel" onclick="swapskill(this,'special')" src="/common/assets/special.png" title="Special"/>
-					<img class="imagelabel" onclick="swapskill(this,'Askill')" src="/common/assets/skill-a.png" title="A skill"/>
-					<img class="imagelabel" onclick="swapskill(this,'Bskill')" src="/common/assets/skill-b.png" title="B skill"/>
-					<img class="imagelabel" onclick="swapskill(this,'Cskill')" src="/common/assets/skill-c.png" title="C skill"/>
-					<img class="imagelabel" onclick="swapskill(this,'Sskill')" src="/common/assets/seal.png" title="Seal"/>
+					<img class="imagelabel selected" onclick="swapskill(this,'weapon')" src="/common/assets/weapon.webp" title="Weapon"/>
+					<img class="imagelabel" onclick="swapskill(this,'refine')" src="/common/assets/refine.webp" title="Refine"/>
+					<img class="imagelabel" onclick="swapskill(this,'assist')" src="/common/assets/assist.webp" title="Assist"/>
+					<img class="imagelabel" onclick="swapskill(this,'special')" src="/common/assets/special.webp" title="Special"/>
+					<img class="imagelabel" onclick="swapskill(this,'Askill')" src="/common/assets/skill-a.webp" title="A skill"/>
+					<img class="imagelabel" onclick="swapskill(this,'Bskill')" src="/common/assets/skill-b.webp" title="B skill"/>
+					<img class="imagelabel" onclick="swapskill(this,'Cskill')" src="/common/assets/skill-c.webp" title="C skill"/>
+					<img class="imagelabel" onclick="swapskill(this,'Sskill')" src="/common/assets/seal.webp" title="Seal"/>
 				</div>
 				<section>
 					<div class="row-property single" style="align-items:center">
@@ -288,7 +288,7 @@
 						<input type="number" id="hpSskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 					</div>
 					<div>
-						<img class="imagelabel" src="/common/assets/Atk.png" title="Atk Modifier"/>
+						<img class="imagelabel" src="/common/assets/Atk.webp" title="Atk Modifier"/>
 						<input type="number" id="atkweapon" onchange="reload()" min="-99" max="99" value="0">
 						<input type="number" id="atkrefine" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 						<input type="number" id="atkAskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
@@ -297,7 +297,7 @@
 						<input type="number" id="atkSskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 					</div>
 					<div>
-						<img class="imagelabel" src="/common/assets/Spd.png" title="Spd"/>
+						<img class="imagelabel" src="/common/assets/Spd.webp" title="Spd"/>
 						<input type="number" id="spdweapon" onchange="reload()" min="-99" max="99" value="0">
 						<input type="number" id="spdrefine" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 						<input type="number" id="spdAskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
@@ -306,7 +306,7 @@
 						<input type="number" id="spdSskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 					</div>
 					<div>
-						<img class="imagelabel" src="/common/assets/Def.png" title="Def Modifier"/>
+						<img class="imagelabel" src="/common/assets/Def.webp" title="Def Modifier"/>
 						<input type="number" id="defweapon" onchange="reload()" min="-99" max="99" value="0">
 						<input type="number" id="defrefine" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 						<input type="number" id="defAskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
@@ -315,7 +315,7 @@
 						<input type="number" id="defSskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 					</div>
 					<div>
-						<img class="imagelabel" src="/common/assets/Res.png" title="Res Modifier"/>
+						<img class="imagelabel" src="/common/assets/Res.webp" title="Res Modifier"/>
 						<input type="number" id="resweapon" onchange="reload()" min="-99" max="99" value="0">
 						<input type="number" id="resrefine" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 						<input type="number" id="resAskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
@@ -327,7 +327,7 @@
 				<h2>Blessings</h2>
 				<section>
 					<div class="row-property single">
-						<img class="imagelabel" src="/common/assets/blessings.png" title="Blessings" />
+						<img class="imagelabel" src="/common/assets/blessings.webp" title="Blessings" />
 						<div>
 							<select class="s2-select" id="blessing" onChange="reblessed();reload()">
 								<option value="None">None</option>
@@ -393,7 +393,7 @@
 						</div>
 					</div>
 					<div class="row-property single">
-						<img class="imagelabel" src="/common/assets/pairup.png" title="Allies"/>
+						<img class="imagelabel" src="/common/assets/pairup.webp" title="Allies"/>
 						<div>
 							<select class="s2-select" id="allies" multiple="multiple" onChange="checkallies();reload()" disabled>
 							</select>
@@ -408,19 +408,19 @@
 							<input type="number" id="hp" onchange="reload()" min="-99" max="99" value="0">
 						</div>
 						<div>
-							<img class="imagelabel" src="/common/assets/Atk.png" title="Atk"/>
+							<img class="imagelabel" src="/common/assets/Atk.webp" title="Atk"/>
 							<input type="number" id="atk" onchange="reload()" min="-99" max="99" value="0">
 						</div>
 						<div>
-							<img class="imagelabel" src="/common/assets/Spd.png" title="Spd"/>
+							<img class="imagelabel" src="/common/assets/Spd.webp" title="Spd"/>
 							<input type="number" id="spd" onchange="reload()" min="-99" max="99" value="0">
 						</div>
 						<div>
-							<img class="imagelabel" src="/common/assets/Def.png" title="Def"/>
+							<img class="imagelabel" src="/common/assets/Def.webp" title="Def"/>
 							<input type="number" id="def" onchange="reload()" min="-99" max="99" value="0">
 						</div>
 						<div>
-							<img class="imagelabel" src="/common/assets/Res.png" title="Res"/>
+							<img class="imagelabel" src="/common/assets/Res.webp" title="Res"/>
 							<input type="number" id="res" onchange="reload()" min="-99" max="99" value="0">
 						</div>
 					</div>
@@ -428,31 +428,31 @@
 				<h2>Miscellaneous</h2>
 				<section>
 					<div class="row-property double">
-						<img class="imagelabel" src="/common/assets/sp.png" title="Skill Points"/>
+						<img class="imagelabel" src="/common/assets/sp.webp" title="Skill Points"/>
 						<input type="number" onchange="reload()" id="sp" min="0" max="9999" value="9999">
-						<img class="imagelabel" src="/common/assets/hm.png" title="Hero Merit"/>
+						<img class="imagelabel" src="/common/assets/hm.webp" title="Hero Merit"/>
 						<input type="number" onchange="reload()" id="hm" min="0" max="7000" value="7000">
 					</div>
 					<div class="row-property single">
-						<img class="imagelabel" src="/common/assets/brush.png" title="Art Style"/>
+						<img class="imagelabel" src="/common/assets/brush.webp" title="Art Style"/>
 						<div>
 							<input id="art" accept='image/*' onchange="reload()" type="file">
 						</div>
 					</div>
 					<div class="row-property double">
-						<img class="imagelabel" src="/common/assets/up.png" title="Offset in Y"/>
+						<img class="imagelabel" src="/common/assets/up.webp" title="Offset in Y"/>
 						<input type="number" id="offsetY" onchange="reload()" min="-600" max="600" value="0">
-						<img class="imagelabel" src="/common/assets/right.png" title="Offset in X"/>
+						<img class="imagelabel" src="/common/assets/right.webp" title="Offset in X"/>
 						<input type="number" id="offsetX" onchange="reload()" min="-600" max="600" value="0">
 					</div>
 					<div class="row-property single">
-						<img class="imagelabel" src="/common/assets/expand.png" title="Expand/Reduce image"/>
+						<img class="imagelabel" src="/common/assets/expand.webp" title="Expand/Reduce image"/>
 						<div>
 							<input id="expand" onchange="reload()" type="range" min="10" max="200" value="100">
 						</div>
 					</div>
 					<div class="row-property double">
-						<img class="imagelabel" src="/common/assets/favorite.png" title="Favorite Mark"/>
+						<img class="imagelabel" src="/common/assets/favorite.webp" title="Favorite Mark"/>
 						<div>
 							<select class="select-without-search" id="favorite" onchange="reload()">
 								<option value="0">0</option>
@@ -494,13 +494,13 @@
 				</section>
 				<div class="links">
 					<a href="/">
-						<img class="img-fluid" src="/common/assets/home.png"/>
+						<img class="img-fluid" src="/common/assets/home.webp"/>
 					</a>
 					<a href="https://github.com/Eskuero/fehbuilder" target="blank">
-						<img class="img-fluid" src="/common/assets/github.png"/>
+						<img class="img-fluid" src="/common/assets/github.webp"/>
 					</a>
 					<a href="https://discord.gg/fireemblemheroes" target="blank">
-						<img class="img-fluid" src="/common/assets/discord.png"/>
+						<img class="img-fluid" src="/common/assets/discord.webp"/>
 					</a>
 				</div>
 			</div>

@@ -65,7 +65,7 @@ def getimage():
 
 		# Print the background
 		bg = utilities.images["other"]["bgsupport"] if hero["summoner"] else utilities.images["other"]["bgnosupport"]
-		canvas.paste(bg, (-173, 0), bg)
+		canvas.paste(bg, (-173, 0))
 
 		# Decide on the filename we will use to save and retrieve this particular hero and pose
 		filename = name + ("_Resplendent_" + hero["artstyle"] + ".webp" if hero["attire"] == "Resplendent" and languages[hero["language"]].get(hero["name"].replace("PID", "MPID_VOICE") + "EX01", False) else "_" + hero["artstyle"] + ".webp")
@@ -74,7 +74,7 @@ def getimage():
 			art = Image.open("../data/img/heroes/" + filename)
 		else:
 			# Something went wrong opening the art file, fallback to missigno
-			art = Image.open("../data/img/base/missigno.png")
+			art = Image.open("../data/img/base/missigno.webp")
 			print("Failed to load art for " + name)
 		canvas.paste(art, (-305 + hero["offsetX"], 0 - hero["offsetY"]), art)
 
@@ -208,15 +208,15 @@ def getimage():
 		# If the weapon is valid try to print an icon
 		if hero["weapon"]:
 			# By default we always use the basic weapon icon or the predefined stat boosters ones
-			icon = "other/" + hero["refine"] + "-Refine.png" if hero["refine"] in ["Atk", "Spd", "Def", "Res", "Wrathful", "Dazzling"] else "other/weapon-Refine.png"
+			icon = "other/" + hero["refine"] + "-Refine.webp" if hero["refine"] in ["Atk", "Spd", "Def", "Res", "Wrathful", "Dazzling"] else "other/weapon-Refine.webp"
 			# If the icon is an special effect we might have to download it
 			if hero["refine"] == "Effect" and "Effect" in skills["weapons"][hero["weapon"]]["refines"]:
 				# Check if the heroes art is already in the temporal folder
-				if not (pathlib.Path("../data/img/icons/" + hero["weapon"] + "-Effect.png").is_file()):
+				if not (pathlib.Path("../data/img/icons/" + hero["weapon"] + "-Effect.webp").is_file()):
 					# Something went wrong reading the icon (maybe wiki was down while refreshing)
 					print("Failed to load special refine icon for " + hero["weapon"])
 				else:
-					icon = "icons/" + hero["weapon"] + "-Effect.png"
+					icon = "icons/" + hero["weapon"] + "-Effect.webp"
 			weaponicon = Image.open("../data/img/" + icon)
 			canvas.paste(weaponicon, (370, 797), weaponicon)
 			# Hack Falchion and Missiletain name since we show the user the real internal name for difference but rendering should be clean
@@ -237,7 +237,7 @@ def getimage():
 			# If the passive is not the list we skip trying to download an image
 			if hero["passive" + category]:
 				# Decide on the name of the icon
-				iconname = hero["passive" + category] + ".png"
+				iconname = hero["passive" + category] + ".webp"
 				# Check if the icon art is already downloaded
 				if (pathlib.Path("../data/img/icons/" + iconname).is_file()):
 					art = Image.open("../data/img/icons/" + iconname)
@@ -248,7 +248,7 @@ def getimage():
 			# We always write the text because it might be a simple "-"
 			draw.text(utilities.passiverender[category]["text"], languages[hero["language"]]["M" + hero["passive" + category]] if hero["passive" + category] else "-", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 			# Print the category indicator
-			indicator = Image.open("../data/img/other/indicator-skill" + category + ".png")
+			indicator = Image.open("../data/img/other/indicator-skill" + category + ".webp")
 			canvas.paste(indicator, utilities.passiverender[category]["indicator"], indicator)
 
 		# X amount to additionally push each icon to the left

@@ -482,7 +482,7 @@ function updatebases(caller) {
 
 function changetype(caller) {
 	// Compose the weapon/move url
-	url = "/common/other/" + caller.value + "-" + caller.id.slice(0, -4) + ".png";
+	url = "/common/other/" + caller.value + "-" + caller.id.slice(0, -4) + ".webp";
 	// Now change the url on the imagelabel
 	document.getElementById(caller.id.slice(0, -4) + "icon").src = url;
 }

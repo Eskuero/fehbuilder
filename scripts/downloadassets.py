@@ -48,11 +48,11 @@ passiveicons = {
 ids = []
 icons = []
 # We are only interested in the weapons (with refined effects) and skills SIDs that are not downloaded yet. We also add a expected icon name to speed up things
-for weapon in [weapon for weapon in [weapon for weapon in skills["weapons"] if skills["weapons"][weapon].get("refines", {}).get("Effect", False)] if not pathlib.Path("../data/img/icons/" + weapon + "-Effect.png").is_file()]:
+for weapon in [weapon for weapon in [weapon for weapon in skills["weapons"] if skills["weapons"][weapon].get("refines", {}).get("Effect", False)] if not pathlib.Path("../data/img/icons/" + weapon + "-Effect.webp").is_file()]:
 	ids.append(weapon)
 	icons.append(engrishname["M" + weapon] + "_W.png")
 
-for passive in [passive for passive in skills["passives"]["A"] | skills["passives"]["B"] | skills["passives"]["C"] | skills["passives"]["S"] if not pathlib.Path("../data/img/icons/" + passive + ".png").is_file()]:
+for passive in [passive for passive in skills["passives"]["A"] | skills["passives"]["B"] | skills["passives"]["C"] | skills["passives"]["S"] if not pathlib.Path("../data/img/icons/" + passive + ".webp").is_file()]:
 	ids.append(passive)
 	icons.append(engrishname["M" + passive] + ".png")
 
@@ -69,14 +69,15 @@ while offset < len(icons):
 				print(engrishname["M" + ids[offset:offset+50][i]] + " relying on wiki table for icon name")
 				url = utils.obtaintrueurl([matches[0]])[0]
 		# Decide on the filename based on the type of expect icon
-		filename = ids[offset:offset+50][i] + ("-Effect.png" if "_W.png" in icons[offset:offset+50][i] else ".png")
+		filename = ids[offset:offset+50][i] + ("-Effect.webp" if "_W.png" in icons[offset:offset+50][i] else ".webp")
 		print(engrishname["M" + ids[offset:offset+50][i]] + " doesn't have " + filename, end = ": ")
 		# Grab and paste the icons
 		try:
 			response = requests.get(url)
 			art = Image.open(io.BytesIO(response.content))
 			art = art.resize((48, 48) if art.size[0] > 70 else (44, 44))
-			art.save("../data/img/icons/" + filename, 'PNG')
+			# We save the icons as webp attempting the better compression method while being lossless to avoid quality drops
+			art.save("../data/img/icons/" + filename, 'WEBP', lossless = True, quality = 100, method = 6)
 			print("Successfully downloaded", end = "\n")
 		# If anything went wrong on downloading and parsing the image fall back to an error one
 		except:
@@ -132,7 +133,8 @@ while offset < len(arts):
 		try:
 			response = requests.get(url)
 			art = Image.open(io.BytesIO(response.content)).resize((1330, 1596))
-			art.save("../data/img/heroes/" + filename, 'WEBP')
+			# We save the hero art as webp attempting the better compression method while being lossless to avoid quality drops
+			art.save("../data/img/heroes/" + filename, 'WEBP', lossless = True, quality = 100, method = 6)
 			print("Successfully downloaded", end = "\n")
 		# If anything went wrong on downloading and parsing the image fall back to an error one
 		except:

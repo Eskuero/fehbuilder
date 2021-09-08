@@ -271,7 +271,7 @@ async function reload() {
 			weaponicon = ["Atk", "Spd", "Def", "Res", "Wrathful", "Dazzling"].includes(refine) ? other["images"]["refines"][refine] : other["images"]["other"]["noweapon"];
 			// If the icon is an special effect we might have to download it
 			if (refine == "Effect" && skills["weapons"][selectweapons.value]["refines"]["Effect"]) {
-				weaponicon = "../common/icons/" + selectweapons.value + "-Effect.png"
+				weaponicon = "../common/icons/" + selectweapons.value + "-Effect.webp"
 			}
 		}
 		await getimage(weaponicon).then(img => {
@@ -314,7 +314,7 @@ async function reload() {
 				preview.drawImage(img, passiverender[passives[i][0]]["icon"][0], passiverender[passives[i][0]]["icon"][1], 44, 44);
 			});
 		} else if (document.getElementById(passives[i]).value != "None") {
-			await getimage("../common/icons/" + document.getElementById(passives[i]).value + ".png").then(img => {
+			await getimage("../common/icons/" + document.getElementById(passives[i]).value + ".webp").then(img => {
 				// If the image size is bigger than 44 these are some tier 4 skills that have shiny borders and their icon must be and offsetted accordingly
 				iconoffset = img.height > 44 ? -2 : 0;
 				preview.drawImage(img, passiverender[passives[i][0]]["icon"][0] + iconoffset, passiverender[passives[i][0]]["icon"][1] + iconoffset);
@@ -338,7 +338,7 @@ async function reload() {
 	width = needsresize ? 115 : 147; height = needsresize ? 125 : 160;
 	// If blessed print the icon
 	if (blessing) {
-		blessingicon = "/common/other/" + blessing + ".png";
+		blessingicon = "/common/other/" + blessing + ".webp";
 		await getimage(blessingicon).then(img => {
 			preview.drawImage(img, posX, posY, width, height);
 		});

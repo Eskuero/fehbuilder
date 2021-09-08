@@ -31,7 +31,8 @@ def download():
 		location = "../data/img/other/"
 		# Download the art image, make sure it has an alpha channel resize it according to the set config
 		art = Image.open(io.BytesIO(response.content)).convert("RGBA").resize(dimensions)
-		art.save(location + icon + ".png", 'PNG')
+		# We save the images as webp attempting the better compression method while being lossless to avoid quality drops
+		art.save(location + icon + ".webp", 'WEBP', lossless = True, quality = 100, method = 6)
 
 icons = {
 	# Movement types

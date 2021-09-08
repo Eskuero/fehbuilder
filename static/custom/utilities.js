@@ -11,7 +11,7 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-async function getimage(url, fallback = "/common/base/oopsie.png") {
+async function getimage(url, fallback = "/common/base/oopsie.webp") {
 	// This premise will not return until the image has fully loaded
 	const imageLoadPromise = new Promise(resolve => {
 		img = new Image();
