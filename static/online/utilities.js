@@ -150,9 +150,60 @@ summonerranks = {
 	"S": [5, 2, 2, 2, 2]
 }
 
+// Canvas position to render images passive icons at
 passiverender = {
 	"A": {"icon": [369, 945], "text": [420, 954], "indicator": [396, 966]},
 	"B": {"icon": [369, 994], "text": [420, 1003], "indicator": [396, 1016]},
 	"C": {"icon": [369, 1043], "text": [420, 1053], "indicator": [396, 1066]},
 	"S": {"icon": [369, 1093], "text": [420, 1103], "indicator": [396, 1116]}
+}
+
+// Function that prints certain numbers using numberfont spritesheet
+function printnumbers(canvas, characters, type, posX, posY, align = "start") {
+	if (typeof characters == "number") {
+		// Split the full number on individual ones
+		numbers = characters.toString().split("").map(Number);
+		// We have an offset that we must increment with every number to keep pushing each to the left and avoid overlaps
+		offsetX = 0;
+		// We invert the order of the loop depending on the type of alignment
+		if (align == "end") {
+			for (j = numbers.length - 1; j >= 0; j--) {
+				// This is the size that the number will take ()
+				width = numberfontrender["end"][numbers[j]] - numberfontrender["start"][numbers[j]];
+				// Since we are aligning to the end the actual drawing position on the X coordinate is the posX - width - offset
+				trueposX = posX - (width + offsetX);
+				// We must crop the numbers at a certain position depending on type and value
+				sourceX = numberfontrender["start"][numbers[j]]; sourceY = type * 28;
+				// Increase the offset before the next interation using the number width (-3 to make sure we fill the gaps)
+				offsetX += width - 3;
+				// Print the number
+				canvas.drawImage(numberfont, sourceX, sourceY, width, 28, trueposX, posY, width, 28);
+			}
+		} else {
+			for (j = 0; j < numbers.length; j++) {
+				// This is the size that the number will take ()
+				width = numberfontrender["end"][numbers[j]] - numberfontrender["start"][numbers[j]];
+				// Since we are aligning to the end the actual drawing position on the X coordinate is the posX - width - offset
+				trueposX = posX + offsetX;
+				// We must crop the numbers at a certain position depending on type and value
+				sourceX = numberfontrender["start"][numbers[j]]; sourceY = type * 28;
+				// Increase the offset before the next interation using the number width (-3 to make sure we fill the gaps)
+				offsetX += width - 3;
+				// Print the number
+				canvas.drawImage(numberfont, sourceX, sourceY, width, 28, trueposX, posY, width, 28);
+			}
+		}
+	// Otherwise we are just printing a simple + or -
+	} else {
+		// We must crop the character at a certain position depending on type and value
+		sourceX = characters == "+" ? 248 : 271; sourceY = 3 + (type * 6) + (type * 22);
+		// Print the number
+		canvas.drawImage(numberfont, sourceX, sourceY, 22, 22, posX, posY, 22, 22);
+	}
+}
+
+// Position on the X coordinate at which each number of numberfont start and ends (for the Y coordinate it's a simple type x 28px)
+numberfontrender = {
+	"start": [0, 22, 45, 68, 90, 113, 136, 158, 181, 203],
+	"end": [22, 44, 67, 90, 112, 135, 158, 180, 203, 225]
 }

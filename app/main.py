@@ -160,15 +160,16 @@ def getimage():
 			statsmodifier[i] = 0 if statsmodifier[i] < 0 else (99 if statsmodifier[i] > 99 else statsmodifier[i])
 
 		# Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers). Also prevent to number from going below 0
-		font = ImageFont.truetype("../data/" + config["fontfile"], 26)
-		draw.text((265, 805), str(statsmodifier[0]), font=font, anchor="ra", fill="#fffa96", stroke_width=3, stroke_fill="#0a2533")
-		draw.text((265, 854), str(statsmodifier[1]), font=font, anchor="ra", fill="#64e6f0" if hero["buffs"][1] > 0 else ("#ff506e" if hero["buffs"][1] < 0 else "#fffa96"), stroke_width=3, stroke_fill="#0a2533")
-		draw.text((265, 903), str(statsmodifier[2]), font=font, anchor="ra", fill="#64e6f0" if hero["buffs"][2] > 0 else ("#ff506e" if hero["buffs"][2] < 0 else "#fffa96"), stroke_width=3, stroke_fill="#0a2533")
-		draw.text((265, 953), str(statsmodifier[3]), font=font, anchor="ra", fill="#64e6f0" if hero["buffs"][3] > 0 else ("#ff506e" if hero["buffs"][3] < 0 else "#fffa96"), stroke_width=3, stroke_fill="#0a2533")
-		draw.text((265, 1002), str(statsmodifier[4]), font=font, anchor="ra", fill="#64e6f0" if hero["buffs"][4] > 0 else ("#ff506e" if hero["buffs"][4] < 0 else "#fffa96"), stroke_width=3, stroke_fill="#0a2533")
+		for i in range(5):
+			# Decide type of font depending on if we buffer, debuffed or neutral
+			numbertype = 2 if hero["buffs"][i] > 0 else (3 if hero["buffs"][i] < 0 else 0);
+			# Each stat name is pushed down by 49 pixels with an initial offset of 805
+			utilities.printnumbers(canvas, statsmodifier[i], numbertype, 265, 805 + (i * 49) + int(i * 0.3), "end")
 		# Print the amount of SP and HM
-		draw.text((265, 1052), str(hero["sp"]), font=font, anchor="ra", fill="#82f546" if hero["sp"] == 9999 else "#fffa96", stroke_width=3, stroke_fill="#0a2533")
-		draw.text((265, 1100), str(hero["hm"]), font=font, anchor="ra", fill="#82f546" if hero["hm"] == 7000 else "#fffa96", stroke_width=3, stroke_fill="#0a2533")
+		numbertype = 4 if hero["sp"] == 9999 else 0;
+		utilities.printnumbers(canvas, hero["sp"], numbertype, 265, 1052, "end");
+		numbertype = 4 if hero["hm"] == 7000 else 0;
+		utilities.printnumbers(canvas, hero["hm"], numbertype, 265, 1100, "end");
 
 		# If we selected an accessory we paste a newer bigger holder and define an offset to push all next items to the right
 		offset = 0
@@ -183,19 +184,20 @@ def getimage():
 		font = ImageFont.truetype("../data/" + config["fontfile"], 24)
 		draw.text((70, 745), languages[hero["language"]]["MID_LEVEL2"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 		# Print the level 40. It was hardcoded previously so we just do this to make sure it doesn't look off side by side with the merge count
-		font = ImageFont.truetype("../data/" + config["fontfile"], 25)
-		draw.text((126, 745), "40", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+		utilities.printnumbers(canvas, 40, 1, 124, 745);
 
 		# If we have merges we add the text next to the level
 		if hero["merges"] > 0:
-			draw.text((165, 743), "+", font=font, fill="#82f546" if hero["merges"] == 10 else "#ffffff", stroke_width=3, stroke_fill="#0a2533")
-			draw.text((184, 745), str(hero["merges"]), font=font, fill="#82f546" if hero["merges"] == 10 else "#ffffff", stroke_width=3, stroke_fill="#0a2533")
+			# Decide type of font depending on if we are fully merged or not
+			numbertype = 4 if hero["merges"] == 10 else 1;
+			utilities.printnumbers(canvas, "+", numbertype, 163, 748);
+			utilities.printnumbers(canvas, hero["merges"], numbertype, 181, 745);
 		# If we have flowers we add another box with the number
 		if hero["flowers"] > 0:
 			canvas.paste(utilities.images["other"]["flowerholder"], (271 + offset, 732), utilities.images["other"]["flowerholder"])
 			canvas.paste(utilities.images["flowers"][heroes[name]["moveType"]], (289 + offset, 727), utilities.images["flowers"][heroes[name]["moveType"]])
-			draw.text((345 + offset, 742), "+", font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
-			draw.text((364 + offset, 744), str(hero["flowers"]), font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
+			utilities.printnumbers(canvas, "+", 1, 345 + offset, 748);
+			utilities.printnumbers(canvas, hero["flowers"], 1, 364 + offset, 745);
 			offset += 147
 
 		# Paste the exp indicator
@@ -204,7 +206,7 @@ def getimage():
 		draw.text((308 + offset, 744), languages[hero["language"]]["MID_EXP"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 		draw.text((415 + offset, 744), languages[hero["language"]]["MID_UNIT_INFO_EXP_MAX"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 
-		font = ImageFont.truetype("../data/" + config["fontfile"], 23)
+		font = ImageFont.truetype("../data/" + config["fontfile"], 24)
 		# If the weapon is valid try to print an icon
 		if hero["weapon"]:
 			# By default we always use the basic weapon icon or the predefined stat boosters ones

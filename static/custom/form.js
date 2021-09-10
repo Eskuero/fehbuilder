@@ -78,7 +78,7 @@ fetch('/common/data/customother.json')
 	.then((out) => {
 		// We store other data for basic checks within the browser
 		other = out;
-		reload();
+		init();
 }).catch(err => console.error(err));
 
 // This makes sure dropdown options have their classes carried over (we need it to color basekit)
@@ -87,6 +87,22 @@ function copyClassesToSelect2(data, container) {
 		$(container).addClass($(data.element).attr("class"));
 	}
 	return data.text;
+}
+
+async function init() {
+	// Load and wait for the font to be ready
+	const font = new FontFace("FeH-Font", "url('/common/feh-font.woff2') format('woff2')");
+	await font.load();
+	document.fonts.add(font);
+
+	// Load the numberfont specifically since we will use it multiple times
+	numberfont = undefined;
+	await getimage(other["images"]["other"]["numberfont"]).then(img => {
+		numberfont = img;
+	})
+
+	// Draw it for the first time
+	reload();
 }
 
 // Custom matcher for search results filtering

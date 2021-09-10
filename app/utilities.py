@@ -221,6 +221,54 @@ summonerranks = {
 	"S": [5, 2, 2, 2, 2]
 }
 
+# Function that prints certain numbers using numberfont spritesheet
+def printnumbers(canvas, characters, fonttype, posX, posY, align = "start"):
+	if type(characters) is int:
+		# Split the full number on individual ones
+		numbers = [int(x) for x in str(characters)]
+		# We have an offset that we must increment with every number to keep pushing each to the left and avoid overlaps
+		offsetX = 0
+		# We invert the order of the loop depending on the type of alignment
+		if align == "end":
+			for j in range(len(numbers) - 1, -1, -1):
+				# This is the size that the number will take ()
+				width = numberfontrender["end"][numbers[j]] - numberfontrender["start"][numbers[j]]
+				# Since we are aligning to the end the actual drawing position on the X coordinate is the posX - width - offset
+				trueposX = posX - (width + offsetX)
+				# We must crop the numbers at a certain position depending on type and value
+				sourceX = numberfontrender["start"][numbers[j]]; sourceY = fonttype * 28
+				# Increase the offset before the next interation using the number width (-3 to make sure we fill the gaps)
+				offsetX += width - 3
+				# Crop the character and print it
+				character = images["other"]["numberfont"].crop((sourceX, sourceY, sourceX + width, sourceY + 28))
+				canvas.paste(character, (trueposX, posY), character)
+		else:
+			for j in range(len(numbers)):
+				# This is the size that the number will take ()
+				width = numberfontrender["end"][numbers[j]] - numberfontrender["start"][numbers[j]]
+				# Since we are aligning to the end the actual drawing position on the X coordinate is the posX - width - offset
+				trueposX = posX + offsetX
+				# We must crop the numbers at a certain position depending on type and value
+				sourceX = numberfontrender["start"][numbers[j]]; sourceY = fonttype * 28
+				# Increase the offset before the next interation using the number width (-3 to make sure we fill the gaps)
+				offsetX += width - 3
+				# Crop the character and print it
+				character = images["other"]["numberfont"].crop((sourceX, sourceY, sourceX + width, sourceY + 28))
+				canvas.paste(character, (trueposX, posY), character)
+	# Otherwise we are just printing a simple + or -
+	else:
+		# We must crop the character at a certain position depending on type and value
+		sourceX = 248 if characters == "+" else 271; sourceY = 3 + (fonttype * 6) + (fonttype * 22)
+		# Crop the character and print it
+		character = images["other"]["numberfont"].crop((sourceX, sourceY, sourceX + 22, sourceY + 22))
+		canvas.paste(character, (posX, posY), character)
+
+# Position on the X coordinate at which each number of numberfont start and ends (for the Y coordinate it's a simple type x 28px)
+numberfontrender = {
+	"start": [0, 22, 45, 68, 90, 113, 136, 158, 181, 203],
+	"end": [22, 44, 67, 90, 112, 135, 158, 180, 203, 225]
+}
+
 # Load all widely used images to save on disk operations
 images = {
 	"rarity": {
@@ -386,6 +434,7 @@ images = {
 		"resplendent": Image.open("../data/img/other/resplendent.webp"),
 		"expindicator": Image.open("../data/img/base/expindicator.webp"),
 		"accessoryexpand": Image.open("../data/img/base/accessory-expansion.webp"),
+		"numberfont": Image.open("../data/img/base/numberfont.webp"),
 		"flowerholder": Image.open("../data/img/base/flowerholder.webp"),
 		"duoconversation": Image.open("../data/img/other/DuoConversation.webp"),
 		"noweapon": Image.open("../data/img/other/weapon-Refine.webp"),

@@ -278,6 +278,7 @@ images = {
 		"resplendent": "/common/other/resplendent.webp",
 		"expindicator": "/common/base/expindicator.webp",
 		"accessoryexpand": "/common/base/accessory-expansion.webp",
+		"numberfont": "/common/base/numberfont.webp",
 		"flowerholder": "/common/base/flowerholder.webp",
 		"duoconversation": "/common/other/DuoConversation.webp",
 		"noweapon": "/common/other/weapon-Refine.webp",

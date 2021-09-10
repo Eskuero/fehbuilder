@@ -40,8 +40,24 @@ fetch('/common/data/fullother.json')
 	.then((out) => {
 		// We store other data for basic checks within the browser
 		other = out;
-		reload();
+		init();
 }).catch(err => console.error(err));
+
+async function init() {
+	// Load and wait for the font to be ready
+	const font = new FontFace("FeH-Font", "url('/common/feh-font.woff2') format('woff2')");
+	await font.load();
+	document.fonts.add(font);
+
+	// Load the numberfont specifically since we will use it multiple times
+	numberfont = undefined;
+	await getimage(other["images"]["other"]["numberfont"]).then(img => {
+		numberfont = img;
+	})
+
+	// Draw it for the first time
+	reload();
+}
 
 async function reload() {
 	// Obtain the object
@@ -51,11 +67,6 @@ async function reload() {
 
 	// Hero ID
 	hero = selectheroes.value == "None" ? false : selectheroes.value;
-	
-	// Load and wait for the font to be ready
-	const font = new FontFace("FeH-Font", "url('/common/feh-font.woff2') format('woff2')");
-    await font.load();
-    document.fonts.add(font);
 
 	// Print the background depending on the type of support
 	background = selectsummoner.value == "None" ? "bgnosupport" : "bgsupport";
@@ -113,7 +124,7 @@ async function reload() {
 
 	// Print the artist and actor names, as well as the favorite mark and other minor strings if appui is enabled
 	if (appui.checked) {
-		preview.fillStyle = 'white'; preview.strokeStyle = '#0a2533'; preview.textAlign = 'start'; preview.textBaseline = "top"; preview.font = '21px FeH-Font'; preview.lineWidth = 6;
+		preview.fillStyle = 'white'; preview.strokeStyle = '#0a2533'; preview.textAlign = 'start'; preview.textBaseline = "top"; preview.font = '21px FeH-Font';
 		// If the hero is truly a resplendent one we might have data for it
 		if (selectattire.value == "Resplendent" && languages[language][hero.replace("PID", "MPID_VOICE") + "EX01"]) {
 			voice = languages[language][hero.replace("PID", "MPID_VOICE") + "EX01"];
@@ -233,18 +244,18 @@ async function reload() {
 		return stat;
 	});
 
-	// Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers). Also prevent to number from going below 0
-	preview.font = 'bold 26px FeH-Font'; preview.textAlign = 'end'; preview.textBaseline = "top"; preview.strokeStyle = '#0a2533';
-	// Each stat name is pushed down by 49 pixels with an initial offset of 805
+	// Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers).
 	for (i = 0; i < stats.length; i++) {
-		preview.fillStyle = buffs[i] > 0 ? "#64e6f0" : (buffs[i] < 0 ? "#ff506e" : "#fffa96");
-		preview.strokeText(statsmodifier[i], 265, 805 + (i * 49) + (i * 0.3)); preview.fillText(statsmodifier[i], 265, 805 + (i * 49) + (i * 0.3));
+		// Decide type of font depending on if we buffer, debuffed or neutral
+		numbertype = buffs[i] > 0 ? 2 : (buffs[i] < 0 ? 3 : 0);
+		// Each stat name is pushed down by 49 pixels with an initial offset of 805
+		printnumbers(preview, statsmodifier[i], numbertype, 265, 805 + (i * 49) + (i * 0.3), "end");
 	}
 	// Print the amount of SP and HM
-	preview.fillStyle = selectsp.value >= "9999" ? "#82f546" : "#fffa96";
-	preview.strokeText(selectsp.value, 265, 1052); preview.fillText(selectsp.value, 265, 1052);
-	preview.fillStyle = selecthm.value >= "7000" ? "#82f546" : "#fffa96";
-	preview.strokeText(selecthm.value, 265, 1100); preview.fillText(selecthm.value, 265, 1100);
+	numbertype = selectsp.value >= "9999" ? 4 : 0;
+	printnumbers(preview, parseInt(selectsp.value), numbertype, 265, 1052, "end");
+	numbertype = selecthm.value >= "7000" ? 4 : 0;
+	printnumbers(preview, parseInt(selecthm.value), numbertype, 265, 1100, "end");
 
 	accessory = selectaccessory.value == "None" ? false : selectaccessory.value;
 	// If we selected an accessory we paste a newer bigger holder and define an offset to push all next items to the right
@@ -271,14 +282,14 @@ async function reload() {
 	preview.font = '24px FeH-Font'; preview.fillStyle = "#ffffff"; preview.strokeStyle = '#0a2533'; preview.textAlign = 'start';
 	preview.strokeText(languages[language]["MID_LEVEL2"], 70, 746); preview.fillText(languages[language]["MID_LEVEL2"], 70, 746);
 	// Print the level 40. It was hardcoded previously so we just do this to make sure it doesn't look off side by side with the merge count
-	preview.font = 'bold 25px FeH-Font';
-	preview.strokeText("40", 126, 745); preview.fillText("40", 126, 745);
+	printnumbers(preview, 40, 1, 124, 745);
 
 	// If we have merges we add the text next to the level
 	if (merges > 0) {
-		preview.fillStyle = merges == 10 ? "#82f546" : "#ffffff";
-		preview.strokeText("+", 165, 743); preview.fillText("+", 165, 743);
-		preview.strokeText(merges, 184, 745); preview.fillText(merges, 184, 745);
+		// Decide type of font depending on if we are fully merged or not
+		numbertype = merges == 10 ? 4 : 1;
+		printnumbers(preview, "+", numbertype, 163, 748);
+		printnumbers(preview, merges, numbertype, 181, 745);
 	}
 	preview.fillStyle = "#ffffff";
 	// If we have flowers we add another box with the number
@@ -289,8 +300,8 @@ async function reload() {
 		await getimage(other["images"]["flowers"][units[hero]["moveType"]]).then(img => {
 			preview.drawImage(img, 289 + offset, 727, 60, 60);
 		});
-		preview.strokeText("+", 345 + offset, 742); preview.fillText("+", 345 + offset, 742);
-		preview.strokeText(flowers, 364 + offset, 745); preview.fillText(flowers, 364 + offset, 745);
+		printnumbers(preview, "+", 1, 345 + offset, 748);
+		printnumbers(preview, flowers, 1, 364 + offset, 745);
 		offset += 147;
 	}
 
