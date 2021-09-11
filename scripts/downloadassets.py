@@ -134,7 +134,7 @@ while offset < len(arts):
 			response = requests.get(url)
 			art = Image.open(io.BytesIO(response.content)).resize((1330, 1596))
 			# We save the hero art as webp attempting the better compression method while being lossless to avoid quality drops
-			art.save("../data/img/heroes/" + filename, 'WEBP', lossless = True, quality = 100, method = 6)
+			art.save("../data/img/heroes/" + filename, 'WEBP')
 			print("Successfully downloaded", end = "\n")
 		# If anything went wrong on downloading and parsing the image fall back to an error one
 		except:
