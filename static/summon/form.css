@@ -1,0 +1,192 @@
+body {
+	background-image: url("/common/assets/BG_Brave.webp");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: Ubuntu;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	height: 100vh;
+	overflow-y: hidden;
+}
+
+.contenedor {
+	display: inline-flex;
+	gap: 1em;
+}
+
+#fakecanvas {
+	width: calc(100vh * 0.5625);
+	height: 100vh;
+}
+
+.form {
+	height: 100vh;
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(14, 51, 69, 0.6);
+	color: white;
+	text-align: initial;
+	padding: 1em 1.5em 0 1.5em;
+	box-sizing: border-box;
+}
+
+.form > * {
+	column-count: 2;
+}
+@media screen and (min-aspect-ratio: 12/5) {
+	.form > * {
+		column-count: 3;
+	}
+}
+
+@media screen and (max-aspect-ratio: 593/467) {
+	.form > * {
+		column-count: 1;
+	}
+	.additionaloptions {
+		padding-bottom: 0.8em;
+	}
+}
+
+@media screen and (orientation: portrait) {
+	body {
+		height: auto;
+		overflow-y: initial;
+		width: 100vw;
+	}
+	.contenedor {
+		flex-direction: column;
+		gap: 0;
+	}
+	#fakecanvas {
+		height: auto;
+		width: 90vw;
+	}
+	#unitslot {
+		order: 2;
+	}
+	.form {
+		height: auto;
+		width: 90vw;
+		row-gap: 0;
+	}
+	.form > * {
+		column-count: 1;
+	}
+}
+
+.row-property {
+	display: flex;
+	gap: 1em;
+	padding-bottom: 0.5em;
+	break-inside: avoid;
+}
+input[type=number] {
+	text-align: center;
+	border-radius: 4px;
+	background-color: #fff;
+	border: 1px solid #aaa;
+	font-weight: bold;
+	width: 6.45em;
+	height: 2em;
+}
+input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-outer-spin-button {
+	opacity: 1;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+* {
+  scrollbar-width: none;
+}
+.summonbutton {
+	border: 0;
+	height: 2.5em;
+	color: #fff;
+	background-color: #007bff;
+	border-radius: 0.2em;
+	padding: 0 1em 0 1em;
+	cursor: pointer;
+	font-size: 1em;
+}
+.imagelabel {
+	height: 2em;
+	width: 2em;
+}
+.row-property.single > div {
+	width: 15.5em !important;
+}
+.row-property.double > div {
+	width: 5.75em !important;
+}
+.select2-selection__rendered {
+    line-height: 2em !important;
+}
+.select2-container .select2-selection--single, .select2-selection__arrow {
+    height: 2em !important;
+}
+.select2-container {
+	text-align: initial;
+}
+.select2-selection.select2-selection--multiple {
+	color: black;
+	padding: 0 0 5px 0 !important;
+}
+.select2-selection__choice {
+    line-height: 1.5em !important;
+}
+input[type=checkbox] {
+	width: 18px; 
+	height: 18px;
+}
+h2 {
+	text-decoration: underline;
+}
+.select-without-search {
+	width: 100%;
+	height: 100%;
+	font-family: inherit;
+	font-size: inherit;
+	background-color: white;
+	color: #444;
+	border-radius: 4px;
+	border: 1px solid grey;
+	padding-left: 0.25em;
+}
+
+.links {
+	display: flex;
+	margin-top: auto;
+	margin-left: auto;
+	gap: 0.5em;
+	padding: 0 0 0.5em 0;
+}
+.links > * {
+	text-decoration: none;
+}
+
+.additionaloptions {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	gap: 1em;
+	height: 2em;
+}
+
+@media screen and (orientation: portrait) {
+	.row-property.single > div {
+		width: calc(100% - 3em) !important;
+	}
+	.row-property.double > div {
+		width: calc((100% - 7em) / 2) !important;
+	}
+	input[type=number] {
+		width: calc((100% - 9em) / 2) !important;
+	}
+	.additionaloptions {
+		padding-bottom: 1em;
+	}
+}

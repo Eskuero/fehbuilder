@@ -183,9 +183,15 @@ icons = {
 	"rarity4": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/bf/RarityLine4.png?163?53",
 	"rarity5": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a8/RarityLine5.png?200?53",
 	"rarityForma": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/02/RarityLineF.png?200?53",
+	# Summoning
+	"red_orb": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/1a/Red_Orb.png?160?160",
+	"blue_orb": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/bc/Blue_Orb.png?160?160",
+	"green_orb": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/d7/Green_Orb.png?160?160",
+	"colorless_orb": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/4/4e/Colorless_Orb.png?160?160",
 	# Other
 	"normalbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/9d/BG_DetailedStatus.png?1067?1280",
 	"summonerbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/5c/Summoner_Support_Background.png?1067?1280",
+	"summoningaltar": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/4/42/BG_Summon_Stone.png?1067?1280",
 	"resplendent": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b8/Icon_GodWear_L.png?82?82"
 }
 

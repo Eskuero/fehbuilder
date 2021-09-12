@@ -87,3 +87,14 @@ heroeslite = {
 }
 with open("liteunits.json", "w") as outfile:
     json.dump(heroeslite, outfile)
+
+# Even smaller version for the summoning
+heroessummon = {
+	heroname: {
+		property: value
+		for property, value in properties.items() if property in ["WeaponType"]
+	}
+	for heroname, properties in heroes.items() if "EID" not in heroname
+}
+with open("summonunits.json", "w") as outfile:
+    json.dump(heroessummon, outfile)

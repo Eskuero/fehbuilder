@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FE Heroes Summon Simulator</title>
+		<meta name="title" content="FE Heroes Summon Simulator">
+		<meta name="description" content="Tool that mimics summoning from the Fire Emblem Heroes game. Support all languages available in the game.">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+		<link rel="stylesheet" href="form.css" />
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" integrity="sha512-aD9ophpFQ61nFZP6hXYu4Q/b/USW7rpLCQLX6Bi0WJHXNO7Js/fUENpBQf/+P4NtpzNX0jSgR5zVvPOJp+W2Kg==" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu" crossorigin="anonymous" />
+		<link rel="shortcut icon" href="/common/assets/Feh.webp" />
+
+	</head>
+	<body>
+		<div class="contenedor">
+			<canvas id="fakecanvas" width="720" height="1280" alt="FEH Unit Builder"></canvas>
+			<div class="form">
+				<section>
+					<div class="additionaloptions">
+						<button onclick="summon()" class="summonbutton">Single session</button>
+						<button onclick="alert('Unimplemented')" class="summonbutton">Multi session</button>
+					</div>
+					<div class="row-property single">
+						<img class="imagelabel" src="/common/assets/language.webp" title="Language"/>
+						<div>
+							<select class="select-without-search" id="language" onChange="populate(select5focus, units); populate(select4focus, units)">
+								<option value="USEN" selected>English</option>
+								<option value="EUDE">Deutsch</option>
+								<option value="EUES">Español</option>
+								<option value="EUFR">Français</option>
+								<option value="EUIT">Italiano</option>
+								<option value="JPJA">日本語</option>
+								<option value="TWZH">繁體中文</option>
+								<option value="USPT">Português</option>
+							</select>
+						</div>
+					</div>
+				</section>
+				<h2>Focus Units</h2>
+				<section>
+					<div class="row-property single">
+						<img class="imagelabel" src="/common/assets/Rarity_5_Focus.webp" title="5 star rarity"/>
+						<div>
+							<select class="s2-select" id="5starfocus" multiple="multiple" onChange="changetargets()">
+							</select>
+						</div>
+					</div>
+					<div class="row-property single">
+						<img class="imagelabel" src="/common/assets/Rarity_4_Focus.webp" title="4 star rarity"/>
+						<div>
+							<select class="s2-select" id="4starfocus" multiple="multiple" onChange="changetargets()">
+							</select>
+						</div>
+					</div>
+				</section>
+				<h2>Base gacha percents</h2>
+				<section>
+					<div class="row-property double">
+						<img class="imagelabel" src="/common/assets/Rarity_5_Focus.webp" title="Focus 5* units"/>
+						<input type="number" id="focus5" min="0" max="99" onchange="reset()" value="3">
+						<img class="imagelabel" src="/common/assets/rarity.webp" title="Off-focus 5* units"/>
+						<input type="number" id="offfocus5" min="0" max="99" onchange="reset()" value="3">
+					</div>
+					<div class="row-property double">
+						<img class="imagelabel" src="/common/assets/Rarity_4_Focus.webp" title="Focus 4* units"/>
+						<input type="number" id="focus4" min="0" max="99" onchange="reset()" value="3">
+						<img class="imagelabel" src="/common/assets/Rarity_4_Special.webp" title="Special Rate 4* units"/>
+						<input type="number" id="special4" min="0" max="99" onchange="reset()" value="3">
+					</div>
+					<div class="row-property double">
+						<img class="imagelabel" src="/common/assets/Rarity_4.webp" title="Off-focus 4* units"/>
+						<input type="number" id="offfocus4" min="0" max="99" onchange="reset()" value="52">
+						<img class="imagelabel" src="/common/assets/Rarity_3.webp" title="Off-focus 3* units"/>
+						<input type="number" id="offfocus3" min="0" max="99" onchange="reset()" value="36">
+					</div>
+				</section>
+				<h2>Behaviour</h2>
+				<section>
+					<div class="row-property single">
+						<img class="imagelabel" src="/common/assets/method.webp" title="Summoning method" />
+						<div>
+							<select class="select-without-search" id="method">
+								<option value="snipe">Color sniping</option>
+								<option value="full">Complete circles</option>
+							</select>
+						</div>
+					</div>
+					<div class="row-property single">
+						<img class="imagelabel" src="/common/assets/until.webp" title="Summoning until" />
+						<div>
+							<select class="select-without-search" id="until" disabled>
+								<option value="all">All targets obtained</option>
+								<option value="one">One target obtained</option>
+							</select>
+						</div>
+					</div>
+				</section>
+				<h2>Targets</h2>
+				<section id="targets">
+				</section>
+				<h2>Built pity-rate</h2>
+				<section>
+					<div class="row-property double">
+						<img class="imagelabel" src="/common/assets/Rarity_5_Focus.webp" title="Focus 5* units"/>
+						<input type="number" id="pityfocus5" min="0" max="99" value="3" disabled>
+						<img class="imagelabel" src="/common/assets/rarity.webp" title="Off-focus 5* units"/>
+						<input type="number" id="pityofffocus5" min="0" max="99" value="3" disabled>
+					</div>
+					<div class="row-property double">
+						<img class="imagelabel" src="/common/assets/Rarity_4_Focus.webp" title="Focus 4* units"/>
+						<input type="number" id="pityfocus4" min="0" max="99" value="3" disabled>
+						<img class="imagelabel" src="/common/assets/Rarity_4_Special.webp" title="Special Rate 4* units"/>
+						<input type="number" id="pityspecial4" min="0" max="99" value="3" disabled>
+					</div>
+					<div class="row-property double">
+						<img class="imagelabel" src="/common/assets/Rarity_4.webp" title="Off-focus 4* units"/>
+						<input type="number" id="pityofffocus4" min="0" max="99" value="52" disabled>
+						<img class="imagelabel" src="/common/assets/Rarity_3.webp" title="Off-focus 3* units"/>
+						<input type="number" id="pityofffocus3" min="0" max="99" value="36" disabled>
+					</div>
+				</section>
+				<div class="links">
+					<a href="/">
+						<img class="img-fluid" src="/common/assets/home.webp"/>
+					</a>
+					<a href="https://github.com/Eskuero/fehbuilder" target="blank">
+						<img class="img-fluid" src="/common/assets/github.webp"/>
+					</a>
+					<a href="https://discord.gg/fireemblemheroes" target="blank">
+						<img class="img-fluid" src="/common/assets/discord.webp"/>
+					</a>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" integrity="sha512-4MvcHwcbqXKUHB6Lx3Zb5CEAVoE9u84qN+ZSMM6s7z8IeJriExrV3ND5zRze9mxNlABJ6k864P/Vl8m0Sd3DtQ==" crossorigin="anonymous"></script>
+		<script src="imagerender.js"></script>
+		<script src="form.js"></script>
+    </body>
+</html>

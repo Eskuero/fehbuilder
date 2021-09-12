@@ -62,6 +62,16 @@ languageslite = {
 with open("litelanguages.json", "w") as outfile:
     json.dump(languageslite, outfile)
 
+# Even smaller version for summoning
+languagessummon = {
+	language: {
+		key: string
+		for key, string in strings.items() if not any(substring in key for substring in basicstrings + ["ILLUST", "VOICE", "SID", "EID"])
+	}
+	for language, strings in languages.items()
+}
+with open("summonlanguages.json", "w") as outfile:
+    json.dump(languagessummon, outfile)
 
 # Alternative version for custom unit builder
 languagescustom = {

@@ -55,9 +55,15 @@ def work():
 		},
 		"duokeywords": duokeywords
 	}
-
 	with open("liteother.json", "w") as outfile:
 		json.dump(otherlite, outfile)
+
+	# Even smaller version for summoning
+	othersummon = {
+		"duokeywords": duokeywords
+	}
+	with open("summonother.json", "w") as outfile:
+		json.dump(othersummon, outfile)
 
 	# Altenative version for custom unit builder
 	othercustom = {
@@ -66,7 +72,6 @@ def work():
 		"resonant": other["resonant"],
 		"images": images
 	}
-
 	with open("customother.json", "w") as outfile:
 		json.dump(othercustom, outfile)
 
