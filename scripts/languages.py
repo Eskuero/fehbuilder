@@ -19,7 +19,7 @@ with open("fullother.json", "r") as datasource:
 	blessed = json.load(datasource)["blessed"]
 	
 # Big dictionary to store all translations (we're ignoring Spanish (US) and English (EU) as they are probably 99% identical to save same bandwidth)
-languages = {"EUDE": {}, "EUES": {}, "EUFR": {}, "EUIT": {}, "JPJA": {}, "TWZH": {}, "USEN": {}, "USPT": {}}
+languages = {"EUDE": {}, "EUES": {}, "USES": {}, "EUFR": {}, "EUIT": {}, "JPJA": {}, "TWZH": {}, "USEN": {}, "EUEN": {}, "USPT": {}}
 
 # This is a list of strings for translating the UI and must always be included
 basicstrings = ["MID_HP", "MID_ATTACK", "MID_AGILITY", "MID_DEFENSE", "MID_RESIST", "MID_SKILL_POINT", "MID_HEROISM_POINT", "MID_LEVEL2", "MID_EXP", "MSID_H_NONE", "MID_UNIT_INFO_EXP_MAX", "MID_UNIT_INFO_TO_TALK", "MID_UNIT_INFO_TO_SKILLLEARN", "MID_UNIT_INFO_TO_SKILLEQUIP", "MID_UNIT_INFO_TO_SKILLSET"]
