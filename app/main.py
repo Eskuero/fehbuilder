@@ -12,7 +12,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import flask
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageOps
 import io
 import json
 import pathlib
@@ -76,6 +76,14 @@ def getimage():
 			# Something went wrong opening the art file, fallback to missigno
 			art = Image.open("../data/img/base/missigno.webp")
 			print("Failed to load art for " + name)
+
+		# Flip vertically and horizontally if requested
+		if hero["mirror"] in ["Vertical", "Both"]:
+			art = ImageOps.flip(art)
+		if hero["mirror"] in ["Horizontal", "Both"]:
+			art = ImageOps.mirror(art)
+
+		# Paste the image on the canvas
 		canvas.paste(art, (-305 + hero["offsetX"], 0 - hero["offsetY"]), art)
 
 		# Paste the foregroud UI

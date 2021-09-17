@@ -43,6 +43,7 @@ selecthm = document.getElementById('hm');
 selectartstyle = document.getElementById('artstyle');
 selectoffsetY = document.getElementById('offsetY');
 selectoffsetX = document.getElementById('offsetX');
+selectmirror = document.getElementById('mirror');
 selectfavorite = document.getElementById('favorite');
 selectaccessory = document.getElementById('accessory');
 selectlanguage = document.getElementById('language');

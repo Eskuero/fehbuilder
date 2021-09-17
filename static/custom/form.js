@@ -46,6 +46,7 @@ selecthm = document.getElementById('hm');
 selectart = document.getElementById('art');
 selectoffsetY = document.getElementById('offsetY');
 selectoffsetX = document.getElementById('offsetX');
+selectmirror = document.getElementById('mirror');
 selectexpand = document.getElementById('expand');
 selectfavorite = document.getElementById('favorite');
 selectaccessory = document.getElementById('accessory');

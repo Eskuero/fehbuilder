@@ -74,14 +74,41 @@ async function reload() {
 		preview.drawImage(img, -173, 0, 1067, 1280);
 	})
 
+	// Save the context here in case we need to do so some flipping
+	preview.save();
+	artoffsetX = parseInt(selectoffsetX.value);
+	artoffsetY = parseInt(selectoffsetY.value);
+	// We only make modifications if some mirror config is set to other than None
+	switch (mirror.value) {
+		case "Horizontal":
+			preview.translate(720, 0);
+			preview.scale(-1, 1);
+			artoffsetX = -artoffsetX;
+			break;
+		case "Vertical":
+			preview.translate(0, 1280);
+			preview.scale(1, -1);
+			artoffsetY = -artoffsetY;
+			break;
+		case "Both":
+			preview.translate(720, 1280);
+			preview.scale(-1, -1);
+			artoffsetX = -artoffsetX;
+			artoffsetY = -artoffsetY;
+			break;
+	}
 	// Print the hero art selected
 	if (hero) {
 		// If we selected Resplendent and it actually is a legit choose the art
 		attire = (selectattire.value == "Resplendent" && languages[language][hero.replace("PID", "MPID_VOICE") + "EX01"]) ? "_Resplendent_" : "_";
 		await getimage("../common/heroes/" + hero + attire + selectartstyle.value + ".webp", "/common/base/missigno.webp").then(img => {
-			preview.drawImage(img, -305 + parseInt(selectoffsetX.value), 0 - parseInt(selectoffsetY.value));
+			// We always print the image at the 0 coordinate on Y, but this is not good enough when vertically flipping because we expect the lower half of the hero not to be cut
+			coordinateY = ["Vertical", "Both"].includes(mirror.value) ? - (img.height - 1280) : 0;
+			preview.drawImage(img, -305 + artoffsetX, coordinateY - artoffsetY);
 		})
 	}
+	// Always restore the previous context to avoid issues
+	preview.restore();
 	
 	// Print the foregroundUI
 	foreground = appui.checked ? other["images"]["other"]["fgui"] : other["images"]["other"]["fgnoui"]

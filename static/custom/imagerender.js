@@ -26,6 +26,29 @@ async function reload() {
 		preview.drawImage(img, -173, 0, 1067, 1280);
 	})
 
+	// Save the context here in case we need to do so some flipping
+	preview.save();
+	artoffsetX = parseInt(selectoffsetX.value);
+	artoffsetY = parseInt(selectoffsetY.value);
+	// We only make modifications if some mirror config is set to other than None
+	switch (mirror.value) {
+		case "Horizontal":
+			preview.translate(720, 0);
+			preview.scale(-1, 1);
+			artoffsetX = -artoffsetX;
+			break;
+		case "Vertical":
+			preview.translate(0, 1280);
+			preview.scale(1, -1);
+			artoffsetY = -artoffsetY;
+			break;
+		case "Both":
+			preview.translate(720, 1280);
+			preview.scale(-1, -1);
+			artoffsetX = -artoffsetX;
+			artoffsetY = -artoffsetY;
+			break;
+	}
 	// Print the hero art selected
 	if (selectart.files[0]) {
 		var reader = new FileReader();
@@ -37,9 +60,11 @@ async function reload() {
 		await getimage(reader.result).then(img => {
 			// Size of the image must vary depending on the multiplier used
 			multiplier = parseInt(selectexpand.value) / 100;
-			preview.drawImage(img, 0 + parseInt(selectoffsetX.value), 0 - parseInt(selectoffsetY.value), img.width * multiplier, img.height * multiplier);
+			preview.drawImage(img, 0 + artoffsetX, 0 - artoffsetY, img.width * multiplier, img.height * multiplier);
 		})
 	}
+	// Always restore the previous context to avoid issues
+	preview.restore();
 	
 	// Print the foregroundUI
 	foreground = appui.checked ? other["images"]["other"]["fgui"] : other["images"]["other"]["fgnoui"]

@@ -5,7 +5,7 @@ from PIL import Image
 def herosanitization(heroes, skills, languages, blessed, name, args):
 	# Hero request squeleton definition
 	hero = {
-		"name": False, "rarity": False, "boon": False, "bane": False, "merges": False, "flowers": False, "beast": False, "weapon": False, "refine": False, "assist": False, "special": False, "passiveA": False, "passiveB": False, "passiveC": False, "passiveS": False, "summoner": False, "blessing": False, "attire": False, "bonusunit": False, "allies": False, "buffs": False, "sp": False, "hm": False, "artstyle": False, "offsetY": False, "offsetX": False, "favorite": False, "accessory": False, "language": False, "appui": False
+		"name": False, "rarity": False, "boon": False, "bane": False, "merges": False, "flowers": False, "beast": False, "weapon": False, "refine": False, "assist": False, "special": False, "passiveA": False, "passiveB": False, "passiveC": False, "passiveS": False, "summoner": False, "blessing": False, "attire": False, "bonusunit": False, "allies": False, "buffs": False, "sp": False, "hm": False, "artstyle": False, "offsetY": False, "offsetX": False, "mirror": False, "favorite": False, "accessory": False, "language": False, "appui": False
 	}
 	for prop in hero:
 		value = args.get(prop)
@@ -89,6 +89,9 @@ def herosanitization(heroes, skills, languages, blessed, name, args):
 				hero[prop] = -300 if int(value) < -300 else (300 if int(value) > 300 else int(value))
 			except:
 				hero[prop] = 0
+		# For art mirroring we only accept a few values
+		elif prop == "mirror":
+			hero[prop] = value if value in ["Horizontal", "Vertical", "Both"] else False
 		# For favorite marks if it's a strig numeric from 1 to 8
 		elif prop == "favorite":
 			hero[prop] = int(value) if value in ["1", "2", "3", "4", "5", "6", "7", "8"] else 0
