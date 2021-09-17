@@ -86,7 +86,7 @@ def herosanitization(heroes, skills, languages, blessed, name, args):
 		# If offset valie is not provided default to 0, if provided but not a valid digit default to 0, if valid but above 300 default to 300, anything else should be fine
 		elif prop in ["offsetY", "offsetX"]:
 			try:
-				hero[prop] = -300 if int(value) < -300 else (300 if int(value) > 300 else int(value))
+				hero[prop] = -1500 if int(value) < -1500 else (1500 if int(value) > 1500 else int(value))
 			except:
 				hero[prop] = 0
 		# For art mirroring we only accept a few values
