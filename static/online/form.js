@@ -279,9 +279,9 @@ async function reload() {
 		printnumbers(preview, statsmodifier[i], numbertype, 265, 805 + (i * 49) + (i * 0.3), "end");
 	}
 	// Print the amount of SP and HM
-	numbertype = selectsp.value >= "9999" ? 4 : 0;
+	numbertype = selectsp.value == "9999" ? 4 : 0;
 	printnumbers(preview, parseInt(selectsp.value), numbertype, 265, 1052, "end");
-	numbertype = selecthm.value >= "7000" ? 4 : 0;
+	numbertype = selecthm.value == "7000" ? 4 : 0;
 	printnumbers(preview, parseInt(selecthm.value), numbertype, 265, 1100, "end");
 
 	accessory = selectaccessory.value == "None" ? false : selectaccessory.value;
