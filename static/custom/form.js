@@ -15,6 +15,7 @@
 var units, skills, other, languages;
 // All selects we have available
 selecthero = document.getElementById('hero');
+selecttitle = document.getElementById('title');
 selectrarity = document.getElementById('rarity');
 selectmerges = document.getElementById('merges');
 selectflowers = document.getElementById('flowers');

@@ -17,9 +17,6 @@ async function reload() {
 	// Sometimes the text stroke could cause graphical glitches
 	preview.miterLimit = 2;
 
-	// Hero ID
-	hero = selecthero.value;
-
 	// Print the background depending on the type of support
 	background = selectsummoner.value == "None" ? "bgnosupport" : "bgsupport";
 	await getimage(other["images"]["other"][background]).then(img => {
@@ -90,16 +87,15 @@ async function reload() {
 	// Language selected
 	language = selectlanguage.value;
 
-	// Print title and name (we expect the first part to be the name and the second the title
-	fullname = hero.split(":")
-	title = fullname[1] ? fullname[1] : ""
+	// Print title and name
+	hero = selecthero.value;
+	title = selecttitle.value;
 	// Use horizontally centered anchor to avoid going out of bounds
 	preview.fillStyle = 'white'; preview.strokeStyle = 'rgb(50, 30, 10)'; preview.textAlign = 'center'; preview.textBaseline = "middle"; preview.font = '35px FeH-Font'; preview.lineWidth = 6;
 	// Add the fill and the stroke for the title
 	preview.strokeText(title, 188, 585); preview.fillText(title, 188, 585);
 	// Add the fill and the stroke for the name
-	name = fullname[0]
-	preview.strokeText(name, 222, 659); preview.fillText(name, 222, 659);
+	preview.strokeText(hero, 222, 659); preview.fillText(hero, 222, 659);
 
 	// Print the artist and actor names, as well as the favorite mark and other minor strings if appui is enabled
 	if (appui.checked) {
