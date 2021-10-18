@@ -285,6 +285,7 @@ images = {
 		"accessoryexpand": "/common/base/accessory-expansion.webp",
 		"numberfont": "/common/base/numberfont.webp",
 		"flowerholder": "/common/base/flowerholder.webp",
+		"ascendent": "/common/other/ascendent.webp",
 		"duoconversation": "/common/other/DuoConversation.webp",
 		"noweapon": "/common/other/weapon-Refine.webp",
 		"Duo": "/common/other/Duo.webp",

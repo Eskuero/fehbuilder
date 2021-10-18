@@ -453,6 +453,7 @@ images = {
 		"accessoryexpand": Image.open("../data/img/base/accessory-expansion.webp"),
 		"numberfont": Image.open("../data/img/base/numberfont.webp"),
 		"flowerholder": Image.open("../data/img/base/flowerholder.webp"),
+		"ascendent": Image.open("../data/img/other/ascendent.webp"),
 		"duoconversation": Image.open("../data/img/other/DuoConversation.webp"),
 		"noweapon": Image.open("../data/img/other/weapon-Refine.webp"),
 		"Duo": Image.open("../data/img/other/Duo.webp"),

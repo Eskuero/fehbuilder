@@ -284,6 +284,13 @@ async function reload() {
 	numbertype = selecthm.value == "7000" ? 4 : 0;
 	printnumbers(preview, parseInt(selecthm.value), numbertype, 265, 1100, "end");
 
+	// Print the ascendent floret icon if selected
+	if (ascendent) {
+		await getimage(other["images"]["other"]["ascendent"]).then(img => {
+			preview.drawImage(img, 10, 502);
+		});
+	}
+
 	accessory = selectaccessory.value == "None" ? false : selectaccessory.value;
 	// If we selected an accessory we paste a newer bigger holder and define an offset to push all next items to the right
 	offset = 0;

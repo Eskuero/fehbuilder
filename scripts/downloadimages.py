@@ -35,6 +35,8 @@ def download():
 		art.save(location + icon + ".webp", 'WEBP', lossless = True, quality = 100, method = 6)
 
 icons = {
+	# Ascendent
+	"ascendent": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/c0/Ascendent_Floret.png?58?58",
 	# Movement types
 	"0-move": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/4/45/Icon_Move_Infantry.png?32?32",
 	"0-flower": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a4/Dragonflower_I.png?60?60",

@@ -179,6 +179,10 @@ def getimage():
 		numbertype = 4 if hero["hm"] == 7000 else 0;
 		utilities.printnumbers(canvas, hero["hm"], numbertype, 265, 1100, "end");
 
+		# Print the ascendent floret icon if selected
+		if (hero["ascendent"]):
+			canvas.paste(utilities.images["other"]["ascendent"], (10, 502), utilities.images["other"]["ascendent"])
+
 		# If we selected an accessory we paste a newer bigger holder and define an offset to push all next items to the right
 		offset = 0
 		if hero["accessory"]:
