@@ -20,6 +20,7 @@ selectmerges = document.getElementById('merges');
 selectflowers = document.getElementById('flowers');
 selectboons = document.getElementById('boons');
 selectbanes = document.getElementById('banes');
+selectascendent = document.getElementById('ascendent');
 selectbeast = document.getElementById('beast');
 selectweapons = document.getElementById('weapon');
 selectrefines = document.getElementById('refine');

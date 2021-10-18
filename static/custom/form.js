@@ -21,6 +21,7 @@ selectmerges = document.getElementById('merges');
 selectflowers = document.getElementById('flowers');
 selectboons = document.getElementById('boons');
 selectbanes = document.getElementById('banes');
+selectascendent = document.getElementById('ascendent');
 selectbeast = document.getElementById('beast');
 selectmovetype = document.getElementById('movetype');
 selectweapontype = document.getElementById('weapontype');

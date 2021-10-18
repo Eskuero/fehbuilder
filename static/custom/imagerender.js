@@ -117,14 +117,14 @@ async function reload() {
 		preview.strokeText(languages[language]["MID_UNIT_INFO_TO_TALK"], 617, 47); preview.fillText(languages[language]["MID_UNIT_INFO_TO_TALK"], 617, 47);
 	}
 
-	boon = selectboons.value == "None" ? false : selectboons.value; bane = selectbanes.value == "None" ? false : selectbanes.value; merges = parseInt(selectmerges.value);
+	boon = selectboons.value == "None" ? false : selectboons.value; bane = selectbanes.value == "None" ? false : selectbanes.value; ascendent = selectascendent.value == "None" ? false : selectascendent.value; merges = parseInt(selectmerges.value);
 	// First write the static text for each stat (normal anchoring)
 	preview.font = '25px FeH-Font'; preview.textAlign = 'start'; preview.textBaseline = "top"; preview.strokeStyle = '#0a2533';
 	stats = ["HP", "Atk", "Spd", "Def", "Res"]; statsstrings = ["MID_HP", "MID_ATTACK", "MID_AGILITY", "MID_DEFENSE", "MID_RESIST"]
 	// Each stat name is pushed down by 49pixels with an initial offset of 805
 	for (i = 0; i < stats.length; i++) {
 		// The filling color vaires depending of it being a boon, bane (without merges) or neutral
-		preview.fillStyle = stats[i] == boon ? "#b1ecfa" : (stats[i] == bane && merges == 0 ? "#f0a5b3" : "#ffffff");
+		preview.fillStyle = (stats[i] == boon || stats[i] == ascendent) ? "#b1ecfa" : (stats[i] == bane && merges == 0 ? "#f0a5b3" : "#ffffff");
 		preview.strokeText(languages[language][statsstrings[i]], 115, 805 + (i * 49) + (i * 0.3)); preview.fillText(languages[language][statsstrings[i]], 115, 805 + (i * 49) + (i * 0.3));
 	}
 	preview.font = '24px FeH-Font'; preview.fillStyle = 'white';

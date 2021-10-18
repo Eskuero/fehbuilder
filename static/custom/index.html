@@ -164,6 +164,19 @@
 						</div>
 					</div>
 					<div class="row-property double">
+						<img class="imagelabel" src="/common/assets/ascendent.webp" title="Ascendent Stat" />
+						<div>
+							<select class="select-without-search" onchange="reload()" id="ascendent">
+								<option value="None">-</option>
+								<option value="HP">HP</option>
+								<option value="Atk">Atk</option>
+								<option value="Spd">Spd</option>
+								<option value="Def">Def</option>
+								<option value="Res">Res</option>
+							</select>
+						</div>
+					</div>
+					<div class="row-property double">
 						<img class="imagelabel" src="/common/other/0-move.webp" id="moveicon" title="Move Type"/>
 						<div>
 							<select class="select-without-search" onchange="changetype(this);reload();populateall(false)" id="movetype">

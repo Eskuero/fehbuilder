@@ -5,7 +5,7 @@ from PIL import Image
 def herosanitization(heroes, skills, languages, blessed, name, args):
 	# Hero request squeleton definition
 	hero = {
-		"name": False, "rarity": False, "boon": False, "bane": False, "merges": False, "flowers": False, "beast": False, "weapon": False, "refine": False, "assist": False, "special": False, "passiveA": False, "passiveB": False, "passiveC": False, "passiveS": False, "summoner": False, "blessing": False, "attire": False, "bonusunit": False, "allies": False, "buffs": False, "sp": False, "hm": False, "artstyle": False, "offsetY": False, "offsetX": False, "mirror": False, "favorite": False, "accessory": False, "language": False, "appui": False
+		"name": False, "rarity": False, "boon": False, "bane": False, "ascendent": False, "merges": False, "flowers": False, "beast": False, "weapon": False, "refine": False, "assist": False, "special": False, "passiveA": False, "passiveB": False, "passiveC": False, "passiveS": False, "summoner": False, "blessing": False, "attire": False, "bonusunit": False, "allies": False, "buffs": False, "sp": False, "hm": False, "artstyle": False, "offsetY": False, "offsetX": False, "mirror": False, "favorite": False, "accessory": False, "language": False, "appui": False
 	}
 	for prop in hero:
 		value = args.get(prop)
@@ -15,7 +15,7 @@ def herosanitization(heroes, skills, languages, blessed, name, args):
 		elif prop == "rarity":
 			hero[prop] = value if value in ["1", "2", "3", "4", "5", "Forma"] else "5"
 		# Banes and boons are valid within a set amount of values
-		elif prop in ["boon", "bane"]:
+		elif prop in ["boon", "bane", "ascendent"]:
 			hero[prop] = value if value in ["HP", "Atk", "Spd", "Def", "Res"] else None
 		# If merges are not provided default to 0, if provided but not a valid digit default to 0, if valid but above 10 default to 10, anything else should be fine
 		elif prop == "merges":
@@ -106,7 +106,7 @@ def herosanitization(heroes, skills, languages, blessed, name, args):
 			hero[prop] = False if value == "false" else True
 	return hero
 
-def statcalc(stats, growths, rarity, boon, bane, merges, flowers):
+def statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers):
 	# Disable banes in the calculations if we are merged
 	if merges > 0:
 		bane = None
@@ -149,17 +149,31 @@ def statcalc(stats, growths, rarity, boon, bane, merges, flowers):
 	}
 	# We sort the level 1 stats to see the correct order to apply merges and dragonflowers
 	truelevel1 = {k: v for k, v in sorted(truelevel1.items(), key=lambda item: item[1], reverse=True)}
+
+	# We only apply the ascendent boon after sorting because they are not meant to affect the merge/dragonflower boost order. Also do not apply if there's a match between boon and ascendent boon
+	if ascendent in truelevel1 and boon != ascendent:
+		truelevel1[ascendent] += 1
+		truegrowth[ascendent] += 5
+
 	# We loop as many times as merges we got to apply the boosts, we save in a variable the next to be updated index
 	stat = 0;
 	for i in range(0, merges):
-		# If we are neutral but merged we increase the first two stats twice
-		truelevel1[list(truelevel1.keys())[stat]] += 2 if not boon and i == 0 else 1
+		# If we are neutral but merged we increase the first two stats twice  (unless we have an ascendent boon on that stat)
+		truelevel1[list(truelevel1.keys())[stat]] += 2 if not boon and i == 0 and list(truelevel1.keys())[stat] != ascendent else 1
+		ascended = True if list(truelevel1.keys())[stat] == ascendent else False
 		stat = 0 if stat == 4 else stat + 1
-		truelevel1[list(truelevel1.keys())[stat]] += 2 if not boon and i == 0 else 1
+		truelevel1[list(truelevel1.keys())[stat]] += 2 if not boon and i == 0 and list(truelevel1.keys())[stat] != ascendent else 1
+		ascended = True if list(truelevel1.keys())[stat] == ascendent else ascended
 		stat = 0 if stat == 4 else stat + 1
-		# If we are neutral but merged we increase an additional stat on the first iteration but without incrementing the counter
-		if boon is None and i == 0:
+		# If we are neutral but merged we increase an additional stat on the first iteration  (unless we have an ascendent boon on that stat) but without incrementing the counter
+		if boon is None and i == 0 and list(truelevel1.keys())[stat] != ascendent:
 			truelevel1[list(truelevel1.keys())[stat]] += 1
+			ascended = True if list(truelevel1.keys())[stat] == ascendent else ascended
+
+		# If we are neutral but merged we increase an additional stat on the first merge when ascendent stats are in place but without incrementing the counter
+		if boon is None and i == 0 and ascended:
+			truelevel1[list(truelevel1.keys())[stat+1]] += 1
+
 	# We loop as many times as dragonflowers we got to apply the boosts, we save in a variable the next to be updated index
 	stat = 0;
 	for i in range(0, flowers):
