@@ -436,6 +436,11 @@ function switchbuild(build) {
 	}
 	// Switch active slot
 	buildslot = build;
+	// Before restoring any changes skill slots must be cleaned since otherwise they will be ilegally carried over from other slots
+	mustclean = [selectweapons, selectspecials, selectassists, selectA, selectB, selectC, selectS];
+	for (i = 0; i < mustclean.length; i++) {
+		mustclean[i].value = "None";
+	}
 	// Restore changes to current slot (heroes select, cheats and maxskill setting are to be done first because they affect the content of other selects)
 	selectheroes.value = builds[buildslot][0];
 	cheats.checked = builds[buildslot][1];
