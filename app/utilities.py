@@ -168,7 +168,7 @@ def statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers):
 		# If we are neutral but merged we increase an additional stat on the first iteration  (unless we have an ascendent boon on that stat) but without incrementing the counter
 		if boon is None and i == 0 and list(truelevel1.keys())[stat] != ascendent:
 			truelevel1[list(truelevel1.keys())[stat]] += 1
-			ascended = True if list(truelevel1.keys())[stat] == ascendent else ascended
+		ascended = True if list(truelevel1.keys())[stat] == ascendent else ascended
 
 		# If we are neutral but merged we increase an additional stat on the first merge when ascendent stats are in place but without incrementing the counter
 		if boon is None and i == 0 and ascended:

@@ -65,7 +65,6 @@ function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers
 
 	// We sort the level 1 stats to see the correct order to apply merges and dragonflowers
 	sortedtruelevel1 = dictsort(truelevel1);
-	console.log(sortedtruelevel1)
 
 	// We only apply the ascendent boon after sorting because they are not meant to affect the merge/dragonflower boost order. Also do not apply if there's a match between boon and ascendent boon
 	if (truelevel1[ascendent] && boon != ascendent) {
@@ -83,13 +82,15 @@ function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers
 		ascended = sortedtruelevel1[stat][0] == ascendent ? true : ascended;
 		stat = stat == 4 ? 0 : stat + 1
 		// If we are neutral but merged we increase an additional stat on the first merge (unless we have an ascendent boon on that stat) but without incrementing the counter
-		if (!boon && i == 0 && sortedtruelevel1[stat][0] != ascendent)
+		if (!boon && i == 0 && sortedtruelevel1[stat][0] != ascendent) {
 			truelevel1[sortedtruelevel1[stat][0]] += 1;
-			ascended = sortedtruelevel1[stat][0] == ascendent ? true : ascended;
+		}
+		ascended = sortedtruelevel1[stat][0] == ascendent ? true : ascended;
 
 		// If we are neutral but merged we increase an additional stat on the first merge when ascendent stats are in place but without incrementing the counter
-		if (!boon && i == 0 && ascended)
+		if (!boon && i == 0 && ascended) {
 			truelevel1[sortedtruelevel1[stat+1][0]] += 1;
+		}
 	}
 
 	// We loop as many times as dragonflowers we got to apply the boosts, we save in a variable the next to be updated index
