@@ -181,8 +181,22 @@ async function reload() {
 	stats = ["HP", "Atk", "Spd", "Def", "Res"]; statsstrings = ["MID_HP", "MID_ATTACK", "MID_AGILITY", "MID_DEFENSE", "MID_RESIST"]
 	// Each stat name is pushed down by 49pixels with an initial offset of 805
 	for (i = 0; i < stats.length; i++) {
-		// The filling color vaires depending of it being a boon, bane (without merges), neutral or ascendent
-		preview.fillStyle = (stats[i] == boon || stats[i] == ascendent) ? "#b1ecfa" : (stats[i] == bane && merges == 0 ? "#f0a5b3" : "#ffffff");
+		// The filling color varies depending of it being a boon, bane (without merges), neutral or ascendent
+		if (boon == stats[i]) {
+			preview.fillStyle = "#b1ecfa";
+		} else if (bane == stats[i]) {
+			if (merges != 0 && ascendent == stats[i]) {
+				preview.fillStyle = "#b1ecfa";
+			} else if (merges != 0 || ascendent == stats[i]) {
+				preview.fillStyle = "#ffffff";
+			} else {
+				preview.fillStyle = "#f0a5b3";
+			}
+		} else if (ascendent == stats[i]) {
+			preview.fillStyle = "#b1ecfa";
+		} else {
+			preview.fillStyle = "#ffffff";
+		}
 		preview.strokeText(languages[language][statsstrings[i]], 115, 805 + (i * 49) + (i * 0.3)); preview.fillText(languages[language][statsstrings[i]], 115, 805 + (i * 49) + (i * 0.3));
 	}
 	preview.font = '24px FeH-Font'; preview.fillStyle = 'white';

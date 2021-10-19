@@ -129,11 +129,34 @@ def getimage():
 
 		# First write the static text for each stat (normal anchoring)
 		font = ImageFont.truetype("../data/" + config["fontfile"], 25)
-		draw.text((115, 805), languages[hero["language"]]["MID_HP"], font=font, fill="#b1ecfa" if (hero["boon"] == "HP" or hero["ascendent"] == "HP") else ("#f0a5b3" if hero["bane"] == "HP" and int(hero["merges"]) == 0 else "#ffffff"), stroke_width=3, stroke_fill="#0a2533")
-		draw.text((115, 854), languages[hero["language"]]["MID_ATTACK"], font=font, fill="#b1ecfa" if (hero["boon"] == "Atk" or hero["ascendent"] == "Atk") else ("#f0a5b3" if hero["bane"] == "Atk" and int(hero["merges"]) == 0 else "#ffffff"), stroke_width=3, stroke_fill="#0a2533")
-		draw.text((115, 903), languages[hero["language"]]["MID_AGILITY"], font=font, fill="#b1ecfa" if (hero["boon"] == "Spd" or hero["ascendent"] == "Spd") else ("#f0a5b3" if hero["bane"] == "Spd" and int(hero["merges"]) == 0 else "#ffffff"), stroke_width=3, stroke_fill="#0a2533")
-		draw.text((115, 953), languages[hero["language"]]["MID_DEFENSE"], font=font, fill="#b1ecfa" if (hero["boon"] == "Def" or hero["ascendent"] == "Def") else ("#f0a5b3" if hero["bane"] == "Def" and int(hero["merges"]) == 0 else "#ffffff"), stroke_width=3, stroke_fill="#0a2533")
-		draw.text((115, 1003), languages[hero["language"]]["MID_RESIST"], font=font, fill="#b1ecfa" if (hero["boon"] == "Res" or hero["ascendent"] == "Res") else ("#f0a5b3" if hero["bane"] == "Res" and int(hero["merges"]) == 0 else "#ffffff"), stroke_width=3, stroke_fill="#0a2533")
+		stats = {
+			"HP": languages[hero["language"]]["MID_HP"],
+			"Atk": languages[hero["language"]]["MID_ATTACK"],
+			"Spd": languages[hero["language"]]["MID_AGILITY"],
+			"Def": languages[hero["language"]]["MID_DEFENSE"],
+			"Res": languages[hero["language"]]["MID_RESIST"]
+		}
+		i = 0;
+		for stat in stats:
+			# Each stat goes down an extra 49/50 px from an 805 base
+			positionY = 805 + (i * 49) + (i * 0.3)
+			# The filling color varies depending of it being a boon, bane (without merges), neutral or ascendent
+			if hero["boon"] == stat:
+				color = "#b1ecfa"
+			elif hero["bane"] == stat:
+				if int(hero["merges"]) != 0 and hero["ascendent"] == stat:
+					color = "#b1ecfa"
+				elif int(hero["merges"]) != 0 or hero["ascendent"] == stat:
+					color = "#ffffff"
+				else:
+					color = "#f0a5b3"
+			elif hero["ascendent"] == stat:
+				color = "#b1ecfa"
+			else:
+				color = "#ffffff"
+			draw.text((115, positionY), stats[stat], font=font, fill=color, stroke_width=3, stroke_fill="#0a2533")
+			i += 1
+
 		font = ImageFont.truetype("../data/" + config["fontfile"], 24)
 		draw.text((120, 1051), languages[hero["language"]]["MID_SKILL_POINT"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
 		draw.text((115, 1101), languages[hero["language"]]["MID_HEROISM_POINT"], font=font, fill="#ffffff", stroke_width=3, stroke_fill="#0a2533")
