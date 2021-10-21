@@ -55,7 +55,7 @@ with open("fulllanguages.json", "w") as outfile:
 languageslite = {
 	language: {
 		key: string
-		for key, string in strings.items() if not any(substring in key for substring in ["ILLUST", "VOICE"])
+		for key, string in strings.items() if not any(substring in key for substring in ["ILLUST", "VOICE"]) or any(substring in key for substring in ["EX01"])
 	}
 	for language, strings in languages.items()
 }

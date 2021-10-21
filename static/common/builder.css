@@ -204,6 +204,27 @@ h2 {
 	height: 2em;
 }
 
+.button {
+	border: 0;
+	height: 40%;
+	font-weight: bold;
+	font-size: 1em;
+	color: #fff;
+	background-color: #007bff;
+	border-radius: 0.2em;
+	padding: 0 1em 0 1em;
+}
+.button:hover {
+	cursor: pointer;
+}
+
+.sectiontitle {
+	display: flex;
+	column-count: 1;
+	align-items: center;
+	gap: 1em;
+}
+
 @media screen and (orientation: portrait) {
 	.row-property.single > div {
 		width: calc(100% - 3em) !important;

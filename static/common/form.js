@@ -483,3 +483,134 @@ function slotname() {
 function statictranslations() {
 	slotname();
 }
+
+function maximize() {
+	// Stop if no hero is selected
+	if (selectheroes.value == "None") {
+		return;
+	}
+	selectrarity.value = "5";
+	selectmerges.value = "10";
+	selectflowers.value = units[selectheroes.value]["maxflowers"];
+	selectsummoner.value = "S";
+	// Only choose resplendent if it's a legit one
+	if (languages[selectlanguage.value][selectheroes.value.replace("PID", "MPID_VOICE") + "EX01"]) {
+		selectattire.value = "Resplendent";
+	} else {
+		selectattire.value = "Normal";
+	}
+	// For beasts enable transformation
+	weapontype = units[selectheroes.value]["WeaponType"];
+	if ([20, 21, 22, 23].includes(weapontype)) {
+		selectbeast.value = "yes";
+	}
+	reload();
+}
+
+function reset(section) {
+	switch (section) {
+		case "unit":
+			selectrarity.value = "5";
+			selectmerges.value = "0";
+			selectflowers.value = "0";
+			selectsummoner.value = "None";
+			selectattire.value = "Normal";
+			// For beasts disable transformation
+			weapontype = units[selectheroes.value]["WeaponType"];
+			if ([20, 21, 22, 23].includes(weapontype)) {
+				selectbeast.value = "no";
+			}
+		break;
+		case "skills":
+			selectweapons.value = "None";
+			updateRefine();
+			selectrefines.value = "None";
+			selectassists.value = "None";
+			selectspecials.value = "None";
+			selectA.value = "None";
+			selectB.value = "None";
+			selectC.value = "None";
+			// Trigger a rebuild of the selects based on the language filters set
+			populateall(false);
+	}
+	reload();
+}
+
+function applybasekit() {
+	// Stop if no hero is selected
+	if (selectheroes.value == "None") {
+		return;
+	}
+	basekit = {
+		"weapon": false,
+		"assist": false,
+		"special": false,
+		"A": false,
+		"B": false,
+		"C": false
+	}
+	fullkit = units[selectheroes.value]["basekit"];
+	for (i = 0; i < fullkit.length; i++) {
+		if (skills["weapons"][fullkit[i]]) {
+			for (j = 0; j < selectweapons.options.length; j++) {
+				if (selectweapons.options[j].value == fullkit[i]) {
+					basekit["weapon"] = fullkit[i];
+				}
+			}
+		} else if (skills["assists"][fullkit[i]]) {
+			for (j = 0; j < selectassists.options.length; j++) {
+				if (selectassists.options[j].value == fullkit[i]) {
+					basekit["assist"] = fullkit[i];
+				}
+			}
+		} else if (skills["specials"][fullkit[i]]) {
+			for (j = 0; j < selectspecials.options.length; j++) {
+				if (selectspecials.options[j].value == fullkit[i]) {
+					basekit["special"] = fullkit[i];
+				}
+			}
+		} else if (skills["passives"]["A"][fullkit[i]]) {
+			for (j = 0; j < selectA.options.length; j++) {
+				if (selectA.options[j].value == fullkit[i]) {
+					basekit["A"] = fullkit[i];
+				}
+			}
+		} else if (skills["passives"]["B"][fullkit[i]]) {
+			for (j = 0; j < selectB.options.length; j++) {
+				if (selectB.options[j].value == fullkit[i]) {
+					basekit["B"] = fullkit[i];
+				}
+			}
+		} else if (skills["passives"]["C"][fullkit[i]]) {
+			for (j = 0; j < selectC.options.length; j++) {
+				if (selectC.options[j].value == fullkit[i]) {
+					basekit["C"] = fullkit[i];
+				}
+			}
+		}
+	}
+	selectweapons.value = basekit["weapon"] ? basekit["weapon"] : "None";
+	updateRefine();
+	// If the weapon has an effect refine, use it
+	if (basekit["weapon"]) {
+		// The refines available for a weapon are defined as an array for the offline version to save bandwidth so the check is not valid for both version
+		if (Array.isArray(skills["weapons"][basekit["weapon"]]["refines"])) {
+			if (skills["weapons"][basekit["weapon"]]["refines"].indexOf("Effect")) {
+				selectrefines.value = "Effect";
+			}
+		} else {
+			if (skills["weapons"][basekit["weapon"]]["refines"]["Effect"]) {
+				selectrefines.value = "Effect";
+			}
+		}
+	}
+	selectassists.value = basekit["assist"] ? basekit["assist"] : "None";
+	selectspecials.value = basekit["special"] ? basekit["special"] : "None";
+	selectA.value = basekit["A"] ? basekit["A"] : "None";
+	selectB.value = basekit["B"] ? basekit["B"] : "None";
+	selectC.value = basekit["C"] ? basekit["C"] : "None";
+
+	// Trigger a rebuild of the selects based on the language filters set
+	populateall(false);
+	reload();
+}
