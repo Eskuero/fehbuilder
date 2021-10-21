@@ -67,6 +67,8 @@ async function reload() {
 
 	// Hero ID
 	hero = selectheroes.value == "None" ? false : selectheroes.value;
+	// Language selected
+	language = selectlanguage.value;
 
 	// Print the background depending on the type of support
 	background = selectsummoner.value == "None" ? "bgnosupport" : "bgsupport";
@@ -135,9 +137,6 @@ async function reload() {
 			preview.drawImage(img, 262, 492, 82, 82);
 		})
 	}
-
-	// Language selected
-	language = selectlanguage.value;
 
 	// Print title and name
 	title = hero.includes("PID_") ? languages[language][hero.replace("PID", "MPID_HONOR")] : "Enemy";
