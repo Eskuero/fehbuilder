@@ -22,6 +22,7 @@ selectflowers = document.getElementById('flowers');
 selectboons = document.getElementById('boons');
 selectbanes = document.getElementById('banes');
 selectascendent = document.getElementById('ascendent');
+selectduoharmo = document.getElementById('duoharmo');
 selectbeast = document.getElementById('beast');
 selectmovetype = document.getElementById('movetype');
 selectweapontype = document.getElementById('weapontype');

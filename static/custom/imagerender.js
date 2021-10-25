@@ -370,7 +370,7 @@ async function reload() {
 	// X amount to additionally push each icon to the left
 	offsetX = 0;
 	// Detect if we are printing more than three icons (this could happen on duo/blessed/summoner supported allies) so we can resize accordingly
-	needsresize = blessing && summoner && other["duo"].includes(hero) ? true : false;
+	needsresize = blessing && summoner && duoharmo.value != "Normal" ? true : false;
 	posY = needsresize ? 595 : 570; posX = needsresize ? 600 : 575;
 	width = needsresize ? 115 : 147; height = needsresize ? 125 : 160;
 	// If blessed print the icon
@@ -384,9 +384,8 @@ async function reload() {
 	}
 
 	// If is a duo hero of any kind print the icon
-	if (other["duo"].concat(other["resonant"]).includes(hero)) {
-		specialtype = other["duo"].includes(hero) ? "Duo" : "Resonance";
-		specialicon = other["images"]["other"][specialtype];
+	if (duoharmo.value != "Normal") {
+		specialicon = other["images"]["other"][duoharmo.value];
 		await getimage(specialicon).then(img => {
 			preview.drawImage(img, posX - offsetX, posY, width, height);
 		});
