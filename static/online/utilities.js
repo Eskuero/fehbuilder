@@ -245,7 +245,7 @@ passivecondensedrender = {
 }
 
 // Function that prints certain numbers using numberfont spritesheet
-function printnumbers(canvas, characters, type, posX, posY, align = "start") {
+function printnumbers(canvas, characters, type, posX, posY, align, scale = 1) {
 	if (typeof characters == "number") {
 		// Split the full number on individual ones
 		numbers = characters.toString().split("").map(Number);
@@ -254,16 +254,16 @@ function printnumbers(canvas, characters, type, posX, posY, align = "start") {
 		// We invert the order of the loop depending on the type of alignment
 		if (align == "end") {
 			for (j = numbers.length - 1; j >= 0; j--) {
-				// This is the size that the number will take ()
+				// This is the size that the number will take
 				width = numberfontrender["end"][numbers[j]] - numberfontrender["start"][numbers[j]];
 				// Since we are aligning to the end the actual drawing position on the X coordinate is the posX - width - offset
-				trueposX = posX - (width + offsetX);
+				trueposX = posX - (width * scale + offsetX);
 				// We must crop the numbers at a certain position depending on type and value
 				sourceX = numberfontrender["start"][numbers[j]]; sourceY = type * 28;
 				// Increase the offset before the next interation using the number width (-3 to make sure we fill the gaps)
-				offsetX += width - 3;
+				offsetX += width * scale - 3;
 				// Print the number
-				canvas.drawImage(numberfont, sourceX, sourceY, width, 28, trueposX, posY, width, 28);
+				canvas.drawImage(numberfont, sourceX, sourceY, width, 28, trueposX, posY, width * scale, 28 * scale);
 			}
 		} else {
 			for (j = 0; j < numbers.length; j++) {
@@ -274,9 +274,9 @@ function printnumbers(canvas, characters, type, posX, posY, align = "start") {
 				// We must crop the numbers at a certain position depending on type and value
 				sourceX = numberfontrender["start"][numbers[j]]; sourceY = type * 28;
 				// Increase the offset before the next interation using the number width (-3 to make sure we fill the gaps)
-				offsetX += width - 3;
+				offsetX += width * scale - 3;
 				// Print the number
-				canvas.drawImage(numberfont, sourceX, sourceY, width, 28, trueposX, posY, width, 28);
+				canvas.drawImage(numberfont, sourceX, sourceY, width, 28, trueposX, posY, width * scale, 28 * scale);
 			}
 		}
 	// Otherwise we are just printing a simple + or -

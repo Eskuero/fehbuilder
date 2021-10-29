@@ -192,7 +192,9 @@ async function condensed() {
 		if (statsnames[i] == "HP") {
 			// If the damage art is select we at least have less than half HP
 			currenthp = selectartstyle.value == "Damage" ? parseInt(statsmodifier[i] / 2) - 1 : statsmodifier[i];
-			printnumbers(preview, currenthp, numbertype, 310, 74, "end");
+			currentcolor = selectartstyle.value == "Damage" ? 3 : numbertype;
+			// FIXME: This should use a different font for the HP numbers
+			printnumbers(preview, currenthp, currentcolor, 300, 70, "end", 1.4);
 			printnumbers(preview, statsmodifier[i], numbertype, 375, 74, "end");
 		} else if (statsnames[i] == "Atk") {
 			printnumbers(preview, statsmodifier[i], numbertype, 279, 126, "end");
@@ -214,11 +216,11 @@ async function condensed() {
 	preview.font = '20px FeH-Font'; preview.fillStyle = "#ffffff"; preview.strokeStyle = '#0a2533'; preview.textAlign = 'center';
 	preview.strokeText(languages[language]["MID_LEVEL2"], 501, 6); preview.fillText(languages[language]["MID_LEVEL2"], 501, 6);
 	// Print the level 40. It was hardcoded previously so we just do this to make sure it doesn't look off side by side with the merge count
-	printnumbers(preview, 40, 1, 480, 30);
+	printnumbers(preview, 40, 1, 480, 30, "start");
 
 	// If we have merges we add the text next to the level
 	if (merges > 0) {
-		printnumbers(preview, "+", 1, 518, 32);
+		printnumbers(preview, "+", 1, 518, 32, "start");
 	}
 
 	preview.font = '24px FeH-Font'; preview.textAlign = 'start';
@@ -522,14 +524,14 @@ async function myunit() {
 	preview.font = '24px FeH-Font'; preview.fillStyle = "#ffffff"; preview.strokeStyle = '#0a2533'; preview.textAlign = 'start';
 	preview.strokeText(languages[language]["MID_LEVEL2"], 70, 746); preview.fillText(languages[language]["MID_LEVEL2"], 70, 746);
 	// Print the level 40. It was hardcoded previously so we just do this to make sure it doesn't look off side by side with the merge count
-	printnumbers(preview, 40, 1, 124, 745);
+	printnumbers(preview, 40, 1, 124, 745, "start");
 
 	// If we have merges we add the text next to the level
 	if (merges > 0) {
 		// Decide type of font depending on if we are fully merged or not
 		numbertype = merges == 10 ? 4 : 1;
-		printnumbers(preview, "+", numbertype, 163, 748);
-		printnumbers(preview, merges, numbertype, 181, 745);
+		printnumbers(preview, "+", numbertype, 163, 748, "start");
+		printnumbers(preview, merges, numbertype, 181, 745, "start");
 	}
 	preview.fillStyle = "#ffffff";
 	// If we have flowers we add another box with the number
@@ -540,8 +542,8 @@ async function myunit() {
 		await getimage(other["images"]["flowers"][units[hero]["moveType"]]).then(img => {
 			preview.drawImage(img, 289 + offset, 727, 60, 60);
 		});
-		printnumbers(preview, "+", 1, 345 + offset, 748);
-		printnumbers(preview, flowers, 1, 364 + offset, 745);
+		printnumbers(preview, "+", 1, 345 + offset, 748, "start");
+		printnumbers(preview, flowers, 1, 364 + offset, 745, "start");
 		offset += 147;
 	}
 
