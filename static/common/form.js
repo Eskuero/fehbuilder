@@ -578,7 +578,13 @@ function applybasekit() {
 		if (skills["weapons"][fullkit[i]]) {
 			for (j = 0; j < selectweapons.options.length; j++) {
 				if (selectweapons.options[j].value == fullkit[i]) {
-					basekit["weapon"] = fullkit[i];
+					// If no weapon is added already save it
+					if (!basekit["weapon"]) {
+						basekit["weapon"] = fullkit[i];
+					// If the weapon already added is a prf do not replace it unless the incoming weapon is also a prf
+					} else if (!skills["weapons"][basekit["weapon"]]["exclusive"] || skills["weapons"][fullkit[i]]["exclusive"]) {
+						basekit["weapon"] = fullkit[i];
+					}
 				}
 			}
 		} else if (skills["assists"][fullkit[i]]) {
