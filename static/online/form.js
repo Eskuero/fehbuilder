@@ -166,10 +166,10 @@ async function condensed() {
 
 	// Setup passive and buff structures as they will be used outside stat calculations too
 	passives = {
-		"A": selectA.value == "None" ? false : selectA.value,
-		"B": selectB.value == "None" ? false : selectB.value,
+		"S": selectS.value == "None" ? false : selectS.value,
 		"C": selectC.value == "None" ? false : selectC.value,
-		"S": selectS.value == "None" ? false : selectS.value
+		"B": selectB.value == "None" ? false : selectB.value,
+		"A": selectA.value == "None" ? false : selectA.value
 	}
 	buffs = [
 		0,
