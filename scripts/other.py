@@ -114,6 +114,14 @@ images = {
 		"5": "/common/other/rarity5.webp",
 		"Forma": "/common/other/rarityForma.webp"
 	},
+	"rarityborder": {
+		"1": "/common/other/rarityborder1.webp",
+		"2": "/common/other/rarityborder2.webp",
+		"3": "/common/other/rarityborder3.webp",
+		"4": "/common/other/rarityborder4.webp",
+		"5": "/common/other/rarityborder5.webp",
+		"Forma": "/common/other/rarityborder5.webp"
+	},
 	"movetype": [
 		"/common/other/0-move.webp",
 		"/common/other/1-move.webp",
@@ -156,86 +164,162 @@ images = {
 		# Fire
 		{
 			"normal": "/common/other/1-Blessing.webp",
+			"normal-mini": "/common/other/1-Blessing-mini.webp",
 			"atk": "/common/other/1-Blessing-atk.webp",
+			"atk-mini": "/common/other/1-Blessing-atk-mini.webp",
 			"spd": "/common/other/1-Blessing-spd.webp",
+			"spd-mini": "/common/other/1-Blessing-spd-mini.webp",
 			"def": "/common/other/1-Blessing-def.webp",
+			"def-mini": "/common/other/1-Blessing-def-mini.webp",
 			"res": "/common/other/1-Blessing-res.webp",
-			"pairup": "/common/other/1-Blessing-pairup.webp"
+			"res-mini": "/common/other/1-Blessing-res-mini.webp",
+			"pairup": "/common/other/1-Blessing-pairup.webp",
+			"pairup-mini": "/common/other/1-Blessing-pairup-mini.webp",
+			"normal-duo": "/common/other/1-Blessing-duo.webp",
+			"normal-resonance": "/common/other/1-Blessing-resonance.webp"
 		},
 		# Water
 		{
 			"normal": "/common/other/2-Blessing.webp",
+			"normal-mini": "/common/other/2-Blessing-mini.webp",
 			"atk": "/common/other/2-Blessing-atk.webp",
+			"atk-mini": "/common/other/2-Blessing-atk-mini.webp",
 			"spd": "/common/other/2-Blessing-spd.webp",
+			"spd-mini": "/common/other/2-Blessing-spd-mini.webp",
 			"def": "/common/other/2-Blessing-def.webp",
+			"def-mini": "/common/other/2-Blessing-def-mini.webp",
 			"res": "/common/other/2-Blessing-res.webp",
-			"pairup": "/common/other/2-Blessing-pairup.webp"
+			"res-mini": "/common/other/2-Blessing-res-mini.webp",
+			"pairup": "/common/other/2-Blessing-pairup.webp",
+			"pairup-mini": "/common/other/2-Blessing-pairup-mini.webp",
+			"normal-duo": "/common/other/2-Blessing-duo.webp",
+			"normal-resonance": "/common/other/2-Blessing-resonance.webp"
 		},
 		# Wind
 		{
-			"normal": "/common/other/3-Blessing.webp",
-			"atk": "/common/other/3-Blessing-atk.webp",
-			"spd": "/common/other/3-Blessing-spd.webp",
-			"def": "/common/other/3-Blessing-def.webp",
-			"res": "/common/other/3-Blessing-res.webp",
-			"pairup": "/common/other/3-Blessing-pairup.webp"
+			"normal": "/common/other/2-Blessing.webp",
+			"normal-mini": "/common/other/2-Blessing-mini.webp",
+			"atk": "/common/other/2-Blessing-atk.webp",
+			"atk-mini": "/common/other/2-Blessing-atk-mini.webp",
+			"spd": "/common/other/2-Blessing-spd.webp",
+			"spd-mini": "/common/other/2-Blessing-spd-mini.webp",
+			"def": "/common/other/2-Blessing-def.webp",
+			"def-mini": "/common/other/2-Blessing-def-mini.webp",
+			"res": "/common/other/2-Blessing-res.webp",
+			"res-mini": "/common/other/2-Blessing-res-mini.webp",
+			"pairup": "/common/other/2-Blessing-pairup.webp",
+			"pairup-mini": "/common/other/2-Blessing-pairup-mini.webp",
+			"normal-duo": "/common/other/3-Blessing-duo.webp",
+			"normal-resonance": "/common/other/3-Blessing-resonance.webp"
 		},
 		# Earth
 		{
 			"normal": "/common/other/4-Blessing.webp",
+			"normal-mini": "/common/other/4-Blessing-mini.webp",
 			"atk": "/common/other/4-Blessing-atk.webp",
+			"atk-mini": "/common/other/4-Blessing-atk-mini.webp",
 			"spd": "/common/other/4-Blessing-spd.webp",
+			"spd-mini": "/common/other/4-Blessing-spd-mini.webp",
 			"def": "/common/other/4-Blessing-def.webp",
+			"def-mini": "/common/other/4-Blessing-def-mini.webp",
 			"res": "/common/other/4-Blessing-res.webp",
-			"pairup": "/common/other/4-Blessing-pairup.webp"
+			"res-mini": "/common/other/4-Blessing-res-mini.webp",
+			"pairup": "/common/other/4-Blessing-pairup.webp",
+			"pairup-mini": "/common/other/4-Blessing-pairup-mini.webp",
+			"normal-duo": "/common/other/4-Blessing-duo.webp",
+			"normal-resonance": "/common/other/4-Blessing-resonance.webp"
 		},
 		# Light
 		{
 			"normal": "/common/other/5-Blessing.webp",
+			"normal-mini": "/common/other/5-Blessing-mini.webp",
 			"atk": "/common/other/5-Blessing-atk.webp",
+			"atk-mini": "/common/other/5-Blessing-atk-mini.webp",
 			"spd": "/common/other/5-Blessing-spd.webp",
+			"spd-mini": "/common/other/5-Blessing-spd-mini.webp",
 			"def": "/common/other/5-Blessing-def.webp",
+			"def-mini": "/common/other/5-Blessing-def-mini.webp",
 			"res": "/common/other/5-Blessing-res.webp",
+			"res-mini": "/common/other/5-Blessing-res-mini.webp",
 			"atk-extrae": "/common/other/5-Blessing-atk-extrae.webp",
+			"atk-extrae-mini": "/common/other/5-Blessing-atk-extrae-mini.webp",
 			"spd-extrae": "/common/other/5-Blessing-spd-extrae.webp",
+			"spd-extrae-mini": "/common/other/5-Blessing-spd-extrae-mini.webp",
 			"def-extrae": "/common/other/5-Blessing-def-extrae.webp",
+			"def-extrae-mini": "/common/other/5-Blessing-def-extrae-mini.webp",
 			"res-extrae": "/common/other/5-Blessing-res-extrae.webp",
+			"res-extrae-mini": "/common/other/5-Blessing-res-extrae-mini.webp",
+			"normal-duo": "/common/other/5-Blessing-duo.webp",
+			"normal-resonance": "/common/other/5-Blessing-resonance.webp"
 		},
 		# Dark
 		{
 			"normal": "/common/other/6-Blessing.webp",
+			"normal-mini": "/common/other/6-Blessing-mini.webp",
 			"atk": "/common/other/6-Blessing-atk.webp",
+			"atk-mini": "/common/other/6-Blessing-atk-mini.webp",
 			"spd": "/common/other/6-Blessing-spd.webp",
+			"spd-mini": "/common/other/6-Blessing-spd-mini.webp",
 			"def": "/common/other/6-Blessing-def.webp",
+			"def-mini": "/common/other/6-Blessing-def-mini.webp",
 			"res": "/common/other/6-Blessing-res.webp",
+			"res-mini": "/common/other/6-Blessing-res-mini.webp",
 			"atk-extrae": "/common/other/6-Blessing-atk-extrae.webp",
+			"atk-extrae-mini": "/common/other/6-Blessing-atk-extrae-mini.webp",
 			"spd-extrae": "/common/other/6-Blessing-spd-extrae.webp",
+			"spd-extrae-mini": "/common/other/6-Blessing-spd-extrae-mini.webp",
 			"def-extrae": "/common/other/6-Blessing-def-extrae.webp",
+			"def-extrae-mini": "/common/other/6-Blessing-def-extrae-mini.webp",
 			"res-extrae": "/common/other/6-Blessing-res-extrae.webp",
+			"res-extrae-mini": "/common/other/6-Blessing-res-extrae-mini.webp",
+			"normal-duo": "/common/other/6-Blessing-duo.webp",
+			"normal-resonance": "/common/other/6-Blessing-resonance.webp"
 		},
 		# Astra
 		{
 			"normal": "/common/other/7-Blessing.webp",
+			"normal-mini": "/common/other/7-Blessing-mini.webp",
 			"atk": "/common/other/7-Blessing-atk.webp",
+			"atk-mini": "/common/other/7-Blessing-atk-mini.webp",
 			"spd": "/common/other/7-Blessing-spd.webp",
+			"spd-mini": "/common/other/7-Blessing-spd-mini.webp",
 			"def": "/common/other/7-Blessing-def.webp",
+			"def-mini": "/common/other/7-Blessing-def-mini.webp",
 			"res": "/common/other/7-Blessing-res.webp",
+			"res-mini": "/common/other/7-Blessing-res-mini.webp",
 			"atk-extrae": "/common/other/7-Blessing-atk-extrae.webp",
+			"atk-extrae-mini": "/common/other/7-Blessing-atk-extrae-mini.webp",
 			"spd-extrae": "/common/other/7-Blessing-spd-extrae.webp",
+			"spd-extrae-mini": "/common/other/7-Blessing-spd-extrae-mini.webp",
 			"def-extrae": "/common/other/7-Blessing-def-extrae.webp",
+			"def-extrae-mini": "/common/other/7-Blessing-def-extrae-mini.webp",
 			"res-extrae": "/common/other/7-Blessing-res-extrae.webp",
+			"res-extrae-mini": "/common/other/7-Blessing-res-extrae-mini.webp",
+			"normal-duo": "/common/other/7-Blessing-duo.webp",
+			"normal-resonance": "/common/other/7-Blessing-resonance.webp"
 		},
 		# Anima
 		{
 			"normal": "/common/other/8-Blessing.webp",
+			"normal-mini": "/common/other/8-Blessing-mini.webp",
 			"atk": "/common/other/8-Blessing-atk.webp",
+			"atk-mini": "/common/other/8-Blessing-atk-mini.webp",
 			"spd": "/common/other/8-Blessing-spd.webp",
+			"spd-mini": "/common/other/8-Blessing-spd-mini.webp",
 			"def": "/common/other/8-Blessing-def.webp",
+			"def-mini": "/common/other/8-Blessing-def-mini.webp",
 			"res": "/common/other/8-Blessing-res.webp",
+			"res-mini": "/common/other/8-Blessing-res-mini.webp",
 			"atk-extrae": "/common/other/8-Blessing-atk-extrae.webp",
+			"atk-extrae-mini": "/common/other/8-Blessing-atk-extrae-mini.webp",
 			"spd-extrae": "/common/other/8-Blessing-spd-extrae.webp",
+			"spd-extrae-mini": "/common/other/8-Blessing-spd-extrae-mini.webp",
 			"def-extrae": "/common/other/8-Blessing-def-extrae.webp",
+			"def-extrae-mini": "/common/other/8-Blessing-def-extrae-mini.webp",
 			"res-extrae": "/common/other/8-Blessing-res-extrae.webp",
+			"res-extrae-mini": "/common/other/8-Blessing-res-extrae-mini.webp",
+			"normal-duo": "/common/other/8-Blessing-duo.webp",
+			"normal-resonance": "/common/other/8-Blessing-resonance.webp"
 		}
 	],
 	"favorite": [
@@ -278,8 +362,10 @@ images = {
 	"other": {
 		"bgnosupport": "/common/other/normalbg.webp",
 		"bgsupport": "/common/other/summonerbg.webp",
+		"bgcondensed": "/common/base/background-condensed.webp",
 		"fgui": "/common/base/foreground-ui.webp",
 		"fgnoui": "/common/base/foreground.webp",
+		"fgcondensed": "/common/base/foreground-condensed.webp",
 		"resplendent": "/common/other/resplendent.webp",
 		"expindicator": "/common/base/expindicator.webp",
 		"accessoryexpand": "/common/base/accessory-expansion.webp",
@@ -289,7 +375,9 @@ images = {
 		"duoconversation": "/common/other/DuoConversation.webp",
 		"noweapon": "/common/other/weapon-Refine.webp",
 		"Duo": "/common/other/Duo.webp",
-		"Resonance": "/common/other/Resonance.webp"
+		"Duo-mini": "/common/other/Duo-mini.webp",
+		"Resonance": "/common/other/Resonance.webp",
+		"Resonance-mini": "/common/other/Resonance-mini.webp"
 	}
 }
 work()

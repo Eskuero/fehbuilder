@@ -25,6 +25,7 @@
 					<button onclick="switchbuild(3)">#4 Build</button>
 				</div>
 				<canvas id="fakecanvas" width="720" height="1280" alt="FEH Unit Builder" ></canvas>
+				<canvas id="fakecanvascond" width="720" height="202" alt="FEH Unit Builder" ></canvas>
 			</div>
 			<div class="form">
 				<section>
@@ -298,7 +299,7 @@
 						<img class="imagelabel" src="/common/assets/hm.webp" title="Hero Merit"/>
 						<input type="number" onchange="reload()" id="hm" min="0" max="7000" value="7000">
 					</div>
-					<div class="row-property single">
+					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/brush.webp" title="Art Style"/>
 						<div>
 							<select class="select-without-search" id="artstyle" onchange="reload()">
@@ -306,6 +307,13 @@
 								<option value="Attack">Attack</option>
 								<option value="Special">Special</option>
 								<option value="Damage">Damage</option>
+							</select>
+						</div>
+						<img class="imagelabel" src="/common/assets/template.webp" title="Unit Template"/>
+						<div>
+							<select class="select-without-search" id="template" onchange="reload()">
+								<option value="MyUnit">My Unit</option>
+								<option value="Condensed">Condensed</option>
 							</select>
 						</div>
 					</div>

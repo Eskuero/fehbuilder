@@ -200,7 +200,6 @@ for unit in units:
 	truename = engrishname["M" + unit] + ((": " + engrishname[unit.replace("PID", "MPID_HONOR")]) if "PID_" in unit else "")
 	# Each pose has an expected wiki name (Enemy units as NPC only have the attack pose that we use as portrait
 	faces = {
-		# Sprites at always with png extension
 		".webp": truename + "_Face_FC.webp"
 	}
 	# Only query resplendent art if the hero is actually resplendent
@@ -209,7 +208,7 @@ for unit in units:
 			"_Resplendent.webp": truename + "_Resplendent_Face_FC.webp"
 	}
 	for face in faces:
-		if not pathlib.Path("../data/img/faces/" + unit + sprite).is_file():
+		if not pathlib.Path("../data/img/faces/" + unit + face).is_file():
 			ids.append(unit)
 			arts.append([face,faces[face]])
 
@@ -229,6 +228,57 @@ while offset < len(arts):
 			art = Image.open(io.BytesIO(response.content)).resize((50, 50))
 			# We save the hero art as webp attempting the better compression method while being lossless to avoid quality drops
 			art.save("../data/img/faces/" + filename, 'WEBP', lossless = True, quality = 100, method = 6)
+			print("Successfully downloaded", end = "\n")
+		# If anything went wrong on downloading and parsing the image fall back to an error one
+		except:
+			print("Failed to download")
+			print("Tried url: " + str(url), end = "\n")
+	offset += 50
+
+print("\nDownloading character faces for condensed template...")
+# Split them in different lists to later be able to query by index
+ids = []
+arts = []
+for unit in units:
+	truename = engrishname["M" + unit] + ((": " + engrishname[unit.replace("PID", "MPID_HONOR")]) if "PID_" in unit else "")
+	# Each pose has an expected wiki name (Enemy units as NPC only have the attack pose
+	if "EID_" in unit:
+		faces = {
+			# Enemy NPCs are uploaded as .pngs for whatever reason
+			"_Attack.webp": truename + "_BtlFace_BU.webp",
+		}
+	else:
+		faces = {
+			"_Attack.webp": truename + "_BtlFace_BU.webp",
+			"_Damage.webp": truename + "_BtlFace_BU_D.webp"
+		}
+	# Only query resplendent art if the hero is actually resplendent
+	if engrishname.get(unit.replace("PID", "MPID_VOICE") + "EX01", False):
+		faces = faces | {
+			"_Resplendent_Attack.webp": truename + "_Resplendent_BtlFace_BU.webp",
+			"_Resplendent_Damage.webp": truename + "_Resplendent_BtlFace_BU_D.webp"
+	}
+	for face in faces:
+		if not pathlib.Path("../data/img/condensed-faces/" + unit + face).is_file():
+			ids.append(unit)
+			arts.append([face,faces[face]])
+
+# We can only query 50 items every time
+offset = 0
+while offset < len(arts):
+	# Since the actual expected name is in the second position of each art item expand it properly
+	expandedart = [name[1] for name in arts[offset:offset+50]]
+	# Save all urls in their respective positions
+	for i, url in enumerate(utils.obtaintrueurl(expandedart)):
+		# Decide on the filename based on face and hero ID
+		filename = ids[offset:offset+50][i] + arts[offset:offset+50][i][0]
+		print(engrishname["M" + ids[offset:offset+50][i]] + " doesn't have " + filename, end = ": ")
+		# Grab and paste the art
+		try:
+			response = requests.get(url)
+			art = Image.open(io.BytesIO(response.content)).resize((321, 202))
+			# We save the hero art as webp attempting the better compression method while being lossless to avoid quality drops
+			art.save("../data/img/condensed-faces/" + filename, 'WEBP', lossless = True, quality = 100, method = 6)
 			print("Successfully downloaded", end = "\n")
 		# If anything went wrong on downloading and parsing the image fall back to an error one
 		except:

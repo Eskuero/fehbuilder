@@ -25,6 +25,7 @@
 					<button onclick="switchbuild(3)">#4 Build</button>
 				</div>
 				<img id="fakecanvas" src="/get_image.png" alt="FEH Unit Builder" />
+				<canvas id="fakecanvascond" width="720" height="202" alt="FEH Unit Builder" ></canvas>
 			</div>
 			<div class="form">
 				<section>
@@ -295,7 +296,7 @@
 						<img class="imagelabel" src="/common/assets/hm.webp" title="Hero Merit"/>
 						<input type="number" id="hm" min="0" max="7000" value="7000">
 					</div>
-					<div class="row-property single">
+					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/brush.webp" title="Art Style"/>
 						<div>
 							<select class="select-without-search" id="artstyle">
@@ -303,6 +304,13 @@
 								<option value="Attack">Attack</option>
 								<option value="Special">Special</option>
 								<option value="Damage">Damage</option>
+							</select>
+						</div>
+						<img class="imagelabel" src="/common/assets/template.webp" title="Unit Template"/>
+						<div>
+							<select class="select-without-search" id="template" onchange="reload()" disabled>
+								<option value="MyUnit" selected>My Unit</option>
+								<option value="Condensed">Condensed</option>
 							</select>
 						</div>
 					</div>
@@ -352,7 +360,7 @@
 					<div class="row-property" style="align-items: center; justify-content: center; margin-top:0.5em">
 						<label class="mb-0">App UI</label>
 						<input type="checkbox" id="appui" checked>
-						<button class="generatebutton" onclick="reload()">Generate hero</button>
+						<button class="generatebutton" onclick="reload(true)">Generate hero</button>
 					</div>
 				</section>
 				<div class="links">

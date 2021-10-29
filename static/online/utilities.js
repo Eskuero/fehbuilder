@@ -172,6 +172,13 @@ passiverender = {
 	"C": {"icon": [369, 1043], "text": [420, 1053], "indicator": [396, 1066]},
 	"S": {"icon": [369, 1093], "text": [420, 1103], "indicator": [396, 1116]}
 }
+// Condensed canvas position to render images passive icons at
+passivecondensedrender = {
+	"A": {"icon": [547, 9], "indicator": [572, 30]},
+	"B": {"icon": [585, 9], "indicator": [609, 31]},
+	"C": {"icon": [623, 9], "indicator": [650, 32]},
+	"S": {"icon": [661, 9], "indicator": [684, 32]}
+}
 
 // Function that prints certain numbers using numberfont spritesheet
 function printnumbers(canvas, characters, type, posX, posY, align = "start") {
