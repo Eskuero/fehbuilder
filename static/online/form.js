@@ -672,8 +672,17 @@ function download() {
 	// Hero ID
 	hero = selectheroes.value == "None" ? false : selectheroes.value;
 	if (hero) {
+		// Switch on depending on selection and run the appropiate renderer
+		switch (selecttemplate.value) {
+			case "MyUnit":
+				canvasid = "fakecanvas";
+				break;
+			case "Condensed":
+				canvasid = "fakecanvascond";
+				break;
+		}
 		// Convert canvas to a data url
-		var url = document.getElementById("fakecanvas").toDataURL("image/png");
+		var url = document.getElementById(canvasid).toDataURL("image/png");
 		// Get desired filename
 		language = selectlanguage.value;
 		truename = languages[language]["M" + hero] + " - " + (hero.includes("PID_") ? languages[language][hero.replace("PID", "MPID_HONOR")] : "Enemy");
