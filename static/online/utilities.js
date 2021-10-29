@@ -137,6 +137,70 @@ function dictsort(dictionary) {
 	return items;
 }
 
+// Simple housekeeping function to add the stats boost from different static modifiers
+function staticmodifiers() {
+	othermodifiers = [0, 0, 0, 0, 0];
+
+	// Add visible stats from skills
+	for (const [category, skill] of Object.entries(passives)) {
+		if (skill) {
+			othermodifiers = othermodifiers.map(function (value, index) {
+				return value + allpassives[skill]["statModifiers"][index];
+			});
+		}
+	}
+
+	// Add resplendent stats
+	if (selectattire.value != "Normal") {
+		othermodifiers = othermodifiers.map(function (value, index) {
+			return value + [2, 2, 2, 2, 2][index];
+		});
+	}
+	// Add bonus unit stats
+	if (selectbonusunit.value == "yes") {
+		othermodifiers = othermodifiers.map(function (value, index) {
+			return value + [10, 4, 4, 4, 4][index];
+		});
+	}
+	// Add transformed beast bonus
+	if (selectbeast.value == "yes") {
+		othermodifiers[1] += 2;
+	}
+	summoner = selectsummoner.value == "None" ? false : selectsummoner.value;
+	// Add summoner support stats
+	if (summoner) {
+		othermodifiers = othermodifiers.map(function (value, index) {
+			return value + summonerranks[summoner][index];
+		});
+	}
+
+	allies = {};
+	// For each ally selected add it to the dictionary
+	for (i = 0; i < selectallies.selectedOptions.length; i++) {
+		ally = selectallies.selectedOptions[i].value.split(";");
+		amount = parseInt(ally[1])
+		allies[ally[0]] = allies[ally[0]] ? allies[ally[0]] + amount : amount;
+	}
+	// Calculate the visible stats you get for each allied mythic or legendary
+	for (const [ally, amount] of Object.entries(allies)) {
+		// For each hero we add the visible buffs and multiply for the amount of that ally
+		othermodifiers = othermodifiers.map(function (value, index) {
+			return value + (other["blessed"][ally]["boosts"][index] * amount);
+		});
+	}
+
+	// Add the normal visible buffs
+	othermodifiers = othermodifiers.map(function (value, index) {
+		// This is the value that we will have if we add the buffs
+		modifier = value + buffs[index];
+		// The stat cannot go beyond 99 or below 0
+		stat = -1 < modifier ? (modifier < 100 ? modifier : 99) : 0;
+		return stat;
+	});
+
+	return othermodifiers;
+}
+
 function weaponmodifiers(weapon, refine) {
 	// Retrieve weapon data
 	weapon = skills["weapons"][weapon];

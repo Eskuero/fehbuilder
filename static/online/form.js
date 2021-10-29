@@ -163,60 +163,14 @@ async function condensed() {
 			return value + weaponmodifiers(weapon, refine)[index];
 		});
 	}
+
+	// Setup passive and buff structures as they will be used outside stat calculations too
 	passives = {
-		"S": selectS.value == "None" ? false : selectS.value,
-		"C": selectC.value == "None" ? false : selectC.value,
+		"A": selectA.value == "None" ? false : selectA.value,
 		"B": selectB.value == "None" ? false : selectB.value,
-		"A": selectA.value == "None" ? false : selectA.value
+		"C": selectC.value == "None" ? false : selectC.value,
+		"S": selectS.value == "None" ? false : selectS.value
 	}
-	// Add visible stats from skills
-	for (const [category, skill] of Object.entries(passives)) {
-		if (skill) {
-			statsmodifier = statsmodifier.map(function (value, index) {
-				return value + allpassives[skill]["statModifiers"][index];
-			});
-		}
-	}
-
-	// Add resplendent stats
-	if (selectattire.value != "Normal") {
-		statsmodifier = statsmodifier.map(function (value, index) {
-			return value + [2, 2, 2, 2, 2][index];
-		});
-	}
-	// Add bonus unit stats
-	if (selectbonusunit.value == "yes") {
-		statsmodifier = statsmodifier.map(function (value, index) {
-			return value + [10, 4, 4, 4, 4][index];
-		});
-	}
-	// Add transformed beast bonus
-	if (selectbeast.value == "yes") {
-		statsmodifier[1] += 2;
-	}
-	summoner = selectsummoner.value == "None" ? false : selectsummoner.value;
-	// Add summoner support stats
-	if (summoner) {
-		statsmodifier = statsmodifier.map(function (value, index) {
-			return value + summonerranks[summoner][index];
-		});
-	}
-
-	allies = {};
-	// For each ally selected add it to the dictionary
-	for (i = 0; i < selectallies.selectedOptions.length; i++) {
-		ally = selectallies.selectedOptions[i].value.split(";");
-		amount = parseInt(ally[1])
-		allies[ally[0]] = allies[ally[0]] ? allies[ally[0]] + amount : amount;
-	}
-	// Calculate the visible stats you get for each allied mythic or legendary
-	for (const [ally, amount] of Object.entries(allies)) {
-		// For each hero we add the visible buffs and multiply for the amount of that ally
-		statsmodifier = statsmodifier.map(function (value, index) {
-			return value + (other["blessed"][ally]["boosts"][index] * amount);
-		});
-	}
-
 	buffs = [
 		0,
 		parseInt(selectatk.value) ? parseInt(selectatk.value) : 0,
@@ -224,14 +178,12 @@ async function condensed() {
 		parseInt(selectdef.value) ? parseInt(selectdef.value) : 0,
 		parseInt(selectres.value) ? parseInt(selectres.value) : 0
 	];
-	// Add the normal visible buffs
+
+	// Add visible stats from multiple simple origins like SS, resplendent, beast transformation and bonus
 	statsmodifier = statsmodifier.map(function (value, index) {
-		// This is the value that we will have if we add the buffs
-		modifier = value + buffs[index];
-		// The stat cannot go beyond 99 or below 0
-		stat = -1 < modifier ? (modifier < 100 ? modifier : 99) : 0;
-		return stat;
+		return value + staticmodifiers()[index];
 	});
+
 	// Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers).
 	for (i = 0; i < statsnames.length; i++) {
 		// Decide type of font depending on if we buffer, debuffed or neutral
@@ -498,67 +450,20 @@ async function myunit() {
 	statsmodifier = statcalc(units[hero]["stats"], units[hero]["growths"], rarity, boon, bane, ascendent, merges, flowers);
 
 	weapon = selectweapons.value == "None" ? false : selectweapons.value; refine = selectrefines.value == "None" ? false : selectrefines.value;
-	//We have a couple of stats modifiers based on weapon, summoner support, attire, bonus unit, visible buffs and maybe not completely parsed A/S skills that we must add
+	// We have a couple of stats modifiers based on weapon, summoner support, attire, bonus unit, visible buffs and maybe not completely parsed A/S skills that we must add
 	if (weapon) {
 		statsmodifier = statsmodifier.map(function (value, index) {
 			return value + weaponmodifiers(weapon, refine)[index];
 		});
 	}
 
+	// Setup passive and buff structures as they will be used outside stat calculations too
 	passives = {
 		"A": selectA.value == "None" ? false : selectA.value,
 		"B": selectB.value == "None" ? false : selectB.value,
 		"C": selectC.value == "None" ? false : selectC.value,
 		"S": selectS.value == "None" ? false : selectS.value
 	}
-	// Add visible stats from skills
-	for (const [category, skill] of Object.entries(passives)) {
-		if (skill) {
-			statsmodifier = statsmodifier.map(function (value, index) {
-				return value + allpassives[skill]["statModifiers"][index];
-			});
-		}
-	}
-
-	// Add resplendent stats
-	if (selectattire.value != "Normal") {
-		statsmodifier = statsmodifier.map(function (value, index) {
-			return value + [2, 2, 2, 2, 2][index];
-		});
-	}
-	// Add bonus unit stats
-	if (selectbonusunit.value == "yes") {
-		statsmodifier = statsmodifier.map(function (value, index) {
-			return value + [10, 4, 4, 4, 4][index];
-		});
-	}
-	// Add transformed beast bonus
-	if (selectbeast.value == "yes") {
-		statsmodifier[1] += 2;
-	}
-	summoner = selectsummoner.value == "None" ? false : selectsummoner.value;
-	// Add summoner support stats
-	if (summoner) {
-		statsmodifier = statsmodifier.map(function (value, index) {
-			return value + summonerranks[summoner][index];
-		});
-	}
-
-	allies = {};
-	// For each ally selected add it to the dictionary
-	for (i = 0; i < selectallies.selectedOptions.length; i++) {
-		ally = selectallies.selectedOptions[i].value.split(";");
-		amount = parseInt(ally[1])
-		allies[ally[0]] = allies[ally[0]] ? allies[ally[0]] + amount : amount;
-	}
-	// Calculate the visible stats you get for each allied mythic or legendary
-	for (const [ally, amount] of Object.entries(allies)) {
-		// For each hero we add the visible buffs and multiply for the amount of that ally
-		statsmodifier = statsmodifier.map(function (value, index) {
-			return value + (other["blessed"][ally]["boosts"][index] * amount);
-		});
-	}
-
 	buffs = [
 		0,
 		parseInt(selectatk.value) ? parseInt(selectatk.value) : 0,
@@ -566,13 +471,10 @@ async function myunit() {
 		parseInt(selectdef.value) ? parseInt(selectdef.value) : 0,
 		parseInt(selectres.value) ? parseInt(selectres.value) : 0
 	];
-	// Add the normal visible buffs
+
+	// Add visible stats from multiple simple origins like SS, resplendent, beast transformation and bonus
 	statsmodifier = statsmodifier.map(function (value, index) {
-		// This is the value that we will have if we add the buffs
-		modifier = value + buffs[index];
-		// The stat cannot go beyond 99 or below 0
-		stat = -1 < modifier ? (modifier < 100 ? modifier : 99) : 0;
-		return stat;
+		return value + staticmodifiers()[index];
 	});
 
 	// Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers).
