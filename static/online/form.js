@@ -179,10 +179,15 @@ async function condensed() {
 		parseInt(selectres.value) ? parseInt(selectres.value) : 0
 	];
 
-	// Add visible stats from multiple simple origins like SS, resplendent, beast transformation and bonus
+	// Add visible stats from multiple simple origins like passives, SS, resplendent, beast transformation and bonus
 	statsmodifier = statsmodifier.map(function (value, index) {
 		return value + staticmodifiers()[index];
 	});
+
+	// Fix stats, cannot go beyond 99 or below 0
+	for (i = 0; i < statsmodifier.length; i++) {
+		statsmodifier[i] = -1 < statsmodifier[i] ? (statsmodifier[i] < 100 ? statsmodifier[i] : 99) : 0;
+	}
 
 	// Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers).
 	for (i = 0; i < statsnames.length; i++) {
@@ -474,10 +479,15 @@ async function myunit() {
 		parseInt(selectres.value) ? parseInt(selectres.value) : 0
 	];
 
-	// Add visible stats from multiple simple origins like SS, resplendent, beast transformation and bonus
+	// Add visible stats from multiple simple origins like passives, SS, resplendent, beast transformation and bonus
 	statsmodifier = statsmodifier.map(function (value, index) {
 		return value + staticmodifiers()[index];
 	});
+
+	// Fix stats, cannot go beyond 99 or below 0
+	for (i = 0; i < statsmodifier.length; i++) {
+		statsmodifier[i] = -1 < statsmodifier[i] ? (statsmodifier[i] < 100 ? statsmodifier[i] : 99) : 0;
+	}
 
 	// Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers).
 	for (i = 0; i < statsnames.length; i++) {

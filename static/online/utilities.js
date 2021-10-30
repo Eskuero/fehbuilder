@@ -192,10 +192,7 @@ function staticmodifiers() {
 	// Add the normal visible buffs
 	othermodifiers = othermodifiers.map(function (value, index) {
 		// This is the value that we will have if we add the buffs
-		modifier = value + buffs[index];
-		// The stat cannot go beyond 99 or below 0
-		stat = -1 < modifier ? (modifier < 100 ? modifier : 99) : 0;
-		return stat;
+		return value + buffs[index];
 	});
 
 	return othermodifiers;
