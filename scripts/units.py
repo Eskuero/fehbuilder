@@ -75,7 +75,7 @@ for file in files:
 
 # Store all the data for internal usage
 with open("fullunits.json", "w") as outfile:
-    json.dump(heroes, outfile)
+	json.dump(heroes, outfile)
     
 # Smaller version for offline wiki builder
 heroeslite = {
@@ -86,7 +86,7 @@ heroeslite = {
 	for heroname, properties in heroes.items()
 }
 with open("liteunits.json", "w") as outfile:
-    json.dump(heroeslite, outfile)
+	json.dump(heroeslite, outfile)
 
 # Even smaller version for the summoning
 heroessummon = {
@@ -97,4 +97,16 @@ heroessummon = {
 	for heroname, properties in heroes.items() if "EID" not in heroname
 }
 with open("summonunits.json", "w") as outfile:
-    json.dump(heroessummon, outfile)
+	json.dump(heroessummon, outfile)
+
+# Even smaller version for the tier list maker
+heroestier = {
+	heroname: {
+		property: value
+		for property, value in properties.items() if property in ["WeaponType", "moveType"]
+	}
+	for heroname, properties in heroes.items() if "EID" not in heroname
+}
+with open("tierunits.json", "w") as outfile:
+	json.dump(heroestier, outfile)
+

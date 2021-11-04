@@ -93,7 +93,7 @@ for file in files:
 
 # Store all the data for internal usage
 with open("fullskills.json", "w") as outfile:
-    json.dump(skills, outfile)
+	json.dump(skills, outfile)
 
 # Smaller version for offline wiki builder
 skillslite = {
@@ -118,7 +118,7 @@ skillslite = {
     }
 }
 with open("liteskills.json", "w") as outfile:
-    json.dump(skillslite, outfile)
+	json.dump(skillslite, outfile)
 
 # Altenative version for custom unit builder
 skillscustom = {
@@ -143,4 +143,4 @@ skillscustom = {
     }
 }
 with open("customskills.json", "w") as outfile:
-    json.dump(skillscustom, outfile)
+	json.dump(skillscustom, outfile)

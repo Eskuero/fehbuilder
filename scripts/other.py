@@ -75,6 +75,21 @@ def work():
 	with open("customother.json", "w") as outfile:
 		json.dump(othercustom, outfile)
 
+	# Altenative version for tier list generator
+	othertier = {
+		"blessed": {
+			hero: {
+				property: value
+				for property, value in properties.items() if property in ["blessing"]
+			}
+			for hero, properties in other["blessed"].items()
+		},
+		"duo": other["duo"],
+		"resonant": other["resonant"]
+	}
+	with open("tierother.json", "w") as outfile:
+		json.dump(othertier, outfile)
+
 # We tie each PID with the names of the pairs for duo heroes
 duokeywords = {
 	"PID_\u6bd4\u7ffc\u30ea\u30fc\u30f4": "thrasir \u30b9\u30e9\u30b7\u30eb \u53f2\u83c8\u5e0c\u723e alfonse \u30a2\u30eb\u30d5\u30a9\u30f3\u30b9 \u963f\u723e\u99ae\u65af veronica \u30f4\u30a7\u30ed\u30cb\u30ab \u7dad\u6d1b\u59ae\u5361",
