@@ -16,6 +16,7 @@ var units, skills, other, languages;
 // All selects we have available
 selectweapontype = document.getElementById("weapontype");
 selectmovetype = document.getElementById("movetype");
+selectblessing = document.getElementById("blessing");
 
 // All currently rendered units
 rendered = document.getElementById("results");
@@ -93,6 +94,17 @@ function populate() {
 		} else {
 			return;
 		}
+
+		// Check if we match the legendary type
+		if (selectblessing.value == "All") {
+			add = true;
+		} else if (other["blessed"][value] ? (other["blessed"][value]["blessing"] == parseInt(selectblessing.value)) : false) {
+			add = true;
+		// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
+		} else {
+			return;
+		}
+
 		// Arriving at this check with a true add value measn we can add the option
 		if (add) {
 			heroes.push(value);
