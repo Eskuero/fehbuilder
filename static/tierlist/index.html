@@ -59,7 +59,7 @@
 				</div>
 				<h2>Filters</h2>
 				<section>
-					<div class="row-property double">
+					<div class="row-property single">
 						<img class="imagelabel" src="/common/other/0-move.webp" id="moveicon" title="Move Type"/>
 						<div>
 							<select class="select-without-search" onchange="changetype(this);populate()" id="movetype">
@@ -70,6 +70,8 @@
 								<option value="3">Flying</option>
 							</select>
 						</div>
+					</div>
+					<div class="row-property single">
 						<img class="imagelabel" src="/common/other/6-weapon.webp" id="weaponicon" title="Weapon Type"/>
 						<div>
 							<select class="select-without-search" onchange="changetype(this);populate()" id="weapontype">
@@ -105,7 +107,7 @@
 						<img class="imagelabel" src="/common/assets/blessings.webp" title="Blessings" />
 						<div>
 							<select class="select-without-search" id="blessing" onChange="populate()">
-								<option value="All">All</option>
+								<option value="All">All blessings</option>
 								<option value="1">Fire</option>
 								<option value="2">Water</option>
 								<option value="3">Wind</option>
@@ -114,6 +116,16 @@
 								<option value="6">Dark</option>
 								<option value="7">Astra</option>
 								<option value="8">Anima</option>
+							</select>
+						</div>
+					</div>
+					<div class="row-property single">
+						<img class="imagelabel" src="/common/assets/duoharmo.webp" title="Unit type" />
+						<div>
+							<select class="select-without-search" onchange="populate()" id="duoharmo">
+								<option value="All">All types</option>
+								<option value="duo">Duo</option>
+								<option value="resonant">Harmonic</option>
 							</select>
 						</div>
 					</div>

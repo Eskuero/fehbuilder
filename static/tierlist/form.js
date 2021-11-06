@@ -17,6 +17,7 @@ var units, skills, other, languages;
 selectweapontype = document.getElementById("weapontype");
 selectmovetype = document.getElementById("movetype");
 selectblessing = document.getElementById("blessing");
+selectduoharmo = document.getElementById("duoharmo");
 
 // All currently rendered units
 rendered = document.getElementById("results");
@@ -99,6 +100,17 @@ function populate() {
 		if (selectblessing.value == "All") {
 			add = true;
 		} else if (other["blessed"][value] ? (other["blessed"][value]["blessing"] == parseInt(selectblessing.value)) : false) {
+			add = true;
+		// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
+		} else {
+			return;
+		}
+
+		// Check if we match the legendary type
+		if (selectduoharmo.value == "All") {
+			add = true;
+		} else if (other[selectduoharmo.value].includes(value)) {
+			console.log(value + " is a duoharmo");
 			add = true;
 		// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
 		} else {
