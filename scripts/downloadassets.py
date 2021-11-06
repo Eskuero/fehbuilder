@@ -271,7 +271,7 @@ while offset < len(arts):
 		# Grab and paste the art
 		try:
 			response = requests.get(url)
-			art = Image.open(io.BytesIO(response.content))
+			art = Image.open(io.BytesIO(response.content)).resize((100, 100))
 			# We save the hero art as webp attempting the better compression method while being lossless to avoid quality drops
 			art.save("../data/img/hd-faces/" + filename, 'WEBP', lossless = True, quality = 100, method = 6)
 			print("Successfully downloaded", end = "\n")
