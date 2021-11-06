@@ -35,6 +35,21 @@ def download():
 		art.save(location + icon + ".webp", 'WEBP', lossless = True, quality = 100, method = 6)
 
 icons = {
+	# Gameheads
+	"0-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/d5/Icon_MiniUnit_Head_0.png?96?86",
+	"1-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/12/Icon_MiniUnit_Head_1.png?96?86",
+	"2-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a2/Icon_MiniUnit_Head_2.png?96?86",
+	"3-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/6/6e/Icon_MiniUnit_Head_3.png?96?86",
+	"4-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/12/Icon_MiniUnit_Head_4.png?96?86",
+	"5-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/c8/Icon_MiniUnit_Head_5.png?96?86",
+	"6-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/d8/Icon_MiniUnit_Head_6.png?96?86",
+	"7-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/57/Icon_MiniUnit_Head_7.png?96?86",
+	"8-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/80/Icon_MiniUnit_Head_8.png?96?86",
+	"9-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/7/78/Icon_MiniUnit_Head_9.png?96?86",
+	"10-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/f/ff/Icon_MiniUnit_Head_10.png?96?86",
+	"11-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/e/e9/Icon_MiniUnit_Head_11.png?96?86",
+	"12-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a9/Icon_MiniUnit_Head_12.png?96?86",
+	"13-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/0c/Icon_MiniUnit_Head_13.png?96?86",
 	# Rarity Borders
 	"rarityborder1": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/1f/RarityBorder1.png?259?43",
 	"rarityborder2": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/54/RarityBorder2.png?259?43",

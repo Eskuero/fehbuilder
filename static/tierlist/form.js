@@ -18,6 +18,7 @@ selectweapontype = document.getElementById("weapontype");
 selectmovetype = document.getElementById("movetype");
 selectblessing = document.getElementById("blessing");
 selectduoharmo = document.getElementById("duoharmo");
+selectgametype = document.getElementById("gametype");
 
 // All currently rendered units
 rendered = document.getElementById("results");
@@ -106,11 +107,20 @@ function populate() {
 			return;
 		}
 
-		// Check if we match the legendary type
+		// Check if we match the unit type
 		if (selectduoharmo.value == "All") {
 			add = true;
 		} else if (other[selectduoharmo.value].includes(value)) {
-			console.log(value + " is a duoharmo");
+			add = true;
+		// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
+		} else {
+			return;
+		}
+
+		// Check if we match the game
+		if (selectgametype.value == "All") {
+			add = true;
+		} else if (units[value]["origin"] == parseInt(selectgametype.value)) {
 			add = true;
 		// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
 		} else {

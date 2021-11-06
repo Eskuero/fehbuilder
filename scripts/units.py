@@ -64,6 +64,7 @@ for file in files:
 				"stats": [value-1 for value in entry["base_stats"].values()],
 				"growths": [value for value in entry["growth_rates"].values()],
 				"WeaponType": entry["weapon_type"],
+				"origin": entry["series"],
 				"moveType": entry["move_type"],
 				"maxflowers": entry["dragonflowers"]["max_count"],
 				# Obtain the base kit skipping empty entries (it's provided as a list of list for each rarity unlock but we just need one)
@@ -73,9 +74,17 @@ for file in files:
 			for item in [item for item in heroes[entry["id_tag"]]["basekit"] if item in weaponevolutions]:
 				heroes[entry["id_tag"]]["basekit"].append(weaponevolutions[item])
 
+
 # Store all the data for internal usage
+heroesfull = {
+	heroname: {
+		property: value
+		for property, value in properties.items() if property not in ["origin"]
+	}
+	for heroname, properties in heroes.items()
+}
 with open("fullunits.json", "w") as outfile:
-	json.dump(heroes, outfile)
+	json.dump(heroesfull, outfile)
     
 # Smaller version for offline wiki builder
 heroeslite = {
@@ -103,7 +112,7 @@ with open("summonunits.json", "w") as outfile:
 heroestier = {
 	heroname: {
 		property: value
-		for property, value in properties.items() if property in ["WeaponType", "moveType"]
+		for property, value in properties.items() if property in ["WeaponType", "moveType", "origin"]
 	}
 	for heroname, properties in heroes.items() if "EID" not in heroname
 }
