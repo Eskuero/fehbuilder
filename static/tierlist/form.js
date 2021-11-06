@@ -19,6 +19,7 @@ selectmovetype = document.getElementById("movetype");
 selectblessing = document.getElementById("blessing");
 selectduoharmo = document.getElementById("duoharmo");
 selectgametype = document.getElementById("gametype");
+selectattire = document.getElementById("attire");
 
 // All currently rendered units
 rendered = document.getElementById("results");
@@ -127,6 +128,16 @@ function populate() {
 			return;
 		}
 
+		// Check if we match the attire
+		if (selectattire.value == "All") {
+			add = true;
+		} else if (units[value]["resplendent"]) {
+			add = true;
+		// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
+		} else {
+			return;
+		}
+
 		// Arriving at this check with a true add value measn we can add the option
 		if (add) {
 			heroes.push(value);
@@ -136,7 +147,9 @@ function populate() {
 	// For every hero that went through the filter add an image
 	for (i = 0; i < heroes.length; i++) {
 		var opt = document.createElement('img');
-		opt.src = "/common/hd-faces/" + heroes[i] + ".webp";
+		// Change variant if resplendent
+		variant = selectattire.value == "Resplendent" ? "_Resplendent" : "";
+		opt.src = "/common/hd-faces/" + heroes[i] + variant + ".webp";
 		opt.style.height = "5em";
 		opt.draggable = "true";
 		opt.id = heroes[i];

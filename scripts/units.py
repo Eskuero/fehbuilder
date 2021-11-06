@@ -50,6 +50,10 @@ for file in files:
 		for entry in [entry for entry in data if entry["refined"] in weapons]:
 			weaponevolutions[entry["orig"]] = entry["refined"]
 
+# Load all language data from the json file
+with open("fulllanguages.json", "r") as datasource:
+	strings = json.load(datasource)["USEN"]
+
 # Get all the files that contain unit definitions and loop through them
 files = os.listdir("feh-assets-json/files/assets/Common/SRPG/Person/")
 for file in files:
@@ -68,7 +72,8 @@ for file in files:
 				"moveType": entry["move_type"],
 				"maxflowers": entry["dragonflowers"]["max_count"],
 				# Obtain the base kit skipping empty entries (it's provided as a list of list for each rarity unlock but we just need one)
-				"basekit": [skill for category in entry["skills"] for skill in category if skill]
+				"basekit": [skill for category in entry["skills"] for skill in category if skill],
+				"resplendent": True if entry["id_tag"].replace("PID", "MPID_VOICE") + "EX01" in strings else False
 			}
 			# Complete the basekit by adding the skills that have weapon evolutions available
 			for item in [item for item in heroes[entry["id_tag"]]["basekit"] if item in weaponevolutions]:
@@ -79,7 +84,7 @@ for file in files:
 heroesfull = {
 	heroname: {
 		property: value
-		for property, value in properties.items() if property not in ["origin"]
+		for property, value in properties.items() if property not in ["origin", "resplendent"]
 	}
 	for heroname, properties in heroes.items()
 }
@@ -112,7 +117,7 @@ with open("summonunits.json", "w") as outfile:
 heroestier = {
 	heroname: {
 		property: value
-		for property, value in properties.items() if property in ["WeaponType", "moveType", "origin"]
+		for property, value in properties.items() if property in ["WeaponType", "moveType", "origin", "resplendent"]
 	}
 	for heroname, properties in heroes.items() if "EID" not in heroname
 }
