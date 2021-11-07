@@ -117,7 +117,7 @@ async function reload() {
 		preview.strokeText(languages[language]["MID_UNIT_INFO_TO_TALK"], 617, 47); preview.fillText(languages[language]["MID_UNIT_INFO_TO_TALK"], 617, 47);
 	}
 
-	boon = selectboons.value == "None" ? false : selectboons.value; bane = selectbanes.value == "None" ? false : selectbanes.value; ascendent = selectascendent.value == "None" ? false : selectascendent.value; merges = parseInt(selectmerges.value);
+	boon = selectboons.value == "None" ? false : selectboons.value; bane = selectbanes.value == "None" ? false : selectbanes.value; ascendent = selectascendent.value == "None" ? false : selectascendent.value; merges = selectmerges.value == "Overlevel" ? -1 : parseInt(selectmerges.value);
 	// First write the static text for each stat (normal anchoring)
 	preview.font = '25px FeH-Font'; preview.textAlign = 'start'; preview.textBaseline = "top"; preview.strokeStyle = '#0a2533';
 	stats = ["HP", "Atk", "Spd", "Def", "Res"]; statsstrings = ["MID_HP", "MID_ATTACK", "MID_AGILITY", "MID_DEFENSE", "MID_RESIST"]
@@ -262,11 +262,13 @@ async function reload() {
 	printnumbers(preview, 40, 1, 124, 745);
 
 	// If we have merges we add the text next to the level
-	if (merges > 0) {
+	if (merges != 0) {
 		// Decide type of font depending on if we are fully merged or not
 		numbertype = merges == 10 ? 4 : 1;
 		printnumbers(preview, "+", numbertype, 163, 748);
-		printnumbers(preview, merges, numbertype, 181, 745);
+		if (merges > 0) {
+			printnumbers(preview, merges, numbertype, 181, 745);
+		}
 	}
 	preview.fillStyle = "#ffffff";
 	// If we have flowers we add another box with the number
