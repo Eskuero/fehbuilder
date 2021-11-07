@@ -42,3 +42,15 @@ function reorder(caller, modifier) {
 		tierlist.insertBefore(target, tierlist.children[index+modifier])
 	}
 }
+
+function cleartier() {
+	// Get all tiers available
+	alltiers = document.getElementsByClassName("tiercontent");
+	// Loop every tier row and delete all children
+	for (i = 0; i < alltiers.length; i++) {
+		// First delete all currently rendered
+		while (alltiers[i].lastChild) {
+			alltiers[i].removeChild(alltiers[i].lastChild);
+		}
+	}
+}

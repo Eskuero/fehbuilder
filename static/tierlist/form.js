@@ -161,35 +161,6 @@ function populate() {
 function statictranslations() {
 }
 
-function reset(section) {
-	switch (section) {
-		case "unit":
-			selectrarity.value = "5";
-			selectmerges.value = "0";
-			selectflowers.value = "0";
-			selectsummoner.value = "None";
-			selectattire.value = "Normal";
-			// For beasts disable transformation
-			weapontype = units[selectheroes.value]["WeaponType"];
-			if ([20, 21, 22, 23].includes(weapontype)) {
-				selectbeast.value = "no";
-			}
-		break;
-		case "skills":
-			selectweapons.value = "None";
-			updateRefine();
-			selectrefines.value = "None";
-			selectassists.value = "None";
-			selectspecials.value = "None";
-			selectA.value = "None";
-			selectB.value = "None";
-			selectC.value = "None";
-			// Trigger a rebuild of the selects based on the language filters set
-			populateall(false);
-	}
-	reload();
-}
-
 function changetype(caller) {
 	// Compose the weapon/move url
 	weapon = caller.value == "All" ? "0" : caller.value;
