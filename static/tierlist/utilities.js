@@ -13,7 +13,7 @@
 
 function download() {
 	// Convert the HTML to canvas using html2canvas
-	html2canvas(tierlist).then(function(canvas) {
+	html2canvas(tierlist, {logging:false}).then(function(canvas) {
 		// Convert canvas to a data url
 		var url = canvas.toDataURL("image/png");
 		// Create the link element to force the download
