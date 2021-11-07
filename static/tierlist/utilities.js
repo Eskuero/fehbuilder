@@ -26,3 +26,19 @@ function download() {
 		document.body.removeChild(link);
 	});
 }
+
+function updatecolor(caller) {
+	// The item to change the color is grandpa's first appendChild
+	target = caller.parentElement.parentElement.children[0];
+	target.style.backgroundColor = caller.value;
+}
+
+function reorder(caller, modifier) {
+	// Get the index of the row we are moving
+	target = caller.parentElement.parentElement.parentElement;
+	index = Array.prototype.indexOf.call(tierlist.children, target)
+	// Do not do anything if the element doesn't exist (last or first child already)
+	if (tierlist.children[index+modifier]) {
+		tierlist.insertBefore(target, tierlist.children[index+modifier])
+	}
+}

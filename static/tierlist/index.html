@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="builder.css" />
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" crossorigin="anonymous">
 		<link rel="shortcut icon" href="/common/assets/Feh.webp" />
 
 	</head>
@@ -17,40 +18,82 @@
 		<div class="contenedor">
 			<div id="tierlist">
 				<div class="tier">
-					<div class="tiername" contenteditable="true" style="background-color:red">
+					<div class="tiername" contenteditable="true" style="background-color:#FF7F7F">
 						S
 					</div>
 					<div class="tiercontent" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="tieroptions" data-html2canvas-ignore="true">
+						<input type="color" class="tiercolor" onchange="updatecolor(this)" value="#FF7F7F">
+						<div class="tierupdown">
+							<span class="material-icons" onclick="reorder(this, 2)">expand_more</span>
+							<span class="material-icons" onclick="reorder(this, -1)">expand_less</span>
+						</div>
+					</div>
 				</div>
 				<div class="tier">
-					<div class="tiername" contenteditable="true" style="background-color:orange">
+					<div class="tiername" contenteditable="true" style="background-color:#FFBF7F">
 						A
 					</div>
 					<div class="tiercontent" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="tieroptions" data-html2canvas-ignore="true">
+						<input type="color" class="tiercolor" onchange="updatecolor(this)" value="#FFBF7F">
+						<div class="tierupdown">
+							<span class="material-icons" onclick="reorder(this, 2)">expand_more</span>
+							<span class="material-icons" onclick="reorder(this, -1)">expand_less</span>
+						</div>
+					</div>
 				</div>
 				<div class="tier">
-					<div class="tiername" contenteditable="true" style="background-color:greenyellow">
+					<div class="tiername" contenteditable="true" style="background-color:#FFFF7F">
 						B
 					</div>
 					<div class="tiercontent" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="tieroptions" data-html2canvas-ignore="true">
+						<input type="color" class="tiercolor" onchange="updatecolor(this)" value="#FFFF7F">
+						<div class="tierupdown">
+							<span class="material-icons" onclick="reorder(this, 2)">expand_more</span>
+							<span class="material-icons" onclick="reorder(this, -1)">expand_less</span>
+						</div>
+					</div>
 				</div>
 				<div class="tier">
-					<div class="tiername" contenteditable="true" style="background-color:green">
+					<div class="tiername" contenteditable="true" style="background-color:#BFFF7F">
 						C
 					</div>
 					<div class="tiercontent" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="tieroptions" data-html2canvas-ignore="true">
+						<input type="color" class="tiercolor" onchange="updatecolor(this)" value="#BFFF7F">
+						<div class="tierupdown">
+							<span class="material-icons" onclick="reorder(this, 2)">expand_more</span>
+							<span class="material-icons" onclick="reorder(this, -1)">expand_less</span>
+						</div>
+					</div>
 				</div>
 				<div class="tier">
-					<div class="tiername" contenteditable="true" style="background-color:blue">
+					<div class="tiername" contenteditable="true" style="background-color:#7FFFFF">
 						D
 					</div>
 					<div class="tiercontent" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="tieroptions" data-html2canvas-ignore="true">
+						<input type="color" class="tiercolor" onchange="updatecolor(this)" value="#7FFFFF">
+						<div class="tierupdown">
+							<span class="material-icons" onclick="reorder(this, 2)">expand_more</span>
+							<span class="material-icons" onclick="reorder(this, -1)">expand_less</span>
+						</div>
+					</div>
 				</div>
 				<div class="tier">
-					<div class="tiername" contenteditable="true" style="background-color:purple">
+					<div class="tiername" contenteditable="true" style="background-color:#7FBFFF">
 						E
 					</div>
 					<div class="tiercontent" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="tieroptions" data-html2canvas-ignore="true">
+						<input type="color" class="tiercolor" onchange="updatecolor(this)" value="#7FBFFF">
+						<div class="tierupdown">
+							<span class="material-icons" onclick="reorder(this, 2)">expand_more</span>
+							<span class="material-icons" onclick="reorder(this, -1)">expand_less</span>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="form">

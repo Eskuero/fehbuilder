@@ -33,7 +33,6 @@ body {
 .tiername {
 	width: 6em;
 	line-height: 6em;
-	color: white;
 	border-right: 2px solid black;
 	font-weight: bold;
 	text-align: center;
@@ -43,10 +42,33 @@ body {
 }
 .tiercontent {
 	display: flex;
-	width: 100%;
+	flex: 1;
 	padding: 0.5em;
 	flex-flow: row wrap;
 	gap: 0.1em;
+}
+.tieroptions {
+	width: 6em;
+	text-align: center;
+	background: #000;
+	padding-top: 1em;
+}
+.tiercolor {
+	border: 0;
+	padding: 0;
+	width: 2em;
+	height: 2em;
+}
+.tiercolor:hover {
+	cursor: pointer;
+}
+.material-icons {
+	font-size: 2.5em !important;
+	color: grey;
+}
+.material-icons:hover {
+	cursor: pointer;
+	color: white;
 }
 
 .form {
@@ -54,7 +76,7 @@ body {
 	width: 50%;
 	overflow-y: scroll;
 	flex-direction: column;
-	background-color: rgba(14, 51, 69, 0.6);
+	background: rgba(14, 51, 69, 0.6);
 	color: white;
 	text-align: initial;
 	padding: 1em 1.5em 0 1.5em;
