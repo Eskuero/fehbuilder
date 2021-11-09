@@ -32,13 +32,13 @@ body {
 }
 .tiername {
 	width: 6em;
-	line-height: 6em;
 	border-right: 2px solid black;
 	font-weight: bold;
-	text-align: center;
-	white-space: nowrap;
 	overflow: hidden;
-	text-overflow: ellipsis;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 .tiercontent {
 	display: flex;
