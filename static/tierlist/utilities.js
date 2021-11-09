@@ -73,6 +73,7 @@ function addtier() {
 	tiername.style.backgroundColor = "#FFFFFF";
 	tiername.contentEditable = "true";
 	tiername.innerHTML = "New tier";
+	tiername.addEventListener("drop", function(event) {event.preventDefault(); return false;});
 	tier.appendChild(tiername);
 
 	// Create the tier content structure with the proper event listeners and append it to the base tier structure
