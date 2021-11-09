@@ -95,6 +95,17 @@
 					<button onclick="addtier()" class="button">Add tier</button>
 					<button onclick="cleartier()" class="button">Clear tiers</button>
 					<button onclick="download()" class="button">Download</button>
+					<div class="links">
+						<a href="/">
+							<img class="img-fluid" src="/common/assets/home.webp"/>
+						</a>
+						<a href="https://github.com/Eskuero/fehbuilder" target="blank">
+							<img class="img-fluid" src="/common/assets/github.webp"/>
+						</a>
+						<a href="https://discord.gg/fireemblemheroes" target="blank">
+							<img class="img-fluid" src="/common/assets/discord.webp"/>
+						</a>
+					</div>
 				</div>
 				<h2>Filters</h2>
 				<section>
@@ -200,21 +211,28 @@
 						</div>
 					</div>
 				</section>
+				<h2>Additional icons</h2>
+				<section class="additionaloptions">
+					<label>
+						<input type="checkbox" id="showweapon" onchange="iconvisibility(this)" checked>
+						Weapon
+					</label>
+					<label>
+						<input type="checkbox" id="showmovement" onchange="iconvisibility(this)" checked>
+						Movement
+					</label>
+					<label>
+						<input type="checkbox" id="showblessing" onchange="iconvisibility(this)" checked>
+						Blessing
+					</label>
+					<label>
+						<input type="checkbox" id="showorigin" onchange="iconvisibility(this)">
+						Game of origin
+					</label>
+				</section>
 				<h2>Units found</h2>
 				<section id="results" ondrop="drop(event)" ondragover="allowDrop(event)">
-				
 				</section>
-				<div class="links">
-					<a href="/">
-						<img class="img-fluid" src="/common/assets/home.webp"/>
-					</a>
-					<a href="https://github.com/Eskuero/fehbuilder" target="blank">
-						<img class="img-fluid" src="/common/assets/github.webp"/>
-					</a>
-					<a href="https://discord.gg/fireemblemheroes" target="blank">
-						<img class="img-fluid" src="/common/assets/discord.webp"/>
-					</a>
-				</div>
 			</div>
 		</div>
 		<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.3.2/dist/html2canvas.min.js" integrity="sha512-tVYBzEItJit9HXaWTPo8vveXlkK62LbA+wez9IgzjTmFNLMBO1BEYladBw2wnM3YURZSMUyhayPCoLtjGh84NQ==" crossorigin="anonymous"></script>

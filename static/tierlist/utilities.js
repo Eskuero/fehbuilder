@@ -115,3 +115,15 @@ function addtier() {
 	// Append the whole new tier to the tierlist
 	tierlist.appendChild(tier);
 }
+
+function iconvisibility(caller) {
+	// If we are only modifying an specific icon check with the caller
+	if (caller) {
+		// Class of the icon to hide
+		target = caller.id.slice(4);
+		icons = document.querySelectorAll("." + target);
+		for (i = 0; i < icons.length; i++) {
+			icons[i].style.display = caller.checked == true ? "block" : "none";
+		}
+	}
+}

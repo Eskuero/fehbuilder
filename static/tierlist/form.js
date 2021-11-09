@@ -21,6 +21,12 @@ selectduoharmo = document.getElementById("duoharmo");
 selectgametype = document.getElementById("gametype");
 selectattire = document.getElementById("attire");
 
+// Checkboxes
+checkshowweapon = document.getElementById("showweapon");
+checkshowmovement = document.getElementById("showmovement");
+checkshowblessing = document.getElementById("showblessing");
+checkshoworigin = document.getElementById("showorigin");
+
 // All currently rendered units
 rendered = document.getElementById("results");
 // Current tier
@@ -33,13 +39,13 @@ fetch('/common/data/tierunits.json')
 	.then((out) => {
 		// We store the heroes for basic checks within the browser
 		units = out;
-		populate();
-}).catch(err => console.error(err));
-fetch('/common/data/tierother.json')
-	.then(res => res.json())
-	.then((out) => {
-		// We store other data for basic checks within the browser
-		other = out;
+		fetch('/common/data/tierother.json')
+			.then(res => res.json())
+			.then((out) => {
+				// We store other data for basic checks within the browser
+				other = out;
+				populate();
+		}).catch(err => console.error(err));
 }).catch(err => console.error(err));
 
 // Functions to allow drag and drop
@@ -148,16 +154,37 @@ function populate() {
 	
 	// For every hero that went through the filter add an image
 	for (i = 0; i < heroes.length; i++) {
-		var opt = document.createElement('img');
+		var opt = document.createElement('div');
 		// Change variant if resplendent
 		variant = selectattire.value == "Resplendent" ? "_Resplendent" : "";
-		opt.src = "/common/hd-faces/" + heroes[i] + variant + ".webp";
-		opt.style.height = "5em";
+		opt.style.backgroundImage = "url(/common/hd-faces/" + heroes[i] + variant + ".webp)";
 		opt.draggable = "true";
+		opt.className = "unit";
 		opt.id = heroes[i] + "-" + epoch;
-		opt.addEventListener("dragstart", function(event) {drag(event)}); 
+		opt.addEventListener("dragstart", function(event) {drag(event)});
+		// Create and add the items indicating weapon, movement, blessing and origin
+		var weapon = document.createElement('img');
+		weapon.className = "iconinfo weapon";
+		weapon.src = "/common/other/" + units[heroes[i]]["WeaponType"] + "-weapon.webp";
+		opt.appendChild(weapon);
+		var movement = document.createElement('img');
+		movement.className = "iconinfo movement";
+		movement.src = "/common/other/" + units[heroes[i]]["moveType"] + "-move.webp";
+		opt.appendChild(movement);
+		var origin = document.createElement('img');
+		origin.className = "iconinfo origin";
+		origin.src = "/common/other/" + units[heroes[i]]["origin"] + "-game.webp";
+		opt.appendChild(origin);
+		if (other["blessed"][heroes[i]]) {
+			var blessing = document.createElement('img');
+			blessing.className = "iconinfo blessing";
+			blessing.src = "/common/other/" + other["blessed"][heroes[i]]["blessing"] + "-Blessing-special.webp";
+			opt.appendChild(blessing);
+		}
 		rendered.appendChild(opt);
 	}
+	// Make sure the icons are respecting the set rules
+	iconvisibility(checkshowweapon); iconvisibility(checkshowmovement); iconvisibility(checkshowblessing); iconvisibility(checkshoworigin)
 }
 
 function statictranslations() {

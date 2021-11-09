@@ -80,6 +80,35 @@ body {
 	cursor: pointer;
 	color: white;
 }
+.unit {
+	height: 5em;
+	width: 5em;
+	position: relative;
+	background-size: cover;
+}
+.iconinfo {
+	position: absolute;
+}
+.weapon {
+	height: 1.5em;
+	top: 0;
+	left: 0;
+}
+.movement {
+	height: 1.2em;
+	bottom: -1px;
+	right: -1px;
+}
+.blessing {
+	height: 1.6em;
+	top: 0;
+	right: 0;
+}
+.origin {
+	height: 1.65em;
+	bottom: -3px;
+	left: -2px;
+}
 
 .form {
 	display: flex;
@@ -94,10 +123,19 @@ body {
 }
 
 #results {
-	column-count: 1 !important;
+	display: flex;
+	min-height: 10em;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.25em;
 }
-.form > * {
+.form > section {
 	column-count: 3;
+}
+
+input[type=checkbox] {
+	width: 18px;
+	height: 18px;
 }
 
 .row-property {
@@ -140,9 +178,7 @@ h2 {
 .links {
 	display: flex;
 	margin-top: auto;
-	margin-left: auto;
 	gap: 0.5em;
-	padding: 0 0 0.5em 0;
 }
 .links > * {
 	text-decoration: none;
