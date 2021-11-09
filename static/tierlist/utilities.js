@@ -27,15 +27,15 @@ function download() {
 	});
 }
 
-function updatecolor(caller) {
+function updatecolor(event) {
 	// The item to change the color is grandpa's first appendChild
-	target = caller.parentElement.parentElement.children[0];
-	target.style.backgroundColor = caller.value;
+	target = event.target.parentElement.parentElement.children[0];
+	target.style.backgroundColor = event.target.value;
 }
 
-function reorder(caller, modifier) {
+function reorder(event, modifier) {
 	// Get the index of the row we are moving
-	target = caller.parentElement.parentElement.parentElement;
+	target = event.target.parentElement.parentElement;
 	index = Array.prototype.indexOf.call(tierlist.children, target)
 	// Do not do anything if the element doesn't exist (last or first child already)
 	if (tierlist.children[index+modifier]) {
@@ -55,9 +55,62 @@ function cleartier() {
 	}
 }
 
-function deletetier(caller) {
+function deletetier(event) {
 	// The tier is the grandpa of the caller
-	target = caller.parentElement.parentElement;
+	target = event.target.parentElement.parentElement;
 	// And must be removed from the great-grandpa
 	tierlist.removeChild(target);
+}
+
+function addtier() {
+	// Create the base tier structure
+	var tier = document.createElement('div');
+	tier.className = "tier";
+
+	// Create the tier name structure, make it content editable, with a default white color, "new tier" text and append it to the base tier structure 
+	var tiername = document.createElement('div');
+	tiername.className = "tiername";
+	tiername.style.backgroundColor = "#FFFFFF";
+	tiername.contentEditable = "true";
+	tiername.innerHTML = "New tier";
+	tier.appendChild(tiername);
+
+	// Create the tier content structure with the proper event listeners and append it to the base tier structure
+	var tiercontent = document.createElement('div');
+	tiercontent.className = "tiercontent";
+	tiercontent.addEventListener("drop", function(event) {drop(event)});
+	tiercontent.addEventListener("dragover", function(event) {allowDrop(event)});
+	tier.appendChild(tiercontent);
+
+	// Create the tier options structure, with the custom ignore atribute for html2canvas
+	var tieroptions = document.createElement('div');
+	tieroptions.className = "tieroptions";
+	tieroptions.setAttribute("data-html2canvas-ignore", "true");
+	// Tier options require some children items, like tiercolor
+	var tiercolor = document.createElement('input');
+	tiercolor.className = "tiercolor";
+	tiercolor.type = "color";
+	tiercolor.value = "#FFFFFF";
+	tiercolor.addEventListener("change", function(event) {updatecolor(event)});
+	tieroptions.appendChild(tiercolor);
+	// Tierdelete
+	var tierdelete = document.createElement('span');
+	tierdelete.className = "material-icons deletebutton";
+	tierdelete.addEventListener("click", function(event) {deletetier(event)});
+	tierdelete.innerHTML = "delete";
+	tieroptions.appendChild(tierdelete);
+	// Tierup and down
+	var tierup = document.createElement('span');
+	var tierdown = document.createElement('span');
+	tierup.className = "material-icons"; tierdown.className = "material-icons";
+	tierup.addEventListener("click", function(event) {reorder(event, -1)});
+	tierdown.addEventListener("click", function(event) {reorder(event, 2)});
+	tierup.innerHTML = "expand_less"; tierdown.innerHTML = "expand_more";
+	tieroptions.appendChild(tierdown);
+	tieroptions.appendChild(tierup);
+	// Append the tier options structure to the base tier structure
+	tier.appendChild(tieroptions);
+
+	// Append the whole new tier to the tierlist
+	tierlist.appendChild(tier);
 }

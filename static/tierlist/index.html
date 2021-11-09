@@ -23,10 +23,10 @@
 					</div>
 					<div class="tiercontent" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 					<div class="tieroptions" data-html2canvas-ignore="true">
-						<input type="color" class="tiercolor" onchange="updatecolor(this)" value="#FF7F7F"></input>
-						<span class="material-icons deletebutton" onclick="deletetier(this)">delete</span>
-						<span class="material-icons" onclick="reorder(this, 2)">expand_more</span>
-						<span class="material-icons" onclick="reorder(this, -1)">expand_less</span>
+						<input type="color" class="tiercolor" onchange="updatecolor(event)" value="#FF7F7F"></input>
+						<span class="material-icons deletebutton" onclick="deletetier(event)">delete</span>
+						<span class="material-icons" onclick="reorder(event,2)">expand_more</span>
+						<span class="material-icons" onclick="reorder(event,-1)">expand_less</span>
 					</div>
 				</div>
 				<div class="tier">
@@ -35,10 +35,10 @@
 					</div>
 					<div class="tiercontent" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 					<div class="tieroptions" data-html2canvas-ignore="true">
-						<input type="color" class="tiercolor" onchange="updatecolor(this)" value="#FFBF7F"></input>
-						<span class="material-icons deletebutton" onclick="deletetier(this)">delete</span>
-						<span class="material-icons" onclick="reorder(this, 2)">expand_more</span>
-						<span class="material-icons" onclick="reorder(this, -1)">expand_less</span>
+						<input type="color" class="tiercolor" onchange="updatecolor(event)" value="#FFBF7F"></input>
+						<span class="material-icons deletebutton" onclick="deletetier(event)">delete</span>
+						<span class="material-icons" onclick="reorder(event,2)">expand_more</span>
+						<span class="material-icons" onclick="reorder(event,-1)">expand_less</span>
 					</div>
 				</div>
 				<div class="tier">
@@ -47,10 +47,10 @@
 					</div>
 					<div class="tiercontent" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 					<div class="tieroptions" data-html2canvas-ignore="true">
-						<input type="color" class="tiercolor" onchange="updatecolor(this)" value="#FFFF7F"></input>
-						<span class="material-icons deletebutton" onclick="deletetier(this)">delete</span>
-						<span class="material-icons" onclick="reorder(this, 2)">expand_more</span>
-						<span class="material-icons" onclick="reorder(this, -1)">expand_less</span>
+						<input type="color" class="tiercolor" onchange="updatecolor(event)" value="#FFFF7F"></input>
+						<span class="material-icons deletebutton" onclick="deletetier(event)">delete</span>
+						<span class="material-icons" onclick="reorder(event,2)">expand_more</span>
+						<span class="material-icons" onclick="reorder(event,-1)">expand_less</span>
 					</div>
 				</div>
 				<div class="tier">
@@ -59,10 +59,10 @@
 					</div>
 					<div class="tiercontent" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 					<div class="tieroptions" data-html2canvas-ignore="true">
-						<input type="color" class="tiercolor" onchange="updatecolor(this)" value="#BFFF7F"></input>
-						<span class="material-icons deletebutton" onclick="deletetier(this)">delete</span>
-						<span class="material-icons" onclick="reorder(this, 2)">expand_more</span>
-						<span class="material-icons" onclick="reorder(this, -1)">expand_less</span>
+						<input type="color" class="tiercolor" onchange="updatecolor(event)" value="#BFFF7F"></input>
+						<span class="material-icons deletebutton" onclick="deletetier(event)">delete</span>
+						<span class="material-icons" onclick="reorder(event,2)">expand_more</span>
+						<span class="material-icons" onclick="reorder(event,-1)">expand_less</span>
 					</div>
 				</div>
 				<div class="tier">
@@ -71,10 +71,10 @@
 					</div>
 					<div class="tiercontent" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 					<div class="tieroptions" data-html2canvas-ignore="true">
-						<input type="color" class="tiercolor" onchange="updatecolor(this)" value="#7FFFFF"></input>
-						<span class="material-icons deletebutton" onclick="deletetier(this)">delete</span>
-						<span class="material-icons" onclick="reorder(this, 2)">expand_more</span>
-						<span class="material-icons" onclick="reorder(this, -1)">expand_less</span>
+						<input type="color" class="tiercolor" onchange="updatecolor(event)" value="#7FFFFF"></input>
+						<span class="material-icons deletebutton" onclick="deletetier(event)">delete</span>
+						<span class="material-icons" onclick="reorder(event,2)">expand_more</span>
+						<span class="material-icons" onclick="reorder(event,-1)">expand_less</span>
 					</div>
 				</div>
 				<div class="tier">
@@ -83,15 +83,16 @@
 					</div>
 					<div class="tiercontent" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 					<div class="tieroptions" data-html2canvas-ignore="true">
-						<input type="color" class="tiercolor" onchange="updatecolor(this)" value="#7FBFFF"></input>
-						<span class="material-icons deletebutton" onclick="deletetier(this)">delete</span>
-						<span class="material-icons" onclick="reorder(this, 2)">expand_more</span>
-						<span class="material-icons" onclick="reorder(this, -1)">expand_less</span>
+						<input type="color" class="tiercolor" onchange="updatecolor(event)" value="#7FBFFF"></input>
+						<span class="material-icons deletebutton" onclick="deletetier(event)">delete</span>
+						<span class="material-icons" onclick="reorder(event, 2)">expand_more</span>
+						<span class="material-icons" onclick="reorder(event,-1)">expand_less</span>
 					</div>
 				</div>
 			</div>
 			<div class="form">
 				<div class="additionaloptions">
+					<button onclick="addtier()" class="button">Add tier</button>
 					<button onclick="cleartier()" class="button">Clear tiers</button>
 					<button onclick="download()" class="button">Download</button>
 				</div>
