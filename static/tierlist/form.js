@@ -68,7 +68,9 @@ function populate() {
 	}
 	// List of heroes to be added
 	heroes = [];
-	
+	// Use current epoch just to make sure we can add duplicated units
+	epoch = new Date().getTime();
+
 	// Start looping through all units
 	Object.keys(units).forEach((value) => {
 		// Skip enemy units
@@ -152,7 +154,7 @@ function populate() {
 		opt.src = "/common/hd-faces/" + heroes[i] + variant + ".webp";
 		opt.style.height = "5em";
 		opt.draggable = "true";
-		opt.id = heroes[i];
+		opt.id = heroes[i] + "-" + epoch;
 		opt.addEventListener("dragstart", function(event) {drag(event)}); 
 		rendered.appendChild(opt);
 	}
