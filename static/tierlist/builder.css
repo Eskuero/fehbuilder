@@ -49,15 +49,21 @@ body {
 }
 .tieroptions {
 	width: 6em;
-	text-align: center;
 	background: #000;
-	padding-top: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 .tiercolor {
 	border: 0;
 	padding: 0;
 	width: 2em;
 	height: 2em;
+	margin-left: 0.3em;
+}
+.deletebutton {
+	padding-left: 5px;
 }
 .tiercolor:hover {
 	cursor: pointer;

@@ -54,3 +54,10 @@ function cleartier() {
 		}
 	}
 }
+
+function deletetier(caller) {
+	// The tier is the grandpa of the caller
+	target = caller.parentElement.parentElement;
+	// And must be removed from the great-grandpa
+	tierlist.removeChild(target);
+}
