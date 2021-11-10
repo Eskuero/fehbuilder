@@ -76,6 +76,8 @@ function populate() {
 	heroes = [];
 	// Use current epoch just to make sure we can add duplicated units
 	epoch = new Date().getTime();
+	// Store the selected weapon type to avoid splitting many times
+	var curweapontype = selectweapontype.value.split(",");
 
 	// Start looping through all units
 	Object.keys(units).forEach((value) => {
@@ -89,7 +91,7 @@ function populate() {
 		// Check if we match the movement type
 		if (selectmovetype.value == "All") {
 			add = true;
-		} else if (units[value]["moveType"] == parseInt(selectmovetype.value)) {
+		} else if (units[value]["moveType"] == selectmovetype.value) {
 			add = true;
 		// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
 		} else {
@@ -97,9 +99,9 @@ function populate() {
 		}
 
 		// Check if we match the weapon type
-		if (selectweapontype.value == "All") {
+		if (curweapontype[0] == "All") {
 			add = true;
-		} else if (units[value]["WeaponType"] == parseInt(selectweapontype.value)) {
+		} else if (curweapontype.includes(units[value]["WeaponType"].toString())) {
 			add = true;
 		// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
 		} else {
@@ -109,7 +111,7 @@ function populate() {
 		// Check if we match the legendary type
 		if (selectblessing.value == "All") {
 			add = true;
-		} else if (other["blessed"][value] ? (other["blessed"][value]["blessing"] == parseInt(selectblessing.value)) : false) {
+		} else if (other["blessed"][value] ? (other["blessed"][value]["blessing"] == selectblessing.value) : false) {
 			add = true;
 		// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
 		} else {
@@ -129,7 +131,7 @@ function populate() {
 		// Check if we match the game
 		if (selectgametype.value == "All") {
 			add = true;
-		} else if (units[value]["origin"] == parseInt(selectgametype.value)) {
+		} else if (units[value]["origin"] == selectgametype.value) {
 			add = true;
 		// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
 		} else {
@@ -192,7 +194,7 @@ function statictranslations() {
 
 function changetype(caller) {
 	// Compose the weapon/move url
-	weapon = caller.value == "All" ? "0" : caller.value;
+	weapon = caller.value == "All" ? "0" : caller.value.split(",")[0];
 	url = "/common/other/" + weapon + "-" + caller.id.slice(0, -4) + ".webp";
 	// Now change the url on the imagelabel
 	document.getElementById(caller.id.slice(0, -4) + "icon").src = url;
