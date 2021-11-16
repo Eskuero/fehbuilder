@@ -20,6 +20,7 @@ selectblessing = document.getElementById("blessing");
 selectduoharmo = document.getElementById("duoharmo");
 selectgametype = document.getElementById("gametype");
 selectattire = document.getElementById("attire");
+selectsavelist = document.getElementById("savelist");
 
 // Checkboxes
 checkshowweapon = document.getElementById("showweapon");
@@ -44,9 +45,48 @@ fetch('/common/data/tierunits.json')
 			.then((out) => {
 				// We store other data for basic checks within the browser
 				other = out;
-				populate();
+				init();
 		}).catch(err => console.error(err));
 }).catch(err => console.error(err));
+
+function init() {
+	// Try to get all saved tierlists
+	if (localStorage.getItem('saves')) {
+		saves = JSON.parse(localStorage.getItem('saves'));
+	// Or setup the default ones
+	} else {
+		saves = {
+			"Default": {
+				"tierlist": [
+					{"color": "#FF7F7F", "name": "S", "content": []},
+					{"color": "#FFBF7F", "name": "A", "content": []},
+					{"color": "#FFFF7F", "name": "B", "content": []},
+					{"color": "#BFFF7F", "name": "C", "content": []},
+					{"color": "#7FFFFF", "name": "D", "content": []},
+					{"color": "#7FBFFF", "name": "E", "content": []}
+				]
+			}
+		}
+		localStorage.setItem('saves', JSON.stringify(saves));
+	}
+	// Fill the select of saved tierlists
+	while (selectsavelist.lastChild) {
+		selectsavelist.removeChild(selectsavelist.lastChild);
+	}
+	savenames = Object.keys(saves);
+	for (i = 0; i < savenames.length; i++) {
+		var savename = document.createElement('option');
+		savename.value = savenames[i];
+		savename.innerHTML = savenames[i];
+		selectsavelist.appendChild(savename);
+	}
+	// Create the first tierlist if exists
+	if (Object.keys(saves)[0]) {
+		loadsave(Object.keys(saves)[0]);
+	}
+	// Populate based on current filters
+	populate();
+}
 
 // Functions to allow drag and drop
 function allowDrop(ev) {
@@ -66,6 +106,9 @@ function drop(ev) {
 	}
 	target.appendChild(document.getElementById(data));
 }
+
+// Function to convert RGB to HEX
+const rgb2hex = (rgb) => `#${rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/).slice(1).map(n => parseInt(n, 10).toString(16).padStart(2, '0')).join('')}`
 
 function populate() {
 	// First delete all currently rendered
@@ -162,7 +205,7 @@ function populate() {
 		opt.style.backgroundImage = "url(/common/hd-faces/" + heroes[i] + variant + ".webp)";
 		opt.draggable = "true";
 		opt.className = "unit";
-		opt.id = heroes[i] + "-" + epoch;
+		opt.id = heroes[i] + (selectattire.value == "Resplendent" ? "-resp" : "") + "-" + epoch;
 		opt.addEventListener("dragstart", function(event) {drag(event)});
 		// Create and add the items indicating weapon, movement, blessing and origin
 		var weapon = document.createElement('img');
@@ -186,7 +229,7 @@ function populate() {
 		rendered.appendChild(opt);
 	}
 	// Make sure the icons are respecting the set rules
-	iconvisibility(checkshowweapon); iconvisibility(checkshowmovement); iconvisibility(checkshowblessing); iconvisibility(checkshoworigin)
+	iconvisibility(checkshowweapon); iconvisibility(checkshowmovement); iconvisibility(checkshowblessing); iconvisibility(checkshoworigin);
 }
 
 function statictranslations() {

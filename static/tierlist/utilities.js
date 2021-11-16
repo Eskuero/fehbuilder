@@ -62,7 +62,7 @@ function deletetier(event) {
 	tierlist.removeChild(target);
 }
 
-function addtier() {
+function addtier(color = "#FFFFFF", name = "New tier") {
 	// Create the base tier structure
 	var tier = document.createElement('div');
 	tier.className = "tier";
@@ -70,9 +70,9 @@ function addtier() {
 	// Create the tier name structure, make it content editable, with a default white color, "new tier" text and append it to the base tier structure 
 	var tiername = document.createElement('div');
 	tiername.className = "tiername";
-	tiername.style.backgroundColor = "#FFFFFF";
+	tiername.style.backgroundColor = color;
 	tiername.contentEditable = "true";
-	tiername.innerHTML = "New tier";
+	tiername.innerHTML = name;
 	tiername.addEventListener("drop", function(event) {event.preventDefault(); return false;});
 	tier.appendChild(tiername);
 
@@ -91,7 +91,7 @@ function addtier() {
 	var tiercolor = document.createElement('input');
 	tiercolor.className = "tiercolor";
 	tiercolor.type = "color";
-	tiercolor.value = "#FFFFFF";
+	tiercolor.value = color;
 	tiercolor.addEventListener("change", function(event) {updatecolor(event)});
 	tieroptions.appendChild(tiercolor);
 	// Tierdelete
@@ -114,6 +114,9 @@ function addtier() {
 
 	// Append the whole new tier to the tierlist
 	tierlist.appendChild(tier);
+
+	// Return the generated tier since this function might be called by others that need to do more work
+	return tier;
 }
 
 function iconvisibility(caller) {
@@ -125,5 +128,125 @@ function iconvisibility(caller) {
 		for (i = 0; i < icons.length; i++) {
 			icons[i].style.display = caller.checked == true ? "block" : "none";
 		}
+	}
+}
+
+function newsave() {
+	// Ask for the new
+	var name = prompt("What name do you want to give to your new empty tierlist?");
+	// Unless is empty or already existing move forward
+	if (name && !saves[name]) {
+		save = {
+			"tierlist": [
+				{"color": "#FF7F7F", "name": "S", "content": []},
+				{"color": "#FFBF7F", "name": "A", "content": []},
+				{"color": "#FFFF7F", "name": "B", "content": []},
+				{"color": "#BFFF7F", "name": "C", "content": []},
+				{"color": "#7FFFFF", "name": "D", "content": []},
+				{"color": "#7FBFFF", "name": "E", "content": []}
+			]
+		}
+		saves[name] = save;
+		// Save the generic new save in the localstorage
+		localStorage.setItem('saves', JSON.stringify(saves));
+		// Add the option to the select
+		var savename = document.createElement('option');
+		savename.value = name;
+		savename.innerHTML = name;
+		selectsavelist.appendChild(savename);
+	} else {
+		alert("Invalid or duplicated name");
+	}
+}
+
+function loadsave(save = selectsavelist.value) {
+	// Do not move forward if no value is selected
+	if (!selectsavelist.value) {
+		return;
+	}
+	// First clear everything
+	while (tierlist.lastChild) {
+		tierlist.removeChild(tierlist.lastChild);
+	}
+	// Loop through all expected tiers and add them
+	for (i = 0; i < saves[save]["tierlist"].length; i++) {
+		tier = addtier(saves[save]["tierlist"][i]["color"], saves[save]["tierlist"][i]["name"]);
+		characters = saves[save]["tierlist"][i]["content"];
+		// Add each character to the tier
+		for (j = 0; j < characters.length; j++) {
+			// Character ID and variant
+			alldata = characters[j].split("-");
+			character = alldata[0];
+			variant = alldata[1] == "resp" ? "_Resplendent" : "";
+			// Use current epoch just to make sure we can add duplicated units
+			epoch = alldata.length == 3 ? alldata[2] : alldata[1];
+			var opt = document.createElement('div');
+			// Change variant if resplendent
+			opt.style.backgroundImage = "url(/common/hd-faces/" + character + variant + ".webp)";
+			opt.draggable = "true";
+			opt.className = "unit";
+			opt.id = character + (variant == "_Resplendent" ? "-resp" : "") + "-" + epoch;
+			opt.addEventListener("dragstart", function(event) {drag(event)});
+			// Create and add the items indicating weapon, movement, blessing and origin
+			var weapon = document.createElement('img');
+			weapon.className = "iconinfo weapon";
+			weapon.src = "/common/other/" + units[character]["WeaponType"] + "-weapon.webp";
+			opt.appendChild(weapon);
+			var movement = document.createElement('img');
+			movement.className = "iconinfo movement";
+			movement.src = "/common/other/" + units[character]["moveType"] + "-move.webp";
+			opt.appendChild(movement);
+			var origin = document.createElement('img');
+			origin.className = "iconinfo origin";
+			origin.src = "/common/other/" + units[character]["origin"] + "-game.webp";
+			opt.appendChild(origin);
+			if (other["blessed"][character]) {
+				var blessing = document.createElement('img');
+				blessing.className = "iconinfo blessing";
+				blessing.src = "/common/other/" + other["blessed"][character]["blessing"] + "-Blessing-special.webp";
+				opt.appendChild(blessing);
+			}
+			tier.children[1].appendChild(opt);
+		}
+	}
+	// Make sure the icons are respecting the set rules
+	iconvisibility(checkshowweapon); iconvisibility(checkshowmovement); iconvisibility(checkshowblessing); iconvisibility(checkshoworigin);
+}
+
+function savesave() {
+	target = selectsavelist.value;
+	// Confirm with the user
+	confirmsave = confirm("Save your current tierlist as '" + target + "'? Previous state will be overwritten.");
+	if (confirmsave) {
+		// To store the to-be-saved save
+		save = {"tierlist": []}
+		// Loop through all the currently tiers built
+		tiers = tierlist.children;
+		for (i = 0; i < tiers.length; i++) {
+			// Retrieve all data we need
+			tiername = tiers[i].children[0].innerHTML;
+			tiercolor = tiers[i].children[0].style.backgroundColor;
+			tiercontent = [];
+			for (j = 0; j < tiers[i].children[1].children.length; j++) {
+				tiercontent.push(tiers[i].children[1].children[j].id);
+			}
+			save["tierlist"].push({"color": rgb2hex(tiercolor), "name": tiername, "content": tiercontent});
+		}
+		// Store it on both temporal and localstorage
+		saves[target] = save;
+		localStorage.setItem('saves', JSON.stringify(saves));
+	}
+}
+
+function deletesave() {
+	target = selectsavelist.value;
+	// Confirm with the user
+	confirmsave = confirm("Delete your tierlist '" + target + "'? Will be gone forever.");
+	if (confirmsave) {
+		// Store it on both temporal and localstorage
+		delete saves[target];
+		localStorage.setItem('saves', JSON.stringify(saves));
+		// Delete the select option
+		selectsavelist.removeChild(selectsavelist[selectsavelist.selectedIndex]);
 	}
 }
