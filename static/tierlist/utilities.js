@@ -214,6 +214,10 @@ function loadsave(save = selectsavelist.value) {
 }
 
 function savesave() {
+	// Do not move forward if no value is selected
+	if (!selectsavelist.value) {
+		return;
+	}
 	target = selectsavelist.value;
 	// Confirm with the user
 	confirmsave = confirm("Save your current tierlist as '" + target + "'? Previous state will be overwritten.");
