@@ -121,6 +121,8 @@ function populate() {
 	epoch = new Date().getTime();
 	// Store the selected weapon type to avoid splitting many times
 	var curweapontype = selectweapontype.value.split(",");
+	// Store the selected blessing type to avoid splitting many times
+	var curblessingtype = selectblessing.value.split(",");
 
 	// Start looping through all units
 	Object.keys(units).forEach((value) => {
@@ -152,9 +154,9 @@ function populate() {
 		}
 
 		// Check if we match the legendary type
-		if (selectblessing.value == "All") {
+		if (curblessingtype[0] == "All") {
 			add = true;
-		} else if (other["blessed"][value] ? (other["blessed"][value]["blessing"] == selectblessing.value) : false) {
+		} else if (other["blessed"][value] ? curblessingtype.includes(other["blessed"][value]["blessing"].toString()) : false) {
 			add = true;
 		// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
 		} else {
