@@ -544,6 +544,9 @@ function reset(section) {
 			if ([20, 21, 22, 23].includes(weapontype)) {
 				selectbeast.value = "no";
 			}
+			selectboons.value = "None";
+			selectbanes.value = "None";
+			selectascendent.value = "None";
 		break;
 		case "skills":
 			selectweapons.value = "None";
@@ -554,6 +557,7 @@ function reset(section) {
 			selectA.value = "None";
 			selectB.value = "None";
 			selectC.value = "None";
+			selectS.value = "None";
 			// Trigger a rebuild of the selects based on the language filters set
 			populateall(false);
 	}
