@@ -20,6 +20,7 @@ selectblessing = document.getElementById("blessing");
 selectduoharmo = document.getElementById("duoharmo");
 selectgametype = document.getElementById("gametype");
 selectattire = document.getElementById("attire");
+selectbookrelease = document.getElementById("bookrelease");
 selectsavelist = document.getElementById("savelist");
 
 // Checkboxes
@@ -123,6 +124,9 @@ function populate() {
 	var curweapontype = selectweapontype.value.split(",");
 	// Store the selected blessing type to avoid splitting many times
 	var curblessingtype = selectblessing.value.split(",");
+	// Store the book limits to avoid splitting many times
+	var minid = selectbookrelease.value.split(",")[0];
+	var maxid = selectbookrelease.value.split(",")[1];
 
 	// Start looping through all units
 	Object.keys(units).forEach((value) => {
@@ -187,6 +191,14 @@ function populate() {
 		if (selectattire.value == "All") {
 			add = true;
 		} else if (units[value]["resplendent"]) {
+			add = true;
+		// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
+		} else {
+			return;
+		}
+
+		// Check if we match the release ID for the book
+		if (units[value]["id"] >= minid && units[value]["id"] < maxid) {
 			add = true;
 		// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
 		} else {
