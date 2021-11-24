@@ -21,6 +21,7 @@ selectduoharmo = document.getElementById("duoharmo");
 selectgametype = document.getElementById("gametype");
 selectattire = document.getElementById("attire");
 selectbookrelease = document.getElementById("bookrelease");
+selectthemegroup = document.getElementById("themegroup");
 selectsavelist = document.getElementById("savelist");
 
 // Checkboxes
@@ -199,6 +200,16 @@ function populate() {
 
 		// Check if we match the release ID for the book
 		if (units[value]["id"] >= minid && units[value]["id"] < maxid) {
+			add = true;
+		// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
+		} else {
+			return;
+		}
+
+		// Check if we match the group theme
+		if (selectthemegroup.value == "All") {
+			add = true;
+		} else if (other["seasonals"][selectthemegroup.value].includes(value)) {
 			add = true;
 		// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
 		} else {

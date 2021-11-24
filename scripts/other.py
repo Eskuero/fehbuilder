@@ -85,10 +85,28 @@ def work():
 			for hero, properties in other["blessed"].items()
 		},
 		"duo": other["duo"],
-		"resonant": other["resonant"]
+		"resonant": other["resonant"],
+		"seasonals": seasonals
 	}
 	with open("tierother.json", "w") as outfile:
 		json.dump(othertier, outfile)
+
+# Seasonal groups
+seasonals = {
+	"summer": ["PID_比翼ヒルダ", "PID_水着メルセデス", "PID_水着アッシュ", "PID_水着カスパル", "PID_水着レオニー", "PID_水着ユルグ", "PID_水着スリーズ", "PID_水着ヘルビンディ", "PID_水着レーヴァテイン", "PID_水着レーギャルン", "PID_水着リリーナ", "PID_水着ウォルト", "PID_水着リン", "PID_水着ウルスラ", "PID_水着フィオーラ", "PID_双界ワユ", "PID_水着セライナ", "PID_水着ルーテ", "PID_水着ヨシュア", "PID_水着キルロイ", "PID_比翼ベレス", "PID_水着ドロテア", "PID_水着イングリット", "PID_水着シルヴァン", "PID_水着ローレンツ", "PID_双界シーダ", "PID_水着フロージ", "PID_水着フレイヤ", "PID_水着オグマ", "PID_水着ノルン", "PID_水着ノワール", "PID_水着ティアモ", "PID_水着ターナ", "PID_水着ヒーニアス", "PID_水着タクミ", "PID_水着カミラ", "PID_水着チキ", "PID_水着リンダ", "PID_水着ガイア", "PID_水着フレデリク", "PID_水着ルフレ女", "PID_水着チキ覚醒", "PID_水着レオン", "PID_水着マークス", "PID_水着カムイ女", "PID_水着エリーゼ"],
+
+	"christmas": ["PID_冬祭エイリーク", "PID_冬祭エフラム", "PID_冬祭ファ", "PID_冬祭セシリア", "PID_比翼マルス", "PID_冬祭ニノ", "PID_冬祭若ゼフィール", "PID_冬祭ソティス", "PID_冬祭ジャファル", "PID_冬祭クロム", "PID_冬祭ルフレ男", "PID_冬祭サーリャ", "PID_冬祭リズ", "PID_双界オルティナ", "PID_冬祭ベルナデッタ", "PID_冬祭ヒルダ", "PID_冬祭セフェラン", "PID_冬祭フェリクス"],
+
+	"fallen": ["PID_魔剣マリータ", "PID_催眠チキ", "PID_闇ベルクト", "PID_暴走カムイ女", "PID_催眠デューテ", "PID_暴走アイク", "PID_催眠ユリア", "PID_魔王リオン", "PID_暴走カムイ男", "PID_暴走アシュナード", "PID_眷属タクミ", "PID_魔女セリカ", "PID_邪竜ルフレ男", "PID_暗黒ハーディン", "PID_闇ディミトリ", "PID_覇骸エーデルガルト", "PID_闇マーク男", "PID_闇マーク女", "PID_闇オルソン"],
+
+	"newyear": ["PID_年明フィヨルム", "PID_年明スリーズ", "PID_年明レーヴァテイン", "PID_年明フリーズ", "PID_年明レーギャルン", "PID_年明けカムイ男", "PID_年明けタクミ", "PID_年明けカミラ", "PID_年明けアクア", "PID_比翼ピアニー", "PID_年明プルメリア", "PID_年明ベロア", "PID_年明フランネル", "PID_年明レテ", "PID_比翼アルフォンス", "PID_年明アンナ", "PID_年明エイル"],
+
+	"brides": ["PID_花嫁フィヨルム", "PID_花嫁シグルーン", "PID_花嫁タニス", "PID_花婿パント", "PID_花嫁ルイーズ", "PID_比翼ミカヤ", "PID_花嫁オボロ", "PID_花嫁ニケ", "PID_花婿ラフィエル", "PID_花婿ヒナタ", "PID_花嫁サーリャ", "PID_花嫁サナキ", "PID_花嫁ニニアン", "PID_花婿マルス", "PID_花嫁シーダ", "PID_花嫁リン", "PID_花嫁ティアモ", "PID_花嫁シャーロッテ", "PID_双界外伝カチュア", "PID_花嫁シャニー", "PID_立会人サウル", "PID_花婿ゼロット"],
+
+	"cyl": ["PID_総選挙アルム", "PID_総選挙ミカヤ", "PID_総選挙エリウッド", "PID_総選挙カミラ", "PID_総選挙クロード", "PID_総選挙ディミトリ", "PID_総選挙エーデル", "PID_総選挙リシテア", "PID_総選挙門番", "PID_総選挙マルス", "PID_総選挙マリアンヌ", "PID_総選挙エイリーク", "PID_総選挙セリカ", "PID_総選挙ヘクトル", "PID_総選挙エフラム", "PID_総選挙ヴェロニカ", "PID_総選挙アイク", "PID_総選挙ロイ", "PID_総選挙リン", "PID_総選挙ルキナ"],
+
+	"halloween": ["PID_比翼ヘクトル", "PID_ハロラーチェル", "PID_ハロドズラ", "PID_ハロイレース", "PID_ハロヨファ", "PID_双界チキ", "PID_ハロチェイニー", "PID_ハロルフレ女", "PID_ハロデギンハンザー", "PID_ハロカゲロウ", "PID_ハロゼロ", "PID_ハロミルラ", "PID_ハロワユ", "PID_ハロドルカス", "PID_ハロヘンリー", "PID_ハロノノ", "PID_ハロジョーカー", "PID_ハロサクラ", "PID_比翼ソティス", "PID_ハロルフレ男", "PID_ハロクルトナーガ", "PID_ハロイナ", "PID_ハロソフィーヤ"]
+}
 
 # We tie each PID with the names of the pairs for duo heroes
 duokeywords = {
