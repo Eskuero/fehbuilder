@@ -14,7 +14,7 @@ PYTHONUNBUFFERED=1 python3 units.py >> fehupdate-$date.log 2>&1
 echo -e "\nObtaining summoning pools info... ($(date +"%Y-%m-%d-%H-%M-%S"))" >> fehupdate-$date.log 2>&1
 PYTHONUNBUFFERED=1 python3 summoning.py >> fehupdate-$date.log 2>&1
 echo -e "\nCopying outputs to their final destination... ($(date +"%Y-%m-%d-%H-%M-%S"))" >> fehupdate-$date.log 2>&1
-mv *.json ../data/;
+mv *skills.json *other.json *languages.json *pools.json *units.json ../data/;
 
 echo -e "\nDownloading missing assets... ($(date +"%Y-%m-%d-%H-%M-%S"))" >> fehupdate-$date.log 2>&1
 PYTHONUNBUFFERED=1 python3 downloadassets.py >> fehupdate-$date.log 2>&1
