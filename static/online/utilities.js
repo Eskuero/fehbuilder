@@ -12,9 +12,6 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers) {
-	// Disable banes in the calculations if we are merged
-	if (merges > 0)
-		bane = false;
 	// Modify the level 1 stats based on the rarity provided
 	almosttruelevel1 = {"HP": stats[0], "Atk": stats[1], "Spd": stats[2], "Def": stats[3], "Res": stats[4]}
 	// For 3 and 5 star rarity we can simply bump everything by 1 point
@@ -65,6 +62,12 @@ function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers
 
 	// We sort the level 1 stats to see the correct order to apply merges and dragonflowers
 	sortedtruelevel1 = dictsort(truelevel1);
+
+	// Now disregard the bane if we are merged
+	if (merges > 0 && bane) {
+		truelevel1[bane] += 1;
+		truegrowth[bane] += 5;
+	}
 
 	// We only apply the ascendent boon after sorting because they are not meant to affect the merge/dragonflower boost order. Also do not apply if there's a match between boon and ascendent boon
 	if (truelevel1[ascendent] && boon != ascendent) {
