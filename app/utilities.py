@@ -145,7 +145,7 @@ def statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers):
 		"Res": growths[4] + (-5 if bane == "Res" else (5 if boon == "Res" else 0))
 	}
 	# We sort the level 1 stats to see the correct order to apply merges and dragonflowers
-	sortedtruelevel1 = {k: v for k, v in sorted(truelevel1.items(), key=lambda item: item[1], reverse=True)}
+	sortedtruelevel1 = list({k: v for k, v in sorted(truelevel1.items(), key=lambda item: item[1], reverse=True)}.keys())
 
 	# Now disregard the bane if we are merged
 	if merges > 0 and bane:
@@ -161,26 +161,26 @@ def statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers):
 	stat = 0;
 	for i in range(0, merges):
 		# If we are neutral but merged we increase the first two stats twice  (unless we have an ascendent boon on that stat)
-		truelevel1[list(sortedtruelevel1.keys())[stat]] += 2 if not boon and i == 0 and list(sortedtruelevel1.keys())[stat] != ascendent else 1
-		ascended = True if list(sortedtruelevel1.keys())[stat] == ascendent else False
+		truelevel1[sortedtruelevel1[stat]] += 2 if not boon and i == 0 and sortedtruelevel1[stat] != ascendent else 1
+		ascended = True if sortedtruelevel1[stat] == ascendent else False
 		stat = 0 if stat == 4 else stat + 1
-		truelevel1[list(sortedtruelevel1.keys())[stat]] += 2 if not boon and i == 0 and list(sortedtruelevel1.keys())[stat] != ascendent else 1
-		ascended = True if list(sortedtruelevel1.keys())[stat] == ascendent else ascended
+		truelevel1[sortedtruelevel1[stat]] += 2 if not boon and i == 0 and sortedtruelevel1[stat] != ascendent else 1
+		ascended = True if sortedtruelevel1[stat] == ascendent else ascended
 		stat = 0 if stat == 4 else stat + 1
 		# If we are neutral but merged we increase an additional stat on the first iteration  (unless we have an ascendent boon on that stat) but without incrementing the counter
-		if boon is None and i == 0 and list(sortedtruelevel1.keys())[stat] != ascendent:
-			truelevel1[list(sortedtruelevel1.keys())[stat]] += 1
-		ascended = True if list(sortedtruelevel1.keys())[stat] == ascendent else ascended
+		if boon is None and i == 0 and sortedtruelevel1[stat] != ascendent:
+			truelevel1[sortedtruelevel1[stat]] += 1
+		ascended = True if sortedtruelevel1[stat] == ascendent else ascended
 
 		# If we are neutral but merged we increase an additional stat on the first merge when ascendent stats are in place but without incrementing the counter
 		if boon is None and i == 0 and ascended:
-			truelevel1[list(sortedtruelevel1.keys())[stat+1]] += 1
+			truelevel1[sortedtruelevel1[stat+1]] += 1
 
 	# We loop as many times as dragonflowers we got to apply the boosts, we save in a variable the next to be updated index
 	stat = 0;
 	for i in range(0, flowers):
 		# If we are neutral but merged we increase the first two stats twice
-		truelevel1[list(sortedtruelevel1.keys())[stat]] += 1
+		truelevel1[sortedtruelevel1[stat]] += 1
 		stat = 0 if stat == 4 else stat + 1
 	return [
 		truelevel1["HP"] + generalgrowths[rarity-1][int((truegrowth["HP"] / 5) - 4)],
