@@ -36,7 +36,6 @@ for file in files:
 		data = json.load(datasource)
 		# SID_無し is skeleton data for a skill so we ignore
 		for entry in [entry for entry in data if entry["id_tag"] != "SID_無し"]:
-			print(entry["id_tag"])
 			# Store all the data except if it's a refine
 			if not entry["refine_base"] and entry["category"] in range(0, 7):
 				categories[entry["category"]][entry["id_tag"]] = {

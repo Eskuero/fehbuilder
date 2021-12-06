@@ -25,7 +25,6 @@ for file in files:
 		data = json.load(datasource)
 		# EID_無し is skeleton data for a enemy so we ignore it. We also ignore the normal bosses
 		for entry in [entry for entry in data if entry["id_tag"] != "EID_無し" and not entry["is_boss"]]:
-			print(entry["id_tag"])
 
 			heroes[entry["id_tag"]] = {
 				# The base stats values stored for each hero are so at 3 star rarity (it's safe to reduce them all by 1 to match 1* star rarity)
@@ -62,7 +61,6 @@ for file in files:
 		data = json.load(datasource)
 		# PID_無し is skeleton data for a hero so we ignore it
 		for entry in [entry for entry in data if entry["id_tag"] != "PID_無し"]:
-			print(entry["id_tag"])
 
 			heroes[entry["id_tag"]] = {
 				# The base stats values stored for each hero are so at 3 star rarity (it's safe to reduce them all by 1 to match 1* star rarity)
