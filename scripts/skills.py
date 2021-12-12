@@ -44,7 +44,7 @@ for file in files:
 					"statModifiers": [value for value in entry["stats"].values()],
 					"exclusive": entry["exclusive"],
 					# Always default to isMax false for seals since we modify the info later when filling the data
-					"isMax": True if not entry["next_skill"] and entry["category"] != 6 else False
+					"isMax": True if not entry["next_skill"] and not entry["passive_next"] and entry["category"] != 6 else False
 				}
 				# For weapons add the might as part of the statsmodifiers for Atk and emtpy refines definition
 				if entry["category"] == 0:
