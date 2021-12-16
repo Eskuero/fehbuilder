@@ -146,14 +146,26 @@ async function reload() {
 	preview.strokeText(languages[language]["MID_HEROISM_POINT"], 115, 1103); preview.fillText(languages[language]["MID_HEROISM_POINT"], 115, 1103);
 
 	flowers = parseInt(selectflowers.value);
-	// Obtain the base stats to draw
-	statsmodifier = [
-		parseInt(selecthp.value) ? parseInt(selecthp.value) : 0,
-		parseInt(selectatk.value) ? parseInt(selectatk.value) : 0,
-		parseInt(selectspd.value) ? parseInt(selectspd.value) : 0,
-		parseInt(selectdef.value) ? parseInt(selectdef.value) : 0,
-		parseInt(selectres.value) ? parseInt(selectres.value) : 0
-	];
+	// Obtain the base stats to draw depending on the method selected
+	if (!statsmode.checked) {
+		statsmodifier = [
+			parseInt(selecthp.value) ? parseInt(selecthp.value) : 0,
+			parseInt(selectatk.value) ? parseInt(selectatk.value) : 0,
+			parseInt(selectspd.value) ? parseInt(selectspd.value) : 0,
+			parseInt(selectdef.value) ? parseInt(selectdef.value) : 0,
+			parseInt(selectres.value) ? parseInt(selectres.value) : 0
+		];
+	} else {
+		unitstats = [parseInt(selectadhp.value), parseInt(selectadatk.value), parseInt(selectadspd.value), parseInt(selectaddef.value), parseInt(selectadres.value)];
+		unitgrowths = [parseInt(selectadhpgrowth.value), parseInt(selectadatkgrowth.value), parseInt(selectadspdgrowth.value), parseInt(selectaddefgrowth.value), parseInt(selectadresgrowth.value)];
+		for (i = 0; i < unitgrowths.length; i++) {
+			if (unitgrowths[i] < 25 || unitgrowths[i] > 85 || unitgrowths[i] % 5 != 0) {
+				alert("Growth values for stats must be multiples of 5 between 25 and 85");
+				return;
+			}
+		}
+		statsmodifier = statcalc(unitstats, unitgrowths, rarity, boon, bane, ascendent, merges, flowers);
+	}
 
 	// All type of skills we grab stats from
 	options = ["weapon", "refine", "Askill", "Bskill", "Cskill", "Sskill"];

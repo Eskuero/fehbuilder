@@ -16,7 +16,6 @@ var units, skills, other, languages;
 // All selects we have available
 selecthero = document.getElementById('hero');
 selecttitle = document.getElementById('title');
-selectrarity = document.getElementById('rarity');
 selectmerges = document.getElementById('merges');
 selectflowers = document.getElementById('flowers');
 selectboons = document.getElementById('boons');
@@ -57,6 +56,18 @@ selectlanguage = document.getElementById('language');
 cheats = document.getElementById('cheats');
 bestskills = document.getElementById('bestskills');
 appui = document.getElementById('appui');
+// Stats exclusive for advanced mode
+statsmode = document.getElementById('advancedmode');
+selectadhp = document.getElementById('hp1');
+selectadatk = document.getElementById('atk1');
+selectadspd = document.getElementById('spd1');
+selectaddef = document.getElementById('def1');
+selectadres = document.getElementById('res1');
+selectadhpgrowth = document.getElementById('hpgrowth');
+selectadatkgrowth = document.getElementById('atkgrowth');
+selectadspdgrowth = document.getElementById('spdgrowth');
+selectaddefgrowth = document.getElementById('defgrowth');
+selectadresgrowth = document.getElementById('resgrowth');
 // Where we show the image
 var canvas = document.getElementById('fakecanvas');
 
@@ -103,7 +114,10 @@ async function init() {
 	numberfont = undefined;
 	await getimage(other["images"]["other"]["numberfont"]).then(img => {
 		numberfont = img;
-	})
+	});
+
+	// Detect which stat mode we are on
+	changemode()
 
 	// Draw it for the first time
 	reload();
@@ -505,6 +519,16 @@ function changetype(caller) {
 	url = "/common/other/" + caller.value + "-" + caller.id.slice(0, -4) + ".webp";
 	// Now change the url on the imagelabel
 	document.getElementById(caller.id.slice(0, -4) + "icon").src = url;
+}
+
+function changemode() {
+	if (statsmode.checked) {
+		document.getElementById("smallstats").style.display = "none";
+		document.getElementById("advancedstats").style.display = "flex";
+	} else {
+		document.getElementById("smallstats").style.display = "flex";
+		document.getElementById("advancedstats").style.display = "none";
+	}
 }
 
 function statictranslations() {

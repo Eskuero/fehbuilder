@@ -428,9 +428,15 @@
 						</div>
 					</div>
 				</section>
-				<h2>Stats</h2>
+				<div style="display:flex">
+					<h2>Stats</h2>
+					<div style="display:flex; gap: 0.5em; align-items: center; justify-content: center; margin: 0.7em 0 0.5em 2em;">
+						<input type="checkbox" id="advancedmode" onchange="changemode()" unchecked>
+						<label>Advanced mode</label>
+					</div>
+				</div>
 				<section style="columns: 1">
-					<div class="listofstats">
+					<div id="smallstats" class="listofstats">
 						<div>
 							<img class="imagelabel" src="/common/assets/HP.webp" title="HP"/>
 							<input type="number" id="hp" onchange="reload()" min="-99" max="99" value="0">
@@ -450,6 +456,38 @@
 						<div>
 							<img class="imagelabel" src="/common/assets/Res.webp" title="Res"/>
 							<input type="number" id="res" onchange="reload()" min="-99" max="99" value="0">
+						</div>
+					</div>
+					<div id="advancedstats" class="listofstats">
+						<div>
+							<img class="imagelabel" src="/common/base/oopsie.webp"/>
+							<label style="line-height: 2em;">Level 1:</label>
+							<label style="line-height: 2em;">Growth %:</label>
+						</div>
+						<div>
+							<img class="imagelabel" src="/common/assets/HP.webp" title="HP"/>
+							<input type="number" id="hp1" onchange="reload()" min="0" max="99" value="18">
+							<input type="number" id="hpgrowth" onchange="reload()" min="25" max="85" value="45" step="5">
+						</div>
+						<div>
+							<img class="imagelabel" src="/common/assets/Atk.webp" title="Atk"/>
+							<input type="number" id="atk1" onchange="reload()" min="0" max="99" value="7">
+							<input type="number" id="atkgrowth" onchange="reload()" min="25" max="85" value="50" step="5">
+						</div>
+						<div>
+							<img class="imagelabel" src="/common/assets/Spd.webp" title="Spd"/>
+							<input type="number" id="spd1" onchange="reload()" min="0" max="99" value="8">
+							<input type="number" id="spdgrowth" onchange="reload()" min="25" max="85" value="60" step="5">
+						</div>
+						<div>
+							<img class="imagelabel" src="/common/assets/Def.webp" title="Def"/>
+							<input type="number" id="def1" onchange="reload()" min="0" max="99" value="6">
+							<input type="number" id="defgrowth" onchange="reload()" min="25" max="85" value="35" step="5">
+						</div>
+						<div>
+							<img class="imagelabel" src="/common/assets/Res.webp" title="Res"/>
+							<input type="number" id="res1" onchange="reload()" min="0" max="99" value="5">
+							<input type="number" id="resgrowth" onchange="reload()" min="25" max="85" value="50" step="5">
 						</div>
 					</div>
 				</section>
