@@ -568,15 +568,15 @@ function filldefaults() {
 		selectadspdgrowth.value = "60";
 		selectaddefgrowth.value = "35";
 		selectadresgrowth.value = "50";
-	// Else place all the values corresponding to name, title, stats, growths, move and weapon types.
+	// Else place all the values corresponding to name, title, stats (+2 because we are storing rarity 1), growths, move and weapon types
 	} else {
 		selecthero.value = languages[language]["M" + defaulthero];
 		selecttitle.value = languages[language][defaulthero.replace("PID", "MPID_HONOR")];
-		selectadhp.value = units[defaulthero]["stats"][0];
-		selectadatk.value = units[defaulthero]["stats"][1];
-		selectadspd.value = units[defaulthero]["stats"][2];
-		selectaddef.value = units[defaulthero]["stats"][3];
-		selectadres.value = units[defaulthero]["stats"][4];
+		selectadhp.value = units[defaulthero]["stats"][0] + 2;
+		selectadatk.value = units[defaulthero]["stats"][1] + 2;
+		selectadspd.value = units[defaulthero]["stats"][2] + 2;
+		selectaddef.value = units[defaulthero]["stats"][3] + 2;
+		selectadres.value = units[defaulthero]["stats"][4] + 2;
 		selectadhpgrowth.value = units[defaulthero]["growths"][0];
 		selectadatkgrowth.value = units[defaulthero]["growths"][1];
 		selectadspdgrowth.value = units[defaulthero]["growths"][2];
