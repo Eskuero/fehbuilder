@@ -32,7 +32,7 @@
 					</div>
 					<div style="display:flex;gap:1em">
 						<img class="imagelabel" src="/common/assets/language.webp" title="Language"/>
-						<select class="select-without-search" id="language" onChange="populateall(false);statictranslations();reload()">
+						<select class="select-without-search" id="language" onChange="populate(selectheroes, units, true, true);populateall(false);statictranslations();reload()">
 							<option value="USEN" selected>English (America)</option>
 							<option value="EUEN">English (UK)</option>
 							<option value="EUDE">Deutsch</option>
@@ -222,6 +222,14 @@
 								<option value="21">Blue Beast</option>
 								<option value="22">Green Beast</option>
 								<option value="23">Colorless Beast</option>
+							</select>
+						</div>
+					</div>
+					<div class="row-property single" style="align-items:center">
+						<label style="width: 2em;">Base</label>
+						<div>
+							<select class="s2-select" id="selectheroes" onChange="filldefaults();populateall(true);reload()" >
+								<option value="None">None</value>
 							</select>
 						</div>
 					</div>

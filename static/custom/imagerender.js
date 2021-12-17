@@ -58,7 +58,16 @@ async function reload() {
 			// Size of the image must vary depending on the multiplier used
 			multiplier = parseInt(selectexpand.value) / 100;
 			preview.drawImage(img, 0 + artoffsetX, 0 - artoffsetY, img.width * multiplier, img.height * multiplier);
-		})
+		});
+	// If no custom file is selected but a base hero is chosen use that
+	} else if (selectbasehero.value != "None") {
+		// If we selected Resplendent and it actually is a legit choose the art
+		attire = (selectattire.value == "Resplendent" && languages[language][selectbasehero.value.replace("PID", "MPID_VOICE") + "EX01"]) ? "_Resplendent_" : "_";
+		await getimage("../common/heroes/" + selectbasehero.value + attire + "Portrait.webp", "/common/base/missigno.webp").then(img => {
+			// We always print the image at the 0 coordinate on Y, but this is not good enough when vertically flipping because we expect the lower half of the hero not to be cut
+			coordinateY = ["Vertical", "Both"].includes(mirror.value) ? - (img.height - 1280) : 0;
+			preview.drawImage(img, -305 + artoffsetX, coordinateY - artoffsetY);
+		});
 	}
 	// Always restore the previous context to avoid issues
 	preview.restore();

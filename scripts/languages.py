@@ -72,14 +72,3 @@ languagessummon = {
 }
 with open("summonlanguages.json", "w") as outfile:
     json.dump(languagessummon, outfile)
-
-# Alternative version for custom unit builder
-languagescustom = {
-	language: {
-		key: string
-		for key, string in strings.items() if not any(substring in key for substring in ["PID", "EID"]) or key.replace("PID_HONOR", "PID").replace("MPID", "PID") in blessed
-	}
-	for language, strings in languages.items()
-}
-with open("customlanguages.json", "w") as outfile:
-    json.dump(languagescustom, outfile)

@@ -25,6 +25,7 @@ selectduoharmo = document.getElementById('duoharmo');
 selectbeast = document.getElementById('beast');
 selectmovetype = document.getElementById('movetype');
 selectweapontype = document.getElementById('weapontype');
+selectbasehero = document.getElementById("selectheroes")
 selectweapons = document.getElementById('weapon');
 selectrefines = document.getElementById('refine');
 selectspecials = document.getElementById('special');
@@ -72,12 +73,19 @@ selectadresgrowth = document.getElementById('resgrowth');
 var canvas = document.getElementById('fakecanvas');
 
 // Fetch all data from each json
-fetch('/common/data/customlanguages.json')
+fetch('/common/data/litelanguages.json')
 	.then(res => res.json())
 	.then((out) => {
 		// We store languages data for display of strings within the browser
 		languages = out;
 		// We can download the rest of the data now that lenguages are available
+		fetch('/common/data/fullunits.json')
+			.then(res => res.json())
+			.then((out) => {
+				// We store the heroes for basic checks within the browser
+				units = out;
+				populate(selectheroes, units, true, true);
+		}).catch(err => console.error(err));
 		fetch('/common/data/customskills.json')
 			.then(res => res.json())
 			.then((out) => {
@@ -181,7 +189,7 @@ function populateall(clean) {
 	beastcheck()
 }
 
-function populate(select, data, clean) {
+function populate(select, data, clean, bypass = false) {
 	// Get current value to restore it back if possible
 	previousvalue = select.value
 	// First delete them all
@@ -195,6 +203,27 @@ function populate(select, data, clean) {
 	select.appendChild(opt);
 	// All data to be printed
 	options = {}
+	// If indicated to bypass don't do checks for this select, print everything and leave (this is exclusively for the heroes select)
+	if (bypass) {
+		Object.keys(data).forEach((value) => {
+			options[languages[selectlanguage.value]["M" + value] + ": " + (languages[selectlanguage.value][value.replace("PID", "MPID_HONOR")] || "Generic")] = value
+		});
+		// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
+		options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {})
+		// For each entry print an option
+		for (const [string, tag] of Object.entries(options)) {
+			var opt = document.createElement('option');
+			opt.value = tag;
+			// If of type person we also append the title
+			opt.innerHTML = string;
+			select.appendChild(opt);
+		}
+		// Restore the previous value if it's available on the updated select
+		if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
+			select.value = previousvalue;
+		}
+		return;
+	}
 	// Hero info for possible later checks
 	weapontype = parseInt(selectweapontype.value);
 	movetype = parseInt(selectmovetype.value);
@@ -519,6 +548,50 @@ function changetype(caller) {
 	url = "/common/other/" + caller.value + "-" + caller.id.slice(0, -4) + ".webp";
 	// Now change the url on the imagelabel
 	document.getElementById(caller.id.slice(0, -4) + "icon").src = url;
+}
+
+function filldefaults() {
+	// Get current language and base hero
+	language = selectlanguage.value;
+	defaulthero = selectbasehero.value;
+	// If we switched to no base hero return to default values
+	if (defaulthero == "None") {
+		selecthero.value = "";
+		selecttitle.value = "";
+		selectadhp.value = "18";
+		selectadatk.value = "7";
+		selectadspd.value = "8";
+		selectaddef.value = "6";
+		selectadres.value = "5";
+		selectadhpgrowth.value = "45";
+		selectadatkgrowth.value = "50";
+		selectadspdgrowth.value = "60";
+		selectaddefgrowth.value = "35";
+		selectadresgrowth.value = "50";
+	// Else place all the values corresponding to name, title, stats, growths, move and weapon types.
+	} else {
+		selecthero.value = languages[language]["M" + defaulthero];
+		selecttitle.value = languages[language][defaulthero.replace("PID", "MPID_HONOR")];
+		selectadhp.value = units[defaulthero]["stats"][0];
+		selectadatk.value = units[defaulthero]["stats"][1];
+		selectadspd.value = units[defaulthero]["stats"][2];
+		selectaddef.value = units[defaulthero]["stats"][3];
+		selectadres.value = units[defaulthero]["stats"][4];
+		selectadhpgrowth.value = units[defaulthero]["growths"][0];
+		selectadatkgrowth.value = units[defaulthero]["growths"][1];
+		selectadspdgrowth.value = units[defaulthero]["growths"][2];
+		selectaddefgrowth.value = units[defaulthero]["growths"][3];
+		selectadresgrowth.value = units[defaulthero]["growths"][4];
+		selectmovetype.value = units[defaulthero]["moveType"];
+		selectweapontype.value = units[defaulthero]["WeaponType"];
+	}
+	// Make sure we update the images on the move/weapon type selects and enable or disable the best selector if necessary
+	changetype(selectmovetype);
+	changetype(selectweapontype);
+	beastcheck();
+	// Make sure we enable advanced mode to show the proper stats modifiers
+	statsmode.checked = "true";
+	changemode();
 }
 
 function changemode() {

@@ -102,6 +102,17 @@ heroeslite = {
 with open("liteunits.json", "w") as outfile:
 	json.dump(heroeslite, outfile)
 
+# Version for custom unit builder
+heroescustom = {
+	heroname: {
+		property: value
+		for property, value in properties.items() if property in ["WeaponType", "moveType", "stats", "growths"]
+	}
+	for heroname, properties in heroes.items()
+}
+with open("liteunits.json", "w") as outfile:
+	json.dump(heroescustom, outfile)
+
 # Even smaller version for the summoning
 heroessummon = {
 	heroname: {
