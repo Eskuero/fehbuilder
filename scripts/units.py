@@ -110,7 +110,7 @@ heroescustom = {
 	}
 	for heroname, properties in heroes.items()
 }
-with open("liteunits.json", "w") as outfile:
+with open("customunits.json", "w") as outfile:
 	json.dump(heroescustom, outfile)
 
 # Even smaller version for the summoning

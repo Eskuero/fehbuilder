@@ -79,7 +79,7 @@ fetch('/common/data/litelanguages.json')
 		// We store languages data for display of strings within the browser
 		languages = out;
 		// We can download the rest of the data now that lenguages are available
-		fetch('/common/data/fullunits.json')
+		fetch('/common/data/customunits.json')
 			.then(res => res.json())
 			.then((out) => {
 				// We store the heroes for basic checks within the browser
