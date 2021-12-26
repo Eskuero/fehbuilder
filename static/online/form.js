@@ -44,6 +44,8 @@ fetch('/common/data/fullother.json')
 }).catch(err => console.error(err));
 
 async function init() {
+	// This array will be used as rendering queue
+	renderingqueue = [];
 	// Load and wait for the font to be ready
 	const font = new FontFace("FeH-Font", "url('/common/feh-font.woff2') format('woff2')");
 	await font.load();
@@ -57,6 +59,37 @@ async function init() {
 
 	// Draw it for the first time
 	reload();
+}
+
+async function reload(scroll = false) {
+	// Get epoch as rendering ID
+	let renderingid = new Date().getTime();
+	// Put our rendering ID on queue
+	renderingqueue.push(renderingid);
+	// Until our rendering ID is the first, wait and check again in 100ms
+	while (renderingqueue[0] != renderingid) {
+		await sleep(100);
+	}
+	// Cleanly hide all canvas
+	document.getElementById("fakecanvas").style.display = "none";
+	document.getElementById("fakecanvascond").style.display = "none";
+
+	// Switch on depending on selection and run the appropiate renderer
+	switch (selecttemplate.value) {
+		case "MyUnit":
+			document.getElementById("fakecanvas").style.display = "initial";
+			myunit();
+			break;
+		case "Condensed":
+			document.getElementById("fakecanvascond").style.display = "initial";
+			condensed();
+			break;
+	}
+
+	// Autoscroll all the way up so the user can inmediately see the hero preview on portrait screens
+	if (scroll) {
+		window.scrollTo(0, 0);
+	}
 }
 
 async function condensed() {
@@ -91,8 +124,9 @@ async function condensed() {
 		preview.drawImage(img, 0, 0);
 	})
 
-	//After this if no hero is selected we STOP
+	//After this if no hero is selected we STOP and clear the queue
 	if (!hero) {
+		renderingqueue.shift();
 		return;
 	}
 
@@ -307,6 +341,9 @@ async function condensed() {
 			preview.drawImage(img, 104, 140);
 		});
 	}
+
+	// Clean the queue
+	renderingqueue.shift();
 }
 
 async function myunit() {
@@ -368,8 +405,9 @@ async function myunit() {
 		preview.drawImage(img, 0, 0);
 	})
 	
-	//After this if no hero is selected we STOP
+	//After this if no hero is selected we STOP and delete the first print queue
 	if (!hero) {
+		renderingqueue.shift();
 		return;
 	}
 
@@ -659,6 +697,9 @@ async function myunit() {
 			preview.drawImage(img, posX - offsetX, posY, width, height);
 		});
 	}
+
+	// Clean the queue
+	renderingqueue.shift();
 }
 
 async function getimage(url, fallback = "/common/base/oopsie.webp") {

@@ -101,6 +101,11 @@ function dictsort(dictionary) {
 	return items;
 }
 
+// Helper function to sleep async functions for a while
+const sleep = (milliseconds) => {
+  return new Promise(resolve => setTimeout(resolve, milliseconds))
+}
+
 async function getimage(url, fallback = "/common/base/oopsie.webp") {
 	// This premise will not return until the image has fully loaded
 	const imageLoadPromise = new Promise(resolve => {

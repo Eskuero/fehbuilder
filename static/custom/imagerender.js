@@ -12,6 +12,15 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 async function reload() {
+	// Get epoch as rendering ID
+	let renderingid = new Date().getTime();
+	// Put our rendering ID on queue
+	renderingqueue.push(renderingid);
+	// Until our rendering ID is the first, wait and check again in 100ms
+	while (renderingqueue[0] != renderingid) {
+		await sleep(100);
+	}
+
 	// Obtain the object
 	var preview = document.getElementById("fakecanvas").getContext("2d");
 	// Sometimes the text stroke could cause graphical glitches
@@ -170,6 +179,8 @@ async function reload() {
 		for (i = 0; i < unitgrowths.length; i++) {
 			if (unitgrowths[i] < 25 || unitgrowths[i] > 85 || unitgrowths[i] % 5 != 0) {
 				alert("Growth values for stats must be multiples of 5 between 25 and 85");
+				// Clean the queue
+				renderingqueue.shift();
 				return;
 			}
 		}
@@ -428,4 +439,7 @@ async function reload() {
 			preview.drawImage(img, posX - offsetX, posY, width, height);
 		});
 	}
+
+	// Clean the queue
+	renderingqueue.shift();
 }

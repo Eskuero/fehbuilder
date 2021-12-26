@@ -140,6 +140,11 @@ function dictsort(dictionary) {
 	return items;
 }
 
+// Helper function to sleep async functions for a while
+const sleep = (milliseconds) => {
+  return new Promise(resolve => setTimeout(resolve, milliseconds))
+}
+
 // Simple housekeeping function to add the stats boost from different static modifiers
 function staticmodifiers() {
 	othermodifiers = [0, 0, 0, 0, 0];

@@ -113,6 +113,8 @@ function copyClassesToSelect2(data, container) {
 }
 
 async function init() {
+	// This array will be used as rendering queue
+	renderingqueue = [];
 	// Load and wait for the font to be ready
 	const font = new FontFace("FeH-Font", "url('/common/feh-font.woff2') format('woff2')");
 	await font.load();
