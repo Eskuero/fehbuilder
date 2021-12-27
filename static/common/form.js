@@ -517,10 +517,13 @@ function reset(section) {
 			selectflowers.value = "0";
 			selectsummoner.value = "None";
 			selectattire.value = "Normal";
-			// For beasts disable transformation
-			weapontype = units[selectheroes.value]["WeaponType"];
-			if ([20, 21, 22, 23].includes(weapontype)) {
-				selectbeast.value = "no";
+			// We cannot check if the unit is a beast unless there's a unit selected
+			if (selectheroes.value != "None") {
+				// For beasts disable transformation
+				weapontype = units[selectheroes.value]["WeaponType"];
+				if ([20, 21, 22, 23].includes(weapontype)) {
+					selectbeast.value = "no";
+				}
 			}
 			selectboons.value = "None";
 			selectbanes.value = "None";
