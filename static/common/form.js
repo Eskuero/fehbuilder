@@ -109,29 +109,6 @@ $(document).on("select2:open", () => {
 	document.querySelector(".select2-container--open .select2-search__field").focus()
 });
 
-function reload(scroll = false) {
-	// Cleanly hide all canvas
-	document.getElementById("fakecanvas").style.display = "none";
-	document.getElementById("fakecanvascond").style.display = "none";
-
-	// Switch on depending on selection and run the appropiate renderer
-	switch (selecttemplate.value) {
-		case "MyUnit":
-			document.getElementById("fakecanvas").style.display = "initial";
-			myunit();
-			break;
-		case "Condensed":
-			document.getElementById("fakecanvascond").style.display = "initial";
-			condensed();
-			break;
-	}
-
-	// Autoscroll all the way up so the user can inmediately see the hero preview on portrait screens
-	if (scroll) {
-		window.scrollTo(0, 0);
-	}
-}
-
 function populateall(clean) {
 	// We go through all the selects
 	populate(selectweapons, skills["weapons"], clean)
