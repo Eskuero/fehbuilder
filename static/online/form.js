@@ -129,7 +129,7 @@ function updateRefine() {
 function swapstat(caller, target) {
 	// Switch the selected option in the tabs by changing the background color
 	options = document.getElementsByClassName("tabs")[0].children;
-	for (i = 0; i < options.length; i++) {
+	for (i = 1; i < options.length; i++) {
 		if (options[i] == caller) {
 			options[i].className = "imagelabel selected";
 		} else {
