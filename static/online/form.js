@@ -11,6 +11,9 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+// All selects we have available
+selecttemplate = document.getElementById('template');
+
 // Fetch all data from each json
 fetch('/common/data/fulllanguages.json')
 	.then(res => res.json())

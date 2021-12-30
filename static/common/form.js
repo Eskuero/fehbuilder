@@ -42,7 +42,6 @@ selectres = document.getElementById('res');
 selectsp = document.getElementById('sp');
 selecthm = document.getElementById('hm');
 selectartstyle = document.getElementById('artstyle');
-selecttemplate = document.getElementById('template');
 selectoffsetY = document.getElementById('offsetY');
 selectoffsetX = document.getElementById('offsetX');
 selectmirror = document.getElementById('mirror');
