@@ -145,6 +145,52 @@ const sleep = (milliseconds) => {
   return new Promise(resolve => setTimeout(resolve, milliseconds))
 }
 
+async function getimage(url, fallback = "/common/base/oopsie.webp") {
+	// This premise will not return until the image has fully loaded
+	const imageLoadPromise = new Promise(resolve => {
+		img = new Image();
+		img.src = url;
+		img.onload = resolve;
+		// We failed to download the image so fallback to the provided or default 1x1 transparent image
+		img.onerror = function () {
+			console.log("Download of " + url + " went bad, using fallback image");
+			this.src = fallback;
+		};
+	});
+	await imageLoadPromise;
+	// Once done return the new object
+	return img;
+}
+
+function download() {
+	// Hero ID
+	hero = selectheroes.value == "None" ? false : selectheroes.value;
+	if (hero) {
+		// Switch on depending on selection and run the appropiate renderer
+		switch (selecttemplate.value) {
+			case "MyUnit":
+				canvasid = "fakecanvas";
+				break;
+			case "Condensed":
+				canvasid = "fakecanvascond";
+				break;
+		}
+		// Convert canvas to a data url
+		var url = document.getElementById(canvasid).toDataURL("image/png");
+		// Get desired filename
+		language = selectlanguage.value;
+		truename = languages[language]["M" + hero] + " - " + (hero.includes("PID_") ? languages[language][hero.replace("PID", "MPID_HONOR")] : "Enemy");
+		// Create the link element to force the download
+		var link = document.createElement('a');
+		link.href = url;
+		link.download = "FeH Unit builder - " + truename;
+		// Add the link, click it to force download and delete it again
+		document.body.appendChild(link);
+		link.click();
+		document.body.removeChild(link);
+	}
+}
+
 // Simple housekeeping function to add the stats boost from different static modifiers
 function staticmodifiers() {
 	othermodifiers = [0, 0, 0, 0, 0];
