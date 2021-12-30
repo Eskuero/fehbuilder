@@ -203,6 +203,20 @@ function staticmodifiers() {
 		return value + buffs[index];
 	});
 
+	pairups = [
+		0,
+		parseInt(document.getElementById("atk-pairup").value) ? parseInt(document.getElementById("atk-pairup").value) : 0,
+		parseInt(document.getElementById("spd-pairup").value) ? parseInt(document.getElementById("spd-pairup").value) : 0,
+		parseInt(document.getElementById("def-pairup").value) ? parseInt(document.getElementById("def-pairup").value) : 0,
+		parseInt(document.getElementById("res-pairup").value) ? parseInt(document.getElementById("res-pairup").value) : 0
+	];
+
+	// Add the pairup modifiers
+	othermodifiers = othermodifiers.map(function (value, index) {
+		// This is the value that we will have if we add the pairups
+		return value + pairups[index];
+	});
+
 	return othermodifiers;
 }
 

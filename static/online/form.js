@@ -778,3 +778,25 @@ function updateRefine() {
 		selectrefines.value = previousvalue;
 	}
 }
+
+function swapstat(caller, target) {
+	// Switch the selected option in the tabs by changing the background color
+	options = document.getElementsByClassName("tabs")[0].children;
+	for (i = 0; i < options.length; i++) {
+		if (options[i] == caller) {
+			options[i].className = "imagelabel selected";
+		} else {
+			options[i].className = "imagelabel";
+		}
+	}
+
+	// Loop through every possibility and swap the visiblity of the inputs
+	options = ["", "-pairup"]
+	stats = ["atk", "spd", "def", "res"]
+	for (i = 0; i < options.length; i++) {
+		// Now for each individual stat decide whether to show it or not
+		for (j = 0; j < stats.length; j++) {
+			document.getElementById(stats[j] + options[i]).style.display = (options[i] == target) ? "initial" : "none";
+		}
+	}
+}

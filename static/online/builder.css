@@ -8,3 +8,24 @@
 	cursor: pointer;
 	font-size: 1em;
 }
+
+.imagelabel.selected {
+    background-color: white;
+}
+
+.tabs {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.tabs > * {
+	padding: 0.5em;
+	border-bottom: 1px solid white;
+	cursor: pointer;
+}
+@media screen and (max-aspect-ratio: 593/467) {
+	.tabs {
+		width: 19em;
+	}
+}

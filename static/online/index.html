@@ -277,19 +277,26 @@
 						</div>
 					</div>
 				</section>
-				<h2>Buffs / Debuffs</h2>
+				<div class="tabs">
+					<img class="imagelabel selected" onclick="swapstat(this,'')" src="/common/assets/bonuses.webp" title="Bonuses"/>
+					<img class="imagelabel" onclick="swapstat(this,'-pairup')" src="/common/assets/pairup.webp" title="Pair-Up"/>
+				</div>
 				<section>
 					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/Atk.webp" title="Atk Buff"/>
 						<input type="number" id="atk" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="atk-pairup" style="display:none" onchange="reload()" min="0" max="4" value="0">
 						<img class="imagelabel" src="/common/assets/Spd.webp" title="Spd Buff"/>
 						<input type="number" id="spd" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="spd-pairup" style="display:none" onchange="reload()" min="0" max="4" value="0">
 					</div>
 					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/Def.webp" title="Def Buff"/>
 						<input type="number" id="def" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="def-pairup" style="display:none" onchange="reload()" min="0" max="4" value="0">
 						<img class="imagelabel" src="/common/assets/Res.webp" title="Res Buff"/>
 						<input type="number" id="res" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="res-pairup" style="display:none" onchange="reload()" min="0" max="4" value="0">
 					</div>
 				</section>
 				<h2>Miscellaneous</h2>
