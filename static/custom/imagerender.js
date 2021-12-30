@@ -163,7 +163,6 @@ async function reload() {
 	preview.strokeText(languages[language]["MID_SKILL_POINT"], 120, 1052); preview.fillText(languages[language]["MID_SKILL_POINT"], 120, 1052);
 	preview.strokeText(languages[language]["MID_HEROISM_POINT"], 115, 1103); preview.fillText(languages[language]["MID_HEROISM_POINT"], 115, 1103);
 
-	flowers = parseInt(selectflowers.value);
 	// Obtain the base stats to draw depending on the method selected
 	if (!statsmode.checked) {
 		statsmodifier = [
@@ -176,6 +175,7 @@ async function reload() {
 	} else {
 		unitstats = [parseInt(selectadhp.value), parseInt(selectadatk.value), parseInt(selectadspd.value), parseInt(selectaddef.value), parseInt(selectadres.value)];
 		unitgrowths = [parseInt(selectadhpgrowth.value), parseInt(selectadatkgrowth.value), parseInt(selectadspdgrowth.value), parseInt(selectaddefgrowth.value), parseInt(selectadresgrowth.value)];
+		flowers = parseInt(selectflowers.value);
 		for (i = 0; i < unitgrowths.length; i++) {
 			if (unitgrowths[i] < 25 || unitgrowths[i] > 85 || unitgrowths[i] % 5 != 0) {
 				alert("Growth values for stats must be multiples of 5 between 25 and 85");
@@ -187,58 +187,10 @@ async function reload() {
 		statsmodifier = statcalc(unitstats, unitgrowths, rarity, boon, bane, ascendent, merges, flowers);
 	}
 
-	// All type of skills we grab stats from
-	options = ["weapon", "refine", "Askill", "Bskill", "Cskill", "Sskill"];
-	stats = ["hp", "atk", "spd", "def", "res"];
-	for (i = 0; i < options.length; i++) {
-		skillstats = [];
-		for (j = 0; j < stats.length; j++) {
-			value = document.getElementById(stats[j] + options[i]).value;
-			skillstats.push(parseInt(value) ? parseInt(value) : 0);
-		}
-		statsmodifier = statsmodifier.map(function (value, index) {
-			return value + skillstats[index];
-		});
-	}
-
-	// Add resplendent stats
-	if (selectattire.value != "Normal") {
-		statsmodifier = statsmodifier.map(function (value, index) {
-			return value + [2, 2, 2, 2, 2][index];
-		});
-	}
-	// Add bonus unit stats
-	if (selectbonusunit.value == "yes") {
-		statsmodifier = statsmodifier.map(function (value, index) {
-			return value + [10, 4, 4, 4, 4][index];
-		});
-	}
-	// Add transformed beast bonus
-	if (selectbeast.value == "yes") {
-		statsmodifier[1] += 2;
-	}
-	summoner = selectsummoner.value == "None" ? false : selectsummoner.value;
-	// Add summoner support stats
-	if (summoner) {
-		statsmodifier = statsmodifier.map(function (value, index) {
-			return value + summonerranks[summoner][index];
-		});
-	}
-
-	allies = {};
-	// For each ally selected add it to the dictionary
-	for (i = 0; i < selectallies.selectedOptions.length; i++) {
-		ally = selectallies.selectedOptions[i].value.split(";");
-		amount = parseInt(ally[1])
-		allies[ally[0]] = allies[ally[0]] ? allies[ally[0]] + amount : amount;
-	}
-	// Calculate the visible stats you get for each allied mythic or legendary
-	for (const [ally, amount] of Object.entries(allies)) {
-		// For each hero we add the visible buffs and multiply for the amount of that ally
-		statsmodifier = statsmodifier.map(function (value, index) {
-			return value + (other["blessed"][ally]["boosts"][index] * amount);
-		});
-	}
+	// Add visible stats from multiple simple origins like passives, SS, resplendent, beast transformation and bonus
+	statsmodifier = statsmodifier.map(function (value, index) {
+		return value + staticmodifiers()[index];
+	});
 
 	// Patch the final numbers so they don't overdrawn below 0 and beyond 99
 	statsmodifier = statsmodifier.map(function (value, index) {

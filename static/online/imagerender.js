@@ -104,21 +104,6 @@ async function condensed() {
 		});
 	}
 
-	// Setup passive and buff structures as they will be used outside stat calculations too
-	passives = {
-		"S": selectS.value == "None" ? false : selectS.value,
-		"C": selectC.value == "None" ? false : selectC.value,
-		"B": selectB.value == "None" ? false : selectB.value,
-		"A": selectA.value == "None" ? false : selectA.value
-	}
-	buffs = [
-		0,
-		parseInt(selectatk.value) ? parseInt(selectatk.value) : 0,
-		parseInt(selectspd.value) ? parseInt(selectspd.value) : 0,
-		parseInt(selectdef.value) ? parseInt(selectdef.value) : 0,
-		parseInt(selectres.value) ? parseInt(selectres.value) : 0
-	];
-
 	// Add visible stats from multiple simple origins like passives, SS, resplendent, beast transformation and bonus
 	statsmodifier = statsmodifier.map(function (value, index) {
 		return value + staticmodifiers()[index];
@@ -407,21 +392,6 @@ async function myunit() {
 			return value + weaponmodifiers(weapon, refine)[index];
 		});
 	}
-
-	// Setup passive and buff structures as they will be used outside stat calculations too
-	passives = {
-		"A": selectA.value == "None" ? false : selectA.value,
-		"B": selectB.value == "None" ? false : selectB.value,
-		"C": selectC.value == "None" ? false : selectC.value,
-		"S": selectS.value == "None" ? false : selectS.value
-	}
-	buffs = [
-		0,
-		parseInt(selectatk.value) ? parseInt(selectatk.value) : 0,
-		parseInt(selectspd.value) ? parseInt(selectspd.value) : 0,
-		parseInt(selectdef.value) ? parseInt(selectdef.value) : 0,
-		parseInt(selectres.value) ? parseInt(selectres.value) : 0
-	];
 
 	// Add visible stats from multiple simple origins like passives, SS, resplendent, beast transformation and bonus
 	statsmodifier = statsmodifier.map(function (value, index) {

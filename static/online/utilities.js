@@ -195,6 +195,12 @@ function download() {
 function staticmodifiers() {
 	othermodifiers = [0, 0, 0, 0, 0];
 
+	passives = {
+		"A": selectA.value == "None" ? false : selectA.value,
+		"B": selectB.value == "None" ? false : selectB.value,
+		"C": selectC.value == "None" ? false : selectC.value,
+		"S": selectS.value == "None" ? false : selectS.value
+	}
 	// Add visible stats from skills
 	for (const [category, skill] of Object.entries(passives)) {
 		if (skill) {
@@ -243,6 +249,13 @@ function staticmodifiers() {
 		});
 	}
 
+	buffs = [
+		0,
+		parseInt(selectatk.value) ? parseInt(selectatk.value) : 0,
+		parseInt(selectspd.value) ? parseInt(selectspd.value) : 0,
+		parseInt(selectdef.value) ? parseInt(selectdef.value) : 0,
+		parseInt(selectres.value) ? parseInt(selectres.value) : 0
+	];
 	// Add the normal visible buffs
 	othermodifiers = othermodifiers.map(function (value, index) {
 		// This is the value that we will have if we add the buffs

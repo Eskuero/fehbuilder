@@ -140,6 +140,66 @@ function download() {
 	document.body.removeChild(link);
 }
 
+// Simple housekeeping function to add the stats boost from different static modifiers
+function staticmodifiers() {
+	othermodifiers = [0, 0, 0, 0, 0];
+
+	// All type of skills we grab stats from
+	options = ["weapon", "refine", "Askill", "Bskill", "Cskill", "Sskill"];
+	stats = ["hp", "atk", "spd", "def", "res"];
+	for (i = 0; i < options.length; i++) {
+		skillstats = [];
+		for (j = 0; j < stats.length; j++) {
+			value = document.getElementById(stats[j] + options[i]).value;
+			skillstats.push(parseInt(value) ? parseInt(value) : 0);
+		}
+		othermodifiers = othermodifiers.map(function (value, index) {
+			return value + skillstats[index];
+		});
+	}
+
+	// Add resplendent stats
+	if (selectattire.value != "Normal") {
+		othermodifiers = othermodifiers.map(function (value, index) {
+			return value + [2, 2, 2, 2, 2][index];
+		});
+	}
+	// Add bonus unit stats
+	if (selectbonusunit.value == "yes") {
+		othermodifiers = othermodifiers.map(function (value, index) {
+			return value + [10, 4, 4, 4, 4][index];
+		});
+	}
+	// Add transformed beast bonus
+	if (selectbeast.value == "yes") {
+		othermodifiers[1] += 2;
+	}
+	summoner = selectsummoner.value == "None" ? false : selectsummoner.value;
+	// Add summoner support stats
+	if (summoner) {
+		othermodifiers = othermodifiers.map(function (value, index) {
+			return value + summonerranks[summoner][index];
+		});
+	}
+
+	allies = {};
+	// For each ally selected add it to the dictionary
+	for (i = 0; i < selectallies.selectedOptions.length; i++) {
+		ally = selectallies.selectedOptions[i].value.split(";");
+		amount = parseInt(ally[1])
+		allies[ally[0]] = allies[ally[0]] ? allies[ally[0]] + amount : amount;
+	}
+	// Calculate the visible stats you get for each allied mythic or legendary
+	for (const [ally, amount] of Object.entries(allies)) {
+		// For each hero we add the visible buffs and multiply for the amount of that ally
+		othermodifiers = othermodifiers.map(function (value, index) {
+			return value + (other["blessed"][ally]["boosts"][index] * amount);
+		});
+	}
+
+	return othermodifiers;
+}
+
 function showhelp() {
 	alert("These are some instructions and explanations for the Custom Unit Builder:\n\n- You can choose a base skill for each category from the already existing ones in the game and it will automatically fill name and visible stats for ease of customization.\n\nThe following information regarding stat calculation only applies if not using advanced mode:\n\n - The game calculates level 40 stats with the following procedure:\n\n1. Take level 1 stats and add +1/-1 on boons/banes.\n2. Take growths percentages and add +5/-5 on boons/banes.\n3. Increase two stats (or three for neutral IVs) for every merge taking priority stats with highest values.\n4. Increase one stat for every flower taking priority the stat with the highest value.\n5. Apply a formula with the modified growth rates obtaining the total growth values for the remaining 39 levels and add it to the level 1 values we got after the 4 first steps.\n\nThis means that since the unit we are generating is fake we do not have neither level 1 values nor growth percentages and have to disregard that entire process.\n\nFor that reason this builder uses as level 40 stats the values provided in the input boxes of the stats section and MERGES/FLOWERS/BOONS/BANES VALUES FROM THE UNIT SECTION ONLY HAVE A COSMETIC EFFECT on the generated hero.\n\nTo theorycraft an already existing unit with different art (per example to showcase an unreleased resplendent) the suggestion is to generate the desired stats on the normal builder and then copy those over.");
 }
