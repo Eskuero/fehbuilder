@@ -279,7 +279,7 @@ async function echoes() {
 	renderingqueue.shift();
 }
 
-	async function condensed() {
+async function condensed() {
 	// Obtain the object
 	var preview = document.getElementById("fakecanvascond").getContext("2d");
 	// Sometimes the text stroke could cause graphical glitches
