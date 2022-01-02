@@ -1,4 +1,285 @@
-async function condensed() {
+async function echoes() {
+	// Obtain the object
+	var preview = document.getElementById("fakecanvasechoes").getContext("2d");
+	// Sometimes the text stroke could cause graphical glitches
+	preview.miterLimit = 2;
+
+	// Hero ID
+	hero = selectheroes.value == "None" ? false : selectheroes.value;
+	// Language selected
+	language = selectlanguage.value;
+
+	// Print the background
+	await getimage(other["images"]["other"]["bgechoes"]).then(img => {
+		preview.drawImage(img, 0, 0);
+	});
+
+	// Save the context here in case we need to do so some flipping
+	preview.save();
+	artoffsetX = parseInt(selectoffsetX.value);
+	artoffsetY = parseInt(selectoffsetY.value);
+	// We only make modifications if some mirror config is set to other than None
+	switch (mirror.value) {
+		case "Horizontal":
+			preview.translate(720, 0);
+			preview.scale(-1, 1);
+			artoffsetX = -artoffsetX + 200;
+			break;
+		case "Vertical":
+			preview.translate(0, 540);
+			preview.scale(1, -1);
+			artoffsetY = -artoffsetY;
+			break;
+		case "Both":
+			preview.translate(720, 540);
+			preview.scale(-1, -1);
+			artoffsetX = -artoffsetX + 200;
+			artoffsetY = -artoffsetY;
+			break;
+	}
+
+	// Print the hero art selected
+	if (hero) {
+		// If we selected Resplendent and it actually is a legit choose the art
+		attire = (selectattire.value == "Resplendent" && languages[language][hero.replace("PID", "MPID_VOICE") + "EX01"]) ? "_Resplendent_" : "_";
+		style = selectartstyle.value;
+		await getimage("../common/heroes/" + hero + attire + style + ".webp").then(img => {
+			preview.drawImage(img, -400 + artoffsetX, 50 - artoffsetY);
+		})
+	}
+	// Always restore the previous context to avoid issues
+	preview.restore();
+
+	// Print the foregroundUI
+	await getimage(other["images"]["other"]["fgechoes"]).then(img => {
+		preview.drawImage(img, 0, 0);
+	})
+
+	// After this if no hero is selected we STOP and clear the queue
+	if (!hero) {
+		renderingqueue.shift();
+		return;
+	}
+
+	// Convert the rarity variable into an int now to cater to calculation needs
+	rarity = selectrarity.value == "Forma" ? 5 : parseInt(selectrarity.value)
+	await getimage(other["images"]["rarity"][selectrarity.value]).then(img => {
+		// We must resize which means width must vary proportionally
+		height = 34; width = (img.width / img.height) * height;
+		preview.drawImage(img, 15, 45, width, height);
+	})
+
+	// Print hero name
+	preview.fillStyle = 'white'; preview.strokeStyle = '#0a2533'; preview.textAlign = 'start'; preview.textBaseline = "top"; preview.font = '21px FeH-Font'; preview.lineWidth = 6;
+	// Add the fill and the stroke for the name
+	name = languages[language]["M" + hero] + ": " + languages[language][hero.replace("PID", "MPID_HONOR")];
+	preview.fillText(name, 8, 7);
+
+	boon = selectboons.value == "None" ? false : selectboons.value; bane = selectbanes.value == "None" ? false : selectbanes.value; ascendent = selectascendent.value == "None" ? false : selectascendent.value; merges = parseInt(selectmerges.value);
+	// First write the static text for each stat (normal anchoring)
+	preview.font = '20px FeH-Font'; preview.textAlign = 'end'; preview.textBaseline = "top"; preview.lineWidth = 6; preview.fillStyle = '#cd7b7b';
+	statsnames = ["HP", "Atk", "Spd", "Def", "Res"]; statsstrings = ["MID_HP", "MID_ATTACK", "MID_AGILITY", "MID_DEFENSE", "MID_RESIST"]
+	// Each stat name is pushed down by 49pixels with an initial offset of 805
+	for (i = 0; i < statsnames.length; i++) {
+		// The boon indicator varies depending of it being a boon, bane (without merges), neutral or ascendent
+		if (boon == statsnames[i]) {
+			indicator = "+";
+		} else if (bane == statsnames[i]) {
+			if (merges != 0 && ascendent == statsnames[i]) {
+				indicator = "+";
+			} else if (merges != 0 || ascendent == statsnames[i]) {
+				indicator = "";
+			} else {
+				indicator = "-";
+			}
+		} else if (ascendent == statsnames[i]) {
+			indicator = "+";
+		} else {
+			indicator = "";
+		}
+		// Depending on the stat top margin varies a lot
+		left = 67;
+		down = (i * 30) + (1.3 * i) + 264;
+		preview.fillText(indicator + languages[language][statsstrings[i]].toUpperCase(), left, down);
+	}
+
+	flowers = parseInt(selectflowers.value);
+	// Obtain the calculated stats to draw
+	statsmodifier = statcalc(units[hero]["stats"], units[hero]["growths"], rarity, boon, bane, ascendent, merges, flowers);
+
+	weapon = selectweapons.value == "None" ? false : selectweapons.value; refine = selectrefines.value == "None" ? false : selectrefines.value;
+	// We have a couple of stats modifiers based on weapon, summoner support, attire, bonus unit, visible buffs and maybe not completely parsed A/S skills that we must add
+	if (weapon) {
+		statsmodifier = statsmodifier.map(function (value, index) {
+			return value + weaponmodifiers(weapon, refine)[index];
+		});
+	}
+
+	// Add visible stats from multiple simple origins like passives, SS, resplendent, beast transformation and bonus
+	statsmodifier = statsmodifier.map(function (value, index) {
+		return value + staticmodifiers()[index];
+	});
+
+	// Fix stats, cannot go beyond 99 or below 0
+	for (i = 0; i < statsmodifier.length; i++) {
+		statsmodifier[i] = -1 < statsmodifier[i] ? (statsmodifier[i] < 100 ? statsmodifier[i] : 99) : 0;
+	}
+
+	// Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers).
+	for (i = 0; i < statsnames.length; i++) {
+		// Depending on the stat top margin varies a lot
+		left = 107;
+		down = (i * 30) + (1.3 * i) + 264;
+		// Depending of it's buffed or no the color of the text varies
+		preview.fillStyle = buffs[i] > 0 ? "#63e5ef" : (buffs[i] < 0 ? "#ff506e" : 'white');
+		preview.fillText(statsmodifier[i], left, down);
+	}
+
+	// Print the move type and weapon type icons
+	await getimage(other["images"]["movetype"][units[hero]["moveType"]]).then(img => {
+		preview.drawImage(img, 678, 43, 38, 38);
+	});
+	await getimage(other["images"]["weapontype"][units[hero]["WeaponType"]]).then(img => {
+		preview.drawImage(img, 638, 43, 38, 38);
+	});
+
+	// Optionally print floret, resplendent and accessory indicator
+	offsetX = 0;
+	accessory = selectaccessory.value == "None" ? false : selectaccessory.value;
+	if (accessory) {
+		await getimage(other["images"]["accessory"][accessory]).then(img => {
+			preview.drawImage(img, 598 - offsetX, 44, 37, 37);
+		});
+		offsetX += 44;
+	}
+	if (ascendent) {
+		await getimage(other["images"]["other"]["ascendent"]).then(img => {
+			preview.drawImage(img, 598 - offsetX, 41, 40, 40);
+		});
+		offsetX += 42;
+	}
+	if (["Resplendent", "Stats-Only"].includes(selectattire.value)) {
+		await getimage(other["images"]["other"]["resplendent-small"]).then(img => {
+			preview.drawImage(img, 598 - offsetX, 39, 45, 42);
+		});
+	}
+	// Print the level string
+	preview.font = '22px FeH-Font'; preview.fillStyle = "#cd7b7b"; preview.strokeStyle = '#0a2533'; preview.textAlign = 'start';
+	preview.fillText(languages[language]["MID_LEVEL2"], 445, 7);
+	// Print the level 40. It was hardcoded previously so we just do this to make sure it doesn't look off side by side with the merge count
+	preview.fillStyle = "white";
+	preview.fillText("40", 490, 7);
+
+	// If we have merges we add the text next to the level
+	if (merges > 0) {
+		// Decide type of font depending on if we are fully merged or not
+		preview.fillStyle = merges == 10 ? "#82f546" : "white";
+		preview.fillText("+", 525, 5);
+		preview.fillText(merges, 540, 7);
+	}
+	preview.fillStyle = "#ffffff";
+	// If we have flowers we add them with the number
+	if (flowers > 0) {
+		await getimage(other["images"]["flowers"][units[hero]["moveType"]]).then(img => {
+			preview.drawImage(img, 615, 0, 32, 32);
+		});
+		preview.fillText("+", 650, 5);
+		preview.fillText(flowers, 665, 7);
+	}
+
+	// If the weapon is valid try to print an icon
+	if (weapon) {
+		// By default we always use the basic weapon icon or the predefined stat boosters ones
+		weaponicon = ["Atk", "Spd", "Def", "Res", "Wrathful", "Dazzling"].includes(refine) ? other["images"]["refines"][refine] : other["images"]["other"]["noweapon"];
+		// If the icon is an special effect we might have to download it
+		if (refine == "Effect" && skills["weapons"][weapon]["refines"]["Effect"]) {
+			weaponicon = "../common/icons/" + weapon + "-Effect.webp"
+		}
+		await getimage(weaponicon).then(img => {
+			preview.drawImage(img, 470, 150, 36, 36);
+		});
+		// Get the string to print
+		printableweapon = languages[language]["M" + weapon];
+	// If not just print the basic icon
+	} else {
+		printableweapon = "-";
+		await getimage(other["images"]["other"]["noweapon"]).then(img => {
+			preview.drawImage(img, 470, 150, 36, 36);
+		});
+	}
+	// We always paste the text because it might as well be unarmed and have a "-"
+	preview.font = '21px FeH-Font'; preview.fillStyle = refine ? "#82f546" : "#ffffff";
+	preview.strokeText(printableweapon, 512, 156); preview.fillText(printableweapon, 512, 156);
+
+	assist = selectassists.value == "None" ? "-" : languages[language]["M" + selectassists.value];
+	special = selectspecials.value == "None" ? "-" : languages[language]["M" + selectspecials.value];
+	// Print assist and special info
+	preview.fillStyle = "#ffffff";
+	preview.strokeText(assist, 507, 204); preview.fillText(assist, 507, 204);
+	preview.strokeText(special, 500, 252); preview.fillText(special, 500, 252);
+
+	// Render all the passives
+	for (const [category, skill] of Object.entries(passives)) {
+		name = "-"
+		// If the passive doesn't exist skip
+		if (allpassives[skill]) {
+			await getimage("../common/icons/" + skill + ".webp").then(img => {
+				// If the image size is bigger than 44 these are some tier 4 skills that have shiny borders and their icon must be and offsetted accordingly
+				iconoffset = img.height > 44 ? -2 : 0;
+				size = img.height > 44 ? 39 : 36;
+				preview.drawImage(img, passiveechoesrender[category]["icon"][0] + iconoffset, passiveechoesrender[category]["icon"][1] + iconoffset, size, size);
+			});
+			name = languages[language]["M" + skill];
+		}
+		// We always write the text because it might be a simple "-"
+		preview.strokeText(name, passiveechoesrender[category]["text"][0], passiveechoesrender[category]["text"][1])
+		preview.fillText(name, passiveechoesrender[category]["text"][0], passiveechoesrender[category]["text"][1]);
+		// Print the category indicator
+		await getimage(other["images"]["skillindicators"][category]).then(img => {
+			preview.drawImage(img, passiveechoesrender[category]["indicator"][0], passiveechoesrender[category]["indicator"][1], 18, 18);
+		});
+	}
+
+	blessing = selectblessings.value == "None" ? false : parseInt(selectblessings.value);
+	// X amount to additionally push each icon to the left
+	offsetX = 0;
+	posY = 425; posX = 0;
+	width = 100; height = 109;
+	// If blessed print the icon
+	if (blessing) {
+		// If the hero is on the list of the blessed ones for that particular blessing it has icon variant defined (otherwise use the normal one)
+		variant = other["blessed"][hero] ? other["blessed"][hero]["variant"] : "normal";
+		blessingicon = other["images"]["blessing"][blessing-1][variant]
+		await getimage(blessingicon).then(img => {
+			preview.drawImage(img, posX, posY, width, height);
+		});
+		// If printed a blessing the next's position icon must go further to the left
+		offsetX += 90;
+	}
+
+	// If is a duo hero of any kind print the icon
+	if (other["duo"].concat(other["resonant"]).includes(hero)) {
+		specialtype = other["duo"].includes(hero) ? "Duo" : "Resonance";
+		specialicon = other["images"]["other"][specialtype];
+		await getimage(specialicon).then(img => {
+			preview.drawImage(img, posX + offsetX, posY, width, height);
+		});
+		// If printed a duo icon the next's position icon must go further to the left
+		offsetX += 90;
+	}
+
+	// If summoner supported print the icon
+	if (summoner) {
+		await getimage(other["images"]["summoner"][summoner]).then(img => {
+			preview.drawImage(img, posX + offsetX, posY, width, height);
+		});
+	}
+
+	// Clean the queue
+	renderingqueue.shift();
+}
+
+	async function condensed() {
 	// Obtain the object
 	var preview = document.getElementById("fakecanvascond").getContext("2d");
 	// Sometimes the text stroke could cause graphical glitches

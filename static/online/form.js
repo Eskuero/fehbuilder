@@ -76,6 +76,7 @@ async function reload(scroll = false) {
 	// Cleanly hide all canvas
 	document.getElementById("fakecanvas").style.display = "none";
 	document.getElementById("fakecanvascond").style.display = "none";
+	document.getElementById("fakecanvasechoes").style.display = "none";
 
 	// Switch on depending on selection and run the appropiate renderer
 	switch (selecttemplate.value) {
@@ -86,6 +87,10 @@ async function reload(scroll = false) {
 		case "Condensed":
 			document.getElementById("fakecanvascond").style.display = "initial";
 			condensed();
+			break;
+		case "Echoes":
+			document.getElementById("fakecanvasechoes").style.display = "initial";
+			echoes();
 			break;
 	}
 

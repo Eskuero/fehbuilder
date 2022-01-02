@@ -174,6 +174,9 @@ function download() {
 			case "Condensed":
 				canvasid = "fakecanvascond";
 				break;
+			case "Echoes":
+				canvasid = "fakecanvasechoes";
+				break;
 		}
 		// Convert canvas to a data url
 		var url = document.getElementById(canvasid).toDataURL("image/png");
@@ -320,6 +323,13 @@ passivecondensedrender = {
 	"B": {"icon": [585, 9], "indicator": [609, 31]},
 	"C": {"icon": [623, 9], "indicator": [650, 32]},
 	"S": {"icon": [661, 9], "indicator": [684, 32]}
+}
+// Echoes canvas position to render images passive icons at
+passiveechoesrender = {
+	"A": {"icon": [455, 295], "text": [500, 300], "indicator": [475, 315]},
+	"B": {"icon": [458, 344], "text": [503, 349], "indicator": [478, 364]},
+	"C": {"icon": [464, 392], "text": [510, 397], "indicator": [485, 412]},
+	"S": {"icon": [475, 439], "text": [520, 444], "indicator": [495, 459]}
 }
 
 // Function that prints certain numbers using numberfont spritesheet
