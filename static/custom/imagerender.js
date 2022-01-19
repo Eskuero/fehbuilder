@@ -163,6 +163,7 @@ async function reload() {
 	preview.strokeText(languages[language]["MID_SKILL_POINT"], 120, 1052); preview.fillText(languages[language]["MID_SKILL_POINT"], 120, 1052);
 	preview.strokeText(languages[language]["MID_HEROISM_POINT"], 115, 1103); preview.fillText(languages[language]["MID_HEROISM_POINT"], 115, 1103);
 
+	flowers = parseInt(selectflowers.value);
 	// Obtain the base stats to draw depending on the method selected
 	if (!statsmode.checked) {
 		statsmodifier = [
@@ -175,7 +176,6 @@ async function reload() {
 	} else {
 		unitstats = [parseInt(selectadhp.value), parseInt(selectadatk.value), parseInt(selectadspd.value), parseInt(selectaddef.value), parseInt(selectadres.value)];
 		unitgrowths = [parseInt(selectadhpgrowth.value), parseInt(selectadatkgrowth.value), parseInt(selectadspdgrowth.value), parseInt(selectaddefgrowth.value), parseInt(selectadresgrowth.value)];
-		flowers = parseInt(selectflowers.value);
 		for (i = 0; i < unitgrowths.length; i++) {
 			if (unitgrowths[i] < 25 || unitgrowths[i] > 85 || unitgrowths[i] % 5 != 0) {
 				alert("Growth values for stats must be multiples of 5 between 25 and 85");
