@@ -267,10 +267,10 @@ function staticmodifiers() {
 
 	pairups = [
 		0,
-		parseInt(document.getElementById("atk-pairup").value) ? parseInt(document.getElementById("atk-pairup").value) : 0,
-		parseInt(document.getElementById("spd-pairup").value) ? parseInt(document.getElementById("spd-pairup").value) : 0,
-		parseInt(document.getElementById("def-pairup").value) ? parseInt(document.getElementById("def-pairup").value) : 0,
-		parseInt(document.getElementById("res-pairup").value) ? parseInt(document.getElementById("res-pairup").value) : 0
+		parseInt(selectatkpairup.value) ? parseInt(selectatkpairup.value) : 0,
+		parseInt(selectspdpairup.value) ? parseInt(selectspdpairup.value) : 0,
+		parseInt(selectdefpairup.value) ? parseInt(selectdefpairup.value) : 0,
+		parseInt(selectrespairup.value) ? parseInt(selectrespairup.value) : 0
 	];
 
 	// Add the pairup modifiers

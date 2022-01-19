@@ -14,6 +14,10 @@
 // All selects we have available
 selecttemplate = document.getElementById('template');
 usedallies = document.getElementById('usedallies');
+selectatkpairup = document.getElementById("atk-pairup");
+selectspdpairup = document.getElementById("spd-pairup");
+selectdefpairup = document.getElementById("def-pairup");
+selectrespairup = document.getElementById("res-pairup");
 
 // Fetch all data from each json
 fetch('/common/data/fulllanguages.json')
@@ -276,14 +280,14 @@ function updatedragonflowers() {
 
 // Data for each build slot
 builds = [
-	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0",9999,7000,"Portrait","MyUnit","0","0","None","1","None", true],
-	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0",9999,7000,"Portrait","MyUnit","0","0","None","1","None", true],
-	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0",9999,7000,"Portrait","MyUnit","0","0","None","1","None", true],
-	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0",9999,7000,"Portrait","MyUnit","0","0","None","1","None", true],
-	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0",9999,7000,"Portrait","MyUnit","0","0","None","1","None", true]
+	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,7000,"Portrait","MyUnit","0","0","None","1","None", true],
+	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,7000,"Portrait","MyUnit","0","0","None","1","None", true],
+	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,7000,"Portrait","MyUnit","0","0","None","1","None", true],
+	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,7000,"Portrait","MyUnit","0","0","None","1","None", true],
+	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,7000,"Portrait","MyUnit","0","0","None","1","None", true]
 ]
 // List of values to be restored (their document element)
-selects = [selectrarity,selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials, selectassists, selectA, selectB, selectC, selectS, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef, selectres, selectsp, selecthm, selectartstyle, selecttemplate, selectoffsetY, selectoffsetX, selectmirror, selectfavorite, selectaccessory, appui]
+selects = [selectrarity,selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials, selectassists, selectA, selectB, selectC, selectS, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef, selectres, selectatkpairup, selectspdpairup, selectdefpairup, selectrespairup, selectsp, selecthm, selectartstyle, selecttemplate, selectoffsetY, selectoffsetX, selectmirror, selectfavorite, selectaccessory, appui]
 // Which builder slot is active right now
 var buildslot = 0;
 function switchbuild(build) {
