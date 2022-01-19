@@ -17,10 +17,34 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 1em;
-	margin-bottom: 1em;
 }
 .tabs > img {
 	padding: 0.5em;
 	border-bottom: 1px solid white;
 	cursor: pointer;
+}
+
+.allies-cont {
+	width: 38.5em !important;
+	margin-bottom: 1em;
+}
+#usedallies {
+	column-count: 2;
+}
+
+@media screen and (min-aspect-ratio: 12/5) {
+	#usedallies {
+		column-count: 3;
+	}
+	.allies-cont {
+		width: 58.5em !important;
+	}
+}
+@media screen and (max-aspect-ratio: 593/467) {
+	#usedallies {
+		column-count: 1;
+	}
+	.allies-cont {
+		width: 100% !important;
+	}
 }

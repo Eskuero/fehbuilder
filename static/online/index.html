@@ -180,6 +180,22 @@
 							</select>
 						</div>
 					</div>
+					<div class="row-property double">
+						<img class="imagelabel" src="/common/assets/blessings.webp" title="Blessings" />
+						<div>
+							<select class="select-without-search" id="blessing" onChange="reload()">
+								<option value="None">None</option>
+								<option value="1">Fire</option>
+								<option value="2">Water</option>
+								<option value="3">Wind</option>
+								<option value="4">Earth</option>
+								<option value="5">Light</option>
+								<option value="6">Dark</option>
+								<option value="7">Astra</option>
+								<option value="8">Anima</option>
+							</select>
+						</div>
+					</div>
 				</section>
 				<div class="sectiontitle">
 					<h2>Skills</h2>
@@ -252,53 +268,44 @@
 						</div>
 					</div>
 				</section>
-				<h2>Blessings</h2>
-				<section>
-					<div class="row-property single">
-						<img class="imagelabel" src="/common/assets/blessings.webp" title="Blessings" />
-						<div>
-							<select class="select-without-search" id="blessing" onChange="reblessed();reload()">
-								<option value="None">None</option>
-								<option value="1">Fire</option>
-								<option value="2">Water</option>
-								<option value="3">Wind</option>
-								<option value="4">Earth</option>
-								<option value="5">Light</option>
-								<option value="6">Dark</option>
-								<option value="7">Astra</option>
-								<option value="8">Anima</option>
-							</select>
-						</div>
-					</div>
-					<div class="row-property single">
-						<img class="imagelabel" src="/common/assets/pairup.webp" title="Allies"/>
-						<div>
-							<select class="s2-select" id="allies" multiple="multiple" onChange="checkallies();reload()" disabled>
-							</select>
-						</div>
-					</div>
-				</section>
 				<div class="tabs">
 					<h2 style="margin-right:1em;">Stats</h2>
-					<img class="imagelabel selected" onclick="swapstat(this,'')" src="/common/assets/bonuses.webp" title="Bonuses"/>
-					<img class="imagelabel" onclick="swapstat(this,'-pairup')" src="/common/assets/pairup.webp" title="Pair-Up"/>
+					<img class="imagelabel selected" onclick="swapstat(this,'legendaries')" src="/common/assets/blessings.webp" title="Blessings"/>
+					<img class="imagelabel" onclick="swapstat(this,'buffs')" src="/common/assets/bonuses.webp" title="Bonuses"/>
+					<img class="imagelabel" onclick="swapstat(this,'pairups')" src="/common/assets/pairup.webp" title="Pair-Up"/>
 				</div>
-				<section>
+				<section id="legendaries" style="column-count: 1">
+					<div class="allies-cont">
+						<select class="s2-select" id="allies" multiple="multiple" onChange="showallies();reload()"></select>
+					</div>
+					<section id="usedallies"></section>
+				</section>
+				<section id="buffs" style="display:none">
 					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/Atk.webp" title="Atk Buff"/>
 						<input type="number" id="atk" onchange="reload()" min="-99" max="99" value="0">
-						<input type="number" id="atk-pairup" style="display:none" onchange="reload()" min="0" max="4" value="0">
 						<img class="imagelabel" src="/common/assets/Spd.webp" title="Spd Buff"/>
 						<input type="number" id="spd" onchange="reload()" min="-99" max="99" value="0">
-						<input type="number" id="spd-pairup" style="display:none" onchange="reload()" min="0" max="4" value="0">
 					</div>
 					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/Def.webp" title="Def Buff"/>
 						<input type="number" id="def" onchange="reload()" min="-99" max="99" value="0">
-						<input type="number" id="def-pairup" style="display:none" onchange="reload()" min="0" max="4" value="0">
 						<img class="imagelabel" src="/common/assets/Res.webp" title="Res Buff"/>
 						<input type="number" id="res" onchange="reload()" min="-99" max="99" value="0">
-						<input type="number" id="res-pairup" style="display:none" onchange="reload()" min="0" max="4" value="0">
+					</div>
+				</section>
+				<section id="pairups" style="display:none">
+					<div class="row-property double">
+						<img class="imagelabel" src="/common/assets/Atk.webp" title="Atk Buff"/>
+						<input type="number" id="atk-pairup" onchange="reload()" min="0" max="4" value="0">
+						<img class="imagelabel" src="/common/assets/Spd.webp" title="Spd Buff"/>
+						<input type="number" id="spd-pairup" onchange="reload()" min="0" max="4" value="0">
+					</div>
+					<div class="row-property double">
+						<img class="imagelabel" src="/common/assets/Def.webp" title="Def Buff"/>
+						<input type="number" id="def-pairup" onchange="reload()" min="0" max="4" value="0">
+						<img class="imagelabel" src="/common/assets/Res.webp" title="Res Buff"/>
+						<input type="number" id="res-pairup" onchange="reload()" min="0" max="4" value="0">
 					</div>
 				</section>
 				<h2>Miscellaneous</h2>

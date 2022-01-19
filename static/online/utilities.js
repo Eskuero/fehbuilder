@@ -240,9 +240,9 @@ function staticmodifiers() {
 	allies = {};
 	// For each ally selected add it to the dictionary
 	for (i = 0; i < selectallies.selectedOptions.length; i++) {
-		ally = selectallies.selectedOptions[i].value.split(";");
-		amount = parseInt(ally[1])
-		allies[ally[0]] = allies[ally[0]] ? allies[ally[0]] + amount : amount;
+		ally = selectallies.selectedOptions[i].value;
+		amount = parseInt(document.getElementById(ally).value);
+		allies[ally] = amount;
 	}
 	// Calculate the visible stats you get for each allied mythic or legendary
 	for (const [ally, amount] of Object.entries(allies)) {

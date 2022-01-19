@@ -24,6 +24,7 @@ body {
 #fakecanvas {
 	height: 100vh;
 }
+
 .form {
 	height: 100vh;
 	overflow-y: scroll;
@@ -39,9 +40,22 @@ body {
 .form > * {
 	column-count: 2;
 }
+.allies-cont {
+	width: 38.5em !important;
+	margin-bottom: 1em;
+}
+#usedallies {
+	column-count: 2;
+}
 @media screen and (min-aspect-ratio: 12/5) {
 	.form > * {
 		column-count: 3;
+	}
+	#usedallies {
+		column-count: 3;
+	}
+	.allies-cont {
+		width: 58.5em !important;
 	}
 }
 
@@ -54,6 +68,12 @@ body {
 	}
 	.listofstats, .tabs {
 		width: 19em;
+	}
+	#usedallies {
+		column-count: 1;
+	}
+	.allies-cont {
+		width: 100% !important;
 	}
 }
 

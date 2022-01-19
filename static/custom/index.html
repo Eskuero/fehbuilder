@@ -365,7 +365,7 @@
 					<div class="row-property single">
 						<img class="imagelabel" src="/common/assets/blessings.webp" title="Blessings" />
 						<div>
-							<select class="s2-select" id="blessing" onChange="reblessed();reload()">
+							<select class="s2-select" id="blessing" onChange="reload()">
 								<option value="None">None</option>
 								<option value="1-Blessing">Fire</option>
 								<option value="1-Blessing-atk">Fire (+Atk)</option>
@@ -428,13 +428,12 @@
 							</select>
 						</div>
 					</div>
-					<div class="row-property single">
-						<img class="imagelabel" src="/common/assets/pairup.webp" title="Allies"/>
-						<div>
-							<select class="s2-select" id="allies" multiple="multiple" onChange="checkallies();reload()" disabled>
-							</select>
-						</div>
+				</section>
+				<section style="column-count: 1">
+					<div class="allies-cont">
+						<select class="s2-select" id="allies" multiple="multiple" onChange="showallies();reload()"></select>
 					</div>
+					<section id="usedallies"></section>
 				</section>
 				<div style="display:flex">
 					<h2>Stats</h2>

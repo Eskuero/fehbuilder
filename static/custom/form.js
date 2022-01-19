@@ -71,6 +71,7 @@ selectaddefgrowth = document.getElementById('defgrowth');
 selectadresgrowth = document.getElementById('resgrowth');
 // Where we show the image
 var canvas = document.getElementById('fakecanvas');
+usedallies = document.getElementById('usedallies');
 
 // Fetch all data from each json
 fetch('/common/data/litelanguages.json')
@@ -186,7 +187,7 @@ function populateall(clean) {
 	// Update translations
 	statictranslations()
 	// Make sure we don't end with invalid allies on the list
-	reblessed()
+	fillblessed()
 	// Disable or enable beast select based on unit
 	beastcheck()
 }
@@ -287,7 +288,7 @@ function beastcheck() {
 	}
 }
 
-function reblessed() {
+function fillblessed() {
 	// We need to know which options to restore
 	toberestored = []
 	for (i = 0; i < selectallies.selectedOptions.length; i++) {
@@ -297,38 +298,11 @@ function reblessed() {
 	while (selectallies.lastChild) {
 		selectallies.removeChild(selectallies.lastChild);
 	}
-	// Stop if we did unset the blessing type
-	if (selectblessings.value == "None") {
-		selectallies.disabled = true
-		return;
-	}
-	blessing = parseInt(selectblessings.value.split("-")[0])
-	// Make sure the allies select is enabled if arrvied here
-	selectallies.disabled = false
 	// All data to be printed
 	options = {}
+	// Add an option for each value
 	for (const [hero, properties] of Object.entries(other["blessed"])) {
-		// We skip certain iterations depending on the type of hero and blessing selected
-		// For preblessed we only allow mythics for legendaries and viceversa
-		if (other["blessed"][selecthero.value]) {
-			if ((blessing > 4 && properties["blessing"] > 4) || (blessing < 5 && properties["blessing"] < 5)) {
-				continue;
-			}
-		} else if (blessing != properties["blessing"]) {
-			continue;
-		}
-		// Depending on the type of blessing there's a limit on allies (for preblessed we do the opposite). For arena blessings the limit is always 3, for aether raids the limit is 6 for extra slot heroes and 5 for older ones
-		if (other["blessed"][selecthero.value]) {
-			var max = [5, 6, 7, 8].includes(blessing) ? 3 : (properties["variant"].includes("extrae") ? 6 : 5);
-		} else {
-			var max = [5, 6, 7, 8].includes(blessing) ? (properties["variant"].includes("extrae") ? 6 : 5) : 3;
-		}
-		// If the heroe is for AR attacking reduce the max by one
-		max -= ([5, 7].includes(properties["blessing"])) ? 1 : 0
-		// Add an option for each value
-		for (j = 1; j <= max; j++) {
-			options[languages[selectlanguage.value]["M" + hero] + ": " + languages[selectlanguage.value][hero.replace("PID", "MPID_HONOR")] + " x" + j] = hero + ";" + j;
-		}
+		options[languages[selectlanguage.value]["M" + hero] + ": " + languages[selectlanguage.value][hero.replace("PID", "MPID_HONOR")]] = hero;
 	}
 	// Sort all the values by visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
 	options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {})
@@ -345,61 +319,46 @@ function reblessed() {
 	}
 }
 
-function checkallies() {
-	blessing = parseInt(selectblessings.value.split("-")[0])
-	// Depending on the type of blessing there's a limit on allies (for preblessed we do the opposite). Unlike on the reblessed function right here we hardcode the AR max value to the defense with extra slot and later offset the individual value of each hero inside the checks
-	if (other["blessed"][selecthero.value]) {
-		var max = [5, 6, 7, 8].includes(blessing) ? 3 : 6;
-	} else {
-		var max = [5, 6, 7, 8].includes(blessing) ? 6 : 3;
-	}
-	// Detect the amount and the blessings of the allies currently deployed and wheter they unlocked the bonusslot already or not
-	allies = 0;
-	blessings = [];
-	bonus = false;
+function showallies() {
+	allies = {}
+	// Create inputs for every selected ally
 	for (i = 0; i < selectallies.selectedOptions.length; i++) {
-		values = selectallies.selectedOptions[i].value.split(';')
-		properties = other["blessed"][values[0]]
-		allies += parseInt(values[1])
-		if (!blessings.includes(properties["blessing"])) {
-			blessings.push(properties["blessing"])
-		}
-		if (properties["variant"].includes("extrae")) {
-			bonus = true;
-		}
+		ally = selectallies.selectedOptions[i].value;
+		// If the ally already exists add the current value to prevent losing data
+		allies[ally] = document.getElementById(ally) ? document.getElementById(ally).value : 1;
 	}
-	remaining = max - allies
-	// Now for every option in the select disable those that are too big for the amount of slots for allies we have remaining
-	for (i = 0; i < selectallies.options.length; i++) {
-		// Ignore entries that are already selected
-		if (!selectallies.options[i].selected) {
-			// Get the properties for the hero
-			properties = other["blessed"][selectallies.options[i].value.split(";")[0]]
-			// This offset basically fixes the amount of copies we are allowed for this particular ally after we pressumed max team a few lines ago
-			// We add one if the blessing of the hero is offensive (Light/Astra) and another if the hero doesn't enable the extra slot
-			offset = 0
-			if ([5, 6, 7, 8].includes(properties["blessing"])) {
-				offset += properties["variant"].includes("extrae") || bonus ? 0 : 1;
-				offset += [5, 7].includes(properties["blessing"]) ? 1 : 0;
-			}
-			// Disable the entry if the associated multiplier is too big to be selected later
-			if ((parseInt(selectallies.options[i].value.split(";")[1]) + offset) > remaining) {
-				selectallies.options[i].disabled = true;
-			// Otherwise enable it
-			} else {
-				selectallies.options[i].disabled = false;
-			}
-			// Preblessed have additional rules
-			if (selectblessings.disabled == true) {
-				// For mythics if the amount of blessings reached 2 and the blessing for this option is not already selected we disable all of them (seasons only have two)
-				if (blessing > 4 && blessings.length == 2 && !blessings.includes(properties["blessing"])) {
-					selectallies.options[i].disabled = true;
-				// For legendaries we disable "opposite" blessings if one is already selected (we can't get dark and light blessings on anima/astra season)
-				} else if ((blessings.some(r=> [6,7].includes(r)) && [4,5].includes(properties["blessing"])) || (blessings.some(r=> [4,5].includes(r)) && [6,7].includes(properties["blessing"]))) {
-					selectallies.options[i].disabled = true;
-				}
-			}
+	// Now delete all existing
+	while (usedallies.lastChild) {
+		usedallies.removeChild(usedallies.lastChild);
+	}
+	// Loop through all the allies and add each option in groups of two
+	alliesids = Object.keys(allies)
+	for (i = 0; i < alliesids.length; i = i + 2) {
+		// Major div element
+		var container = document.createElement("div");
+		container.className = "row-property double";
+		// Add the first element of this iteration
+		var element1img = document.createElement("img");
+		element1img.className = "imagelabel"; element1img.src = "/common/faces/" + alliesids[i] + ".webp";
+		container.appendChild(element1img);
+		var element1input = document.createElement("input");
+		// Create input number element using the blessed hero ID, the expected value, limits and event listeners
+		element1input.setAttribute("type", "number"); element1input.id = alliesids[i]; element1input.value = allies[alliesids[i]];
+		element1input.addEventListener("change", function() {reload()}); element1input.max = 7; element1input.min = 0;
+		container.appendChild(element1input);
+		// Add another element if it actually exists
+		if (alliesids[i+1]) {
+			var element2img = document.createElement("img");
+			element2img.className = "imagelabel"; element2img.src = "/common/faces/" + alliesids[i+1] + ".webp";
+			container.appendChild(element2img);
+			var element2input = document.createElement("input");
+			// Create input number element using the blessed hero ID, the expected value, limits and event listeners
+			element2input.setAttribute("type", "number"); element2input.id = alliesids[i+1]; element2input.value = allies[alliesids[i+1]];
+			element2input.addEventListener("change", function() {reload()}); element2input.max = 7; element2input.min = 0;
+			container.appendChild(element2input);
 		}
+		// Finally append the line to the targets section
+		usedallies.appendChild(container);
 	}
 }
 
