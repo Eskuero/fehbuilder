@@ -306,6 +306,38 @@ function reset(section) {
 			selectS.value = "None";
 			// Trigger a rebuild of the selects based on the language filters set
 			populateall(false);
+		break;
+		case "stats":
+			// Detect which section we are on
+			options = document.getElementsByClassName("tabs")[0].children;
+			for (i = 1; i < options.length - 1; i++) {
+				if (options[i].className == "imagelabel selected") {
+					selection = options[i].title;
+				}
+			}
+			switch (selection) {
+				case "Blessings":
+					// First delete all selections
+					fillblessed(true);
+					// Now delete all existing
+					while (usedallies.lastChild) {
+						usedallies.removeChild(usedallies.lastChild);
+					}
+				break;
+				case "Bonuses":
+					selectatk.value = 0;
+					selectspd.value = 0;
+					selectdef.value = 0;
+					selectres.value = 0;
+				break;
+				case "Pair-Up":
+					selectatkpairup.value = 0;
+					selectspdpairup.value = 0;
+					selectdefpairup.value = 0;
+					selectrespairup.value = 0;
+				break;
+			}
+		break;
 	}
 	reload();
 }

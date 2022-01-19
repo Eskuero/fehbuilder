@@ -17,6 +17,10 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 1em;
+	align-items: center;
+}
+.tabs > button {
+	margin-left: 1em;
 }
 .tabs > img {
 	padding: 0.5em;

@@ -162,7 +162,7 @@ function updateRefine() {
 function swapstat(caller, target) {
 	// Switch the selected option in the tabs by changing the background color
 	options = document.getElementsByClassName("tabs")[0].children;
-	for (i = 1; i < options.length; i++) {
+	for (i = 1; i < options.length - 1; i++) {
 		if (options[i] == caller) {
 			options[i].className = "imagelabel selected";
 		} else {
@@ -177,11 +177,13 @@ function swapstat(caller, target) {
 	}
 }
 
-function fillblessed() {
-	// We need to know which options to restore
+function fillblessed(clean = false) {
+	// We need to know which options to restore unless called clean
 	toberestored = []
-	for (i = 0; i < selectallies.selectedOptions.length; i++) {
-		toberestored.push(selectallies.selectedOptions[i].value)
+	if (!clean) {
+		for (i = 0; i < selectallies.selectedOptions.length; i++) {
+			toberestored.push(selectallies.selectedOptions[i].value)
+		}
 	}
 	// First delete all allies
 	while (selectallies.lastChild) {
