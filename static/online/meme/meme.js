@@ -1,10 +1,8 @@
 // Check if the cookie exists
-if (document.cookie.indexOf("propaganda") != -1) {
-	// It does so leave inmediately
-	close();
-} else {
-	// Set initial background background
+if (document.cookie.indexOf("propaganda") == -1) {
+	// It doesn't make the banner visible and set initial background so leave inmediately
 	document.getElementById("meme").style.backgroundImage = "url(/online/meme/1.webp)";
+	document.getElementById("meme").style.display = "block";
 }
 
 function moveon(selection) {
