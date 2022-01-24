@@ -17,12 +17,6 @@
 
 	</head>
 	<body>
-		<div id="meme" class="propaganda">
-			<div class="memeoptions">
-				<button id="option1" onclick="moveon('yes')">I definitely will</button>
-				<button id="option2" onclick="moveon('no')">No, archers suck</button>
-			</div>
-		</div>
 		<div class="contenedor">
 			<div class="unitpreview">
 				<div id="unitslot">
@@ -32,7 +26,7 @@
 					<button onclick="switchbuild(3)">#4 Build</button>
 					<button onclick="switchbuild(4)">#5 Build</button>
 				</div>
-				<canvas id="fakecanvas" width="720" height="1280" alt="FEH Unit Builder" ></canvas>
+				<canvas id="fakecanvas" width="720" height="1280" alt="FEH Unit Builder" onclick="opencyl()"></canvas>
 				<canvas id="fakecanvascond" width="720" height="202" alt="FEH Unit Builder" ></canvas>
 				<canvas id="fakecanvasechoes" width="720" height="540" alt="FEH Unit Builder" ></canvas>
 			</div>

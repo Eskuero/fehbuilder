@@ -1,58 +1,31 @@
-// Check if the cookie exists
-if (document.cookie.indexOf("propaganda") == -1) {
-	// It doesn't make the banner visible and set initial background so leave inmediately
-	document.getElementById("meme").style.backgroundImage = "url(/online/meme/1.webp)";
-	document.getElementById("meme").style.display = "block";
-}
-
-function moveon(selection) {
-	currentscreen = document.getElementById("meme").style.backgroundImage[18];
-	switch (currentscreen) {
-		case "1":
-			// We are the initial screen, if selection is fine show the happy screen and leave after 3 seconds
-			if (selection == "yes") {
-				document.getElementById("meme").style.backgroundImage = "url(/online/meme/2.webp)";
-				document.getElementsByClassName("memeoptions")[0].style.display = "none";
-				setcookie();
-				setTimeout(function() {
-					close();
-				}, 3000);
-			// Otherwise show the angry screen and prompt again
-			} else {
-				document.getElementById("meme").style.backgroundImage = "url(/online/meme/3.webp)";
-				document.getElementById("option1").innerHTML = "I will vote for you";
-				document.getElementById("option2").innerHTML = "Get off my screen!";
-			}
-		break;
-		case "3":
-			// We are the final screen, if selection is fine show the happy screen and leave after 3 seconds
-			if (selection == "yes") {
-				document.getElementById("meme").style.backgroundImage = "url(/online/meme/2.webp)";
-				document.getElementsByClassName("memeoptions")[0].style.display = "none";
-				setcookie();
-				setTimeout(function() {
-					close();
-				}, 3000);
-			// Otherwise leave inmediately
-			} else {
-				close();
-				setcookie();
-			}
-		break;
+ 
+async function memedraw() {
+	// Get epoch as rendering ID
+	let renderingid = new Date().getTime();
+	// Put our rendering ID on queue
+	renderingqueue.push(renderingid);
+	// Until our rendering ID is the first, wait and check again in 100ms
+	while (renderingqueue[0] != renderingid) {
+		await sleep(100);
 	}
+	// Cleanly hide all canvas except portrait
+	document.getElementById("fakecanvas").style.display = "initial";
+	document.getElementById("fakecanvascond").style.display = "none";
+	document.getElementById("fakecanvasechoes").style.display = "none";
+	selecttemplate.value = "MyUnit";
+	
+	// Obtain the object
+	var preview = document.getElementById("fakecanvas").getContext("2d");
+
+	// Print the propaganda
+	await getimage("../online/meme/cartel.webp", "/common/base/missigno.webp").then(img => {
+		preview.drawImage(img, 0, 0);
+	});
+	
+	// Clean the queue
+	renderingqueue.shift();
 }
 
-function setcookie() {
-	// Calculate tomorrow's cookie date
-	const today = new Date();
-	const tomorrow = new Date(today);
-	//tomorrow.setMinutes(tomorrow.getMinutes() + 1);
-	tomorrow.setDate(tomorrow.getDate() + 1);
-	expirydate = tomorrow.toUTCString() 
-	document.cookie = "propaganda; expires=" + expirydate;
+function opencyl() {
+	window.open("https://vote6.campaigns.fire-emblem-heroes.com/en-US/hero/107017");
 }
-
-function close() {
-	document.getElementById("meme").style.display = "none";
-}
-
