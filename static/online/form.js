@@ -89,9 +89,9 @@ async function init() {
 	})
 
 	// Draw it for the first time
-	//reload();
+	reload();
 	// Meme
-	memedraw();
+	//memedraw();
 }
 
 async function reload(scroll = false) {
