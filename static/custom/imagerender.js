@@ -12,6 +12,11 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 async function reload() {
+	// If the language required is not downloaded yet wait a bit more
+	newlang = selectlanguage.value;
+	while (!languages[newlang]) {
+		await sleep(100);
+	}
 	// Get epoch as rendering ID
 	let renderingid = new Date().getTime();
 	// Put our rendering ID on queue

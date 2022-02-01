@@ -162,6 +162,16 @@ async function getimage(url, fallback = "/common/base/oopsie.webp") {
 	return img;
 }
 
+async function getlang() {
+	// Make sure the selected language is available, download it if not
+	newlang = selectlanguage.value;
+	if (!languages[newlang]) {
+		const response = await fetch('/common/data/individual/fulllanguages-' + newlang + '.json');
+		const data = await response.json();
+		languages[newlang] = data;
+	}
+}
+
 function download() {
 	// Hero ID
 	hero = selectheroes.value == "None" ? false : selectheroes.value;

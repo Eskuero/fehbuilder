@@ -19,12 +19,15 @@ selectspdpairup = document.getElementById("spd-pairup");
 selectdefpairup = document.getElementById("def-pairup");
 selectrespairup = document.getElementById("res-pairup");
 
+// We store languages data for display of strings within the browser
+languages = {};
+
 // Fetch all data from each json
-fetch('/common/data/fulllanguages.json')
+fetch('/common/data/individual/fulllanguages-' + selectlanguage.value + '.json')
 	.then(res => res.json())
 	.then((out) => {
 		// We store languages data for display of strings within the browser
-		languages = out;
+		languages[selectlanguage.value] = out;
 		// We can download the rest of the data now that lenguages are available
 		fetch('/common/data/fullunits.json')
 			.then(res => res.json())
@@ -60,8 +63,6 @@ function populateall(clean) {
 	populate(selectB, skills["passives"]["B"], clean)
 	populate(selectC, skills["passives"]["C"], clean)
 	populate(selectS, Object.assign({}, skills["passives"]["S"], cheats.checked ? Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"]) : {}), clean)
-	// Make sure we do not end with an invalid refine option setup
-	updateRefine()
 	// Add only the required amount of flowers
 	updatedragonflowers()
 	// Update translations
@@ -95,6 +96,11 @@ async function init() {
 }
 
 async function reload(scroll = false) {
+	// If the language required is not downloaded yet wait a bit more
+	newlang = selectlanguage.value;
+	while (!languages[newlang]) {
+		await sleep(100);
+	}
 	// Get epoch as rendering ID
 	let renderingid = new Date().getTime();
 	// Put our rendering ID on queue
@@ -128,6 +134,127 @@ async function reload(scroll = false) {
 	if (scroll) {
 		window.scrollTo(0, 0);
 	}
+}
+
+async function populate(select, data, clean, bypass) {
+	// If the language required is not downloaded yet wait a bit more
+	newlang = selectlanguage.value;
+	while (!languages[newlang]) {
+		await sleep(100);
+	}
+	// Get current value to restore it back if possible
+	previousvalue = select.value
+	// First delete them all
+	while (select.lastChild) {
+		select.removeChild(select.lastChild);
+	}
+	// Always add the None option with it's proper translation
+	var opt = document.createElement('option');
+	opt.value = "None";
+	opt.innerHTML = languages[selectlanguage.value]["MSID_H_NONE"];
+	select.appendChild(opt);
+	// All data to be printed
+	options = {}
+	// If indicated to bypass don't do checks for this select, print everything and leave (this is exclusively for the heroes select)
+	if (bypass) {
+		Object.keys(data).forEach((value) => {
+			options[languages[selectlanguage.value]["M" + value] + ": " + (languages[selectlanguage.value][value.replace("PID", "MPID_HONOR")] || "Generic")] = value
+		});
+		// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
+		options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {})
+		// For each entry print an option
+		for (const [string, tag] of Object.entries(options)) {
+			var opt = document.createElement('option');
+			opt.value = tag;
+			// If of type person we also append the title
+			opt.innerHTML = string;
+			select.appendChild(opt);
+		}
+		// Restore the previous value if it's available on the updated select
+		if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
+			select.value = previousvalue;
+		}
+		return;
+	}
+	if (selectheroes.value != "None") {
+		// Hero info for possible later checks
+		weapontype = units[selectheroes.value]["WeaponType"];
+		movetype = units[selectheroes.value]["moveType"];
+		basekit = units[selectheroes.value]["basekit"];
+	// If no hero is selected we have nothing to do
+	} else {
+		return;
+	}
+	// For disabled cheats we only add the options that match move/ type restrictions and exclusive skills
+	Object.keys(data).forEach((value) => {
+		// If we arrived here we might or might not have to do checks so enable adding the skill by default
+		add = true
+		// The entire logic is processed on the python scripts so we just have to check the value set for the corresponding property. Previous values might go through the bestskills check since if we have enabled it after selecting a lower tier skill we don't go to erase it
+		if (bestskills.checked == true && ! data[value]["isMax"] && (value != previousvalue || clean)) {
+			return;
+		}
+		if (cheats.checked == false && (value != previousvalue || clean)) {
+			// Cheat mode is disabled so now we conditionally enable the skill and the default value must be false even if we might have passed bestskills checks
+			add = false
+			// Check if the skills has weapon restrictions and if it does check if we meet them
+			if (data[value]["WeaponType"] >> weapontype & 1) {
+				add = true;
+			// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
+			} else {
+				return;
+			}
+			// Check if the skills has movement restrictions and if it does check if we meet them so we just skip this iteration
+			if (data[value]["moveType"] >> movetype & 1) {
+				add = true;
+			// If it doesn't contain out movement type we cannot use it regardless of if we met weapon type
+			} else {
+				return;
+			}
+			// Check if the skill is exclusive and if it does check if it's included on the units basekit
+			if (data[value]["exclusive"]) {
+				if (basekit.includes(value)) {
+					add = true;
+				// If it isn't on the unit basekit he can't use it regarless of other conditions so we skip this iteration
+				} else {
+					return;
+				}
+			}
+		}
+		// Arriving at this check with a true add value measn we can add the option
+		if (add) {
+			options[languages[selectlanguage.value]["M" + value]] = value;
+		}
+	});
+	// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
+	options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {})
+	// For each entry print an option
+	for (const [string, tag] of Object.entries(options)) {
+		var opt = document.createElement('option');
+		opt.value = tag;
+		// If of type person we also append the title
+		opt.innerHTML = string;
+		if (basekit.includes(tag)) {
+			opt.className = "basekit";
+		}
+		select.appendChild(opt);
+	}
+	// Restore the previous value if it's available on the updated select
+	if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
+		select.value = previousvalue;
+	}
+	// For select of weapons once done we make sure to update the refine one
+	if (select == selectweapons) {
+		updateRefine();
+	}
+}
+
+async function statictranslations() {
+	// If the language required is not downloaded yet wait a bit more
+	newlang = selectlanguage.value;
+	while (!languages[newlang]) {
+		await sleep(100);
+	}
+	slotname();
 }
 
 function updateRefine() {
@@ -179,7 +306,12 @@ function swapstat(caller, target) {
 	}
 }
 
-function fillblessed(clean = false) {
+async function fillblessed(clean = false) {
+	// If the language required is not downloaded yet wait a bit more
+	newlang = selectlanguage.value;
+	while (!languages[newlang]) {
+		await sleep(100);
+	}
 	// We need to know which options to restore unless called clean
 	toberestored = []
 	if (!clean) {

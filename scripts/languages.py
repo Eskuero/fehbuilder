@@ -72,3 +72,12 @@ languagessummon = {
 }
 with open("summonlanguages.json", "w") as outfile:
     json.dump(languagessummon, outfile)
+
+# Individual language files
+for language in languages:
+	with open("fulllanguages-" + language + ".json", "w") as outfile:
+		json.dump(languages[language], outfile)
+	with open("litelanguages-" + language + ".json", "w") as outfile:
+		json.dump(languageslite[language], outfile)
+	with open("summonlanguages-" + language + ".json", "w") as outfile:
+		json.dump(languagessummon[language], outfile)

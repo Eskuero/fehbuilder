@@ -12,7 +12,7 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 // Dicts for info
-var units, skills, other, languages;
+var units, skills, other;
 // All selects we have available
 selecthero = document.getElementById('hero');
 selecttitle = document.getElementById('title');
@@ -73,12 +73,14 @@ selectadresgrowth = document.getElementById('resgrowth');
 var canvas = document.getElementById('fakecanvas');
 usedallies = document.getElementById('usedallies');
 
+// We store languages data for display of strings within the browser
+languages = {};
 // Fetch all data from each json
-fetch('/common/data/litelanguages.json')
+fetch('/common/data/individual/litelanguages-' + selectlanguage.value + '.json')
 	.then(res => res.json())
 	.then((out) => {
 		// We store languages data for display of strings within the browser
-		languages = out;
+		languages[selectlanguage.value] = out;
 		// We can download the rest of the data now that lenguages are available
 		fetch('/common/data/customunits.json')
 			.then(res => res.json())
@@ -182,8 +184,6 @@ function populateall(clean) {
 	populate(selectB, skills["passives"]["B"], clean)
 	populate(selectC, skills["passives"]["C"], clean)
 	populate(selectS, Object.assign({}, skills["passives"]["S"], cheats.checked ? Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"]) : {}), clean)
-	// Make sure we do not end with an invalid refine option setup
-	updateRefine()
 	// Update translations
 	statictranslations()
 	// Make sure we don't end with invalid allies on the list
@@ -192,7 +192,12 @@ function populateall(clean) {
 	beastcheck()
 }
 
-function populate(select, data, clean, bypass = false) {
+async function populate(select, data, clean, bypass = false) {
+	// If the language required is not downloaded yet wait a bit more
+	newlang = selectlanguage.value;
+	while (!languages[newlang]) {
+		await sleep(100);
+	}
 	// Get current value to restore it back if possible
 	previousvalue = select.value
 	// First delete them all
@@ -275,6 +280,10 @@ function populate(select, data, clean, bypass = false) {
 	if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
 		select.value = previousvalue;
 	}
+	// For select of weapons once done we make sure to update the refine one
+	if (select == selectweapons) {
+		updateRefine();
+	}
 }
 
 function beastcheck() {
@@ -288,7 +297,12 @@ function beastcheck() {
 	}
 }
 
-function fillblessed() {
+async function fillblessed() {
+	// If the language required is not downloaded yet wait a bit more
+	newlang = selectlanguage.value;
+	while (!languages[newlang]) {
+		await sleep(100);
+	}
 	// We need to know which options to restore
 	toberestored = []
 	for (i = 0; i < selectallies.selectedOptions.length; i++) {
@@ -565,5 +579,10 @@ function changemode() {
 	}
 }
 
-function statictranslations() {
+async function statictranslations() {
+	// If the language required is not downloaded yet wait a bit more
+	newlang = selectlanguage.value;
+	while (!languages[newlang]) {
+		await sleep(100);
+	}
 }

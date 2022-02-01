@@ -32,7 +32,7 @@
 					</div>
 					<div style="display:flex;gap:1em">
 						<img class="imagelabel" src="/common/assets/language.webp" title="Language"/>
-						<select class="select-without-search" id="language" onChange="populate(selectheroes, units, true, true);populateall(false);statictranslations();reload()">
+						<select class="select-without-search" id="language" onChange="getlang();populate(selectheroes, units, true, true);populateall(false);statictranslations();reload()">
 							<option value="USEN" selected>English (America)</option>
 							<option value="EUEN">English (UK)</option>
 							<option value="EUDE">Deutsch</option>

@@ -108,109 +108,6 @@ $(document).on("select2:open", () => {
 	document.querySelector(".select2-container--open .select2-search__field").focus()
 });
 
-function populate(select, data, clean, bypass) {
-	// Get current value to restore it back if possible
-	previousvalue = select.value
-	// First delete them all
-	while (select.lastChild) {
-		select.removeChild(select.lastChild);
-	}
-	// Always add the None option with it's proper translation
-	var opt = document.createElement('option');
-	opt.value = "None";
-	opt.innerHTML = languages[selectlanguage.value]["MSID_H_NONE"];
-	select.appendChild(opt);
-	// All data to be printed
-	options = {}
-	// If indicated to bypass don't do checks for this select, print everything and leave (this is exclusively for the heroes select)
-	if (bypass) {
-		Object.keys(data).forEach((value) => {
-			options[languages[selectlanguage.value]["M" + value] + ": " + (languages[selectlanguage.value][value.replace("PID", "MPID_HONOR")] || "Generic")] = value
-		});
-		// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
-		options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {})
-		// For each entry print an option
-		for (const [string, tag] of Object.entries(options)) {
-			var opt = document.createElement('option');
-			opt.value = tag;
-			// If of type person we also append the title
-			opt.innerHTML = string;
-			select.appendChild(opt);
-		}
-		// Restore the previous value if it's available on the updated select
-		if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
-			select.value = previousvalue;
-		}
-		return;
-	}
-	if (selectheroes.value != "None") {
-		// Hero info for possible later checks
-		weapontype = units[selectheroes.value]["WeaponType"];
-		movetype = units[selectheroes.value]["moveType"];
-		basekit = units[selectheroes.value]["basekit"];
-	// If no hero is selected we have nothing to do
-	} else {
-		return;
-	}
-	// For disabled cheats we only add the options that match move/ type restrictions and exclusive skills
-	Object.keys(data).forEach((value) => {
-		// If we arrived here we might or might not have to do checks so enable adding the skill by default
-		add = true
-		// The entire logic is processed on the python scripts so we just have to check the value set for the corresponding property. Previous values might go through the bestskills check since if we have enabled it after selecting a lower tier skill we don't go to erase it
-		if (bestskills.checked == true && ! data[value]["isMax"] && (value != previousvalue || clean)) {
-			return;
-		}
-		if (cheats.checked == false && (value != previousvalue || clean)) {
-			// Cheat mode is disabled so now we conditionally enable the skill and the default value must be false even if we might have passed bestskills checks
-			add = false
-			// Check if the skills has weapon restrictions and if it does check if we meet them
-			if (data[value]["WeaponType"] >> weapontype & 1) {
-				add = true;
-			// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
-			} else {
-				return;
-			}
-			// Check if the skills has movement restrictions and if it does check if we meet them so we just skip this iteration
-			if (data[value]["moveType"] >> movetype & 1) {
-				add = true;
-			// If it doesn't contain out movement type we cannot use it regardless of if we met weapon type
-			} else {
-				return;
-			}
-			// Check if the skill is exclusive and if it does check if it's included on the units basekit
-			if (data[value]["exclusive"]) {
-				if (basekit.includes(value)) {
-					add = true;
-				// If it isn't on the unit basekit he can't use it regarless of other conditions so we skip this iteration
-				} else {
-					return;
-				}
-			}
-		}
-		// Arriving at this check with a true add value measn we can add the option
-		if (add) {
-			options[languages[selectlanguage.value]["M" + value]] = value;
-		}
-	});
-	// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
-	options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {})
-	// For each entry print an option
-	for (const [string, tag] of Object.entries(options)) {
-		var opt = document.createElement('option');
-		opt.value = tag;
-		// If of type person we also append the title
-		opt.innerHTML = string;
-		if (basekit.includes(tag)) {
-			opt.className = "basekit";
-		}
-		select.appendChild(opt);
-	}
-	// Restore the previous value if it's available on the updated select
-	if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
-		select.value = previousvalue;
-	}
-}
-
 function beastcheck() {
 	// Obtain the weapon category for the unit
 	if (selectheroes.value == "None") {
@@ -245,10 +142,6 @@ function slotname() {
 	} else {
 		document.getElementById("unitslot").children[buildslot].innerHTML = "#" + (buildslot+1) + " Build";
 	}
-}
-
-function statictranslations() {
-	slotname();
 }
 
 function maximize() {
