@@ -36,7 +36,7 @@ function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers
 	sortedtruelevel1 = dictsort(truelevel1);
 
 	// Now disregard the bane if we are merged
-	if (merges > 0 && bane) {
+	if (merges > 0 && bane && bane != boon) {
 		truelevel1[bane] += 1;
 		truegrowth[bane] += 5;
 	}
