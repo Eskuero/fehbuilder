@@ -121,7 +121,7 @@ function updatedialog(caller) {
 	for (j = 0; j < selectstructure.options.length; j++) {
 		selectstructure.options[j].disabled = false;
 		for (i = 0; i < structures.length; i++) {
-			if (selectstructure.options[j].value == structures[i].id) {
+			if (selectstructure.options[j].value == structures[i].id && structures[i].parentElement.id != "results") {
 				todisable.push(selectstructure.options[j]);
 			}
 		}
@@ -183,7 +183,7 @@ function pasteitem(caller) {
 		deletebutton.innerHTML = "delete";
 		deletebutton.className = "material-icons deletebutton";
 		deletebutton.setAttribute("data-html2canvas-ignore", "true");
-		deletebutton.addEventListener("click", function(event) {item.parentElement.removeChild(item); event.stopPropagation()});
+		deletebutton.addEventListener("click", function(event) {deleteitem(event)});
 		item.appendChild(deletebutton);
 		// Create and add the items indicating weapon, movement and blessing for heroes only
 		if (caller == selectheroes) {
@@ -201,6 +201,14 @@ function pasteitem(caller) {
 				blessing.src = "/common/other/" + other["blessed"][option]["blessing"] + "-Blessing-special.webp";
 				item.appendChild(blessing);
 			}
+		// In the case of structures check if the one we are placing exists under results and delete that one
+		} else if (caller == selectstructure) {
+			results = document.getElementById("results").children;
+			for (i = 0; i < results.length; i++) {
+				if (results[i].id == option) {
+					results[i].parentElement.removeChild(results[i]);
+				}
+			}
 		}
 		target.appendChild(item);
 	}
@@ -213,6 +221,11 @@ function allowDrop(ev) {
 	ev.preventDefault();
 }
 
+function deleteitem(event) {
+	event.target.parentElement.parentElement.removeChild(event.target.parentElement);
+	event.stopPropagation();
+}
+
 function drag(ev) {
 	ev.dataTransfer.setData("text", ev.target.id);
 }
@@ -221,7 +234,7 @@ function drop(ev) {
 	ev.preventDefault();
 	var data = ev.dataTransfer.getData("text");
 	// Only copy if the target doesn't have content already and is a valid tile (for characters this also means only rows 0 and 1
-	if (ev.target.lastChild || other["maps"][selectmap.value][ev.target.id] || (data.substring(0, 3) == "PID" && parseInt(ev.target.id[0]) > 1)) {
+	if (ev.target.lastChild || other["maps"][selectmap.value][ev.target.id] || (data.substring(0, 3) == "PID" && parseInt(ev.target.id[0]) > 1) || ["structure", "hero"].includes(ev.target.className)) {
 		return;
 	}
 	ev.target.appendChild(document.getElementById(data));
@@ -262,8 +275,11 @@ function populate(select, data, clean, previousvalue = "None") {
 function clearmap() {
 	tiles = document.getElementsByTagName("td");
 	for (i = 0; i < tiles.length; i++) {
-		while (tiles[i].lastChild) {
-			tiles[i].removeChild(tiles[i].lastChild);
+		if (tiles[i].lastChild) {
+			// Do not delete fortress or aether structs
+			if (!["aetheramphorae", "aetherfountain", "fortress"].includes(tiles[i].lastChild.id)) {
+				tiles[i].removeChild(tiles[i].lastChild);
+			}
 		}
 	}
 }

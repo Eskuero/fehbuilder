@@ -37,6 +37,10 @@ body {
 	box-sizing: border-box;
 }
 
+.form > section {
+	column-count: 3;
+}
+
 #mapgrid {
 	border-collapse: collapse;
 }
@@ -46,6 +50,10 @@ td {
 	/* This is basically the stable size divided by 8 minus the 2 unplayable rows, 6 times */
 	height: calc(((100vh - 2em) - (2 * ((100vh - 2em) / 8))) / 6);
 	width: calc(((100vh - 2em) - (2 * ((100vh - 2em) / 8))) / 6);
+	padding: 0;
+}
+td > * {
+	margin: auto;
 }
 td:hover {
 	background-color: #7AF5CCAA !important;
@@ -53,7 +61,8 @@ td:hover {
 }
 
 .structure, .hero {
-	height: calc(100% - 10px);
+	height: calc((((100vh - 2em) - (2 * ((100vh - 2em) / 8))) / 6) - 1vh);
+	width: calc((((100vh - 2em) - (2 * ((100vh - 2em) / 8))) / 6) - 1vh);
 	background-repeat: no-repeat !important;
 	background-size: contain !important;
 	background-position: center center !important;
@@ -82,6 +91,10 @@ td:hover {
 	left: 0;
 }
 
+.row-property.single > div {
+	width: 15.5em !important;
+}
+
 @media screen and (orientation: portrait) {
 	body {
 		height: auto;
@@ -105,13 +118,21 @@ td:hover {
 		row-gap: 0;
 		padding-bottom: 1.5em;
 	}
-	.form > * {
+	.form > section {
 		column-count: 1;
 	}
 	td {
 		/* This is basically the stable size divided by 6 rows */
 		height: calc(90vw / 6);
 		width: calc(90vw / 6);
+	}
+	.structure, .hero {
+		height: calc((90vw / 6) - 1vw);
+		width: calc((90vw / 6) - 1vw);
+		background-repeat: no-repeat !important;
+		background-size: contain !important;
+		background-position: center center !important;
+		position: relative
 	}
 	.material-icons {
 		font-size: 5vw !important;
@@ -125,6 +146,9 @@ td:hover {
 	.blessing {
 		height: 3.5vw;
 	}
+	.row-property.single > div {
+		width: calc(100% - 3em) !important;
+	}
 }
 
 #updatedialog {
@@ -137,6 +161,14 @@ td:hover {
 	justify-content: center;
 	align-items: center;
 	z-index: 300;
+}
+
+#results {
+	display: flex;
+	min-height: 10em;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.25em;
 }
 
 .dialogform {
@@ -153,19 +185,8 @@ td:hover {
 	cursor: pointer;
 	color: purple;
 }
-.unit {
-	height: 5em;
-	width: 5em;
-	position: relative;
-	background-size: cover;
-}
 .iconinfo {
 	position: absolute;
-}
-
-
-.form > section {
-	column-count: 3;
 }
 
 input[type=checkbox] {
@@ -188,12 +209,6 @@ input[type=checkbox] {
 .imagelabel {
 	height: 2em;
 	width: 2em;
-}
-.row-property.single > div {
-	width: 15.5em !important;
-}
-.row-property.double > div {
-	width: 5.75em !important;
 }
 h2 {
 	text-decoration: underline;
