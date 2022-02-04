@@ -75,6 +75,21 @@ def work():
 	with open("customother.json", "w") as outfile:
 		json.dump(othercustom, outfile)
 
+	# Altenative version for ar-d map builder
+	othermaps = {
+		"blessed": {
+			hero: {
+				property: value
+				for property, value in properties.items() if property in ["blessing"]
+			}
+			for hero, properties in other["blessed"].items()
+		},
+		"maps": maps,
+		"duokeywords": duokeywords
+	}
+	with open("mapsother.json", "w") as outfile:
+		json.dump(othermaps, outfile)
+
 	# Altenative version for tier list generator
 	othertier = {
 		"blessed": {
@@ -101,5 +116,7 @@ seasonals = hardcoded["seasonals"]
 duokeywords = hardcoded["duokeywords"]
 # All commonly used images
 images = hardcoded["images"]
+# Maps data
+maps = hardcoded["maps"]
 
 work()

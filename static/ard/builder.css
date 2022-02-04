@@ -1,0 +1,243 @@
+body {
+	background-image: url("/common/assets/BG_Brave.webp");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: Ubuntu;
+	margin: 0;
+	padding: 0;
+}
+
+.contenedor {
+	width: calc(100vw - 2em);
+	height: calc(100vh - 2em);
+	display: flex;
+	gap: 0.5em;
+	justify-content: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#map {
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	height: calc(100vh - 2em);
+	width: calc((100vh - 2em) * 0.75);
+}
+
+.form {
+	display: flex;
+	width: calc((100vh - 2em) * 0.75);
+	overflow-y: scroll;
+	flex-direction: column;
+	background: rgba(14, 51, 69, 0.6);
+	color: white;
+	text-align: initial;
+	padding: 1em 1.5em 0 1.5em;
+	box-sizing: border-box;
+}
+
+#mapgrid {
+	border-collapse: collapse;
+}
+td {
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	/* This is basically the stable size divided by 8 minus the 2 unplayable rows, 6 times */
+	height: calc(((100vh - 2em) - (2 * ((100vh - 2em) / 8))) / 6);
+	width: calc(((100vh - 2em) - (2 * ((100vh - 2em) / 8))) / 6);
+}
+td:hover {
+	background-color: #7AF5CCAA !important;
+	cursor: pointer;
+}
+
+.structure, .hero {
+	height: calc(100% - 10px);
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+	background-position: center center !important;
+	position: relative
+}
+
+.material-icons {
+	font-size: 2em !important;
+	color: red;
+	float: right;
+}
+
+.weapon {
+	height: 1.5em;
+	top: 0;
+	left: 0;
+}
+.movement {
+	height: 1.4em;
+	bottom: 0;
+	right: 0;
+}
+.blessing {
+	height: 1.6em;
+	bottom: 0;
+	left: 0;
+}
+
+@media screen and (orientation: portrait) {
+	body {
+		height: auto;
+		overflow-y: initial;
+		width: 100vw;
+	}
+	.contenedor {
+		flex-direction: column;
+		gap: 0;
+		width: initial;
+		height: initial;
+		align-items: center;
+	}
+	#map {
+		width: 90vw;
+		height: calc(90vw /0.75);
+	}
+	.form {
+		height: auto;
+		width: 90vw;
+		row-gap: 0;
+		padding-bottom: 1.5em;
+	}
+	.form > * {
+		column-count: 1;
+	}
+	td {
+		/* This is basically the stable size divided by 6 rows */
+		height: calc(90vw / 6);
+		width: calc(90vw / 6);
+	}
+	.material-icons {
+		font-size: 5vw !important;
+	}
+	.weapon {
+		height: 3.5vw;
+	}
+	.movement {
+		height: 3.5vw;
+	}
+	.blessing {
+		height: 3.5vw;
+	}
+}
+
+#updatedialog {
+	margin-top: -1em;
+	position: fixed;
+	background-color: #000000AA;
+	width: 100%;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 300;
+}
+
+.dialogform {
+	background-color: white;
+	padding: 1em 2em 1.5em 2em;
+	height: min-content;
+}
+
+.deletebutton {
+	padding-left: 5px;
+}
+
+.material-icons:hover {
+	cursor: pointer;
+	color: purple;
+}
+.unit {
+	height: 5em;
+	width: 5em;
+	position: relative;
+	background-size: cover;
+}
+.iconinfo {
+	position: absolute;
+}
+
+
+.form > section {
+	column-count: 3;
+}
+
+input[type=checkbox] {
+	width: 18px;
+	height: 18px;
+}
+
+.row-property {
+	display: flex;
+	gap: 1em;
+	padding-bottom: 0.5em;
+	break-inside: avoid;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+* {
+  scrollbar-width: none;
+}
+.imagelabel {
+	height: 2em;
+	width: 2em;
+}
+.row-property.single > div {
+	width: 15.5em !important;
+}
+.row-property.double > div {
+	width: 5.75em !important;
+}
+h2 {
+	text-decoration: underline;
+}
+.select-without-search {
+	width: 100%;
+	height: 100%;
+	font-family: inherit;
+	font-size: inherit;
+	background-color: white;
+	color: #444;
+	border-radius: 4px;
+	border: 1px solid grey;
+	padding-left: 0.25em;
+}
+
+.links {
+	display: flex;
+	margin-top: auto;
+	gap: 0.5em;
+}
+.links > * {
+	text-decoration: none;
+}
+
+.additionaloptions {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	gap: 1em;
+	height: 2em;
+}
+
+.button {
+	border: 0;
+	height: 2em;
+	font-weight: bold;
+	font-size: 1em;
+	color: #fff;
+	background-color: #007bff;
+	border-radius: 0.2em;
+	padding: 0 1em 0 1em;
+}
+.button:hover {
+	cursor: pointer;
+}
+

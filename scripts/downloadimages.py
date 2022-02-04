@@ -35,6 +35,42 @@ def download():
 		art.save(location + icon + ".webp", 'WEBP', lossless = True, quality = 100, method = 6)
 
 icons = {
+	# AR-D Maps
+	"maps-springwater": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/f/f8/Map_K0001.webp?540?720",
+	"maps-wintry": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/7/70/Map_K0002.webp?540?720",
+	"maps-abandonedcastle": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a5/Map_K0003.webp?540?720",
+	"maps-snowdust": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/1f/Map_K0004.webp?540?720",
+	"maps-desert": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/bd/Map_K0005.webp?540?720",
+	"maps-springbreeze": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/15/Map_K0006.webp?540?720",
+	"maps-leafycanopy": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/99/Map_K0007.webp?540?720",
+	"maps-lostcastle": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/f/f6/Map_K0008.webp?540?720",
+	"maps-brightgrassland": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/7/75/Map_K0009.webp?540?720",
+	"maps-lava": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/2f/Map_K0010.webp?540?720",
+	# AR-D elements
+	"maps-white-wall": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b9/Wall_normal_W_U.png?120?120",
+	"maps-white-crumbled-wall": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/1f/Wall_normal_Pillar_1.png?120?120",
+	"maps-white-half-wall": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/e/e3/Wall_normal_E_1.png?120?120",
+	"maps-grey-crumbled-wall": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/3/3c/Wall_inside_Pillar_1.png?120?120",
+	# AR-D structures
+	"maps-bolttower": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/dc/Structure_Bolt_Tower.png?245?248",
+	"maps-catapult": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/0e/Structure_Catapult.png?252?264",
+	"maps-brigthshrine": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/6/64/Structure_Bright_Shrine.png?261?256",
+	"maps-darkshrine": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/18/Structure_Dark_Shrine.png?261?256",
+	"maps-duoshindrance": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/7/7e/Structure_Duos_Hindrance.png?212?260",
+	"maps-fortress": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/59/Structure_Fortress.png?252?248",
+	"maps-healingtower": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/ac/Structure_Healing_Tower.png?264?257",
+	"maps-panicmanor": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/d1/Structure_Panic_Manor.png?270?270",
+	"maps-tacticsroom": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/d2/Structure_Tactics_Room.png?235?262",
+	"maps-armorschool": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a3/Structure_Armor_School.png?264?254",
+	"maps-flierschool": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/cd/Structure_Flier_School.png?264?254",
+	"maps-infantryschool": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/07/Structure_Infantry_School.png?264?254",
+	"maps-cavalryschool": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/7/7a/Structure_Cavalry_School.png?264?254",
+	"maps-aetherfountain": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b3/Structure_Aether_Fountain.png?256?261",
+	"maps-aetheramphorae": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/22/Structure_Aether_Amphorae.png?258?260",
+	"maps-inn": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/e/e5/Structure_Inn.png?258?266",
+	"maps-field": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/cd/Structure_Field.png?270?264",
+	"maps-concerthall": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/95/Structure_Concert_Hall.png?258?273",
+	"maps-dininghall": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/cd/Structure_Dining_Hall.png?261?161",
 	# Gameheads
 	"0-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/d5/Icon_MiniUnit_Head_0.png?96?86",
 	"1-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/12/Icon_MiniUnit_Head_1.png?96?86",

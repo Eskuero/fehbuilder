@@ -1,4 +1,60 @@
 {
+    "maps": {
+		"springwater": {
+			"25": "water",
+			"40": "water"
+		},
+		"wintry": {
+			"21": "forest",
+			"44": "forest",
+			"53": "forest"
+		},
+		"abandonedcastle": {
+			"20": "white-crumbled-wall",
+			"41": "white-half-wall",
+			"42": "white-wall",
+			"44": "white-crumbled-wall"
+		},
+		"snowdust": {
+			"25": "trench",
+			"31": "trench",
+			"40": "grey-crumbled-wall",
+			"52": "forest"
+		},
+		"desert": {
+			"22": "mountain",
+			"52": "mountain",
+			"53": "mountain"
+		},
+		"springbreeze": {
+			"20": "white-crumbled-wall",
+			"23": "white-crumbled-wall",
+			"52": "white-wall",
+			"55":"white-crumbled-wall"
+		},
+		"leafycanopy": {
+			"23": "trench",
+			"24": "trench",
+			"41": "trench",
+			"42": "forest"
+		},
+		"lostcastle": {
+			"21": "trench",
+			"22": "trench",
+			"31": "forest",
+			"45": "white-wall"
+		},
+		"brightgrassland": {
+			"23": "forest",
+			"24": "forest",
+			"54": "forest"
+		},
+		"lava": {
+			"25": "lava",
+			"42": "lava",
+			"52": "lava"
+		}
+    },
     "seasonals": {
         "summer": [
             "PID_\u6bd4\u7ffc\u30d2\u30eb\u30c0",

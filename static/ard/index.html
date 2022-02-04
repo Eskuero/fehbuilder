@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FE Heroes AR-D Maker</title>
+		<meta name="title" content="FE Heroes AR-D Maker">
+		<meta name="description" content="Tool to create AR-D maps like on Fire Emblem Heroes.">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+		<link rel="stylesheet" href="builder.css" />
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" integrity="sha512-aD9ophpFQ61nFZP6hXYu4Q/b/USW7rpLCQLX6Bi0WJHXNO7Js/fUENpBQf/+P4NtpzNX0jSgR5zVvPOJp+W2Kg==" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" crossorigin="anonymous">
+		<link rel="shortcut icon" href="/common/assets/Feh.webp" />
+
+	</head>
+	<body>
+		<div id="updatedialog">
+			<div class="dialogform">
+				<h3>Change content of tile</h2>
+				<div class="row-property single">
+					<img class="imagelabel" src="/common/assets/kiran.webp" title="Hero"/>
+					<div>
+						<select class="s2-select" id="selectheroes" selectedtile="null" onchange="pasteitem(this)">
+							<option value="None">None</option>
+						</select>
+					</div>
+				</div>
+				<div class="row-property single">
+					<img class="imagelabel" src="/common/assets/structure.webp" title="Structure"/>
+					<div>
+						<select class="select-without-search" id="selectstructure" selectedtile="null" onchange="pasteitem(this)">
+							<option value="None">None</option>
+							<optgroup label="Mandatory">
+								<option value="aetheramphorae">Aether Amphorae</option>
+								<option value="aetherfountain">Aether Fountain</option>
+								<option value="fortress">Fortress</option>
+							</optgroup>
+							<optgroup label="Structures">
+								<option value="armorschool">Armor School</option>
+								<option value="bolttower">Bolt Tower</option>
+								<option value="brigthshrine">Bright Shrine</option>
+								<option value="catapult">Catapult</option>
+								<option value="cavalryschool">Cavalry School</option>
+								<option value="darkshrine">Dark Shrine</option>
+								<option value="duoshindrance">Duo's Hindrance</option>
+								<option value="flierschool">Flier School</option>
+								<option value="healingtower">Healing Tower</option>
+								<option value="infantryschool">Infantry School</option>
+								<option value="panicmanor">Panic Manor</option>
+								<option value="tacticsroom">Tactics Room</option>
+							</optgroup>
+							<optgroup label="Decorations">
+								<option value="concerthall">Concert Hall</option>
+								<option value="dininghall">Dining Hall</option>
+								<option value="field">Field</option>
+								<option value="inn">Inn</option>
+							</optgroup>
+						</select>
+					</div>
+				</div>
+				<center><button onclick="document.getElementById('updatedialog').style.display = 'none'" style="margin-top: 1em;" class="button">Cancel</button></center>
+			</div>
+		</div>
+		<div class="contenedor">
+			<div id="map">
+				<table id="mapgrid">
+					<tr>
+						<td onclick="updatedialog(this)" id="00" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="01" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="02" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="03" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="04" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="05" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td onclick="updatedialog(this)" id="10" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="11" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="12" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="13" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="14" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td onclick="updatedialog(this)" id="20" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="21" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="22" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="23" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="24" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="25" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td onclick="updatedialog(this)" id="30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="31" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="32" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="33" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="34" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="35" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td onclick="updatedialog(this)" id="40" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="41" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="42" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="43" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="44" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td onclick="updatedialog(this)" id="50" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="51" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="52" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="53" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="54" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td onclick="updatedialog(this)" id="55" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="form">
+				<div class="additionaloptions">
+					<button onclick="clearmap()" class="button">Clear map</button>
+					<button onclick="download()" class="button">Download</button>
+					<div class="links">
+						<a href="/">
+							<img class="img-fluid" src="/common/assets/home.webp"/>
+						</a>
+						<a href="https://github.com/Eskuero/fehbuilder" target="blank">
+							<img class="img-fluid" src="/common/assets/github.webp"/>
+						</a>
+						<a href="https://discord.gg/fireemblemheroes" target="blank">
+							<img class="img-fluid" src="/common/assets/discord.webp"/>
+						</a>
+					</div>
+				</div>
+				<h2>Options</h2>
+				<section>
+					<div class="row-property single">
+						<img class="imagelabel" src="/common/assets/divinecode.webp" title="Map"/>
+						<div>
+							<select class="select-without-search" onchange="changemap()" id="mapselect">
+								<option value="springwater">Springwater</option>
+								<option value="wintry">Wintry</option>
+								<option value="abandonedcastle">Abandoned Castle</option>
+								<option value="snowdust">Snowdust</option>
+								<option value="desert">Desert</option>
+								<option value="springbreeze">Spring Breeze</option>
+								<option value="leafycanopy">Leafy Canopy</option>
+								<option value="lostcastle">Lost Castle</option>
+								<option value="brightgrassland">Bright Grassland</option>
+								<option value="lava">Lava Floes</option>
+							</select>
+						</div>
+					</div>
+				</section>
+				<h2>Additional icons</h2>
+				<section class="additionaloptions">
+					<label>
+						<input type="checkbox" id="showweapon" onchange="iconvisibility(this)" checked>
+						Weapon
+					</label>
+					<label>
+						<input type="checkbox" id="showmovement" onchange="iconvisibility(this)" checked>
+						Movement
+					</label>
+					<label>
+						<input type="checkbox" id="showblessing" onchange="iconvisibility(this)" checked>
+						Blessing
+					</label>
+				</section>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" integrity="sha512-4MvcHwcbqXKUHB6Lx3Zb5CEAVoE9u84qN+ZSMM6s7z8IeJriExrV3ND5zRze9mxNlABJ6k864P/Vl8m0Sd3DtQ==" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.0/dist/html2canvas.min.js" integrity="sha512-UcDEnmFoMh0dYHu0wGsf5SKB7z7i5j3GuXHCnb3i4s44hfctoLihr896bxM0zL7jGkcHQXXrJsFIL62ehtd6yQ==" crossorigin="anonymous"></script>
+		<script src="utilities.js"></script>
+		<script src="form.js"></script>
+    </body>
+</html>
