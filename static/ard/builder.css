@@ -241,6 +241,10 @@ h2 {
 	gap: 1em;
 	height: 2em;
 }
+.additionaloptions > label {
+	display: flex;
+	align-items: center;
+}
 
 .button {
 	border: 0;
