@@ -107,7 +107,7 @@ function init() {
 function updatedialog(caller) {
 	// Restore the selected structure
 	if (caller.lastChild) {
-		if (caller.lastChild.className != "hero") {
+		if (caller.lastChild.className == "structure") {
 			selectstructure.value = caller.lastChild.id;
 		} else {
 			selectstructure.value = "None";
@@ -150,21 +150,28 @@ function updatedialog(caller) {
 	// Finally set the selected tile attribute and shot the box
 	selectheroes.setAttribute("selectedtile", caller.id);
 	selectstructure.setAttribute("selectedtile", caller.id);
+	document.getElementById("buttonclean").setAttribute("selectedtile", caller.id);
 	document.getElementById("updatedialog").style.display = "flex";
 }
 
 function pasteitem(caller) {
+	option = caller.value;
 	// Depending on the caller some properties will changemap
 	if (caller == selectstructure) {
 		baseurl = "/common/other/maps-";
 		classname = "structure";
 		extraid = "";
 	} else if (caller == selectheroes) {
-		baseurl = "/common/sprites/";
+		baseurl = "/common/sprites-idle/";
 		classname = "hero";
+		if (units[option]["moveType"] == 2) {
+			classname += " cavalry";
+		}
+		if (units[option]["moveType"] == 3) {
+			classname += " flying";
+		}
 		extraid = "-" + new Date().getTime();
 	}
-	option = caller.value;
 	target = document.getElementById(caller.getAttribute("selectedtile"));
 	// Always delete whatever the tile contains
 	while (target.lastChild) {
@@ -178,13 +185,6 @@ function pasteitem(caller) {
 		item.draggable = "true";
 		item.id = option + extraid;
 		item.addEventListener("dragstart", function(event) {drag(event)});
-		// Create a delete button
-		deletebutton = document.createElement('span');
-		deletebutton.innerHTML = "delete";
-		deletebutton.className = "material-icons deletebutton";
-		deletebutton.setAttribute("data-html2canvas-ignore", "true");
-		deletebutton.addEventListener("click", function(event) {deleteitem(event)});
-		item.appendChild(deletebutton);
 		// Create and add the items indicating weapon, movement and blessing for heroes only
 		if (caller == selectheroes) {
 			var weapon = document.createElement('img');
@@ -221,9 +221,12 @@ function allowDrop(ev) {
 	ev.preventDefault();
 }
 
-function deleteitem(event) {
-	event.target.parentElement.parentElement.removeChild(event.target.parentElement);
-	event.stopPropagation();
+function deleteitem(caller) {
+	tile = document.getElementById(caller.getAttribute("selectedtile"))
+	if (tile.lastChild) {
+		tile.removeChild(tile.lastChild);
+	}
+	document.getElementById("updatedialog").style.display = "none";
 }
 
 function drag(ev) {

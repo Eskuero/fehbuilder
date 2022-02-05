@@ -11,7 +11,6 @@
 
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" integrity="sha512-aD9ophpFQ61nFZP6hXYu4Q/b/USW7rpLCQLX6Bi0WJHXNO7Js/fUENpBQf/+P4NtpzNX0jSgR5zVvPOJp+W2Kg==" crossorigin="anonymous" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu" crossorigin="anonymous" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" crossorigin="anonymous">
 		<link rel="shortcut icon" href="/common/assets/Feh.webp" />
 
 	</head>
@@ -60,61 +59,62 @@
 						</select>
 					</div>
 				</div>
-				<center><button onclick="document.getElementById('updatedialog').style.display = 'none'" style="margin-top: 1em;" class="button">Cancel</button></center>
+				<div class="additionaloptions">
+					<button id="buttonclean" onclick="deleteitem(this)" selectedtile="null" style="margin-top: 1em;" class="button">Clear</button>
+					<button onclick="document.getElementById('updatedialog').style.display = 'none'" style="margin-top: 1em;" class="button">Cancel</button>
+				</div>
 			</div>
 		</div>
 		<div class="contenedor">
 			<div id="map">
-				<table id="mapgrid">
-					<tr>
-						<td onclick="updatedialog(this)" id="00" ondrop="drop(event)" ondragover="allowDrop(event)"><div class="structure" style="background: url('/common/other/maps-aetheramphorae.webp')" draggable="true" ondragstart="drag(event)" id="aetheramphorae"></div></td>
-						<td onclick="updatedialog(this)" id="01" ondrop="drop(event)" ondragover="allowDrop(event)"><div class="structure" style="background: url('/common/other/maps-aetherfountain.webp')" draggable="true" ondragstart="drag(event)" id="aetherfountain"></div></td>
-						<td onclick="updatedialog(this)" id="02" ondrop="drop(event)" ondragover="allowDrop(event)"><div class="structure" style="background: url('/common/other/maps-fortress.webp')" draggable="true" ondragstart="drag(event)" id="fortress"></div></td>
-						<td onclick="updatedialog(this)" id="03" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="04" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="05" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-					</tr>
-					<tr>
-						<td onclick="updatedialog(this)" id="10" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="11" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="12" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="13" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="14" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-					</tr>
-					<tr>
-						<td onclick="updatedialog(this)" id="20" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="21" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="22" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="23" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="24" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="25" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-					</tr>
-					<tr>
-						<td onclick="updatedialog(this)" id="30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="31" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="32" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="33" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="34" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="35" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-					</tr>
-					<tr>
-						<td onclick="updatedialog(this)" id="40" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="41" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="42" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="43" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="44" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-					</tr>
-					<tr>
-						<td onclick="updatedialog(this)" id="50" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="51" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="52" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="53" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="54" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-						<td onclick="updatedialog(this)" id="55" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-					</tr>
-				</table>
+				<div class="row">
+					<div class="cell" onclick="updatedialog(this)" id="00" ondrop="drop(event)" ondragover="allowDrop(event)"><div class="structure" style="background: url('/common/other/maps-aetheramphorae.webp')" draggable="true" ondragstart="drag(event)" id="aetheramphorae"></div></div>
+					<div class="cell" onclick="updatedialog(this)" id="01" ondrop="drop(event)" ondragover="allowDrop(event)"><div class="structure" style="background: url('/common/other/maps-aetherfountain.webp')" draggable="true" ondragstart="drag(event)" id="aetherfountain"></div></div>
+					<div class="cell" onclick="updatedialog(this)" id="02" ondrop="drop(event)" ondragover="allowDrop(event)"><div class="structure" style="background: url('/common/other/maps-fortress.webp')" draggable="true" ondragstart="drag(event)" id="fortress"></div></div>
+					<div class="cell" onclick="updatedialog(this)" id="03" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="04" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="05" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+				<div class="row">
+					<div class="cell" onclick="updatedialog(this)" id="10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="11" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="12" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="13" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="14" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="15" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+				<div class="row">
+					<div class="cell" onclick="updatedialog(this)" id="20" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="21" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="22" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="23" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="24" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="25" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+				<div class="row">
+					<div class="cell" onclick="updatedialog(this)" id="30" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="31" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="32" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="33" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="34" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="35" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+				<div class="row">
+					<div class="cell" onclick="updatedialog(this)" id="40" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="41" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="42" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="43" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="44" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="45" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+				<div class="row">
+					<div class="cell" onclick="updatedialog(this)" id="50" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="51" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="52" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="53" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="54" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="cell" onclick="updatedialog(this)" id="55" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
 			</div>
 			<div class="form">
 				<div class="additionaloptions">
@@ -134,7 +134,7 @@
 				</div>
 				<h2>Instructions</h2>
 				<ul>
-					<li>Click on any tile to bring up a dialog where you can choose a hero or structure to add.</li>
+					<li>Click on any tile to bring up a dialog where you can choose a hero or structure to add/delete.</li>
 					<li>Once added you can drag and drop any unit or building to another tile as long as is valid for that certain terrain.</li>
 					<li>You can clean or download a picture of the current setup using the button at the top.</li>
 					<li>Structures are provided to drag and drop from below as well for ease.</li>
@@ -172,54 +172,22 @@
 				</section>
 				<h2>Structures</h2>
 				<section id="results">
-					<div class="structure" style="background: url('/common/other/maps-armorschool.webp')" draggable="true" ondragstart="drag(event)" id="armorschool">
-						<span class="material-icons deletebutton" data-html2canvas-ignore="true" onclick="deleteitem(event, this)">delete</span>
-					</div>
-					<div class="structure" style="background: url('/common/other/maps-bolttower.webp')" draggable="true" ondragstart="drag(event)" id="bolttower">
-						<span class="material-icons deletebutton" data-html2canvas-ignore="true" onclick="deleteitem(event, this)">delete</span>
-					</div>
-					<div class="structure" style="background: url('/common/other/maps-brigthshrine.webp')" draggable="true" ondragstart="drag(event)" id="brigthshrine">
-						<span class="material-icons deletebutton" data-html2canvas-ignore="true" onclick="deleteitem(event, this)">delete</span>
-					</div>
-					<div class="structure" style="background: url('/common/other/maps-catapult.webp')" draggable="true" ondragstart="drag(event)" id="catapult">
-						<span class="material-icons deletebutton" data-html2canvas-ignore="true" onclick="deleteitem(event, this)">delete</span>
-					</div>
-					<div class="structure" style="background: url('/common/other/maps-cavalryschool.webp')" draggable="true" ondragstart="drag(event)" id="cavalryschool">
-						<span class="material-icons deletebutton" data-html2canvas-ignore="true" onclick="deleteitem(event, this)">delete</span>
-					</div>
-					<div class="structure" style="background: url('/common/other/maps-darkshrine.webp')" draggable="true" ondragstart="drag(event)" id="darkshrine">
-						<span class="material-icons deletebutton" data-html2canvas-ignore="true" onclick="deleteitem(event, this)">delete</span>
-					</div>
-					<div class="structure" style="background: url('/common/other/maps-duoshindrance.webp')" draggable="true" ondragstart="drag(event)" id="duoshindrance">
-						<span class="material-icons deletebutton" data-html2canvas-ignore="true" onclick="deleteitem(event, this)">delete</span>
-					</div>
-					<div class="structure" style="background: url('/common/other/maps-flierschool.webp')" draggable="true" ondragstart="drag(event)" id="flierschool">
-						<span class="material-icons deletebutton" data-html2canvas-ignore="true" onclick="deleteitem(event, this)">delete</span>
-					</div>
-					<div class="structure" style="background: url('/common/other/maps-healingtower.webp')" draggable="true" ondragstart="drag(event)" id="healingtower">
-						<span class="material-icons deletebutton" data-html2canvas-ignore="true" onclick="deleteitem(event, this)">delete</span>
-					</div>
-					<div class="structure" style="background: url('/common/other/maps-infantryschool.webp')" draggable="true" ondragstart="drag(event)" id="infantryschool">
-						<span class="material-icons deletebutton" data-html2canvas-ignore="true" onclick="deleteitem(event, this)">delete</span>
-					</div>
-					<div class="structure" style="background: url('/common/other/maps-panicmanor.webp')" draggable="true" ondragstart="drag(event)" id="panicmanor">
-						<span class="material-icons deletebutton" data-html2canvas-ignore="true" onclick="deleteitem(event, this)">delete</span>
-					</div>
-					<div class="structure" style="background: url('/common/other/maps-tacticsroom.webp')" draggable="true" ondragstart="drag(event)" id="tacticsroom">
-						<span class="material-icons deletebutton" data-html2canvas-ignore="true" onclick="deleteitem(event, this)">delete</span>
-					</div>
-					<div class="structure" style="background: url('/common/other/maps-concerthall.webp')" draggable="true" ondragstart="drag(event)" id="concerthall">
-						<span class="material-icons deletebutton" data-html2canvas-ignore="true" onclick="deleteitem(event, this)">delete</span>
-					</div>
-					<div class="structure" style="background: url('/common/other/maps-dininghall.webp')" draggable="true" ondragstart="drag(event)" id="dininghall">
-						<span class="material-icons deletebutton" data-html2canvas-ignore="true" onclick="deleteitem(event, this)">delete</span>
-					</div>
-					<div class="structure" style="background: url('/common/other/maps-field.webp')" draggable="true" ondragstart="drag(event)" id="field">
-						<span class="material-icons deletebutton" data-html2canvas-ignore="true" onclick="deleteitem(event, this)">delete</span>
-					</div>
-					<div class="structure" style="background: url('/common/other/maps-inn.webp')" draggable="true" ondragstart="drag(event)" id="inn">
-						<span class="material-icons deletebutton" data-html2canvas-ignore="true" onclick="deleteitem(event, this)">delete</span>
-					</div>
+					<div class="structure" style="background: url('/common/other/maps-armorschool.webp')" draggable="true" ondragstart="drag(event)" id="armorschool"></div>
+					<div class="structure" style="background: url('/common/other/maps-bolttower.webp')" draggable="true" ondragstart="drag(event)" id="bolttower"></div>
+					<div class="structure" style="background: url('/common/other/maps-brigthshrine.webp')" draggable="true" ondragstart="drag(event)" id="brigthshrine"></div>
+					<div class="structure" style="background: url('/common/other/maps-catapult.webp')" draggable="true" ondragstart="drag(event)" id="catapult"></div>
+					<div class="structure" style="background: url('/common/other/maps-cavalryschool.webp')" draggable="true" ondragstart="drag(event)" id="cavalryschool"></div>
+					<div class="structure" style="background: url('/common/other/maps-darkshrine.webp')" draggable="true" ondragstart="drag(event)" id="darkshrine"></div>
+					<div class="structure" style="background: url('/common/other/maps-duoshindrance.webp')" draggable="true" ondragstart="drag(event)" id="duoshindrance"></div>
+					<div class="structure" style="background: url('/common/other/maps-flierschool.webp')" draggable="true" ondragstart="drag(event)" id="flierschool"></div>
+					<div class="structure" style="background: url('/common/other/maps-healingtower.webp')" draggable="true" ondragstart="drag(event)" id="healingtower"></div>
+					<div class="structure" style="background: url('/common/other/maps-infantryschool.webp')" draggable="true" ondragstart="drag(event)" id="infantryschool"></div>
+					<div class="structure" style="background: url('/common/other/maps-panicmanor.webp')" draggable="true" ondragstart="drag(event)" id="panicmanor"></div>
+					<div class="structure" style="background: url('/common/other/maps-tacticsroom.webp')" draggable="true" ondragstart="drag(event)" id="tacticsroom"></div>
+					<div class="structure" style="background: url('/common/other/maps-concerthall.webp')" draggable="true" ondragstart="drag(event)" id="concerthall"></div>
+					<div class="structure" style="background: url('/common/other/maps-dininghall.webp')" draggable="true" ondragstart="drag(event)" id="dininghall"></div>
+					<div class="structure" style="background: url('/common/other/maps-field.webp')" draggable="true" ondragstart="drag(event)" id="field"></div>
+					<div class="structure" style="background: url('/common/other/maps-inn.webp')" draggable="true" ondragstart="drag(event)" id="inn"></div>
 				</section>
 			</div>
 		</div>

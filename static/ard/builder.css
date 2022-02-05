@@ -7,6 +7,9 @@ body {
 	margin: 0;
 	padding: 0;
 }
+:root {
+	--landscape: calc(((100vh - 2em) - (2 * ((100vh - 2em) / 8))) / 6);
+}
 
 .contenedor {
 	width: calc(100vw - 2em);
@@ -25,6 +28,9 @@ body {
 	width: calc((100vh - 2em) * 0.75);
 }
 
+.row {
+	display: flex;
+}
 .form {
 	display: flex;
 	width: calc((100vh - 2em) * 0.75);
@@ -41,44 +47,50 @@ body {
 	column-count: 3;
 }
 
-#mapgrid {
-	border-collapse: collapse;
-}
-td {
+.cell {
 	background-repeat: no-repeat !important;
 	background-size: cover !important;
 	/* This is basically the stable size divided by 8 minus the 2 unplayable rows, 6 times */
-	height: calc(((100vh - 2em) - (2 * ((100vh - 2em) / 8))) / 6);
-	width: calc(((100vh - 2em) - (2 * ((100vh - 2em) / 8))) / 6);
-	padding: 0;
+	height: var(--landscape);
+	width: var(--landscape);
+	display: flex;
+	align-items: end;
 }
-td > * {
-	margin: auto;
+.cell > * {
+	margin: 0 auto 0 auto;
 }
-td:hover {
+.cell:hover {
 	background-color: #7AF5CCAA !important;
 	cursor: pointer;
 }
 
 .structure, .hero {
-	height: calc((((100vh - 2em) - (2 * ((100vh - 2em) / 8))) / 6) - 1vh);
-	width: calc((((100vh - 2em) - (2 * ((100vh - 2em) / 8))) / 6) - 1vh);
+	height: calc(var(--landscape) - 1vh);
+	width: calc(var(--landscape) - 1vh);
 	background-repeat: no-repeat !important;
 	background-size: contain !important;
 	background-position: center center !important;
-	position: relative
+	position: relative;
 }
-
-.material-icons {
-	font-size: 2em !important;
-	color: red;
-	float: right;
+.cavalry {
+	height: calc(var(--landscape) + 1vh);
+	width: calc(var(--landscape) + 1vh);
+}
+.flying {
+	height: calc(var(--landscape) + 2vh);
+	width: calc(var(--landscape) + 2vh);
 }
 
 .weapon {
 	height: 1.5em;
 	top: 0;
 	left: 0;
+}
+.cavalry > .weapon {
+	top: 1vh;
+}
+.flying > .weapon {
+	top: 2vh;
 }
 .movement {
 	height: 1.4em;
@@ -121,7 +133,7 @@ td:hover {
 	.form > section {
 		column-count: 1;
 	}
-	td {
+	.cell {
 		/* This is basically the stable size divided by 6 rows */
 		height: calc(90vw / 6);
 		width: calc(90vw / 6);
@@ -134,8 +146,13 @@ td:hover {
 		background-position: center center !important;
 		position: relative
 	}
-	.material-icons {
-		font-size: 5vw !important;
+	.cavalry {
+		height: calc((90vw / 6) + 1vw);
+		width: calc((90vw / 6) + 1vw);
+	}
+	.flying {
+		height: calc((90vw / 6) + 2vw);
+		width: calc((90vw / 6) + 2vw);
 	}
 	.weapon {
 		height: 3.5vw;
@@ -181,10 +198,6 @@ td:hover {
 	padding-left: 5px;
 }
 
-.material-icons:hover {
-	cursor: pointer;
-	color: purple;
-}
 .iconinfo {
 	position: absolute;
 }
