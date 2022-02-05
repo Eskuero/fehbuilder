@@ -70,7 +70,11 @@ icons = {
 	"maps-inn": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/e/e5/Structure_Inn.png?258?266",
 	"maps-field": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/cd/Structure_Field.png?270?264",
 	"maps-concerthall": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/95/Structure_Concert_Hall.png?258?273",
-	"maps-dininghall": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/cd/Structure_Dining_Hall.png?261?161",
+	"maps-dininghall": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/cd/Structure_Dining_Hall.png?261?261",
+	"maps-bolttrap": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/3/3a/Trap00_Edit.webp?90?90",
+	"maps-bolttrapfake": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/f/f5/Trap00_Disable.webp?90?80",
+	"maps-heavytrap": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/cc/Trap01_Edit.webp?90?90",
+	"maps-heavytrapfake": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/94/Trap01_Disable.webp?90?80",
 	# Gameheads
 	"0-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/d5/Icon_MiniUnit_Head_0.png?96?86",
 	"1-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/12/Icon_MiniUnit_Head_1.png?96?86",
