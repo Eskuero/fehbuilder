@@ -154,68 +154,6 @@ function updatedialog(caller) {
 	document.getElementById("updatedialog").style.display = "flex";
 }
 
-function pasteitem(caller) {
-	option = caller.value;
-	// Depending on the caller some properties will changemap
-	if (caller == selectstructure) {
-		baseurl = "/common/other/maps-";
-		classname = "structure";
-		extraid = "";
-	} else if (caller == selectheroes) {
-		baseurl = "/common/sprites-idle/";
-		classname = "hero";
-		if (units[option]["moveType"] == 2) {
-			classname += " cavalry";
-		}
-		if (units[option]["moveType"] == 3) {
-			classname += " flying";
-		}
-		extraid = "-" + new Date().getTime();
-	}
-	target = document.getElementById(caller.getAttribute("selectedtile"));
-	// Always delete whatever the tile contains
-	while (target.lastChild) {
-		target.removeChild(target.lastChild);
-	}
-	// If selected a valid option setup the image with all the required elements
-	if (option != "None") {
-		var item = document.createElement('div');
-		item.className = classname;
-		item.style.background = 'url("' + baseurl + option + '.webp")';
-		item.draggable = "true";
-		item.id = option + extraid;
-		item.addEventListener("dragstart", function(event) {drag(event)});
-		// Create and add the items indicating weapon, movement and blessing for heroes only
-		if (caller == selectheroes) {
-			var weapon = document.createElement('img');
-			weapon.className = "iconinfo weapon";
-			weapon.src = "/common/other/" + units[option]["WeaponType"] + "-weapon.webp";
-			item.appendChild(weapon);
-			var movement = document.createElement('img');
-			movement.className = "iconinfo movement";
-			movement.src = "/common/other/" + units[option]["moveType"] + "-move.webp";
-			item.appendChild(movement);
-			if (other["blessed"][option]) {
-				var blessing = document.createElement('img');
-				blessing.className = "iconinfo blessing";
-				blessing.src = "/common/other/" + other["blessed"][option]["blessing"] + "-Blessing-special.webp";
-				item.appendChild(blessing);
-			}
-		// In the case of structures check if the one we are placing exists under results and delete that one
-		} else if (caller == selectstructure) {
-			results = document.getElementById("results").children;
-			for (i = 0; i < results.length; i++) {
-				if (results[i].id == option) {
-					results[i].parentElement.removeChild(results[i]);
-				}
-			}
-		}
-		target.appendChild(item);
-	}
-	// Hide the dialog now
-	document.getElementById("updatedialog").style.display = "none";
-}
-
 // Functions to allow drag and drop
 function allowDrop(ev) {
 	ev.preventDefault();

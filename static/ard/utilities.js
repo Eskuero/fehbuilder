@@ -47,16 +47,94 @@ function changemap() {
 	}
 }
 
-function cleartier() {
-	// Get all tiers available
-	alltiers = document.getElementsByClassName("tiercontent");
-	// Loop every tier row and delete all children
-	for (i = 0; i < alltiers.length; i++) {
-		// First delete all currently rendered
-		while (alltiers[i].lastChild) {
-			alltiers[i].removeChild(alltiers[i].lastChild);
-		}
+
+function pasteunit(caller) {
+	option = caller.value;
+	classname = "hero";
+	extraid = "-" + new Date().getTime();
+	target = document.getElementById(caller.getAttribute("selectedtile"));
+	// Always delete whatever the tile contains
+	while (target.lastChild) {
+		target.removeChild(target.lastChild);
 	}
+	// If selected a valid option setup the image with all the required elements
+	if (option != "None") {
+		var item = document.createElement('div');
+		item.className = classname;
+		item.draggable = true;
+		item.id = option + extraid;
+		item.addEventListener("dragstart", function(event) {drag(event)});
+		// Add the hero as an image
+		hero = document.createElement('img');
+		//weapon.className = "iconinfo weapon";
+		hero.src = "/common/sprites-idle/" + option + ".webp";
+		// Once the hero image is loaded apply proper styles to make it fit better
+		hero.addEventListener("load", function(event) {herosize(event.target)});
+		hero.draggable = false;
+		item.appendChild(hero);
+		// Create and add the items indicating weapon, movement and blessing
+		var weapon = document.createElement('img');
+		weapon.className = "iconinfo weapon";
+		weapon.src = "/common/other/" + units[option]["WeaponType"] + "-weapon.webp";
+		weapon.draggable = false;
+		item.appendChild(weapon);
+		var movement = document.createElement('img');
+		movement.className = "iconinfo movement";
+		movement.src = "/common/other/" + units[option]["moveType"] + "-move.webp";
+		movement.draggable = false;
+		item.appendChild(movement);
+		if (other["blessed"][option]) {
+			var blessing = document.createElement('img');
+			blessing.className = "iconinfo blessing";
+			blessing.src = "/common/other/" + other["blessed"][option]["blessing"] + "-Blessing-special.webp";
+			blessing.draggable = false;
+			item.appendChild(blessing);
+		}
+		target.appendChild(item);
+	}
+	// Hide the dialog now
+	document.getElementById("updatedialog").style.display = "none";
+}
+
+function herosize(caller) {
+	hero = caller.parentElement.id.split("-")[0]
+	// By default set the height to 100% of the cell
+	height = 100;
+	// Increase the size a 10% for mounted units
+	if ([2,3].includes(units[hero]["moveType"])) {
+		height += 10;
+	} else {
+		height -= 5;
+	}
+	caller.style.height = height + "%";
+}
+
+function pastestructure(caller) {
+	option = caller.value;
+	target = document.getElementById(caller.getAttribute("selectedtile"));
+	// Always delete whatever the tile contains
+	while (target.lastChild) {
+		target.removeChild(target.lastChild);
+	}
+	// If selected a valid option setup the image with all the required elements
+	if (option != "None") {
+		var item = document.createElement('div');
+		item.className = "structure";
+		item.style.background = 'url("/common/other/maps-' + option + '.webp")';
+		item.draggable = true;
+		item.id = option;
+		item.addEventListener("dragstart", function(event) {drag(event)});
+		// In the case of structures check if the one we are placing exists under results and delete that one
+		results = document.getElementById("results").children;
+		for (i = 0; i < results.length; i++) {
+			if (results[i].id == option) {
+				results[i].parentElement.removeChild(results[i]);
+			}
+		}
+		target.appendChild(item);
+	}
+	// Hide the dialog now
+	document.getElementById("updatedialog").style.display = "none";
 }
 
 function iconvisibility(caller) {

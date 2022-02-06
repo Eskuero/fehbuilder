@@ -21,7 +21,7 @@
 				<div class="row-property single">
 					<img class="imagelabel" src="/common/assets/kiran.webp" title="Hero"/>
 					<div>
-						<select class="s2-select" id="selectheroes" selectedtile="null" onchange="pasteitem(this)">
+						<select class="s2-select" id="selectheroes" selectedtile="null" onchange="pasteunit(this)">
 							<option value="None">None</option>
 						</select>
 					</div>
@@ -29,7 +29,7 @@
 				<div class="row-property single">
 					<img class="imagelabel" src="/common/assets/structure.webp" title="Structure"/>
 					<div>
-						<select class="select-without-search" id="selectstructure" selectedtile="null" onchange="pasteitem(this)">
+						<select class="select-without-search" id="selectstructure" selectedtile="null" onchange="pastestructure(this)">
 							<option value="None">None</option>
 							<optgroup label="Structures">
 								<option value="armorschool">Armor School</option>
@@ -140,10 +140,10 @@
 				</div>
 				<h2>Instructions</h2>
 				<ul>
-					<li>Click on any tile to bring up a dialog where you can choose a hero or structure to add/delete.</li>
-					<li>Once added you can drag and drop any unit or building to another tile as long as is valid for that certain terrain.</li>
-					<li>You can clean or download a picture of the current setup using the button at the top.</li>
-					<li>Structures are provided to drag and drop from below as well for ease.</li>
+					<li>Click a tile to show a dialog where you can choose a unit or structure.</li>
+					<li>You can drag and drop between tiles as long as is valid content.</li>
+					<li>Clean current setup or download a picture of it using the buttons at the top.</li>
+					<li>Structures are provided below as well to drag and drop with ease.</li>
 				</ul>
 				<h2>Options</h2>
 				<section>

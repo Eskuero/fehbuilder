@@ -64,33 +64,28 @@ body {
 	cursor: pointer;
 }
 
-.structure, .hero {
+.structure {
 	height: calc(var(--landscape) - 1vh);
 	width: calc(var(--landscape) - 1vh);
 	background-repeat: no-repeat !important;
 	background-size: contain !important;
 	background-position: center center !important;
+}
+.structure, .hero {
 	position: relative;
+	display: flex;
+	align-items: end;
+	justify-content: center;
 }
-.cavalry {
-	height: calc(var(--landscape) + 1vh);
-	width: calc(var(--landscape) + 1vh);
-}
-.flying {
-	height: calc(var(--landscape) + 2vh);
-	width: calc(var(--landscape) + 2vh);
+.hero {
+	height: 95%;
+	width: 95%;
 }
 
 .weapon {
 	height: 1.5em;
 	top: 0;
 	left: 0;
-}
-.cavalry > .weapon {
-	top: 1vh;
-}
-.flying > .weapon {
-	top: 2vh;
 }
 .movement {
 	height: 1.4em;
@@ -133,26 +128,15 @@ body {
 	.form > section {
 		column-count: 1;
 	}
+	.structure {
+		height: calc((90vw / 6) - 1vw);
+		width: calc((90vw / 6) - 1vw);
+	}
+
 	.cell {
 		/* This is basically the stable size divided by 6 rows */
 		height: calc(90vw / 6);
 		width: calc(90vw / 6);
-	}
-	.structure, .hero {
-		height: calc((90vw / 6) - 1vw);
-		width: calc((90vw / 6) - 1vw);
-		background-repeat: no-repeat !important;
-		background-size: contain !important;
-		background-position: center center !important;
-		position: relative
-	}
-	.cavalry {
-		height: calc((90vw / 6) + 1vw);
-		width: calc((90vw / 6) + 1vw);
-	}
-	.flying {
-		height: calc((90vw / 6) + 2vw);
-		width: calc((90vw / 6) + 2vw);
 	}
 	.weapon {
 		height: 3.5vw;
