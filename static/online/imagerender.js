@@ -694,7 +694,7 @@ async function myunit() {
 	// Print the amount of SP and HM
 	numbertype = selectsp.value == "9999" ? 4 : 0;
 	printnumbers(preview, parseInt(selectsp.value), numbertype, 265, 1052, "end");
-	numbertype = selecthm.value == "7000" ? 4 : 0;
+	numbertype = selecthm.value == "8000" ? 4 : 0;
 	printnumbers(preview, parseInt(selecthm.value), numbertype, 265, 1100, "end");
 
 	// Print the ascendent floret icon if selected
