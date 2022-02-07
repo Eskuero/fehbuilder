@@ -46,6 +46,8 @@ icons = {
 	"maps-lostcastle": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/f/f6/Map_K0008.webp?540?720",
 	"maps-brightgrassland": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/7/75/Map_K0009.webp?540?720",
 	"maps-lava": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/2f/Map_K0010.webp?540?720",
+	"maps-dreamcastle": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/c3/Map_K0011.webp?540?720",
+	"maps-nightmarecastle": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/03/Map_K0012.webp?540?720",
 	# AR-D elements
 	"maps-white-wall": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b9/Wall_normal_W_U.png?120?120",
 	"maps-white-crumbled-wall": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/1f/Wall_normal_Pillar_1.png?120?120",
