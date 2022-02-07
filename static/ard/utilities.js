@@ -37,8 +37,10 @@ function changemap() {
 			if (tiletype.indexOf("wall") != -1) {
 				document.getElementById(tileid).style.background = 'url("/common/other/maps-' + tiletype + '.webp")';
 			} else if (tiletype == "water") {
+				document.getElementById(tileid).style.background = '';
 				mapcanvas.style.background = '#195687 url("/common/other/maps-' + map + '.webp")';
 			} else if (tiletype == "lava") {
+				document.getElementById(tileid).style.background = '';
 				mapcanvas.style.background = '#ffbd23 url("/common/other/maps-' + map + '.webp")';
 			} else {
 				document.getElementById(tileid).style.background = '';
