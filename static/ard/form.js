@@ -177,15 +177,15 @@ function drop(ev) {
 		return;
 	}
 	// If the data comes from a hero and the target tile is not in rows 0 or 1 we can't do it either.
-	if (document.getElementById(data).className == "hero" && parseInt(ev.target.id[0]) > 1) {
+	if (document.getElementById(data).className == "hero" && parseInt(targettile.id[0]) > 1) {
 		return;
 	}
 	// If the target already contains a child structure or hero we must attempt to relocate it first
 	if (targettile.lastChild) {
 		// If the parent of the dragged element is a cell try to swap their childs
 		if (document.getElementById(data).parentElement.className == "cell") {
-			// For structures is fine to always relocate
-			if (targettile.lastChild.className == "structure") {
+			// For structures is fine to always relocate unless the new child is a hero and the target outside the 0,1 rows
+			if (targettile.lastChild.className == "structure" && !(document.getElementById(data).className == "hero" && parseInt(targettile.id[0]) > 1)) {
 				document.getElementById(data).parentElement.appendChild(targettile.lastChild);
 			// If the replaced child is a hero make sure her destination on swap is a valid row
 			} else if (targettile.lastChild.className == "hero" && parseInt(document.getElementById(data).parentElement.id[0]) < 2) {

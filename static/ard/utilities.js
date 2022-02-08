@@ -30,20 +30,30 @@ function download() {
 function changemap() {
 	map = selectmap.value;
 	mapcanvas.style.background = 'url("/common/other/maps-' + map + '.webp")';
-	for (i = 0; i < 6; i++) {
-		for (j = 0; j < 6; j++) {
-			tileid = i + "" + j;
+	for (a = 0; a < 6; a++) {
+		for (b = 0; b < 6; b++) {
+			tileid = a + "" + b;
+			tile = document.getElementById(tileid);
 			tiletype = other["maps"][map][tileid] ? other["maps"][map][tileid] : "nothing";
 			if (tiletype.indexOf("wall") != -1) {
-				document.getElementById(tileid).style.background = 'url("/common/other/maps-' + tiletype + '.webp")';
+				tile.style.background = 'url("/common/other/maps-' + tiletype + '.webp")';
 			} else if (tiletype == "water") {
-				document.getElementById(tileid).style.background = '';
+				tile.style.background = '';
 				mapcanvas.style.background = '#195687 url("/common/other/maps-' + map + '.webp")';
 			} else if (tiletype == "lava") {
-				document.getElementById(tileid).style.background = '';
+				tile.style.background = '';
 				mapcanvas.style.background = '#ffbd23 url("/common/other/maps-' + map + '.webp")';
 			} else {
-				document.getElementById(tileid).style.background = '';
+				tile.style.background = '';
+			}
+			// If the tiletype is not nothing that means we shouldn't have anything there
+			if (tile.firstChild && tiletype != "nothing") {
+				// Try to relocate the item
+				relocated = relocate(tile.lastChild);
+				// If we failed to relocate delete it
+				if (!relocated) {
+					tile.removeChild(tile.lastChild);
+				}
 			}
 		}
 	}
