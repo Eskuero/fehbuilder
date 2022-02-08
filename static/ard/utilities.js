@@ -153,6 +153,45 @@ function clearmap() {
 	}
 }
 
+function relocate(item) {
+	// Get current position
+	currenttile = parseInt(item.parentElement.id);
+	// First generate suspected adjacent spaces and try to relocate there in order (left, right, top, bottom, top-left, top-right, bottom-left, bottom-right)
+	adjacent = [
+		(currenttile - 1).toString().padStart(2, '0'),
+		(currenttile + 1).toString().padStart(2, '0'),
+		(currenttile - 10).toString().padStart(2, '0'),
+		(currenttile + 10).toString().padStart(2, '0'),
+		(currenttile - 11).toString().padStart(2, '0'),
+		(currenttile - 9).toString().padStart(2, '0'),
+		(currenttile + 9).toString().padStart(2, '0'),
+		(currenttile + 11).toString().padStart(2, '0')
+	];
+	for (i = 0; i < adjacent.length; i++) {
+		// If the item is a hero and the supposedly adjacent tile is not row 0 or 1 skip this iteration
+		if (item.className == "hero" && parseInt(adjacent[i][0]) > 1) {
+			continue;
+		}
+		// If the tile exists proceed
+		if (document.getElementById(adjacent[i])) {
+			// If the tile is not occupied and not a reserved terrain relocate it and tell the calling function inmediately
+			if (!other["maps"][selectmap.value][adjacent[i]] && !document.getElementById(adjacent[i]).firstChild) {
+				document.getElementById(adjacent[i]).appendChild(item);
+				return true;
+			}
+		}
+	}
+	// If we ended the entire loop with a failure report it background
+	return false;
+}
+
+function deleteitem(caller) {
+	tile = document.getElementById(caller.getAttribute("selectedtile"))
+	if (tile.lastChild) {
+		tile.removeChild(tile.lastChild);
+	}
+	document.getElementById("updatedialog").style.display = "none";
+}
 
 function iconvisibility(caller) {
 	// If we are only modifying an specific icon check with the caller
