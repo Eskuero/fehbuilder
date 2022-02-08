@@ -228,17 +228,5 @@ function populate(select, data, clean, previousvalue = "None") {
 	}
 }
 
-function clearmap() {
-	tiles = document.getElementsByTagName("td");
-	for (i = 0; i < tiles.length; i++) {
-		if (tiles[i].lastChild) {
-			// Do not delete fortress or aether structs
-			if (!["aetheramphorae", "aetherfountain", "fortress"].includes(tiles[i].lastChild.id)) {
-				tiles[i].removeChild(tiles[i].lastChild);
-			}
-		}
-	}
-}
-
 function statictranslations() {
 }

@@ -141,6 +141,19 @@ function pastestructure(caller) {
 	document.getElementById("updatedialog").style.display = "none";
 }
 
+function clearmap() {
+	tiles = document.getElementsByClassName("cell");
+	for (i = 0; i < tiles.length; i++) {
+		if (tiles[i].lastChild) {
+			// Do not delete fortress or aether structs
+			if (!["aetheramphorae", "aetherfountain", "fortress"].includes(tiles[i].lastChild.id)) {
+				tiles[i].removeChild(tiles[i].lastChild);
+			}
+		}
+	}
+}
+
+
 function iconvisibility(caller) {
 	// If we are only modifying an specific icon check with the caller
 	if (caller) {
