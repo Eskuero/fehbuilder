@@ -173,12 +173,27 @@ function drag(ev) {
 
 function drop(ev) {
 	ev.preventDefault();
+	// We need to do a variety of checks before even attempting to paste an item
+	targettile = ev.target;
 	var data = ev.dataTransfer.getData("text");
-	// Only copy if the target doesn't have content already and is a valid tile (for characters this also means only rows 0 and 1
-	if (ev.target.lastChild || other["maps"][selectmap.value][ev.target.id] || (data.substring(0, 3) == "PID" && parseInt(ev.target.id[0]) > 1) || ["structure", "hero"].includes(ev.target.className)) {
+	// If the target is an image this means we are wrongly trying to drop it inside a child item so change the target to the parent
+	if (targettile.tagName == "IMG") {
+		targettile = targettile.parentElement;
+	}
+	// First, if the target is a reserved tile we skip it completely
+	if (other["maps"][selectmap.value][targettile.id]) {
 		return;
 	}
-	ev.target.appendChild(document.getElementById(data));
+	// If the target already contains a child structure or hero we must attempt to relocate it first
+	if (targettile.lastChild) {
+		// relocate()
+		return;
+	}
+	// If the data comes from a hero and the target tile is not in rows 0 or 1 we can't do it either.
+	if (document.getElementById(data).className == "hero" && parseInt(ev.target.id[0]) > 1) {
+		return;
+	}
+	targettile.appendChild(document.getElementById(data));
 }
 
 function populate(select, data, clean, previousvalue = "None") {
