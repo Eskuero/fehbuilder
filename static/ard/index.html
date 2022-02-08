@@ -124,27 +124,10 @@
 			</div>
 			<div class="form">
 				<div class="additionaloptions">
-					<button onclick="clearmap()" class="button">Clear all</button>
+					<button onclick="clearmap()" class="button">Clear</button>
 					<button onclick="download()" class="button">Download</button>
-					<div class="links">
-						<a href="/">
-							<img class="img-fluid" src="/common/assets/home.webp"/>
-						</a>
-						<a href="https://github.com/Eskuero/fehbuilder" target="blank">
-							<img class="img-fluid" src="/common/assets/github.webp"/>
-						</a>
-						<a href="https://discord.gg/fireemblemheroes" target="blank">
-							<img class="img-fluid" src="/common/assets/discord.webp"/>
-						</a>
-					</div>
+					<button onclick="showhelp()" class="button">Help</button>
 				</div>
-				<h2>Instructions</h2>
-				<ul>
-					<li>Click a tile to show a dialog where you can choose a unit or structure.</li>
-					<li>You can drag and drop between tiles as long as is valid content.</li>
-					<li>Clean current setup or download a picture of it using the buttons at the top.</li>
-					<li>Structures are provided below as well to drag and drop with ease.</li>
-				</ul>
 				<h2>Options</h2>
 				<section>
 					<div class="row-property single">
@@ -166,17 +149,28 @@
 							</select>
 						</div>
 					</div>
-					<div class="additionaloptions" style="justify-content: initial">
-						<label>
-							<input type="checkbox" id="showweapon" onchange="iconvisibility(this)" checked>Weapon
-						</label>
-						<label>
-							<input type="checkbox" id="showmovement" onchange="iconvisibility(this)" checked>Move
-						</label>
-						<label>
-							<input type="checkbox" id="showblessing" onchange="iconvisibility(this)" checked>Blessing
-						</label>
+					<div class="row-property single">
+						<img class="imagelabel" src="/common/assets/brush.webp" title="Art style"/>
+						<div>
+							<select class="select-without-search" id="artstyle" onchange="changeart()">
+								<option value="sprites-idle">Sprite (Idle)</option>
+								<option value="sprites">Sprite (Battle)</option>
+								<option value="hd-faces">Face</option>
+							</select>
+						</div>
 					</div>
+				</section>
+				<h2>Additional icons</h2>
+				<section class="additionaloptions">
+					<label>
+						<input type="checkbox" id="showweapon" onchange="iconvisibility(this)" checked>Weapon
+					</label>
+					<label>
+						<input type="checkbox" id="showmovement" onchange="iconvisibility(this)" checked>Move
+					</label>
+					<label>
+						<input type="checkbox" id="showblessing" onchange="iconvisibility(this)" checked>Blessing
+					</label>
 				</section>
 				<h2>Structures</h2>
 				<section id="results">
@@ -201,6 +195,17 @@
 					<div class="structure" draggable="true" ondragstart="drag(event)" id="field"><img src="/common/other/maps-field.webp" draggable="false"></div>
 					<div class="structure" draggable="true" ondragstart="drag(event)" id="inn"><img src="/common/other/maps-inn.webp" draggable="false"></div>
 				</section>
+				<div class="links">
+					<a href="/">
+						<img class="img-fluid" src="/common/assets/home.webp"/>
+					</a>
+					<a href="https://github.com/Eskuero/fehbuilder" target="blank">
+						<img class="img-fluid" src="/common/assets/github.webp"/>
+					</a>
+					<a href="https://discord.gg/fireemblemheroes" target="blank">
+						<img class="img-fluid" src="/common/assets/discord.webp"/>
+					</a>
+				</div>
 			</div>
 		</div>
 		<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>

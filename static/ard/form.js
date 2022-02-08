@@ -15,6 +15,7 @@
 var units, skills, other;
 // All selects we have available
 selectheroes = document.getElementById('selectheroes');
+selectartstyle = document.getElementById('artstyle');
 selectstructure = document.getElementById('selectstructure');
 selectmap = document.getElementById("mapselect");
 
@@ -239,6 +240,10 @@ function populate(select, data, clean, previousvalue = "None") {
 	if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
 		select.value = previousvalue;
 	}
+}
+
+function showhelp() {
+	alert("These are some instructions and explanations for the AR-D Map Builder:\n\n- Click a tile to show a dialog where you can choose a unit or structure.\n\n- You can drag and drop between tiles as long as is valid content.\n\n- Structures are provided below as well to drag and drop with ease.\n\n");
 }
 
 function statictranslations() {

@@ -77,7 +77,7 @@ function pasteunit(caller) {
 		item.addEventListener("dragstart", function(event) {drag(event)});
 		// Add the hero as an image
 		hero = document.createElement('img');
-		hero.src = "/common/sprites-idle/" + option + ".webp";
+		hero.src = "/common/" + selectartstyle.value + "/" + option + ".webp";
 		// Once the hero image is loaded apply proper styles to make it fit better
 		hero.addEventListener("load", function(event) {herosize(event.target)});
 		hero.draggable = false;
@@ -110,13 +110,24 @@ function herosize(caller) {
 	hero = caller.parentElement.id.split("-")[0]
 	// By default set the height to 100% of the cell
 	height = 100;
-	// Increase the size a 10% for mounted units
-	if ([2,3].includes(units[hero]["moveType"])) {
-		height += 10;
-	} else {
-		height -= 5;
+	// We do some adjustments when using sprites
+	if (selectartstyle.value.indexOf("sprites") != -1) {
+		// Increase the size a 10% for mounted units
+		if ([2,3].includes(units[hero]["moveType"])) {
+			height += 10;
+		} else {
+			height -= 5;
+		}
 	}
 	caller.style.height = height + "%";
+}
+
+function changeart() {
+	heroes = document.getElementsByClassName("hero");
+	artstyle = selectartstyle.value;
+	for (i = 0; i < heroes.length; i++) {
+		heroes[i].firstChild.src = "/common/" + artstyle + "/" + heroes[i].id.split("-")[0] + ".webp";
+	}
 }
 
 function pastestructure(caller) {
