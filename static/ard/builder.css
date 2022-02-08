@@ -67,15 +67,15 @@ body {
 .structure {
 	height: calc(var(--landscape) - 1vh);
 	width: calc(var(--landscape) - 1vh);
-	background-repeat: no-repeat !important;
-	background-size: contain !important;
-	background-position: center center !important;
 }
 .structure, .hero {
 	position: relative;
 	display: flex;
 	align-items: end;
 	justify-content: center;
+}
+.structure > img {
+	height: 100%;
 }
 .hero {
 	height: 95%;

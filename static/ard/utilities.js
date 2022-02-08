@@ -49,7 +49,6 @@ function changemap() {
 	}
 }
 
-
 function pasteunit(caller) {
 	option = caller.value;
 	classname = "hero";
@@ -68,7 +67,6 @@ function pasteunit(caller) {
 		item.addEventListener("dragstart", function(event) {drag(event)});
 		// Add the hero as an image
 		hero = document.createElement('img');
-		//weapon.className = "iconinfo weapon";
 		hero.src = "/common/sprites-idle/" + option + ".webp";
 		// Once the hero image is loaded apply proper styles to make it fit better
 		hero.addEventListener("load", function(event) {herosize(event.target)});
@@ -122,10 +120,14 @@ function pastestructure(caller) {
 	if (option != "None") {
 		var item = document.createElement('div');
 		item.className = "structure";
-		item.style.background = 'url("/common/other/maps-' + option + '.webp")';
 		item.draggable = true;
 		item.id = option;
 		item.addEventListener("dragstart", function(event) {drag(event)});
+		// Add the structure as an image
+		structure = document.createElement('img');
+		structure.src = "/common/other/maps-" + option + ".webp";
+		structure.draggable = false;
+		item.appendChild(structure);
 		// In the case of structures check if the one we are placing exists under results and delete that one
 		results = document.getElementById("results").children;
 		for (i = 0; i < results.length; i++) {
