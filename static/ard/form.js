@@ -101,6 +101,9 @@ function init() {
 	// Setup map background
 	changemap();
 
+	// Scan the map to generate limits
+	scan();
+
 	// Populate hero select
 	populate(selectheroes, units, true);
 }
@@ -116,14 +119,31 @@ function updatedialog(caller) {
 	} else {
 		selectstructure.value = "None";
 	}
-	// Loop through all structures with their class and disable them to avoid adding duplicates
+	// Loop through all structures with their class and disable them when necessary
 	structures = document.getElementsByClassName("structure");
 	todisable = [];
 	for (j = 0; j < selectstructure.options.length; j++) {
 		selectstructure.options[j].disabled = false;
 		for (i = 0; i < structures.length; i++) {
+			// Disable duplicates
 			if (selectstructure.options[j].value == structures[i].id && structures[i].parentElement.id != "results") {
 				todisable.push(selectstructure.options[j]);
+			}
+			// Don't allow more than six defensive structures
+			if (selectstructure.options[j].getAttribute("structtype") == "defensive" && maplimits["defensive"].length >= 6) {
+				// If the item already in the cell is a defensive structure don't disable them to allow replacing
+				typeofchild = caller.firstChild ? caller.firstChild.getAttribute("structtype") : "none";
+				if (typeofchild != "defensive") {
+					todisable.push(selectstructure.options[j]);
+				}
+			}
+			// Don't allow more than one school
+			if (selectstructure.options[j].value.indexOf("school") != -1 && maplimits["schooled"]) {
+				// If the item already in the cell is a school don't disable them to allow replacing
+				typeofchild = caller.firstChild ? caller.firstChild.id : "none";
+				if (typeofchild.indexOf("school") == -1) {
+					todisable.push(selectstructure.options[j]);
+				}
 			}
 		}
 	}
@@ -142,7 +162,18 @@ function updatedialog(caller) {
 	if (parseInt(caller.id[0]) > 1) {
 		selectheroes.disabled = true;
 	} else {
-		selectheroes.disabled = false;
+		// If the tile we are selecting contains a hero allow modifying it always.
+		// FIXME: If you go until the 7 unit limit you will be allowed to replace the mythic who enables the extra slot with a normal hero
+		typeofchild = caller.firstChild ? caller.firstChild.className : "none";
+		if (typeofchild == "hero") {
+			selectheroes.disabled = false;
+		// If not a hero check if we can add new heroes or if it goes over the limit
+		} else if ((!maplimits["extrae"] && maplimits["heroes"].length >= 6) || (maplimits["extrae"] && maplimits["heroes"].length >= 7)) {
+			selectheroes.disabled = true;
+		// For any other circumstance just enable it
+		} else {
+			selectheroes.disabled = false;
+		}
 	}
 	// Repopulate the hero select with the option choosen for that tile if already exists
 	restore = caller.lastChild ? caller.lastChild.id.split("-")[0] : "None";
@@ -168,7 +199,18 @@ function drop(ev) {
 	ev.preventDefault();
 	// We need to do a variety of checks before even attempting to paste an item
 	targettile = ev.target;
-	var data = ev.dataTransfer.getData("text");
+	var data = document.getElementById(ev.dataTransfer.getData("text"));
+	// If the data to be dropped is an structure check if it's not already limited in amount of type
+	if (data.className == "structure") {
+		// If it's of type defensive and we already have six different of those deny the drop
+		if (data.getAttribute("structtype") == "defensive" && maplimits["defensive"].length >= 6 && !maplimits["defensive"].includes(data.id)) {
+			return;
+		}
+		// If it's a school and we already have a different one deny the drop
+		if (data.id.indexOf("school") != -1 && maplimits["schooled"] && !maplimits["defensive"].includes(data.id)) {
+			return;
+		}
+	}
 	// If the target isn't a cell we must iterate up until we find it
 	while (targettile.className != "cell") {
 		targettile = targettile.parentElement;
@@ -178,19 +220,19 @@ function drop(ev) {
 		return;
 	}
 	// If the data comes from a hero and the target tile is not in rows 0 or 1 we can't do it either.
-	if (document.getElementById(data).className == "hero" && parseInt(targettile.id[0]) > 1) {
+	if (data.className == "hero" && parseInt(targettile.id[0]) > 1) {
 		return;
 	}
 	// If the target already contains a child structure or hero we must attempt to relocate it first
 	if (targettile.lastChild) {
 		// If the parent of the dragged element is a cell try to swap their childs
-		if (document.getElementById(data).parentElement.className == "cell") {
+		if (data.parentElement.className == "cell") {
 			// For structures is fine to always relocate unless the new child is a hero and the target outside the 0,1 rows
-			if (targettile.lastChild.className == "structure" && !(document.getElementById(data).className == "hero" && parseInt(targettile.id[0]) > 1)) {
-				document.getElementById(data).parentElement.appendChild(targettile.lastChild);
+			if (targettile.lastChild.className == "structure" && !(data.className == "hero" && parseInt(targettile.id[0]) > 1)) {
+				data.parentElement.appendChild(targettile.lastChild);
 			// If the replaced child is a hero make sure her destination on swap is a valid row
-			} else if (targettile.lastChild.className == "hero" && parseInt(document.getElementById(data).parentElement.id[0]) < 2) {
-				document.getElementById(data).parentElement.appendChild(targettile.lastChild);
+			} else if (targettile.lastChild.className == "hero" && parseInt(data.parentElement.id[0]) < 2) {
+				data.parentElement.appendChild(targettile.lastChild);
 			// Otherwise just relocate it
 			} else {
 				relocated = relocate(targettile.lastChild);
@@ -207,7 +249,52 @@ function drop(ev) {
 			}
 		}
 	}
-	targettile.appendChild(document.getElementById(data));
+	targettile.appendChild(data);
+	// After appending re-scan the map again to see limits
+	scan();
+}
+
+function scan() {
+	// Map info (to limit number of structures/heroes placed)
+	maplimits = {
+		// Mandatory structures
+		"mandatory": [],
+		// Defensive structures
+		"defensive": [],
+		// Trap structures
+		"trap": [],
+		// Decorative structures
+		"decorative": [],
+		// Amount of heroes
+		"heroes": [],
+		// Extra slot?
+		"extrae": false,
+		// Already one school?
+		"schooled": false
+	}
+	structures = document.getElementsByClassName("structure");
+	heroes = document.getElementsByClassName("hero");
+	// Store structs in their respective category (skipping the ones outside)
+	for (i = 0; i < structures.length; i++) {
+		if (structures[i].parentElement.className == "cell") {
+			structid = structures[i].id;
+			maplimits[structures[i].getAttribute("structtype")].push(structid);
+			// If the struct is a school mark it
+			if (structid.indexOf("school") != -1) {
+				maplimits["schooled"] = true;
+			}
+		}
+	}
+	// Store heroes
+	for (i = 0; i < heroes.length; i++) {
+		maplimits["heroes"].push(heroes[i].id);
+		heroid = heroes[i].id.split("-")[0];
+		// If the hero is preblessed for dark or anima and has a extrae variant it can provide an additional slot in AR-D
+		variant = other["blessed"][heroid] ? ([6,8].includes(other["blessed"][heroid]["blessing"]) ? other["blessed"][heroid]["variant"] : "none") : "none";
+		if (variant.indexOf("extrae") != -1) {
+			maplimits["extrae"] = true;
+		}
+	}
 }
 
 function populate(select, data, clean, previousvalue = "None") {

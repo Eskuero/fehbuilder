@@ -80,7 +80,7 @@ def work():
 		"blessed": {
 			hero: {
 				property: value
-				for property, value in properties.items() if property in ["blessing"]
+				for property, value in properties.items() if property in ["blessing", "variant"]
 			}
 			for hero, properties in other["blessed"].items()
 		},

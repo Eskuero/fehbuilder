@@ -104,6 +104,8 @@ function pasteunit(caller) {
 	}
 	// Hide the dialog now
 	document.getElementById("updatedialog").style.display = "none";
+	// After appending re-scan the map again to see limits
+	scan();
 }
 
 function herosize(caller) {
@@ -143,6 +145,7 @@ function pastestructure(caller) {
 		item.className = "structure";
 		item.draggable = true;
 		item.id = option;
+		item.setAttribute("structtype", caller.selectedOptions[0].getAttribute("structtype"));
 		item.addEventListener("dragstart", function(event) {drag(event)});
 		// Add the structure as an image
 		structure = document.createElement('img');
@@ -160,6 +163,8 @@ function pastestructure(caller) {
 	}
 	// Hide the dialog now
 	document.getElementById("updatedialog").style.display = "none";
+	// After appending re-scan the map again to see limits
+	scan();
 }
 
 function clearmap() {
@@ -167,11 +172,13 @@ function clearmap() {
 	for (i = 0; i < tiles.length; i++) {
 		if (tiles[i].lastChild) {
 			// Do not delete fortress or aether structs
-			if (!["aetheramphorae", "aetherfountain", "fortress"].includes(tiles[i].lastChild.id)) {
+			if (tiles[i].lastChild.getAttribute("structtype") != "mandatory") {
 				tiles[i].removeChild(tiles[i].lastChild);
 			}
 		}
 	}
+	// After clearing re-scan the map again to see limits
+	scan();
 }
 
 function relocate(item) {
@@ -212,6 +219,8 @@ function deleteitem(caller) {
 		tile.removeChild(tile.lastChild);
 	}
 	document.getElementById("updatedialog").style.display = "none";
+	// After deleting re-scan the map again to see limits
+	scan();
 }
 
 function iconvisibility(caller) {
