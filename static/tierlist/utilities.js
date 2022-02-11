@@ -229,12 +229,12 @@ function savesave() {
 		for (i = 0; i < tiers.length; i++) {
 			// Retrieve all data we need
 			tiername = tiers[i].children[0].innerHTML;
-			tiercolor = tiers[i].children[0].style.backgroundColor;
+			tiercolor = tiers[i].children[2].firstChild.value;
 			tiercontent = [];
 			for (j = 0; j < tiers[i].children[1].children.length; j++) {
 				tiercontent.push(tiers[i].children[1].children[j].id);
 			}
-			save["tierlist"].push({"color": rgb2hex(tiercolor), "name": tiername, "content": tiercontent});
+			save["tierlist"].push({"color": tiercolor, "name": tiername, "content": tiercontent});
 		}
 		// Store it on both temporal and localstorage
 		saves[target] = save;

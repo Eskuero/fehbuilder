@@ -109,9 +109,6 @@ function drop(ev) {
 	target.appendChild(document.getElementById(data));
 }
 
-// Function to convert RGB to HEX
-const rgb2hex = (rgb) => `#${rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/).slice(1).map(n => parseInt(n, 10).toString(16).padStart(2, '0')).join('')}`
-
 function populate() {
 	// First delete all currently rendered
 	while (rendered.lastChild) {
