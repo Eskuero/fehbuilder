@@ -171,8 +171,8 @@ function clearmap() {
 	tiles = document.getElementsByClassName("cell");
 	for (i = 0; i < tiles.length; i++) {
 		if (tiles[i].lastChild) {
-			// Do not delete fortress or aether structs
-			if (tiles[i].lastChild.getAttribute("structtype") != "mandatory") {
+			// Do not delete fortress or aether structs unless on cheat mode
+			if (tiles[i].lastChild.getAttribute("structtype") != "mandatory" || selectcheats.checked) {
 				tiles[i].removeChild(tiles[i].lastChild);
 			}
 		}

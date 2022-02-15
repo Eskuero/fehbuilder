@@ -18,6 +18,7 @@ selectheroes = document.getElementById('selectheroes');
 selectartstyle = document.getElementById('artstyle');
 selectstructure = document.getElementById('selectstructure');
 selectmap = document.getElementById("mapselect");
+selectcheats = document.getElementById("cheats");
 
 // Checkboxes
 checkshowweapon = document.getElementById("showweapon");
@@ -113,12 +114,17 @@ function updatedialog(caller) {
 	if (caller.lastChild) {
 		if (caller.lastChild.className == "structure") {
 			selectstructure.value = caller.lastChild.id;
+			// If the struct is mandatory and cheats are not enabled do not show the dialog at all
+			if (caller.lastChild.getAttribute("structtype") == "mandatory" && !selectcheats.checked) {
+				return;
+			}
 		} else {
 			selectstructure.value = "None";
 		}
 	} else {
 		selectstructure.value = "None";
 	}
+
 	// Loop through all structures with their class and disable them when necessary
 	structures = document.getElementsByClassName("structure");
 	todisable = [];
@@ -147,33 +153,42 @@ function updatedialog(caller) {
 			}
 		}
 	}
-	for (i = 0; i < todisable.length; i++) {
-		todisable[i].disabled = true;
+	// If cheats are enabled we don't care about this
+	if (!selectcheats.checked) {
+		for (i = 0; i < todisable.length; i++) {
+			todisable[i].disabled = true;
+		}
 	}
 
 	// Check the map tile to enable or disable certain aspects
 	map = selectmap.value;
 	tiletype = other["maps"][map][caller.id] ? other["maps"][map][caller.id] : "nothing";
 	// If the tile if not nothing it means we can't place shit there so stop right away
-	if (tiletype != "nothing") {
+	if (tiletype != "nothing" && !selectcheats.checked) {
 		return;
 	}
-	// Arriving here the tile isn't occupied but if the row isn't 0 or 1 we disable the hero picker as the team can't be there
-	if (parseInt(caller.id[0]) > 1) {
-		selectheroes.disabled = true;
-	} else {
-		// If the tile we are selecting contains a hero allow modifying it always.
-		// FIXME: If you go until the 7 unit limit you will be allowed to replace the mythic who enables the extra slot with a normal hero
-		typeofchild = caller.firstChild ? caller.firstChild.className : "none";
-		if (typeofchild == "hero") {
-			selectheroes.disabled = false;
-		// If not a hero check if we can add new heroes or if it goes over the limit
-		} else if ((!maplimits["extrae"] && maplimits["heroes"].length >= 6) || (maplimits["extrae"] && maplimits["heroes"].length >= 7)) {
+
+	// If cheats are enabled we don't care about this
+	if (!selectcheats.checked) {
+		// Arriving here the tile isn't occupied but if the row isn't 0 or 1 we disable the hero picker as the team can't be there
+		if (parseInt(caller.id[0]) > 1) {
 			selectheroes.disabled = true;
-		// For any other circumstance just enable it
 		} else {
-			selectheroes.disabled = false;
+			// If the tile we are selecting contains a hero allow modifying it always.
+			// FIXME: If you go until the 7 unit limit you will be allowed to replace the mythic who enables the extra slot with a normal hero
+			typeofchild = caller.firstChild ? caller.firstChild.className : "none";
+			if (typeofchild == "hero") {
+				selectheroes.disabled = false;
+			// If not a hero check if we can add new heroes or if it goes over the limit
+			} else if ((!maplimits["extrae"] && maplimits["heroes"].length >= 6) || (maplimits["extrae"] && maplimits["heroes"].length >= 7)) {
+				selectheroes.disabled = true;
+			// For any other circumstance just enable it
+			} else {
+				selectheroes.disabled = false;
+			}
 		}
+	} else {
+		selectheroes.disabled = false;
 	}
 	// Repopulate the hero select with the option choosen for that tile if already exists
 	restore = caller.lastChild ? caller.lastChild.id.split("-")[0] : "None";
@@ -200,31 +215,35 @@ function drop(ev) {
 	// We need to do a variety of checks before even attempting to paste an item
 	targettile = ev.target;
 	var data = document.getElementById(ev.dataTransfer.getData("text"));
-	// If the data to be dropped is an structure check if it's not already limited in amount of type
-	if (data.className == "structure") {
-		// If it's of type defensive and we already have six different of those deny the drop
-		if (data.getAttribute("structtype") == "defensive" && maplimits["defensive"].length >= 6 && !maplimits["defensive"].includes(data.id)) {
-			return;
-		}
-		// If it's a school and we already have a different one deny the drop
-		if (data.id.indexOf("school") != -1 && maplimits["schooled"] && !maplimits["defensive"].includes(data.id)) {
-			return;
-		}
-	}
+
 	// If the target isn't a cell we must iterate up until we find it
 	while (targettile.className != "cell") {
 		targettile = targettile.parentElement;
 	}
-	// First, if the target is a reserved tile we skip it completely
-	if (other["maps"][selectmap.value][targettile.id]) {
-		return;
-	}
-	// If the data comes from a hero and the target tile is not in rows 0 or 1 we can't do it either.
-	if (data.className == "hero" && parseInt(targettile.id[0]) > 1) {
-		return;
+	// If cheats are enabled we don't care about this
+	if (!selectcheats.checked) {
+		// First, if the target is a reserved tile we skip it completely
+		if (other["maps"][selectmap.value][targettile.id]) {
+			return;
+		}
+		// If the data comes from a hero and the target tile is not in rows 0 or 1 we can't do it either.
+		if (data.className == "hero" && parseInt(targettile.id[0]) > 1) {
+			return;
+		}
+		// If the data to be dropped is an structure check if it's not already limited in amount of type
+		if (data.className == "structure") {
+			// If it's of type defensive and we already have six different of those deny the drop
+			if (data.getAttribute("structtype") == "defensive" && maplimits["defensive"].length >= 6 && !maplimits["defensive"].includes(data.id)) {
+				return;
+			}
+			// If it's a school and we already have a different one deny the drop
+			if (data.id.indexOf("school") != -1 && maplimits["schooled"] && !maplimits["defensive"].includes(data.id)) {
+				return;
+			}
+		}
 	}
 	// If the target already contains a child structure or hero we must attempt to relocate it first
-	if (targettile.lastChild) {
+	if (targettile.lastChild && !selectcheats.checked) {
 		// If the parent of the dragged element is a cell try to swap their childs
 		if (data.parentElement.className == "cell") {
 			// For structures is fine to always relocate unless the new child is a hero and the target outside the 0,1 rows
@@ -241,6 +260,19 @@ function drop(ev) {
 					return;
 				}
 			}
+		} else {
+			relocated = relocate(targettile.lastChild);
+			// If we failed to relocate skip
+			if (!relocated) {
+				return;
+			}
+		}
+	// Much simpler logic for cheats enabled
+	} else if (targettile.lastChild && selectcheats.checked) {
+		// If the parent of the dragged element is a cell swap their childs
+		if (data.parentElement.className == "cell") {
+			data.parentElement.appendChild(targettile.lastChild);
+		// Otherwise just relocate it
 		} else {
 			relocated = relocate(targettile.lastChild);
 			// If we failed to relocate skip
