@@ -35,8 +35,15 @@ def work():
 					other["blessed"][entry["id_tag"]] = {
 						"blessing": entry["legendary"]["element"],
 						"boosts": [value for value in entry["legendary"]["bonus_effect"].values()],
-						"variant": "-".join([stat for stat, value in entry["legendary"]["bonus_effect"].items() if value > 0 and stat != "hp"]) + ("pairup" if entry["legendary"]["pair_up"] else ("-extrae" if entry["legendary"]["ae_extra"] else ""))
+						# First just add the stats bonuses
+						"variant": "-".join([stat for stat, value in entry["legendary"]["bonus_effect"].items() if value > 0 and stat != "hp"])
 					}
+					# Now add the pair-up mechanic with a separator if we are giving stats other than HP
+					if entry["legendary"]["pair_up"]:
+						other["blessed"][entry["id_tag"]]["variant"] += "-pairup" if other["blessed"][entry["id_tag"]]["variant"] else "pairup"
+					# Extra slots in AR always give out stats
+					if entry["legendary"]["ae_extra"]:
+						other["blessed"][entry["id_tag"]]["variant"] += "-extrae"
 				# If the unit doesn't have element but is of kind 2 or 3 is a duo hero
 				elif entry["legendary"]["kind"] in [2, 3]:
 					other["duo" if entry["legendary"]["kind"] == 2 else "resonant"].append(entry["id_tag"])

@@ -248,8 +248,8 @@ async function echoes() {
 	// If blessed print the icon
 	if (blessing) {
 		// If the hero is on the list of the blessed ones for that particular blessing it has icon variant defined (otherwise use the normal one)
-		variant = other["blessed"][hero] ? other["blessed"][hero]["variant"] : "normal";
-		blessingicon = other["images"]["blessing"][blessing-1][variant]
+		variant = other["blessed"][hero] ? other["blessed"][hero]["variant"] : false;
+		blessingicon = "/common/other/" + blessing + "-Blessing" + (variant ? "-" + variant : "") + ".webp";
 		await getimage(blessingicon).then(img => {
 			preview.drawImage(img, posX, posY, width, height);
 		});
@@ -488,16 +488,15 @@ async function condensed() {
 	duoresonance = other["duo"].includes(hero) ? "duo" : (other["resonant"].includes(hero) ? "resonance" : false);
 	// Depending on the combination of the duo/blessing status change the icon rendered, as well as it's position
 	if (blessing && duoresonance) {
-		// Duo heroes can't be pre-blessed, they have the normal variant of a manual bless
-		variant = "normal-" + duoresonance;
-		blessingicon = other["images"]["blessing"][blessing-1][variant]
+		// Duo heroes can't be pre-blessed, they at most have the normal variant of a manual bless
+		blessingicon = "/common/other/" + blessing + "-Blessing-" + duoresonance + ".webp"
 		await getimage(blessingicon).then(img => {
 			preview.drawImage(img, 90, 111);
 		});
 	} else if (blessing) {
 		// If the hero is on the list of the blessed ones for that particular blessing it has icon variant defined (otherwise use the normal one)
-		variant = other["blessed"][hero] ? other["blessed"][hero]["variant"] : "normal";
-		blessingicon = other["images"]["blessing"][blessing-1][variant + "-mini"];
+		variant = other["blessed"][hero] ? other["blessed"][hero]["variant"] : false;
+		blessingicon = "/common/other/" + blessing + "-Blessing" + (variant ? "-" + variant : "") + "-mini.webp";
 		if (variant == "normal") {
 			posX = 104; posY = 140;
 		} else {
@@ -822,8 +821,8 @@ async function myunit() {
 	// If blessed print the icon
 	if (blessing) {
 		// If the hero is on the list of the blessed ones for that particular blessing it has icon variant defined (otherwise use the normal one)
-		variant = other["blessed"][hero] ? other["blessed"][hero]["variant"] : "normal";
-		blessingicon = other["images"]["blessing"][blessing-1][variant]
+		variant = other["blessed"][hero] ? other["blessed"][hero]["variant"] : false;
+		blessingicon = "/common/other/" + blessing + "-Blessing" + (variant ? "-" + variant : "") + ".webp"
 		await getimage(blessingicon).then(img => {
 			preview.drawImage(img, posX, posY, width, height);
 		});
