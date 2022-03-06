@@ -497,7 +497,7 @@ async function condensed() {
 		// If the hero is on the list of the blessed ones for that particular blessing it has icon variant defined (otherwise use the normal one)
 		variant = other["blessed"][hero] ? other["blessed"][hero]["variant"] : false;
 		blessingicon = "/common/other/" + blessing + "-Blessing" + (variant ? "-" + variant : "") + "-mini.webp";
-		if (variant == "normal") {
+		if (!variant) {
 			posX = 104; posY = 140;
 		} else {
 			posX = 90; posY = 111;
