@@ -467,7 +467,7 @@ async function condensed() {
 	preview.strokeText(special, 480, 159); preview.fillText(special, 480, 159);
 
 	// Render all the passives
-	for (const [category, skill] of Object.entries(passives)) {
+	for (const [category, skill] of Object.entries(passives).reverse()) {
 		name = "-"
 		// If the passive doesn't exist skip
 		if (allpassives[skill]) {
