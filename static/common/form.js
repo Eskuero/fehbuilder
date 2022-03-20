@@ -186,6 +186,10 @@ function reset(section) {
 			selectboons.value = "None";
 			selectbanes.value = "None";
 			selectascendent.value = "None";
+			// Reset select blessings only if it's not locked (otherwise it means we have a mythic/legendary)
+			if (!selectblessings.disabled) {
+				selectblessings.value = "None";
+			}
 		break;
 		case "skills":
 			selectweapons.value = "None";
