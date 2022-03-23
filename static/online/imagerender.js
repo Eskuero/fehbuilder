@@ -403,10 +403,10 @@ async function condensed() {
 		if (statsnames[i] == "HP") {
 			// If the damage art is select we at least have less than half HP
 			currenthp = selectartstyle.value == "Damage" ? parseInt(statsmodifier[i] / 2) - 1 : statsmodifier[i];
-			currentcolor = selectartstyle.value == "Damage" ? 3 : numbertype;
+			currentcolor = selectartstyle.value == "Damage" ? 1 : 0;
 			// FIXME: This should use a different font for the HP numbers
-			printnumbers(preview, currenthp, currentcolor, 300, 70, "end", 1.4);
-			printnumbers(preview, statsmodifier[i], numbertype, 375, 74, "end");
+			printhpnumbers(preview, currenthp, currentcolor, 241, 70, 0.75);
+			printhpnumbers(preview, statsmodifier[i], numbertype, 332, 74, 0.55);
 		} else if (statsnames[i] == "Atk") {
 			printnumbers(preview, statsmodifier[i], numbertype, 279, 126, "end");
 		} else if (statsnames[i] == "Spd") {

@@ -121,6 +121,11 @@ async function reload(scroll = false) {
 			myunit();
 			break;
 		case "Condensed":
+			// Load the hpfont specifically since we will use it specifically on condensed layout
+			hpfont = undefined;
+			await getimage(other["images"]["other"]["hpfont"]).then(img => {
+				hpfont = img;
+			});
 			document.getElementById("fakecanvascond").style.display = "initial";
 			condensed();
 			break;

@@ -367,7 +367,7 @@ function printnumbers(canvas, characters, type, posX, posY, align, scale = 1) {
 			for (j = 0; j < numbers.length; j++) {
 				// This is the size that the number will take ()
 				width = numberfontrender["end"][numbers[j]] - numberfontrender["start"][numbers[j]];
-				// Since we are aligning to the end the actual drawing position on the X coordinate is the posX - width - offset
+				// Since we are aligning to the start the actual drawing position on the X coordinate is the posX + offsetX
 				trueposX = posX + offsetX;
 				// We must crop the numbers at a certain position depending on type and value
 				sourceX = numberfontrender["start"][numbers[j]]; sourceY = type * 28;
@@ -385,9 +385,33 @@ function printnumbers(canvas, characters, type, posX, posY, align, scale = 1) {
 		canvas.drawImage(numberfont, sourceX, sourceY, 22, 22, posX, posY, 22, 22);
 	}
 }
-
 // Position on the X coordinate at which each number of numberfont start and ends (for the Y coordinate it's a simple type x 28px)
 numberfontrender = {
 	"start": [0, 22, 45, 68, 90, 113, 136, 158, 181, 203],
 	"end": [22, 44, 67, 90, 112, 135, 158, 180, 203, 225]
+}
+
+// Function that prints certain numbers using numberfont spritesheet
+function printhpnumbers(canvas, characters, type, posX, posY, scale = 1) {
+	// Split the full number on individual ones
+	numbers = characters.toString().split("").map(Number);
+	// We have an offset that we must increment with every number to keep pushing each to the left and avoid overlaps
+	offsetX = 0;
+	for (j = 0; j < numbers.length; j++) {
+		// This is the size that the number will take
+		width = hpfontrender["end"][numbers[j]] - hpfontrender["start"][numbers[j]];
+		// Since we are aligning to the start the actual drawing position on the X coordinate is the posX + offsetX
+		trueposX = posX + offsetX;
+		// We must crop the numbers at a certain position depending on type and value
+		sourceX = hpfontrender["start"][numbers[j]]; sourceY = type * 50;
+		// Increase the offset before the next interation using the number width (-3 to make sure we fill the gaps)
+		offsetX += width * scale;
+		// Print the number
+		canvas.drawImage(hpfont, sourceX, sourceY, width, 50, trueposX, posY, width * scale, 50 * scale);
+	}
+}
+// Position on the X coordinate at which each number of numberhpfont start and ends (for the Y coordinate it's a simple type x 50px)
+hpfontrender = {
+	"start": [0, 43, 84, 127, 163, 206, 246, 288, 328, 370],
+	"end": [39, 71, 120, 161, 203, 241, 285, 325, 365, 406]
 }
