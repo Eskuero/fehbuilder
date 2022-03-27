@@ -76,7 +76,7 @@ function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers
 		truegrowth[ascendent] += 5;
 	}
 	// We loop as many times as merges we got to apply the boosts, we save in a variable the next to be updated index
-	stat = 0;
+	var stat = 0;
 	for (i = 0; i < merges; i++) {
 		// If we are neutral but merged we increase the first two stats twice on the initial merge (unless we have an ascendent boon on that stat)
 		truelevel1[sortedtruelevel1[stat][0]] += (boon || i > 0 || sortedtruelevel1[stat][0] == ascendent) ? 1 : 2;
@@ -98,7 +98,7 @@ function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers
 	}
 
 	// We loop as many times as dragonflowers we got to apply the boosts, we save in a variable the next to be updated index
-	stat = 0;
+	var stat = 0;
 	for (i = 0; i < flowers; i++) {
 		// If we are neutral but merged we increase the first two stats twice
 		truelevel1[sortedtruelevel1[stat][0]] += 1;
@@ -344,7 +344,7 @@ function printnumbers(canvas, characters, type, posX, posY, align, scale = 1) {
 				// Since we are aligning to the end the actual drawing position on the X coordinate is the posX - width - offset
 				let trueposX = posX - (width * scale + offsetX);
 				// We must crop the numbers at a certain position depending on type and value
-				let sourceX = numberfontrender["start"][numbers[j]]; sourceY = type * 28;
+				let sourceX = numberfontrender["start"][numbers[j]]; let sourceY = type * 28;
 				// Increase the offset before the next interation using the number width (-3 to make sure we fill the gaps)
 				offsetX += width * scale - 3;
 				// Print the number
@@ -357,7 +357,7 @@ function printnumbers(canvas, characters, type, posX, posY, align, scale = 1) {
 				// Since we are aligning to the start the actual drawing position on the X coordinate is the posX + offsetX
 				let trueposX = posX + offsetX;
 				// We must crop the numbers at a certain position depending on type and value
-				let sourceX = numberfontrender["start"][numbers[j]]; sourceY = type * 28;
+				let sourceX = numberfontrender["start"][numbers[j]]; let sourceY = type * 28;
 				// Increase the offset before the next interation using the number width (-3 to make sure we fill the gaps)
 				offsetX += width * scale - 3;
 				// Print the number
@@ -367,7 +367,7 @@ function printnumbers(canvas, characters, type, posX, posY, align, scale = 1) {
 	// Otherwise we are just printing a simple + or -
 	} else {
 		// We must crop the character at a certain position depending on type and value
-		var sourceX = characters == "+" ? 248 : 271; sourceY = 3 + (type * 6) + (type * 22);
+		var sourceX = characters == "+" ? 248 : 271; let sourceY = 3 + (type * 6) + (type * 22);
 		// Print the number
 		canvas.drawImage(numberfont, sourceX, sourceY, 22, 22, posX, posY, 22, 22);
 	}
