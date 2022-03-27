@@ -30,7 +30,7 @@ function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers
 		// We sort the level 1 stats to see the correct order to apply rarity stats
 		var sortedalmosttruelevel1 = dictsort(almosttruelevel1);
 		let increased = 0;
-		for (i = 0; i < sortedalmosttruelevel1.length; i++) {
+		for (let i = 0; i < sortedalmosttruelevel1.length; i++) {
 			let stat = sortedalmosttruelevel1[i][0];
 			// We ignore HP until 3 or 5 rarity
 			if (stat != "HP") {
@@ -77,10 +77,10 @@ function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers
 	}
 	// We loop as many times as merges we got to apply the boosts, we save in a variable the next to be updated index
 	var stat = 0;
-	for (i = 0; i < merges; i++) {
+	for (let i = 0; i < merges; i++) {
 		// If we are neutral but merged we increase the first two stats twice on the initial merge (unless we have an ascendent boon on that stat)
 		truelevel1[sortedtruelevel1[stat][0]] += (boon || i > 0 || sortedtruelevel1[stat][0] == ascendent) ? 1 : 2;
-		ascended = sortedtruelevel1[stat][0] == ascendent ? true : false;
+		let ascended = sortedtruelevel1[stat][0] == ascendent ? true : false;
 		stat = stat == 4 ? 0 : stat + 1;
 		truelevel1[sortedtruelevel1[stat][0]] += (boon || i > 0 || sortedtruelevel1[stat][0] == ascendent) ? 1 : 2;
 		ascended = sortedtruelevel1[stat][0] == ascendent ? true : ascended;
@@ -99,7 +99,7 @@ function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers
 
 	// We loop as many times as dragonflowers we got to apply the boosts, we save in a variable the next to be updated index
 	var stat = 0;
-	for (i = 0; i < flowers; i++) {
+	for (let i = 0; i < flowers; i++) {
 		// If we are neutral but merged we increase the first two stats twice
 		truelevel1[sortedtruelevel1[stat][0]] += 1;
 		stat = stat == 4 ? 0 : stat + 1;
@@ -243,7 +243,7 @@ function staticmodifiers(passives, summoner, buffs) {
 
 	var allies = {};
 	// For each ally selected add it to the dictionary
-	for (i = 0; i < selectallies.selectedOptions.length; i++) {
+	for (let i = 0; i < selectallies.selectedOptions.length; i++) {
 		let ally = selectallies.selectedOptions[i].value;
 		let amount = parseInt(document.getElementById(ally).value);
 		allies[ally] = amount;
@@ -338,7 +338,7 @@ function printnumbers(canvas, characters, type, posX, posY, align, scale = 1) {
 		var offsetX = 0;
 		// We invert the order of the loop depending on the type of alignment
 		if (align == "end") {
-			for (j = numbers.length - 1; j >= 0; j--) {
+			for (let j = numbers.length - 1; j >= 0; j--) {
 				// This is the size that the number will take
 				let width = numberfontrender["end"][numbers[j]] - numberfontrender["start"][numbers[j]];
 				// Since we are aligning to the end the actual drawing position on the X coordinate is the posX - width - offset
@@ -351,7 +351,7 @@ function printnumbers(canvas, characters, type, posX, posY, align, scale = 1) {
 				canvas.drawImage(numberfont, sourceX, sourceY, width, 28, trueposX, posY, width * scale, 28 * scale);
 			}
 		} else {
-			for (j = 0; j < numbers.length; j++) {
+			for (let j = 0; j < numbers.length; j++) {
 				// This is the size that the number will take ()
 				let width = numberfontrender["end"][numbers[j]] - numberfontrender["start"][numbers[j]];
 				// Since we are aligning to the start the actual drawing position on the X coordinate is the posX + offsetX
@@ -384,13 +384,13 @@ function printhpnumbers(canvas, characters, type, posX, posY, scale = 1) {
 	var numbers = characters.toString().split("").map(Number);
 	// We have an offset that we must increment with every number to keep pushing each to the left and avoid overlaps
 	var offsetX = 0;
-	for (j = 0; j < numbers.length; j++) {
+	for (let j = 0; j < numbers.length; j++) {
 		// This is the size that the number will take
 		let width = hpfontrender["end"][numbers[j]] - hpfontrender["start"][numbers[j]];
 		// Since we are aligning to the start the actual drawing position on the X coordinate is the posX + offsetX
 		let trueposX = posX + offsetX;
 		// We must crop the numbers at a certain position depending on type and value
-		let sourceX = hpfontrender["start"][numbers[j]]; sourceY = type * 50;
+		let sourceX = hpfontrender["start"][numbers[j]]; let sourceY = type * 50;
 		// Increase the offset before the next interation using the number width (-3 to make sure we fill the gaps)
 		offsetX += width * scale;
 		// Print the number

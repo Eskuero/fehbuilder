@@ -82,7 +82,7 @@ async function echoes() {
 	// First write the static text for each stat (normal anchoring)
 	preview.font = '20px FeH-Font'; preview.textAlign = 'end'; preview.textBaseline = "top"; preview.lineWidth = 6; preview.fillStyle = '#cd7b7b';
 	// Each stat name is pushed down by 49pixels with an initial offset of 805
-	for (i = 0; i < statsnames.length; i++) {
+	for (let i = 0; i < statsnames.length; i++) {
 		// The boon indicator varies depending of it being a boon, bane (without merges), neutral or ascendent
 		if (boon == statsnames[i]) {
 			var indicator = "+";
@@ -100,8 +100,8 @@ async function echoes() {
 			var indicator = "";
 		}
 		// Depending on the stat top margin varies a lot
-		var left = 67;
-		var down = (i * 30) + (1.3 * i) + 264;
+		let left = 67;
+		let down = (i * 30) + (1.3 * i) + 264;
 		preview.fillText(indicator + languages[language][statsstrings[i]].toUpperCase(), left, down);
 	}
 
@@ -138,15 +138,15 @@ async function echoes() {
 	});
 
 	// Fix stats, cannot go beyond 99 or below 0
-	for (i = 0; i < statsmodifier.length; i++) {
+	for (let i = 0; i < statsmodifier.length; i++) {
 		statsmodifier[i] = -1 < statsmodifier[i] ? (statsmodifier[i] < 100 ? statsmodifier[i] : 99) : 0;
 	}
 
 	// Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers).
-	for (i = 0; i < statsnames.length; i++) {
+	for (let i = 0; i < statsnames.length; i++) {
 		// Depending on the stat top margin varies a lot
-		var left = 107;
-		var down = (i * 30) + (1.3 * i) + 264;
+		let left = 107;
+		let down = (i * 30) + (1.3 * i) + 264;
 		// Depending of it's buffed or no the color of the text varies
 		preview.fillStyle = buffs[i] > 0 ? "#63e5ef" : (buffs[i] < 0 ? "#ff506e" : 'white');
 		preview.fillText(statsmodifier[i], left, down);
@@ -351,7 +351,7 @@ async function condensed() {
 	// First write the static text for each stat (normal anchoring)
 	preview.font = '23px FeH-Font'; preview.textAlign = 'start'; preview.textBaseline = "top"; preview.lineWidth = 6;
 	// Each stat name is pushed down by 49pixels with an initial offset of 805
-	for (i = 0; i < statsnames.length; i++) {
+	for (let i = 0; i < statsnames.length; i++) {
 		// The filling color varies depending of it being a boon, bane (without merges), neutral or ascendent
 		if (boon == statsnames[i]) {
 			preview.fillStyle = "#b1ecfa";
@@ -393,7 +393,7 @@ async function condensed() {
 	// Obtain the calculated stats to draw
 	var statsmodifier = statcalc(units[hero]["stats"], units[hero]["growths"], rarity, boon, bane, ascendent, merges, flowers);
 
-	var weapon = selectweapons.value == "None" ? false : selectweapons.value; refine = selectrefines.value == "None" ? false : selectrefines.value;
+	var weapon = selectweapons.value == "None" ? false : selectweapons.value; var refine = selectrefines.value == "None" ? false : selectrefines.value;
 	// We have a couple of stats modifiers based on weapon, summoner support, attire, bonus unit, visible buffs and maybe not completely parsed A/S skills that we must add
 	if (weapon) {
 		statsmodifier = statsmodifier.map(function (value, index) {
@@ -422,7 +422,7 @@ async function condensed() {
 	});
 
 	// Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers).
-	for (i = 0; i < statsnames.length; i++) {
+	for (let i = 0; i < statsnames.length; i++) {
 		// Decide type of font depending on if we buffer, debuffed or neutral
 		let numbertype = buffs[i] > 0 ? 2 : (buffs[i] < 0 ? 3 : 0);
 		// Depending on the stat position varies a lot
@@ -662,7 +662,7 @@ async function myunit() {
 	// First write the static text for each stat (normal anchoring)
 	preview.font = '25px FeH-Font'; preview.textAlign = 'start'; preview.textBaseline = "top"; preview.strokeStyle = '#0a2533';
 	// Each stat name is pushed down by 49pixels with an initial offset of 805
-	for (i = 0; i < statsnames.length; i++) {
+	for (let i = 0; i < statsnames.length; i++) {
 		// The filling color varies depending of it being a boon, bane (without merges), neutral or ascendent
 		if (boon == statsnames[i]) {
 			preview.fillStyle = "#b1ecfa";
@@ -718,12 +718,12 @@ async function myunit() {
 	});
 
 	// Fix stats, cannot go beyond 99 or below 0
-	for (i = 0; i < statsmodifier.length; i++) {
+	for (let i = 0; i < statsmodifier.length; i++) {
 		statsmodifier[i] = -1 < statsmodifier[i] ? (statsmodifier[i] < 100 ? statsmodifier[i] : 99) : 0;
 	}
 
 	// Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers).
-	for (i = 0; i < statsnames.length; i++) {
+	for (let i = 0; i < statsnames.length; i++) {
 		// Decide type of font depending on if we buffer, debuffed or neutral
 		let numbertype = buffs[i] > 0 ? 2 : (buffs[i] < 0 ? 3 : 0);
 		// Each stat name is pushed down by 49 pixels with an initial offset of 805

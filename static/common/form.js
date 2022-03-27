@@ -207,7 +207,7 @@ function reset(section) {
 		case "stats":
 			// Detect which section we are on
 			var options = document.getElementsByClassName("tabs")[0].children;
-			for (i = 1; i < options.length - 1; i++) {
+			for (let i = 1; i < options.length - 1; i++) {
 				if (options[i].className == "imagelabel selected") {
 					var selection = options[i].title;
 				}
@@ -244,7 +244,7 @@ function applybasekit() {
 	if (selectheroes.value == "None") {
 		return;
 	}
-	basekit = {
+	var basekit = {
 		"weapon": false,
 		"assist": false,
 		"special": false,
@@ -253,9 +253,9 @@ function applybasekit() {
 		"C": false
 	}
 	var fullkit = units[selectheroes.value]["basekit"];
-	for (i = 0; i < fullkit.length; i++) {
+	for (let i = 0; i < fullkit.length; i++) {
 		if (skills["weapons"][fullkit[i]]) {
-			for (j = 0; j < selectweapons.options.length; j++) {
+			for (let j = 0; j < selectweapons.options.length; j++) {
 				if (selectweapons.options[j].value == fullkit[i]) {
 					// If no weapon is added already save it
 					if (!basekit["weapon"]) {
@@ -267,31 +267,31 @@ function applybasekit() {
 				}
 			}
 		} else if (skills["assists"][fullkit[i]]) {
-			for (j = 0; j < selectassists.options.length; j++) {
+			for (let j = 0; j < selectassists.options.length; j++) {
 				if (selectassists.options[j].value == fullkit[i]) {
 					basekit["assist"] = fullkit[i];
 				}
 			}
 		} else if (skills["specials"][fullkit[i]]) {
-			for (j = 0; j < selectspecials.options.length; j++) {
+			for (let j = 0; j < selectspecials.options.length; j++) {
 				if (selectspecials.options[j].value == fullkit[i]) {
 					basekit["special"] = fullkit[i];
 				}
 			}
 		} else if (skills["passives"]["A"][fullkit[i]]) {
-			for (j = 0; j < selectA.options.length; j++) {
+			for (let j = 0; j < selectA.options.length; j++) {
 				if (selectA.options[j].value == fullkit[i]) {
 					basekit["A"] = fullkit[i];
 				}
 			}
 		} else if (skills["passives"]["B"][fullkit[i]]) {
-			for (j = 0; j < selectB.options.length; j++) {
+			for (let j = 0; j < selectB.options.length; j++) {
 				if (selectB.options[j].value == fullkit[i]) {
 					basekit["B"] = fullkit[i];
 				}
 			}
 		} else if (skills["passives"]["C"][fullkit[i]]) {
-			for (j = 0; j < selectC.options.length; j++) {
+			for (let j = 0; j < selectC.options.length; j++) {
 				if (selectC.options[j].value == fullkit[i]) {
 					basekit["C"] = fullkit[i];
 				}

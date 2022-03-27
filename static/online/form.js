@@ -279,8 +279,8 @@ function updateRefine() {
 	}
 	// Get the list of refines for that weapon
 	var refines = Object.keys(skills["weapons"][weapon]["refines"]);
-	for (i = 0; i < refines.length; i++) {
-		var opt = document.createElement('option');
+	for (let i = 0; i < refines.length; i++) {
+		let opt = document.createElement('option');
 		opt.value = refines[i];
 		opt.innerHTML = refines[i];
 		selectrefines.appendChild(opt);
@@ -294,7 +294,7 @@ function updateRefine() {
 function swapstat(caller, target) {
 	// Switch the selected option in the tabs by changing the background color
 	var options = document.getElementsByClassName("tabs")[0].children;
-	for (i = 1; i < options.length - 1; i++) {
+	for (let i = 1; i < options.length - 1; i++) {
 		if (options[i] == caller) {
 			options[i].className = "imagelabel selected";
 		} else {
@@ -304,7 +304,7 @@ function swapstat(caller, target) {
 
 	// If switching from a differently built section use their entire name (for now only legendary boosts)
 	var options = ["buffs", "pairups", "legendaries"];
-	for (i = 0; i < options.length; i++) {
+	for (let i = 0; i < options.length; i++) {
 		document.getElementById(options[i]).style.display = (options[i] == target) ? "initial" : "none";
 	}
 }
@@ -318,7 +318,7 @@ async function fillblessed(clean = false) {
 	// We need to know which options to restore unless called clean
 	var toberestored = [];
 	if (!clean) {
-		for (i = 0; i < selectallies.selectedOptions.length; i++) {
+		for (let i = 0; i < selectallies.selectedOptions.length; i++) {
 			toberestored.push(selectallies.selectedOptions[i].value);
 		}
 	}
@@ -351,8 +351,8 @@ function showallies(clean = false, allies = {}) {
 	// If clean that means we are receiving data from a buildslot restore and we cannot trust what's already defined
 	if (!clean) {
 		// Create inputs for every selected ally
-		for (i = 0; i < selectallies.selectedOptions.length; i++) {
-			var ally = selectallies.selectedOptions[i].value;
+		for (let i = 0; i < selectallies.selectedOptions.length; i++) {
+			let ally = selectallies.selectedOptions[i].value;
 			// If the ally already exists add the current value to prevent losing data
 			allies[ally] = document.getElementById(ally) ? document.getElementById(ally).value : 1;
 		}
@@ -363,25 +363,25 @@ function showallies(clean = false, allies = {}) {
 	}
 	// Loop through all the allies and add each option in groups of two
 	var alliesids = Object.keys(allies);
-	for (i = 0; i < alliesids.length; i = i + 2) {
+	for (let i = 0; i < alliesids.length; i = i + 2) {
 		// Major div element
-		var container = document.createElement("div");
+		let container = document.createElement("div");
 		container.className = "row-property double";
 		// Add the first element of this iteration
-		var element1img = document.createElement("img");
+		let element1img = document.createElement("img");
 		element1img.className = "imagelabel"; element1img.src = "/common/faces/" + alliesids[i] + ".webp";
 		container.appendChild(element1img);
-		var element1input = document.createElement("input");
+		let element1input = document.createElement("input");
 		// Create input number element using the blessed hero ID, the expected value, limits and event listeners
 		element1input.setAttribute("type", "number"); element1input.id = alliesids[i]; element1input.value = allies[alliesids[i]];
 		element1input.addEventListener("change", function() {reload()}); element1input.max = 7; element1input.min = 0;
 		container.appendChild(element1input);
 		// Add another element if it actually exists
 		if (alliesids[i+1]) {
-			var element2img = document.createElement("img");
+			let element2img = document.createElement("img");
 			element2img.className = "imagelabel"; element2img.src = "/common/faces/" + alliesids[i+1] + ".webp";
 			container.appendChild(element2img);
-			var element2input = document.createElement("input");
+			let element2input = document.createElement("input");
 			// Create input number element using the blessed hero ID, the expected value, limits and event listeners
 			element2input.setAttribute("type", "number"); element2input.id = alliesids[i+1]; element2input.value = allies[alliesids[i+1]];
 			element2input.addEventListener("change", function() {reload()}); element2input.max = 7; element2input.min = 0;
@@ -405,7 +405,7 @@ function updatedragonflowers() {
 		var flowers = units[selectheroes.value]["maxflowers"];
 	}
 	// Loop for each flower allowed
-	for (i = 1; i <= flowers; i++) {
+	for (let i = 1; i <= flowers; i++) {
 		let opt = document.createElement('option');
 		opt.value = i;
 		opt.innerHTML = i;
@@ -439,12 +439,12 @@ function switchbuild(build) {
 	builds[buildslot][5] = selectblessings.value;
 	// Make sure the allies list is empty before saving to sync new possible deletions
 	builds[buildslot][6] = {};
-	for (i = 0; i < selectallies.selectedOptions.length; i++) {
-		var ally = selectallies.selectedOptions[i].value;
+	for (let i = 0; i < selectallies.selectedOptions.length; i++) {
+		let ally = selectallies.selectedOptions[i].value;
 		builds[buildslot][6][ally] = document.getElementById(ally).value;
 	}
 	// Now save the rest of the data
-	for (i = 0; i < selects.length; i++) {
+	for (let i = 0; i < selects.length; i++) {
 		if (selects[i].type == "checkbox") {
 			builds[buildslot][i+7] = selects[i].checked;
 		} else {
@@ -455,7 +455,7 @@ function switchbuild(build) {
 	buildslot = build;
 	// Before restoring any changes skill slots must be cleaned since otherwise they will be ilegally carried over from other slots
 	var mustclean = [selectweapons, selectspecials, selectassists, selectA, selectB, selectC, selectS];
-	for (i = 0; i < mustclean.length; i++) {
+	for (let i = 0; i < mustclean.length; i++) {
 		mustclean[i].value = "None";
 	}
 	// Restore changes to current slot (heroes select, cheats and maxskill setting are to be done first because they affect the content of other selects)
@@ -470,8 +470,8 @@ function switchbuild(build) {
 	updateRefine();
 	// Trigger a rebuild of the allies providing buffs
 	selectblessings.value = builds[buildslot][5];
-	for (i = 0; i < selectallies.options.length; i++) {
-		var ally = selectallies.options[i].value;
+	for (let i = 0; i < selectallies.options.length; i++) {
+		let ally = selectallies.options[i].value;
 		if (builds[buildslot][6][ally]) {
 			selectallies.options[i].selected = true;
 		} else {
@@ -480,7 +480,7 @@ function switchbuild(build) {
 	}
 	showallies(true, builds[buildslot][6]);
 	// Now restore the rest of the data
-	for (i = 0; i < selects.length; i++) {
+	for (let i = 0; i < selects.length; i++) {
 		if (selects[i].type == "checkbox") {
 			selects[i].checked = builds[buildslot][i+7];
 		} else {
