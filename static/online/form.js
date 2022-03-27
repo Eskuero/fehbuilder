@@ -42,7 +42,7 @@ fetch('/common/data/individual/fulllanguages-' + selectlanguage.value + '.json')
 				// We store the skills for basic checks within the browser
 				skills = out;
 				// We need to have all skills available as a whole in case we use cheat seals
-				allpassives = Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"])
+				allpassives = Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"]);
 				populateall();
 		}).catch(err => console.error(err));
 }).catch(err => console.error(err));
@@ -56,38 +56,37 @@ fetch('/common/data/fullother.json')
 
 function populateall(clean) {
 	// We go through all the selects
-	populate(selectweapons, skills["weapons"], clean)
-	populate(selectspecials, skills["specials"], clean)
-	populate(selectassists, skills["assists"], clean)
-	populate(selectA, skills["passives"]["A"], clean)
-	populate(selectB, skills["passives"]["B"], clean)
-	populate(selectC, skills["passives"]["C"], clean)
-	populate(selectS, Object.assign({}, skills["passives"]["S"], cheats.checked ? Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"]) : {}), clean)
+	populate(selectweapons, skills["weapons"], clean);
+	populate(selectspecials, skills["specials"], clean);
+	populate(selectassists, skills["assists"], clean);
+	populate(selectA, skills["passives"]["A"], clean);
+	populate(selectB, skills["passives"]["B"], clean);
+	populate(selectC, skills["passives"]["C"], clean);
+	populate(selectS, Object.assign({}, skills["passives"]["S"], cheats.checked ? Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"]) : {}), clean);
 	// Add only the required amount of flowers
-	updatedragonflowers()
+	updatedragonflowers();
 	// Update translations
-	statictranslations()
+	statictranslations();
 	// Add all allies to the list
-	fillblessed()
+	fillblessed();
 	// Make sure we got a valid blessing for locked mythics/legendaries
-	validblessing()
+	validblessing();
 	// Disable or enable beast select based on unit
-	beastcheck()
+	beastcheck();
 }
 
 async function init() {
 	// This array will be used as rendering queue
 	renderingqueue = [];
 	// Load and wait for the font to be ready
-	const font = new FontFace("FeH-Font", "url('/common/feh-font.woff2') format('woff2')");
+	var font = new FontFace("FeH-Font", "url('/common/feh-font.woff2') format('woff2')");
 	await font.load();
 	document.fonts.add(font);
 
 	// Load the numberfont specifically since we will use it multiple times
-	numberfont = undefined;
 	await getimage(other["images"]["other"]["numberfont"]).then(img => {
 		numberfont = img;
-	})
+	});
 
 	// Draw it for the first time
 	reload();
@@ -97,12 +96,12 @@ async function init() {
 
 async function reload(scroll = false) {
 	// If the language required is not downloaded yet wait a bit more
-	newlang = selectlanguage.value;
+	var newlang = selectlanguage.value;
 	while (!languages[newlang]) {
 		await sleep(100);
 	}
 	// Get epoch as rendering ID
-	let renderingid = new Date().getTime();
+	var renderingid = new Date().getTime();
 	// Put our rendering ID on queue
 	renderingqueue.push(renderingid);
 	// Until our rendering ID is the first, wait and check again in 100ms
@@ -122,7 +121,6 @@ async function reload(scroll = false) {
 			break;
 		case "Condensed":
 			// Load the hpfont specifically since we will use it specifically on condensed layout
-			hpfont = undefined;
 			await getimage(other["images"]["other"]["hpfont"]).then(img => {
 				hpfont = img;
 			});
@@ -143,12 +141,12 @@ async function reload(scroll = false) {
 
 async function populate(select, data, clean, bypass) {
 	// If the language required is not downloaded yet wait a bit more
-	newlang = selectlanguage.value;
+	var newlang = selectlanguage.value;
 	while (!languages[newlang]) {
 		await sleep(100);
 	}
 	// Get current value to restore it back if possible
-	previousvalue = select.value
+	var previousvalue = select.value;
 	// First delete them all
 	while (select.lastChild) {
 		select.removeChild(select.lastChild);
@@ -159,14 +157,14 @@ async function populate(select, data, clean, bypass) {
 	opt.innerHTML = languages[selectlanguage.value]["MSID_H_NONE"];
 	select.appendChild(opt);
 	// All data to be printed
-	options = {}
+	var options = {};
 	// If indicated to bypass don't do checks for this select, print everything and leave (this is exclusively for the heroes select)
 	if (bypass) {
 		Object.keys(data).forEach((value) => {
-			options[languages[selectlanguage.value]["M" + value] + ": " + (languages[selectlanguage.value][value.replace("PID", "MPID_HONOR")] || "Generic")] = value
+			options[languages[selectlanguage.value]["M" + value] + ": " + (languages[selectlanguage.value][value.replace("PID", "MPID_HONOR")] || "Generic")] = value;
 		});
 		// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
-		options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {})
+		var options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {});
 		// For each entry print an option
 		for (const [string, tag] of Object.entries(options)) {
 			var opt = document.createElement('option');
@@ -183,9 +181,9 @@ async function populate(select, data, clean, bypass) {
 	}
 	if (selectheroes.value != "None") {
 		// Hero info for possible later checks
-		weapontype = units[selectheroes.value]["WeaponType"];
-		movetype = units[selectheroes.value]["moveType"];
-		basekit = units[selectheroes.value]["basekit"];
+		var weapontype = units[selectheroes.value]["WeaponType"];
+		var movetype = units[selectheroes.value]["moveType"];
+		var basekit = units[selectheroes.value]["basekit"];
 	// If no hero is selected we have nothing to do
 	} else {
 		return;
@@ -193,14 +191,14 @@ async function populate(select, data, clean, bypass) {
 	// For disabled cheats we only add the options that match move/ type restrictions and exclusive skills
 	Object.keys(data).forEach((value) => {
 		// If we arrived here we might or might not have to do checks so enable adding the skill by default
-		add = true
+		let add = true;
 		// The entire logic is processed on the python scripts so we just have to check the value set for the corresponding property. Previous values might go through the bestskills check since if we have enabled it after selecting a lower tier skill we don't go to erase it
 		if (bestskills.checked == true && ! data[value]["isMax"] && (value != previousvalue || clean)) {
 			return;
 		}
 		if (cheats.checked == false && (value != previousvalue || clean)) {
 			// Cheat mode is disabled so now we conditionally enable the skill and the default value must be false even if we might have passed bestskills checks
-			add = false
+			add = false;
 			// Check if the skills has weapon restrictions and if it does check if we meet them
 			if (data[value]["WeaponType"] >> weapontype & 1) {
 				add = true;
@@ -231,7 +229,7 @@ async function populate(select, data, clean, bypass) {
 		}
 	});
 	// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
-	options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {})
+	var options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {});
 	// For each entry print an option
 	for (const [string, tag] of Object.entries(options)) {
 		var opt = document.createElement('option');
@@ -255,7 +253,7 @@ async function populate(select, data, clean, bypass) {
 
 async function statictranslations() {
 	// If the language required is not downloaded yet wait a bit more
-	newlang = selectlanguage.value;
+	var newlang = selectlanguage.value;
 	while (!languages[newlang]) {
 		await sleep(100);
 	}
@@ -264,8 +262,8 @@ async function statictranslations() {
 
 function updateRefine() {
 	// Get current value to restore it back if possible
-	previousvalue = selectrefines.value
-	weapon = selectweapons.value
+	var previousvalue = selectrefines.value;
+	var weapon = selectweapons.value;
 
 	// Clear all children on the refine select first
 	while (selectrefines.lastChild) {
@@ -280,7 +278,7 @@ function updateRefine() {
 		return;
 	}
 	// Get the list of refines for that weapon
-	refines = Object.keys(skills["weapons"][weapon]["refines"])
+	var refines = Object.keys(skills["weapons"][weapon]["refines"]);
 	for (i = 0; i < refines.length; i++) {
 		var opt = document.createElement('option');
 		opt.value = refines[i];
@@ -295,7 +293,7 @@ function updateRefine() {
 
 function swapstat(caller, target) {
 	// Switch the selected option in the tabs by changing the background color
-	options = document.getElementsByClassName("tabs")[0].children;
+	var options = document.getElementsByClassName("tabs")[0].children;
 	for (i = 1; i < options.length - 1; i++) {
 		if (options[i] == caller) {
 			options[i].className = "imagelabel selected";
@@ -305,7 +303,7 @@ function swapstat(caller, target) {
 	}
 
 	// If switching from a differently built section use their entire name (for now only legendary boosts)
-	options = ["buffs", "pairups", "legendaries"]
+	var options = ["buffs", "pairups", "legendaries"];
 	for (i = 0; i < options.length; i++) {
 		document.getElementById(options[i]).style.display = (options[i] == target) ? "initial" : "none";
 	}
@@ -313,15 +311,15 @@ function swapstat(caller, target) {
 
 async function fillblessed(clean = false) {
 	// If the language required is not downloaded yet wait a bit more
-	newlang = selectlanguage.value;
+	var newlang = selectlanguage.value;
 	while (!languages[newlang]) {
 		await sleep(100);
 	}
 	// We need to know which options to restore unless called clean
-	toberestored = []
+	var toberestored = [];
 	if (!clean) {
 		for (i = 0; i < selectallies.selectedOptions.length; i++) {
-			toberestored.push(selectallies.selectedOptions[i].value)
+			toberestored.push(selectallies.selectedOptions[i].value);
 		}
 	}
 	// First delete all allies
@@ -329,16 +327,16 @@ async function fillblessed(clean = false) {
 		selectallies.removeChild(selectallies.lastChild);
 	}
 	// All data to be printed
-	options = {}
+	var options = {};
 	// Add an option for each value
 	for (const [hero, properties] of Object.entries(other["blessed"])) {
 		options[languages[selectlanguage.value]["M" + hero] + ": " + languages[selectlanguage.value][hero.replace("PID", "MPID_HONOR")]] = hero;
 	}
 	// Sort all the values by visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
-	options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {})
+	var options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {});
 	// For each entry print an option
 	for (const [string, tag] of Object.entries(options)) {
-		var opt = document.createElement('option');
+		let opt = document.createElement('option');
 		opt.value = tag;
 		opt.innerHTML = string;
 		// If we are only translating and the value was selected restore it
@@ -354,7 +352,7 @@ function showallies(clean = false, allies = {}) {
 	if (!clean) {
 		// Create inputs for every selected ally
 		for (i = 0; i < selectallies.selectedOptions.length; i++) {
-			ally = selectallies.selectedOptions[i].value;
+			var ally = selectallies.selectedOptions[i].value;
 			// If the ally already exists add the current value to prevent losing data
 			allies[ally] = document.getElementById(ally) ? document.getElementById(ally).value : 1;
 		}
@@ -364,7 +362,7 @@ function showallies(clean = false, allies = {}) {
 		usedallies.removeChild(usedallies.lastChild);
 	}
 	// Loop through all the allies and add each option in groups of two
-	alliesids = Object.keys(allies)
+	var alliesids = Object.keys(allies);
 	for (i = 0; i < alliesids.length; i = i + 2) {
 		// Major div element
 		var container = document.createElement("div");
@@ -396,19 +394,19 @@ function showallies(clean = false, allies = {}) {
 
 function updatedragonflowers() {
 	// Get current value to restore it back if possible
-	previousvalue = selectflowers.value
+	var previousvalue = selectflowers.value;
 	// Default for cheating mode is 15
-	flowers = 20;
+	var flowers = 20;
 	// First delete them all except the 0 element
 	while (selectflowers.lastChild && selectflowers.childElementCount > 1) {
 		selectflowers.removeChild(selectflowers.lastChild);
 	}
 	if (cheats.checked == false && selectheroes.value != "None") {
-		flowers = units[selectheroes.value]["maxflowers"]
+		var flowers = units[selectheroes.value]["maxflowers"];
 	}
 	// Loop for each flower allowed
 	for (i = 1; i <= flowers; i++) {
-		var opt = document.createElement('option');
+		let opt = document.createElement('option');
 		opt.value = i;
 		opt.innerHTML = i;
 		selectflowers.appendChild(opt);
@@ -426,11 +424,11 @@ builds = [
 	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","1","None", true],
 	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","1","None", true],
 	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","1","None", true]
-]
+];
 // List of values to be restored (their document element)
-selects = [selectrarity,selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials, selectassists, selectA, selectB, selectC, selectS, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef, selectres, selectatkpairup, selectspdpairup, selectdefpairup, selectrespairup, selectsp, selecthm, selectartstyle, selecttemplate, selectoffsetY, selectoffsetX, selectmirror, selectfavorite, selectaccessory, appui]
+selects = [selectrarity,selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials, selectassists, selectA, selectB, selectC, selectS, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef, selectres, selectatkpairup, selectspdpairup, selectdefpairup, selectrespairup, selectsp, selecthm, selectartstyle, selecttemplate, selectoffsetY, selectoffsetX, selectmirror, selectfavorite, selectaccessory, appui];
 // Which builder slot is active right now
-var buildslot = 0;
+buildslot = 0;
 function switchbuild(build) {
 	// First save changes to current slot (heroes, cheats, language, maxskill, weapons and blessings are to be done first because they affect the content of other selects)
 	builds[buildslot][0] = selectheroes.value;
@@ -440,9 +438,9 @@ function switchbuild(build) {
 	builds[buildslot][4] = selectweapons.value;
 	builds[buildslot][5] = selectblessings.value;
 	// Make sure the allies list is empty before saving to sync new possible deletions
-	builds[buildslot][6] = {}
+	builds[buildslot][6] = {};
 	for (i = 0; i < selectallies.selectedOptions.length; i++) {
-		ally = selectallies.selectedOptions[i].value;
+		var ally = selectallies.selectedOptions[i].value;
 		builds[buildslot][6][ally] = document.getElementById(ally).value;
 	}
 	// Now save the rest of the data
@@ -456,7 +454,7 @@ function switchbuild(build) {
 	// Switch active slot
 	buildslot = build;
 	// Before restoring any changes skill slots must be cleaned since otherwise they will be ilegally carried over from other slots
-	mustclean = [selectweapons, selectspecials, selectassists, selectA, selectB, selectC, selectS];
+	var mustclean = [selectweapons, selectspecials, selectassists, selectA, selectB, selectC, selectS];
 	for (i = 0; i < mustclean.length; i++) {
 		mustclean[i].value = "None";
 	}
@@ -473,7 +471,7 @@ function switchbuild(build) {
 	// Trigger a rebuild of the allies providing buffs
 	selectblessings.value = builds[buildslot][5];
 	for (i = 0; i < selectallies.options.length; i++) {
-		ally = selectallies.options[i].value;
+		var ally = selectallies.options[i].value;
 		if (builds[buildslot][6][ally]) {
 			selectallies.options[i].selected = true;
 		} else {

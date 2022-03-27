@@ -1,3 +1,6 @@
+// Used to loop through all stats names and translations
+statsnames = ["HP", "Atk", "Spd", "Def", "Res"]; statsstrings = ["MID_HP", "MID_ATTACK", "MID_AGILITY", "MID_DEFENSE", "MID_RESIST"];
+
 async function echoes() {
 	// Obtain the object
 	var preview = document.getElementById("fakecanvasechoes").getContext("2d");
@@ -5,9 +8,9 @@ async function echoes() {
 	preview.miterLimit = 2;
 
 	// Hero ID
-	hero = selectheroes.value == "None" ? false : selectheroes.value;
+	var hero = selectheroes.value == "None" ? false : selectheroes.value;
 	// Language selected
-	language = selectlanguage.value;
+	var language = selectlanguage.value;
 
 	// Print the background
 	await getimage(other["images"]["other"]["bgechoes"]).then(img => {
@@ -16,36 +19,36 @@ async function echoes() {
 
 	// Save the context here in case we need to do so some flipping
 	preview.save();
-	artoffsetX = parseInt(selectoffsetX.value);
-	artoffsetY = parseInt(selectoffsetY.value);
+	var artoffsetX = parseInt(selectoffsetX.value);
+	var artoffsetY = parseInt(selectoffsetY.value);
 	// We only make modifications if some mirror config is set to other than None
 	switch (mirror.value) {
 		case "Horizontal":
 			preview.translate(720, 0);
 			preview.scale(-1, 1);
-			artoffsetX = -artoffsetX + 200;
+			var artoffsetX = -artoffsetX + 200;
 			break;
 		case "Vertical":
 			preview.translate(0, 540);
 			preview.scale(1, -1);
-			artoffsetY = -artoffsetY;
+			var artoffsetY = -artoffsetY;
 			break;
 		case "Both":
 			preview.translate(720, 540);
 			preview.scale(-1, -1);
-			artoffsetX = -artoffsetX + 200;
-			artoffsetY = -artoffsetY;
+			var artoffsetX = -artoffsetX + 200;
+			var artoffsetY = -artoffsetY;
 			break;
 	}
 
 	// Print the hero art selected
 	if (hero) {
 		// If we selected Resplendent and it actually is a legit choose the art
-		attire = (selectattire.value == "Resplendent" && languages[language][hero.replace("PID", "MPID_VOICE") + "EX01"]) ? "_Resplendent_" : "_";
-		style = selectartstyle.value;
+		var attire = (selectattire.value == "Resplendent" && languages[language][hero.replace("PID", "MPID_VOICE") + "EX01"]) ? "_Resplendent_" : "_";
+		var style = selectartstyle.value;
 		await getimage("../common/heroes/" + hero + attire + style + ".webp").then(img => {
 			preview.drawImage(img, -400 + artoffsetX, 50 - artoffsetY);
-		})
+		});
 	}
 	// Always restore the previous context to avoid issues
 	preview.restore();
@@ -53,7 +56,7 @@ async function echoes() {
 	// Print the foregroundUI
 	await getimage(other["images"]["other"]["fgechoes"]).then(img => {
 		preview.drawImage(img, 0, 0);
-	})
+	});
 
 	// After this if no hero is selected we STOP and clear the queue
 	if (!hero) {
@@ -62,52 +65,51 @@ async function echoes() {
 	}
 
 	// Convert the rarity variable into an int now to cater to calculation needs
-	rarity = selectrarity.value == "Forma" ? 5 : parseInt(selectrarity.value)
+	var rarity = selectrarity.value == "Forma" ? 5 : parseInt(selectrarity.value);
 	await getimage(other["images"]["rarity"][selectrarity.value]).then(img => {
 		// We must resize which means width must vary proportionally
-		height = 34; width = (img.width / img.height) * height;
+		var height = 34; var width = (img.width / img.height) * height;
 		preview.drawImage(img, 15, 45, width, height);
-	})
+	});
 
 	// Print hero name
 	preview.fillStyle = 'white'; preview.strokeStyle = '#0a2533'; preview.textAlign = 'start'; preview.textBaseline = "top"; preview.font = '21px FeH-Font'; preview.lineWidth = 6;
 	// Add the fill and the stroke for the name
-	name = languages[language]["M" + hero] + ": " + languages[language][hero.replace("PID", "MPID_HONOR")];
+	var name = languages[language]["M" + hero] + ": " + languages[language][hero.replace("PID", "MPID_HONOR")];
 	preview.fillText(name, 8, 7);
 
-	boon = selectboons.value == "None" ? false : selectboons.value; bane = selectbanes.value == "None" ? false : selectbanes.value; ascendent = selectascendent.value == "None" ? false : selectascendent.value; merges = parseInt(selectmerges.value);
+	var boon = selectboons.value == "None" ? false : selectboons.value; var bane = selectbanes.value == "None" ? false : selectbanes.value; var ascendent = selectascendent.value == "None" ? false : selectascendent.value; var merges = parseInt(selectmerges.value);
 	// First write the static text for each stat (normal anchoring)
 	preview.font = '20px FeH-Font'; preview.textAlign = 'end'; preview.textBaseline = "top"; preview.lineWidth = 6; preview.fillStyle = '#cd7b7b';
-	statsnames = ["HP", "Atk", "Spd", "Def", "Res"]; statsstrings = ["MID_HP", "MID_ATTACK", "MID_AGILITY", "MID_DEFENSE", "MID_RESIST"]
 	// Each stat name is pushed down by 49pixels with an initial offset of 805
 	for (i = 0; i < statsnames.length; i++) {
 		// The boon indicator varies depending of it being a boon, bane (without merges), neutral or ascendent
 		if (boon == statsnames[i]) {
-			indicator = "+";
+			var indicator = "+";
 		} else if (bane == statsnames[i]) {
 			if (merges != 0 && ascendent == statsnames[i]) {
-				indicator = "+";
+				var indicator = "+";
 			} else if (merges != 0 || ascendent == statsnames[i]) {
-				indicator = "";
+				var indicator = "";
 			} else {
-				indicator = "-";
+				var indicator = "-";
 			}
 		} else if (ascendent == statsnames[i]) {
-			indicator = "+";
+			var indicator = "+";
 		} else {
-			indicator = "";
+			var indicator = "";
 		}
 		// Depending on the stat top margin varies a lot
-		left = 67;
-		down = (i * 30) + (1.3 * i) + 264;
+		var left = 67;
+		var down = (i * 30) + (1.3 * i) + 264;
 		preview.fillText(indicator + languages[language][statsstrings[i]].toUpperCase(), left, down);
 	}
 
-	flowers = parseInt(selectflowers.value);
+	var flowers = parseInt(selectflowers.value);
 	// Obtain the calculated stats to draw
-	statsmodifier = statcalc(units[hero]["stats"], units[hero]["growths"], rarity, boon, bane, ascendent, merges, flowers);
+	var statsmodifier = statcalc(units[hero]["stats"], units[hero]["growths"], rarity, boon, bane, ascendent, merges, flowers);
 
-	weapon = selectweapons.value == "None" ? false : selectweapons.value; refine = selectrefines.value == "None" ? false : selectrefines.value;
+	var weapon = selectweapons.value == "None" ? false : selectweapons.value; var refine = selectrefines.value == "None" ? false : selectrefines.value;
 	// We have a couple of stats modifiers based on weapon, summoner support, attire, bonus unit, visible buffs and maybe not completely parsed A/S skills that we must add
 	if (weapon) {
 		statsmodifier = statsmodifier.map(function (value, index) {
@@ -115,9 +117,24 @@ async function echoes() {
 		});
 	}
 
+	// Retrieve passives, ss and buffs
+	var passives = {
+		"A": selectA.value == "None" ? false : selectA.value,
+		"B": selectB.value == "None" ? false : selectB.value,
+		"C": selectC.value == "None" ? false : selectC.value,
+		"S": selectS.value == "None" ? false : selectS.value
+	};
+	var summoner = selectsummoner.value == "None" ? false : selectsummoner.value;
+	var buffs = [
+		0,
+		parseInt(selectatk.value) ? parseInt(selectatk.value) : 0,
+		parseInt(selectspd.value) ? parseInt(selectspd.value) : 0,
+		parseInt(selectdef.value) ? parseInt(selectdef.value) : 0,
+		parseInt(selectres.value) ? parseInt(selectres.value) : 0
+	];
 	// Add visible stats from multiple simple origins like passives, SS, resplendent, beast transformation and bonus
 	statsmodifier = statsmodifier.map(function (value, index) {
-		return value + staticmodifiers()[index];
+		return value + staticmodifiers(passives, summoner, buffs)[index];
 	});
 
 	// Fix stats, cannot go beyond 99 or below 0
@@ -128,8 +145,8 @@ async function echoes() {
 	// Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers).
 	for (i = 0; i < statsnames.length; i++) {
 		// Depending on the stat top margin varies a lot
-		left = 107;
-		down = (i * 30) + (1.3 * i) + 264;
+		var left = 107;
+		var down = (i * 30) + (1.3 * i) + 264;
 		// Depending of it's buffed or no the color of the text varies
 		preview.fillStyle = buffs[i] > 0 ? "#63e5ef" : (buffs[i] < 0 ? "#ff506e" : 'white');
 		preview.fillText(statsmodifier[i], left, down);
@@ -144,8 +161,8 @@ async function echoes() {
 	});
 
 	// Optionally print floret, resplendent and accessory indicator
-	offsetX = 0;
-	accessory = selectaccessory.value == "None" ? false : selectaccessory.value;
+	var offsetX = 0;
+	var accessory = selectaccessory.value == "None" ? false : selectaccessory.value;
 	if (accessory) {
 		await getimage(other["images"]["accessory"][accessory]).then(img => {
 			preview.drawImage(img, 598 - offsetX, 44, 37, 37);
@@ -190,19 +207,19 @@ async function echoes() {
 	// If the weapon is valid try to print an icon
 	if (weapon) {
 		// By default we always use the basic weapon icon or the predefined stat boosters ones
-		weaponicon = ["Atk", "Spd", "Def", "Res", "Wrathful", "Dazzling"].includes(refine) ? other["images"]["refines"][refine] : other["images"]["other"]["noweapon"];
+		var weaponicon = ["Atk", "Spd", "Def", "Res", "Wrathful", "Dazzling"].includes(refine) ? other["images"]["refines"][refine] : other["images"]["other"]["noweapon"];
 		// If the icon is an special effect we might have to download it
 		if (refine == "Effect" && skills["weapons"][weapon]["refines"]["Effect"]) {
-			weaponicon = "../common/icons/" + weapon + "-Effect.webp"
+			var weaponicon = "../common/icons/" + weapon + "-Effect.webp";
 		}
 		await getimage(weaponicon).then(img => {
 			preview.drawImage(img, 470, 150, 36, 36);
 		});
 		// Get the string to print
-		printableweapon = languages[language]["M" + weapon];
+		var printableweapon = languages[language]["M" + weapon];
 	// If not just print the basic icon
 	} else {
-		printableweapon = "-";
+		var printableweapon = "-";
 		await getimage(other["images"]["other"]["noweapon"]).then(img => {
 			preview.drawImage(img, 470, 150, 36, 36);
 		});
@@ -211,8 +228,8 @@ async function echoes() {
 	preview.font = '21px FeH-Font'; preview.fillStyle = refine ? "#82f546" : "#ffffff";
 	preview.strokeText(printableweapon, 512, 156); preview.fillText(printableweapon, 512, 156);
 
-	assist = selectassists.value == "None" ? "-" : languages[language]["M" + selectassists.value];
-	special = selectspecials.value == "None" ? "-" : languages[language]["M" + selectspecials.value];
+	var assist = selectassists.value == "None" ? "-" : languages[language]["M" + selectassists.value];
+	var special = selectspecials.value == "None" ? "-" : languages[language]["M" + selectspecials.value];
 	// Print assist and special info
 	preview.fillStyle = "#ffffff";
 	preview.strokeText(assist, 507, 204); preview.fillText(assist, 507, 204);
@@ -220,19 +237,19 @@ async function echoes() {
 
 	// Render all the passives
 	for (const [category, skill] of Object.entries(passives)) {
-		name = "-"
+		let name = "-";
 		// If the passive doesn't exist skip
 		if (allpassives[skill]) {
 			await getimage("../common/icons/" + skill + ".webp").then(img => {
 				// If the image size is bigger than 44 these are some tier 4 skills that have shiny borders and their icon must be and offsetted accordingly
-				iconoffset = img.height > 44 ? -2 : 0;
-				size = img.height > 44 ? 39 : 36;
+				let iconoffset = img.height > 44 ? -2 : 0;
+				let size = img.height > 44 ? 39 : 36;
 				preview.drawImage(img, passiveechoesrender[category]["icon"][0] + iconoffset, passiveechoesrender[category]["icon"][1] + iconoffset, size, size);
 			});
 			name = languages[language]["M" + skill];
 		}
 		// We always write the text because it might be a simple "-"
-		preview.strokeText(name, passiveechoesrender[category]["text"][0], passiveechoesrender[category]["text"][1])
+		preview.strokeText(name, passiveechoesrender[category]["text"][0], passiveechoesrender[category]["text"][1]);
 		preview.fillText(name, passiveechoesrender[category]["text"][0], passiveechoesrender[category]["text"][1]);
 		// Print the category indicator
 		await getimage(other["images"]["skillindicators"][category]).then(img => {
@@ -240,16 +257,16 @@ async function echoes() {
 		});
 	}
 
-	blessing = selectblessings.value == "None" ? false : parseInt(selectblessings.value);
+	var blessing = selectblessings.value == "None" ? false : parseInt(selectblessings.value);
 	// X amount to additionally push each icon to the left
-	offsetX = 0;
-	posY = 425; posX = 0;
-	width = 100; height = 109;
+	var offsetX = 0;
+	var posY = 425; var posX = 0;
+	var width = 100; var height = 109;
 	// If blessed print the icon
 	if (blessing) {
 		// If the hero is on the list of the blessed ones for that particular blessing it has icon variant defined (otherwise use the normal one)
-		variant = other["blessed"][hero] ? other["blessed"][hero]["variant"] : false;
-		blessingicon = "/common/other/" + blessing + "-Blessing" + (variant ? "-" + variant : "") + ".webp";
+		var variant = other["blessed"][hero] ? other["blessed"][hero]["variant"] : false;
+		var blessingicon = "/common/other/" + blessing + "-Blessing" + (variant ? "-" + variant : "") + ".webp";
 		await getimage(blessingicon).then(img => {
 			preview.drawImage(img, posX, posY, width, height);
 		});
@@ -259,8 +276,8 @@ async function echoes() {
 
 	// If is a duo hero of any kind print the icon
 	if (other["duo"].concat(other["resonant"]).includes(hero)) {
-		specialtype = other["duo"].includes(hero) ? "Duo" : "Resonance";
-		specialicon = other["images"]["other"][specialtype];
+		var specialtype = other["duo"].includes(hero) ? "Duo" : "Resonance";
+		var specialicon = other["images"]["other"][specialtype];
 		await getimage(specialicon).then(img => {
 			preview.drawImage(img, posX + offsetX, posY, width, height);
 		});
@@ -286,30 +303,30 @@ async function condensed() {
 	preview.miterLimit = 2;
 
 	// Hero ID
-	hero = selectheroes.value == "None" ? false : selectheroes.value;
+	var hero = selectheroes.value == "None" ? false : selectheroes.value;
 	// Language selected
-	language = selectlanguage.value;
+	var language = selectlanguage.value;
 
 	// Print the background
 	await getimage(other["images"]["other"]["bgcondensed"]).then(img => {
 		preview.drawImage(img, 0, 0);
-	})
+	});
 
 	// Print the hero art selected
 	if (hero) {
 		// If we selected Resplendent and it actually is a legit choose the art
-		attire = (selectattire.value == "Resplendent" && languages[language][hero.replace("PID", "MPID_VOICE") + "EX01"]) ? "_Resplendent_" : "_";
+		var attire = (selectattire.value == "Resplendent" && languages[language][hero.replace("PID", "MPID_VOICE") + "EX01"]) ? "_Resplendent_" : "_";
 		// Some styls are non existent for condensed layout faces
-		style = selectartstyle.value == "Damage" ? "Damage" : "Attack";
+		var style = selectartstyle.value == "Damage" ? "Damage" : "Attack";
 		await getimage("../common/condensed-faces/" + hero + attire + style + ".webp").then(img => {
 			preview.drawImage(img, -105, -3);
-		})
+		});
 	}
 
 	// Print the foregroundUI
 	await getimage(other["images"]["other"]["fgcondensed"]).then(img => {
 		preview.drawImage(img, 0, 0);
-	})
+	});
 
 	//After this if no hero is selected we STOP and clear the queue
 	if (!hero) {
@@ -318,22 +335,21 @@ async function condensed() {
 	}
 
 	// Convert the rarity variable into an int now to cater to calculation needs
-	rarity = selectrarity.value == "Forma" ? 5 : parseInt(selectrarity.value)
+	var rarity = selectrarity.value == "Forma" ? 5 : parseInt(selectrarity.value);
 	await getimage(other["images"]["rarityborder"][selectrarity.value]).then(img => {
 		preview.drawImage(img, 162, 9);
-	})
+	});
 
 	// Print hero name
 	// Use horizontally centered anchor to avoid going out of bounds
 	preview.fillStyle = 'white'; preview.strokeStyle = '#0a2533'; preview.textAlign = 'center'; preview.textBaseline = "middle"; preview.font = '24px FeH-Font'; preview.lineWidth = 6;
 	// Add the fill and the stroke for the name
-	name = languages[language]["M" + hero];
+	var name = languages[language]["M" + hero];
 	preview.strokeText(name, 294, 31); preview.fillText(name, 294, 31);
 
-	boon = selectboons.value == "None" ? false : selectboons.value; bane = selectbanes.value == "None" ? false : selectbanes.value; ascendent = selectascendent.value == "None" ? false : selectascendent.value; merges = parseInt(selectmerges.value);
+	var boon = selectboons.value == "None" ? false : selectboons.value; var bane = selectbanes.value == "None" ? false : selectbanes.value; var ascendent = selectascendent.value == "None" ? false : selectascendent.value; var merges = parseInt(selectmerges.value);
 	// First write the static text for each stat (normal anchoring)
 	preview.font = '23px FeH-Font'; preview.textAlign = 'start'; preview.textBaseline = "top"; preview.lineWidth = 6;
-	statsnames = ["HP", "Atk", "Spd", "Def", "Res"]; statsstrings = ["MID_HP", "MID_ATTACK", "MID_AGILITY", "MID_DEFENSE", "MID_RESIST"]
 	// Each stat name is pushed down by 49pixels with an initial offset of 805
 	for (i = 0; i < statsnames.length; i++) {
 		// The filling color varies depending of it being a boon, bane (without merges), neutral or ascendent
@@ -355,29 +371,29 @@ async function condensed() {
 		// Depending on the stat position varies a lot
 		switch (statsnames[i]) {
 			case "HP":
-				down = 77; left = 177;
+				var down = 77; var left = 177;
 				break;
 			case "Atk":
-				down = 128; left = 173;
+				var down = 128; var left = 173;
 				break;
 			case "Spd":
-				down = 128; left = 302;
+				var down = 128; var left = 302;
 				break;
 			case "Def":
-				down = 164; left = 172;
+				var down = 164; var left = 172;
 				break;
 			case "Res":
-				down = 164; left = 302;
+				var down = 164; var left = 302;
 				break;
 		}
 		preview.strokeText(languages[language][statsstrings[i]], left, down); preview.fillText(languages[language][statsstrings[i]], left, down);
 	}
 
-	flowers = parseInt(selectflowers.value);
+	var flowers = parseInt(selectflowers.value);
 	// Obtain the calculated stats to draw
-	statsmodifier = statcalc(units[hero]["stats"], units[hero]["growths"], rarity, boon, bane, ascendent, merges, flowers);
+	var statsmodifier = statcalc(units[hero]["stats"], units[hero]["growths"], rarity, boon, bane, ascendent, merges, flowers);
 
-	weapon = selectweapons.value == "None" ? false : selectweapons.value; refine = selectrefines.value == "None" ? false : selectrefines.value;
+	var weapon = selectweapons.value == "None" ? false : selectweapons.value; refine = selectrefines.value == "None" ? false : selectrefines.value;
 	// We have a couple of stats modifiers based on weapon, summoner support, attire, bonus unit, visible buffs and maybe not completely parsed A/S skills that we must add
 	if (weapon) {
 		statsmodifier = statsmodifier.map(function (value, index) {
@@ -385,26 +401,35 @@ async function condensed() {
 		});
 	}
 
+	// Retrieve passives, ss and buffs
+	var passives = {
+		"A": selectA.value == "None" ? false : selectA.value,
+		"B": selectB.value == "None" ? false : selectB.value,
+		"C": selectC.value == "None" ? false : selectC.value,
+		"S": selectS.value == "None" ? false : selectS.value
+	};
+	var summoner = selectsummoner.value == "None" ? false : selectsummoner.value;
+	var buffs = [
+		0,
+		parseInt(selectatk.value) ? parseInt(selectatk.value) : 0,
+		parseInt(selectspd.value) ? parseInt(selectspd.value) : 0,
+		parseInt(selectdef.value) ? parseInt(selectdef.value) : 0,
+		parseInt(selectres.value) ? parseInt(selectres.value) : 0
+	];
 	// Add visible stats from multiple simple origins like passives, SS, resplendent, beast transformation and bonus
 	statsmodifier = statsmodifier.map(function (value, index) {
-		return value + staticmodifiers()[index];
+		return value + staticmodifiers(passives, summoner, buffs)[index];
 	});
-
-	// Fix stats, cannot go beyond 99 or below 0
-	for (i = 0; i < statsmodifier.length; i++) {
-		statsmodifier[i] = -1 < statsmodifier[i] ? (statsmodifier[i] < 100 ? statsmodifier[i] : 99) : 0;
-	}
 
 	// Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers).
 	for (i = 0; i < statsnames.length; i++) {
 		// Decide type of font depending on if we buffer, debuffed or neutral
-		numbertype = buffs[i] > 0 ? 2 : (buffs[i] < 0 ? 3 : 0);
+		let numbertype = buffs[i] > 0 ? 2 : (buffs[i] < 0 ? 3 : 0);
 		// Depending on the stat position varies a lot
 		if (statsnames[i] == "HP") {
 			// If the damage art is select we at least have less than half HP
-			currenthp = selectartstyle.value == "Damage" ? parseInt(statsmodifier[i] / 2) - 1 : statsmodifier[i];
-			currentcolor = selectartstyle.value == "Damage" ? 1 : 0;
-			// FIXME: This should use a different font for the HP numbers
+			let currenthp = selectartstyle.value == "Damage" ? parseInt(statsmodifier[i] / 2) - 1 : statsmodifier[i];
+			let currentcolor = selectartstyle.value == "Damage" ? 1 : 0;
 			printhpnumbers(preview, currenthp, currentcolor, 241, 70, 0.75);
 			printhpnumbers(preview, statsmodifier[i], numbertype, 332, 74, 0.55);
 		} else if (statsnames[i] == "Atk") {
@@ -438,19 +463,19 @@ async function condensed() {
 	// If the weapon is valid try to print an icon
 	if (weapon) {
 		// By default we always use the basic weapon icon or the predefined stat boosters ones
-		weaponicon = ["Atk", "Spd", "Def", "Res", "Wrathful", "Dazzling"].includes(refine) ? other["images"]["refines"][refine] : other["images"]["other"]["noweapon"];
+		var weaponicon = ["Atk", "Spd", "Def", "Res", "Wrathful", "Dazzling"].includes(refine) ? other["images"]["refines"][refine] : other["images"]["other"]["noweapon"];
 		// If the icon is an special effect we might have to download it
 		if (refine == "Effect" && skills["weapons"][weapon]["refines"]["Effect"]) {
-			weaponicon = "../common/icons/" + weapon + "-Effect.webp"
+			weaponicon = "../common/icons/" + weapon + "-Effect.webp";
 		}
 		await getimage(weaponicon).then(img => {
 			preview.drawImage(img, 430, 60, 44, 44);
 		});
 		// Get the string to print
-		printableweapon = languages[language]["M" + weapon];
+		var printableweapon = languages[language]["M" + weapon];
 	// If not just print the basic icon
 	} else {
-		printableweapon = "-";
+		var printableweapon = "-";
 		await getimage(other["images"]["other"]["noweapon"]).then(img => {
 			preview.drawImage(img, 430, 60, 44, 44);
 		});
@@ -459,8 +484,8 @@ async function condensed() {
 	preview.fillStyle = refine ? "#82f546" : "#ffffff";
 	preview.strokeText(printableweapon, 480, 70); preview.fillText(printableweapon, 480, 70);
 
-	assist = selectassists.value == "None" ? "-" : languages[language]["M" + selectassists.value];
-	special = selectspecials.value == "None" ? "-" : languages[language]["M" + selectspecials.value];
+	var assist = selectassists.value == "None" ? "-" : languages[language]["M" + selectassists.value];
+	var special = selectspecials.value == "None" ? "-" : languages[language]["M" + selectspecials.value];
 	// Print assist and special info
 	preview.fillStyle = "#ffffff";
 	preview.strokeText(assist, 480, 114); preview.fillText(assist, 480, 114);
@@ -468,12 +493,12 @@ async function condensed() {
 
 	// Render all the passives
 	for (const [category, skill] of Object.entries(passives).reverse()) {
-		name = "-"
+		let name = "-";
 		// If the passive doesn't exist skip
 		if (allpassives[skill]) {
 			await getimage("../common/icons/" + skill + ".webp").then(img => {
 				// If the image size is bigger than 44 these are some tier 4 skills that have shiny borders and their icon must be and offsetted accordingly
-				iconoffset = img.height > 44 ? -2 : 0;
+				let iconoffset = img.height > 44 ? -2 : 0;
 				preview.drawImage(img, passivecondensedrender[category]["icon"][0] + iconoffset, passivecondensedrender[category]["icon"][1] + iconoffset);
 			});
 			name = languages[language]["M" + skill];
@@ -484,30 +509,30 @@ async function condensed() {
 		});
 	}
 
-	blessing = selectblessings.value == "None" ? false : parseInt(selectblessings.value);
-	duoresonance = other["duo"].includes(hero) ? "duo" : (other["resonant"].includes(hero) ? "resonance" : false);
+	var blessing = selectblessings.value == "None" ? false : parseInt(selectblessings.value);
+	var duoresonance = other["duo"].includes(hero) ? "duo" : (other["resonant"].includes(hero) ? "resonance" : false);
 	// Depending on the combination of the duo/blessing status change the icon rendered, as well as it's position
 	if (blessing && duoresonance) {
 		// Duo heroes can't be pre-blessed, they at most have the normal variant of a manual bless
-		blessingicon = "/common/other/" + blessing + "-Blessing-" + duoresonance + ".webp"
+		var blessingicon = "/common/other/" + blessing + "-Blessing-" + duoresonance + ".webp";
 		await getimage(blessingicon).then(img => {
 			preview.drawImage(img, 90, 111);
 		});
 	} else if (blessing) {
 		// If the hero is on the list of the blessed ones for that particular blessing it has icon variant defined (otherwise use the normal one)
-		variant = other["blessed"][hero] ? other["blessed"][hero]["variant"] : false;
-		blessingicon = "/common/other/" + blessing + "-Blessing" + (variant ? "-" + variant : "") + "-mini.webp";
+		var variant = other["blessed"][hero] ? other["blessed"][hero]["variant"] : false;
+		var blessingicon = "/common/other/" + blessing + "-Blessing" + (variant ? "-" + variant : "") + "-mini.webp";
 		if (!variant) {
-			posX = 104; posY = 140;
+			var posX = 104; var posY = 140;
 		} else {
-			posX = 90; posY = 111;
+			var posX = 90; var posY = 111;
 		}
 		await getimage(blessingicon).then(img => {
 			preview.drawImage(img, posX, posY);
 		});
 	} else if (duoresonance) {
-		variant = duoresonance.charAt(0).toUpperCase() + duoresonance.slice(1) + "-mini";
-		duoresonanceicon = other["images"]["other"][variant];
+		var variant = duoresonance.charAt(0).toUpperCase() + duoresonance.slice(1) + "-mini";
+		var duoresonanceicon = other["images"]["other"][variant];
 		await getimage(duoresonanceicon).then(img => {
 			preview.drawImage(img, 104, 140);
 		});
@@ -524,57 +549,57 @@ async function myunit() {
 	preview.miterLimit = 2;
 
 	// Hero ID
-	hero = selectheroes.value == "None" ? false : selectheroes.value;
+	var hero = selectheroes.value == "None" ? false : selectheroes.value;
 	// Language selected
-	language = selectlanguage.value;
+	var language = selectlanguage.value;
 
 	// Print the background depending on the type of support
-	background = selectsummoner.value == "None" ? "bgnosupport" : "bgsupport";
+	var background = selectsummoner.value == "None" ? "bgnosupport" : "bgsupport";
 	await getimage(other["images"]["other"][background]).then(img => {
 		preview.drawImage(img, -173, 0, 1067, 1280);
-	})
+	});
 
 	// Save the context here in case we need to do so some flipping
 	preview.save();
-	artoffsetX = parseInt(selectoffsetX.value);
-	artoffsetY = parseInt(selectoffsetY.value);
+	var artoffsetX = parseInt(selectoffsetX.value);
+	var artoffsetY = parseInt(selectoffsetY.value);
 	// We only make modifications if some mirror config is set to other than None
 	switch (mirror.value) {
 		case "Horizontal":
 			preview.translate(720, 0);
 			preview.scale(-1, 1);
-			artoffsetX = -artoffsetX;
+			var artoffsetX = -artoffsetX;
 			break;
 		case "Vertical":
 			preview.translate(0, 1280);
 			preview.scale(1, -1);
-			artoffsetY = -artoffsetY;
+			var artoffsetY = -artoffsetY;
 			break;
 		case "Both":
 			preview.translate(720, 1280);
 			preview.scale(-1, -1);
-			artoffsetX = -artoffsetX;
-			artoffsetY = -artoffsetY;
+			var artoffsetX = -artoffsetX;
+			var artoffsetY = -artoffsetY;
 			break;
 	}
 	// Print the hero art selected
 	if (hero) {
 		// If we selected Resplendent and it actually is a legit choose the art
-		attire = (selectattire.value == "Resplendent" && languages[language][hero.replace("PID", "MPID_VOICE") + "EX01"]) ? "_Resplendent_" : "_";
+		var attire = (selectattire.value == "Resplendent" && languages[language][hero.replace("PID", "MPID_VOICE") + "EX01"]) ? "_Resplendent_" : "_";
 		await getimage("../common/heroes/" + hero + attire + selectartstyle.value + ".webp", "/common/base/missigno.webp").then(img => {
 			// We always print the image at the 0 coordinate on Y, but this is not good enough when vertically flipping because we expect the lower half of the hero not to be cut
-			coordinateY = ["Vertical", "Both"].includes(mirror.value) ? - (img.height - 1280) : 0;
+			var coordinateY = ["Vertical", "Both"].includes(mirror.value) ? - (img.height - 1280) : 0;
 			preview.drawImage(img, -305 + artoffsetX, coordinateY - artoffsetY);
-		})
+		});
 	}
 	// Always restore the previous context to avoid issues
 	preview.restore();
 	
 	// Print the foregroundUI
-	foreground = appui.checked ? other["images"]["other"]["fgui"] : other["images"]["other"]["fgnoui"]
+	var foreground = appui.checked ? other["images"]["other"]["fgui"] : other["images"]["other"]["fgnoui"];
 	await getimage(foreground).then(img => {
 		preview.drawImage(img, 0, 0);
-	})
+	});
 	
 	//After this if no hero is selected we STOP and delete the first print queue
 	if (!hero) {
@@ -584,27 +609,27 @@ async function myunit() {
 
 	// Print the rarity line
 	// Convert the rarity variable into an int now to cater to calculation needs
-	rarity = selectrarity.value == "Forma" ? 5 : parseInt(selectrarity.value)
+	var rarity = selectrarity.value == "Forma" ? 5 : parseInt(selectrarity.value);
 	// The width of the line depends of the amount of stars, increasing 37 for each from a base value of 16 (margins?)
 	await getimage(other["images"]["rarity"][selectrarity.value]).then(img => {
 		preview.drawImage(img, 65, 505, 16 + (rarity * 37), 53);
-	})
+	});
 	
 	// Print the resplendent icon
 	if (["Resplendent", "Stats-Only"].includes(selectattire.value)) {
 		await getimage(other["images"]["other"]["resplendent"]).then(img => {
 			preview.drawImage(img, 262, 492, 82, 82);
-		})
+		});
 	}
 
 	// Print title and name
-	title = hero.includes("PID_") ? languages[language][hero.replace("PID", "MPID_HONOR")] : "Enemy";
+	var title = hero.includes("PID_") ? languages[language][hero.replace("PID", "MPID_HONOR")] : "Enemy";
 	// Use horizontally centered anchor to avoid going out of bounds
 	preview.fillStyle = 'white'; preview.strokeStyle = 'rgb(50, 30, 10)'; preview.textAlign = 'center'; preview.textBaseline = "middle"; preview.font = '35px FeH-Font'; preview.lineWidth = 6;
 	// Add the fill and the stroke for the title
 	preview.strokeText(title, 188, 585); preview.fillText(title, 188, 585);
 	// Add the fill and the stroke for the name
-	name = languages[language]["M" + hero];
+	var name = languages[language]["M" + hero];
 	preview.strokeText(name, 222, 659); preview.fillText(name, 222, 659);
 
 	// Print the artist and actor names, as well as the favorite mark and other minor strings if appui is enabled
@@ -612,18 +637,18 @@ async function myunit() {
 		preview.fillStyle = 'white'; preview.strokeStyle = '#0a2533'; preview.textAlign = 'start'; preview.textBaseline = "top"; preview.font = '21px FeH-Font';
 		// If the hero is truly a resplendent one we might have data for it
 		if (selectattire.value == "Resplendent" && languages[language][hero.replace("PID", "MPID_VOICE") + "EX01"]) {
-			voice = languages[language][hero.replace("PID", "MPID_VOICE") + "EX01"];
-			artist = languages[language][hero.replace("PID", "MPID_ILLUST") + "EX01"];
+			var voice = languages[language][hero.replace("PID", "MPID_VOICE") + "EX01"];
+			var artist = languages[language][hero.replace("PID", "MPID_ILLUST") + "EX01"];
 		} else {
-			voice = hero.includes("PID_") ? languages[language][hero.replace("PID", "MPID_VOICE")] : ""
-			artist = hero.includes("PID_") ? languages[language][hero.replace("PID", "MPID_ILLUST")] : ""
+			var voice = hero.includes("PID_") ? languages[language][hero.replace("PID", "MPID_VOICE")] : "";
+			var artist = hero.includes("PID_") ? languages[language][hero.replace("PID", "MPID_ILLUST")] : "";
 		}
 		preview.strokeText(voice, 47, 1213); preview.fillText(voice, 47, 1213);
 		preview.strokeText(artist, 47, 1242); preview.fillText(artist, 47, 1242);
 		// Print favorite icon
 		await getimage(other["images"]["favorite"][selectfavorite.value]).then(img => {
 			preview.drawImage(img, 3, 229, 90, 92);
-		})
+		});
 		// Translate buttons
 		preview.font = '24px FeH-Font'; preview.textAlign = 'center'; preview.textBaseline = "middle";
 		preview.strokeText(languages[language]["MID_UNIT_INFO_TO_SKILLSET"], 126, 1175); preview.fillText(languages[language]["MID_UNIT_INFO_TO_SKILLSET"], 126, 1175);
@@ -633,10 +658,9 @@ async function myunit() {
 		preview.strokeText(languages[language]["MID_UNIT_INFO_TO_TALK"], 617, 47); preview.fillText(languages[language]["MID_UNIT_INFO_TO_TALK"], 617, 47);
 	}
 
-	boon = selectboons.value == "None" ? false : selectboons.value; bane = selectbanes.value == "None" ? false : selectbanes.value; ascendent = selectascendent.value == "None" ? false : selectascendent.value; merges = parseInt(selectmerges.value);
+	var boon = selectboons.value == "None" ? false : selectboons.value; var bane = selectbanes.value == "None" ? false : selectbanes.value; var ascendent = selectascendent.value == "None" ? false : selectascendent.value; var merges = parseInt(selectmerges.value);
 	// First write the static text for each stat (normal anchoring)
 	preview.font = '25px FeH-Font'; preview.textAlign = 'start'; preview.textBaseline = "top"; preview.strokeStyle = '#0a2533';
-	statsnames = ["HP", "Atk", "Spd", "Def", "Res"]; statsstrings = ["MID_HP", "MID_ATTACK", "MID_AGILITY", "MID_DEFENSE", "MID_RESIST"]
 	// Each stat name is pushed down by 49pixels with an initial offset of 805
 	for (i = 0; i < statsnames.length; i++) {
 		// The filling color varies depending of it being a boon, bane (without merges), neutral or ascendent
@@ -661,11 +685,11 @@ async function myunit() {
 	preview.strokeText(languages[language]["MID_SKILL_POINT"], 120, 1052); preview.fillText(languages[language]["MID_SKILL_POINT"], 120, 1052);
 	preview.strokeText(languages[language]["MID_HEROISM_POINT"], 115, 1103); preview.fillText(languages[language]["MID_HEROISM_POINT"], 115, 1103);
 
-	flowers = parseInt(selectflowers.value);
+	var flowers = parseInt(selectflowers.value);
 	// Obtain the calculated stats to draw
-	statsmodifier = statcalc(units[hero]["stats"], units[hero]["growths"], rarity, boon, bane, ascendent, merges, flowers);
+	var statsmodifier = statcalc(units[hero]["stats"], units[hero]["growths"], rarity, boon, bane, ascendent, merges, flowers);
 
-	weapon = selectweapons.value == "None" ? false : selectweapons.value; refine = selectrefines.value == "None" ? false : selectrefines.value;
+	var weapon = selectweapons.value == "None" ? false : selectweapons.value; var refine = selectrefines.value == "None" ? false : selectrefines.value;
 	// We have a couple of stats modifiers based on weapon, summoner support, attire, bonus unit, visible buffs and maybe not completely parsed A/S skills that we must add
 	if (weapon) {
 		statsmodifier = statsmodifier.map(function (value, index) {
@@ -673,9 +697,24 @@ async function myunit() {
 		});
 	}
 
+	// Retrieve passives, ss and buffs
+	var passives = {
+		"A": selectA.value == "None" ? false : selectA.value,
+		"B": selectB.value == "None" ? false : selectB.value,
+		"C": selectC.value == "None" ? false : selectC.value,
+		"S": selectS.value == "None" ? false : selectS.value
+	};
+	var summoner = selectsummoner.value == "None" ? false : selectsummoner.value;
+	var buffs = [
+		0,
+		parseInt(selectatk.value) ? parseInt(selectatk.value) : 0,
+		parseInt(selectspd.value) ? parseInt(selectspd.value) : 0,
+		parseInt(selectdef.value) ? parseInt(selectdef.value) : 0,
+		parseInt(selectres.value) ? parseInt(selectres.value) : 0
+	];
 	// Add visible stats from multiple simple origins like passives, SS, resplendent, beast transformation and bonus
 	statsmodifier = statsmodifier.map(function (value, index) {
-		return value + staticmodifiers()[index];
+		return value + staticmodifiers(passives, summoner, buffs)[index];
 	});
 
 	// Fix stats, cannot go beyond 99 or below 0
@@ -686,14 +725,14 @@ async function myunit() {
 	// Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers).
 	for (i = 0; i < statsnames.length; i++) {
 		// Decide type of font depending on if we buffer, debuffed or neutral
-		numbertype = buffs[i] > 0 ? 2 : (buffs[i] < 0 ? 3 : 0);
+		let numbertype = buffs[i] > 0 ? 2 : (buffs[i] < 0 ? 3 : 0);
 		// Each stat name is pushed down by 49 pixels with an initial offset of 805
 		printnumbers(preview, statsmodifier[i], numbertype, 265, 805 + (i * 49) + (i * 0.3), "end");
 	}
 	// Print the amount of SP and HM
-	numbertype = selectsp.value == "9999" ? 4 : 0;
+	var numbertype = selectsp.value == "9999" ? 4 : 0;
 	printnumbers(preview, parseInt(selectsp.value), numbertype, 265, 1052, "end");
-	numbertype = selecthm.value == "8000" ? 4 : 0;
+	var numbertype = selecthm.value == "8000" ? 4 : 0;
 	printnumbers(preview, parseInt(selecthm.value), numbertype, 265, 1100, "end");
 
 	// Print the ascendent floret icon if selected
@@ -703,9 +742,9 @@ async function myunit() {
 		});
 	}
 
-	accessory = selectaccessory.value == "None" ? false : selectaccessory.value;
+	var accessory = selectaccessory.value == "None" ? false : selectaccessory.value;
 	// If we selected an accessory we paste a newer bigger holder and define an offset to push all next items to the right
-	offset = 0;
+	var offset = 0;
 	if (accessory) {
 		await getimage(other["images"]["other"]["accessoryexpand"]).then(img => {
 			preview.drawImage(img, 4, 732);
@@ -718,7 +757,7 @@ async function myunit() {
 	// Print the move type and weapon type icons
 	await getimage(other["images"]["movetype"][units[hero]["moveType"]]).then(img => {
 		// Position is slightly off if we had an accessory
-		posX = accessory ? 223 : 229;
+		var posX = accessory ? 223 : 229;
 		preview.drawImage(img, posX, 743, 32, 32);
 	});
 	await getimage(other["images"]["weapontype"][units[hero]["WeaponType"]]).then(img => {
@@ -733,7 +772,7 @@ async function myunit() {
 	// If we have merges we add the text next to the level
 	if (merges > 0) {
 		// Decide type of font depending on if we are fully merged or not
-		numbertype = merges == 10 ? 4 : 1;
+		var numbertype = merges == 10 ? 4 : 1;
 		printnumbers(preview, "+", numbertype, 163, 748, "start");
 		printnumbers(preview, merges, numbertype, 181, 745, "start");
 	}
@@ -762,19 +801,19 @@ async function myunit() {
 	// If the weapon is valid try to print an icon
 	if (weapon) {
 		// By default we always use the basic weapon icon or the predefined stat boosters ones
-		weaponicon = ["Atk", "Spd", "Def", "Res", "Wrathful", "Dazzling"].includes(refine) ? other["images"]["refines"][refine] : other["images"]["other"]["noweapon"];
+		var weaponicon = ["Atk", "Spd", "Def", "Res", "Wrathful", "Dazzling"].includes(refine) ? other["images"]["refines"][refine] : other["images"]["other"]["noweapon"];
 		// If the icon is an special effect we might have to download it
 		if (refine == "Effect" && skills["weapons"][weapon]["refines"]["Effect"]) {
-			weaponicon = "../common/icons/" + weapon + "-Effect.webp"
+			var weaponicon = "../common/icons/" + weapon + "-Effect.webp";
 		}
 		await getimage(weaponicon).then(img => {
 			preview.drawImage(img, 370, 797, 44, 44);
 		});
 		// Get the string to print
-		printableweapon = languages[language]["M" + weapon];
+		var printableweapon = languages[language]["M" + weapon];
 	// If not just print the basic icon
 	} else {
-		printableweapon = "-";
+		var printableweapon = "-";
 		await getimage(other["images"]["other"]["noweapon"]).then(img => {
 			preview.drawImage(img, 370, 797, 44, 44);
 		});
@@ -783,8 +822,8 @@ async function myunit() {
 	preview.fillStyle = refine ? "#82f546" : "#ffffff";
 	preview.strokeText(printableweapon, 420, 806); preview.fillText(printableweapon, 420, 806);
 
-	assist = selectassists.value == "None" ? "-" : languages[language]["M" + selectassists.value];
-	special = selectspecials.value == "None" ? "-" : languages[language]["M" + selectspecials.value];
+	var assist = selectassists.value == "None" ? "-" : languages[language]["M" + selectassists.value];
+	var special = selectspecials.value == "None" ? "-" : languages[language]["M" + selectspecials.value];
 	// Print assist and special info
 	preview.fillStyle = "#ffffff";
 	preview.strokeText(assist, 420, 854); preview.fillText(assist, 420, 854);
@@ -792,18 +831,18 @@ async function myunit() {
 
 	// Render all the passives
 	for (const [category, skill] of Object.entries(passives)) {
-		name = "-"
+		let name = "-";
 		// If the passive doesn't exist skip
 		if (allpassives[skill]) {
 			await getimage("../common/icons/" + skill + ".webp").then(img => {
 				// If the image size is bigger than 44 these are some tier 4 skills that have shiny borders and their icon must be and offsetted accordingly
-				iconoffset = img.height > 44 ? -2 : 0;
+				let iconoffset = img.height > 44 ? -2 : 0;
 				preview.drawImage(img, passiverender[category]["icon"][0] + iconoffset, passiverender[category]["icon"][1] + iconoffset);
 			});
 			name = languages[language]["M" + skill];
 		}
 		// We always write the text because it might be a simple "-"
-		preview.strokeText(name, passiverender[category]["text"][0], passiverender[category]["text"][1])
+		preview.strokeText(name, passiverender[category]["text"][0], passiverender[category]["text"][1]);
 		preview.fillText(name, passiverender[category]["text"][0], passiverender[category]["text"][1]);
 		// Print the category indicator
 		await getimage(other["images"]["skillindicators"][category]).then(img => {
@@ -811,18 +850,18 @@ async function myunit() {
 		});
 	}
 
-	blessing = selectblessings.value == "None" ? false : parseInt(selectblessings.value);
+	var blessing = selectblessings.value == "None" ? false : parseInt(selectblessings.value);
 	// X amount to additionally push each icon to the left
-	offsetX = 0;
+	var offsetX = 0;
 	// Detect if we are printing more than three icons (this could happen on duo/blessed/summoner supported allies) so we can resize accordingly
-	needsresize = blessing && summoner && other["duo"].includes(hero) ? true : false;
-	posY = needsresize ? 595 : 570; posX = needsresize ? 600 : 575;
-	width = needsresize ? 115 : 147; height = needsresize ? 125 : 160;
+	var needsresize = blessing && summoner && other["duo"].includes(hero) ? true : false;
+	var posY = needsresize ? 595 : 570; var posX = needsresize ? 600 : 575;
+	var width = needsresize ? 115 : 147; var height = needsresize ? 125 : 160;
 	// If blessed print the icon
 	if (blessing) {
 		// If the hero is on the list of the blessed ones for that particular blessing it has icon variant defined (otherwise use the normal one)
-		variant = other["blessed"][hero] ? other["blessed"][hero]["variant"] : false;
-		blessingicon = "/common/other/" + blessing + "-Blessing" + (variant ? "-" + variant : "") + ".webp"
+		var variant = other["blessed"][hero] ? other["blessed"][hero]["variant"] : false;
+		var blessingicon = "/common/other/" + blessing + "-Blessing" + (variant ? "-" + variant : "") + ".webp";
 		await getimage(blessingicon).then(img => {
 			preview.drawImage(img, posX, posY, width, height);
 		});
@@ -832,8 +871,8 @@ async function myunit() {
 
 	// If is a duo hero of any kind print the icon
 	if (other["duo"].concat(other["resonant"]).includes(hero)) {
-		specialtype = other["duo"].includes(hero) ? "Duo" : "Resonance";
-		specialicon = other["images"]["other"][specialtype];
+		var specialtype = other["duo"].includes(hero) ? "Duo" : "Resonance";
+		var specialicon = other["images"]["other"][specialtype];
 		await getimage(specialicon).then(img => {
 			preview.drawImage(img, posX - offsetX, posY, width, height);
 		});

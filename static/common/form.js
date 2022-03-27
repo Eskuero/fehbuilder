@@ -52,7 +52,7 @@ cheats = document.getElementById('cheats');
 bestskills = document.getElementById('bestskills');
 appui = document.getElementById('appui');
 // Where we show the image
-var canvas = document.getElementById('fakecanvas');
+canvas = document.getElementById('fakecanvas');
 
 // This makes sure dropdown options have their classes carried over (we need it to color basekit)
 function copyClassesToSelect2(data, container) {
@@ -74,9 +74,9 @@ function matchCustom(params, data) {
 	}
 
 	// This is the entry we are checking
-	entry = data.text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().replace("'","");
+	var entry = data.text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().replace("'","");
 	// This is the search string we are using
-	search = params.term.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().replace("'","");
+	var search = params.term.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().replace("'","");
 
 	// Check if the search string exists within a certain entry
 	if (entry.indexOf(search) > -1) {
@@ -105,15 +105,15 @@ $(document).ready(function() {
 
 // FIXME: Workaround for https://github.com/select2/select2/issues/5993 when using JQuery 3.6
 $(document).on("select2:open", () => {
-	document.querySelector(".select2-container--open .select2-search__field").focus()
+	document.querySelector(".select2-container--open .select2-search__field").focus();
 });
 
 function beastcheck() {
 	// Obtain the weapon category for the unit
 	if (selectheroes.value == "None") {
-		weapontype = false;
+		var weapontype = false;
 	} else {
-		weapontype = units[selectheroes.value]["WeaponType"];
+		var weapontype = units[selectheroes.value]["WeaponType"];
 	}
 	if (![20, 21, 22, 23].includes(weapontype)) {
 		selectbeast.value = "no";
@@ -160,7 +160,7 @@ function maximize() {
 		selectattire.value = "Normal";
 	}
 	// For beasts enable transformation
-	weapontype = units[selectheroes.value]["WeaponType"];
+	var weapontype = units[selectheroes.value]["WeaponType"];
 	if ([20, 21, 22, 23].includes(weapontype)) {
 		selectbeast.value = "yes";
 	}
@@ -178,7 +178,7 @@ function reset(section) {
 			// We cannot check if the unit is a beast unless there's a unit selected
 			if (selectheroes.value != "None") {
 				// For beasts disable transformation
-				weapontype = units[selectheroes.value]["WeaponType"];
+				var weapontype = units[selectheroes.value]["WeaponType"];
 				if ([20, 21, 22, 23].includes(weapontype)) {
 					selectbeast.value = "no";
 				}
@@ -206,10 +206,10 @@ function reset(section) {
 		break;
 		case "stats":
 			// Detect which section we are on
-			options = document.getElementsByClassName("tabs")[0].children;
+			var options = document.getElementsByClassName("tabs")[0].children;
 			for (i = 1; i < options.length - 1; i++) {
 				if (options[i].className == "imagelabel selected") {
-					selection = options[i].title;
+					var selection = options[i].title;
 				}
 			}
 			switch (selection) {
@@ -252,7 +252,7 @@ function applybasekit() {
 		"B": false,
 		"C": false
 	}
-	fullkit = units[selectheroes.value]["basekit"];
+	var fullkit = units[selectheroes.value]["basekit"];
 	for (i = 0; i < fullkit.length; i++) {
 		if (skills["weapons"][fullkit[i]]) {
 			for (j = 0; j < selectweapons.options.length; j++) {
