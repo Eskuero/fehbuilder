@@ -28,13 +28,13 @@ function download() {
 }
 
 function changemap() {
-	map = selectmap.value;
+	var map = selectmap.value;
 	mapcanvas.style.background = 'url("/common/other/maps-' + map + '.webp")';
-	for (a = 0; a < 6; a++) {
-		for (b = 0; b < 6; b++) {
-			tileid = a + "" + b;
-			tile = document.getElementById(tileid);
-			tiletype = other["maps"][map][tileid] ? other["maps"][map][tileid] : "nothing";
+	for (let a = 0; a < 6; a++) {
+		for (let b = 0; b < 6; b++) {
+			let tileid = a + "" + b;
+			let tile = document.getElementById(tileid);
+			let tiletype = other["maps"][map][tileid] ? other["maps"][map][tileid] : "nothing";
 			if (tiletype.indexOf("wall") != -1) {
 				tile.style.background = 'url("/common/other/maps-' + tiletype + '.webp")';
 			} else if (tiletype == "water") {
@@ -49,7 +49,7 @@ function changemap() {
 			// If the tiletype is not nothing that means we shouldn't have anything there
 			if (tile.firstChild && tiletype != "nothing") {
 				// Try to relocate the item
-				relocated = relocate(tile.lastChild);
+				let relocated = relocate(tile.lastChild);
 				// If we failed to relocate delete it
 				if (!relocated) {
 					tile.removeChild(tile.lastChild);
@@ -60,10 +60,10 @@ function changemap() {
 }
 
 function pasteunit(caller) {
-	option = caller.value;
-	classname = "hero";
-	extraid = "-" + new Date().getTime();
-	target = document.getElementById(caller.getAttribute("selectedtile"));
+	var option = caller.value;
+	var classname = "hero";
+	var extraid = "-" + new Date().getTime();
+	var target = document.getElementById(caller.getAttribute("selectedtile"));
 	// Always delete whatever the tile contains
 	while (target.lastChild) {
 		target.removeChild(target.lastChild);
@@ -76,7 +76,7 @@ function pasteunit(caller) {
 		item.id = option + extraid;
 		item.addEventListener("dragstart", function(event) {drag(event)});
 		// Add the hero as an image
-		hero = document.createElement('img');
+		var hero = document.createElement('img');
 		hero.src = "/common/" + selectartstyle.value + "/" + option + ".webp";
 		// Once the hero image is loaded apply proper styles to make it fit better
 		hero.addEventListener("load", function(event) {herosize(event.target)});
@@ -109,9 +109,9 @@ function pasteunit(caller) {
 }
 
 function herosize(caller) {
-	hero = caller.parentElement.id.split("-")[0]
+	var hero = caller.parentElement.id.split("-")[0];
 	// By default set the height to 100% of the cell
-	height = 100;
+	var height = 100;
 	// We do some adjustments when using sprites
 	if (selectartstyle.value.indexOf("sprites") != -1) {
 		// Increase the size a 10% for mounted units
@@ -125,16 +125,16 @@ function herosize(caller) {
 }
 
 function changeart() {
-	heroes = document.getElementsByClassName("hero");
-	artstyle = selectartstyle.value;
-	for (i = 0; i < heroes.length; i++) {
+	var heroes = document.getElementsByClassName("hero");
+	var artstyle = selectartstyle.value;
+	for (let i = 0; i < heroes.length; i++) {
 		heroes[i].firstChild.src = "/common/" + artstyle + "/" + heroes[i].id.split("-")[0] + ".webp";
 	}
 }
 
 function pastestructure(caller) {
-	option = caller.value;
-	target = document.getElementById(caller.getAttribute("selectedtile"));
+	var option = caller.value;
+	var target = document.getElementById(caller.getAttribute("selectedtile"));
 	// Always delete whatever the tile contains
 	while (target.lastChild) {
 		target.removeChild(target.lastChild);
@@ -148,13 +148,13 @@ function pastestructure(caller) {
 		item.setAttribute("structtype", caller.selectedOptions[0].getAttribute("structtype"));
 		item.addEventListener("dragstart", function(event) {drag(event)});
 		// Add the structure as an image
-		structure = document.createElement('img');
+		var structure = document.createElement('img');
 		structure.src = "/common/other/maps-" + option + ".webp";
 		structure.draggable = false;
 		item.appendChild(structure);
 		// In the case of structures check if the one we are placing exists under results and delete that one
-		results = document.getElementById("results").children;
-		for (i = 0; i < results.length; i++) {
+		var results = document.getElementById("results").children;
+		for (let i = 0; i < results.length; i++) {
 			if (results[i].id == option) {
 				results[i].parentElement.removeChild(results[i]);
 			}
@@ -168,8 +168,8 @@ function pastestructure(caller) {
 }
 
 function clearmap() {
-	tiles = document.getElementsByClassName("cell");
-	for (i = 0; i < tiles.length; i++) {
+	var tiles = document.getElementsByClassName("cell");
+	for (let i = 0; i < tiles.length; i++) {
 		if (tiles[i].lastChild) {
 			// Do not delete fortress or aether structs unless on cheat mode
 			if (tiles[i].lastChild.getAttribute("structtype") != "mandatory" || selectcheats.checked) {
@@ -183,9 +183,9 @@ function clearmap() {
 
 function relocate(item) {
 	// Get current position
-	currenttile = parseInt(item.parentElement.id);
+	var currenttile = parseInt(item.parentElement.id);
 	// First generate suspected adjacent spaces and try to relocate there in order (left, right, top, bottom, top-left, top-right, bottom-left, bottom-right)
-	adjacent = [
+	var adjacent = [
 		(currenttile - 1).toString().padStart(2, '0'),
 		(currenttile + 1).toString().padStart(2, '0'),
 		(currenttile - 10).toString().padStart(2, '0'),
@@ -195,7 +195,7 @@ function relocate(item) {
 		(currenttile + 9).toString().padStart(2, '0'),
 		(currenttile + 11).toString().padStart(2, '0')
 	];
-	for (i = 0; i < adjacent.length; i++) {
+	for (let i = 0; i < adjacent.length; i++) {
 		// If the item is a hero and the supposedly adjacent tile is not row 0 or 1 skip this iteration
 		if (item.className == "hero" && parseInt(adjacent[i][0]) > 1) {
 			continue;
@@ -214,7 +214,7 @@ function relocate(item) {
 }
 
 function deleteitem(caller) {
-	tile = document.getElementById(caller.getAttribute("selectedtile"))
+	var tile = document.getElementById(caller.getAttribute("selectedtile"));
 	if (tile.lastChild) {
 		tile.removeChild(tile.lastChild);
 	}
@@ -227,9 +227,9 @@ function iconvisibility(caller) {
 	// If we are only modifying an specific icon check with the caller
 	if (caller) {
 		// Class of the icon to hide
-		target = caller.id.slice(4);
-		icons = document.querySelectorAll("." + target);
-		for (i = 0; i < icons.length; i++) {
+		var target = caller.id.slice(4);
+		var icons = document.querySelectorAll("." + target);
+		for (let i = 0; i < icons.length; i++) {
 			icons[i].style.display = caller.checked == true ? "block" : "none";
 		}
 	}

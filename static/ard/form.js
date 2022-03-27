@@ -12,7 +12,7 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 // Dicts for info
-var units, skills, other;
+var units, other;
 // All selects we have available
 selectheroes = document.getElementById('selectheroes');
 selectartstyle = document.getElementById('artstyle');
@@ -65,9 +65,9 @@ function matchCustom(params, data) {
 	}
 
 	// This is the entry we are checking
-	entry = data.text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().replace("'","");
+	var entry = data.text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().replace("'","");
 	// This is the search string we are using
-	search = params.term.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().replace("'","");
+	var search = params.term.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().replace("'","");
 
 	// Check if the search string exists within a certain entry
 	if (entry.indexOf(search) > -1) {
@@ -95,7 +95,7 @@ $(document).ready(function() {
 
 // FIXME: Workaround for https://github.com/select2/select2/issues/5993 when using JQuery 3.6
 $(document).on("select2:open", () => {
-	document.querySelector(".select2-container--open .select2-search__field").focus()
+	document.querySelector(".select2-container--open .select2-search__field").focus();
 });
 
 function init() {
@@ -126,11 +126,11 @@ function updatedialog(caller) {
 	}
 
 	// Loop through all structures with their class and disable them when necessary
-	structures = document.getElementsByClassName("structure");
-	todisable = [];
-	for (j = 0; j < selectstructure.options.length; j++) {
+	var structures = document.getElementsByClassName("structure");
+	var todisable = [];
+	for (let j = 0; j < selectstructure.options.length; j++) {
 		selectstructure.options[j].disabled = false;
-		for (i = 0; i < structures.length; i++) {
+		for (let i = 0; i < structures.length; i++) {
 			// Disable duplicates
 			if (selectstructure.options[j].value == structures[i].id && structures[i].parentElement.id != "results") {
 				todisable.push(selectstructure.options[j]);
@@ -138,7 +138,7 @@ function updatedialog(caller) {
 			// Don't allow more than six defensive structures
 			if (selectstructure.options[j].getAttribute("structtype") == "defensive" && maplimits["defensive"].length >= 6) {
 				// If the item already in the cell is a defensive structure don't disable them to allow replacing
-				typeofchild = caller.firstChild ? caller.firstChild.getAttribute("structtype") : "none";
+				let typeofchild = caller.firstChild ? caller.firstChild.getAttribute("structtype") : "none";
 				if (typeofchild != "defensive") {
 					todisable.push(selectstructure.options[j]);
 				}
@@ -146,7 +146,7 @@ function updatedialog(caller) {
 			// Don't allow more than one school
 			if (selectstructure.options[j].value.indexOf("school") != -1 && maplimits["schooled"]) {
 				// If the item already in the cell is a school don't disable them to allow replacing
-				typeofchild = caller.firstChild ? caller.firstChild.id : "none";
+				let typeofchild = caller.firstChild ? caller.firstChild.id : "none";
 				if (typeofchild.indexOf("school") == -1) {
 					todisable.push(selectstructure.options[j]);
 				}
@@ -155,14 +155,14 @@ function updatedialog(caller) {
 	}
 	// If cheats are enabled we don't care about this
 	if (!selectcheats.checked) {
-		for (i = 0; i < todisable.length; i++) {
+		for (let i = 0; i < todisable.length; i++) {
 			todisable[i].disabled = true;
 		}
 	}
 
 	// Check the map tile to enable or disable certain aspects
-	map = selectmap.value;
-	tiletype = other["maps"][map][caller.id] ? other["maps"][map][caller.id] : "nothing";
+	var map = selectmap.value;
+	var tiletype = other["maps"][map][caller.id] ? other["maps"][map][caller.id] : "nothing";
 	// If the tile if not nothing it means we can't place shit there so stop right away
 	if (tiletype != "nothing" && !selectcheats.checked) {
 		return;
@@ -176,7 +176,7 @@ function updatedialog(caller) {
 		} else {
 			// If the tile we are selecting contains a hero allow modifying it always.
 			// FIXME: If you go until the 7 unit limit you will be allowed to replace the mythic who enables the extra slot with a normal hero
-			typeofchild = caller.firstChild ? caller.firstChild.className : "none";
+			let typeofchild = caller.firstChild ? caller.firstChild.className : "none";
 			if (typeofchild == "hero") {
 				selectheroes.disabled = false;
 			// If not a hero check if we can add new heroes or if it goes over the limit
@@ -191,7 +191,7 @@ function updatedialog(caller) {
 		selectheroes.disabled = false;
 	}
 	// Repopulate the hero select with the option choosen for that tile if already exists
-	restore = caller.lastChild ? caller.lastChild.id.split("-")[0] : "None";
+	var restore = caller.lastChild ? caller.lastChild.id.split("-")[0] : "None";
 	populate(selectheroes, units, true, restore);
 	
 	// Finally set the selected tile attribute and shot the box
@@ -213,7 +213,7 @@ function drag(ev) {
 function drop(ev) {
 	ev.preventDefault();
 	// We need to do a variety of checks before even attempting to paste an item
-	targettile = ev.target;
+	var targettile = ev.target;
 	var data = document.getElementById(ev.dataTransfer.getData("text"));
 
 	// If the target isn't a cell we must iterate up until we find it
@@ -254,14 +254,14 @@ function drop(ev) {
 				data.parentElement.appendChild(targettile.lastChild);
 			// Otherwise just relocate it
 			} else {
-				relocated = relocate(targettile.lastChild);
+				let relocated = relocate(targettile.lastChild);
 				// If we failed to relocate skip
 				if (!relocated) {
 					return;
 				}
 			}
 		} else {
-			relocated = relocate(targettile.lastChild);
+			let relocated = relocate(targettile.lastChild);
 			// If we failed to relocate skip
 			if (!relocated) {
 				return;
@@ -274,7 +274,7 @@ function drop(ev) {
 			data.parentElement.appendChild(targettile.lastChild);
 		// Otherwise just relocate it
 		} else {
-			relocated = relocate(targettile.lastChild);
+			let relocated = relocate(targettile.lastChild);
 			// If we failed to relocate skip
 			if (!relocated) {
 				return;
@@ -303,13 +303,13 @@ function scan() {
 		"extrae": false,
 		// Already one school?
 		"schooled": false
-	}
-	structures = document.getElementsByClassName("structure");
-	heroes = document.getElementsByClassName("hero");
+	};
+	var structures = document.getElementsByClassName("structure");
+	var heroes = document.getElementsByClassName("hero");
 	// Store structs in their respective category (skipping the ones outside)
-	for (i = 0; i < structures.length; i++) {
+	for (let i = 0; i < structures.length; i++) {
 		if (structures[i].parentElement.className == "cell") {
-			structid = structures[i].id;
+			let structid = structures[i].id;
 			maplimits[structures[i].getAttribute("structtype")].push(structid);
 			// If the struct is a school mark it
 			if (structid.indexOf("school") != -1) {
@@ -318,11 +318,11 @@ function scan() {
 		}
 	}
 	// Store heroes
-	for (i = 0; i < heroes.length; i++) {
+	for (let i = 0; i < heroes.length; i++) {
 		maplimits["heroes"].push(heroes[i].id);
-		heroid = heroes[i].id.split("-")[0];
+		let heroid = heroes[i].id.split("-")[0];
 		// If the hero is preblessed for dark or anima and has a extrae variant it can provide an additional slot in AR-D
-		variant = other["blessed"][heroid] ? ([6,8].includes(other["blessed"][heroid]["blessing"]) ? other["blessed"][heroid]["variant"] : "none") : "none";
+		let variant = other["blessed"][heroid] ? ([6,8].includes(other["blessed"][heroid]["blessing"]) ? other["blessed"][heroid]["variant"] : "none") : "none";
 		if (variant.indexOf("extrae") != -1) {
 			maplimits["extrae"] = true;
 		}
@@ -340,16 +340,16 @@ function populate(select, data, clean, previousvalue = "None") {
 	opt.innerHTML = "None";
 	select.appendChild(opt);
 	// All data to be printed
-	options = {}
+	var options = {};
 	// If indicated to bypass don't do checks for this select, print everything and leave (this is exclusively for the heroes select)
 	Object.keys(data).forEach((value) => {
-		options[languages["USEN"]["M" + value] + ": " + (languages["USEN"][value.replace("PID", "MPID_HONOR")] || "Generic")] = value
+		options[languages["USEN"]["M" + value] + ": " + (languages["USEN"][value.replace("PID", "MPID_HONOR")] || "Generic")] = value;
 	});
 	// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
-	options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {})
+	options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {});
 	// For each entry print an option
 	for (const [string, tag] of Object.entries(options)) {
-		var opt = document.createElement('option');
+		let opt = document.createElement('option');
 		opt.value = tag;
 		// If of type person we also append the title
 		opt.innerHTML = string;
