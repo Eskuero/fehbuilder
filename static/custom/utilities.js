@@ -13,27 +13,27 @@
 
 function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers) {
 	// Modify the level 1 stats based on the rarity provided
-	almosttruelevel1 = {"HP": stats[0], "Atk": stats[1], "Spd": stats[2], "Def": stats[3], "Res": stats[4]}
+	var almosttruelevel1 = {"HP": stats[0], "Atk": stats[1], "Spd": stats[2], "Def": stats[3], "Res": stats[4]};
 
 	// Modify the level 1 stats based on the boons and banes provided
-	truelevel1 = {
+	var truelevel1 = {
 		"HP": almosttruelevel1["HP"] + (boon == "HP" ? 1 : (bane == "HP" ? -1 : 0)),
 		"Atk": almosttruelevel1["Atk"] + (boon == "Atk" ? 1 : (bane == "Atk" ? -1 : 0)),
 		"Spd": almosttruelevel1["Spd"] + (boon == "Spd" ? 1 : (bane == "Spd" ? -1 : 0)),
 		"Def": almosttruelevel1["Def"] + (boon == "Def" ? 1 : (bane == "Def" ? -1 : 0)),
 		"Res": almosttruelevel1["Res"] + (boon == "Res" ? 1 : (bane == "Res" ? -1 : 0))
-	}
+	};
 	// Modify the growth based on the boons and banes provided
-	truegrowth = {
+	var truegrowth = {
 		"HP": growths[0] + (boon == "HP" ? 5 : (bane == "HP" ? -5 : 0)),
 		"Atk": growths[1] + (boon == "Atk" ? 5 : (bane == "Atk" ? -5 : 0)),
 		"Spd": growths[2] + (boon == "Spd" ? 5 : (bane == "Spd" ? -5 : 0)),
 		"Def": growths[3] + (boon == "Def" ? 5 : (bane == "Def" ? -5 : 0)),
 		"Res": growths[4] + (boon == "Res" ? 5 : (bane == "Res" ? -5 : 0))
-	}
+	};
 
 	// We sort the level 1 stats to see the correct order to apply merges and dragonflowers
-	sortedtruelevel1 = dictsort(truelevel1);
+	var sortedtruelevel1 = dictsort(truelevel1);
 
 	// Now disregard the bane if we are merged
 	if (merges > 0 && bane && bane != boon) {
@@ -47,15 +47,15 @@ function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers
 		truegrowth[ascendent] += 5;
 	}
 	// We loop as many times as merges we got to apply the boosts, we save in a variable the next to be updated index
-	stat = 0;
-	for (i = 0; i < merges; i++) {
+	var stat = 0;
+	for (let i = 0; i < merges; i++) {
 		// If we are neutral but merged we increase the first two stats twice on the initial merge (unless we have an ascendent boon on that stat)
 		truelevel1[sortedtruelevel1[stat][0]] += (boon || i > 0 || sortedtruelevel1[stat][0] == ascendent) ? 1 : 2;
-		ascended = sortedtruelevel1[stat][0] == ascendent ? true : false;
-		stat = stat == 4 ? 0 : stat + 1
+		let ascended = sortedtruelevel1[stat][0] == ascendent ? true : false;
+		stat = stat == 4 ? 0 : stat + 1;
 		truelevel1[sortedtruelevel1[stat][0]] += (boon || i > 0 || sortedtruelevel1[stat][0] == ascendent) ? 1 : 2;
 		ascended = sortedtruelevel1[stat][0] == ascendent ? true : ascended;
-		stat = stat == 4 ? 0 : stat + 1
+		stat = stat == 4 ? 0 : stat + 1;
 		// If we are neutral but merged we increase an additional stat on the first merge (unless we have an ascendent boon on that stat) but without incrementing the counter
 		if (!boon && i == 0 && sortedtruelevel1[stat][0] != ascendent) {
 			truelevel1[sortedtruelevel1[stat][0]] += 1;
@@ -69,8 +69,8 @@ function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers
 	}
 
 	// We loop as many times as dragonflowers we got to apply the boosts, we save in a variable the next to be updated index
-	stat = 0;
-	for (i = 0; i < flowers; i++) {
+	var stat = 0;
+	for (let i = 0; i < flowers; i++) {
 		// If we are neutral but merged we increase the first two stats twice
 		truelevel1[sortedtruelevel1[stat][0]] += 1;
 		stat = stat == 4 ? 0 : stat + 1;
@@ -82,10 +82,10 @@ function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers
 		truelevel1["Spd"] + generalgrowths[(truegrowth["Spd"] / 5) - 4],
 		truelevel1["Def"] + generalgrowths[(truegrowth["Def"] / 5) - 4],
 		truelevel1["Res"] + generalgrowths[(truegrowth["Res"] / 5) - 4],
-	]
+	];
 }
 // Growth table from https://feheroes.fandom.com/wiki/Stat_growth (this is hardcoded because deriving the actual values from the base formula is increasingly tricky due aproximations .99999 decimals and such). Theorically we should be able to calculate with (math.trunc(truegrowth["Res"] * raritymultipliers[rarity-1]) / 100)
-generalgrowths = [8, 10, 13, 15, 17, 19, 22, 24, 26, 28, 30, 33, 35, 37, 39]
+generalgrowths = [8, 10, 13, 15, 17, 19, 22, 24, 26, 28, 30, 33, 35, 37, 39];
 
 // Function to order items from a dictionary like object in javascript. Ripped from https://stackoverflow.com/a/25500462
 function dictsort(dictionary) {
@@ -107,9 +107,9 @@ const sleep = (milliseconds) => {
 }
 
 async function getimage(url, fallback = "/common/base/oopsie.webp") {
+	var img = new Image();
 	// This premise will not return until the image has fully loaded
-	const imageLoadPromise = new Promise(resolve => {
-		img = new Image();
+	var imageLoadPromise = new Promise(resolve => {
 		img.src = url;
 		img.onload = resolve;
 		// We failed to download the image so fallback to the provided or default 1x1 transparent image
@@ -125,21 +125,21 @@ async function getimage(url, fallback = "/common/base/oopsie.webp") {
 
 async function getlang() {
 	// Make sure the selected language is available, download it if not
-	newlang = selectlanguage.value;
+	var newlang = selectlanguage.value;
 	if (!languages[newlang]) {
-		const response = await fetch('/common/data/individual/litelanguages-' + newlang + '.json');
-		const data = await response.json();
+		let response = await fetch('/common/data/individual/litelanguages-' + newlang + '.json');
+		let data = await response.json();
 		languages[newlang] = data;
 	}
 }
 
 function download() {
 	// Hero ID
-	hero = selecthero.value.split(":");
+	var hero = selecthero.value.split(":");
 	// Convert canvas to a data url
 	var url = document.getElementById("fakecanvas").toDataURL("image/png");
 	// Get desired filename
-	truename = (hero[0] ? " - " + hero[0] : "") + (hero[1] ? " - " + hero[1] : "");
+	var truename = (hero[0] ? " - " + hero[0] : "") + (hero[1] ? " - " + hero[1] : "");
 	// Create the link element to force the download
 	var link = document.createElement('a');
 	link.href = url;
@@ -151,16 +151,16 @@ function download() {
 }
 
 // Simple housekeeping function to add the stats boost from different static modifiers
-function staticmodifiers() {
-	othermodifiers = [0, 0, 0, 0, 0];
+function staticmodifiers(summoner) {
+	var othermodifiers = [0, 0, 0, 0, 0];
 
 	// All type of skills we grab stats from
-	options = ["weapon", "refine", "Askill", "Bskill", "Cskill", "Sskill"];
-	stats = ["hp", "atk", "spd", "def", "res"];
-	for (i = 0; i < options.length; i++) {
-		skillstats = [];
-		for (j = 0; j < stats.length; j++) {
-			value = document.getElementById(stats[j] + options[i]).value;
+	var options = ["weapon", "refine", "Askill", "Bskill", "Cskill", "Sskill"];
+	var stats = ["hp", "atk", "spd", "def", "res"];
+	for (let i = 0; i < options.length; i++) {
+		let skillstats = [];
+		for (let j = 0; j < stats.length; j++) {
+			let value = document.getElementById(stats[j] + options[i]).value;
 			skillstats.push(parseInt(value) ? parseInt(value) : 0);
 		}
 		othermodifiers = othermodifiers.map(function (value, index) {
@@ -184,7 +184,7 @@ function staticmodifiers() {
 	if (selectbeast.value == "yes") {
 		othermodifiers[1] += 2;
 	}
-	summoner = selectsummoner.value == "None" ? false : selectsummoner.value;
+
 	// Add summoner support stats
 	if (summoner) {
 		othermodifiers = othermodifiers.map(function (value, index) {
@@ -192,11 +192,11 @@ function staticmodifiers() {
 		});
 	}
 
-	allies = {};
+	var allies = {};
 	// For each ally selected add it to the dictionary
-	for (i = 0; i < selectallies.selectedOptions.length; i++) {
-		ally = selectallies.selectedOptions[i].value;
-		amount = parseInt(document.getElementById(ally).value);
+	for (let i = 0; i < selectallies.selectedOptions.length; i++) {
+		let ally = selectallies.selectedOptions[i].value;
+		let amount = parseInt(document.getElementById(ally).value);
 		allies[ally] = amount;
 	}
 	// Calculate the visible stats you get for each allied mythic or legendary
@@ -220,7 +220,7 @@ summonerranks = {
 	"B": [4, 0, 0, 2, 2],
 	"A": [4, 0, 2, 2, 2],
 	"S": [5, 2, 2, 2, 2]
-}
+};
 
 // Canvas position to render images passive icons at
 passiverender = {
@@ -228,37 +228,37 @@ passiverender = {
 	"B": {"icon": [369, 994], "text": [420, 1003], "indicator": [396, 1016]},
 	"C": {"icon": [369, 1043], "text": [420, 1053], "indicator": [396, 1066]},
 	"S": {"icon": [369, 1093], "text": [420, 1103], "indicator": [396, 1116]}
-}
+};
 
 // Function that prints certain numbers using numberfont spritesheet
 function printnumbers(canvas, characters, type, posX, posY, align = "start") {
 	if (typeof characters == "number") {
 		// Split the full number on individual ones
-		numbers = characters.toString().split("").map(Number);
+		var numbers = characters.toString().split("").map(Number);
 		// We have an offset that we must increment with every number to keep pushing each to the left and avoid overlaps
-		offsetX = 0;
+		var offsetX = 0;
 		// We invert the order of the loop depending on the type of alignment
 		if (align == "end") {
-			for (j = numbers.length - 1; j >= 0; j--) {
+			for (let j = numbers.length - 1; j >= 0; j--) {
 				// This is the size that the number will take ()
-				width = numberfontrender["end"][numbers[j]] - numberfontrender["start"][numbers[j]];
+				let width = numberfontrender["end"][numbers[j]] - numberfontrender["start"][numbers[j]];
 				// Since we are aligning to the end the actual drawing position on the X coordinate is the posX - width - offset
-				trueposX = posX - (width + offsetX);
+				let trueposX = posX - (width + offsetX);
 				// We must crop the numbers at a certain position depending on type and value
-				sourceX = numberfontrender["start"][numbers[j]]; sourceY = type * 28;
+				let sourceX = numberfontrender["start"][numbers[j]]; let sourceY = type * 28;
 				// Increase the offset before the next interation using the number width (-3 to make sure we fill the gaps)
 				offsetX += width - 3;
 				// Print the number
 				canvas.drawImage(numberfont, sourceX, sourceY, width, 28, trueposX, posY, width, 28);
 			}
 		} else {
-			for (j = 0; j < numbers.length; j++) {
+			for (let j = 0; j < numbers.length; j++) {
 				// This is the size that the number will take ()
-				width = numberfontrender["end"][numbers[j]] - numberfontrender["start"][numbers[j]];
+				let width = numberfontrender["end"][numbers[j]] - numberfontrender["start"][numbers[j]];
 				// Since we are aligning to the end the actual drawing position on the X coordinate is the posX - width - offset
-				trueposX = posX + offsetX;
+				let trueposX = posX + offsetX;
 				// We must crop the numbers at a certain position depending on type and value
-				sourceX = numberfontrender["start"][numbers[j]]; sourceY = type * 28;
+				let sourceX = numberfontrender["start"][numbers[j]]; let sourceY = type * 28;
 				// Increase the offset before the next interation using the number width (-3 to make sure we fill the gaps)
 				offsetX += width - 3;
 				// Print the number
@@ -268,7 +268,7 @@ function printnumbers(canvas, characters, type, posX, posY, align = "start") {
 	// Otherwise we are just printing a simple + or -
 	} else {
 		// We must crop the character at a certain position depending on type and value
-		sourceX = characters == "+" ? 248 : 271; sourceY = 3 + (type * 6) + (type * 22);
+		let sourceX = characters == "+" ? 248 : 271; let sourceY = 3 + (type * 6) + (type * 22);
 		// Print the number
 		canvas.drawImage(numberfont, sourceX, sourceY, 22, 22, posX, posY, 22, 22);
 	}
@@ -278,4 +278,4 @@ function printnumbers(canvas, characters, type, posX, posY, align = "start") {
 numberfontrender = {
 	"start": [0, 22, 45, 68, 90, 113, 136, 158, 181, 203],
 	"end": [22, 44, 67, 90, 112, 135, 158, 180, 203, 225]
-}
+};
