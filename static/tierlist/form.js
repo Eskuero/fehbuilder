@@ -12,7 +12,7 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 // Dicts for info
-var units, skills, other, languages;
+var units, other;
 // All selects we have available
 selectweapontype = document.getElementById("weapontype");
 selectmovetype = document.getElementById("movetype");
@@ -68,16 +68,16 @@ function init() {
 					{"color": "#7FBFFF", "name": "E", "content": []}
 				]
 			}
-		}
+		};
 		localStorage.setItem('saves', JSON.stringify(saves));
 	}
 	// Fill the select of saved tierlists
 	while (selectsavelist.lastChild) {
 		selectsavelist.removeChild(selectsavelist.lastChild);
 	}
-	savenames = Object.keys(saves);
-	for (i = 0; i < savenames.length; i++) {
-		var savename = document.createElement('option');
+	var savenames = Object.keys(saves);
+	for (let i = 0; i < savenames.length; i++) {
+		let savename = document.createElement('option');
 		savename.value = savenames[i];
 		savename.innerHTML = savenames[i];
 		selectsavelist.appendChild(savename);
@@ -102,7 +102,7 @@ function drag(ev) {
 function drop(ev) {
 	ev.preventDefault();
 	var data = ev.dataTransfer.getData("text");
-	target = ev.target;
+	var target = ev.target;
 	if (target.id.substring(0, 3) == "PID") {
 		target = ev.target.parentElement;
 	}
@@ -115,9 +115,9 @@ function populate() {
 		rendered.removeChild(rendered.lastChild);
 	}
 	// List of heroes to be added
-	heroes = [];
+	var heroes = [];
 	// Use current epoch just to make sure we can add duplicated units
-	epoch = new Date().getTime();
+	var epoch = new Date().getTime();
 	// Store the selected weapon type to avoid splitting many times
 	var curweapontype = selectweapontype.value.split(",");
 	// Store the selected blessing type to avoid splitting many times
@@ -133,7 +133,7 @@ function populate() {
 			return;
 		}
 		// By default consider adding the unit until filtered out
-		add = true
+		let add = true;
 
 		// Check if we match the movement type
 		if (selectmovetype.value == "All") {
@@ -220,30 +220,30 @@ function populate() {
 	});
 	
 	// For every hero that went through the filter add an image
-	for (i = 0; i < heroes.length; i++) {
-		var opt = document.createElement('div');
+	for (let i = 0; i < heroes.length; i++) {
+		let opt = document.createElement('div');
 		// Change variant if resplendent
-		variant = selectattire.value == "Resplendent" ? "_Resplendent" : "";
+		let variant = selectattire.value == "Resplendent" ? "_Resplendent" : "";
 		opt.style.backgroundImage = "url(/common/hd-faces/" + heroes[i] + variant + ".webp)";
 		opt.draggable = "true";
 		opt.className = "unit";
 		opt.id = heroes[i] + (selectattire.value == "Resplendent" ? "-resp" : "") + "-" + epoch;
 		opt.addEventListener("dragstart", function(event) {drag(event)});
 		// Create and add the items indicating weapon, movement, blessing and origin
-		var weapon = document.createElement('img');
+		let weapon = document.createElement('img');
 		weapon.className = "iconinfo weapon";
 		weapon.src = "/common/other/" + units[heroes[i]]["WeaponType"] + "-weapon.webp";
 		opt.appendChild(weapon);
-		var movement = document.createElement('img');
+		let movement = document.createElement('img');
 		movement.className = "iconinfo movement";
 		movement.src = "/common/other/" + units[heroes[i]]["moveType"] + "-move.webp";
 		opt.appendChild(movement);
-		var origin = document.createElement('img');
+		let origin = document.createElement('img');
 		origin.className = "iconinfo origin";
 		origin.src = "/common/other/" + units[heroes[i]]["origin"] + "-game.webp";
 		opt.appendChild(origin);
 		if (other["blessed"][heroes[i]]) {
-			var blessing = document.createElement('img');
+			let blessing = document.createElement('img');
 			blessing.className = "iconinfo blessing";
 			blessing.src = "/common/other/" + other["blessed"][heroes[i]]["blessing"] + "-Blessing-special.webp";
 			opt.appendChild(blessing);
@@ -259,8 +259,8 @@ function statictranslations() {
 
 function changetype(caller) {
 	// Compose the weapon/move url
-	weapon = caller.value == "All" ? "0" : caller.value.split(",")[0];
-	url = "/common/other/" + weapon + "-" + caller.id.slice(0, -4) + ".webp";
+	var weapon = caller.value == "All" ? "0" : caller.value.split(",")[0];
+	var url = "/common/other/" + weapon + "-" + caller.id.slice(0, -4) + ".webp";
 	// Now change the url on the imagelabel
 	document.getElementById(caller.id.slice(0, -4) + "icon").src = url;
 }
