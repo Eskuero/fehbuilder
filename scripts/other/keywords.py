@@ -30,7 +30,7 @@ for file in files:
 		data = json.load(datasource)
 		for entry in [entry for entry in data if entry["id_tag"] != "PID_無し"]:
 			keywords[entry["id_tag"]] = {
-				language: translations[language]["M" + entry["id_tag"]]
+				language: translations[language]["M" + entry["id_tag"]] + ": " + translations[language][entry["id_tag"].replace("PID", "MPID_HONOR")]
 				for language in languages
 			}
 
