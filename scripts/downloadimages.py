@@ -80,6 +80,8 @@ icons = {
 	"maps-bolttrapfake": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/f/f5/Trap00_Disable.webp?90?80",
 	"maps-heavytrap": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/cc/Trap01_Edit.webp?90?90",
 	"maps-heavytrapfake": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/94/Trap01_Disable.webp?90?80",
+	"maps-hextrap": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/c0/Trap02_Edit.png?90?90",
+	"maps-hextrapfake": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/f/f7/Trap02_Disable.png?90?80",
 	# Gameheads
 	"0-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/d5/Icon_MiniUnit_Head_0.png?96?86",
 	"1-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/12/Icon_MiniUnit_Head_1.png?96?86",

@@ -143,6 +143,22 @@ function updatedialog(caller) {
 					todisable.push(selectstructure.options[j]);
 				}
 			}
+			// Don't allow more than two traps
+			if (selectstructure.options[j].getAttribute("structtype") == "trap" && maplimits["trap"].length >= 2) {
+				// If the item already in the cell is a defensive structure don't disable them to allow replacing
+				let typeofchild = caller.firstChild ? caller.firstChild.getAttribute("structtype") : "none";
+				if (typeofchild != "trap") {
+					todisable.push(selectstructure.options[j]);
+				}
+			}
+			// Don't allow more than two faketraps
+			if (selectstructure.options[j].getAttribute("structtype") == "faketrap" && maplimits["faketrap"].length >= 2) {
+				// If the item already in the cell is a defensive structure don't disable them to allow replacing
+				let typeofchild = caller.firstChild ? caller.firstChild.getAttribute("structtype") : "none";
+				if (typeofchild != "faketrap") {
+					todisable.push(selectstructure.options[j]);
+				}
+			}
 			// Don't allow more than one school
 			if (selectstructure.options[j].value.indexOf("school") != -1 && maplimits["schooled"]) {
 				// If the item already in the cell is a school don't disable them to allow replacing
@@ -236,6 +252,14 @@ function drop(ev) {
 			if (data.getAttribute("structtype") == "defensive" && maplimits["defensive"].length >= 6 && !maplimits["defensive"].includes(data.id)) {
 				return;
 			}
+			// If it's of type trap and we already have two different of those deny the drop
+			if (data.getAttribute("structtype") == "trap" && maplimits["trap"].length >= 2 && !maplimits["trap"].includes(data.id)) {
+				return;
+			}
+			// If it's of type faketrap and we already have two different of those deny the drop
+			if (data.getAttribute("structtype") == "faketrap" && maplimits["faketrap"].length >= 2 && !maplimits["faketrap"].includes(data.id)) {
+				return;
+			}
 			// If it's a school and we already have a different one deny the drop
 			if (data.id.indexOf("school") != -1 && maplimits["schooled"] && !maplimits["defensive"].includes(data.id)) {
 				return;
@@ -295,6 +319,8 @@ function scan() {
 		"defensive": [],
 		// Trap structures
 		"trap": [],
+		// Trap structures
+		"faketrap": [],
 		// Decorative structures
 		"decorative": [],
 		// Amount of heroes

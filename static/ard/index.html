@@ -45,11 +45,15 @@
 								<option value="panicmanor" structtype="defensive">Panic Manor</option>
 								<option value="tacticsroom" structtype="defensive">Tactics Room</option>
 							</optgroup>
-							<optgroup label="Traps">
+							<optgroup label="Real Traps">
 								<option value="bolttrap" structtype="trap">Bolt Trap</option>
-								<option value="bolttrapfake" structtype="trap">Bolt Trap (Fake)</option>
 								<option value="heavytrap" structtype="trap">Heavy Trap</option>
-								<option value="heavytrapfake" structtype="trap">Heavy Trap (Fake)</option>
+								<option value="hextrap" structtype="trap">Hex Trap</option>
+							</optgroup>
+							<optgroup label="Fake Traps">
+								<option value="bolttrapfake" structtype="faketrap">Bolt Trap (Fake)</option>
+								<option value="heavytrapfake" structtype="faketrap">Heavy Trap (Fake)</option>
+								<option value="hextrapfake" structtype="faketrap">Hex Trap (Fake)</option>
 							</optgroup>
 							<optgroup label="Decorations">
 								<option value="concerthall" structtype="decorative">Concert Hall</option>
@@ -191,9 +195,11 @@
 					<div class="structure" draggable="true" ondragstart="drag(event)" id="panicmanor" structtype="defensive"><img src="/common/other/maps-panicmanor.webp" draggable="false"></div>
 					<div class="structure" draggable="true" ondragstart="drag(event)" id="tacticsroom" structtype="defensive"><img src="/common/other/maps-tacticsroom.webp" draggable="false"></div>
 					<div class="structure" draggable="true" ondragstart="drag(event)" id="bolttrap" structtype="trap"><img src="/common/other/maps-bolttrap.webp" draggable="false"></div>
-					<div class="structure" draggable="true" ondragstart="drag(event)" id="bolttrapfake" structtype="trap"><img src="/common/other/maps-bolttrapfake.webp" draggable="false"></div>
+					<div class="structure" draggable="true" ondragstart="drag(event)" id="bolttrapfake" structtype="faketrap"><img src="/common/other/maps-bolttrapfake.webp" draggable="false"></div>
 					<div class="structure" draggable="true" ondragstart="drag(event)" id="heavytrap" structtype="trap"><img src="/common/other/maps-heavytrap.webp" draggable="false"></div>
-					<div class="structure" draggable="true" ondragstart="drag(event)" id="heavytrapfake" structtype="trap"><img src="/common/other/maps-heavytrapfake.webp" draggable="false"></div>
+					<div class="structure" draggable="true" ondragstart="drag(event)" id="heavytrapfake" structtype="faketrap"><img src="/common/other/maps-heavytrapfake.webp" draggable="false"></div>
+					<div class="structure" draggable="true" ondragstart="drag(event)" id="hextrap" structtype="trap"><img src="/common/other/maps-hextrap.webp" draggable="false"></div>
+					<div class="structure" draggable="true" ondragstart="drag(event)" id="hextrapfake" structtype="faketrap"><img src="/common/other/maps-hextrapfake.webp" draggable="false"></div>
 					<div class="structure" draggable="true" ondragstart="drag(event)" id="concerthall" structtype="decorative"><img src="/common/other/maps-concerthall.webp" draggable="false"></div>
 					<div class="structure" draggable="true" ondragstart="drag(event)" id="dininghall" structtype="decorative"><img src="/common/other/maps-dininghall.webp" draggable="false"></div>
 					<div class="structure" draggable="true" ondragstart="drag(event)" id="field" structtype="decorative"><img src="/common/other/maps-field.webp" draggable="false"></div>
