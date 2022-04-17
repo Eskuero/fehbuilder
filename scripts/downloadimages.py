@@ -22,13 +22,16 @@ pathlib.Path("../data/img/other").mkdir(parents=True, exist_ok=True)
 
 def download():
 	for icon in icons:
+		# By default we save on the "other" folder
+		location = "../data/img/other/"
+		# Skip if the file is already downloaded
+		if pathlib.Path(location + icon + ".webp").is_file():
+			continue
 		print(icon)
 		# Grab and paste the heroes art in the image
 		response = requests.get(icons[icon].split("?")[0])
 		# We store the size as part of the URL and just grab it
 		dimensions = (int(icons[icon].split("?")[1]), int(icons[icon].split("?")[2]))
-		# By default we save on the "other" folder
-		location = "../data/img/other/"
 		# Download the art image, make sure it has an alpha channel resize it according to the set config
 		art = Image.open(io.BytesIO(response.content)).convert("RGBA").resize(dimensions)
 		# We save the images as webp attempting the better compression method while being lossless to avoid quality drops
