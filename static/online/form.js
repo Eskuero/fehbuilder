@@ -23,20 +23,20 @@ selectrespairup = document.getElementById("res-pairup");
 languages = {};
 
 // Fetch all data from each json
-fetch('/common/data/individual/fulllanguages-' + selectlanguage.value + '.json')
+fetch('/common/data/languages/fulllanguages-' + selectlanguage.value + '.json')
 	.then(res => res.json())
 	.then((out) => {
 		// We store languages data for display of strings within the browser
 		languages[selectlanguage.value] = out;
 		// We can download the rest of the data now that lenguages are available
-		fetch('/common/data/fullunits.json')
+		fetch('/common/data/content/fullunits.json')
 			.then(res => res.json())
 			.then((out) => {
 				// We store the heroes for basic checks within the browser
 				units = out;
 				populate(selectheroes, units, true, true);
 		}).catch(err => console.error(err));
-		fetch('/common/data/fullskills.json')
+		fetch('/common/data/content/fullskills.json')
 			.then(res => res.json())
 			.then((out) => {
 				// We store the skills for basic checks within the browser
@@ -46,7 +46,7 @@ fetch('/common/data/individual/fulllanguages-' + selectlanguage.value + '.json')
 				populateall();
 		}).catch(err => console.error(err));
 }).catch(err => console.error(err));
-fetch('/common/data/fullother.json')
+fetch('/common/data/content/fullother.json')
 	.then(res => res.json())
 	.then((out) => {
 		// We store other data for basic checks within the browser

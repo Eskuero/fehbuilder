@@ -37,12 +37,12 @@ tierlist = document.getElementById("tierlist");
 
 // Fetch all data from each json
 // We can download the rest of the data now that lenguages are available
-fetch('/common/data/tierunits.json')
+fetch('/common/data/content/tierunits.json')
 	.then(res => res.json())
 	.then((out) => {
 		// We store the heroes for basic checks within the browser
 		units = out;
-		fetch('/common/data/tierother.json')
+		fetch('/common/data/content/tierother.json')
 			.then(res => res.json())
 			.then((out) => {
 				// We store other data for basic checks within the browser

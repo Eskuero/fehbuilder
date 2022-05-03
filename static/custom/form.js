@@ -76,20 +76,20 @@ usedallies = document.getElementById('usedallies');
 // We store languages data for display of strings within the browser
 languages = {};
 // Fetch all data from each json
-fetch('/common/data/individual/litelanguages-' + selectlanguage.value + '.json')
+fetch('/common/data/languages/litelanguages-' + selectlanguage.value + '.json')
 	.then(res => res.json())
 	.then((out) => {
 		// We store languages data for display of strings within the browser
 		languages[selectlanguage.value] = out;
 		// We can download the rest of the data now that lenguages are available
-		fetch('/common/data/customunits.json')
+		fetch('/common/data/content/customunits.json')
 			.then(res => res.json())
 			.then((out) => {
 				// We store the heroes for basic checks within the browser
 				units = out;
 				populate(selectheroes, units, true, true);
 		}).catch(err => console.error(err));
-		fetch('/common/data/customskills.json')
+		fetch('/common/data/content/customskills.json')
 			.then(res => res.json())
 			.then((out) => {
 				// We store the skills for basic checks within the browser
@@ -99,7 +99,7 @@ fetch('/common/data/individual/litelanguages-' + selectlanguage.value + '.json')
 				populateall();
 		}).catch(err => console.error(err));
 }).catch(err => console.error(err));
-fetch('/common/data/customother.json')
+fetch('/common/data/content/customother.json')
 	.then(res => res.json())
 	.then((out) => {
 		// We store other data for basic checks within the browser

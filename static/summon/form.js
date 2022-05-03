@@ -38,20 +38,20 @@ pityofffocus4 = document.getElementById('pityofffocus4');
 pityofffocus3 = document.getElementById('pityofffocus3');
 
 // Fetch all data from each json
-fetch('/common/data/litelanguages.json')
+fetch('/common/data/languages/litelanguages.json')
 	.then(res => res.json())
 	.then((out) => {
 		// We store languages data for display of strings within the browser
 		languages = out
 		// We can download the rest of the data now that lenguages are available
-		fetch('/common/data/summonunits.json')
+		fetch('/common/data/content/summonunits.json')
 			.then(res => res.json())
 			.then((out) => {
 				// We store the heroes for basic checks within the browser
 				units = out
 				populate(select5focus, units)
 				populate(select4focus, units)
-				fetch('/common/data/summonpools.json')
+				fetch('/common/data/content/summonpools.json')
 					.then(res => res.json())
 					.then((out) => {
 						// We store summoning pool data
@@ -61,7 +61,7 @@ fetch('/common/data/litelanguages.json')
 				}).catch(err => console.error(err));
 		}).catch(err => console.error(err));
 }).catch(err => console.error(err));
-fetch('/common/data/summonother.json')
+fetch('/common/data/content/summonother.json')
 	.then(res => res.json())
 	.then((out) => {
 		// We store other data for basic checks within the browser

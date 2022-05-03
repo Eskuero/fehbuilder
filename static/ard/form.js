@@ -33,17 +33,17 @@ languages = {};
 
 // Fetch all data from each json
 // We can download the rest of the data now that lenguages are available
-fetch('/common/data/individual/summonlanguages-USEN.json')
+fetch('/common/data/languages/summonlanguages-USEN.json')
 	.then(res => res.json())
 	.then((out) => {
 		// We store languages data for display of strings within the browser
 		languages["USEN"] = out;
-		fetch('/common/data/tierunits.json')
+		fetch('/common/data/content/tierunits.json')
 			.then(res => res.json())
 			.then((out) => {
 				// We store unit data for basic checks within the browser
 				units = out;
-				fetch('/common/data/mapsother.json')
+				fetch('/common/data/content/mapsother.json')
 					.then(res => res.json())
 					.then((out) => {
 						// We store other data for basic checks within the browser
