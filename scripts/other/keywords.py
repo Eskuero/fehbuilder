@@ -17,7 +17,7 @@ import json
 keywords = {}
 
 # Obtain all translations into english to get the defined names
-with open("../../data/fulllanguages.json", "r") as datasource:
+with open("../../data/languages/fulllanguages.json", "r") as datasource:
 	translations = json.load(datasource)
 
 # Big dictionary to store all translations (we're ignoring Spanish (US) and English (EU) as they are probably 99% identical to save same bandwidth)

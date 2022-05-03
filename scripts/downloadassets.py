@@ -19,15 +19,15 @@ import io
 from PIL import Image
 
 # Obtain all heroes
-with open("../data/fullunits.json", "r") as datasource:
+with open("../data/content/fullunits.json", "r") as datasource:
 	units = json.load(datasource)
 
 # Obtain all translations into english to get the defined names
-with open("../data/fulllanguages.json", "r") as datasource:
+with open("../data/languages/fulllanguages.json", "r") as datasource:
 	engrishname = json.load(datasource)["USEN"]
 
 # Obtain all skills to download icons
-with open("../data/fullskills.json", "r") as datasource:
+with open("../data/content/fullskills.json", "r") as datasource:
 	skills = json.load(datasource)
 
 print("\nDownloading skills icons...")
