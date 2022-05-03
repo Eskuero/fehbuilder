@@ -3,7 +3,6 @@ body {
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
-	font-family: Ubuntu;
 	padding: 0;
 	margin: 0;
 	text-align: center;
@@ -97,7 +96,7 @@ body {
 	width: 25%;
 	padding: 0.5em 0.25em 0.5em 0.25em;
 	color: #fff;
-	background-color: #007bff;
+	background-color: #006bde;
 	overflow: hidden;
 	font-size: 1em;
 	text-overflow: ellipsis;
@@ -210,7 +209,7 @@ h2 {
 	font-weight: bold;
 	font-size: 1em;
 	color: #fff;
-	background-color: #007bff;
+	background-color: #006bde;
 	border-radius: 0.2em;
 	padding: 0 1em 0 1em;
 }

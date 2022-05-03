@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>FE Heroes Unit Builder</title>
 		<meta name="title" content="FE Heroes Unit Builder">
@@ -7,8 +7,6 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu" crossorigin="anonymous" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" crossorigin="anonymous">
 
 		<style>
 			*::-webkit-scrollbar {
@@ -58,13 +56,12 @@
 				margin: 0 0 0.5em 0;
 				text-decoration: underline;
 			}
-			.material-icons {
-				font-size: 5em;
-				display: flex;
-			}
 			a {
 				text-decoration: none;
 				color: white;
+			}
+			ul {
+				margin: 0;
 			}
 			li {
 				list-style-position: inside;
@@ -80,62 +77,68 @@
 	<body>
 		<div class="options">
 			<a href="/online/">
-				<span class="material-icons">cloud_queue</span>
 				<div>
 					<h3>Online Unit Builder</h3>
-					<li>Faster: Renders in your browser.</li>
-					<li>Less data: Only downloads needed images.</li>
-					<li>Regenerates on every change.</li>
+					<ul>
+						<li>Faster: Renders in your browser.</li>
+						<li>Less data: Only downloads needed images.</li>
+						<li>Regenerates on every change.</li>
+					</ul>
 				</div>
 			</a>
 			<div class="separator"></div>
 			<a href="/custom/">
-				<span class="material-icons">emoji_objects</span>
 				<div>
 					<h3>Custom Unit Builder</h3>
-					<li>Allows custom art.</li>
-					<li>Allows to create custom skills.</li>
-					<li>Regenerates on every change.</li>
+					<ul>
+						<li>Allows custom art.</li>
+						<li>Allows to create custom skills.</li>
+						<li>Regenerates on every change.</li>
+					</ul>
 				</div>
 			</a>
 			<div class="separator"></div>
 			<a href="/tierlist/">
-				<span class="material-icons">stars</span>
 				<div>
 					<h3>Tier List Generator</h3>
-					<li>Several filters to apply.</li>
-					<li>Drag and drop support.</li>
-					<li>Not mobile optimized.</li>
+					<ul>
+						<li>Several filters to apply.</li>
+						<li>Drag and drop support.</li>
+						<li>Not mobile optimized.</li>
+					</ul>
 				</div>
 			</a>
 			<div class="separator"></div>
 			<a href="/ard/">
-				<span class="material-icons">shield_moon</span>
 				<div>
 					<h3>AR-D Map Builder - <span style="color:red">WIP!</span></h3>
-					<li>Gives you a grid to build an AR-D map</li>
-					<li>Drag and drop support</li>
-					<li>No link sharing</li>
+					<ul>
+						<li>Gives you a grid to build an AR-D map</li>
+						<li>Drag and drop support</li>
+						<li>No link sharing</li>
+					</ul>
 				</div>
 			</a>
 			<div class="separator"></div>
 			<a href="/summon/">
-				<span class="material-icons">casino</span>
 				<div>
 					<h3>Summon Simulator - <span style="color:red">WIP!</span></h3>
-					<li>Simulates a single summoning session</li>
-					<li>Pity system not accurate</li>
-					<li>No mass simulator statistics</li>
+					<ul>
+						<li>Simulates a single summoning session</li>
+						<li>Pity system not accurate</li>
+						<li>No mass simulator statistics</li>
+					</ul>
 				</div>
 			</a>
 			<div class="separator"></div>
 			<a href="/offline/">
-				<span class="material-icons">cloud_off</span>
 				<div>
 					<h3>Offline Unit Builder - <span style="color:red; text-decoration:none">Deprecated!</span></h3>
-					<li>Slower: Renders in the server.</li>
-					<li>Heavier: Downloads a ~2.5MB image everytime.</li>
-					<li>Regenerates pressing a button.</li>
+						<ul>
+						<li>Slower: Renders in the server.</li>
+						<li>Heavier: Downloads a ~2.5MB image everytime.</li>
+						<li>Regenerates pressing a button.</li>
+					</ul>
 				</div>
 			</a>
 		</div>

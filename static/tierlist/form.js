@@ -233,19 +233,23 @@ function populate() {
 		let weapon = document.createElement('img');
 		weapon.className = "iconinfo weapon";
 		weapon.src = "/common/other/" + units[heroes[i]]["WeaponType"] + "-weapon.webp";
+		weapon.title = "Weapon Type";
 		opt.appendChild(weapon);
 		let movement = document.createElement('img');
 		movement.className = "iconinfo movement";
 		movement.src = "/common/other/" + units[heroes[i]]["moveType"] + "-move.webp";
+		movement.title = "Movement Type";
 		opt.appendChild(movement);
 		let origin = document.createElement('img');
 		origin.className = "iconinfo origin";
 		origin.src = "/common/other/" + units[heroes[i]]["origin"] + "-game.webp";
+		origin.title = "Game of Origin";
 		opt.appendChild(origin);
 		if (other["blessed"][heroes[i]]) {
 			let blessing = document.createElement('img');
 			blessing.className = "iconinfo blessing";
 			blessing.src = "/common/other/" + other["blessed"][heroes[i]]["blessing"] + "-Blessing-special.webp";
+			blessing.title = "Default Blessing";
 			opt.appendChild(blessing);
 		}
 		rendered.appendChild(opt);

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>FE Heroes Custom Unit Builder</title>
 		<meta name="title" content="FE Heroes Custom Unit Builder">
@@ -7,10 +7,15 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
-		<link rel="stylesheet" href="builder.css" />
+
+		<link rel="preconnect" href="https://cdn.jsdelivr.net/">
+		<link rel="preconnect" href="https://code.jquery.com/">
+
+		<link rel="preload" href="builder.css" as="style">
+
+		<link rel="stylesheet" href="builder.css">
 
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" integrity="sha512-aD9ophpFQ61nFZP6hXYu4Q/b/USW7rpLCQLX6Bi0WJHXNO7Js/fUENpBQf/+P4NtpzNX0jSgR5zVvPOJp+W2Kg==" crossorigin="anonymous" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu" crossorigin="anonymous" />
 		<link rel="shortcut icon" href="/common/assets/Feh.webp" />
 
 	</head>
@@ -477,23 +482,23 @@
 				<section style="columns: 1">
 					<div id="smallstats" class="listofstats">
 						<div>
-							<img class="imagelabel" src="/common/assets/HP.webp" title="HP"/>
+							<label for="hp"><img class="imagelabel" src="/common/assets/HP.webp" title="HP"/></label>
 							<input type="number" id="hp" onchange="reload()" min="-99" max="99" value="0">
 						</div>
 						<div>
-							<img class="imagelabel" src="/common/assets/Atk.webp" title="Atk"/>
+							<label for="atk"><img class="imagelabel" src="/common/assets/Atk.webp" title="Atk"/></label>
 							<input type="number" id="atk" onchange="reload()" min="-99" max="99" value="0">
 						</div>
 						<div>
-							<img class="imagelabel" src="/common/assets/Spd.webp" title="Spd"/>
+							<label for="spd"><img class="imagelabel" src="/common/assets/Spd.webp" title="Spd"/></label>
 							<input type="number" id="spd" onchange="reload()" min="-99" max="99" value="0">
 						</div>
 						<div>
-							<img class="imagelabel" src="/common/assets/Def.webp" title="Def"/>
+							<label for="def"><img class="imagelabel" src="/common/assets/Def.webp" title="Def"/></label>
 							<input type="number" id="def" onchange="reload()" min="-99" max="99" value="0">
 						</div>
 						<div>
-							<img class="imagelabel" src="/common/assets/Res.webp" title="Res"/>
+							<label for="res"><img class="imagelabel" src="/common/assets/Res.webp" title="Res"/></label>
 							<input type="number" id="res" onchange="reload()" min="-99" max="99" value="0">
 						</div>
 					</div>
@@ -533,21 +538,21 @@
 				<h2>Miscellaneous</h2>
 				<section>
 					<div class="row-property double">
-						<img class="imagelabel" src="/common/assets/sp.webp" title="Skill Points"/>
+						<label for="sp"><img class="imagelabel" src="/common/assets/sp.webp" title="Skill Points"/></label>
 						<input type="number" onchange="reload()" id="sp" min="0" max="9999" value="9999">
-						<img class="imagelabel" src="/common/assets/hm.webp" title="Hero Merit"/>
+						<label for="hm"><img class="imagelabel" src="/common/assets/hm.webp" title="Hero Merit"/></label>
 						<input type="number" onchange="reload()" id="hm" min="0" max="8000" value="8000">
 					</div>
 					<div class="row-property single">
-						<img class="imagelabel" src="/common/assets/brush.webp" title="Art Style"/>
+						<label for="art"><img class="imagelabel" src="/common/assets/brush.webp" title="Art Style"/></label>
 						<div>
 							<input id="art" accept='image/*' onchange="reload()" type="file">
 						</div>
 					</div>
 					<div class="row-property double">
-						<img class="imagelabel" src="/common/assets/up.webp" title="Offset in Y"/>
+						<label for="offsetY"><img class="imagelabel" src="/common/assets/up.webp" title="Offset in Y"/></label>
 						<input type="number" id="offsetY" onchange="reload()" min="-1500" max="1500" value="0">
-						<img class="imagelabel" src="/common/assets/right.webp" title="Offset in X"/>
+						<label for="offsetX"><img class="imagelabel" src="/common/assets/right.webp" title="Offset in X"/></label>
 						<input type="number" id="offsetX" onchange="reload()" min="-1500" max="1500" value="0">
 					</div>
 					<div class="row-property single">
@@ -562,7 +567,7 @@
 						</div>
 					</div>
 					<div class="row-property single">
-						<img class="imagelabel" src="/common/assets/expand.webp" title="Expand/Reduce image"/>
+						<label for="expand"><img class="imagelabel" src="/common/assets/expand.webp" title="Expand/Reduce image"/></label>
 						<div>
 							<input id="expand" onchange="reload()" type="range" min="10" max="200" value="100">
 						</div>
@@ -594,11 +599,11 @@
 						</div>
 					</div>
 					<div class="row-property double" style="align-items:center">
-						<label style="width: 2em;">Artist</label>
+						<label style="width: 2em;" for="artist">Artist</label>
 						<div>
 							<input type="text" id="artist" onchange="reload()" onkeyup="reload()">
 						</div>
-						<label style="width: 2em;">Actor</label>
+						<label style="width: 2em;" for="actor">Actor</label>
 						<div>
 							<input type="text" id="actor" onchange="reload()" onkeyup="reload()">
 						</div>
@@ -610,13 +615,13 @@
 				</section>
 				<div class="links">
 					<a href="/">
-						<img class="img-fluid" src="/common/assets/home.webp"/>
+						<img class="imagelabel img-fluid" src="/common/assets/home.webp" title="Homepage"/>
 					</a>
 					<a href="https://github.com/Eskuero/fehbuilder" target="blank">
-						<img class="img-fluid" src="/common/assets/github.webp"/>
+						<img class="imagelabel img-fluid" src="/common/assets/github.webp" title="Source Code"/>
 					</a>
 					<a href="https://discord.gg/fireemblemheroes" target="blank">
-						<img class="img-fluid" src="/common/assets/discord.webp"/>
+						<img class="imagelabel img-fluid" src="/common/assets/discord.webp" title="Discord Server"/>
 					</a>
 				</div>
 			</div>
