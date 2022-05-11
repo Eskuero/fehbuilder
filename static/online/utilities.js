@@ -391,8 +391,8 @@ function printhpnumbers(canvas, characters, type, posX, posY, scale = 1) {
 		let trueposX = posX + offsetX;
 		// We must crop the numbers at a certain position depending on type and value
 		let sourceX = hpfontrender["start"][numbers[j]]; let sourceY = type * 50;
-		// Increase the offset before the next interation using the number width (-3 to make sure we fill the gaps)
-		offsetX += width * scale;
+		// Increase the offset before the next interation using the number width (-1 for better look)
+		offsetX += width * scale - 1;
 		// Print the number
 		canvas.drawImage(hpfont, sourceX, sourceY, width, 50, trueposX, posY, width * scale, 50 * scale);
 	}

@@ -431,7 +431,7 @@ async function condensed() {
 			let currenthp = selectartstyle.value == "Damage" ? parseInt(statsmodifier[i] / 2) - 1 : statsmodifier[i];
 			let currentcolor = selectartstyle.value == "Damage" ? 1 : 0;
 			printhpnumbers(preview, currenthp, currentcolor, 241, 70, 0.75);
-			printhpnumbers(preview, statsmodifier[i], numbertype, 332, 74, 0.55);
+			printhpnumbers(preview, statsmodifier[i], 2, 332, 74, 0.55);
 		} else if (statsnames[i] == "Atk") {
 			printnumbers(preview, statsmodifier[i], numbertype, 279, 126, "end");
 		} else if (statsnames[i] == "Spd") {
