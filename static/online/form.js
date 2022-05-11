@@ -326,6 +326,13 @@ async function fillblessed(clean = false) {
 	while (selectallies.lastChild) {
 		selectallies.removeChild(selectallies.lastChild);
 	}
+	var blessingsstrings = ["MID_ITEM_BLESSING_FIRE", "MID_ITEM_BLESSING_WATER", "MID_ITEM_BLESSING_WIND", "MID_ITEM_BLESSING_EARTH", "MID_ITEM_BLESSING_LIGHT", "MID_ITEM_BLESSING_DARK", "MID_ITEM_BLESSING_HEAVEN", "MID_ITEM_BLESSING_LOGIC"];
+	// Create an optgroup for each blessing type
+	for (i = 0; i < 8; i++) {
+		let optgroup = document.createElement('optgroup');
+		optgroup.label = languages[newlang][blessingsstrings[i]];
+		selectallies.appendChild(optgroup);
+	}
 	// All data to be printed
 	var options = {};
 	// Add an option for each value
@@ -343,7 +350,7 @@ async function fillblessed(clean = false) {
 		if (toberestored.includes(tag)) {
 			opt.selected = true;
 		}
-		selectallies.appendChild(opt);
+		selectallies.children[other["blessed"][tag]["blessing"]-1].appendChild(opt);
 	}
 }
 

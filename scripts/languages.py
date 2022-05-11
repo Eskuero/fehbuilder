@@ -22,7 +22,7 @@ with open("fullother.json", "r") as datasource:
 languages = {"EUDE": {}, "EUES": {}, "USES": {}, "EUFR": {}, "EUIT": {}, "JPJA": {}, "TWZH": {}, "USEN": {}, "EUEN": {}, "USPT": {}}
 
 # This is a list of strings for translating the UI and must always be included
-basicstrings = ["MID_HP", "MID_ATTACK", "MID_AGILITY", "MID_DEFENSE", "MID_RESIST", "MID_SKILL_POINT", "MID_HEROISM_POINT", "MID_LEVEL2", "MID_EXP", "MSID_H_NONE", "MID_UNIT_INFO_EXP_MAX", "MID_UNIT_INFO_TO_TALK", "MID_UNIT_INFO_TO_SKILLLEARN", "MID_UNIT_INFO_TO_SKILLEQUIP", "MID_UNIT_INFO_TO_SKILLSET"]
+basicstrings = ["MID_HP", "MID_ATTACK", "MID_AGILITY", "MID_DEFENSE", "MID_RESIST", "MID_SKILL_POINT", "MID_HEROISM_POINT", "MID_LEVEL2", "MID_EXP", "MSID_H_NONE", "MID_UNIT_INFO_EXP_MAX", "MID_UNIT_INFO_TO_TALK", "MID_UNIT_INFO_TO_SKILLLEARN", "MID_UNIT_INFO_TO_SKILLEQUIP", "MID_UNIT_INFO_TO_SKILLSET", "MID_ITEM_BLESSING_FIRE", "MID_ITEM_BLESSING_WATER", "MID_ITEM_BLESSING_WIND", "MID_ITEM_BLESSING_EARTH", "MID_ITEM_BLESSING_LIGHT", "MID_ITEM_BLESSING_DARK", "MID_ITEM_BLESSING_HEAVEN", "MID_ITEM_BLESSING_LOGIC"]
 
 for language in languages:
 	files = os.listdir("feh-assets-json/files/assets/" + language + "/Message/Data/")
