@@ -75,6 +75,10 @@ for file in files:
 				"resplendent": True if entry["id_tag"].replace("PID", "MPID_VOICE") + "EX01" in strings else False,
 				"id": entry["id_num"]
 			}
+			# Clean basekit of duplicates
+			tempkit = []
+			[tempkit.append(skill) for skill in heroes[entry["id_tag"]]["basekit"] if skill not in tempkit]
+			heroes[entry["id_tag"]]["basekit"] = tempkit
 			# Complete the basekit by adding the skills that have weapon evolutions available
 			for item in [item for item in heroes[entry["id_tag"]]["basekit"] if item in weaponevolutions]:
 				heroes[entry["id_tag"]]["basekit"].append(weaponevolutions[item])
