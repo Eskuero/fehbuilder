@@ -1,3 +1,179 @@
+body {
+	background-image: url("/common/assets/BG_Brave.webp");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: system-ui;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	height: 100vh;
+	overflow-y: hidden;
+}
+
+.contenedor {
+	display: inline-flex;
+	gap: 1em;
+}
+
+.unitpreview {
+	display: flex;
+	flex-direction: column;
+	width: calc((100vh - 2.5em) * 0.5625);
+}
+#fakecanvas {
+	height: calc(100vh - 2.5em);
+}
+#unitslot {
+	height: 2.5em;
+	width: 100%;
+	display: flex;
+}
+
+.form {
+	height: 100vh;
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(14, 51, 69, 0.6);
+	color: white;
+	text-align: initial;
+	padding: 1em 1.5em 0 1.5em;
+	box-sizing: border-box;
+}
+
+.form > * {
+	column-count: 2;
+}
+
+#unitslot > button {
+	border: 0;
+	width: 25%;
+	padding: 0.5em 0.25em 0.5em 0.25em;
+	color: #fff;
+	background-color: #006bde;
+	overflow: hidden;
+	font-size: 1em;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: bold;
+	cursor: pointer;
+}
+#unitslot > button:not(:last-child) {
+	border-right: 1px solid white;
+}
+
+.row-property {
+	display: flex;
+	gap: 1em;
+	padding-bottom: 0.5em;
+	break-inside: avoid;
+}
+input[type=number] {
+	text-align: center;
+	border-radius: 4px;
+	background-color: #fff;
+	border: 1px solid #aaa;
+	font-weight: bold;
+	width: 6.45em;
+	height: 2em;
+	flex: 1 0 auto;
+}
+input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-outer-spin-button {
+	opacity: 1;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+* {
+  scrollbar-width: none;
+}
+.imagelabel {
+	height: 2em;
+	width: 2em;
+}
+.row-property.single > select, .row-property.double > select {
+	height: 2em;
+}
+.select2-selection__rendered {
+    line-height: 2em !important;
+}
+.select2-container .select2-selection--single, .select2-selection__arrow {
+    height: 2em !important;
+}
+.select2-container {
+	text-align: initial;
+	flex: 1 0 auto;
+	width: auto !important;
+}
+.select2-selection.select2-selection--multiple {
+	color: black;
+}
+.select2-selection__choice, #select2-allies-container {
+    line-height: 1.5em !important;
+}
+.legendaries > .select2-container {
+	width: 10em !important;
+}
+.basekit {
+	background-color: rgb(92, 180, 224);
+}
+input[type=checkbox] {
+	width: 18px; 
+	height: 18px;
+}
+h2 {
+	text-decoration: underline;
+}
+.select-without-search {
+	width: 100%;
+	font-family: inherit;
+	font-size: inherit;
+	background-color: white;
+	color: #444;
+	border-radius: 4px;
+	border: 1px solid grey;
+	padding-left: 0.25em;
+}
+
+.links {
+	display: flex;
+	margin-top: auto;
+	margin-left: auto;
+	gap: 0.5em;
+	padding: 0 0 0.5em 0;
+}
+.links > * {
+	text-decoration: none;
+}
+
+.additionaloptions {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	gap: 1em;
+	height: 2em;
+}
+
+.button {
+	border: 0;
+	height: 40%;
+	font-weight: bold;
+	font-size: 1em;
+	color: #fff;
+	background-color: #006bde;
+	border-radius: 0.2em;
+	padding: 0 1em 0 1em;
+	cursor: pointer;
+}
+
+.sectiontitle {
+	display: flex;
+	column-count: 1;
+	align-items: center;
+	gap: 1em;
+}
+
 .downloadbutton {
 	border: 0;
 	height: 2.5em;
@@ -28,11 +204,8 @@
 	cursor: pointer;
 }
 
-.allies-cont {
-	width: 38.5em !important;
-	margin-bottom: 1em;
-}
 #usedallies {
+	margin-top: 0.5em;
 	column-count: 2;
 }
 
@@ -40,15 +213,52 @@
 	#usedallies {
 		column-count: 3;
 	}
-	.allies-cont {
-		width: 58.5em !important;
+	.form > * {
+		column-count: 3;
 	}
 }
 @media screen and (max-aspect-ratio: 593/467) {
 	#usedallies {
 		column-count: 1;
 	}
-	.allies-cont {
-		width: 100% !important;
+	.form > * {
+		column-count: 1;
+	}
+	.additionaloptions {
+		padding-bottom: 0.8em;
+	}
+}
+@media screen and (orientation: portrait) {
+	body {
+		height: auto;
+		overflow-y: initial;
+		width: 100vw;
+	}
+	.contenedor {
+		flex-direction: column;
+		gap: 0;
+	}
+	.unitpreview {
+		height: auto;
+		width: 90vw;
+	}
+	#fakecanvas {
+		height: auto;
+		width: 100%;
+		order: 1;
+	}
+	#unitslot {
+		order: 2;
+	}
+	.form {
+		height: auto;
+		width: 90vw;
+		row-gap: 0;
+	}
+	.form > * {
+		column-count: 1;
+	}
+	.additionaloptions {
+		padding-bottom: 1em;
 	}
 }
