@@ -164,8 +164,7 @@ function matchCustom(params, data) {
 $(document).ready(function() {
 	$('.s2-select').select2({
 		templateResult: copyClassesToSelect2,
-		matcher: matchCustom,
-		width: '100%'
+		matcher: matchCustom
 	});
 });
 
@@ -477,9 +476,11 @@ function swapskill(caller, target) {
 	var options = ["weapon", "refine", "assist", "special", "Askill", "Bskill", "Cskill", "Sskill"];
 	for (let i = 0; i < options.length; i++) {
 		if (options[i] == target) {
-			document.getElementById(options[i]).parentElement.style.display = "initial";
+			$(document.getElementById(options[i])).select2();
 		} else {
-			document.getElementById(options[i]).parentElement.style.display = "none";
+			if ($(document.getElementById(options[i])).hasClass("select2-hidden-accessible")) {
+				$(document.getElementById(options[i])).select2("destroy");
+			}
 		}
 	}
 }

@@ -35,14 +35,11 @@ body {
 	text-align: initial;
 	padding: 1em 1.5em 0 1.5em;
 	box-sizing: border-box;
+	width: 70vh;
 }
 
 .form > * {
 	column-count: 2;
-}
-.allies-cont {
-	width: 38.5em !important;
-	margin-bottom: 1em;
 }
 #usedallies {
 	column-count: 2;
@@ -54,8 +51,8 @@ body {
 	#usedallies {
 		column-count: 3;
 	}
-	.allies-cont {
-		width: 58.5em !important;
+	.form {
+		width: 50vw;
 	}
 }
 
@@ -67,13 +64,13 @@ body {
 		padding-bottom: 0.8em;
 	}
 	.listofstats, .tabs {
-		width: 19em;
+		width: 30em;
 	}
 	#usedallies {
 		column-count: 1;
 	}
-	.allies-cont {
-		width: 100% !important;
+	.form {
+		width: 40vw;
 	}
 }
 
@@ -119,6 +116,7 @@ input[type=number], input::file-selector-button {
 	font-weight: bold;
 	width: 6.45em;
 	height: 2em;
+	flex: 1 0 auto;
 }
 input[type=file], input[type=text], input[type=range], input::file-selector-button {
 	font-size: inherit;
@@ -156,12 +154,7 @@ input[type=text] {
 .imagelabel.selected {
     background-color: white;
 }
-.row-property.single > div {
-	width: 15.5em !important;
-	height: 2em;
-}
-.row-property.double > div {
-	width: 5.75em !important;
+.row-property.single > select, .row-property.double > select, .row-property.single > input, .row-property.double > input {
 	height: 2em;
 }
 .select2-selection__rendered {
@@ -172,12 +165,17 @@ input[type=text] {
 }
 .select2-container {
 	text-align: initial;
+	flex: 1 0 auto;
+	width: auto !important;
 }
 .select2-selection.select2-selection--multiple {
 	color: black;
 }
 .select2-selection__choice, #select2-allies-container {
     line-height: 1.5em !important;
+}
+.legendaries > .select2-container {
+	width: 10em !important;
 }
 input[type=checkbox] {
 	width: 18px; 
@@ -188,7 +186,6 @@ h2 {
 }
 .select-without-search {
 	width: 100%;
-	height: 2em;
 	font-family: inherit;
 	font-size: inherit;
 	background-color: white;
@@ -228,15 +225,6 @@ h2 {
 }
 
 @media screen and (orientation: portrait) {
-	.row-property.single > div {
-		width: calc(100% - 3em) !important;
-	}
-	.row-property.double > div {
-		width: calc((100% - 7em) / 2) !important;
-	}
-	.row-property.double > input[type=number] {
-		width: calc((100% - 9em) / 2) !important;
-	}
 	.additionaloptions {
 		padding-bottom: 1em;
 	}
