@@ -15,8 +15,10 @@
 var units, skills, other, languages;
 // Where we show the image
 canvas = document.getElementById('fakecanvas');
+// The whole form since is a rebspicker listeners
+form = document.getElementsByClassName("form")[0];
 // All selects we have available
-selectheroes = document.getElementById('selectheroes');
+selectheroes = new Rebspicker(document.getElementById('selectheroes'), {"None": {"string": "None"}}, [window], [form, window]);
 selectrarity = document.getElementById('rarity');
 selectmerges = document.getElementById('merges');
 selectflowers = document.getElementById('flowers');
@@ -24,19 +26,19 @@ selectboons = document.getElementById('boons');
 selectbanes = document.getElementById('banes');
 selectascendent = document.getElementById('ascendent');
 selectbeast = document.getElementById('beast');
-selectweapons = document.getElementById('weapon');
+selectweapons = new Rebspicker(document.getElementById('weapon'), {"None": {"string": "None"}}, [window], [form, window]);
 selectrefines = document.getElementById('refine');
-selectspecials = document.getElementById('special');
-selectassists = document.getElementById('assist');
-selectA = document.getElementById('Askill');
-selectB = document.getElementById('Bskill');
-selectC = document.getElementById('Cskill');
-selectS = document.getElementById('Sskill');
+selectspecials = new Rebspicker(document.getElementById('special'), {"None": {"string": "None"}}, [window], [form, window]);
+selectassists = new Rebspicker(document.getElementById('assist'), {"None": {"string": "None"}}, [window], [form, window]);
+selectA = new Rebspicker(document.getElementById('Askill'), {"None": {"string": "None"}}, [window], [form, window]);
+selectB = new Rebspicker(document.getElementById('Bskill'), {"None": {"string": "None"}}, [window], [form, window]);
+selectC = new Rebspicker(document.getElementById('Cskill'), {"None": {"string": "None"}}, [window], [form, window]);
+selectS = new Rebspicker(document.getElementById('Sskill'), {"None": {"string": "None"}}, [window], [form, window]);
 selectblessings = document.getElementById('blessing');
 selectsummoner = document.getElementById('summoner');
 selectattire = document.getElementById('attire');
 selectbonusunit = document.getElementById('bonusunit');
-selectallies = document.getElementById('allies');
+selectallies = new RebspickerMulti(document.getElementById('allies'), {}, [window], [form, window]);
 selectatk = document.getElementById('atk');
 selectspd = document.getElementById('spd');
 selectdef = document.getElementById('def');
@@ -94,76 +96,6 @@ fetch('/common/data/content/fullother.json')
 		other = out;
 		init();
 }).catch(err => console.error(err));
-
-// This makes sure dropdown options have their classes carried over (we need it to color basekit)
-function copyClassesToSelect2(data, container) {
-	if (data.element) {
-		$(container).addClass($(data.element).attr("class"));
-	}
-	return data.text;
-}
-
-// Custom matcher for search results filtering
-function matchCustom(params, data) {
-	// If there are no search terms, return all of the data
-	if ($.trim(params.term) === '') {
-		return data;
-	}
-	// Do not display the item if there if the entry is null
-	if (typeof data === 'undefined') {
-		return null;
-	}
-
-	// This is the entry we are checking
-	var entry = data.text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().replace("'","");
-	// This is the search string we are using
-	var search = params.term.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().replace("'","");
-
-	// Check if the search string exists within a certain entry
-	if (entry.indexOf(search) > -1) {
-		return data;
-	}
-
-	// If the particular PID for the option is a duo with defined keywords check if any of them match the search
-	if (other["duokeywords"][data.id]) {
-		if (other["duokeywords"][data.id].toUpperCase().indexOf(search) > -1) {
-			return data;
-		}
-	}
-
-	// `data.children` contains the actual options that we are matching against (https://select2.org/searching#matching-grouped-options)
-	var filteredChildren = [];
-	$.each(data.children, function (idx, child) {
-		if (child.text.toUpperCase().indexOf(params.term.toUpperCase()) == 0) {
-			filteredChildren.push(child);
-		}
-	});
-	// If we matched any of the group's children, then set the matched children on the group and return the group object
-	if (filteredChildren.length) {
-		var modifiedData = $.extend({}, data, true);
-		modifiedData.children = filteredChildren;
-
-		// You can return modified objects from here
-		// This includes matching the `children` how you want in nested data sets
-		return modifiedData;
-	}
-
-	// Return `null` if the term should not be displayed
-	return null;
-}
-
-// Once the document is ready initiate the selects with their required
-$(document).ready(function() {
-	$('.s2-select').select2({
-		templateResult: copyClassesToSelect2,
-		matcher: matchCustom
-	});
-});
-
-// FIXME: Workaround for https://github.com/select2/select2/issues/5993 when using JQuery 3.6
-$(document).on("select2:open", () => {
-	document.querySelector(".select2-container--open .select2-search__field").focus();
-});
 
 function populateall(clean) {
 	// We go through all the selects
@@ -259,31 +191,27 @@ async function populate(select, data, clean, bypass) {
 	// Get current value to restore it back if possible
 	var previousvalue = select.value;
 	// First delete them all
-	while (select.lastChild) {
-		select.removeChild(select.lastChild);
+	while (select.domitem.lastChild) {
+		select.domitem.removeChild(select.domitem.lastChild);
 	}
-	// Always add the None option with it's proper translation
-	var opt = document.createElement('option');
-	opt.value = "None";
-	opt.innerHTML = languages[selectlanguage.value]["MSID_H_NONE"];
-	select.appendChild(opt);
-	// All data to be printed
-	var options = {};
+	// All data to be printed (Always add the None option with it's proper translation)
+	var options = {"None": {"string": languages[selectlanguage.value]["MSID_H_NONE"]}};
+	var sorted = {};
 	// If indicated to bypass don't do checks for this select, print everything and leave (this is exclusively for the heroes select)
 	if (bypass) {
 		Object.keys(data).forEach((value) => {
-			options[languages[selectlanguage.value]["M" + value] + ": " + (languages[selectlanguage.value][value.replace("PID", "MPID_HONOR")] || "Generic")] = value;
+			sorted[languages[selectlanguage.value]["M" + value] + ": " + (languages[selectlanguage.value][value.replace("PID", "MPID_HONOR")] || "Generic")] = value;
 		});
-		// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
-		var options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {});
-		// For each entry print an option
-		for (const [string, tag] of Object.entries(options)) {
-			var opt = document.createElement('option');
-			opt.value = tag;
-			// If of type person we also append the title
-			opt.innerHTML = string;
-			select.appendChild(opt);
+		sorted = Object.keys(sorted).sort().reduce((res, key) => (res[key] = sorted[key], res), {});
+		// Obtain the final data object that rebspicker can read
+		for (const [string, tag] of Object.entries(sorted)) {
+			options[tag] = {"string": string};
+			if (other["duokeywords"][tag]) {
+				options[tag]["keywords"] = other["duokeywords"][tag];
+			}
 		}
+		// Generate the select
+		select = new Rebspicker(select.domitem, options, [window], [form, window]);
 		// Restore the previous value if it's available on the updated select
 		if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
 			select.value = previousvalue;
@@ -297,6 +225,7 @@ async function populate(select, data, clean, bypass) {
 		var basekit = units[selectheroes.value]["basekit"];
 	// If no hero is selected we have nothing to do
 	} else {
+		select = new Rebspicker(select.domitem, options, [window], [form, window]);
 		return;
 	}
 	// For disabled cheats we only add the options that match move/ type restrictions and exclusive skills
@@ -336,22 +265,17 @@ async function populate(select, data, clean, bypass) {
 		}
 		// Arriving at this check with a true add value measn we can add the option
 		if (add) {
-			options[languages[selectlanguage.value]["M" + value]] = value;
+			sorted[languages[selectlanguage.value]["M" + value]] = value;
 		}
 	});
-	// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
-	var options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {});
-	// For each entry print an option
-	for (const [string, tag] of Object.entries(options)) {
-		var opt = document.createElement('option');
-		opt.value = tag;
-		// If of type person we also append the title
-		opt.innerHTML = string;
-		if (basekit.includes(tag)) {
-			opt.className = "basekit";
-		}
-		select.appendChild(opt);
+	// Sort all the values by visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
+	sorted = Object.keys(sorted).sort().reduce((res, key) => (res[key] = sorted[key], res), {});
+	// Obtain the final data object that rebspicker can read
+	for (const [string, tag] of Object.entries(sorted)) {
+		options[tag] = {"string": string, "class": basekit.includes(tag) ? "basekit" : false};
 	}
+	// Generate the select
+	select = new Rebspicker(select.domitem, options, [window], [form, window]);
 	// Restore the previous value if it's available on the updated select
 	if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
 		select.value = previousvalue;
@@ -420,49 +344,40 @@ function swapstat(caller, target) {
 	}
 }
 
-async function fillblessed(clean = false) {
+async function fillblessed(clean = false, toberestored = []) {
 	// If the language required is not downloaded yet wait a bit more
 	var newlang = selectlanguage.value;
 	while (!languages[newlang]) {
 		await sleep(100);
 	}
 	// We need to know which options to restore unless called clean
-	var toberestored = [];
 	if (!clean) {
 		for (let i = 0; i < selectallies.selectedOptions.length; i++) {
 			toberestored.push(selectallies.selectedOptions[i].value);
 		}
 	}
 	// First delete all allies
-	while (selectallies.lastChild) {
-		selectallies.removeChild(selectallies.lastChild);
+	while (selectallies.domitem.lastChild) {
+		selectallies.domitem.removeChild(selectallies.domitem.lastChild);
 	}
 	var blessingsstrings = ["MID_ITEM_BLESSING_FIRE", "MID_ITEM_BLESSING_WATER", "MID_ITEM_BLESSING_WIND", "MID_ITEM_BLESSING_EARTH", "MID_ITEM_BLESSING_LIGHT", "MID_ITEM_BLESSING_DARK", "MID_ITEM_BLESSING_HEAVEN", "MID_ITEM_BLESSING_LOGIC"];
-	// Create an optgroup for each blessing type
-	for (i = 0; i < 8; i++) {
-		let optgroup = document.createElement('optgroup');
-		optgroup.label = languages[newlang][blessingsstrings[i]];
-		selectallies.appendChild(optgroup);
-	}
 	// All data to be printed
 	var options = {};
+	var sorted = {};
 	// Add an option for each value
 	for (const [hero, properties] of Object.entries(other["blessed"])) {
-		options[languages[selectlanguage.value]["M" + hero] + ": " + languages[selectlanguage.value][hero.replace("PID", "MPID_HONOR")]] = hero;
+		sorted[languages[selectlanguage.value]["M" + hero] + ": " + languages[selectlanguage.value][hero.replace("PID", "MPID_HONOR")]] = hero;
 	}
 	// Sort all the values by visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
-	var options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {});
+	var sorted = Object.keys(sorted).sort().reduce((res, key) => (res[key] = sorted[key], res), {});
 	// For each entry print an option
-	for (const [string, tag] of Object.entries(options)) {
-		let opt = document.createElement('option');
-		opt.value = tag;
-		opt.innerHTML = string;
-		// If we are only translating and the value was selected restore it
-		if (toberestored.includes(tag)) {
-			opt.selected = true;
-		}
-		selectallies.children[other["blessed"][tag]["blessing"]-1].appendChild(opt);
+	for (const [string, tag] of Object.entries(sorted)) {
+		options[tag] = {
+			"string": string,
+			"keywords": languages[newlang][blessingsstrings[other["blessed"][tag]["blessing"]-1]]
+		};
 	}
+	selectallies = new RebspickerMulti(document.getElementById('allies'), options, [window], [form, window], toberestored);
 }
 
 function showallies(clean = false, allies = {}) {
@@ -561,6 +476,8 @@ function switchbuild(build) {
 		let ally = selectallies.selectedOptions[i].value;
 		builds[buildslot][6][ally] = document.getElementById(ally).value;
 	}
+	// Clean the allies
+	selectallies.clean();
 	// Now save the rest of the data
 	for (let i = 0; i < selects.length; i++) {
 		if (selects[i].type == "checkbox") {
@@ -588,21 +505,21 @@ function switchbuild(build) {
 	updateRefine();
 	// Trigger a rebuild of the allies providing buffs
 	selectblessings.value = builds[buildslot][5];
+	var toberestored = [];
 	for (let i = 0; i < selectallies.options.length; i++) {
 		let ally = selectallies.options[i].value;
 		if (builds[buildslot][6][ally]) {
-			selectallies.options[i].selected = true;
-		} else {
-			selectallies.options[i].selected = false;
+			toberestored.push(ally);
 		}
 	}
+	fillblessed(false, toberestored);
 	showallies(true, builds[buildslot][6]);
 	// Now restore the rest of the data
 	for (let i = 0; i < selects.length; i++) {
 		if (selects[i].type == "checkbox") {
 			selects[i].checked = builds[buildslot][i+7];
 		} else {
-			$('#'+selects[i].id).val(builds[buildslot][i+7]);
+			selects[i].value = builds[buildslot][i+7];
 		}
 	}
 	// Reload the image
@@ -752,7 +669,7 @@ function applybasekit() {
 		"A": false,
 		"B": false,
 		"C": false
-	}
+	};
 	var fullkit = units[selectheroes.value]["basekit"];
 	for (let i = 0; i < fullkit.length; i++) {
 		if (skills["weapons"][fullkit[i]]) {
@@ -824,4 +741,3 @@ function applybasekit() {
 	populateall(false);
 	reload();
 }
-

@@ -1,0 +1,135 @@
+#selectheroes, #weapon, #special, #assist, #Askill, #Bskill, #Cskill, #Sskill {
+	--collapsed-select-height: 1.8em;
+	--select-width: 16.7em;
+	--list-item-max: 6;
+	--list-item-height: 2em;
+	--font-color: #444;
+	--background-color: white;
+	--background-hover-color: #5897fb;
+}
+#allies {
+	--collapsed-multiselect-height: 2em;
+	--select-width: 40.4em;
+	--list-item-max: 5;
+	--list-item-height: 2em;
+	--font-color: #444;
+	--background-color: white;
+	--background-hover-color: #5897fb;
+}
+
+@media screen and (max-aspect-ratio: 593/467) {
+	#selectheroes, #weapon, #special, #assist, #Askill, #Bskill, #Cskill, #Sskill {
+		--select-width: 19.7em;
+	}
+	#allies {
+		--select-width: 22.7em;
+	}
+}
+
+@media screen and (orientation: portrait) {
+	#selectheroes, #weapon, #special, #assist, #Askill, #Bskill, #Cskill, #Sskill {
+		--select-width: calc(90vw - 6em);
+	}
+	#allies {
+		--select-width: calc(90vw - 3em);
+	}
+}
+
+.rebspicker-select {
+	color: var(--font-color);
+	cursor: pointer;
+	border: 1px solid grey;
+	border-radius: 4px;
+	background-color: var(--background-color);
+	box-sizing: border-box;
+	width: var(--select-width);
+}
+.rebspicker-preview {
+	height: var(--collapsed-select-height);
+	justify-content: space-between;
+}
+
+.rebspickermulti-preview {
+	display: flex;
+	align-items: center;
+	padding: 0.2em 0.3em;
+	min-height: var(--collapsed-multiselect-height);
+	justify-content: space-between;
+}
+.rebspickermulti-current-value {
+	display: flex;
+	flex-wrap: wrap;
+}
+.rebspickermulti-current-value > * {
+    margin: 0.2em;
+}
+.rebspickermulti-selected {
+	background-color: #e4e4e4;
+	padding: 0.3em;
+	border-radius: 4px;
+	display: flex;
+	gap: 0.5em;
+	cursor: initial;
+}
+.rebspickermulti-close-button {
+	order: -1;
+	border-right: 1px solid black;
+	padding: 0 0.5em 0 0.2em;
+}
+.rebspickermulti-close-button:hover {
+	cursor: pointer;
+	color: black;
+}
+
+.rebspicker-arrow {
+	border: solid var(--font-color);
+	border-width: 0 2px 2px 0;
+	padding: 0.15em;
+	margin-right: 0.3em;
+}
+.rebspicker-arrow.closed {
+	transform: rotate(45deg);
+}
+.rebspicker-arrow.opened {
+	transform: rotate(-135deg);
+	margin-top: 0.2em;
+}
+.rebspicker-dropdown {
+	display: none;
+	position: absolute;
+	background-color: var(--background-color);
+	border-style: solid;
+	border-width: 0 1px 1px 1px;
+	border-color: gray;
+	border-radius: 0 0 4px 4px;
+	width: inherit;
+	box-sizing: border-box;
+}
+.rebspicker-list {
+	max-height: calc(var(--list-item-height) * var(--list-item-max));
+	overflow: scroll;
+}
+.rebspicker-option, .rebspicker-preview {
+	display: flex;
+	align-items: center;
+	padding-left: 0.4em;
+}
+.rebspicker-option {
+	height: var(--list-item-height);
+	overflow: clip;
+}
+.rebspicker-option:hover {
+	background-color: var(--background-hover-color);
+	color: white;
+}
+.rebspicker-search-container {
+	height: calc(var(--list-item-height) + 4px);
+	padding: 0.2em;
+	display: flex;
+	align-items: center;
+}
+.rebspicker-search-container > input {
+	width: calc(100% - 0.4em);
+	height: calc(100% - 0.4em);
+	margin-top: 4px;
+}

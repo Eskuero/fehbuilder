@@ -7,15 +7,13 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
-		
-		<link rel="preconnect" href="https://cdn.jsdelivr.net/">
-		<link rel="preconnect" href="https://code.jquery.com/">
-		
+
 		<link rel="preload" href="builder.css" as="style">
+		<link rel="preload" href="/common/rebspicker.css" as="style">
 
 		<link rel="stylesheet" href="builder.css">
+		<link rel="stylesheet" href="/common/rebspicker.css">
 
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" integrity="sha512-aD9ophpFQ61nFZP6hXYu4Q/b/USW7rpLCQLX6Bi0WJHXNO7Js/fUENpBQf/+P4NtpzNX0jSgR5zVvPOJp+W2Kg==" crossorigin="anonymous" />
 		<link rel="shortcut icon" href="/common/assets/Feh.webp" />
 
 	</head>
@@ -44,7 +42,7 @@
 							<input type="checkbox" class="checkbox-xl" id="bestskills" onChange="populateall(false)" checked>
 						</div>
 					</div>
-					<div class="row-property single">
+					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/language.webp" title="Language"/>
 						<select class="select-without-search" id="language" onChange="getlang(); populate(selectheroes, units, true, true); populateall(false); statictranslations();reload()">
 							<option value="USEN" selected>English (America)</option>
@@ -66,13 +64,11 @@
 					<button onclick="reset('unit')" class="button">Reset</button>
 				</div>
 				<section>
-					<div class="row-property single">
+					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/kiran.webp" title="Hero"/>
-						<select class="s2-select" id="selectheroes" onChange="populateall(true);slotname();reload()" >
-							<option value="None">None</value>
-						</select>
+						<div id="selectheroes" onchange="populateall(true);slotname();reload()"></div>
 					</div>
-					<div class="row-property double">
+					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/resplendent.webp" title="Attire"/>
 						<select class="select-without-search" onchange="reload()" id="attire">
 							<option value="Normal">Normal</option>
@@ -89,7 +85,7 @@
 							<option value="Forma">Forma</option>
 						</select>
 					</div>
-					<div class="row-property double">
+					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/beasts.webp" title="Beast transformation"/>
 						<select class="select-without-search" onchange="reload()" id="beast">
 							<option value="no">No</option>
@@ -104,7 +100,7 @@
 							<option value="S">S</option>
 						</select>
 					</div>
-					<div class="row-property double">
+					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/merges.webp" title="Merges"/>
 						<select class="select-without-search" onchange="reload()" id="merges">
 							<option value="0">0</option>
@@ -124,7 +120,7 @@
 							<option value="0">0</value>
 						</select>
 					</div>
-					<div class="row-property double">
+					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/boon.webp" title="Boon"/>
 						<select class="select-without-search" onchange="reload()" id="boons">
 							<option value="None">-</option>
@@ -144,7 +140,7 @@
 							<option value="Res">Res</option>
 						</select>
 					</div>
-					<div class="row-property double">
+					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/ascendent.webp" title="Ascendent Stat" />
 						<select class="select-without-search" onchange="reload()" id="ascendent">
 							<option value="None">-</option>
@@ -160,7 +156,7 @@
 							<option value="yes">Yes</option>
 						</select>
 					</div>
-					<div class="row-property double">
+					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/blessings.webp" title="Blessings" />
 						<select class="select-without-search" id="blessing" onChange="reload()">
 							<option value="None">None</option>
@@ -181,53 +177,39 @@
 					<button onclick="reset('skills')" class="button">Reset</button>
 				</div>
 				<section>
-					<div class="row-property single">
+					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/weapon.webp" title="Weapon"/>
-						<select class="s2-select" id="weapon" onchange="updateRefine();reload()">
-							<option value="None">None</option>
-						</select>
+						<div id="weapon" onchange="updateRefine();reload()"></div>
 					</div>
-					<div class="row-property single">
+					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/refine.webp" title="Refine"/>
 						<select class="select-without-search" onchange="reload()" id="refine">
 							<option value="None">None</option>
 						</select>
 					</div>
-					<div class="row-property single">
+					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/assist.webp" title="Assist"/>
-						<select class="s2-select" onchange="reload()" id="assist">
-							<option value="None">None</option>
-						</select>
+						<div onchange="reload()" id="assist"></div>
 					</div>
-					<div class="row-property single">
+					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/special.webp" title="Special"/>
-						<select class="s2-select" onchange="reload()" id="special">
-							<option value="None">None</option>
-						</select>
+						<div onchange="reload()" id="special"></div>
 					</div>
-					<div class="row-property single">
+					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/skill-a.webp" title="A skill"/>
-						<select class="s2-select" onchange="reload()" id="Askill">
-							<option value="None">None</option>
-						</select>
+						<div onchange="reload()" id="Askill"></div>
 					</div>
-					<div class="row-property single">
+					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/skill-b.webp" title="B skill"/>
-						<select class="s2-select" onchange="reload()" id="Bskill">
-							<option value="None">None</option>
-						</select>
+						<div onchange="reload()" id="Bskill"></div>
 					</div>
-					<div class="row-property single">
+					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/skill-c.webp" title="C skill"/>
-						<select class="s2-select" onchange="reload()" id="Cskill">
-							<option value="None">None</option>
-						</select>
+						<div onchange="reload()" id="Cskill"></div>
 					</div>
-					<div class="row-property single">
+					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/seal.webp" title="Seal"/>
-						<select class="s2-select" onchange="reload()" id="Sskill">
-							<option value="None">None</option>
-						</select>
+						<div onchange="reload()" id="Sskill"></div>
 					</div>
 				</section>
 				<div class="tabs">
@@ -237,20 +219,20 @@
 					<img class="imagelabel" onclick="swapstat(this,'pairups')" src="/common/assets/pairup.webp" title="Pair-Up"/>
 					<button onclick="reset('stats')" class="button">Reset</button>
 				</div>
-				<section style="column-count: 1">
-					<div class="row-property single legendaries">
-						<select class="s2-select" id="allies" multiple="multiple" onChange="showallies();reload()" style="width:100%;"></select>
+				<section id="legendaries" style="column-count: 1">
+					<div class="row-property">
+						<div id="allies" multiple="multiple" onchange="showallies();reload()"></div>
 					</div>
 					<section id="usedallies"></section>
 				</section>
 				<section id="buffs" style="display:none">
-					<div class="row-property double">
+					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/Atk.webp" title="Atk Buff"/>
 						<input type="number" id="atk" onchange="reload()" min="-99" max="99" value="0">
 						<img class="imagelabel" src="/common/assets/Spd.webp" title="Spd Buff"/>
 						<input type="number" id="spd" onchange="reload()" min="-99" max="99" value="0">
 					</div>
-					<div class="row-property double">
+					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/Def.webp" title="Def Buff"/>
 						<input type="number" id="def" onchange="reload()" min="-99" max="99" value="0">
 						<img class="imagelabel" src="/common/assets/Res.webp" title="Res Buff"/>
@@ -258,13 +240,13 @@
 					</div>
 				</section>
 				<section id="pairups" style="display:none">
-					<div class="row-property double">
+					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/Atk.webp" title="Atk Buff"/>
 						<input type="number" id="atk-pairup" onchange="reload()" min="0" max="4" value="0">
 						<img class="imagelabel" src="/common/assets/Spd.webp" title="Spd Buff"/>
 						<input type="number" id="spd-pairup" onchange="reload()" min="0" max="4" value="0">
 					</div>
-					<div class="row-property double">
+					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/Def.webp" title="Def Buff"/>
 						<input type="number" id="def-pairup" onchange="reload()" min="0" max="4" value="0">
 						<img class="imagelabel" src="/common/assets/Res.webp" title="Res Buff"/>
@@ -273,13 +255,13 @@
 				</section>
 				<h2>Miscellaneous</h2>
 				<section>
-					<div class="row-property double">
+					<div class="row-property">
 						<label for="sp"><img class="imagelabel" src="/common/assets/sp.webp" title="Skill Points"/></label>
 						<input type="number" onchange="reload()" id="sp" min="0" max="9999" value="9999">
 						<label for="hm"><img class="imagelabel" src="/common/assets/hm.webp" title="Hero Merit"/></label>
 						<input type="number" onchange="reload()" id="hm" min="0" max="8000" value="8000">
 					</div>
-					<div class="row-property double">
+					<div class="row-property">
 						<label for="artstyle"><img class="imagelabel" src="/common/assets/brush.webp" title="Art Style"/></label>
 						<select class="select-without-search" id="artstyle" onchange="reload()">
 							<option value="Portrait">Portrait</option>
@@ -294,13 +276,13 @@
 							<option value="Echoes">Echoes</option>
 						</select>
 					</div>
-					<div class="row-property double">
+					<div class="row-property">
 						<label for="offsetY"><img class="imagelabel" src="/common/assets/up.webp" title="Offset in Y"/></label>
 						<input type="number" id="offsetY" onchange="reload()" min="-1500" max="1500" value="0">
 						<label for="offsetX"><img class="imagelabel" src="/common/assets/right.webp" title="Offset in X"/></label>
 						<input type="number" id="offsetX" onchange="reload()" min="-1500" max="1500" value="0">
 					</div>
-					<div class="row-property single">
+					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/mirror.webp" title="Art Mirroring"/>
 						<select class="select-without-search" id="mirror" onchange="reload()">
 							<option value="None">None</option>
@@ -309,7 +291,7 @@
 							<option value="Both">Horizontal + Vertical</option>
 						</select>
 					</div>
-					<div class="row-property double">
+					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/favorite.webp" title="Favorite Mark"/>
 						<select class="select-without-search" id="favorite" onchange="reload()">
 							<option value="0">0</option>
@@ -349,8 +331,7 @@
 				</div>
 			</div>
 		</div>
-		<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" integrity="sha512-4MvcHwcbqXKUHB6Lx3Zb5CEAVoE9u84qN+ZSMM6s7z8IeJriExrV3ND5zRze9mxNlABJ6k864P/Vl8m0Sd3DtQ==" crossorigin="anonymous"></script>
+		<script src="/common/rebspicker.js"></script>
 		<script src="utilities.js"></script>
 		<script src="form.js"></script>
 		<script src="imagerender.js"></script>

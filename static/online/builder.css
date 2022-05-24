@@ -78,6 +78,7 @@ input[type=number] {
 	width: 6.45em;
 	height: 2em;
 	flex: 1 0 auto;
+	height: 2em;
 }
 input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-outer-spin-button {
 	opacity: 1;
@@ -92,29 +93,6 @@ input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-o
 	height: 2em;
 	width: 2em;
 }
-.row-property.single > select, .row-property.double > select {
-	height: 2em;
-}
-.select2-selection__rendered {
-    line-height: 2em !important;
-}
-.select2-container .select2-selection--single, .select2-selection__arrow {
-    height: 2em !important;
-}
-.select2-container {
-	text-align: initial;
-	flex: 1 0 auto;
-	width: auto !important;
-}
-.select2-selection.select2-selection--multiple {
-	color: black;
-}
-.select2-selection__choice, #select2-allies-container {
-    line-height: 1.5em !important;
-}
-.legendaries > .select2-container {
-	width: 10em !important;
-}
 .basekit {
 	background-color: rgb(92, 180, 224);
 }
@@ -126,6 +104,7 @@ h2 {
 	text-decoration: underline;
 }
 .select-without-search {
+	height: 2em;
 	width: 100%;
 	font-family: inherit;
 	font-size: inherit;
