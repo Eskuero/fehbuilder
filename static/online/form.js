@@ -18,7 +18,7 @@ canvas = document.getElementById('fakecanvas');
 // The whole form since is a rebspicker listeners
 form = document.getElementsByClassName("form")[0];
 // All selects we have available
-selectheroes = new Rebspicker(document.getElementById('selectheroes'), {"None": {"string": "None"}}, [window], [form, window]);
+selectheroes = new Rebspicker(document.getElementById('selectheroes'), "single", {"None": {"string": "None"}}, [window], [form, window]);
 selectrarity = document.getElementById('rarity');
 selectmerges = document.getElementById('merges');
 selectflowers = document.getElementById('flowers');
@@ -26,19 +26,19 @@ selectboons = document.getElementById('boons');
 selectbanes = document.getElementById('banes');
 selectascendent = document.getElementById('ascendent');
 selectbeast = document.getElementById('beast');
-selectweapons = new Rebspicker(document.getElementById('weapon'), {"None": {"string": "None"}}, [window], [form, window]);
+selectweapons = new Rebspicker(document.getElementById('weapon'), "single", {"None": {"string": "None"}}, [window], [form, window]);
 selectrefines = document.getElementById('refine');
-selectspecials = new Rebspicker(document.getElementById('special'), {"None": {"string": "None"}}, [window], [form, window]);
-selectassists = new Rebspicker(document.getElementById('assist'), {"None": {"string": "None"}}, [window], [form, window]);
-selectA = new Rebspicker(document.getElementById('Askill'), {"None": {"string": "None"}}, [window], [form, window]);
-selectB = new Rebspicker(document.getElementById('Bskill'), {"None": {"string": "None"}}, [window], [form, window]);
-selectC = new Rebspicker(document.getElementById('Cskill'), {"None": {"string": "None"}}, [window], [form, window]);
-selectS = new Rebspicker(document.getElementById('Sskill'), {"None": {"string": "None"}}, [window], [form, window]);
+selectspecials = new Rebspicker(document.getElementById('special'), "single", {"None": {"string": "None"}}, [window], [form, window]);
+selectassists = new Rebspicker(document.getElementById('assist'), "single", {"None": {"string": "None"}}, [window], [form, window]);
+selectA = new Rebspicker(document.getElementById('Askill'), "single", {"None": {"string": "None"}}, [window], [form, window]);
+selectB = new Rebspicker(document.getElementById('Bskill'), "single", {"None": {"string": "None"}}, [window], [form, window]);
+selectC = new Rebspicker(document.getElementById('Cskill'), "single", {"None": {"string": "None"}}, [window], [form, window]);
+selectS = new Rebspicker(document.getElementById('Sskill'), "single", {"None": {"string": "None"}}, [window], [form, window]);
 selectblessings = document.getElementById('blessing');
 selectsummoner = document.getElementById('summoner');
 selectattire = document.getElementById('attire');
 selectbonusunit = document.getElementById('bonusunit');
-selectallies = new RebspickerMulti(document.getElementById('allies'), {}, [window], [form, window]);
+selectallies = new Rebspicker(document.getElementById('allies'), "multiple", {}, [window], [form, window]);
 selectatk = document.getElementById('atk');
 selectspd = document.getElementById('spd');
 selectdef = document.getElementById('def');
@@ -211,7 +211,7 @@ async function populate(select, data, clean, bypass) {
 			}
 		}
 		// Generate the select
-		select = new Rebspicker(select.domitem, options, [window], [form, window]);
+		select = new Rebspicker(select.domitem, "single", options, [window], [form, window]);
 		// Restore the previous value if it's available on the updated select
 		if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
 			select.value = previousvalue;
@@ -225,7 +225,7 @@ async function populate(select, data, clean, bypass) {
 		var basekit = units[selectheroes.value]["basekit"];
 	// If no hero is selected we have nothing to do
 	} else {
-		select = new Rebspicker(select.domitem, options, [window], [form, window]);
+		select = new Rebspicker(select.domitem, "single", options, [window], [form, window]);
 		return;
 	}
 	// For disabled cheats we only add the options that match move/ type restrictions and exclusive skills
@@ -275,7 +275,7 @@ async function populate(select, data, clean, bypass) {
 		options[tag] = {"string": string, "class": basekit.includes(tag) ? "basekit" : false};
 	}
 	// Generate the select
-	select = new Rebspicker(select.domitem, options, [window], [form, window]);
+	select = new Rebspicker(select.domitem, "single", options, [window], [form, window]);
 	// Restore the previous value if it's available on the updated select
 	if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
 		select.value = previousvalue;
@@ -377,7 +377,7 @@ async function fillblessed(clean = false, toberestored = []) {
 			"keywords": languages[newlang][blessingsstrings[other["blessed"][tag]["blessing"]-1]]
 		};
 	}
-	selectallies = new RebspickerMulti(document.getElementById('allies'), options, [window], [form, window], toberestored);
+	selectallies = new Rebspicker(document.getElementById('allies'), "multiple", options, [window], [form, window], toberestored);
 }
 
 function showallies(clean = false, allies = {}) {
