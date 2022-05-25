@@ -214,9 +214,21 @@ class Rebspicker {
 		var realinput = document.createElement('input');
 		realinput.type = "text";
 		realinput.addEventListener("blur", function() {
-			this.close();
+			// If we are focusing on an option don't close
+			if (event.relatedTarget ? event.relatedTarget.className.indexOf("rebspicker-option") == -1 : true) {
+				this.close();
+			}
 		}.bind(this));
 		realinput.addEventListener("keyup", function() {
+			if (event.keyCode == 40) {
+				// Go to the first visible sibling
+				for (let i = 0; i < this.options.length; i++) {
+					 if (this.options[i].style.display != "none") {
+						 this.options[i].focus();
+						 return;
+					 }
+				}
+			}
 			var query = this.realinput.value;
 			// Loop all options and hide/unhide matching options
 			for (const option of Object.values(this.options)) {
@@ -232,11 +244,14 @@ class Rebspicker {
 
 		var list = document.createElement('div');
 		list.className = "rebspicker-list";
+		var tabindex = 0;
 		// Add a list item for each data entry provided
 		for (const [tag, data] of Object.entries(entries)) {
 			var option = document.createElement('div');
 			option.className = "rebspicker-option " + (data["class"] ? data["class"] : "");
 			option.innerHTML = data["string"];
+			option.tabIndex = tabindex;
+			tabindex += 1;
 			option.value = tag;
 			option.setAttribute("keywords", data["keywords"]);
 			option.addEventListener("mousedown", function() {
@@ -248,6 +263,49 @@ class Rebspicker {
 				// Fire the change event
 				this.domitem.dispatchEvent(new Event('change'));
 				this.realinput.dispatchEvent(new Event('blur'));
+			}.bind(this));
+
+			option.addEventListener("mouseover", function() {
+				event.target.focus();
+			});
+			option.addEventListener("blur", function() {
+				// If we are focusing on an option don't close
+				if (event.relatedTarget ? event.relatedTarget.className.indexOf("rebspicker-option") == -1 : true) {
+					this.close();
+				}
+			}.bind(this));
+
+			option.addEventListener("keydown", function() {
+				// Get all visible siblings
+				var visible = [];
+				for (let i = 0; i < this.options.length; i++) {
+					 if (this.options[i].style.display != "none") {
+						 visible.push(this.options[i]);
+					 }
+				}
+				// Going down
+				if (event.keyCode == 40) {
+					var newindex = Array.from(visible).indexOf(event.target) + 1;
+					if (visible[newindex]) {
+						this.selectionlist.scrollTo({"top": visible[newindex].offsetTop - this.selectionlist.getBoundingClientRect().height + visible[newindex].clientHeight, "behavior": "smooth"});
+						visible[newindex].focus();
+					}
+				// Going up
+				} else if (event.keyCode == 38) {
+					var newindex = Array.from(visible).indexOf(event.target) - 1;
+					var nextelement = visible[newindex] ? visible[newindex] : this.realinput;
+					if (visible[newindex]) {
+						this.selectionlist.scrollTo({"top": nextelement.offsetTop - this.selectionlist.getBoundingClientRect().height / 2, "behavior": "smooth"});
+					}
+					nextelement.focus();
+				// Pressed enter
+				} else if (event.keyCode == 13) {
+					// Update selected option
+					this.value = event.target.value;
+					// Fire the change event
+					this.domitem.dispatchEvent(new Event('change'));
+					this.close();
+				}
 			}.bind(this));
 			list.appendChild(option);
 		}

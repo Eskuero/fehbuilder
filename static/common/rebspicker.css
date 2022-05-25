@@ -118,7 +118,7 @@
 	height: var(--list-item-height);
 	overflow: clip;
 }
-.rebspicker-option:hover {
+.rebspicker-option:hover, .rebspicker-option:focus {
 	background-color: var(--background-hover-color);
 	color: white;
 }
