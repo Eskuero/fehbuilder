@@ -55,6 +55,20 @@ body {
 	width: var(--landscape);
 	display: flex;
 	align-items: end;
+	box-sizing: border-box;
+	border: 1px solid transparent;
+}
+.row:first-child > .cell {
+	border-top: 2px solid transparent;
+}
+.row:last-child > .cell {
+	border-bottom: 2px solid transparent;
+}
+.cell:first-child {
+	border-left: 2px solid transparent;
+}
+.cell:last-child {
+	border-right: 2px solid transparent;
 }
 .cell > * {
 	margin: 0 auto 0 auto;

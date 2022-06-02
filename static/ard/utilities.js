@@ -224,13 +224,21 @@ function deleteitem(caller) {
 }
 
 function iconvisibility(caller) {
-	// If we are only modifying an specific icon check with the caller
-	if (caller) {
-		// Class of the icon to hide
-		var target = caller.id.slice(4);
-		var icons = document.querySelectorAll("." + target);
-		for (let i = 0; i < icons.length; i++) {
-			icons[i].style.display = caller.checked == true ? "block" : "none";
-		}
+	// Class of the icon to hide
+	var target = caller.id.slice(4);
+	var items = document.querySelectorAll("." + target);
+	switch(target) {
+		case "weapon":
+		case "movement":
+		case "blessing":
+			for (let i = 0; i < items.length; i++) {
+				items[i].style.display = caller.checked == true ? "block" : "none";
+			}
+			break;
+		case "cell":
+			for (let i = 0; i < items.length; i++) {
+				items[i].style.borderColor = caller.checked == true ? "black" : "transparent";
+			}
+			break;
 	}
 }
