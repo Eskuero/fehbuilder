@@ -68,11 +68,28 @@ body {
 		#750787
 	);
 	overflow: hidden;
-	font-size: 1em;
+	font-size: 1.6vh;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	font-weight: bold;
 	cursor: pointer;
+}
+#unitslot > button:hover{
+	background: linear-gradient(
+		to bottom,
+		#d00000,
+		#d00000 16.67%,
+		#eb7800 16.67%,
+		#eb7800 33.33%,
+		#ebd900 33.33%,
+		#ebd900 50%,
+		#006c12 50%,
+		#006c12 66.67%,
+		#0039eb 66.67%,
+		#0039eb 83.33%,
+		#610073 83.33%,
+		#610073
+	);
 }
 #unitslot > button:not(:last-child) {
 	border-right: 1px solid white;
