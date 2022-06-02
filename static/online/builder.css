@@ -51,7 +51,22 @@ body {
 	width: 25%;
 	padding: 0.5em 0.25em 0.5em 0.25em;
 	color: #fff;
-	background-color: #006bde;
+	text-shadow: 0 0 4px black, 0 0 6px black;
+	background: linear-gradient(
+		to bottom,
+		#e40303,
+		#e40303 16.67%,
+		#ff8c00 16.67%,
+		#ff8c00 33.33%,
+		#ffed00 33.33%,
+		#ffed00 50%,
+		#008026 50%,
+		#008026 66.67%,
+		#004dff 66.67%,
+		#004dff 83.33%,
+		#750787 83.33%,
+		#750787
+	);
 	overflow: hidden;
 	font-size: 1em;
 	text-overflow: ellipsis;
