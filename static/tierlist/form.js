@@ -231,7 +231,7 @@ function populate() {
 		opt.addEventListener("dragstart", function(event) {drag(event)});
 		// Create and add the items indicating weapon, movement, blessing and origin
 		let weapon = document.createElement('img');
-		weapon.className = "iconinfo weapon";
+		weapon.className = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[heroes[i]]["WeaponType"]) ? "iconinfo weapon patched" : "iconinfo weapon";
 		weapon.src = "/common/other/" + units[heroes[i]]["WeaponType"] + "-weapon.webp";
 		weapon.title = "Weapon Type";
 		opt.appendChild(weapon);

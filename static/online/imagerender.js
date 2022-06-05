@@ -157,7 +157,9 @@ async function echoes() {
 		preview.drawImage(img, 678, 43, 38, 38);
 	});
 	await getimage(other["images"]["weapontype"][units[hero]["WeaponType"]]).then(img => {
-		preview.drawImage(img, 638, 43, 38, 38);
+		let size = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[hero]["WeaponType"]) ? 42 : 38;
+		let offset = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[hero]["WeaponType"]) ? -2 : 0;
+		preview.drawImage(img, 638 + offset, 43 + offset, size, size);
 	});
 
 	// Optionally print floret, resplendent and accessory indicator
@@ -445,7 +447,9 @@ async function condensed() {
 
 	// Print the weapon type icon
 	await getimage(other["images"]["weapontype"][units[hero]["WeaponType"]]).then(img => {
-		preview.drawImage(img, 168, 17, 28, 28);
+		let size = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[hero]["WeaponType"]) ? 32 : 28;
+		let offset = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[hero]["WeaponType"]) ? -2 : 0;
+		preview.drawImage(img, 168 + offset, 17 + offset, size, size);
 	});
 
 	// Print the level string
@@ -761,7 +765,9 @@ async function myunit() {
 		preview.drawImage(img, posX, 743, 32, 32);
 	});
 	await getimage(other["images"]["weapontype"][units[hero]["WeaponType"]]).then(img => {
-		preview.drawImage(img, 20, 743, 32, 32);
+		// We add an small offset on red weapons to make them look decent
+		let offset = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[hero]["WeaponType"]) ? -2 : 0;
+		preview.drawImage(img, 20 + offset, 743 + offset);
 	});
 	// Print the level string
 	preview.font = '24px FeH-Font'; preview.fillStyle = "#ffffff"; preview.strokeStyle = '#0a2533'; preview.textAlign = 'start';

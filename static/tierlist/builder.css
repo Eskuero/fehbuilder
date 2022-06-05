@@ -90,7 +90,12 @@ body {
 	position: absolute;
 }
 .weapon {
-	height: 1.5em;
+	height: 1.4em;
+	top: 0.07em;
+	left: 0.07em;
+}
+.weapon.patched {
+	height: 1.54em;
 	top: 0;
 	left: 0;
 }

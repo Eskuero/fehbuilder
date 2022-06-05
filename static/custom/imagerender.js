@@ -243,7 +243,9 @@ async function reload() {
 		preview.drawImage(img, posX, 743, 32, 32);
 	});
 	await getimage(other["images"]["weapontype"][parseInt(selectweapontype.value)]).then(img => {
-		preview.drawImage(img, 20, 743, 32, 32);
+		// We add an small offset on red weapons to make them look decent
+		let offset = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(parseInt(selectweapontype.value)) ? -2 : 0;
+		preview.drawImage(img, 20 + offset, 743 + offset);
 	});
 	// Print the level string
 	preview.font = '24px FeH-Font'; preview.fillStyle = "#ffffff"; preview.strokeStyle = '#0a2533'; preview.textAlign = 'start';
