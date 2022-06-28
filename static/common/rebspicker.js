@@ -64,10 +64,11 @@ class Rebspicker {
 					 }
 				}
 			}
-			var query = this.realinput.value;
+			// Normalize the query to upper case and without special chars like tildes
+			var query = this.realinput.value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase();
 			// Loop all options and hide/unhide matching options
 			for (const option of Object.values(this.options)) {
-				if (option.innerHTML.toUpperCase().indexOf(query.toUpperCase()) != -1 || option.getAttribute("keywords").toUpperCase().indexOf(query.toUpperCase()) != -1 || query == "") {
+				if (option.innerHTML.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().indexOf(query) != -1 || option.getAttribute("keywords").toUpperCase().indexOf(query) != -1 || query == "") {
 					option.style.display = "flex";
 				} else {
 					option.style.display = "none";
