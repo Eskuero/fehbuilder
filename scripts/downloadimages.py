@@ -195,7 +195,7 @@ icons = {
 	"1-Blessing-atk": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/09/Icon_LegendFireAtk.png?147?160",
 	"1-Blessing-atk-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/29/Icon_LegendFireAtkS.png?80?87",
 	"1-Blessing-atk-pairup": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/f/fc/Icon_LegendFireAtk_03.webp?147?160",
-	"1-Blessing-akt-pairup-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/00/Icon_LegendFireAtk_03S.webp?80?87",
+	"1-Blessing-atk-pairup-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/00/Icon_LegendFireAtk_03S.webp?80?87",
 	"1-Blessing-spd": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/c5/Icon_LegendFire.png?147?160",
 	"1-Blessing-spd-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/7/70/Map_Unit_Info_Fire_Blessing.png?54?59",
 	"1-Blessing-spd-pairup": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/6/61/Icon_LegendFireSpd_03.webp?147?160",
