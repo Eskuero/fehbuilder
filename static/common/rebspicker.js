@@ -15,6 +15,7 @@ class Rebspicker {
 	constructor(domitem, type, entries, resizelisteners = [window], scrolllisteners = [window], defaultvalue) {
 		this.domitem = domitem;
 		this.type = type;
+		this.setAttribute("disabled", false);
 
 		this.domitem.className = "rebspicker-select";
 		// Create the element that always shows
@@ -195,11 +196,16 @@ class Rebspicker {
 	}
 
 	openclose() {
+		// If disabled just skip
+		if (this.disabled) {
+			return;
+		}
 		// Un/hide and Un/focus depending on current state
 		if (this.dropdown.style.display == "block") {
 			this.close();
 		} else {
 			this.open();
+			this.reposition();
 		}
 	}
 	open() {
@@ -213,6 +219,12 @@ class Rebspicker {
 		this.dropdown.style.zIndex = "auto";
 		this.arrow.className = "rebspicker-arrow closed";
 		document.activeElement.blur();
+	}
+	setAttribute(key, value) {
+		this.domitem.setAttribute(key, value);
+	}
+	getAttribute(key) {
+		return this.domitem.getAttribute(key);
 	}
 
 	set value(value) {
@@ -246,12 +258,25 @@ class Rebspicker {
 			this.preview.firstChild.append(selection);
 		}
 	}
+	set disabled(value) {
+		console.log(value);
+		if (value) {
+			this.domitem.className = "rebspicker-select disabled";
+		} else {
+			this.domitem.className = "rebspicker-select";
+		}
+		this.setAttribute("disabled", value);
+	}
+
 	get value() {
 		if (this.type == "single") {
 			return this.preview.firstChild.value;
 		} else {
 			return this.preview.firstChild.firstChild.value;
 		}
+	}
+	get disabled() {
+		return this.getAttribute("disabled") == "true" ? true :  false;
 	}
 	get selectedOptions() {
 		if (this.type == "single") {

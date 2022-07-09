@@ -6,6 +6,7 @@
 	--font-color: #444;
 	--background-color: white;
 	--background-hover-color: #5897fb;
+	--disabled-background-color: #eee;
 }
 #allies {
 	--collapsed-multiselect-height: 2em;
@@ -15,6 +16,7 @@
 	--font-color: #444;
 	--background-color: white;
 	--background-hover-color: #5897fb;
+	--disabled-background-color: #eee;
 }
 
 @media screen and (max-aspect-ratio: 593/467) {
@@ -43,6 +45,9 @@
 	background-color: var(--background-color);
 	box-sizing: border-box;
 	width: var(--select-width);
+}
+.disabled {
+	background-color: var(--disabled-background-color);
 }
 .rebspicker-preview {
 	height: var(--collapsed-select-height);
