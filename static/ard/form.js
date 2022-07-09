@@ -314,8 +314,8 @@ function scan() {
 
 function populate(select, data, clean, previousvalue = "None") {
 	// First delete them all
-	while (select.domitem.lastChild) {
-		select.domitem.removeChild(select.domitem.lastChild);
+	while (select.lastChild) {
+		select.removeChild(select.lastChild);
 	}
 	// All data to be printed (Always add the None option with it's proper translation)
 	var options = {"None": {"string": "None"}};

@@ -191,8 +191,8 @@ async function populate(select, data, clean, bypass) {
 	// Get current value to restore it back if possible
 	var previousvalue = select.value;
 	// First delete them all
-	while (select.domitem.lastChild) {
-		select.domitem.removeChild(select.domitem.lastChild);
+	while (select.lastChild) {
+		select.removeChild(select.lastChild);
 	}
 	// All data to be printed (Always add the None option with it's proper translation)
 	var options = {"None": {"string": languages[selectlanguage.value]["MSID_H_NONE"]}};
@@ -357,8 +357,8 @@ async function fillblessed(clean = false, toberestored = []) {
 		}
 	}
 	// First delete all allies
-	while (selectallies.domitem.lastChild) {
-		selectallies.domitem.removeChild(selectallies.domitem.lastChild);
+	while (selectallies.lastChild) {
+		selectallies.removeChild(selectallies.lastChild);
 	}
 	var blessingsstrings = ["MID_ITEM_BLESSING_FIRE", "MID_ITEM_BLESSING_WATER", "MID_ITEM_BLESSING_WIND", "MID_ITEM_BLESSING_EARTH", "MID_ITEM_BLESSING_LIGHT", "MID_ITEM_BLESSING_DARK", "MID_ITEM_BLESSING_HEAVEN", "MID_ITEM_BLESSING_LOGIC"];
 	// All data to be printed

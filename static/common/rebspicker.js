@@ -181,6 +181,7 @@ class Rebspicker {
 		var coordinates = this.domitem.getBoundingClientRect();
 		this.dropdown.style.top = coordinates.top + window.scrollY + this.domitem.clientHeight - 4 + "px";
 		this.dropdown.style.left = coordinates.left + window.scrollX + "px";
+		this.dropdown.style.width = this.domitem.getBoundingClientRect().width + "px";
 	}
 
 	clean() {
@@ -226,6 +227,9 @@ class Rebspicker {
 	getAttribute(key) {
 		return this.domitem.getAttribute(key);
 	}
+	removeChild(item) {
+		this.domitem.removeChild(item);
+	}
 
 	set value(value) {
 		if (this.type == "single") {
@@ -257,9 +261,10 @@ class Rebspicker {
 			selection.append(closebutton);
 			this.preview.firstChild.append(selection);
 		}
+		// Set value of the domitem so it can be retrieved upon being the caller of a function
+		this.domitem.value = value;
 	}
 	set disabled(value) {
-		console.log(value);
 		if (value) {
 			this.domitem.className = "rebspicker-select disabled";
 		} else {
@@ -284,6 +289,12 @@ class Rebspicker {
 		} else {
 			return this.preview.firstChild.children;
 		}
+	}
+	get style() {
+		return this.domitem.style;
+	}
+	get lastChild() {
+		return this.domitem.lastChild;
 	}
 	get preview() {
 		return this.domitem.children[0];
