@@ -8,13 +8,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 
-		<link rel="preconnect" href="https://cdn.jsdelivr.net/">
-		<link rel="preconnect" href="https://code.jquery.com/">
-
 		<link rel="preload" href="builder.css" as="style">
-		<link rel="stylesheet" href="builder.css" />
+		<link rel="preload" href="/common/rebspicker.css" as="style">
 
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" integrity="sha512-aD9ophpFQ61nFZP6hXYu4Q/b/USW7rpLCQLX6Bi0WJHXNO7Js/fUENpBQf/+P4NtpzNX0jSgR5zVvPOJp+W2Kg==" crossorigin="anonymous" />
+		<link rel="stylesheet" href="builder.css" />
+		<link rel="stylesheet" href="/common/rebspicker.css">
+
 		<link rel="shortcut icon" href="/common/assets/Feh.webp" />
 
 	</head>
@@ -24,54 +23,49 @@
 				<h3>Change content of tile</h2>
 				<div class="row-property single">
 					<img class="imagelabel" src="/common/assets/kiran.webp" title="Hero"/>
-					<div>
-						<select class="s2-select" id="selectheroes" selectedtile="null" onchange="pasteunit(this)">
-							<option value="None">None</option>
-						</select>
+					<div id="selectheroes" selectedtile="null" onchange="pasteunit(this)">
 					</div>
 				</div>
 				<div class="row-property single">
 					<img class="imagelabel" src="/common/assets/structure.webp" title="Structure"/>
-					<div>
-						<select class="select-without-search" id="selectstructure" selectedtile="null" onchange="pastestructure(this)">
-							<option value="None">None</option>
-							<optgroup label="Structures">
-								<option value="armorschool" structtype="defensive">Armor School</option>
-								<option value="bolttower" structtype="defensive">Bolt Tower</option>
-								<option value="brigthshrine" structtype="defensive">Bright Shrine</option>
-								<option value="catapult" structtype="defensive">Catapult</option>
-								<option value="cavalryschool" structtype="defensive">Cavalry School</option>
-								<option value="darkshrine" structtype="defensive">Dark Shrine</option>
-								<option value="duoshindrance" structtype="defensive">Duo's Hindrance</option>
-								<option value="flierschool" structtype="defensive">Flier School</option>
-								<option value="healingtower" structtype="defensive">Healing Tower</option>
-								<option value="infantryschool" structtype="defensive">Infantry School</option>
-								<option value="panicmanor" structtype="defensive">Panic Manor</option>
-								<option value="tacticsroom" structtype="defensive">Tactics Room</option>
-							</optgroup>
-							<optgroup label="Real Traps">
-								<option value="bolttrap" structtype="trap">Bolt Trap</option>
-								<option value="heavytrap" structtype="trap">Heavy Trap</option>
-								<option value="hextrap" structtype="trap">Hex Trap</option>
-							</optgroup>
-							<optgroup label="Fake Traps">
-								<option value="bolttrapfake" structtype="faketrap">Bolt Trap (Fake)</option>
-								<option value="heavytrapfake" structtype="faketrap">Heavy Trap (Fake)</option>
-								<option value="hextrapfake" structtype="faketrap">Hex Trap (Fake)</option>
-							</optgroup>
-							<optgroup label="Decorations">
-								<option value="concerthall" structtype="decorative">Concert Hall</option>
-								<option value="dininghall" structtype="decorative">Dining Hall</option>
-								<option value="field" structtype="decorative">Field</option>
-								<option value="inn" structtype="decorative">Inn</option>
-							</optgroup>
-							<optgroup label="Mandatory">
-								<option value="aetheramphorae" structtype="mandatory">Aether Amphorae</option>
-								<option value="aetherfountain" structtype="mandatory">Aether Fountain</option>
-								<option value="fortress" structtype="mandatory">Fortress</option>
-							</optgroup>
-						</select>
-					</div>
+					<select class="select-without-search" id="selectstructure" selectedtile="null" onchange="pastestructure(this)">
+						<option value="None">None</option>
+						<optgroup label="Structures">
+							<option value="armorschool" structtype="defensive">Armor School</option>
+							<option value="bolttower" structtype="defensive">Bolt Tower</option>
+							<option value="brigthshrine" structtype="defensive">Bright Shrine</option>
+							<option value="catapult" structtype="defensive">Catapult</option>
+							<option value="cavalryschool" structtype="defensive">Cavalry School</option>
+							<option value="darkshrine" structtype="defensive">Dark Shrine</option>
+							<option value="duoshindrance" structtype="defensive">Duo's Hindrance</option>
+							<option value="flierschool" structtype="defensive">Flier School</option>
+							<option value="healingtower" structtype="defensive">Healing Tower</option>
+							<option value="infantryschool" structtype="defensive">Infantry School</option>
+							<option value="panicmanor" structtype="defensive">Panic Manor</option>
+							<option value="tacticsroom" structtype="defensive">Tactics Room</option>
+						</optgroup>
+						<optgroup label="Real Traps">
+							<option value="bolttrap" structtype="trap">Bolt Trap</option>
+							<option value="heavytrap" structtype="trap">Heavy Trap</option>
+							<option value="hextrap" structtype="trap">Hex Trap</option>
+						</optgroup>
+						<optgroup label="Fake Traps">
+							<option value="bolttrapfake" structtype="faketrap">Bolt Trap (Fake)</option>
+							<option value="heavytrapfake" structtype="faketrap">Heavy Trap (Fake)</option>
+							<option value="hextrapfake" structtype="faketrap">Hex Trap (Fake)</option>
+						</optgroup>
+						<optgroup label="Decorations">
+							<option value="concerthall" structtype="decorative">Concert Hall</option>
+							<option value="dininghall" structtype="decorative">Dining Hall</option>
+							<option value="field" structtype="decorative">Field</option>
+							<option value="inn" structtype="decorative">Inn</option>
+						</optgroup>
+						<optgroup label="Mandatory">
+							<option value="aetheramphorae" structtype="mandatory">Aether Amphorae</option>
+							<option value="aetherfountain" structtype="mandatory">Aether Fountain</option>
+							<option value="fortress" structtype="mandatory">Fortress</option>
+						</optgroup>
+					</select>
 				</div>
 				<div class="additionaloptions">
 					<button id="buttonclean" onclick="deleteitem(this)" selectedtile="null" style="margin-top: 1em;" class="button">Clear</button>
@@ -144,35 +138,31 @@
 				<section>
 					<div class="row-property single">
 						<img class="imagelabel" src="/common/assets/divinecode.webp" title="Map"/>
-						<div>
-							<select class="select-without-search" onchange="changemap()" id="mapselect">
-								<option value="springwater">Springwater</option>
-								<option value="wintry">Wintry</option>
-								<option value="abandonedcastle">Abandoned Castle</option>
-								<option value="snowdust">Snowdust</option>
-								<option value="desert">Desert</option>
-								<option value="springbreeze">Spring Breeze</option>
-								<option value="leafycanopy">Leafy Canopy</option>
-								<option value="lostcastle">Lost Castle</option>
-								<option value="brightgrassland">Bright Grassland</option>
-								<option value="lava">Lava Floes</option>
-								<option value="dreamcastle">Dream Castle</option>
-								<option value="nightmarecastle">Nightmare Castle</option>
-								<option value="helcastle">Hel Castle</option>
-								<option value="nioavellircastle">Niðavellir Castle</option>
-								<option value="jotunheimrcastle">Jötunheimr Castle</option>
-							</select>
-						</div>
+						<select class="select-without-search" onchange="changemap()" id="mapselect">
+							<option value="springwater">Springwater</option>
+							<option value="wintry">Wintry</option>
+							<option value="abandonedcastle">Abandoned Castle</option>
+							<option value="snowdust">Snowdust</option>
+							<option value="desert">Desert</option>
+							<option value="springbreeze">Spring Breeze</option>
+							<option value="leafycanopy">Leafy Canopy</option>
+							<option value="lostcastle">Lost Castle</option>
+							<option value="brightgrassland">Bright Grassland</option>
+							<option value="lava">Lava Floes</option>
+							<option value="dreamcastle">Dream Castle</option>
+							<option value="nightmarecastle">Nightmare Castle</option>
+							<option value="helcastle">Hel Castle</option>
+							<option value="nioavellircastle">Niðavellir Castle</option>
+							<option value="jotunheimrcastle">Jötunheimr Castle</option>
+						</select>
 					</div>
 					<div class="row-property single">
 						<img class="imagelabel" src="/common/assets/brush.webp" title="Art style"/>
-						<div>
-							<select class="select-without-search" id="artstyle" onchange="changeart()">
-								<option value="sprites-idle">Sprite (Idle)</option>
-								<option value="sprites">Sprite (Battle)</option>
-								<option value="hd-faces">Face</option>
-							</select>
-						</div>
+						<select class="select-without-search" id="artstyle" onchange="changeart()">
+							<option value="sprites-idle">Sprite (Idle)</option>
+							<option value="sprites">Sprite (Battle)</option>
+							<option value="hd-faces">Face</option>
+						</select>
 					</div>
 				</section>
 				<h2>Additional info</h2>
@@ -228,9 +218,8 @@
 				</div>
 			</div>
 		</div>
-		<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" integrity="sha512-4MvcHwcbqXKUHB6Lx3Zb5CEAVoE9u84qN+ZSMM6s7z8IeJriExrV3ND5zRze9mxNlABJ6k864P/Vl8m0Sd3DtQ==" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous"></script>
+		<script src="/common/rebspicker.js"></script>
 		<script src="utilities.js"></script>
 		<script src="form.js"></script>
     </body>

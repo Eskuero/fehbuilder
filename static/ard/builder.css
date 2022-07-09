@@ -44,7 +44,7 @@ body {
 }
 
 .form > section {
-	column-count: 3;
+	column-count: 2;
 }
 
 .cell {
@@ -119,10 +119,6 @@ body {
 	left: 0;
 }
 
-.row-property.single > div {
-	width: 15.5em !important;
-}
-
 @media screen and (orientation: portrait) {
 	body {
 		height: auto;
@@ -167,9 +163,6 @@ body {
 	}
 	.blessing {
 		height: 3.5vw;
-	}
-	.row-property.single > div {
-		width: calc(100% - 3em) !important;
 	}
 }
 
@@ -232,8 +225,8 @@ h2 {
 	text-decoration: underline;
 }
 .select-without-search {
+	height: 2em;
 	width: 100%;
-	height: 100%;
 	font-family: inherit;
 	font-size: inherit;
 	background-color: white;

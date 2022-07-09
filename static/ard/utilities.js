@@ -59,11 +59,11 @@ function changemap() {
 	}
 }
 
-function pasteunit(caller) {
-	var option = caller.value;
+function pasteunit() {
+	var option = selectheroes.value;
 	var classname = "hero";
 	var extraid = "-" + new Date().getTime();
-	var target = document.getElementById(caller.getAttribute("selectedtile"));
+	var target = document.getElementById(selectheroes.getAttribute("selectedtile"));
 	// Always delete whatever the tile contains
 	while (target.lastChild) {
 		target.removeChild(target.lastChild);

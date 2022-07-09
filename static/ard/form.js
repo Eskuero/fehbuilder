@@ -13,8 +13,10 @@
 
 // Dicts for info
 var units, other;
+// The whole form since is a rebspicker listeners
+form = document.getElementsByClassName("form")[0];
 // All selects we have available
-selectheroes = document.getElementById('selectheroes');
+selectheroes = new Rebspicker(document.getElementById('selectheroes'), "single", {"None": {"string": "None"}}, [window], [form, window]);
 selectartstyle = document.getElementById('artstyle');
 selectstructure = document.getElementById('selectstructure');
 selectmap = document.getElementById("mapselect");
@@ -52,51 +54,6 @@ fetch('/common/data/languages/summonlanguages-USEN.json')
 				}).catch(err => console.error(err));
 		}).catch(err => console.error(err));
 }).catch(err => console.error(err));
-
-// Custom matcher for search results filtering
-function matchCustom(params, data) {
-	// If there are no search terms, return all of the data
-	if ($.trim(params.term) === '') {
-		return data;
-	}
-	// Do not display the item if there if the entry is null
-	if (typeof data === 'undefined') {
-		return null;
-	}
-
-	// This is the entry we are checking
-	var entry = data.text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().replace("'","");
-	// This is the search string we are using
-	var search = params.term.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().replace("'","");
-
-	// Check if the search string exists within a certain entry
-	if (entry.indexOf(search) > -1) {
-		return data;
-	}
-
-	// If the particular PID for the option is a duo with defined keywords check if any of them match the search
-	if (other["duokeywords"][data.id]) {
-		if (other["duokeywords"][data.id].toUpperCase().indexOf(search) > -1) {
-			return data;
-		}
-	}
-
-	// Return `null` if the term should not be displayed
-	return null;
-}
-
-// Once the document is ready initiate the selects with their required
-$(document).ready(function() {
-	$('.s2-select').select2({
-		matcher: matchCustom,
-		width: '100%'
-	});
-});
-
-// FIXME: Workaround for https://github.com/select2/select2/issues/5993 when using JQuery 3.6
-$(document).on("select2:open", () => {
-	document.querySelector(".select2-container--open .select2-search__field").focus();
-});
 
 function init() {
 	// Setup map background
@@ -208,9 +165,9 @@ function updatedialog(caller) {
 	}
 	// Repopulate the hero select with the option choosen for that tile if already exists
 	var restore = caller.lastChild ? caller.lastChild.id.split("-")[0] : "None";
-	populate(selectheroes, units, true, restore);
+	selectheroes.value = restore;
 	
-	// Finally set the selected tile attribute and shot the box
+	// Finally set the selected tile attribute and show the box
 	selectheroes.setAttribute("selectedtile", caller.id);
 	selectstructure.setAttribute("selectedtile", caller.id);
 	document.getElementById("buttonclean").setAttribute("selectedtile", caller.id);
@@ -357,30 +314,27 @@ function scan() {
 
 function populate(select, data, clean, previousvalue = "None") {
 	// First delete them all
-	while (select.lastChild) {
-		select.removeChild(select.lastChild);
+	while (select.domitem.lastChild) {
+		select.domitem.removeChild(select.domitem.lastChild);
 	}
-	// Always add the None option with it's proper translation
-	var opt = document.createElement('option');
-	opt.value = "None";
-	opt.innerHTML = "None";
-	select.appendChild(opt);
-	// All data to be printed
-	var options = {};
+	// All data to be printed (Always add the None option with it's proper translation)
+	var options = {"None": {"string": "None"}};
+	var sorted = {};
 	// If indicated to bypass don't do checks for this select, print everything and leave (this is exclusively for the heroes select)
 	Object.keys(data).forEach((value) => {
-		options[languages["USEN"]["M" + value] + ": " + (languages["USEN"][value.replace("PID", "MPID_HONOR")] || "Generic")] = value;
+		sorted[languages["USEN"]["M" + value] + ": " + (languages["USEN"][value.replace("PID", "MPID_HONOR")] || "Generic")] = value;
 	});
-	// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
-	options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {});
-	// For each entry print an option
-	for (const [string, tag] of Object.entries(options)) {
-		let opt = document.createElement('option');
-		opt.value = tag;
-		// If of type person we also append the title
-		opt.innerHTML = string;
-		select.appendChild(opt);
+	// Sort all the values by visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
+	sorted = Object.keys(sorted).sort().reduce((res, key) => (res[key] = sorted[key], res), {});
+	// Obtain the final data object that rebspicker can read
+	for (const [string, tag] of Object.entries(sorted)) {
+		options[tag] = {"string": string};
+		if (other["duokeywords"][tag]) {
+			options[tag]["keywords"] = other["duokeywords"][tag];
+		}
 	}
+	// Generate the select
+	select = new Rebspicker(select.domitem, "single", options, [window], [form, window]);
 	// Restore the previous value if it's available on the updated select
 	if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
 		select.value = previousvalue;
