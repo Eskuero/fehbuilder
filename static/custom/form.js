@@ -13,6 +13,8 @@
 
 // Dicts for info
 var units, skills, other;
+// The whole form since is a rebspicker listeners
+form = document.getElementsByClassName("form")[0];
 // All selects we have available
 selecthero = document.getElementById('hero');
 selecttitle = document.getElementById('title');
@@ -25,20 +27,20 @@ selectduoharmo = document.getElementById('duoharmo');
 selectbeast = document.getElementById('beast');
 selectmovetype = document.getElementById('movetype');
 selectweapontype = document.getElementById('weapontype');
-selectbasehero = document.getElementById("selectheroes");
-selectweapons = document.getElementById('weapon');
+selectbasehero = new Rebspicker(document.getElementById('selectheroes'), "single", {"None": {"string": "None"}}, [window], [form, window]);
+selectweapons = new Rebspicker(document.getElementById('weapon'), "single", {"None": {"string": "None"}}, [window], [form, window]);
 selectrefines = document.getElementById('refine');
-selectspecials = document.getElementById('special');
-selectassists = document.getElementById('assist');
-selectA = document.getElementById('Askill');
-selectB = document.getElementById('Bskill');
-selectC = document.getElementById('Cskill');
-selectS = document.getElementById('Sskill');
+selectspecials = new Rebspicker(document.getElementById('special'), "single", {"None": {"string": "None"}}, [window], [form, window]);
+selectassists = new Rebspicker(document.getElementById('assist'), "single", {"None": {"string": "None"}}, [window], [form, window]);
+selectA = new Rebspicker(document.getElementById('Askill'), "single", {"None": {"string": "None"}}, [window], [form, window]);
+selectB = new Rebspicker(document.getElementById('Bskill'), "single", {"None": {"string": "None"}}, [window], [form, window]);
+selectC = new Rebspicker(document.getElementById('Cskill'), "single", {"None": {"string": "None"}}, [window], [form, window]);
+selectS = new Rebspicker(document.getElementById('Sskill'), "single", {"None": {"string": "None"}}, [window], [form, window]);
 selectblessings = document.getElementById('blessing');
 selectsummoner = document.getElementById('summoner');
 selectattire = document.getElementById('attire');
 selectbonusunit = document.getElementById('bonusunit');
-selectallies = document.getElementById('allies');
+selectallies = new Rebspicker(document.getElementById('allies'), "multiple", {}, [window], [form, window]);
 selecthp = document.getElementById('hp');
 selectatk = document.getElementById('atk');
 selectspd = document.getElementById('spd');
@@ -87,7 +89,7 @@ fetch('/common/data/languages/litelanguages-' + selectlanguage.value + '.json')
 			.then((out) => {
 				// We store the heroes for basic checks within the browser
 				units = out;
-				populate(selectheroes, units, true, true);
+				populate(selectbasehero, units, true, true);
 		}).catch(err => console.error(err));
 		fetch('/common/data/content/customskills.json')
 			.then(res => res.json())
@@ -106,14 +108,6 @@ fetch('/common/data/content/customother.json')
 		other = out;
 		init();
 }).catch(err => console.error(err));
-
-// This makes sure dropdown options have their classes carried over (we need it to color basekit)
-function copyClassesToSelect2(data, container) {
-	if (data.element) {
-		$(container).addClass($(data.element).attr("class"));
-	}
-	return data.text;
-}
 
 async function init() {
 	// This array will be used as rendering queue
@@ -134,44 +128,6 @@ async function init() {
 	// Draw it for the first time
 	reload();
 }
-
-// Custom matcher for search results filtering
-function matchCustom(params, data) {
-	// If there are no search terms, return all of the data
-	if ($.trim(params.term) === '') {
-		return data;
-	}
-	// Do not display the item if there if the entry is null
-	if (typeof data === 'undefined') {
-		return null;
-	}
-
-	// This is the entry we are checking
-	var entry = data.text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().replace("'","");
-	// This is the search string we are using
-	var search = params.term.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().replace("'","");
-
-	// Check if the search string exists within a certain entry
-	if (entry.indexOf(search) > -1) {
-		return data;
-	}
-
-	// Return `null` if the term should not be displayed
-	return null;
-}
-
-// Once the document is ready initiate the selects with their required
-$(document).ready(function() {
-	$('.s2-select').select2({
-		templateResult: copyClassesToSelect2,
-		matcher: matchCustom
-	});
-});
-
-// FIXME: Workaround for https://github.com/select2/select2/issues/5993 when using JQuery 3.6
-$(document).on("select2:open", () => {
-	document.querySelector(".select2-container--open .select2-search__field").focus()
-});
 
 function populateall(clean) {
 	// We go through all the selects
@@ -202,28 +158,22 @@ async function populate(select, data, clean, bypass = false) {
 	while (select.lastChild) {
 		select.removeChild(select.lastChild);
 	}
-	// Always add the None option with it's proper translation
-	var opt = document.createElement('option');
-	opt.value = "None";
-	opt.innerHTML = languages[selectlanguage.value]["MSID_H_NONE"];
-	select.appendChild(opt);
-	// All data to be printed
-	var options = {};
+	// All data to be printed (Always add the None option with it's proper translation)
+	var options = {"None": {"string": languages[selectlanguage.value]["MSID_H_NONE"]}};
+	var sorted = {};
 	// If indicated to bypass don't do checks for this select, print everything and leave (this is exclusively for the heroes select)
 	if (bypass) {
 		Object.keys(data).forEach((value) => {
-			options[languages[selectlanguage.value]["M" + value] + ": " + (languages[selectlanguage.value][value.replace("PID", "MPID_HONOR")] || "Generic")] = value;
+			sorted[languages[selectlanguage.value]["M" + value] + ": " + (languages[selectlanguage.value][value.replace("PID", "MPID_HONOR")] || "Generic")] = value;
 		});
 		// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
-		var options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {})
+		var sorted = Object.keys(sorted).sort().reduce((res, key) => (res[key] = sorted[key], res), {})
 		// For each entry print an option
-		for (const [string, tag] of Object.entries(options)) {
-			let opt = document.createElement('option');
-			opt.value = tag;
-			// If of type person we also append the title
-			opt.innerHTML = string;
-			select.appendChild(opt);
+		for (const [string, tag] of Object.entries(sorted)) {
+			options[tag] = {"string": string};
 		}
+		// Generate the select
+		select = new Rebspicker(select.domitem, "single", options, [window], [form, window]);
 		// Restore the previous value if it's available on the updated select
 		if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
 			select.value = previousvalue;
@@ -261,19 +211,17 @@ async function populate(select, data, clean, bypass = false) {
 		}
 		// Arriving at this check with a true add value measn we can add the option
 		if (add) {
-			options[languages[selectlanguage.value]["M" + value]] = value;
+			sorted[languages[selectlanguage.value]["M" + value]] = value;
 		}
 	});
 	// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
-	var options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {});
+	var sorted = Object.keys(sorted).sort().reduce((res, key) => (res[key] = sorted[key], res), {});
 	// For each entry print an option
-	for (const [string, tag] of Object.entries(options)) {
-		let opt = document.createElement('option');
-		opt.value = tag;
-		// If of type person we also append the title
-		opt.innerHTML = string;
-		select.appendChild(opt);
+	for (const [string, tag] of Object.entries(sorted)) {
+		options[tag] = {"string": string};
 	}
+	// Generate the select
+	select = new Rebspicker(select.domitem, "single", options, [window], [form, window]);
 	// Restore the previous value if it's available on the updated select
 	if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
 		select.value = previousvalue;
@@ -310,25 +258,24 @@ async function fillblessed() {
 	while (selectallies.lastChild) {
 		selectallies.removeChild(selectallies.lastChild);
 	}
+	var blessingsstrings = ["MID_ITEM_BLESSING_FIRE", "MID_ITEM_BLESSING_WATER", "MID_ITEM_BLESSING_WIND", "MID_ITEM_BLESSING_EARTH", "MID_ITEM_BLESSING_LIGHT", "MID_ITEM_BLESSING_DARK", "MID_ITEM_BLESSING_HEAVEN", "MID_ITEM_BLESSING_LOGIC"];
 	// All data to be printed
 	var options = {};
+	var sorted = {};
 	// Add an option for each value
 	for (const [hero, properties] of Object.entries(other["blessed"])) {
-		options[languages[selectlanguage.value]["M" + hero] + ": " + languages[selectlanguage.value][hero.replace("PID", "MPID_HONOR")]] = hero;
+		sorted[languages[selectlanguage.value]["M" + hero] + ": " + languages[selectlanguage.value][hero.replace("PID", "MPID_HONOR")]] = hero;
 	}
 	// Sort all the values by visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
-	var options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {});
+	var sorted = Object.keys(sorted).sort().reduce((res, key) => (res[key] = sorted[key], res), {});
 	// For each entry print an option
-	for (const [string, tag] of Object.entries(options)) {
-		let opt = document.createElement('option');
-		opt.value = tag;
-		opt.innerHTML = string;
-		// If we are only translating and the value was selected restore it
-		if (toberestored.includes(tag)) {
-			opt.selected = true;
-		}
-		selectallies.appendChild(opt);
+	for (const [string, tag] of Object.entries(sorted)) {
+		options[tag] = {
+			"string": string,
+			"keywords": languages[newlang][blessingsstrings[other["blessed"][tag]["blessing"]-1]]
+		};
 	}
+	selectallies = new Rebspicker(document.getElementById('allies'), "multiple", options, [window], [form, window], toberestored);
 }
 
 function showallies() {
@@ -476,11 +423,9 @@ function swapskill(caller, target) {
 	var options = ["weapon", "refine", "assist", "special", "Askill", "Bskill", "Cskill", "Sskill"];
 	for (let i = 0; i < options.length; i++) {
 		if (options[i] == target) {
-			$(document.getElementById(options[i])).select2();
+			document.getElementById(options[i]).style.display = "block";
 		} else {
-			if ($(document.getElementById(options[i])).hasClass("select2-hidden-accessible")) {
-				$(document.getElementById(options[i])).select2("destroy");
-			}
+			document.getElementById(options[i]).style.display = "none";
 		}
 	}
 }

@@ -21,7 +21,7 @@
 
 @media screen and (max-aspect-ratio: 593/467) {
 	#selectheroes, #weapon, #special, #assist, #Askill, #Bskill, #Cskill, #Sskill {
-		--select-width: 19.7em;
+		--select-width: 100%;
 	}
 	#allies {
 		--select-width: 22.7em;
