@@ -138,8 +138,6 @@ function setupdownload() {
 	var hero = selecthero.value;
 	// Get desired filename
 	var truename = hero == "" ? "None" : hero;
-	console.log(hero);
-	console.log(truename);
 	// Convert canvas to a data url
 	var url = canvas.toDataURL("image/png");
 	// Update the image element
