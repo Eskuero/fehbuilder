@@ -13,8 +13,8 @@
 
 async function reload() {
 	// If the language required is not downloaded yet wait a bit more
-	var newlang = selectlanguage.value;
-	while (!languages[newlang]) {
+	var language = selectlanguage.value;
+	while (!languages[language]) {
 		await sleep(100);
 	}
 	// Get epoch as rendering ID
@@ -106,9 +106,6 @@ async function reload() {
 			preview.drawImage(img, 262, 492, 82, 82);
 		});
 	}
-
-	// Language selected
-	var language = selectlanguage.value;
 
 	// Print title and name
 	var hero = selecthero.value;
