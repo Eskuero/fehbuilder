@@ -72,7 +72,7 @@ selectadspdgrowth = document.getElementById('spdgrowth');
 selectaddefgrowth = document.getElementById('defgrowth');
 selectadresgrowth = document.getElementById('resgrowth');
 // Where we show the image
-canvas = document.getElementById('fakecanvas');
+canvas = document.getElementById('canvas');
 usedallies = document.getElementById('usedallies');
 
 // We store languages data for display of strings within the browser
@@ -126,7 +126,9 @@ async function init() {
 	changemode();
 
 	// Draw it for the first time
-	reload();
+	await reload();
+	// Copy rendered thing to the visible element once rendering is complete
+	setupdownload();
 }
 
 function populateall(clean) {

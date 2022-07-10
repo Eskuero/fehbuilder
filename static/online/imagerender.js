@@ -3,7 +3,7 @@ statsnames = ["HP", "Atk", "Spd", "Def", "Res"]; statsstrings = ["MID_HP", "MID_
 
 async function echoes() {
 	// Obtain the object
-	var preview = document.getElementById("fakecanvasechoes").getContext("2d");
+	var preview = canvas.getContext("2d");
 	// Sometimes the text stroke could cause graphical glitches
 	preview.miterLimit = 2;
 
@@ -300,7 +300,7 @@ async function echoes() {
 
 async function condensed() {
 	// Obtain the object
-	var preview = document.getElementById("fakecanvascond").getContext("2d");
+	var preview = canvas.getContext("2d");
 	// Sometimes the text stroke could cause graphical glitches
 	preview.miterLimit = 2;
 
@@ -548,7 +548,7 @@ async function condensed() {
 
 async function myunit() {
 	// Obtain the object
-	var preview = document.getElementById("fakecanvas").getContext("2d");
+	var preview = canvas.getContext("2d");
 	// Sometimes the text stroke could cause graphical glitches
 	preview.miterLimit = 2;
 

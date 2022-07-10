@@ -21,9 +21,6 @@ body {
 	flex-direction: column;
 	width: calc((100vh - 2.5em) * 0.5625);
 }
-#fakecanvas {
-	height: calc(100vh - 2.5em);
-}
 #unitslot {
 	height: 2.5em;
 	width: 100%;
@@ -254,7 +251,6 @@ h2 {
 		width: 90vw;
 	}
 	#fakecanvas {
-		height: auto;
 		width: 100%;
 		order: 1;
 	}

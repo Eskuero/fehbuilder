@@ -133,21 +133,19 @@ async function getlang() {
 	}
 }
 
-function download() {
-	// Hero ID
-	var hero = selecthero.value.split(":");
-	// Convert canvas to a data url
-	var url = document.getElementById("fakecanvas").toDataURL("image/png");
+function setupdownload() {
+	var language = selectlanguage.value;
+	var hero = selecthero.value;
 	// Get desired filename
-	var truename = (hero[0] ? " - " + hero[0] : "") + (hero[1] ? " - " + hero[1] : "");
-	// Create the link element to force the download
-	var link = document.createElement('a');
-	link.href = url;
-	link.download = "Custom Unit" + truename;
-	// Add the link, click it to force download and delete it again
-	document.body.appendChild(link);
-	link.click();
-	document.body.removeChild(link);
+	var truename = hero == "" ? "None" : hero;
+	console.log(hero);
+	console.log(truename);
+	// Convert canvas to a data url
+	var url = canvas.toDataURL("image/png");
+	// Update the image element
+	document.getElementById("fakecanvas").src = url;
+	document.getElementById("downloadlink").href = url;
+	document.getElementById("downloadlink").download = "FeH Unit builder - " + truename;
 }
 
 // Simple housekeeping function to add the stats boost from different static modifiers

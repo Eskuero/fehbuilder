@@ -173,36 +173,17 @@ async function getlang() {
 	}
 }
 
-function download() {
-	// Hero ID
-	var hero = selectheroes.value == "None" ? false : selectheroes.value;
-	if (hero) {
-		// Switch on depending on selection and run the appropiate renderer
-		switch (selecttemplate.value) {
-			case "MyUnit":
-				var canvasid = "fakecanvas";
-				break;
-			case "Condensed":
-				var canvasid = "fakecanvascond";
-				break;
-			case "Echoes":
-				var canvasid = "fakecanvasechoes";
-				break;
-		}
-		// Convert canvas to a data url
-		var url = document.getElementById(canvasid).toDataURL("image/png");
-		// Get desired filename
-		var language = selectlanguage.value;
-		var truename = languages[language]["M" + hero] + " - " + (hero.includes("PID_") ? languages[language][hero.replace("PID", "MPID_HONOR")] : "Enemy");
-		// Create the link element to force the download
-		var link = document.createElement('a');
-		link.href = url;
-		link.download = "FeH Unit builder - " + truename;
-		// Add the link, click it to force download and delete it again
-		document.body.appendChild(link);
-		link.click();
-		document.body.removeChild(link);
-	}
+function setupdownload() {
+	var language = selectlanguage.value;
+	var hero = selectheroes.value;
+	// Get desired filename
+	var truename = hero == "None" ? languages[language]["MSID_H_NONE"] : languages[language]["M" + hero] + " - " + (hero.includes("PID_") ? languages[language][hero.replace("PID", "MPID_HONOR")] : "Enemy");
+	// Convert canvas to a data url
+	var url = canvas.toDataURL("image/png");
+	// Update the image element
+	document.getElementById("fakecanvas").src = url;
+	document.getElementById("downloadlink").href = url;
+	document.getElementById("downloadlink").download = "FeH Unit builder - " + truename;
 }
 
 // Simple housekeeping function to add the stats boost from different static modifiers

@@ -14,7 +14,7 @@
 // Dicts for info
 var units, skills, other, languages;
 // Where we show the image
-canvas = document.getElementById('fakecanvas');
+canvas = document.getElementById('canvas');
 // The whole form since is a rebspicker listeners
 form = document.getElementsByClassName("form")[0];
 // All selects we have available
@@ -151,30 +151,30 @@ async function reload(scroll = false) {
 	while (renderingqueue[0] != renderingid) {
 		await sleep(100);
 	}
-	// Cleanly hide all canvas
-	document.getElementById("fakecanvas").style.display = "none";
-	document.getElementById("fakecanvascond").style.display = "none";
-	document.getElementById("fakecanvasechoes").style.display = "none";
 
-	// Switch on depending on selection and run the appropiate renderer
+	// Switch canvas size depending on selection and run the appropiate renderer
 	switch (selecttemplate.value) {
 		case "MyUnit":
-			document.getElementById("fakecanvas").style.display = "initial";
-			myunit();
+			canvas.width = "720"; canvas.height = "1280";
+			var renderjob = myunit();
 			break;
 		case "Condensed":
 			// Load the hpfont specifically since we will use it specifically on condensed layout
 			await getimage(other["images"]["other"]["hpfont"]).then(img => {
 				hpfont = img;
 			});
-			document.getElementById("fakecanvascond").style.display = "initial";
-			condensed();
+			canvas.width = "720"; canvas.height = "202";
+			var renderjob = condensed();
 			break;
 		case "Echoes":
-			document.getElementById("fakecanvasechoes").style.display = "initial";
-			echoes();
+			canvas.width = "720"; canvas.height = "540";
+			var renderjob = echoes();
 			break;
 	}
+
+	// Copy rendered thing to the visible element once rendering is complete
+	await renderjob;
+	setupdownload();
 
 	// Autoscroll all the way up so the user can inmediately see the hero preview on portrait screens
 	if (scroll) {

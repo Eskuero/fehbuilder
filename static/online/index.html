@@ -27,14 +27,13 @@
 					<button onclick="switchbuild(3)">#4 Build</button>
 					<button onclick="switchbuild(4)">#5 Build</button>
 				</div>
-				<canvas id="fakecanvas" width="720" height="1280" alt="FEH Unit Builder"></canvas>
-				<canvas id="fakecanvascond" width="720" height="202" alt="FEH Unit Builder" ></canvas>
-				<canvas id="fakecanvasechoes" width="720" height="540" alt="FEH Unit Builder" ></canvas>
+				<img id="fakecanvas" />
+				<canvas id="canvas" alt="FEH Unit Builder" style="display:none"></canvas>
 			</div>
 			<div class="form">
 				<section>
 					<div class="additionaloptions">
-						<button onclick="download()" class="downloadbutton">Download</button>
+						<a href="#" id="downloadlink"><button class="downloadbutton">Download</button></a>
 						<div>
 							<label for="cheats">Cheats</label>
 							<input type="checkbox" class="checkbox-xl" id="cheats" onChange="populateall(false)">
@@ -333,7 +332,7 @@
 		</div>
 		<script src="/common/rebspicker.js"></script>
 		<script src="utilities.js"></script>
-		<script src="form.js"></script>
 		<script src="imagerender.js"></script>
+		<script src="form.js"></script>
     </body>
 </html>
