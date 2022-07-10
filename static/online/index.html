@@ -36,14 +36,14 @@
 						<a href="#" id="downloadlink"><button class="downloadbutton">Download</button></a>
 						<div>
 							<label for="cheats">Cheats</label>
-							<input type="checkbox" class="checkbox-xl" id="cheats" onChange="populateall(false)">
+							<input type="checkbox" class="checkbox-xl" id="cheats" onchange="populateall(false)">
 							<label for="bestskills">Best skills</label>
-							<input type="checkbox" class="checkbox-xl" id="bestskills" onChange="populateall(false)" checked>
+							<input type="checkbox" class="checkbox-xl" id="bestskills" onchange="populateall(false)" checked>
 						</div>
 					</div>
 					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/language.webp" title="Language"/>
-						<select class="select-without-search" id="language" onChange="getlang(); populate(selectheroes, units, true, true); populateall(false); statictranslations();reload()">
+						<select class="select-without-search" id="language" onchange="getlang(); populateall(false); statictranslations(); reload()">
 							<option value="USEN" selected>English (America)</option>
 							<option value="EUEN">English (UK)</option>
 							<option value="EUDE">Deutsch</option>
@@ -65,7 +65,7 @@
 				<section>
 					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/kiran.webp" title="Hero"/>
-						<div id="selectheroes" onchange="populateall(true);slotname();reload()"></div>
+						<div id="selectheroes" onchange="populateall(true, true);slotname();reload()"></div>
 					</div>
 					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/resplendent.webp" title="Attire"/>
@@ -157,7 +157,7 @@
 					</div>
 					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/blessings.webp" title="Blessings" />
-						<select class="select-without-search" id="blessing" onChange="reload()">
+						<select class="select-without-search" id="blessing" onchange="reload()">
 							<option value="None">None</option>
 							<option value="1">Fire</option>
 							<option value="2">Water</option>

@@ -18,7 +18,6 @@ canvas = document.getElementById('canvas');
 // The whole form since is a rebspicker listeners
 form = document.getElementsByClassName("form")[0];
 // All selects we have available
-selectheroes = new Rebspicker(document.getElementById('selectheroes'), "single", {"None": {"string": "None"}}, [window], [form, window]);
 selectrarity = document.getElementById('rarity');
 selectmerges = document.getElementById('merges');
 selectflowers = document.getElementById('flowers');
@@ -26,19 +25,12 @@ selectboons = document.getElementById('boons');
 selectbanes = document.getElementById('banes');
 selectascendent = document.getElementById('ascendent');
 selectbeast = document.getElementById('beast');
-selectweapons = new Rebspicker(document.getElementById('weapon'), "single", {"None": {"string": "None"}}, [window], [form, window]);
 selectrefines = document.getElementById('refine');
-selectspecials = new Rebspicker(document.getElementById('special'), "single", {"None": {"string": "None"}}, [window], [form, window]);
-selectassists = new Rebspicker(document.getElementById('assist'), "single", {"None": {"string": "None"}}, [window], [form, window]);
-selectA = new Rebspicker(document.getElementById('Askill'), "single", {"None": {"string": "None"}}, [window], [form, window]);
-selectB = new Rebspicker(document.getElementById('Bskill'), "single", {"None": {"string": "None"}}, [window], [form, window]);
-selectC = new Rebspicker(document.getElementById('Cskill'), "single", {"None": {"string": "None"}}, [window], [form, window]);
-selectS = new Rebspicker(document.getElementById('Sskill'), "single", {"None": {"string": "None"}}, [window], [form, window]);
 selectblessings = document.getElementById('blessing');
 selectsummoner = document.getElementById('summoner');
 selectattire = document.getElementById('attire');
 selectbonusunit = document.getElementById('bonusunit');
-selectallies = new Rebspicker(document.getElementById('allies'), "multiple", {}, [window], [form, window]);
+selectallies = document.getElementById('allies');
 selectatk = document.getElementById('atk');
 selectspd = document.getElementById('spd');
 selectdef = document.getElementById('def');
@@ -64,6 +56,16 @@ selectrespairup = document.getElementById("res-pairup");
 
 // We store languages data for display of strings within the browser
 languages = {};
+// Which builder slot is active right now
+buildslot = 0;
+	// Initial data for each build slot
+	builds = [
+		["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","1","None", true],
+		["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","1","None", true],
+		["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","1","None", true],
+		["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","1","None", true],
+		["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","1","None", true]
+	];
 
 // Fetch all data from each json
 fetch('/common/data/languages/fulllanguages-' + selectlanguage.value + '.json')
@@ -77,35 +79,36 @@ fetch('/common/data/languages/fulllanguages-' + selectlanguage.value + '.json')
 			.then((out) => {
 				// We store the heroes for basic checks within the browser
 				units = out;
-				populate(selectheroes, units, true, true);
+				fetch('/common/data/content/fullskills.json')
+					.then(res => res.json())
+					.then((out) => {
+						// We store the skills for basic checks within the browser
+						skills = out;
+						// We need to have all skills available as a whole in case we use cheat seals
+						allpassives = Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"]);
+						fetch('/common/data/content/fullother.json')
+							.then(res => res.json())
+							.then((out) => {
+								// We store other data for basic checks within the browser
+								other = out;
+								init();
+						}).catch(err => console.error(err));
+				}).catch(err => console.error(err));
 		}).catch(err => console.error(err));
-		fetch('/common/data/content/fullskills.json')
-			.then(res => res.json())
-			.then((out) => {
-				// We store the skills for basic checks within the browser
-				skills = out;
-				// We need to have all skills available as a whole in case we use cheat seals
-				allpassives = Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"]);
-				populateall();
-		}).catch(err => console.error(err));
-}).catch(err => console.error(err));
-fetch('/common/data/content/fullother.json')
-	.then(res => res.json())
-	.then((out) => {
-		// We store other data for basic checks within the browser
-		other = out;
-		init();
 }).catch(err => console.error(err));
 
-function populateall(clean) {
+async function populateall(clean, bypass = false) {
 	// We go through all the selects
-	populate(selectweapons, skills["weapons"], clean);
-	populate(selectspecials, skills["specials"], clean);
-	populate(selectassists, skills["assists"], clean);
-	populate(selectA, skills["passives"]["A"], clean);
-	populate(selectB, skills["passives"]["B"], clean);
-	populate(selectC, skills["passives"]["C"], clean);
-	populate(selectS, Object.assign({}, skills["passives"]["S"], cheats.checked ? Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"]) : {}), clean);
+	if (!bypass) {
+		selectheroes = await populate(document.getElementById('selectheroes'), units, true, true);
+	}
+	selectweapons = await populate(document.getElementById('weapon'), skills["weapons"], clean);
+	selectspecials = await populate(document.getElementById('special'), skills["specials"], clean);
+	selectassists = await populate(document.getElementById('assist'), skills["assists"], clean);
+	selectA = await populate(document.getElementById('Askill'), skills["passives"]["A"], clean);
+	selectB = await populate(document.getElementById('Bskill'), skills["passives"]["B"], clean);
+	selectC = await populate(document.getElementById('Cskill'), skills["passives"]["C"], clean);
+	selectS = await populate(document.getElementById('Sskill'), Object.assign({}, skills["passives"]["S"], cheats.checked ? Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"]) : {}), clean);
 	// Add only the required amount of flowers
 	updatedragonflowers();
 	// Update translations
@@ -119,6 +122,7 @@ function populateall(clean) {
 }
 
 async function init() {
+	await populateall();
 	// This array will be used as rendering queue
 	renderingqueue = [];
 	// Load and wait for the font to be ready
@@ -135,6 +139,9 @@ async function init() {
 	reload();
 	// Meme
 	//memedraw();
+
+	// List of values to be restored on each slot
+	selects = [selectrarity, selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials, selectassists, selectA, selectB, selectC, selectS, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef, selectres, selectatkpairup, selectspdpairup, selectdefpairup, selectrespairup, selectsp, selecthm, selectartstyle, selecttemplate, selectoffsetY, selectoffsetX, selectmirror, selectfavorite, selectaccessory, appui];
 }
 
 async function reload(scroll = false) {
@@ -182,17 +189,17 @@ async function reload(scroll = false) {
 	}
 }
 
-async function populate(select, data, clean, bypass) {
+async function populate(domitem, data, clean, bypass) {
 	// If the language required is not downloaded yet wait a bit more
 	var newlang = selectlanguage.value;
 	while (!languages[newlang]) {
 		await sleep(100);
 	}
 	// Get current value to restore it back if possible
-	var previousvalue = select.value;
+	var previousvalue = domitem.value;
 	// First delete them all
-	while (select.lastChild) {
-		select.removeChild(select.lastChild);
+	while (domitem.lastChild) {
+		domitem.removeChild(domitem.lastChild);
 	}
 	// All data to be printed (Always add the None option with it's proper translation)
 	var options = {"None": {"string": languages[selectlanguage.value]["MSID_H_NONE"]}};
@@ -211,12 +218,12 @@ async function populate(select, data, clean, bypass) {
 			}
 		}
 		// Generate the select
-		select = new Rebspicker(select.domitem, "single", options, [window], [form, window]);
+		var select = new Rebspicker(domitem, "single", options, [window], [form, window]);
 		// Restore the previous value if it's available on the updated select
 		if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
 			select.value = previousvalue;
 		}
-		return;
+		return select;
 	}
 	if (selectheroes.value != "None") {
 		// Hero info for possible later checks
@@ -225,8 +232,8 @@ async function populate(select, data, clean, bypass) {
 		var basekit = units[selectheroes.value]["basekit"];
 	// If no hero is selected we have nothing to do
 	} else {
-		select = new Rebspicker(select.domitem, "single", options, [window], [form, window]);
-		return;
+		var select = new Rebspicker(domitem, "single", options, [window], [form, window]);
+		return select;
 	}
 	// For disabled cheats we only add the options that match move/ type restrictions and exclusive skills
 	Object.keys(data).forEach((value) => {
@@ -275,7 +282,7 @@ async function populate(select, data, clean, bypass) {
 		options[tag] = {"string": string, "class": basekit.includes(tag) ? "basekit" : false};
 	}
 	// Generate the select
-	select = new Rebspicker(select.domitem, "single", options, [window], [form, window]);
+	var select = new Rebspicker(domitem, "single", options, [window], [form, window]);
 	// Restore the previous value if it's available on the updated select
 	if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
 		select.value = previousvalue;
@@ -284,6 +291,7 @@ async function populate(select, data, clean, bypass) {
 	if (select == selectweapons) {
 		updateRefine();
 	}
+	return select;
 }
 
 async function statictranslations() {
@@ -351,7 +359,7 @@ async function fillblessed(clean = false, toberestored = []) {
 		await sleep(100);
 	}
 	// We need to know which options to restore unless called clean
-	if (!clean) {
+	if (!clean && selectallies.selectedOptions) {
 		for (let i = 0; i < selectallies.selectedOptions.length; i++) {
 			toberestored.push(selectallies.selectedOptions[i].value);
 		}
@@ -450,18 +458,6 @@ function updatedragonflowers() {
 	}
 }
 
-// Data for each build slot
-builds = [
-	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","1","None", true],
-	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","1","None", true],
-	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","1","None", true],
-	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","1","None", true],
-	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","1","None", true]
-];
-// List of values to be restored (their document element)
-selects = [selectrarity,selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials, selectassists, selectA, selectB, selectC, selectS, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef, selectres, selectatkpairup, selectspdpairup, selectdefpairup, selectrespairup, selectsp, selecthm, selectartstyle, selecttemplate, selectoffsetY, selectoffsetX, selectmirror, selectfavorite, selectaccessory, appui];
-// Which builder slot is active right now
-buildslot = 0;
 function switchbuild(build) {
 	// First save changes to current slot (heroes, cheats, language, maxskill, weapons and blessings are to be done first because they affect the content of other selects)
 	builds[buildslot][0] = selectheroes.value;
@@ -499,7 +495,7 @@ function switchbuild(build) {
 	bestskills.checked = builds[buildslot][2];
 	selectlanguage.value = builds[buildslot][3];
 	// Trigger a rebuild of the selects based on the language filters set
-	populate(selectheroes, units, true, true); populateall(false); statictranslations();
+	populateall(false); statictranslations();
 	// Trigger a rebuild of the refine select based on the selection of weapon
 	selectweapons.value = builds[buildslot][4];
 	updateRefine();

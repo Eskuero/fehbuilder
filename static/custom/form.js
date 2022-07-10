@@ -27,20 +27,12 @@ selectduoharmo = document.getElementById('duoharmo');
 selectbeast = document.getElementById('beast');
 selectmovetype = document.getElementById('movetype');
 selectweapontype = document.getElementById('weapontype');
-selectbasehero = new Rebspicker(document.getElementById('selectheroes'), "single", {"None": {"string": "None"}}, [window], [form, window]);
-selectweapons = new Rebspicker(document.getElementById('weapon'), "single", {"None": {"string": "None"}}, [window], [form, window]);
 selectrefines = document.getElementById('refine');
-selectspecials = new Rebspicker(document.getElementById('special'), "single", {"None": {"string": "None"}}, [window], [form, window]);
-selectassists = new Rebspicker(document.getElementById('assist'), "single", {"None": {"string": "None"}}, [window], [form, window]);
-selectA = new Rebspicker(document.getElementById('Askill'), "single", {"None": {"string": "None"}}, [window], [form, window]);
-selectB = new Rebspicker(document.getElementById('Bskill'), "single", {"None": {"string": "None"}}, [window], [form, window]);
-selectC = new Rebspicker(document.getElementById('Cskill'), "single", {"None": {"string": "None"}}, [window], [form, window]);
-selectS = new Rebspicker(document.getElementById('Sskill'), "single", {"None": {"string": "None"}}, [window], [form, window]);
 selectblessings = document.getElementById('blessing');
 selectsummoner = document.getElementById('summoner');
 selectattire = document.getElementById('attire');
 selectbonusunit = document.getElementById('bonusunit');
-selectallies = new Rebspicker(document.getElementById('allies'), "multiple", {}, [window], [form, window]);
+selectallies = document.getElementById('allies');
 selecthp = document.getElementById('hp');
 selectatk = document.getElementById('atk');
 selectspd = document.getElementById('spd');
@@ -89,27 +81,26 @@ fetch('/common/data/languages/litelanguages-' + selectlanguage.value + '.json')
 			.then((out) => {
 				// We store the heroes for basic checks within the browser
 				units = out;
-				populate(selectbasehero, units, true, true);
+				fetch('/common/data/content/customskills.json')
+					.then(res => res.json())
+					.then((out) => {
+						// We store the skills for basic checks within the browser
+						skills = out;
+						// We need to have all skills available as a whole in case we use cheat seals
+						allpassives = Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"]);
+						fetch('/common/data/content/customother.json')
+							.then(res => res.json())
+							.then((out) => {
+								// We store other data for basic checks within the browser
+								other = out;
+								init();
+						}).catch(err => console.error(err));
+				}).catch(err => console.error(err));
 		}).catch(err => console.error(err));
-		fetch('/common/data/content/customskills.json')
-			.then(res => res.json())
-			.then((out) => {
-				// We store the skills for basic checks within the browser
-				skills = out;
-				// We need to have all skills available as a whole in case we use cheat seals
-				allpassives = Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"]);
-				populateall();
-		}).catch(err => console.error(err));
-}).catch(err => console.error(err));
-fetch('/common/data/content/customother.json')
-	.then(res => res.json())
-	.then((out) => {
-		// We store other data for basic checks within the browser
-		other = out;
-		init();
 }).catch(err => console.error(err));
 
 async function init() {
+	await populateall();
 	// This array will be used as rendering queue
 	renderingqueue = [];
 	// Load and wait for the font to be ready
@@ -127,38 +118,39 @@ async function init() {
 
 	// Draw it for the first time
 	await reload();
-	// Copy rendered thing to the visible element once rendering is complete
-	setupdownload();
 }
 
-function populateall(clean) {
+async function populateall(clean, bypass = false) {
 	// We go through all the selects
-	populate(selectweapons, skills["weapons"], clean);
-	populate(selectspecials, skills["specials"], clean);
-	populate(selectassists, skills["assists"], clean);
-	populate(selectA, skills["passives"]["A"], clean);
-	populate(selectB, skills["passives"]["B"], clean);
-	populate(selectC, skills["passives"]["C"], clean);
-	populate(selectS, Object.assign({}, skills["passives"]["S"], cheats.checked ? Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"]) : {}), clean);
+	if (!bypass) {
+		selectbasehero = await populate(document.getElementById('selectheroes'), units, true, true);
+	}
+	selectweapons = await populate(document.getElementById('weapon'), skills["weapons"], clean);
+	selectspecials = await populate(document.getElementById('special'), skills["specials"], clean);
+	selectassists = await populate(document.getElementById('assist'), skills["assists"], clean);
+	selectA = await populate(document.getElementById('Askill'), skills["passives"]["A"], clean);
+	selectB = await populate(document.getElementById('Bskill'), skills["passives"]["B"], clean);
+	selectC = await populate(document.getElementById('Cskill'), skills["passives"]["C"], clean);
+	selectS = await populate(document.getElementById('Sskill'), Object.assign({}, skills["passives"]["S"], cheats.checked ? Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"]) : {}), clean);
 	// Update translations
-	statictranslations()
+	statictranslations();
 	// Make sure we don't end with invalid allies on the list
 	fillblessed();
 	// Disable or enable beast select based on unit
 	beastcheck();
 }
 
-async function populate(select, data, clean, bypass = false) {
+async function populate(domitem, data, clean, bypass = false) {
 	// If the language required is not downloaded yet wait a bit more
 	var newlang = selectlanguage.value;
 	while (!languages[newlang]) {
 		await sleep(100);
 	}
 	// Get current value to restore it back if possible
-	var previousvalue = select.value;
+	var previousvalue = domitem.value;
 	// First delete them all
-	while (select.lastChild) {
-		select.removeChild(select.lastChild);
+	while (domitem.lastChild) {
+		domitem.removeChild(domitem.lastChild);
 	}
 	// All data to be printed (Always add the None option with it's proper translation)
 	var options = {"None": {"string": languages[selectlanguage.value]["MSID_H_NONE"]}};
@@ -175,12 +167,12 @@ async function populate(select, data, clean, bypass = false) {
 			options[tag] = {"string": string};
 		}
 		// Generate the select
-		select = new Rebspicker(select.domitem, "single", options, [window], [form, window]);
+		var select = new Rebspicker(domitem, "single", options, [window], [form, window]);
 		// Restore the previous value if it's available on the updated select
 		if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
 			select.value = previousvalue;
 		}
-		return;
+		return select;
 	}
 	// Hero info for possible later checks
 	var weapontype = parseInt(selectweapontype.value);
@@ -223,15 +215,16 @@ async function populate(select, data, clean, bypass = false) {
 		options[tag] = {"string": string};
 	}
 	// Generate the select
-	select = new Rebspicker(select.domitem, "single", options, [window], [form, window]);
+	var select = new Rebspicker(domitem, "single", options, [window], [form, window]);
 	// Restore the previous value if it's available on the updated select
 	if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
 		select.value = previousvalue;
 	}
 	// For select of weapons once done we make sure to update the refine one
-	if (select == selectweapons) {
+	if (select.id == "weapon") {
 		updateRefine();
 	}
+	return select;
 }
 
 function beastcheck() {
@@ -253,8 +246,10 @@ async function fillblessed() {
 	}
 	// We need to know which options to restore
 	var toberestored = [];
-	for (let i = 0; i < selectallies.selectedOptions.length; i++) {
-		toberestored.push(selectallies.selectedOptions[i].value);
+	if (selectallies.selectedOptions) {
+		for (let i = 0; i < selectallies.selectedOptions.length; i++) {
+			toberestored.push(selectallies.selectedOptions[i].value);
+		}
 	}
 	// First delete all allies
 	while (selectallies.lastChild) {

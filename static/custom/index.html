@@ -27,15 +27,15 @@
 					<a href="#" id="downloadlink"><button class="button">Download</button></a>
 					<div>
 						<label for="cheats">Cheats</label>
-						<input type="checkbox" class="checkbox-xl" id="cheats" onChange="populateall(false)">
+						<input type="checkbox" class="checkbox-xl" id="cheats" onchange="populateall(false)">
 					</div>
 					<div>
 						<label for="bestskills">Best skills</label>
-						<input type="checkbox" class="checkbox-xl" id="bestskills" onChange="populateall(false)" checked>
+						<input type="checkbox" class="checkbox-xl" id="bestskills" onchange="populateall(false)" checked>
 					</div>
 					<div style="display:flex;gap:1em">
 						<img class="imagelabel" src="/common/assets/language.webp" title="Language"/>
-						<select class="select-without-search" id="language" onChange="getlang();populate(selectbasehero, units, true, true);populateall(false);statictranslations();reload()">
+						<select class="select-without-search" id="language" onchange="getlang();populateall(false);statictranslations();reload()">
 							<option value="USEN" selected>English (America)</option>
 							<option value="EUEN">English (UK)</option>
 							<option value="EUDE">Deutsch</option>
@@ -202,7 +202,7 @@
 					</div>
 					<div class="row-property" style="align-items:center">
 						<label style="width: 2em;">Base</label>
-						<div id="selectheroes" onChange="filldefaults();populateall(true);reload()"></div>
+						<div id="selectheroes" onchange="filldefaults();populateall(true);reload()"></div>
 					</div>
 				</section>
 				<div class="tabs">
@@ -303,7 +303,7 @@
 				<section>
 					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/blessings.webp" title="Blessings" />
-						<select class="select-without-search" id="blessing" onChange="reload()">
+						<select class="select-without-search" id="blessing" onchange="reload()">
 							<option value="None">None</option>
 							<optgroup label="Fire">
 								<option value="1-Blessing">Fire (Normal)</option>
@@ -400,7 +400,7 @@
 				</section>
 				<section style="column-count: 1">
 					<div class="row-property legendaries">
-						<div id="allies" multiple="multiple" onChange="showallies();reload()" style="width:100%;"></div>
+						<div id="allies" multiple="multiple" onchange="showallies();reload()" style="width:100%;"></div>
 					</div>
 					<section id="usedallies"></section>
 				</section>
