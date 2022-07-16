@@ -17,8 +17,8 @@ var units, languages, other, permapools;
 targets = [];
 // Amount of heroes we have gone without a 5 star
 pityrun = 0;
-select5focus = document.getElementById('5starfocus');
-select4focus = document.getElementById('4starfocus');
+// The whole form since is a rebspicker listeners
+form = document.getElementsByClassName("form")[0];
 targetsui = document.getElementById('targets');
 selectlanguage = document.getElementById('language');
 method = document.getElementById('method');
@@ -49,8 +49,8 @@ fetch('/common/data/languages/litelanguages.json')
 			.then((out) => {
 				// We store the heroes for basic checks within the browser
 				units = out
-				populate(select5focus, units)
-				populate(select4focus, units)
+				select5focus = populate(document.getElementById('fivestarfocus'), units, true);
+				select4focus = populate(document.getElementById('fourstarfocus'), units, true);
 				fetch('/common/data/content/summonpools.json')
 					.then(res => res.json())
 					.then((out) => {
@@ -68,61 +68,6 @@ fetch('/common/data/content/summonother.json')
 		other = out;
 }).catch(err => console.error(err));
 
-// This makes sure dropdown options have their classes carried over (we need it to color basekit)
-function copyClassesToSelect2(data, container) {
-	if (data.element) {
-		$(container).addClass($(data.element).attr("class"));
-	}
-	return data.text;
-}
-
-// Custom matcher for search results filtering
-function matchCustom(params, data) {
-	// If there are no search terms, return all of the data
-	if ($.trim(params.term) === '') {
-		return data;
-	}
-	// Do not display the item if there if the entry is null
-	if (typeof data === 'undefined') {
-		return null;
-	}
-
-	// This is the entry we are checking
-	entry = data.text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().replace("'","");
-	// This is the search string we are using
-	search = params.term.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().replace("'","");
-
-	// Check if the search string exists within a certain entry
-	if (entry.indexOf(search) > -1) {
-		return data;
-	}
-
-	// If the particular PID for the option is a duo with defined keywords check if any of them match the search
-	if (other["duokeywords"][data.id]) {
-		if (other["duokeywords"][data.id].toUpperCase().indexOf(search) > -1) {
-			return data;
-		}
-	}
-
-	// Return `null` if the term should not be displayed
-	return null;
-}
-
-
-// Once the document is ready initiate the selects with their required
-$(document).ready(function() {
-	$('.s2-select').select2({
-		templateResult: copyClassesToSelect2,
-		matcher: matchCustom,
-		width: '100%'
-	});
-});
-
-// FIXME: Workaround for https://github.com/select2/select2/issues/5993 when using JQuery 3.6
-$(document).on("select2:open", () => {
-	document.querySelector(".select2-container--open .select2-search__field").focus()
-});
-
 async function init() {
 	// Obtain the object
 	var preview = document.getElementById("fakecanvas").getContext("2d");
@@ -133,32 +78,35 @@ async function init() {
 	})
 }
 
-function populate(select, data) {
+function populate(origin, data, clean = false, toberestored = []) {
 	// Get current value to restore it back if possible
-	previousvalue = select.value
-	// First delete them all
-	while (select.lastChild) {
-		select.removeChild(select.lastChild);
+	if (!clean) {
+		for (let i = 0; i < origin.selectedOptions.length; i++) {
+			toberestored.push(origin.selectedOptions[i].value);
+		}
+		// First delete them all
+		while (origin.domitem.lastChild) {
+			origin.domitem.removeChild(origin.domitem.lastChild);
+		}
+		origin = origin.domitem;
 	}
 	// All data to be printed
-	options = {}
+	var options = {};
+	var sorted = {};
 	Object.keys(data).forEach((value) => {
-		options[languages[selectlanguage.value]["M" + value] + ": " + (languages[selectlanguage.value][value.replace("PID", "MPID_HONOR")] || "Generic")] = value
+		sorted[languages[selectlanguage.value]["M" + value] + ": " + (languages[selectlanguage.value][value.replace("PID", "MPID_HONOR")] || "Generic")] = value
 	});
 	// Sort all the values by visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
-	options = Object.keys(options).sort().reduce((res, key) => (res[key] = options[key], res), {})
-	// For each entry print an option
-	for (const [string, tag] of Object.entries(options)) {
-		var opt = document.createElement('option');
-		opt.value = tag;
-		// If of type person we also append the title
-		opt.innerHTML = string;
-		select.appendChild(opt);
+	sorted = Object.keys(sorted).sort().reduce((res, key) => (res[key] = sorted[key], res), {})
+	// Obtain the final data object that rebspicker can read
+	for (const [string, tag] of Object.entries(sorted)) {
+		options[tag] = {"string": string};
+		if (other["duokeywords"][tag]) {
+			options[tag]["keywords"] = other["duokeywords"][tag];
+		}
 	}
-	// Restore the previous value if it's available on the updated select
-	if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
-		select.value = previousvalue;
-	}
+	var select = new Rebspicker(origin, "multiple", options, [window], [form, window], toberestored);
+	return select;
 }
 
 function changetargets() {

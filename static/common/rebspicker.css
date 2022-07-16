@@ -8,15 +8,18 @@
 	--background-hover-color: #5897fb;
 	--disabled-background-color: #eee;
 }
-#allies {
+#allies, #fourstarfocus, #fivestarfocus {
 	--collapsed-multiselect-height: 2em;
-	--select-width: 40.4em;
 	--list-item-max: 5;
 	--list-item-height: 2em;
 	--font-color: #444;
 	--background-color: white;
 	--background-hover-color: #5897fb;
 	--disabled-background-color: #eee;
+}
+#fourstarfocus, #fivestarfocus {
+	--collapsed-multiselect-height: 1.8em;
+	--select-width: 36.4em;
 }
 
 @media screen and (max-aspect-ratio: 593/467) {

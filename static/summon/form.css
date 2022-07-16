@@ -92,6 +92,7 @@ input[type=number] {
 	font-weight: bold;
 	width: 6.45em;
 	height: 2em;
+	flex: 1 0 auto;
 }
 input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-outer-spin-button {
 	opacity: 1;
@@ -116,28 +117,6 @@ input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-o
 	height: 2em;
 	width: 2em;
 }
-.row-property.single > div {
-	width: 15.5em !important;
-}
-.row-property.double > div {
-	width: 5.75em !important;
-}
-.select2-selection__rendered {
-    line-height: 2em !important;
-}
-.select2-container .select2-selection--single, .select2-selection__arrow {
-    height: 2em !important;
-}
-.select2-container {
-	text-align: initial;
-}
-.select2-selection.select2-selection--multiple {
-	color: black;
-	padding: 0 0 5px 0 !important;
-}
-.select2-selection__choice {
-    line-height: 1.5em !important;
-}
 input[type=checkbox] {
 	width: 18px; 
 	height: 18px;
@@ -147,7 +126,7 @@ h2 {
 }
 .select-without-search {
 	width: 100%;
-	height: 100%;
+	height: 2em;
 	font-family: inherit;
 	font-size: inherit;
 	background-color: white;
