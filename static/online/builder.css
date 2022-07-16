@@ -98,6 +98,10 @@ body {
 	padding-bottom: 0.5em;
 	break-inside: avoid;
 }
+input[type=range] {
+	width: 6.45em;
+	flex: 1 0 auto;
+}
 input[type=number] {
 	text-align: center;
 	border-radius: 4px;
