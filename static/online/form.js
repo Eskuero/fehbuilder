@@ -649,6 +649,17 @@ function reset(section) {
 				break;
 			}
 		break;
+		case "misc":
+			selectsp.value = "9999";
+			selecthm.value = "8000";
+			selectartstyle.value = "Portrait";
+			selecttemplate.value = "MyUnit";
+			selectoffsetX.value = "0";
+			selectoffsetY.value = "0";
+			selectmirror.value = "None";
+			selectfavorite.value = "1";
+			selectaccessory.value = "None";
+		break;
 	}
 	reload();
 }
