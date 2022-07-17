@@ -268,4 +268,14 @@ h2 {
 .button:hover {
 	cursor: pointer;
 }
+#selectheroes {
+	--collapsed-select-height: 1.8em;
+	--select-width: 16.7em;
+	--list-item-max: 6;
+	--list-item-height: 2em;
+	--font-color: #444;
+	--background-color: white;
+	--background-hover-color: #5897fb;
+	--disabled-background-color: #eee;
+}
 

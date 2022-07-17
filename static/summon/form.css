@@ -36,47 +36,6 @@ body {
 .form > * {
 	column-count: 2;
 }
-@media screen and (min-aspect-ratio: 12/5) {
-	.form > * {
-		column-count: 3;
-	}
-}
-
-@media screen and (max-aspect-ratio: 593/467) {
-	.form > * {
-		column-count: 1;
-	}
-	.additionaloptions {
-		padding-bottom: 0.8em;
-	}
-}
-
-@media screen and (orientation: portrait) {
-	body {
-		height: auto;
-		overflow-y: initial;
-		width: 100vw;
-	}
-	.contenedor {
-		flex-direction: column;
-		gap: 0;
-	}
-	#fakecanvas {
-		height: auto;
-		width: 90vw;
-	}
-	#unitslot {
-		order: 2;
-	}
-	.form {
-		height: auto;
-		width: 90vw;
-		row-gap: 0;
-	}
-	.form > * {
-		column-count: 1;
-	}
-}
 
 .row-property {
 	display: flex;
@@ -155,7 +114,54 @@ h2 {
 	height: 2em;
 }
 
-@media screen and (orientation: portrait) {
+#fourstarfocus, #fivestarfocus {
+	--collapsed-multiselect-height: 1.8em;
+	--select-width: 36.4em;
+	--list-item-max: 5;
+	--list-item-height: 2em;
+	--font-color: #444;
+	--background-color: white;
+	--background-hover-color: #5897fb;
+	--disabled-background-color: #eee;
+}
+
+@media only screen and (max-aspect-ratio: 5/4) {
+	.form > * {
+		column-count: 1;
+	}
+	.additionaloptions {
+		padding-bottom: 0.8em;
+	}
+	#fourstarfocus, #fivestarfocus {
+		--select-width: 20em;
+	}
+}
+
+@media only screen and (min-resolution: 150dpi) and (max-aspect-ratio: 10/6) {
+	body {
+		height: auto;
+		overflow-y: initial;
+		width: 100vw;
+	}
+	.contenedor {
+		flex-direction: column;
+		gap: 0;
+	}
+	#fakecanvas {
+		height: auto;
+		width: 90vw;
+	}
+	#unitslot {
+		order: 2;
+	}
+	.form {
+		height: auto;
+		width: 90vw;
+		row-gap: 0;
+	}
+	.form > * {
+		column-count: 1;
+	}
 	.row-property.single > div {
 		width: calc(100% - 3em) !important;
 	}
