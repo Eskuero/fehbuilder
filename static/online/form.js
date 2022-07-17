@@ -135,8 +135,6 @@ async function init() {
 		numberfont = img;
 	});
 
-	// Draw it for the first time
-	reload();
 	// Meme
 	//memedraw();
 

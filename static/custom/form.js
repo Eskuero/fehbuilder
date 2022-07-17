@@ -115,9 +115,6 @@ async function init() {
 
 	// Detect which stat mode we are on
 	changemode();
-
-	// Draw it for the first time
-	await reload();
 }
 
 async function populateall(clean, bypass = false) {
