@@ -48,7 +48,7 @@ body {
 	width: 25%;
 	padding: 0.5em 0.25em 0.5em 0.25em;
 	color: #fff;
-	text-shadow: 0 0 4px black, 0 0 6px black;
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
 	background: linear-gradient(
 		to bottom,
 		#e40303,
@@ -65,7 +65,7 @@ body {
 		#750787
 	);
 	overflow: hidden;
-	font-size: 12pt;
+	font-size: 13pt;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	font-weight: bold;
