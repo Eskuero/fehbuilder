@@ -44,6 +44,7 @@ selectart = document.getElementById('art');
 selectoffsetY = document.getElementById('offsetY');
 selectoffsetX = document.getElementById('offsetX');
 selectmirror = document.getElementById('mirror');
+selectbackground = document.getElementById('background');
 selectexpand = document.getElementById('expand');
 selectfavorite = document.getElementById('favorite');
 selectaccessory = document.getElementById('accessory');

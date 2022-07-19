@@ -32,8 +32,8 @@ async function reload() {
 	preview.miterLimit = 2;
 
 	// Print the background depending on the type of support
-	var background = selectsummoner.value == "None" ? "bgnosupport" : "bgsupport";
-	await getimage(other["images"]["other"][background]).then(img => {
+	var background = selectbackground.value + (selectsummoner.value == "None" ? "normal" : "support");
+	await getimage(other["images"]["backgrounds"][background]).then(img => {
 		preview.drawImage(img, -173, 0, 1067, 1280);
 	});
 

@@ -42,7 +42,7 @@
 					</div>
 					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/language.webp" title="Language"/>
-						<select class="select-without-search" id="language" onchange="getlang(); populateall(false); statictranslations(); reload()">
+						<select class="select-without-search single" id="language" onchange="getlang(); populateall(false); statictranslations(); reload()">
 							<option value="USEN" selected>English (America)</option>
 							<option value="EUEN">English (UK)</option>
 							<option value="EUDE">Deutsch</option>
@@ -68,13 +68,13 @@
 					</div>
 					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/resplendent.webp" title="Attire"/>
-						<select class="select-without-search" onchange="reload()" id="attire">
+						<select class="select-without-search double" onchange="reload()" id="attire">
 							<option value="Normal">Normal</option>
 							<option value="Resplendent">Resplendent</option>
 							<option value="Stats-Only">Stats-Only</option>
 						</select>
 						<img class="imagelabel" src="/common/assets/rarity.webp" title="Rarity"/>
-						<select class="select-without-search" onchange="reload()" id="rarity">
+						<select class="select-without-search double" onchange="reload()" id="rarity">
 							<option value="1">1★</option>
 							<option value="2">2★</option>
 							<option value="3">3★</option>
@@ -85,12 +85,12 @@
 					</div>
 					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/beasts.webp" title="Beast transformation"/>
-						<select class="select-without-search" onchange="reload()" id="beast">
+						<select class="select-without-search double" onchange="reload()" id="beast">
 							<option value="no">No</option>
 							<option value="yes">Yes</option>
 						</select>
 						<img class="imagelabel" src="/common/assets/summoner.webp" title="Summoner Support"/>
-						<select class="select-without-search" onchange="reload()" id="summoner">
+						<select class="select-without-search double" onchange="reload()" id="summoner">
 							<option value="None">No</option>
 							<option value="C">C</option>
 							<option value="B">B</option>
@@ -100,7 +100,7 @@
 					</div>
 					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/merges.webp" title="Merges"/>
-						<select class="select-without-search" onchange="reload()" id="merges">
+						<select class="select-without-search double" onchange="reload()" id="merges">
 							<option value="0">0</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
@@ -114,13 +114,13 @@
 							<option value="10">10</option>
 						</select>
 						<img class="imagelabel" src="/common/assets/flower.webp" title="Dragoflowers"/>
-						<select class="select-without-search" onchange="reload()" id="flowers">
+						<select class="select-without-search double" onchange="reload()" id="flowers">
 							<option value="0">0</value>
 						</select>
 					</div>
 					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/boon.webp" title="Boon"/>
-						<select class="select-without-search" onchange="reload()" id="boons">
+						<select class="select-without-search double" onchange="reload()" id="boons">
 							<option value="None">-</option>
 							<option value="HP">HP</option>
 							<option value="Atk">Atk</option>
@@ -129,7 +129,7 @@
 							<option value="Res">Res</option>
 						</select>
 						<img class="imagelabel" src="/common/assets/bane.webp" title="Bane"/>
-						<select class="select-without-search" onchange="reload()" id="banes">
+						<select class="select-without-search double" onchange="reload()" id="banes">
 							<option value="None">-</option>
 							<option value="HP">HP</option>
 							<option value="Atk">Atk</option>
@@ -140,7 +140,7 @@
 					</div>
 					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/ascendent.webp" title="Ascendent Stat" />
-						<select class="select-without-search" onchange="reload()" id="ascendent">
+						<select class="select-without-search double" onchange="reload()" id="ascendent">
 							<option value="None">-</option>
 							<option value="HP">HP</option>
 							<option value="Atk">Atk</option>
@@ -149,14 +149,14 @@
 							<option value="Res">Res</option>
 						</select>
 						<img class="imagelabel" src="/common/assets/bonus.webp" title="Bonus Unit" />
-						<select class="select-without-search" onchange="reload()" id="bonusunit">
+						<select class="select-without-search double" onchange="reload()" id="bonusunit">
 							<option value="no">No</option>
 							<option value="yes">Yes</option>
 						</select>
 					</div>
 					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/blessings.webp" title="Blessings" />
-						<select class="select-without-search" id="blessing" onchange="reload()">
+						<select class="select-without-search single" id="blessing" onchange="reload()">
 							<option value="None">None</option>
 							<option value="1">Fire</option>
 							<option value="2">Water</option>
@@ -181,7 +181,7 @@
 					</div>
 					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/refine.webp" title="Refine"/>
-						<select class="select-without-search" onchange="reload()" id="refine">
+						<select class="select-without-search single" onchange="reload()" id="refine">
 							<option value="None">None</option>
 						</select>
 					</div>
@@ -264,14 +264,14 @@
 					</div>
 					<div class="row-property">
 						<label for="artstyle"><img class="imagelabel" src="/common/assets/brush.webp" title="Art Style"/></label>
-						<select class="select-without-search" id="artstyle" onchange="reload()">
+						<select class="select-without-search double" id="artstyle" onchange="reload()">
 							<option value="Portrait">Portrait</option>
 							<option value="Attack">Attack</option>
 							<option value="Special">Special</option>
 							<option value="Damage">Damage</option>
 						</select>
 						<label for="template"><img class="imagelabel" src="/common/assets/template.webp" title="Unit Template"/></label>
-						<select class="select-without-search" id="template" onchange="reload()">
+						<select class="select-without-search double" id="template" onchange="reload()">
 							<option value="MyUnit">My Unit</option>
 							<option value="Condensed">Condensed</option>
 							<option value="Echoes">Echoes</option>
@@ -285,16 +285,22 @@
 					</div>
 					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/mirror.webp" title="Art Mirroring"/>
-						<select class="select-without-search" id="mirror" onchange="reload()">
+						<select class="select-without-search double" id="mirror" onchange="reload()">
 							<option value="None">None</option>
 							<option value="Horizontal">Horizontal</option>
 							<option value="Vertical">Vertical</option>
 							<option value="Both">Horizontal + Vertical</option>
 						</select>
+						<img class="imagelabel" src="/common/assets/background.webp" title="Background"/>
+						<select class="select-without-search double" onchange="reload()" id="background">
+							<option value="base">Normal</option>
+							<option value="room">Room</option>
+							<option value="beach">Beach</option>
+						</select>
 					</div>
 					<div class="row-property">
 						<img class="imagelabel" src="/common/assets/favorite.webp" title="Favorite Mark"/>
-						<select class="select-without-search" id="favorite" onchange="reload()">
+						<select class="select-without-search double" id="favorite" onchange="reload()">
 							<option value="0">0</option>
 							<option value="1" selected>1</option>
 							<option value="2">2</option>
@@ -306,7 +312,7 @@
 							<option value="8">8</option>
 						</select>
 						<img class="imagelabel" src="/common/assets/veronica.webp" title="Accessory"/>
-						<select class="select-without-search" onchange="reload()" id="accessory">
+						<select class="select-without-search double" onchange="reload()" id="accessory">
 							<option value="None">None</option>
 							<option value="Hat">Hat</option>
 							<option value="Hair">Hair</option>

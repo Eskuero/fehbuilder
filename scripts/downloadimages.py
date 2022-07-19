@@ -385,9 +385,14 @@ icons = {
 	"blue_orb": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/bc/Blue_Orb.png?160?160",
 	"green_orb": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/d7/Green_Orb.png?160?160",
 	"colorless_orb": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/4/4e/Colorless_Orb.png?160?160",
+	# BGs
+	"basenormalbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/9d/BG_DetailedStatus.png?1067?1280",
+	"basesummonerbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/5c/Summoner_Support_Background.png?1067?1280",
+	"roomnormalbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/c9/Bg_DetailedStatus_Ask.webp?1067?1280",
+	"roomsummonerbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/f/fc/Bg_DetailedStatus_Ask_Reliance.webp?1067?1280",
+	"beachnormalbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/90/Bg_DetailedStatus_Beach.webp?1067?1280",
+	"beachsummonerbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b3/Bg_DetailedStatus_Beach_Reliance.webp?1067?1280",
 	# Other
-	"normalbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/9d/BG_DetailedStatus.png?1067?1280",
-	"summonerbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/5c/Summoner_Support_Background.png?1067?1280",
 	"summoningaltar": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/4/42/BG_Summon_Stone.png?1067?1280",
 	"resplendent": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b8/Icon_GodWear_L.png?82?82",
 	"resplendent-small": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/d9/Icon_GodWear.png?83?78"

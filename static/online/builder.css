@@ -138,7 +138,6 @@ h2 {
 }
 .select-without-search {
 	height: 2em;
-	width: 100%;
 	font-family: inherit;
 	font-size: inherit;
 	background-color: white;
@@ -216,6 +215,13 @@ h2 {
 	cursor: pointer;
 }
 
+.select-without-search.single {
+	width: 100%;
+}
+.select-without-search.double {
+	width: 6.45em;
+}
+
 #usedallies {
 	margin-top: 0.5em;
 	column-count: 2;
@@ -223,7 +229,7 @@ h2 {
 
 #selectheroes, #weapon, #special, #assist, #Askill, #Bskill, #Cskill, #Sskill {
 	--collapsed-select-height: 1.8em;
-	--select-width: 16.7em;
+	--select-width: 100%;
 	--list-item-max: 6;
 	--list-item-height: 2em;
 	--font-color: #444;
@@ -233,7 +239,7 @@ h2 {
 }
 #allies {
 	--collapsed-multiselect-height: 2em;
-	--select-width: 40.4em;
+	--select-width: 100%;
 	--list-item-max: 5;
 	--list-item-height: 2em;
 	--font-color: #444;
@@ -251,12 +257,6 @@ h2 {
 	}
 	.additionaloptions {
 		padding-bottom: 0.8em;
-	}
-	#selectheroes, #weapon, #special, #assist, #Askill, #Bskill, #Cskill, #Sskill {
-		--select-width: 100%;
-	}
-	#allies {
-		--select-width: 22.7em;
 	}
 }
 @media only screen and (min-resolution: 150dpi) and (max-aspect-ratio: 10/6) {
@@ -292,10 +292,7 @@ h2 {
 	.additionaloptions {
 		padding-bottom: 1em;
 	}
-	#selectheroes, #weapon, #special, #assist, #Askill, #Bskill, #Cskill, #Sskill {
-		--select-width: calc(90vw - 6em);
-	}
-	#allies {
-		--select-width: calc(90vw - 3em);
+	.select-without-search.double {
+		width: 100%;
 	}
 }

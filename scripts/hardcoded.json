@@ -637,9 +637,15 @@
             "A": "/common/other/Support-A.webp",
             "S": "/common/other/Support-S.webp"
         },
+        "backgrounds": {
+            "basenormal": "/common/other/basenormalbg.webp",
+            "basesupport": "/common/other/basesummonerbg.webp",
+            "roomnormal": "/common/other/roomnormalbg.webp",
+            "roomsupport": "/common/other/roomsummonerbg.webp",
+            "beachnormal": "/common/other/beachnormalbg.webp",
+            "beachsupport": "/common/other/beachsummonerbg.webp"
+        },
         "other": {
-            "bgnosupport": "/common/other/normalbg.webp",
-            "bgsupport": "/common/other/summonerbg.webp",
             "bgcondensed": "/common/base/background-condensed.webp",
             "bgechoes": "/common/base/background-echoes.webp",
             "fgui": "/common/base/foreground-ui.webp",

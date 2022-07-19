@@ -41,6 +41,7 @@ selectartstyle = document.getElementById('artstyle');
 selectoffsetY = document.getElementById('offsetY');
 selectoffsetX = document.getElementById('offsetX');
 selectmirror = document.getElementById('mirror');
+selectbackground = document.getElementById('background');
 selectfavorite = document.getElementById('favorite');
 selectaccessory = document.getElementById('accessory');
 selectlanguage = document.getElementById('language');
@@ -655,6 +656,7 @@ function reset(section) {
 			selectoffsetX.value = "0";
 			selectoffsetY.value = "0";
 			selectmirror.value = "None";
+			selectbackground.value = "base"
 			selectfavorite.value = "1";
 			selectaccessory.value = "None";
 		break;
