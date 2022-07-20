@@ -125,7 +125,7 @@ h2 {
 	--disabled-background-color: #eee;
 }
 
-@media only screen and (max-aspect-ratio: 5/4) {
+@media (max-aspect-ratio: 5/4) {
 	.form > * {
 		column-count: 1;
 	}
@@ -137,7 +137,7 @@ h2 {
 	}
 }
 
-@media only screen and (min-resolution: 150dpi) and (max-aspect-ratio: 10/6) {
+@media (min-resolution: 150dpi) and (max-aspect-ratio: 10/5), (orientation: portrait) {
 	body {
 		height: auto;
 		overflow-y: initial;
