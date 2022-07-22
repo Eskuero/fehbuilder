@@ -385,7 +385,7 @@ async function reload() {
 		// If appui is enabled we also print the conversation icon
 		if (appui.checked) {
 			await getimage(other["images"]["other"]["duoconversation"]).then(img => {
-				preview.drawImage(img, 3, 322);
+				preview.drawImage(img, 3, 415);
 			});
 		}
 	}
