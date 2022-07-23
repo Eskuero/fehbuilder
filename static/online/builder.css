@@ -44,12 +44,7 @@ body {
 }
 
 #unitslot > button {
-	border: 0;
-	width: 25%;
-	padding: 0.5em 0.25em 0.5em 0.25em;
-	color: #fff;
-	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
-	background: linear-gradient(
+	--background: linear-gradient(
 		to bottom,
 		#e40303,
 		#e40303 16.67%,
@@ -64,6 +59,12 @@ body {
 		#750787 83.33%,
 		#750787
 	);
+	border: 0;
+	width: 25%;
+	padding: 0.5em 0.25em 0.5em 0.25em;
+	color: #fff;
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
+	background: var(--background);
 	overflow: hidden;
 	font-size: 13pt;
 	text-overflow: ellipsis;
@@ -72,7 +73,7 @@ body {
 	cursor: pointer;
 }
 #unitslot > button:hover{
-	background: linear-gradient(
+	--background: linear-gradient(
 		to bottom,
 		#d00000,
 		#d00000 16.67%,
@@ -87,9 +88,11 @@ body {
 		#610073 83.33%,
 		#610073
 	);
+	background: var(--background);
+	background-size: cover;
 }
 #unitslot > button:not(:last-child) {
-	border-right: 1px solid white;
+	border-right: 3px solid white;
 }
 
 .row-property {

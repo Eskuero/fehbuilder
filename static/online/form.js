@@ -551,9 +551,11 @@ function validblessing() {
 function slotname() {
 	// Update unit name in the builder tab
 	if (selectheroes.value != "None") {
-		document.getElementById("unitslot").children[buildslot].innerHTML = languages[selectlanguage.value]["M" + selectheroes.value] + ": " + (languages[selectlanguage.value][selectheroes.value.replace("PID", "MPID_HONOR")] || "Generic");
+		document.getElementById("unitslot").children[buildslot].style.background = "url('/common/condensed-faces/" + selectheroes.value + "_Attack.webp') center / cover no-repeat, var(--background)";
+		document.getElementById("unitslot").children[buildslot].innerHTML = "";
 	} else {
-		document.getElementById("unitslot").children[buildslot].innerHTML = "#" + (buildslot+1) + " Build";
+		document.getElementById("unitslot").children[buildslot].style.background = "var(--background)";
+		document.getElementById("unitslot").children[buildslot].innerHTML = "#" + (buildslot+1);
 	}
 }
 
