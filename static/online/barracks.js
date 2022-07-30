@@ -107,9 +107,12 @@ async function loadbuild() {
 	bestskills.checked = barracks[buildid]["max"];
 	// Now force a reload of all the selects
 	await populateall(false);
+	// Now recover the weapon as it enables different refines and then rebuild those
+	selectweapons.value = barracks[buildid]["weapon"];
+	updateRefine();
 	// Replace the most of the remaining easy info
-	var buildinfo = ["attire","rarity","beast","support","merges","flowers","boon","bane","ascended","bonus","blessing","weapon","refine","assist","special","A","B","C","S","sp","hm","art","template","offsetX","offsetY","mirror","background","favorite","accessory"]
-	var buildselects = [selectattire,selectrarity,selectbeast,selectsummoner,selectmerges,selectflowers,selectboons,selectbanes,selectascendent,selectbonusunit,selectblessings,selectweapons,selectrefines,selectassists,selectspecials,selectA,selectB,selectC,selectS,selectsp,selecthm,selectartstyle,selecttemplate,selectoffsetX,selectoffsetY,selectmirror,selectbackground,selectfavorite,selectaccessory]
+	var buildinfo = ["attire","rarity","beast","support","merges","flowers","boon","bane","ascended","bonus","blessing","refine","assist","special","A","B","C","S","sp","hm","art","template","offsetX","offsetY","mirror","background","favorite","accessory"]
+	var buildselects = [selectattire,selectrarity,selectbeast,selectsummoner,selectmerges,selectflowers,selectboons,selectbanes,selectascendent,selectbonusunit,selectblessings,selectrefines,selectassists,selectspecials,selectA,selectB,selectC,selectS,selectsp,selecthm,selectartstyle,selecttemplate,selectoffsetX,selectoffsetY,selectmirror,selectbackground,selectfavorite,selectaccessory]
 	for (i = 0; i < buildinfo.length; i++) {
 		buildselects[i].value = barracks[buildid][buildinfo[i]];
 	}
