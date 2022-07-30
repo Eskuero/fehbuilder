@@ -9,9 +9,11 @@
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 
 		<link rel="preload" href="builder.css" as="style">
+		<link rel="preload" href="barracks.css" as="style">
 		<link rel="preload" href="/common/rebspicker.css" as="style">
 
 		<link rel="stylesheet" href="builder.css">
+		<link rel="stylesheet" href="barracks.css">
 		<link rel="stylesheet" href="/common/rebspicker.css">
 
 		<link rel="shortcut icon" href="/common/assets/Feh.webp" />
@@ -42,7 +44,7 @@
 					</div>
 					<div class="row-property single">
 						<img class="imagelabel" src="/common/assets/language.webp" title="Language"/>
-						<select class="select-without-search single" id="language" onchange="getlang(); populateall(false); statictranslations(); reload()">
+						<select class="select-without-search single" id="language" onchange="getlang(); populateall(false); statictranslations(); reload(); loadbarracks()">
 							<option value="USEN" selected>English (America)</option>
 							<option value="EUEN">English (UK)</option>
 							<option value="EUDE">Deutsch</option>
@@ -54,6 +56,7 @@
 							<option value="TWZH">繁體中文</option>
 							<option value="USPT">Português</option>
 						</select>
+						<button class="actionbutton" onclick="openclosebarracks('open')">Barracks</button>
 					</div>
 				</section>
 				<div class="sectiontitle">
@@ -341,9 +344,92 @@
 				</div>
 			</div>
 		</div>
+		<div id="barracksdialog">
+			<div class="dialogform">
+				<div class="cerrar" onclick="openclosebarracks('close')" ></div>
+				<section class="actionsform">
+					<button class="actionbutton" onclick="loadbuild()">Load</button>
+					<button class="actionbutton" onclick="savebuild()">Save</button>
+					<button class="actionbutton" onclick="removebuild()">Remove</button>
+					<button class="actionbutton" onclick="savebuild('overwrite')">Overwrite</button>
+				</section>
+				<div class="row-property single">
+					<label class="textlabel"/>Build:</label>
+					<div id="selectbuild" onchange="showbuild()"></div>
+				</div>
+				<h2>Unit</h2>
+				<section class="build">
+					<div class="row-property single">
+						<img class="imagelabel" src="/common/assets/kiran.webp" title="Hero"/>
+						<div class="textlabel" id="buildhero">-</div>
+					</div>
+					<div class="row-property double">
+						<img class="imagelabel" src="/common/assets/resplendent.webp" title="Attire"/>
+						<div class="textlabel" id="buildattire">-</div>
+						<img class="imagelabel" src="/common/assets/summoner.webp" title="Summoner Support"/>
+						<div class="textlabel" id="buildsupport">-</div>
+					</div>
+					<div class="row-property double">
+						<img class="imagelabel" src="/common/assets/merges.webp" title="Merges"/>
+						<div class="textlabel" id="buildmerges">-</div>
+						<img class="imagelabel" src="/common/assets/flower.webp" title="Flowers"/>
+						<div class="textlabel" id="buildflowers">-</div>
+					</div>
+					<div class="row-property double">
+						<img class="imagelabel" src="/common/assets/boon.webp" title="Boon"/>
+						<div class="textlabel" id="buildboon">-</div>
+						<img class="imagelabel" src="/common/assets/bane.webp" title="Bane"/>
+						<div class="textlabel" id="buildbane">-</div>
+					</div>
+					<div class="row-property double">
+						<img class="imagelabel" src="/common/assets/ascendent.webp" title="Ascendent"/>
+						<div class="textlabel" id="buildascended">-</div>
+						<img class="imagelabel" src="/common/assets/blessings.webp" title="Blessing"/>
+						<div class="textlabel" id="buildblessing">-</div>
+					</div>
+				</section>
+				<h2>Skills</h2>
+				<section class="build">
+					<div class="row-property single">
+						<img class="imagelabel" src="/common/assets/weapon.webp" title="Weapon"/>
+						<div class="textlabel" id="buildweapon">-</div>
+					</div>
+					<div class="row-property single">
+						<img class="imagelabel" src="/common/assets/refine.webp" title="Refine"/>
+						<div class="textlabel" id="buildrefine">-</div>
+					</div>
+					<div class="row-property single">
+						<img class="imagelabel" src="/common/assets/assist.webp" title="Assist"/>
+						<div class="textlabel" id="buildassist">-</div>
+					</div>
+					<div class="row-property single">
+						<img class="imagelabel" src="/common/assets/special.webp" title="Special"/>
+						<div class="textlabel" id="buildspecial">-</div>
+					</div>
+					<div class="row-property single">
+						<img class="imagelabel" src="/common/assets/skill-a.webp" title="A skill"/>
+						<div class="textlabel" id="buildA">-</div>
+					</div>
+					<div class="row-property single">
+						<img class="imagelabel" src="/common/assets/skill-b.webp" title="B skill"/>
+						<div class="textlabel" id="buildB">-</div>
+					</div>
+					<div class="row-property single">
+						<img class="imagelabel" src="/common/assets/skill-c.webp" title="C skill"/>
+						<div class="textlabel" id="buildC">-</div>
+					</div>
+					<div class="row-property single">
+						<img class="imagelabel" src="/common/assets/seal.webp" title="S skill"/>
+						<div class="textlabel" id="buildS">-</div>
+					</div>
+				</section>
+				<div style="margin-top: 1em">This data is shown as a quick preview, other info like legendary allies, background, art coordinates, etc... are also saved and restored</div>
+			</div>
+		</div>
 		<script src="/common/rebspicker.js"></script>
 		<script src="utilities.js"></script>
 		<script src="imagerender.js"></script>
 		<script src="form.js"></script>
+		<script src="barracks.js"></script>
     </body>
 </html>

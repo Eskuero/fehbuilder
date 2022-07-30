@@ -199,6 +199,11 @@ input[type='number']::-webkit-inner-spin-button {
 .imagelabel {
 	height: 2em; /* FIXME: Set image dimensions to prevent a grid blowout */
 }
+.textlabel {
+	display: flex;
+	align-items: center; /* Make sure the text labels are fully centered */
+	justify-content: center;
+}
 .select-without-search {
 	font-size: inherit;
 	background-color: white;
@@ -307,4 +312,5 @@ input[type='number']::-webkit-inner-spin-button {
 }
 h2 {
 	text-decoration: underline; /* Add underline on all titles */
+	text-align: initial;
 }
