@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>FE Heroes Summon Simulator</title>
 		<meta name="title" content="FE Heroes Summon Simulator">
@@ -16,14 +16,16 @@
 	</head>
 	<body>
 		<div class="contenedor">
-			<canvas id="fakecanvas" width="720" height="1280" alt="FEH Unit Builder"></canvas>
+			<div class="unitpreview">
+				<canvas id="fakecanvas" width="720" height="1280" alt="FEH Unit Builder"></canvas>
+			</div>
 			<div class="form">
-				<section>
-					<div class="additionaloptions">
+				<section class="headerform">
+					<div class="row-property additionaloptions">
 						<button onclick="summon()" class="summonbutton">Single session</button>
 						<button onclick="alert('Unimplemented')" class="summonbutton">Multi session</button>
 					</div>
-					<div class="row-property">
+					<div class="row-property single">
 						<img class="imagelabel" src="/common/assets/language.webp" title="Language"/>
 						<select class="select-without-search" id="language" onchange="populate(select5focus, units); populate(select4focus, units)">
 							<option value="USEN" selected>English (America)</option>
@@ -40,33 +42,31 @@
 					</div>
 				</section>
 				<h2>Focus Units</h2>
-				<section style="column-count: 1">
-					<div class="row-property">
+				<section class="focusform">
+					<div class="row-property single fat">
 						<img class="imagelabel" src="/common/assets/Rarity_5_Focus.webp" title="5 star rarity"/>
 						<div id="fivestarfocus" onchange="changetargets()"></div>
 					</div>
-				</section>
-				<section style="column-count: 1">
-					<div class="row-property">
+					<div class="row-property single fat">
 						<img class="imagelabel" src="/common/assets/Rarity_4_Focus.webp" title="4 star rarity"/>
 						<div id="fourstarfocus" onchange="changetargets()"></div>
 					</div>
 				</section>
 				<h2>Base gacha percents</h2>
-				<section>
-					<div class="row-property">
+				<section class="percentsform">
+					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/Rarity_5_Focus.webp" title="Focus 5* units"/>
 						<input type="number" id="focus5" min="0" max="99" onchange="reset()" value="3">
 						<img class="imagelabel" src="/common/assets/rarity.webp" title="Off-focus 5* units"/>
 						<input type="number" id="offfocus5" min="0" max="99" onchange="reset()" value="3">
 					</div>
-					<div class="row-property">
+					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/Rarity_4_Focus.webp" title="Focus 4* units"/>
 						<input type="number" id="focus4" min="0" max="99" onchange="reset()" value="3">
 						<img class="imagelabel" src="/common/assets/Rarity_4_Special.webp" title="Special Rate 4* units"/>
 						<input type="number" id="special4" min="0" max="99" onchange="reset()" value="3">
 					</div>
-					<div class="row-property">
+					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/Rarity_4.webp" title="Off-focus 4* units"/>
 						<input type="number" id="offfocus4" min="0" max="99" onchange="reset()" value="52">
 						<img class="imagelabel" src="/common/assets/Rarity_3.webp" title="Off-focus 3* units"/>
@@ -74,15 +74,15 @@
 					</div>
 				</section>
 				<h2>Behaviour</h2>
-				<section>
-					<div class="row-property">
+				<section class="behaviourform">
+					<div class="row-property single">
 						<img class="imagelabel" src="/common/assets/method.webp" title="Summoning method" />
 						<select class="select-without-search" id="method">
 							<option value="snipe">Color sniping</option>
 							<option value="full">Complete circles</option>
 						</select>
 					</div>
-					<div class="row-property">
+					<div class="row-property single">
 						<img class="imagelabel" src="/common/assets/until.webp" title="Summoning until" />
 						<select class="select-without-search" id="until" disabled>
 							<option value="all">All targets obtained</option>
@@ -94,20 +94,20 @@
 				<section id="targets">
 				</section>
 				<h2>Built pity-rate</h2>
-				<section>
-					<div class="row-property">
+				<section class="pityform">
+					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/Rarity_5_Focus.webp" title="Focus 5* units"/>
 						<input type="number" id="pityfocus5" min="0" max="99" value="3" disabled>
 						<img class="imagelabel" src="/common/assets/rarity.webp" title="Off-focus 5* units"/>
 						<input type="number" id="pityofffocus5" min="0" max="99" value="3" disabled>
 					</div>
-					<div class="row-property">
+					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/Rarity_4_Focus.webp" title="Focus 4* units"/>
 						<input type="number" id="pityfocus4" min="0" max="99" value="3" disabled>
 						<img class="imagelabel" src="/common/assets/Rarity_4_Special.webp" title="Special Rate 4* units"/>
 						<input type="number" id="pityspecial4" min="0" max="99" value="3" disabled>
 					</div>
-					<div class="row-property">
+					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/Rarity_4.webp" title="Off-focus 4* units"/>
 						<input type="number" id="pityofffocus4" min="0" max="99" value="52" disabled>
 						<img class="imagelabel" src="/common/assets/Rarity_3.webp" title="Off-focus 3* units"/>

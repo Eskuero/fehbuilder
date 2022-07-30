@@ -12,7 +12,7 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 class Rebspicker {
-	constructor(domitem, type, entries, resizelisteners = [window], scrolllisteners = [window], defaultvalue) {
+	constructor(domitem, type, entries, defaultvalue) {
 		this.domitem = domitem;
 		this.type = type;
 		this.setAttribute("disabled", false);
@@ -166,22 +166,6 @@ class Rebspicker {
 				}
 			}
 		}
-
-		// Attach for resize to update dropdown position and do the initial correction
-		resizelisteners.forEach(element => {
-			element.addEventListener('resize', function() {this.reposition()}.bind(this));
-		});
-		scrolllisteners.forEach(element => {
-			element.addEventListener('scroll', function() {this.reposition()}.bind(this));
-		});
-		this.reposition();
-	}
-
-	reposition() {
-		var coordinates = this.domitem.getBoundingClientRect();
-		this.dropdown.style.top = coordinates.top + window.scrollY + this.domitem.clientHeight - 4 + "px";
-		this.dropdown.style.left = coordinates.left + window.scrollX + "px";
-		this.dropdown.style.width = this.domitem.getBoundingClientRect().width + "px";
 	}
 
 	clean() {
@@ -206,7 +190,6 @@ class Rebspicker {
 			this.close();
 		} else {
 			this.open();
-			this.reposition();
 		}
 	}
 	open() {

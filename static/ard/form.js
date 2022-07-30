@@ -16,7 +16,7 @@ var units, other;
 // The whole form since is a rebspicker listeners
 form = document.getElementsByClassName("form")[0];
 // All selects we have available
-selectheroes = new Rebspicker(document.getElementById('selectheroes'), "single", {"None": {"string": "None"}}, [window], [form, window]);
+selectheroes = new Rebspicker(document.getElementById('selectheroes'), "single", {"None": {"string": "None"}});
 selectartstyle = document.getElementById('artstyle');
 selectstructure = document.getElementById('selectstructure');
 selectmap = document.getElementById("mapselect");
@@ -334,7 +334,7 @@ function populate(select, data, clean, previousvalue = "None") {
 		}
 	}
 	// Generate the select
-	select = new Rebspicker(select.domitem, "single", options, [window], [form, window]);
+	select = new Rebspicker(select.domitem, "single", options);
 	// Restore the previous value if it's available on the updated select
 	if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
 		select.value = previousvalue;

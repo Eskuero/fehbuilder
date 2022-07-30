@@ -1,3 +1,4 @@
+/* Main elements: Body and app Container */
 body {
 	background-image: url("/common/assets/BG_Brave.webp");
 	background-position: center;
@@ -8,41 +9,30 @@ body {
 	margin: 0;
 	text-align: center;
 	height: 100vh;
-	overflow-y: hidden;
 }
-
 .contenedor {
 	display: inline-flex;
 	gap: 1em;
 }
 
+@media (min-resolution: 150dpi) and (max-aspect-ratio: 10/7), (orientation: portrait) { /* Mobile/Portrait layouts */
+	.contenedor {
+		flex-direction: column; /* Now the preview renders on top with the form below */
+		gap: 0;
+	}
+}
+
+/* Unit preview (the actual image + build slot) */
 .unitpreview {
 	display: flex;
 	flex-direction: column;
-	width: calc((100vh - 2.5em) * 0.5625);
+	width: calc((100vh - 2.5em) * 0.5625); /* Width must be a proportional value of total height minus build slots */
 }
 #unitslot {
 	height: 2.5em;
 	width: 100%;
 	display: flex;
 }
-
-.form {
-	height: 100vh;
-	overflow-y: scroll;
-	display: flex;
-	flex-direction: column;
-	background-color: rgba(14, 51, 69, 0.6);
-	color: white;
-	text-align: initial;
-	padding: 1em 1.5em 0 1.5em;
-	box-sizing: border-box;
-}
-
-.form > * {
-	column-count: 2;
-}
-
 #unitslot > button {
 	--background: linear-gradient(
 		to bottom,
@@ -95,15 +85,106 @@ body {
 	border-right: 3px solid white;
 }
 
-.row-property {
+@media (min-resolution: 150dpi) and (max-aspect-ratio: 10/7), (orientation: portrait) { /* Mobile/Portrait layouts */
+	.unitpreview {
+		width: 90vw; /* Leave some borders around the preview */
+	}
+	#unitslot {
+		order: 2; /* Render the build slows below */
+	}
+}
+
+/* Form and sections */
+.form {
+	height: 100vh;
+	width: 43em;
+	overflow-y: scroll; /* Allow scrolling if the form is too big for the screen */
 	display: flex;
-	gap: 1em;
-	padding-bottom: 0.5em;
-	break-inside: avoid;
+	flex-direction: column;
+	background-color: rgba(14, 51, 69, 0.6);
+	color: white;
+	text-align: initial;
+	padding: 1em 1.5em 0 1.5em;
+	box-sizing: border-box;
+}
+section {
+	display: grid; /* All sections are grids */
+	gap: 0.5em 1em;
+}
+.headerform, #usedalliesform, #buffsform, #pairupsform {
+	grid-template-rows: auto;
+	grid-template-columns: repeat(2, 1fr); /* Header, allies, buffs and pairups are undefined number of rows in two columns */
+}
+.unitform, .skillsform {
+	grid-template-rows: repeat(4, auto); /* Unit and Skills section are two columns with 4 elements each */
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-flow: column;
+}
+.miscform {
+	grid-template-rows: repeat(3, auto); /* Misc section is two columns with 3 elements each */
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-flow: column;
+}
+
+@media (max-aspect-ratio: 5/4) { /* Small screen layout */
+	.form {
+		width: 27em;
+	}
+	.headerform, #usedalliesform, #buffsform, #pairupsform, .unitform, .skillsform, .miscform {
+		grid-template-columns: auto; /* Everyone becomes single row now */
+	}
+	.unitform, .skillsform, .miscform {
+		grid-template-rows: initial;
+		grid-auto-flow: row; /* Unit, Skills and Misc stop flowing in columns */
+	}
+}
+
+@media (min-resolution: 150dpi) and (max-aspect-ratio: 10/7), (orientation: portrait) {  /* Mobile/Portrait layouts */
+	.form {
+		height: auto;
+		width: 90vw;
+	}
+}
+
+/* Section grid items */
+.row-property {
+	display: grid;
+	column-gap: 1em;
+	grid-auto-flow: column;
+	grid-template-rows: 2em; /* All section grid items are 2em tall */
+}
+.row-property.single {
+	grid-template-columns: 2em minmax(0, 1fr); /* Grid items of two columns, imagelabel hardcoded to 2em and the input taking remaining space. */
+}
+.row-property.double {
+	grid-template-columns: repeat(2, 2em minmax(0, 1fr)); /* Grid items of four columns, 2ximagelabel hardcoded to 2em and the input dividing remaining space. */
+}
+.row-property.fat {
+	grid-template-rows: auto; /* Allow this grid section to grow it's height indefinetely */
+}
+.additionaloptions {
+	grid-template-columns: auto 1fr; /* Use for auto initial element + remaining space */
+}
+
+@media (min-resolution: 150dpi) and (max-aspect-ratio: 10/7), (orientation: portrait) { /* Mobile/Portrait layouts */
+	.additionaloptions {
+		grid-template-columns: 1fr 1fr; /* Make sure the download button looks good by using the same space */
+	}
+}
+
+/* Elements that are contained within grid items (labels, inputs, selects) */
+.checkboxes {
+	display: flex; /* Checkboxes is a just a container for a set of checks */
+	gap: 0.3em;
+	align-items: center;
+	justify-content: center;
+}
+input[type=checkbox] {
+	width: 18px;
+	height: 18px;
 }
 input[type=range] {
-	width: 6.45em;
-	flex: 1 0 auto;
+	margin: 0; /* Delete margins on range inputs to let them grow to the max of the grid item */
 }
 input[type=number] {
 	text-align: center;
@@ -111,37 +192,14 @@ input[type=number] {
 	background-color: #fff;
 	border: 1px solid #aaa;
 	font-weight: bold;
-	width: 6.45em;
-	height: 2em;
-	flex: 1 0 auto;
-	height: 2em;
 }
-input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-outer-spin-button {
-	opacity: 1;
-}
-*::-webkit-scrollbar {
-  display: none;
-}
-* {
-  scrollbar-width: none;
+input[type='number']::-webkit-inner-spin-button {
+	opacity: 1; /* Make sure number inputs have the clickable buttons on Chrome */
 }
 .imagelabel {
-	height: 2em;
-	width: 2em;
-}
-.basekit {
-	background-color: rgb(92, 180, 224);
-}
-input[type=checkbox] {
-	width: 18px; 
-	height: 18px;
-}
-h2 {
-	text-decoration: underline;
+	height: 2em; /* FIXME: Set image dimensions to prevent a grid blowout */
 }
 .select-without-search {
-	height: 2em;
-	font-family: inherit;
 	font-size: inherit;
 	background-color: white;
 	color: #444;
@@ -149,27 +207,25 @@ h2 {
 	border: 1px solid grey;
 	padding-left: 0.25em;
 }
+.actionbutton {
+	border: 0;
+	height: 100%; /* Required to set dimensions because we are not direct content of a grid item but below an <a>. FIXME: Better solution? */
+	width: 100%;
+	color: #fff;
+	background-color: #006bde;
+	border-radius: 0.2em;
+	padding: 0 1em 0 1em;
+	cursor: pointer;
+	font-size: inherit;
+}
 
-.links {
+/* Section titles (name and buttons) */
+.sectiontitle {
 	display: flex;
-	margin-top: auto;
-	margin-left: auto;
-	gap: 0.5em;
-	padding: 0 0 0.5em 0;
-}
-.links > * {
-	text-decoration: none;
-}
-
-.additionaloptions {
 	align-items: center;
-	justify-content: center;
-	display: flex;
 	gap: 1em;
-	height: 2em;
 }
-
-.button {
+.sectionbutton {
 	border: 0;
 	height: 40%;
 	font-weight: bold;
@@ -181,55 +237,40 @@ h2 {
 	cursor: pointer;
 }
 
-.sectiontitle {
-	display: flex;
-	column-count: 1;
-	align-items: center;
-	gap: 1em;
-}
-
-.downloadbutton {
-	border: 0;
-	height: 2.5em;
-	color: #fff;
-	background-color: #006bde;
-	border-radius: 0.2em;
-	padding: 0 1em 0 1em;
-	cursor: pointer;
-	font-size: 1em;
-}
-
-.imagelabel.selected {
-    background-color: white;
-}
-
+/* Legendaries/Buffs/Pairups section switcher (essentially a section title on steroids) */
 .tabs {
 	display: flex;
-	flex-wrap: wrap;
 	margin-top: 1em;
 	align-items: center;
 }
+.tabs > h2 {
+	margin-right: 0.5em;
+}
 .tabs > button {
-	margin-left: 1em;
+	margin-left: 0.5em;
 }
 .tabs > img {
 	padding: 0.5em;
 	border-bottom: 1px solid white;
 	cursor: pointer;
 }
-
-.select-without-search.single {
-	width: 100%;
-}
-.select-without-search.double {
-	width: 6.45em;
+.imagelabel.selected {
+    background-color: white; /* Exclusively used to indicate current section */
 }
 
-#usedallies {
-	margin-top: 0.5em;
-	column-count: 2;
+/* Relevant links (source code, discord, donations, homepage) */
+.links {
+	display: flex;
+	margin-top: auto;
+	margin-left: auto;
+	gap: 0.5em;
+	padding: 1em 0 0.5em 0;
+}
+.links > * {
+	text-decoration: none;
 }
 
+/* Rebspicker variables */
 #selectheroes, #weapon, #special, #assist, #Askill, #Bskill, #Cskill, #Sskill {
 	--collapsed-select-height: 1.8em;
 	--select-width: 100%;
@@ -251,51 +292,19 @@ h2 {
 	--disabled-background-color: #eee;
 }
 
-@media (max-aspect-ratio: 5/4) {
-	#usedallies {
-		column-count: 1;
-	}
-	.form > * {
-		column-count: 1;
-	}
-	.additionaloptions {
-		padding-bottom: 0.8em;
-	}
+/* Other fixes and workarounds */
+*::-webkit-scrollbar {
+  display: none;
 }
-@media (min-resolution: 150dpi) and (max-aspect-ratio: 10/5), (orientation: portrait) {
-	body {
-		height: auto;
-		overflow-y: initial;
-		width: 100vw;
-		background-size: auto;
-	}
-	.contenedor {
-		flex-direction: column;
-		gap: 0;
-	}
-	.unitpreview {
-		height: auto;
-		width: 90vw;
-	}
-	#fakecanvas {
-		width: 100%;
-		order: 1;
-	}
-	#unitslot {
-		order: 2;
-	}
-	.form {
-		height: auto;
-		width: 90vw;
-		row-gap: 0;
-	}
-	.form > * {
-		column-count: 1;
-	}
-	.additionaloptions {
-		padding-bottom: 1em;
-	}
-	.select-without-search.double {
-		width: 100%;
-	}
+* {
+  scrollbar-width: none; /* Hide all scrollbars to prevent them taking up space */
+}
+.unrendered {
+	display: none; /* Some items are never rendered at the beginning, if ever */
+}
+.basekit {
+	background-color: rgb(92, 180, 224); /* Used to color basekit skills in selects */
+}
+h2 {
+	text-decoration: underline; /* Add underline on all titles */
 }

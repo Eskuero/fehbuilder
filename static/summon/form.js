@@ -105,7 +105,7 @@ function populate(origin, data, clean = false, toberestored = []) {
 			options[tag]["keywords"] = other["duokeywords"][tag];
 		}
 	}
-	var select = new Rebspicker(origin, "multiple", options, [window], [form, window], toberestored);
+	var select = new Rebspicker(origin, "multiple", options, toberestored);
 	return select;
 }
 

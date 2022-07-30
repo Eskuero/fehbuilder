@@ -66,7 +66,7 @@ selectaddefgrowth = document.getElementById('defgrowth');
 selectadresgrowth = document.getElementById('resgrowth');
 // Where we show the image
 canvas = document.getElementById('canvas');
-usedallies = document.getElementById('usedallies');
+usedallies = document.getElementById('usedalliesform');
 
 // We store languages data for display of strings within the browser
 languages = {};
@@ -165,7 +165,7 @@ async function populate(domitem, data, clean, bypass = false) {
 			options[tag] = {"string": string};
 		}
 		// Generate the select
-		var select = new Rebspicker(domitem, "single", options, [window], [form, window]);
+		var select = new Rebspicker(domitem, "single", options);
 		// Restore the previous value if it's available on the updated select
 		if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
 			select.value = previousvalue;
@@ -213,7 +213,7 @@ async function populate(domitem, data, clean, bypass = false) {
 		options[tag] = {"string": string};
 	}
 	// Generate the select
-	var select = new Rebspicker(domitem, "single", options, [window], [form, window]);
+	var select = new Rebspicker(domitem, "single", options);
 	// Restore the previous value if it's available on the updated select
 	if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
 		select.value = previousvalue;
@@ -270,7 +270,7 @@ async function fillblessed() {
 			"keywords": languages[newlang][blessingsstrings[other["blessed"][tag]["blessing"]-1]]
 		};
 	}
-	selectallies = new Rebspicker(document.getElementById('allies'), "multiple", options, [window], [form, window], toberestored);
+	selectallies = new Rebspicker(document.getElementById('allies'), "multiple", options, toberestored);
 }
 
 function showallies() {
@@ -362,7 +362,7 @@ function swapskill(caller, target) {
 	var options = ["refine", "Askill", "Bskill", "Cskill", "Sskill"];
 	if (options.includes(target)) {
 		// Always first make sure the row is actually visible
-		document.getElementById("skill-icon").style.display = "flex";
+		document.getElementById("skill-icon").style.display = "grid";
 		// Now for each individual skill decide whether to show it or not
 		for (let i = 0; i < options.length; i++) {
 			if (options[i] == target) {
@@ -379,7 +379,7 @@ function swapskill(caller, target) {
 	var options = ["weapon", "assist", "special", "Askill", "Bskill", "Cskill", "Sskill"];
 	if (target != "refine") {
 		// Always first make sure the row is actually visible
-		document.getElementById("skill-name").style.display = "flex";
+		document.getElementById("skill-name").style.display = "grid";
 		// Now for each individual skill decide whether to show it or not
 		for (let i = 0; i < options.length; i++) {
 			if (options[i] == target) {
@@ -397,7 +397,7 @@ function swapskill(caller, target) {
 	var stats = ["hp", "atk", "spd", "def", "res"];
 	if (options.includes(target)) {
 		// Always first make sure the row is actually visible
-		document.getElementById("skill-stats").style.display = "flex";
+		document.getElementById("skill-stats").style.display = "grid";
 		// Now for each individual skill decide whether to show it or not
 		for (let i = 0; i < options.length; i++) {
 			if (options[i] == target) {
@@ -512,9 +512,9 @@ function filldefaults() {
 function changemode() {
 	if (statsmode.checked) {
 		document.getElementById("smallstats").style.display = "none";
-		document.getElementById("advancedstats").style.display = "flex";
+		document.getElementById("advancedstats").style.display = "grid";
 	} else {
-		document.getElementById("smallstats").style.display = "flex";
+		document.getElementById("smallstats").style.display = "grid";
 		document.getElementById("advancedstats").style.display = "none";
 	}
 }

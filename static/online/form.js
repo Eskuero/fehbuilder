@@ -49,7 +49,7 @@ cheats = document.getElementById('cheats');
 bestskills = document.getElementById('bestskills');
 appui = document.getElementById('appui');
 selecttemplate = document.getElementById('template');
-usedallies = document.getElementById('usedallies');
+usedallies = document.getElementById('usedalliesform');
 selectatkpairup = document.getElementById("atk-pairup");
 selectspdpairup = document.getElementById("spd-pairup");
 selectdefpairup = document.getElementById("def-pairup");
@@ -217,7 +217,7 @@ async function populate(domitem, data, clean, bypass) {
 			}
 		}
 		// Generate the select
-		var select = new Rebspicker(domitem, "single", options, [window], [form, window]);
+		var select = new Rebspicker(domitem, "single", options);
 		// Restore the previous value if it's available on the updated select
 		if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
 			select.value = previousvalue;
@@ -231,7 +231,7 @@ async function populate(domitem, data, clean, bypass) {
 		var basekit = units[selectheroes.value]["basekit"];
 	// If no hero is selected we have nothing to do
 	} else {
-		var select = new Rebspicker(domitem, "single", options, [window], [form, window]);
+		var select = new Rebspicker(domitem, "single", options);
 		return select;
 	}
 	// For disabled cheats we only add the options that match move/ type restrictions and exclusive skills
@@ -281,7 +281,7 @@ async function populate(domitem, data, clean, bypass) {
 		options[tag] = {"string": string, "class": basekit.includes(tag) ? "basekit" : false};
 	}
 	// Generate the select
-	var select = new Rebspicker(domitem, "single", options, [window], [form, window]);
+	var select = new Rebspicker(domitem, "single", options);
 	// Restore the previous value if it's available on the updated select
 	if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
 		select.value = previousvalue;
@@ -345,9 +345,9 @@ function swapstat(caller, target) {
 	}
 
 	// If switching from a differently built section use their entire name (for now only legendary boosts)
-	var options = ["buffs", "pairups", "legendaries"];
+	var options = ["buffsform", "pairupsform", "legendariesform"];
 	for (let i = 0; i < options.length; i++) {
-		document.getElementById(options[i]).style.display = (options[i] == target) ? "initial" : "none";
+		document.getElementById(options[i]).style.display = (options[i] == target) ? "grid" : "none";
 	}
 }
 
@@ -384,7 +384,7 @@ async function fillblessed(clean = false, toberestored = []) {
 			"keywords": languages[newlang][blessingsstrings[other["blessed"][tag]["blessing"]-1]]
 		};
 	}
-	selectallies = new Rebspicker(document.getElementById('allies'), "multiple", options, [window], [form, window], toberestored);
+	selectallies = new Rebspicker(document.getElementById('allies'), "multiple", options, toberestored);
 }
 
 function showallies(clean = false, allies = {}) {

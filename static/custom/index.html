@@ -20,22 +20,22 @@
 		<div class="contenedor">
 			<div class="unitpreview">
 				<img id="fakecanvas" src="/common/base/placeholder.webp" />
-				<canvas id="canvas" width="720" height="1280" alt="FEH Unit Builder" style="display:none"></canvas>
+				<canvas id="canvas" width="720" height="1280" alt="FEH Unit Builder" class="unrendered"></canvas>
 			</div>
 			<div class="form">
-				<div class="additionaloptions">
-					<a href="#" id="downloadlink"><button class="button">Download</button></a>
-					<div>
-						<label for="cheats">Cheats</label>
-						<input type="checkbox" class="checkbox-xl" id="cheats" onchange="populateall(false)">
+				<section class="headerform">
+					<div class="row-property additionaloptions">
+						<a id="downloadlink"><button class="actionbutton">Download</button></a>
+						<div class="checkboxes">
+							<label for="cheats">Cheats</label>
+							<input type="checkbox" id="cheats" onchange="populateall(false)">
+							<label for="bestskills">Best skills</label>
+							<input type="checkbox" id="bestskills" onchange="populateall(false)" checked>
+						</div>
 					</div>
-					<div>
-						<label for="bestskills">Best skills</label>
-						<input type="checkbox" class="checkbox-xl" id="bestskills" onchange="populateall(false)" checked>
-					</div>
-					<div style="display:flex;gap:1em">
+					<div class="row-property single">
 						<img class="imagelabel" src="/common/assets/language.webp" title="Language"/>
-						<select class="select-without-search" id="language" onchange="getlang();populateall(false);statictranslations();reload()">
+						<select class="select-without-search single" id="language" onchange="getlang(); populateall(false); statictranslations(); reload()">
 							<option value="USEN" selected>English (America)</option>
 							<option value="EUEN">English (UK)</option>
 							<option value="EUDE">Deutsch</option>
@@ -47,18 +47,18 @@
 							<option value="TWZH">繁體中文</option>
 							<option value="USPT">Português</option>
 						</select>
+						<button onclick="showhelp()" class="actionbutton">Help</button>
 					</div>
-					<button onclick="showhelp()" class="button">Help</button>
-				</div>
+				</section>
 				<h2>Unit</h2>
-				<section>
-					<div class="row-property">
+				<section class="unitform">
+					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/kiran.webp" title="Hero name"/>
 						<input type="text" id="hero" onchange="reload()" onkeyup="reload()" placeholder="Name">
 						<img class="imagelabel" src="/common/assets/divinecode.webp" title="Hero title"/>
 						<input type="text" id="title" onchange="reload()" onkeyup="reload()" placeholder="Title">
 					</div>
-					<div class="row-property">
+					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/resplendent.webp" title="Attire"/>
 						<select class="select-without-search" onchange="reload()" id="attire">
 							<option value="Normal">Normal</option>
@@ -74,7 +74,7 @@
 							<option value="S">S</option>
 						</select>
 					</div>
-					<div class="row-property">
+					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/beasts.webp" title="Beast transformation"/>
 						<select class="select-without-search" onchange="reload()" id="beast">
 							<option value="no">No</option>
@@ -86,7 +86,7 @@
 							<option value="yes">Yes</option>
 						</select>
 					</div>
-					<div class="row-property">
+					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/merges.webp" title="Merges"/>
 						<select class="select-without-search" onchange="reload()" id="merges">
 							<option value="0">0</option>
@@ -127,7 +127,7 @@
 							<option value="20">20</option>
 						</select>
 					</div>
-					<div class="row-property">
+					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/boon.webp" title="Boon"/>
 						<select class="select-without-search" onchange="reload()" id="boons">
 							<option value="None">-</option>
@@ -147,7 +147,7 @@
 							<option value="Res">Res</option>
 						</select>
 					</div>
-					<div class="row-property">
+					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/ascendent.webp" title="Ascendent Stat" />
 						<select class="select-without-search" onchange="reload()" id="ascendent">
 							<option value="None">-</option>
@@ -164,7 +164,7 @@
 							<option value="Resonance">Harmonic</option>
 						</select>
 					</div>
-					<div class="row-property">
+					<div class="row-property double">
 						<img class="imagelabel" src="/common/other/0-move.webp" id="moveicon" title="Move Type"/>
 						<select class="select-without-search" onchange="changetype(this);reload();populateall(false)" id="movetype">
 							<option value="0">Infantry</option>
@@ -200,8 +200,8 @@
 							<option value="23">Colorless Beast</option>
 						</select>
 					</div>
-					<div class="row-property" style="align-items:center">
-						<label style="width: 2em;">Base</label>
+					<div class="row-property single" style="align-items:center">
+						<label class="textlabel">Base</label>
 						<div id="selectheroes" onchange="filldefaults();populateall(true);reload()"></div>
 					</div>
 				</section>
@@ -215,9 +215,9 @@
 					<img class="imagelabel" onclick="swapskill(this,'Cskill')" src="/common/assets/skill-c.webp" title="C skill"/>
 					<img class="imagelabel" onclick="swapskill(this,'Sskill')" src="/common/assets/seal.webp" title="Seal"/>
 				</div>
-				<section>
-					<div class="row-property" style="align-items:center">
-						<label style="width: 2em;">Base</label>
+				<section class="skillsform">
+					<div class="row-property single">
+						<label class="textlabel">Base</label>
 						<div id="weapon" onchange="updatebases(this);updateRefine();reload()"></div>
 						<select class="select-without-search" onchange="updatebases(this);reload()" id="refine" style="display:none">
 							<option value="None">None</option>
@@ -229,16 +229,16 @@
 						<div onchange="updatebases(this);reload()" id="Cskill" style="display:none"></div>
 						<div onchange="updatebases(this);reload()" id="Sskill" style="display:none"></div>
 					</div>
-					<div id="skill-icon" style="display:none; align-items:center" class="row-property">
-						<label style="width: 2em;">Icon</label>
+					<div id="skill-icon" style="display:none" class="row-property single">
+						<label class="textlabel">Icon</label>
 						<input id="iconrefine" accept='image/*' onchange="reload()" type="file">
 						<input id="iconAskill" accept='image/*' onchange="reload()" type="file">
 						<input id="iconBskill" accept='image/*' onchange="reload()" type="file">
 						<input id="iconCskill" accept='image/*' onchange="reload()" type="file">
 						<input id="iconSskill" accept='image/*' onchange="reload()" type="file">
 					</div>
-					<div id="skill-name" class="row-property" style="align-items:center">
-						<label style="width: 2em;">Name</label>
+					<div id="skill-name" class="row-property single">
+						<label class="textlabel">Name</label>
 						<input type="text" id="nameweapon" onchange="reload()" onkeyup="reload()">
 						<input type="text" id="nameassist" style="display:none" onchange="reload()" onkeyup="reload()">
 						<input type="text" id="namespecial" style="display:none" onchange="reload()" onkeyup="reload()">
@@ -248,60 +248,60 @@
 						<input type="text" id="nameSskill" style="display:none" onchange="reload()" onkeyup="reload()">
 					</div>
 				</section>
-				<div id="skill-stats" class="listofstats" style="margin-top: 0.7em;">
-					<div>
-					<img class="imagelabel" src="/common/assets/HP.webp" title="HP Modifier"/>
-					<input type="number" id="hpweapon" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="hprefine" style="display:none" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="hpAskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="hpBskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="hpCskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="hpSskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+				<section id="skill-stats" class="listofstats" style="margin-top: 0.7em;">
+					<div class="row-property single">
+						<img class="imagelabel" src="/common/assets/HP.webp" title="HP Modifier"/>
+						<input type="number" id="hpweapon" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="hprefine" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="hpAskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="hpBskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="hpCskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="hpSskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 					</div>
 
-					<div>
-					<img class="imagelabel" src="/common/assets/Atk.webp" title="Atk Modifier"/>
-					<input type="number" id="atkweapon" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="atkrefine" style="display:none" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="atkAskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="atkBskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="atkCskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="atkSskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+					<div class="row-property single">
+						<img class="imagelabel" src="/common/assets/Atk.webp" title="Atk Modifier"/>
+						<input type="number" id="atkweapon" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="atkrefine" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="atkAskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="atkBskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="atkCskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="atkSskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 					</div>
 
-					<div>
-					<img class="imagelabel" src="/common/assets/Spd.webp" title="Spd"/>
-					<input type="number" id="spdweapon" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="spdrefine" style="display:none" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="spdAskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="spdBskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="spdCskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="spdSskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+					<div class="row-property single">
+						<img class="imagelabel" src="/common/assets/Spd.webp" title="Spd"/>
+						<input type="number" id="spdweapon" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="spdrefine" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="spdAskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="spdBskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="spdCskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="spdSskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 					</div>
 
-					<div>
-					<img class="imagelabel" src="/common/assets/Def.webp" title="Def Modifier"/>
-					<input type="number" id="defweapon" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="defrefine" style="display:none" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="defAskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="defBskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="defCskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="defSskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+					<div class="row-property single">
+						<img class="imagelabel" src="/common/assets/Def.webp" title="Def Modifier"/>
+						<input type="number" id="defweapon" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="defrefine" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="defAskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="defBskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="defCskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="defSskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 					</div>
 
-					<div>
-					<img class="imagelabel" src="/common/assets/Res.webp" title="Res Modifier"/>
-					<input type="number" id="resweapon" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="resrefine" style="display:none" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="resAskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="resBskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="resCskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
-					<input type="number" id="resSskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+					<div class="row-property single">
+						<img class="imagelabel" src="/common/assets/Res.webp" title="Res Modifier"/>
+						<input type="number" id="resweapon" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="resrefine" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="resAskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="resBskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="resCskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="resSskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 					</div>
-				</div>
+				</section>
 				<h2>Blessings</h2>
-				<section>
-					<div class="row-property">
+				<section class="blessingform">
+					<div class="row-property single">
 						<img class="imagelabel" src="/common/assets/blessings.webp" title="Blessings" />
 						<select class="select-without-search" id="blessing" onchange="reload()">
 							<option value="None">None</option>
@@ -398,94 +398,90 @@
 						</select>
 					</div>
 				</section>
-				<section style="column-count: 1">
-					<div class="row-property legendaries">
-						<div id="allies" multiple="multiple" onchange="showallies();reload()" style="width:100%;"></div>
+				<section id="legendariesform">
+					<div class="row-property fat">
+						<div id="allies" multiple="multiple" onchange="showallies();reload()"></div>
 					</div>
-					<section id="usedallies"></section>
+					<section id="usedalliesform"></section>
 				</section>
-				<div style="display:flex">
+				<div class="sectiontitle">
 					<h2>Stats</h2>
-					<div style="display:flex; gap: 0.5em; align-items: center; justify-content: center; margin: 0.7em 0 0.5em 2em;">
-						<input type="checkbox" id="advancedmode" onchange="changemode()" unchecked>
-						<label for="advancedmode">Advanced mode</label>
-					</div>
+					<input type="checkbox" id="advancedmode" onchange="changemode();reload()" unchecked>
+					<label for="advancedmode">Advanced mode</label>
 				</div>
-				<section style="columns: 1">
-					<div id="smallstats" class="listofstats">
-						<div>
-							<label for="hp"><img class="imagelabel" src="/common/assets/HP.webp" title="HP"/></label>
-							<input type="number" id="hp" onchange="reload()" min="-99" max="99" value="0">
-						</div>
-						<div>
-							<label for="atk"><img class="imagelabel" src="/common/assets/Atk.webp" title="Atk"/></label>
-							<input type="number" id="atk" onchange="reload()" min="-99" max="99" value="0">
-						</div>
-						<div>
-							<label for="spd"><img class="imagelabel" src="/common/assets/Spd.webp" title="Spd"/></label>
-							<input type="number" id="spd" onchange="reload()" min="-99" max="99" value="0">
-						</div>
-						<div>
-							<label for="def"><img class="imagelabel" src="/common/assets/Def.webp" title="Def"/></label>
-							<input type="number" id="def" onchange="reload()" min="-99" max="99" value="0">
-						</div>
-						<div>
-							<label for="res"><img class="imagelabel" src="/common/assets/Res.webp" title="Res"/></label>
-							<input type="number" id="res" onchange="reload()" min="-99" max="99" value="0">
-						</div>
+				<section id="smallstats" class="listofstats">
+					<div class="row-property single">
+						<label for="hp"><img class="imagelabel" src="/common/assets/HP.webp" title="HP"/></label>
+						<input type="number" id="hp" onchange="reload()" min="-99" max="99" value="0">
 					</div>
-					<div id="advancedstats" class="listofstats">
-						<div>
-							<img class="imagelabel" src="/common/base/oopsie.webp"/>
-							<label style="line-height: 2em;">Level 1:</label>
-							<label style="line-height: 2em;">Growth %:</label>
-						</div>
-						<div>
-							<img class="imagelabel" src="/common/assets/HP.webp" title="HP"/>
-							<input type="number" id="hp1" onchange="reload()" min="0" max="99" value="18">
-							<input type="number" id="hpgrowth" onchange="reload()" min="25" max="85" value="45" step="5">
-						</div>
-						<div>
-							<img class="imagelabel" src="/common/assets/Atk.webp" title="Atk"/>
-							<input type="number" id="atk1" onchange="reload()" min="0" max="99" value="7">
-							<input type="number" id="atkgrowth" onchange="reload()" min="25" max="85" value="50" step="5">
-						</div>
-						<div>
-							<img class="imagelabel" src="/common/assets/Spd.webp" title="Spd"/>
-							<input type="number" id="spd1" onchange="reload()" min="0" max="99" value="8">
-							<input type="number" id="spdgrowth" onchange="reload()" min="25" max="85" value="60" step="5">
-						</div>
-						<div>
-							<img class="imagelabel" src="/common/assets/Def.webp" title="Def"/>
-							<input type="number" id="def1" onchange="reload()" min="0" max="99" value="6">
-							<input type="number" id="defgrowth" onchange="reload()" min="25" max="85" value="35" step="5">
-						</div>
-						<div>
-							<img class="imagelabel" src="/common/assets/Res.webp" title="Res"/>
-							<input type="number" id="res1" onchange="reload()" min="0" max="99" value="5">
-							<input type="number" id="resgrowth" onchange="reload()" min="25" max="85" value="50" step="5">
-						</div>
+					<div class="row-property single">
+						<label for="atk"><img class="imagelabel" src="/common/assets/Atk.webp" title="Atk"/></label>
+						<input type="number" id="atk" onchange="reload()" min="-99" max="99" value="0">
+					</div>
+					<div class="row-property single">
+						<label for="spd"><img class="imagelabel" src="/common/assets/Spd.webp" title="Spd"/></label>
+						<input type="number" id="spd" onchange="reload()" min="-99" max="99" value="0">
+					</div>
+					<div class="row-property single">
+						<label for="def"><img class="imagelabel" src="/common/assets/Def.webp" title="Def"/></label>
+						<input type="number" id="def" onchange="reload()" min="-99" max="99" value="0">
+					</div>
+					<div class="row-property single">
+						<label for="res"><img class="imagelabel" src="/common/assets/Res.webp" title="Res"/></label>
+						<input type="number" id="res" onchange="reload()" min="-99" max="99" value="0">
+					</div>
+				</section>
+				<section id="advancedstats" class="listofstats advanced">
+					<div class="row-property stacked">
+						<img class="imagelabel" src="/common/base/oopsie.webp"/>
+						<label class="textlabel">Level 1:</label>
+						<label class="textlabel">Growth %:</label>
+					</div>
+					<div class="row-property stacked">
+						<img class="imagelabel" src="/common/assets/HP.webp" title="HP"/>
+						<input type="number" id="hp1" onchange="reload()" min="0" max="99" value="18">
+						<input type="number" id="hpgrowth" onchange="reload()" min="25" max="85" value="45" step="5">
+					</div>
+					<div class="row-property stacked">
+						<img class="imagelabel" src="/common/assets/Atk.webp" title="Atk"/>
+						<input type="number" id="atk1" onchange="reload()" min="0" max="99" value="7">
+						<input type="number" id="atkgrowth" onchange="reload()" min="25" max="85" value="50" step="5">
+					</div>
+					<div class="row-property stacked">
+						<img class="imagelabel" src="/common/assets/Spd.webp" title="Spd"/>
+						<input type="number" id="spd1" onchange="reload()" min="0" max="99" value="8">
+						<input type="number" id="spdgrowth" onchange="reload()" min="25" max="85" value="60" step="5">
+					</div>
+					<div class="row-property stacked">
+						<img class="imagelabel" src="/common/assets/Def.webp" title="Def"/>
+						<input type="number" id="def1" onchange="reload()" min="0" max="99" value="6">
+						<input type="number" id="defgrowth" onchange="reload()" min="25" max="85" value="35" step="5">
+					</div>
+					<div class="row-property stacked">
+						<img class="imagelabel" src="/common/assets/Res.webp" title="Res"/>
+						<input type="number" id="res1" onchange="reload()" min="0" max="99" value="5">
+						<input type="number" id="resgrowth" onchange="reload()" min="25" max="85" value="50" step="5">
 					</div>
 				</section>
 				<h2>Miscellaneous</h2>
-				<section>
-					<div class="row-property">
+				<section class="miscform">
+					<div class="row-property double">
 						<label for="sp"><img class="imagelabel" src="/common/assets/sp.webp" title="Skill Points"/></label>
 						<input type="number" onchange="reload()" id="sp" min="0" max="9999" value="9999">
 						<label for="hm"><img class="imagelabel" src="/common/assets/hm.webp" title="Hero Merit"/></label>
 						<input type="number" onchange="reload()" id="hm" min="0" max="8000" value="8000">
 					</div>
-					<div class="row-property">
+					<div class="row-property single">
 						<label for="art"><img class="imagelabel" src="/common/assets/brush.webp" title="Art Style"/></label>
 						<input id="art" accept='image/*' onchange="reload()" type="file">
 					</div>
-					<div class="row-property">
+					<div class="row-property double">
 						<label for="offsetY"><img class="imagelabel" src="/common/assets/up.webp" title="Offset in Y"/></label>
 						<input id="offsetY" onchange="reload()" type="range" min="-1280" max="1280" value="0">
 						<label for="offsetX"><img class="imagelabel" src="/common/assets/right.webp" title="Offset in X"/></label>
 						<input id="offsetX" onchange="reload()" type="range" min="-720" max="720" value="0">
 					</div>
-					<div class="row-property">
+					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/mirror.webp" title="Art Mirroring"/>
 						<select class="select-without-search" id="mirror" onchange="reload()">
 							<option value="None">None</option>
@@ -500,11 +496,11 @@
 							<option value="beach">Beach</option>
 						</select>
 					</div>
-					<div class="row-property">
+					<div class="row-property single">
 						<label for="expand"><img class="imagelabel" src="/common/assets/expand.webp" title="Expand/Reduce image"/></label>
 						<input id="expand" onchange="reload()" type="range" min="10" max="200" value="100">
 					</div>
-					<div class="row-property">
+					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/favorite.webp" title="Favorite Mark"/>
 						<select class="select-without-search" id="favorite" onchange="reload()">
 							<option value="0">0</option>
@@ -526,13 +522,13 @@
 							<option value="Tiara">Tiara</option>
 						</select>
 					</div>
-					<div class="row-property" style="align-items:center">
+					<div class="row-property double" style="align-items:center">
 						<label style="width: 2em;" for="artist">Artist</label>
 						<input type="text" id="artist" onchange="reload()" onkeyup="reload()">
 						<label style="width: 2em;" for="actor">Actor</label>
 						<input type="text" id="actor" onchange="reload()" onkeyup="reload()">
 					</div>
-					<div class="row-property" style="align-items: center; justify-content: center; margin-top:0.5em">
+					<div class="checkboxes">
 						<label for="appui">App UI</label>
 						<input type="checkbox" id="appui" onchange="reload()" checked>
 					</div>
