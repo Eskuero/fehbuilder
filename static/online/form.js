@@ -61,11 +61,11 @@ languages = {};
 buildslot = 0;
 	// Initial data for each build slot
 	builds = [
-		["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","1","None", true],
-		["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","1","None", true],
-		["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","1","None", true],
-		["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","1","None", true],
-		["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","1","None", true]
+		["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","base","1","None", true],
+		["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","base","1","None", true],
+		["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","base","1","None", true],
+		["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","base","1","None", true],
+		["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","base","1","None", true]
 	];
 
 // Fetch all data from each json
@@ -140,7 +140,7 @@ async function init() {
 	//memedraw();
 
 	// List of values to be restored on each slot
-	selects = [selectrarity, selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials, selectassists, selectA, selectB, selectC, selectS, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef, selectres, selectatkpairup, selectspdpairup, selectdefpairup, selectrespairup, selectsp, selecthm, selectartstyle, selecttemplate, selectoffsetY, selectoffsetX, selectmirror, selectfavorite, selectaccessory, appui];
+	selects = [selectrarity, selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials, selectassists, selectA, selectB, selectC, selectS, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef, selectres, selectatkpairup, selectspdpairup, selectdefpairup, selectrespairup, selectsp, selecthm, selectartstyle, selecttemplate, selectoffsetY, selectoffsetX, selectmirror, selectbackground, selectfavorite, selectaccessory, appui];
 }
 
 async function reload(scroll = false) {
