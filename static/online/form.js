@@ -457,7 +457,7 @@ function updatedragonflowers() {
 	}
 }
 
-function switchbuild(build) {
+async function switchbuild(build) {
 	// First save changes to current slot (heroes, cheats, language, maxskill, weapons and blessings are to be done first because they affect the content of other selects)
 	builds[buildslot][0] = selectheroes.value;
 	builds[buildslot][1] = cheats.checked;
@@ -494,7 +494,7 @@ function switchbuild(build) {
 	bestskills.checked = builds[buildslot][2];
 	selectlanguage.value = builds[buildslot][3];
 	// Trigger a rebuild of the selects based on the language filters set
-	populateall(false); statictranslations();
+	await populateall(false); statictranslations();
 	// Trigger a rebuild of the refine select based on the selection of weapon
 	selectweapons.value = builds[buildslot][4];
 	updateRefine();
