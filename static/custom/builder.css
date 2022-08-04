@@ -26,11 +26,15 @@ body {
 .unitpreview {
 	display: flex;
 	flex-direction: column;
-	width: calc(100vh * 0.5625); /* Width must be a proportional value of total height minus build slots */
+}
+#fakecanvas {
+	width: auto;
+	height: 100vh;
 }
 
 @media (min-resolution: 150dpi) and (max-aspect-ratio: 10/7), (orientation: portrait) { /* Mobile/Portrait layouts */
-	.unitpreview {
+	#fakecanvas {
+		height: auto;
 		width: 90vw; /* Leave some borders around the preview */
 	}
 }

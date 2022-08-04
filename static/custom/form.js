@@ -64,8 +64,10 @@ selectadatkgrowth = document.getElementById('atkgrowth');
 selectadspdgrowth = document.getElementById('spdgrowth');
 selectaddefgrowth = document.getElementById('defgrowth');
 selectadresgrowth = document.getElementById('resgrowth');
-// Where we show the image
+// Where we render the image
 canvas = document.getElementById('canvas');
+// Where we show the image
+fakecanvas = document.getElementById('fakecanvas');
 usedallies = document.getElementById('usedalliesform');
 
 // We store languages data for display of strings within the browser

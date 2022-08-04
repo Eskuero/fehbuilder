@@ -13,8 +13,10 @@
 
 // Dicts for info
 var units, skills, other, languages;
-// Where we show the image
+// Where we render the image
 canvas = document.getElementById('canvas');
+// Where we show the image
+fakecanvas = document.getElementById('fakecanvas');
 // The whole form since is a rebspicker listeners
 form = document.getElementsByClassName("form")[0];
 // All selects we have available
@@ -162,6 +164,7 @@ async function reload(scroll = false) {
 	switch (selecttemplate.value) {
 		case "MyUnit":
 			canvas.width = "720"; canvas.height = "1280";
+			fakecanvas.width = "720"; fakecanvas.height = "1280";
 			var renderjob = myunit();
 			break;
 		case "Condensed":
@@ -170,10 +173,12 @@ async function reload(scroll = false) {
 				hpfont = img;
 			});
 			canvas.width = "720"; canvas.height = "202";
+			fakecanvas.width = "720"; fakecanvas.height = "202";
 			var renderjob = condensed();
 			break;
 		case "Echoes":
 			canvas.width = "720"; canvas.height = "540";
+			fakecanvas.width = "720"; fakecanvas.height = "540";
 			var renderjob = echoes();
 			break;
 	}

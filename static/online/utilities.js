@@ -181,7 +181,7 @@ function setupdownload() {
 	// Convert canvas to a data url
 	var url = canvas.toDataURL("image/png");
 	// Update the image element
-	document.getElementById("fakecanvas").src = url;
+	fakecanvas.src = url;
 	document.getElementById("downloadlink").href = url;
 	document.getElementById("downloadlink").download = "FeH Unit builder - " + truename;
 }

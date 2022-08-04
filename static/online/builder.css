@@ -26,7 +26,10 @@ body {
 .unitpreview {
 	display: flex;
 	flex-direction: column;
+}
+#fakecanvas {
 	width: calc((100vh - 2.5em) * 0.5625); /* Width must be a proportional value of total height minus build slots */
+	height: auto;
 }
 #unitslot {
 	height: 2.5em;
@@ -86,8 +89,9 @@ body {
 }
 
 @media (min-resolution: 150dpi) and (max-aspect-ratio: 10/7), (orientation: portrait) { /* Mobile/Portrait layouts */
-	.unitpreview {
-		width: 90vw; /* Leave some borders around the preview */
+	#fakecanvas {
+		width: 90vw; /* Width must be a proportional value of total height minus build slots */
+		height: auto;
 	}
 	#unitslot {
 		order: 2; /* Render the build slows below */
