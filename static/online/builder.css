@@ -281,7 +281,7 @@ input[type='number']::-webkit-inner-spin-button {
 
 /* Rebspicker variables */
 #selectheroes, #weapon, #special, #assist, #Askill, #Bskill, #Cskill, #Sskill {
-	--collapsed-select-height: 1.8em;
+	--collapsed-select-height: 1.9em;
 	--select-width: 100%;
 	--list-item-max: 6;
 	--list-item-height: 2em;
