@@ -76,6 +76,10 @@ class Rebspicker {
 				}
 			}
 		}.bind(this));
+		// When we blur out of input with a new value, a change event is triggered, bubbling to the select, with undesired behaviour.
+		realinput.addEventListener("change", function() {
+			event.stopPropagation();
+		}.bind(this));
 		input.appendChild(realinput);
 		this.dropdown.appendChild(input);
 

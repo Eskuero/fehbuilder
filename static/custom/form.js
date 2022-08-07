@@ -121,7 +121,7 @@ async function init() {
 }
 
 async function populateall(clean, bypass = false) {
-	// We go through all the selects
+	// We go through all the selects except if we are calling from selectheroes since it's overkill
 	if (!bypass) {
 		selectbasehero = await populate(document.getElementById('selectheroes'), units, true, true);
 	}

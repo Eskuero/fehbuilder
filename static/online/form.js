@@ -101,7 +101,7 @@ fetch('/common/data/languages/fulllanguages-' + selectlanguage.value + '.json')
 }).catch(err => console.error(err));
 
 async function populateall(clean, bypass = false) {
-	// We go through all the selects
+	// We go through all the selects except if we are calling from selectheroes since it's overkill
 	if (!bypass) {
 		selectheroes = await populate(document.getElementById('selectheroes'), units, true, true);
 	}
