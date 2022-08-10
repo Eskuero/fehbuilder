@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			@media (resolution: 128dpi) {
+				body:before {
+					content: "yeah";
+				}
+			}
+			/*html[data-useragent*='Android'] body {
+				background-color: red;
+			}*/
+			@media (orientation: portrait) {
+				#orientation:after {
+					content: "portrait";
+				}
+			}
+			@media (orientation: landscape) {
+				#orientation:after {
+					content: "landscape";
+				}
+			}
+			#cientosieteratio:after {
+				content: "Bigger";
+			}
+			@media (max-aspect-ratio: 10/7) {
+				#cientosieteratio:after {
+					content: "Smaller";
+				}
+			}
+			#conclusion:after {
+				content: "Landscape";
+			}
+			@media (min-resolution: 150dpi) and (max-aspect-ratio: 10/7), (orientation: portrait) {
+				#conclusion:after {
+					content: "Portrait";
+				}
+			}
+		</style>
+		<script>
+			var b = document.documentElement;
+			b.setAttribute('data-useragent',  navigator.userAgent);
+			b.setAttribute('data-platform', navigator.platform );
+			
+			window.onload = info;
+			window.onresize = info;
+
+			function info() {
+				document.getElementById("pixelratio").innerHTML = window.devicePixelRatio;
+				document.getElementById("viewportdensity").innerHTML = window.devicePixelRatio * 96;
+				document.getElementById("viewportwidth").innerHTML = window.innerWidth;
+				document.getElementById("useragent").innerHTML = navigator.userAgent;
+			}
+		</script>
+	</head>
+	<body>
+		<ul>User Agent: <span id="useragent"></span></ul>
+		<ul>Pixel Ratio: <span id="pixelratio"></span></ul>
+		<ul>Viewport Width: <span id="viewportwidth"></span></ul>
+		<ul>Viewport Density: <span id="viewportdensity"></span></ul>
+		<ul>Orientation: <span id="orientation"></span></ul>
+		<ul>10/7 ratio: <span id="cientosieteratio"></span></ul>
+		<ul>Final layout: <span id="conclusion"></span></ul>
+		<ul><input type="text" value="text box"></ul>
+	</body>
+</html>
