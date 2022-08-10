@@ -64,6 +64,7 @@ icons = {
 	"maps-grey-why-wall": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/97/Wall_inside_SW_1.png?120?120",
 	"maps-grey-l-wall": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/7/7f/Wall_inside_NE_1.png?120?120",
 	"maps-grey-pillar-wall": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/8a/Wall_inside_Pillar_U.png?120?120",
+	"maps-grey-pillar-crumbled-wall": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/e/ec/Wall_inside_Pillar_2.png?120?120",
 	# AR-D structures
 	"maps-bolttower": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/dc/Structure_Bolt_Tower.png?245?248",
 	"maps-catapult": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/0e/Structure_Catapult.png?252?264",
