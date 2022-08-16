@@ -440,8 +440,8 @@ function showallies(clean = false, allies = {}) {
 function updatedragonflowers() {
 	// Get current value to restore it back if possible
 	var previousvalue = selectflowers.value;
-	// Default for cheating mode is 15
-	var flowers = 20;
+	// Default for cheating mode is 25
+	var flowers = 25;
 	// First delete them all except the 0 element
 	while (selectflowers.lastChild && selectflowers.childElementCount > 1) {
 		selectflowers.removeChild(selectflowers.lastChild);
