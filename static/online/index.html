@@ -31,13 +31,13 @@
 					<button onclick="switchbuild(3)">#4</button>
 					<button onclick="switchbuild(4)">#5</button>
 				</div>
-				<img id="fakecanvas" height="1280" width="720" src="/common/base/placeholder.webp" />
-				<canvas id="canvas" alt="FEH Unit Builder" class="unrendered"></canvas>
+				<img id="fakecanvas" height="1280" width="720" alt="FEH Unit Builder" src="/common/base/placeholder.webp" />
+				<canvas id="canvas" class="unrendered"></canvas>
 			</div>
 			<div class="form">
-				<section class="headerform">
+				<div class="section headerform">
 					<div class="row-property additionaloptions">
-						<a id="downloadlink"><button class="actionbutton">Download</button></a>
+						<a id="downloadlink"><div class="actionbutton">Download</div></a>
 						<div class="checkboxes">
 							<label for="cheats">Cheats</label>
 							<input type="checkbox" id="cheats" onchange="populateall(false)">
@@ -61,13 +61,13 @@
 						</select>
 						<button class="actionbutton" onclick="openclosebarracks('open')">Barracks</button>
 					</div>
-				</section>
+				</div>
 				<div class="sectiontitle">
 					<h2>Unit</h2>
 					<button onclick="maximize()" class="sectionbutton">Maximize</button>
 					<button onclick="reset('unit')" class="sectionbutton">Reset</button>
 				</div>
-				<section class="unitform">
+				<div class="section unitform">
 					<div class="row-property single">
 						<img class="imagelabel" src="/common/assets/kiran.webp" title="Hero"/>
 						<div id="selectheroes" onchange="populateall(true, true);slotname();reload()"></div>
@@ -121,7 +121,7 @@
 						</select>
 						<img class="imagelabel" src="/common/assets/flower.webp" title="Dragoflowers"/>
 						<select class="select-without-search double" onchange="reload()" id="flowers">
-							<option value="0">0</value>
+							<option value="0">0</option>
 						</select>
 					</div>
 					<div class="row-property double">
@@ -174,13 +174,13 @@
 							<option value="8">Anima</option>
 						</select>
 					</div>
-				</section>
+				</div>
 				<div class="sectiontitle">
 					<h2>Skills</h2>
 					<button onclick="applybasekit()" class="sectionbutton">Basekit</button>
 					<button onclick="reset('skills')" class="sectionbutton">Reset</button>
 				</div>
-				<section class="skillsform">
+				<div class="section skillsform">
 					<div class="row-property single">
 						<img class="imagelabel" src="/common/assets/weapon.webp" title="Weapon"/>
 						<div id="weapon" onchange="updateRefine();reload()"></div>
@@ -215,7 +215,7 @@
 						<img class="imagelabel" src="/common/assets/seal.webp" title="Seal"/>
 						<div onchange="reload()" id="Sskill"></div>
 					</div>
-				</section>
+				</div>
 				<div class="tabs">
 					<h2>Stats</h2>
 					<img class="imagelabel selected" onclick="swapstat(this,'legendariesform')" src="/common/assets/blessings.webp" title="Blessings"/>
@@ -223,13 +223,13 @@
 					<img class="imagelabel" onclick="swapstat(this,'pairupsform')" src="/common/assets/pairup.webp" title="Pair-Up"/>
 					<button onclick="reset('stats')" class="sectionbutton">Reset</button>
 				</div>
-				<section id="legendariesform">
+				<div class="section" id="legendariesform">
 					<div class="row-property fat">
-						<div id="allies" multiple="multiple" onchange="showallies();reload()"></div>
+						<div id="allies" onchange="showallies();reload()"></div>
 					</div>
-					<section id="usedalliesform"></section>
-				</section>
-				<section id="buffsform" class="unrendered">
+					<div class="section" id="usedalliesform"></div>
+				</div>
+				<div class="section unrendered" id="buffsform">
 					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/Atk.webp" title="Atk Buff"/>
 						<input type="number" id="atk" onchange="reload()" min="-99" max="99" value="0">
@@ -242,8 +242,8 @@
 						<img class="imagelabel" src="/common/assets/Res.webp" title="Res Buff"/>
 						<input type="number" id="res" onchange="reload()" min="-99" max="99" value="0">
 					</div>
-				</section>
-				<section id="pairupsform" class="unrendered">
+				</div>
+				<div class="section unrendered" id="pairupsform" >
 					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/Atk.webp" title="Atk Buff"/>
 						<input type="number" id="atk-pairup" onchange="reload()" min="0" max="4" value="0">
@@ -256,12 +256,12 @@
 						<img class="imagelabel" src="/common/assets/Res.webp" title="Res Buff"/>
 						<input type="number" id="res-pairup" onchange="reload()" min="0" max="4" value="0">
 					</div>
-				</section>
+				</div>
 				<div class="sectiontitle">
 					<h2>Miscellaneous</h2>
 					<button onclick="reset('misc')" class="sectionbutton">Reset</button>
 				</div>
-				<section class="miscform">
+				<div class="section miscform">
 					<div class="row-property double">
 						<label for="sp"><img class="imagelabel" src="/common/assets/sp.webp" title="Skill Points"/></label>
 						<input type="number" onchange="reload()" id="sp" min="0" max="9999" value="9999">
@@ -330,7 +330,7 @@
 						<label for="appui">App UI</label>
 						<input type="checkbox" id="appui" onchange="reload()" checked>
 					</div>
-				</section>
+				</div>
 				<div class="links">
 					<a href="/">
 						<img class="imagelabel" src="/common/assets/home.webp" title="Homepage"/>
@@ -350,18 +350,18 @@
 		<div id="barracksdialog">
 			<div class="dialogform">
 				<div class="cerrar" onclick="openclosebarracks('close')" ></div>
-				<section class="actionsform">
+				<div class="section actionsform">
 					<button class="actionbutton" onclick="loadbuild()">Load</button>
 					<button class="actionbutton" onclick="savebuild()">Save</button>
 					<button class="actionbutton" onclick="removebuild()">Remove</button>
 					<button class="actionbutton" onclick="savebuild('overwrite')">Overwrite</button>
-				</section>
+				</div>
 				<div class="row-property single">
-					<label class="textlabel"/>Build:</label>
+					<label class="textlabel">Build:</label>
 					<div id="selectbuild" onchange="showbuild()"></div>
 				</div>
 				<h2>Unit</h2>
-				<section class="build">
+				<div class="section build">
 					<div class="row-property single">
 						<img class="imagelabel" src="/common/assets/kiran.webp" title="Hero"/>
 						<div class="textlabel" id="buildhero">-</div>
@@ -390,9 +390,9 @@
 						<img class="imagelabel" src="/common/assets/blessings.webp" title="Blessing"/>
 						<div class="textlabel" id="buildblessing">-</div>
 					</div>
-				</section>
+				</div>
 				<h2>Skills</h2>
-				<section class="build">
+				<div class="section build">
 					<div class="row-property single">
 						<img class="imagelabel" src="/common/assets/weapon.webp" title="Weapon"/>
 						<div class="textlabel" id="buildweapon">-</div>
@@ -425,7 +425,7 @@
 						<img class="imagelabel" src="/common/assets/seal.webp" title="S skill"/>
 						<div class="textlabel" id="buildS">-</div>
 					</div>
-				</section>
+				</div>
 				<div style="margin-top: 1em">This data is a preview, but other info like mythic allies, background, art position, etc... is also saved.</div>
 			</div>
 		</div>

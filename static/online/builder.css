@@ -111,7 +111,7 @@ body {
 	padding: 1em 1.5em 0 1.5em;
 	box-sizing: border-box;
 }
-section {
+.section {
 	display: grid; /* All sections are grids */
 	gap: 0.5em 1em;
 }
@@ -167,7 +167,7 @@ section {
 	grid-template-rows: auto; /* Allow this grid section to grow it's height indefinetely */
 }
 .additionaloptions {
-	grid-template-columns: auto 1fr; /* Use for auto initial element + remaining space */
+	grid-template-columns: 1fr 2fr; /* Use a bit more of space for the checkboxes */
 }
 
 @media (min-resolution: 150dpi) and (max-aspect-ratio: 10/7), (orientation: portrait) { /* Mobile/Portrait layouts */
@@ -219,13 +219,15 @@ input[type='number']::-webkit-inner-spin-button {
 .actionbutton {
 	border: 0;
 	height: 100%; /* Required to set dimensions because we are not direct content of a grid item but below an <a>. FIXME: Better solution? */
-	width: 100%;
 	color: #fff;
 	background-color: #006bde;
 	border-radius: 0.2em;
 	padding: 0 1em 0 1em;
 	cursor: pointer;
 	font-size: inherit;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /* Section titles (name and buttons) */
