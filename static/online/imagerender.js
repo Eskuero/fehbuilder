@@ -268,7 +268,7 @@ async function echoes() {
 	if (blessing) {
 		// If the hero is on the list of the blessed ones for that particular blessing it has icon variant defined (otherwise use the normal one)
 		var variant = other["blessed"][hero] ? other["blessed"][hero]["variant"] : false;
-		var blessingicon = "/common/other/" + blessing + "-Blessing" + (variant ? "-" + variant : "") + ".webp";
+		var blessingicon = "/common/other/" + (other["blessed"][hero] ? other["blessed"][hero]["blessing"] : blessing) + "-Blessing" + (variant ? "-" + variant : "") + ".webp";
 		await getimage(blessingicon).then(img => {
 			preview.drawImage(img, posX, posY, width, height);
 		});
@@ -525,7 +525,7 @@ async function condensed() {
 	} else if (blessing) {
 		// If the hero is on the list of the blessed ones for that particular blessing it has icon variant defined (otherwise use the normal one)
 		var variant = other["blessed"][hero] ? other["blessed"][hero]["variant"] : false;
-		var blessingicon = "/common/other/" + blessing + "-Blessing" + (variant ? "-" + variant : "") + "-mini.webp";
+		var blessingicon = "/common/other/" + (other["blessed"][hero] ? other["blessed"][hero]["blessing"] : blessing) + "-Blessing" + (variant ? "-" + variant : "") + "-mini.webp";
 		if (!variant) {
 			var posX = 104; var posY = 140;
 		} else {
@@ -867,7 +867,7 @@ async function myunit() {
 	if (blessing) {
 		// If the hero is on the list of the blessed ones for that particular blessing it has icon variant defined (otherwise use the normal one)
 		var variant = other["blessed"][hero] ? other["blessed"][hero]["variant"] : false;
-		var blessingicon = "/common/other/" + blessing + "-Blessing" + (variant ? "-" + variant : "") + ".webp";
+		var blessingicon = "/common/other/" + (other["blessed"][hero] ? other["blessed"][hero]["blessing"] : blessing) + "-Blessing" + (variant ? "-" + variant : "") + ".webp";
 		await getimage(blessingicon).then(img => {
 			preview.drawImage(img, posX, posY, width, height);
 		});
