@@ -11,95 +11,6 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-// Dicts for info
-var units, skills, other, languages;
-// Where we render the image
-canvas = document.getElementById('canvas');
-// Where we show the image
-fakecanvas = document.getElementById('fakecanvas');
-// The whole form since is a rebspicker listeners
-form = document.getElementsByClassName("form")[0];
-// All selects we have available
-selectrarity = document.getElementById('rarity');
-selectmerges = document.getElementById('merges');
-selectflowers = document.getElementById('flowers');
-selectboons = document.getElementById('boons');
-selectbanes = document.getElementById('banes');
-selectascendent = document.getElementById('ascendent');
-selectbeast = document.getElementById('beast');
-selectrefines = document.getElementById('refine');
-selectblessings = document.getElementById('blessing');
-selectsummoner = document.getElementById('summoner');
-selectattire = document.getElementById('attire');
-selectbonusunit = document.getElementById('bonusunit');
-selectallies = document.getElementById('allies');
-selectatk = document.getElementById('atk');
-selectspd = document.getElementById('spd');
-selectdef = document.getElementById('def');
-selectres = document.getElementById('res');
-selectsp = document.getElementById('sp');
-selecthm = document.getElementById('hm');
-selectartstyle = document.getElementById('artstyle');
-selectoffsetY = document.getElementById('offsetY');
-selectoffsetX = document.getElementById('offsetX');
-selectmirror = document.getElementById('mirror');
-selectbackground = document.getElementById('background');
-selectfavorite = document.getElementById('favorite');
-selectaccessory = document.getElementById('accessory');
-selectlanguage = document.getElementById('language');
-cheats = document.getElementById('cheats');
-bestskills = document.getElementById('bestskills');
-appui = document.getElementById('appui');
-selecttemplate = document.getElementById('template');
-usedallies = document.getElementById('usedalliesform');
-selectatkpairup = document.getElementById("atk-pairup");
-selectspdpairup = document.getElementById("spd-pairup");
-selectdefpairup = document.getElementById("def-pairup");
-selectrespairup = document.getElementById("res-pairup");
-
-// We store languages data for display of strings within the browser
-languages = {};
-// Which builder slot is active right now
-buildslot = 0;
-	// Initial data for each build slot
-	builds = [
-		["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","base","1","None", true],
-		["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","base","1","None", true],
-		["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","base","1","None", true],
-		["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","base","1","None", true],
-		["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","base","1","None", true]
-	];
-
-// Fetch all data from each json
-fetch('/common/data/languages/fulllanguages-' + selectlanguage.value + '.json')
-	.then(res => res.json())
-	.then((out) => {
-		// We store languages data for display of strings within the browser
-		languages[selectlanguage.value] = out;
-		// We can download the rest of the data now that lenguages are available
-		fetch('/common/data/content/fullunits.json')
-			.then(res => res.json())
-			.then((out) => {
-				// We store the heroes for basic checks within the browser
-				units = out;
-				fetch('/common/data/content/fullskills.json')
-					.then(res => res.json())
-					.then((out) => {
-						// We store the skills for basic checks within the browser
-						skills = out;
-						// We need to have all skills available as a whole in case we use cheat seals
-						allpassives = Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"]);
-						fetch('/common/data/content/fullother.json')
-							.then(res => res.json())
-							.then((out) => {
-								// We store other data for basic checks within the browser
-								other = out;
-								init();
-						}).catch(err => console.error(err));
-				}).catch(err => console.error(err));
-		}).catch(err => console.error(err));
-}).catch(err => console.error(err));
-
 async function populateall(clean, bypass = false) {
 	// We go through all the selects except if we are calling from selectheroes since it's overkill
 	if (!bypass) {
@@ -122,27 +33,6 @@ async function populateall(clean, bypass = false) {
 	validblessing();
 	// Disable or enable beast select based on unit
 	beastcheck();
-}
-
-async function init() {
-	await populateall();
-	// This array will be used as rendering queue
-	renderingqueue = [];
-	// Load and wait for the font to be ready
-	var font = new FontFace("FeH-Font", "url('/common/feh-font.woff2') format('woff2')");
-	await font.load();
-	document.fonts.add(font);
-
-	// Load the numberfont specifically since we will use it multiple times
-	await getimage(other["images"]["other"]["numberfont"]).then(img => {
-		numberfont = img;
-	});
-
-	// Meme
-	//memedraw();
-
-	// List of values to be restored on each slot
-	selects = [selectrarity, selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials, selectassists, selectA, selectB, selectC, selectS, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef, selectres, selectatkpairup, selectspdpairup, selectdefpairup, selectrespairup, selectsp, selecthm, selectartstyle, selecttemplate, selectoffsetY, selectoffsetX, selectmirror, selectbackground, selectfavorite, selectaccessory, appui];
 }
 
 async function reload(scroll = false) {
@@ -463,6 +353,12 @@ function updatedragonflowers() {
 }
 
 async function switchbuild(build) {
+	// List of values to be restored on each slot
+	selects = [selectrarity, selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials,
+		selectassists, selectA, selectB, selectC, selectS, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef,
+		selectres, selectatkpairup, selectspdpairup, selectdefpairup, selectrespairup, selectsp, selecthm, selectartstyle, selecttemplate,
+		selectoffsetY, selectoffsetX, selectmirror, selectbackground, selectfavorite, selectaccessory, appui];
+
 	// First save changes to current slot (heroes, cheats, language, maxskill, weapons and blessings are to be done first because they affect the content of other selects)
 	builds[buildslot][0] = selectheroes.value;
 	builds[buildslot][1] = cheats.checked;

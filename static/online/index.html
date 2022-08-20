@@ -8,12 +8,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 
-		<link rel="preload" href="builder.css" as="style">
-		<link rel="preload" href="barracks.css" as="style">
-		<link rel="preload" href="/common/rebspicker.css" as="style">
+		<script src="/common/rebspicker.js" defer></script>
+		<script src="utilities.js" defer></script>
+		<script src="form.js" defer></script>
+		<script src="barracks.js" defer></script>
+		<script src="main.js" defer></script>
+		<script src="imagerender.js" defer></script>
 
 		<link rel="stylesheet" href="builder.css">
-		<link rel="stylesheet" href="barracks.css">
+		<link rel="stylesheet" href="barracks.css" media="print" onload="this.media='all'">
 		<link rel="stylesheet" href="/common/rebspicker.css">
 
 		<link rel="shortcut icon" href="/common/assets/Feh.webp" />
@@ -426,10 +429,5 @@
 				<div style="margin-top: 1em">This data is a preview, but other info like mythic allies, background, art position, etc... is also saved.</div>
 			</div>
 		</div>
-		<script src="/common/rebspicker.js"></script>
-		<script src="utilities.js"></script>
-		<script src="imagerender.js"></script>
-		<script src="form.js"></script>
-		<script src="barracks.js"></script>
     </body>
 </html>
