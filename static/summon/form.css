@@ -48,7 +48,7 @@ body {
 	padding: 1em 1.5em 0 1.5em;
 	box-sizing: border-box;
 }
-section {
+.section {
 	display: grid; /* All sections are grids */
 	gap: 0.5em 1em;
 }

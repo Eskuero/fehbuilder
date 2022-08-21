@@ -22,10 +22,10 @@
 	<body>
 		<div class="contenedor">
 			<div class="unitpreview">
-				<canvas id="fakecanvas" width="720" height="1280" alt="FEH Unit Builder"></canvas>
+				<canvas id="fakecanvas" width="720" height="1280"></canvas>
 			</div>
 			<div class="form">
-				<section class="headerform">
+				<div class="section headerform">
 					<div class="row-property additionaloptions">
 						<button onclick="summon()" class="summonbutton">Single session</button>
 						<button onclick="alert('Unimplemented')" class="summonbutton">Multi session</button>
@@ -45,9 +45,9 @@
 							<option value="USPT">Português</option>
 						</select>
 					</div>
-				</section>
+				</div>
 				<h2>Focus Units</h2>
-				<section class="focusform">
+				<div class="section focusform">
 					<div class="row-property single fat">
 						<img class="imagelabel" src="/common/assets/Rarity_5_Focus.webp" title="5 star rarity"/>
 						<div id="fivestarfocus" onchange="changetargets()"></div>
@@ -56,9 +56,9 @@
 						<img class="imagelabel" src="/common/assets/Rarity_4_Focus.webp" title="4 star rarity"/>
 						<div id="fourstarfocus" onchange="changetargets()"></div>
 					</div>
-				</section>
+				</div>
 				<h2>Base gacha percents</h2>
-				<section class="percentsform">
+				<div class="section percentsform">
 					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/Rarity_5_Focus.webp" title="Focus 5* units"/>
 						<input type="number" id="focus5" min="0" max="99" onchange="reset()" value="3">
@@ -77,9 +77,9 @@
 						<img class="imagelabel" src="/common/assets/Rarity_3.webp" title="Off-focus 3* units"/>
 						<input type="number" id="offfocus3" min="0" max="99" onchange="reset()" value="36">
 					</div>
-				</section>
+				</div>
 				<h2>Behaviour</h2>
-				<section class="behaviourform">
+				<div class="section behaviourform">
 					<div class="row-property single">
 						<img class="imagelabel" src="/common/assets/method.webp" title="Summoning method" />
 						<select class="select-without-search" id="method">
@@ -94,12 +94,12 @@
 							<option value="one">One target obtained</option>
 						</select>
 					</div>
-				</section>
+				</div>
 				<h2>Targets</h2>
-				<section id="targets">
-				</section>
+				<div class="section" id="targets">
+				</div>
 				<h2>Built pity-rate</h2>
-				<section class="pityform">
+				<div class="section pityform">
 					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/Rarity_5_Focus.webp" title="Focus 5* units"/>
 						<input type="number" id="pityfocus5" min="0" max="99" value="3" disabled>
@@ -118,7 +118,7 @@
 						<img class="imagelabel" src="/common/assets/Rarity_3.webp" title="Off-focus 3* units"/>
 						<input type="number" id="pityofffocus3" min="0" max="99" value="36" disabled>
 					</div>
-				</section>
+				</div>
 				<div class="links">
 					<a href="/">
 						<img class="imagelabel" src="/common/assets/home.webp" title="Homepage"/>
