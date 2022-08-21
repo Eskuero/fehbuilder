@@ -22,15 +22,15 @@
 	<body>
 		<div id="updatedialog">
 			<div class="dialogform">
-				<h3>Change content of tile</h2>
+				<h3>Change content of tile</h3>
 				<div class="row-property single">
 					<img class="imagelabel" src="/common/assets/kiran.webp" title="Hero"/>
-					<div id="selectheroes" selectedtile="null" onchange="pasteunit(this)">
+					<div id="selectheroes" onchange="pasteunit(this)">
 					</div>
 				</div>
 				<div class="row-property single">
 					<img class="imagelabel" src="/common/assets/structure.webp" title="Structure"/>
-					<select class="select-without-search" id="selectstructure" selectedtile="null" onchange="pastestructure(this)">
+					<select class="select-without-search" id="selectstructure" onchange="pastestructure(this)">
 						<option value="None">None</option>
 						<optgroup label="Structures">
 							<option value="armorschool" structtype="defensive">Armor School</option>
@@ -70,7 +70,7 @@
 					</select>
 				</div>
 				<div class="additionaloptions">
-					<button id="buttonclean" onclick="deleteitem(this)" selectedtile="null" style="margin-top: 1em;" class="button">Clear</button>
+					<button id="buttonclean" onclick="deleteitem(this)" style="margin-top: 1em;" class="button">Clear</button>
 					<button onclick="document.getElementById('updatedialog').style.display = 'none'" style="margin-top: 1em;" class="button">Cancel</button>
 				</div>
 			</div>
@@ -137,7 +137,7 @@
 					<button onclick="showhelp()" class="button">Help</button>
 				</div>
 				<h2>Options</h2>
-				<section>
+				<div class="section">
 					<div class="row-property single">
 						<img class="imagelabel" src="/common/assets/divinecode.webp" title="Map"/>
 						<select class="select-without-search" onchange="changemap()" id="mapselect">
@@ -166,9 +166,9 @@
 							<option value="hd-faces">Face</option>
 						</select>
 					</div>
-				</section>
+				</div>
 				<h2>Additional info</h2>
-				<section class="additionaloptions">
+				<div class="section additionaloptions">
 					<label>
 						<input type="checkbox" id="showweapon" onchange="iconvisibility(this)" checked>Weapon
 					</label>
@@ -181,9 +181,9 @@
 					<label>
 						<input type="checkbox" id="showcell" onchange="iconvisibility(this)">Grid border
 					</label>
-				</section>
+				</div>
 				<h2>Structures</h2>
-				<section id="results">
+				<div class="section" id="results">
 					<div class="structure" draggable="true" ondragstart="drag(event)" id="armorschool" structtype="defensive"><img src="/common/other/maps-armorschool.webp" draggable="false"></div>
 					<div class="structure" draggable="true" ondragstart="drag(event)" id="bolttower" structtype="defensive"><img src="/common/other/maps-bolttower.webp" draggable="false"></div>
 					<div class="structure" draggable="true" ondragstart="drag(event)" id="brigthshrine" structtype="defensive"><img src="/common/other/maps-brigthshrine.webp" draggable="false"></div>
@@ -206,7 +206,7 @@
 					<div class="structure" draggable="true" ondragstart="drag(event)" id="dininghall" structtype="decorative"><img src="/common/other/maps-dininghall.webp" draggable="false"></div>
 					<div class="structure" draggable="true" ondragstart="drag(event)" id="field" structtype="decorative"><img src="/common/other/maps-field.webp" draggable="false"></div>
 					<div class="structure" draggable="true" ondragstart="drag(event)" id="inn" structtype="decorative"><img src="/common/other/maps-inn.webp" draggable="false"></div>
-				</section>
+				</div>
 				<div class="links">
 					<a href="/">
 						<img class="imagelabel" src="/common/assets/home.webp" title="Homepage"/>
