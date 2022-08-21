@@ -22,13 +22,13 @@
 	<body>
 		<div class="contenedor">
 			<div class="unitpreview">
-				<img id="fakecanvas" width="720" height="1280" src="/common/base/placeholder.webp" />
-				<canvas id="canvas" width="720" height="1280" alt="FEH Unit Builder" class="unrendered"></canvas>
+				<img id="fakecanvas" width="720" height="1280" alt="FEH Unit Builder" src="/common/base/placeholder.webp" />
+				<canvas id="canvas" width="720" height="1280" class="unrendered"></canvas>
 			</div>
 			<div class="form">
-				<section class="headerform">
+				<div class="section headerform">
 					<div class="row-property additionaloptions">
-						<a id="downloadlink"><button class="actionbutton">Download</button></a>
+						<a id="downloadlink"><div class="actionbutton">Download</div></a>
 						<div class="checkboxes">
 							<label for="cheats">Cheats</label>
 							<input type="checkbox" id="cheats" onchange="populateall(false)">
@@ -52,9 +52,9 @@
 						</select>
 						<button onclick="showhelp()" class="actionbutton">Help</button>
 					</div>
-				</section>
+				</div>
 				<h2>Unit</h2>
-				<section class="unitform">
+				<div class="section unitform">
 					<div class="row-property double">
 						<img class="imagelabel" src="/common/assets/kiran.webp" title="Hero name"/>
 						<input type="text" id="hero" onchange="reload()" onkeyup="reload()" placeholder="Name">
@@ -212,7 +212,7 @@
 						<label class="textlabel">Base</label>
 						<div id="selectheroes" onchange="filldefaults();populateall(true, true);reload()"></div>
 					</div>
-				</section>
+				</div>
 				<div class="tabs">
 					<img class="imagelabel selected" onclick="swapskill(this,'weapon')" src="/common/assets/weapon.webp" title="Weapon"/>
 					<img class="imagelabel" onclick="swapskill(this,'refine')" src="/common/assets/refine.webp" title="Refine"/>
@@ -223,7 +223,7 @@
 					<img class="imagelabel" onclick="swapskill(this,'Cskill')" src="/common/assets/skill-c.webp" title="C skill"/>
 					<img class="imagelabel" onclick="swapskill(this,'Sskill')" src="/common/assets/seal.webp" title="Seal"/>
 				</div>
-				<section class="skillsform">
+				<div class="section skillsform">
 					<div class="row-property single">
 						<label class="textlabel">Base</label>
 						<div id="weapon" onchange="updatebases(this);updateRefine();reload()"></div>
@@ -255,8 +255,8 @@
 						<input type="text" id="nameCskill" style="display:none" onchange="reload()" onkeyup="reload()">
 						<input type="text" id="nameSskill" style="display:none" onchange="reload()" onkeyup="reload()">
 					</div>
-				</section>
-				<section id="skill-stats" class="listofstats" style="margin-top: 0.7em;">
+				</div>
+				<div class="section listofstats" id="skill-stats" style="margin-top: 0.7em;">
 					<div class="row-property single">
 						<img class="imagelabel" src="/common/assets/HP.webp" title="HP Modifier"/>
 						<input type="number" id="hpweapon" onchange="reload()" min="-99" max="99" value="0">
@@ -306,9 +306,9 @@
 						<input type="number" id="resCskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 						<input type="number" id="resSskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 					</div>
-				</section>
+				</div>
 				<h2>Blessings</h2>
-				<section class="blessingform">
+				<div class="section blessingform">
 					<div class="row-property single">
 						<img class="imagelabel" src="/common/assets/blessings.webp" title="Blessings" />
 						<select class="select-without-search" id="blessing" onchange="reload()">
@@ -405,19 +405,19 @@
 							</optgroup>
 						</select>
 					</div>
-				</section>
-				<section id="legendariesform">
+				</div>
+				<div class="section" id="legendariesform">
 					<div class="row-property fat">
-						<div id="allies" multiple="multiple" onchange="showallies();reload()"></div>
+						<div id="allies" onchange="showallies();reload()"></div>
 					</div>
-					<section id="usedalliesform"></section>
-				</section>
+					<div class="section" id="usedalliesform"></div>
+				</div>
 				<div class="sectiontitle">
 					<h2>Stats</h2>
-					<input type="checkbox" id="advancedmode" onchange="changemode();reload()" unchecked>
+					<input type="checkbox" id="advancedmode" onchange="changemode();reload()">
 					<label for="advancedmode">Advanced mode</label>
 				</div>
-				<section id="smallstats" class="listofstats">
+				<div class="section listofstats" id="smallstats">
 					<div class="row-property single">
 						<label for="hp"><img class="imagelabel" src="/common/assets/HP.webp" title="HP"/></label>
 						<input type="number" id="hp" onchange="reload()" min="-99" max="99" value="0">
@@ -438,10 +438,10 @@
 						<label for="res"><img class="imagelabel" src="/common/assets/Res.webp" title="Res"/></label>
 						<input type="number" id="res" onchange="reload()" min="-99" max="99" value="0">
 					</div>
-				</section>
-				<section id="advancedstats" class="listofstats advanced">
+				</div>
+				<div class="section listofstats advanced" id="advancedstats">
 					<div class="row-property stacked">
-						<img class="imagelabel" src="/common/base/oopsie.webp"/>
+						<div></div>
 						<label class="textlabel">Level 1:</label>
 						<label class="textlabel">Growth %:</label>
 					</div>
@@ -470,9 +470,9 @@
 						<input type="number" id="res1" onchange="reload()" min="0" max="99" value="5">
 						<input type="number" id="resgrowth" onchange="reload()" min="25" max="85" value="50" step="5">
 					</div>
-				</section>
+				</div>
 				<h2>Miscellaneous</h2>
-				<section class="miscform">
+				<div class="section miscform">
 					<div class="row-property double">
 						<label for="sp"><img class="imagelabel" src="/common/assets/sp.webp" title="Skill Points"/></label>
 						<input type="number" onchange="reload()" id="sp" min="0" max="9999" value="9999">
@@ -540,7 +540,7 @@
 						<label for="appui">App UI</label>
 						<input type="checkbox" id="appui" onchange="reload()" checked>
 					</div>
-				</section>
+				</div>
 				<div class="links">
 					<a href="/">
 						<img class="imagelabel" src="/common/assets/home.webp" title="Homepage"/>
