@@ -30,7 +30,7 @@
 					</div>
 					<div class="tiercontent" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 					<div class="tieroptions" data-html2canvas-ignore="true">
-						<input type="color" class="tiercolor" onchange="updatecolor(event)" value="#FF7F7F"></input>
+						<input type="color" class="tiercolor" onchange="updatecolor(event)" value="#FF7F7F" />
 						<span class="material-icons deletebutton" onclick="deletetier(event)">delete</span>
 						<span class="material-icons" onclick="reorder(event,2)">expand_more</span>
 						<span class="material-icons" onclick="reorder(event,-1)">expand_less</span>
@@ -42,7 +42,7 @@
 					</div>
 					<div class="tiercontent" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 					<div class="tieroptions" data-html2canvas-ignore="true">
-						<input type="color" class="tiercolor" onchange="updatecolor(event)" value="#FFBF7F"></input>
+						<input type="color" class="tiercolor" onchange="updatecolor(event)" value="#FFBF7F" />
 						<span class="material-icons deletebutton" onclick="deletetier(event)">delete</span>
 						<span class="material-icons" onclick="reorder(event,2)">expand_more</span>
 						<span class="material-icons" onclick="reorder(event,-1)">expand_less</span>
@@ -54,7 +54,7 @@
 					</div>
 					<div class="tiercontent" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 					<div class="tieroptions" data-html2canvas-ignore="true">
-						<input type="color" class="tiercolor" onchange="updatecolor(event)" value="#FFFF7F"></input>
+						<input type="color" class="tiercolor" onchange="updatecolor(event)" value="#FFFF7F" />
 						<span class="material-icons deletebutton" onclick="deletetier(event)">delete</span>
 						<span class="material-icons" onclick="reorder(event,2)">expand_more</span>
 						<span class="material-icons" onclick="reorder(event,-1)">expand_less</span>
@@ -66,7 +66,7 @@
 					</div>
 					<div class="tiercontent" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 					<div class="tieroptions" data-html2canvas-ignore="true">
-						<input type="color" class="tiercolor" onchange="updatecolor(event)" value="#BFFF7F"></input>
+						<input type="color" class="tiercolor" onchange="updatecolor(event)" value="#BFFF7F" />
 						<span class="material-icons deletebutton" onclick="deletetier(event)">delete</span>
 						<span class="material-icons" onclick="reorder(event,2)">expand_more</span>
 						<span class="material-icons" onclick="reorder(event,-1)">expand_less</span>
@@ -78,7 +78,7 @@
 					</div>
 					<div class="tiercontent" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 					<div class="tieroptions" data-html2canvas-ignore="true">
-						<input type="color" class="tiercolor" onchange="updatecolor(event)" value="#7FFFFF"></input>
+						<input type="color" class="tiercolor" onchange="updatecolor(event)" value="#7FFFFF" />
 						<span class="material-icons deletebutton" onclick="deletetier(event)">delete</span>
 						<span class="material-icons" onclick="reorder(event,2)">expand_more</span>
 						<span class="material-icons" onclick="reorder(event,-1)">expand_less</span>
@@ -90,7 +90,7 @@
 					</div>
 					<div class="tiercontent" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 					<div class="tieroptions" data-html2canvas-ignore="true">
-						<input type="color" class="tiercolor" onchange="updatecolor(event)" value="#7FBFFF"></input>
+						<input type="color" class="tiercolor" onchange="updatecolor(event)" value="#7FBFFF" />
 						<span class="material-icons deletebutton" onclick="deletetier(event)">delete</span>
 						<span class="material-icons" onclick="reorder(event, 2)">expand_more</span>
 						<span class="material-icons" onclick="reorder(event,-1)">expand_less</span>
@@ -127,7 +127,7 @@
 					<button onclick="deletesave()" class="button">Delete</button>
 				</div>
 				<h2>Filters</h2>
-				<section>
+				<div class="section">
 					<div class="row-property single">
 						<img class="imagelabel" src="/common/other/0-move.webp" id="moveicon" title="Move Type"/>
 						<div>
@@ -319,9 +319,9 @@
 							</select>
 						</div>
 					</div>
-				</section>
+				</div>
 				<h2>Additional icons</h2>
-				<section class="additionaloptions">
+				<div class="section additionaloptions">
 					<label>
 						<input type="checkbox" id="showweapon" onchange="iconvisibility(this)" checked>
 						Weapon
@@ -338,10 +338,10 @@
 						<input type="checkbox" id="showorigin" onchange="iconvisibility(this)">
 						Game of origin
 					</label>
-				</section>
+				</div>
 				<h2>Units found</h2>
-				<section id="results" ondrop="drop(event)" ondragover="allowDrop(event)">
-				</section>
+				<div class="section" id="results" ondrop="drop(event)" ondragover="allowDrop(event)">
+				</div>
 			</div>
 		</div>
     </body>
