@@ -17,7 +17,7 @@ function updatedialog(caller) {
 		if (caller.lastChild.className == "structure") {
 			selectstructure.value = caller.lastChild.id;
 			// If the struct is mandatory and cheats are not enabled do not show the dialog at all
-			if (caller.lastChild.getAttribute("structtype") == "mandatory" && !selectcheats.checked) {
+			if (other["structures"][caller.lastChild.id]["type"] == "mandatory" && !selectcheats.checked) {
 				return;
 			}
 		} else {
@@ -30,7 +30,7 @@ function updatedialog(caller) {
 	// Loop through all structures with their class and disable them when necessary
 	var structures = document.getElementsByClassName("structure");
 	var todisable = [];
-	for (let j = 0; j < selectstructure.options.length; j++) {
+	for (let j = 1; j < selectstructure.options.length; j++) {
 		selectstructure.options[j].disabled = false;
 		for (let i = 0; i < structures.length; i++) {
 			// Disable duplicates
@@ -38,25 +38,25 @@ function updatedialog(caller) {
 				todisable.push(selectstructure.options[j]);
 			}
 			// Don't allow more than six defensive structures
-			if (selectstructure.options[j].getAttribute("structtype") == "defensive" && maplimits["defensive"].length >= 6) {
+			if (other["structures"][selectstructure.options[j].value]["type"] == "defensive" && maplimits["defensive"].length >= 6) {
 				// If the item already in the cell is a defensive structure don't disable them to allow replacing
-				let typeofchild = caller.firstChild ? caller.firstChild.getAttribute("structtype") : "none";
+				let typeofchild = caller.firstChild ? other["structures"][caller.firstChild.id]["type"] : "none";
 				if (typeofchild != "defensive") {
 					todisable.push(selectstructure.options[j]);
 				}
 			}
 			// Don't allow more than two traps
-			if (selectstructure.options[j].getAttribute("structtype") == "trap" && maplimits["trap"].length >= 2) {
+			if (other["structures"][selectstructure.options[j].value]["type"] == "trap" && maplimits["trap"].length >= 2) {
 				// If the item already in the cell is a defensive structure don't disable them to allow replacing
-				let typeofchild = caller.firstChild ? caller.firstChild.getAttribute("structtype") : "none";
+				let typeofchild = caller.firstChild ? other["structures"][caller.firstChild.id]["type"] : "none";
 				if (typeofchild != "trap") {
 					todisable.push(selectstructure.options[j]);
 				}
 			}
 			// Don't allow more than two faketraps
-			if (selectstructure.options[j].getAttribute("structtype") == "faketrap" && maplimits["faketrap"].length >= 2) {
+			if (other["structures"][selectstructure.options[j].value]["type"] == "faketrap" && maplimits["faketrap"].length >= 2) {
 				// If the item already in the cell is a defensive structure don't disable them to allow replacing
-				let typeofchild = caller.firstChild ? caller.firstChild.getAttribute("structtype") : "none";
+				let typeofchild = caller.firstChild ? other["structures"][caller.firstChild.id]["type"] : "none";
 				if (typeofchild != "faketrap") {
 					todisable.push(selectstructure.options[j]);
 				}
@@ -151,15 +151,15 @@ function drop(ev) {
 		// If the data to be dropped is an structure check if it's not already limited in amount of type
 		if (data.className == "structure") {
 			// If it's of type defensive and we already have six different of those deny the drop
-			if (data.getAttribute("structtype") == "defensive" && maplimits["defensive"].length >= 6 && !maplimits["defensive"].includes(data.id)) {
+			if (other["structures"][data.id]["type"] == "defensive" && maplimits["defensive"].length >= 6 && !maplimits["defensive"].includes(data.id)) {
 				return;
 			}
 			// If it's of type trap and we already have two different of those deny the drop
-			if (data.getAttribute("structtype") == "trap" && maplimits["trap"].length >= 2 && !maplimits["trap"].includes(data.id)) {
+			if (other["structures"][data.id]["type"] == "trap" && maplimits["trap"].length >= 2 && !maplimits["trap"].includes(data.id)) {
 				return;
 			}
 			// If it's of type faketrap and we already have two different of those deny the drop
-			if (data.getAttribute("structtype") == "faketrap" && maplimits["faketrap"].length >= 2 && !maplimits["faketrap"].includes(data.id)) {
+			if (other["structures"][data.id]["type"] == "faketrap" && maplimits["faketrap"].length >= 2 && !maplimits["faketrap"].includes(data.id)) {
 				return;
 			}
 			// If it's a school and we already have a different one deny the drop
@@ -238,7 +238,7 @@ function scan() {
 	for (let i = 0; i < structures.length; i++) {
 		if (structures[i].parentElement.className == "cell") {
 			let structid = structures[i].id;
-			maplimits[structures[i].getAttribute("structtype")].push(structid);
+			maplimits[other["structures"][structures[i].id]["type"]].push(structid);
 			// If the struct is a school mark it
 			if (structid.indexOf("school") != -1) {
 				maplimits["schooled"] = true;
@@ -284,6 +284,58 @@ function populate(select, data, clean, previousvalue = "None") {
 	if ([...select.options].map(opt => opt.value).includes(previousvalue)) {
 		select.value = previousvalue;
 	}
+}
+
+function populatestructures() {
+	// First delete them all
+	while (selectstructure.lastChild) {
+		selectstructure.removeChild(selectstructure.lastChild);
+	}
+	// Always have a None option
+	var item = document.createElement('option');
+	item.value = "None";
+	item.innerHTML = "None";
+	selectstructure.appendChild(item);
+	// Create each optgroup
+	var mandatories = document.createElement('optgroup');
+	mandatories.label = "Mandatory";
+	var decorations = document.createElement('optgroup');
+	decorations.label = "Decorations";
+	var faketraps = document.createElement('optgroup');
+	faketraps.label = "Fake Traps";
+	var traps = document.createElement('optgroup');
+	traps.label = "Traps";
+	var defensives = document.createElement('optgroup');
+	defensives.label = "Defensives";
+	// Loop through every structure and place them wherever is correct
+	for (const [key, values] of Object.entries(other["structures"])) {
+		let option = document.createElement('option');
+		option.value = key;
+		option.innerHTML = values["translation"];
+		switch(values["type"]) {
+			case "mandatory":
+				mandatories.appendChild(option);
+				break;
+			case "decorative":
+				decorations.appendChild(option);
+				break;
+			case "faketrap":
+				faketraps.appendChild(option);
+				break;
+			case "trap":
+				traps.appendChild(option);
+				break;
+			default:
+				defensives.appendChild(option);
+				break;
+		}
+	}
+	// Append the optgroups
+	selectstructure.appendChild(mandatories);
+	selectstructure.appendChild(defensives);
+	selectstructure.appendChild(traps);
+	selectstructure.appendChild(faketraps);
+	selectstructure.appendChild(decorations);
 }
 
 function showhelp() {

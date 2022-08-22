@@ -64,4 +64,7 @@ function init() {
 
 	// Populate hero select
 	populate(selectheroes, units, true);
+
+	// Populate structures select
+	populatestructures();
 }

@@ -145,7 +145,6 @@ function pastestructure(caller) {
 		item.className = "structure";
 		item.draggable = true;
 		item.id = option;
-		item.setAttribute("structtype", caller.selectedOptions[0].getAttribute("structtype"));
 		item.addEventListener("dragstart", function(event) {drag(event)});
 		// Add the structure as an image
 		var structure = document.createElement('img');
@@ -172,7 +171,7 @@ function clearmap() {
 	for (let i = 0; i < tiles.length; i++) {
 		if (tiles[i].lastChild) {
 			// Do not delete fortress or aether structs unless on cheat mode
-			if (tiles[i].lastChild.getAttribute("structtype") != "mandatory" || selectcheats.checked) {
+			if ((tiles[i].lastChild.className == "structure" ? other["structures"][tiles[i].lastChild.id]["type"] != "mandatory" : true) || selectcheats.checked) {
 				tiles[i].removeChild(tiles[i].lastChild);
 			}
 		}

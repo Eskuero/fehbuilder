@@ -80,6 +80,109 @@
 			"34": "grey-pillar-crumbled-wall"
 		}
     },
+    "structures": {
+        "fortress": {
+            "type": "mandatory",
+            "translation": "Fortress"
+        },
+        "aetheramphorae": {
+            "type": "mandatory",
+            "translation": "Aether Amphorae"
+        },
+        "aetherfountain": {
+            "type": "mandatory",
+            "translation": "Aether Fountain"
+        },
+        "concerthall": {
+            "type": "decorative",
+            "translation": "Concert Hall"
+        },
+        "dininghall": {
+            "type": "decorative",
+            "translation": "Dining Hall"
+        },
+        "field": {
+            "type": "decorative",
+            "translation": "Field"
+        },
+        "inn": {
+            "type": "decorative",
+            "translation": "Inn"
+        },
+        "bolttrap": {
+            "type": "trap",
+            "translation": "Bolt Trap"
+        },
+        "heavytrap": {
+            "type": "trap",
+            "translation": "Heavy Trap"
+        },
+        "hextrap": {
+            "type": "trap",
+            "translation": "Hex Trap"
+        },
+        "bolttrapfake": {
+            "type": "faketrap",
+            "translation": "Bolt Trap (Fake)"
+        },
+        "heavytrapfake": {
+            "type": "faketrap",
+            "translation": "Heavy Trap (Fake)"
+        },
+        "hextrapfake": {
+            "type": "faketrap",
+            "translation": "Hex Trap (Fake)"
+        },
+
+        "armorschool": {
+            "type": "defensive",
+            "translation": "Armor School"
+        },
+        "bolttower": {
+            "type": "defensive",
+            "translation": "Bolt Tower"
+        },
+        "brigthshrine": {
+            "type": "defensive",
+            "translation": "Bright Shrine"
+        },
+        "catapult": {
+            "type": "defensive",
+            "translation": "Catapult"
+        },
+        "cavalryschool": {
+            "type": "defensive",
+            "translation": "Cavalry School"
+        },
+        "darkshrine": {
+            "type": "defensive",
+            "translation": "Dark Shrine"
+        },
+        "duoshindrance": {
+            "type": "defensive",
+            "translation": "Duo's Hindrance"
+        },
+        "flierschool": {
+            "type": "defensive",
+            "translation": "Flier School"
+        },
+        "healingtower": {
+            "type": "defensive",
+            "translation": "Healing Tower"
+        },
+        "infantryschool": {
+            "type": "defensive",
+            "translation": "Infantry School"
+        },
+        "panicmanor": {
+            "type": "defensive",
+            "translation": "Panic Manor"
+        },
+        "tacticsroom": {
+            "type": "defensive",
+            "translation": "Tactics Room"
+        }
+    },
     "seasonals": {
         "summer": [
             "PID_\u6bd4\u7ffc\u30d2\u30eb\u30c0",

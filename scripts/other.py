@@ -92,6 +92,7 @@ def work():
 			for hero, properties in other["blessed"].items()
 		},
 		"maps": maps,
+		"structures": structures,
 		"duokeywords": duokeywords
 	}
 	with open("mapsother.json", "w") as outfile:
@@ -125,5 +126,7 @@ duokeywords = hardcoded["duokeywords"]
 images = hardcoded["images"]
 # Maps data
 maps = hardcoded["maps"]
+# Maps data
+structures = hardcoded["structures"]
 
 work()
