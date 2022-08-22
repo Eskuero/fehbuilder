@@ -296,7 +296,7 @@ async function populatestructures() {
 	// Always have a None option
 	var item = document.createElement('option');
 	item.value = "None";
-	item.innerHTML = "None";
+	item.innerHTML = languages[newlang]["MSID_H_NONE"];
 	selectstructure.appendChild(item);
 	// Create each optgroup
 	var mandatories = document.createElement('optgroup');

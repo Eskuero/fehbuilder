@@ -89,7 +89,7 @@ languagesunit = {
 languagesard = {
 	language: {
 		key: string
-		for key, string in strings.items() if not any(substring in key for substring in blessingstrings + unitstrings + ["ILLUST", "VOICE", "SID", "EID"])
+		for key, string in strings.items() if not any(substring in key for substring in ["ILLUST", "VOICE", "SID", "EID"]) and key not in unitstrings + blessingstrings or key in basicstrings + aetherstrings
 	}
 	for language, strings in languages.items()
 }
