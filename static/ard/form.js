@@ -258,11 +258,7 @@ function scan() {
 }
 
 async function populate(select, data, clean, previousvalue = "None") {
-	// If the language required is not downloaded yet wait a bit more
 	var newlang = selectlanguage.value;
-	while (!languages[newlang]) {
-		await sleep(100);
-	}
 	// First delete them all
 	while (select.lastChild) {
 		select.removeChild(select.lastChild);
@@ -292,11 +288,7 @@ async function populate(select, data, clean, previousvalue = "None") {
 }
 
 async function populatestructures() {
-	// If the language required is not downloaded yet wait a bit more
 	var newlang = selectlanguage.value;
-	while (!languages[newlang]) {
-		await sleep(100);
-	}
 	// First delete them all
 	while (selectstructure.lastChild) {
 		selectstructure.removeChild(selectstructure.lastChild);
@@ -321,7 +313,7 @@ async function populatestructures() {
 	for (const [key, values] of Object.entries(other["structures"])) {
 		let option = document.createElement('option');
 		option.value = key;
-		option.innerHTML = languages[selectlanguage.value][values["translation"]];
+		option.innerHTML = languages[newlang][values["translation"]];
 		switch(values["type"]) {
 			case "mandatory":
 				mandatories.appendChild(option);

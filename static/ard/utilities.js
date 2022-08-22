@@ -27,7 +27,7 @@ function download() {
 	});
 }
 
-async function getlang() {
+async function changelang() {
 	// Make sure the selected language is available, download it if not
 	var newlang = selectlanguage.value;
 	if (!languages[newlang]) {
@@ -35,12 +35,10 @@ async function getlang() {
 		var data = await response.json();
 		languages[newlang] = data;
 	}
+	populate(selectheroes, units, true);
+	populatestructures();
+	statictranslations();
 }
-
-// Helper function to sleep async functions for a while
-const sleep = (milliseconds) => {
-	return new Promise(resolve => setTimeout(resolve, milliseconds));
-  }
 
 function changemap() {
 	var map = selectmap.value;
