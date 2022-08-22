@@ -71,6 +71,9 @@ builds = [
 	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,8000,"Portrait","MyUnit","0","0","None","base","1","None", true]
 ];
 
+// This array will be used as rendering queue
+renderingqueue = [];
+
 // Dialog to manage your barracks
 barracksdialog = document.getElementById("barracksdialog");
 // Try to get all saved units
@@ -82,42 +85,20 @@ if (localStorage.getItem('barracks')) {
 	localStorage.setItem('barracks', JSON.stringify(barracks));
 }
 
-// Fetch all the game data from each json
-fetch('/common/data/languages/unitlanguages-' + selectlanguage.value + '.json')
-	.then(res => res.json())
-	.then((out) => {
-		// We store languages data for display of strings within the browser
-		languages[selectlanguage.value] = out;
-		// We can download the rest of the data now that lenguages are available
-		fetch('/common/data/content/fullunits.json')
-			.then(res => res.json())
-			.then((out) => {
-				// We store the heroes for basic checks within the browser
-				units = out;
-				fetch('/common/data/content/fullskills.json')
-					.then(res => res.json())
-					.then((out) => {
-						// We store the skills for basic checks within the browser
-						skills = out;
-						// We need to have all skills available as a whole in case we use cheat seals
-						allpassives = Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"]);
-						fetch('/common/data/content/fullother.json')
-							.then(res => res.json())
-							.then((out) => {
-								// We store other data for basic checks within the browser
-								other = out;
-                                // We finished downloading all data
-								init();
-						}).catch(err => console.error(err));
-				}).catch(err => console.error(err));
-		}).catch(err => console.error(err));
-}).catch(err => console.error(err));
+window.onload = init();
 
 async function init() {
-    loadbarracks();
-	await populateall();
-	// This array will be used as rendering queue
-	renderingqueue = [];
+	// Get all data and store it
+	languages[selectlanguage.value] = await fetch('/common/data/languages/unitlanguages-' + selectlanguage.value + '.json').then(response => {return response.json();});
+	units = await fetch('/common/data/content/fullunits.json').then(response => {return response.json();});
+	skills = await fetch('/common/data/content/fullskills.json').then(response => {return response.json();});
+	allpassives = Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"]);
+	other = await fetch('/common/data/content/fullother.json').then(response => {return response.json();});
+
+	// Build barrack and unit selects
+	loadbarracks();
+	populateall();
+
 	// Load and wait for the font to be ready
 	var font = new FontFace("FeH-Font", "url('/common/feh-font.woff2') format('woff2')");
 	await font.load();
