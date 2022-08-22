@@ -73,7 +73,7 @@ usedallies = document.getElementById('usedalliesform');
 // We store languages data for display of strings within the browser
 languages = {};
 // Fetch all data from each json
-fetch('/common/data/languages/litelanguages-' + selectlanguage.value + '.json')
+fetch('/common/data/languages/unitlanguages-' + selectlanguage.value + '.json')
 	.then(res => res.json())
 	.then((out) => {
 		// We store languages data for display of strings within the browser

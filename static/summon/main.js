@@ -12,7 +12,7 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 // Dicts for info
-var units, languages, other, permapools;
+var units, other, permapools;
 // All heroes to add
 targets = [];
 // Amount of heroes we have gone without a 5 star
@@ -37,20 +37,21 @@ pityspecial4 = document.getElementById('pityspecial4');
 pityofffocus4 = document.getElementById('pityofffocus4');
 pityofffocus3 = document.getElementById('pityofffocus3');
 
+// We store languages data for display of strings within the browser
+languages = {};
+
 // Fetch all data from each json
-fetch('/common/data/languages/litelanguages.json')
+fetch('/common/data/languages/summonlanguages-' + selectlanguage.value + '.json')
 	.then(res => res.json())
 	.then((out) => {
 		// We store languages data for display of strings within the browser
-		languages = out
+		languages[selectlanguage.value] = out;
 		// We can download the rest of the data now that lenguages are available
 		fetch('/common/data/content/summonunits.json')
 			.then(res => res.json())
 			.then((out) => {
 				// We store the heroes for basic checks within the browser
 				units = out
-				select5focus = populate(document.getElementById('fivestarfocus'), units, true);
-				select4focus = populate(document.getElementById('fourstarfocus'), units, true);
 				fetch('/common/data/content/summonpools.json')
 					.then(res => res.json())
 					.then((out) => {
@@ -75,5 +76,24 @@ async function init() {
 	// Print the background
 	await getimage("/common/other/summoningaltar.webp").then(img => {
 		preview.drawImage(img, -173, 0, 1067, 1280);
-	})
+	});
+
+	// Populate the selects
+	select5focus = await populate(document.getElementById('fivestarfocus'), units, true);
+	select4focus = await populate(document.getElementById('fourstarfocus'), units, true);
+}
+
+async function getlang() {
+	// Make sure the selected language is available, download it if not
+	var newlang = selectlanguage.value;
+	if (!languages[newlang]) {
+		var response = await fetch('/common/data/languages/summonlanguages-' + selectlanguage.value + '.json');
+		var data = await response.json();
+		languages[newlang] = data;
+	}
+}
+
+// Helper function to sleep async functions for a while
+const sleep = (milliseconds) => {
+	return new Promise(resolve => setTimeout(resolve, milliseconds));
 }

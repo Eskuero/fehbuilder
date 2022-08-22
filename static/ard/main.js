@@ -36,11 +36,11 @@ languages = {};
 
 // Fetch all data from each json
 // We can download the rest of the data now that lenguages are available
-fetch('/common/data/languages/summonlanguages-' + selectlanguage.value + '.json')
+fetch('/common/data/languages/ardlanguages-' + selectlanguage.value + '.json')
 	.then(res => res.json())
 	.then((out) => {
 		// We store languages data for display of strings within the browser
-		languages["USEN"] = out;
+		languages[selectlanguage.value] = out;
 		fetch('/common/data/content/tierunits.json')
 			.then(res => res.json())
 			.then((out) => {

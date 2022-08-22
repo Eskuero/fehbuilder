@@ -18,17 +18,21 @@ import os
 with open("fullother.json", "r") as datasource:
 	blessed = json.load(datasource)["blessed"]
 	
-# Big dictionary to store all translations (we're ignoring Spanish (US) and English (EU) as they are probably 99% identical to save same bandwidth)
+# Big dictionary to store all translations
 languages = {"EUDE": {}, "EUES": {}, "USES": {}, "EUFR": {}, "EUIT": {}, "JPJA": {}, "TWZH": {}, "USEN": {}, "EUEN": {}, "USPT": {}}
 
-# This is a list of strings for translating the UI and must always be included
+# This is a list of strings for translating the UI and must be included
 basicstrings = [
+	# None translation
+	"MSID_H_NONE"
+]
+unitstrings = [
 	# Unit specific
 	"MID_HP", "MID_ATTACK", "MID_AGILITY", "MID_DEFENSE", "MID_RESIST", "MID_SKILL_POINT", "MID_HEROISM_POINT",	"MID_LEVEL2", "MID_EXP", "MID_UNIT_INFO_EXP_MAX",
-	# None translation
-	"MSID_H_NONE",
 	# Buttons to modify equipment or interact
-	"MID_UNIT_INFO_TO_TALK", "MID_UNIT_INFO_TO_SKILLLEARN",	"MID_UNIT_INFO_TO_SKILLEQUIP", "MID_UNIT_INFO_TO_SKILLSET",
+	"MID_UNIT_INFO_TO_TALK", "MID_UNIT_INFO_TO_SKILLLEARN",	"MID_UNIT_INFO_TO_SKILLEQUIP", "MID_UNIT_INFO_TO_SKILLSET"
+]
+blessingstrings = [
 	# Blessings
 	"MID_ITEM_BLESSING_FIRE", "MID_ITEM_BLESSING_WATER", "MID_ITEM_BLESSING_WIND", "MID_ITEM_BLESSING_EARTH", "MID_ITEM_BLESSING_LIGHT",
 	"MID_ITEM_BLESSING_DARK", "MID_ITEM_BLESSING_HEAVEN", "MID_ITEM_BLESSING_LOGIC"
@@ -40,6 +44,8 @@ aetherstrings = [
 	"MID_SCF_白封印祠", "MID_SCF_投石", "MID_SCF_対騎馬", "MID_SCF_黒封印祠", "MID_SCF_防比翼鳥籠", "MID_SCF_対飛行", "MID_SCF_回復", "MID_SCF_対歩行",
 	"MID_SCF_恐慌", "MID_SCF_軍師"
 ]
+# Hold all previous for ease
+fullstrings = basicstrings + unitstrings + blessingstrings + aetherstrings
 
 for language in languages:
 	files = os.listdir("feh-assets-json/files/assets/" + language + "/Message/Data/")
@@ -48,7 +54,7 @@ for language in languages:
 		with open("feh-assets-json/files/assets/" + language + "/Message/Data/" + file, "r") as datasource:
 			data = json.load(datasource)
 			# We only add strings related to either skills or units as long as they are not descriptions
-			for string in [string for string in data if (any(substring in string["key"] for substring in ["MPID_", "MEID_", "MSID_"]) and not any(substring in string["key"] for substring in ["MPID_H_", "MSID_H_", "MPID_SEARCH_", "MPID_LEGEND_"])) or string["key"] in basicstrings]:
+			for string in [string for string in data if (any(substring in string["key"] for substring in ["MPID_", "MEID_", "MSID_"]) and not any(substring in string["key"] for substring in ["MPID_H_", "MEID_H_", "MSID_H_", "MPID_SEARCH_", "MSID_SEARCH_", "MPID_LEGEND_"])) or string["key"] in fullstrings]:
 				strings[string["key"]] = string["value"]
 	languages[language] = strings
 
@@ -60,41 +66,49 @@ for language in languages:
 		with open("feh-assets-json/files/assets/" + language + "/Message/Menu/" + file, "r") as datasource:
 			data = json.load(datasource)
 			# We only add strings related to either skills or units as long as they are not descriptions
-			for string in [string for string in data if string["key"] in basicstrings + aetherstrings]:
+			for string in [string for string in data if string["key"] in fullstrings]:
 				strings[string["key"]] = string["value"]
 	languages[language] = languages[language] | strings
 
-# Store all the data for internal usage
+# Store all the data in a single file for the sake of storage
 with open("fulllanguages.json", "w") as outfile:
     json.dump(languages, outfile)
 
-# Smaller version for offline wiki builder
-languageslite = {
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Version for usage in online and custom unit builders (includes everything but aether structures)
+languagesunit = {
 	language: {
 		key: string
-		for key, string in strings.items() if not any(substring in key for substring in ["ILLUST", "VOICE"]) or any(substring in key for substring in ["EX01"])
+		for key, string in strings.items() if key not in aetherstrings
 	}
 	for language, strings in languages.items()
 }
-with open("litelanguages.json", "w") as outfile:
-    json.dump(languageslite, outfile)
 
-# Even smaller version for summoning
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Version for usage in ard builders (only needs units names and titles and aetherstrings + basicstrings)
+languagesard = {
+	language: {
+		key: string
+		for key, string in strings.items() if not any(substring in key for substring in blessingstrings + unitstrings + ["ILLUST", "VOICE", "SID", "EID"])
+	}
+	for language, strings in languages.items()
+}
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Version for usage in summon simulator (only needs units names and titles)
 languagessummon = {
 	language: {
 		key: string
-		for key, string in strings.items() if not any(substring in key for substring in basicstrings + ["ILLUST", "VOICE", "SID", "EID"])
+		for key, string in strings.items() if not any(substring in key for substring in fullstrings + ["ILLUST", "VOICE", "SID", "EID"])
 	}
 	for language, strings in languages.items()
 }
-with open("summonlanguages.json", "w") as outfile:
-    json.dump(languagessummon, outfile)
 
-# Individual language files
+# Generate individual files for each language and version to reduce bandwidth usage
 for language in languages:
-	with open("fulllanguages-" + language + ".json", "w") as outfile:
-		json.dump(languages[language], outfile)
-	with open("litelanguages-" + language + ".json", "w") as outfile:
-		json.dump(languageslite[language], outfile)
+	with open("unitlanguages-" + language + ".json", "w") as outfile:
+		json.dump(languagesunit[language], outfile)
+	with open("ardlanguages-" + language + ".json", "w") as outfile:
+		json.dump(languagesard[language], outfile)
 	with open("summonlanguages-" + language + ".json", "w") as outfile:
 		json.dump(languagessummon[language], outfile)

@@ -11,23 +11,33 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-function populate(origin, data, clean = false, toberestored = []) {
+async function populateall() {
+	select5focus = await populate(select5focus, units, false);
+	select4focus = await populate(select4focus, units, false);
+}
+
+async function populate(origin, data, clean, toberestored = []) {
+	// If the language required is not downloaded yet wait a bit more
+	var newlang = selectlanguage.value;
+	while (!languages[newlang]) {
+		await sleep(100);
+	}
 	// Get current value to restore it back if possible
 	if (!clean) {
 		for (let i = 0; i < origin.selectedOptions.length; i++) {
 			toberestored.push(origin.selectedOptions[i].value);
 		}
-		// First delete them all
-		while (origin.domitem.lastChild) {
-			origin.domitem.removeChild(origin.domitem.lastChild);
-		}
 		origin = origin.domitem;
+	}
+	// First delete them all
+	while (origin.lastChild) {
+		origin.removeChild(origin.lastChild);
 	}
 	// All data to be printed
 	var options = {};
 	var sorted = {};
 	Object.keys(data).forEach((value) => {
-		sorted[languages[selectlanguage.value]["M" + value] + ": " + (languages[selectlanguage.value][value.replace("PID", "MPID_HONOR")] || "Generic")] = value
+		sorted[languages[newlang]["M" + value] + ": " + (languages[newlang][value.replace("PID", "MPID_HONOR")] || "Generic")] = value
 	});
 	// Sort all the values by visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
 	sorted = Object.keys(sorted).sort().reduce((res, key) => (res[key] = sorted[key], res), {})

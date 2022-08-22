@@ -127,7 +127,7 @@ async function getlang() {
 	// Make sure the selected language is available, download it if not
 	var newlang = selectlanguage.value;
 	if (!languages[newlang]) {
-		let response = await fetch('/common/data/languages/litelanguages-' + newlang + '.json');
+		let response = await fetch('/common/data/languages/unitlanguages-' + newlang + '.json');
 		let data = await response.json();
 		languages[newlang] = data;
 	}
