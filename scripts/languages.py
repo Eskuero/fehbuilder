@@ -22,7 +22,24 @@ with open("fullother.json", "r") as datasource:
 languages = {"EUDE": {}, "EUES": {}, "USES": {}, "EUFR": {}, "EUIT": {}, "JPJA": {}, "TWZH": {}, "USEN": {}, "EUEN": {}, "USPT": {}}
 
 # This is a list of strings for translating the UI and must always be included
-basicstrings = ["MID_HP", "MID_ATTACK", "MID_AGILITY", "MID_DEFENSE", "MID_RESIST", "MID_SKILL_POINT", "MID_HEROISM_POINT", "MID_LEVEL2", "MID_EXP", "MSID_H_NONE", "MID_UNIT_INFO_EXP_MAX", "MID_UNIT_INFO_TO_TALK", "MID_UNIT_INFO_TO_SKILLLEARN", "MID_UNIT_INFO_TO_SKILLEQUIP", "MID_UNIT_INFO_TO_SKILLSET", "MID_ITEM_BLESSING_FIRE", "MID_ITEM_BLESSING_WATER", "MID_ITEM_BLESSING_WIND", "MID_ITEM_BLESSING_EARTH", "MID_ITEM_BLESSING_LIGHT", "MID_ITEM_BLESSING_DARK", "MID_ITEM_BLESSING_HEAVEN", "MID_ITEM_BLESSING_LOGIC"]
+basicstrings = [
+	# Unit specific
+	"MID_HP", "MID_ATTACK", "MID_AGILITY", "MID_DEFENSE", "MID_RESIST", "MID_SKILL_POINT", "MID_HEROISM_POINT",	"MID_LEVEL2", "MID_EXP", "MID_UNIT_INFO_EXP_MAX",
+	# None translation
+	"MSID_H_NONE",
+	# Buttons to modify equipment or interact
+	"MID_UNIT_INFO_TO_TALK", "MID_UNIT_INFO_TO_SKILLLEARN",	"MID_UNIT_INFO_TO_SKILLEQUIP", "MID_UNIT_INFO_TO_SKILLSET",
+	# Blessings
+	"MID_ITEM_BLESSING_FIRE", "MID_ITEM_BLESSING_WATER", "MID_ITEM_BLESSING_WIND", "MID_ITEM_BLESSING_EARTH", "MID_ITEM_BLESSING_LIGHT",
+	"MID_ITEM_BLESSING_DARK", "MID_ITEM_BLESSING_HEAVEN", "MID_ITEM_BLESSING_LOGIC"
+]
+# Aether structures
+aetherstrings = [
+	"MID_SCF_砦", "MID_SCF_ギュミル水瓶", "MID_SCF_ギュミル泉", "MID_SCF_音楽堂", "MID_SCF_食堂", "MID_SCF_畑", "MID_SCF_宿屋", "MID_SCF_落雷の罠A",
+	"MID_SCF_重圧の罠A", "MID_SCF_停止の罠A", "MID_SCF_落雷の罠ダミー", "MID_SCF_重圧の罠ダミー", "MID_SCF_停止の罠ダミー", "MID_SCF_対重装", "MID_SCF_雷",
+	"MID_SCF_白封印祠", "MID_SCF_投石", "MID_SCF_対騎馬", "MID_SCF_黒封印祠", "MID_SCF_防比翼鳥籠", "MID_SCF_対飛行", "MID_SCF_回復", "MID_SCF_対歩行",
+	"MID_SCF_恐慌", "MID_SCF_軍師"
+]
 
 for language in languages:
 	files = os.listdir("feh-assets-json/files/assets/" + language + "/Message/Data/")
@@ -43,7 +60,7 @@ for language in languages:
 		with open("feh-assets-json/files/assets/" + language + "/Message/Menu/" + file, "r") as datasource:
 			data = json.load(datasource)
 			# We only add strings related to either skills or units as long as they are not descriptions
-			for string in [string for string in data if string["key"] in basicstrings]:
+			for string in [string for string in data if string["key"] in basicstrings + aetherstrings]:
 				strings[string["key"]] = string["value"]
 	languages[language] = languages[language] | strings
 

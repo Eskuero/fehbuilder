@@ -21,6 +21,7 @@ selectartstyle = document.getElementById('artstyle');
 selectstructure = document.getElementById('selectstructure');
 selectmap = document.getElementById("mapselect");
 selectcheats = document.getElementById("cheats");
+selectlanguage = document.getElementById("language");
 
 // Checkboxes
 checkshowweapon = document.getElementById("showweapon");
@@ -35,7 +36,7 @@ languages = {};
 
 // Fetch all data from each json
 // We can download the rest of the data now that lenguages are available
-fetch('/common/data/languages/summonlanguages-USEN.json')
+fetch('/common/data/languages/summonlanguages-' + selectlanguage.value + '.json')
 	.then(res => res.json())
 	.then((out) => {
 		// We store languages data for display of strings within the browser

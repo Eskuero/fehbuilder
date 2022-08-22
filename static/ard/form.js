@@ -257,7 +257,12 @@ function scan() {
 	}
 }
 
-function populate(select, data, clean, previousvalue = "None") {
+async function populate(select, data, clean, previousvalue = "None") {
+	// If the language required is not downloaded yet wait a bit more
+	var newlang = selectlanguage.value;
+	while (!languages[newlang]) {
+		await sleep(100);
+	}
 	// First delete them all
 	while (select.lastChild) {
 		select.removeChild(select.lastChild);
@@ -267,7 +272,7 @@ function populate(select, data, clean, previousvalue = "None") {
 	var sorted = {};
 	// If indicated to bypass don't do checks for this select, print everything and leave (this is exclusively for the heroes select)
 	Object.keys(data).forEach((value) => {
-		sorted[languages["USEN"]["M" + value] + ": " + (languages["USEN"][value.replace("PID", "MPID_HONOR")] || "Generic")] = value;
+		sorted[languages[newlang]["M" + value] + ": " + (languages[newlang][value.replace("PID", "MPID_HONOR")] || "Generic")] = value;
 	});
 	// Sort all the values by visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
 	sorted = Object.keys(sorted).sort().reduce((res, key) => (res[key] = sorted[key], res), {});
@@ -286,7 +291,12 @@ function populate(select, data, clean, previousvalue = "None") {
 	}
 }
 
-function populatestructures() {
+async function populatestructures() {
+	// If the language required is not downloaded yet wait a bit more
+	var newlang = selectlanguage.value;
+	while (!languages[newlang]) {
+		await sleep(100);
+	}
 	// First delete them all
 	while (selectstructure.lastChild) {
 		selectstructure.removeChild(selectstructure.lastChild);
@@ -311,7 +321,7 @@ function populatestructures() {
 	for (const [key, values] of Object.entries(other["structures"])) {
 		let option = document.createElement('option');
 		option.value = key;
-		option.innerHTML = values["translation"];
+		option.innerHTML = languages[selectlanguage.value][values["translation"]];
 		switch(values["type"]) {
 			case "mandatory":
 				mandatories.appendChild(option);

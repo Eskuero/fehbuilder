@@ -27,6 +27,21 @@ function download() {
 	});
 }
 
+async function getlang() {
+	// Make sure the selected language is available, download it if not
+	var newlang = selectlanguage.value;
+	if (!languages[newlang]) {
+		var response = await fetch('/common/data/languages/summonlanguages-' + newlang + '.json');
+		var data = await response.json();
+		languages[newlang] = data;
+	}
+}
+
+// Helper function to sleep async functions for a while
+const sleep = (milliseconds) => {
+	return new Promise(resolve => setTimeout(resolve, milliseconds));
+  }
+
 function changemap() {
 	var map = selectmap.value;
 	mapcanvas.style.background = 'url("/common/other/maps-' + map + '.webp")';

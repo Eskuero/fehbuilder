@@ -83,104 +83,103 @@
     "structures": {
         "fortress": {
             "type": "mandatory",
-            "translation": "Fortress"
+            "translation": "MID_SCF_砦"
         },
         "aetheramphorae": {
             "type": "mandatory",
-            "translation": "Aether Amphorae"
+            "translation": "MID_SCF_ギュミル水瓶"
         },
         "aetherfountain": {
             "type": "mandatory",
-            "translation": "Aether Fountain"
+            "translation": "MID_SCF_ギュミル泉"
         },
         "concerthall": {
             "type": "decorative",
-            "translation": "Concert Hall"
+            "translation": "MID_SCF_音楽堂"
         },
         "dininghall": {
             "type": "decorative",
-            "translation": "Dining Hall"
+            "translation": "MID_SCF_食堂"
         },
         "field": {
             "type": "decorative",
-            "translation": "Field"
+            "translation": "MID_SCF_畑"
         },
         "inn": {
             "type": "decorative",
-            "translation": "Inn"
+            "translation": "MID_SCF_宿屋"
         },
         "bolttrap": {
             "type": "trap",
-            "translation": "Bolt Trap"
+            "translation": "MID_SCF_落雷の罠A"
         },
         "heavytrap": {
             "type": "trap",
-            "translation": "Heavy Trap"
+            "translation": "MID_SCF_重圧の罠A"
         },
         "hextrap": {
             "type": "trap",
-            "translation": "Hex Trap"
+            "translation": "MID_SCF_停止の罠A"
         },
         "bolttrapfake": {
             "type": "faketrap",
-            "translation": "Bolt Trap (Fake)"
+            "translation": "MID_SCF_落雷の罠ダミー"
         },
         "heavytrapfake": {
             "type": "faketrap",
-            "translation": "Heavy Trap (Fake)"
+            "translation": "MID_SCF_重圧の罠ダミー"
         },
         "hextrapfake": {
             "type": "faketrap",
-            "translation": "Hex Trap (Fake)"
+            "translation": "MID_SCF_停止の罠ダミー"
         },
-
         "armorschool": {
             "type": "defensive",
-            "translation": "Armor School"
+            "translation": "MID_SCF_対重装"
         },
         "bolttower": {
             "type": "defensive",
-            "translation": "Bolt Tower"
+            "translation": "MID_SCF_雷"
         },
         "brigthshrine": {
             "type": "defensive",
-            "translation": "Bright Shrine"
+            "translation": "MID_SCF_白封印祠"
         },
         "catapult": {
             "type": "defensive",
-            "translation": "Catapult"
+            "translation": "MID_SCF_投石"
         },
         "cavalryschool": {
             "type": "defensive",
-            "translation": "Cavalry School"
+            "translation": "MID_SCF_対騎馬"
         },
         "darkshrine": {
             "type": "defensive",
-            "translation": "Dark Shrine"
+            "translation": "MID_SCF_黒封印祠"
         },
         "duoshindrance": {
             "type": "defensive",
-            "translation": "Duo's Hindrance"
+            "translation": "MID_SCF_防比翼鳥籠"
         },
         "flierschool": {
             "type": "defensive",
-            "translation": "Flier School"
+            "translation": "MID_SCF_対飛行"
         },
         "healingtower": {
             "type": "defensive",
-            "translation": "Healing Tower"
+            "translation": "MID_SCF_回復"
         },
         "infantryschool": {
             "type": "defensive",
-            "translation": "Infantry School"
+            "translation": "MID_SCF_対歩行"
         },
         "panicmanor": {
             "type": "defensive",
-            "translation": "Panic Manor"
+            "translation": "MID_SCF_恐慌"
         },
         "tacticsroom": {
             "type": "defensive",
-            "translation": "Tactics Room"
+            "translation": "MID_SCF_軍師"
         }
     },
     "seasonals": {

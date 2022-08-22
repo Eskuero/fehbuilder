@@ -100,6 +100,18 @@
 					<button onclick="clearmap()" class="button">Clear</button>
 					<button onclick="download()" class="button">Download</button>
 					<button onclick="showhelp()" class="button">Help</button>
+					<select class="select-without-search single" id="language" onchange="getlang(); populate(selectheroes, units, true); populatestructures(); statictranslations();">
+						<option value="USEN" selected>English (America)</option>
+						<option value="EUEN">English (UK)</option>
+						<option value="EUDE">Deutsch</option>
+						<option value="EUES">Español (España)</option>
+						<option value="USES">Español (America)</option>
+						<option value="EUFR">Français</option>
+						<option value="EUIT">Italiano</option>
+						<option value="JPJA">日本語</option>
+						<option value="TWZH">繁體中文</option>
+						<option value="USPT">Português</option>
+					</select>
 				</div>
 				<h2>Options</h2>
 				<div class="section">
