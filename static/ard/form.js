@@ -109,8 +109,10 @@ function updatedialog(caller) {
 		selectheroes.disabled = false;
 	}
 	// Repopulate the hero select with the option choosen for that tile if already exists
-	var restore = caller.lastChild ? caller.lastChild.id.split("-")[0] : "None";
-	selectheroes.value = restore;
+	if (caller.lastChild) {
+		var restore = caller.lastChild.className != "structure" ? caller.lastChild.id.split("-")[0] : "None";
+		selectheroes.value = restore;
+	}
 	
 	// Finally set the selected tile attribute and show the box
 	selectheroes.setAttribute("selectedtile", caller.id);
