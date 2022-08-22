@@ -72,40 +72,23 @@ usedallies = document.getElementById('usedalliesform');
 
 // We store languages data for display of strings within the browser
 languages = {};
-// Fetch all data from each json
-fetch('/common/data/languages/unitlanguages-' + selectlanguage.value + '.json')
-	.then(res => res.json())
-	.then((out) => {
-		// We store languages data for display of strings within the browser
-		languages[selectlanguage.value] = out;
-		// We can download the rest of the data now that lenguages are available
-		fetch('/common/data/content/customunits.json')
-			.then(res => res.json())
-			.then((out) => {
-				// We store the heroes for basic checks within the browser
-				units = out;
-				fetch('/common/data/content/customskills.json')
-					.then(res => res.json())
-					.then((out) => {
-						// We store the skills for basic checks within the browser
-						skills = out;
-						// We need to have all skills available as a whole in case we use cheat seals
-						allpassives = Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"]);
-						fetch('/common/data/content/customother.json')
-							.then(res => res.json())
-							.then((out) => {
-								// We store other data for basic checks within the browser
-								other = out;
-								init();
-						}).catch(err => console.error(err));
-				}).catch(err => console.error(err));
-		}).catch(err => console.error(err));
-}).catch(err => console.error(err));
+
+// This array will be used as rendering queue
+renderingqueue = [];
+
+window.onload = init();
 
 async function init() {
-	await populateall();
-	// This array will be used as rendering queue
-	renderingqueue = [];
+	// Get all data and store it
+	languages[selectlanguage.value] = await fetch('/common/data/languages/unitlanguages-' + selectlanguage.value + '.json').then(response => {return response.json();});
+	units = await fetch('/common/data/content/customunits.json').then(response => {return response.json();});
+	skills = await fetch('/common/data/content/customskills.json').then(response => {return response.json();});
+	allpassives = Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"]);
+	other = await fetch('/common/data/content/customother.json').then(response => {return response.json();});
+
+	// Build unit selects
+	populateall();
+
 	// Load and wait for the font to be ready
 	var font = new FontFace("FeH-Font", "url('/common/feh-font.woff2') format('woff2')");
 	await font.load();
