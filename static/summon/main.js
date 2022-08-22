@@ -40,36 +40,15 @@ pityofffocus3 = document.getElementById('pityofffocus3');
 // We store languages data for display of strings within the browser
 languages = {};
 
-// Fetch all data from each json
-fetch('/common/data/languages/summonlanguages-' + selectlanguage.value + '.json')
-	.then(res => res.json())
-	.then((out) => {
-		// We store languages data for display of strings within the browser
-		languages[selectlanguage.value] = out;
-		// We can download the rest of the data now that lenguages are available
-		fetch('/common/data/content/summonunits.json')
-			.then(res => res.json())
-			.then((out) => {
-				// We store the heroes for basic checks within the browser
-				units = out
-				fetch('/common/data/content/summonpools.json')
-					.then(res => res.json())
-					.then((out) => {
-						// We store summoning pool data
-						permapools = out;
-						// Now that everything is loaded we can init
-						init();
-				}).catch(err => console.error(err));
-		}).catch(err => console.error(err));
-}).catch(err => console.error(err));
-fetch('/common/data/content/summonother.json')
-	.then(res => res.json())
-	.then((out) => {
-		// We store other data for basic checks within the browser
-		other = out;
-}).catch(err => console.error(err));
+window.onload = init();
 
 async function init() {
+	// Get all data and store it
+	languages[selectlanguage.value] = await fetch('/common/data/languages/summonlanguages-' + selectlanguage.value + '.json').then(response => {return response.json();});
+	units = await fetch('/common/data/content/summonunits.json').then(response => {return response.json();});
+	permapools = await fetch('/common/data/content/summonpools.json').then(response => {return response.json();});
+	other = await fetch('/common/data/content/summonother.json').then(response => {return response.json();});
+
 	// Obtain the object
 	var preview = document.getElementById("fakecanvas").getContext("2d");
 
