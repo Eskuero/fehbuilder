@@ -36,11 +36,7 @@ async function populateall(clean, bypass = false) {
 }
 
 async function reload(scroll = false) {
-	// If the language required is not downloaded yet wait a bit more
 	var newlang = selectlanguage.value;
-	while (!languages[newlang]) {
-		await sleep(100);
-	}
 	// Get epoch as rendering ID
 	var renderingid = new Date().getTime();
 	// Put our rendering ID on queue
@@ -84,11 +80,7 @@ async function reload(scroll = false) {
 }
 
 async function populate(domitem, data, clean, bypass) {
-	// If the language required is not downloaded yet wait a bit more
 	var newlang = selectlanguage.value;
-	while (!languages[newlang]) {
-		await sleep(100);
-	}
 	// Get current value to restore it back if possible
 	var previousvalue = domitem.value;
 	// First delete them all
@@ -96,12 +88,12 @@ async function populate(domitem, data, clean, bypass) {
 		domitem.removeChild(domitem.lastChild);
 	}
 	// All data to be printed (Always add the None option with it's proper translation)
-	var options = {"None": {"string": languages[selectlanguage.value]["MSID_H_NONE"]}};
+	var options = {"None": {"string": languages[newlang]["MSID_H_NONE"]}};
 	var sorted = {};
 	// If indicated to bypass don't do checks for this select, print everything and leave (this is exclusively for the heroes select)
 	if (bypass) {
 		Object.keys(data).forEach((value) => {
-			sorted[languages[selectlanguage.value]["M" + value] + ": " + (languages[selectlanguage.value][value.replace("PID", "MPID_HONOR")] || "Generic")] = value;
+			sorted[languages[newlang]["M" + value] + ": " + (languages[newlang][value.replace("PID", "MPID_HONOR")] || "Generic")] = value;
 		});
 		sorted = Object.keys(sorted).sort().reduce((res, key) => (res[key] = sorted[key], res), {});
 		// Obtain the final data object that rebspicker can read
@@ -189,11 +181,6 @@ async function populate(domitem, data, clean, bypass) {
 }
 
 async function statictranslations() {
-	// If the language required is not downloaded yet wait a bit more
-	var newlang = selectlanguage.value;
-	while (!languages[newlang]) {
-		await sleep(100);
-	}
 	slotname();
 }
 
@@ -247,11 +234,7 @@ function swapstat(caller, target) {
 }
 
 async function fillblessed(clean = false, toberestored = []) {
-	// If the language required is not downloaded yet wait a bit more
 	var newlang = selectlanguage.value;
-	while (!languages[newlang]) {
-		await sleep(100);
-	}
 	// We need to know which options to restore unless called clean
 	if (!clean && selectallies.selectedOptions) {
 		for (let i = 0; i < selectallies.selectedOptions.length; i++) {
@@ -268,7 +251,7 @@ async function fillblessed(clean = false, toberestored = []) {
 	var sorted = {};
 	// Add an option for each value
 	for (const [hero, properties] of Object.entries(other["blessed"])) {
-		sorted[languages[selectlanguage.value]["M" + hero] + ": " + languages[selectlanguage.value][hero.replace("PID", "MPID_HONOR")]] = hero;
+		sorted[languages[newlang]["M" + hero] + ": " + languages[newlang][hero.replace("PID", "MPID_HONOR")]] = hero;
 	}
 	// Sort all the values by visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
 	var sorted = Object.keys(sorted).sort().reduce((res, key) => (res[key] = sorted[key], res), {});

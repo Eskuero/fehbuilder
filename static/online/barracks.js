@@ -13,11 +13,6 @@
 
 async function loadbarracks() {
 	var domitem = document.getElementById("selectbuild");
-	// If the language required is not downloaded yet wait a bit more
-	var newlang = selectlanguage.value;
-	while (!languages[newlang] || !other) {
-		await sleep(100);
-	}
 	// Get current value to restore it back if possible
 	var previousvalue = domitem.value;
 	// First delete them all
