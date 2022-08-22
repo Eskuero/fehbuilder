@@ -34,9 +34,6 @@ async function populateall(clean, bypass = false) {
 async function populate(domitem, data, clean, bypass = false) {
 	// If the language required is not downloaded yet wait a bit more
 	var newlang = selectlanguage.value;
-	while (!languages[newlang]) {
-		await sleep(100);
-	}
 	// Get current value to restore it back if possible
 	var previousvalue = domitem.value;
 	// First delete them all
@@ -44,12 +41,12 @@ async function populate(domitem, data, clean, bypass = false) {
 		domitem.removeChild(domitem.lastChild);
 	}
 	// All data to be printed (Always add the None option with it's proper translation)
-	var options = {"None": {"string": languages[selectlanguage.value]["MSID_H_NONE"]}};
+	var options = {"None": {"string": languages[newlang]["MSID_H_NONE"]}};
 	var sorted = {};
 	// If indicated to bypass don't do checks for this select, print everything and leave (this is exclusively for the heroes select)
 	if (bypass) {
 		Object.keys(data).forEach((value) => {
-			sorted[languages[selectlanguage.value]["M" + value] + ": " + (languages[selectlanguage.value][value.replace("PID", "MPID_HONOR")] || "Generic")] = value;
+			sorted[languages[newlang]["M" + value] + ": " + (languages[newlang][value.replace("PID", "MPID_HONOR")] || "Generic")] = value;
 		});
 		// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
 		var sorted = Object.keys(sorted).sort().reduce((res, key) => (res[key] = sorted[key], res), {})
@@ -96,7 +93,7 @@ async function populate(domitem, data, clean, bypass = false) {
 		}
 		// Arriving at this check with a true add value measn we can add the option
 		if (add) {
-			sorted[languages[selectlanguage.value]["M" + value]] = value;
+			sorted[languages[newlang]["M" + value]] = value;
 		}
 	});
 	// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
@@ -132,9 +129,6 @@ function beastcheck() {
 async function fillblessed() {
 	// If the language required is not downloaded yet wait a bit more
 	var newlang = selectlanguage.value;
-	while (!languages[newlang]) {
-		await sleep(100);
-	}
 	// We need to know which options to restore
 	var toberestored = [];
 	if (selectallies.selectedOptions) {
@@ -152,7 +146,7 @@ async function fillblessed() {
 	var sorted = {};
 	// Add an option for each value
 	for (const [hero, properties] of Object.entries(other["blessed"])) {
-		sorted[languages[selectlanguage.value]["M" + hero] + ": " + languages[selectlanguage.value][hero.replace("PID", "MPID_HONOR")]] = hero;
+		sorted[languages[newlang]["M" + hero] + ": " + languages[newlang][hero.replace("PID", "MPID_HONOR")]] = hero;
 	}
 	// Sort all the values by visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
 	var sorted = Object.keys(sorted).sort().reduce((res, key) => (res[key] = sorted[key], res), {});
@@ -413,9 +407,4 @@ function changemode() {
 }
 
 async function statictranslations() {
-	// If the language required is not downloaded yet wait a bit more
-	var newlang = selectlanguage.value;
-	while (!languages[newlang]) {
-		await sleep(100);
-	}
 }

@@ -14,9 +14,6 @@
 async function reload() {
 	// If the language required is not downloaded yet wait a bit more
 	var language = selectlanguage.value;
-	while (!languages[language]) {
-		await sleep(100);
-	}
 	// Get epoch as rendering ID
 	var renderingid = new Date().getTime();
 	// Put our rendering ID on queue

@@ -123,7 +123,7 @@ async function getimage(url, fallback = "/common/base/oopsie.webp") {
 	return img;
 }
 
-async function getlang() {
+async function changelang() {
 	// Make sure the selected language is available, download it if not
 	var newlang = selectlanguage.value;
 	if (!languages[newlang]) {
@@ -131,6 +131,10 @@ async function getlang() {
 		let data = await response.json();
 		languages[newlang] = data;
 	}
+	// Make sure all the selects repopulate properly before starting to reload
+	await populateall(false);
+	reload();
+	statictranslations();
 }
 
 function setupdownload() {
