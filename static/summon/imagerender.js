@@ -148,7 +148,7 @@ position = [
 ]
 async function drawcircle(heroes) {
 	// Obtain the object
-	var preview = document.getElementById("fakecanvas").getContext("2d");
+	var preview = document.getElementById("canvas").getContext("2d");
 
 	// Print the background
 	await getimage("/common/other/summoningaltar.webp").then(img => {
@@ -180,6 +180,10 @@ async function drawcircle(heroes) {
 			});
 		}
 	}
+	// Convert canvas to a data url
+	var url = document.getElementById("canvas").toDataURL("image/png");
+	// Update the image element
+	document.getElementById("fakecanvas").src = url;
 }
 
 async function getimage(url, fallback = "/common/base/oopsie.webp") {

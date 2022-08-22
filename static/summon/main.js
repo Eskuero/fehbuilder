@@ -49,14 +49,6 @@ async function init() {
 	permapools = await fetch('/common/data/content/summonpools.json').then(response => {return response.json();});
 	other = await fetch('/common/data/content/summonother.json').then(response => {return response.json();});
 
-	// Obtain the object
-	var preview = document.getElementById("fakecanvas").getContext("2d");
-
-	// Print the background
-	await getimage("/common/other/summoningaltar.webp").then(img => {
-		preview.drawImage(img, -173, 0, 1067, 1280);
-	});
-
 	// Populate the selects
 	select5focus = await populate(document.getElementById('fivestarfocus'), units, true);
 	select4focus = await populate(document.getElementById('fourstarfocus'), units, true);
