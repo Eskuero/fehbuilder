@@ -17,11 +17,7 @@ async function populateall() {
 }
 
 async function populate(origin, data, clean, toberestored = []) {
-	// If the language required is not downloaded yet wait a bit more
 	var newlang = selectlanguage.value;
-	while (!languages[newlang]) {
-		await sleep(100);
-	}
 	// Get current value to restore it back if possible
 	if (!clean) {
 		for (let i = 0; i < origin.selectedOptions.length; i++) {
