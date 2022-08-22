@@ -35,57 +35,36 @@ rendered = document.getElementById("results");
 // Current tier
 tierlist = document.getElementById("tierlist");
 
-// Fetch all data from each json
-// We can download the rest of the data now that lenguages are available
-fetch('/common/data/content/tierunits.json')
-	.then(res => res.json())
-	.then((out) => {
-		// We store the heroes for basic checks within the browser
-		units = out;
-		fetch('/common/data/content/tierother.json')
-			.then(res => res.json())
-			.then((out) => {
-				// We store other data for basic checks within the browser
-				other = out;
-				init();
-		}).catch(err => console.error(err));
-}).catch(err => console.error(err));
+// Try to get all saved tierlists
+if (localStorage.getItem('saves')) {
+	saves = JSON.parse(localStorage.getItem('saves'));
+// Or setup the default ones
+} else {
+	saves = {
+		"Default": {
+			"tierlist": [
+				{"color": "#FF7F7F", "name": "S", "content": []},
+				{"color": "#FFBF7F", "name": "A", "content": []},
+				{"color": "#FFFF7F", "name": "B", "content": []},
+				{"color": "#BFFF7F", "name": "C", "content": []},
+				{"color": "#7FFFFF", "name": "D", "content": []},
+				{"color": "#7FBFFF", "name": "E", "content": []}
+			]
+		}
+	};
+	localStorage.setItem('saves', JSON.stringify(saves));
+}
 
-function init() {
-	// Try to get all saved tierlists
-	if (localStorage.getItem('saves')) {
-		saves = JSON.parse(localStorage.getItem('saves'));
-	// Or setup the default ones
-	} else {
-		saves = {
-			"Default": {
-				"tierlist": [
-					{"color": "#FF7F7F", "name": "S", "content": []},
-					{"color": "#FFBF7F", "name": "A", "content": []},
-					{"color": "#FFFF7F", "name": "B", "content": []},
-					{"color": "#BFFF7F", "name": "C", "content": []},
-					{"color": "#7FFFFF", "name": "D", "content": []},
-					{"color": "#7FBFFF", "name": "E", "content": []}
-				]
-			}
-		};
-		localStorage.setItem('saves', JSON.stringify(saves));
-	}
-	// Fill the select of saved tierlists
-	while (selectsavelist.lastChild) {
-		selectsavelist.removeChild(selectsavelist.lastChild);
-	}
-	var savenames = Object.keys(saves);
-	for (let i = 0; i < savenames.length; i++) {
-		let savename = document.createElement('option');
-		savename.value = savenames[i];
-		savename.innerHTML = savenames[i];
-		selectsavelist.appendChild(savename);
-	}
-	// Create the first tierlist if exists
-	if (Object.keys(saves)[0]) {
-		loadsave(Object.keys(saves)[0]);
-	}
-	// Populate based on current filters
+window.onload = init();
+
+async function init() {
+	// Get all data and store it
+	units = await fetch('/common/data/content/tierunits.json').then(response => {return response.json();});
+	other = await fetch('/common/data/content/tierother.json').then(response => {return response.json();});
+
+	// Populate the tierlist select based on saved data
+	populatetierlistlist();
+
+	// Show units based on current filters
 	populate();
 }

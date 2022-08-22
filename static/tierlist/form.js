@@ -30,6 +30,24 @@ function drop(ev) {
 	target.appendChild(document.getElementById(data));
 }
 
+function populatetierlistlist() {
+	// Fill the select of saved tierlists
+	while (selectsavelist.lastChild) {
+		selectsavelist.removeChild(selectsavelist.lastChild);
+	}
+	var savenames = Object.keys(saves);
+	for (let i = 0; i < savenames.length; i++) {
+		let savename = document.createElement('option');
+		savename.value = savenames[i];
+		savename.innerHTML = savenames[i];
+		selectsavelist.appendChild(savename);
+	}
+	// Create the first tierlist if exists
+	if (Object.keys(saves)[0]) {
+		loadsave(Object.keys(saves)[0]);
+	}
+}
+
 function populate() {
 	// First delete all currently rendered
 	while (rendered.lastChild) {
