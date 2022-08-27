@@ -129,7 +129,12 @@ input[type='number']::-webkit-inner-spin-button {
 	opacity: 1;
 }
 .imagelabel {
-	height: 2em; /* FIXME: Set image dimensions to prevent a grid blowout */
+	height: 2em;
+	width: 2em;
+	--spritesheet-width: 13; /* This is the number of icons in each of row of the spritesheet */
+	background-image: url("/common/assets/summon.webp");
+	background-position: calc(var(--spriteid) * -100%) 0;
+	background-size: calc(var(--spritesheet-width) * 100%); /* If we increase the size of the background a 100% for each icon they will fit in any size */
 }
 input[type=checkbox] {
 	width: 18px; 

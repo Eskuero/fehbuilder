@@ -35,7 +35,7 @@
 						<button onclick="alert('Unimplemented')" class="summonbutton">Multi session</button>
 					</div>
 					<div class="row-property single">
-						<img class="imagelabel" src="/common/assets/language.webp" title="Language"/>
+						<div class="imagelabel" style="--spriteid:0"></div>
 						<select class="select-without-search" id="language" onchange="changelang()">
 							<option value="USEN" selected>English (America)</option>
 							<option value="EUEN">English (UK)</option>
@@ -53,46 +53,46 @@
 				<h2>Focus Units</h2>
 				<div class="section focusform">
 					<div class="row-property single fat">
-						<img class="imagelabel" src="/common/assets/Rarity_5_Focus.webp" title="5 star rarity"/>
+						<div class="imagelabel" style="--spriteid:1"></div>
 						<div id="fivestarfocus" onchange="changetargets()"></div>
 					</div>
 					<div class="row-property single fat">
-						<img class="imagelabel" src="/common/assets/Rarity_4_Focus.webp" title="4 star rarity"/>
+						<div class="imagelabel" style="--spriteid:2"></div>
 						<div id="fourstarfocus" onchange="changetargets()"></div>
 					</div>
 				</div>
 				<h2>Base gacha percents</h2>
 				<div class="section percentsform">
 					<div class="row-property double">
-						<img class="imagelabel" src="/common/assets/Rarity_5_Focus.webp" title="Focus 5* units"/>
+						<div class="imagelabel" style="--spriteid:1"></div>
 						<input type="number" id="focus5" min="0" max="99" onchange="reset()" value="3">
-						<img class="imagelabel" src="/common/assets/rarity.webp" title="Off-focus 5* units"/>
+						<div class="imagelabel" style="--spriteid:3"></div>
 						<input type="number" id="offfocus5" min="0" max="99" onchange="reset()" value="3">
 					</div>
 					<div class="row-property double">
-						<img class="imagelabel" src="/common/assets/Rarity_4_Focus.webp" title="Focus 4* units"/>
+						<div class="imagelabel" style="--spriteid:2"></div>
 						<input type="number" id="focus4" min="0" max="99" onchange="reset()" value="3">
-						<img class="imagelabel" src="/common/assets/Rarity_4_Special.webp" title="Special Rate 4* units"/>
+						<div class="imagelabel" style="--spriteid:4"></div>
 						<input type="number" id="special4" min="0" max="99" onchange="reset()" value="3">
 					</div>
 					<div class="row-property double">
-						<img class="imagelabel" src="/common/assets/Rarity_4.webp" title="Off-focus 4* units"/>
+						<div class="imagelabel" style="--spriteid:5"></div>
 						<input type="number" id="offfocus4" min="0" max="99" onchange="reset()" value="52">
-						<img class="imagelabel" src="/common/assets/Rarity_3.webp" title="Off-focus 3* units"/>
+						<div class="imagelabel" style="--spriteid:6"></div>
 						<input type="number" id="offfocus3" min="0" max="99" onchange="reset()" value="36">
 					</div>
 				</div>
 				<h2>Behaviour</h2>
 				<div class="section behaviourform">
 					<div class="row-property single">
-						<img class="imagelabel" src="/common/assets/method.webp" title="Summoning method" />
+						<div class="imagelabel" style="--spriteid:7"></div>
 						<select class="select-without-search" id="method">
 							<option value="snipe">Color sniping</option>
 							<option value="full">Complete circles</option>
 						</select>
 					</div>
 					<div class="row-property single">
-						<img class="imagelabel" src="/common/assets/until.webp" title="Summoning until" />
+						<div class="imagelabel" style="--spriteid:8"></div>
 						<select class="select-without-search" id="until" disabled>
 							<option value="all">All targets obtained</option>
 							<option value="one">One target obtained</option>
@@ -105,36 +105,36 @@
 				<h2>Built pity-rate</h2>
 				<div class="section pityform">
 					<div class="row-property double">
-						<img class="imagelabel" src="/common/assets/Rarity_5_Focus.webp" title="Focus 5* units"/>
+						<div class="imagelabel" style="--spriteid:1"></div>
 						<input type="number" id="pityfocus5" min="0" max="99" value="3" disabled>
-						<img class="imagelabel" src="/common/assets/rarity.webp" title="Off-focus 5* units"/>
+						<div class="imagelabel" style="--spriteid:3"></div>
 						<input type="number" id="pityofffocus5" min="0" max="99" value="3" disabled>
 					</div>
 					<div class="row-property double">
-						<img class="imagelabel" src="/common/assets/Rarity_4_Focus.webp" title="Focus 4* units"/>
+						<div class="imagelabel" style="--spriteid:2"></div>
 						<input type="number" id="pityfocus4" min="0" max="99" value="3" disabled>
-						<img class="imagelabel" src="/common/assets/Rarity_4_Special.webp" title="Special Rate 4* units"/>
+						<div class="imagelabel" style="--spriteid:4"></div>
 						<input type="number" id="pityspecial4" min="0" max="99" value="3" disabled>
 					</div>
 					<div class="row-property double">
-						<img class="imagelabel" src="/common/assets/Rarity_4.webp" title="Off-focus 4* units"/>
+						<div class="imagelabel" style="--spriteid:5"></div>
 						<input type="number" id="pityofffocus4" min="0" max="99" value="52" disabled>
-						<img class="imagelabel" src="/common/assets/Rarity_3.webp" title="Off-focus 3* units"/>
+						<div class="imagelabel" style="--spriteid:6"></div>
 						<input type="number" id="pityofffocus3" min="0" max="99" value="36" disabled>
 					</div>
 				</div>
 				<div class="links">
 					<a href="/">
-						<img class="imagelabel" src="/common/assets/home.webp" title="Homepage"/>
+						<div class="imagelabel" style="--spriteid:9"></div>
 					</a>
 					<a href="https://github.com/Eskuero/fehbuilder" target="blank">
-						<img class="imagelabel" src="/common/assets/github.webp" title="Source Code"/>
+						<div class="imagelabel" style="--spriteid:10"></div>
 					</a>
 					<a href="https://ko-fi.com/eskuero" target="blank">
-						<img class="imagelabel" src="/common/assets/kofi.webp" title="Donations"/>
+						<div class="imagelabel" style="--spriteid:11"></div>
 					</a>
 					<a href="https://discord.com/invite/fireemblemheroes" target="blank">
-						<img class="imagelabel" src="/common/assets/discord.webp" title="Discord Server"/>
+						<div class="imagelabel" style="--spriteid:12"></div>
 					</a>
 				</div>
 			</div>

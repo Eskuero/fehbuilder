@@ -27,12 +27,12 @@
 			<div class="dialogform">
 				<h3>Change content of tile</h3>
 				<div class="row-property single">
-					<img class="imagelabel" src="/common/assets/kiran.webp" title="Hero"/>
+					<div class="imagelabel" style="--spriteid:0"></div>
 					<div id="selectheroes" onchange="pasteunit(this)">
 					</div>
 				</div>
 				<div class="row-property single">
-					<img class="imagelabel" src="/common/assets/structure.webp" title="Structure"/>
+					<div class="imagelabel" style="--spriteid:1"></div>
 					<select class="select-without-search" id="selectstructure" onchange="pastestructure(this)">
 						<option value="None">None</option>
 					</select>
@@ -119,7 +119,7 @@
 				<h2>Options</h2>
 				<div class="section">
 					<div class="row-property single">
-						<img class="imagelabel" src="/common/assets/divinecode.webp" title="Map"/>
+						<div class="imagelabel" style="--spriteid:2"></div>
 						<select class="select-without-search" onchange="changemap()" id="mapselect">
 							<option value="springwater">Springwater</option>
 							<option value="wintry">Wintry</option>
@@ -139,7 +139,7 @@
 						</select>
 					</div>
 					<div class="row-property single">
-						<img class="imagelabel" src="/common/assets/brush.webp" title="Art style"/>
+						<div class="imagelabel" style="--spriteid:3"></div>
 						<select class="select-without-search" id="artstyle" onchange="changeart()">
 							<option value="sprites-idle">Sprite (Idle)</option>
 							<option value="sprites">Sprite (Battle)</option>
@@ -189,16 +189,16 @@
 				</div>
 				<div class="links">
 					<a href="/">
-						<img class="imagelabel" src="/common/assets/home.webp" title="Homepage"/>
+						<div class="imagelabel" style="--spriteid:4"></div>
 					</a>
 					<a href="https://github.com/Eskuero/fehbuilder" target="blank">
-						<img class="imagelabel" src="/common/assets/github.webp" title="Source Code"/>
+						<div class="imagelabel" style="--spriteid:5"></div>
 					</a>
 					<a href="https://ko-fi.com/eskuero" target="blank">
-						<img class="imagelabel" src="/common/assets/kofi.webp" title="Donations"/>
+						<div class="imagelabel" style="--spriteid:6"></div>
 					</a>
 					<a href="https://discord.com/invite/fireemblemheroes" target="blank">
-						<img class="imagelabel" src="/common/assets/discord.webp" title="Discord Server"/>
+						<div class="imagelabel" style="--spriteid:7"></div>
 					</a>
 				</div>
 			</div>

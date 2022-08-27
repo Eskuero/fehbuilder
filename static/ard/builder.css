@@ -219,7 +219,11 @@ input[type=checkbox] {
 }
 .imagelabel {
 	height: 2em;
-	width: 2em;
+	min-width: 2em;
+	--spritesheet-width: 8; /* This is the number of icons in each of row of the spritesheet */
+	background-image: url("/common/assets/ard.webp");
+	background-position: calc(var(--spriteid) * -100%) 0;
+	background-size: calc(var(--spritesheet-width) * 100%); /* If we increase the size of the background a 100% for each icon they will fit in any size */
 }
 h2 {
 	text-decoration: underline;

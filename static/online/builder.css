@@ -201,7 +201,12 @@ input[type='number']::-webkit-inner-spin-button {
 	opacity: 1; /* Make sure number inputs have the clickable buttons on Chrome */
 }
 .imagelabel {
-	height: 2em; /* FIXME: Set image dimensions to prevent a grid blowout */
+	height: 2em;
+	width: 2em;
+	--spritesheet-width: 41; /* This is the number of icons in each of row of the spritesheet */
+	background-image: url("/common/assets/online.webp");
+	background-position: calc(var(--spriteid) * -100%) 0;
+	background-size: calc(var(--spritesheet-width) * 100%); /* If we increase the size of the background a 100% for each icon they will fit in any size */
 }
 .textlabel {
 	display: flex;
@@ -260,12 +265,12 @@ input[type='number']::-webkit-inner-spin-button {
 .tabs > button {
 	margin-left: 0.5em;
 }
-.tabs > img {
+.tabs > div {
 	padding: 0.5em;
 	border-bottom: 1px solid white;
 	cursor: pointer;
 }
-.imagelabel.selected {
+.selected {
     background-color: white; /* Exclusively used to indicate current section */
 }
 

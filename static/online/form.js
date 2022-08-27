@@ -219,10 +219,10 @@ function swapstat(caller, target) {
 	// Switch the selected option in the tabs by changing the background color
 	var options = document.getElementsByClassName("tabs")[0].children;
 	for (let i = 1; i < options.length - 1; i++) {
-		if (options[i] == caller) {
-			options[i].className = "imagelabel selected";
+		if (options[i].firstChild == caller) {
+			options[i].className = "selected";
 		} else {
-			options[i].className = "imagelabel";
+			options[i].className = "";
 		}
 	}
 
