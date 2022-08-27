@@ -1,0 +1,43 @@
+{
+	"online": {
+		"location": "../static/common/assets/icons/",
+		"output": "../static/common/assets/",
+		"iconsize": 48,
+		"icons": [
+			"language.webp", "unit.webp", "resplendent.webp", "rarity.webp", "beasts.webp", "summoner.webp", "merges.webp", "flower.webp",
+			"boon.png", "bane.png", "ascended.webp", "bonus.webp", "blessings.webp", "weapon.webp", "refine.webp", "assist.webp", "special.webp",
+			"skilla.png", "skillb.png", "skillc.png", "skills.png", "bonuses.webp", "pairup.webp", "attack.webp", "speed.webp", "defense.webp",
+			"resistance.webp", "sp.webp", "hm.webp", "brush.webp", "template.webp", "up.webp", "right.webp", "mirror.webp", "background.png",
+			"favorite.webp", "veronica.webp", "home.png", "github.png", "kofi.png", "discord.png"
+		]
+	},
+	"custom": {
+		"location": "../static/common/assets/icons/",
+		"output": "../static/common/assets/",
+		"iconsize": 48,
+		"icons": [
+			"language.webp", "unit.webp", "title.webp", "resplendent.webp", "summoner.webp", "beasts.webp", "bonus.webp", "merges.webp",
+			"flower.webp", "boon.png", "bane.png", "ascended.webp", "duoharmo.webp", "weapon.webp", "refine.webp", "assist.webp", "special.webp",
+			"skilla.png", "skillb.png", "skillc.png", "skills.png", "hp.webp", "attack.webp", "speed.webp", "defense.webp", "resistance.webp",
+			"blessings.webp", "sp.webp", "hm.webp", "brush.webp", "up.webp", "right.webp", "mirror.webp", "background.png",
+			"expand.webp", "favorite.webp", "veronica.webp", "home.png", "github.png", "kofi.png", "discord.png"
+		]
+	},
+	"ard": {
+		"location": "../static/common/assets/icons/",
+		"output": "../static/common/assets/",
+		"iconsize": 48,
+		"icons": [
+			"unit.webp", "structures.webp", "title.webp", "brush.webp", "home.png", "github.png", "kofi.png", "discord.png"
+		]
+	},
+	"summon": {
+		"location": "../static/common/assets/icons/",
+		"output": "../static/common/assets/",
+		"iconsize": 48,
+		"icons": [
+			"language.webp", "rarity_5_focus.webp", "rarity_4_focus.webp", "rarity.webp", "rarity_4_special.webp", "rarity_4.webp", "rarity_3.webp",
+			"method.webp", "until.webp", "home.png", "github.png", "kofi.png", "discord.png"
+		]
+	}
+} 
