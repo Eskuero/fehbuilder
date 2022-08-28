@@ -101,11 +101,13 @@
 				</div>
 			</div>
 			<div class="form">
-				<div class="additionaloptions">
-					<button onclick="addtier()" class="button">Add tier</button>
-					<button onclick="cleartier()" class="button">Clear tiers</button>
-					<button onclick="download()" class="button">Download</button>
-					<div class="links">
+				<div class="section headerform">
+					<div class="row-property additionaloptions">
+						<button onclick="addtier()" class="button">Add tier</button>
+						<button onclick="cleartier()" class="button">Clear tiers</button>
+						<button onclick="download()" class="button">Download</button>
+					</div>
+					<div class="row-property links">
 						<a href="/">
 							<div class="imagelabel" style="--spriteid:0"></div>
 						</a>
@@ -121,210 +123,193 @@
 					</div>
 				</div>
 				<h2>Saved tierlists</h2>
-				<div class="additionaloptions">
+				<div class="section savesform">
 					<button onclick="newsave()" class="button">New</button>
-					<select class="select-without-search" id="savelist">
-					</select>
+					<select class="select-without-search" id="savelist"></select>
 					<button onclick="loadsave()" class="button">Load</button>
 					<button onclick="savesave()" class="button">Save</button>
 					<button onclick="deletesave()" class="button">Delete</button>
 				</div>
 				<h2>Filters</h2>
-				<div class="section">
+				<div class="section filtersform">
 					<div class="row-property single">
-						<img style="width:2em; height:2em;" src="/common/other/0-move.webp" id="moveicon" title="Move Type"/>
-						<div>
-							<select class="select-without-search" onchange="changetype(this);populate()" id="movetype">
-								<option value="All">All movement</option>
-								<option value="0" selected>Infantry</option>
-								<option value="1">Armored</option>
-								<option value="2">Cavalry</option>
-								<option value="3">Flying</option>
-							</select>
-						</div>
+						<img class="dinamiclabel" src="/common/other/0-move.webp" id="moveicon" title="Move Type"/>
+						<select class="select-without-search" onchange="changetype(this);populate()" id="movetype">
+							<option value="All">All movement</option>
+							<option value="0" selected>Infantry</option>
+							<option value="1">Armored</option>
+							<option value="2">Cavalry</option>
+							<option value="3">Flying</option>
+						</select>
 					</div>
 					<div class="row-property single">
-						<img style="width:2em; height:2em;" src="/common/other/6-weapon.webp" id="weaponicon" title="Weapon Type"/>
-						<div>
-							<select class="select-without-search" onchange="changetype(this);populate()" id="weapontype">
-								<option value="All">Unfiltered</option>
-								<optgroup label="Range">
-									<option value="0,1,2,16,17,18,19,20,21,22,23">All melees</option>
-									<option value="3,4,5,6,7,8,9,10,11,12,13,14,15">All rangeds</option>
-								</optgroup>
-								<optgroup label="Color">
-									<option value="0,3,7,11,16,20">All reds</option>
-									<option value="1,4,8,12,17,21">All blues</option>
-									<option value="2,5,9,13,18,22">All greens</option>
-									<option value="6,10,14,15,19,23">All colorless</option>
-								<optgroup label="Triangle">
-									<option value="0">Red Sword</option>
-									<option value="1">Blue Lance</option>
-									<option value="2">Green Axe</option>
-								</optgroup>
-								<optgroup label="Bows">
-									<option value="3,4,5,6">All Bows</option>
-									<option value="3">Red Bow</option>
-									<option value="4">Blue Bow</option>
-									<option value="5">Green Bow</option>
-									<option value="6" selected>Colorless Bow</option>
-								</optgroup>
-								<optgroup label="Daggers">
-									<option value="7,8,9,10">All Daggers</option>
-									<option value="7">Red Dagger</option>
-									<option value="8">Blue Dagger</option>
-									<option value="9">Green Dagger</option>
-									<option value="10">Colorless Dagger</option>
-								</optgroup>
-								<optgroup label="Tomes">
-									<option value="11,12,13,14">All Tomes</option>
-									<option value="11">Red Tome</option>
-									<option value="12">Blue Tome</option>
-									<option value="13">Green Tome</option>
-									<option value="14">Colorless Tome</option>
-								</optgroup>
-								<optgroup label="Staffs">
-									<option value="15">Colorless Staff</option>
-								</optgroup>
-								<optgroup label="Breaths">
-									<option value="16,17,18,19">All Breaths</option>
-									<option value="16">Red Breath</option>
-									<option value="17">Blue Breath</option>
-									<option value="18">Green Breath</option>
-									<option value="19">Colorless Breath</option>
-								</optgroup>
-								<optgroup label="Beasts">
-									<option value="20,21,22,23">All Beasts</option>
-									<option value="20">Red Beast</option>
-									<option value="21">Blue Beast</option>
-									<option value="22">Green Beast</option>
-									<option value="23">Colorless Beast</option>
-								</optgroup>
-							</select>
-						</div>
+						<img class="dinamiclabel" src="/common/other/6-weapon.webp" id="weaponicon" title="Weapon Type"/>
+						<select class="select-without-search" onchange="changetype(this);populate()" id="weapontype">
+							<option value="All">Unfiltered</option>
+							<optgroup label="Range">
+								<option value="0,1,2,16,17,18,19,20,21,22,23">All melees</option>
+								<option value="3,4,5,6,7,8,9,10,11,12,13,14,15">All rangeds</option>
+							</optgroup>
+							<optgroup label="Color">
+								<option value="0,3,7,11,16,20">All reds</option>
+								<option value="1,4,8,12,17,21">All blues</option>
+								<option value="2,5,9,13,18,22">All greens</option>
+								<option value="6,10,14,15,19,23">All colorless</option>
+							<optgroup label="Triangle">
+								<option value="0">Red Sword</option>
+								<option value="1">Blue Lance</option>
+								<option value="2">Green Axe</option>
+							</optgroup>
+							<optgroup label="Bows">
+								<option value="3,4,5,6">All Bows</option>
+								<option value="3">Red Bow</option>
+								<option value="4">Blue Bow</option>
+								<option value="5">Green Bow</option>
+								<option value="6" selected>Colorless Bow</option>
+							</optgroup>
+							<optgroup label="Daggers">
+								<option value="7,8,9,10">All Daggers</option>
+								<option value="7">Red Dagger</option>
+								<option value="8">Blue Dagger</option>
+								<option value="9">Green Dagger</option>
+								<option value="10">Colorless Dagger</option>
+							</optgroup>
+							<optgroup label="Tomes">
+								<option value="11,12,13,14">All Tomes</option>
+								<option value="11">Red Tome</option>
+								<option value="12">Blue Tome</option>
+								<option value="13">Green Tome</option>
+								<option value="14">Colorless Tome</option>
+							</optgroup>
+							<optgroup label="Staffs">
+								<option value="15">Colorless Staff</option>
+							</optgroup>
+							<optgroup label="Breaths">
+								<option value="16,17,18,19">All Breaths</option>
+								<option value="16">Red Breath</option>
+								<option value="17">Blue Breath</option>
+								<option value="18">Green Breath</option>
+								<option value="19">Colorless Breath</option>
+							</optgroup>
+							<optgroup label="Beasts">
+								<option value="20,21,22,23">All Beasts</option>
+								<option value="20">Red Beast</option>
+								<option value="21">Blue Beast</option>
+								<option value="22">Green Beast</option>
+								<option value="23">Colorless Beast</option>
+							</optgroup>
+						</select>
 					</div>
 					<div class="row-property single">
-						<img style="width:2em; height:2em;" src="/common/other/1-Blessing-special.webp" id="blessingicon" title="Blessings" />
-						<div>
-							<select class="select-without-search" id="blessingtype" onchange="changetype(this);populate()">
-								<option value="All">Unfiltered</option>
-								<option value="1,2,3,4,5,6,7,8">All blessed</option>
-								<optgroup label="Arena">
-									<option value="1,2,3,4">All Arena</option>
-									<option value="1">Fire</option>
-									<option value="2">Water</option>
-									<option value="3">Wind</option>
-									<option value="4">Earth</option>
-								</optgroup>
-								<optgroup label="Aether Raids">
-									<option value="5,6,7,8">All Aether Raids</option>
-									<option value="5">Light</option>
-									<option value="6">Dark</option>
-									<option value="7">Astra</option>
-									<option value="8">Anima</option>
-								</optgroup>
-							</select>
-						</div>
+						<img class="dinamiclabel" src="/common/other/1-Blessing-special.webp" id="blessingicon" title="Blessings" />
+						<select class="select-without-search" id="blessingtype" onchange="changetype(this);populate()">
+							<option value="All">Unfiltered</option>
+							<option value="1,2,3,4,5,6,7,8">All blessed</option>
+							<optgroup label="Arena">
+								<option value="1,2,3,4">All Arena</option>
+								<option value="1">Fire</option>
+								<option value="2">Water</option>
+								<option value="3">Wind</option>
+								<option value="4">Earth</option>
+							</optgroup>
+							<optgroup label="Aether Raids">
+								<option value="5,6,7,8">All Aether Raids</option>
+								<option value="5">Light</option>
+								<option value="6">Dark</option>
+								<option value="7">Astra</option>
+								<option value="8">Anima</option>
+							</optgroup>
+						</select>
 					</div>
 					<div class="row-property single">
 						<div class="imagelabel" style="--spriteid:4"></div>
-						<div>
-							<select class="select-without-search" onchange="populate()" id="duoharmo">
-								<option value="All">Unfiltered</option>
-								<option value="duo">Duo</option>
-								<option value="resonant">Harmonic</option>
-							</select>
-						</div>
+						<select class="select-without-search" onchange="populate()" id="duoharmo">
+							<option value="All">Unfiltered</option>
+							<option value="duo">Duo</option>
+							<option value="resonant">Harmonic</option>
+						</select>
 					</div>
 					<div class="row-property single">
 						<div class="imagelabel" style="--spriteid:5"></div>
-						<div>
-							<select class="select-without-search" onchange="populate()" id="attire">
-								<option value="All">Unfiltered</option>
-								<option value="Resplendent">Resplendent</option>
-							</select>
-						</div>
+						<select class="select-without-search" onchange="populate()" id="attire">
+							<option value="All">Unfiltered</option>
+							<option value="Resplendent">Resplendent</option>
+						</select>
 					</div>
 					<div class="row-property single">
-						<img style="width:2em; height:2em;" src="/common/other/6-game.webp" id="gameicon"  title="Game of Origin" />
-						<div>
-							<select class="select-without-search" onchange="changetype(this);populate()" id="gametype">
-								<option value="All">Unfiltered</option>
-								<optgroup label="Mobile">
-									<option value="0">Heroes</option>
-								</optgroup>
-								<optgroup label="SNES">
-									<option value="1">Shadow Dragon and the Blade of Light</option>
-									<option value="2">Gaiden</option>
-									<option value="1">Mystery of the Emblem</option>
-									<option value="3">Genealogy of the Holy War</option>
-									<option value="4">Thracia 776</option>
-								</optgroup>
-								<optgroup label="GBA">
-									<option value="5">The Binding Blade</option>
-									<option value="6" selected>The Blazing Blade</option>
-									<option value="7">The Sacred Stones</option>
-								</optgroup>
-								<optgroup label="GameCube">
-									<option value="8">Path of Radiance</option>
-								</optgroup>
-								<optgroup label="Wii">
-									<option value="9">Radiant Dawn</option>
-								</optgroup>
-								<optgroup label="DS">
-									<option value="1">Shadow Dragon</option>
-									<option value="1">New Mystery of the Emblem</option>
-								</optgroup>
-								<optgroup label="3DS">
-									<option value="10">Awakening</option>
-									<option value="11">Fates</option>
-									<option value="2">Echoes: Shadows of Valentia</option>
-								</optgroup>
-								<optgroup label="Switch">
-									<option value="12">Three Houses</option>
-									<option value="13">Tokyo Mirage Sessions</option>
-								</optgroup>
-							</select>
-						</div>
+						<img class="dinamiclabel" src="/common/other/6-game.webp" id="gameicon"  title="Game of Origin" />
+						<select class="select-without-search" onchange="changetype(this);populate()" id="gametype">
+							<option value="All">Unfiltered</option>
+							<optgroup label="Mobile">
+								<option value="0">Heroes</option>
+							</optgroup>
+							<optgroup label="SNES">
+								<option value="1">Shadow Dragon and the Blade of Light</option>
+								<option value="2">Gaiden</option>
+								<option value="1">Mystery of the Emblem</option>
+								<option value="3">Genealogy of the Holy War</option>
+								<option value="4">Thracia 776</option>
+							</optgroup>
+							<optgroup label="GBA">
+								<option value="5">The Binding Blade</option>
+								<option value="6" selected>The Blazing Blade</option>
+								<option value="7">The Sacred Stones</option>
+							</optgroup>
+							<optgroup label="GameCube">
+								<option value="8">Path of Radiance</option>
+							</optgroup>
+							<optgroup label="Wii">
+								<option value="9">Radiant Dawn</option>
+							</optgroup>
+							<optgroup label="DS">
+								<option value="1">Shadow Dragon</option>
+								<option value="1">New Mystery of the Emblem</option>
+							</optgroup>
+							<optgroup label="3DS">
+								<option value="10">Awakening</option>
+								<option value="11">Fates</option>
+								<option value="2">Echoes: Shadows of Valentia</option>
+							</optgroup>
+							<optgroup label="Switch">
+								<option value="12">Three Houses</option>
+								<option value="13">Tokyo Mirage Sessions</option>
+							</optgroup>
+						</select>
 					</div>
 					<div class="row-property single">
 						<div class="imagelabel" style="--spriteid:6"></div>
-						<div>
-							<select class="select-without-search" onchange="populate()" id="bookrelease">
-								<option value="0,9999">All books</option>
-								<option value="0,191" selected>Book I</option>
-								<option value="191,317">Book II</option>
-								<option value="317,454">Book III</option>
-								<option value="454,594">Book IV</option>
-								<option value="594,738">Book V</option>
-								<option value="738,9999">Book VI</option>
-							</select>
-						</div>
+						<select class="select-without-search" onchange="populate()" id="bookrelease">
+							<option value="0,9999">All books</option>
+							<option value="0,191" selected>Book I</option>
+							<option value="191,317">Book II</option>
+							<option value="317,454">Book III</option>
+							<option value="454,594">Book IV</option>
+							<option value="594,738">Book V</option>
+							<option value="738,9999">Book VI</option>
+						</select>
 					</div>
 					<div class="row-property single">
 						<div class="imagelabel" style="--spriteid:7"></div>
-						<div>
-							<select class="select-without-search" onchange="populate()" id="themegroup">
-								<option value="All">Unfiltered</option>
-								<option value="ascended">Ascended</option>
-								<option value="summer">Summer</option>
-								<option value="christmas">Christmas</option>
-								<option value="fallen">Fallen</option>
-								<option value="newyear">New Year's</option>
-								<option value="brides">Bridal</option>
-								<option value="cyl">Choose your legends</option>
-								<option value="tempest">Tempest Trials</option>
-								<option value="grandhero">Grand Hero Battle</option>
-								<option value="halloween">Halloween</option>
-								<option value="valentines">Valentines</option>
-								<option value="bunny">Bunny</option>
-								<option value="kids">Babies</option>
-							</select>
-						</div>
+						<select class="select-without-search" onchange="populate()" id="themegroup">
+							<option value="All">Unfiltered</option>
+							<option value="ascended">Ascended</option>
+							<option value="summer">Summer</option>
+							<option value="christmas">Christmas</option>
+							<option value="fallen">Fallen</option>
+							<option value="newyear">New Year's</option>
+							<option value="brides">Bridal</option>
+							<option value="cyl">Choose your legends</option>
+							<option value="tempest">Tempest Trials</option>
+							<option value="grandhero">Grand Hero Battle</option>
+							<option value="halloween">Halloween</option>
+							<option value="valentines">Valentines</option>
+							<option value="bunny">Bunny</option>
+							<option value="kids">Babies</option>
+						</select>
 					</div>
 				</div>
 				<h2>Additional icons</h2>
-				<div class="section additionaloptions">
+				<div class="iconsform">
 					<label>
 						<input type="checkbox" id="showweapon" onchange="iconvisibility(this)" checked>
 						Weapon

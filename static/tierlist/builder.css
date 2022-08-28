@@ -1,3 +1,4 @@
+/* Main elements: Body and app Container */
 body {
 	background-image: url("/common/assets/BG_Brave.webp");
 	background-position: center;
@@ -7,7 +8,6 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
 .contenedor {
 	width: calc(100vw - 2em);
 	height: calc(100vh - 2em);
@@ -18,6 +18,7 @@ body {
 	margin-bottom: 1em;
 }
 
+/* Tier list element */
 #tierlist {
 	height: min-content;
 	width: 50%;
@@ -80,6 +81,8 @@ body {
 	cursor: pointer;
 	color: white;
 }
+
+/* Individual draggable units */
 .unit {
 	height: 5em;
 	width: 5em;
@@ -115,6 +118,7 @@ body {
 	left: -2px;
 }
 
+/* Form and sections */
 .form {
 	display: flex;
 	width: 50%;
@@ -126,7 +130,28 @@ body {
 	padding: 1em 1.5em 0 1.5em;
 	box-sizing: border-box;
 }
-
+.section {
+	display: grid; /* All sections are grids */
+	gap: 0.5em 1em;
+}
+.headerform {
+	grid-template-rows: auto;
+	grid-template-columns: 1fr auto; /* Header has two colums, the buttons take all space available as long the links fit */
+}
+.savesform {
+	grid-template-rows: auto;
+	grid-template-columns: auto 1fr auto auto auto; /* Saves section are all auto except the select which is twice as big */
+}
+.filtersform {
+	grid-template-rows: repeat(3, auto); /* Filters section are 3 columns with 3 elements each */
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-flow: column;
+}
+.iconsform { /* Icons form is so simple we are better off just using a flex element */
+	justify-content: center;
+	display: flex;
+	gap: 1em;
+}
 #results {
 	display: flex;
 	min-height: 10em;
@@ -134,26 +159,36 @@ body {
 	justify-content: center;
 	gap: 0.25em;
 }
-.form > .section {
-	column-count: 3;
+
+/* Section grid items */
+.row-property {
+	display: grid;
+	column-gap: 1em;
+	grid-auto-flow: column;
+	grid-template-rows: 2em; /* All section grid items are 2em tall */
+}
+.row-property.single {
+	grid-template-columns: 2em minmax(0, 1fr); /* Grid items of two columns, imagelabel hardcoded to 2em and the input taking remaining space. */
+}
+.additionaloptions {
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
+/* Relevant links (source code, discord, donations, homepage). They kinda are section grid items */
+.links {
+	display: flex;
+	margin-top: auto;
+	gap: 0.5em;
+	justify-content: right;
+}
+.links > * {
+	text-decoration: none;
+}
+
+/* Elements that are contained within grid items (labels, inputs, selects) */
 input[type=checkbox] {
 	width: 18px;
 	height: 18px;
-}
-
-.row-property {
-	display: flex;
-	gap: 1em;
-	padding-bottom: 0.5em;
-	break-inside: avoid;
-}
-*::-webkit-scrollbar {
-  display: none;
-}
-* {
-  scrollbar-width: none;
 }
 .imagelabel {
 	min-height: 2em;
@@ -163,19 +198,11 @@ input[type=checkbox] {
 	background-position: calc(var(--spriteid) * -100%) 0;
 	background-size: calc(var(--spritesheet-width) * 100%); /* If we increase the size of the background a 100% for each icon they will fit in any size */
 }
-.row-property.single > div:not(.imagelabel) {
-	width: 15.5em !important;
-}
-.row-property.double > div:not(.imagelabel) {
-	width: 5.75em !important;
-}
-h2 {
-	text-decoration: underline;
+.dinamiclabel {
+	height: 2em; /* Prevent the labels from blowing out */
+	margin: auto; /* Make sure they are centered within their space since not all square shaped */
 }
 .select-without-search {
-	width: 100%;
-	height: 100%;
-	font-family: inherit;
 	font-size: inherit;
 	background-color: white;
 	color: #444;
@@ -183,24 +210,6 @@ h2 {
 	border: 1px solid grey;
 	padding-left: 0.25em;
 }
-
-.links {
-	display: flex;
-	margin-top: auto;
-	gap: 0.5em;
-}
-.links > * {
-	text-decoration: none;
-}
-
-.additionaloptions {
-	align-items: center;
-	justify-content: center;
-	display: flex;
-	gap: 1em;
-	height: 2em;
-}
-
 .button {
 	border: 0;
 	height: 2em;
@@ -213,4 +222,15 @@ h2 {
 }
 .button:hover {
 	cursor: pointer;
+}
+
+/* Other fixes and workarounds */
+*::-webkit-scrollbar {
+	display: none;
+}
+* {
+	scrollbar-width: none;
+}
+h2 {
+	text-decoration: underline;
 }
