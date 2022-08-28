@@ -136,6 +136,10 @@ input[type='number']::-webkit-inner-spin-button {
 	background-position: calc(var(--spriteid) * -100%) 0;
 	background-size: calc(var(--spritesheet-width) * 100%); /* If we increase the size of the background a 100% for each icon they will fit in any size */
 }
+.dinamiclabel {
+	height: 2em; /* Prevent the labels from blowing out */
+	margin: auto; /* Make sure they are centered within their space since not all square shaped */
+}
 input[type=checkbox] {
 	width: 18px; 
 	height: 18px;

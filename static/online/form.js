@@ -287,7 +287,7 @@ function showallies(clean = false, allies = {}) {
 		container.className = "row-property double";
 		// Add the first element of this iteration
 		let element1img = document.createElement("img");
-		element1img.className = "imagelabel"; element1img.src = "/common/faces/" + alliesids[i] + ".webp";
+		element1img.className = "dinamiclabel"; element1img.src = "/common/faces/" + alliesids[i] + ".webp";
 		container.appendChild(element1img);
 		let element1input = document.createElement("input");
 		// Create input number element using the blessed hero ID, the expected value, limits and event listeners
@@ -297,7 +297,7 @@ function showallies(clean = false, allies = {}) {
 		// Add another element if it actually exists
 		if (alliesids[i+1]) {
 			let element2img = document.createElement("img");
-			element2img.className = "imagelabel"; element2img.src = "/common/faces/" + alliesids[i+1] + ".webp";
+			element2img.className = "dinamiclabel"; element2img.src = "/common/faces/" + alliesids[i+1] + ".webp";
 			container.appendChild(element2img);
 			let element2input = document.createElement("input");
 			// Create input number element using the blessed hero ID, the expected value, limits and event listeners

@@ -72,7 +72,7 @@ function changetargets() {
 		container.className = "row-property double";
 		// Add the first element of this iteration
 		var element1img = document.createElement("img");
-		element1img.className = "imagelabel"; element1img.src = "/common/faces/" + targets[i] + ".webp";
+		element1img.className = "dinamiclabel"; element1img.src = "/common/faces/" + targets[i] + ".webp";
 		container.appendChild(element1img);
 		var element1input = document.createElement("input");
 		element1input.setAttribute("type", "number"); element1input.id = targets[i]; element1input.value = 1;
@@ -80,7 +80,7 @@ function changetargets() {
 		// Add another element if it actually exists
 		if (targets[i+1]) {
 			var element2img = document.createElement("img");
-			element2img.className = "imagelabel"; element2img.src = "/common/faces/" + targets[i+1] + ".webp";
+			element2img.className = "dinamiclabel"; element2img.src = "/common/faces/" + targets[i+1] + ".webp";
 			container.appendChild(element2img);
 			var element2input = document.createElement("input");
 			element2input.setAttribute("type", "number"); element2input.id = targets[i+1]; element2input.value = 1;
