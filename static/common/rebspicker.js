@@ -87,8 +87,8 @@ class Rebspicker {
 		input.appendChild(realinput);
 		this.dropdown.appendChild(input);
 
-		var list = document.createElement('div');
-		list.className = "rebspicker-list";
+		this.selectionlist = document.createElement('div');
+		this.selectionlist.className = "rebspicker-list";
 		var tabindex = 0;
 		// Add a list item for each data entry provided
 		for (const [tag, data] of Object.entries(entries)) {
@@ -99,15 +99,12 @@ class Rebspicker {
 			tabindex += 1;
 			option.value = tag;
 			option.setAttribute("keywords", data["keywords"]);
-			option.addEventListener("mousedown", function() {
-				event.preventDefault();
-			});
 			option.addEventListener("click", function() {
 				// Update selected option
 				this.value = event.target.value;
 				// Fire the change event
 				this.domitem.dispatchEvent(new Event('change'));
-				this.realinput.dispatchEvent(new Event('blur'));
+				this.close();
 			}.bind(this));
 
 			option.addEventListener("mouseover", function() {
@@ -155,9 +152,8 @@ class Rebspicker {
 					this.realinput.focus();
 				}
 			}.bind(this));
-			list.appendChild(option);
+			this.selectionlist.appendChild(option);
 		}
-		this.dropdown.appendChild(list);
 
 		// Change default item
 		if (this.type == "single") {
@@ -193,15 +189,21 @@ class Rebspicker {
 		if (this.disabled) {
 			return;
 		}
+		this.dropdown.appendChild(this.selectionlist);
 		this.dropdown.style.display = "block";
 		this.dropdown.style.zIndex = "100";
 		this.realinput.focus();
 		this.arrow.className = "rebspicker-arrow opened";
 	}
 	close() {
+		// Skip if already closed skip, because when removing selectionlist item a blur event might trigger (See https://bugzilla.mozilla.org/show_bug.cgi?id=559561)
+		if (this.dropdown.style.display == "none") {
+			return;
+		}
 		this.dropdown.style.display = "none";
 		this.dropdown.style.zIndex = "auto";
 		this.arrow.className = "rebspicker-arrow closed";
+		this.dropdown.removeChild(this.selectionlist);
 	}
 	setAttribute(key, value) {
 		this.domitem.setAttribute(key, value);
@@ -289,9 +291,6 @@ class Rebspicker {
 	}
 	get realinput() {
 		return this.dropdown.firstChild.firstChild;
-	}
-	get selectionlist() {
-		return this.dropdown.children[1];
 	}
 	get options() {
 		return this.selectionlist.children;

@@ -337,7 +337,7 @@ function updatedragonflowers() {
 
 async function switchbuild(build) {
 	// List of values to be restored on each slot
-	selects = [selectrarity, selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials,
+	var selects = [selectrarity, selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials,
 		selectassists, selectA, selectB, selectC, selectS, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef,
 		selectres, selectatkpairup, selectspdpairup, selectdefpairup, selectrespairup, selectsp, selecthm, selectartstyle, selecttemplate,
 		selectoffsetY, selectoffsetX, selectmirror, selectbackground, selectfavorite, selectaccessory, appui];
@@ -379,6 +379,11 @@ async function switchbuild(build) {
 	selectlanguage.value = builds[buildslot][3];
 	// Trigger a rebuild of the selects based on the language filters set
 	await populateall(false); statictranslations();
+	// List of values to be restored on each slot (we have to refresh this here again because some selects got regenerated and reassigned)
+	var selects = [selectrarity, selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials,
+		selectassists, selectA, selectB, selectC, selectS, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef,
+		selectres, selectatkpairup, selectspdpairup, selectdefpairup, selectrespairup, selectsp, selecthm, selectartstyle, selecttemplate,
+		selectoffsetY, selectoffsetX, selectmirror, selectbackground, selectfavorite, selectaccessory, appui];
 	// Trigger a rebuild of the refine select based on the selection of weapon
 	selectweapons.value = builds[buildslot][4];
 	updateRefine();
