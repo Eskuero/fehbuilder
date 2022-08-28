@@ -280,3 +280,6 @@ input[type='number']::-webkit-inner-spin-button {
 h2 {
 	text-decoration: underline; /* Add underline on all titles */
 }
+a {
+	text-decoration: none;
+}
