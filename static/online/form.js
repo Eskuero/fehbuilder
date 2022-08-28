@@ -512,7 +512,7 @@ function reset(section) {
 			// Detect which section we are on
 			var options = document.getElementsByClassName("tabs")[0].children;
 			for (let i = 1; i < options.length - 1; i++) {
-				if (options[i].className == "imagelabel selected") {
+				if (options[i].className == "selected") {
 					var selection = options[i].title;
 				}
 			}
