@@ -25,7 +25,11 @@ class Rebspicker {
 			event.preventDefault();
 		});
 		preview.addEventListener("click", function() {
-			this.openclose();
+			if (this.dropdown.style.display != "block") {
+				this.open();
+			} else {
+				document.activeElement.blur();
+			}
 		}.bind(this));
 		// Create the current value holder
 		var currentvalue = document.createElement('div');
@@ -184,19 +188,11 @@ class Rebspicker {
 		}
 	}
 
-	openclose() {
+	open() {
 		// If disabled just skip
 		if (this.disabled) {
 			return;
 		}
-		// Un/hide and Un/focus depending on current state
-		if (this.dropdown.style.display == "block") {
-			this.close();
-		} else {
-			this.open();
-		}
-	}
-	open() {
 		this.dropdown.style.display = "block";
 		this.dropdown.style.zIndex = "100";
 		this.realinput.focus();
@@ -206,7 +202,6 @@ class Rebspicker {
 		this.dropdown.style.display = "none";
 		this.dropdown.style.zIndex = "auto";
 		this.arrow.className = "rebspicker-arrow closed";
-		document.activeElement.blur();
 	}
 	setAttribute(key, value) {
 		this.domitem.setAttribute(key, value);
