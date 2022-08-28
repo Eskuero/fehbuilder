@@ -201,9 +201,19 @@ function statictranslations() {
 }
 
 function changetype(caller) {
-	// Compose the weapon/move url
-	var weapon = caller.value == "All" ? "0" : caller.value.split(",")[0];
-	var url = "/common/other/" + weapon + "-" + caller.id.slice(0, -4) + ".webp";
+	var iconid = caller.id.slice(0, -4);
+	var iconnumber = caller.value == "All" ? caller.options[1].value.split(",")[0] : caller.value.split(",")[0];
+	// Depending on the origin compose different urls
+	switch (iconid) {
+		case "blessing":
+			var url = "/common/other/" + iconnumber + "-Blessing-special.webp";
+			break;
+		case "weapon":
+		case "move":
+		case "game":
+			var url = "/common/other/" + iconnumber + "-" + iconid + ".webp";
+			break;
+	}
 	// Now change the url on the imagelabel
-	document.getElementById(caller.id.slice(0, -4) + "icon").src = url;
+	document.getElementById(iconid + "icon").src = url;
 }

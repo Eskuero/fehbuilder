@@ -16,7 +16,7 @@ var units, other;
 // All selects we have available
 selectweapontype = document.getElementById("weapontype");
 selectmovetype = document.getElementById("movetype");
-selectblessing = document.getElementById("blessing");
+selectblessing = document.getElementById("blessingtype");
 selectduoharmo = document.getElementById("duoharmo");
 selectgametype = document.getElementById("gametype");
 selectattire = document.getElementById("attire");

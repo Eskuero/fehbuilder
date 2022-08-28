@@ -23,6 +23,14 @@
 			"expand.webp", "favorite.webp", "veronica.webp", "home.png", "github.png", "kofi.png", "discord.png"
 		]
 	},
+	"tierlist": {
+		"location": "../static/common/assets/icons/",
+		"output": "../static/common/assets/",
+		"iconsize": 48,
+		"icons": [
+			"home.png", "github.png", "kofi.png", "discord.png", "duoharmo.webp", "resplendent.webp", "books.webp", "theme.webp"
+		]
+	},
 	"ard": {
 		"location": "../static/common/assets/icons/",
 		"output": "../static/common/assets/",

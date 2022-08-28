@@ -107,16 +107,16 @@
 					<button onclick="download()" class="button">Download</button>
 					<div class="links">
 						<a href="/">
-							<img class="imagelabel" src="/common/assets/home.webp" title="Homepage"/>
+							<div class="imagelabel" style="--spriteid:0"></div>
 						</a>
 						<a href="https://github.com/Eskuero/fehbuilder" target="blank">
-							<img class="imagelabel" src="/common/assets/github.webp" title="Source Code"/>
+							<div class="imagelabel" style="--spriteid:1"></div>
 						</a>
 						<a href="https://ko-fi.com/eskuero" target="blank">
-							<img class="imagelabel" src="/common/assets/kofi.webp" title="Donations"/>
+							<div class="imagelabel" style="--spriteid:2"></div>
 						</a>
 						<a href="https://discord.com/invite/fireemblemheroes" target="blank">
-							<img class="imagelabel" src="/common/assets/discord.webp" title="Discord Server"/>
+							<div class="imagelabel" style="--spriteid:3"></div>
 						</a>
 					</div>
 				</div>
@@ -132,7 +132,7 @@
 				<h2>Filters</h2>
 				<div class="section">
 					<div class="row-property single">
-						<img class="imagelabel" src="/common/other/0-move.webp" id="moveicon" title="Move Type"/>
+						<img style="width:2em; height:2em;" src="/common/other/0-move.webp" id="moveicon" title="Move Type"/>
 						<div>
 							<select class="select-without-search" onchange="changetype(this);populate()" id="movetype">
 								<option value="All">All movement</option>
@@ -144,7 +144,7 @@
 						</div>
 					</div>
 					<div class="row-property single">
-						<img class="imagelabel" src="/common/other/6-weapon.webp" id="weaponicon" title="Weapon Type"/>
+						<img style="width:2em; height:2em;" src="/common/other/6-weapon.webp" id="weaponicon" title="Weapon Type"/>
 						<div>
 							<select class="select-without-search" onchange="changetype(this);populate()" id="weapontype">
 								<option value="All">Unfiltered</option>
@@ -204,9 +204,9 @@
 						</div>
 					</div>
 					<div class="row-property single">
-						<img class="imagelabel" src="/common/assets/blessings.webp" title="Blessings" />
+						<img style="width:2em; height:2em;" src="/common/other/1-Blessing-special.webp" id="blessingicon" title="Blessings" />
 						<div>
-							<select class="select-without-search" id="blessing" onChange="populate()">
+							<select class="select-without-search" id="blessingtype" onchange="changetype(this);populate()">
 								<option value="All">Unfiltered</option>
 								<option value="1,2,3,4,5,6,7,8">All blessed</option>
 								<optgroup label="Arena">
@@ -227,7 +227,7 @@
 						</div>
 					</div>
 					<div class="row-property single">
-						<img class="imagelabel" src="/common/assets/duoharmo.webp" title="Unit type" />
+						<div class="imagelabel" style="--spriteid:4"></div>
 						<div>
 							<select class="select-without-search" onchange="populate()" id="duoharmo">
 								<option value="All">Unfiltered</option>
@@ -237,7 +237,7 @@
 						</div>
 					</div>
 					<div class="row-property single">
-						<img class="imagelabel" src="/common/assets/resplendent.webp" title="Attire"/>
+						<div class="imagelabel" style="--spriteid:5"></div>
 						<div>
 							<select class="select-without-search" onchange="populate()" id="attire">
 								<option value="All">Unfiltered</option>
@@ -246,7 +246,7 @@
 						</div>
 					</div>
 					<div class="row-property single">
-						<img class="imagelabel" src="/common/other/0-game.webp" id="gameicon"  title="Game of Origin" />
+						<img style="width:2em; height:2em;" src="/common/other/6-game.webp" id="gameicon"  title="Game of Origin" />
 						<div>
 							<select class="select-without-search" onchange="changetype(this);populate()" id="gametype">
 								<option value="All">Unfiltered</option>
@@ -288,7 +288,7 @@
 						</div>
 					</div>
 					<div class="row-property single">
-						<img class="imagelabel" src="/common/assets/books.webp" title="Book of release" />
+						<div class="imagelabel" style="--spriteid:6"></div>
 						<div>
 							<select class="select-without-search" onchange="populate()" id="bookrelease">
 								<option value="0,9999">All books</option>
@@ -302,7 +302,7 @@
 						</div>
 					</div>
 					<div class="row-property single">
-						<img class="imagelabel" src="/common/assets/seasonals.webp" title="Theme group" />
+						<div class="imagelabel" style="--spriteid:7"></div>
 						<div>
 							<select class="select-without-search" onchange="populate()" id="themegroup">
 								<option value="All">Unfiltered</option>

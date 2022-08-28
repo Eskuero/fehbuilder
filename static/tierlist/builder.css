@@ -156,13 +156,17 @@ input[type=checkbox] {
   scrollbar-width: none;
 }
 .imagelabel {
-	height: 2em;
-	width: 2em;
+	min-height: 2em;
+	min-width: 2em;
+	--spritesheet-width: 8; /* This is the number of icons in each of row of the spritesheet */
+	background-image: url("/common/assets/tierlist.webp");
+	background-position: calc(var(--spriteid) * -100%) 0;
+	background-size: calc(var(--spritesheet-width) * 100%); /* If we increase the size of the background a 100% for each icon they will fit in any size */
 }
-.row-property.single > div {
+.row-property.single > div:not(.imagelabel) {
 	width: 15.5em !important;
 }
-.row-property.double > div {
+.row-property.double > div:not(.imagelabel) {
 	width: 5.75em !important;
 }
 h2 {
