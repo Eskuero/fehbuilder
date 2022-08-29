@@ -8,17 +8,29 @@ body {
 	padding: 0;
 	margin: 0;
 	text-align: center;
-	height: 100vh;
 }
 .contenedor {
-	display: inline-flex;
+	display: grid;
 	gap: 1em;
+	grid-template-rows: 100vh;
+	grid-template-columns: calc((100vh - 2.5em) * 0.5625) auto; /* Force image into their aspect ratio and keep the form to just fit */
+	width: calc(((100vh - 2.5em) * 0.5625) + 44em);
+	margin: auto;
+}
+
+@media (max-aspect-ratio: 5/4) { /* Small screen layout */
+	.contenedor {
+		width: calc(((100vh - 2.5em) * 0.5625) + 28em);
+	}
 }
 
 @media (min-resolution: 150dpi) and (max-aspect-ratio: 10/7), (orientation: portrait) { /* Mobile/Portrait layouts */
 	.contenedor {
-		flex-direction: column; /* Now the preview renders on top with the form below */
+		grid-auto-flow: column;
+		width: 90vw;
 		gap: 0;
+		grid-template-columns: 90vw;
+		grid-template-rows: auto auto;
 	}
 }
 
@@ -28,8 +40,8 @@ body {
 	flex-direction: column;
 }
 #fakecanvas {
-	width: calc((100vh - 2.5em) * 0.5625); /* Width must be a proportional value of total height minus build slots */
-	height: auto;
+	width: 100%;
+	height: 100%;
 }
 #unitslot {
 	height: 2.5em;
@@ -89,10 +101,6 @@ body {
 }
 
 @media (min-resolution: 150dpi) and (max-aspect-ratio: 10/7), (orientation: portrait) { /* Mobile/Portrait layouts */
-	#fakecanvas {
-		width: 90vw; /* Width must be a proportional value of total height minus build slots */
-		height: auto;
-	}
 	#unitslot {
 		order: 2; /* Render the build slows below */
 	}
@@ -100,8 +108,6 @@ body {
 
 /* Form and sections */
 .form {
-	height: 100vh;
-	width: 43em;
 	overflow-y: scroll; /* Allow scrolling if the form is too big for the screen */
 	display: flex;
 	flex-direction: column;
@@ -131,22 +137,12 @@ body {
 }
 
 @media (max-aspect-ratio: 5/4) { /* Small screen layout */
-	.form {
-		width: 27em;
-	}
 	.headerform, #usedalliesform, #buffsform, #pairupsform, .unitform, .skillsform, .miscform {
 		grid-template-columns: auto; /* Everyone becomes single row now */
 	}
 	.unitform, .skillsform, .miscform {
 		grid-template-rows: initial;
 		grid-auto-flow: row; /* Unit, Skills and Misc stop flowing in columns */
-	}
-}
-
-@media (min-resolution: 150dpi) and (max-aspect-ratio: 10/7), (orientation: portrait) {  /* Mobile/Portrait layouts */
-	.form {
-		height: auto;
-		width: 90vw;
 	}
 }
 

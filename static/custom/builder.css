@@ -8,41 +8,43 @@ body {
 	padding: 0;
 	margin: 0;
 	text-align: center;
-	height: 100vh;
 }
 .contenedor {
-	display: inline-flex;
+	display: grid;
 	gap: 1em;
+	grid-template-rows: 100vh;
+	grid-template-columns: calc(100vh * 0.5625) auto; /* Force image into their aspect ratio and keep the form to just fit */
+	width: calc((100vh * 0.5625) + 44em);
+	margin: auto;
+}
+
+@media (max-aspect-ratio: 5/4) { /* Small screen layout */
+	.contenedor {
+		width: calc((100vh * 0.5625) + 28em);
+	}
 }
 
 @media (min-resolution: 150dpi) and (max-aspect-ratio: 10/7), (orientation: portrait) { /* Mobile/Portrait layouts */
 	.contenedor {
-		flex-direction: column; /* Now the preview renders on top with the form below */
+		grid-auto-flow: column;
+		width: 90vw;
 		gap: 0;
+		grid-template-columns: 90vw;
+		grid-template-rows: auto auto;
 	}
 }
 
-/* Unit preview (the actual image + build slot) */
+/* Unit preview (the actual image) */
 .unitpreview {
-	display: flex;
-	flex-direction: column;
+	display: flex; /* FIXME: If we remove the flex display the body scrolls a few pixels???? */
 }
 #fakecanvas {
-	width: auto;
-	height: 100vh;
-}
-
-@media (min-resolution: 150dpi) and (max-aspect-ratio: 10/7), (orientation: portrait) { /* Mobile/Portrait layouts */
-	#fakecanvas {
-		height: auto;
-		width: 90vw; /* Leave some borders around the preview */
-	}
+	width: 100%;
+	height: 100%;
 }
 
 /* Form and sections */
 .form {
-	height: 100vh;
-	width: 43em;
 	overflow-y: scroll; /* Allow scrolling if the form is too big for the screen */
 	display: flex;
 	flex-direction: column;
@@ -77,9 +79,6 @@ body {
 }
 
 @media (max-aspect-ratio: 5/4) { /* Small screen layout */
-	.form {
-		width: 27em;
-	}
 	.headerform, #usedalliesform, .unitform, .skillsform, .miscform, .blessingform {
 		grid-template-columns: auto; /* Everyone becomes single row now */
 	}
@@ -93,13 +92,6 @@ body {
 	}
 	.listofstats.advanced {
 		grid-template-columns: repeat(3, 1fr); /* lists of stats with textlabels is a single row in six columns */
-	}
-}
-
-@media (min-resolution: 150dpi) and (max-aspect-ratio: 10/7), (orientation: portrait) {  /* Mobile/Portrait layouts */
-	.form {
-		height: auto;
-		width: 90vw;
 	}
 }
 
