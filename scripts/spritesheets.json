@@ -1,4 +1,12 @@
 {
+	"home": {
+		"location": "../static/common/assets/icons/",
+		"output": "../static/common/assets/",
+		"iconsize": 48,
+		"icons": [
+			"github.png", "kofi.png", "discord.png"
+		]
+	},
 	"online": {
 		"location": "../static/common/assets/icons/",
 		"output": "../static/common/assets/",

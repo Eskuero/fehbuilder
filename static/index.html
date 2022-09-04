@@ -73,10 +73,38 @@
 				width: 100%;
 				height: 0.1em;
 			}
+			.links {
+				display: grid;
+				grid-auto-flow: column;
+			}
+			.links > * {
+				text-decoration: none;
+			}
+			.imagelabel {
+				height: 2em;
+				width: 2em;
+				margin: auto;
+				--spritesheet-width: 3; /* This is the number of icons in each of row of the spritesheet */
+				background-image: url("/common/assets/home.webp");
+				background-position: calc(var(--spriteid) * -100%) 0;
+				background-size: calc(var(--spritesheet-width) * 100%); /* If we increase the size of the background a 100% for each icon they will fit in any size */
+			}
 		</style>
 	</head>
 	<body>
 		<div class="options">
+			<div class="links">
+				<a href="https://github.com/Eskuero/fehbuilder" title="Source Code" target="blank">
+					<div class="imagelabel" style="--spriteid:3"></div>
+				</a>
+				<a href="https://ko-fi.com/eskuero" title="Donations" target="blank">
+					<div class="imagelabel" style="--spriteid:1"></div>
+				</a>
+				<a href="https://discord.com/invite/fireemblemheroes" title="Discord" target="blank">
+					<div class="imagelabel" style="--spriteid:2"></div>
+				</a>
+			</div>
+			<div class="separator"></div>
 			<a href="/online/">
 				<div>
 					<h3>Online Unit Builder</h3>
