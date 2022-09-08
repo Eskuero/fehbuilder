@@ -34,7 +34,8 @@ for file in files:
 				"moveType": entry["move_type"],
 				"maxflowers": 15,
 				# Obtain the base kit skipping empty entries (it's provided as a list of list for each rarity unlock but we just need one)
-				"basekit": []
+				"basekit": [],
+				"art": entry["face_name"]
 			}
 
 # Load all weapon data from the json file
@@ -73,7 +74,8 @@ for file in files:
 				# Obtain the base kit skipping empty entries (it's provided as a list of list for each rarity unlock but we just need one)
 				"basekit": [skill for category in entry["skills"] for skill in category if skill],
 				"resplendent": True if entry["id_tag"].replace("PID", "MPID_VOICE") + "EX01" in strings else False,
-				"id": entry["id_num"]
+				"id": entry["id_num"],
+				"art": entry["face_name"]
 			}
 			# Clean basekit of duplicates
 			tempkit = []

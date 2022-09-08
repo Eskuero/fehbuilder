@@ -50,6 +50,9 @@ for file in files:
 				if entry["category"] == 0:
 					skills["weapons"][entry["id_tag"]]["statModifiers"][1] += entry["might"]
 					skills["weapons"][entry["id_tag"]]["refines"] = {}
+				# For passives add the iconid at the top level
+				elif entry["category"] in range(3, 7):
+					categories[entry["category"]][entry["id_tag"]]["iconid"] = entry["icon_id"]
 
 			# For refines we just store them separetely for later processing
 			elif entry["refine_base"]:
@@ -61,6 +64,7 @@ for file in files:
 				# If there's a refine ID this means is an special effect refine and we might need effectids
 				if entry["refine_id"] not in [None, "SID_神罰の杖3", "SID_幻惑の杖3"]:
 					refines[entry["id_tag"]]["effectid"] = entry["refine_id"]
+					refines[entry["id_tag"]]["iconid"] = entry["icon_id"]
 
 refinenames = {"神": "Wrathful", "幻": "Dazzling", "ATK": "Atk", "AGI": "Spd", "DEF": "Def", "RES": "Res"}
 # For each refine defined update the original weapon info
@@ -75,7 +79,8 @@ for refinable in refines:
 	# For Effect refines we have skill references
 	if refine == "Effect":
 		skills["weapons"][refines[refinable]["baseWeapon"]]["refines"][refine].update({
-			"effectid": refines[refinable]["effectid"]
+			"effectid": refines[refinable]["effectid"],
+			"iconid": refines[refinable]["iconid"]
 		})
 
 # Complete seals data by getting which skills are available to buy and copying their counterparts data (except for the isMax setting, which depends on if it's the last seal of it's line)
@@ -96,12 +101,37 @@ with open("fullskills.json", "w") as outfile:
 	json.dump(skills, outfile)
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-# Version for usage in online unit builder (for now includes everything)
+# Version for usage in online unit builder (includes everything except icon indicator)
+skillsonline = {
+	"weapons": {
+		weaponname: {
+			property: value
+			for property, value in properties.items()
+		}
+		for weaponname, properties in skills["weapons"].items()
+    },
+	"passives": {
+		passivecategory: {
+			passive: {
+				property: value
+				for property, value in properties.items() if property not in ["iconid"]
+			}
+			for passive, properties in skills["passives"][passivecategory].items()
+		}
+		for passivecategory in ["A", "B", "C", "S"]
+    },
+	"assists": skills["assists"],
+	"specials": skills["specials"]
+}
+# FIXME: Can't we just ignore iconids from within the dict comprehession?
+for weapon in skillsonline["weapons"]:
+	if "Effect" in skillsonline["weapons"][weapon]["refines"]:
+		skillsonline["weapons"][weapon]["refines"]["Effect"].pop("iconid")
 with open("onlineskills.json", "w") as outfile:
-	json.dump(skills, outfile)
+	json.dump(skillsonline, outfile)
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-# Version for usage in custom unit builder (we use everything except exclusive indicator)
+# Version for usage in custom unit builder (we use everything except exclusive and icon indicator)
 skillscustom = {
 	"weapons": {
 		weaponname: {
@@ -116,7 +146,7 @@ skillscustom = {
 		passivecategory: {
 			passive: {
 				property: value
-				for property, value in properties.items() if property not in ["exclusive"]
+				for property, value in properties.items() if property not in ["exclusive", "iconid"]
 			} 
 			for passive, properties in skills["passives"][passivecategory].items()
 		}
