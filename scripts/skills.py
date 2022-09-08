@@ -90,41 +90,23 @@ for file in files:
 			skills["passives"]["S"][entry["id_tag"]] = allpassives[entry["id_tag"]]
 			skills["passives"]["S"][entry["id_tag"]]["isMax"] = True if not entry["next_seal"] else False
 
-# Store all the data for internal usage
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Store all the data for internal usage of scripts
 with open("fullskills.json", "w") as outfile:
 	json.dump(skills, outfile)
 
-# Smaller version for offline wiki builder
-skillslite = {
-	"weapons": {
-		weaponname: {
-			property: [item for item in value] if property == "refines" else value
-			for property, value in properties.items() if property in ["WeaponType", "moveType", "exclusive", "isMax", "refines"]
-		} 
-		for weaponname, properties in skills["weapons"].items()
-    },
-	"assists": skills["assists"],
-	"specials": skills["specials"],
-	"passives": {
-		passivecategory: {
-			passive: {
-				property: value
-				for property, value in properties.items() if property in ["WeaponType", "moveType", "exclusive", "isMax"]
-			} 
-			for passive, properties in skills["passives"][passivecategory].items()
-		}
-		for passivecategory in ["A", "B", "C", "S"]
-    }
-}
-with open("liteskills.json", "w") as outfile:
-	json.dump(skillslite, outfile)
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Version for usage in online unit builder (for now includes everything)
+with open("onlineskills.json", "w") as outfile:
+	json.dump(skills, outfile)
 
-# Altenative version for custom unit builder
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Version for usage in custom unit builder (we use everything except exclusive indicator)
 skillscustom = {
 	"weapons": {
 		weaponname: {
 			property: value
-			for property, value in properties.items() if property in ["WeaponType", "moveType", "statModifiers", "isMax", "refines"]
+			for property, value in properties.items() if property not in ["exclusive"]
 		} 
 		for weaponname, properties in skills["weapons"].items()
     },
@@ -134,7 +116,7 @@ skillscustom = {
 		passivecategory: {
 			passive: {
 				property: value
-				for property, value in properties.items() if property in ["WeaponType", "moveType", "statModifiers", "isMax"]
+				for property, value in properties.items() if property not in ["exclusive"]
 			} 
 			for passive, properties in skills["passives"][passivecategory].items()
 		}

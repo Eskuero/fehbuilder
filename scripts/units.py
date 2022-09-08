@@ -83,30 +83,25 @@ for file in files:
 			for item in [item for item in heroes[entry["id_tag"]]["basekit"] if item in weaponevolutions]:
 				heroes[entry["id_tag"]]["basekit"].append(weaponevolutions[item])
 
-
-# Store all the data for internal usage
-heroesfull = {
-	heroname: {
-		property: value
-		for property, value in properties.items() if property not in ["origin", "resplendent", "id"]
-	}
-	for heroname, properties in heroes.items()
-}
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Store all the data for internal usage of scripts
 with open("fullunits.json", "w") as outfile:
-	json.dump(heroesfull, outfile)
-    
-# Smaller version for offline wiki builder
-heroeslite = {
+	json.dump(heroes, outfile)
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Version for usage in online unit builder (doesn't need origin, resplendent indicator or id)
+heroesonline = {
 	heroname: {
 		property: value
-		for property, value in properties.items() if property in ["WeaponType", "moveType", "basekit", "maxflowers"]
+		for property, value in properties.items() if property in ["WeaponType", "moveType", "stats", "growths", "basekit", "maxflowers"]
 	}
 	for heroname, properties in heroes.items()
 }
-with open("liteunits.json", "w") as outfile:
-	json.dump(heroeslite, outfile)
+with open("onlineunits.json", "w") as outfile:
+	json.dump(heroesonline, outfile)
 
-# Version for custom unit builder
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Version for usage in custom unit builder (Only needs types, stats and growths)
 heroescustom = {
 	heroname: {
 		property: value
@@ -117,7 +112,8 @@ heroescustom = {
 with open("customunits.json", "w") as outfile:
 	json.dump(heroescustom, outfile)
 
-# Even smaller version for the summoning
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Version for usage in summoning simulator (Only needs weapon type to detect color)
 heroessummon = {
 	heroname: {
 		property: value
@@ -128,7 +124,8 @@ heroessummon = {
 with open("summonunits.json", "w") as outfile:
 	json.dump(heroessummon, outfile)
 
-# Even smaller version for the tier list maker
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Version for usage in crd and tierlist builders (Needs types, origin, resplendent and id)
 heroestier = {
 	heroname: {
 		property: value

@@ -90,10 +90,10 @@ window.onload = init();
 async function init() {
 	// Get all data and store it
 	languages[selectlanguage.value] = await fetch('/common/data/languages/unitlanguages-' + selectlanguage.value + '.json').then(response => {return response.json();});
-	units = await fetch('/common/data/content/fullunits.json').then(response => {return response.json();});
-	skills = await fetch('/common/data/content/fullskills.json').then(response => {return response.json();});
+	units = await fetch('/common/data/content/onlineunits.json').then(response => {return response.json();});
+	skills = await fetch('/common/data/content/onlineskills.json').then(response => {return response.json();});
 	allpassives = Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"]);
-	other = await fetch('/common/data/content/fullother.json').then(response => {return response.json();});
+	other = await fetch('/common/data/content/unitother.json').then(response => {return response.json();});
 
 	// Build barrack and unit selects
 	loadbarracks();

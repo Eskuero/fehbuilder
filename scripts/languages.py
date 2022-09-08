@@ -70,7 +70,8 @@ for language in languages:
 				strings[string["key"]] = string["value"]
 	languages[language] = languages[language] | strings
 
-# Store all the data in a single file for the sake of storage
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Store all the data for internal usage of scripts
 with open("fulllanguages.json", "w") as outfile:
     json.dump(languages, outfile)
 
