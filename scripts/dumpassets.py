@@ -18,7 +18,10 @@ import math
 import os
 from PIL import Image
 
-os.mkdir("temp")
+try:
+	os.mkdir("temp")
+except:
+	pass
 
 ##########################################################
 # Obtain all english translations for debugging purposes #
