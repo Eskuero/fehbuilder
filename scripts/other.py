@@ -62,9 +62,9 @@ with open("fullother.json", "w") as outfile:
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Version for usage in online and custom unit builders
 otherunit = {
-	"blessed": {},
-	"duo": [],
-	"resonant": [],
+	"blessed": other["blessed"],
+	"duo": other["duo"],
+	"resonant": other["resonant"],
 	"duokeywords": hardcoded["duokeywords"],
 	"images": hardcoded["images"]
 }
