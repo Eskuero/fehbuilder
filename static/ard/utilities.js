@@ -12,11 +12,8 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 function download() {
-	// Convert the HTML to canvas using html2canvas
-	html2canvas(mapcanvas, {logging:false, dpi: 300}).then(function(canvas) {
-		// Convert canvas to a data url
-		var url = canvas.toDataURL("image/png");
-		// Create the link element to force the download
+	// Convert the HTML to canvas using html-to-image
+	htmlToImage.toPng(mapcanvas).then(function (url) {
 		var link = document.createElement('a');
 		link.href = url;
 		link.download = "AR-D Defense";

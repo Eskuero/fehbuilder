@@ -12,11 +12,8 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 function download() {
-	// Convert the HTML to canvas using html2canvas
-	html2canvas(tierlist, {logging:false}).then(function(canvas) {
-		// Convert canvas to a data url
-		var url = canvas.toDataURL("image/png");
-		// Create the link element to force the download
+	// Convert the HTML to canvas using html-to-image
+	htmlToImage.toPng(tierlist, {filter: filter}).then(function (url) {
 		var link = document.createElement('a');
 		link.href = url;
 		link.download = "Tier List";
@@ -25,6 +22,10 @@ function download() {
 		link.click();
 		document.body.removeChild(link);
 	});
+}
+// This function just tells html-to-image to not render tieroptions
+function filter(node) {
+	return node.className == 'tieroptions' ? false : true;
 }
 
 function updatecolor(event) {
