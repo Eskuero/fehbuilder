@@ -41,11 +41,13 @@ for file in files:
 				categories[entry["category"]][entry["id_tag"]] = {
 					"WeaponType": entry["wep_equip"],
 					"moveType": entry["mov_equip"],
-					"statModifiers": [value for value in entry["stats"].values()],
 					"exclusive": entry["exclusive"],
 					# Always default to isMax false for seals since we modify the info later when filling the data
 					"isMax": True if not entry["next_skill"] and not entry["passive_next"] and entry["category"] != 6 else False
 				}
+				# Specials and Assists do not provide visible stats
+				if entry["category"] not in [1,2]:
+					categories[entry["category"]][entry["id_tag"]]["statModifiers"] = [value for value in entry["stats"].values()]
 				# For weapons add the might as part of the statsmodifiers for Atk and emtpy refines definition
 				if entry["category"] == 0:
 					skills["weapons"][entry["id_tag"]]["statModifiers"][1] += entry["might"]
