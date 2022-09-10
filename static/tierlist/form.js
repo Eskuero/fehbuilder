@@ -77,7 +77,7 @@ function populate() {
 		// Check if we match the movement type
 		if (selectmovetype.value == "All") {
 			add = true;
-		} else if (units[value]["moveType"] == selectmovetype.value) {
+		} else if (units[value]["move"] == selectmovetype.value) {
 			add = true;
 		// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
 		} else {
@@ -87,7 +87,7 @@ function populate() {
 		// Check if we match the weapon type
 		if (curweapontype[0] == "All") {
 			add = true;
-		} else if (curweapontype.includes(units[value]["WeaponType"].toString())) {
+		} else if (curweapontype.includes(units[value]["weapon"].toString())) {
 			add = true;
 		// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
 		} else {
@@ -170,13 +170,13 @@ function populate() {
 		opt.addEventListener("dragstart", function(event) {drag(event)});
 		// Create and add the items indicating weapon, movement, blessing and origin
 		let weapon = document.createElement('img');
-		weapon.className = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[heroes[i]]["WeaponType"]) ? "iconinfo weapon patched" : "iconinfo weapon";
-		weapon.src = "/common/other/" + units[heroes[i]]["WeaponType"] + "-weapon.webp";
+		weapon.className = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[heroes[i]]["weapon"]) ? "iconinfo weapon patched" : "iconinfo weapon";
+		weapon.src = "/common/other/" + units[heroes[i]]["weapon"] + "-weapon.webp";
 		weapon.title = "Weapon Type";
 		opt.appendChild(weapon);
 		let movement = document.createElement('img');
 		movement.className = "iconinfo movement";
-		movement.src = "/common/other/" + units[heroes[i]]["moveType"] + "-move.webp";
+		movement.src = "/common/other/" + units[heroes[i]]["move"] + "-move.webp";
 		movement.title = "Movement Type";
 		opt.appendChild(movement);
 		let origin = document.createElement('img');

@@ -70,21 +70,21 @@ async function populate(domitem, data, clean, bypass = false) {
 		// If we arrived here we might or might not have to do checks so enable adding the skill by default
 		let add = true;
 		// The entire logic is processed on the python scripts so we just have to check the value set for the corresponding property. Previous values might go through the bestskills check since if we have enabled it after selecting a lower tier skill we don't go to erase it
-		if (bestskills.checked == true && ! data[value]["isMax"] && (value != previousvalue || clean)) {
+		if (bestskills.checked == true && ! data[value]["max"] && (value != previousvalue || clean)) {
 			return;
 		}
 		if (cheats.checked == false && (value != previousvalue || clean)) {
 			// Cheat mode is disabled so now we conditionally enable the skill and the default value must be false even if we might have passed bestskills checks
 			add = false;
 			// Check if the skills has weapon restrictions and if it does check if we meet them
-			if (data[value]["WeaponType"] >> weapontype & 1) {
+			if (data[value]["weapon"] >> weapontype & 1) {
 				add = true;
 			// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
 			} else {
 				return;
 			}
 			// Check if the skills has movement restrictions and if it does check if we meet them so we just skip this iteration
-			if (data[value]["moveType"] >> movetype & 1) {
+			if (data[value]["move"] >> movetype & 1) {
 				add = true;
 			// If it doesn't contain out movement type we cannot use it regardless of if we met weapon type
 			} else {
@@ -326,21 +326,21 @@ function updatebases(caller) {
 	// Apply the stats from the selected weapon
 	if (caller.id == "weapon") {
 		for (let i = 0; i < stats.length; i++) {
-			document.getElementById(stats[i] + "weapon").value = caller.value != "None" ? skills["weapons"][caller.value]["statModifiers"][i] : 0;
+			document.getElementById(stats[i] + "weapon").value = caller.value != "None" ? skills["weapons"][caller.value]["stats"][i] : 0;
 		}
 	}
 
 	// Apply offsetting values on the refine stats inputs (weapon refine modifiers - base weapon)
 	if (caller.id == "refine") {
 		for (let i = 0; i < stats.length; i++) {
-			document.getElementById(stats[i] + "refine").value = caller.value != "None" ? skills["weapons"][selectweapons.value]["refines"][caller.value]["statModifiers"][i] - skills["weapons"][selectweapons.value]["statModifiers"][i] : 0;
+			document.getElementById(stats[i] + "refine").value = caller.value != "None" ? skills["weapons"][selectweapons.value]["refines"][caller.value]["stats"][i] - skills["weapons"][selectweapons.value]["stats"][i] : 0;
 		}
 	}
 
 	// Apply the stats from the selected skill
 	if (["Askill", "Bskill", "Cskill", "Sskill"].includes(caller.id)) {
 		for (let i = 0; i < stats.length; i++) {
-			document.getElementById(stats[i] + caller.id).value = caller.value != "None" ? allpassives[caller.value]["statModifiers"][i] : 0;
+			document.getElementById(stats[i] + caller.id).value = caller.value != "None" ? allpassives[caller.value]["stats"][i] : 0;
 		}
 	}
 }
@@ -384,8 +384,8 @@ function filldefaults() {
 		selectadspdgrowth.value = units[defaulthero]["growths"][2];
 		selectaddefgrowth.value = units[defaulthero]["growths"][3];
 		selectadresgrowth.value = units[defaulthero]["growths"][4];
-		selectmovetype.value = units[defaulthero]["moveType"];
-		selectweapontype.value = units[defaulthero]["WeaponType"];
+		selectmovetype.value = units[defaulthero]["move"];
+		selectweapontype.value = units[defaulthero]["weapon"];
 	}
 	// Make sure we update the images on the move/weapon type selects and enable or disable the best selector if necessary
 	changetype(selectmovetype);

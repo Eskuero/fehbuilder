@@ -113,8 +113,8 @@ async function populate(domitem, data, clean, bypass) {
 	}
 	if (selectheroes.value != "None") {
 		// Hero info for possible later checks
-		var weapontype = units[selectheroes.value]["WeaponType"];
-		var movetype = units[selectheroes.value]["moveType"];
+		var weapontype = units[selectheroes.value]["weapon"];
+		var movetype = units[selectheroes.value]["move"];
 		var basekit = units[selectheroes.value]["basekit"];
 	// If no hero is selected we have nothing to do
 	} else {
@@ -126,21 +126,21 @@ async function populate(domitem, data, clean, bypass) {
 		// If we arrived here we might or might not have to do checks so enable adding the skill by default
 		let add = true;
 		// The entire logic is processed on the python scripts so we just have to check the value set for the corresponding property. Previous values might go through the bestskills check since if we have enabled it after selecting a lower tier skill we don't go to erase it
-		if (bestskills.checked == true && ! data[value]["isMax"] && (value != previousvalue || clean)) {
+		if (bestskills.checked == true && ! data[value]["max"] && (value != previousvalue || clean)) {
 			return;
 		}
 		if (cheats.checked == false && (value != previousvalue || clean)) {
 			// Cheat mode is disabled so now we conditionally enable the skill and the default value must be false even if we might have passed bestskills checks
 			add = false;
 			// Check if the skills has weapon restrictions and if it does check if we meet them
-			if (data[value]["WeaponType"] >> weapontype & 1) {
+			if (data[value]["weapon"] >> weapontype & 1) {
 				add = true;
 			// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
 			} else {
 				return;
 			}
 			// Check if the skills has movement restrictions and if it does check if we meet them so we just skip this iteration
-			if (data[value]["moveType"] >> movetype & 1) {
+			if (data[value]["move"] >> movetype & 1) {
 				add = true;
 			// If it doesn't contain out movement type we cannot use it regardless of if we met weapon type
 			} else {
@@ -320,7 +320,7 @@ function updatedragonflowers() {
 		selectflowers.removeChild(selectflowers.lastChild);
 	}
 	if (cheats.checked == false && selectheroes.value != "None") {
-		var flowers = units[selectheroes.value]["maxflowers"];
+		var flowers = units[selectheroes.value]["flowers"];
 	}
 	// Loop for each flower allowed
 	for (let i = 1; i <= flowers; i++) {
@@ -415,7 +415,7 @@ function beastcheck() {
 	if (selectheroes.value == "None") {
 		var weapontype = false;
 	} else {
-		var weapontype = units[selectheroes.value]["WeaponType"];
+		var weapontype = units[selectheroes.value]["weapon"];
 	}
 	if (![20, 21, 22, 23].includes(weapontype)) {
 		selectbeast.value = "no";
@@ -455,7 +455,7 @@ function maximize() {
 	}
 	selectrarity.value = "5";
 	selectmerges.value = "10";
-	selectflowers.value = units[selectheroes.value]["maxflowers"];
+	selectflowers.value = units[selectheroes.value]["flowers"];
 	selectsummoner.value = "S";
 	// Only choose resplendent if it's a legit one
 	if (languages[selectlanguage.value][selectheroes.value.replace("PID", "MPID_VOICE") + "EX01"]) {
@@ -464,7 +464,7 @@ function maximize() {
 		selectattire.value = "Normal";
 	}
 	// For beasts enable transformation
-	var weapontype = units[selectheroes.value]["WeaponType"];
+	var weapontype = units[selectheroes.value]["weapon"];
 	if ([20, 21, 22, 23].includes(weapontype)) {
 		selectbeast.value = "yes";
 	}
@@ -482,7 +482,7 @@ function reset(section) {
 			// We cannot check if the unit is a beast unless there's a unit selected
 			if (selectheroes.value != "None") {
 				// For beasts disable transformation
-				var weapontype = units[selectheroes.value]["WeaponType"];
+				var weapontype = units[selectheroes.value]["weapon"];
 				if ([20, 21, 22, 23].includes(weapontype)) {
 					selectbeast.value = "no";
 				}

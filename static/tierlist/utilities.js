@@ -190,12 +190,12 @@ function loadsave(save = selectsavelist.value) {
 			opt.addEventListener("dragstart", function(event) {drag(event)});
 			// Create and add the items indicating weapon, movement, blessing and origin
 			let weapon = document.createElement('img');
-			weapon.className = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[character]["WeaponType"]) ? "iconinfo weapon patched" : "iconinfo weapon";
-			weapon.src = "/common/other/" + units[character]["WeaponType"] + "-weapon.webp";
+			weapon.className = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[character]["weapon"]) ? "iconinfo weapon patched" : "iconinfo weapon";
+			weapon.src = "/common/other/" + units[character]["weapon"] + "-weapon.webp";
 			opt.appendChild(weapon);
 			let movement = document.createElement('img');
 			movement.className = "iconinfo movement";
-			movement.src = "/common/other/" + units[character]["moveType"] + "-move.webp";
+			movement.src = "/common/other/" + units[character]["move"] + "-move.webp";
 			opt.appendChild(movement);
 			let origin = document.createElement('img');
 			origin.className = "iconinfo origin";

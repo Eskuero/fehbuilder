@@ -153,12 +153,12 @@ async function echoes() {
 	}
 
 	// Print the move type and weapon type icons
-	await getimage(other["images"]["movetype"][units[hero]["moveType"]]).then(img => {
+	await getimage(other["images"]["movetype"][units[hero]["move"]]).then(img => {
 		preview.drawImage(img, 678, 43, 38, 38);
 	});
-	await getimage(other["images"]["weapontype"][units[hero]["WeaponType"]]).then(img => {
-		let size = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[hero]["WeaponType"]) ? 42 : 38;
-		let offset = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[hero]["WeaponType"]) ? -2 : 0;
+	await getimage(other["images"]["weapontype"][units[hero]["weapon"]]).then(img => {
+		let size = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[hero]["weapon"]) ? 42 : 38;
+		let offset = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[hero]["weapon"]) ? -2 : 0;
 		preview.drawImage(img, 638 + offset, 43 + offset, size, size);
 	});
 
@@ -199,7 +199,7 @@ async function echoes() {
 	preview.fillStyle = "#ffffff";
 	// If we have flowers we add them with the number
 	if (flowers > 0) {
-		await getimage(other["images"]["flowers"][units[hero]["moveType"]]).then(img => {
+		await getimage(other["images"]["flowers"][units[hero]["move"]]).then(img => {
 			preview.drawImage(img, 615, 0, 32, 32);
 		});
 		preview.fillText("+", 650, 5);
@@ -446,9 +446,9 @@ async function condensed() {
 	}
 
 	// Print the weapon type icon
-	await getimage(other["images"]["weapontype"][units[hero]["WeaponType"]]).then(img => {
-		let size = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[hero]["WeaponType"]) ? 32 : 28;
-		let offset = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[hero]["WeaponType"]) ? -2 : 0;
+	await getimage(other["images"]["weapontype"][units[hero]["weapon"]]).then(img => {
+		let size = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[hero]["weapon"]) ? 32 : 28;
+		let offset = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[hero]["weapon"]) ? -2 : 0;
 		preview.drawImage(img, 168 + offset, 17 + offset, size, size);
 	});
 
@@ -759,14 +759,14 @@ async function myunit() {
 		offset += 27;
 	}
 	// Print the move type and weapon type icons
-	await getimage(other["images"]["movetype"][units[hero]["moveType"]]).then(img => {
+	await getimage(other["images"]["movetype"][units[hero]["move"]]).then(img => {
 		// Position is slightly off if we had an accessory
 		var posX = accessory ? 223 : 229;
 		preview.drawImage(img, posX, 743, 32, 32);
 	});
-	await getimage(other["images"]["weapontype"][units[hero]["WeaponType"]]).then(img => {
+	await getimage(other["images"]["weapontype"][units[hero]["weapon"]]).then(img => {
 		// We add an small offset on red weapons to make them look decent
-		let offset = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[hero]["WeaponType"]) ? -2 : 0;
+		let offset = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[hero]["weapon"]) ? -2 : 0;
 		preview.drawImage(img, 20 + offset, 743 + offset);
 	});
 	// Print the level string
@@ -788,7 +788,7 @@ async function myunit() {
 		await getimage(other["images"]["other"]["flowerholder"]).then(img => {
 			preview.drawImage(img, 271 + offset, 732);
 		});
-		await getimage(other["images"]["flowers"][units[hero]["moveType"]]).then(img => {
+		await getimage(other["images"]["flowers"][units[hero]["move"]]).then(img => {
 			preview.drawImage(img, 289 + offset, 727, 60, 60);
 		});
 		printnumbers(preview, "+", 1, 345 + offset, 748, "start");

@@ -94,13 +94,13 @@ function pasteunit() {
 		item.appendChild(hero);
 		// Create and add the items indicating weapon, movement and blessing
 		var weapon = document.createElement('img');
-		weapon.className = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[option]["WeaponType"]) ? "iconinfo weapon patched" : "iconinfo weapon";
-		weapon.src = "/common/other/" + units[option]["WeaponType"] + "-weapon.webp";
+		weapon.className = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[option]["weapon"]) ? "iconinfo weapon patched" : "iconinfo weapon";
+		weapon.src = "/common/other/" + units[option]["weapon"] + "-weapon.webp";
 		weapon.draggable = false;
 		item.appendChild(weapon);
 		var movement = document.createElement('img');
 		movement.className = "iconinfo movement";
-		movement.src = "/common/other/" + units[option]["moveType"] + "-move.webp";
+		movement.src = "/common/other/" + units[option]["move"] + "-move.webp";
 		movement.draggable = false;
 		item.appendChild(movement);
 		if (other["blessed"][option]) {
@@ -125,7 +125,7 @@ function herosize(caller) {
 	// We do some adjustments when using sprites
 	if (selectartstyle.value.indexOf("sprites") != -1) {
 		// Increase the size a 10% for mounted units
-		if ([2,3].includes(units[hero]["moveType"])) {
+		if ([2,3].includes(units[hero]["move"])) {
 			height += 10;
 		} else {
 			height -= 5;

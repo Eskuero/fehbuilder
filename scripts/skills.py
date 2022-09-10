@@ -39,18 +39,18 @@ for file in files:
 			# Store all the data except if it's a refine
 			if not entry["refine_base"] and entry["category"] in range(0, 7):
 				categories[entry["category"]][entry["id_tag"]] = {
-					"WeaponType": entry["wep_equip"],
-					"moveType": entry["mov_equip"],
-					"exclusive": entry["exclusive"],
-					# Always default to isMax false for seals since we modify the info later when filling the data
-					"isMax": True if not entry["next_skill"] and not entry["passive_next"] and entry["category"] != 6 else False
+					"weapon": entry["wep_equip"],
+					"move": entry["mov_equip"],
+					"prf": entry["exclusive"],
+					# Always default to max false for seals since we modify the info later when filling the data
+					"max": True if not entry["next_skill"] and not entry["passive_next"] and entry["category"] != 6 else False
 				}
 				# Specials and Assists do not provide visible stats
 				if entry["category"] not in [1,2]:
-					categories[entry["category"]][entry["id_tag"]]["statModifiers"] = [value for value in entry["stats"].values()]
+					categories[entry["category"]][entry["id_tag"]]["stats"] = [value for value in entry["stats"].values()]
 				# For weapons add the might as part of the statsmodifiers for Atk and emtpy refines definition
 				if entry["category"] == 0:
-					skills["weapons"][entry["id_tag"]]["statModifiers"][1] += entry["might"]
+					skills["weapons"][entry["id_tag"]]["stats"][1] += entry["might"]
 					skills["weapons"][entry["id_tag"]]["refines"] = {}
 				# For passives add the iconid at the top level
 				elif entry["category"] in range(3, 7):
@@ -60,9 +60,9 @@ for file in files:
 			elif entry["refine_base"]:
 				refines[entry["id_tag"]] = {
 					"baseWeapon": entry["refine_base"],
-					"statModifiers": [value for value in entry["stats"].values()],
+					"stats": [value for value in entry["stats"].values()],
 				}
-				refines[entry["id_tag"]]["statModifiers"][1] += entry["might"]
+				refines[entry["id_tag"]]["stats"][1] += entry["might"]
 				# If there's a refine ID this means is an special effect refine and we might need effectids
 				if entry["refine_id"] not in [None, "SID_神罰の杖3", "SID_幻惑の杖3"]:
 					refines[entry["id_tag"]]["effectid"] = entry["refine_id"]
@@ -76,7 +76,7 @@ for refinable in refines:
 	refine = refinenames[refine] if refine in refinenames else "Effect"
 	# Always add the stats modifiers for the particular refine
 	skills["weapons"][refines[refinable]["baseWeapon"]]["refines"][refine] = {
-		"statModifiers": refines[refinable]["statModifiers"]
+		"stats": refines[refinable]["stats"]
 	}
 	# For Effect refines we have skill references
 	if refine == "Effect":
@@ -85,7 +85,7 @@ for refinable in refines:
 			"iconid": refines[refinable]["iconid"]
 		})
 
-# Complete seals data by getting which skills are available to buy and copying their counterparts data (except for the isMax setting, which depends on if it's the last seal of it's line)
+# Complete seals data by getting which skills are available to buy and copying their counterparts data (except for the max setting, which depends on if it's the last seal of it's line)
 files = os.listdir("feh-assets-json/files/assets/Common/SRPG/SkillAccessory/")
 for file in files:
 	with open("feh-assets-json/files/assets/Common/SRPG/SkillAccessory/" + file, "r") as datasource:
@@ -95,7 +95,7 @@ for file in files:
 		# SID_無し is skeleton data for a skill so we ignore
 		for entry in [entry for entry in data if entry["id_tag"] != "SID_無し"]:
 			skills["passives"]["S"][entry["id_tag"]] = allpassives[entry["id_tag"]]
-			skills["passives"]["S"][entry["id_tag"]]["isMax"] = True if not entry["next_seal"] else False
+			skills["passives"]["S"][entry["id_tag"]]["max"] = True if not entry["next_seal"] else False
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Store all the data for internal usage of scripts
@@ -138,7 +138,7 @@ skillscustom = {
 	"weapons": {
 		weaponname: {
 			property: value
-			for property, value in properties.items() if property not in ["exclusive"]
+			for property, value in properties.items() if property not in ["prf"]
 		} 
 		for weaponname, properties in skills["weapons"].items()
     },
@@ -148,7 +148,7 @@ skillscustom = {
 		passivecategory: {
 			passive: {
 				property: value
-				for property, value in properties.items() if property not in ["exclusive", "iconid"]
+				for property, value in properties.items() if property not in ["prf", "iconid"]
 			} 
 			for passive, properties in skills["passives"][passivecategory].items()
 		}

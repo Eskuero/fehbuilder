@@ -67,10 +67,10 @@ for file in files:
 				# The base stats values stored for each hero are so at 3 star rarity (it's safe to reduce them all by 1 to match 1* star rarity)
 				"stats": [value-1 for value in entry["base_stats"].values()],
 				"growths": [value for value in entry["growth_rates"].values()],
-				"WeaponType": entry["weapon_type"],
+				"weapon": entry["weapon_type"],
 				"origin": entry["series"],
-				"moveType": entry["move_type"],
-				"maxflowers": entry["dragonflowers"]["max_count"],
+				"move": entry["move_type"],
+				"flowers": entry["dragonflowers"]["max_count"],
 				# Obtain the base kit skipping empty entries (it's provided as a list of list for each rarity unlock but we just need one)
 				"basekit": [skill for category in entry["skills"] for skill in category if skill],
 				"resplendent": True if entry["id_tag"].replace("PID", "MPID_VOICE") + "EX01" in strings else False,
@@ -95,7 +95,7 @@ with open("fullunits.json", "w") as outfile:
 heroesonline = {
 	heroname: {
 		property: value
-		for property, value in properties.items() if property in ["WeaponType", "moveType", "stats", "growths", "basekit", "maxflowers"]
+		for property, value in properties.items() if property in ["weapon", "move", "stats", "growths", "basekit", "flowers"]
 	}
 	for heroname, properties in heroes.items()
 }
@@ -107,7 +107,7 @@ with open("onlineunits.json", "w") as outfile:
 heroescustom = {
 	heroname: {
 		property: value
-		for property, value in properties.items() if property in ["WeaponType", "moveType", "stats", "growths"]
+		for property, value in properties.items() if property in ["weapon", "move", "stats", "growths"]
 	}
 	for heroname, properties in heroes.items()
 }
@@ -119,7 +119,7 @@ with open("customunits.json", "w") as outfile:
 heroessummon = {
 	heroname: {
 		property: value
-		for property, value in properties.items() if property in ["WeaponType"]
+		for property, value in properties.items() if property in ["weapon"]
 	}
 	for heroname, properties in heroes.items() if "EID" not in heroname
 }
@@ -131,7 +131,7 @@ with open("summonunits.json", "w") as outfile:
 heroestier = {
 	heroname: {
 		property: value
-		for property, value in properties.items() if property in ["WeaponType", "moveType", "origin", "resplendent", "id"]
+		for property, value in properties.items() if property in ["weapon", "move", "origin", "resplendent", "id"]
 	}
 	for heroname, properties in heroes.items() if "EID" not in heroname
 }

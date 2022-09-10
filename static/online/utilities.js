@@ -199,7 +199,7 @@ function staticmodifiers(passives, summoner, buffs) {
 	for (const [category, skill] of Object.entries(passives)) {
 		if (skill) {
 			othermodifiers = othermodifiers.map(function (value, index) {
-				return value + allpassives[skill]["statModifiers"][index];
+				return value + allpassives[skill]["stats"][index];
 			});
 		}
 	}
@@ -271,16 +271,16 @@ function weaponmodifiers(weapon, refine) {
 	var stats = [0, 0, 0, 0, 0];
 	// Obtain the values from the refined weapon if it has it available
 	if (refine) {
-		stats = weapon["refines"][refine]["statModifiers"];
+		stats = weapon["refines"][refine]["stats"];
 		// If the weapon has an effect ID and we are refining for it we need to check if it has visible stats on it from a base skill (then add them)
 		if (weapon["refines"][refine]["effectid"]) {
 			stats = stats.map(function (value, index) {
-				return value + (allpassives[weapon["refines"][refine]["effectid"]] ? allpassives[weapon["refines"][refine]["effectid"]]["statModifiers"] : [0,0,0,0,0])[index];
+				return value + (allpassives[weapon["refines"][refine]["effectid"]] ? allpassives[weapon["refines"][refine]["effectid"]]["stats"] : [0,0,0,0,0])[index];
 			});
 		}
 	// Unrefined weapon, just use base values
 	} else {
-		stats = weapon["statModifiers"];
+		stats = weapon["stats"];
 	}
 	return stats;
 }

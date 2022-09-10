@@ -36,7 +36,7 @@ async function summon(type) {
 	for (i = 0; i < targets.length; i++) {
 		// Do not add unless the target has a number bigger than 0
 		if (parseInt(document.getElementById(targets[i]).value) > 0) {
-			targetcolors.push(detectcolor(units[targets[i]]["WeaponType"]));
+			targetcolors.push(detectcolor(units[targets[i]]["weapon"]));
 		}
 	}
 	// Prevent no-summon circles when you select sniping but not focusing on units
@@ -79,7 +79,7 @@ async function summon(type) {
 				// So obtain another random number to determine the hero
 				heronumber = Math.floor((Math.random() * pool[j]["pool"].length));
 				// Get the color of the hero based on his weapon
-				color = detectcolor(units[pool[j]["pool"][heronumber]]["WeaponType"]);
+				color = detectcolor(units[pool[j]["pool"][heronumber]]["weapon"]);
 				// If the color is that of one our targets or we are doing full circles we unveil it
 				summoned = targetcolors.includes(color) || method.value == "full" ? true : false;
 				// FIXME: For now force summon the last hero if none matched our target but we should allow to set color priorities
