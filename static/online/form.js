@@ -147,7 +147,7 @@ async function populate(domitem, data, clean, bypass) {
 				return;
 			}
 			// Check if the skill is exclusive and if it does check if it's included on the units basekit
-			if (data[value]["exclusive"]) {
+			if (data[value]["prf"]) {
 				if (basekit.includes(value)) {
 					add = true;
 				// If it isn't on the unit basekit he can't use it regarless of other conditions so we skip this iteration

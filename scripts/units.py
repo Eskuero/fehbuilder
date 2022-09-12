@@ -30,9 +30,9 @@ for file in files:
 				# The base stats values stored for each hero are so at 3 star rarity (it's safe to reduce them all by 1 to match 1* star rarity)
 				"stats": [value-1 for value in entry["base_stats"].values()],
 				"growths": [value for value in entry["growth_rates"].values()],
-				"WeaponType": entry["weapon_type"],
-				"moveType": entry["move_type"],
-				"maxflowers": 15,
+				"weapon": entry["weapon_type"],
+				"move": entry["move_type"],
+				"flowers": 25,
 				# Obtain the base kit skipping empty entries (it's provided as a list of list for each rarity unlock but we just need one)
 				"basekit": [],
 				"art": entry["face_name"]
