@@ -105,9 +105,9 @@ function populate() {
 		}
 
 		// Check if we match the unit type
-		if (selectduoharmo.value == "All") {
+		if (selectherotype.value == "All") {
 			add = true;
-		} else if (other[selectduoharmo.value].includes(value)) {
+		} else if (other[selectherotype.value].includes(value)) {
 			add = true;
 		// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
 		} else {

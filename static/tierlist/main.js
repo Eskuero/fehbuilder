@@ -17,7 +17,7 @@ var units, other;
 selectweapontype = document.getElementById("weapontype");
 selectmovetype = document.getElementById("movetype");
 selectblessing = document.getElementById("blessingtype");
-selectduoharmo = document.getElementById("duoharmo");
+selectherotype = document.getElementById("herotype");
 selectgametype = document.getElementById("gametype");
 selectattire = document.getElementById("attire");
 selectbookrelease = document.getElementById("bookrelease");
