@@ -23,6 +23,8 @@ other = {
 	"blessed": {},
 	"duo": [],
 	"resonant": [],
+	"ascended": [],
+	"rearmed" : [],
 	"duokeywords": hardcoded["duokeywords"],
 	"images": hardcoded["images"],
 	"seasonals": hardcoded["seasonals"],
@@ -50,9 +52,10 @@ for file in files:
 				# Extra slots in AR always give out stats
 				if entry["legendary"]["ae_extra"]:
 					other["blessed"][entry["id_tag"]]["variant"] += "-extrae"
-			# If the unit doesn't have element but is of kind 2 or 3 is a duo hero
-			elif entry["legendary"]["kind"] in [2, 3]:
-				other["duo" if entry["legendary"]["kind"] == 2 else "resonant"].append(entry["id_tag"])
+			# If the unit doesn't have element but is of kind 2, 3, 4, 5 is a rare special type we remember separately
+			elif entry["legendary"]["kind"] in [2, 3, 4, 5]:
+				specialtype = [None, None, "duo", "resonant", "ascended", "rearmed"][entry["legendary"]["kind"]]
+				other[specialtype].append(entry["id_tag"])
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Store all the data for internal usage of scripts
@@ -64,6 +67,7 @@ with open("fullother.json", "w") as outfile:
 otherunit = {
 	"blessed": other["blessed"],
 	"duo": other["duo"],
+	"rearmed": other["rearmed"],
 	"resonant": other["resonant"],
 	"duokeywords": hardcoded["duokeywords"],
 	"images": hardcoded["images"]

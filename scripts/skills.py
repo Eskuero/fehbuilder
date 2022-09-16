@@ -48,10 +48,11 @@ for file in files:
 				# Specials and Assists do not provide visible stats
 				if entry["category"] not in [1,2]:
 					categories[entry["category"]][entry["id_tag"]]["stats"] = [value for value in entry["stats"].values()]
-				# For weapons add the might as part of the statsmodifiers for Atk and emtpy refines definition
+				# For weapons add the might as part of the statsmodifiers for Atk, emtpy refines definition and indication of being arcane
 				if entry["category"] == 0:
 					skills["weapons"][entry["id_tag"]]["stats"][1] += entry["might"]
 					skills["weapons"][entry["id_tag"]]["refines"] = {}
+					skills["weapons"][entry["id_tag"]]["arcane"] = entry["arcane_weapon"]
 				# For passives add the iconid at the top level
 				elif entry["category"] in range(3, 7):
 					categories[entry["category"]][entry["id_tag"]]["iconid"] = entry["icon_id"]
