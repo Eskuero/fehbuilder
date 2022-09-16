@@ -30,7 +30,7 @@ with open("../data/languages/fulllanguages.json", "r") as datasource:
 with open("../data/content/fullskills.json", "r") as datasource:
 	skills = json.load(datasource)
 
-print("\nDownloading skills icons...")
+print("\n       - Downloading skills icons...")
 # Obtain the whole list of icons for the passives in case we hit an old skill/passive that doesn't follow expected rules (https://feheroes.fandom.com/api.php?action=cargoquery&tables=Skills&fields=TagID,Icon&where=Scategory+in+(%27passivea%27,%27passiveb%27,%27passivec%27,%27sacredseal%27)+OR+RefinePath=%27skill1%27&limit=max&offset=0&format=json)
 params = dict(
 	action = 'cargoquery', limit = 'max', offset = -500, format = 'json',
@@ -66,11 +66,11 @@ while offset < len(icons):
 			# Get matching substrings from the cargotables
 			matches = [val for key, val in passiveicons.items() if ids[offset:offset+50][i] in key]
 			if len(matches) > 0:
-				print(engrishname["M" + ids[offset:offset+50][i]] + " relying on wiki table for icon name")
+				print("              - " + engrishname["M" + ids[offset:offset+50][i]] + " falling back to wiki cargo table for icon name")
 				url = utils.obtaintrueurl([matches[0]])[0]
 		# Decide on the filename based on the type of expect icon
 		filename = ids[offset:offset+50][i] + ("-Effect.webp" if "_W.png" in icons[offset:offset+50][i] else ".webp")
-		print(engrishname["M" + ids[offset:offset+50][i]] + " doesn't have " + filename, end = ": ")
+		print("              - " + engrishname["M" + ids[offset:offset+50][i]] + " doesn't have " + filename, end = ": ")
 		# Grab and paste the icons
 		try:
 			response = requests.get(url)
@@ -85,7 +85,7 @@ while offset < len(icons):
 			print("Tried url: " + str(url), end = "\n")
 	offset += 50
 
-print("\nDownloading character art...")
+print("\n       - Downloading character art...")
 # Split them in different lists to later be able to query by index
 ids = []
 arts = []
@@ -128,7 +128,7 @@ while offset < len(arts):
 	for i, url in enumerate(utils.obtaintrueurl(expandedart)):
 		# Decide on the filename based on basename and hero ID
 		filename = ids[offset:offset+50][i] + arts[offset:offset+50][i][0]
-		print(engrishname["M" + ids[offset:offset+50][i]] + " doesn't have " + filename, end = ": ")
+		print("              - " + engrishname["M" + ids[offset:offset+50][i]] + " doesn't have " + filename, end = ": ")
 		# Grab and paste the art
 		try:
 			response = requests.get(url)
@@ -142,7 +142,7 @@ while offset < len(arts):
 			print("Tried url: " + str(url), end = "\n")
 	offset += 50
 
-print("\nDownloading character sprites...")
+print("\n       - Downloading character sprites...")
 # Split them in different lists to later be able to query by index
 ids = []
 arts = []
@@ -175,7 +175,7 @@ while offset < len(arts):
 	for i, url in enumerate(utils.obtaintrueurl(expandedart)):
 		# Decide on the filename based on sprite and hero ID
 		filename = ids[offset:offset+50][i] + arts[offset:offset+50][i][0]
-		print(engrishname["M" + ids[offset:offset+50][i]] + " doesn't have " + filename, end = ": ")
+		print("              - " + engrishname["M" + ids[offset:offset+50][i]] + " doesn't have " + filename, end = ": ")
 		# Grab and paste the art
 		try:
 			response = requests.get(url)
@@ -189,7 +189,7 @@ while offset < len(arts):
 			print("Tried url: " + str(url), end = "\n")
 	offset += 50
 
-print("\nDownloading idle character sprites...")
+print("\n       - Downloading idle character sprites...")
 # Split them in different lists to later be able to query by index
 ids = []
 arts = []
@@ -222,7 +222,7 @@ while offset < len(arts):
 	for i, url in enumerate(utils.obtaintrueurl(expandedart)):
 		# Decide on the filename based on sprite and hero ID
 		filename = ids[offset:offset+50][i] + arts[offset:offset+50][i][0]
-		print(engrishname["M" + ids[offset:offset+50][i]] + " doesn't have " + filename, end = ": ")
+		print("              - " + engrishname["M" + ids[offset:offset+50][i]] + " doesn't have " + filename, end = ": ")
 		# Grab and paste the art
 		try:
 			response = requests.get(url)
@@ -236,7 +236,7 @@ while offset < len(arts):
 			print("Tried url: " + str(url), end = "\n")
 	offset += 50
 
-print("\nDownloading character faces for summon simulator...")
+print("\n       - Downloading character faces for summon simulator...")
 # Split them in different lists to later be able to query by index
 ids = []
 arts = []
@@ -268,7 +268,7 @@ while offset < len(arts):
 	for i, url in enumerate(utils.obtaintrueurl(expandedart)):
 		# Decide on the filename based on face and hero ID
 		filename = ids[offset:offset+50][i] + arts[offset:offset+50][i][0]
-		print(engrishname["M" + ids[offset:offset+50][i]] + " doesn't have " + filename, end = ": ")
+		print("              - " + engrishname["M" + ids[offset:offset+50][i]] + " doesn't have " + filename, end = ": ")
 		# Grab and paste the art
 		try:
 			response = requests.get(url)
@@ -282,7 +282,7 @@ while offset < len(arts):
 			print("Tried url: " + str(url), end = "\n")
 	offset += 50
 
-print("\nDownloading character faces for tier list generator...")
+print("\n       - Downloading character faces for tier list generator...")
 # Split them in different lists to later be able to query by index
 ids = []
 arts = []
@@ -314,7 +314,7 @@ while offset < len(arts):
 	for i, url in enumerate(utils.obtaintrueurl(expandedart)):
 		# Decide on the filename based on face and hero ID
 		filename = ids[offset:offset+50][i] + arts[offset:offset+50][i][0]
-		print(engrishname["M" + ids[offset:offset+50][i]] + " doesn't have " + filename, end = ": ")
+		print("              - " + engrishname["M" + ids[offset:offset+50][i]] + " doesn't have " + filename, end = ": ")
 		# Grab and paste the art
 		try:
 			response = requests.get(url)
@@ -328,7 +328,7 @@ while offset < len(arts):
 			print("Tried url: " + str(url), end = "\n")
 	offset += 50
 
-print("\nDownloading character faces for condensed template...")
+print("\n       - Downloading character faces for condensed template...")
 # Split them in different lists to later be able to query by index
 ids = []
 arts = []
@@ -365,7 +365,7 @@ while offset < len(arts):
 	for i, url in enumerate(utils.obtaintrueurl(expandedart)):
 		# Decide on the filename based on face and hero ID
 		filename = ids[offset:offset+50][i] + arts[offset:offset+50][i][0]
-		print(engrishname["M" + ids[offset:offset+50][i]] + " doesn't have " + filename, end = ": ")
+		print("              - " + engrishname["M" + ids[offset:offset+50][i]] + " doesn't have " + filename, end = ": ")
 		# Grab and paste the art
 		try:
 			response = requests.get(url)
