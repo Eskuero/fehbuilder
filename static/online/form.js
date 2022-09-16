@@ -11,12 +11,15 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-async function populateall(clean, bypass = false) {
+async function populateall(clean, bypass = []) {
 	// We go through all the selects except if we are calling from selectheroes since it's overkill
-	if (!bypass) {
+	if (!bypass.includes("heroes")) {
 		selectheroes = await populate(document.getElementById('selectheroes'), units, true, true);
 	}
-	selectweapons = await populate(document.getElementById('weapon'), skills["weapons"], clean);
+	// Sometimes we also call from selectweapons for arcane checks
+	if (!bypass.includes("weapons")) {
+		selectweapons = await populate(document.getElementById('weapon'), skills["weapons"], clean);
+	}
 	selectspecials = await populate(document.getElementById('special'), skills["specials"], clean);
 	selectassists = await populate(document.getElementById('assist'), skills["assists"], clean);
 	selectA = await populate(document.getElementById('Askill'), skills["passives"]["A"], clean);
@@ -150,6 +153,12 @@ async function populate(domitem, data, clean, bypass) {
 			if (data[value]["prf"]) {
 				if (basekit.includes(value)) {
 					add = true;
+					// For selects not a weapon, if the selected weapon is arcane and not in the units basekit, exclude prf skils
+					if (domitem.id != "weapon" && selectweapons.value != "None") {
+						if (skills["weapons"][selectweapons.value]["arcane"] && !basekit.includes(selectweapons.value)) {
+							add = false;
+						}
+					}
 				// If it isn't on the unit basekit he can't use it regarless of other conditions so we skip this iteration
 				} else {
 					return;

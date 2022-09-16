@@ -75,7 +75,7 @@
 				<div class="section unitform">
 					<div class="row-property single">
 						<div class="imagelabel" style="--spriteid:1"></div>
-						<div id="selectheroes" onchange="populateall(true, true);slotname();reload()"></div>
+						<div id="selectheroes" onchange="populateall(true, ['heroes']);slotname();reload()"></div>
 					</div>
 					<div class="row-property double">
 						<div class="imagelabel" style="--spriteid:2"></div>
@@ -188,7 +188,7 @@
 				<div class="section skillsform">
 					<div class="row-property single">
 						<div class="imagelabel" style="--spriteid:13"></div>
-						<div id="weapon" onchange="updateRefine();reload()"></div>
+						<div id="weapon" onchange="populateall(true, ['heroes','weapons']);updateRefine();reload()"></div>
 					</div>
 					<div class="row-property single">
 						<div class="imagelabel" style="--spriteid:14"></div>
