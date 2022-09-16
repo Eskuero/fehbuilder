@@ -8,7 +8,7 @@ git submodule update --remote >> fehupdate-$date.log 2>&1
 
 # Check if something was updated
 newcurrenthead=$(git -C feh-assets-json/ rev-parse HEAD);
-if [[ "$currenthead" == "$newcurrenthead" ]]; then
+if [[ "$currenthead" == "$newcurrenthead" ]] && [[ "$1" != "--force" ]]; then
     echo -e "\n        - Datamined dumps were not updated." >> fehupdate-$date.log 2>&1
 	echo -e "\n---------------------------------------------------------" >> fehupdate-$date.log 2>&1
 else
