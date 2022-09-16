@@ -859,8 +859,19 @@ async function myunit() {
 	var blessing = selectblessings.value == "None" ? false : parseInt(selectblessings.value);
 	// X amount to additionally push each icon to the left
 	var offsetX = 0;
+	// If hero is of special type, detect which
+	var specialtype = false;
+	if (other["duo"].includes(hero)) {
+		var specialtype = "Duo";
+	} else if (other["resonant"].includes(hero)) {
+		var specialtype = "Resonance";
+	} else if (other["ascended"].includes(hero)) {
+		var specialtype = "Ascended";
+	} else if (other["rearmed"].includes(hero)) {
+		var specialtype = "Rearmed";
+	}
 	// Detect if we are printing more than three icons (this could happen on duo/blessed/summoner supported allies) so we can resize accordingly
-	var needsresize = blessing && summoner && other["duo"].includes(hero) ? true : false;
+	var needsresize = blessing && summoner && specialtype ? true : false;
 	var posY = needsresize ? 595 : 570; var posX = needsresize ? 600 : 575;
 	var width = needsresize ? 115 : 147; var height = needsresize ? 125 : 160;
 	// If blessed print the icon
@@ -875,17 +886,16 @@ async function myunit() {
 		offsetX += needsresize ? 100 : 125;
 	}
 
-	// If is a duo hero of any kind print the icon
-	if (other["duo"].concat(other["resonant"]).includes(hero)) {
-		var specialtype = other["duo"].includes(hero) ? "Duo" : "Resonance";
+	// If we detected a specialtype, print the icon
+	if (specialtype) {
 		var specialicon = other["images"]["other"][specialtype];
 		await getimage(specialicon).then(img => {
 			preview.drawImage(img, posX - offsetX, posY, width, height);
 		});
 		// If printed a duo icon the next's position icon must go further to the left
 		offsetX += needsresize ? 100 : 125;
-		// If appui is enabled we also print the conversation icon
-		if (appui.checked) {
+		// If appui is enabled we also print the conversation icon for duos/resonance
+		if (appui.checked && ["Duo", "Resonance"].includes(specialtype)) {
 			await getimage(other["images"]["other"]["duoconversation"]).then(img => {
 				preview.drawImage(img, 3, 415);
 			});

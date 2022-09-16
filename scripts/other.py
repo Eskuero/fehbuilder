@@ -67,6 +67,7 @@ with open("fullother.json", "w") as outfile:
 otherunit = {
 	"blessed": other["blessed"],
 	"duo": other["duo"],
+	"ascended": other["ascended"],
 	"rearmed": other["rearmed"],
 	"resonant": other["resonant"],
 	"duokeywords": hardcoded["duokeywords"],

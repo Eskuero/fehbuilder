@@ -114,6 +114,9 @@ icons = {
 	"rarityborder5": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a0/RarityBorder5.png?259?43",
 	# Ascendent
 	"ascendent": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/13/Icon_FlowerBud_L.webp?58?58",
+	"Ascended": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/2a/Icon_Ascended.png?147?160",
+	# Rearmed
+	"Rearmed": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/8a/Icon_Rearmed.png?147?160",
 	# Movement types
 	"0-move": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/4/45/Icon_Move_Infantry.png?32?32",
 	"0-flower": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a4/Dragonflower_I.png?60?60",
