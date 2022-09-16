@@ -93,7 +93,7 @@ async function init() {
 	units = await fetch('/common/data/content/onlineunits.json').then(response => {return response.json();});
 	skills = await fetch('/common/data/content/onlineskills.json').then(response => {return response.json();});
 	allpassives = Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"]);
-	other = await fetch('/common/data/content/unitother.json').then(response => {return response.json();});
+	other = await fetch('/common/data/content/onlineother.json').then(response => {return response.json();});
 
 	// Build barrack and unit selects
 	loadbarracks();

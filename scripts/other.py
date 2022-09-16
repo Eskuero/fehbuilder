@@ -63,8 +63,8 @@ with open("fullother.json", "w") as outfile:
 	json.dump(other, outfile)
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-# Version for usage in online and custom unit builders
-otherunit = {
+# Version for usage in online unit builder
+otheronline = {
 	"blessed": other["blessed"],
 	"duo": other["duo"],
 	"ascended": other["ascended"],
@@ -73,8 +73,18 @@ otherunit = {
 	"duokeywords": hardcoded["duokeywords"],
 	"images": hardcoded["images"]
 }
-with open("unitother.json", "w") as outfile:
-	json.dump(otherunit, outfile)
+with open("onlineother.json", "w") as outfile:
+	json.dump(otheronline, outfile)
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Version for usage in custom unit builder
+othercustom = {
+	"blessed": other["blessed"],
+	"duokeywords": hardcoded["duokeywords"],
+	"images": hardcoded["images"]
+}
+with open("customother.json", "w") as outfile:
+	json.dump(othercustom, outfile)
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Version for usage in summoning (we only need the duokeywords)

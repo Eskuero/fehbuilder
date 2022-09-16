@@ -84,7 +84,7 @@ async function init() {
 	units = await fetch('/common/data/content/customunits.json').then(response => {return response.json();});
 	skills = await fetch('/common/data/content/customskills.json').then(response => {return response.json();});
 	allpassives = Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"]);
-	other = await fetch('/common/data/content/unitother.json').then(response => {return response.json();});
+	other = await fetch('/common/data/content/customother.json').then(response => {return response.json();});
 
 	// Build unit selects
 	populateall();
