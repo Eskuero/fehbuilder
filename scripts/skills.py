@@ -40,11 +40,14 @@ for file in files:
 			if not entry["refine_base"] and entry["category"] in range(0, 7):
 				categories[entry["category"]][entry["id_tag"]] = {
 					"weapon": entry["wep_equip"],
-					"move": entry["mov_equip"],
-					"prf": entry["exclusive"],
-					# Always default to max false for seals since we modify the info later when filling the data
-					"max": True if not entry["next_skill"] and not entry["passive_next"] and entry["category"] != 6 else False
+					"move": entry["mov_equip"]
 				}
+				# Indicate exclusive preferred weapons
+				if entry["exclusive"]:
+					categories[entry["category"]][entry["id_tag"]]["prf"] = True
+				# Always default to max false for seals since we modify the info later when filling the data
+				if not entry["next_skill"] and not entry["passive_next"] and entry["category"] != 6:
+					categories[entry["category"]][entry["id_tag"]]["max"] = True
 				# Specials and Assists do not provide visible stats
 				if entry["category"] not in [1,2]:
 					categories[entry["category"]][entry["id_tag"]]["stats"] = [value for value in entry["stats"].values()]
@@ -52,7 +55,8 @@ for file in files:
 				if entry["category"] == 0:
 					skills["weapons"][entry["id_tag"]]["stats"][1] += entry["might"]
 					skills["weapons"][entry["id_tag"]]["refines"] = {}
-					skills["weapons"][entry["id_tag"]]["arcane"] = entry["arcane_weapon"]
+					if entry["arcane_weapon"]:
+						skills["weapons"][entry["id_tag"]]["arcane"] = True
 				# For passives add the iconid at the top level
 				elif entry["category"] in range(3, 7):
 					categories[entry["category"]][entry["id_tag"]]["iconid"] = entry["icon_id"]

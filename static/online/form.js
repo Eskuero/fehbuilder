@@ -155,9 +155,9 @@ async function populate(domitem, data, clean, bypass) {
 					add = true;
 					// For selects not a weapon, if the selected weapon is arcane and not in the units basekit, exclude prf skils
 					if (domitem.id != "weapon" && selectweapons.value != "None") {
-						if (skills["weapons"][selectweapons.value]["arcane"] &&
+						if (skills["weapons"][selectweapons.value]["arcane"] && !basekit.includes(selectweapons.value)
 						// FIXME: We also ignore for Sing, Play and Dance. Find a better way?
-						!basekit.includes(selectweapons.value) && !["SID_踊る","SID_奏でる","SID_歌う"].includes(value)) {
+						&& !["SID_踊る","SID_奏でる","SID_歌う"].includes(value)) {
 							add = false;
 						}
 					}
