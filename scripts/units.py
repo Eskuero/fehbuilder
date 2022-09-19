@@ -85,6 +85,12 @@ for file in files:
 			for item in [item for item in heroes[entry["id_tag"]]["basekit"] if item in weaponevolutions]:
 				heroes[entry["id_tag"]]["basekit"].append(weaponevolutions[item])
 
+# Sort all heroes by ID so they have a nicer appearance in tierlist make
+heroessorted = sorted(heroes.items(), key = lambda x: x[1].get('id',-1))
+heroes = {}
+for hero in heroessorted:
+	heroes.update({hero[0]: hero[1]})
+
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Store all the data for internal usage of scripts
 with open("fullunits.json", "w") as outfile:
