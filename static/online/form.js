@@ -49,6 +49,7 @@ async function reload(scroll = false) {
 		await sleep(100);
 	}
 
+	var inittime = performance.now()
 	// Switch canvas size depending on selection and run the appropiate renderer
 	switch (selecttemplate.value) {
 		case "MyUnit":
@@ -74,12 +75,16 @@ async function reload(scroll = false) {
 
 	// Copy rendered thing to the visible element once rendering is complete
 	await renderjob;
+	var finaltime = performance.now()
+
 	setupdownload();
 
 	// Autoscroll all the way up so the user can inmediately see the hero preview on portrait screens
 	if (scroll) {
 		window.scrollTo(0, 0);
 	}
+
+	return finaltime - inittime;
 }
 
 async function populate(domitem, data, clean, bypass) {
