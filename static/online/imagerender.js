@@ -559,7 +559,7 @@ async function myunit() {
 
 	// Print the background depending on the type of support
 	var background = selectbackground.value + (selectsummoner.value == "None" ? "normal" : "support");
-	await getimage(other["images"]["backgrounds"][background]).then(img => {
+	var bgjob = getimage(other["images"]["backgrounds"][background]).then(img => {
 		preview.drawImage(img, -173, 0, 1067, 1280);
 	});
 
@@ -590,9 +590,10 @@ async function myunit() {
 	if (hero) {
 		// If we selected Resplendent and it actually is a legit choose the art
 		var attire = (selectattire.value == "Resplendent" && languages[language][hero.replace("PID", "MPID_VOICE") + "EX01"]) ? "_Resplendent_" : "_";
-		await getimage("../common/heroes/" + hero + attire + selectartstyle.value + ".webp", "/common/base/missigno.webp").then(img => {
+		var herojob = getimage("../common/heroes/" + hero + attire + selectartstyle.value + ".webp", "/common/base/missigno.webp").then(async img => {
 			// We always print the image at the 0 coordinate on Y, but this is not good enough when vertically flipping because we expect the lower half of the hero not to be cut
 			var coordinateY = ["Vertical", "Both"].includes(mirror.value) ? - (img.height - 1280) : 0;
+			await bgjob;
 			preview.drawImage(img, -305 + artoffsetX, coordinateY - artoffsetY);
 		});
 	}
@@ -601,7 +602,8 @@ async function myunit() {
 	
 	// Print the foregroundUI
 	var foreground = appui.checked ? other["images"]["other"]["fgui"] : other["images"]["other"]["fgnoui"];
-	await getimage(foreground).then(img => {
+	await getimage(foreground).then(async img => {
+		await herojob;
 		preview.drawImage(img, 0, 0);
 	});
 	
