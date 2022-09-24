@@ -150,6 +150,7 @@ async function getimage(url, fallback = "/common/base/oopsie.webp") {
 	var img = new Image();
 	// This premise will not return until the image has fully loaded
 	var imageLoadPromise = new Promise(resolve => {
+		img.fetchPriority = "high"
 		img.src = url;
 		img.onload = resolve;
 		// We failed to download the image so fallback to the provided or default 1x1 transparent image
