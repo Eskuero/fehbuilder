@@ -600,7 +600,8 @@ async function myunit() {
 	// Always restore the previous context to avoid issues
 	preview.restore();
 	
-	// Print the foregroundUI
+	// Print the foregroundUI.
+	// Since this has a dependency chain for rendering (bg --> hero --> fg) waiting for it to finish guarantees we can move ont
 	var foreground = appui.checked ? other["images"]["other"]["fgui"] : other["images"]["other"]["fgnoui"];
 	await getimage(foreground).then(async img => {
 		await herojob;
@@ -613,19 +614,22 @@ async function myunit() {
 		return;
 	}
 
+	// We are gonna store an array with all the promises for drawing so we wait until everything rendered before copying the image.
+	renderjobs = [];
+
 	// Print the rarity line
 	// Convert the rarity variable into an int now to cater to calculation needs
 	var rarity = selectrarity.value == "Forma" ? 5 : parseInt(selectrarity.value);
 	// The width of the line depends of the amount of stars, increasing 37 for each from a base value of 16 (margins?)
-	await getimage(other["images"]["rarity"][selectrarity.value]).then(img => {
+	renderjobs.push(getimage(other["images"]["rarity"][selectrarity.value]).then(img => {
 		preview.drawImage(img, 65, 505, 16 + (rarity * 37), 53);
-	});
+	}));
 	
 	// Print the resplendent icon
 	if (["Resplendent", "Stats-Only"].includes(selectattire.value)) {
-		await getimage(other["images"]["other"]["resplendent"]).then(img => {
+		renderjobs.push(getimage(other["images"]["other"]["resplendent"]).then(img => {
 			preview.drawImage(img, 262, 492, 82, 82);
-		});
+		}));
 	}
 
 	// Print title and name
@@ -652,9 +656,9 @@ async function myunit() {
 		preview.strokeText(voice, 47, 1213); preview.fillText(voice, 47, 1213);
 		preview.strokeText(artist, 47, 1242); preview.fillText(artist, 47, 1242);
 		// Print favorite icon
-		await getimage(other["images"]["favorite"][selectfavorite.value]).then(img => {
+		renderjobs.push(getimage(other["images"]["favorite"][selectfavorite.value]).then(img => {
 			preview.drawImage(img, 3, 229, 90, 92);
-		});
+		}));
 		// Translate buttons
 		preview.font = '24px FeH-Font'; preview.textAlign = 'center'; preview.textBaseline = "middle";
 		preview.strokeText(languages[language]["MID_UNIT_INFO_TO_SKILLSET"], 126, 1175); preview.fillText(languages[language]["MID_UNIT_INFO_TO_SKILLSET"], 126, 1175);
@@ -743,34 +747,47 @@ async function myunit() {
 
 	// Print the ascendent floret icon if selected
 	if (ascendent) {
-		await getimage(other["images"]["other"]["ascendent"]).then(img => {
+		renderjobs.push(getimage(other["images"]["other"]["ascendent"]).then(img => {
 			preview.drawImage(img, 10, 502);
-		});
+		}));
 	}
 
 	var accessory = selectaccessory.value == "None" ? false : selectaccessory.value;
-	// If we selected an accessory we paste a newer bigger holder and define an offset to push all next items to the right
-	var offset = 0;
 	if (accessory) {
-		await getimage(other["images"]["other"]["accessoryexpand"]).then(img => {
+		// We always wait for extended baseinfo golder before printing anything else there
+		accexpandjob = getimage(other["images"]["other"]["accessoryexpand"]).then(img => {
 			preview.drawImage(img, 4, 732);
 		});
-		await getimage(other["images"]["accessory"][accessory]).then(img => {
+		renderjobs.push(getimage(other["images"]["accessory"][accessory]).then(async img => {
+			await accexpandjob;
 			preview.drawImage(img, 256, 743, 32, 32);
-		});
-		offset += 27;
+		}));
 	}
+
 	// Print the move type and weapon type icons
-	await getimage(other["images"]["movetype"][units[hero]["move"]]).then(img => {
+	renderjobs.push(getimage(other["images"]["movetype"][units[hero]["move"]]).then(async img => {
 		// Position is slightly off if we had an accessory
-		var posX = accessory ? 223 : 229;
+		let posX = accessory ? 223 : 229;
+		// If an accessory was defined, wait until the expansion is rendered
+		if (accessory) {
+			await accexpandjob;
+		}
 		preview.drawImage(img, posX, 743, 32, 32);
-	});
-	await getimage(other["images"]["weapontype"][units[hero]["weapon"]]).then(img => {
+	}));
+	renderjobs.push(getimage(other["images"]["weapontype"][units[hero]["weapon"]]).then(async img => {
 		// We add an small offset on red weapons to make them look decent
 		let offset = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[hero]["weapon"]) ? -2 : 0;
+		// If an accessory was defined, wait until the expansion is rendered
+		if (accessory) {
+			await accexpandjob;
+		}
 		preview.drawImage(img, 20 + offset, 743 + offset);
-	});
+	}));
+
+	// If an accessory was defined, wait until the expansion is rendered
+	if (accessory) {
+		await accexpandjob;
+	}
 	// Print the level string
 	preview.font = '24px FeH-Font'; preview.fillStyle = "#ffffff"; preview.strokeStyle = '#0a2533'; preview.textAlign = 'start';
 	preview.strokeText(languages[language]["MID_LEVEL2"], 70, 746); preview.fillText(languages[language]["MID_LEVEL2"], 70, 746);
@@ -785,26 +802,38 @@ async function myunit() {
 		printnumbers(preview, merges, numbertype, 181, 745, "start");
 	}
 	preview.fillStyle = "#ffffff";
+
 	// If we have flowers we add another box with the number
 	if (flowers > 0) {
-		await getimage(other["images"]["other"]["flowerholder"]).then(img => {
-			preview.drawImage(img, 271 + offset, 732);
+		// We always wait for flowerholder before printing anything else there
+		flholderjob = getimage(other["images"]["other"]["flowerholder"]).then(img => {
+			// Position is slightly off if we had an accessory
+			let posX = accessory ? 271 + 27 : 271;
+			preview.drawImage(img, posX, 732);
 		});
-		await getimage(other["images"]["flowers"][units[hero]["move"]]).then(img => {
-			preview.drawImage(img, 289 + offset, 727, 60, 60);
-		});
-		printnumbers(preview, "+", 1, 345 + offset, 748, "start");
-		printnumbers(preview, flowers, 1, 364 + offset, 745, "start");
-		offset += 147;
+		renderjobs.push(getimage(other["images"]["flowers"][units[hero]["move"]]).then(async img => {
+			// Position is slightly off if we had an accessory
+			let posX = accessory ? 289 + 27 : 289;
+			// Wait until the expansion is rendered
+			await flholderjob;
+			preview.drawImage(img, posX, 727, 60, 60);
+			// Position for flower amount is off if we had an accessory
+			var offset = (accessory ? 27 : 0);
+			printnumbers(preview, "+", 1, 345 + offset, 748, "start");
+			printnumbers(preview, flowers, 1, 364 + offset, 745, "start");
+		}));
 	}
 
 	// Paste the exp indicator
-	await getimage(other["images"]["other"]["expindicator"]).then(img => {
-		preview.drawImage(img, 271 + offset, 732);
-	});
-	preview.font = '24px FeH-Font';
-	preview.strokeText(languages[language]["MID_EXP"], 308 + offset, 745); preview.fillText(languages[language]["MID_EXP"], 308 + offset, 745);
-	preview.strokeText(languages[language]["MID_UNIT_INFO_EXP_MAX"], 415 + offset, 745); preview.fillText(languages[language]["MID_UNIT_INFO_EXP_MAX"], 415 + offset, 745);
+	renderjobs.push(getimage(other["images"]["other"]["expindicator"]).then(img => {
+		// Position is off if we had an accessory and flowers
+		let posX = 271 + (accessory ? 27 : 0) + (flowers > 0 ? 147 : 0);
+		preview.drawImage(img, posX, 732);
+		// Position for text is off if we had an accessory and flowers
+		var offset = (accessory ? 27 : 0) + (flowers > 0 ? 147 : 0);
+		preview.strokeText(languages[language]["MID_EXP"], 308 + offset, 745); preview.fillText(languages[language]["MID_EXP"], 308 + offset, 745);
+		preview.strokeText(languages[language]["MID_UNIT_INFO_EXP_MAX"], 415 + offset, 745); preview.fillText(languages[language]["MID_UNIT_INFO_EXP_MAX"], 415 + offset, 745);
+	}));
 
 	// If the weapon is valid try to print an icon
 	if (weapon) {
@@ -814,17 +843,17 @@ async function myunit() {
 		if (refine == "Effect" && skills["weapons"][weapon]["refines"]["Effect"]) {
 			var weaponicon = "../common/icons/" + weapon + "-Effect.webp";
 		}
-		await getimage(weaponicon).then(img => {
+		renderjobs.push(getimage(weaponicon).then(img => {
 			preview.drawImage(img, 370, 797, 44, 44);
-		});
+		}));
 		// Get the string to print
 		var printableweapon = languages[language]["M" + weapon];
 	// If not just print the basic icon
 	} else {
 		var printableweapon = "-";
-		await getimage(other["images"]["other"]["noweapon"]).then(img => {
+		renderjobs.push(getimage(other["images"]["other"]["noweapon"]).then(img => {
 			preview.drawImage(img, 370, 797, 44, 44);
-		});
+		}));
 	}
 	// We always paste the text because it might as well be unarmed and have a "-"
 	preview.fillStyle = refine ? "#82f546" : "#ffffff";
@@ -842,25 +871,29 @@ async function myunit() {
 		let name = "-";
 		// If the passive doesn't exist skip
 		if (allpassives[skill]) {
-			await getimage("../common/icons/" + skill + ".webp").then(img => {
+			let iconjob = getimage("../common/icons/" + skill + ".webp").then(img => {
 				// If the image size is bigger than 44 these are some tier 4 skills that have shiny borders and their icon must be and offsetted accordingly
 				let iconoffset = img.height > 44 ? -2 : 0;
 				preview.drawImage(img, passiverender[category]["icon"][0] + iconoffset, passiverender[category]["icon"][1] + iconoffset);
 			});
+			// If we are rendering an icon for this category, wait until is rendered for the indicator
+			renderjobs.push(getimage(other["images"]["skillindicators"][category]).then(async img => {
+				await iconjob;
+				preview.drawImage(img, passiverender[category]["indicator"][0], passiverender[category]["indicator"][1], 21, 21);
+			}));
 			name = languages[language]["M" + skill];
+		} else {
+			// Print the category indicator
+			renderjobs.push(getimage(other["images"]["skillindicators"][category]).then(img => {
+				preview.drawImage(img, passiverender[category]["indicator"][0], passiverender[category]["indicator"][1], 21, 21);
+			}));
 		}
 		// We always write the text because it might be a simple "-"
 		preview.strokeText(name, passiverender[category]["text"][0], passiverender[category]["text"][1]);
 		preview.fillText(name, passiverender[category]["text"][0], passiverender[category]["text"][1]);
-		// Print the category indicator
-		await getimage(other["images"]["skillindicators"][category]).then(img => {
-			preview.drawImage(img, passiverender[category]["indicator"][0], passiverender[category]["indicator"][1], 21, 21);
-		});
 	}
 
 	var blessing = selectblessings.value == "None" ? false : parseInt(selectblessings.value);
-	// X amount to additionally push each icon to the left
-	var offsetX = 0;
 	// If hero is of special type, detect which
 	var specialtype = false;
 	if (other["duo"].includes(hero)) {
@@ -881,35 +914,38 @@ async function myunit() {
 		// If the hero is on the list of the blessed ones for that particular blessing it has icon variant defined (otherwise use the normal one)
 		var variant = other["blessed"][hero] ? other["blessed"][hero]["variant"] : false;
 		var blessingicon = "/common/other/" + (other["blessed"][hero] ? other["blessed"][hero]["blessing"] : blessing) + "-Blessing" + (variant ? "-" + variant : "") + ".webp";
-		await getimage(blessingicon).then(img => {
+		renderjobs.push(getimage(blessingicon).then(img => {
 			preview.drawImage(img, posX, posY, width, height);
-		});
-		// If printed a blessing the next's position icon must go further to the left
-		offsetX += needsresize ? 100 : 125;
+		}));
 	}
 
 	// If we detected a specialtype, print the icon
 	if (specialtype) {
 		var specialicon = other["images"]["other"][specialtype];
-		await getimage(specialicon).then(img => {
+		renderjobs.push(getimage(specialicon).then(img => {
+			// If printed a blessing the next's position icon must go further to the left
+			let offsetX = (blessing ? 1 : 0) * (needsresize ? 100 : 125);
 			preview.drawImage(img, posX - offsetX, posY, width, height);
-		});
-		// If printed a duo icon the next's position icon must go further to the left
-		offsetX += needsresize ? 100 : 125;
+		}));
 		// If appui is enabled we also print the conversation icon for duos/resonance
 		if (appui.checked && ["Duo", "Resonance"].includes(specialtype)) {
-			await getimage(other["images"]["other"]["duoconversation"]).then(img => {
+			renderjobs.push(getimage(other["images"]["other"]["duoconversation"]).then(img => {
 				preview.drawImage(img, 3, 415);
-			});
+			}));
 		}
 	}
 
 	// If summoner supported print the icon
 	if (summoner) {
-		await getimage(other["images"]["summoner"][summoner]).then(img => {
+		renderjobs.push(getimage(other["images"]["summoner"][summoner]).then(img => {
+			// If printed a blessing the next's position icon must go further to the left
+			let offsetX = ((blessing ? 1 : 0) + (specialtype ? 1 : 0) ) * (needsresize ? 100 : 125);
 			preview.drawImage(img, posX - offsetX, posY, width, height);
-		});
+		}));
 	}
+
+	// Wait until all async renders completed
+	await Promise.all(renderjobs);
 
 	// Clean the queue
 	renderingqueue.shift();
