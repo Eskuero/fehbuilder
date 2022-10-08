@@ -635,14 +635,8 @@ function applybasekit() {
 	// If the weapon has an effect refine, use it
 	if (basekit["weapon"]) {
 		// The refines available for a weapon are defined as an array for the offline version to save bandwidth so the check is not valid for both version
-		if (Array.isArray(skills["weapons"][basekit["weapon"]]["refines"])) {
-			if (skills["weapons"][basekit["weapon"]]["refines"].indexOf("Effect")) {
-				selectrefines.value = "Effect";
-			}
-		} else {
-			if (skills["weapons"][basekit["weapon"]]["refines"]["Effect"]) {
-				selectrefines.value = "Effect";
-			}
+		if (skills["weapons"][basekit["weapon"]]["refines"]["Effect"]) {
+			selectrefines.value = "Effect";
 		}
 	}
 	selectassists.value = basekit["assist"] ? basekit["assist"] : "None";
