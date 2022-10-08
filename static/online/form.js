@@ -593,7 +593,7 @@ function applybasekit() {
 					if (!basekit["weapon"]) {
 						basekit["weapon"] = fullkit[i];
 					// If the weapon already added is a prf do not replace it unless the incoming weapon is also a prf
-					} else if (!skills["weapons"][basekit["weapon"]]["exclusive"] || skills["weapons"][fullkit[i]]["exclusive"]) {
+					} else if (!skills["weapons"][basekit["weapon"]]["prf"] || skills["weapons"][fullkit[i]]["prf"]) {
 						basekit["weapon"] = fullkit[i];
 					}
 				}
