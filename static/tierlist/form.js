@@ -127,7 +127,9 @@ function populate() {
 		// Check if we match the attire
 		if (selectattire.value == "All") {
 			add = true;
-		} else if (units[value]["resplendent"]) {
+		} else if (selectattire.value == "Resplendent" && units[value]["resplendent"]) {
+			add = true;
+		} else if (selectattire.value == "NotResplendent" && !units[value]["resplendent"]) {
 			add = true;
 		// If it doesn't contain out weapon type we cannot use it regardless of if we are going to meet movement type so we just skip this iteration
 		} else {
