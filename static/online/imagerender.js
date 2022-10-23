@@ -563,25 +563,17 @@ async function myunit() {
 		preview.drawImage(img, -173, 0, 1067, 1280);
 	});
 
-	// Save the context here in case we need to do so some flipping
-	preview.save();
 	var artoffsetX = parseInt(selectoffsetX.value);
 	var artoffsetY = parseInt(selectoffsetY.value);
 	// We only make modifications if some mirror config is set to other than None
 	switch (mirror.value) {
 		case "Horizontal":
-			preview.translate(720, 0);
-			preview.scale(-1, 1);
 			var artoffsetX = -artoffsetX;
 			break;
 		case "Vertical":
-			preview.translate(0, 1280);
-			preview.scale(1, -1);
 			var artoffsetY = -artoffsetY;
 			break;
 		case "Both":
-			preview.translate(720, 1280);
-			preview.scale(-1, -1);
 			var artoffsetX = -artoffsetX;
 			var artoffsetY = -artoffsetY;
 			break;
@@ -594,11 +586,28 @@ async function myunit() {
 			// We always print the image at the 0 coordinate on Y, but this is not good enough when vertically flipping because we expect the lower half of the hero not to be cut
 			var coordinateY = ["Vertical", "Both"].includes(mirror.value) ? - (img.height - 1280) : 0;
 			await bgjob;
+			// Save the context here in case we need to do so some flipping
+			preview.save();
+			// We only make modifications if some mirror config is set to other than None
+			switch (mirror.value) {
+				case "Horizontal":
+					preview.translate(720, 0);
+					preview.scale(-1, 1);
+					break;
+				case "Vertical":
+					preview.translate(0, 1280);
+					preview.scale(1, -1);
+					break;
+				case "Both":
+					preview.translate(720, 1280);
+					preview.scale(-1, -1);
+					break;
+			}
 			preview.drawImage(img, -305 + artoffsetX, coordinateY - artoffsetY);
+			// Always restore the previous context to avoid issues
+			preview.restore();
 		});
 	}
-	// Always restore the previous context to avoid issues
-	preview.restore();
 	
 	// Print the foregroundUI.
 	// Since this has a dependency chain for rendering (bg --> hero --> fg) waiting for it to finish guarantees we can move ont
