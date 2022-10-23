@@ -142,12 +142,15 @@ function setupdownload() {
 	var hero = selecthero.value;
 	// Get desired filename
 	var truename = hero == "" ? "None" : hero;
-	// Convert canvas to a data url
-	var url = canvas.toDataURL("image/png");
-	// Update the image element
-	fakecanvas.src = url;
-	document.getElementById("downloadlink").href = url;
-	document.getElementById("downloadlink").download = "FeH Unit builder - " + truename;
+	// Convert canvas to a blob url
+	canvas.toBlob(function(blob) {
+		url = URL.createObjectURL(blob);
+		// Update the image element
+		fakecanvas.src = url;
+		// Update the download link
+		document.getElementById("downloadlink").href = url;
+		document.getElementById("downloadlink").download = "FeH Custom Unit builder - " + truename;
+	});
 }
 
 // Simple housekeeping function to add the stats boost from different static modifiers
