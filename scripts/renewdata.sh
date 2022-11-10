@@ -1,13 +1,16 @@
 #!/bin/sh
 date=$(date +"%Y-%m-%d-%H-%M"-%S)
 
-echo -e "---------------------------------------------------------" >> fehupdate-$date.log 2>&1
-echo "Updating FeH datamined dumps..." >> fehupdate-$date.log 2>&1
-currenthead=$(git -C feh-assets-json/ rev-parse HEAD);
-git submodule update --remote >> fehupdate-$date.log 2>&1
+if [[ "$2" != "--hackin" ]]; then
+	echo -e "---------------------------------------------------------" >> fehupdate-$date.log 2>&1
+	echo "Updating FeH datamined dumps..." >> fehupdate-$date.log 2>&1
+	currenthead=$(git -C feh-assets-json/ rev-parse HEAD);
+	git submodule update --remote >> fehupdate-$date.log 2>&1;
 
-# Check if something was updated
-newcurrenthead=$(git -C feh-assets-json/ rev-parse HEAD);
+	# Check if something was updated
+	newcurrenthead=$(git -C feh-assets-json/ rev-parse HEAD);
+fi
+
 if [[ "$currenthead" == "$newcurrenthead" ]] && [[ "$1" != "--force" ]]; then
     echo -e "\n        - Datamined dumps were not updated." >> fehupdate-$date.log 2>&1
 	echo -e "\n---------------------------------------------------------" >> fehupdate-$date.log 2>&1
@@ -34,5 +37,7 @@ else
 	echo -e "\n---------------------------------------------------------" >> fehupdate-$date.log 2>&1
 fi
 
-echo -e "Downloading missing assets from wiki..." >> fehupdate-$date.log 2>&1
-PYTHONUNBUFFERED=1 python3 downloadassets.py >> fehupdate-$date.log 2>&1
+if [[ "$2" != "--hackin" ]]; then
+	echo -e "Downloading missing assets from wiki..." >> fehupdate-$date.log 2>&1
+	PYTHONUNBUFFERED=1 python3 downloadassets.py >> fehupdate-$date.log 2>&1
+fi
