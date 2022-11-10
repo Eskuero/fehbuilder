@@ -1,0 +1,682 @@
+[
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202201",
+		"value": "Arquivo do norte"
+	},
+	{
+		"key": "MID_SUM02_Palm_Title",
+		"value": "Racionamento de \u00e1gua"
+	},
+	{
+		"key": "MID_SUM02_Palm_Common",
+		"value": "Est\u00e3o tomando sol. S\u00f3 cocos poder\u00e3o\\nmatar a sua sede!"
+	},
+	{
+		"key": "MID_SUM02_Palm_3",
+		"value": "Faltou sorte. Mas, pelo menos,\\nconseguiram um coco para dividir!"
+	},
+	{
+		"key": "MID_SUM02_Palm_4",
+		"value": "Conseguiram um coco cada! Um\\nbrinde aos frutos dos esfor\u00e7os!"
+	},
+	{
+		"key": "MID_SUM02_Palm_5",
+		"value": "Uau! Mais cocos do que esperado!\\nCelebraram a colheita farta!"
+	},
+	{
+		"key": "MID_JOURNEYMIRROR_HELP_DIALOG_00",
+		"value": "-Espelho heroico-\\nVoc\u00ea pode ver o que os dois\\nher\u00f3is est\u00e3o fazendo nas suas\\njornadas pelos mundos."
+	},
+	{
+		"key": "MID_JOURNEYMIRROR_HELP_DIALOG_01",
+		"value": "-Hora do mundo real-\\nA situa\u00e7\u00e3o reflete o tempo no\\nmundo real. Os her\u00f3is comem,\\ndescansam e se aventuram na\\nmesma hora do dia que voc\u00ea!"
+	},
+	{
+		"key": "MID_JOURNEYMIRROR_HELP_DIALOG_02",
+		"value": "-Eventos de bifurca\u00e7\u00e3o-\\nDe vez em quando, os her\u00f3is\\nencontrar\u00e3o bifurca\u00e7\u00f5es na sua\\njornada e eles precisam fazer uma\\nescolha. Quando isso acontecer,\\ntoque na tela para ajud\u00e1-los a\\ndecidir."
+	},
+	{
+		"key": "MID_JOURNEYMIRROR_HELP_DIALOG_03",
+		"value": "-Recompensas de bifurca\u00e7\u00e3o-\\nSe a escolha na bifurca\u00e7\u00e3o levar\\na bons resultados, os her\u00f3is ir\u00e3o\\nagradecer com um fragmento de\\nmem\u00f3ria para voc\u00ea."
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR",
+		"value": "Espelho heroico"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_CONFIRM_FIRST",
+		"value": "Veja o espelho heroico aqui.\\nConfira como os her\u00f3is est\u00e3o\\nse saindo na jornada deles!"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_CONFIRM",
+		"value": "Veja o espelho heroico para\\nconferir como os her\u00f3is est\u00e3o\\nse saindo na jornada deles!"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_FAILED",
+		"value": "O espelho heroico\\nn\u00e3o est\u00e1 dispon\u00edvel."
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TOUCH",
+		"value": "Toque na tela para escolher\\numa das tr\u00eas op\u00e7\u00f5es!"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_TITLE",
+		"value": "$a$a1\\n$a0"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_TELOP",
+		"value": "$a$a0\\n$a1,\\n$a2."
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_1",
+		"value": "na natureza"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_2",
+		"value": "na natureza"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_3",
+		"value": "na natureza"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_4",
+		"value": "na floresta"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_5",
+		"value": "na floresta"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_6",
+		"value": "na floresta"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_7",
+		"value": "na terra inf\u00e9rtil"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_8",
+		"value": "na terra inf\u00e9rtil"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_9",
+		"value": "na terra inf\u00e9rtil"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_10",
+		"value": "no deserto"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_11",
+		"value": "no deserto"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_12",
+		"value": "no deserto"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_13",
+		"value": "nas ru\u00ednas"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_14",
+		"value": "nas ru\u00ednas"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_15",
+		"value": "nas ru\u00ednas"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_16",
+		"value": "na costa"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_17",
+		"value": "na costa"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_18",
+		"value": "na costa"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_19",
+		"value": "na neve"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_20",
+		"value": "na neve"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_21",
+		"value": "na neve"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_22",
+		"value": "no vulc\u00e3o"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_23",
+		"value": "na caverna"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_24",
+		"value": "no labirinto"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_25",
+		"value": "nas termas"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_26",
+		"value": "nas termas"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_27",
+		"value": "na sombra"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_28",
+		"value": "na sombra"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Meal_A",
+		"value": "Conversando"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Meal_B",
+		"value": "Fazendo piadas"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Meal_C",
+		"value": "Cozinhando"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Meal_D",
+		"value": "Comendo"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Move_A",
+		"value": "Marchando"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Move_B",
+		"value": "Viajando"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Action_A",
+		"value": "Lutando"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Action_B",
+		"value": "Falando"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Action_C",
+		"value": "Treinando"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Action_D",
+		"value": "Tomando banho"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Action_E",
+		"value": "Relaxando"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Construct_A",
+		"value": "Acampando"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Construct_B",
+		"value": "Acampando"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Rest_A",
+		"value": "Descansando"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Rest_B",
+		"value": "Descansando"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Rest_C",
+		"value": "Descansando"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Rest_D",
+		"value": "Descansando"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TITLE_Event_A",
+		"value": "Ca\u00e7a \u00e0s conchas"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TITLE_Event_B",
+		"value": "Problemas financeiros"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TITLE_Event_C",
+		"value": "Semeadura"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TITLE_Event_D",
+		"value": "Alavancas astutas"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TITLE_Event_E",
+		"value": "Quest\u00e3o de gosto"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_A_Common",
+		"value": "Est\u00e3o procurando conchas na costa...\\nSer\u00e1 que encontrar\u00e3o alguma?"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_A_Success",
+		"value": "Encontraram uma concha linda!\\nOutra lembran\u00e7a da viagem!"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_A_Fail",
+		"value": "Encontraram lixo, mas nada valioso.\\nPelo menos a orla est\u00e1 mais limpa!"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_B_Common",
+		"value": "Perderam a bolsa com o dinheiro...\\nPodem se recuperar desse erro?"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_B_Success",
+		"value": "Encontraram o dinheiro perdido!\\nO al\u00edvio da dupla \u00e9 palp\u00e1vel."
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_B_Fail",
+		"value": "Procuraram por todo lado, mas n\u00e3o\\nencontraram. Passar\u00e3o a noite no frio."
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_C_Common",
+		"value": "Est\u00e3o cuidando das sementes nas\\nru\u00ednas... Que flores desabrochar\u00e3o?"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_C_Success",
+		"value": "As sementes viraram flores lindas!\\nSeguraram as l\u00e1grimas de emo\u00e7\u00e3o."
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_C_Fail",
+		"value": "Usaram diversas sementes inusitadas.\\nA beleza est\u00e1 nos olhos de quem v\u00ea..."
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_D_Common",
+		"value": "Acharam tr\u00eas alavancas no labirinto.\\nConseguir\u00e3o resisitir \u00e0 curiosidade?"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_D_Success",
+		"value": "Apareceu um ba\u00fa de tesouros!\\nComemoraram a sorte grande!"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_D_Fail",
+		"value": "Puxaram a alavanca errada... As\\narmadilhas do labirinto est\u00e3o ativas!"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_E_Common",
+		"value": "Trocaram presentes... Mas qual\\ndevem abrir primeiro?"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_E_Success",
+		"value": "Havia um bolo incr\u00edvel na caixa!\\nQuem n\u00e3o iria sorrir para isso?"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_E_Fail",
+		"value": "Havia um bolo horroroso na caixa!\\nSer\u00e1 que os outros ser\u00e3o melhores?"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_0",
+		"value": "Enquanto o sol nasce"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_0_BG_22",
+		"value": "Enquanto a fuma\u00e7a escurece o dia"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_0_BG_23",
+		"value": "Enquanto a escurid\u00e3o cai"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_0_BG_24",
+		"value": "Enquanto a escurid\u00e3o cai"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_1",
+		"value": "Enquanto a luz inunda o c\u00e9u"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_1_BG_22",
+		"value": "Enquanto o ch\u00e3o racha sob os p\u00e9s"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_1_BG_23",
+		"value": "Enquanto o vento frio sopra"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_1_BG_24",
+		"value": "Enquanto o vento frio sopra"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_1_BG_25",
+		"value": "Enquanto a luz passa pelas folhas"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_1_BG_27",
+		"value": "Enquanto as folhas sacodem no vento"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_2",
+		"value": "Enquanto o sol brilha no c\u00e9u"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_2_BG_22",
+		"value": "Enquanto as cinzas cobrem o sol"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_2_BG_23",
+		"value": "Enquanto as sombras cobrem tudo"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_2_BG_24",
+		"value": "Enquanto as sombras cobrem tudo"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_3",
+		"value": "Enquanto a luz do sol brilha"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_3_BG_22",
+		"value": "Enquanto a lava queima o ar"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_3_BG_23",
+		"value": "Enquanto se perdem no tempo"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_3_BG_24",
+		"value": "Enquanto se perdem no tempo"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_3_BG_25",
+		"value": "Enquanto a luz brilha suavemente"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_3_BG_27",
+		"value": "Enquanto cai a luz do sol"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_4",
+		"value": "Enquanto o c\u00e9u se avermelha"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_4_BG_22",
+		"value": "Enquanto a fuma\u00e7a densa pesa"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_4_BG_23",
+		"value": "Enquanto toda luz se apaga"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_4_BG_24",
+		"value": "Enquanto toda luz se apaga"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_4_BG_26",
+		"value": "Enquanto as \u00e1rvores fazem sombra"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_4_BG_28",
+		"value": "Enquanto o sol come\u00e7a a cair"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_5",
+		"value": "Enquanto o sol desaparece de vista"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_5_BG_22",
+		"value": "Enquanto brilhos emergem no escuro"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_5_BG_23",
+		"value": "Enquanto o sil\u00eancio pesa no ar"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_5_BG_24",
+		"value": "Enquanto o sil\u00eancio pesa no ar"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_6",
+		"value": "Enquanto a solid\u00e3o se faz presente"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_6_BG_22",
+		"value": "Enquanto o escuro tenta resfriar o ar"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_6_BG_23",
+		"value": "Enquanto o sil\u00eancio se aprofunda"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_6_BG_24",
+		"value": "Enquanto o sil\u00eancio se aprofunda"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_7",
+		"value": "Enquanto tudo se aquieta"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_7_BG_22",
+		"value": "Enquanto o som ecoa de longe"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_7_BG_23",
+		"value": "Enquanto a escurid\u00e3o cerca tudo"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_7_BG_24",
+		"value": "Enquanto a escurid\u00e3o cerca tudo"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_1",
+		"value": "na natureza vasta e selvagem"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_2",
+		"value": "na natureza vasta e selvagem"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_3",
+		"value": "na natureza vasta e selvagem"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_4",
+		"value": "no meio de uma densa floresta"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_5",
+		"value": "no meio de uma densa floresta"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_6",
+		"value": "no meio de uma densa floresta"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_7",
+		"value": "em uma terra desolada"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_8",
+		"value": "em uma terra desolada"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_9",
+		"value": "em uma terra desolada"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_10",
+		"value": "no extenso deserto"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_11",
+		"value": "no extenso deserto"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_12",
+		"value": "no extenso deserto"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_13",
+		"value": "nas ru\u00ednas desmoronadas"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_14",
+		"value": "nas ru\u00ednas desmoronadas"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_15",
+		"value": "nas ru\u00ednas desmoronadas"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_16",
+		"value": "no caminho da orla"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_17",
+		"value": "no caminho da orla"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_18",
+		"value": "no caminho da orla"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_19",
+		"value": "no gelo e na neve"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_20",
+		"value": "no gelo e na neve"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_21",
+		"value": "no gelo e na neve"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_22",
+		"value": "na base do vulc\u00e3o"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_23",
+		"value": "nas profundezas da terra"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_24",
+		"value": "nos corredores do labirinto"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_25",
+		"value": "nas \u00e1guas termais"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_26",
+		"value": "nas \u00e1guas termais"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_27",
+		"value": "na sombra vasta de uma copa"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_28",
+		"value": "na sombra vasta de uma copa"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Meal_A",
+		"value": "conversam em voz baixa"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Meal_B",
+		"value": "riem at\u00e9 fazer eco"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Meal_C",
+		"value": "sentem o cheiro de comida no ar"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Meal_D",
+		"value": "comem a refei\u00e7\u00e3o com calma"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Move_A",
+		"value": "avan\u00e7am com passo firme"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Move_B",
+		"value": "caminham sem pressa"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Action_A",
+		"value": "lutam ruidosamente"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Action_B",
+		"value": "t\u00eam um debate animado"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Action_C",
+		"value": "treinam dedicadamente"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Action_D",
+		"value": "tomam um bom banho"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Action_E",
+		"value": "relaxam por um momento"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Construct_A",
+		"value": "preparam o acampamento"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Construct_B",
+		"value": "se esfor\u00e7am para montar a barraca"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Rest_A",
+		"value": "se deitam para o merecido descanso"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Rest_B",
+		"value": "se deitam para o merecido descanso"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Rest_C",
+		"value": "se deitam para o merecido descanso"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Rest_D",
+		"value": "se deitam para o merecido descanso"
+	},
+	{
+		"key": "MID_SCF_\uff15\u5468\u5e74\u30b1\u30fc\u30ad",
+		"value": "Bolo de anivers\u00e1rio"
+	},
+	{
+		"key": "MID_SCF_\uff15\u5468\u5e74\u30b1\u30fc\u30ad_HELP",
+		"value": "Um bolo enorme para celebrar o quinto\\nanivers\u00e1rio. \u00c9 um item de evento."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202202",
+		"value": "Pedras et\u00e9reas PH"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202202",
+		"value": "Usadas nas Investidas et\u00e9reas para construir\\nestruturas dispon\u00edveis por tempo limitado.\\nAp\u00f3s esse per\u00edodo, as pedras ser\u00e3o perdidas."
+	},
+	{
+		"key": "MID_VOTE_TERM_202201",
+		"value": "Duelistas do deserto"
+	}
+]

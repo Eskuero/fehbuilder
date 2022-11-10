@@ -1,0 +1,2494 @@
+[
+	{
+		"key": "MID_ARENA_TITLE",
+		"value": "Ar\u00e8ne"
+	},
+	{
+		"key": "MID_ARENA_TITLE_REWARD",
+		"value": "R\u00e9compenses"
+	},
+	{
+		"key": "MID_ARENA_TITLE_HISTORY",
+		"value": "Bilan d\u00e9fensif"
+	},
+	{
+		"key": "MID_ARENA_SEASON_DAYS",
+		"value": "$aFin de saison dans $a0 j"
+	},
+	{
+		"key": "MID_ARENA_SEASON_HOURS",
+		"value": "$aFin de saison dans $a0 h"
+	},
+	{
+		"key": "MID_ARENA_SEASON_MINUTES",
+		"value": "$aFin de saison dans $a0 min"
+	},
+	{
+		"key": "MID_ARENA_RANK",
+		"value": "Rg"
+	},
+	{
+		"key": "MID_ARENA_BONUSCHRS_HEADLINE",
+		"value": "Appel aux armes"
+	},
+	{
+		"key": "MID_ARENA_BONUSCHRS_CAPTION",
+		"value": "Utilisez un de ces alli\u00e9s pour obtenir un meilleur score !"
+	},
+	{
+		"key": "MID_ARENA_COMBO_CAPTION",
+		"value": "$aVictoires : $a0/7    Bonus de s\u00e9rie : +$a1"
+	},
+	{
+		"key": "MID_ARENA_NO_HISTORY",
+		"value": "Aucun bilan \u00e0 afficher."
+	},
+	{
+		"key": "MID_ARENA_BTN_BATTLE",
+		"value": "Combattre"
+	},
+	{
+		"key": "MID_ARENA_BTN_REWARD",
+		"value": "R\u00e9compenses"
+	},
+	{
+		"key": "MID_ARENA_BTN_HISTORY",
+		"value": "Bilan d\u00e9fensif"
+	},
+	{
+		"key": "MID_ARENA_BTN_HELP",
+		"value": "Aide"
+	},
+	{
+		"key": "MID_ARENA_BTN_GIVEUP",
+		"value": "Capituler"
+	},
+	{
+		"key": "MID_ARENA_BTN_CONFIRM",
+		"value": "Continuer"
+	},
+	{
+		"key": "MID_ARENA_DEF_WIN",
+		"value": "D\u00e9fense r\u00e9ussie !"
+	},
+	{
+		"key": "MID_ARENA_EASY",
+		"value": "Novice"
+	},
+	{
+		"key": "MID_ARENA_NORMAL",
+		"value": "Interm\u00e9diaire"
+	},
+	{
+		"key": "MID_ARENA_HARD",
+		"value": "V\u00e9t\u00e9ran"
+	},
+	{
+		"key": "MID_ARENA_SELECT_OPPONENT_HEADLINE",
+		"value": "Choisissez votre adversaire."
+	},
+	{
+		"key": "MID_ARENA_RESULT_HEADLINE",
+		"value": "R\u00e9sultat"
+	},
+	{
+		"key": "MID_ARENA_TOTAL_SCORE",
+		"value": "Score final"
+	},
+	{
+		"key": "MID_ARENA_THIS_SCORE",
+		"value": "Score"
+	},
+	{
+		"key": "MID_ARENA_COMBO_SCORE",
+		"value": "Bonus de s\u00e9rie"
+	},
+	{
+		"key": "MID_ARENA_RENEWAL_HISCORE",
+		"value": "Nouveau record !"
+	},
+	{
+		"key": "MID_ARENA_STOP_VICTORIES",
+		"value": "Votre s\u00e9rie s'ach\u00e8ve..."
+	},
+	{
+		"key": "MID_ARENA_REWARD_TYPE",
+		"value": "Cat\u00e9gorie :"
+	},
+	{
+		"key": "MID_ARENA_SORT_RANK",
+		"value": "Rang"
+	},
+	{
+		"key": "MID_ARENA_SORT_OFFENSE",
+		"value": "Record"
+	},
+	{
+		"key": "MID_ARENA_SORT_DEFENSE",
+		"value": "D\u00e9fense"
+	},
+	{
+		"key": "MID_ARENA_SORT_REWARDTYPE_RANK",
+		"value": "R\u00e9compenses : Rang"
+	},
+	{
+		"key": "MID_ARENA_SORT_REWARDTYPE_OFFENSE",
+		"value": "R\u00e9compenses : Record"
+	},
+	{
+		"key": "MID_ARENA_SORT_REWARDTYPE_DEFENSE",
+		"value": "R\u00e9compenses : D\u00e9fense"
+	},
+	{
+		"key": "MID_ARENA_GAINED_REWARDTYPE_RANK",
+		"value": "$aR\u00e9compense (rang) - #$a0"
+	},
+	{
+		"key": "MID_ARENA_GAINED_REWARDTYPE_OFFENSE",
+		"value": "$aR\u00e9compense (record)\\nScore : $a1"
+	},
+	{
+		"key": "MID_ARENA_GAINED_REWARDTYPE_DEFENSE",
+		"value": "$aR\u00e9compense (d\u00e9fense)\\nScore : $a2"
+	},
+	{
+		"key": "MID_ARENA_RANK_OUT_OF_RANGE",
+		"value": "aucun"
+	},
+	{
+		"key": "MID_ARENA_CLOSED",
+		"value": "L'ar\u00e8ne est ferm\u00e9e."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_REWARD_SORT",
+		"value": "S\u00e9lectionnez un filtre."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_BATTLE_CONFIRM_TEXT",
+		"value": "S'acquitter d'une \u00e9p\u00e9e\\nde duel et continuer ?"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_BATTLE_CONFIRM_WARNING",
+		"value": "Vous ne pourrez plus revenir en arri\u00e8re\\napr\u00e8s avoir d\u00e9couvert vos adversaires."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_BATTLE_CONFIRM_YES",
+		"value": "Continuer"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_BATTLE_CONFIRM_NO",
+		"value": "Quitter"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_GIVEUP_TEXT",
+		"value": "Capituler ?"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_GIVEUP_WARNING",
+		"value": "Capituler avant d'avoir combattu\\nne sera pas consid\u00e9r\u00e9 comme\\nune d\u00e9faite."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_GIVEUP_YES",
+		"value": "Capituler"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_GIVEUP_NO",
+		"value": "Combattre"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_OPPONENT_DECIDE_TEXT",
+		"value": "Affronter ce joueur ?"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_OPPONENT_DECIDE_YES",
+		"value": "Combattre"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_OPPONENT_DECIDE_NO",
+		"value": "Quitter"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_SEASON_LAST10_TEXT",
+		"value": "La fin de saison approche !"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_SEASON_LAST10_WARNING",
+		"value": "Attention, si la saison prend fin avant\\nque votre partie ne soit termin\u00e9e, vos\\nr\u00e9sultats ne seront pas pris en compte."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_SEASON_END_TEXT",
+		"value": "Vos r\u00e9sultats n'ont pas \u00e9t\u00e9 pris\\nen compte car la saison a pris fin\\navant que vous n'ayez pu terminer\\nvotre partie."
+	},
+	{
+		"key": "MID_ARENA_ROOT_SEASONEND_TEXT",
+		"value": "La saison est termin\u00e9e. Vous ne pouvez\\npas combattre pour le moment."
+	},
+	{
+		"key": "MID_ARENA_ROOT_SEASONEND_WARNING",
+		"value": "Revenez lorsque la prochaine saison\\naura d\u00e9but\u00e9 !"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_TASKKILLED_TEXT",
+		"value": "Votre dernier combat s'est termin\u00e9\\nde mani\u00e8re inopin\u00e9e."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_TASKKILLED_WARNING",
+		"value": "Votre s\u00e9rie de victoires ainsi que votre\\nbonus vont \u00eatre r\u00e9initialis\u00e9s."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_NO_CANDIDATE_TEXT",
+		"value": "Aucun adversaire n'a pu \u00eatre trouv\u00e9."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_NO_CANDIDATE_WARNING",
+		"value": "Attendez quelques instants avant de r\u00e9essayer."
+	},
+	{
+		"key": "MID_ARENA_REWARDS_GAINED_DIALOG",
+		"value": "Les r\u00e9compenses li\u00e9es \u00e0 une saison\\npeuvent \u00eatre r\u00e9cup\u00e9r\u00e9es en entrant de\\nnouveau dans l'ar\u00e8ne une fois celle-ci\\ntermin\u00e9e et avant la fin de la saison\\nsuivante."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_00",
+		"value": "Combattez et gagnez un butin !"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_01",
+		"value": "\u25c6 Duel \u25c6\\nS\u00e9lectionnez un adversaire\\nparmi les trois propos\u00e9s.\\nChaque combat consomme\\nune \u00e9p\u00e9e de duel."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_02",
+		"value": "\u25c6 Score \u25c6\\nApr\u00e8s une victoire, vous gagnerez\\ndes points en fonction du niveau\\nde votre adversaire. Encha\u00eenez les\\nvictoires pour gonfler votre score !\\n\\nLe bonus de s\u00e9rie est r\u00e9initialis\u00e9\\napr\u00e8s sept victoires cons\u00e9cutives."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_03",
+		"value": "\u25c6 Record \u25c6\\nTentez d'obtenir le plus haut\\nscore possible \u00e0 chaque saison.\\n\\n\u00c0 la fin de la saison, votre score\\nest r\u00e9initialis\u00e9."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_04",
+		"value": "\u25c6 R\u00e9compenses \u25c6\\nUne fois la saison termin\u00e9e, vous\\nrecevrez des r\u00e9compenses en\\nfonction de votre record et de\\nvotre place dans le classement.\\nSi votre meilleur score est assez\\n\u00e9lev\u00e9, vous pourrez passer\\nau rang d'ar\u00e8ne sup\u00e9rieur."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_05",
+		"value": "\u25c6 Appel aux armes \u25c6\\nVous pouvez multiplier vos points\\nen incluant certains h\u00e9ros phares\\nde la saison dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_2_00",
+		"value": "\u25c6 D\u00e9fense \u25c6\\nVous recevez des points \u00e0 chaque\\nfois que votre \u00e9quipe repousse\\navec succ\u00e8s l'assaut d'un joueur."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_2_01",
+		"value": "\u25c6 R\u00e9compense de d\u00e9fense \u25c6\\nUne fois la saison termin\u00e9e,\\nvous recevrez une r\u00e9compense\\nbas\u00e9e sur votre meilleur score."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_2_02",
+		"value": "\u25c6 \u00c9quipe de d\u00e9fense \u25c6\\nL'\u00e9quipe dans le premier\\nemplacement en partant de la\\ngauche sera utilis\u00e9e en d\u00e9fense."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_3_00",
+		"value": "\u25c6 Consulter les r\u00e9compenses \u25c6\\nVous pouvez consulter les\\nr\u00e9compenses en jeu pour\\nla saison en cours.\\n\\nUtilisez les filtres pour afficher\\nles r\u00e9compenses de la cat\u00e9gorie\\nde votre choix."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_3_01",
+		"value": "\u25c6 Record \u25c6\\nAffiche les r\u00e9compenses bas\u00e9es\\nsur le meilleur score obtenu\\nen duel.\\n\u25c6 D\u00e9fense \u25c6\\nAffiche les r\u00e9compenses bas\u00e9es\\nsur le meilleur score obtenu\\nen d\u00e9fense."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_3_02",
+		"value": "\u25c6 Classement \u25c6\\nAffiche les r\u00e9compenses bas\u00e9es\\nsur le classement, qui liste les\\n100 000 meilleurs scores.\\nLe classement est mis \u00e0 jour\\ntoutes les heures. Il peut s'\u00e9couler\\nun certain temps avant qu'un\\nchangement ne soit refl\u00e9t\u00e9."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_3_03",
+		"value": "\u25c6 Obtenir une r\u00e9compense \u25c6\\nPour recevoir les r\u00e9compenses\\nque vous avez gagn\u00e9es lors de\\nla pr\u00e9c\u00e9dente saison, il vous suffit\\nd'entrer dans l'ar\u00e8ne apr\u00e8s que\\nles r\u00e9sultats de la saison en\\nquestion ont \u00e9t\u00e9 calcul\u00e9s, mais\\navant la fin de la nouvelle saison."
+	},
+	{
+		"key": "MID_ARENA_RANK01",
+		"value": "Recrue"
+	},
+	{
+		"key": "MID_ARENA_RANK02",
+		"value": "Ailes-blanches"
+	},
+	{
+		"key": "MID_ARENA_RANK03",
+		"value": "Carabin"
+	},
+	{
+		"key": "MID_ARENA_RANK04",
+		"value": "Chevalier noir"
+	},
+	{
+		"key": "MID_ARENA_RANK05",
+		"value": "Chev. de Lenstar"
+	},
+	{
+		"key": "MID_ARENA_RANK06",
+		"value": "Chev. de Chalphy"
+	},
+	{
+		"key": "MID_ARENA_RANK07",
+		"value": "Chev. de Belhalla"
+	},
+	{
+		"key": "MID_ARENA_RANK08",
+		"value": "G\u00e9n\u00e9ral archer"
+	},
+	{
+		"key": "MID_ARENA_RANK09",
+		"value": "G\u00e9n\u00e9ral magicien"
+	},
+	{
+		"key": "MID_ARENA_RANK10",
+		"value": "G\u00e9n\u00e9ral chevalier"
+	},
+	{
+		"key": "MID_ARENA_RANK11",
+		"value": "Grand g\u00e9n\u00e9ral"
+	},
+	{
+		"key": "MID_ARENA_RANK12",
+		"value": "G\u00e9n\u00e9ral wyverne"
+	},
+	{
+		"key": "MID_ARENA_RANK13",
+		"value": "Huit G\u00e9n\u00e9raux"
+	},
+	{
+		"key": "MID_ARENA_RANK14",
+		"value": "G\u00e9n\u00e9ral imp\u00e9rial"
+	},
+	{
+		"key": "MID_ARENA_RANK15",
+		"value": "Quatre cavaliers"
+	},
+	{
+		"key": "MID_ARENA_RANK16",
+		"value": "Garde Sacr\u00e9e"
+	},
+	{
+		"key": "MID_ARENA_RANK17",
+		"value": "Seigneur Ombres"
+	},
+	{
+		"key": "MID_ARENA_RANK18",
+		"value": "Noble d'Hoshido"
+	},
+	{
+		"key": "MID_ARENA_RANK19",
+		"value": "Noble de Nohr"
+	},
+	{
+		"key": "MID_ARENA_RANK20",
+		"value": "Premier dragon"
+	},
+	{
+		"key": "MID_CONFIG_ON",
+		"value": "Oui"
+	},
+	{
+		"key": "MID_CONFIG_OFF",
+		"value": "Non"
+	},
+	{
+		"key": "MID_CONFIG_ANIME_BATTLE",
+		"value": "Animations\\nde combat"
+	},
+	{
+		"key": "MID_CONFIG_ANIME_SUPPORT",
+		"value": "Animations\\nde soutien"
+	},
+	{
+		"key": "MID_CONFIG_ANIME_PLAYER_TURN",
+		"value": "Phase joueur"
+	},
+	{
+		"key": "MID_CONFIG_OPERATION_COMMAND",
+		"value": "Confirmer\\nd\u00e9placements"
+	},
+	{
+		"key": "MID_CONFIG_OPERATION_FIXED",
+		"value": "Confirmer\\nattente"
+	},
+	{
+		"key": "MID_CONFIG_OPERATION_AUTO",
+		"value": "Auto"
+	},
+	{
+		"key": "MID_CONFIG_OPERATION_TAP",
+		"value": "Toucher"
+	},
+	{
+		"key": "MID_CONFIG_AUTO_TURN_END",
+		"value": "Fin de tour auto."
+	},
+	{
+		"key": "MID_CONFIG_UNIT_AUTO_LOCK",
+		"value": "Marquage auto.\\nen favori"
+	},
+	{
+		"key": "MID_CONFIG_MUTED",
+		"value": "Mode silencieux"
+	},
+	{
+		"key": "MID_CONFIG_BGM_VOLUME",
+		"value": "Volume de la musique"
+	},
+	{
+		"key": "MID_CONFIG_SE_VOLUME",
+		"value": "Volume des effets sonores"
+	},
+	{
+		"key": "MID_CONFIG_VOICE_VOLUME",
+		"value": "Volume des voix"
+	},
+	{
+		"key": "MID_CONFIG_MAP_BEGIN",
+		"value": "Jouer une carte"
+	},
+	{
+		"key": "MID_CONFIG_MAP_BEGIN_BATTLE",
+		"value": "Combattre"
+	},
+	{
+		"key": "MID_CONFIG_MAP_BEGIN_SORTIE",
+		"value": "Permuter"
+	},
+	{
+		"key": "MID_CONFIG_DOUBLE_TAP_FIXED",
+		"value": "Attente : toucher\\ndeux fois"
+	},
+	{
+		"key": "MID_CONFIG_TALK_WAIT_FOR_AUTO_MODE",
+		"value": "Texte en\\ncombat auto"
+	},
+	{
+		"key": "MID_CONFIG_TALK_WAIT_TAP",
+		"value": "Manuel"
+	},
+	{
+		"key": "MID_CONFIG_TALK_WAIT_AUTO",
+		"value": "Auto"
+	},
+	{
+		"key": "MID_CONFIG_AUTO_SHOW_DANGER",
+		"value": "Afficher la zone\\nde danger"
+	},
+	{
+		"key": "MID_CONFIG_AUTO_MODE_CONTINUATION",
+		"value": "Combat auto\\npermanent"
+	},
+	{
+		"key": "MID_CONFIG_AUTO_SKIP",
+		"value": "Carte\u00a0:\\nsans animation"
+	},
+	{
+		"key": "MID_CONFIG_AUTO_SKIP_ENEMY_TURN",
+		"value": "Phase ennemie"
+	},
+	{
+		"key": "MID_CONFIG_AUTO_SKIP_FOR_AUTO_MODE",
+		"value": "Combat auto\u00a0:\\nsans animation"
+	},
+	{
+		"key": "MID_CONFIG_AUTO_BUTTON",
+		"value": "Bouton Combat\\nauto"
+	},
+	{
+		"key": "MID_CONFIG_AUTO_BUTTON_MENU",
+		"value": "Menu"
+	},
+	{
+		"key": "MID_CONFIG_AUTO_BUTTON_FOOTER",
+		"value": "Barre de boutons"
+	},
+	{
+		"key": "MID_CONFIG_AUTO_BUTTON_ALL",
+		"value": "Partout"
+	},
+	{
+		"key": "MID_CONFIG_LEVEL_SORT",
+		"value": "Classement\\npar niveau"
+	},
+	{
+		"key": "MID_CONFIG_LEVEL_SORT_DEFAULT",
+		"value": "D\u00e9faut"
+	},
+	{
+		"key": "MID_CONFIG_LEVEL_SORT_IGNORE_LIMIT_BREAK",
+		"value": "Ignorer fusions"
+	},
+	{
+		"key": "MID_CONFIG_SEQUENTIAL_MAP_RECOMMENDATION_ENABLED",
+		"value": "Conseil Tourmente"
+	},
+	{
+		"key": "MID_CONFIG_SHOW_MAP_COMMAND_GUIDE",
+		"value": "Mouvement auto\\nalli\u00e9s/ennemis"
+	},
+	{
+		"key": "MID_CONFIG_BATTLE_ENEMY_BGM",
+		"value": "Musique ennemis"
+	},
+	{
+		"key": "MID_CONFIG_SHOW_MAP_COMMAND_GUIDE_SIMPLE",
+		"value": "Simple"
+	},
+	{
+		"key": "MID_CONFIG_SHOW_MAP_COMMAND_GUIDE_RICH",
+		"value": "Guide"
+	},
+	{
+		"key": "MID_CONFIG_BATTLE_BGM",
+		"value": "Musique\\nde combat"
+	},
+	{
+		"key": "MID_CONFIG_BATTLE_BGM_ONLY_SPECIAL",
+		"value": "Sp\u00e9c. seulement"
+	},
+	{
+		"key": "MID_TITLE_ASK_NAME",
+		"value": "Entrez le nom de votre personnage."
+	},
+	{
+		"key": "MID_TITLE_ASK_NAME_CAPTION",
+		"value": "Entrez le nom de votre personnage."
+	},
+	{
+		"key": "MID_TITLE_ASK_NAME_INFO",
+		"value": "Certains caract\u00e8res sp\u00e9ciaux ne peuvent\\npas \u00eatre utilis\u00e9s. Le nom est limit\u00e9 \u00e0 12\\ncaract\u00e8res et il pourra \u00eatre modifi\u00e9."
+	},
+	{
+		"key": "MID_TITLE_USER_NAME_PLACE_HOLDER",
+		"value": "Nom"
+	},
+	{
+		"key": "MID_TITLE_USER_NAME_DEFAULT_NAME",
+		"value": "Kiran"
+	},
+	{
+		"key": "MID_TITLE_USER_NAME_NG",
+		"value": "Les termes ainsi que les symboles\\net les caract\u00e8res susceptibles\\nd'offenser les autres joueurs ne\\npeuvent \u00eatre utilis\u00e9s."
+	},
+	{
+		"key": "MID_EXTRA",
+		"value": "Divers"
+	},
+	{
+		"key": "MID_EXTRA_SUBMENU",
+		"value": "Aide/Etc."
+	},
+	{
+		"key": "MID_EXTRA_ITEMLIST",
+		"value": "Inventaire"
+	},
+	{
+		"key": "MID_EXTRA_ITEMLIST_INFO",
+		"value": "Consultez les objets en votre possession."
+	},
+	{
+		"key": "MID_EXTRA_ENVIRONMENT",
+		"value": "Param\u00e8tres"
+	},
+	{
+		"key": "MID_EXTRA_ENVIRONMENT_INFO",
+		"value": "Modifiez divers param\u00e8tres."
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST",
+		"value": "Cin\u00e9matiques"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_PLAY",
+		"value": "Lire"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING",
+		"value": "Ouverture"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_SUMMON",
+		"value": "$a$a0 est l\u00e0 !"
+	},
+	{
+		"key": "MID_EXTRA_ACHIVEMENT_ANDROID",
+		"value": "R\u00e9ussites"
+	},
+	{
+		"key": "MID_EXTRA_ACHIVEMENT_IOS",
+		"value": "Game Center"
+	},
+	{
+		"key": "MID_EXTRA_HELP",
+		"value": "FAQ"
+	},
+	{
+		"key": "MID_EXTRA_CUSTOMER",
+		"value": "Service consommateurs"
+	},
+	{
+		"key": "MID_EXTRA_TERM",
+		"value": "Contrat de licence"
+	},
+	{
+		"key": "MID_EXTRA_PRIVACY",
+		"value": "Politique de confidentialit\u00e9"
+	},
+	{
+		"key": "MID_EXTRA_ABOUT",
+		"value": "\u00c0 propos de FE Heroes"
+	},
+	{
+		"key": "MID_EXTRA_CHANGE_LANGUAGE",
+		"value": "Modifier la langue"
+	},
+	{
+		"key": "MID_EXTRA_CHANGE_NAME",
+		"value": "Nom/sexe du personnage"
+	},
+	{
+		"key": "MID_EXTRA_PLAY_ANALYTICS",
+		"value": "Partage des donn\u00e9es"
+	},
+	{
+		"key": "MID_EXTRA_PLAY_ANALYTICS_TERMS",
+		"value": "Fire Emblem Heroes recueille les\\ndonn\u00e9es d'utilisation de l'application\\nafin d'am\u00e9liorer nos produits et\\nservices et de proposer des\\noffres et recommandations\\npersonnalis\u00e9es conform\u00e9ment\\n\u00e0 la politique de confidentialit\u00e9.\\n\\nPour ne plus recevoir de\\nnotifications en dehors de\\nl'application, modifiez le r\u00e9glage\\ncorrespondant dans les param\u00e8tres\\nde votre appareil."
+	},
+	{
+		"key": "MID_EXTRA_PLAY_ANALYTICS_ON",
+		"value": "Partager mes donn\u00e9es"
+	},
+	{
+		"key": "MID_EXTRA_PLAY_ANALYTICS_OFF",
+		"value": "Ne pas partager"
+	},
+	{
+		"key": "MID_EXTRA_PLAY_ANALYTICS_CONFIRM",
+		"value": "Vos param\u00e8tres de partage de donn\u00e9es\\nd'utilisation ont \u00e9t\u00e9 modifi\u00e9s.\\nLa modification sera effective une fois\\nque l'application aura \u00e9t\u00e9 red\u00e9marr\u00e9e."
+	},
+	{
+		"key": "MID_PRESENT_LIST_TITLE",
+		"value": "Liste de cadeaux"
+	},
+	{
+		"key": "MID_PRESENT_LIST_RECEIVED",
+		"value": "R\u00e9cup\u00e9r\u00e9"
+	},
+	{
+		"key": "MID_PRESENT_LIST_RECEIVE",
+		"value": "Tous les cadeaux ont\\n\u00e9t\u00e9 r\u00e9cup\u00e9r\u00e9s."
+	},
+	{
+		"key": "MID_PRESENT_LIST_MAXIMUM",
+		"value": "Vous ne pouvez pas r\u00e9cup\u00e9rer\\nce cadeau car vous ne pouvez\\npas en poss\u00e9der plus."
+	},
+	{
+		"key": "MID_PRESENT_LIST_MAXIMUM_PART",
+		"value": "Certains cadeaux n'ont pas pu\\n\u00eatre r\u00e9cup\u00e9r\u00e9s car vous ne\\npouvez pas en poss\u00e9der plus."
+	},
+	{
+		"key": "MID_PRESENT_LIST_ERROR_RECEIVE_PART",
+		"value": "Une erreur est survenue, certains\\ncadeaux n'ont pas pu \u00eatre r\u00e9cup\u00e9r\u00e9s."
+	},
+	{
+		"key": "MID_PRESENT_LIST_CONFIRM_TO_RECEIVE_ALL",
+		"value": "Tout accepter ?"
+	},
+	{
+		"key": "MID_PRESENT_LIST_RECEIVE_BUTTON",
+		"value": "Accepter"
+	},
+	{
+		"key": "MID_PRESENT_LIST_RECEIVE_ALL_BUTTON",
+		"value": "Tout accepter"
+	},
+	{
+		"key": "MID_PRESENT_LIST_MINUTE",
+		"value": "$aFin dans $a0 min"
+	},
+	{
+		"key": "MID_PRESENT_LIST_HOUR",
+		"value": "$aFin dans $a0 h"
+	},
+	{
+		"key": "MID_PRESENT_LIST_DAY",
+		"value": "$aFin dans $a0 j"
+	},
+	{
+		"key": "MID_FRIEND_LIST_MINUTE",
+		"value": "$aDer. activit\u00e9 il y a $a0 min"
+	},
+	{
+		"key": "MID_FRIEND_LIST_HOUR",
+		"value": "$aDer. activit\u00e9 il y a $a0 h"
+	},
+	{
+		"key": "MID_FRIEND_LIST_DAY",
+		"value": "$aDer. activit\u00e9 il y a $a0 j"
+	},
+	{
+		"key": "MID_FRIEND_LIST_WEAK",
+		"value": "$aDer. activit\u00e9 il y a $a0 sem."
+	},
+	{
+		"key": "MID_FRIEND_LIST_OLDEST_WEAK",
+		"value": "Der. activ. il y a + d'un mois"
+	},
+	{
+		"key": "MID_FRIEND_YOUR_ID",
+		"value": "Votre ID :"
+	},
+	{
+		"key": "MID_HOME_PAGE_PREV",
+		"value": "Retour"
+	},
+	{
+		"key": "MID_FRIEND_LIST_TITLE",
+		"value": "Liste d'amis"
+	},
+	{
+		"key": "MID_FRIEND_ACCEPT",
+		"value": "Accepter"
+	},
+	{
+		"key": "MID_FRIEND_ALL_ACCEPT",
+		"value": "Tout accepter"
+	},
+	{
+		"key": "MID_FRIEND_DIALOG_ACCEPT",
+		"value": "Accepter cette demande d'ami ?"
+	},
+	{
+		"key": "MID_FRIEND_DIALOG_ALL_ACCEPT",
+		"value": "Accepter toutes les demandes d'ami ?"
+	},
+	{
+		"key": "MID_FRIEND_ACCEPTED",
+		"value": "Demande accept\u00e9e."
+	},
+	{
+		"key": "MID_FRIEND_REFUSE",
+		"value": "Refuser"
+	},
+	{
+		"key": "MID_FRIEND_ALL_REFUSE",
+		"value": "Tout refuser"
+	},
+	{
+		"key": "MID_FRIEND_DIALOG_REFUSE",
+		"value": "Refuser cette demande d'ami ?"
+	},
+	{
+		"key": "MID_FRIEND_DIALOG_ALL_REFUSE",
+		"value": "Refuser toutes les demandes d'ami ?"
+	},
+	{
+		"key": "MID_FRIEND_REFUSED",
+		"value": "Demande refus\u00e9e."
+	},
+	{
+		"key": "MID_FRIEND_DELETE",
+		"value": "Effacer un ami"
+	},
+	{
+		"key": "MID_FRIEND_DELETED",
+		"value": "Ami effac\u00e9."
+	},
+	{
+		"key": "MID_FRIEND_DELETE_CHECK",
+		"value": "Effacer cet ami ?"
+	},
+	{
+		"key": "MID_FRIEND_HELLO",
+		"value": "Saluer"
+	},
+	{
+		"key": "MID_FRIEND_DELETE_REQUEST",
+		"value": "Effacer la demande"
+	},
+	{
+		"key": "MID_FRIEND_ALL_DELETE_REQUEST",
+		"value": "Tout effacer"
+	},
+	{
+		"key": "MID_FRIEND_DIALOG_DELETE_REQUEST",
+		"value": "Effacer cette demande d'ami ?"
+	},
+	{
+		"key": "MID_FRIEND_DIALOG_ALL_DELETE_REQUEST",
+		"value": "Effacer toutes les demandes d'ami ?"
+	},
+	{
+		"key": "MID_FRIEND_DELETED_REQUEST",
+		"value": "Demande effac\u00e9e."
+	},
+	{
+		"key": "MID_FRIEND_REQUEST",
+		"value": "Demande d'ami"
+	},
+	{
+		"key": "MID_FRIEND_SEARCH_USER_ID",
+		"value": "Cherchez un utilisateur \u00e0 partir de son ID."
+	},
+	{
+		"key": "MID_FRIEND_INPUT_SEARCH",
+		"value": "ID \u00e0 rechercher"
+	},
+	{
+		"key": "MID_FRIEND_LIST_SEARCH_CAPTION",
+		"value": "Entrez l'ID \u00e0 rechercher."
+	},
+	{
+		"key": "MID_FRIEND_ALREADY_FRIEND",
+		"value": "Vous \u00eates d\u00e9j\u00e0 amis."
+	},
+	{
+		"key": "MID_FRIEND_ALREADY_SENT_REQUEST",
+		"value": "Demand\u00e9 d\u00e9j\u00e0 envoy\u00e9e."
+	},
+	{
+		"key": "MID_FRIEND_SEND_REQUEST",
+		"value": "Demande envoy\u00e9e."
+	},
+	{
+		"key": "MID_FRIEND_LIST_EMPTY",
+		"value": "Votre liste est vide."
+	},
+	{
+		"key": "MID_FRIEND_SEARCH_EMPTY",
+		"value": "Entrez l'ID \u00e0 rechercher."
+	},
+	{
+		"key": "MID_FRIEND_SEARCH_ERROR",
+		"value": "L'ID entr\u00e9 n'est pas valide."
+	},
+	{
+		"key": "MID_FRIEND_SEARCH_INVALID",
+		"value": "L'ID entr\u00e9 n'est pas valide.\\nEntrez un ID \u00e0 10 chiffres."
+	},
+	{
+		"key": "MID_FRIEND_SEARCH_EQUAL_MY_ID",
+		"value": "Vous ne pouvez pas rechercher\\nvotre propre ID."
+	},
+	{
+		"key": "MID_FRIEND_REQUEST_EMPTY",
+		"value": "Vous n'avez aucune demande en cours."
+	},
+	{
+		"key": "MID_FRIEND_APPROVAL_EMPTY",
+		"value": "Vous n'avez aucune demande en cours."
+	},
+	{
+		"key": "MID_PRESENT_ACTIVE_EMPTY",
+		"value": "Vous n'avez aucun cadeau en attente."
+	},
+	{
+		"key": "MID_PRESENT_RECEIVED_EMPTY",
+		"value": "Vous n'avez r\u00e9cup\u00e9r\u00e9 aucun cadeau\\nau cours des 14 derniers jours."
+	},
+	{
+		"key": "MID_HOME_FRIEND_TALK_SEND",
+		"value": "Vos salutations ont \u00e9t\u00e9 transmises."
+	},
+	{
+		"key": "MID_HOME_FRIEND_TALK_RECEIVE",
+		"value": "$aSalutations re\u00e7ues : $a0"
+	},
+	{
+		"key": "MID_HOME_FRIEND_TALK_RECEIVE_MAX",
+		"value": "Vous avez 5+ salutations en attente."
+	},
+	{
+		"key": "MID_FRIEND_ERROR_SEND_REQUEST",
+		"value": "Votre demande n'a pas pu \u00eatre\\nenvoy\u00e9e. Il se peut que la liste\\nd'amis du joueur soit pleine ou\\nqu'une demande soit en attente."
+	},
+	{
+		"key": "MID_FRIEND_ERROR_ACCEPT_REQUEST",
+		"value": "Votre liste d'amis est pleine.\\nVous ne pourrez plus accepter\\nde nouvelles demandes."
+	},
+	{
+		"key": "MID_FRIEND_ERROR_REFUSE_REQUEST",
+		"value": "Cette demande a d\u00e9j\u00e0 \u00e9t\u00e9 refus\u00e9e."
+	},
+	{
+		"key": "MID_FRIEND_ERROR_DELETE",
+		"value": "Cet utilisateur a d\u00e9j\u00e0 \u00e9t\u00e9 retir\u00e9\\nde votre liste."
+	},
+	{
+		"key": "MID_FRIEND_ERROR_DELETE_REQUEST",
+		"value": "Cette demande a d\u00e9j\u00e0 \u00e9t\u00e9 trait\u00e9e."
+	},
+	{
+		"key": "MID_FRIEND_ERROR_OPERATE",
+		"value": "Une erreur est survenue."
+	},
+	{
+		"key": "MID_FRIEND_REQUEST_DIALOG",
+		"value": "Envoyer une demande d'ami \u00e0\\nce joueur ?"
+	},
+	{
+		"key": "MID_FRIEND_REQUEST_DIALOG_DECIDE",
+		"value": "Oui"
+	},
+	{
+		"key": "MID_FRIEND_REQUEST_DIALOG_CANCEL",
+		"value": "Non"
+	},
+	{
+		"key": "MID_CONFIG_SHOW_INDIVIDUAL_COLOR",
+		"value": "Couleur\\natout/d\u00e9faut"
+	},
+	{
+		"key": "MID_UNIT_INFO_INDIVIDUAL_FORTE",
+		"value": "Atout"
+	},
+	{
+		"key": "MID_UNIT_INFO_INDIVIDUAL_WEAK",
+		"value": "D\u00e9faut"
+	},
+	{
+		"key": "MID_INVENTORY_NONE",
+		"value": ""
+	},
+	{
+		"key": "MID_INVENTORY_MY_NINTENDO_GIFT",
+		"value": "R\u00e9compense My Nintendo"
+	},
+	{
+		"key": "MID_ITEM_ORB",
+		"value": "Orbe"
+	},
+	{
+		"key": "MID_ITEM_HELP_ORB",
+		"value": "Utilis\u00e9 entre autres pour invoquer des h\u00e9ros."
+	},
+	{
+		"key": "MID_ITEM_FEATHER",
+		"value": "Plume de h\u00e9ros"
+	},
+	{
+		"key": "MID_ITEM_HELP_FEATHER",
+		"value": "Permet de d\u00e9verrouiller le potentiel d'un alli\u00e9.\\n(Vous pouvez en avoir jusqu'\u00e0 999 999.)"
+	},
+	{
+		"key": "MID_ITEM_STAMINA",
+		"value": "\u00c9lixir d'\u00e9nergie"
+	},
+	{
+		"key": "MID_ITEM_HELP_STAMINA",
+		"value": "Vous octroie 99 points d'\u00e9nergie.\\n(Vous pouvez en avoir jusqu'\u00e0 999.)"
+	},
+	{
+		"key": "MID_ITEM_ARENA",
+		"value": "Symbole de duel"
+	},
+	{
+		"key": "MID_ITEM_HELP_ARENA",
+		"value": "Vous r\u00e9approvisionne en \u00e9p\u00e9es de duel.\\n(Vous pouvez en avoir jusqu'\u00e0 999 999.)"
+	},
+	{
+		"key": "MID_ITEM_VOTE",
+		"value": "\u00c9tendard de bataille"
+	},
+	{
+		"key": "MID_ITEM_HELP_VOTE",
+		"value": "Utilis\u00e9 pour participer aux tournois."
+	},
+	{
+		"key": "MID_ITEM_RESURRECTION",
+		"value": "Lumi\u00e8re protectrice"
+	},
+	{
+		"key": "MID_ITEM_HELP_RESURRECTION",
+		"value": "\u00c0 utiliser en bataille. Soigne vos unit\u00e9s, leur octroie\\nun d\u00e9placement suppl\u00e9mentaire, et charge\\ncompl\u00e8tement leur compteur d'aptitude sp\u00e9ciale.\\n(Vous pouvez en avoir jusqu'\u00e0 999 999.)"
+	},
+	{
+		"key": "MID_ITEM_EXP_RED1",
+		"value": "\u00c9clat \u00e9carlate"
+	},
+	{
+		"key": "MID_ITEM_HELP_EXP_RED1",
+		"value": "Peut \u00eatre utilis\u00e9 pour faire gagner de l'exp\u00e9rience\\n\u00e0 un h\u00e9ros rouge de niveau 19 ou inf\u00e9rieur.\\n(Vous pouvez en avoir jusqu'\u00e0 999 999.)"
+	},
+	{
+		"key": "MID_ITEM_EXP_RED2",
+		"value": "Cristal \u00e9carlate"
+	},
+	{
+		"key": "MID_ITEM_HELP_EXP_RED2",
+		"value": "Peut \u00eatre utilis\u00e9 pour faire gagner de l'exp\u00e9rience\\n\u00e0 un h\u00e9ros rouge de niveau 20 ou sup\u00e9rieur.\\n(Vous pouvez en avoir jusqu'\u00e0 999 999.)"
+	},
+	{
+		"key": "MID_ITEM_EXP_BLUE1",
+		"value": "\u00c9clat azur"
+	},
+	{
+		"key": "MID_ITEM_HELP_EXP_BLUE1",
+		"value": "Peut \u00eatre utilis\u00e9 pour faire gagner de l'exp\u00e9rience\\n\u00e0 un h\u00e9ros bleu de niveau 19 ou inf\u00e9rieur.\\n(Vous pouvez en avoir jusqu'\u00e0 999 999.)"
+	},
+	{
+		"key": "MID_ITEM_EXP_BLUE2",
+		"value": "Cristal azur"
+	},
+	{
+		"key": "MID_ITEM_HELP_EXP_BLUE2",
+		"value": "Peut \u00eatre utilis\u00e9 pour faire gagner de l'exp\u00e9rience\\n\u00e0 un h\u00e9ros bleu de niveau 20 ou sup\u00e9rieur.\\n(Vous pouvez en avoir jusqu'\u00e0 999 999.)"
+	},
+	{
+		"key": "MID_ITEM_EXP_GREEN1",
+		"value": "\u00c9clat verdoyant"
+	},
+	{
+		"key": "MID_ITEM_HELP_EXP_GREEN1",
+		"value": "Peut \u00eatre utilis\u00e9 pour faire gagner de l'exp\u00e9rience\\n\u00e0 un h\u00e9ros vert de niveau 19 ou inf\u00e9rieur.\\n(Vous pouvez en avoir jusqu'\u00e0 999 999.)"
+	},
+	{
+		"key": "MID_ITEM_EXP_GREEN2",
+		"value": "Cristal verdoyant"
+	},
+	{
+		"key": "MID_ITEM_HELP_EXP_GREEN2",
+		"value": "Peut \u00eatre utilis\u00e9 pour faire gagner de l'exp\u00e9rience\\n\u00e0 un h\u00e9ros vert de niveau 20 ou sup\u00e9rieur.\\n(Vous pouvez en avoir jusqu'\u00e0 999 999.)"
+	},
+	{
+		"key": "MID_ITEM_EXP_NEUTRAL1",
+		"value": "\u00c9clat incolore"
+	},
+	{
+		"key": "MID_ITEM_HELP_EXP_NEUTRAL1",
+		"value": "Peut \u00eatre utilis\u00e9 pour faire gagner de l'exp\u00e9rience\\n\u00e0 un h\u00e9ros gris de niveau 19 ou inf\u00e9rieur.\\n(Vous pouvez en avoir jusqu'\u00e0 999 999.)"
+	},
+	{
+		"key": "MID_ITEM_EXP_NEUTRAL2",
+		"value": "Cristal incolore"
+	},
+	{
+		"key": "MID_ITEM_HELP_EXP_NEUTRAL2",
+		"value": "Peut \u00eatre utilis\u00e9 pour faire gagner de l'exp\u00e9rience\\n\u00e0 un h\u00e9ros gris de niveau 20 ou sup\u00e9rieur.\\n(Vous pouvez en avoir jusqu'\u00e0 999 999.)"
+	},
+	{
+		"key": "MID_ITEM_EXP_ALL1",
+		"value": "\u00c9clat universel"
+	},
+	{
+		"key": "MID_ITEM_HELP_EXP_ALL1",
+		"value": "Peut \u00eatre utilis\u00e9 pour faire gagner de l'exp\u00e9rience\\n\u00e0 n'importe quel h\u00e9ros de niveau 19 ou inf\u00e9rieur.\\n(Vous pouvez en avoir jusqu'\u00e0 999 999.)"
+	},
+	{
+		"key": "MID_ITEM_EXP_ALL2",
+		"value": "Cristal universel"
+	},
+	{
+		"key": "MID_ITEM_HELP_EXP_ALL2",
+		"value": "Peut \u00eatre utilis\u00e9 pour faire gagner de l'exp\u00e9rience\\n\u00e0 n'importe quel h\u00e9ros de niveau 20 ou sup\u00e9rieur.\\n(Vous pouvez en avoir jusqu'\u00e0 999 999.)"
+	},
+	{
+		"key": "MID_ITEM_PROMOTION_RED1",
+		"value": "Badge \u00e9carlate"
+	},
+	{
+		"key": "MID_ITEM_HELP_PROMOTION_RED1",
+		"value": "D\u00e9verrouille le potentiel d'un alli\u00e9. Ajoute\\nune \u2605 \u00e0 un alli\u00e9 rouge de rang 3\u2605 ou inf\u00e9rieur."
+	},
+	{
+		"key": "MID_ITEM_PROMOTION_RED2",
+		"value": "Insigne \u00e9carlate"
+	},
+	{
+		"key": "MID_ITEM_HELP_PROMOTION_RED2",
+		"value": "D\u00e9verrouille le potentiel d'un alli\u00e9. Ajoute\\nune \u2605 \u00e0 un alli\u00e9 rouge de rang 4\u2605."
+	},
+	{
+		"key": "MID_ITEM_PROMOTION_BLUE1",
+		"value": "Badge azur"
+	},
+	{
+		"key": "MID_ITEM_HELP_PROMOTION_BLUE1",
+		"value": "D\u00e9verrouille le potentiel d'un alli\u00e9. Ajoute\\nune \u2605 \u00e0 un alli\u00e9 bleu de rang 3\u2605 ou inf\u00e9rieur."
+	},
+	{
+		"key": "MID_ITEM_PROMOTION_BLUE2",
+		"value": "Insigne azur"
+	},
+	{
+		"key": "MID_ITEM_HELP_PROMOTION_BLUE2",
+		"value": "D\u00e9verrouille le potentiel d'un alli\u00e9. Ajoute\\nune \u2605 \u00e0 un alli\u00e9 bleu de rang 4\u2605."
+	},
+	{
+		"key": "MID_ITEM_PROMOTION_GREEN1",
+		"value": "Badge verdoyant"
+	},
+	{
+		"key": "MID_ITEM_HELP_PROMOTION_GREEN1",
+		"value": "D\u00e9verrouille le potentiel d'un alli\u00e9. Ajoute\\nune \u2605 \u00e0 un alli\u00e9 vert de rang 3\u2605 ou inf\u00e9rieur."
+	},
+	{
+		"key": "MID_ITEM_PROMOTION_GREEN2",
+		"value": "Insigne verdoyant"
+	},
+	{
+		"key": "MID_ITEM_HELP_PROMOTION_GREEN2",
+		"value": "D\u00e9verrouille le potentiel d'un alli\u00e9. Ajoute\\nune \u2605 \u00e0 un alli\u00e9 vert de rang 4\u2605."
+	},
+	{
+		"key": "MID_ITEM_PROMOTION_NEUTRAL1",
+		"value": "Badge incolore"
+	},
+	{
+		"key": "MID_ITEM_HELP_PROMOTION_NEUTRAL1",
+		"value": "D\u00e9verrouille le potentiel d'un alli\u00e9. Ajoute\\nune \u2605 \u00e0 un alli\u00e9 gris de rang 3\u2605 ou inf\u00e9rieur."
+	},
+	{
+		"key": "MID_ITEM_PROMOTION_NEUTRAL2",
+		"value": "Insigne incolore"
+	},
+	{
+		"key": "MID_ITEM_HELP_PROMOTION_NEUTRAL2",
+		"value": "D\u00e9verrouille le potentiel d'un alli\u00e9. Ajoute\\nune \u2605 \u00e0 un alli\u00e9 gris de rang 4\u2605."
+	},
+	{
+		"key": "MID_ITEM_GAIN_QUANTITY",
+		"value": "$aObtenu : $a0 (\u00d7 $a1)"
+	},
+	{
+		"key": "MID_ITEM_GAIN_UNIT",
+		"value": "$aObtenu : $a0 !"
+	},
+	{
+		"key": "MID_ITEM_PRESENT_QUANTITY",
+		"value": "$a\u00c0 retrouver dans la\\nliste de cadeaux :\\n$a0 (\u00d7 $a1)"
+	},
+	{
+		"key": "MID_ITEM_PRESENT_UNIT",
+		"value": "$a\u00c0 retrouver dans la\\nliste de cadeaux :\\n$a0"
+	},
+	{
+		"key": "MID_ITEM_DIRECT_GAIN_QUANTITY",
+		"value": "$aObtenu : $a0 (\u00d7 $a1)\\n*\u00c0 retrouver dans l'inventaire."
+	},
+	{
+		"key": "MID_ITEM_DIRECT_GAIN_UNIT",
+		"value": "$a$a0 se joint \u00e0 vous !\\n*Unit\u00e9 jouable imm\u00e9diatement."
+	},
+	{
+		"key": "MID_LOAD_RESUME_CONFIRM",
+		"value": "Un signet a \u00e9t\u00e9 trouv\u00e9.\\nReprendre la partie\\ndepuis ce point ?"
+	},
+	{
+		"key": "MID_LOAD_RESUME_DECIDE",
+		"value": "Oui"
+	},
+	{
+		"key": "MID_LOAD_RESUME_CANCEL",
+		"value": "Non"
+	},
+	{
+		"key": "MID_LOAD_DISCARD_CONFIRM",
+		"value": "Effacer le signet ?"
+	},
+	{
+		"key": "MID_LOAD_DISCARD_DECIDE",
+		"value": "Effacer"
+	},
+	{
+		"key": "MID_LOAD_DEVICE_CONFIRM",
+		"value": "Un signet existe peut-\u00eatre d\u00e9j\u00e0 sur\\nun autre appareil. Effacer le signet\\nactuellement pr\u00e9sent sur cet appareil ?"
+	},
+	{
+		"key": "MID_LOAD_DEVICE_DECIDE",
+		"value": "Effacer"
+	},
+	{
+		"key": "MID_LOAD_DEVICE_CANCEL",
+		"value": "Ne pas effacer"
+	},
+	{
+		"key": "MID_LOAD_RESUME_OTHER_DEVICE",
+		"value": "Pour poursuivre votre partie,\\nconnectez-vous depuis le\\ndernier appareil utilis\u00e9."
+	},
+	{
+		"key": "MID_LOAD_DATA_NOT_FOUND_CONFIRM",
+		"value": "La r\u00e9cup\u00e9ration des\\ndonn\u00e9es a \u00e9chou\u00e9.\\nLe signet va \u00eatre effac\u00e9."
+	},
+	{
+		"key": "MID_LOAD_FAILED_CONFIRM",
+		"value": "Le chargement de\\nla partie a \u00e9chou\u00e9."
+	},
+	{
+		"key": "MID_MAP_TURN",
+		"value": "$aTour $a0"
+	},
+	{
+		"key": "MID_MAP_TURN_WITH_LIMIT",
+		"value": "$aTour $a0/$a1"
+	},
+	{
+		"key": "MID_MAP_OBSTACLE",
+		"value": "Obstacle"
+	},
+	{
+		"key": "MID_MAP_AUTO",
+		"value": "Combat auto"
+	},
+	{
+		"key": "MID_MAP_AUTO_CONFIRM",
+		"value": "Activer le combat automatique ?"
+	},
+	{
+		"key": "MID_MAP_AUTO_DECIDE",
+		"value": "Activer"
+	},
+	{
+		"key": "MID_MAP_TURN_END_CONFIRM",
+		"value": "Terminer votre tour ?"
+	},
+	{
+		"key": "MID_MAP_TURN_END_DECIDE",
+		"value": "Fin"
+	},
+	{
+		"key": "MID_MAP_SURRENDER",
+		"value": "Capituler"
+	},
+	{
+		"key": "MID_MAP_SURRENDER_CONFIRM",
+		"value": "Capituler ?"
+	},
+	{
+		"key": "MID_MAP_SURRENDER_WARNING",
+		"value": "Si vous capitulez, vous perdrez toute\\nl'exp\u00e9rience gagn\u00e9e sur cette carte."
+	},
+	{
+		"key": "MID_MAP_SURRENDER_DECIDE",
+		"value": "Capituler"
+	},
+	{
+		"key": "MID_MAP_CONTINUE_CONFIRM",
+		"value": "Continuer ?"
+	},
+	{
+		"key": "MID_MAP_CONTINUE_WARNING",
+		"value": "Si vous abandonnez, vous perdrez toute\\nl'exp\u00e9rience gagn\u00e9e sur cette carte."
+	},
+	{
+		"key": "MID_MAP_CONTINUE_DECIDE",
+		"value": "Continuer"
+	},
+	{
+		"key": "MID_MAP_CONTINUE_CANCEL",
+		"value": "Abandonner"
+	},
+	{
+		"key": "MID_MAP_RESURRECTION",
+		"value": "Lumi\u00e8re protectrice"
+	},
+	{
+		"key": "MID_MAP_RESURRECTION_CONFIRM_ITEM",
+		"value": "Utiliser 1 lumi\u00e8re protectrice ?\\n\\nLes effets suivants seront appliqu\u00e9s :\\n\u30fbR\u00e9surrection des unit\u00e9s vaincues\\n\u30fbPV enti\u00e8rement restaur\u00e9s\\n\u30fbD\u00e9placement possible\\n\u30fbCompteur d'aptitude sp\u00e9ciale \u00e0 0"
+	},
+	{
+		"key": "MID_MAP_RESURRECTION_CONFIRM_ORB",
+		"value": "D\u00e9penser 1 orbe ?\\n\\nLes effets suivants seront appliqu\u00e9s :\\n\u30fbR\u00e9surrection des unit\u00e9s vaincues\\n\u30fbPV enti\u00e8rement restaur\u00e9s\\n\u30fbD\u00e9placement possible\\n\u30fbCompteur d'aptitude sp\u00e9ciale \u00e0 0"
+	},
+	{
+		"key": "MID_MAP_RESURRECTION_WARNING",
+		"value": "Le compteur de tours ne sera pas r\u00e9initialis\u00e9."
+	},
+	{
+		"key": "MID_MAP_RESURRECTION_DECIDE_ITEM",
+		"value": "Confirmer"
+	},
+	{
+		"key": "MID_MAP_RESURRECTION_DECIDE_ORB",
+		"value": "Acheter"
+	},
+	{
+		"key": "MID_MAP_RESURRECTION_CANCEL",
+		"value": "Annuler"
+	},
+	{
+		"key": "MID_MAP_GAIN_SKILL_POINT",
+		"value": "$aPA +$a0"
+	},
+	{
+		"key": "MID_MAP_GAIN_HEROISM_POINT",
+		"value": "$a+$a0"
+	},
+	{
+		"key": "MID_MAP_PLAYER_PHASE",
+		"value": "PHASE JOUEUR"
+	},
+	{
+		"key": "MID_MAP_ENEMY_PHASE",
+		"value": "PHASE ENNEMIE"
+	},
+	{
+		"key": "MID_MISSION",
+		"value": "Qu\u00eates et missions"
+	},
+	{
+		"key": "MID_MISSION_NONE",
+		"value": "Aucune qu\u00eate n'est disponible\\npour le moment."
+	},
+	{
+		"key": "MID_MISSION_STRATUM",
+		"value": "Difficult\u00e9"
+	},
+	{
+		"key": "MID_MISSION_STRATUM_NORMAL",
+		"value": "Normal"
+	},
+	{
+		"key": "MID_MISSION_STRATUM_HARD",
+		"value": "Difficile"
+	},
+	{
+		"key": "MID_MISSION_STRATUM_LUNATIC",
+		"value": "Expert"
+	},
+	{
+		"key": "MID_MISSION_PROGRESS",
+		"value": "$aProgression : $a0/$a1"
+	},
+	{
+		"key": "MID_MISSION_PROGRESS_ACHIEVED",
+		"value": "Qu\u00eate termin\u00e9e !"
+	},
+	{
+		"key": "MID_MISSION_PROGRESS_RECEIVED",
+		"value": "Vous avez d\u00e9j\u00e0 obtenu cette r\u00e9compense."
+	},
+	{
+		"key": "MID_MISSION_EXPERIENCE",
+		"value": "De nouvelles qu\u00eates ont \u00e9t\u00e9 ajout\u00e9es !"
+	},
+	{
+		"key": "MID_MISSION_APPEAR_STRATUM",
+		"value": "Vous avez termin\u00e9 toutes les qu\u00eates.\\nVous pouvez \u00e0 pr\u00e9sent tenter de les\\nterminer \u00e0 un autre niveau de difficult\u00e9."
+	},
+	{
+		"key": "MID_MISSION_PROGRESS_DIALOG_TITLE",
+		"value": "Progression"
+	},
+	{
+		"key": "MID_MISSION_PROGRESS_DIALOG_TITLE_ACHIEVED",
+		"value": "Qu\u00eate termin\u00e9e !"
+	},
+	{
+		"key": "MID_MISSION_PROGRESS_DIALOG_PROGRESS",
+		"value": "$a$a0/$a2 \u2192 $a1/$a2"
+	},
+	{
+		"key": "MID_MISSION_PROGRESS_DIALOG_PROGRESS_HELP",
+		"value": "$aCompl\u00e9tez l'objectif encore $a0 fois\\npour obtenir la r\u00e9compense."
+	},
+	{
+		"key": "MID_MISSION_PROGRESS_DIALOG_ACHIEVED_HELP",
+		"value": "Collectez votre r\u00e9compense depuis\\nle menu Qu\u00eates et missions."
+	},
+	{
+		"key": "MID_MOVIE_SKIP",
+		"value": "Passer la cin\u00e9matique ?"
+	},
+	{
+		"key": "MID_MOVIE_SKIP_BUTTON",
+		"value": "Passer"
+	},
+	{
+		"key": "MID_SHOP",
+		"value": "Achats"
+	},
+	{
+		"key": "MID_SHOP_COMMON_CANCEL",
+		"value": "Retour"
+	},
+	{
+		"key": "MID_SHOP_ORB_BUY_TITLE",
+		"value": "Acheter des orbes"
+	},
+	{
+		"key": "MID_SHOP_ORB_CAUTION1",
+		"value": "Lisez les informations au bas de\\nl'\u00e9cran, puis choisissez l'option\\ncorrespondant \u00e0 la quantit\u00e9 d'orbes\\nque vous voulez acheter."
+	},
+	{
+		"key": "MID_SHOP_ORB_CAUTION2",
+		"value": "$a\u00b7 Les orbes achet\u00e9s sur d'autres\\n  syst\u00e8mes d'exploitation qu'$a0\\n  ne sont pas compatibles avec les\\n  appareils $a0 et ne peuvent pas\\n  \u00eatre utilis\u00e9s sur ceux-ci."
+	},
+	{
+		"key": "MID_SHOP_ORB_CAUTION_IOS",
+		"value": "iOS"
+	},
+	{
+		"key": "MID_SHOP_ORB_CAUTION_ANDROID",
+		"value": "Android"
+	},
+	{
+		"key": "MID_SHOP_ORB_CAUTION3",
+		"value": "\u00b7 Vous pouvez v\u00e9rifier le nombre d'orbes\\n  achet\u00e9s et le nombre d'orbes offerts \u00e0\\n  l'\u00e9cran de confirmation."
+	},
+	{
+		"key": "MID_SHOP_ORB_BUY_ACTION",
+		"value": "Acheter"
+	},
+	{
+		"key": "MID_SHOP_ORB_BUY_BONUS",
+		"value": "(bonus)"
+	},
+	{
+		"key": "MID_SHOP_ORB_CANT_BUY",
+		"value": "Effectuer cet achat vous ferait d\u00e9passer\\nle nombre maximum d'orbes pouvant\\n\u00eatre affich\u00e9s."
+	},
+	{
+		"key": "MID_SHOP_ORB_NEED_BUY",
+		"value": "Vous n'avez pas assez d'orbes.\\nVoulez-vous en acheter davantage ?"
+	},
+	{
+		"key": "MID_SHOP_ORB_RESULT_SUCCESS",
+		"value": "$aVous avez achet\u00e9 $a0 orbes."
+	},
+	{
+		"key": "MID_SHOP_ORB_RESULT_FAILURE",
+		"value": "L'achat a \u00e9chou\u00e9."
+	},
+	{
+		"key": "MID_SHOP_ORB_RECOVER_TO_RETRY",
+		"value": "La transaction a \u00e9chou\u00e9.\\nLes incoh\u00e9rences que cela a pu\\nprovoquer vont \u00eatre corrig\u00e9es."
+	},
+	{
+		"key": "MID_SHOP_ORB_RECOVER_TO_TITLE",
+		"value": "Les incoh\u00e9rences ont \u00e9t\u00e9 corrig\u00e9es.\\nVous allez retourner \u00e0 l'\u00e9cran titre."
+	},
+	{
+		"key": "MID_SHOP_ORB_RESULT_CANCEL",
+		"value": "Achat annul\u00e9."
+	},
+	{
+		"key": "MID_SHOP_ORB_FSA",
+		"value": "\u8cc7\u91d1\u6c7a\u6e08\u6cd5\u306b\u57fa\u3065\u304f\u8868\u8a18"
+	},
+	{
+		"key": "MID_SHOP_ORB_SCTA",
+		"value": "\u7279\u5b9a\u5546\u53d6\u5f15\u6cd5\u306b\u57fa\u3065\u304f\u8868\u8a18"
+	},
+	{
+		"key": "MID_SHOP_ELITE_TITLE",
+		"value": "Fortifier le ch\u00e2teau"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV0",
+		"value": "Ancien"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV1",
+		"value": "\u00c9clair\u00e9"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV2",
+		"value": "R\u00e9nov\u00e9"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV3",
+		"value": "D\u00e9cor\u00e9"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV4",
+		"value": "Orn\u00e9"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV5",
+		"value": "Royal"
+	},
+	{
+		"key": "MID_SHOP_CHANGE_WP",
+		"value": "Changer le style"
+	},
+	{
+		"key": "MID_SHOP_CHANGE_WP_TITLE",
+		"value": "S\u00e9lectionnez un style."
+	},
+	{
+		"key": "MID_SHOP_CHANGE_WP_CHOSEN",
+		"value": "Actuel"
+	},
+	{
+		"key": "MID_SHOP_ELITE_EFFECT",
+		"value": "$aBonus d'EXP gagn\u00e9e : $a0 %"
+	},
+	{
+		"key": "MID_SHOP_ELITE_HAVE_BOUGHT",
+		"value": "Achet\u00e9"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CONFIRM1",
+		"value": "$aD\u00e9penser $a0 orbe(s) pour\\nacheter le style \u00ab $a1 \u00bb ?\\n\\nUne fois le ch\u00e2teau fortifi\u00e9, vous\\nb\u00e9n\u00e9ficierez d'un bonus permanent\\n\u00e0 l'exp\u00e9rience que vous gagnerez.\\nVous pouvez choisir votre style visuel\\npr\u00e9f\u00e9r\u00e9 parmi tous les styles achet\u00e9s."
+	},
+	{
+		"key": "MID_SHOP_ELITE_CONFIRM2",
+		"value": "$aVotre bonus d'exp\u00e9rience passera\\nde +$a0 % \u00e0 +$a1 %."
+	},
+	{
+		"key": "MID_SHOP_ELITE_BUY",
+		"value": "Acheter"
+	},
+	{
+		"key": "MID_SHOP_ELITE_RESULT",
+		"value": "$aVous avez d\u00e9pens\u00e9 $a0 orbe(s)\\npour fortifier le ch\u00e2teau et acheter\\nle style \u00ab $a1 \u00bb."
+	},
+	{
+		"key": "MID_SHOP_RECOVER",
+		"value": "Acheter"
+	},
+	{
+		"key": "MID_SHOP_RECOVER_WITH_ITEM",
+		"value": "Restaurer"
+	},
+	{
+		"key": "MID_SHOP_STAMINA_TITLE",
+		"value": "Restaurer votre \u00e9nergie"
+	},
+	{
+		"key": "MID_SHOP_STAMINA_CONFIRM_ITEM",
+		"value": "Utiliser 1 \u00e9lixir d'\u00e9nergie pour\\nrestaurer votre \u00e9nergie ?"
+	},
+	{
+		"key": "MID_SHOP_STAMINA_NOTENOUGH_ITEM",
+		"value": "Vous n'avez pas assez d'\u00e9nergie.\\nUtiliser 1 \u00e9lixir d'\u00e9nergie pour\\nrestaurer votre \u00e9nergie ?"
+	},
+	{
+		"key": "MID_SHOP_STAMINA_CONFIRM_ORB",
+		"value": "D\u00e9penser 1 orbe pour restaurer\\nvotre \u00e9nergie ?"
+	},
+	{
+		"key": "MID_SHOP_STAMINA_NOTENOUGH_ORB",
+		"value": "Vous n'avez pas assez d'\u00e9nergie.\\nD\u00e9penser 1 orbe pour restaurer\\nvotre \u00e9nergie ?"
+	},
+	{
+		"key": "MID_SHOP_STAMINA_NOTNECESSARY",
+		"value": "Votre jauge d'\u00e9nergie est pleine."
+	},
+	{
+		"key": "MID_SHOP_STAMINA_RESULT_POTION",
+		"value": "Vous avez utilis\u00e9 1 \u00e9lixir d'\u00e9nergie\\npour restaurer votre \u00e9nergie."
+	},
+	{
+		"key": "MID_SHOP_STAMINA_RESULT_ORB",
+		"value": "Vous avez d\u00e9pens\u00e9 1 orbe\\npour restaurer votre \u00e9nergie."
+	},
+	{
+		"key": "MID_SHOP_ARENA_TITLE",
+		"value": "Regain d'\u00e9p\u00e9es de duel"
+	},
+	{
+		"key": "MID_SHOP_ARENA_CONFIRM_ITEM",
+		"value": "Utiliser 1 symbole de duel pour\\nr\u00e9cup\u00e9rer vos \u00e9p\u00e9es de duel ?"
+	},
+	{
+		"key": "MID_SHOP_ARENA_NOTENOUGH_ITEM",
+		"value": "Vous n'avez plus d'\u00e9p\u00e9e de duel.\\nUtiliser 1 symbole de duel pour\\nr\u00e9cup\u00e9rer vos \u00e9p\u00e9es de duel ?"
+	},
+	{
+		"key": "MID_SHOP_ARENA_CONFIRM_ORB",
+		"value": "D\u00e9penser 1 orbe pour r\u00e9cup\u00e9rer\\nvos \u00e9p\u00e9es de duel ?"
+	},
+	{
+		"key": "MID_SHOP_ARENA_NOTENOUGH_ORB",
+		"value": "Vous n'avez plus d'\u00e9p\u00e9e de duel.\\nD\u00e9penser 1 orbe pour r\u00e9cup\u00e9rer\\nvos \u00e9p\u00e9es de duel ?"
+	},
+	{
+		"key": "MID_SHOP_ARENA_NOTNECESSARY",
+		"value": "Vous ne pouvez pas r\u00e9cup\u00e9rer d'\u00e9p\u00e9e\\nde duel pour l'instant car il vous en\\nreste encore au moins une."
+	},
+	{
+		"key": "MID_SHOP_ARENA_RESULT_POTION",
+		"value": "Vous avez utilis\u00e9 1 symbole de duel\\npour r\u00e9cup\u00e9rer vos \u00e9p\u00e9es de duel."
+	},
+	{
+		"key": "MID_SHOP_ARENA_RESULT_ORB",
+		"value": "Vous avez d\u00e9pens\u00e9 1 orbe pour\\nr\u00e9cup\u00e9rer vos \u00e9p\u00e9es de duel."
+	},
+	{
+		"key": "MID_SHOP_EXPAND_TITLE",
+		"value": "Agrandir la caserne"
+	},
+	{
+		"key": "MID_SHOP_EXPAND_CONFIRM",
+		"value": "D\u00e9penser 1 orbe pour augmenter\\nle nombre de h\u00e9ros que vous\\npouvez accueillir ?"
+	},
+	{
+		"key": "MID_SHOP_EXPAND_DECIDE",
+		"value": "Acheter"
+	},
+	{
+		"key": "MID_SHOP_EXPAND_CANT_UNIT",
+		"value": "Vous ne pouvez plus agrandir\\nvotre caserne."
+	},
+	{
+		"key": "MID_SHOP_EXPAND_RESULT",
+		"value": "Vous avez d\u00e9pens\u00e9 1 orbe pour\\naugmenter le nombre maximum\\nde h\u00e9ros que vous pouvez accueillir."
+	},
+	{
+		"key": "MID_SHOP_UNIT_FULL_INFOR",
+		"value": "Votre caserne a d\u00e9pass\u00e9\\nsa capacit\u00e9 maximale."
+	},
+	{
+		"key": "MID_SHOP_UNIT_FULL_CAN_EXPAND",
+		"value": "Agrandissez votre caserne ou\\nr\u00e9duisez votre nombre de h\u00e9ros."
+	},
+	{
+		"key": "MID_SHOP_UNIT_FULL_NO_EXPAND",
+		"value": "R\u00e9duisez votre nombre de h\u00e9ros\\navant d'en ajouter de nouveaux."
+	},
+	{
+		"key": "MID_SHOP_UNIT_FULL_EXPAND",
+		"value": "Acheter"
+	},
+	{
+		"key": "MID_SHOP_UNIT_FULL_MOVE",
+		"value": "Ouvrir le menu Alli\u00e9s"
+	},
+	{
+		"key": "MID_SHOP_LIMIT_TEENAGER",
+		"value": "- de 20 ans"
+	},
+	{
+		"key": "MID_SHOP_LIMIT_TEENAGER_TEXT",
+		"value": "$aLimite fix\u00e9e \u00e0 $a0 (achet\u00e9s) par mois"
+	},
+	{
+		"key": "MID_SHOP_LIMIT_ADULT",
+		"value": "+ de 20 ans"
+	},
+	{
+		"key": "MID_SHOP_LIMIT_ADULT_TEXT",
+		"value": "Aucune limite"
+	},
+	{
+		"key": "MID_SHOP_LIMIT_DESCRIPTION",
+		"value": "La quantit\u00e9 d'orbes que vous pouvez\\nacheter chaque mois est limit\u00e9e selon\\nvotre \u00e2ge. Veuillez indiquer votre \u00e2ge."
+	},
+	{
+		"key": "MID_SHOP_RECOVER_PURCHASE",
+		"value": "Les incoh\u00e9rences li\u00e9es \u00e0 la transaction\\nont \u00e9t\u00e9 corrig\u00e9es."
+	},
+	{
+		"key": "MID_STAGE_SELECT_SCENARIO",
+		"value": "Sc\u00e9nario"
+	},
+	{
+		"key": "MID_STAGE_SELECT_EVENT",
+		"value": "Cartes sp\u00e9ciales"
+	},
+	{
+		"key": "MID_STAGE_SELECT_ENCOUNT",
+		"value": "Entra\u00eenement"
+	},
+	{
+		"key": "MID_STAGE_SELECT_ENCOUNT_HELP_DIALOG_00",
+		"value": "Gagnez de l'EXP et des objets !"
+	},
+	{
+		"key": "MID_STAGE_SELECT_ENCOUNT_HELP_DIALOG_01",
+		"value": "\u25c6 Tour d'entra\u00eenement \u25c6\\nLa tour d'entra\u00eenement est le lieu\\nid\u00e9al pour gagner de l'EXP."
+	},
+	{
+		"key": "MID_STAGE_SELECT_ENCOUNT_HELP_DIALOG_02",
+		"value": "\u25c6 Pr\u00e9paration \u25c6\\nL'environnement et les ennemis\\npeuvent changer \u00e0 chaque nouvel\\nessai. V\u00e9rifiez bien la composition\\ndes troupes ennemies avant\\nde composer votre \u00e9quipe."
+	},
+	{
+		"key": "MID_STAGE_SELECT_ENCOUNT_HELP_DIALOG_03",
+		"value": "\u25c6 R\u00e9compenses \u25c6\\nLes r\u00e9compenses de la tour\\nd'entra\u00eenement vous permettent\\nde faire progresser vos h\u00e9ros ou\\nd'am\u00e9liorer leur rang (\u2605).\\nLe type de r\u00e9compense re\u00e7ue\\nvarie selon le jour de la semaine."
+	},
+	{
+		"key": "MID_STAGE_SELECT_ENCOUNT_HELP_DIALOG_04",
+		"value": "\u25c6 \u00c9clats/Cristaux quotidiens \u25c6\\nChaque jour, vous recevez un\\n\u00e9clat ou un cristal apr\u00e8s votre\\npremi\u00e8re victoire. Vous pouvez\\nensuite vous en servir pour faire\\nprogresser vos h\u00e9ros. Vous ne\\npouvez obtenir de cristaux qu'\u00e0\\npartir de la sixi\u00e8me strate."
+	},
+	{
+		"key": "MID_STAGE_SELECT_ENCOUNT_HELP_DIALOG_05",
+		"value": "\u25c6 Badges \u00e0 chaque strate \u25c6\\nVous pouvez recevoir des badges\\napr\u00e8s avoir termin\u00e9 un niveau.\\nVous pouvez ensuite vous en\\nservir pour am\u00e9liorer le rang (\u2605)\\nde vos h\u00e9ros.\\nVous ne pouvez obtenir d'insignes\\nqu'\u00e0 partir de la sixi\u00e8me strate."
+	},
+	{
+		"key": "MID_STAGE_SELECT_ARENA",
+		"value": "Ar\u00e8ne"
+	},
+	{
+		"key": "MID_STAGE_SELECT_VOTE",
+		"value": "???"
+	},
+	{
+		"key": "MID_STAGE_SELECT_DIFFICULTY0",
+		"value": "Normal"
+	},
+	{
+		"key": "MID_STAGE_SELECT_DIFFICULTY1",
+		"value": "Difficile"
+	},
+	{
+		"key": "MID_STAGE_SELECT_DIFFICULTY2",
+		"value": "Expert"
+	},
+	{
+		"key": "MID_STAGE_SELECT_DETAIL_DECREASE_EXP",
+		"value": "Vous gagnerez moins d'EXP et de PA\\ncar vous avez d\u00e9j\u00e0 termin\u00e9 cette carte."
+	},
+	{
+		"key": "MID_STAGE_SELECT_DETAIL_RULE",
+		"value": "Objectif"
+	},
+	{
+		"key": "MID_STAGE_SELECT_DETAIL_FIRST_REWARD",
+		"value": "R\u00e9compense"
+	},
+	{
+		"key": "MID_STAGE_SELECT_DETAIL_REWARD",
+		"value": "R\u00e9compense"
+	},
+	{
+		"key": "MID_STAGE_SELECT_DETAIL_DECIDE",
+		"value": "Combattre"
+	},
+	{
+		"key": "MID_STAGE_SELECT_DETAIL_FAILED",
+		"value": "La bataille n'a pas pu d\u00e9marrer."
+	},
+	{
+		"key": "MID_STAGE_SELECT_DETAIL_INSUFFICIENT_UNIT",
+		"value": "Vous n'avez pas assez d'unit\u00e9s."
+	},
+	{
+		"key": "MID_STAGE_SELECT_RULE_SURVIVAL",
+		"value": "$aH\u00e9ros en vie : $a0"
+	},
+	{
+		"key": "MID_STAGE_SELECT_RULE_TURN",
+		"value": "$aVictoire en $a0 tour(s)"
+	},
+	{
+		"key": "MID_STAGE_SELECT_RULE_NO_CONTINUE",
+		"value": "Lumi\u00e8re protectrice interdite"
+	},
+	{
+		"key": "MID_STAGE_OPEN_NEW_CHAPTER_MAINSTORY",
+		"value": "Un nouveau chapitre a \u00e9t\u00e9 ajout\u00e9\\n\u00e0 l'histoire principale."
+	},
+	{
+		"key": "MID_STAGE_OPEN_NEW_CHAPTER_SIDESTORY",
+		"value": "Un nouveau chapitre a \u00e9t\u00e9 ajout\u00e9\\naux annexes."
+	},
+	{
+		"key": "MID_STAGE_OPEN_NEW_DIFFICULTY",
+		"value": "$aDe nouveaux modes de difficult\u00e9\\nont \u00e9t\u00e9 ajout\u00e9s au $a0."
+	},
+	{
+		"key": "MID_STAGE_OPEN_OTHER_THAN_SCENARIO",
+		"value": "Les cartes sp\u00e9ciales, le colis\u00e9e et\\nd'autres menus ont \u00e9t\u00e9 d\u00e9bloqu\u00e9s."
+	},
+	{
+		"key": "MID_STAGE_OPEN_FIRST_ENCOUNT",
+		"value": "La tour d'entra\u00eenement vient\\nd'ouvrir ses portes !"
+	},
+	{
+		"key": "MID_STAGE_OPEN_NEW_ENCOUNT",
+		"value": "Une nouvelle strate a \u00e9t\u00e9 ajout\u00e9e\\n\u00e0 la tour d'entra\u00eenement."
+	},
+	{
+		"key": "MID_STAGE_SELECT_BONUS_NOTIFICATION1",
+		"value": "$aBonus actif : EXP \u00d7 $a0 !"
+	},
+	{
+		"key": "MID_STAGE_SELECT_BONUS_NOTIFICATION2",
+		"value": "$aBonus actif : PA \u00d7 $a0 !"
+	},
+	{
+		"key": "MID_STAGE_SELECT_BONUS_NOTIFICATION3",
+		"value": "$aBonus actif : EXP/PA \u00d7 $a0 !"
+	},
+	{
+		"key": "MID_STAGE_SELECT_SCENARIO_MAIN",
+		"value": "Histoire principale"
+	},
+	{
+		"key": "MID_STAGE_SELECT_SCENARIO_MAIN_INFO",
+		"value": "Affrontez l'empire d'Embla\\net restaurez la paix dans le\\nmonde de Z\u00e9nith !"
+	},
+	{
+		"key": "MID_STAGE_SELECT_SCENARIO_SUB",
+		"value": "Annexes"
+	},
+	{
+		"key": "MID_STAGE_SELECT_SCENARIO_SUB_INFO",
+		"value": "Visitez d'autres mondes\\net rencontrez des h\u00e9ros\\nin\u00e9dits !"
+	},
+	{
+		"key": "MID_SUMMON_TITLE",
+		"value": "Invocation de h\u00e9ros"
+	},
+	{
+		"key": "MID_SUMMON_HELP_DIALOG_00",
+		"value": "Invoquez des h\u00e9ros !"
+	},
+	{
+		"key": "MID_SUMMON_HELP_DIALOG_01",
+		"value": "Couleur de pierre = Type de h\u00e9ros"
+	},
+	{
+		"key": "MID_SUMMON_HELP_DIALOG_02",
+		"value": "Invocations \u00e0 la suite = \u00c9conomies"
+	},
+	{
+		"key": "MID_SUMMON_HELP_BONUS",
+		"value": "Vous pouvez invoquer plusieurs h\u00e9ros\\n\u00e0 la suite pour \u00e9conomiser des orbes.\\nSi vous invoquez 5 h\u00e9ros \u00e0 la suite,\\nvous \u00e9conomiserez en tout 5 orbes."
+	},
+	{
+		"key": "MID_SUMMON_DECIDE",
+		"value": "Invoquer"
+	},
+	{
+		"key": "MID_SUMMON_PAY",
+		"value": "Acheter"
+	},
+	{
+		"key": "MID_SUMMON_CANCEL",
+		"value": "Arr\u00eater"
+	},
+	{
+		"key": "MID_SUMMON_CANCEL_CONFIRM",
+		"value": "Arr\u00eater la s\u00e9ance ?"
+	},
+	{
+		"key": "MID_SUMMON_CANCEL_WARNING",
+		"value": "Si vous arr\u00eatez la s\u00e9ance, les pierres\\net le nombre d'orbes requis pour la\\nprochaine invocation seront r\u00e9initialis\u00e9s."
+	},
+	{
+		"key": "MID_SUMMON_PROBABILITY",
+		"value": "Taux d'apparition"
+	},
+	{
+		"key": "MID_SUMMON_PROBABILITY_TEXT",
+		"value": "Vous trouverez ci-dessous le taux\\nd'apparition de chaque h\u00e9ros\\nsuivant son rang."
+	},
+	{
+		"key": "MID_SUMMON_PROBABILITY_NORMAL_3",
+		"value": "3\u2605"
+	},
+	{
+		"key": "MID_SUMMON_PROBABILITY_NORMAL_4",
+		"value": "4\u2605"
+	},
+	{
+		"key": "MID_SUMMON_PROBABILITY_NORMAL_5",
+		"value": "5\u2605"
+	},
+	{
+		"key": "MID_SUMMON_PROBABILITY_PICKUP_4",
+		"value": "4\u2605 (Focus)"
+	},
+	{
+		"key": "MID_SUMMON_PROBABILITY_PICKUP_5",
+		"value": "5\u2605 (Focus)"
+	},
+	{
+		"key": "MID_SUMMON_PROBABILITY_PERCENT",
+		"value": "\u00a0%"
+	},
+	{
+		"key": "MID_SUMMON_DETAIL",
+		"value": "Infos"
+	},
+	{
+		"key": "MID_SUMMON_PURCHASE_CONFIRM",
+		"value": "Si vous d\u00e9pensez 5 orbes,\\nvous invoquerez un h\u00e9ros."
+	},
+	{
+		"key": "MID_SUMMON_PURCHASE_CONFIRM_CONTINUE",
+		"value": "$aVoulez-vous d\u00e9penser $a0 orbes\\npour invoquer un autre h\u00e9ros ?"
+	},
+	{
+		"key": "MID_SUMMON_FIRST_OPERATION",
+		"value": "La couleur des pierres indique\\nle type de h\u00e9ros invoqu\u00e9.\\nChoisissez une pierre."
+	},
+	{
+		"key": "MID_SUMMON_FIRST_OPERATION_CONFIRM",
+		"value": "Activer cette pierre ?"
+	},
+	{
+		"key": "MID_SUMMON_MOVE",
+		"value": "Reprendre"
+	},
+	{
+		"key": "MID_SUMMON_MOVE_CONFIRM",
+		"value": "La s\u00e9ance d'invocation pr\u00e9c\u00e9dente a\\n\u00e9t\u00e9 interrompue. Reprise en cours."
+	},
+	{
+		"key": "MID_SUMMON_RESULT",
+		"value": "R\u00e9sultat de la s\u00e9ance d'invocation."
+	},
+	{
+		"key": "MID_SUMMON_CANCEL_CONTINUE",
+		"value": "Poursuivre la s\u00e9ance"
+	},
+	{
+		"key": "MID_SUMMON_ERROR_LIST_FAILED",
+		"value": "L'acquisition de la liste a \u00e9chou\u00e9. V\u00e9rifiez\\nvotre connexion \u00e0 Internet, puis r\u00e9essayez."
+	},
+	{
+		"key": "MID_SUMMON_ERROR_NO_LIST",
+		"value": "Invocation impossible pour l'instant."
+	},
+	{
+		"key": "MID_SUMMON_STONE_NEUTRAL",
+		"value": "Pierre incolore : invoque un h\u00e9ros gris\\n(arm\u00e9 d'un arc, d'un b\u00e2ton...)"
+	},
+	{
+		"key": "MID_SUMMON_STONE_RED",
+		"value": "Pierre \u00e9carlate : invoque un h\u00e9ros rouge\\n(arm\u00e9 d'une \u00e9p\u00e9e, d'un tome rouge...)"
+	},
+	{
+		"key": "MID_SUMMON_STONE_BLUE",
+		"value": "Pierre azur : invoque un h\u00e9ros bleu\\n(arm\u00e9 d'une lance, d'un tome bleu...)"
+	},
+	{
+		"key": "MID_SUMMON_STONE_GREEN",
+		"value": "Pierre verdoyante : invoque un h\u00e9ros vert\\n(arm\u00e9 d'une hache, d'un tome vert...)"
+	},
+	{
+		"key": "MID_SUMMON_REVIEW",
+		"value": "Merci d'utiliser notre application.\\nVoulez-vous laisser un avis ?"
+	},
+	{
+		"key": "MID_SUMMON_REVIEW_YES",
+		"value": "Oui"
+	},
+	{
+		"key": "MID_SUMMON_REVIEW_LATER_ON",
+		"value": "Plus tard"
+	},
+	{
+		"key": "MID_SUMMON_REVIEW_NO",
+		"value": "Non"
+	},
+	{
+		"key": "MID_SUMMON_REVIEW_CUSTOMER_SUPPORT",
+		"value": "Service consommateurs"
+	},
+	{
+		"key": "MID_UNIT_EDIT_EMPTY",
+		"value": "Vide"
+	},
+	{
+		"key": "MID_UNIT_EDIT_UNSET",
+		"value": "Retirer"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOX",
+		"value": "Alli\u00e9s"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELECTING",
+		"value": "Total"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GAIN",
+		"value": "Gain"
+	},
+	{
+		"key": "MID_UNIT_EDIT_EXPEND",
+		"value": "Utiliser"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SORT",
+		"value": "Tri :\u00a0"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SORT_CONFIRM",
+		"value": "S\u00e9lectionnez un crit\u00e8re de tri."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SORT_KEY",
+		"value": "Date d'invoc."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SORT_PERSON",
+		"value": "Monde"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SORT_LOCK",
+		"value": "Favoris"
+	},
+	{
+		"key": "MID_UNIT_EDIT_FILTER",
+		"value": "Voir :\u00a0"
+	},
+	{
+		"key": "MID_UNIT_EDIT_FILTER_CONFIRM",
+		"value": "S\u00e9lectionnez un filtre."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_HELP_OFF",
+		"value": "Infos de base"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_HELP_ON",
+		"value": "Infos d\u00e9taill\u00e9es"
+	},
+	{
+		"key": "MID_UNIT_EDIT",
+		"value": "Alli\u00e9s"
+	},
+	{
+		"key": "MID_UNIT_EDIT_ORGANIZE",
+		"value": "G\u00e9rer les \u00e9quipes"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_LEARN",
+		"value": "Enseigner aptitudes"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_LEARN_HELP1",
+		"value": "S\u00e9lectionnez un h\u00e9ros."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_LEARN_HELP2",
+		"value": "S\u00e9lectionnez une aptitude."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_LEARN_CONFIRM",
+		"value": "Enseigner cette aptitude ?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_LEARN_DECIDE",
+		"value": "Enseigner"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_LEARN_EQUIP_CONFIRM",
+		"value": "Assigner cette aptitude ?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_LEARN_EQUIP_DECIDE",
+		"value": "Assigner"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_LEARN_EQUIP_CANCEL",
+		"value": "Ne pas assigner"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP",
+		"value": "Assigner aptitudes"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_HELP1",
+		"value": "S\u00e9lectionnez un h\u00e9ros."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_HELP2",
+		"value": "S\u00e9lectionnez les aptitudes \u00e0 assigner."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_CONFIRM",
+		"value": "$aD\u00e9penser $a0 points d'\u00e9nergie\\npour modifer les aptitudes assign\u00e9es ?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_DECIDE",
+		"value": "Modifier"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_COMPLETE_CONFIRM",
+		"value": "Les aptitudes assign\u00e9es \u00e0\\nce h\u00e9ros ont \u00e9t\u00e9 modifi\u00e9es."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_CANCEL_CONFIRM",
+		"value": "Renoncer \u00e0 ces modifications ?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_CANCEL_WARNING",
+		"value": "Aucune modification ne sera effectu\u00e9e."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_CANCEL_DECIDE",
+		"value": "Renoncer"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LEVEL_UP",
+		"value": "Gain d'exp\u00e9rience"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LEVEL_UP_HELP1",
+		"value": "S\u00e9lectionnez un h\u00e9ros."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LEVEL_UP_HELP2",
+		"value": "S\u00e9lectionnez le niveau \u00e0 atteindre."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LEVEL_UP_CONFIRM",
+		"value": "Augmenter le niveau de ce h\u00e9ros ?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_PROMOTION",
+		"value": "Am\u00e9liorer le rang (\u2605)"
+	},
+	{
+		"key": "MID_UNIT_EDIT_PROMOTION_HELP1",
+		"value": "$aS\u00e9lectionnez un personnage de niveau $a0 ou sup\u00e9rieur."
+	},
+	{
+		"key": "MID_UNIT_EDIT_PROMOTION_HELP2",
+		"value": "$aLe niveau et les carac. tomberont aux\\nvaleurs initiales d'un h\u00e9ros $a0\u2605."
+	},
+	{
+		"key": "MID_UNIT_EDIT_PROMOTION_CONFIRM",
+		"value": "Am\u00e9liorer le rang (\u2605) ?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_PROMOTION_DECIDE",
+		"value": "Am\u00e9liorer"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL",
+		"value": "Lib\u00e9rer des h\u00e9ros"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_HELP1",
+		"value": "S\u00e9lectionnez les h\u00e9ros \u00e0 lib\u00e9rer."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_HELP2",
+		"value": "Chaque h\u00e9ros dont vous vous s\u00e9parez\\nvous laissera des plumes de h\u00e9ros."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_CONFIRM",
+		"value": "Continuer ?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_WARNING",
+		"value": "Les h\u00e9ros lib\u00e9r\u00e9s dispara\u00eetront\\nde vos effectifs."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_DECIDE",
+		"value": "Lib\u00e9rer"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_COMPLETE_CONFIRM",
+		"value": "Adieu et merci pour tout !"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SENIOR",
+		"value": "Entra\u00eenement avanc\u00e9"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_STATUS_EQUIP",
+		"value": "Assign\u00e9e"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_STATUS_LEARNED",
+		"value": "Apprise"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_STATUS_INSUFFICIENT_PREREQUISITE",
+		"value": "\u00a0"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_STATUS_NON_INHERITABLE",
+		"value": "\u00a0"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_STATUS_UNLEARNED",
+		"value": "Non appr."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_WARNING_WEAPON",
+		"value": "Transmission impossible. L'aptitude est li\u00e9e \u00e0\\nune arme que le receveur ne peut manier."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_WARNING_MOVE",
+		"value": "Transmission impossible. L'aptitude est li\u00e9e \u00e0 des\\nd\u00e9placements que le receveur ne peut effectuer."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_WARNING_FIXED",
+		"value": "Transmission impossible. Cette aptitude\\nest exclusive au donneur."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_WARNING_PREREQUISITE_LEARN1",
+		"value": "$aRequiert : $a0."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_WARNING_PREREQUISITE_LEARN2",
+		"value": "$aRequiert : $a0\\nou $a1."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK",
+		"value": "Fusion de h\u00e9ros"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_DESTINATION",
+		"value": "Receveur"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_SOURCE",
+		"value": "Donneur"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_HELP1",
+		"value": "S\u00e9lectionnez deux versions d'un m\u00eame h\u00e9ros."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_CONFIRM_LVSP",
+		"value": "$aAugmenter les carac. du h\u00e9ros cible\\net lui transmettre $a0 PA ?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_CONFIRM_LV",
+		"value": "Augmenter les caract\u00e9ristiques\\ndu h\u00e9ros cible ?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_CONFIRM_SP",
+		"value": "$aTransmettre $a0 PA au h\u00e9ros cible ?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_WARNING",
+		"value": "Augmentez les caract\u00e9risques et les PA\\nde vos h\u00e9ros en les fusionnant avec des\\nalli\u00e9s de rang (\u2605) sup\u00e9rieur ou \u00e9gal. Les\\nautres fusions ne conf\u00e8rent que des PA."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_WARNING2",
+		"value": "$aCe h\u00e9ros ayant d\u00e9j\u00e0 atteint +$a0, ses PA\\naugmenteront, mais pas ses caract\u00e9ristiques."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_WARNING3",
+		"value": "$aLes PA du h\u00e9ros exc\u00e9deront leur valeur\\nmaximale et $a0 PA seront perdus."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_WARNING4",
+		"value": "Les PA de ce h\u00e9ros ont atteint leur valeur\\nmaximale et ne peuvent plus augmenter."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_DIALOG_LVSP",
+		"value": "$aAm\u00e9liorer les carac. du h\u00e9ros cible\\net lui transmettre $a0 PA ?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_DIALOG_LV",
+		"value": "Am\u00e9liorer les carac. du h\u00e9ros cible ?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_DIALOG_SP",
+		"value": "$aTransmettre $a0 PA \u00e0 ce h\u00e9ros ?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_DIALOG_WARNING",
+		"value": "Une fois la transmission termin\u00e9e,\\nle donneur dispara\u00eetra de vos effectifs."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_DIALOG_DECIDE_LV",
+		"value": "Am\u00e9liorer"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_DIALOG_DECIDE_SP",
+		"value": "Transmettre"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_BEFORE",
+		"value": "Avant"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_AFTER",
+		"value": "Apr\u00e8s"
+	},
+	{
+		"key": "MID_UNIT_EDIT_ORGANIZE_HELP_DIALOG_00",
+		"value": "Cr\u00e9ez votre \u00e9quipe !"
+	},
+	{
+		"key": "MID_UNIT_EDIT_ORGANIZE_HELP_DIALOG_01",
+		"value": "\u25c6 Composition de l'\u00e9quipe \u25c6\\nVous pouvez modifier la\\ncomposition de l'\u00e9quipe que\\nvous envoyez au combat.\\nLe r\u00f4le de chef d'\u00e9quipe est\\nattribu\u00e9 au h\u00e9ros plac\u00e9 dans\\nla premi\u00e8re case \u00e0 gauche."
+	},
+	{
+		"key": "MID_UNIT_EDIT_ORGANIZE_HELP_DIALOG_02",
+		"value": "\u25c6 Ajouter ou retirer un h\u00e9ros \u25c6\\nPour ajouter un h\u00e9ros \u00e0 une\\n\u00e9quipe, touchez une case, puis\\ntouchez le h\u00e9ros de votre choix.\\n\\nPour retirer un h\u00e9ros d'une \u00e9quipe,\\ntouchez le h\u00e9ros de votre choix,\\npuis touchez \u00ab Retirer \u00bb."
+	},
+	{
+		"key": "MID_UNIT_EDIT_ORGANIZE_HELP_DIALOG_03",
+		"value": "\u25c6 Changer d'\u00e9quipe \u25c6\\nTouchez les fl\u00e8ches situ\u00e9es de\\nchaque c\u00f4t\u00e9 de l'\u00e9quipe pour faire\\nd\u00e9filer vos \u00e9quipes.\\n\\n\u25c6 Consulter les profils \u25c6\\nTouchez longuement un h\u00e9ros\\npour afficher son profil."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_LEARN_HELP_DIALOG_00",
+		"value": "Gagner des aptitudes gr\u00e2ce aux PA"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_LEARN_HELP_DIALOG_01",
+		"value": "\u25c6 Points d'aptitude \u25c6\\nLes points d'aptitude, ou PA,\\nsont utilis\u00e9s pour obtenir\\nde nouvelles aptitudes.\\n\\nLes h\u00e9ros gagnent des PA \u00e0\\nchaque mont\u00e9e de niveau et\\napr\u00e8s avoir \u00e9limin\u00e9 un ennemi."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_LEARN_HELP_DIALOG_02",
+		"value": "\u25c6 Rangs et aptitudes \u25c6\\nLes h\u00e9ros peuvent gagner acc\u00e8s\\n\u00e0 de nouvelles aptitudes apr\u00e8s\\navoir atteint un rang (\u2605) sup\u00e9rieur."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_HELP_DIALOG_00",
+		"value": "Changez les aptitudes assign\u00e9es !"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_HELP_DIALOG_01",
+		"value": "\u25c6 Aptitudes assign\u00e9es \u25c6\\nVous pouvez modifier les\\naptitudes assign\u00e9es aux h\u00e9ros."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_HELP_DIALOG_02",
+		"value": "\u25c6 Types d'aptitudes \u25c6\\nLes aptitudes actives se\\nd\u00e9clenchent lorsqu'un h\u00e9ros\\neffectue une action.\\nLes aptitudes passives doivent\\nsimplement \u00eatre \u00e9quip\u00e9es pour\\nque le h\u00e9ros b\u00e9n\u00e9ficie de leur\\neffet."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_HELP_DIALOG_03",
+		"value": "\u25c6 Aptitudes actives \u25c6\\nCes aptitudes sont divis\u00e9es\\nen trois cat\u00e9gories :\\nArme, Soutien, et Sp\u00e9ciale.\\n\\nUne fois \u00e9quip\u00e9es, elles peuvent\\n\u00eatre utilis\u00e9es au combat."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_HELP_DIALOG_04",
+		"value": "\u25c6 Aptitudes passives \u25c6\\nCes aptitudes sont divis\u00e9es\\nen trois cat\u00e9gories :\\nDivers A, Divers B, et Divers C.\\n\\nLes h\u00e9ros ne peuvent \u00e9quiper\\nqu'une aptitude de chaque\\ncat\u00e9gorie."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LEVEL_UP_HELP_DIALOG_00",
+		"value": "Utilisez les \u00e9clats pour progresser !"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LEVEL_UP_HELP_DIALOG_01",
+		"value": "\u25c6 Progresser \u00e0 l'aide d'objets \u25c6\\nIl est possible d'utiliser des\\n\u00e9clats ou des cristaux pour\\nfaire gagner de l'exp\u00e9rience\\n\u00e0 vos h\u00e9ros."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LEVEL_UP_HELP_DIALOG_02",
+		"value": "\u25c6 Compatibilit\u00e9 \u25c6\\nLes \u00e9clats et cristaux ne sont\\ncompatibles qu'avec les h\u00e9ros\\ndu m\u00eame type.\\nSeuls les \u00e9clats et cristaux\\nuniversels sont compatibles\\navec tous les types de h\u00e9ros."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LEVEL_UP_HELP_DIALOG_03",
+		"value": "\u25c6 Utilisation \u25c6\\nLes \u00e9clats peuvent \u00eatre utilis\u00e9s\\njusqu'au niveau 20. Les niveaux\\nsuivants vous demanderont\\nd'utiliser des cristaux. Les cristaux\\npeuvent \u00eatre obtenus \u00e0 partir de la\\nsixi\u00e8me strate de la tour\\nd'entra\u00eenement."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_HELP_DIALOG_00",
+		"value": "Transformez des h\u00e9ros en plumes !"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_HELP_DIALOG_01",
+		"value": "\u25c6 Lib\u00e9ration de h\u00e9ros \u25c6\\nLorsque vous lib\u00e9rez un h\u00e9ros,\\ncelui-ci quitte d\u00e9finitivement vos\\neffectifs pour retourner dans son\\nmonde d'origine et vous l\u00e8gue\\ndes plumes de h\u00e9ros."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_HELP_DIALOG_02",
+		"value": "\u25c6 Favoris \u25c6\\nMarquez un h\u00e9ros comme favori\\nsi vous voulez vous assurer de\\nne pas le faire dispara\u00eetre en le\\nlib\u00e9rant par erreur, par exemple."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_HELP_DIALOG_03",
+		"value": "\u25c6 Marquer un favori \u25c6\\nPour marquer un h\u00e9ros comme\\nfavori, touchez l'ic\u00f4ne en forme\\nde c\u0153ur visible dans le coin\\nsup\u00e9rieur gauche de son profil et\\ns\u00e9lectionnez une couleur. Touchez\\nSupprimer pour retirer le statut\\nde favori."
+	},
+	{
+		"key": "MID_UNIT_EDIT_PROMOTION_HELP_DIALOG_00",
+		"value": "Am\u00e9liorez le rang de vos h\u00e9ros !"
+	},
+	{
+		"key": "MID_UNIT_EDIT_PROMOTION_HELP_DIALOG_01",
+		"value": "\u25c6 Am\u00e9liorer le rang d'un h\u00e9ros \u25c6\\nVous pouvez utiliser des objets\\npour am\u00e9liorer le rang (\u2605) d'un\\nh\u00e9ros de niveau 20 ou sup\u00e9rieur.\\n\\nLe h\u00e9ros retombera au niveau 1,\\nmais ses caract\u00e9ristiques de\\nd\u00e9part seront am\u00e9lior\u00e9es et il\\naura acc\u00e8s \u00e0 d'autres aptitudes."
+	},
+	{
+		"key": "MID_UNIT_EDIT_PROMOTION_HELP_DIALOG_02",
+		"value": "\u25c6 Rangs 1\u2605 \u00e0 3\u2605 \u25c6\\nPour am\u00e9liorer un h\u00e9ros de rang\\n1\u2605 \u00e0 3\u2605, vous devez utiliser des\\nplumes de h\u00e9ros et des badges.\\nLes plumes de h\u00e9ros peuvent,\\nentre autres, \u00eatre obtenues dans\\nl'ar\u00e8ne, et les badges dans la tour\\nd'entra\u00eenement."
+	},
+	{
+		"key": "MID_UNIT_EDIT_PROMOTION_HELP_DIALOG_03",
+		"value": "\u25c6 Rang 4\u2605 \u25c6\\nPour am\u00e9liorer un h\u00e9ros de rang\\n4\u2605, vous devez utiliser des\\nplumes de h\u00e9ros et des insignes.\\nLes insignes peuvent \u00eatre obtenus\\ndans la tour d'entra\u00eenement, \u00e0\\npartir de la sixi\u00e8me strate."
+	},
+	{
+		"key": "MID_UNIT_EDIT_PROMOTION_HELP_DIALOG_04",
+		"value": "\u25c6 Perte des bonus de fusion \u25c6\\nAttention, les bonus aux\\ncaract\u00e9ristiques d'un h\u00e9ros\\nobtenus gr\u00e2ce \u00e0 la fusion\\nseront perdus si vous\\nam\u00e9liorez son rang."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_HELP_DIALOG_00",
+		"value": "Fusionnez et am\u00e9liorez vos h\u00e9ros !"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_HELP_DIALOG_01",
+		"value": "\u25c6 Fusion de h\u00e9ros \u25c6\\nFusionner deux versions d'un\\nh\u00e9ros permet d'en renforcer une\\nen lui faisant gagner des PA, et\\nparfois des caract\u00e9ristiques.\\nCependant, l'autre version\\ndispara\u00eetra une fois la fusion\\ntermin\u00e9e."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_HELP_DIALOG_02",
+		"value": "\u25c6 Bonus aux caract\u00e9ristiques \u25c6\\nSi vous fusionnez deux versions de\\nrang (\u2605) identique, ou si le donneur\\nest de rang plus \u00e9lev\u00e9 que le\\nreceveur, les caract\u00e9ristiques du\\nreceveur seront alors augment\u00e9es.\\nNotez que ce bonus sera perdu si\\nvous am\u00e9liorez ensuite son rang."
+	},
+	{
+		"key": "MID_NOT_EQQUIPPED",
+		"value": "Non compatible :"
+	},
+	{
+		"key": "MID_EQQUIPPED_ONLY_PERSON",
+		"value": "Aptitude r\u00e9serv\u00e9e \u00e0 l'unit\u00e9 d'origine."
+	},
+	{
+		"key": "MID_EQQUIPPED_ONLY_ROD",
+		"value": "Aptitude r\u00e9serv\u00e9e aux h\u00e9ros maniant le b\u00e2ton."
+	},
+	{
+		"key": "MID_UNIT_EDIT_FAVORITE_SET",
+		"value": "Choisissez le symbole \u00e0 utiliser."
+	},
+	{
+		"key": "MID_UNIT_EDIT_FAVORITE_TYPE",
+		"value": "$aFavori $a0"
+	},
+	{
+		"key": "MID_UNIT_EDIT_FAVORITE_NONE",
+		"value": "Supprimer"
+	},
+	{
+		"key": "MID_UNIT_EDIT_FAVORITE_FILTER",
+		"value": "Les alli\u00e9s portant un symbole\\nseront affich\u00e9s en premier.\\nVous pouvez marquer un alli\u00e9\\ncomme favori depuis son profil."
+	},
+	{
+		"key": "MID_UNIT_EDIT_FAVORITE_FILTER_UNSET",
+		"value": "Effacer"
+	},
+	{
+		"key": "MID_UNIT_EDIT_FAVORITE_NAME_EDIT",
+		"value": "Nom du favori"
+	},
+	{
+		"key": "MID_UNIT_EDIT_FAVORITE_NAME_EDIT_SELECT",
+		"value": "S\u00e9lectionnez le favori que vous\\nvoulez renommer."
+	},
+	{
+		"key": "MID_UNIT_EDIT_FAVORITE_NAME_PLACE_HOLDER",
+		"value": "Saisissez un nom."
+	},
+	{
+		"key": "MID_UNIT_EDIT_FAVORITE_NAME_ASK",
+		"value": "Saisissez un nom pour ce favori."
+	},
+	{
+		"key": "MID_UNIT_EDIT_FAVORITE_NAME_WARNING",
+		"value": "Ce nom sera le m\u00eame pour tous\\nles alli\u00e9s utilisant ce favori."
+	},
+	{
+		"key": "MID_UNIT_EDIT_FAVORITE_NAME_ASK_INFO",
+		"value": "Le nom ne doit pas d\u00e9passer 9 caract\u00e8res.\\nCertains symboles ne sont pas accept\u00e9s."
+	},
+	{
+		"key": "MID_UNIT_EDIT_HIGHEST_SKILL_FILTER_ON",
+		"value": "Meilleures"
+	},
+	{
+		"key": "MID_UNIT_EDIT_HIGHEST_SKILL_FILTER_OFF",
+		"value": "Toutes"
+	},
+	{
+		"key": "MID_UNIT_INFO_EXP_MAX",
+		"value": "MAX"
+	},
+	{
+		"key": "MID_UNIT_INFO_TO_TALK",
+		"value": "Touchez !"
+	},
+	{
+		"key": "MID_UNIT_INFO_NOW_TALK",
+		"value": "\u00c9coutez !"
+	},
+	{
+		"key": "MID_UNIT_INFO_EXP_REMAIN",
+		"value": "Suiv.\u00a0:\u00a0"
+	},
+	{
+		"key": "MID_UNIT_INFO_TO_SKILLLIST",
+		"value": "Aptitudes"
+	},
+	{
+		"key": "MID_UNIT_INFO_TO_STATUS",
+		"value": "Profil"
+	},
+	{
+		"key": "MID_UNIT_INFO_LIMITBREAK",
+		"value": "Fusion"
+	}
+]

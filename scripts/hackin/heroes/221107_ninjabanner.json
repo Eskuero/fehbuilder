@@ -1,0 +1,89 @@
+{
+    "PID_\u6bd4\u7ffc\u30ec\u30fc\u30ae\u30e3\u30eb\u30f3": {
+        "stats": [16, 12, 2, 7, 3],
+        "growths": [50, 70, 35, 65, 75],
+        "weapon": 4,
+        "origin": 0,
+        "move": 3,
+        "flowers": 5,
+        "basekit": [
+            "SID_\u708e\u3068\u6c37\u306e\u738b\u5973\u306e\u8f1d\u5f13",
+			"SID_\u6708\u8679",
+			"SID_\u653b\u6483\u9b54\u9632\u306e\u6a5f\u51484",
+			"SID_\u5b88\u5099\u5c01\u30584",
+			"SID_\u653b\u6483\u306e\u7d2b\u71594"
+        ],
+        "resplendent": false,
+        "id": 869,
+        "art": "ch00_11_Laegjarn_FF_Pair"
+    },
+    "PID_\u5fcd\u8005\u30ab\u30df\u30e9": {
+        "stats": [14, 11, 2, 4, 8],
+        "growths": [50, 70, 35, 60, 70],
+        "weapon": 11,
+        "origin": 11,
+        "move": 3,
+        "flowers": 5,
+        "basekit": [
+            "SID_\u8276\u82b1\u5fcd\u6cd5\u5e33",
+			"SID_\u51f6\u661f",
+			"SID_\u8fd1\u53cd\u30fb\u653b\u6483\u306e\u6e3e\u8eab",
+			"SID_\u9b54\u9632\u5c01\u30584",
+			"SID_\u653b\u6483\u9b54\u9632\u306e\u5927\u727d\u5236"
+        ],
+        "resplendent": false,
+        "id": 870,
+        "art": "ch05_28_Camilla_F_Ninja22"
+    },
+    "PID_\u5fcd\u8005\u30bb\u30eb\u30b8\u30e5": {
+        "stats": [17, 12, 1, 9, 4],
+        "growths": [55, 70, 40, 75, 60],
+        "weapon": 2,
+        "origin": 10,
+        "move": 3,
+        "flowers": 5,
+        "basekit": [
+            "SID_\u611b\u7adc\u3078\u306e\u60c5\u306e\u7adc\u65a7",
+			"SID_\u83ef\u708e",
+			"SID_\u653b\u6483\u5b88\u5099\u306e\u8fd1\u5f713",
+			"SID_\u653b\u6483\u5b88\u5099\u306e\u5927\u727d\u5236"
+        ],
+        "resplendent": false,
+        "id": 871,
+        "art": "ch04_18_Serge_F_Ninja22"
+    },
+    "PID_\u5fcd\u8005\u30d2\u30fc\u30b9": {
+        "stats": [16, 11, 4, 5, 4],
+        "growths": [55, 70, 40, 75, 55],
+        "weapon": 6,
+        "origin": 6,
+        "move": 3,
+        "flowers": 5,
+        "basekit": [
+            "SID_\u7adc\u5fcd\u306e\u5f13\uff0b",
+			"SID_\u7dcb\u708e",
+			"SID_\u653b\u6483\u5b88\u5099\u306e\u6a5f\u51483",
+			"SID_\u9f13\u52d5\u306e\u5e7b\u71593"
+        ],
+        "resplendent": false,
+        "id": 872,
+        "art": "ch03_29_Heath_M_Ninja22"
+    },
+    "PID_\u5fcd\u8005\u30cf\u30fc\u30eb": {
+        "stats": [16, 10, 3, 12, 2],
+        "growths": [60, 70, 45, 70, 55],
+        "weapon": 0,
+        "origin": 9,
+        "move": 3,
+        "flowers": 5,
+        "basekit": [
+            "SID_\u7adc\u5fcd\u306e\u5263\uff0b",
+			"SID_\u5165\u308c\u66ff\u3048",
+			"SID_\u653b\u6483\u5b88\u5099\u306e\u5bc6\u96c63",
+			"SID_\u653b\u6483\u5b88\u5099\u306e\u4fe1\u7fa93"
+        ],
+        "resplendent": false,
+        "id": 873,
+        "art": "ch11_14_Haar_M_Ninja22"
+    }
+}

@@ -1,0 +1,946 @@
+[
+	{
+		"key": "MDAID_\u9752\u9285\u306e\u6c7a\u95d8\u30e1\u30c0\u30eb",
+		"value": "Bronze de duelliste"
+	},
+	{
+		"key": "MDAID_H_\u9752\u9285\u306e\u6c7a\u95d8\u30e1\u30c0\u30eb",
+		"value": "M\u00e9daille pour avoir atteint l'\u00e9chelon 17\\ndans Duels d'invocateurs C."
+	},
+	{
+		"key": "MDAID_\u767d\u9280\u306e\u6c7a\u95d8\u30e1\u30c0\u30eb",
+		"value": "Argent de duelliste"
+	},
+	{
+		"key": "MDAID_H_\u767d\u9280\u306e\u6c7a\u95d8\u30e1\u30c0\u30eb",
+		"value": "M\u00e9daille pour avoir atteint l'\u00e9chelon 21\\ndans Duels d'invocateurs C."
+	},
+	{
+		"key": "MDAID_\u9ec4\u91d1\u306e\u6c7a\u95d8\u30e1\u30c0\u30eb",
+		"value": "Or de duelliste"
+	},
+	{
+		"key": "MDAID_H_\u9ec4\u91d1\u306e\u6c7a\u95d8\u30e1\u30c0\u30eb",
+		"value": "M\u00e9daille pour avoir atteint l'\u00e9chelon 24\\ndans Duels d'invocateurs C."
+	},
+	{
+		"key": "MDAID_\u30b8\u30e3\u30cf\u30ca\u738b\u306e\u5e3d\u5b50",
+		"value": "Coiffe de Jehanna"
+	},
+	{
+		"key": "MDAID_H_\u30b8\u30e3\u30cf\u30ca\u738b\u306e\u5e3d\u5b50",
+		"value": "Une coiffe travaill\u00e9e ayant appartenu \u00e0\\nJoshua. Elle a \u00e9t\u00e9 con\u00e7ue pour c\u00e9l\u00e9brer\\nson accession au tr\u00f4ne de Jehanna."
+	},
+	{
+		"key": "MDAID_\u30b8\u30e3\u30cf\u30ca\u738b\u306e\u5e3d\u5b50\u30fb\u6975",
+		"value": "Coiffe de Jehanna EX"
+	},
+	{
+		"key": "MDAID_H_\u30b8\u30e3\u30cf\u30ca\u738b\u306e\u5e3d\u5b50\u30fb\u6975",
+		"value": "Une coiffe travaill\u00e9e ayant appartenu \u00e0\\nJoshua. Elle est d\u00e9cor\u00e9e avec les\\npi\u00e8ces qu'il utilisait pour faire des paris.\\nAlors, pile ou face ?"
+	},
+	{
+		"key": "MDAID_\u8c6a\u5546\u76d7\u8cca\u306e\u9375\u675f",
+		"value": "Outils de marchand"
+	},
+	{
+		"key": "MDAID_H_\u8c6a\u5546\u76d7\u8cca\u306e\u9375\u675f",
+		"value": "Un porte-cl\u00e9s ayant appartenu \u00e0\\nRennac. La cl\u00e9 ouvre certainement\\nune serrure, mais laquelle ?"
+	},
+	{
+		"key": "MDAID_\u8c6a\u5546\u76d7\u8cca\u306e\u9375\u675f\u30fb\u6975",
+		"value": "Outils de marchand EX"
+	},
+	{
+		"key": "MDAID_H_\u8c6a\u5546\u76d7\u8cca\u306e\u9375\u675f\u30fb\u6975",
+		"value": "Un porte-cl\u00e9s ayant appartenu \u00e0\\nRennac. Toutes les cl\u00e9s sont\\ndiff\u00e9rentes. On dirait qu'il y en a\\nune pour chaque type de serrure."
+	},
+	{
+		"key": "MDAID_\u5c11\u5e74\u76d7\u8cca\u306e\u30de\u30b9\u30af",
+		"value": "Voile de voleur"
+	},
+	{
+		"key": "MDAID_H_\u5c11\u5e74\u76d7\u8cca\u306e\u30de\u30b9\u30af",
+		"value": "Un voile ayant appartenu \u00e0 Colm\\nservant \u00e0 dissimuler l'identit\u00e9 de celui\\nqui le porte. Utile \u00e0 tout bon voleur, il\\natt\u00e9nue le bruit de la respiration."
+	},
+	{
+		"key": "MDAID_\u5c11\u5e74\u76d7\u8cca\u306e\u30de\u30b9\u30af\u30fb\u6975",
+		"value": "Voile de voleur EX"
+	},
+	{
+		"key": "MDAID_H_\u5c11\u5e74\u76d7\u8cca\u306e\u30de\u30b9\u30af\u30fb\u6975",
+		"value": "Un voile ayant appartenu \u00e0 Colm\\nservant \u00e0 dissimuler l'identit\u00e9 de celui\\nqui le porte. Banal mais \u00e9l\u00e9gant, il est\\nparfait pour se tapir dans l'ombre."
+	},
+	{
+		"key": "MDAID_\u6ce3\u304d\u866b\u5c11\u5973\u306e\u30cf\u30f3\u30ab\u30c1",
+		"value": "Essuie-larmes"
+	},
+	{
+		"key": "MDAID_H_\u6ce3\u304d\u866b\u5c11\u5973\u306e\u30cf\u30f3\u30ab\u30c1",
+		"value": "Un mouchoir ravissant ayant appartenu\\n\u00e0 Neimi et parfait pour s\u00e9cher les\\nlarmes. Tr\u00e8s doux, il n'irrite pas la peau\\nm\u00eame apr\u00e8s de multiples utilisations."
+	},
+	{
+		"key": "MDAID_\u6ce3\u304d\u866b\u5c11\u5973\u306e\u30cf\u30f3\u30ab\u30c1\u30fb\u6975",
+		"value": "Essuie-larmes EX"
+	},
+	{
+		"key": "MDAID_H_\u6ce3\u304d\u866b\u5c11\u5973\u306e\u30cf\u30f3\u30ab\u30c1\u30fb\u6975",
+		"value": "Un mouchoir ravissant ayant appartenu\\n\u00e0 Neimi. Il servait autrefois \u00e0 ramasser\\ndes baies brillantes, sucr\u00e9es et un peu\\nacides."
+	},
+	{
+		"key": "MID_MISSION_S202201DAISEIATU01_TITLE",
+		"value": "Grande conqu\u00eate"
+	},
+	{
+		"key": "MID_MISSION_S202201DAISEIATU01_A1",
+		"value": "GC : score"
+	},
+	{
+		"key": "MID_MISSION_H_S202201DAISEIATU01_A1",
+		"value": "Marquer des points dans\\nla grande conqu\u00eate."
+	},
+	{
+		"key": "MID_MISSION_S202201DAISEIATU01_A2",
+		"value": "GC : score"
+	},
+	{
+		"key": "MID_MISSION_H_S202201DAISEIATU01_A2",
+		"value": "Marquer des points dans\\nla grande conqu\u00eate."
+	},
+	{
+		"key": "MID_MISSION_S202201DAISEIATU01_A3",
+		"value": "GC : score"
+	},
+	{
+		"key": "MID_MISSION_H_S202201DAISEIATU01_A3",
+		"value": "Marquer des points dans\\nla grande conqu\u00eate."
+	},
+	{
+		"key": "MID_MISSION_S202201DAISEIATU01_A4",
+		"value": "Tour : deuxi\u00e8me strate"
+	},
+	{
+		"key": "MID_MISSION_H_S202201DAISEIATU01_A4",
+		"value": "Terminer la 2e strate de la tour d'entra\u00eenement."
+	},
+	{
+		"key": "MID_MISSION_S202201DAISEIATU01_A5",
+		"value": "Tour : huiti\u00e8me strate"
+	},
+	{
+		"key": "MID_MISSION_H_S202201DAISEIATU01_A5",
+		"value": "Terminer la 8e strate de la tour d'entra\u00eenement."
+	},
+	{
+		"key": "MID_MISSION_S202201DAISEIATU01_A6",
+		"value": "Duelliste"
+	},
+	{
+		"key": "MID_MISSION_H_S202201DAISEIATU01_A6",
+		"value": "Remporter des duels en ar\u00e8ne dans n'importe\\nquelle cat\u00e9gorie."
+	},
+	{
+		"key": "MID_MISSION_S202201MJOLNIR01_TITLE",
+		"value": "Assaut de Mj\u00f6lnir"
+	},
+	{
+		"key": "MID_MISSION_S202201MJOLNIR01_A1",
+		"value": "Victoire : avatar"
+	},
+	{
+		"key": "MID_MISSION_H_S202201MJOLNIR01_A1",
+		"value": "Vaincre des ennemis avec votre avatar dans\\nl'Assaut de Mj\u00f6lnir."
+	},
+	{
+		"key": "MID_MISSION_S202201MJOLNIR01_A2",
+		"value": "Victoire : avatar"
+	},
+	{
+		"key": "MID_MISSION_H_S202201MJOLNIR01_A2",
+		"value": "Vaincre des ennemis avec votre avatar dans\\nl'Assaut de Mj\u00f6lnir."
+	},
+	{
+		"key": "MID_MISSION_S202201MJOLNIR02_TITLE",
+		"value": "Assaut de Mj\u00f6lnir"
+	},
+	{
+		"key": "MID_MISSION_S202201MJOLNIR02_A1",
+		"value": "Victoire : avatar"
+	},
+	{
+		"key": "MID_MISSION_H_S202201MJOLNIR02_A1",
+		"value": "Vaincre des ennemis avec votre avatar dans\\nl'Assaut de Mj\u00f6lnir."
+	},
+	{
+		"key": "MID_MISSION_S202201MJOLNIR02_A2",
+		"value": "Victoire : avatar"
+	},
+	{
+		"key": "MID_MISSION_H_S202201MJOLNIR02_A2",
+		"value": "Vaincre des ennemis avec votre avatar dans\\nl'Assaut de Mj\u00f6lnir."
+	},
+	{
+		"key": "MID_MISSION_S202201SUBSC01_TITLE",
+		"value": "Passe Feh"
+	},
+	{
+		"key": "MID_MISSION_S202201SUBSC01_A1",
+		"value": "Victoire"
+	},
+	{
+		"key": "MID_MISSION_H_S202201SUBSC01_A1",
+		"value": "Vaincre des ennemis."
+	},
+	{
+		"key": "MID_MISSION_S202201SUBSC01_A2",
+		"value": "Victoire"
+	},
+	{
+		"key": "MID_MISSION_H_S202201SUBSC01_A2",
+		"value": "Vaincre des ennemis."
+	},
+	{
+		"key": "MID_MISSION_S202201SUBSC01_A3",
+		"value": "Duelliste"
+	},
+	{
+		"key": "MID_MISSION_H_S202201SUBSC01_A3",
+		"value": "Remporter des duels en ar\u00e8ne dans n'importe\\nquelle cat\u00e9gorie."
+	},
+	{
+		"key": "MID_MISSION_S202201SUBSC01_A4",
+		"value": "Duelliste"
+	},
+	{
+		"key": "MID_MISSION_H_S202201SUBSC01_A4",
+		"value": "Remporter des duels en ar\u00e8ne dans n'importe\\nquelle cat\u00e9gorie."
+	},
+	{
+		"key": "MID_MISSION_S202201SUBSC01_A5",
+		"value": "Cible : unit\u00e9s en armure"
+	},
+	{
+		"key": "MID_MISSION_H_S202201SUBSC01_A5",
+		"value": "Vaincre des unit\u00e9s en armure."
+	},
+	{
+		"key": "MID_MISSION_S202201SUBSC01_A6",
+		"value": "Cible : unit\u00e9s volantes"
+	},
+	{
+		"key": "MID_MISSION_H_S202201SUBSC01_A6",
+		"value": "Vaincre des unit\u00e9s volantes."
+	},
+	{
+		"key": "MID_MISSION_S202201USEMOVE01_TITLE",
+		"value": "Atq en vol"
+	},
+	{
+		"key": "MID_MISSION_S202201USEMOVE01_A1",
+		"value": "Victoire : unit\u00e9 volante"
+	},
+	{
+		"key": "MID_MISSION_H_S202201USEMOVE01_A1",
+		"value": "Vaincre des unit\u00e9s rouges avec des\\nunit\u00e9s volantes."
+	},
+	{
+		"key": "MID_MISSION_S202201USEMOVE01_A2",
+		"value": "Victoire : unit\u00e9 volante"
+	},
+	{
+		"key": "MID_MISSION_H_S202201USEMOVE01_A2",
+		"value": "Vaincre des unit\u00e9s bleues avec des\\nunit\u00e9s volantes."
+	},
+	{
+		"key": "MID_MISSION_S202201USEMOVE01_A3",
+		"value": "Victoire : unit\u00e9 volante"
+	},
+	{
+		"key": "MID_MISSION_H_S202201USEMOVE01_A3",
+		"value": "Vaincre des unit\u00e9s vertes avec des\\nunit\u00e9s volantes."
+	},
+	{
+		"key": "MID_MISSION_S202201USEMOVE01_A4",
+		"value": "Victoire : unit\u00e9 volante"
+	},
+	{
+		"key": "MID_MISSION_H_S202201USEMOVE01_A4",
+		"value": "Vaincre des unit\u00e9s maniant l'\u00e9p\u00e9e de niveau\\n20 ou sup\u00e9rieur avec des unit\u00e9s volantes."
+	},
+	{
+		"key": "MID_MISSION_S202201USEMOVE01_A5",
+		"value": "Victoire : unit\u00e9 volante"
+	},
+	{
+		"key": "MID_MISSION_H_S202201USEMOVE01_A5",
+		"value": "Vaincre des unit\u00e9s maniant la lance de niveau\\n20 ou sup\u00e9rieur avec des unit\u00e9s volantes."
+	},
+	{
+		"key": "MID_MISSION_S202201USEMOVE01_A6",
+		"value": "Victoire : unit\u00e9 volante"
+	},
+	{
+		"key": "MID_MISSION_H_S202201USEMOVE01_A6",
+		"value": "Vaincre des unit\u00e9s maniant la hache de niveau\\n20 ou sup\u00e9rieur avec des unit\u00e9s volantes."
+	},
+	{
+		"key": "MID_MISSION_S202201USEMOVE01_A7",
+		"value": "Victoire : unit\u00e9 volante"
+	},
+	{
+		"key": "MID_MISSION_H_S202201USEMOVE01_A7",
+		"value": "Vaincre des unit\u00e9s grises maniant l'arc de\\nniveau 20 ou sup\u00e9rieur avec des unit\u00e9s volantes."
+	},
+	{
+		"key": "MID_MISSION_S202201USEMOVE01_A8",
+		"value": "Victoire : unit\u00e9 volante"
+	},
+	{
+		"key": "MID_MISSION_H_S202201USEMOVE01_A8",
+		"value": "Vaincre des unit\u00e9s grises maniant la dague\\nde niveau 20 ou sup\u00e9rieur avec des unit\u00e9s\\nvolantes."
+	},
+	{
+		"key": "MID_MISSION_S202201USEMOVE01_A9",
+		"value": "Victoire : unit\u00e9 volante"
+	},
+	{
+		"key": "MID_MISSION_H_S202201USEMOVE01_A9",
+		"value": "Vaincre des unit\u00e9s maniant le b\u00e2ton de niveau\\n20 ou sup\u00e9rieur avec des unit\u00e9s volantes."
+	},
+	{
+		"key": "MID_MISSION_S202201USEMOVE01_A10",
+		"value": "Victoire : unit\u00e9 volante"
+	},
+	{
+		"key": "MID_MISSION_H_S202201USEMOVE01_A10",
+		"value": "Vaincre des fantassins de niveau 35 ou\\nsup\u00e9rieur avec des unit\u00e9s volantes."
+	},
+	{
+		"key": "MID_MISSION_S202201USEMOVE01_A11",
+		"value": "Victoire : unit\u00e9 volante"
+	},
+	{
+		"key": "MID_MISSION_H_S202201USEMOVE01_A11",
+		"value": "Vaincre des cavaliers de niveau 35 ou\\nsup\u00e9rieur avec des unit\u00e9s volantes."
+	},
+	{
+		"key": "MID_MISSION_S202201USEMOVE01_A12",
+		"value": "Victoire : unit\u00e9 volante"
+	},
+	{
+		"key": "MID_MISSION_H_S202201USEMOVE01_A12",
+		"value": "Vaincre des unit\u00e9s en armure de niveau 35 ou\\nsup\u00e9rieur avec des unit\u00e9s volantes."
+	},
+	{
+		"key": "MID_MISSION_S202201USEMOVE01_A13",
+		"value": "Victoire : unit\u00e9 volante"
+	},
+	{
+		"key": "MID_MISSION_H_S202201USEMOVE01_A13",
+		"value": "Vaincre des unit\u00e9s volantes de niveau 35 ou\\nsup\u00e9rieur avec des unit\u00e9s volantes."
+	},
+	{
+		"key": "MID_MISSION_S202201USEMOVE01_A14",
+		"value": "Duelliste"
+	},
+	{
+		"key": "MID_MISSION_H_S202201USEMOVE01_A14",
+		"value": "Remporter des duels en ar\u00e8ne dans n'importe\\nquelle cat\u00e9gorie avec une unit\u00e9 volante dans\\nvotre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_WEEK_ARENA04B_TITLE",
+		"value": "Modes du colis\u00e9e"
+	},
+	{
+		"key": "MID_MISSION_WEEK_ARENA04B_A1",
+		"value": "Gladiateur retentissant"
+	},
+	{
+		"key": "MID_MISSION_H_WEEK_ARENA04B_A1",
+		"value": "Obtenir un score dans les batailles en \u00e9cho dans\\nn'importe quelle cat\u00e9gorie."
+	},
+	{
+		"key": "MID_MISSION_WEEK_ARENA04B_A2",
+		"value": "Compagnon d'armes"
+	},
+	{
+		"key": "MID_MISSION_H_WEEK_ARENA04B_A2",
+		"value": "Remporter des batailles d'all\u00e9geance dans\\nn'importe quelle cat\u00e9gorie."
+	},
+	{
+		"key": "MID_MISSION_W_S202201STORY_C01_TITLE",
+		"value": "Appel du sang"
+	},
+	{
+		"key": "MID_MISSION_W_S202201STORY_C01_A1",
+		"value": "Chap. 3 - Acte 1 (Expert)"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202201STORY_C01_A1",
+		"value": "Terminer Livre VI, Chap. 3, Acte 1 (Expert) avec\\nune unit\u00e9 dot\u00e9e d'une lance dans une \u00e9quipe de\\nquatre h\u00e9ros et sans essuyer la moindre perte.\\n(Les alli\u00e9s d\u00e9ploy\u00e9s comme partenaires gr\u00e2ce \u00e0\\nDuo ne comptent pas.)"
+	},
+	{
+		"key": "MID_MISSION_W_S202201STORY_C01_A2",
+		"value": "Chap. 3 - Acte 2 (Expert)"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202201STORY_C01_A2",
+		"value": "Terminer Livre VI, Chap. 3, Acte 2 (Expert) avec\\nune unit\u00e9 dot\u00e9e d'une hache dans une \u00e9quipe de\\nquatre h\u00e9ros et sans essuyer la moindre perte.\\n(Les alli\u00e9s d\u00e9ploy\u00e9s comme partenaires gr\u00e2ce \u00e0\\nDuo ne comptent pas.)"
+	},
+	{
+		"key": "MID_MISSION_W_S202201STORY_C01_A3",
+		"value": "Chap. 3 - Acte 3 (Expert)"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202201STORY_C01_A3",
+		"value": "Terminer Livre VI, Chap. 3, Acte 3 (Expert) avec\\nune unit\u00e9 dot\u00e9e d'une \u00e9p\u00e9e dans une \u00e9quipe de\\nquatre h\u00e9ros et sans essuyer la moindre perte.\\n(Les alli\u00e9s d\u00e9ploy\u00e9s comme partenaires gr\u00e2ce \u00e0\\nDuo ne comptent pas.)"
+	},
+	{
+		"key": "MID_MISSION_W_S202201STORY_C01_A4",
+		"value": "Chap. 3 - Acte 4 (Expert)"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202201STORY_C01_A4",
+		"value": "Terminer Livre VI, Chap. 3, Acte 4 (Expert) avec\\nune unit\u00e9 dot\u00e9e d'une lance dans une \u00e9quipe de\\nquatre h\u00e9ros et sans essuyer la moindre perte.\\n(Les alli\u00e9s d\u00e9ploy\u00e9s comme partenaires gr\u00e2ce \u00e0\\nDuo ne comptent pas.)"
+	},
+	{
+		"key": "MID_MISSION_W_S202201STORY_C01_A5",
+		"value": "Chap. 3 - Acte 5 (Expert)"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202201STORY_C01_A5",
+		"value": "Terminer Livre VI, Chap. 3, Acte 5 (Expert) avec\\nune unit\u00e9 dot\u00e9e d'une hache dans une \u00e9quipe de\\nquatre h\u00e9ros et sans essuyer la moindre perte.\\n(Les alli\u00e9s d\u00e9ploy\u00e9s comme partenaires gr\u00e2ce \u00e0\\nDuo ne comptent pas.)"
+	},
+	{
+		"key": "MID_MUSIC_NAME_BGM_MNS_FE10_06",
+		"value": "Regards furieux"
+	},
+	{
+		"key": "MID_MUSIC_NAME_BGM_MNS_FE14_11",
+		"value": "Li\u00e9es par le destin\\n(Sakura et Elise)"
+	},
+	{
+		"key": "MPID_\u958b\u82b1\u30e8\u30b7\u30e5\u30a2",
+		"value": "Joshua"
+	},
+	{
+		"key": "MPID_SEARCH_\u958b\u82b1\u30e8\u30b7\u30e5\u30a2",
+		"value": "Joshua"
+	},
+	{
+		"key": "MPID_\u30ec\u30ca\u30c3\u30af",
+		"value": "Rennac"
+	},
+	{
+		"key": "MPID_SEARCH_\u30ec\u30ca\u30c3\u30af",
+		"value": "Rennac"
+	},
+	{
+		"key": "MPID_\u30b3\u30fc\u30de",
+		"value": "Colm"
+	},
+	{
+		"key": "MPID_SEARCH_\u30b3\u30fc\u30de",
+		"value": "Colm"
+	},
+	{
+		"key": "MPID_\u30cd\u30a4\u30df\u30fc",
+		"value": "Neimi"
+	},
+	{
+		"key": "MPID_SEARCH_\u30cd\u30a4\u30df\u30fc",
+		"value": "Neimi"
+	},
+	{
+		"key": "MPID_\u30a2\u30fc\u30f4",
+		"value": "Riev"
+	},
+	{
+		"key": "MPID_SEARCH_\u30a2\u30fc\u30f4",
+		"value": "Riev"
+	},
+	{
+		"key": "MEID_\u30f4\u30a7\u30ed\u30cb\u30ab\u6d17\u8133",
+		"value": "Veronica"
+	},
+	{
+		"key": "MPID_HONOR_\u958b\u82b1\u30e8\u30b7\u30e5\u30a2",
+		"value": "Fougue r\u00e9solue"
+	},
+	{
+		"key": "MPID_HONOR_\u30ec\u30ca\u30c3\u30af",
+		"value": "Riche \"marchand\""
+	},
+	{
+		"key": "MPID_HONOR_\u30b3\u30fc\u30de",
+		"value": "Voleur adroit"
+	},
+	{
+		"key": "MPID_HONOR_\u30cd\u30a4\u30df\u30fc",
+		"value": "Arch\u00e8re sensible"
+	},
+	{
+		"key": "MPID_HONOR_\u30a2\u30fc\u30f4",
+		"value": "B\u00e9ryl rouge sang"
+	},
+	{
+		"key": "MEID_HONOR_\u30f4\u30a7\u30ed\u30cb\u30ab\u6d17\u8133",
+		"value": "Princesse hant\u00e9e"
+	},
+	{
+		"key": "MPID_H_\u958b\u82b1\u30e8\u30b7\u30e5\u30a2",
+		"value": "Prince de Jehanna qui a laiss\u00e9 son titre de c\u00f4t\u00e9\\npour parcourir le monde. Il poursuit le m\u00eame r\u00eave\\nque sa m\u00e8re et a jur\u00e9 de prot\u00e9ger sa terre natale\\net le monde entier. Appara\u00eet dans Fire Emblem:\\nThe Sacred Stones."
+	},
+	{
+		"key": "MPID_H_\u30ec\u30ca\u30c3\u30af",
+		"value": "Voleur contraint d'accompagner L'Arachel dans\\nses aventures. Membre d'une riche famille de\\nmarchands, il sait tr\u00e8s bien comment fonctionne\\nle monde. Appara\u00eet dans Fire Emblem:\\nThe Sacred Stones."
+	},
+	{
+		"key": "MPID_H_\u30b3\u30fc\u30de",
+		"value": "Voleur d'un village de Renais, appel\u00e9 Lark.\\nSon courage est tel qu'il a infiltr\u00e9 seul le repaire\\ndes bandits ayant br\u00fbl\u00e9 son village. Appara\u00eet\\ndans Fire Emblem: The Sacred Stones."
+	},
+	{
+		"key": "MPID_H_\u30cd\u30a4\u30df\u30fc",
+		"value": "Chasseuse venue de Lark, un village de Renais.\\nElle s'est engag\u00e9e dans l'arm\u00e9e de Renais\\nquand des bandits ont r\u00e9duit son village natal\\nen cendres durant la guerre. Appara\u00eet dans\\nFire Emblem: The Sacred Stones."
+	},
+	{
+		"key": "MPID_H_\u30a2\u30fc\u30f4",
+		"value": "Pr\u00eatre h\u00e9r\u00e9tique tr\u00e8s myst\u00e9rieux. Il est l'un des\\nsix g\u00e9n\u00e9raux de Grado, et est surnomm\u00e9 \u00ab le\\nB\u00e9ryl rouge sang \u00bb. Appara\u00eet dans Fire Emblem:\\nThe Sacred Stones."
+	},
+	{
+		"key": "MEID_H_\u30f4\u30a7\u30ed\u30cb\u30ab\u6d17\u8133",
+		"value": "Princesse imp\u00e9riale de l'empire emblain. Elle\\ntombe sous l'emprise du dragon Embla qui\\ncommence lentement \u00e0 prendre le contr\u00f4le de\\nson corps et de son \u00e2me."
+	},
+	{
+		"key": "MPID_VOICE_\u958b\u82b1\u30e8\u30b7\u30e5\u30a2",
+		"value": "Todd Haberkorn"
+	},
+	{
+		"key": "MPID_VOICE_\u30ec\u30ca\u30c3\u30af",
+		"value": "Landon McDonald"
+	},
+	{
+		"key": "MPID_VOICE_\u30b3\u30fc\u30de",
+		"value": "Henry Mason"
+	},
+	{
+		"key": "MPID_VOICE_\u30cd\u30a4\u30df\u30fc",
+		"value": "Giselle Fernandez"
+	},
+	{
+		"key": "MPID_VOICE_\u30a2\u30fc\u30f4",
+		"value": "Bill Butts"
+	},
+	{
+		"key": "MPID_VOICE_\u30a8\u30b9\u30c8EX01",
+		"value": "Brianna Knickerbocker"
+	},
+	{
+		"key": "MEID_VOICE_\u30f4\u30a7\u30ed\u30cb\u30ab\u6d17\u8133",
+		"value": "Wendee Lee"
+	},
+	{
+		"key": "MPID_ILLUST_\u958b\u82b1\u30e8\u30b7\u30e5\u30a2",
+		"value": "Okuma Yugo (\u5927\u718a\u3086\u3046\u3054)"
+	},
+	{
+		"key": "MPID_ILLUST_\u30ec\u30ca\u30c3\u30af",
+		"value": "Shimomura Watari (\u971c\u6751\u822a)"
+	},
+	{
+		"key": "MPID_ILLUST_\u30b3\u30fc\u30de",
+		"value": "Saori Toyota (\u3068\u3088\u305f\u7463\u7e54)"
+	},
+	{
+		"key": "MPID_ILLUST_\u30cd\u30a4\u30df\u30fc",
+		"value": "HASUMI KAORU"
+	},
+	{
+		"key": "MPID_ILLUST_\u30a2\u30fc\u30f4",
+		"value": "Daisuke Izuka"
+	},
+	{
+		"key": "MEID_ILLUST_\u30f4\u30a7\u30ed\u30cb\u30ab\u6d17\u8133",
+		"value": "Kozaki Yusuke (\u30b3\u30b6\u30ad\u30e6\u30fc\u30b9\u30b1)"
+	},
+	{
+		"key": "MPID_ILLUST_\u30a8\u30b9\u30c8EX01",
+		"value": "Konfuzi Kokon (\u7d3a\u85e4\u30b3\u30b3\u30f3)"
+	},
+	{
+		"key": "MID_TIPS_Summon_v0601a_seima_01_\u958b\u82b1\u30e8\u30b7\u30e5\u30a2",
+		"value": "L'effet de son arme change selon\\nl'emplacement de l'ennemi. Son\\nAtq/Vit est \u00e9lev\u00e9e et son aptitude C\\nest efficace contre les unit\u00e9s vertes."
+	},
+	{
+		"key": "MID_TIPS_Summon_v0601a_seima_01_\u30ec\u30ca\u30c3\u30af",
+		"value": "Il peut obtenir Atq/Vit +12, neutraliser\\nles effets emp\u00eachant les doubles\\nfrappes et il peut aussi d\u00e9samorcer\\nles pi\u00e8ges dans le mode Raid c\u00e9leste."
+	},
+	{
+		"key": "MID_TIPS_Summon_v0601a_seima_01_\u30cd\u30a4\u30df\u30fc",
+		"value": "Son arme lui permet d'ajouter les\\nbonus d'Atq/Vit d'un alli\u00e9 \u00e0 sa propre\\nAtq. Elle peut obtenir Vit +12 et\\nR\u00e9s +16."
+	},
+	{
+		"key": "MID_TIPS_Summon_v0601a_seima_01_\u30b3\u30fc\u30de",
+		"value": "Il peut utiliser son aptitude sp\u00e9ciale\\nd\u00e8s le tour 1. Son aptitude de soutien\\nde d\u00e9placement conf\u00e8re Atq/R\u00e9s +6\\n\u00e0 lui-m\u00eame et \u00e0 sa cible."
+	},
+	{
+		"key": "MID_TIPS_Summon_v0601a_seima_04_\u4f1d\u627f\u30a8\u30a4\u30ea\u30fc\u30af",
+		"value": "Elle utilise Sieglinde foudre pour\\nvaincre ses ennemis en prenant le\\nchamp de bataille d'assaut avec sa\\nforce offensive et ses d\u00e9placements."
+	},
+	{
+		"key": "MID_TIPS_Summon_v0601a_seima_04_\u4f1d\u627f\u30eb\u30ad\u30ca",
+		"value": "L'effet de son arme augmente si elle\\nest \u00e0 proximit\u00e9 d'un alli\u00e9. Elle peut\\n\u00e9galement conf\u00e9rer des doubles\\nfrappes apr\u00e8s avoir \u00e9chang\u00e9 de place."
+	},
+	{
+		"key": "MID_REALTIME_PVP_MAP_ZR006",
+		"value": "Arbres et sable"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MAP_ZR007",
+		"value": "En pente"
+	},
+	{
+		"key": "MID_REALTIME_PVP_SKILL_\u5148\u624b\u5fc5\u52dd",
+		"value": "Coup \u00e9clair"
+	},
+	{
+		"key": "MID_REALTIME_PVP_SKILL_H_\u5148\u624b\u5fc5\u52dd",
+		"value": "Attaque en premier \u00e0 chaque tour (sauf si\\nl'ennemi a aussi Coup \u00e9clair). Au d\u00e9but\\ndes tours 2 et 4, r\u00e9duit le nombre d'actions\\nde l'ennemi de 1."
+	},
+	{
+		"key": "MID_REALTIME_PVP_SKILL_\u5929\u5730\u4e07\u6709",
+		"value": "\u00c9minence"
+	},
+	{
+		"key": "MID_REALTIME_PVP_SKILL_H_\u5929\u5730\u4e07\u6709",
+		"value": "$aLe capitaine poss\u00e8de l'effet\u3010Voie trac\u00e9e\u3011.\\n\\nInflige D\u00e9f/R\u00e9s -3 aux ennemis \u00e0 3\u00a0cases ou\\nmoins de votre capitaine pendant le combat.\\n\\n\u3010Voie trac\u00e9e\u3011\\nLorsqu'un alli\u00e9 passe par la case de l'unit\u00e9,\\ncette case n\u2019est pas prise en compte lors du\\ncalcul du nombre de cases parcourues par l\u2019alli\u00e9.\\n(La case de l'unit\u00e9 peut \u00eatre librement ajout\u00e9e\\nau d\u00e9placement normal de l'alli\u00e9. S'applique\\nuniquement aux alli\u00e9s pouvant passer par\\nla case de l'unit\u00e9.)"
+	},
+	{
+		"key": "MID_REALTIME_PVP_SKILL_\u6c34\u6ef4\u77f3\u7a7f",
+		"value": "\u00c9rosion"
+	},
+	{
+		"key": "MID_REALTIME_PVP_SKILL_H_\u6c34\u6ef4\u77f3\u7a7f",
+		"value": "Lorsque l'aptitude Sauveur d'un ennemi se\\nd\u00e9clenche, inflige D\u00e9f/R\u00e9s -4 \u00e0 cet ennemi\\npendant le combat et celui-ci ne peut pas\\nriposter."
+	},
+	{
+		"key": "MSID_\u9a0e\u58eb\u306e\u8a93\u3044\u306e\u69cd",
+		"value": "Lance promise"
+	},
+	{
+		"key": "MSID_SEARCH_\u9a0e\u58eb\u306e\u8a93\u3044\u306e\u69cd",
+		"value": "Lance promise"
+	},
+	{
+		"key": "MSID_\u53e4\u4ee3\u9b54\u9053\u306e\u7a00\u66f8",
+		"value": "Codex ancien"
+	},
+	{
+		"key": "MSID_SEARCH_\u53e4\u4ee3\u9b54\u9053\u306e\u7a00\u66f8",
+		"value": "Codex ancien"
+	},
+	{
+		"key": "MSID_\u672a\u6765\u3092\u6620\u3059\u77b3\u30fb\u627f",
+		"value": "Vision du futur II"
+	},
+	{
+		"key": "MSID_SEARCH_\u672a\u6765\u3092\u6620\u3059\u77b3\u30fb\u627f",
+		"value": "Vision du futur II"
+	},
+	{
+		"key": "MSID_\u6708\u306e\u8155\u8f2a\u30fb\u627f",
+		"value": "Bracelet lunaire II"
+	},
+	{
+		"key": "MSID_SEARCH_\u6708\u306e\u8155\u8f2a\u30fb\u627f",
+		"value": "Bracelet lunaire II"
+	},
+	{
+		"key": "MSID_\u7b2c54\u8ff7\u5bae\u306e\u8987\u80051",
+		"value": "Assaut r\u00e9ussi BB 1"
+	},
+	{
+		"key": "MSID_SEARCH_\u7b2c54\u8ff7\u5bae\u306e\u8987\u80051",
+		"value": "Assaut reussi BB 1"
+	},
+	{
+		"key": "MSID_\u7b2c54\u8ff7\u5bae\u306e\u8987\u80052",
+		"value": "Assaut r\u00e9ussi BB 2"
+	},
+	{
+		"key": "MSID_SEARCH_\u7b2c54\u8ff7\u5bae\u306e\u8987\u80052",
+		"value": "Assaut reussi BB 2"
+	},
+	{
+		"key": "MSID_\u6d99\u76ee\u306e\u901f\u5c04\u5f13",
+		"value": "Arc pleureur"
+	},
+	{
+		"key": "MSID_SEARCH_\u6d99\u76ee\u306e\u901f\u5c04\u5f13",
+		"value": "Arc pleureur"
+	},
+	{
+		"key": "MSID_\u30b8\u30e3\u30cf\u30ca\u738b\u306e\u7802\u5203",
+		"value": "Lame de Jehanna"
+	},
+	{
+		"key": "MSID_SEARCH_\u30b8\u30e3\u30cf\u30ca\u738b\u306e\u7802\u5203",
+		"value": "Lame de Jehanna"
+	},
+	{
+		"key": "MSID_\u5965\u7fa9\u767a\u52d5\u306e\u6697\u5668",
+		"value": "Dague rapide"
+	},
+	{
+		"key": "MSID_SEARCH_\u5965\u7fa9\u767a\u52d5\u306e\u6697\u5668",
+		"value": "Dague rapide"
+	},
+	{
+		"key": "MSID_\u5965\u7fa9\u767a\u52d5\u306e\u6697\u5668\uff0b",
+		"value": "Dague rapide +"
+	},
+	{
+		"key": "MSID_SEARCH_\u5965\u7fa9\u767a\u52d5\u306e\u6697\u5668\uff0b",
+		"value": "Dague rapide +"
+	},
+	{
+		"key": "MSID_\u731b\u653b\u306e\u6697\u5668",
+		"value": "Dague f\u00e9roce"
+	},
+	{
+		"key": "MSID_SEARCH_\u731b\u653b\u306e\u6697\u5668",
+		"value": "Dague feroce"
+	},
+	{
+		"key": "MSID_\u731b\u653b\u306e\u6697\u5668\uff0b",
+		"value": "Dague f\u00e9roce +"
+	},
+	{
+		"key": "MSID_SEARCH_\u731b\u653b\u306e\u6697\u5668\uff0b",
+		"value": "Dague feroce +"
+	},
+	{
+		"key": "MSID_\u30a2\u30eb\u30b8\u30ed\u30fc\u30ec",
+		"value": "Aura d'argent"
+	},
+	{
+		"key": "MSID_SEARCH_\u30a2\u30eb\u30b8\u30ed\u30fc\u30ec",
+		"value": "Aura d'argent"
+	},
+	{
+		"key": "MSID_\u901f\u3055\u9b54\u9632\u306e\u7d464",
+		"value": "Lien Vit/R\u00e9s 4"
+	},
+	{
+		"key": "MSID_SEARCH_\u901f\u3055\u9b54\u9632\u306e\u7d464",
+		"value": "Lien Vit/Res 4"
+	},
+	{
+		"key": "MSID_\u7dd1\u3078\u306e\u6697\u95d81",
+		"value": "Querelle verte 1"
+	},
+	{
+		"key": "MSID_SEARCH_\u7dd1\u3078\u306e\u6697\u95d81",
+		"value": "Querelle verte 1"
+	},
+	{
+		"key": "MSID_\u7dd1\u3078\u306e\u6697\u95d82",
+		"value": "Querelle verte 2"
+	},
+	{
+		"key": "MSID_SEARCH_\u7dd1\u3078\u306e\u6697\u95d82",
+		"value": "Querelle verte 2"
+	},
+	{
+		"key": "MSID_\u7dd1\u3078\u306e\u6697\u95d83",
+		"value": "Querelle verte 3"
+	},
+	{
+		"key": "MSID_SEARCH_\u7dd1\u3078\u306e\u6697\u95d83",
+		"value": "Querelle verte 3"
+	},
+	{
+		"key": "MSID_H_\u9a0e\u58eb\u306e\u8a93\u3044\u306e\u69cd",
+		"value": "Efficace contre les unit\u00e9s en armure. Si PV de\\nl'unit\u00e9 \u2265 25\u00a0% au d\u00e9but du combat, conf\u00e8re\\nAtq/D\u00e9f +5 \u00e0 l'unit\u00e9 pendant le combat."
+	},
+	{
+		"key": "MSID_H_\u53e4\u4ee3\u9b54\u9053\u306e\u7a00\u66f8",
+		"value": "Si l'unit\u00e9 se trouve \u00e0 3 cases ou moins d'un alli\u00e9,\\ninflige des d\u00e9g\u00e2ts suppl\u00e9mentaires \u00e0 hauteur de\\n20 % de la R\u00e9s de l'unit\u00e9 ou de celle de l'ennemi\\nen fonction de la R\u00e9s la plus \u00e9lev\u00e9e et conf\u00e8re\\nAtq/R\u00e9s +5 \u00e0 l'unit\u00e9 pendant le combat."
+	},
+	{
+		"key": "MSID_H_\u9a0e\u58eb\u306e\u8a93\u3044\u306e\u69cdR",
+		"value": "Si l'unit\u00e9 se trouve \u00e0 3 cases ou moins de son\\npartenaire ou si PV du partenaire \u2264 80\u00a0%,\\nconf\u00e8re Atq/D\u00e9f +7 \u00e0 l'unit\u00e9 pendant le combat\\net emp\u00eache l'ennemi de r\u00e9aliser une double\\nfrappe."
+	},
+	{
+		"key": "MSID_H_\u53e4\u4ee3\u9b54\u9053\u306e\u7a00\u66f8R",
+		"value": "Au d\u00e9but des tours 1 \u00e0 3, compteur -1 pour\\nl'unit\u00e9. Si PV de l'ennemi \u2265 75\u00a0% au d\u00e9but du\\ncombat, conf\u00e8re Atq/R\u00e9s +5 \u00e0 l'unit\u00e9 pendant\\nle combat."
+	},
+	{
+		"key": "MSID_H_\u96f7\u5263\u30b8\u30fc\u30af\u30ea\u30f3\u30c7R",
+		"value": "Si PV de l'unit\u00e9 \u2265 25\u00a0% au d\u00e9but du combat,\\nconf\u00e8re Atq/Vit/D\u00e9f/R\u00e9s +4 \u00e0 l'unit\u00e9 pendant le\\ncombat, et si Vit de l'unit\u00e9 > Vit de l'ennemi,\\nr\u00e9duit les d\u00e9g\u00e2ts des attaques pendant le\\ncombat et des aptitudes sp\u00e9ciales \u00e0 effet de\\nzone d'un pourcentage \u00e9gal \u00e0 4x la diff\u00e9rence\\n(40\u00a0% maximum, aptitudes sp\u00e9ciales des striges\\nexclues)."
+	},
+	{
+		"key": "MSID_H_\u30bd\u30b0\u30f3R",
+		"value": "Si l'unit\u00e9 se trouve \u00e0 3 cases ou moins d'un alli\u00e9,\\ninflige Atq/Vit/D\u00e9f -4 \u00e0 l'ennemi + tout malus\\nactuel affectant chacune de ces caract\u00e9ristiques\\n(Atq/Vit/D\u00e9f) pendant le combat. (Par exemple,\\nsi l'ennemi voit son Atq affect\u00e9e par un malus\\nde -7, inflige Atq -11, ce qui fait un malus net\\nde -18 pendant le combat.)"
+	},
+	{
+		"key": "MSID_H_\u6c34\u306e\u98db\u6cabR",
+		"value": "Si PV de l'unit\u00e9 \u2265 25\u00a0% au d\u00e9but du combat,\\nconf\u00e8re Atq/Vit/D\u00e9f/R\u00e9s +4 et compteur -1 \u00e0\\nl'unit\u00e9 par attaque pendant le combat. (S'il y a\\nplusieurs effets similaires, seul le plus puissant\\ns'applique.)"
+	},
+	{
+		"key": "MSID_H_\u7cbe\u970a\u306e\u30d6\u30ec\u30b9R",
+		"value": "Si l'unit\u00e9 se trouve \u00e0 3 cases ou moins d'un alli\u00e9,\\nconf\u00e8re Atq +5 \u00e0 l'unit\u00e9, inflige Atq -5 \u00e0\\nl'ennemi pendant le combat, et si l'ennemi initie\\nle combat, r\u00e9duit les d\u00e9g\u00e2ts de la double frappe\\nde l'ennemi de 70\u00a0%. (Dans le cas d'armes\\nnormales, la \u00ab\u00a0double frappe\u00a0\u00bb se r\u00e9f\u00e8re \u00e0 la\\ndeuxi\u00e8me frappe. Pour les armes qui conf\u00e8rent\\nl'effet \u00ab\u00a0l'unit\u00e9 attaque deux fois\u00a0\u00bb, se r\u00e9f\u00e8re \u00e0\\nla troisi\u00e8me et la quatri\u00e8me frappes.)"
+	},
+	{
+		"key": "MSID_H_\u672a\u6765\u3092\u6620\u3059\u77b3\u30fb\u627f",
+		"value": "L'unit\u00e9 \u00e9change de place avec un alli\u00e9. Inflige\\nAtq/D\u00e9f -7 \u00e0 l'ennemi le plus proche \u00e0 4 cases\\nou moins de l'unit\u00e9 et de la cible jusqu'\u00e0 la fin\\nde sa phase. L'unit\u00e9 peut agir \u00e0 nouveau.\\n(Une seule fois par tour.)"
+	},
+	{
+		"key": "MSID_H_\u6708\u306e\u8155\u8f2a\u30fb\u627f",
+		"value": "$aActive\u3010Mobilit\u00e9 (\uff12)\u3011.\\n\\nNeutralise les effets qui garantissent \u00e0 l'ennemi\\nde r\u00e9aliser des doubles frappes ou emp\u00eachent\\nl'unit\u00e9 d'en r\u00e9aliser pendant le combat. Inflige\\ndes d\u00e9g\u00e2ts suppl\u00e9mentaires \u00e0 hauteur de 15\u00a0%\\nde la D\u00e9f de l'ennemi.\\n\\n\u3010Mobilit\u00e9 (\uff12)\u3011\\nApr\u00e8s une attaque, l'utilisation d'une aptitude\\nde soutien ou la destruction d'une structure,\\nl'unit\u00e9 peut se d\u00e9placer de \uff12 case(s).\\nL'unit\u00e9 se d\u00e9place en fonction de son type de\\nmouvement. Une fois par tour. Attaque ou\\nsoutien impossible. S'il y a plusieurs effets\\nsimilaires, seul le plus puissant s'applique.\\nApr\u00e8s le d\u00e9placement, si une aptitude\\npermettant d'agir \u00e0 nouveau (comme \u00c9lan\\nvictorieux) devait se d\u00e9clencher, Mobilit\u00e9 se\\nd\u00e9clenchera apr\u00e8s l'action conf\u00e9r\u00e9e. Le\\nmouvement de base de l'unit\u00e9 n'a pas d'effet\\nsur le mouvement conf\u00e9r\u00e9. La t\u00e9l\u00e9portation (via\\ndes aptitudes comme Sauvetage) ne peut pas\\nexc\u00e9der une distance de \uff12 case(s)."
+	},
+	{
+		"key": "MSID_H_\u7b2c54\u8ff7\u5bae\u306e\u8987\u80051",
+		"value": "Conf\u00e8re PV +3 et R\u00e9s +1."
+	},
+	{
+		"key": "MSID_H_\u7b2c54\u8ff7\u5bae\u306e\u8987\u80052",
+		"value": "Conf\u00e8re PV\u00a0+4 et R\u00e9s\u00a0+2."
+	},
+	{
+		"key": "MSID_H_\u6d99\u76ee\u306e\u901f\u5c04\u5f13",
+		"value": "Efficace contre les unit\u00e9s volantes. Conf\u00e8re\\nVit +3. Au d\u00e9but du tour, conf\u00e8re Atq/Vit +6 \u00e0\\nl'alli\u00e9 avec le total Atq+Vit le plus \u00e9lev\u00e9 (unit\u00e9\\nexclue) pendant un tour. Si l'unit\u00e9 se trouve \u00e0\\n3 cases ou moins d'un alli\u00e9, conf\u00e8re\\nAtq/Vit/D\u00e9f/R\u00e9s +5 pendant le combat et\\nconf\u00e8re un boost d'Atq pendant le combat\\n\u00e9quivalent au total des boosts d'Atq+Vit le plus\\n\u00e9lev\u00e9 parmi les alli\u00e9s \u00e0 3 cases ou moins."
+	},
+	{
+		"key": "MSID_H_\u30b8\u30e3\u30cf\u30ca\u738b\u306e\u7802\u5203",
+		"value": "$aAcc\u00e9l\u00e8re l'activation des aptitudes sp\u00e9ciales\\n(compteur -1). Si PV de l'unit\u00e9 \u2265 25\u00a0% au d\u00e9but\\ndu combat, inflige Vit/D\u00e9f -6 \u00e0 l'ennemi, les\\nbonus de Vit/D\u00e9f dont l'ennemi b\u00e9n\u00e9ficie sont\\nannul\u00e9s pendant le combat, et si l'ennemi en\\ncombat est situ\u00e9 sur la m\u00eame ligne horizontale\\nou verticale que l'unit\u00e9, l'ennemi ne peut pas\\nriposter\u00a0; dans le cas contraire, l'unit\u00e9 inflige des\\nd\u00e9g\u00e2ts suppl\u00e9mentaires \u00e0 hauteur de 15\u00a0% de\\nl'Atq de l'ennemi.\\nEffet\u00a0:\u3010Dague \uff17\u3011\\n\\n\u3010Dague \uff17\u3011\\nApr\u00e8s le combat, si l'unit\u00e9 a attaqu\u00e9, inflige\\nD\u00e9f/R\u00e9s -\uff17 \u00e0 la cible et aux ennemis \u00e0\\n2 cases ou moins de la cible jusqu'\u00e0 la fin de\\nleur phase."
+	},
+	{
+		"key": "MSID_H_\u5965\u7fa9\u767a\u52d5\u306e\u6697\u5668",
+		"value": "$aCompteur -2 au d\u00e9but du tour 1.\\nEffet\u00a0:\u3010Dague \uff15\u3011\\n\\n\u3010Dague \uff15\u3011\\nApr\u00e8s le combat, si l'unit\u00e9 a attaqu\u00e9, inflige\\nD\u00e9f/R\u00e9s -\uff15 \u00e0 la cible et aux ennemis \u00e0\\n2 cases ou moins de la cible jusqu'\u00e0 la fin de\\nleur phase."
+	},
+	{
+		"key": "MSID_H_\u5965\u7fa9\u767a\u52d5\u306e\u6697\u5668\uff0b",
+		"value": "$aCompteur -2 au d\u00e9but du tour 1.\\nEffet\u00a0:\u3010Dague \uff17\u3011\\n\\n\u3010Dague \uff17\u3011\\nApr\u00e8s le combat, si l'unit\u00e9 a attaqu\u00e9, inflige\\nD\u00e9f/R\u00e9s -\uff17 \u00e0 la cible et aux ennemis \u00e0\\n2 cases ou moins de la cible jusqu'\u00e0 la fin de\\nleur phase."
+	},
+	{
+		"key": "MSID_H_\u731b\u653b\u306e\u6697\u5668",
+		"value": "$aSi l'unit\u00e9 initie le combat, conf\u00e8re Atq/Vit +5\\npendant le combat et neutralise les effets\\nemp\u00eachant l'unit\u00e9 d'effectuer des doubles\\nfrappes pendant le combat.\\nEffet\u00a0:\u3010Dague \uff15\u3011\\n\\n\u3010Dague \uff15\u3011\\nApr\u00e8s le combat, si l'unit\u00e9 a attaqu\u00e9, inflige\\nD\u00e9f/R\u00e9s -\uff15 \u00e0 la cible et aux ennemis \u00e0\\n2 cases ou moins de la cible jusqu'\u00e0 la fin de\\nleur phase."
+	},
+	{
+		"key": "MSID_H_\u731b\u653b\u306e\u6697\u5668\uff0b",
+		"value": "$aSi l'unit\u00e9 initie le combat, conf\u00e8re Atq/Vit +5\\npendant le combat et neutralise les effets\\nemp\u00eachant l'unit\u00e9 d'effectuer des doubles\\nfrappes pendant le combat.\\nEffet\u00a0:\u3010Dague \uff17\u3011\\n\\n\u3010Dague \uff17\u3011\\nApr\u00e8s le combat, si l'unit\u00e9 a attaqu\u00e9, inflige\\nD\u00e9f/R\u00e9s -\uff17 \u00e0 la cible et aux ennemis \u00e0\\n2 cases ou moins de la cible jusqu'\u00e0 la fin de\\nleur phase."
+	},
+	{
+		"key": "MSID_H_\u30a2\u30eb\u30b8\u30ed\u30fc\u30ec",
+		"value": "$aAcc\u00e9l\u00e8re l'activation des aptitudes sp\u00e9ciales\\n(compteur -1). En d\u00e9but de tour, inflige\\nAtq/Vit/D\u00e9f/R\u00e9s -5 et\u3010Entrave\u3011\u00e0 l'ennemi ayant\\nla Vit la plus basse et aux ennemis \u00e0 2 cases ou\\nmoins de ce dernier. Si PV de l'ennemi \u2265 75\u00a0%\\nau d\u00e9but du combat, conf\u00e8re Atq/R\u00e9s +6 \u00e0\\nl'unit\u00e9 pendant le combat.\\n\\n\u3010Entrave\u3011\\nSi l'unit\u00e9 peut se d\u00e9placer d'une case\\nsuppl\u00e9mentaire, cet effet est converti en\\n\u00ab limite le d\u00e9placement \u00e0 1 case \u00bb\\njusqu'\u00e0 la fin de sa phase."
+	},
+	{
+		"key": "MSID_H_\u901f\u3055\u9b54\u9632\u306e\u7d464",
+		"value": "Si l'unit\u00e9 se trouve \u00e0 c\u00f4t\u00e9 d'un alli\u00e9, conf\u00e8re\\nVit/R\u00e9s +7 \u00e0 l'unit\u00e9 et neutralise les malus\\naffectant Vit/R\u00e9s de l'unit\u00e9 pendant le combat."
+	},
+	{
+		"key": "MSID_H_\u7dd1\u3078\u306e\u6697\u95d81",
+		"value": "Contre une unit\u00e9 verte, d\u00e9sactive les aptitudes\\nde tous les ennemis \u00e0 l'exception de l'ennemi\\nen combat. Pendant le combat, d\u00e9sactive les\\naptitudes de tous les ennemis de couleur verte\\n\u00e0 l'exception de l'ennemi en combat."
+	},
+	{
+		"key": "MSID_H_\u7dd1\u3078\u306e\u6697\u95d82",
+		"value": "Contre une unit\u00e9 verte, d\u00e9sactive les aptitudes\\nde tous les ennemis \u00e0 l'exception de l'ennemi\\nen combat et inflige Atq/Vit/D\u00e9f/R\u00e9s -2 \u00e0\\nl'ennemi pendant le combat. Pendant le combat,\\nd\u00e9sactive les aptitudes de tous les ennemis de\\ncouleur verte \u00e0 l'exception de l'ennemi en\\ncombat."
+	},
+	{
+		"key": "MSID_H_\u7dd1\u3078\u306e\u6697\u95d83",
+		"value": "Contre une unit\u00e9 verte, d\u00e9sactive les aptitudes\\nde tous les ennemis \u00e0 l'exception de l'ennemi\\nen combat et inflige Atq/Vit/D\u00e9f/R\u00e9s -4 \u00e0\\nl'ennemi pendant le combat. Pendant le combat,\\nd\u00e9sactive les aptitudes de tous les ennemis de\\ncouleur verte \u00e0 l'exception de l'ennemi en\\ncombat."
+	},
+	{
+		"key": "MSID_H_\u96f7\u5263\u30b8\u30fc\u30af\u30ea\u30f3\u30c7\u6539",
+		"value": "Conf\u00e8re Atq +3. Si l'unit\u00e9 initie le combat ou\\ns'il n'y a pas d'alli\u00e9s sur les cases adjacentes\\n\u00e0 l'unit\u00e9, conf\u00e8re Atq/Vit/D\u00e9f/R\u00e9s +4 et\\ncompteur -1 \u00e0 l'unit\u00e9 par attaque pendant le\\ncombat. (S'il y a plusieurs effets similaires, seul\\nle plus puissant s'applique.)"
+	},
+	{
+		"key": "MSID_H_\u30bd\u30b0\u30f3\u6539",
+		"value": "Efficace contre les unit\u00e9s volantes. Conf\u00e8re\\nVit +3. Si une aptitude de soutien de\\nd\u00e9placement (comme Bousculade, Pivot ou\\nTravers\u00e9e) est utilis\u00e9e par l'unit\u00e9 ou sur l'unit\u00e9,\\nconf\u00e8re l'effet suivant \u00e0 la cible et \u00e0 l'unit\u00e9 ayant\\nutilis\u00e9 l'aptitude pendant un tour\u00a0: \u00ab\u00a0si l'unit\u00e9\\ninitie le combat, l'unit\u00e9 effectue une double\\nfrappe\u00a0\u00bb. Si l'unit\u00e9 initie le combat ou se trouve\\n\u00e0 2 cases ou moins d'un alli\u00e9, conf\u00e8re\\nAtq/Vit/D\u00e9f/R\u00e9s +4 \u00e0 l'unit\u00e9 pendant le combat."
+	},
+	{
+		"key": "MSID_H_\u6c34\u306e\u98db\u6cab\u6539",
+		"value": "Acc\u00e9l\u00e8re l'activation des aptitudes sp\u00e9ciales\\n(compteur -1). Si l'unit\u00e9 initie le combat ou se\\ntrouve \u00e0 2 cases ou moins d'un alli\u00e9, conf\u00e8re\\nAtq/Vit/D\u00e9f/R\u00e9s +4 \u00e0 l'unit\u00e9 pendant le combat\\net r\u00e9duit les d\u00e9g\u00e2ts de la premi\u00e8re attaque de\\nl'ennemi de 40\u00a0% pendant le combat. Les d\u00e9g\u00e2ts\\nsont calcul\u00e9s avec la D\u00e9f ou la R\u00e9s (la valeur la\\nplus faible) pour les ennemis avec une port\u00e9e\\nde 2."
+	},
+	{
+		"key": "MSID_H_\u7cbe\u970a\u306e\u30d6\u30ec\u30b9\u6539",
+		"value": "Conf\u00e8re D\u00e9f +3. Au d\u00e9but du combat, si D\u00e9f de\\nl'unit\u00e9 > D\u00e9f de l'ennemi ou si PV de l'ennemi\\n\u2265 75\u00a0%, conf\u00e8re Atq +5 \u00e0 l'unit\u00e9 et inflige\\nAtq -5 \u00e0 l'ennemi pendant le combat, et l'unit\u00e9\\neffectue une double frappe. Les d\u00e9g\u00e2ts sont\\ncalcul\u00e9s avec la D\u00e9f ou la R\u00e9s (la valeur la plus\\nfaible) pour les ennemis avec une port\u00e9e de 2."
+	},
+	{
+		"key": "MID_CHAPTER_TITLE_C0603",
+		"value": "Livre VI, Chap. 3"
+	},
+	{
+		"key": "MID_CHAPTER_C0603",
+		"value": "Appel du sang"
+	},
+	{
+		"key": "MID_STAGE_TITLE_S6031",
+		"value": "Ch. 3 - Acte 1"
+	},
+	{
+		"key": "MID_STAGE_TITLE_S6032",
+		"value": "Ch. 3 - Acte 2"
+	},
+	{
+		"key": "MID_STAGE_TITLE_S6033",
+		"value": "Ch. 3 - Acte 3"
+	},
+	{
+		"key": "MID_STAGE_TITLE_S6034",
+		"value": "Ch. 3 - Acte 4"
+	},
+	{
+		"key": "MID_STAGE_TITLE_S6035",
+		"value": "Ch. 3 - Acte 5"
+	},
+	{
+		"key": "MID_STAGE_S6031",
+		"value": "Hant\u00e9e par des voix"
+	},
+	{
+		"key": "MID_STAGE_S6032",
+		"value": "La philosophie d'un voleur"
+	},
+	{
+		"key": "MID_STAGE_S6033",
+		"value": "Les larmes d'une arch\u00e8re"
+	},
+	{
+		"key": "MID_STAGE_S6034",
+		"value": "Ascension fougueuse"
+	},
+	{
+		"key": "MID_STAGE_S6035",
+		"value": "Le rideau tombe"
+	},
+	{
+		"key": "MID_STAGE_HONOR_T0119",
+		"value": "B\u00e9ryl rouge sang"
+	},
+	{
+		"key": "MID_STAGE_T0119",
+		"value": "Riev"
+	},
+	{
+		"key": "MID_STAGE_TITLE_SB_0054",
+		"value": "54e assaut"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PB141",
+		"value": "Aptitudes 141"
+	},
+	{
+		"key": "MID_STAGE_PB141",
+		"value": "Temp\u00eate de larmes"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PC091",
+		"value": "Expertise 91"
+	},
+	{
+		"key": "MID_STAGE_PC091",
+		"value": "Battu par le vent"
+	}
+]

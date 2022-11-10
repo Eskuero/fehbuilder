@@ -1,0 +1,834 @@
+[
+	{
+		"key": "MDAID_\u65c5\u5148\u306e\u6d5c\u8fba\u306e\u843d\u3068\u3057\u7269",
+		"value": "Strandaccessoire"
+	},
+	{
+		"key": "MDAID_H_\u65c5\u5148\u306e\u6d5c\u8fba\u306e\u843d\u3068\u3057\u7269",
+		"value": "Beweis, dass zwei Helden auf ihren\\ngemeinsamen Reisen einen Boss\\nbezwangen. Dient als Souvenir."
+	},
+	{
+		"key": "MID_MISSION_S202206HERO01_TITLE",
+		"value": "Gro\u00dfe Heldenk\u00e4mpfe"
+	},
+	{
+		"key": "MID_MISSION_S202206HERO01_A1",
+		"value": "Fernand besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206HERO01_A1",
+		"value": "Gewinne den Gro\u00dfen Heldenkampf gegen\\nFernand: Treuloser Ritter mit Kommandantin\\nAnna im Team."
+	},
+	{
+		"key": "MID_MISSION_S202206HERO01_A2",
+		"value": "Fernand besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206HERO01_A2",
+		"value": "Gewinne den Gro\u00dfen Heldenkampf gegen\\nFernand: Treuloser Ritter auf Extrem oder\\nh\u00f6her mit Fernand: Treuloser Ritter im Team."
+	},
+	{
+		"key": "MID_MISSION_S202206HERO01_A3",
+		"value": "Fernand besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206HERO01_A3",
+		"value": "Besiege Fernand: Treuloser Ritter, der Level 40\\noder h\u00f6her ist, mit Kommandantin Anna."
+	},
+	{
+		"key": "MID_MISSION_S202206HERO01_A4",
+		"value": "Fernand besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206HERO01_A4",
+		"value": "Besiege Fernand: Treuloser Ritter, der Level 40\\noder h\u00f6her ist, mit Fernand: Treuloser Ritter."
+	},
+	{
+		"key": "MID_MISSION_S202206HERO01_A5",
+		"value": "Fernand besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206HERO01_A5",
+		"value": "Gewinne den Gro\u00dfen Heldenkampf gegen\\nFernand: Treuloser Ritter auf Extrem oder\\nh\u00f6her nur mit Flugeinheiten."
+	},
+	{
+		"key": "MID_MISSION_S202206JOURNEY01_TITLE",
+		"value": "Heldenreise"
+	},
+	{
+		"key": "MID_MISSION_S202206JOURNEY01_A1",
+		"value": "Heldenreise bew\u00e4ltigen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206JOURNEY01_A1",
+		"value": "Bew\u00e4ltige die Heldenreise."
+	},
+	{
+		"key": "MID_MISSION_S202206JOURNEY01_A2",
+		"value": "Heldenreise bew\u00e4ltigen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206JOURNEY01_A2",
+		"value": "Bew\u00e4ltige die Heldenreise."
+	},
+	{
+		"key": "MID_MISSION_S202206KIZUNA01_TITLE",
+		"value": "Treue-Heldenkampf"
+	},
+	{
+		"key": "MID_MISSION_S202206KIZUNA01_A1",
+		"value": "Treue-Heldenkampf"
+	},
+	{
+		"key": "MID_MISSION_H_S202206KIZUNA01_A1",
+		"value": "Gewinne den Treue-Heldenkampf gegen\\nPalla & Catria mit Sharena: Askra. Prinzessin\\nim Team."
+	},
+	{
+		"key": "MID_MISSION_S202206KIZUNA01_A2",
+		"value": "Treue-Heldenkampf"
+	},
+	{
+		"key": "MID_MISSION_H_S202206KIZUNA01_A2",
+		"value": "Gewinne den Treue-Heldenkampf gegen\\nPalla & Catria auf Extrem oder h\u00f6her mit\\nKommandantin Anna im Team."
+	},
+	{
+		"key": "MID_MISSION_S202206KIZUNA01_A3",
+		"value": "Palla besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206KIZUNA01_A3",
+		"value": "Besiege Palla: Erste Schwester, die Level 40\\noder h\u00f6her ist, mit Sharena: Askra. Prinzessin."
+	},
+	{
+		"key": "MID_MISSION_S202206KIZUNA01_A4",
+		"value": "Catria besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206KIZUNA01_A4",
+		"value": "Besiege Catria: Zweite Schwester, die Level 40\\noder h\u00f6her ist, mit Kommandantin Anna."
+	},
+	{
+		"key": "MID_MISSION_S202206KIZUNA01_A5",
+		"value": "Treue-Heldenkampf"
+	},
+	{
+		"key": "MID_MISSION_H_S202206KIZUNA01_A5",
+		"value": "Gewinne den Treue-Heldenkampf gegen\\nPalla & Catria auf Extrem oder h\u00f6her\\nnur mit berittenen Einheiten."
+	},
+	{
+		"key": "MID_MISSION_S202206MJOLNIR03_TITLE",
+		"value": "Mj\u00f6lnirs Schlag"
+	},
+	{
+		"key": "MID_MISSION_S202206MJOLNIR03_A1",
+		"value": "Avatar greift an"
+	},
+	{
+		"key": "MID_MISSION_H_S202206MJOLNIR03_A1",
+		"value": "Lass deinen Avatar in Mj\u00f6lnirs Schlag\\neinen Gegner besiegen."
+	},
+	{
+		"key": "MID_MISSION_S202206MJOLNIR03_A2",
+		"value": "Avatar greift an"
+	},
+	{
+		"key": "MID_MISSION_H_S202206MJOLNIR03_A2",
+		"value": "Lass deinen Avatar in Mj\u00f6lnirs Schlag\\nGegner besiegen."
+	},
+	{
+		"key": "MID_MISSION_S202206SENKA01_DAILY_TITLE",
+		"value": "Sturmpr\u00fcfung"
+	},
+	{
+		"key": "MID_MISSION_S202206SENKA01_DAILY_A1",
+		"value": "Pr\u00fcfung abschlie\u00dfen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206SENKA01_DAILY_A1",
+		"value": "Bew\u00e4ltige eine der letzten\\nKarten der Sturmpr\u00fcfung."
+	},
+	{
+		"key": "MID_MISSION_S202206SENKA01_DAILY_A2",
+		"value": "Pr\u00fcfung abschlie\u00dfen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206SENKA01_DAILY_A2",
+		"value": "Bew\u00e4ltige eine der letzten\\nKarten der Sturmpr\u00fcfung."
+	},
+	{
+		"key": "MID_MISSION_S202206SENKA01_DAILY_A3",
+		"value": "Pr\u00fcfung abschlie\u00dfen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206SENKA01_DAILY_A3",
+		"value": "Bew\u00e4ltige einige der letzten\\nKarten der Sturmpr\u00fcfung."
+	},
+	{
+		"key": "MID_MISSION_S202206SENKA01_DAILY_A4",
+		"value": "Pr\u00fcfung abschlie\u00dfen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206SENKA01_DAILY_A4",
+		"value": "Bew\u00e4ltige einige der letzten\\nKarten der Sturmpr\u00fcfung."
+	},
+	{
+		"key": "MID_MISSION_S202206SENKA02_DAILY_TITLE",
+		"value": "Sturmpr\u00fcfung"
+	},
+	{
+		"key": "MID_MISSION_S202206SENKA02_DAILY_A1",
+		"value": "Pr\u00fcfung abschlie\u00dfen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206SENKA02_DAILY_A1",
+		"value": "Bew\u00e4ltige eine der letzten\\nKarten der Sturmpr\u00fcfung."
+	},
+	{
+		"key": "MID_MISSION_S202206SENKA02_DAILY_A2",
+		"value": "Pr\u00fcfung abschlie\u00dfen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206SENKA02_DAILY_A2",
+		"value": "Bew\u00e4ltige eine der letzten\\nKarten der Sturmpr\u00fcfung."
+	},
+	{
+		"key": "MID_MISSION_S202206SENKA02_DAILY_A3",
+		"value": "Pr\u00fcfung abschlie\u00dfen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206SENKA02_DAILY_A3",
+		"value": "Bew\u00e4ltige einige der letzten\\nKarten der Sturmpr\u00fcfung."
+	},
+	{
+		"key": "MID_MISSION_S202206SENKA02_DAILY_A4",
+		"value": "Pr\u00fcfung abschlie\u00dfen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206SENKA02_DAILY_A4",
+		"value": "Bew\u00e4ltige einige der letzten\\nKarten der Sturmpr\u00fcfung."
+	},
+	{
+		"key": "MID_MISSION_S202206SUBSC02_TITLE",
+		"value": "Feh-Pass"
+	},
+	{
+		"key": "MID_MISSION_S202206SUBSC02_A1",
+		"value": "Gegner besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206SUBSC02_A1",
+		"value": "Besiege Gegner."
+	},
+	{
+		"key": "MID_MISSION_S202206SUBSC02_A2",
+		"value": "Gegner besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206SUBSC02_A2",
+		"value": "Besiege Gegner."
+	},
+	{
+		"key": "MID_MISSION_S202206SUBSC02_A3",
+		"value": "Gewinne Arenaduelle"
+	},
+	{
+		"key": "MID_MISSION_H_S202206SUBSC02_A3",
+		"value": "Gewinne ein Arenaduell eines\\nbeliebigen Schwierigkeitsgrads."
+	},
+	{
+		"key": "MID_MISSION_S202206SUBSC02_A4",
+		"value": "Gewinne Arenaduelle"
+	},
+	{
+		"key": "MID_MISSION_H_S202206SUBSC02_A4",
+		"value": "Gewinne Arenaduelle eines\\nbeliebigen Schwierigkeitsgrads."
+	},
+	{
+		"key": "MID_MISSION_S202206SUBSC02_A5",
+		"value": "Gepanzerten besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206SUBSC02_A5",
+		"value": "Besiege einen gepanzerten Gegner."
+	},
+	{
+		"key": "MID_MISSION_S202206SUBSC02_A6",
+		"value": "Flieger besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206SUBSC02_A6",
+		"value": "Besiege eine Flugeinheit."
+	},
+	{
+		"key": "MID_MISSION_S202206USETYPE01_TITLE",
+		"value": "Farbloser Kampf"
+	},
+	{
+		"key": "MID_MISSION_S202206USETYPE01_A1",
+		"value": "Farblos gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206USETYPE01_A1",
+		"value": "Lass farblose Verb\u00fcndete gr\u00fcne Gegner\\nbesiegen."
+	},
+	{
+		"key": "MID_MISSION_S202206USETYPE01_A2",
+		"value": "Farblos gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206USETYPE01_A2",
+		"value": "Lass farblose Verb\u00fcndete Axtk\u00e4mpfer\\nbesiegen, die Level 10 oder h\u00f6her sind."
+	},
+	{
+		"key": "MID_MISSION_S202206USETYPE01_A3",
+		"value": "Farblos gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206USETYPE01_A3",
+		"value": "Lass farblose Verb\u00fcndete gr\u00fcne Buchanwender\\nbesiegen, die Level 20 oder h\u00f6her sind."
+	},
+	{
+		"key": "MID_MISSION_S202206USETYPE01_A4",
+		"value": "Farblos gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206USETYPE01_A4",
+		"value": "Lass farblose Verb\u00fcndete rote Gegner\\nbesiegen, die Level 10 oder h\u00f6her sind."
+	},
+	{
+		"key": "MID_MISSION_S202206USETYPE01_A5",
+		"value": "Farblos gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206USETYPE01_A5",
+		"value": "Lass farblose Verb\u00fcndete Schwertk\u00e4mpfer\\nbesiegen, die Level 20 oder h\u00f6her sind."
+	},
+	{
+		"key": "MID_MISSION_S202206USETYPE01_A6",
+		"value": "Farblos gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206USETYPE01_A6",
+		"value": "Lass farblose Verb\u00fcndete rote Buchanwender\\nbesiegen, die Level 30 oder h\u00f6her sind."
+	},
+	{
+		"key": "MID_MISSION_S202206USETYPE01_A7",
+		"value": "Farblos gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206USETYPE01_A7",
+		"value": "Lass farblose Verb\u00fcndete blaue Gegner\\nbesiegen, die Level 10 oder h\u00f6her sind."
+	},
+	{
+		"key": "MID_MISSION_S202206USETYPE01_A8",
+		"value": "Farblos gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206USETYPE01_A8",
+		"value": "Lass farblose Verb\u00fcndete Lanzenk\u00e4mpfer\\nbesiegen, die Level 20 oder h\u00f6her sind."
+	},
+	{
+		"key": "MID_MISSION_S202206USETYPE01_A9",
+		"value": "Farblos gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206USETYPE01_A9",
+		"value": "Lass farblose Verb\u00fcndete blaue Buchanwender\\nbesiegen, die Level 30 oder h\u00f6her sind."
+	},
+	{
+		"key": "MID_MISSION_S202206USETYPE01_A10",
+		"value": "Farblos gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206USETYPE01_A10",
+		"value": "Lass farblose Verb\u00fcndete Stabbenutzer\\nbesiegen, die Level 30 oder h\u00f6her sind."
+	},
+	{
+		"key": "MID_MISSION_S202206USETYPE01_A11",
+		"value": "Farblos gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206USETYPE01_A11",
+		"value": "Lass farblose Verb\u00fcndete farblose Bogensch\u00fct-\\nzen besiegen, die Level 30 oder h\u00f6her sind."
+	},
+	{
+		"key": "MID_MISSION_S202206USETYPE01_A12",
+		"value": "Farblos gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206USETYPE01_A12",
+		"value": "Lass farblose Verb\u00fcndete farblose Dolchtr\u00e4ger\\nbesiegen, die Level 30 oder h\u00f6her sind."
+	},
+	{
+		"key": "MID_MISSION_S202206VSWEAPON01_TITLE",
+		"value": "Schwertpr\u00fcfung"
+	},
+	{
+		"key": "MID_MISSION_S202206VSWEAPON01_A1",
+		"value": "Schwert besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206VSWEAPON01_A1",
+		"value": "Besiege Gegner mit Schwert."
+	},
+	{
+		"key": "MID_MISSION_S202206VSWEAPON01_A2",
+		"value": "Lanze gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206VSWEAPON01_A2",
+		"value": "Lass einen Verb\u00fcndeten mit Lanze gegnerische\\nSchwertk\u00e4mpfer besiegen."
+	},
+	{
+		"key": "MID_MISSION_S202206VSWEAPON01_A3",
+		"value": "Blaues Buch gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206VSWEAPON01_A3",
+		"value": "Lass einen Verb\u00fcndeten mit blauem Buch\\ngegnerische Schwertk\u00e4mpfer besiegen."
+	},
+	{
+		"key": "MID_MISSION_S202206VSWEAPON01_A4",
+		"value": "Schwert gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206VSWEAPON01_A4",
+		"value": "Lass einen Verb\u00fcndeten mit Schwert\\ngegnerische Schwertk\u00e4mpfer besiegen."
+	},
+	{
+		"key": "MID_MISSION_S202206VSWEAPON01_A5",
+		"value": "Rotes Buch gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206VSWEAPON01_A5",
+		"value": "Lass einen Verb\u00fcndeten mit rotem Buch\\ngegnerische Schwertk\u00e4mpfer besiegen."
+	},
+	{
+		"key": "MID_MISSION_S202206VSWEAPON01_A6",
+		"value": "Axt gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206VSWEAPON01_A6",
+		"value": "Lass einen Verb\u00fcndeten mit Axt\\ngegnerische Schwertk\u00e4mpfer besiegen."
+	},
+	{
+		"key": "MID_MISSION_S202206VSWEAPON01_A7",
+		"value": "Gr\u00fcnes Buch gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206VSWEAPON01_A7",
+		"value": "Lass einen Verb\u00fcndeten mit gr\u00fcnem Buch\\ngegnerische Schwertk\u00e4mpfer besiegen."
+	},
+	{
+		"key": "MID_MISSION_S202206VSWEAPON01_A8",
+		"value": "Farbloser Bogen gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206VSWEAPON01_A8",
+		"value": "Lass einen Verb\u00fcndeten mit farblosem Bogen\\ngegnerische Schwertk\u00e4mpfer besiegen."
+	},
+	{
+		"key": "MID_MISSION_S202206VSWEAPON01_A9",
+		"value": "Farbloser Dolch gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206VSWEAPON01_A9",
+		"value": "Lass einen Verb\u00fcndeten mit farblosem Dolch\\ngegnerische Schwertk\u00e4mpfer besiegen."
+	},
+	{
+		"key": "MID_MISSION_S202206VSWEAPON01_A10",
+		"value": "Stab gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206VSWEAPON01_A10",
+		"value": "Lass einen Verb\u00fcndeten mit Stab gegnerische\\nSchwertk\u00e4mpfer besiegen."
+	},
+	{
+		"key": "MID_MISSION_S202206VSWEAPON01_A11",
+		"value": "Blau gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206VSWEAPON01_A11",
+		"value": "Lass einen blauen Verb\u00fcndeten gegnerische\\nSchwertk\u00e4mpfer besiegen."
+	},
+	{
+		"key": "MID_MISSION_S202206VSWEAPON01_A12",
+		"value": "Rot gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206VSWEAPON01_A12",
+		"value": "Lass einen roten Verb\u00fcndeten gegnerische\\nSchwertk\u00e4mpfer besiegen."
+	},
+	{
+		"key": "MID_MISSION_S202206VSWEAPON01_A13",
+		"value": "Gr\u00fcn gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206VSWEAPON01_A13",
+		"value": "Lass einen gr\u00fcnen Verb\u00fcndeten gegnerische\\nSchwertk\u00e4mpfer besiegen."
+	},
+	{
+		"key": "MID_MISSION_S202206VSWEAPON01_A14",
+		"value": "Farblos gewinnt"
+	},
+	{
+		"key": "MID_MISSION_H_S202206VSWEAPON01_A14",
+		"value": "Lass einen farblosen Verb\u00fcndeten gegnerische\\nSchwertk\u00e4mpfer besiegen."
+	},
+	{
+		"key": "MID_MISSION_S202206VSWEAPON01_A15",
+		"value": "Schwert besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202206VSWEAPON01_A15",
+		"value": "Besiege Gegner mit Schwert."
+	},
+	{
+		"key": "MID_MISSION_W_S202206STORY_P01_TITLE",
+		"value": "Sommerurlaub"
+	},
+	{
+		"key": "MID_MISSION_W_S202206STORY_P01_A1",
+		"value": "Nebenq. 73 Tl. 1 - Extrem"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202206STORY_P01_A1",
+		"value": "Bew\u00e4ltige Nebenquest 73: Teil 1 auf Extrem\\nmit einem Axtk\u00e4mpfer im Team. (\u00dcber\\n\"Kombi\" als Helfer entsandte Verb\u00fcndete\\nz\u00e4hlen nicht.) Alle vier Verb\u00fcndeten m\u00fcssen\\n\u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_S202206STORY_P01_A2",
+		"value": "Nebenq. 73 Tl. 2 - Extrem"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202206STORY_P01_A2",
+		"value": "Bew\u00e4ltige Nebenquest 73: Teil 2 auf Extrem\\nmit einem Schwertk\u00e4mpfer im Team. (\u00dcber\\n\"Kombi\" als Helfer entsandte Verb\u00fcndete\\nz\u00e4hlen nicht.) Alle vier Verb\u00fcndeten m\u00fcssen\\n\u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_S202206STORY_P01_A3",
+		"value": "Nebenq. 73 Tl. 3 - Extrem"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202206STORY_P01_A3",
+		"value": "Bew\u00e4ltige Nebenquest 73: Teil 3 auf Extrem\\nmit einem Lanzenk\u00e4mpfer im Team. (\u00dcber\\n\"Kombi\" als Helfer entsandte Verb\u00fcndete\\nz\u00e4hlen nicht.) Alle vier Verb\u00fcndeten m\u00fcssen\\n\u00fcberleben."
+	},
+	{
+		"key": "MPID_\u53cc\u754c\u30a8\u30fc\u30c7\u30eb\u30ac\u30eb\u30c8",
+		"value": "Edelgard"
+	},
+	{
+		"key": "MPID_SEARCH_\u53cc\u754c\u30a8\u30fc\u30c7\u30eb\u30ac\u30eb\u30c8",
+		"value": "Edelgard"
+	},
+	{
+		"key": "MPID_\u6c34\u7740\u30c7\u30a3\u30df\u30c8\u30ea",
+		"value": "Dimitri"
+	},
+	{
+		"key": "MPID_SEARCH_\u6c34\u7740\u30c7\u30a3\u30df\u30c8\u30ea",
+		"value": "Dimitri"
+	},
+	{
+		"key": "MPID_\u6c34\u7740\u30af\u30ed\u30fc\u30c9",
+		"value": "Claude"
+	},
+	{
+		"key": "MPID_SEARCH_\u6c34\u7740\u30af\u30ed\u30fc\u30c9",
+		"value": "Claude"
+	},
+	{
+		"key": "MPID_\u6c34\u7740\u30df\u30ab\u30e4",
+		"value": "Micaiah"
+	},
+	{
+		"key": "MPID_SEARCH_\u6c34\u7740\u30df\u30ab\u30e4",
+		"value": "Micaiah"
+	},
+	{
+		"key": "MPID_\u6c34\u7740\u30a8\u30ea\u30f3\u30b7\u30a2",
+		"value": "Elincia"
+	},
+	{
+		"key": "MPID_SEARCH_\u6c34\u7740\u30a8\u30ea\u30f3\u30b7\u30a2",
+		"value": "Elincia"
+	},
+	{
+		"key": "MPID_HONOR_\u53cc\u754c\u30a8\u30fc\u30c7\u30eb\u30ac\u30eb\u30c8",
+		"value": "Strandkaiserinnen"
+	},
+	{
+		"key": "MPID_HONOR_\u6c34\u7740\u30c7\u30a3\u30df\u30c8\u30ea",
+		"value": "Meerblauer L\u00f6we"
+	},
+	{
+		"key": "MPID_HONOR_\u6c34\u7740\u30af\u30ed\u30fc\u30c9",
+		"value": "Strandindividualist"
+	},
+	{
+		"key": "MPID_HONOR_\u6c34\u7740\u30df\u30ab\u30e4",
+		"value": "Wellen des Lichts"
+	},
+	{
+		"key": "MPID_HONOR_\u6c34\u7740\u30a8\u30ea\u30f3\u30b7\u30a2",
+		"value": "K\u00f6nigin der K\u00fcste"
+	},
+	{
+		"key": "MPID_H_\u53cc\u754c\u30a8\u30fc\u30c7\u30eb\u30ac\u30eb\u30c8",
+		"value": "Die legend\u00e4re Kaiserin von Tellius und die\\nzuk\u00fcnftige Kaiserin von F\u00f3dlan erkunden Hand\\nin Hand die Tropen. Erscheinen in Fire Emblem:\\nThree Houses / Radiant Dawn."
+	},
+	{
+		"key": "MPID_H_\u6c34\u7740\u30c7\u30a3\u30df\u30c8\u30ea",
+		"value": "Der Prinz und Thronerbe des Heiligen\\nK\u00f6nigreiches Faerghus, der am Kloster Garreg\\nMach studiert. Ist zum Sommertraining in\\ndie Tropen gereist. Erscheint in\\nFire Emblem: Three Houses."
+	},
+	{
+		"key": "MPID_H_\u6c34\u7740\u30af\u30ed\u30fc\u30c9",
+		"value": "Ein Mitglied des Hauses Riegan und Anf\u00fchrer\\nder Allianz von Leicester. Die tropische Atmos-\\nph\u00e4re l\u00e4sst sein Herz h\u00f6herschlagen. Erscheint\\nin Fire Emblem: Three Houses."
+	},
+	{
+		"key": "MPID_H_\u6c34\u7740\u30df\u30ab\u30e4",
+		"value": "Das M\u00e4dchen des Silberlichts vom Bund der\\nMorgenr\u00f6te. Paradiesische Winde haben sie an\\nden Strand gef\u00fchrt. Erscheint in\\nFire Emblem: Radiant Dawn."
+	},
+	{
+		"key": "MPID_H_\u6c34\u7740\u30a8\u30ea\u30f3\u30b7\u30a2",
+		"value": "Die herzensgute K\u00f6nigin von Crimea, die sich\\neine kleine Auszeit in den Tropen g\u00f6nnt.\\nErscheint in Fire Emblem: Radiant Dawn."
+	},
+	{
+		"key": "MPID_VOICE_\u53cc\u754c\u30a8\u30fc\u30c7\u30eb\u30ac\u30eb\u30c8",
+		"value": "Tara Platt + Krizia Bajos"
+	},
+	{
+		"key": "MPID_VOICE_\u6c34\u7740\u30c7\u30a3\u30df\u30c8\u30ea",
+		"value": "Chris Hackney"
+	},
+	{
+		"key": "MPID_VOICE_\u6c34\u7740\u30af\u30ed\u30fc\u30c9",
+		"value": "Joe Zieja"
+	},
+	{
+		"key": "MPID_VOICE_\u6c34\u7740\u30df\u30ab\u30e4",
+		"value": "Veronica Taylor"
+	},
+	{
+		"key": "MPID_VOICE_\u6c34\u7740\u30a8\u30ea\u30f3\u30b7\u30a2",
+		"value": "Heather Gonzales"
+	},
+	{
+		"key": "MPID_VOICE_\u30de\u30b7\u30e5\u30fcEX01",
+		"value": "Ben Diskin"
+	},
+	{
+		"key": "MPID_ILLUST_\u53cc\u754c\u30a8\u30fc\u30c7\u30eb\u30ac\u30eb\u30c8",
+		"value": "Kakage (\u304b\u304b\u3052)"
+	},
+	{
+		"key": "MPID_ILLUST_\u6c34\u7740\u30c7\u30a3\u30df\u30c8\u30ea",
+		"value": "Nishiki Areku (\u897f\u6728\u3042\u308c\u304f)"
+	},
+	{
+		"key": "MPID_ILLUST_\u6c34\u7740\u30af\u30ed\u30fc\u30c9",
+		"value": "azu\u2010taro (azu\u30bf\u30ed\u30a6)"
+	},
+	{
+		"key": "MPID_ILLUST_\u6c34\u7740\u30df\u30ab\u30e4",
+		"value": "ichikawa Halu (\u3044\u3061\u304b\u308f\u306f\u308b)"
+	},
+	{
+		"key": "MPID_ILLUST_\u6c34\u7740\u30a8\u30ea\u30f3\u30b7\u30a2",
+		"value": "Yoshiro Ambe (\u3042\u3093\u3079\u3088\u3057\u308d\u3046)"
+	},
+	{
+		"key": "MPID_ILLUST_\u30de\u30b7\u30e5\u30fcEX01",
+		"value": "Tobi"
+	},
+	{
+		"key": "MPID_LEGEND_\u53cc\u754c\u30a8\u30fc\u30c7\u30eb\u30ac\u30eb\u30c8",
+		"value": "(Harmonief\u00e4h. durch Tippen auf Harmonie-\\nSymbol verwendbar. Diese F\u00e4higkeit ist nur 1 x\\npro Karte verwendbar. Nicht von Einh. verwend-\\nbar, die \u00fcber \"Kombi\" entsandt wurden.)\\n\\nHarmonieeffekt: Three Houses / Radiant Dawn\\nErh\u00f6ht Punkte in Resonanzk\u00e4mpfen. (Weitere\\nEinzelheiten findest du in den Hilfenachrichten\\nbei den Resonanzk\u00e4mpfen.)"
+	},
+	{
+		"key": "MID_TIPS_Summon_v0606b_summer_01_\u53cc\u754c\u30a8\u30fc\u30c7\u30eb\u30ac\u30eb\u30c8",
+		"value": "Mit ihrer Beweglichkeit ist kein Strand\\nvor ihnen gefeit und ihre Harmonie-\\nf\u00e4higkeit macht sie noch st\u00e4rker!"
+	},
+	{
+		"key": "MID_TIPS_Summon_v0606b_summer_01_\u6c34\u7740\u30c7\u30a3\u30df\u30c8\u30ea",
+		"value": "Er kann 2. Schritt verwenden und bis\\nzu 4-mal angreifen. Er kann sogar\\ndie Erholungszeit der Spezialangriffe\\nseiner Gegner verlangsamen!"
+	},
+	{
+		"key": "MID_TIPS_Summon_v0606b_summer_01_\u6c34\u7740\u30df\u30ab\u30e4",
+		"value": "Effektiv gegen gepanzerte und\\nberittene Einheiten, hat zus\u00e4tzliche\\nAngriffe mit Res.-\u00dcberlegenheit und\\nist \u00e4u\u00dferst beweglich!"
+	},
+	{
+		"key": "MID_TIPS_Summon_v0606b_summer_01_\u6c34\u7740\u30af\u30ed\u30fc\u30c9",
+		"value": "Er kann 2. Schritt verwenden, bis zu\\n4-mal angreifen, die Bewegung seiner\\nGegner einschr\u00e4nken u. den Schaden\\ndurch den 1. Angriff um 80 % senken."
+	},
+	{
+		"key": "MSID_\u5f37\u976d\u306a\u308b\u5973\u738b\u306e\u5927\u5098",
+		"value": "Imperialer Schirm"
+	},
+	{
+		"key": "MSID_SEARCH_\u5f37\u976d\u306a\u308b\u5973\u738b\u306e\u5927\u5098",
+		"value": "Imperialer Schirm"
+	},
+	{
+		"key": "MSID_\u84bc\u6ce2\u8599\u3050\u525b\u529b\u306e\u6ac2",
+		"value": "Robustes Ruder"
+	},
+	{
+		"key": "MSID_SEARCH_\u84bc\u6ce2\u8599\u3050\u525b\u529b\u306e\u6ac2",
+		"value": "Robustes Ruder"
+	},
+	{
+		"key": "MSID_\u767d\u6ce2\u306e\u5f13",
+		"value": "Gischtbogen"
+	},
+	{
+		"key": "MSID_SEARCH_\u767d\u6ce2\u306e\u5f13",
+		"value": "Gischtbogen"
+	},
+	{
+		"key": "MSID_\u767d\u6ce2\u306e\u5f13\uff0b",
+		"value": "Gischtbogen+"
+	},
+	{
+		"key": "MSID_SEARCH_\u767d\u6ce2\u306e\u5f13\uff0b",
+		"value": "Gischtbogen+"
+	},
+	{
+		"key": "MSID_\u771f\u590f\u306e\u6dbc\u306e\u6c37\u83d3\u5b50",
+		"value": "Eisige Leckerei"
+	},
+	{
+		"key": "MSID_SEARCH_\u771f\u590f\u306e\u6dbc\u306e\u6c37\u83d3\u5b50",
+		"value": "Eisige Leckerei"
+	},
+	{
+		"key": "MSID_\u7d14\u767d\u306e\u6708\u306e\u96eb",
+		"value": "Mondlichttropfen"
+	},
+	{
+		"key": "MSID_SEARCH_\u7d14\u767d\u306e\u6708\u306e\u96eb",
+		"value": "Mondlichttropfen"
+	},
+	{
+		"key": "MSID_\u901f\u3055\u5b88\u5099\u306e\u8105\u56873",
+		"value": "Ges./Ver.-Gei\u00dfel"
+	},
+	{
+		"key": "MSID_SEARCH_\u901f\u3055\u5b88\u5099\u306e\u8105\u56873",
+		"value": "Ges./Ver.-Gei\u00dfel"
+	},
+	{
+		"key": "MSID_\u4e00\u6589\u7a81\u64831",
+		"value": "Angriffstrupp 1"
+	},
+	{
+		"key": "MSID_SEARCH_\u4e00\u6589\u7a81\u64831",
+		"value": "Angriffstrupp 1"
+	},
+	{
+		"key": "MSID_\u4e00\u6589\u7a81\u64832",
+		"value": "Angriffstrupp 2"
+	},
+	{
+		"key": "MSID_SEARCH_\u4e00\u6589\u7a81\u64832",
+		"value": "Angriffstrupp 2"
+	},
+	{
+		"key": "MSID_\u4e00\u6589\u7a81\u64833",
+		"value": "Angriffstrupp 3"
+	},
+	{
+		"key": "MSID_SEARCH_\u4e00\u6589\u7a81\u64833",
+		"value": "Angriffstrupp 3"
+	},
+	{
+		"key": "MSID_H_\u5f37\u976d\u306a\u308b\u5973\u738b\u306e\u5927\u5098",
+		"value": "Beschleunigt Spezialangriffe (Erholungszeit -1).\\nSind die KP der Einheit zu Beginn des Kampfes\\n\u2265 25 %, erh\u00e4lt sie Angr. +6, der Gegner erleidet\\nim Kampf Angr. -6 und der Schaden durch den\\nersten Angriff des Gegners wird im Kampf um\\n40 % reduziert. Befinden sich innerhalb von\\n3 Reihen und 3 Spalten um die Einheit X oder\\nmehr Gegner (abh\u00e4ngig von der Anzahl der\\nEinheiten im gegn. Team), greift die Einheit\\n2-mal an. (Bei X = 1, wenn im gegnerischen\\nTeam \u2264 2 Gegner sind; bei X = 2, wenn im\\ngegnerischen Team 3-5 Gegner sind; bei X = 3,\\nwenn im gegnerischen Team \u2265 6 Gegner sind.)"
+	},
+	{
+		"key": "MSID_H_\u84bc\u6ce2\u8599\u3050\u525b\u529b\u306e\u6ac2",
+		"value": "$aGew\u00e4hrt\u30102. Schritt (verbleib. +1)\u3011.\\n\\nBeschleunigt Spezialangriffe (Erholungszeit -1).\\nSind die KP der Einheit zu Beginn des Kampfes\\n\u2265 25 %, erh\u00e4lt sie im Kampf Angr./Ges./Ver./\\nRes. +5. Wirkt zudem\u3010Auftrieb\u3011auf den Gegner\\noder ist Ges. der Einheit \u2265 Ges. des Gegners\\n+10, greift die Einheit 2-mal an.\\n\\n\u30102. Schritt (verbleib. +1)\u3011\\nNach einem Angriff, einer Beistehf\u00e4higkeit oder\\nder Zerst\u00f6rung eines Objekts kann sich die Einh.\\nso viele Felder bewegen, wie f\u00fcr diesen Zug noch\\n\u00fcbrig waren +1. (Hat sich die Einheit mit einer\\nBewegungsf\u00e4higkeit teleportiert, ist ihre verbl.\\nBewegung = 0.) (Einheit bewegt sich entspr. ihres\\nBewegungstyps. 1-mal pro Zug. Kann keine Angr.\\noder Beistehf\u00e4higkeiten ausf\u00fchren. Bei mehreren\\n\u00e4hnl. Effekten wird nur d. h\u00f6chste angewandt. Hat\\ndie Einh. sich bewegt u. wird eine F\u00e4higk. ausgel.,\\ndie eine weitere Aktion gew., wird 2. Schritt nach\\nder gew. Aktion ausgel\u00f6st. Die Basisbew. d. Einh.\\nhat keinen Einfl. auf d. gew\u00e4hrte Bewegung. Kann\\nsich mit F\u00e4higkeiten wie Gnadenfl\u00fcgel nicht weiter\\ntelep. als X (X = verbl. Bewegung der Einh. +1).)\\n\\n\u3010Auftrieb\u3011\\nAlle Effekte, die \"f\u00fcr 1 Zug\" oder \"nur in diesem\\nZug\" gelten. Beinhaltet Boni durch F\u00e4higkeiten\\nwie Sammeln/Verbessern und positive\\nStatuseffekte (zus\u00e4tzliche Bewegung oder\\nEffekte wie \"Dominanz\")."
+	},
+	{
+		"key": "MSID_H_\u767d\u6ce2\u306e\u5f13",
+		"value": "Effektiv gegen Flugeinheiten. Sind die KP der\\nEinheit zu Beginn des Kampfes \u2265 25 %, erh\u00e4lt\\nsie im Kampf Angr./Ges. +5. Initiiert die Einheit\\nzudem den Kampf und ist Ges. der Einheit \u2265\\nGes. des Gegners +10, greift Einheit 2-mal an."
+	},
+	{
+		"key": "MSID_H_\u767d\u6ce2\u306e\u5f13\uff0b",
+		"value": "Effektiv gegen Flugeinheiten. Sind die KP der\\nEinheit zu Beginn des Kampfes \u2265 25 %, erh\u00e4lt\\nsie im Kampf Angr./Ges. +5. Initiiert die Einheit\\nzudem den Kampf und ist Ges. der Einheit \u2265\\nGes. des Gegners +10, greift Einheit 2-mal an."
+	},
+	{
+		"key": "MSID_H_\u771f\u590f\u306e\u6dbc\u306e\u6c37\u83d3\u5b50",
+		"value": "$aGew\u00e4hrt\u30102. Schritt (verbleib.)\u3011.\\nBeschleunigt Spezialangriffe (Erholungszeit -1).\\nInitiiert die Einheit den Kampf oder befindet sie\\nsich im Umkreis von 2 Feldern eines\\nVerb\u00fcndeten, erh\u00e4lt sie im Kampf Angr./\\nGes. +6. Initiiert die Einheit zudem den Kampf\\nund ist die Summe aus den Werteboni der\\nEinheit und den Werteverringerungen des\\nGegners \u2265 12, greift die Einheit 2-mal an.\\nEffekt:\u3010Dolch \uff17\u3011\\n\\n\u30102. Schritt (verbleib.)\u3011\\nNach einem Angriff, einer Beistehf\u00e4higkeit oder\\nder Zerst\u00f6rung eines Objekts kann sich die\\nEinheit so viele Felder bewegen, wie f\u00fcr diesen\\nZug noch \u00fcbrig waren. (Hat sich die Einheit mit\\neiner Bewegungsf\u00e4higkeit teleportiert, ist ihre\\nverbleibende Bewegung = 0.)\\n(Einheit bewegt sich entsprechend ihres\\nBewegungstyps. 1-mal pro Zug. Kann keine\\nAngriffe oder Beistehf\u00e4higkeiten ausf\u00fchren. Bei\\nmehreren \u00e4hnlichen Effekten wird nur der\\nh\u00f6chste angewandt. Hat die Einheit sich\\nbewegt und wird eine F\u00e4higkeit ausgel\u00f6st, die\\neine weitere Aktion gew\u00e4hrt (wie Wirbelwind),\\nwird 2. Schritt nach der gew\u00e4hrten Aktion\\nausgel\u00f6st. Die Basisbewegung der Einheit hat\\nkeinen Einfluss auf die gew\u00e4hrte Bewegung.\\nKann sich mit F\u00e4higkeiten wie Gnadenfl\u00fcgel\\nnicht weiter teleportieren als X\\n(X = verbleibende Bewegung der Einheit).)\\n\\n\u3010Dolch \uff17\u3011\\nHat die Einheit angegriffen, erleiden Ziel\\nund Gegner im Umkreis von 2 Feldern\\ndes Ziels Ver./Res. -\uff17 bis nach ihren\\nn\u00e4chsten Aktionen."
+	},
+	{
+		"key": "MSID_H_\u7d14\u767d\u306e\u6708\u306e\u96eb",
+		"value": "Effektiv gegen gepanzerte und berittene\\nEinheiten. Beschleunigt Spezialangriffe\\n(Erholungszeit -1). Initiiert die Einheit den\\nKampf oder befindet sie sich im Umkreis von\\n2 Feldern eines Verb\u00fcndeten, erh\u00e4lt sie im\\nKampf Angr./Res. +6 und es wirken zudem\\nabh\u00e4ngig vom Res.-Wertunterschied (Res. der\\nEinheit - Res. des Gegners) folgende Effekte:\\nIst der Wertunterschied \u2265 5 und \u2264 14, f\u00fchrt die\\nEinheit einen garantierten Folgeangriff aus.\\nIst der Wertunterschied \u2265 15 und initiiert die\\nEinheit den Kampf, greift die Einheit 2-mal an."
+	},
+	{
+		"key": "MSID_H_\u901f\u3055\u5b88\u5099\u306e\u8105\u56873",
+		"value": "Befindet sich die Einheit zu Beginn des Zuges\\nim Umkreis von 4 Feldern eines Gegners,\\nerleiden die Gegner mit der geringsten\\nEntfernung zur Einheit Ges./Ver. -6 bis\\nnach ihren n\u00e4chsten Aktionen und\\ndie Einheit erh\u00e4lt f\u00fcr 1 Zug Ges./Ver. +6."
+	},
+	{
+		"key": "MSID_H_\u4e00\u6589\u7a81\u64831",
+		"value": "$aBefinden sich zu Beginn des Zuges in\\nHimmelsrichtungen der Einheit ein oder\\nmehrere Gegner, erh\u00e4lt die Einheit f\u00fcr\\n1 Zug\u3010Ausfall\u3011.\\n\\n\u3010Ausfall\u3011\\nDie Einheit kann sich bis zu 3 Felder weit in\\nalle Himmelsrichtungen bewegen. (Kann nicht\\ndurch von Gegnern besetzte o. unpassierbare\\nFelder ziehen oder Effekte von F\u00e4higkeiten wie\\nBlockieren ignorieren. Bewegung wird als\\nTeleportieren gewertet.)"
+	},
+	{
+		"key": "MSID_H_\u4e00\u6589\u7a81\u64832",
+		"value": "$aBefinden sich zu Beginn des Zuges innerhalb\\nvon 3 Reihen und 3 Spalten um die Einheit ein\\noder mehrere Gegner, erh\u00e4lt die Einheit f\u00fcr\\n1 Zug\u3010Ausfall\u3011.\\n\\n\u3010Ausfall\u3011\\nDie Einheit kann sich bis zu 3 Felder weit in\\nalle Himmelsrichtungen bewegen. (Kann nicht\\ndurch von Gegnern besetzte o. unpassierbare\\nFelder ziehen oder Effekte von F\u00e4higkeiten wie\\nBlockieren ignorieren. Bewegung wird als\\nTeleportieren gewertet.)"
+	},
+	{
+		"key": "MSID_H_\u4e00\u6589\u7a81\u64833",
+		"value": "$aSind zu Beginn des Zuges die KP der\\nEinheit = 100 % oder befinden sich zu Beginn\\ndes Zuges innerhalb von 3 Reihen und 3\\nSpalten um die Einheit ein oder mehrere\\nGegner, erh\u00e4lt die Einheit f\u00fcr 1 Zug\u3010Ausfall\u3011.\\n\\n\u3010Ausfall\u3011\\nDie Einheit kann sich bis zu 3 Felder weit in\\nalle Himmelsrichtungen bewegen. (Kann nicht\\ndurch von Gegnern besetzte o. unpassierbare\\nFelder ziehen oder Effekte von F\u00e4higkeiten wie\\nBlockieren ignorieren. Bewegung wird als\\nTeleportieren gewertet.)"
+	},
+	{
+		"key": "MSID_H_\u53cc\u754c\u30fb\u76fe\u30a8\u30fc\u30c7\u30eb",
+		"value": "$aVerleiht der Einheit und Verb\u00fcndeten aus\\ndenselben Spielen wie die Einheit f\u00fcr 1 Zug\\nAngr. +6 sowie\u3010Resonanz: Schilde\u3011und\\n\u3010Bonus-Doppler\u3011.\\n\\n\u3010Resonanz: Schilde\u3011\\nVerleiht Ver./Res. +4 im Kampf und f\u00fcr 1 Zug\\nden Effekt: \"W\u00e4hrend des ersten Kampfes der\\nEinheit in der Spieler- oder Gegnerphase kann\\nder Gegner keine Folgeangriffe ausf\u00fchren.\"\\n\\n\u3010Bonus-Doppler\u3011\\nGew\u00e4hrt im Kampf Bonus auf\\nAngr./Ges./Ver./Res. = aktueller Bonus\\nauf jeden Statuswert der Einheit f\u00fcr 1 Zug.\\nJeder Wertebonus wird einzeln berechnet."
+	},
+	{
+		"key": "MID_CHAPTER_TITLE_CX072",
+		"value": "Nebenquest 73"
+	},
+	{
+		"key": "MID_CHAPTER_CX072",
+		"value": "Sommerurlaub"
+	},
+	{
+		"key": "MID_STAGE_TITLE_X0721",
+		"value": "Nebenq. 73: Tl. 1"
+	},
+	{
+		"key": "MID_STAGE_TITLE_X0722",
+		"value": "Nebenq. 73: Tl. 2"
+	},
+	{
+		"key": "MID_STAGE_TITLE_X0723",
+		"value": "Nebenq. 73: Tl. 3"
+	},
+	{
+		"key": "MID_STAGE_X0721",
+		"value": "Urlaub?"
+	},
+	{
+		"key": "MID_STAGE_X0722",
+		"value": "Am Strand"
+	},
+	{
+		"key": "MID_STAGE_X0723",
+		"value": "Kaiserinnen"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PB157",
+		"value": "F\u00e4higkeiten 157"
+	},
+	{
+		"key": "MID_STAGE_PB157",
+		"value": "Offiziersurlaub"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PC098",
+		"value": "Gro\u00dfmeister 98"
+	},
+	{
+		"key": "MID_STAGE_PC098",
+		"value": "Leseratten"
+	}
+]

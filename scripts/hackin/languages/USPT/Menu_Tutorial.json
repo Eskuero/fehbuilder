@@ -1,0 +1,2494 @@
+[
+	{
+		"key": "MID_ARENA_TITLE",
+		"value": "Arena"
+	},
+	{
+		"key": "MID_ARENA_TITLE_REWARD",
+		"value": "Ver recompesas"
+	},
+	{
+		"key": "MID_ARENA_TITLE_HISTORY",
+		"value": "Suas defesas"
+	},
+	{
+		"key": "MID_ARENA_SEASON_DAYS",
+		"value": "$aDias restantes: $a0"
+	},
+	{
+		"key": "MID_ARENA_SEASON_HOURS",
+		"value": "$aHoras restantes: $a0"
+	},
+	{
+		"key": "MID_ARENA_SEASON_MINUTES",
+		"value": "$aMinutos restantes: $a0"
+	},
+	{
+		"key": "MID_ARENA_RANK",
+		"value": "Grau"
+	},
+	{
+		"key": "MID_ARENA_BONUSCHRS_HEADLINE",
+		"value": "Her\u00f3is da temporada"
+	},
+	{
+		"key": "MID_ARENA_BONUSCHRS_CAPTION",
+		"value": "Use um destes her\u00f3is e melhore sua pontua\u00e7\u00e3o!"
+	},
+	{
+		"key": "MID_ARENA_COMBO_CAPTION",
+		"value": "$aVit\u00f3rias seguidas: $a0/7  B\u00f4nus por sequ\u00eancia: + $a1"
+	},
+	{
+		"key": "MID_ARENA_NO_HISTORY",
+		"value": "N\u00e3o h\u00e1 dados."
+	},
+	{
+		"key": "MID_ARENA_BTN_BATTLE",
+		"value": "Combater"
+	},
+	{
+		"key": "MID_ARENA_BTN_REWARD",
+		"value": "Recompensas"
+	},
+	{
+		"key": "MID_ARENA_BTN_HISTORY",
+		"value": "Suas defesas"
+	},
+	{
+		"key": "MID_ARENA_BTN_HELP",
+		"value": "Ajuda"
+	},
+	{
+		"key": "MID_ARENA_BTN_GIVEUP",
+		"value": "Render-se"
+	},
+	{
+		"key": "MID_ARENA_BTN_CONFIRM",
+		"value": "OK"
+	},
+	{
+		"key": "MID_ARENA_DEF_WIN",
+		"value": "Resistiu ao ataque!"
+	},
+	{
+		"key": "MID_ARENA_EASY",
+		"value": "Iniciante"
+	},
+	{
+		"key": "MID_ARENA_NORMAL",
+		"value": "Intermedi\u00e1rio"
+	},
+	{
+		"key": "MID_ARENA_HARD",
+		"value": "Avan\u00e7ado"
+	},
+	{
+		"key": "MID_ARENA_SELECT_OPPONENT_HEADLINE",
+		"value": "Escolha um advers\u00e1rio."
+	},
+	{
+		"key": "MID_ARENA_RESULT_HEADLINE",
+		"value": "Resultados da batalha"
+	},
+	{
+		"key": "MID_ARENA_TOTAL_SCORE",
+		"value": "Total"
+	},
+	{
+		"key": "MID_ARENA_THIS_SCORE",
+		"value": "Pontua\u00e7\u00e3o"
+	},
+	{
+		"key": "MID_ARENA_COMBO_SCORE",
+		"value": "B\u00f4nus por seq."
+	},
+	{
+		"key": "MID_ARENA_RENEWAL_HISCORE",
+		"value": "Novo recorde!"
+	},
+	{
+		"key": "MID_ARENA_STOP_VICTORIES",
+		"value": "Sequ\u00eancia quebrada."
+	},
+	{
+		"key": "MID_ARENA_REWARD_TYPE",
+		"value": "Categoria:"
+	},
+	{
+		"key": "MID_ARENA_SORT_RANK",
+		"value": "Classifica\u00e7\u00e3o"
+	},
+	{
+		"key": "MID_ARENA_SORT_OFFENSE",
+		"value": "Ataque"
+	},
+	{
+		"key": "MID_ARENA_SORT_DEFENSE",
+		"value": "Defesa"
+	},
+	{
+		"key": "MID_ARENA_SORT_REWARDTYPE_RANK",
+		"value": "Classifica\u00e7\u00e3o"
+	},
+	{
+		"key": "MID_ARENA_SORT_REWARDTYPE_OFFENSE",
+		"value": "Ataque"
+	},
+	{
+		"key": "MID_ARENA_SORT_REWARDTYPE_DEFENSE",
+		"value": "Defesa"
+	},
+	{
+		"key": "MID_ARENA_GAINED_REWARDTYPE_RANK",
+		"value": "$aArena: recompensa de classifica\u00e7\u00e3o, n\u00ba$a0"
+	},
+	{
+		"key": "MID_ARENA_GAINED_REWARDTYPE_OFFENSE",
+		"value": "$aArena: pontos de recompensa\\ndo ataque: $a1"
+	},
+	{
+		"key": "MID_ARENA_GAINED_REWARDTYPE_DEFENSE",
+		"value": "$aArena: pontos de recompensa\\nda defesa: $a2"
+	},
+	{
+		"key": "MID_ARENA_RANK_OUT_OF_RANGE",
+		"value": "sem classif."
+	},
+	{
+		"key": "MID_ARENA_CLOSED",
+		"value": "A arena est\u00e1 fechada."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_REWARD_SORT",
+		"value": "Escolha um filtro."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_BATTLE_CONFIRM_TEXT",
+		"value": "\u00c9 necess\u00e1rio usar um gl\u00e1dio.\\nQuer continuar?"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_BATTLE_CONFIRM_WARNING",
+		"value": "Voc\u00ea n\u00e3o pode cancelar ap\u00f3s visualizar\\nos seus poss\u00edveis advers\u00e1rios."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_BATTLE_CONFIRM_YES",
+		"value": "Continuar"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_BATTLE_CONFIRM_NO",
+		"value": "Sair"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_GIVEUP_TEXT",
+		"value": "Desistir?"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_GIVEUP_WARNING",
+		"value": "Se voc\u00ea desistir sem lutar,\\nsua sequ\u00eancia de vit\u00f3rias\\nn\u00e3o ser\u00e1 quebrada."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_GIVEUP_YES",
+		"value": "Desistir"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_GIVEUP_NO",
+		"value": "Continuar"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_OPPONENT_DECIDE_TEXT",
+		"value": "Enfrentar este jogador?"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_OPPONENT_DECIDE_YES",
+		"value": "Combater"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_OPPONENT_DECIDE_NO",
+		"value": "Sair"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_SEASON_LAST10_TEXT",
+		"value": "A temporada terminar\u00e1 em breve."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_SEASON_LAST10_WARNING",
+		"value": "Se a batalha acabar ap\u00f3s o fim da\\ntemporada, o resultado n\u00e3o contar\u00e1."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_SEASON_END_TEXT",
+		"value": "Os resultados n\u00e3o ser\u00e3o contados\\nporque a batalha terminou ap\u00f3s o\\nfim da temporada."
+	},
+	{
+		"key": "MID_ARENA_ROOT_SEASONEND_TEXT",
+		"value": "A temporada terminou. N\u00e3o \u00e9\\nposs\u00edvel combater no momento."
+	},
+	{
+		"key": "MID_ARENA_ROOT_SEASONEND_WARNING",
+		"value": "Volte ao combate\\nna pr\u00f3xima temporada!"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_TASKKILLED_TEXT",
+		"value": "A batalha anterior n\u00e3o foi\\nfinalizada corretamente."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_TASKKILLED_WARNING",
+		"value": "A s\u00e9rie de vit\u00f3rias e o b\u00f4nus de\\nsequ\u00eancia ser\u00e3o reiniciados."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_NO_CANDIDATE_TEXT",
+		"value": "Nenhum advers\u00e1rio encontrado."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_NO_CANDIDATE_WARNING",
+		"value": "Aguarde e tente novamente mais tarde."
+	},
+	{
+		"key": "MID_ARENA_REWARDS_GAINED_DIALOG",
+		"value": "Para obter as recompensas da\\ntemporada anterior, acesse a\\nArena ap\u00f3s o c\u00e1lculo dos resultados\\ne antes do fim da temporada atual."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_00",
+		"value": "Combata e receba recompensas!"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_01",
+		"value": "-Duele com rivais do mundo todo-\\nEscolha um entre tr\u00eas ex\u00e9rcitos\\nrivais e inicie um desafio. Cada\\nbatalha requer uma espada de\\nduelo."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_02",
+		"value": "-Como funciona a pontua\u00e7\u00e3o-\\nSe voc\u00ea vencer, receber\u00e1 pontos\\ncom base na for\u00e7a de seu\\noponente. Se voc\u00ea tiver vit\u00f3rias\\nseguidas, receber\u00e1 o b\u00f4nus por\\nsequ\u00eancia. O b\u00f4nus \u00e9 reiniciado\\nap\u00f3s a s\u00e9tima vit\u00f3ria consecutiva."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_03",
+		"value": "-Sua pontua\u00e7\u00e3o m\u00e1xima-\\nTente se superar a cada\\ntemporada. Esta pontua\u00e7\u00e3o\\n\u00e9 reiniciada ao fim de cada\\nper\u00edodo."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_04",
+		"value": "-Recompensas-\\nAp\u00f3s o fim da temporada, voc\u00ea\\nreceber\u00e1 recompensas com base\\nem sua classifica\u00e7\u00e3o e pontua\u00e7\u00e3o\\nm\u00e1xima. Com uma pontua\u00e7\u00e3o alta\\nseu grau na Arena pode aumentar."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_05",
+		"value": "-B\u00f4nus de personagem-\\n\u00c9 poss\u00edvel dobrar sua pontua\u00e7\u00e3o\\na cada temporada usando\\ndeterminados personagens."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_2_00",
+		"value": "-Suas defesas-\\nQuando sua equipe defender\\ncom sucesso, voc\u00ea ganhar\u00e1\\num b\u00f4nus de defesa."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_2_01",
+		"value": "-Recompensas de defesa-\\nA recompensa da temporada tem\\npor base sua maior pontua\u00e7\u00e3o."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_2_02",
+		"value": "-Equipe de defesa-\\nA equipe no campo mais \u00e0\\nesquerda \u00e9 usada como defesa."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_3_00",
+		"value": "-Recompensas-\\nVoc\u00ea pode ver as recompensas\\nque vai receber na temporada\\natual. Mude o filtro para ver\\nrecompensas recebidas por\\nataque, defesa e classifica\u00e7\u00e3o."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_3_01",
+		"value": "-Recompensas do ataque-\\nT\u00eam por base a pontua\u00e7\u00e3o\\ndos seus ataques.\\n\\n-Recompensas de defesa-\\nT\u00eam por base a pontua\u00e7\u00e3o\\nque sua equipe recebeu\\npela defesa."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_3_02",
+		"value": "-Recompensas de classifica\u00e7\u00e3o-\\nT\u00eam por base sua classifica\u00e7\u00e3o\\nna Arena. As 100.000 maiores\\npontua\u00e7\u00f5es s\u00e3o classificadas\\ne calculadas a cada hora. Ap\u00f3s\\no in\u00edcio dos c\u00e1lculos, pode levar\\nalgum tempo at\u00e9 que as\\nmudan\u00e7as sejam exibidas."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_3_03",
+		"value": "-Receber recompensas-\\nPara receber recompensas\\nda Arena conquistadas na\\ntemporada anterior, acesse\\na Arena ap\u00f3s o fim dos c\u00e1lculos\\ndo resultado, mas antes do fim\\nda temporada atual."
+	},
+	{
+		"key": "MID_ARENA_RANK01",
+		"value": "Soldado raso"
+	},
+	{
+		"key": "MID_ARENA_RANK02",
+		"value": "Asa branca"
+	},
+	{
+		"key": "MID_ARENA_RANK03",
+		"value": "Dragoon"
+	},
+	{
+		"key": "MID_ARENA_RANK04",
+		"value": "Cavaleiro vil"
+	},
+	{
+		"key": "MID_ARENA_RANK05",
+		"value": "Ritter lan\u00e7a"
+	},
+	{
+		"key": "MID_ARENA_RANK06",
+		"value": "Ritter verde"
+	},
+	{
+		"key": "MID_ARENA_RANK07",
+		"value": "Ritter branco"
+	},
+	{
+		"key": "MID_ARENA_RANK08",
+		"value": "Arqueiro general"
+	},
+	{
+		"key": "MID_ARENA_RANK09",
+		"value": "Mago general"
+	},
+	{
+		"key": "MID_ARENA_RANK10",
+		"value": "Cavaleiro general"
+	},
+	{
+		"key": "MID_ARENA_RANK11",
+		"value": "Grande general"
+	},
+	{
+		"key": "MID_ARENA_RANK12",
+		"value": "General Wyvern"
+	},
+	{
+		"key": "MID_ARENA_RANK13",
+		"value": "Oito generais"
+	},
+	{
+		"key": "MID_ARENA_RANK14",
+		"value": "General imperial"
+	},
+	{
+		"key": "MID_ARENA_RANK15",
+		"value": "Quatro ginetes"
+	},
+	{
+		"key": "MID_ARENA_RANK16",
+		"value": "Guarda sagrada"
+	},
+	{
+		"key": "MID_ARENA_RANK17",
+		"value": "12 Srs. da morte"
+	},
+	{
+		"key": "MID_ARENA_RANK18",
+		"value": "Nobre de Hoshido"
+	},
+	{
+		"key": "MID_ARENA_RANK19",
+		"value": "Nobre de Nohria"
+	},
+	{
+		"key": "MID_ARENA_RANK20",
+		"value": "Primeiro drag\u00e3o"
+	},
+	{
+		"key": "MID_CONFIG_ON",
+		"value": "Sim"
+	},
+	{
+		"key": "MID_CONFIG_OFF",
+		"value": "N\u00e3o"
+	},
+	{
+		"key": "MID_CONFIG_ANIME_BATTLE",
+		"value": "Anima\u00e7\u00f5es\\nde combate"
+	},
+	{
+		"key": "MID_CONFIG_ANIME_SUPPORT",
+		"value": "Anima\u00e7\u00f5es\\nde apoio"
+	},
+	{
+		"key": "MID_CONFIG_ANIME_PLAYER_TURN",
+		"value": "S\u00f3 na sua vez"
+	},
+	{
+		"key": "MID_CONFIG_OPERATION_COMMAND",
+		"value": "Confirma\u00e7\u00e3o\\nde a\u00e7\u00e3o"
+	},
+	{
+		"key": "MID_CONFIG_OPERATION_FIXED",
+		"value": "Confirma\u00e7\u00e3o\\nde movimento"
+	},
+	{
+		"key": "MID_CONFIG_OPERATION_AUTO",
+		"value": "Autom\u00e1tica"
+	},
+	{
+		"key": "MID_CONFIG_OPERATION_TAP",
+		"value": "Toque"
+	},
+	{
+		"key": "MID_CONFIG_AUTO_TURN_END",
+		"value": "Fim de rodada\\nautom\u00e1tico"
+	},
+	{
+		"key": "MID_CONFIG_UNIT_AUTO_LOCK",
+		"value": "Favorito\\nautom\u00e1tico"
+	},
+	{
+		"key": "MID_CONFIG_MUTED",
+		"value": "Modo silencioso"
+	},
+	{
+		"key": "MID_CONFIG_BGM_VOLUME",
+		"value": "Volume da m\u00fasica de fundo"
+	},
+	{
+		"key": "MID_CONFIG_SE_VOLUME",
+		"value": "Volume dos efeitos sonoros"
+	},
+	{
+		"key": "MID_CONFIG_VOICE_VOLUME",
+		"value": "Volume das vozes"
+	},
+	{
+		"key": "MID_CONFIG_MAP_BEGIN",
+		"value": "Come\u00e7ar mapa"
+	},
+	{
+		"key": "MID_CONFIG_MAP_BEGIN_BATTLE",
+		"value": "Ao combate!"
+	},
+	{
+		"key": "MID_CONFIG_MAP_BEGIN_SORTIE",
+		"value": "Trocar posi\u00e7\u00e3o"
+	},
+	{
+		"key": "MID_CONFIG_DOUBLE_TAP_FIXED",
+		"value": "Toque duplo\\npara esperar"
+	},
+	{
+		"key": "MID_CONFIG_TALK_WAIT_FOR_AUTO_MODE",
+		"value": "Texto de combate\\nautom\u00e1tico"
+	},
+	{
+		"key": "MID_CONFIG_TALK_WAIT_TAP",
+		"value": "Toque"
+	},
+	{
+		"key": "MID_CONFIG_TALK_WAIT_AUTO",
+		"value": "Autom\u00e1tico"
+	},
+	{
+		"key": "MID_CONFIG_AUTO_SHOW_DANGER",
+		"value": "Mostrar \u00e1rea\\nde perigo"
+	},
+	{
+		"key": "MID_CONFIG_AUTO_MODE_CONTINUATION",
+		"value": "Combate autom.\\ncont\u00ednuo"
+	},
+	{
+		"key": "MID_CONFIG_AUTO_SKIP",
+		"value": "Omitir anima\u00e7\u00f5es\\nnos mapas"
+	},
+	{
+		"key": "MID_CONFIG_AUTO_SKIP_ENEMY_TURN",
+		"value": "Vez do inimigo"
+	},
+	{
+		"key": "MID_CONFIG_AUTO_SKIP_FOR_AUTO_MODE",
+		"value": "Omitir anima\u00e7\u00f5es\\nem combate autom."
+	},
+	{
+		"key": "MID_CONFIG_AUTO_BUTTON",
+		"value": "Bot\u00e3o de combate\\nautom\u00e1tico"
+	},
+	{
+		"key": "MID_CONFIG_AUTO_BUTTON_MENU",
+		"value": "Menu"
+	},
+	{
+		"key": "MID_CONFIG_AUTO_BUTTON_FOOTER",
+		"value": "Barra de bot\u00f5es"
+	},
+	{
+		"key": "MID_CONFIG_AUTO_BUTTON_ALL",
+		"value": "Ambos"
+	},
+	{
+		"key": "MID_CONFIG_LEVEL_SORT",
+		"value": "Ordenar por n\u00edvel"
+	},
+	{
+		"key": "MID_CONFIG_LEVEL_SORT_DEFAULT",
+		"value": "Padr\u00e3o"
+	},
+	{
+		"key": "MID_CONFIG_LEVEL_SORT_IGNORE_LIMIT_BREAK",
+		"value": "Ignorar combin."
+	},
+	{
+		"key": "MID_CONFIG_SEQUENTIAL_MAP_RECOMMENDATION_ENABLED",
+		"value": "Sugerir dificuldade\\nem A Tempestade"
+	},
+	{
+		"key": "MID_CONFIG_SHOW_MAP_COMMAND_GUIDE",
+		"value": "Movimento autom.\\n(inimigos/aliados)"
+	},
+	{
+		"key": "MID_CONFIG_BATTLE_ENEMY_BGM",
+		"value": "M\u00fasica do inimigo"
+	},
+	{
+		"key": "MID_CONFIG_SHOW_MAP_COMMAND_GUIDE_SIMPLE",
+		"value": "Simples"
+	},
+	{
+		"key": "MID_CONFIG_SHOW_MAP_COMMAND_GUIDE_RICH",
+		"value": "Guiado"
+	},
+	{
+		"key": "MID_CONFIG_BATTLE_BGM",
+		"value": "M\u00fasica de batalha"
+	},
+	{
+		"key": "MID_CONFIG_BATTLE_BGM_ONLY_SPECIAL",
+		"value": "Apenas especial"
+	},
+	{
+		"key": "MID_TITLE_ASK_NAME",
+		"value": "Insira um apelido."
+	},
+	{
+		"key": "MID_TITLE_ASK_NAME_CAPTION",
+		"value": "Insira um apelido."
+	},
+	{
+		"key": "MID_TITLE_ASK_NAME_INFO",
+		"value": "Use 12 caracteres no m\u00e1ximo.\\nN\u00e3o \u00e9 poss\u00edvel usar certos s\u00edmbolos.\\nVoc\u00ea pode editar o nome mais tarde."
+	},
+	{
+		"key": "MID_TITLE_USER_NAME_PLACE_HOLDER",
+		"value": "Seu nome"
+	},
+	{
+		"key": "MID_TITLE_USER_NAME_DEFAULT_NAME",
+		"value": "Kiran"
+	},
+	{
+		"key": "MID_TITLE_USER_NAME_NG",
+		"value": "N\u00e3o \u00e9 poss\u00edvel usar palavras que\\npossam ser ofensivas, assim como\\nalguns s\u00edmbolos e caracteres."
+	},
+	{
+		"key": "MID_EXTRA",
+		"value": "Outros"
+	},
+	{
+		"key": "MID_EXTRA_SUBMENU",
+		"value": "Perguntas frequentes, etc."
+	},
+	{
+		"key": "MID_EXTRA_ITEMLIST",
+		"value": "Invent\u00e1rio"
+	},
+	{
+		"key": "MID_EXTRA_ITEMLIST_INFO",
+		"value": "Informa\u00e7\u00f5es sobre todos os seus itens."
+	},
+	{
+		"key": "MID_EXTRA_ENVIRONMENT",
+		"value": "Configura\u00e7\u00f5es"
+	},
+	{
+		"key": "MID_EXTRA_ENVIRONMENT_INFO",
+		"value": "Configure v\u00e1rios aspectos do seu jogo aqui."
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST",
+		"value": "Anima\u00e7\u00f5es"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_PLAY",
+		"value": "Reproduzir"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING",
+		"value": "Sequ\u00eancia inicial"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_SUMMON",
+		"value": "$aInvocando $a0"
+	},
+	{
+		"key": "MID_EXTRA_ACHIVEMENT_ANDROID",
+		"value": "Conquistas"
+	},
+	{
+		"key": "MID_EXTRA_ACHIVEMENT_IOS",
+		"value": "Game Center"
+	},
+	{
+		"key": "MID_EXTRA_HELP",
+		"value": "Perguntas frequentes"
+	},
+	{
+		"key": "MID_EXTRA_CUSTOMER",
+		"value": "Atendimento ao cliente"
+	},
+	{
+		"key": "MID_EXTRA_TERM",
+		"value": "Acordo de usu\u00e1rio"
+	},
+	{
+		"key": "MID_EXTRA_PRIVACY",
+		"value": "Pol\u00edtica de privacidade"
+	},
+	{
+		"key": "MID_EXTRA_ABOUT",
+		"value": "Sobre este aplicativo"
+	},
+	{
+		"key": "MID_EXTRA_CHANGE_LANGUAGE",
+		"value": "Idioma"
+	},
+	{
+		"key": "MID_EXTRA_CHANGE_NAME",
+		"value": "Apelido do personagem"
+	},
+	{
+		"key": "MID_EXTRA_PLAY_ANALYTICS",
+		"value": "Compartilhar dados de uso"
+	},
+	{
+		"key": "MID_EXTRA_PLAY_ANALYTICS_TERMS",
+		"value": "Coletamos dados sobre seu uso\\ndeste jogo a fim de analisar\\nrelat\u00f3rios de falhas e\\npersonalizar sua experi\u00eancia\\ncom produtos e servi\u00e7os da\\nNintendo. \u00c9 poss\u00edvel controlar\\na coleta de dados usando\\nos bot\u00f5es abaixo."
+	},
+	{
+		"key": "MID_EXTRA_PLAY_ANALYTICS_ON",
+		"value": "Permitir"
+	},
+	{
+		"key": "MID_EXTRA_PLAY_ANALYTICS_OFF",
+		"value": "N\u00e3o permitir"
+	},
+	{
+		"key": "MID_EXTRA_PLAY_ANALYTICS_CONFIRM",
+		"value": "As defini\u00e7\u00f5es foram alteradas e\\nentrar\u00e3o em vigor quando voc\u00ea\\nreiniciar o aplicativo."
+	},
+	{
+		"key": "MID_PRESENT_LIST_TITLE",
+		"value": "Lista de presentes"
+	},
+	{
+		"key": "MID_PRESENT_LIST_RECEIVED",
+		"value": "Recebido"
+	},
+	{
+		"key": "MID_PRESENT_LIST_RECEIVE",
+		"value": "Todos os itens\\nforam aceitos."
+	},
+	{
+		"key": "MID_PRESENT_LIST_MAXIMUM",
+		"value": "N\u00e3o \u00e9 poss\u00edvel receber este\\npresente porque o n\u00famero\\nm\u00e1ximo de itens foi alcan\u00e7ado."
+	},
+	{
+		"key": "MID_PRESENT_LIST_MAXIMUM_PART",
+		"value": "N\u00e3o foi poss\u00edvel receber alguns\\npresentes porque o n\u00famero\\nm\u00e1ximo de itens foi alcan\u00e7ado."
+	},
+	{
+		"key": "MID_PRESENT_LIST_ERROR_RECEIVE_PART",
+		"value": "Devido a um erro, alguns\\npresentes n\u00e3o foram recebidos."
+	},
+	{
+		"key": "MID_PRESENT_LIST_CONFIRM_TO_RECEIVE_ALL",
+		"value": "Aceitar todos?"
+	},
+	{
+		"key": "MID_PRESENT_LIST_RECEIVE_BUTTON",
+		"value": "Aceitar"
+	},
+	{
+		"key": "MID_PRESENT_LIST_RECEIVE_ALL_BUTTON",
+		"value": "Aceitar todos"
+	},
+	{
+		"key": "MID_PRESENT_LIST_MINUTE",
+		"value": "$aLimite: $a0 m"
+	},
+	{
+		"key": "MID_PRESENT_LIST_HOUR",
+		"value": "$aLimite: $a0 h"
+	},
+	{
+		"key": "MID_PRESENT_LIST_DAY",
+		"value": "$aLimite: $a0 d"
+	},
+	{
+		"key": "MID_FRIEND_LIST_MINUTE",
+		"value": "$a\u00daltima atividade h\u00e1 $a0 min"
+	},
+	{
+		"key": "MID_FRIEND_LIST_HOUR",
+		"value": "$a\u00daltima atividade h\u00e1 $a0 h"
+	},
+	{
+		"key": "MID_FRIEND_LIST_DAY",
+		"value": "$a\u00daltima atividade h\u00e1 $a0 d"
+	},
+	{
+		"key": "MID_FRIEND_LIST_WEAK",
+		"value": "$a\u00dalt. atividade h\u00e1 $a0 sem."
+	},
+	{
+		"key": "MID_FRIEND_LIST_OLDEST_WEAK",
+		"value": "\u00dalt. atividade h\u00e1 + de 4 sem."
+	},
+	{
+		"key": "MID_FRIEND_YOUR_ID",
+		"value": "Sua identifica\u00e7\u00e3o:"
+	},
+	{
+		"key": "MID_HOME_PAGE_PREV",
+		"value": "Voltar"
+	},
+	{
+		"key": "MID_FRIEND_LIST_TITLE",
+		"value": "Lista de amigos"
+	},
+	{
+		"key": "MID_FRIEND_ACCEPT",
+		"value": "Aceitar"
+	},
+	{
+		"key": "MID_FRIEND_ALL_ACCEPT",
+		"value": "Aceitar todas"
+	},
+	{
+		"key": "MID_FRIEND_DIALOG_ACCEPT",
+		"value": "Aceitar a solicita\u00e7\u00e3o\\nde amizade?"
+	},
+	{
+		"key": "MID_FRIEND_DIALOG_ALL_ACCEPT",
+		"value": "Aceitar todas as solicita\u00e7\u00f5es\\nde amizade?"
+	},
+	{
+		"key": "MID_FRIEND_ACCEPTED",
+		"value": "Solicita\u00e7\u00e3o aceita."
+	},
+	{
+		"key": "MID_FRIEND_REFUSE",
+		"value": "N\u00e3o aceitar"
+	},
+	{
+		"key": "MID_FRIEND_ALL_REFUSE",
+		"value": "Negar todas"
+	},
+	{
+		"key": "MID_FRIEND_DIALOG_REFUSE",
+		"value": "N\u00e3o aceitar esta\\nsolicita\u00e7\u00e3o amizade?"
+	},
+	{
+		"key": "MID_FRIEND_DIALOG_ALL_REFUSE",
+		"value": "Negar todas as solicita\u00e7\u00f5es\\nde amizade?"
+	},
+	{
+		"key": "MID_FRIEND_REFUSED",
+		"value": "Solicita\u00e7\u00e3o n\u00e3o aceita."
+	},
+	{
+		"key": "MID_FRIEND_DELETE",
+		"value": "Remover da lista"
+	},
+	{
+		"key": "MID_FRIEND_DELETED",
+		"value": "N\u00e3o est\u00e1 mais na lista."
+	},
+	{
+		"key": "MID_FRIEND_DELETE_CHECK",
+		"value": "Remover este amigo\\nda sua lista?"
+	},
+	{
+		"key": "MID_FRIEND_HELLO",
+		"value": "Enviar sauda\u00e7\u00e3o"
+	},
+	{
+		"key": "MID_FRIEND_DELETE_REQUEST",
+		"value": "Apagar solicita\u00e7\u00e3o"
+	},
+	{
+		"key": "MID_FRIEND_ALL_DELETE_REQUEST",
+		"value": "Apagar todas"
+	},
+	{
+		"key": "MID_FRIEND_DIALOG_DELETE_REQUEST",
+		"value": "Apagar o pedido de amizade?"
+	},
+	{
+		"key": "MID_FRIEND_DIALOG_ALL_DELETE_REQUEST",
+		"value": "Apagar os pedidos de amizade?"
+	},
+	{
+		"key": "MID_FRIEND_DELETED_REQUEST",
+		"value": "Solicita\u00e7\u00e3o apagada."
+	},
+	{
+		"key": "MID_FRIEND_REQUEST",
+		"value": "Enviar solicita\u00e7\u00e3o"
+	},
+	{
+		"key": "MID_FRIEND_SEARCH_USER_ID",
+		"value": "Busque identifica\u00e7\u00e3o para enviar solicita\u00e7\u00e3o."
+	},
+	{
+		"key": "MID_FRIEND_INPUT_SEARCH",
+		"value": "Insira identifica\u00e7\u00e3o do amigo."
+	},
+	{
+		"key": "MID_FRIEND_LIST_SEARCH_CAPTION",
+		"value": "Insira a identifica\u00e7\u00e3o do amigo\\nque voc\u00ea quer buscar."
+	},
+	{
+		"key": "MID_FRIEND_ALREADY_FRIEND",
+		"value": "J\u00e1 est\u00e1 em sua lista."
+	},
+	{
+		"key": "MID_FRIEND_ALREADY_SENT_REQUEST",
+		"value": "Solicita\u00e7\u00e3o j\u00e1 enviada."
+	},
+	{
+		"key": "MID_FRIEND_SEND_REQUEST",
+		"value": "Solicita\u00e7\u00e3o enviada."
+	},
+	{
+		"key": "MID_FRIEND_LIST_EMPTY",
+		"value": "Nenhum amigo encontrado."
+	},
+	{
+		"key": "MID_FRIEND_SEARCH_EMPTY",
+		"value": "Insira a identifica\u00e7\u00e3o do usu\u00e1rio."
+	},
+	{
+		"key": "MID_FRIEND_SEARCH_ERROR",
+		"value": "Esta identifica\u00e7\u00e3o n\u00e3o \u00e9 v\u00e1lida."
+	},
+	{
+		"key": "MID_FRIEND_SEARCH_INVALID",
+		"value": "A identifica\u00e7\u00e3o inserida n\u00e3o \u00e9 v\u00e1lida.\\nInsira uma identifica\u00e7\u00e3o de 10 d\u00edgitos."
+	},
+	{
+		"key": "MID_FRIEND_SEARCH_EQUAL_MY_ID",
+		"value": "N\u00e3o \u00e9 poss\u00edvel buscar a sua ident."
+	},
+	{
+		"key": "MID_FRIEND_REQUEST_EMPTY",
+		"value": "Nenhuma solicita\u00e7\u00e3o encontrada."
+	},
+	{
+		"key": "MID_FRIEND_APPROVAL_EMPTY",
+		"value": "Nenhuma solicita\u00e7\u00e3o pendente."
+	},
+	{
+		"key": "MID_PRESENT_ACTIVE_EMPTY",
+		"value": "Nenhum presente n\u00e3o aceito."
+	},
+	{
+		"key": "MID_PRESENT_RECEIVED_EMPTY",
+		"value": "Voc\u00ea n\u00e3o aceitou nenhum\\npresente nos \u00faltimos 14 dias."
+	},
+	{
+		"key": "MID_HOME_FRIEND_TALK_SEND",
+		"value": "Sauda\u00e7\u00f5es enviadas."
+	},
+	{
+		"key": "MID_HOME_FRIEND_TALK_RECEIVE",
+		"value": "$aSauda\u00e7\u00f5es recebidas: $a0"
+	},
+	{
+		"key": "MID_HOME_FRIEND_TALK_RECEIVE_MAX",
+		"value": "Sauda\u00e7\u00e3o de 5 ou mais amigos."
+	},
+	{
+		"key": "MID_FRIEND_ERROR_SEND_REQUEST",
+		"value": "A solicita\u00e7\u00e3o de amizade n\u00e3o\\np\u00f4de ser enviada. \u00c9 poss\u00edvel que\\no usu\u00e1rio tenha atingido o n\u00famero\\nm\u00e1ximo de amigos ou que voc\u00ea j\u00e1\\ntenha enviado esta solicita\u00e7\u00e3o."
+	},
+	{
+		"key": "MID_FRIEND_ERROR_ACCEPT_REQUEST",
+		"value": "Voc\u00ea alcan\u00e7ou o n\u00famero m\u00e1ximo\\nde amigos, logo n\u00e3o \u00e9 poss\u00edvel\\naceitar a solicita\u00e7\u00e3o de amizade."
+	},
+	{
+		"key": "MID_FRIEND_ERROR_REFUSE_REQUEST",
+		"value": "Esta solicita\u00e7\u00e3o j\u00e1 foi negada."
+	},
+	{
+		"key": "MID_FRIEND_ERROR_DELETE",
+		"value": "Este usu\u00e1rio j\u00e1 foi removido\\nda lista de amigos."
+	},
+	{
+		"key": "MID_FRIEND_ERROR_DELETE_REQUEST",
+		"value": "A solicita\u00e7\u00e3o j\u00e1 foi\\naceita ou negada."
+	},
+	{
+		"key": "MID_FRIEND_ERROR_OPERATE",
+		"value": "Ocorreu um erro."
+	},
+	{
+		"key": "MID_FRIEND_REQUEST_DIALOG",
+		"value": "Enviar uma solicita\u00e7\u00e3o de\\namizade para este jogador?"
+	},
+	{
+		"key": "MID_FRIEND_REQUEST_DIALOG_DECIDE",
+		"value": "Enviar"
+	},
+	{
+		"key": "MID_FRIEND_REQUEST_DIALOG_CANCEL",
+		"value": "N\u00e3o enviar"
+	},
+	{
+		"key": "MID_CONFIG_SHOW_INDIVIDUAL_COLOR",
+		"value": "Ressaltar ponto\\nforte e fraco"
+	},
+	{
+		"key": "MID_UNIT_INFO_INDIVIDUAL_FORTE",
+		"value": "Ponto forte"
+	},
+	{
+		"key": "MID_UNIT_INFO_INDIVIDUAL_WEAK",
+		"value": "Ponto fraco"
+	},
+	{
+		"key": "MID_INVENTORY_NONE",
+		"value": ""
+	},
+	{
+		"key": "MID_INVENTORY_MY_NINTENDO_GIFT",
+		"value": "Recompensas My Nintendo"
+	},
+	{
+		"key": "MID_ITEM_ORB",
+		"value": "Orbe"
+	},
+	{
+		"key": "MID_ITEM_HELP_ORB",
+		"value": "Serve para invocar her\u00f3is,\\nentre outros usos."
+	},
+	{
+		"key": "MID_ITEM_FEATHER",
+		"value": "Pena de her\u00f3i"
+	},
+	{
+		"key": "MID_ITEM_HELP_FEATHER",
+		"value": "Usada para aumentar o potencial de aliados.\\n(Voc\u00ea pode ter at\u00e9 999.999.)"
+	},
+	{
+		"key": "MID_ITEM_STAMINA",
+		"value": "Po\u00e7\u00e3o de energia"
+	},
+	{
+		"key": "MID_ITEM_HELP_STAMINA",
+		"value": "Concede 99 pontos de energia.\\n(Voc\u00ea pode ter at\u00e9 999.)"
+	},
+	{
+		"key": "MID_ITEM_ARENA",
+		"value": "Bras\u00e3o de duelo"
+	},
+	{
+		"key": "MID_ITEM_HELP_ARENA",
+		"value": "Restaura todos os gl\u00e1dios.\\n(Voc\u00ea pode ter at\u00e9 999.999.)"
+	},
+	{
+		"key": "MID_ITEM_VOTE",
+		"value": "Estandarte"
+	},
+	{
+		"key": "MID_ITEM_HELP_VOTE",
+		"value": "Usado para participar do torneio de votos."
+	},
+	{
+		"key": "MID_ITEM_RESURRECTION",
+		"value": "Prote\u00e7\u00e3o de luz"
+	},
+	{
+		"key": "MID_ITEM_HELP_RESURRECTION",
+		"value": "Usada durante a batalha. Restaura PV,\\nmovimentos e uso de habilidades especiais\\nde todos os aliados.\\n(Voc\u00ea pode ter at\u00e9 999.999.)"
+	},
+	{
+		"key": "MID_ITEM_EXP_RED1",
+		"value": "Fragmento escarlate"
+	},
+	{
+		"key": "MID_ITEM_HELP_EXP_RED1",
+		"value": "Usado para subir de n\u00edvel. Pode ser usado\\nem aliados do tipo vermelho at\u00e9 o n\u00edvel 19.\\n(Voc\u00ea pode ter at\u00e9 999.999.)"
+	},
+	{
+		"key": "MID_ITEM_EXP_RED2",
+		"value": "Cristal escarlate"
+	},
+	{
+		"key": "MID_ITEM_HELP_EXP_RED2",
+		"value": "Usado para subir de n\u00edvel. Pode ser usado em\\naliados do tipo vermelho de n\u00edvel 20 ou superior.\\n(Voc\u00ea pode ter at\u00e9 999.999.)"
+	},
+	{
+		"key": "MID_ITEM_EXP_BLUE1",
+		"value": "Fragmento \u00edndigo"
+	},
+	{
+		"key": "MID_ITEM_HELP_EXP_BLUE1",
+		"value": "Usado para subir de n\u00edvel. Pode ser usado\\nem aliados do tipo azul at\u00e9 o n\u00edvel 19.\\n(Voc\u00ea pode ter at\u00e9 999.999.)"
+	},
+	{
+		"key": "MID_ITEM_EXP_BLUE2",
+		"value": "Cristal \u00edndigo"
+	},
+	{
+		"key": "MID_ITEM_HELP_EXP_BLUE2",
+		"value": "Usado para subir de n\u00edvel. Pode ser usado em\\naliados do tipo azul de n\u00edvel 20 ou superior.\\n(Voc\u00ea pode ter at\u00e9 999.999.)"
+	},
+	{
+		"key": "MID_ITEM_EXP_GREEN1",
+		"value": "Fragmento esmeralda"
+	},
+	{
+		"key": "MID_ITEM_HELP_EXP_GREEN1",
+		"value": "Usado para subir de n\u00edvel. Pode ser usado\\nem aliados do tipo verde at\u00e9 o n\u00edvel 19.\\n(Voc\u00ea pode ter at\u00e9 999.999.)"
+	},
+	{
+		"key": "MID_ITEM_EXP_GREEN2",
+		"value": "Cristal esmeralda"
+	},
+	{
+		"key": "MID_ITEM_HELP_EXP_GREEN2",
+		"value": "Usado para subir de n\u00edvel. Pode ser usado em\\naliados do tipo verde de n\u00edvel 20 ou superior.\\n(Voc\u00ea pode ter at\u00e9 999.999.)"
+	},
+	{
+		"key": "MID_ITEM_EXP_NEUTRAL1",
+		"value": "Fragmento transparente"
+	},
+	{
+		"key": "MID_ITEM_HELP_EXP_NEUTRAL1",
+		"value": "Usado para subir de n\u00edvel. Pode ser usado\\nem aliados cinza at\u00e9 o n\u00edvel 19.\\n(Voc\u00ea pode ter at\u00e9 999.999.)"
+	},
+	{
+		"key": "MID_ITEM_EXP_NEUTRAL2",
+		"value": "Cristal transparente"
+	},
+	{
+		"key": "MID_ITEM_HELP_EXP_NEUTRAL2",
+		"value": "Usado para subir de n\u00edvel. Pode ser usado em\\naliados cinza de n\u00edvel 20 ou superior.\\n(Voc\u00ea pode ter at\u00e9 999.999.)"
+	},
+	{
+		"key": "MID_ITEM_EXP_ALL1",
+		"value": "Fragmento universal"
+	},
+	{
+		"key": "MID_ITEM_HELP_EXP_ALL1",
+		"value": "Usado para subir de n\u00edvel. Pode ser usado\\nem qualquer aliado at\u00e9 o n\u00edvel 19.\\n(Voc\u00ea pode ter at\u00e9 999.999.)"
+	},
+	{
+		"key": "MID_ITEM_EXP_ALL2",
+		"value": "Cristal universal"
+	},
+	{
+		"key": "MID_ITEM_HELP_EXP_ALL2",
+		"value": "Usado para subir de n\u00edvel. Pode ser usado\\nem qualquer aliado de n\u00edvel 20 ou superior.\\n(Voc\u00ea pode ter at\u00e9 999.999.)"
+	},
+	{
+		"key": "MID_ITEM_PROMOTION_RED1",
+		"value": "Distintivo escarlate"
+	},
+	{
+		"key": "MID_ITEM_HELP_PROMOTION_RED1",
+		"value": "Aumenta potencial de aliados do tipo vermelho.\\nAumenta uma \u2605 de aliados de 3 \u2605 ou menos."
+	},
+	{
+		"key": "MID_ITEM_PROMOTION_RED2",
+		"value": "Ins\u00edgnia escarlate"
+	},
+	{
+		"key": "MID_ITEM_HELP_PROMOTION_RED2",
+		"value": "Aumenta o potencial de aliados vermelhos.\\nAumenta uma \u2605 de aliados de 4 \u2605."
+	},
+	{
+		"key": "MID_ITEM_PROMOTION_BLUE1",
+		"value": "Distintivo \u00edndigo"
+	},
+	{
+		"key": "MID_ITEM_HELP_PROMOTION_BLUE1",
+		"value": "Aumenta potencial de aliados do tipo azul.\\nAumenta uma \u2605 de aliados de 3 \u2605 ou menos."
+	},
+	{
+		"key": "MID_ITEM_PROMOTION_BLUE2",
+		"value": "Ins\u00edgnia \u00edndigo"
+	},
+	{
+		"key": "MID_ITEM_HELP_PROMOTION_BLUE2",
+		"value": "Aumenta o potencial de aliados do tipo azul.\\nAumenta uma \u2605 de aliados de 4 \u2605."
+	},
+	{
+		"key": "MID_ITEM_PROMOTION_GREEN1",
+		"value": "Distintivo esmeralda"
+	},
+	{
+		"key": "MID_ITEM_HELP_PROMOTION_GREEN1",
+		"value": "Aumenta potencial de aliados do tipo verde.\\nAumenta uma \u2605 de aliados de 3 \u2605 ou menos."
+	},
+	{
+		"key": "MID_ITEM_PROMOTION_GREEN2",
+		"value": "Ins\u00edgnia esmeralda"
+	},
+	{
+		"key": "MID_ITEM_HELP_PROMOTION_GREEN2",
+		"value": "Aumenta o potencial de aliados do tipo verde.\\nAumenta uma \u2605 de aliados de 4 \u2605."
+	},
+	{
+		"key": "MID_ITEM_PROMOTION_NEUTRAL1",
+		"value": "Distintivo transparente"
+	},
+	{
+		"key": "MID_ITEM_HELP_PROMOTION_NEUTRAL1",
+		"value": "Aumenta potencial de aliados do tipo cinza.\\nAumenta uma \u2605 de aliados de 3 \u2605 ou menos."
+	},
+	{
+		"key": "MID_ITEM_PROMOTION_NEUTRAL2",
+		"value": "Ins\u00edgnia transparente"
+	},
+	{
+		"key": "MID_ITEM_HELP_PROMOTION_NEUTRAL2",
+		"value": "Aumenta o potencial de aliados do tipo cinza.\\nAumenta uma \u2605 de aliados de 4 \u2605."
+	},
+	{
+		"key": "MID_ITEM_GAIN_QUANTITY",
+		"value": "$aVoc\u00ea recebeu:\\n$a0 x $a1"
+	},
+	{
+		"key": "MID_ITEM_GAIN_UNIT",
+		"value": "$aVoc\u00ea recebeu:\\n$a0"
+	},
+	{
+		"key": "MID_ITEM_PRESENT_QUANTITY",
+		"value": "$aEnviado \u00e0 lista\\nde presentes:\\n$a0 x $a1"
+	},
+	{
+		"key": "MID_ITEM_PRESENT_UNIT",
+		"value": "$aEnviado \u00e0 lista\\nde presentes:\\n$a0"
+	},
+	{
+		"key": "MID_ITEM_DIRECT_GAIN_QUANTITY",
+		"value": "$a$a0 \u00d7 $a1!\\n*O seu invent\u00e1rio foi atualizado."
+	},
+	{
+		"key": "MID_ITEM_DIRECT_GAIN_UNIT",
+		"value": "$aVoc\u00ea recebeu $a0!\\nEsta recompensa foi\\nadicionada ao menu Aliados."
+	},
+	{
+		"key": "MID_LOAD_RESUME_CONFIRM",
+		"value": "Foram encontrados dados\\nde uma partida suspensa.\\nContinuar a partida?"
+	},
+	{
+		"key": "MID_LOAD_RESUME_DECIDE",
+		"value": "Sim"
+	},
+	{
+		"key": "MID_LOAD_RESUME_CANCEL",
+		"value": "N\u00e3o"
+	},
+	{
+		"key": "MID_LOAD_DISCARD_CONFIRM",
+		"value": "Apagar dados da\\npartida suspensa?"
+	},
+	{
+		"key": "MID_LOAD_DISCARD_DECIDE",
+		"value": "Apagar"
+	},
+	{
+		"key": "MID_LOAD_DEVICE_CONFIRM",
+		"value": "Pode haver dados de partida\\nsuspensa em outro dispositivo.\\nApagar dados locais?"
+	},
+	{
+		"key": "MID_LOAD_DEVICE_DECIDE",
+		"value": "Apagar"
+	},
+	{
+		"key": "MID_LOAD_DEVICE_CANCEL",
+		"value": "N\u00e3o apagar"
+	},
+	{
+		"key": "MID_LOAD_RESUME_OTHER_DEVICE",
+		"value": "Continue o jogo usando\\no dispositivo em que\\njogou pela \u00faltima vez."
+	},
+	{
+		"key": "MID_LOAD_DATA_NOT_FOUND_CONFIRM",
+		"value": "N\u00e3o foi poss\u00edvel recuperar os dados.\\nOs dados da partida suspensa\\nser\u00e3o apagados."
+	},
+	{
+		"key": "MID_LOAD_FAILED_CONFIRM",
+		"value": "N\u00e3o foi poss\u00edvel retomar a partida."
+	},
+	{
+		"key": "MID_MAP_TURN",
+		"value": "$aRodada $a0"
+	},
+	{
+		"key": "MID_MAP_TURN_WITH_LIMIT",
+		"value": "$aRodada $a0/$a1"
+	},
+	{
+		"key": "MID_MAP_OBSTACLE",
+		"value": "Obst\u00e1culo"
+	},
+	{
+		"key": "MID_MAP_AUTO",
+		"value": "Combate autom\u00e1tico"
+	},
+	{
+		"key": "MID_MAP_AUTO_CONFIRM",
+		"value": "Ativar o combate autom\u00e1tico?"
+	},
+	{
+		"key": "MID_MAP_AUTO_DECIDE",
+		"value": "Ativar"
+	},
+	{
+		"key": "MID_MAP_TURN_END_CONFIRM",
+		"value": "Voc\u00ea quer terminar a rodada?"
+	},
+	{
+		"key": "MID_MAP_TURN_END_DECIDE",
+		"value": "Terminar a rodada"
+	},
+	{
+		"key": "MID_MAP_SURRENDER",
+		"value": "Render-se"
+	},
+	{
+		"key": "MID_MAP_SURRENDER_CONFIRM",
+		"value": "Voc\u00ea quer se render?"
+	},
+	{
+		"key": "MID_MAP_SURRENDER_WARNING",
+		"value": "Se voc\u00ea se render, a experi\u00eancia\\nadquirida neste mapa ser\u00e1 perdida."
+	},
+	{
+		"key": "MID_MAP_SURRENDER_DECIDE",
+		"value": "Render-se"
+	},
+	{
+		"key": "MID_MAP_CONTINUE_CONFIRM",
+		"value": "Continuar?"
+	},
+	{
+		"key": "MID_MAP_CONTINUE_WARNING",
+		"value": "Se voc\u00ea desistir, a experi\u00eancia\\nadquirida neste mapa ser\u00e1 perdida."
+	},
+	{
+		"key": "MID_MAP_CONTINUE_DECIDE",
+		"value": "Continuar"
+	},
+	{
+		"key": "MID_MAP_CONTINUE_CANCEL",
+		"value": "Desistir"
+	},
+	{
+		"key": "MID_MAP_RESURRECTION",
+		"value": "Prote\u00e7\u00e3o de luz"
+	},
+	{
+		"key": "MID_MAP_RESURRECTION_CONFIRM_ITEM",
+		"value": "Usar uma prote\u00e7\u00e3o de luz?\\nEsta a\u00e7\u00e3o:\\n\\n\u30fb Revive aliados derrotados\\n\u30fb Restaura os PV\\n\u30fb Permite que aliados se movam\\n\u30fb Ativa as habilidades especiais"
+	},
+	{
+		"key": "MID_MAP_RESURRECTION_CONFIRM_ORB",
+		"value": "Usar um orbe?\\nEsta a\u00e7\u00e3o:\\n\\n\u30fb Revive aliados derrotados\\n\u30fb Restaura os PV\\n\u30fb Permite que aliados se movam\\n\u30fb Ativa as habilidades especiais"
+	},
+	{
+		"key": "MID_MAP_RESURRECTION_WARNING",
+		"value": "As rodadas n\u00e3o ser\u00e3o restauradas."
+	},
+	{
+		"key": "MID_MAP_RESURRECTION_DECIDE_ITEM",
+		"value": "Confirmar"
+	},
+	{
+		"key": "MID_MAP_RESURRECTION_DECIDE_ORB",
+		"value": "Confirmar"
+	},
+	{
+		"key": "MID_MAP_RESURRECTION_CANCEL",
+		"value": "Voltar"
+	},
+	{
+		"key": "MID_MAP_GAIN_SKILL_POINT",
+		"value": "$aPH +$a0"
+	},
+	{
+		"key": "MID_MAP_GAIN_HEROISM_POINT",
+		"value": "$a+$a0"
+	},
+	{
+		"key": "MID_MAP_PLAYER_PHASE",
+		"value": "FASE DO JOGADOR"
+	},
+	{
+		"key": "MID_MAP_ENEMY_PHASE",
+		"value": "FASE DO INIMIGO"
+	},
+	{
+		"key": "MID_MISSION",
+		"value": "Objetivos e miss\u00f5es"
+	},
+	{
+		"key": "MID_MISSION_NONE",
+		"value": "Nenhum objetivo no momento."
+	},
+	{
+		"key": "MID_MISSION_STRATUM",
+		"value": "Modo:"
+	},
+	{
+		"key": "MID_MISSION_STRATUM_NORMAL",
+		"value": "Normal"
+	},
+	{
+		"key": "MID_MISSION_STRATUM_HARD",
+		"value": "Dif\u00edcil"
+	},
+	{
+		"key": "MID_MISSION_STRATUM_LUNATIC",
+		"value": "Extremo"
+	},
+	{
+		"key": "MID_MISSION_PROGRESS",
+		"value": "$aProgresso: $a0/$a1"
+	},
+	{
+		"key": "MID_MISSION_PROGRESS_ACHIEVED",
+		"value": "Objetivo alcan\u00e7ado!"
+	},
+	{
+		"key": "MID_MISSION_PROGRESS_RECEIVED",
+		"value": "Recompensa recebida"
+	},
+	{
+		"key": "MID_MISSION_EXPERIENCE",
+		"value": "Novos objetivos adicionados!"
+	},
+	{
+		"key": "MID_MISSION_APPEAR_STRATUM",
+		"value": "Todos objetivos alcan\u00e7ados.\\nVoc\u00ea pode tentar alcan\u00e7ar objetivos\\nem outro n\u00edvel de dificuldade."
+	},
+	{
+		"key": "MID_MISSION_PROGRESS_DIALOG_TITLE",
+		"value": "Progresso"
+	},
+	{
+		"key": "MID_MISSION_PROGRESS_DIALOG_TITLE_ACHIEVED",
+		"value": "Objetivo alcan\u00e7ado!"
+	},
+	{
+		"key": "MID_MISSION_PROGRESS_DIALOG_PROGRESS",
+		"value": "$a$a0/$a2 \u2192 $a1/$a2"
+	},
+	{
+		"key": "MID_MISSION_PROGRESS_DIALOG_PROGRESS_HELP",
+		"value": "$aVezes que faltam para receber\\na recompensa: $a0"
+	},
+	{
+		"key": "MID_MISSION_PROGRESS_DIALOG_ACHIEVED_HELP",
+		"value": "Obtenha a recompensa\\nna lista de objetivos."
+	},
+	{
+		"key": "MID_MOVIE_SKIP",
+		"value": "Pular a anima\u00e7\u00e3o?"
+	},
+	{
+		"key": "MID_MOVIE_SKIP_BUTTON",
+		"value": "Pular"
+	},
+	{
+		"key": "MID_SHOP",
+		"value": "Loja"
+	},
+	{
+		"key": "MID_SHOP_COMMON_CANCEL",
+		"value": "Voltar"
+	},
+	{
+		"key": "MID_SHOP_ORB_BUY_TITLE",
+		"value": "Comprar orbes"
+	},
+	{
+		"key": "MID_SHOP_ORB_CAUTION1",
+		"value": "Selecione quantos orbes\\ndeseja comprar."
+	},
+	{
+		"key": "MID_SHOP_ORB_CAUTION2",
+		"value": "$a\u00b7 Orbes comprados n\u00e3o podem\\n  ser usados em dispositivos com\\n  um sistema operacional diferente\\n  de $a0."
+	},
+	{
+		"key": "MID_SHOP_ORB_CAUTION_IOS",
+		"value": "iOS"
+	},
+	{
+		"key": "MID_SHOP_ORB_CAUTION_ANDROID",
+		"value": "Android"
+	},
+	{
+		"key": "MID_SHOP_ORB_CAUTION3",
+		"value": "\u00b7 \u00c9 poss\u00edvel consultar quantos\\n  orbes voc\u00ea comprou e quantos\\n  recebeu como b\u00f4nus na tela de\\n  saldo de orbes."
+	},
+	{
+		"key": "MID_SHOP_ORB_BUY_ACTION",
+		"value": "Comprar"
+	},
+	{
+		"key": "MID_SHOP_ORB_BUY_BONUS",
+		"value": " B\u00f4nus"
+	},
+	{
+		"key": "MID_SHOP_ORB_CANT_BUY",
+		"value": "Com esta compra,\\nvoc\u00ea passaria do limite."
+	},
+	{
+		"key": "MID_SHOP_ORB_NEED_BUY",
+		"value": "Voc\u00ea n\u00e3o tem orbes suficientes.\\nComprar mais?"
+	},
+	{
+		"key": "MID_SHOP_ORB_RESULT_SUCCESS",
+		"value": "$aVoc\u00ea comprou $a0 orbes."
+	},
+	{
+		"key": "MID_SHOP_ORB_RESULT_FAILURE",
+		"value": "N\u00e3o foi poss\u00edvel completar\\na compra de orbes."
+	},
+	{
+		"key": "MID_SHOP_ORB_RECOVER_TO_RETRY",
+		"value": "Ocorreu uma falha no processo\\nde compra. Erros causados nos\\ndados ser\u00e3o corrigidos."
+	},
+	{
+		"key": "MID_SHOP_ORB_RECOVER_TO_TITLE",
+		"value": "Dados Inconsistentes apagados.\\nRetornando \u00e0 tela inicial."
+	},
+	{
+		"key": "MID_SHOP_ORB_RESULT_CANCEL",
+		"value": "Compra cancelada."
+	},
+	{
+		"key": "MID_SHOP_ORB_FSA",
+		"value": "\u8cc7\u91d1\u6c7a\u6e08\u6cd5\u306b\u57fa\u3065\u304f\u8868\u8a18"
+	},
+	{
+		"key": "MID_SHOP_ORB_SCTA",
+		"value": "\u7279\u5b9a\u5546\u53d6\u5f15\u6cd5\u306b\u57fa\u3065\u304f\u8868\u8a18"
+	},
+	{
+		"key": "MID_SHOP_ELITE_TITLE",
+		"value": "Melhorar o castelo"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV0",
+		"value": "Castelo simples"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV1",
+		"value": "Castelo elegante"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV2",
+		"value": "Castelo luxuoso"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV3",
+		"value": "Castelo requintado"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV4",
+		"value": "Castelo exuberante"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV5",
+		"value": "Castelo real"
+	},
+	{
+		"key": "MID_SHOP_CHANGE_WP",
+		"value": "Mudar estilo"
+	},
+	{
+		"key": "MID_SHOP_CHANGE_WP_TITLE",
+		"value": "Selecione um estilo de castelo."
+	},
+	{
+		"key": "MID_SHOP_CHANGE_WP_CHOSEN",
+		"value": "Atual"
+	},
+	{
+		"key": "MID_SHOP_ELITE_EFFECT",
+		"value": "$aB\u00f4nus permanente EXP: +$a0 %"
+	},
+	{
+		"key": "MID_SHOP_ELITE_HAVE_BOUGHT",
+		"value": "Constru\u00eddo"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CONFIRM1",
+		"value": "$aUsar orbes para obter\\no castelo $a1?\\nN\u00famero de orbes: $a0\\n\\nMelhorias no castelo concedem\\num aumento permanente de\\nEXP aos seus her\u00f3is.\\n\\nTamb\u00e9m \u00e9 poss\u00edvel alterar o\\nvisual de seu castelo entre todos\\nos estilos que voc\u00ea possui."
+	},
+	{
+		"key": "MID_SHOP_ELITE_CONFIRM2",
+		"value": "$aAumento de EXP\\nde $a0% para $a1%."
+	},
+	{
+		"key": "MID_SHOP_ELITE_BUY",
+		"value": "Construir"
+	},
+	{
+		"key": "MID_SHOP_ELITE_RESULT",
+		"value": "$aVoc\u00ea usou $a0 orbe(s) na mudan\u00e7a\\npara $a1."
+	},
+	{
+		"key": "MID_SHOP_RECOVER",
+		"value": "Restaurar"
+	},
+	{
+		"key": "MID_SHOP_RECOVER_WITH_ITEM",
+		"value": "Restaurar"
+	},
+	{
+		"key": "MID_SHOP_STAMINA_TITLE",
+		"value": "Restaurar energia"
+	},
+	{
+		"key": "MID_SHOP_STAMINA_CONFIRM_ITEM",
+		"value": "Usar uma po\u00e7\u00e3o de energia\\npara restaurar sua energia?"
+	},
+	{
+		"key": "MID_SHOP_STAMINA_NOTENOUGH_ITEM",
+		"value": "N\u00e3o h\u00e1 energia suficiente.\\nUsar uma po\u00e7\u00e3o de energia\\npara restaurar sua energia?"
+	},
+	{
+		"key": "MID_SHOP_STAMINA_CONFIRM_ORB",
+		"value": "Usar um orbe para\\nrestaurar sua energia?"
+	},
+	{
+		"key": "MID_SHOP_STAMINA_NOTENOUGH_ORB",
+		"value": "N\u00e3o h\u00e1 energia suficiente.\\nUsar um orbe para restaurar\\nsua energia?"
+	},
+	{
+		"key": "MID_SHOP_STAMINA_NOTNECESSARY",
+		"value": "Sua energia est\u00e1 no n\u00edvel m\u00e1ximo."
+	},
+	{
+		"key": "MID_SHOP_STAMINA_RESULT_POTION",
+		"value": "Po\u00e7\u00e3o de energia usada\\npara restaurar energia."
+	},
+	{
+		"key": "MID_SHOP_STAMINA_RESULT_ORB",
+		"value": "Um orbe foi usado\\npara restaurar sua energia."
+	},
+	{
+		"key": "MID_SHOP_ARENA_TITLE",
+		"value": "Restaurar gl\u00e1dios"
+	},
+	{
+		"key": "MID_SHOP_ARENA_CONFIRM_ITEM",
+		"value": "Usar um bras\u00e3o de duelo\\npara restaurar gl\u00e1dios?"
+	},
+	{
+		"key": "MID_SHOP_ARENA_NOTENOUGH_ITEM",
+		"value": "Voc\u00ea n\u00e3o tem mais gl\u00e1dios.\\nUsar um bras\u00e3o de duelo\\npara restaur\u00e1-los?"
+	},
+	{
+		"key": "MID_SHOP_ARENA_CONFIRM_ORB",
+		"value": "Usar um orbe para\\nrestaurar gl\u00e1dios?"
+	},
+	{
+		"key": "MID_SHOP_ARENA_NOTENOUGH_ORB",
+		"value": "Voc\u00ea n\u00e3o tem mais gl\u00e1dios.\\nUsar um orbe para restaur\u00e1-los?"
+	},
+	{
+		"key": "MID_SHOP_ARENA_NOTNECESSARY",
+		"value": "S\u00f3 \u00e9 poss\u00edvel restaurar gl\u00e1dios\\ncaso voc\u00ea n\u00e3o tenha nenhum."
+	},
+	{
+		"key": "MID_SHOP_ARENA_RESULT_POTION",
+		"value": "Bras\u00e3o de duelo usado\\npara restaurar gl\u00e1dios."
+	},
+	{
+		"key": "MID_SHOP_ARENA_RESULT_ORB",
+		"value": "Um orbe usado para\\nrestaurar gl\u00e1dios."
+	},
+	{
+		"key": "MID_SHOP_EXPAND_TITLE",
+		"value": "Expandir casernas"
+	},
+	{
+		"key": "MID_SHOP_EXPAND_CONFIRM",
+		"value": "Usar um orbe para aumentar\\no n\u00famero m\u00e1ximo de aliados?"
+	},
+	{
+		"key": "MID_SHOP_EXPAND_DECIDE",
+		"value": "Expandir"
+	},
+	{
+		"key": "MID_SHOP_EXPAND_CANT_UNIT",
+		"value": "N\u00e3o \u00e9 poss\u00edvel ampliar mais\\nas casernas."
+	},
+	{
+		"key": "MID_SHOP_EXPAND_RESULT",
+		"value": "Um orbe usado para aumentar\\no n\u00famero m\u00e1ximo de aliados."
+	},
+	{
+		"key": "MID_SHOP_UNIT_FULL_INFOR",
+		"value": "Voc\u00ea excedeu seu n\u00famero\\nm\u00e1ximo de aliados."
+	},
+	{
+		"key": "MID_SHOP_UNIT_FULL_CAN_EXPAND",
+		"value": "Aumente o n\u00famero m\u00e1ximo\\nou reduza o n\u00famero de aliados."
+	},
+	{
+		"key": "MID_SHOP_UNIT_FULL_NO_EXPAND",
+		"value": "\u00c9 preciso remover personagens\\npara adicionar novos aliados."
+	},
+	{
+		"key": "MID_SHOP_UNIT_FULL_EXPAND",
+		"value": "Expandir"
+	},
+	{
+		"key": "MID_SHOP_UNIT_FULL_MOVE",
+		"value": "Ir para o menu Aliados"
+	},
+	{
+		"key": "MID_SHOP_LIMIT_TEENAGER",
+		"value": "Menos de 20"
+	},
+	{
+		"key": "MID_SHOP_LIMIT_TEENAGER_TEXT",
+		"value": "$aLimite de $a0 (comprados) por m\u00eas"
+	},
+	{
+		"key": "MID_SHOP_LIMIT_ADULT",
+		"value": "20 ou mais"
+	},
+	{
+		"key": "MID_SHOP_LIMIT_ADULT_TEXT",
+		"value": "Sem limite"
+	},
+	{
+		"key": "MID_SHOP_LIMIT_DESCRIPTION",
+		"value": "H\u00e1 um limite para compras de\\norbes com base na sua idade.\\nSelecione sua idade."
+	},
+	{
+		"key": "MID_SHOP_RECOVER_PURCHASE",
+		"value": "As inconsist\u00eancias no processo de\\ncompra foram resolvidas."
+	},
+	{
+		"key": "MID_STAGE_SELECT_SCENARIO",
+		"value": "Hist\u00f3ria"
+	},
+	{
+		"key": "MID_STAGE_SELECT_EVENT",
+		"value": "Mapas especiais"
+	},
+	{
+		"key": "MID_STAGE_SELECT_ENCOUNT",
+		"value": "Torre de treino"
+	},
+	{
+		"key": "MID_STAGE_SELECT_ENCOUNT_HELP_DIALOG_00",
+		"value": "Mais EXP, fragmentos e distintivos!"
+	},
+	{
+		"key": "MID_STAGE_SELECT_ENCOUNT_HELP_DIALOG_01",
+		"value": "-Torre de treino-\\n\u00c9 um \u00f3timo lugar\\npara ganhar mais EXP\\npara seus aliados."
+	},
+	{
+		"key": "MID_STAGE_SELECT_ENCOUNT_HELP_DIALOG_02",
+		"value": "-Preparativos-\\nInimigos e mapas podem\\nmudar a cada batalha. Antes\\nentrar no combate, consulte\\nos tipos de inimigos e crie\\numa equipe eficaz."
+	},
+	{
+		"key": "MID_STAGE_SELECT_ENCOUNT_HELP_DIALOG_03",
+		"value": "-Recompensas-\\nAlgumas recompensas permitem\\nque seus aliados subam de n\u00edvel.\\nOutros desbloqueiam potenciais.\\n\\nH\u00e1 muitos tipos de recompensas\\nnessas categorias. Elas mudam\\ndiariamente."
+	},
+	{
+		"key": "MID_STAGE_SELECT_ENCOUNT_HELP_DIALOG_04",
+		"value": "-Fragmentos e cristais-\\nA cada dia voc\u00ea recebe um\\nfragmento ou cristal na primeira\\nvez que concluir uma etapa. Esses\\nitens sobem o n\u00edvel dos aliados.\\n\\nS\u00f3 \u00e9 poss\u00edvel obter cristais\\na partir do sexto estrato."
+	},
+	{
+		"key": "MID_STAGE_SELECT_ENCOUNT_HELP_DIALOG_05",
+		"value": "-Distintivos-\\nCada vez que voc\u00ea concluir uma\\netapa, receber\u00e1 um distintivo ou\\numa ins\u00edgnia. Esses itens\\naumentam o potencial de aliados\\n(medido em \u2605).\\n\\nS\u00f3 \u00e9 poss\u00edvel obter ins\u00edgnias\\na partir do sexto estrato."
+	},
+	{
+		"key": "MID_STAGE_SELECT_ARENA",
+		"value": "Arena"
+	},
+	{
+		"key": "MID_STAGE_SELECT_VOTE",
+		"value": "???"
+	},
+	{
+		"key": "MID_STAGE_SELECT_DIFFICULTY0",
+		"value": "Normal"
+	},
+	{
+		"key": "MID_STAGE_SELECT_DIFFICULTY1",
+		"value": "Dif\u00edcil"
+	},
+	{
+		"key": "MID_STAGE_SELECT_DIFFICULTY2",
+		"value": "Extremo"
+	},
+	{
+		"key": "MID_STAGE_SELECT_DETAIL_DECREASE_EXP",
+		"value": "Voc\u00ea j\u00e1 concluiu este mapa e por\\nisso receber\u00e1 menos EXP e PH."
+	},
+	{
+		"key": "MID_STAGE_SELECT_DETAIL_RULE",
+		"value": "Vit\u00f3ria"
+	},
+	{
+		"key": "MID_STAGE_SELECT_DETAIL_FIRST_REWARD",
+		"value": "Recompensa (1\u00aa vit\u00f3ria)"
+	},
+	{
+		"key": "MID_STAGE_SELECT_DETAIL_REWARD",
+		"value": "Recompensa"
+	},
+	{
+		"key": "MID_STAGE_SELECT_DETAIL_DECIDE",
+		"value": "Ao combate!"
+	},
+	{
+		"key": "MID_STAGE_SELECT_DETAIL_FAILED",
+		"value": "N\u00e3o foi poss\u00edvel iniciar a batalha."
+	},
+	{
+		"key": "MID_STAGE_SELECT_DETAIL_INSUFFICIENT_UNIT",
+		"value": "Adicione mais membros \u00e0 equipe."
+	},
+	{
+		"key": "MID_STAGE_SELECT_RULE_SURVIVAL",
+		"value": "$aSobreviventes: $a0"
+	},
+	{
+		"key": "MID_STAGE_SELECT_RULE_TURN",
+		"value": "$aRodadas para ganhar: $a0"
+	},
+	{
+		"key": "MID_STAGE_SELECT_RULE_NO_CONTINUE",
+		"value": "N\u00e3o \u00e9 poss\u00edvel usar a prote\u00e7\u00e3o de luz"
+	},
+	{
+		"key": "MID_STAGE_OPEN_NEW_CHAPTER_MAINSTORY",
+		"value": "Novo cap\u00edtulo adicionado\\n\u00e0 hist\u00f3ria principal."
+	},
+	{
+		"key": "MID_STAGE_OPEN_NEW_CHAPTER_SIDESTORY",
+		"value": "Novo cap\u00edtulo adicionado\\naos anexos."
+	},
+	{
+		"key": "MID_STAGE_OPEN_NEW_DIFFICULTY",
+		"value": "$aNovos modos de dificuldade\\nadicionados ao $a0."
+	},
+	{
+		"key": "MID_STAGE_OPEN_OTHER_THAN_SCENARIO",
+		"value": "Foram desbloqueados mapas\\nespeciais, o Coliseu e outros."
+	},
+	{
+		"key": "MID_STAGE_OPEN_FIRST_ENCOUNT",
+		"value": "A torre de treino foi desbloqueada."
+	},
+	{
+		"key": "MID_STAGE_OPEN_NEW_ENCOUNT",
+		"value": "Novo estrato adicionado\\n\u00e0 torre de treino."
+	},
+	{
+		"key": "MID_STAGE_SELECT_BONUS_NOTIFICATION1",
+		"value": "$aB\u00f4nus atual: Exp. \u00d7 $a0."
+	},
+	{
+		"key": "MID_STAGE_SELECT_BONUS_NOTIFICATION2",
+		"value": "$aB\u00f4nus atual: PH \u00d7 $a0."
+	},
+	{
+		"key": "MID_STAGE_SELECT_BONUS_NOTIFICATION3",
+		"value": "$aB\u00f4nus atual: PH e Exp. \u00d7 $a0."
+	},
+	{
+		"key": "MID_STAGE_SELECT_SCENARIO_MAIN",
+		"value": "Hist\u00f3ria principal"
+	},
+	{
+		"key": "MID_STAGE_SELECT_SCENARIO_MAIN_INFO",
+		"value": "Enfrente o Imp\u00e9rio embliano\\ne traga a paz para\\no mundo de Z\u00eanite!"
+	},
+	{
+		"key": "MID_STAGE_SELECT_SCENARIO_SUB",
+		"value": "Anexos"
+	},
+	{
+		"key": "MID_STAGE_SELECT_SCENARIO_SUB_INFO",
+		"value": "Viaje para outros mundos\\ne encontre her\u00f3is exclusivos!\\n"
+	},
+	{
+		"key": "MID_SUMMON_TITLE",
+		"value": "Invocar her\u00f3is"
+	},
+	{
+		"key": "MID_SUMMON_HELP_DIALOG_00",
+		"value": "Invoque her\u00f3is como aliados!"
+	},
+	{
+		"key": "MID_SUMMON_HELP_DIALOG_01",
+		"value": "Cor da pedra = tipo de her\u00f3i"
+	},
+	{
+		"key": "MID_SUMMON_HELP_DIALOG_02",
+		"value": "Economize orbes invocando mais!"
+	},
+	{
+		"key": "MID_SUMMON_HELP_BONUS",
+		"value": "Voc\u00ea economiza orbes ao invocar\\nmais de um her\u00f3i na mesma\\nsess\u00e3o, especialmente se usar\\ntodas as 5 pedras."
+	},
+	{
+		"key": "MID_SUMMON_DECIDE",
+		"value": "Invocar"
+	},
+	{
+		"key": "MID_SUMMON_PAY",
+		"value": "Trocar"
+	},
+	{
+		"key": "MID_SUMMON_CANCEL",
+		"value": "Parar de invocar"
+	},
+	{
+		"key": "MID_SUMMON_CANCEL_CONFIRM",
+		"value": "Parar de invocar?"
+	},
+	{
+		"key": "MID_SUMMON_CANCEL_WARNING",
+		"value": "Caso pare, as cores das pedras\\ne os requisitos de orbes ser\u00e3o\\nreiniciados."
+	},
+	{
+		"key": "MID_SUMMON_PROBABILITY",
+		"value": "Recorr\u00eancia"
+	},
+	{
+		"key": "MID_SUMMON_PROBABILITY_TEXT",
+		"value": "Estas s\u00e3o as taxas de recorr\u00eancia\\ndos her\u00f3is com base na raridade."
+	},
+	{
+		"key": "MID_SUMMON_PROBABILITY_NORMAL_3",
+		"value": "3 \u2605"
+	},
+	{
+		"key": "MID_SUMMON_PROBABILITY_NORMAL_4",
+		"value": "4 \u2605"
+	},
+	{
+		"key": "MID_SUMMON_PROBABILITY_NORMAL_5",
+		"value": "5 \u2605"
+	},
+	{
+		"key": "MID_SUMMON_PROBABILITY_PICKUP_4",
+		"value": "Prefer\u00eancia: 4 \u2605"
+	},
+	{
+		"key": "MID_SUMMON_PROBABILITY_PICKUP_5",
+		"value": "Prefer\u00eancia: 5 \u2605"
+	},
+	{
+		"key": "MID_SUMMON_PROBABILITY_PERCENT",
+		"value": "%"
+	},
+	{
+		"key": "MID_SUMMON_DETAIL",
+		"value": "Detalhes"
+	},
+	{
+		"key": "MID_SUMMON_PURCHASE_CONFIRM",
+		"value": "Usar estes orbes para\\ninvocar um her\u00f3i?"
+	},
+	{
+		"key": "MID_SUMMON_PURCHASE_CONFIRM_CONTINUE",
+		"value": "$aUsar $a0 orbes para\\ninvocar outro her\u00f3i?"
+	},
+	{
+		"key": "MID_SUMMON_FIRST_OPERATION",
+		"value": "Escolha uma pedra. A cor\\nindica o tipo de her\u00f3i."
+	},
+	{
+		"key": "MID_SUMMON_FIRST_OPERATION_CONFIRM",
+		"value": "Invocar com esta pedra?"
+	},
+	{
+		"key": "MID_SUMMON_MOVE",
+		"value": "Continuar"
+	},
+	{
+		"key": "MID_SUMMON_MOVE_CONFIRM",
+		"value": "A invoca\u00e7\u00e3o anterior foi\\ninterrompida e ser\u00e1 retomada."
+	},
+	{
+		"key": "MID_SUMMON_RESULT",
+		"value": "Resultados da invoca\u00e7\u00e3o."
+	},
+	{
+		"key": "MID_SUMMON_CANCEL_CONTINUE",
+		"value": "Continuar invoca\u00e7\u00e3o"
+	},
+	{
+		"key": "MID_SUMMON_ERROR_LIST_FAILED",
+		"value": "Erro ao obter a lista. Verifique sua\\nconex\u00e3o \u00e0 internet e tente novamente."
+	},
+	{
+		"key": "MID_SUMMON_ERROR_NO_LIST",
+		"value": "N\u00e3o foi poss\u00edvel invocar."
+	},
+	{
+		"key": "MID_SUMMON_STONE_NEUTRAL",
+		"value": "Pedra incolor: Her\u00f3i com arma do tipo\\nincolor (arco e flecha, bast\u00e3o, etc.)"
+	},
+	{
+		"key": "MID_SUMMON_STONE_RED",
+		"value": "Pedra vermelha: Her\u00f3i com arma do tipo\\nvermelho (espada, tomo vermelho, etc.)"
+	},
+	{
+		"key": "MID_SUMMON_STONE_BLUE",
+		"value": "Pedra azul: her\u00f3i com arma do tipo\\nazul (lan\u00e7a, tomo azul, etc.)"
+	},
+	{
+		"key": "MID_SUMMON_STONE_GREEN",
+		"value": "Pedra verde: her\u00f3i com arma do tipo\\nverde (machado, tomo verde, etc.)"
+	},
+	{
+		"key": "MID_SUMMON_REVIEW",
+		"value": "Obrigado por jogar.\\nGostaria de deixar um\\ncoment\u00e1rio sobre o aplicativo?"
+	},
+	{
+		"key": "MID_SUMMON_REVIEW_YES",
+		"value": "Sim"
+	},
+	{
+		"key": "MID_SUMMON_REVIEW_LATER_ON",
+		"value": "Depois"
+	},
+	{
+		"key": "MID_SUMMON_REVIEW_NO",
+		"value": "N\u00e3o"
+	},
+	{
+		"key": "MID_SUMMON_REVIEW_CUSTOMER_SUPPORT",
+		"value": "Atendimento ao cliente"
+	},
+	{
+		"key": "MID_UNIT_EDIT_EMPTY",
+		"value": "Vazio"
+	},
+	{
+		"key": "MID_UNIT_EDIT_UNSET",
+		"value": "Sair"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOX",
+		"value": "Aliados"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELECTING",
+		"value": "Total"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GAIN",
+		"value": "Obt\u00e9m"
+	},
+	{
+		"key": "MID_UNIT_EDIT_EXPEND",
+		"value": "Usar"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SORT",
+		"value": "Ordem:\u00a0"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SORT_CONFIRM",
+		"value": "Selecione um crit\u00e9rio."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SORT_KEY",
+		"value": "Obtido"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SORT_PERSON",
+		"value": "Origem"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SORT_LOCK",
+		"value": "Favoritos"
+	},
+	{
+		"key": "MID_UNIT_EDIT_FILTER",
+		"value": "Filtro:\u00a0"
+	},
+	{
+		"key": "MID_UNIT_EDIT_FILTER_CONFIRM",
+		"value": "Selecione um filtro."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_HELP_OFF",
+		"value": "Mostrar info."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_HELP_ON",
+		"value": "Ocultar info."
+	},
+	{
+		"key": "MID_UNIT_EDIT",
+		"value": "Aliados"
+	},
+	{
+		"key": "MID_UNIT_EDIT_ORGANIZE",
+		"value": "Editar equipes"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_LEARN",
+		"value": "Aprender habilidades"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_LEARN_HELP1",
+		"value": "Escolha um personagem para aprender a habilidade."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_LEARN_HELP2",
+		"value": "Selecione uma habilidade."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_LEARN_CONFIRM",
+		"value": "Ensinar esta habilidade?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_LEARN_DECIDE",
+		"value": "Ensinar"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_LEARN_EQUIP_CONFIRM",
+		"value": "Equipar a habilidade agora?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_LEARN_EQUIP_DECIDE",
+		"value": "Sim"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_LEARN_EQUIP_CANCEL",
+		"value": "N\u00e3o"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP",
+		"value": "Gerenciar habilidades"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_HELP1",
+		"value": "Escolha o personagem para gerenciar."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_HELP2",
+		"value": "Toque na habilidade que quer equipar ou remover."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_CONFIRM",
+		"value": "$aPontos de energia necess\u00e1rios: $a0\\nConfirmar altera\u00e7\u00e3o?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_DECIDE",
+		"value": "Confirmar"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_COMPLETE_CONFIRM",
+		"value": "Altera\u00e7\u00e3o completa."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_CANCEL_CONFIRM",
+		"value": "Descartar altera\u00e7\u00f5es?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_CANCEL_WARNING",
+		"value": "As altera\u00e7\u00f5es n\u00e3o ser\u00e3o aplicadas."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_CANCEL_DECIDE",
+		"value": "Descartar"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LEVEL_UP",
+		"value": "Subir de n\u00edvel"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LEVEL_UP_HELP1",
+		"value": "Selecionar personagem para subir de n\u00edvel."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LEVEL_UP_HELP2",
+		"value": "Selecionar o n\u00edvel para o personagem."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LEVEL_UP_CONFIRM",
+		"value": "Subir n\u00edvel do personagem?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_PROMOTION",
+		"value": "Aumentar potencial"
+	},
+	{
+		"key": "MID_UNIT_EDIT_PROMOTION_HELP1",
+		"value": "$aSelecione um personagem de n\u00edvel $a0 ou superior."
+	},
+	{
+		"key": "MID_UNIT_EDIT_PROMOTION_HELP2",
+		"value": "$aN\u00edvel e atributos voltar\u00e3o aos\\nvalores iniciais para personagens $a0 \u2605."
+	},
+	{
+		"key": "MID_UNIT_EDIT_PROMOTION_CONFIRM",
+		"value": "Aumentar classifica\u00e7\u00e3o de \u2605?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_PROMOTION_DECIDE",
+		"value": "Aumentar"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL",
+		"value": "Mandar para casa"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_HELP1",
+		"value": "Selecione her\u00f3is para mandar para casa."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_HELP2",
+		"value": "Mande personagens para casa\\ne obtenha penas de her\u00f3i."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_CONFIRM",
+		"value": "Mandar para casa?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_WARNING",
+		"value": "Personagens mandados para casa\\nser\u00e3o removidos de sua lista."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_DECIDE",
+		"value": "Mandar para casa"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_COMPLETE_CONFIRM",
+		"value": "Obrigada por tudo e boa viagem!"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SENIOR",
+		"value": "Op\u00e7\u00f5es avan\u00e7adas"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_STATUS_EQUIP",
+		"value": "Equipada"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_STATUS_LEARNED",
+		"value": "Aprendida"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_STATUS_INSUFFICIENT_PREREQUISITE",
+		"value": "\u00a0"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_STATUS_NON_INHERITABLE",
+		"value": "Intransfer."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_STATUS_UNLEARNED",
+		"value": "N\u00e3o apre."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_WARNING_WEAPON",
+		"value": "Esta habilidade n\u00e3o pode ser herdada\\npor limita\u00e7\u00f5es no tipo de arma."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_WARNING_MOVE",
+		"value": "Esta habilidade n\u00e3o pode ser herdada\\npor limita\u00e7\u00f5es no tipo de movimentos."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_WARNING_FIXED",
+		"value": "A habilidade n\u00e3o pode ser herdada,\\npois \u00e9 exclusiva."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_WARNING_PREREQUISITE_LEARN1",
+		"value": "$aRequer: $a0."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_WARNING_PREREQUISITE_LEARN2",
+		"value": "$aRequer: $a0 ou\\n$a1."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK",
+		"value": "Combinar aliados"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_DESTINATION",
+		"value": "Melhora"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_SOURCE",
+		"value": "Desaparece"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_HELP1",
+		"value": "Combinar aliados para aumentar PH e atributos."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_CONFIRM_LVSP",
+		"value": "$aAumentar atributos do aliado\\ne transferir $a0 PH?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_CONFIRM_LV",
+		"value": "Aumentar atributos do aliado?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_CONFIRM_SP",
+		"value": "$aTransferir $a0 PH ao aliado?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_WARNING",
+		"value": "Combinar aliados com classifica\u00e7\u00e3o\\nde \u2605 igual ou mais baixa concede\\nmelhoras de atributos e PH. Outras\\ncombina\u00e7\u00f5es concedem apenas PH."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_WARNING2",
+		"value": "$aO aliado j\u00e1 alcan\u00e7ou +$a0,\\nlogo, pode ganhar apenas PH."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_WARNING3",
+		"value": "$aAo herdar PH, este aliado exceder\u00e1\\no limite, ent\u00e3o perder\u00e1 $a0 PH."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_WARNING4",
+		"value": "Este aliado atingiu o limite de PH\\ne n\u00e3o pode herdar mais."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_DIALOG_LVSP",
+		"value": "$aAumentar atributos do aliado\\ne transferir $a0 de PH?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_DIALOG_LV",
+		"value": "Aumentar atributos do aliado?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_DIALOG_SP",
+		"value": "$aTransferir $a0 PH ao aliado?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_DIALOG_WARNING",
+		"value": "O aliado de origem desaparecer\u00e1."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_DIALOG_DECIDE_LV",
+		"value": "Melhorar"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_DIALOG_DECIDE_SP",
+		"value": "Herdar"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_BEFORE",
+		"value": "Antes"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_AFTER",
+		"value": "Depois"
+	},
+	{
+		"key": "MID_UNIT_EDIT_ORGANIZE_HELP_DIALOG_00",
+		"value": "Crie equipes com aliados!"
+	},
+	{
+		"key": "MID_UNIT_EDIT_ORGANIZE_HELP_DIALOG_01",
+		"value": "-Formar equipes-\\n\u00c9 poss\u00edvel editar as equipes\\nenviadas ao combate. O aliado no\\nespa\u00e7o mais \u00e0 esquerda \u00e9 o l\u00edder."
+	},
+	{
+		"key": "MID_UNIT_EDIT_ORGANIZE_HELP_DIALOG_02",
+		"value": "-Adicionar aliados-\\nPara adicionar aliados \u00e0 equipe,\\ntoque em um espa\u00e7o e no aliado.\\n\\n-Remover aliados-\\nPara remover um aliado da equipe,\\nselecione-o e toque em \"Sair\"."
+	},
+	{
+		"key": "MID_UNIT_EDIT_ORGANIZE_HELP_DIALOG_03",
+		"value": "-Trocar de equipe-\\nToque na seta que est\u00e3o em\\nambos os lados de cada equipe.\\n\\n-Perfis dos aliados-\\nToque na imagem de um aliado\\ne segure para visualizar o perfil."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_LEARN_HELP_DIALOG_00",
+		"value": "Use PH para aprender habilidades!"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_LEARN_HELP_DIALOG_01",
+		"value": "-Aprender habilidades-\\nAliados aprendem novas\\nhabilidades usando pontos\\nde habilidade (PH).\\n\\n-Pontos de habilidade (PH)-\\nPontos que seus aliados obt\u00eam\\npor derrotarem inimigos em\\nbatalhas e subirem de n\u00edvel."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_LEARN_HELP_DIALOG_02",
+		"value": "-Aumentar raridade-\\nAliados podem obter habilidades\\nmais poderosas \u00e0 medida em que\\ncrescem em raridade (\u2605)."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_HELP_DIALOG_00",
+		"value": "Gerencie habilidades!"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_HELP_DIALOG_01",
+		"value": "-Gerenciar habilidades-\\n\u00c9 poss\u00edvel escolher as habilidades\\nusadas por aliados nas batalhas."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_HELP_DIALOG_02",
+		"value": "-Habilidades ativas e passivas-\\nAlgumas habilidades s\u00e3o ativas,\\nou seja, s\u00e3o ativadas por a\u00e7\u00f5es.\\nOutras s\u00e3o passivas. Basta\\natribu\u00ed-las para que tenham efeito."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_HELP_DIALOG_03",
+		"value": "-Tipos de habilidades ativas-\\nH\u00e1 tr\u00eas tipos de habilidades\\nativas: armas, apoio e especiais.\\nElas s\u00e3o ativadas na batalha,\\nquando atribu\u00eddas."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_HELP_DIALOG_04",
+		"value": "-Tipos de habilidades passivas-\\nH\u00e1 tr\u00eas tipos de habilidades\\npassivas: Misc. A, Misc. B e\\nMisc. C. Basta equip\u00e1-las para\\nus\u00e1-las. \u00c9 poss\u00edvel atribuir uma\\nde cada tipo a cada aliado."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LEVEL_UP_HELP_DIALOG_00",
+		"value": "Use fragmentos e cristais!"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LEVEL_UP_HELP_DIALOG_01",
+		"value": "-Subir de n\u00edvel com itens-\\nSuba o n\u00edvel de aliados\\nusando fragmentos e cristais."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LEVEL_UP_HELP_DIALOG_02",
+		"value": "-Tipos de fragmentos e cristais-\\n\u00c9 preciso usar um fragmento ou\\ncristal que seja do mesmo tipo do\\naliado. Fragmentos e cristais\\nuniversais podem ser usados em\\naliados de qualquer tipo."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LEVEL_UP_HELP_DIALOG_03",
+		"value": "-Uso de fragmentos e cristais-\\nUse fragmentos em aliados de\\nn\u00edvel 19 ou inferior e cristais em\\naliados de n\u00edvel 20 ou superior.\\n\u00c9 poss\u00edvel obter cristais a partir\\ndo sexto estrato da torre de treino."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_HELP_DIALOG_00",
+		"value": "Penas de her\u00f3i por aliados!"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_HELP_DIALOG_01",
+		"value": "-Mandar aliados para casa-\\n\u00c9 poss\u00edvel obter penas de her\u00f3i\\nao mandar aliados para casa.\\nOs aliados ser\u00e3o perdidos\\npermanentemente."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_HELP_DIALOG_02",
+		"value": "-Aliados favoritos-\\nAliados marcados como favoritos\\nn\u00e3o podem ser mandados para\\ncasa nem usados de forma que\\nsejam perdidos para sempre."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_HELP_DIALOG_03",
+		"value": "-Marcar aliados como favoritos-\\nToque no cora\u00e7\u00e3o no canto\\nsuperior esquerdo do perfil do\\naliado e selecione uma cor. Toque\\nem \"Remover\" para desmarc\u00e1-lo."
+	},
+	{
+		"key": "MID_UNIT_EDIT_PROMOTION_HELP_DIALOG_00",
+		"value": "Aumente o potencial para mais \u2605!"
+	},
+	{
+		"key": "MID_UNIT_EDIT_PROMOTION_HELP_DIALOG_01",
+		"value": "-Aumentar potencial de aliados-\\nCom certos itens \u00e9 poss\u00edvel\\naumentar a raridade (\u2605) de\\naliados de n\u00edvel 20 ou superior.\\nAumentar a raridade permite\\ndesbloquear parte de seu\\npotencial. O aliado volta ao n\u00edvel\\n1, mas pode aprender habilidades\\nmais poderosas e melhorar seus\\natributos mais r\u00e1pido."
+	},
+	{
+		"key": "MID_UNIT_EDIT_PROMOTION_HELP_DIALOG_02",
+		"value": "-Aliados de 1 a 3 \u2605-\\nPara aumentar a classifica\u00e7\u00e3o \u2605,\\nvoc\u00ea precisa de penas de her\u00f3i\\n(obtidas de muitas maneiras,\\nincluindo batalhas na Arena)\\ne distintivos (obtidos\\nna torre de treino)."
+	},
+	{
+		"key": "MID_UNIT_EDIT_PROMOTION_HELP_DIALOG_03",
+		"value": "-Aliados de 4 \u2605-\\nPara aumentar a classifica\u00e7\u00e3o,\\nvoc\u00ea precisar\u00e1 de penas de her\u00f3i\\ne ins\u00edgnias. \u00c9 poss\u00edvel obter\\nins\u00edgnias a partir do sexto\\nestrato na torre de treino."
+	},
+	{
+		"key": "MID_UNIT_EDIT_PROMOTION_HELP_DIALOG_04",
+		"value": "-Efeito de combinar her\u00f3is-\\nAo aumentar a classifica\u00e7\u00e3o \u2605\\nde um aliado, o aumento dos\\natributos decorrente da\\ncombina\u00e7\u00e3o ser\u00e1 perdido."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_HELP_DIALOG_00",
+		"value": "Combine aliados e melhore 1 deles!"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_HELP_DIALOG_01",
+		"value": "-Combinar aliados-\\n\u00c9 poss\u00edvel aumentar atributos e\\nPH de um aliado ao combin\u00e1-lo\\ncom outro que tenha o mesmo\\nnome e alcunha. O aliado de\\norigem ser\u00e1 perdido."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_HELP_DIALOG_02",
+		"value": "-Melhorar atributos-\\nSe o aliado de origem tem uma\\nraridade (\u2605) igual ou maior a\\ndo aliado destino, este n\u00e3o s\u00f3\\naumentar\u00e1 seus PH, mas tamb\u00e9m\\nseus atributos. Caso contr\u00e1rio,\\no aliado s\u00f3 receber\u00e1 PH.\\n\\nAo aumentar a raridade de um\\naliado, ele perder\u00e1 as melhoras de\\natributos obtidas em combina\u00e7\u00e3o\\ncom outro her\u00f3i."
+	},
+	{
+		"key": "MID_NOT_EQQUIPPED",
+		"value": "N\u00e3o compat\u00edvel:"
+	},
+	{
+		"key": "MID_EQQUIPPED_ONLY_PERSON",
+		"value": "Habilidade exclusiva da unidade original."
+	},
+	{
+		"key": "MID_EQQUIPPED_ONLY_ROD",
+		"value": "Habilidade exclusiva para quem usa bast\u00e3o."
+	},
+	{
+		"key": "MID_UNIT_EDIT_FAVORITE_SET",
+		"value": "Selecione o \u00edcone que quer usar."
+	},
+	{
+		"key": "MID_UNIT_EDIT_FAVORITE_TYPE",
+		"value": "$aFavorito $a0"
+	},
+	{
+		"key": "MID_UNIT_EDIT_FAVORITE_NONE",
+		"value": "Remover"
+	},
+	{
+		"key": "MID_UNIT_EDIT_FAVORITE_FILTER",
+		"value": "Aliados marcados como favoritos\\ns\u00e3o exibidos primeiro. Marque\\naliados como favoritos nos\\nperfis deles."
+	},
+	{
+		"key": "MID_UNIT_EDIT_FAVORITE_FILTER_UNSET",
+		"value": "Sem prioridade"
+	},
+	{
+		"key": "MID_UNIT_EDIT_FAVORITE_NAME_EDIT",
+		"value": "Mudar nome"
+	},
+	{
+		"key": "MID_UNIT_EDIT_FAVORITE_NAME_EDIT_SELECT",
+		"value": "Selecione uma categoria de\\nfavoritos para mudar o nome."
+	},
+	{
+		"key": "MID_UNIT_EDIT_FAVORITE_NAME_PLACE_HOLDER",
+		"value": "Insira um nome"
+	},
+	{
+		"key": "MID_UNIT_EDIT_FAVORITE_NAME_ASK",
+		"value": "Insira um nome para esta categoria."
+	},
+	{
+		"key": "MID_UNIT_EDIT_FAVORITE_NAME_WARNING",
+		"value": "O nome escolhido ser\u00e1 usado para todos\\nos aliados desta categoria."
+	},
+	{
+		"key": "MID_UNIT_EDIT_FAVORITE_NAME_ASK_INFO",
+		"value": "Use 9 caracteres no m\u00e1ximo.\\nN\u00e3o \u00e9 poss\u00edvel usar certos s\u00edmbolos."
+	},
+	{
+		"key": "MID_UNIT_EDIT_HIGHEST_SKILL_FILTER_ON",
+		"value": "Melhores"
+	},
+	{
+		"key": "MID_UNIT_EDIT_HIGHEST_SKILL_FILTER_OFF",
+		"value": "Todas"
+	},
+	{
+		"key": "MID_UNIT_INFO_EXP_MAX",
+		"value": "MAX"
+	},
+	{
+		"key": "MID_UNIT_INFO_TO_TALK",
+		"value": "Toque!"
+	},
+	{
+		"key": "MID_UNIT_INFO_NOW_TALK",
+		"value": "Escute!"
+	},
+	{
+		"key": "MID_UNIT_INFO_EXP_REMAIN",
+		"value": "Pr\u00f3x.:"
+	},
+	{
+		"key": "MID_UNIT_INFO_TO_SKILLLIST",
+		"value": "Habilidades"
+	},
+	{
+		"key": "MID_UNIT_INFO_TO_STATUS",
+		"value": "Status"
+	},
+	{
+		"key": "MID_UNIT_INFO_LIMITBREAK",
+		"value": "Combinado"
+	}
+]
