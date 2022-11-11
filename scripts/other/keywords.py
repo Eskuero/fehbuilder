@@ -23,17 +23,18 @@ with open("../../data/languages/fulllanguages.json", "r") as datasource:
 # Big dictionary to store all translations (we're ignoring Spanish (US) and English (EU) as they are probably 99% identical to save same bandwidth)
 languages = ["EUDE", "EUES", "EUFR", "EUIT", "JPJA", "TWZH", "USEN", "USPT"]
 
-# Get all the files that contain unit definitions and loop through them
-files = os.listdir("../feh-assets-json/files/assets/Common/SRPG/Person/")
-for file in files:
-	with open("../feh-assets-json/files/assets/Common/SRPG/Person/" + file, "r") as datasource:
-		data = json.load(datasource)
-		for entry in [entry for entry in data if entry["id_tag"] != "PID_無し"]:
-			keywords[entry["id_tag"]] = {
-				language: translations[language]["M" + entry["id_tag"]] + ": " + translations[language][entry["id_tag"].replace("PID", "MPID_HONOR")]
-				for language in languages
-			}
+# Get unit definitions for all heroes
+with open("../../data/content/fullunits.json", "r") as datasource:
+	heroes = json.load(datasource)
 
+for hero in heroes:
+	# Skip enemy units
+	if "EID" in hero:
+		continue
+	keywords[hero] = {
+		language: translations[language]["M" + hero] + ": " + translations[language][hero.replace("PID", "MPID_HONOR")]
+		for language in languages
+	}
 
 with open("keywords.json", "w") as outfile:
     json.dump(keywords, outfile, indent='\t')
