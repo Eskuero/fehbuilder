@@ -1,15 +1,15 @@
 {
 	"home": {
-		"location": "../static/common/assets/icons/",
-		"output": "../static/common/assets/",
+		"location": "../../static/common/assets/icons/",
+		"output": "../../static/common/assets/",
 		"iconsize": 48,
 		"icons": [
 			"github.png", "kofi.png", "discord.png"
 		]
 	},
 	"online": {
-		"location": "../static/common/assets/icons/",
-		"output": "../static/common/assets/",
+		"location": "../../static/common/assets/icons/",
+		"output": "../../static/common/assets/",
 		"iconsize": 48,
 		"icons": [
 			"language.webp", "unit.webp", "resplendent.webp", "rarity.webp", "beasts.webp", "summoner.webp", "merges.webp", "flower.webp",
@@ -20,8 +20,8 @@
 		]
 	},
 	"custom": {
-		"location": "../static/common/assets/icons/",
-		"output": "../static/common/assets/",
+		"location": "../../static/common/assets/icons/",
+		"output": "../../static/common/assets/",
 		"iconsize": 48,
 		"icons": [
 			"language.webp", "unit.webp", "title.webp", "resplendent.webp", "summoner.webp", "beasts.webp", "bonus.webp", "merges.webp",
@@ -32,24 +32,24 @@
 		]
 	},
 	"tierlist": {
-		"location": "../static/common/assets/icons/",
-		"output": "../static/common/assets/",
+		"location": "../../static/common/assets/icons/",
+		"output": "../../static/common/assets/",
 		"iconsize": 48,
 		"icons": [
 			"home.png", "github.png", "kofi.png", "discord.png", "specialtype.webp", "resplendent.webp", "books.webp", "theme.webp"
 		]
 	},
 	"ard": {
-		"location": "../static/common/assets/icons/",
-		"output": "../static/common/assets/",
+		"location": "../../static/common/assets/icons/",
+		"output": "../../static/common/assets/",
 		"iconsize": 48,
 		"icons": [
 			"unit.webp", "structures.webp", "title.webp", "brush.webp", "home.png", "github.png", "kofi.png", "discord.png"
 		]
 	},
 	"summon": {
-		"location": "../static/common/assets/icons/",
-		"output": "../static/common/assets/",
+		"location": "../../static/common/assets/icons/",
+		"output": "../../static/common/assets/",
 		"iconsize": 48,
 		"icons": [
 			"language.webp", "rarity_5_focus.webp", "rarity_4_focus.webp", "rarity.webp", "rarity_4_special.webp", "rarity_4.webp", "rarity_3.webp",
