@@ -17,13 +17,13 @@ import pathlib
 from PIL import Image
 
 # Create all temp routes as needed
-pathlib.Path("../data/img/heroes").mkdir(parents=True, exist_ok=True)
-pathlib.Path("../data/img/other").mkdir(parents=True, exist_ok=True)
+pathlib.Path("../../data/img/heroes").mkdir(parents=True, exist_ok=True)
+pathlib.Path("../../data/img/other").mkdir(parents=True, exist_ok=True)
 
 def download():
 	for icon in icons:
 		# By default we save on the "other" folder
-		location = "../data/img/other/"
+		location = "../../data/img/other/"
 		# Skip if the file is already downloaded
 		if pathlib.Path(location + icon + ".webp").is_file():
 			continue
