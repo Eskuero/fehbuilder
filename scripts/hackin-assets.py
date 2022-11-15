@@ -34,7 +34,7 @@ LOCAL_BASE_PATH = "../data/img/"
 ##########################
 # Obtain all heroes data #
 
-print("Pulling  heroes art...")
+print("\n     - Pulling  heroes art...")
 with open("../data/content/fullunits.json", "r") as datasource:
 	units = json.load(datasource)
 
@@ -93,7 +93,7 @@ for unit in units:
 with open("../data/content/fullskills.json", "r") as datasource:
 	skills = json.load(datasource)
 
-print("\nPulling spritsheets for passive and weapon refine icons...")
+print("\n     - Pulling spritsheets for passive and weapon refine icons...")
 # First obtain all the icon spritesheets
 p = subprocess.Popen(['adb', 'shell', "su -c", "ls /data/data/com.nintendo.zaba/files/assets/Common/UI/Skill_Passive*"], stdout=subprocess.PIPE, stderr = subprocess.DEVNULL)
 spritesheets = p.communicate()[0].decode().split()
@@ -106,7 +106,7 @@ for i in range(0, len(spritesheets)):
 		subprocess.run(['adb', 'shell', "su -c", "dd if=" + spritesheets[i]], stdout=tempimage, stderr = subprocess.DEVNULL)
 		orderedsheets.insert(realindex, Image.open(tempimage))
 
-print("\nCropping individual passive and weapon refine icons...")
+print("\n     - Cropping individual passive and weapon refine icons...")
 # For ease of looping create a big dictionary that specifies the expected local path and the iconid too
 icons = {}
 # First we loop the passives
@@ -128,7 +128,7 @@ for weapon in skills["weapons"]:
 for icon in icons:
 	if not pathlib.Path(LOCAL_BASE_PATH + icons[icon]["localpath"]).is_file():
 		truename = engrishname["M" + icon]
-		print("\"" + truename + "\" missing asset \"" + icons[icon]["localpath"] + "\", cropping from spritesheet with ID " + str(icons[icon]["iconid"]), end = ": ", flush = True)
+		print("          - \"" + truename + "\" missing asset \"" + icons[icon]["localpath"] + "\", cropping from spritesheet with ID " + str(icons[icon]["iconid"]), end = ": ", flush = True)
 		# Each spritesheet contains 169 icons, that means they end at +168 index. We divide by 169 and floor to detect which one
 		sheet = math.floor(icons[icon]["iconid"] / 169)
 		# Once we know which sheet we can calculate the ID within it by substracting the starting index from the one we are using

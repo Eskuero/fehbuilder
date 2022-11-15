@@ -52,7 +52,6 @@ for language in languages:
 	strings = {}
 	for file in files:
 		with open("hackin/languages/" + language + "/" + file, "r") as datasource:
-			print("hackin/languages/" + language + "/" + file)
 			data = json.load(datasource)
 			# We only add strings related to either skills or units as long as they are not descriptions
 			for string in [string for string in data if (any(substring in string["key"] for substring in ["MPID_", "MEID_", "MSID_"]) and not any(substring in string["key"] for substring in ["MPID_H_", "MEID_H_", "MSID_H_", "MPID_SEARCH_", "MSID_SEARCH_", "MPID_LEGEND_"])) or string["key"] in fullstrings]:
