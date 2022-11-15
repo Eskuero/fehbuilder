@@ -19,13 +19,14 @@ else
 	echo -e "\n---------------------------------------------------------" >> fehupdate-$date.log 2>&1
 	echo "Parsing and preparing all necessary data:" >> fehupdate-$date.log 2>&1
 	echo -e "\n        - Other..." >> fehupdate-$date.log 2>&1
-	PYTHONUNBUFFERED=1 python3 other.py >> fehupdate-$date.log 2>&1
+	PYTHONUNBUFFERED=1 python3 renewdata-other.py >> fehupdate-$date.log 2>&1
 	echo -e "\n        - Languages..." >> fehupdate-$date.log 2>&1
-	PYTHONUNBUFFERED=1 python3 languages.py >> fehupdate-$date.log 2>&1
+	PYTHONUNBUFFERED=1 python3 renewdata-languages.py >> fehupdate-$date.log 2>&1
 	echo -e "\n        - Skills..." >> fehupdate-$date.log 2>&1
-	PYTHONUNBUFFERED=1 python3 skills.py >> fehupdate-$date.log 2>&1
+	PYTHONUNBUFFERED=1 python3 renewdata-skills.py >> fehupdate-$date.log 2>&1
 	echo -e "\n        - Heroes..." >> fehupdate-$date.log 2>&1
-	PYTHONUNBUFFERED=1 python3 units.py >> fehupdate-$date.log 2>&1
+	PYTHONUNBUFFERED=1 python3 renewdata-units.py >> fehupdate-$date.log 2>&1
+	# FIXME: UGH
 	echo -e "\n        - Summoning pools..." >> fehupdate-$date.log 2>&1
 	PYTHONUNBUFFERED=1 python3 summoning.py >> fehupdate-$date.log 2>&1
 	echo -e "\n        - Copying outputs to destination..." >> fehupdate-$date.log 2>&1
@@ -39,5 +40,5 @@ fi
 
 if [[ "$2" != "--hackin" ]]; then
 	echo -e "Downloading missing assets from wiki..." >> fehupdate-$date.log 2>&1
-	PYTHONUNBUFFERED=1 python3 downloadassets.py >> fehupdate-$date.log 2>&1
+	PYTHONUNBUFFERED=1 python3 renewdata-assets.py >> fehupdate-$date.log 2>&1
 fi
