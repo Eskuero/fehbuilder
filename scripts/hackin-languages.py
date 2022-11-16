@@ -71,8 +71,8 @@ for file in files:
 			addm = "M" if split[1][0] != "M" else ""
 			strings[addm + split[1]] = split[0]
 languages["KOKR"] = strings
-# Go through each string in english and make sure we have a translation in Korean
 
+# Go through each string in english and make sure we have a translation in Korean
 for string in languages["USEN"]:
 	if string not in languages["KOKR"]:
 		# Do not print errors for ILLUST and VOICE strings (we still add them)
