@@ -61,15 +61,17 @@ for language in languages:
 # Parse Korean from the provided .csvs
 files = os.listdir("hackin/languages/KOKR/")
 strings = {}
-print("Parsing Korean language")
+print("            - Parsing Korean language")
 for file in files:
+	# Only read .csv files
+	if ".csv" not in file:
+		continue
 	with open("hackin/languages/KOKR/" + file, "r") as datasource:
 		data = datasource.read().splitlines()
 		# Only take the last split by "," to avoid losing data
 		for line in data:
 			split = line.rsplit(",", 1)
-			addm = "M" if split[1][0] != "M" else ""
-			strings[addm + split[1]] = split[0]
+			strings[split[1]] = split[0]
 languages["KOKR"] = strings
 
 # Go through each string in english and make sure we have a translation in Korean
@@ -77,7 +79,7 @@ for string in languages["USEN"]:
 	if string not in languages["KOKR"]:
 		# Do not print errors for ILLUST and VOICE strings (we still add them)
 		if not any(substr in string for substr in ["VOICE", "ILLUST", "EID"]):
-			print("    - Missing Korean translation for \"" + string + "\", falling back to English as \"" + languages["USEN"][string] + "\"")
+			print("                - Missing Korean translation for \"" + string + "\", falling back to English as \"" + languages["USEN"][string] + "\"")
 		languages["KOKR"][string] = languages["USEN"][string]
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #

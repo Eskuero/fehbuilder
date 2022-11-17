@@ -1,6 +1,9 @@
 #!/bin/sh
 date=$(date +"%Y-%m-%d-%H-%M-%S")
 
+echo "Updating submodules..." >> fehupdate-$date.log 2>&1
+git submodule update --remote >> fehupdate-$date.log 2>&1;
+
 echo -e "\n        - Other..." >> fehupdate-$date.log 2>&1
 PYTHONUNBUFFERED=1 python3 hackin-other.py >> fehupdate-$date.log 2>&1
 echo -e "\n        - Languages..." >> fehupdate-$date.log 2>&1
