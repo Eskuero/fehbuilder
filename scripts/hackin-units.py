@@ -15,20 +15,77 @@ import json
 import os
 import datetime
 
-# Load all heroes data from the json file
-with open("../data/content/fullunits.json", "r") as datasource:
-	heroes = json.load(datasource)
+# We store all the data in a single dict
+heroes = {}
 
-# Get all the manually defined hero jsons
+# Get all the files that contain unit definitions and loop through them
+files = os.listdir("hackin/enemy/")
+for file in files:
+	with open("hackin/enemy/" + file, "r") as datasource:
+		data = json.load(datasource)
+		# EID_無し is skeleton data for a enemy so we ignore it. We also ignore the normal bosses
+		for entry in [entry for entry in data if entry["id_tag"] != "EID_無し" and not entry["is_boss"]]:
+
+			heroes[entry["id_tag"]] = {
+				# The base stats values stored for each hero are so at 3 star rarity (it's safe to reduce them all by 1 to match 1* star rarity)
+				"stats": [value-1 for value in entry["base_stats"].values()],
+				"growths": [value for value in entry["growth_rates"].values()],
+				"weapon": entry["weapon_type"],
+				"move": entry["move_type"],
+				"flowers": 25,
+				# Obtain the base kit skipping empty entries (it's provided as a list of list for each rarity unlock but we just need one)
+				"basekit": [],
+				"art": entry["face_name"]
+			}
+
+# Load all weapon data from the json file
+with open("fullskills.json", "r") as datasource:
+	weapons = json.load(datasource)["weapons"]
+weaponevolutions = {}
+# FIXME: Do it from datamine! Get all the files that contain weapon evolution definitions and loop through them
+files = os.listdir("feh-assets-json/files/assets/Common/SRPG/WeaponRefine/")
+for file in files:
+	with open("feh-assets-json/files/assets/Common/SRPG/WeaponRefine/" + file, "r") as datasource:
+		data = json.load(datasource)
+		# Skip any weapon evolution not in the weapons to avoid adding normal refines
+		for entry in [entry for entry in data if entry["refined"] in weapons]:
+			weaponevolutions[entry["orig"]] = entry["refined"]
+
+# Load all language data from the json file
+with open("fulllanguages.json", "r") as datasource:
+	strings = json.load(datasource)["USEN"]
+
+# Get all the files that contain unit definitions and loop through them
 files = os.listdir("hackin/heroes/")
 for file in files:
 	with open("hackin/heroes/" + file, "r") as datasource:
-		dataheroes = json.load(datasource)
-	# Update or add each entry
-	for hero in dataheroes:
-		heroes[hero] = dataheroes[hero]
+		data = json.load(datasource)
+		# PID_無し is skeleton data for a hero so we ignore it
+		for entry in [entry for entry in data if entry["id_tag"] != "PID_無し"]:
 
-# Sort all heroes by ID so they have a nicer appearance in tierlist maker
+			heroes[entry["id_tag"]] = {
+				# The base stats values stored for each hero are so at 3 star rarity (it's safe to reduce them all by 1 to match 1* star rarity)
+				"stats": [value-1 for value in entry["base_stats"].values()],
+				"growths": [value for value in entry["growth_rates"].values()],
+				"weapon": entry["weapon_type"],
+				"origin": entry["series"],
+				"move": entry["move_type"],
+				"flowers": entry["dragonflowers"]["max_count"],
+				# Obtain the base kit skipping empty entries (it's provided as a list of list for each rarity unlock but we just need one)
+				"basekit": [skill for category in entry["skills"] for skill in category if skill],
+				"resplendent": True if entry["id_tag"].replace("PID", "MPID_VOICE") + "EX01" in strings else False,
+				"id": entry["id_num"],
+				"art": entry["face_name"]
+			}
+			# Clean basekit of duplicates
+			tempkit = []
+			[tempkit.append(skill) for skill in heroes[entry["id_tag"]]["basekit"] if skill not in tempkit]
+			heroes[entry["id_tag"]]["basekit"] = tempkit
+			# Complete the basekit by adding the skills that have weapon evolutions available
+			for item in [item for item in heroes[entry["id_tag"]]["basekit"] if item in weaponevolutions]:
+				heroes[entry["id_tag"]]["basekit"].append(weaponevolutions[item])
+
+# Sort all heroes by ID so they have a nicer appearance in tierlist make
 heroessorted = sorted(heroes.items(), key = lambda x: x[1].get('id',-1))
 heroes = {}
 for hero in heroessorted:

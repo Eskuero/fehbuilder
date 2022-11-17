@@ -14,25 +14,93 @@
 import json
 import os
 
-# Load all heroes data from the json file
-with open("../data/content/fullskills.json", "r") as datasource:
-	skills = json.load(datasource)
+# We store all the data in a single dict
+skills = {
+	"weapons": {},
+	"passives": {
+		"A": {},
+		"B": {},
+		"C": {},
+		"S": {}
+	},
+	"assists": {},
+	"specials": {}
+}
+categories = [skills["weapons"], skills["assists"], skills["specials"], skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"]]
+refines = {}
 
-# Get all the manually defined hero jsons
+# Get all the files that contain skill definitions and loop through them
 files = os.listdir("hackin/skills/")
 for file in files:
 	with open("hackin/skills/" + file, "r") as datasource:
-		dataskills = json.load(datasource)
-	# Update or add to non nested entries
-	nonnested = ["weapons","assists","specials"]
-	for category in nonnested:
-		for skill in dataskills[category]:
-			skills[category][skill] = dataskills[category][skill]
-	# Update or add to nested entries
-	nested = ["A","B","C","S"]
-	for category in nested:
-		for skill in dataskills["passives"][category]:
-			skills["passives"][category][skill] = dataskills["passives"][category][skill]
+		data = json.load(datasource)
+		# SID_無し is skeleton data for a skill so we ignore
+		for entry in [entry for entry in data if entry["id_tag"] != "SID_無し"]:
+			# Store all the data except if it's a refine
+			if not entry["refine_base"] and entry["category"] in range(0, 7):
+				categories[entry["category"]][entry["id_tag"]] = {
+					"weapon": entry["wep_equip"],
+					"move": entry["mov_equip"]
+				}
+				# Indicate exclusive preferred weapons
+				if entry["exclusive"]:
+					categories[entry["category"]][entry["id_tag"]]["prf"] = True
+				# Always default to max false for seals since we modify the info later when filling the data
+				if not entry["next_skill"] and not entry["passive_next"] and entry["category"] != 6:
+					categories[entry["category"]][entry["id_tag"]]["max"] = True
+				# Specials and Assists do not provide visible stats
+				if entry["category"] not in [1,2]:
+					categories[entry["category"]][entry["id_tag"]]["stats"] = [value for value in entry["stats"].values()]
+				# For weapons add the might as part of the statsmodifiers for Atk, emtpy refines definition and indication of being arcane
+				if entry["category"] == 0:
+					skills["weapons"][entry["id_tag"]]["stats"][1] += entry["might"]
+					skills["weapons"][entry["id_tag"]]["refines"] = {}
+					if entry["arcane_weapon"]:
+						skills["weapons"][entry["id_tag"]]["arcane"] = True
+				# For passives add the iconid at the top level
+				elif entry["category"] in range(3, 7):
+					categories[entry["category"]][entry["id_tag"]]["iconid"] = entry["icon_id"]
+
+			# For refines we just store them separetely for later processing
+			elif entry["refine_base"]:
+				refines[entry["id_tag"]] = {
+					"baseWeapon": entry["refine_base"],
+					"stats": [value for value in entry["stats"].values()],
+				}
+				refines[entry["id_tag"]]["stats"][1] += entry["might"]
+				# If there's a refine ID this means is an special effect refine and we might need effectids
+				if entry["refine_id"] not in [None, "SID_神罰の杖3", "SID_幻惑の杖3"]:
+					refines[entry["id_tag"]]["effectid"] = entry["refine_id"]
+					refines[entry["id_tag"]]["iconid"] = entry["icon_id"]
+
+refinenames = {"神": "Wrathful", "幻": "Dazzling", "ATK": "Atk", "AGI": "Spd", "DEF": "Def", "RES": "Res"}
+# For each refine defined update the original weapon info
+for refinable in refines:
+	# The last part of the refine ID is the one that indicates the type
+	refine = refinable.split("_")[-1]
+	refine = refinenames[refine] if refine in refinenames else "Effect"
+	# Always add the stats modifiers for the particular refine
+	skills["weapons"][refines[refinable]["baseWeapon"]]["refines"][refine] = {
+		"stats": refines[refinable]["stats"]
+	}
+	# For Effect refines we have skill references
+	if refine == "Effect":
+		skills["weapons"][refines[refinable]["baseWeapon"]]["refines"][refine].update({
+			"effectid": refines[refinable]["effectid"],
+			"iconid": refines[refinable]["iconid"]
+		})
+
+# FIXME: Do it from datamine! Complete seals data by getting which skills are available to buy and copying their counterparts data (except for the max setting, which depends on if it's the last seal of it's line)
+files = os.listdir("feh-assets-json/files/assets/Common/SRPG/SkillAccessory/")
+for file in files:
+	with open("feh-assets-json/files/assets/Common/SRPG/SkillAccessory/" + file, "r") as datasource:
+		data = json.load(datasource)
+		# Retrieve all normal skill data to get info because we don't know the category of the skill
+		allpassives = skills["passives"]["A"] | skills["passives"]["B"] | skills["passives"]["C"] | skills["passives"]["S"]
+		# SID_無し is skeleton data for a skill so we ignore
+		for entry in [entry for entry in data if entry["id_tag"] != "SID_無し"]:
+			skills["passives"]["S"][entry["id_tag"]] = allpassives[entry["id_tag"]]
+			skills["passives"]["S"][entry["id_tag"]]["max"] = True if not entry["next_seal"] else False
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Store all the data for internal usage of scripts
@@ -76,7 +144,7 @@ skillscustom = {
 		weaponname: {
 			property: value
 			for property, value in properties.items() if property not in ["prf"]
-		} 
+		}
 		for weaponname, properties in skills["weapons"].items()
     },
 	"assists": skills["assists"],
@@ -86,7 +154,7 @@ skillscustom = {
 			passive: {
 				property: value
 				for property, value in properties.items() if property not in ["prf", "iconid"]
-			} 
+			}
 			for passive, properties in skills["passives"][passivecategory].items()
 		}
 		for passivecategory in ["A", "B", "C", "S"]
