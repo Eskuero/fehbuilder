@@ -64,8 +64,8 @@ for file in files:
 		for entry in [entry for entry in data if entry["id_tag"] != "PID_無し"]:
 
 			heroes[entry["id_tag"]] = {
-				# The base stats values stored for each hero are so at 3 star rarity (it's safe to reduce them all by 1 to match 1* star rarity)
-				"stats": [value-1 for value in entry["base_stats"].values()],
+				# The base stats values stored for each hero are so at 5 star rarity (it's safe to reduce them all by 1 to match 1* star rarity)
+				"stats": [value-2 for value in entry["base_stats"].values()],
 				"growths": [value for value in entry["growth_rates"].values()],
 				"weapon": entry["weapon_type"],
 				"origin": entry["series"],
