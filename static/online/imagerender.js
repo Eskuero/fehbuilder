@@ -75,7 +75,7 @@ async function echoes() {
 	// Print hero name
 	preview.fillStyle = 'white'; preview.strokeStyle = '#0a2533'; preview.textAlign = 'start'; preview.textBaseline = "top"; preview.font = '21px FeH-Font'; preview.lineWidth = 6;
 	// Add the fill and the stroke for the name
-	var name = languages[language]["M" + hero] + ": " + languages[language][hero.replace("PID", "MPID_HONOR")];
+	var name = languages[language]["M" + hero] + ": " + (languages[language]["M" + hero.replace("ID", "ID_HONOR")] || "Enemy");
 	preview.fillText(name, 8, 7);
 
 	var boon = selectboons.value == "None" ? false : selectboons.value; var bane = selectbanes.value == "None" ? false : selectbanes.value; var ascendent = selectascendent.value == "None" ? false : selectascendent.value; var merges = parseInt(selectmerges.value);
@@ -642,7 +642,7 @@ async function myunit() {
 	}
 
 	// Print title and name
-	var title = hero.includes("PID_") ? languages[language][hero.replace("PID", "MPID_HONOR")] : "Enemy";
+	var title = languages[language]["M" + hero.replace("ID", "ID_HONOR")] || "Enemy";
 	// Use horizontally centered anchor to avoid going out of bounds
 	preview.fillStyle = 'white'; preview.strokeStyle = 'rgb(50, 30, 10)'; preview.textAlign = 'center'; preview.textBaseline = "middle"; preview.font = '35px FeH-Font'; preview.lineWidth = 6;
 	// Add the fill and the stroke for the title

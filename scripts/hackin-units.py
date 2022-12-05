@@ -18,26 +18,6 @@ import datetime
 # We store all the data in a single dict
 heroes = {}
 
-# Get all the files that contain unit definitions and loop through them
-files = os.listdir("hackin/enemy/")
-for file in files:
-	with open("hackin/enemy/" + file, "r") as datasource:
-		data = json.load(datasource)
-		# EID_無し is skeleton data for a enemy so we ignore it. We also ignore the normal bosses
-		for entry in [entry for entry in data if entry["id_tag"] != "EID_無し" and not entry["is_boss"]]:
-
-			heroes[entry["id_tag"]] = {
-				# The base stats values stored for each hero are so at 3 star rarity (it's safe to reduce them all by 1 to match 1* star rarity)
-				"stats": [value-1 for value in entry["base_stats"].values()],
-				"growths": [value for value in entry["growth_rates"].values()],
-				"weapon": entry["weapon_type"],
-				"move": entry["move_type"],
-				"flowers": 25,
-				# Obtain the base kit skipping empty entries (it's provided as a list of list for each rarity unlock but we just need one)
-				"basekit": [],
-				"art": entry["face_name"]
-			}
-
 # Load all weapon data from the json file
 with open("fullskills.json", "r") as datasource:
 	weapons = json.load(datasource)["weapons"]
@@ -55,6 +35,9 @@ for file in files:
 with open("fulllanguages.json", "r") as datasource:
 	strings = json.load(datasource)["USEN"]
 
+# Store all face_name indications to know if we get duplicated enemy units
+facenames = []
+
 # Get all the files that contain unit definitions and loop through them
 files = os.listdir("hackin/heroes/")
 for file in files:
@@ -64,7 +47,7 @@ for file in files:
 		for entry in [entry for entry in data if entry["id_tag"] != "PID_無し"]:
 
 			heroes[entry["id_tag"]] = {
-				# The base stats values stored for each hero are so at 5 star rarity (it's safe to reduce them all by 1 to match 1* star rarity)
+				# The base stats values stored for each hero are so at 5 star rarity (it's safe to reduce them all by 2 to match 1* star rarity)
 				"stats": [value-2 for value in entry["base_stats"].values()],
 				"growths": [value for value in entry["growth_rates"].values()],
 				"weapon": entry["weapon_type"],
@@ -77,6 +60,7 @@ for file in files:
 				"id": entry["id_num"],
 				"art": entry["face_name"]
 			}
+			facenames.append(entry["face_name"])
 			# Clean basekit of duplicates
 			tempkit = []
 			[tempkit.append(skill) for skill in heroes[entry["id_tag"]]["basekit"] if skill not in tempkit]
@@ -84,6 +68,29 @@ for file in files:
 			# Complete the basekit by adding the skills that have weapon evolutions available
 			for item in [item for item in heroes[entry["id_tag"]]["basekit"] if item in weaponevolutions]:
 				heroes[entry["id_tag"]]["basekit"].append(weaponevolutions[item])
+
+# Get all the files that contain enemy definitions and loop through them
+files = os.listdir("hackin/enemy/")
+for file in files:
+	with open("hackin/enemy/" + file, "r") as datasource:
+		data = json.load(datasource)
+		# EID_無し is skeleton data for a enemy so we ignore it.
+		for entry in [entry for entry in data if entry["id_tag"] != "EID_無し"]:
+			# We skip boss units only if they have a matching already existing hero for her valid face name
+			if entry["is_boss"] and entry["face_name"] in facenames or not entry["face_name"]:
+				continue
+			heroes[entry["id_tag"]] = {
+				# The base stats values stored for each hero are so at 5 star rarity (it's safe to reduce them all by 2 to match 1* star rarity)
+				"stats": [value-2 for value in entry["base_stats"].values()],
+				"growths": [value for value in entry["growth_rates"].values()],
+				"weapon": entry["weapon_type"],
+				"move": entry["move_type"],
+				"flowers": 25,
+				# For boss enemy units the basekit might contain a single weapon, otherwise empty
+				"basekit": [entry["top_weapon"]] if entry["is_boss"] else [],
+				"art": entry["face_name"],
+				"boss": entry["is_boss"]
+			}
 
 # Sort all heroes by ID so they have a nicer appearance in tierlist make
 heroessorted = sorted(heroes.items(), key = lambda x: x[1].get('id',-1))

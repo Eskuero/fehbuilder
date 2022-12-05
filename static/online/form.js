@@ -101,7 +101,17 @@ async function populate(domitem, data, clean, bypass) {
 	// If indicated to bypass don't do checks for this select, print everything and leave (this is exclusively for the heroes select)
 	if (bypass) {
 		Object.keys(data).forEach((value) => {
-			sorted[languages[newlang]["M" + value] + ": " + (languages[newlang][value.replace("PID", "MPID_HONOR")] || "Generic")] = value;
+			if (value.includes("EID")) {
+				// For enemy units if they have a proper title use that and append a boss indicator
+				if (languages[newlang]["M" + value.replace("ID", "ID_HONOR")]) {
+					sorted[languages[newlang]["M" + value] + ": " + languages[newlang]["M" + value.replace("ID", "ID_HONOR")] + " (Boss)"] = value;
+				// Otherwise just specify is a generic
+				} else {
+					sorted[languages[newlang]["M" + value] + ": " + "Generic"] = value;
+				}
+			} else {
+				sorted[languages[newlang]["M" + value] + ": " + languages[newlang]["M" + value.replace("ID", "ID_HONOR")]] = value;
+			}
 		});
 		sorted = Object.keys(sorted).sort().reduce((res, key) => (res[key] = sorted[key], res), {});
 		// Obtain the final data object that rebspicker can read

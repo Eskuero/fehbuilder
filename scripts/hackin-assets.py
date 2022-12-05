@@ -43,8 +43,8 @@ HEROES_BASE_PATH = "/data/data/com.nintendo.zaba/files/assets/Common/Face/"
 
 # Loop through every hero definition to pull their art
 for unit in units:
-	# Generate a dictionary of all the images we need and their expected remote names. Enemy units lack most of content
-	if "EID_" in unit:
+	# Generate a dictionary of all the images we need and their expected remote names. Enemy non boss units lack most of content
+	if "EID_" in unit and not units[unit]["boss"]:
 		artlist = [
 			{"remotepath": units[unit]["art"] + "/BtlFace.png", "localpath": "heroes/" + unit + "_Portrait.webp", "dimensions": (1330, 1596)},
 			{"remotepath": units[unit]["art"] + "/BtlFace_BU.png", "localpath": "condensed-faces/" + unit + "_Attack.webp", "dimensions": (321, 202)}
@@ -60,8 +60,8 @@ for unit in units:
 			{"remotepath": units[unit]["art"] + "/BtlFace_BU.png", "localpath": "condensed-faces/" + unit + "_Attack.webp", "dimensions": (321, 202)}, # Condensed art attack pose
 			{"remotepath": units[unit]["art"] + "/BtlFace_BU_D.png", "localpath": "condensed-faces/" + unit + "_Damage.webp", "dimensions": (321, 202)}, # Condensed art damage pose
 		]
-		# For resplendents pull extra art
-		if units[unit]["resplendent"]:
+		# For resplendents pull extra art (enemies can't be resplendent lol)
+		if "PID_" in unit and units[unit]["resplendent"]:
 			artlist = artlist + [
 				{"remotepath": units[unit]["art"] + "EX01/Face.png", "localpath": "heroes/" + unit + "_Resplendent_Portrait.webp", "dimensions": (1330, 1596)}, # Full art front pose
 				{"remotepath": units[unit]["art"] + "EX01/BtlFace.png", "localpath": "heroes/" + unit + "_Resplendent_Attack.webp", "dimensions": (1330, 1596)}, # Full art attack pose

@@ -46,7 +46,17 @@ async function populate(domitem, data, clean, bypass = false) {
 	// If indicated to bypass don't do checks for this select, print everything and leave (this is exclusively for the heroes select)
 	if (bypass) {
 		Object.keys(data).forEach((value) => {
-			sorted[languages[newlang]["M" + value] + ": " + (languages[newlang][value.replace("PID", "MPID_HONOR")] || "Generic")] = value;
+			if (value.includes("EID")) {
+				// For enemy units if they have a proper title use that and append a boss indicator
+				if (languages[newlang]["M" + value.replace("ID", "ID_HONOR")]) {
+					sorted[languages[newlang]["M" + value] + ": " + languages[newlang]["M" + value.replace("ID", "ID_HONOR")] + " (Boss)"] = value;
+				// Otherwise just specify is a generic
+				} else {
+					sorted[languages[newlang]["M" + value] + ": " + "Generic"] = value;
+				}
+			} else {
+				sorted[languages[newlang]["M" + value] + ": " + languages[newlang]["M" + value.replace("ID", "ID_HONOR")]] = value;
+			}
 		});
 		// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
 		var sorted = Object.keys(sorted).sort().reduce((res, key) => (res[key] = sorted[key], res), {})
@@ -373,7 +383,7 @@ function filldefaults() {
 	// Else place all the values corresponding to name, title, stats (+2 because we are storing rarity 1), growths, move and weapon types
 	} else {
 		selecthero.value = languages[language]["M" + defaulthero];
-		selecttitle.value = languages[language][defaulthero.replace("PID", "MPID_HONOR")];
+		selecttitle.value = languages[language]["M" + defaulthero.replace("ID", "ID_HONOR")] || "Enemy";
 		selectadhp.value = units[defaulthero]["stats"][0] + 2;
 		selectadatk.value = units[defaulthero]["stats"][1] + 2;
 		selectadspd.value = units[defaulthero]["stats"][2] + 2;

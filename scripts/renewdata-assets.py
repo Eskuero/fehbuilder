@@ -92,7 +92,7 @@ arts = []
 for unit in units:
 	truename = engrishname["M" + unit] + ((": " + engrishname[unit.replace("PID", "MPID_HONOR")]) if "PID_" in unit else "")
 	# Each pose has an expected wiki name (Enemy units as NPC only have the attack pose that we use as portrait
-	if "EID_" in unit:
+	if "EID_" in unit and not units[unit]["boss"]:
 		basenames = {
 			# Enemy NPCs are uploaded as .pngs for whatever reason
 			"_Portrait.webp": truename + "_BtlFace.png",
@@ -148,7 +148,7 @@ ids = []
 arts = []
 for unit in units:
 	# Enemy units are not summonable anyway so skip them
-	if "EID_" in unit:
+	if "EID_" in unit and not units[unit]["boss"]:
 		continue
 	truename = engrishname["M" + unit] + ((": " + engrishname[unit.replace("PID", "MPID_HONOR")]) if "PID_" in unit else "")
 	# Each pose has an expected wiki name (Enemy units as NPC only have the attack pose that we use as portrait
@@ -195,7 +195,7 @@ ids = []
 arts = []
 for unit in units:
 	# Enemy units are not summonable anyway so skip them
-	if "EID_" in unit:
+	if "EID_" in unit and not units[unit]["boss"]:
 		continue
 	truename = engrishname["M" + unit] + ((": " + engrishname[unit.replace("PID", "MPID_HONOR")]) if "PID_" in unit else "")
 	# Each pose has an expected wiki name (Enemy units as NPC only have the attack pose that we use as portrait
@@ -242,7 +242,7 @@ ids = []
 arts = []
 for unit in units:
 	# Enemy units are not summonable anyway so skip them
-	if "EID_" in unit:
+	if "EID_" in unit and not units[unit]["boss"]:
 		continue
 	truename = engrishname["M" + unit] + ((": " + engrishname[unit.replace("PID", "MPID_HONOR")]) if "PID_" in unit else "")
 	# Each pose has an expected wiki name (Enemy units as NPC only have the attack pose that we use as portrait
@@ -288,7 +288,7 @@ ids = []
 arts = []
 for unit in units:
 	# Enemy units are not summonable anyway so skip them
-	if "EID_" in unit:
+	if "EID_" in unit and not units[unit]["boss"]:
 		continue
 	truename = engrishname["M" + unit] + ((": " + engrishname[unit.replace("PID", "MPID_HONOR")]) if "PID_" in unit else "")
 	# Each pose has an expected wiki name (Enemy units as NPC only have the attack pose that we use as portrait
@@ -335,7 +335,7 @@ arts = []
 for unit in units:
 	truename = engrishname["M" + unit] + ((": " + engrishname[unit.replace("PID", "MPID_HONOR")]) if "PID_" in unit else "")
 	# Each pose has an expected wiki name (Enemy units as NPC only have the attack pose
-	if "EID_" in unit:
+	if "EID_" in unit and not units[unit]["boss"]:
 		faces = {
 			# Enemy NPCs are uploaded as .pngs for whatever reason
 			"_Attack.webp": truename + "_BtlFace_BU.webp",
