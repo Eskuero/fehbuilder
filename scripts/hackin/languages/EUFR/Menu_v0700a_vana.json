@@ -1,0 +1,594 @@
+[
+	{
+		"key": "MID_ARENA_BONUS_VERSION",
+		"value": "Parution"
+	},
+	{
+		"key": "MID_ARENA_BONUS_VERSION_HELP",
+		"value": "$aTous les h\u00e9ros venus de la version $a0.X\\nseront disponibles en tant que h\u00e9ros concern\u00e9s\\npar Appel aux armes."
+	},
+	{
+		"key": "MID_BOARD_GAME_HELP_DIALOG_14",
+		"value": "\u25c6 Ripostes/Actions termin\u00e9es \u25c6\\nDans Pions de Loki, les effets qui\\nemp\u00eachent les alli\u00e9s de riposter\\net les effets des aptitudes ennemies\\nqui font que les actions des alli\u00e9s\\nsont consid\u00e9r\u00e9es comme termin\u00e9es\\nsont d\u00e9sactiv\u00e9s."
+	},
+	{
+		"key": "MID_CONFIG_ANIME_AUTO",
+		"value": "Animations\\nen combat auto"
+	},
+	{
+		"key": "MID_CONFIG_IDOL_SOURCE_USER_NAME",
+		"value": "Afficher le nom\\nd'utilisateur avec\\nles \u00e9veill\u00e9s"
+	},
+	{
+		"key": "MID_CONFIG_KEEP",
+		"value": "Oui"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_TITLE",
+		"value": "\u00c9veill\u00e9s de passage"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_WARNING",
+		"value": "Note : les tenues resplendissantes, les\\ndracofleurs, les sceaux sacr\u00e9s, les atouts\\n\u00e9minents, les b\u00e9n\u00e9dictions et les accessoires\\nne seront pas transf\u00e9r\u00e9s."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_DIALOG_CONFIRM_TEXT",
+		"value": "$aUtiliser des $a0\\npour recruter un \u00e9veill\u00e9 ?"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_DIALOG_CONFIRM_WARNING",
+		"value": "\u30fb L'\u00e9veill\u00e9 qui devient votre alli\u00e9\\nperd ses tenues resplendissantes,\\nses dracofleurs, ses sceaux sacr\u00e9s,\\nses atouts \u00e9minents, ses b\u00e9n\u00e9dictions\\net ses accessoires.\\n\u30fb Les \u00e9veill\u00e9s ne peuvent servir de\\nsource pour les fusions ou l'option\\nTransmettre aptitudes.\\n\u30fb Les \u00e9veill\u00e9s ne peuvent pas \u00eatre\\nutilis\u00e9s pour cr\u00e9er des livrets militaires."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_DIALOG_CONFIRM_DECIDE",
+		"value": "Ajouter"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_DIALOG_SHORTAGE_WARNING",
+		"value": "$aVous n'avez pas assez de $a0."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_DIALOG_EXPIRED",
+		"value": "Liens de passage non disponibles."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_INFO_REMAINING_DAYS",
+		"value": "$aEncore $a1 \u00e9veill\u00e9(s)   Encore $a0 j"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_INFO_REMAINING_HOURS",
+		"value": "$aEncore $a1 \u00e9veill\u00e9(s)   Encore $a0 h"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_INFO_REMAINING_MINUTES",
+		"value": "$aEncore $a1 \u00e9veill\u00e9(s)   Encore $a0 min"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_INFO_REACHED_LIMIT",
+		"value": "Votre caserne est pleine."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_INFO_EXPIRED",
+		"value": "La p\u00e9riode de recrutement est termin\u00e9e."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_BUTTON_ENABLE",
+		"value": "Ajouter"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_BUTTON_DISABLE",
+		"value": "Recrutement impossible."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_BUTTON_OUT_OF_VERSION_RANGE",
+		"value": "$aUnit\u00e9 ajout\u00e9e apr\u00e8s la ver. $a0.0"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_00",
+		"value": "\u25c6 \u00c9veill\u00e9s - Mondes connect\u00e9s \u25c6\\nPendant et apr\u00e8s un \u00e9v\u00e9nement de\\nMondes connect\u00e9s, vous pouvez\\nutiliser un lien de passage pour\\nobtenir des h\u00e9ros venus d'arm\u00e9es\\nd'autres joueurs en tant qu'\u00e9veill\u00e9s."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_01",
+		"value": "\u25c6 Lien de passage \u25c6\\nLes liens de passage sont parfois\\ndisponibles \u00e0 l'achat dans le menu\\n\u00ab Achats \u00bb."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_02",
+		"value": "\u25c6 H\u00e9ros pouvant \u00eatre recrut\u00e9s \u25c6\\nVous pouvez uniquement recruter\\ndes h\u00e9ros ayant \u00e9t\u00e9 ajout\u00e9s entre\\nla version 1.0 et la version 4.0.\\n\\nVous ne pouvez pas recruter les\\nh\u00e9ros que vous d\u00e9ployez, ou les\\nversions d'Alfonse, Sharena ou\\nAnna d'un autre monde."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_03",
+		"value": "\u25c6 Les \u00e9veill\u00e9s conservent \u25c6\\nLes bonus de caract\u00e9ristiques\\nconf\u00e9r\u00e9s par les dracofleurs seront\\n\u00e9quivalents \u00e0 la valeur maximale\\nautoris\u00e9e au moment o\u00f9 vous\\najoutez l'\u00e9veill\u00e9 \u00e0 votre caserne.\\n(Si le maximum est de +15, l'\u00e9veill\u00e9\\nobtient +15.) Les bonus sont\\nobtenus, peu importe le nombre\\nde dracofleurs que l'unit\u00e9 a re\u00e7u."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_04",
+		"value": "\u25c6 Les \u00e9veill\u00e9s h\u00e9ritent \u25c6\\n\u30fb Aptitudes \u00e9quip\u00e9es actuellement\\n\u30fb Attributs"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_05",
+		"value": "\u25c6 Les \u00e9veill\u00e9s n'h\u00e9ritent pas \u25c6\\n\u30fb Fusions\\n\u30fb Atouts \u00e9minents\\n\u30fb Tenues resplendissantes\\n\u30fb B\u00e9n\u00e9dictions\\n\u30fb Sceaux sacr\u00e9s\\n\u30fb Accessoires"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_06",
+		"value": "\u25c6 Restrictions \u25c6\\nLes \u00e9veill\u00e9s ne peuvent servir de\\nsource pour les fusions ou l'option\\nTransmettre aptitudes. Ils ne\\npeuvent pas non plus \u00eatre utilis\u00e9s\\npour cr\u00e9er des livrets militaires."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_07",
+		"value": "\u25c6 Fusionner les \u00e9veill\u00e9s \u25c6\\nIl est possible de fusionner deux\\n\u00e9veill\u00e9s si le donneur et le receveur\\nsont tous deux des \u00e9veill\u00e9s."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_08",
+		"value": "\u25c6 Divers \u25c6\\n\u30fb Les h\u00e9ros recrut\u00e9s rejoindront\\nvotre arm\u00e9e en tant qu'unit\u00e9s\\nde rang 5\u2605 et de niveau 40.\\n\u30fb Vous ne pouvez pas recevoir\\nde b\u00e9n\u00e9dictions ou d'autres objets\\nassoci\u00e9s \u00e0 des h\u00e9ros sp\u00e9cifiques."
+	},
+	{
+		"key": "MID_ITEM_BOND_TICKET",
+		"value": "Lien de passage"
+	},
+	{
+		"key": "MID_ITEM_HELP_BOND_TICKET",
+		"value": "Tr\u00e9sor qui permet de recruter des h\u00e9ros\\nd'autres mondes dans \u00c9veill\u00e9s de passage."
+	},
+	{
+		"key": "MID_SHOP_ORB_CAUTION2_WITH_BOND_TICKET",
+		"value": "$a\u00b7 Pour utiliser vos orbes et vos liens de\\npassage, votre syst\u00e8me d'exploitation\\ndoit \u00eatre au moins de la version $a0."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_SCOUT_IDOLIZE_ICON_HELP",
+		"value": "Vous pouvez consulter les h\u00e9ros pouvant \u00eatre\\nrecrut\u00e9s en touchant \u00ab Recrut. \u00e9veill\u00e9s \u00bb."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_SCOUT_LOG_IDOLIZE",
+		"value": "Recrut. \u00e9veill\u00e9s"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_REMAINING_DAYS",
+		"value": "$aEncore $a0 j pour recruter"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_REMAINING_HOURS",
+		"value": "$aEncore $a0 h pour recruter"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_REMAINING_MINUTES",
+		"value": "$aEncore $a0 min pour recruter"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_BUY_BOND_TICKET",
+		"value": "Vers menu \u00ab Achats \u00bb"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_PURCHASED_BOND_TICKET",
+		"value": "Obtenus"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_PURCHASE_NOTICE",
+		"value": "Une fois achet\u00e9, r\u00e9cup\u00e9rez votre lien\\nde passage dans votre liste de cadeaux."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_REWARD",
+		"value": "Recrut. \u00e9veill\u00e9s - r\u00e9compense de d\u00e9part"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING6_3",
+		"value": "Fin du livre VI"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING7",
+		"value": "Ouverture du livre VII"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_V0700A",
+		"value": "\u00c0 l'occasion du lancement du livre\\nVII, un nouveau style de ch\u00e2teau\\nest disponible !\\n\\nD\u00e9couvrez-le !"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_V0700A_DIALOG",
+		"value": "Voulez-vous utiliser le style de\\nch\u00e2teau Lumineux ?"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_V0700A_REVERT_AFTER",
+		"value": "Si vous changez d'avis, touchez\\nFortifier le ch\u00e2teau, puis Changer\\nle style et enfin Lumineux."
+	},
+	{
+		"key": "MID_HOME_PERSONAL_ANALYTICS_OPTIN_NOTIFICATION_MESSAGE_ANDROID",
+		"value": "Partage des donn\u00e9es :\\nNous recueillons et partageons vos\\ndonn\u00e9es d'utilisation du jeu afin d'analyser\\nles rapports d'erreur et, le cas \u00e9ch\u00e9ant,\\nde personnaliser vos exp\u00e9riences avec\\nles produits et services de Nintendo.\\n\\nVous pouvez modifier vos r\u00e9glages\\nconcernant la collecte et le partage de\\ndonn\u00e9es \u00e0 l'aide des boutons ci-dessous.\\n\\nLa modification de vos param\u00e8tres sera\\neffective une fois que l'application aura \u00e9t\u00e9\\nred\u00e9marr\u00e9e.\\n\\nVous pouvez arr\u00eater le partage de vos\\ndonn\u00e9es d'utilisation \u00e0 tout moment en\\ns\u00e9lectionnant \u00ab Ne pas partager \u00bb dans\\n\u00ab Partage des donn\u00e9es \u00bb depuis le menu\\n\u00ab Divers \u00bb, puis \u00ab\u00a0Informations, aide, etc.\u00a0\u00bb.\\n\\nPour ne plus recevoir de notifications en\\ndehors de l'application, modifiez les\\nautorisations de cette application dans\\nles param\u00e8tres de votre appareil."
+	},
+	{
+		"key": "MID_HOME_PERSONAL_ANALYTICS_OPTIN_NOTIFICATION_MESSAGE_IOS",
+		"value": "Partage des donn\u00e9es :\\nNous recueillons et partageons vos\\ndonn\u00e9es d'utilisation du jeu afin d'analyser\\nles rapports d'erreur et, le cas \u00e9ch\u00e9ant,\\nde personnaliser vos exp\u00e9riences avec\\nles produits et services de Nintendo.\\n\\nVous pouvez modifier vos r\u00e9glages\\nconcernant la collecte et le partage de\\ndonn\u00e9es \u00e0 l'aide des boutons ci-dessous.\\n\\nLa modification de vos param\u00e8tres sera\\neffective une fois que l'application aura \u00e9t\u00e9\\nred\u00e9marr\u00e9e.\\n\\nVous pouvez arr\u00eater le partage de vos\\ndonn\u00e9es d'utilisation \u00e0 tout moment en\\ns\u00e9lectionnant \u00ab Ne pas partager \u00bb dans\\n\u00ab Partage des donn\u00e9es \u00bb depuis le menu\\n\u00ab Divers \u00bb, puis \u00ab\u00a0Informations, aide, etc.\u00a0\u00bb.\\n\\nPour ne plus recevoir de notifications en\\ndehors de l'application, modifiez les\\nautorisations de cette application dans\\nles param\u00e8tres de votre appareil."
+	},
+	{
+		"key": "MID_HOME_PERSONAL_ANALYTICS_OPTIN_NOTIFICATION_DECIDE",
+		"value": "Partager mes donn\u00e9es"
+	},
+	{
+		"key": "MID_HOME_PERSONAL_ANALYTICS_OPTIN_NOTIFICATION_CANCEL",
+		"value": "Ne pas partager"
+	},
+	{
+		"key": "MID_HOME_SUMMON_TICKET_NAVIGATION_JUMP",
+		"value": "Invoquer"
+	},
+	{
+		"key": "MID_HOME_SUMMON_TICKET_NAVIGATION_MESSAGE",
+		"value": "Vous avez un ticket que vous pouvez\\nutiliser pour un h\u00e9ros sp\u00e9cial de la\\ncat\u00e9gorie Taux sp\u00e9cial 4\u2605. Invoquer ?"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202212",
+		"value": "Nouvel \u00e9veil"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV65542",
+		"value": "Lumineux"
+	},
+	{
+		"key": "MID_SCF_\u5149\u306e\u5973\u795e\u306e\u50cf",
+		"value": "Ic\u00f4ne de lumi\u00e8re"
+	},
+	{
+		"key": "MID_SCF_\u5149\u306e\u5973\u795e\u306e\u50cf_HELP",
+		"value": "Une statue d'une d\u00e9esse de Vanaheimr,\\nle royaume de lumi\u00e8re. Elle irradie une aura\\npleine d'espoir. Il s'agit d'un objet d'\u00e9v\u00e9nement."
+	},
+	{
+		"key": "MID_SCF_\u5149\u306e\u56fd\u306e\u690d\u7269",
+		"value": "Flore de lumi\u00e8re"
+	},
+	{
+		"key": "MID_SCF_\u5149\u306e\u56fd\u306e\u690d\u7269_HELP",
+		"value": "Une plante de Vanaheimr, le royaume de\\nlumi\u00e8re. Son \u00e9clat est apaisant. Il s'agit\\nd'un objet d'\u00e9v\u00e9nement."
+	},
+	{
+		"key": "MID_SCF_\u9ec4\u91d1\u306e\u86c7\u306e\u546a\u3044",
+		"value": "Serpent maudit"
+	},
+	{
+		"key": "MID_SCF_\u9ec4\u91d1\u306e\u86c7\u306e\u546a\u3044_HELP",
+		"value": "Une statue d'un serpent enroul\u00e9 autour d'une\\npierre dor\u00e9e. Sa lumi\u00e8re \u00e9th\u00e9r\u00e9e est inqui\u00e9tante.\\nIl s'agit d'un objet d'\u00e9v\u00e9nement."
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u304d\u306e\u3053_1",
+		"value": "g\u00e9n\u00e9reux"
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u304d\u306e\u3053_2",
+		"value": "rassasiant"
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u304d\u306e\u3053_3",
+		"value": "nourrissant"
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u3044\u3082_1",
+		"value": "terreux"
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u3044\u3082_2",
+		"value": "farineux"
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u3044\u3082_3",
+		"value": "moelleux"
+	},
+	{
+		"key": "MID_DISHES_\u30d5\u30e9\u30a4\u30c9\u30dd\u30c6\u30c8",
+		"value": "Frites"
+	},
+	{
+		"key": "MID_DISHES_\u713c\u304d\u30ad\u30ce\u30b3",
+		"value": "Champignons po\u00eal\u00e9s"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30c1\u30c3\u30d7\u30b9",
+		"value": "Chips"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u3068\u30ad\u30ce\u30b3\u7092\u3081",
+		"value": "Patates et champignons"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30d1\u30f3",
+		"value": "Pain de patates"
+	},
+	{
+		"key": "MID_DISHES_\u304b\u307c\u3061\u3083\u30dd\u30c6\u30c8\u30b5\u30e9\u30c0",
+		"value": "Potirons et patates"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30b5\u30e9\u30c0",
+		"value": "Salade de patates"
+	},
+	{
+		"key": "MID_DISHES_\u30d5\u30eb\u30fc\u30c4\u30dd\u30c6\u30c8\u30b5\u30e9\u30c0",
+		"value": "Salade patates et fruits"
+	},
+	{
+		"key": "MID_DISHES_\u30d9\u30fc\u30b3\u30f3\u30dd\u30c6\u30c8",
+		"value": "Bacon et patates"
+	},
+	{
+		"key": "MID_DISHES_\u5375\u30dd\u30c6\u30c8\u30b5\u30e9\u30c0",
+		"value": "Salade d'\u0153ufs et patates"
+	},
+	{
+		"key": "MID_DISHES_\u828b\u306e\u30c8\u30de\u30c8\u716e\u8fbc\u307f",
+		"value": "Soupe tomate-patate"
+	},
+	{
+		"key": "MID_DISHES_\u30b9\u30d1\u30a4\u30b7\u30fc\u30dd\u30c6\u30c8",
+		"value": "Patates \u00e9pic\u00e9es"
+	},
+	{
+		"key": "MID_DISHES_\u5927\u76db\u308a\u30ad\u30ce\u30b3",
+		"value": "Plat de champignons"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u30d1\u30b9\u30bf",
+		"value": "P\u00e2tes aux champignons"
+	},
+	{
+		"key": "MID_DISHES_\u79cb\u306e\u9999\u308a\u30b9\u30fc\u30d7",
+		"value": "Soupe de saison"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u306e\u5305\u307f\u713c\u304d",
+		"value": "Papillote champignons"
+	},
+	{
+		"key": "MID_DISHES_\u30d9\u30ea\u30fc\u306e\u30ad\u30ce\u30b3\u3042\u3048",
+		"value": "Champignons et baies"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u30bd\u30fc\u30b9\u306e\u30b9\u30c6\u30fc\u30ad",
+		"value": "Steak aux champignons"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u306e\u30aa\u30e0\u30ec\u30c4",
+		"value": "Omelette champignons"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u3068\u30c8\u30de\u30c8\u306e\u30b9\u30fc\u30d7",
+		"value": "Soupe tomate-champignon"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u306e\u9999\u308a\u713c\u304d",
+		"value": "Champignons \u00e9pic\u00e9s"
+	},
+	{
+		"key": "MID_DISHES_\u30de\u30c3\u30b7\u30e5\u30dd\u30c6\u30c8",
+		"value": "Pur\u00e9e de patates"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30c1\u30c3\u30d7\u30b9\u30ad\u30ce\u30b3\u5473",
+		"value": "Chips \u00e9pic\u00e9s"
+	},
+	{
+		"key": "MID_DISHES_\u3082\u3061\u3082\u3061\u30d1\u30f3",
+		"value": "Pain de mie"
+	},
+	{
+		"key": "MID_DISHES_\u30ba\u30c3\u30d1\u30fb\u30b0\u30b8\u30dc\u30f4\u30a1",
+		"value": "Soupe champignons s\u00e9ch\u00e9s"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u3068\u3044\u3082\u306e\u8089\u5dfb",
+		"value": "Roul\u00e9 sal\u00e9"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30d1\u30a4",
+		"value": "Tarte \u00e0 la patate"
+	},
+	{
+		"key": "MID_DISHES_\u30d4\u30fc\u30c6\u30d1\u30eb\u30c8",
+		"value": "Patates farcies"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30d1\u30f3\u30b1\u30fc\u30ad",
+		"value": "Galettes de patates"
+	},
+	{
+		"key": "MID_DISHES_\u30c8\u30de\u30c8\u30bd\u30fc\u30b9\u306e\u30cb\u30e7\u30c3\u30ad",
+		"value": "Gnocchis sauce tomate"
+	},
+	{
+		"key": "MID_DISHES_\u30b5\u30e2\u30b5",
+		"value": "Samoussa"
+	},
+	{
+		"key": "MID_DISHES_\u8089\u3058\u3083\u304c",
+		"value": "Rago\u00fbt patate-viande"
+	},
+	{
+		"key": "MID_DISHES_\u91ce\u83dc\u30b9\u30fc\u30d7",
+		"value": "Soupe de l\u00e9gumes"
+	},
+	{
+		"key": "MID_DISHES_\u8fb2\u592b\u306e\u671d\u98df",
+		"value": "Petit-d\u00e9jeuner fermier"
+	},
+	{
+		"key": "MID_DISHES_\u30a2\u30eb\u30fc\u30b4\u30fc\u30b7\u30e5\u30c8",
+		"value": "Curry patate-viande"
+	},
+	{
+		"key": "MID_DISHES_\u5c71\u76db\u308a\u30ad\u30ce\u30b3",
+		"value": "Plateau de champignons"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u305f\u3063\u3077\u308a\u30b5\u30e9\u30c0",
+		"value": "Salade de champignons"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u306e\u3066\u3093\u3077\u3089",
+		"value": "Tempura champignons"
+	},
+	{
+		"key": "MID_DISHES_\u53ce\u7a6b\u796d\u306e\u30b9\u30fc\u30d7",
+		"value": "Soupe d'automne"
+	},
+	{
+		"key": "MID_DISHES_\u6c34\u708a\u304d",
+		"value": "Rago\u00fbt"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u91ce\u83dc\u7092\u3081",
+		"value": "Po\u00eal\u00e9e de l\u00e9gumes"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u3068\u30c8\u30de\u30c8\u306e\u5375\u7092\u3081",
+		"value": "Po\u00eal\u00e9e de tomates"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u3068\u5375\u306e\u9244\u677f\u713c\u304d",
+		"value": "Champignons grill\u00e9s"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u30ab\u30ec\u30fc",
+		"value": "Curry de champignons"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u306e\u30d5\u30eb\u30b3\u30fc\u30b9",
+		"value": "Divers plats de patates"
+	},
+	{
+		"key": "MID_DISHES_\u53ce\u7a6b\u796d\u306e\u30d7\u30ec\u30fc\u30c8",
+		"value": "Plat festival d'automne"
+	},
+	{
+		"key": "MID_DISHES_\u30df\u30cd\u30b9\u30c8\u30ed\u30fc\u30cd",
+		"value": "Minestrone"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30b3\u30ed\u30c3\u30b1",
+		"value": "Croquette de patates"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c8\u30d5",
+		"value": "Pot-au-feu"
+	},
+	{
+		"key": "MID_DISHES_\u91ce\u83dc\u30ab\u30ec\u30fc",
+		"value": "Curry de l\u00e9gumes"
+	},
+	{
+		"key": "MID_DISHES_\u7530\u820e\u306e\u30ab\u30ec\u30fc",
+		"value": "Curry traditionnel"
+	},
+	{
+		"key": "MID_DISHES_\u30af\u30ed\u30c3\u30d7\u30ab\u30fc\u30ab",
+		"value": "Boulettes de patates"
+	},
+	{
+		"key": "MID_DISHES_\u5922\u76db\u308a\u30ad\u30ce\u30b3",
+		"value": "Pile de champignons"
+	},
+	{
+		"key": "MID_DISHES_\u30b9\u30c6\u30fc\u30ad\u306e\u5e0c\u5c11\u30ad\u30ce\u30b3\u4e57\u305b",
+		"value": "Filet aux champignons"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u306e\u30d5\u30ea\u30ab\u30c3\u30bb",
+		"value": "Fricass\u00e9e champignons"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u30d0\u30fc\u30ac\u30fc",
+		"value": "Hamburger champignons"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u306e\u30d4\u30b6",
+		"value": "Pizza aux champignons"
+	},
+	{
+		"key": "MID_DISHES_\u30cf\u30f3\u30d0\u30fc\u30b0\u306e\u30ad\u30ce\u30b3\u4e57\u305b",
+		"value": "Steak hach\u00e9 champignons"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u30b8\u30e3\u30eb\u30d5\u30ec\u30fc\u30b8\u30fc",
+		"value": "Champignons au curry"
+	},
+	{
+		"key": "MID_DISHES_\u6ecb\u990a\u5f37\u58ee\u30c9\u30ea\u30f3\u30af\uff0b",
+		"value": "Boisson \u00e9nerg\u00e9tique +"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u306e\u30dc\u30eb\u30ac\u30ce\u30f3\u713c\u304d",
+		"value": "Champignons Bolganone"
+	},
+	{
+		"key": "MID_FOODS_\u304d\u306e\u3053",
+		"value": "Champignon"
+	},
+	{
+		"key": "MID_FOODS_\u3044\u3082",
+		"value": "Patate"
+	},
+	{
+		"key": "MID_FOODS_\u304d\u306e\u3053_HELP",
+		"value": "Un aliment rassasiant et riche en\\nnutriments ! Avec sa texture, il peut\\naccompagner n\u2019importe quel plat !"
+	},
+	{
+		"key": "MID_FOODS_\u3044\u3082_HELP",
+		"value": "Un ingr\u00e9dient incroyablement\\npolyvalent ! Il s'associe avec\\nla viande, les l\u00e9gumes, et bien plus."
+	},
+	{
+		"key": "MID_SCH_\u6c34\u6d74\u3073\u30e6\u30f3\u30cc",
+		"value": "Yune flottante"
+	},
+	{
+		"key": "MID_SCH_\u6c34\u6d74\u3073\u30e6\u30f3\u30cc_HOLIDAYHELP",
+		"value": "Un accessoire de bain flottant sur l'eau."
+	},
+	{
+		"key": "MID_SCH_\u3058\u3093\u308f\u308a\u56de\u5fa9\u85ac",
+		"value": "Potion r\u00e9paratrice"
+	},
+	{
+		"key": "MID_SCH_\u3058\u3093\u308f\u308a\u56de\u5fa9\u85ac_HOLIDAYHELP",
+		"value": "Un accessoire de bain flottant sur l'eau."
+	},
+	{
+		"key": "MID_SCH_\u5165\u6d74\u4e2d\u306e\u5c40\u9577",
+		"value": "Chef de baignade"
+	},
+	{
+		"key": "MID_SCH_\u5165\u6d74\u4e2d\u306e\u5c40\u9577_HOLIDAYHELP",
+		"value": "Un accessoire de bain flottant sur l'eau."
+	},
+	{
+		"key": "MID_SCH_\u304a\u3084\u3059\u307f\u30d5\u30a7\u30fc",
+		"value": "Feh pour dormir"
+	},
+	{
+		"key": "MID_SCH_\u304a\u3084\u3059\u307f\u30d5\u30a7\u30fc_HOLIDAYHELP",
+		"value": "Une peluche \u00e0 placer sur un lit."
+	},
+	{
+		"key": "MID_SCH_\u3059\u3084\u3059\u3084\u30d9\u30ec\u30c8",
+		"value": "Peluche de Byleth"
+	},
+	{
+		"key": "MID_SCH_\u3059\u3084\u3059\u3084\u30d9\u30ec\u30c8_HOLIDAYHELP",
+		"value": "Une peluche \u00e0 placer sur un lit."
+	},
+	{
+		"key": "MID_SCH_\u3075\u308f\u3075\u308f\u795e\u7adc\u30d5\u30a1",
+		"value": "Fae en peluche"
+	},
+	{
+		"key": "MID_SCH_\u3075\u308f\u3075\u308f\u795e\u7adc\u30d5\u30a1_HOLIDAYHELP",
+		"value": "Une peluche \u00e0 placer sur un lit."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202212",
+		"value": "Pierres d'\u00e9ther gel\u00e9es"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202212",
+		"value": "Servent \u00e0 construire des structures \u00e0 dur\u00e9e\\nlimit\u00e9e dans le mode Raid c\u00e9leste. Une fois\\nla p\u00e9riode termin\u00e9e, les pierres sont perdues."
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_4",
+		"value": "\u00c9minent"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_5",
+		"value": "Myst."
+	}
+]
