@@ -401,7 +401,8 @@ icons = {
 	# Other
 	"summoningaltar": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/4/42/BG_Summon_Stone.png?1067?1280",
 	"resplendent": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b8/Icon_GodWear_L.png?82?82",
-	"resplendent-small": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/d9/Icon_GodWear.png?83?78"
+	"resplendent-small": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/d9/Icon_GodWear.png?83?78",
+	"otherworldbond": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b5/Otherworld_Bond.png?46?46"
 }
 
 download()

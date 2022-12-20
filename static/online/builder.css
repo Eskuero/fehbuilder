@@ -159,6 +159,9 @@ body {
 .row-property.double {
 	grid-template-columns: repeat(2, 2em minmax(0, 1fr)); /* Grid items of four columns, 2ximagelabel hardcoded to 2em and the input dividing remaining space. */
 }
+.row-property.checkboxshare {
+	grid-template-columns: 2em minmax(0, 1fr) 5em; /* Grid items of four columns, 1 imagelabel hardcoded to 2em, the input taking two and the checkbox the remains. */
+}
 .row-property.fat {
 	grid-template-rows: auto; /* Allow this grid section to grow it's height indefinetely */
 }
@@ -186,6 +189,9 @@ input[type=checkbox] {
 input[type=range] {
 	margin: 0; /* Delete margins on range inputs to let them grow to the max of the grid item */
 }
+input[type=text] {
+	font-size: inherit;
+}
 input[type=number] {
 	text-align: center;
 	border-radius: 4px;
@@ -199,7 +205,7 @@ input[type='number']::-webkit-inner-spin-button {
 .imagelabel {
 	height: 2em;
 	width: 2em;
-	--spritesheet-width: 41; /* This is the number of icons in each of row of the spritesheet */
+	--spritesheet-width: 42; /* This is the number of icons in each of row of the spritesheet */
 	background-image: url("/common/assets/online.webp");
 	background-position: calc(var(--spriteid) * -100%) 0;
 	background-size: calc(var(--spritesheet-width) * 100%); /* If we increase the size of the background a 100% for each icon they will fit in any size */

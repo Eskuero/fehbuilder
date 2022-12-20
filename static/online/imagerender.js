@@ -627,10 +627,12 @@ async function myunit() {
 	renderjobs = [];
 
 	// Print the rarity line
+	// Sometimes overwrite rarity value if we set a otherworld bond name
+	var finalrarity = selectotherworldbond.value ? "Forma" : selectrarity.value;
 	// Convert the rarity variable into an int now to cater to calculation needs
-	var rarity = selectrarity.value == "Forma" ? 5 : parseInt(selectrarity.value);
+	var rarity = finalrarity == "Forma" ? 5 : parseInt(finalrarity);
 	// The width of the line depends of the amount of stars, increasing 37 for each from a base value of 16 (margins?)
-	renderjobs.push(getimage(other["images"]["rarity"][selectrarity.value]).then(img => {
+	renderjobs.push(getimage(other["images"]["rarity"][finalrarity]).then(img => {
 		preview.drawImage(img, 65, 505, 16 + (rarity * 37), 53);
 	}));
 	
@@ -651,6 +653,14 @@ async function myunit() {
 	var name = languages[language]["M" + hero];
 	preview.strokeText(name, 222, 659); preview.fillText(name, 222, 659);
 
+	// Print otherworld name if not empty
+	if (selectotherworldbond.value) {
+		renderjobs.push(getimage(other["images"]["other"]["otherworldbond"]).then(img => {
+			preview.drawImage(img, 163, 688);
+		}));
+		preview.fillStyle = 'white'; preview.strokeStyle = '#0a2533'; preview.textAlign = 'start'; preview.textBaseline = "top"; preview.font = '18px FeH-Font';
+		preview.strokeText(selectotherworldbond.value, 206, 704); preview.fillText(selectotherworldbond.value, 206, 704);
+	}
 	// Print the artist and actor names, as well as the favorite mark and other minor strings if appui is enabled
 	if (appui.checked) {
 		preview.fillStyle = 'white'; preview.strokeStyle = '#0a2533'; preview.textAlign = 'start'; preview.textBaseline = "top"; preview.font = '21px FeH-Font';

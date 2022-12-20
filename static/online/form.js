@@ -366,7 +366,7 @@ async function switchbuild(build) {
 	var selects = [selectrarity, selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials,
 		selectassists, selectA, selectB, selectC, selectS, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef,
 		selectres, selectatkpairup, selectspdpairup, selectdefpairup, selectrespairup, selectsp, selecthm, selectartstyle, selecttemplate,
-		selectoffsetY, selectoffsetX, selectmirror, selectbackground, selectfavorite, selectaccessory, appui];
+		selectoffsetY, selectoffsetX, selectmirror, selectbackground, selectfavorite, selectaccessory, selectotherworldbond, appui];
 
 	// First save changes to current slot (heroes, cheats, language, maxskill, weapons and blessings are to be done first because they affect the content of other selects)
 	builds[buildslot][0] = selectheroes.value;
@@ -409,7 +409,7 @@ async function switchbuild(build) {
 	var selects = [selectrarity, selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials,
 		selectassists, selectA, selectB, selectC, selectS, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef,
 		selectres, selectatkpairup, selectspdpairup, selectdefpairup, selectrespairup, selectsp, selecthm, selectartstyle, selecttemplate,
-		selectoffsetY, selectoffsetX, selectmirror, selectbackground, selectfavorite, selectaccessory, appui];
+		selectoffsetY, selectoffsetX, selectmirror, selectbackground, selectfavorite, selectaccessory, selectotherworldbond, appui];
 	// Trigger a rebuild of the refine select based on the selection of weapon
 	selectweapons.value = builds[buildslot][4];
 	updateRefine();
@@ -576,6 +576,7 @@ function reset(section) {
 			selectbackground.value = "base"
 			selectfavorite.value = "1";
 			selectaccessory.value = "None";
+			selectotherworldbond.value = "";
 		break;
 	}
 	reload();
