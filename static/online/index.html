@@ -25,6 +25,12 @@
 		<link rel="stylesheet" href="/common/rebspicker.css">
 
 		<link rel="icon" href="/common/assets/Feh.webp" />
+
+		<script>
+			function propaganda() {
+				window.open("https://vote7.campaigns.fire-emblem-heroes.com/en_us");
+			}
+		</script>
 	</head>
 	<body>
 		<div class="contenedor">
@@ -36,7 +42,7 @@
 					<button onclick="switchbuild(3)">#4</button>
 					<button onclick="switchbuild(4)">#5</button>
 				</div>
-				<img id="fakecanvas" height="1280" width="720" alt="FEH Unit Builder" src="/common/base/placeholder.webp" />
+				<img id="fakecanvas" onclick="propaganda()" height="1280" width="720" alt="FEH Unit Builder" src="/common/base/propaganda.webp" />
 				<canvas id="canvas" class="unrendered"></canvas>
 			</div>
 			<div class="form">

@@ -43,6 +43,9 @@ body {
 	width: 100%;
 	height: auto;
 }
+#fakecanvas:hover {
+	cursor: pointer;
+}
 #unitslot {
 	height: 2.5em;
 	width: 100%;
