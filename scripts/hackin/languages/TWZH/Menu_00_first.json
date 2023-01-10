@@ -8188,6 +8188,926 @@
 		"value": "\u90a3\u6230\u8853\u7de8\u7e54\u4e86\u65cb\u5f8b"
 	},
 	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING5_3",
+		"value": "\u7b2c\uff15\u90e8\u7d50\u675f\u5287\u60c5"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING6",
+		"value": "\u7b2c\uff16\u90e8\u958b\u982d\u5f71\u7247"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_211201",
+		"value": "\u70ba\u7d00\u5ff5\u7b2c\uff16\u90e8\u958b\u59cb\uff0c\\n\u5df2\u8d08\u9001\u57ce\u5821\u756b\u9762\u7279\u6b8a\u4e3b\u984c\\n\u300c\u5c01\u9589\u5e1d\u570b\u4e4b\u57ce\u300d\\n\u7d66\u5404\u4f4d\u73a9\u5bb6\u4f5c\u70ba\u7d00\u5ff5\uff01\\n\\n\u8acb\u78ba\u8a8d\u672c\u6b21\u8d08\u9001\u7684\u65b0\u4e3b\u984c\u5916\u89c0\u3002"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_211201_DIALOG",
+		"value": "\u8981\u5c07\u57ce\u5821\u756b\u9762\u8b8a\u66f4\u70ba\u78ba\u8a8d\u4e2d\u7684\u4e3b\u984c\\n\u300c\u5c01\u9589\u5e1d\u570b\u4e4b\u57ce\u300d\u55ce\uff1f"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_211201_REVERT_AFTER",
+		"value": "\u65bc\u4e4b\u5f8c\u60f3\u8b8a\u66f4\u6642\uff0c\\n\u8acb\u5f9e\u300c\u83c1\u82f1\u4e4b\u57ce\u300d\uff1e\u300c\u8b8a\u66f4\u4e3b\u984c\u300d\u4e2d\uff0c\\n\u9078\u64c7\u300c\u5c01\u9589\u5e1d\u570b\u4e4b\u57ce\u300d\u9032\u884c\u8b8a\u66f4\u3002"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202112",
+		"value": "\u4e92\u76f8\u6dec\u934a\u7684\u9748\u9b42"
+	},
+	{
+		"key": "MID_PROFILECARD_FRIEND_CODE",
+		"value": "ID"
+	},
+	{
+		"key": "MID_PROFILECARD_FRIEND_CODE_PRIVATE",
+		"value": "\u975e\u516c\u958b"
+	},
+	{
+		"key": "MID_PROFILECARD_USER_NAME",
+		"value": "\u73a9\u5bb6\u540d"
+	},
+	{
+		"key": "MID_PROFILECARD_ARENA_GRADE",
+		"value": "\u9b25\u6280\u5834\u968e\u7d1a"
+	},
+	{
+		"key": "MID_PROFILECARD_GOLDEN_THRONE_COUNT",
+		"value": "\u9ec3\u91d1\u5bf6\u5ea7"
+	},
+	{
+		"key": "MID_PROFILECARD_HOMETOWN",
+		"value": "\u5fc3\u4e4b\u6545\u9109"
+	},
+	{
+		"key": "MID_PROFILECARD_PLAYSTYLE",
+		"value": "\u904a\u73a9\u98a8\u683c"
+	},
+	{
+		"key": "MID_PROFILECARD_FAVORITE_CHARACTERS",
+		"value": "\u559c\u611b\u82f1\u96c4"
+	},
+	{
+		"key": "MID_PROFILECARD_CHARACTER_COUNT",
+		"value": "\u7e3d\u82f1\u96c4\u6578"
+	},
+	{
+		"key": "MID_PROFILECARD_BEGIN_EDIT",
+		"value": "\u7de8\u8f2f\u6a94\u6848\u5361"
+	},
+	{
+		"key": "MID_PROFILECARD_DECIDE_EDIT",
+		"value": "\u78ba\u5b9a"
+	},
+	{
+		"key": "MID_PROFILECARD_CANCEL_DIALOG_TEXT",
+		"value": "\u8981\u4e2d\u6b62\u7de8\u8f2f\u500b\u4eba\u6a94\u6848\u5361\u55ce\uff1f"
+	},
+	{
+		"key": "MID_PROFILECARD_CANCEL_DIALOG_WARNING",
+		"value": "\u5c07\u4e0d\u6703\u5132\u5b58\u7de8\u8f2f\u7684\u5167\u5bb9\u3002"
+	},
+	{
+		"key": "MID_PROFILECARD_CANCEL_DIALOG_DECIDE",
+		"value": "\u4e2d\u6b62"
+	},
+	{
+		"key": "MID_PROFILECARD_EDIT_STYLE",
+		"value": "\u8b8a\u66f4\u6a23\u5f0f"
+	},
+	{
+		"key": "MID_PROFILECARD_PUBLICIZE_CARD",
+		"value": "\u8b8a\u66f4\u516c\u958b\u72c0\u614b"
+	},
+	{
+		"key": "MID_PROFILECARD_DIALOG_BUTTON_DECIDE",
+		"value": "\u8b8a\u66f4"
+	},
+	{
+		"key": "MID_PROFILECARD_DIALOG_SELECTED",
+		"value": "\u9078\u64c7\u4e2d"
+	},
+	{
+		"key": "MID_PROFILECARD_HOMETOWN_DIALOG_TEXT",
+		"value": "\u8acb\u9078\u64c7\u5fc3\u4e4b\u6545\u9109\u3002"
+	},
+	{
+		"key": "MID_PROFILECARD_PLAYSTYLE_DIALOG_TEXT",
+		"value": "\u8acb\u9078\u64c7\u904a\u73a9\u98a8\u683c\u3002"
+	},
+	{
+		"key": "MID_PROFILECARD_CHARACTER_BACKGROUND_DIALOG_TEXT",
+		"value": "\u8acb\u9078\u64c7\u80cc\u666f\u3002"
+	},
+	{
+		"key": "MID_PROFILECARD_STYLE_DIALOG_TEXT",
+		"value": "\u8b8a\u66f4\u6a23\u5f0f"
+	},
+	{
+		"key": "MID_PROFILECARD_STYLE_DIALOG_CARD_STYLE",
+		"value": "\u6a94\u6848\u5361\u6a23\u5f0f"
+	},
+	{
+		"key": "MID_PROFILECARD_STYLE_DIALOG_FRAME_COLOR",
+		"value": "\u908a\u6846\u984f\u8272"
+	},
+	{
+		"key": "MID_PROFILECARD_STYLE_DIALOG_CARD_COLOR",
+		"value": "\u6a94\u6848\u5361\u984f\u8272"
+	},
+	{
+		"key": "MID_PROFILECARD_STYLE_DIALOG_BUTTON_DECIDE",
+		"value": "\u78ba\u5b9a"
+	},
+	{
+		"key": "MID_PROFILECARD_PUBLICIZE_CARD_DIALOG_TEXT",
+		"value": "\u8981\u516c\u958b\u500b\u4eba\u6a94\u6848\u5361\u55ce\uff1f"
+	},
+	{
+		"key": "MID_PROFILECARD_PUBLICIZE_FRIEND_CODE_DIALOG_TEXT",
+		"value": "\u8981\u516c\u958bID\u55ce\uff1f"
+	},
+	{
+		"key": "MID_PROFILECARD_PUBLIC",
+		"value": "\u516c\u958b"
+	},
+	{
+		"key": "MID_PROFILECARD_PRIVATE",
+		"value": "\u4e0d\u516c\u958b"
+	},
+	{
+		"key": "MID_PROFILECARD_DIALOG_FRIEND_CARD_PRIVATE",
+		"value": "$a$a0\u7684\\n\u500b\u4eba\u6a94\u6848\u5361\u70ba\u975e\u516c\u958b\u72c0\u614b\u3002"
+	},
+	{
+		"key": "MID_PROFILECARD_NOTICE_PUBLIC",
+		"value": "\u76ee\u524d\u500b\u4eba\u6a94\u6848\u5361\u70ba\u516c\u958b\u72c0\u614b\u3002"
+	},
+	{
+		"key": "MID_PROFILECARD_NOTICE_PRIVATE",
+		"value": "\u76ee\u524d\u500b\u4eba\u6a94\u6848\u5361\u70ba\u975e\u516c\u958b\u72c0\u614b\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_WIN_RULE_0",
+		"value": "$a$a0\u56de\u5408\u5167\u6575\u4eba\u5168\u6ec5"
+	},
+	{
+		"key": "MID_REALTIME_PVP_WIN_RULE_1",
+		"value": "$a$a0\u56de\u5408\u5167\u751f\u5b58\u4e14\u5f97\u5206\u9ad8\u65bc\u5c0d\u624b"
+	},
+	{
+		"key": "MID_MAP_TURN_END_WARNING_FOR_REALTIME_PVP",
+		"value": "\u7d50\u675f\u56de\u5408\u5f8c\uff0c\\n\u5728\u672c\u56de\u5408\u5c07\u7121\u6cd5\u9032\u884c\u4efb\u4f55\u884c\u52d5\u3002"
+	},
+	{
+		"key": "MID_MAP_FORCE_TURN_END_CONFIRM",
+		"value": "\u6c92\u6709\u53ef\u9032\u884c\u7684\u884c\u52d5\uff0c\\n\u5c07\u7d50\u675f\u9019\u56de\u5408\u3002"
+	},
+	{
+		"key": "MID_MAP_OPPONENT_SURRENDER_CONFIRM",
+		"value": "\u5c0d\u6230\u5c0d\u624b\u6295\u964d\u4e86\u3002"
+	},
+	{
+		"key": "MID_MAP_PAIR_SKILL_ONLY_ONCE_PER_TRUN",
+		"value": "\uff11\u56de\u5408\u6700\u591a\u53ea\u80fd\u4f7f\u7528\uff11\u6b21\\n\u9023\u7ffc\u6216\u96d9\u754c\u6280\u80fd\u3002"
+	},
+	{
+		"key": "MID_MAP_REALTIME_PVP_TELOP_PAIR_SKILL_PAIR",
+		"value": "$a$a0\\n\u4f7f\u7528\u4e86\u9023\u7ffc\u6280\u80fd\uff01"
+	},
+	{
+		"key": "MID_MAP_REALTIME_PVP_TELOP_PAIR_SKILL_TWIN",
+		"value": "$a$a0\\n\u4f7f\u7528\u4e86\u96d9\u754c\u6280\u80fd\uff01"
+	},
+	{
+		"key": "MID_MAP_REALTIME_PVP_TELOP_TURN_TITLE",
+		"value": "TURN"
+	},
+	{
+		"key": "MID_MAP_REALTIME_PVP_TELOP_TURN",
+		"value": "$a\u7531$a0\u958b\u59cb\u884c\u52d5"
+	},
+	{
+		"key": "MID_MAP_REALTIME_PVP_TELOP_PHASE",
+		"value": "$a\u8f2a\u5230$a0\u884c\u52d5"
+	},
+	{
+		"key": "MID_MAP_REPLAY_END_DRAW_CONFIRM",
+		"value": "$a\u8207$a0\\n\u6230\u6210\u5e73\u624b\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ORGANIZE",
+		"value": "\u7de8\u7d44\u82f1\u96c4\u6c7a\u9b25\u90e8\u968a"
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ORGANIZE_CAPTAIN_SKILL_HELP",
+		"value": "\u8acb\u9078\u64c7\u8981\u88dd\u5099\u7684\u968a\u9577\u6280\u80fd\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ORGANIZE_CAPTAIN_SKILL_CANCEL_CONFIRM",
+		"value": "\u8981\u4e2d\u6b62\u8b8a\u66f4\u88dd\u5099\u968a\u9577\u6280\u80fd\u55ce\uff1f"
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ORGANIZE_CAPTAIN_SKILL_WARNING",
+		"value": "\u5c07\u4e0d\u6703\u5132\u5b58\u7de8\u8f2f\u7684\u5167\u5bb9\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ORGANIZE_CAPTAIN_SKILL_CANCEL_DECIDE",
+		"value": "\u4e2d\u6b62"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TITLE_0",
+		"value": "\u82f1\u96c4\u6c7a\u9b25"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TITLE_0_DESCRIPTION",
+		"value": "\u53ef\u9032\u884c\u5373\u6642\u5c0d\u6230\u3002\\n\u5728\u300c\u559c\u611b\u82f1\u96c4\u5c0d\u6230\u300d\u4e2d\uff0c\u7121\u8ad6\u52dd\u6557\\n\u7686\u80fd\u63d0\u5347\u559c\u611b\u7b49\u7d1a\u4e26\u7372\u5f97\u5831\u916c\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_MAKE_TITLE_0_0",
+		"value": "\u559c\u611b\u82f1\u96c4\u5c0d\u6230"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_MAKE_TITLE_0_1",
+		"value": "\u81ea\u7531\u5c0d\u6230"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MAP_TITLE_0_0",
+		"value": "\u82f1\u96c4\u6c7a\u9b25\u3000\u559c\u611b\u82f1\u96c4\u5c0d\u6230"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MAP_TITLE_0_1",
+		"value": "\u82f1\u96c4\u6c7a\u9b25\u3000\u81ea\u7531\u5c0d\u6230"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MAP_TITLE_0_2",
+		"value": "\u82f1\u96c4\u6c7a\u9b25\u3000\u7df4\u7fd2\u5c0d\u6230"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GAINED_REWARDTYPE_FAVE_LEVEL_0",
+		"value": "$a\u559c\u611b\u82f1\u96c4\u5c0d\u6230\u30fb\u559c\u611b\u7b49\u7d1a$a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_FAVE_LEVEL",
+		"value": "\u559c\u611b\u7b49\u7d1a"
+	},
+	{
+		"key": "MID_REALTIME_PVP_WIN_COUNT",
+		"value": "\u52dd\u5834\u6578"
+	},
+	{
+		"key": "MID_REALTIME_PVP_REMAINING_CURRENT_MAP_DAY",
+		"value": "$a\u8ddd\u96e2\u76ee\u524d\u7684\u5730\u5716\u7d50\u675f\u9084\u6709$a0\u5929"
+	},
+	{
+		"key": "MID_REALTIME_PVP_REMAINING_CURRENT_MAP_HOUR",
+		"value": "$a\u8ddd\u96e2\u76ee\u524d\u7684\u5730\u5716\u7d50\u675f\u9084\u6709$a0\u5c0f\u6642"
+	},
+	{
+		"key": "MID_REALTIME_PVP_REMAINING_CURRENT_MAP_MINUTE",
+		"value": "$a\u8ddd\u96e2\u76ee\u524d\u7684\u5730\u5716\u7d50\u675f\u9084\u6709$a0\u5206\u9418"
+	},
+	{
+		"key": "MID_REALTIME_PVP_REWARD",
+		"value": "\u6aa2\u8996\u5831\u916c"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_HISTORY",
+		"value": "\u5c0d\u6230\u7d00\u9304"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_HISTORY_FREE",
+		"value": "\u81ea\u7531\u5c0d\u6230\u7d00\u9304"
+	},
+	{
+		"key": "MID_REALTIME_PVP_FAVE_LEVEL_LIST",
+		"value": "\u559c\u611b\u82f1\u96c4\u4e00\u89bd"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TERM_EXPIRED",
+		"value": "\u76ee\u524d\u672a\u8209\u8fa6\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_DIALOG_END_OF_SEASON",
+		"value": "\u7531\u65bc\u5df2\u8d85\u904e\u8cfd\u5b63\u7d50\u675f\u6642\u9593\uff0c\\n\u7121\u6cd5\u8a08\u5165\u672c\u6b21\u7d50\u679c\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CLOSED",
+		"value": "\u76ee\u524d\u672a\u8209\u8fa6\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_AGGREGATING",
+		"value": "\u73fe\u6b63\u7d71\u8a08\u4e2d\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_MAKE_WAIT",
+		"value": "\u6b63\u5728\u5c0b\u627e\u5c0d\u6230\u5c0d\u624b"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_MAKE_WAIT_PASSWARD",
+		"value": "$a\u5bc6\u8a9e\uff1a$a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_MAKE_ELAPSE_LEFT",
+		"value": "\u7d93\u904e\u6642\u9593\uff1a"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_MAKE_ELAPSE_RIGHT",
+		"value": "$a$a0\u79d2"
+	},
+	{
+		"key": "MID_REALTIME_PVP_OPPONENT_WAIT",
+		"value": "\u6b63\u5728\u7b49\u5f85\u5c0d\u6230\u5c0d\u624b"
+	},
+	{
+		"key": "MID_REALTIME_PVP_LIMIT_TIME",
+		"value": "\u5269\u9918\u6642\u9593"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RESERVE_TIME",
+		"value": "\u9810\u5099"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TROOP_RESTRICTION_EDIT",
+		"value": "\u6307\u5b9a\u914d\u5c0d"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TROOP_RESTRICTION_EDIT_HELP",
+		"value": "\u53ef\u9078\u64c7\u914d\u5c0d\u7684\u82f1\u96c4\u9650\u5236"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TROOP_RESTRICTION_NONE",
+		"value": "\u7121\u9650\u5236"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TROOP_RESTRICTION_VERSION3",
+		"value": "\u81f3\u4e3b\u7dda\u5287\u60c5\u7b2c\uff13\u90e8\u70ba\u6b62"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_EDIT",
+		"value": "\u81ea\u8a02\u898f\u5247"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_USE_SELF",
+		"value": "\u81ea\u5df1\u8a2d\u5b9a"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_USE_OPPONENT",
+		"value": "\u5c0d\u65b9\u8a2d\u5b9a"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_INFO_DISABLE",
+		"value": "\u7121\u6cd5\u4f7f\u7528\u81ea\u8a02\u898f\u5247\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_INFO_USE_OPPONENT",
+		"value": "\u4f7f\u7528\u5c0d\u6230\u5c0d\u624b\u7684\u81ea\u8a02\u898f\u5247\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_EDIT_HELP",
+		"value": "\u53ef\u9078\u64c7\u81ea\u8a02\u898f\u5247\u7684\u5167\u5bb9"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_RANDOM",
+		"value": "\u81ea\u52d5\u8a2d\u5b9a"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_OFF",
+		"value": "Off"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_ON",
+		"value": "On"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_LIMIT_TIME_TITLE",
+		"value": "\u6642\u9593\u9650\u5236"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_LIMIT_TIME_VALUE",
+		"value": "$a$a0\u79d2"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_LIMIT_TIME_NONE",
+		"value": "\u7121\u9650\u5236"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_MAP_TITLE",
+		"value": "\u5730\u5716"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_CAPABILITY_FIX_TITLE",
+		"value": "LV.40 \u7121\u7a81\u7834\u6975\u9650&\u7f88\u7d46\u8a93\u7d04"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BATTLE_START_FAVE",
+		"value": "\u559c\u611b\u82f1\u96c4\u5c0d\u6230"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BATTLE_START_FREE_BATTLE",
+		"value": "\u81ea\u7531\u5c0d\u6230"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BATTLE_START_TRANING",
+		"value": "\u7df4\u7fd2\u5c0d\u6230"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BATTLE_START_CONFIRM",
+		"value": "\u8981\u958b\u59cb\u5c0d\u6230\u55ce\uff1f"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BATTLE_START_DECIDE",
+		"value": "\u9032\u884c\u5c0d\u6230"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BATTLE_START_FAILED",
+		"value": "\u7121\u6cd5\u958b\u59cb\u5c0d\u6230\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_INVALID_CAPTAIN_SKILL_CONFIRM",
+		"value": "\u968a\u9577\u6280\u80fd\u76ee\u524d\u7121\u6548\u3002\\n\u78ba\u5b9a\u4ecd\u8981\u9032\u884c\u5c0d\u6230\u55ce\uff1f"
+	},
+	{
+		"key": "MID_REALTIME_PVP_INVALID_CAPTAIN_SKILL_WARNING_NOT_SET",
+		"value": "\u672a\u88dd\u5099\u968a\u9577\u6280\u80fd\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_INVALID_CAPTAIN_SKILL_DECIDE",
+		"value": "\u78ba\u5b9a"
+	},
+	{
+		"key": "MID_REALTIME_PVP_DIRTY_LOSE_CONFIRM",
+		"value": "\u4e0a\u6b21\u6230\u9b25\u4e26\u672a\u6b63\u5e38\u7d50\u675f\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_DIRTY_LOSE_WARNING",
+		"value": "\u6230\u9b25\u5c07\u88ab\u8996\u70ba\u6557\u5317\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BATTLE_START_FAILED_WARNING_TROOP_RESTRICTION_NONE",
+		"value": "\u6240\u6709\u6b04\u4f4d\u7686\u9808\u7de8\u5165\u82f1\u96c4\u3002\\n\\n\u52a0\u5165\u90e8\u968a\u88e1\u7684\u82f1\u96c4\u4e0d\u80fd\u91cd\u8907\u3002\\n\\n\u6700\u591a\u53ea\u80fd\u5728\u968a\u4f0d\u4e2d\u7de8\u5165\uff11\u540d\\n\u53ef\u4f7f\u7528\u6b4c\u5531\u6216\u8d77\u821e\u7684\u82f1\u96c4\u3002\\n\\n\u6700\u591a\u53ea\u80fd\u5728\u968a\u4f0d\u4e2d\u7de8\u5165\uff11\u540d\\n\u53ef\u4f7f\u7528\u5b88\u8b77\u4eba\u7684\u82f1\u96c4\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BATTLE_START_FAILED_WARNING_TROOP_RESTRICTION_VERSION3",
+		"value": "\u6240\u6709\u6b04\u4f4d\u7686\u9808\u7de8\u5165\u82f1\u96c4\u3002\\n\\n\u7121\u6cd5\u7de8\u5165\u4e3b\u7dda\u5287\u60c5\u7b2c\uff14\u90e8\u4ee5\u5f8c\u7684\u82f1\u96c4\u3002\\n\\n\u52a0\u5165\u90e8\u968a\u88e1\u7684\u82f1\u96c4\u4e0d\u80fd\u91cd\u8907\u3002\\n\\n\u6700\u591a\u53ea\u80fd\u5728\u968a\u4f0d\u4e2d\u7de8\u5165\uff11\u540d\\n\u53ef\u4f7f\u7528\u6b4c\u5531\u6216\u8d77\u821e\u7684\u82f1\u96c4\u3002\\n\\n\u6700\u591a\u53ea\u80fd\u5728\u968a\u4f0d\u4e2d\u7de8\u5165\uff11\u540d\\n\u53ef\u4f7f\u7528\u5b88\u8b77\u4eba\u7684\u82f1\u96c4\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_PASSWARD_USE",
+		"value": "\u8a2d\u5b9a\u5bc6\u8a9e"
+	},
+	{
+		"key": "MID_REALTIME_PVP_PASSWARD_NOT_USE",
+		"value": "\u4e0d\u8a2d\u5b9a\u5bc6\u8a9e"
+	},
+	{
+		"key": "MID_REALTIME_PVP_PASSWARD_PLACE_HOLDER",
+		"value": "\u8f38\u5165\u5bc6\u8a9e"
+	},
+	{
+		"key": "MID_REALTIME_PVP_PASSWARD_TEXT",
+		"value": "\u8acb\u8f38\u5165\u5bc6\u8a9e\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_PASSWARD_INFO",
+		"value": "\u8a2d\u5b9a\u5bc6\u8a9e\u5f8c\uff0c\u5c07\u53ea\u6703\u914d\u5c0d\u5230\\n\u8a2d\u5b9a\u4e86\u76f8\u540c\u5bc6\u8a9e\u7684\u5c0d\u624b\u3002\\n\u5bc6\u8a9e\u4ee5\uff11\uff12\u500b\u5b57\u70ba\u9650\u3002\\n\u90e8\u5206\u7b26\u865f\u7121\u6cd5\u4f7f\u7528\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCHING_EXPIRED",
+		"value": "\u627e\u4e0d\u5230\u5c0d\u6230\u5c0d\u624b\u3002\\n\u8acb\u7a0d\u5f8c\u518d\u8a66\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_FAILED",
+		"value": "\u7121\u6cd5\u5efa\u7acb\u5c0d\u6230\u3002\\n\u8acb\u518d\u8a66\u4e00\u6b21\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_FAILED_CUSTOM_RULE_MERGE_FAILED",
+		"value": "\u5169\u65b9\u898f\u5247\u4e0d\u4e00\u81f4\uff0c\\n\u7121\u6cd5\u958b\u59cb\u5c0d\u6230\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_OPPONENT_DISCONNECTED",
+		"value": "\u5c0d\u6230\u5c0d\u624b\u96e2\u958b\u4e86\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_OPPONENT_RECONNECT_WAIT",
+		"value": "\u5c0d\u6230\u5c0d\u624b\u7684\u9023\u7dda\u4e2d\u65b7\u4e86\u3002\\n\u6b63\u5728\u7b49\u5f85\u5c0d\u65b9\u8fd4\u56de\u5c0d\u6230\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_OPPONENT_RECONNECT_WAIT_TIMER",
+		"value": "$a\u5269\u9918$a0\u79d2"
+	},
+	{
+		"key": "MID_LOAD_RESUME_CONFIRM_REALTIME_PVP",
+		"value": "\u767c\u73fe\u5c0d\u6230\u4e2d\u7684\u8cc7\u6599\u3002\\n\u8981\u8fd4\u56de\u5c0d\u6230\u55ce\uff1f"
+	},
+	{
+		"key": "MID_LOAD_RESUME_DECIDE_REALTIME_PVP",
+		"value": "\u8fd4\u56de\u5c0d\u6230"
+	},
+	{
+		"key": "MID_LOAD_RESUME_CANCEL_REALTIME_PVP",
+		"value": "\u4e0d\u8fd4\u56de\u5c0d\u6230"
+	},
+	{
+		"key": "MID_LOAD_DISCARD_CONFIRM_REALTIME_PVP",
+		"value": "\u8981\u522a\u9664\u5c0d\u6230\u4e2d\u7684\u8cc7\u6599\u55ce\uff1f"
+	},
+	{
+		"key": "MID_LOAD_DISCARD_DECIDE_REALTIME_PVP",
+		"value": "\u522a\u9664"
+	},
+	{
+		"key": "MID_LOAD_OUT_OF_TERM_CONFIRM_REALTIME_PVP",
+		"value": "\u5df2\u8d85\u904e\u671f\u9650\uff0c\\n\u7121\u6cd5\u7e7c\u7e8c\u5c0d\u6230\u3002\\n\u5373\u5c07\u522a\u9664\u5c0d\u6230\u4e2d\u7684\u8cc7\u6599\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RECONNECT_FAILED",
+		"value": "\u56e0\u8d85\u904e\u6642\u9593\u3001\u96d9\u65b9\u9023\u7dda\u4e2d\u65b7\u7b49\u554f\u984c\uff0c\\n\u7121\u6cd5\u7e7c\u7e8c\u5c0d\u6230\u3002"
+	},
+	{
+		"key": "MID_CONFIG_ANIME_REALTIME_PVP",
+		"value": "\u9023\u7dda\u5c0d\u6230\u52d5\u756b\\n\u203b\u5169\u65b9\u7686\u70baOn\u6642\u958b\u555f"
+	},
+	{
+		"key": "MID_CONFIG_ANIME_REALTIME_PVP_ON",
+		"value": "On"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RESULT",
+		"value": "\u672c\u6b21\u7d50\u679c"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RESULT_NEXT",
+		"value": "\u78ba\u8a8d"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RESULT_GAIN_FAVE_LEVEL",
+		"value": "\u63d0\u5347\u559c\u611b\u7b49\u7d1a"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RESULT_WARNING_FAVE_LEVEL",
+		"value": "\u5728\u81ea\u7531\u5c0d\u6230\u3001\u7df4\u7fd2\u5c0d\u6230\u4e2d\\n\u7121\u6cd5\u63d0\u5347\u559c\u611b\u7b49\u7d1a\u3002"
+	},
+	{
+		"key": "MID_BATTLE_PREPARATION_ORGANIZE",
+		"value": "\u7de8\u7d44\u90e8\u968a"
+	},
+	{
+		"key": "MID_BATTLE_PREPARATION_SKILL_SET",
+		"value": "\u6280\u80fd\u7d44"
+	},
+	{
+		"key": "MID_BATTLE_PREPARATION_PREVIEW_MAP",
+		"value": "\u78ba\u8a8d\u5730\u5716"
+	},
+	{
+		"key": "MID_BATTLE_PREPARATION_PREVIEW_MAP_HELP",
+		"value": "\u8acb\u9078\u64c7\u8981\u78ba\u8a8d\u7684\u5730\u5716"
+	},
+	{
+		"key": "MID_REALTIME_PVP_REWARD_TITLE",
+		"value": "\u6aa2\u8996\u5831\u916c"
+	},
+	{
+		"key": "MID_REALTIME_PVP_REWARD_FAVE_INFO",
+		"value": "\u80fd\u6839\u64da\u6700\u9ad8\u559c\u611b\u7b49\u7d1a\u7684\u82f1\u96c4\u7372\u5f97\u5831\u916c"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_TITLE",
+		"value": "\u5c0d\u6230\u7d00\u9304"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_WIN",
+		"value": "\u52dd\u5229\uff01"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_DRAW",
+		"value": "\u5e73\u624b"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_LOSE",
+		"value": "\u6557\u5317"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_VERSUS",
+		"value": "VS"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_REPLAY",
+		"value": "\u91cd\u64ad"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_TIME_DAYS",
+		"value": "$a$a0\u5929\u524d"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_TIME_HOUR",
+		"value": "$a$a0\u5c0f\u6642\u524d"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_TIME_MINUTES",
+		"value": "$a$a0\u5206\u9418\u524d"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_NO_HISTORY",
+		"value": "\u7121\u5c0d\u6230\u7d00\u9304\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_FILTER",
+		"value": "$a\u7be9\u9078\u689d\u4ef6\uff1a$a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_FILTER_ALL",
+		"value": "\u5168\u90e8"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_FILTER_WIN",
+		"value": "\u52dd\u5229"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_FILTER_LOSE",
+		"value": "\u6557\u5317"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_FILTER_DRAW",
+		"value": "\u5e73\u624b"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_FILTER_DIALOG",
+		"value": "\u7be9\u9078\u689d\u4ef6"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_REPLAY_DIALOG",
+		"value": "\u8981\u91cd\u64ad\u6230\u9b25\u7684\u72c0\u6cc1\u55ce\uff1f"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_REPLAY_DIALOG_CONFIRM",
+		"value": "\u958b\u59cb\u91cd\u64ad"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RANKING_TOP",
+		"value": "\u524d\u6bb5"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RANKING_AROUND_ME",
+		"value": "\u81ea\u5df1\u7684\u6392\u540d"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RANKING_UNCALCULATED_TOP",
+		"value": "\u6b63\u5728\u8a08\u7b97\u6392\u540d\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RANKING_UNCALCULATED_AROUND_ME",
+		"value": "\u60a8\u7684\u6392\u540d\u5728\u8a08\u7b97\u7bc4\u570d\u5916\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RANKING_SORT_DIALOG",
+		"value": "\u986f\u793a\u7bc4\u570d"
+	},
+	{
+		"key": "MID_REALTIME_PVP_FAVE_LEVEL_LIST_SORT",
+		"value": "$a\u6392\u5e8f\uff1a$a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_FAVE_LEVEL_LIST_SORT_DIALOG",
+		"value": "\u6392\u5e8f"
+	},
+	{
+		"key": "MID_REALTIME_PVP_FAVE_LEVEL_INFO",
+		"value": "\u9078\u64c7\u82f1\u96c4\u5c31\u80fd\u5920\u78ba\u8a8d\u6392\u540d\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_00",
+		"value": "\u5373\u6642\u5c0d\u6230\uff01"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_01",
+		"value": "\u25c6\u559c\u611b\u82f1\u96c4\u5c0d\u6230\u25c6\\n\u5c07\u81ea\u5df1\u9078\u64c7\u7684\u82f1\u96c4\u8a2d\u5b9a\u70ba\u968a\u9577\\n\u8207\u5c0d\u624b\u6230\u9b25\u3002\\n\\n\u7121\u8ad6\u52dd\u6557\\n\u7686\u80fd\u63d0\u5347\u559c\u611b\u7b49\u7d1a\\n\u4e26\u7372\u5f97\u5831\u916c\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_02",
+		"value": "\u25c6\u559c\u611b\u7b49\u7d1a\u25c6\\n\u30fb\u52dd\u5229\u6642\u3000\uff0b\uff11\uff10\\n\\n\u30fb\u7121\u8ad6\u52dd\u6557\\n\u3000\u30fb\uff0b\u8207\u64ca\u6557\u5f97\u5206\u76f8\u540c\u7684\u6578\u503c\\n\u3000\u30fb\uff0b\u8207\u58d3\u5236\u5f97\u5206\u76f8\u540c\u7684\u6578\u503c\\n\uff08\u203b\u6700\u591a\uff0b\uff11\uff10\u3002\\n\u3000\u95dc\u65bc\u5f97\u5206\u5c07\u65bc\u5f8c\u9762\u8aaa\u660e\uff09"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_03",
+		"value": "\u25c6\u898f\u5247\u3000\u52dd\u5229\u689d\u4ef6\u25c6\\n\u30fb\uff15\u56de\u5408\u5167\u6575\u4eba\u5168\u6ec5\\n\u30fb\uff15\u56de\u5408\u5167\u751f\u5b58\u4e14\u5f97\u5206\u9ad8\u65bc\u5c0d\u624b"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_04",
+		"value": "\u25c6\u898f\u5247\u3000\u884c\u52d5\u25c6\\n\u30fb\u9032\u884c\uff11\u6b21\u884c\u52d5\u5f8c\uff0c\u5c07\u8f2a\u5230\u5c0d\u65b9\u884c\u52d5\u3002\\n\uff08\u9023\u7ffc\u6216\u96d9\u754c\u6280\u80fd\u4e5f\u8996\u70ba\uff11\u6b21\u884c\u52d5\uff09\\n\uff08\u6575\u6211\u96d9\u65b9\u5206\u5225\u5728\uff11\u56de\u5408\u4e2d\u53ea\u80fd\\n\u3000\u4f7f\u7528\uff11\u6b21\u9023\u7ffc\u6216\u96d9\u754c\u6280\u80fd\uff09\\n\\n\u30fb\u7576\u5169\u8ecd\u7684\u5269\u9918\u884c\u52d5\u6b21\u6578\u70ba\uff10\uff0c\\n\u3000\u6216\u7d50\u675f\u56de\u5408\u6642\uff0c\u5c07\u9032\u5165\u4e0b\u500b\u56de\u5408\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_05",
+		"value": "\u25c6\u898f\u5247\u3000\u884c\u52d5\uff12\u25c6\\n\u82e5\u9084\u6709\u5269\u9918\u884c\u52d5\u6b21\u6578\uff0c\\n\u5373\u4f7f\u5168\u54e1\u884c\u52d5\u5b8c\u7562\\n\u4e5f\u80fd\u4f7f\u7528\u9023\u7ffc\u6216\u96d9\u754c\u6280\u80fd\u3002\\n\\n\uff08\u5728\u5168\u54e1\u884c\u52d5\u5b8c\u7562\\n\u3000\u4e14\u7121\u6cd5\u4f7f\u7528\u9023\u7ffc\u6216\u96d9\u754c\u6280\u80fd\u6642\uff0c\\n\u3000\u5373\u4f7f\u9084\u6709\u5269\u9918\u884c\u52d5\u6b21\u6578\\n\u3000\u4e5f\u5c07\u7d50\u675f\u56de\u5408\uff09"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_06",
+		"value": "\u25c6\u898f\u5247\u3000\u884c\u52d5\uff13\u25c6\\n\u4e0b\u500b\u56de\u5408\u5c07\u7531\u4e0a\u500b\u56de\u5408\u4e2d\u5269\u9918\u884c\u52d5\u6b21\u6578\\n\u8f03\u591a\u7684\u4e00\u65b9\u958b\u59cb\u884c\u52d5\u3002\\n\\n\u82e5\u5269\u9918\u884c\u52d5\u6b21\u6578\u76f8\u540c\uff0c\\n\u5c07\u7dad\u6301\u4e0a\u500b\u56de\u5408\u7684\u884c\u52d5\u9806\u5e8f\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_07",
+		"value": "\u25c6\u898f\u5247\u3000\u5c04\u7a0b\uff11\u734e\u52f5\u25c6\\n\u5c04\u7a0b\u70ba\uff11\u7684\u89d2\u8272\\n\u8207\u5c04\u7a0b\u70ba\uff12\u7684\u89d2\u8272\u6230\u9b25\u6642\uff0c\\n\u9632\u5b88\u3001\u9b54\u9632\uff0b\uff17\\n\uff08\u5305\u542b\u7bc4\u570d\u5967\u7fa9\uff09\\n\uff08\u4f46\u81ea\u5df1\u767c\u52d5\u5b88\u8b77\u4eba\u6642\u9664\u5916\uff09"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_08",
+		"value": "\u25c6\u898f\u5247\u3000\u64ca\u6557\u5f97\u5206\u25c6\\n\u30fb\u64ca\u6557\u6575\u4eba\u6642\uff0b\uff12\\n\u30fb\u4ee5\u968a\u9577\u64ca\u6557\u6575\u4eba\u6642\uff0b\uff11\\n\u30fb\u64ca\u6557\u6575\u4eba\u7684\u968a\u9577\u6642\uff0b\uff11\\n\\n\uff08\u4f8b\u5982\uff1a\u4ee5\u968a\u9577\u64ca\u6557\u6575\u4eba\u7684\u968a\u9577\u6642\uff0c\\n\u3000\u5f97\u5206\u70ba\uff0b\uff12\uff0b\uff11\uff0b\uff11\uff0c\u5408\u8a08\uff0b\uff14\uff09"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_09",
+		"value": "\u25c6\u898f\u5247\u3000\u58d3\u5236\u5f97\u5206\u25c6\\n\u5404\u56de\u5408\u7d50\u675f\u6642\uff0c\\n\u5728\u5730\u5716\u4e2d\u592e\u7684\u58d3\u5236\u5340\u57df\u5185\\n\u82f1\u96c4\u6578\u91cf\u591a\u65bc\u5c0d\u624b\uff12\u540d\u4ee5\u4e0a\u7684\u4e00\u65b9\\n\u5f97\u5206\uff0b\uff12"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_10",
+		"value": "\u25c6\u81ea\u7531\u5c0d\u6230\u25c6\\n\u559c\u611b\u7b49\u7d1a\u4e0d\u6703\u8b8a\u52d5\u3002\\n\u53ef\u8a2d\u5b9a\u5bc6\u8a9e\u53ca\u81ea\u8a02\u898f\u5247\uff0c\\n\u81ea\u7531\u9032\u884c\u5c0d\u6230\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_11",
+		"value": "\u25c6\u5bc6\u8a9e\u25c6\\n\u8a2d\u5b9a\u5bc6\u8a9e\u5f8c\uff0c\\n\u5c07\u53ea\u6703\u8207\u8a2d\u5b9a\u4e86\\n\u76f8\u540c\u5bc6\u8a9e\u7684\u5c0d\u624b\u6230\u9b25\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_12",
+		"value": "\u25c6\u81ea\u8a02\u898f\u5247\u25c6\\n\u53ef\u9078\u64c7\u300c\u5c0d\u65b9\u8a2d\u5b9a\u300d\\n\u6216\u300c\u81ea\u5df1\u8a2d\u5b9a\u300d\u3002\\n\\n\u82e5\u9078\u64c7\u300c\u81ea\u5df1\u8a2d\u5b9a\u300d\uff0c\\n\u5c0d\u6230\u5c0d\u624b\u5c07\u6703\u662f\\n\u9078\u64c7\u300c\u5c0d\u65b9\u8a2d\u5b9a\u300d\\n\u6216\u8207\u81ea\u5df1\u9078\u64c7\u76f8\u540c\u898f\u5247\u7684\u73a9\u5bb6\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_13",
+		"value": "\u25c6\u7df4\u7fd2\u5c0d\u6230\u25c6\\n\u559c\u611b\u7b49\u7d1a\u4e0d\u6703\u8b8a\u52d5\u3002\\n\u53ef\u8a2d\u5b9a\u81ea\u8a02\u898f\u5247\uff0c\\n\u81ea\u7531\u9032\u884c\u5c0d\u6230\u3002\\n\\n\u5c0d\u6230\u5c0d\u624b\u4e26\u975e\u5176\u4ed6\u73a9\u5bb6\uff0c\\n\u800c\u662f\u7531\u7cfb\u7d71\u81ea\u52d5\u7522\u751f\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_14",
+		"value": "\u25c6\u5176\u4ed6\u3000\u52dd\u5834\u6578\u4e0a\u9650\u25c6\\n\u52dd\u5834\u6578\u7684\u8a08\u7b97\\n\u6709\u4e00\u5b9a\u7684\u4e0a\u9650\u3002\\n\uff08\u4e0a\u9650\u53ef\u80fd\u6703\u5728\u65e5\u5f8c\u64f4\u5f35\uff09"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_15",
+		"value": "\u25c6\u5176\u4ed6\u3000\u4efb\u52d9\u25c6\\n\u5728\u82f1\u96c4\u6c7a\u9b25\u4e2d\uff0c\\n\u4e0d\u6703\u589e\u52a0\u4efb\u52d9\u7684\u9032\u5ea6\u3002\\n\\n\u25c6\u5176\u4ed6\u3000\u9023\u7dda\u4e2d\u65b7\u25c6\\n\u5728\u5c0d\u6230\u4e2d\u82e5\u9023\u7dda\u4e2d\u65b7\uff0c\\n\u5c07\u53ef\u80fd\u88ab\u8996\u70ba\u6557\u5317\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_16",
+		"value": "\u25c6\u5176\u4ed6\u3000\u82f1\u96c4\u6c7a\u9b25\u7684\u56de\u5408\u25c6\\n\u6211\u8ecd\u8207\u6575\u8ecd\u5c07\u5408\u4f75\u70ba\uff11\u56de\u5408\uff0c\\n\u800c\u975e\u5206\u6210\u5404\u81ea\u7684\u56de\u5408\u3002\\n\\n\u300c\u50c5\u5206\u5225\u5728\u6211\u8ecd\u8207\u6575\u8ecd\u7684\u5404\u56de\u5408\u7576\u4e2d\uff0c\\n\u3000\u65bc\u521d\u6b21\u6230\u9b25\u6642\u300d\u7684\u6280\u80fd\\n\u50c5\u6703\u5728\u6bcf\u56de\u5408\u7684\u521d\u6b21\u6230\u9b25\u6642\u767c\u63ee\u6548\u679c\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_17",
+		"value": "\u25c6\u5176\u4ed6\u3000\u74b0\u5883\u8a2d\u5b9a\u25c6\\n\u5728\u82f1\u96c4\u6c7a\u9b25\u4e2d\uff0c\\n\u5c07\u4e0d\u9069\u7528\u74b0\u5883\u8a2d\u5b9a\u7684\u90e8\u5206\u9805\u76ee\uff0c\\n\u800c\u6703\u9069\u7528\u82f1\u96c4\u6c7a\u9b25\u5c08\u7528\u7684\u8a2d\u5b9a\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ORGANIZE_HELP_DIALOG_00",
+		"value": "\u25c6\u82f1\u96c4\u6c7a\u9b25\u3000\u7de8\u7d44\u90e8\u968a\u25c6\\n\u7de8\u7d44\u82f1\u96c4\u6c7a\u9b25\u5c08\u7528\u7684\u90e8\u968a\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ORGANIZE_HELP_DIALOG_01",
+		"value": "\u25c6\u7de8\u7d44\u25c6\\n\u30fb\u4ee5\uff11\u500b\u90e8\u968a\uff15\u540d\u82f1\u96c4\u6230\u9b25\u3002\\n\\n\u30fb\u52a0\u5165\u7684\u82f1\u96c4\u4e0d\u80fd\u91cd\u8907\u3002\\n\u30fb\uff11\u500b\u90e8\u968a\u4e2d\u6700\u591a\u53ea\u80fd\u7de8\u5165\uff11\u540d\\n\u3000\u6301\u6709\u6b4c\u5531\u6216\u8d77\u821e\u6280\u80fd\u7684\u82f1\u96c4\u3002\\n\u30fb\uff11\u500b\u90e8\u968a\u4e2d\u6700\u591a\u53ea\u80fd\u7de8\u5165\uff11\u540d\\n\u3000\u6301\u6709\u5b88\u8b77\u4eba\u6280\u80fd\u7684\u82f1\u96c4\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ORGANIZE_HELP_DIALOG_02",
+		"value": "\u25c6\u795d\u798f\u25c6\\n\u5728\u82f1\u96c4\u6c7a\u9b25\u4e2d\uff0c\\n\u7121\u8ad6\u662f\u5426\u88ab\u8ce6\u4e88\u795d\u798f\uff0c\\n\u50b3\u627f\u3001\u795e\u968e\u82f1\u96c4\u4ee5\u5916\u7684\u82f1\u96c4\\n\u7686\u80fd\u7372\u5f97\u50b3\u627f\u6548\u679c\u52a0\u6301\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ORGANIZE_HELP_DIALOG_03",
+		"value": "\u25c6\u96d9\u4eba\u7d44\u5408\u25c6\\n\u5728\u82f1\u96c4\u6c7a\u9b25\u4e2d\uff0c\\n\u7121\u6cd5\u4f7f\u7528\u96d9\u4eba\u7d44\u5408\u3002\\n\\n\u8207\u76ee\u524d\u5b63\u7bc0\u5c6c\u6027\u76f8\u540c\u7684\u50b3\u627f\u82f1\u96c4\\n\u50c5\u80fd\u7372\u5f97\u96d9\u4eba\u7d44\u5408\u6642\u7684\\n\u63d0\u5347\u80fd\u529b\u503c\u6548\u679c\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ORGANIZE_HELP_DIALOG_04",
+		"value": "\u25c6\u968a\u9577\u6280\u80fd\u25c6\\n\u7de8\u7d44\u90e8\u968a\u6642\uff0c\\n\u53ef\u88dd\u5099\u968a\u9577\u6280\u80fd\u3002\\n\\n\u968a\u9577\u88ab\u64ca\u6557\u6642\uff0c\\n\u968a\u9577\u6280\u80fd\u5c07\u6703\u7121\u6548\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BLUE_PHASE",
+		"value": "BLUE PHASE"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RED_PHASE",
+		"value": "RED PHASE"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV65541",
+		"value": "\u5c01\u9589\u5e1d\u570b\u4e4b\u57ce"
+	},
+	{
+		"key": "MID_SCF_\u30a2\u30b7\u30e5\u306e\u77f3\u50cf",
+		"value": "\u827e\u7dd2\u7684\u77f3\u50cf"
+	},
+	{
+		"key": "MID_SCF_\u30a2\u30b7\u30e5\u306e\u77f3\u50cf_HELP",
+		"value": "\u98db\u7a7a\u57ce\u7279\u5225\u6d3b\u52d5\u7684\u7269\u54c1\\n\u4ee5\u8eab\u70ba\u4e9e\u65af\u514b\u50d5\u5f9e\u7684\u795e\u7378\u70ba\u9020\u578b\u7684\u77f3\u50cf\\n\u8c50\u6eff\u7684\u9ad4\u683c\u7d66\u4eba\u4e00\u7a2e\u53ef\u611b\u7684\u611f\u89ba"
+	},
+	{
+		"key": "MID_SCF_\u30a8\u30eb\u30e0\u306e\u77f3\u50cf",
+		"value": "\u57c3\u723e\u59c6\u7684\u77f3\u50cf"
+	},
+	{
+		"key": "MID_SCF_\u30a8\u30eb\u30e0\u306e\u77f3\u50cf_HELP",
+		"value": "\u98db\u7a7a\u57ce\u7279\u5225\u6d3b\u52d5\u7684\u7269\u54c1\\n\u4ee5\u8eab\u70ba\u6069\u5e03\u62c9\u50d5\u5f9e\u7684\u795e\u7378\u70ba\u9020\u578b\u7684\u77f3\u50cf\\n\u5c55\u7fc5\u7684\u59ff\u614b\u7d66\u4eba\u4e00\u7a2e\u4f36\u4fd0\u7684\u611f\u89ba"
+	},
+	{
+		"key": "MID_SCF_\u30a8\u30f3\u30d6\u30e9\u5e1d\u56fd\u65d7",
+		"value": "\u6069\u5e03\u62c9\u5e1d\u570b\u65d7"
+	},
+	{
+		"key": "MID_SCF_\u30a8\u30f3\u30d6\u30e9\u5e1d\u56fd\u65d7_HELP",
+		"value": "\u98db\u7a7a\u57ce\u7279\u5225\u6d3b\u52d5\u7684\u7269\u54c1\\n\u7dad\u6d1b\u59ae\u5361\u7b49\u4eba\u7684\u570b\u5bb6\u2014\u2014\u6069\u5e03\u62c9\u5e1d\u570b\u7684\u65d7\u5e5f"
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202112",
+		"value": "\u51ac\u4e4b\u98db\u7a7a\u77f3"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202112",
+		"value": "\u7528\u65bc\u300c\u98db\u7a7a\u57ce\u300d\\n\u53ef\u4ee5\u88fd\u9020\u671f\u9593\u9650\u5b9a\u7684\u8a2d\u5099\\n\u671f\u9593\u4e00\u904e\uff0c\u5c07\u6703\u5168\u6578\u6d88\u5931\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SORT_PAIR",
+		"value": "\u9023\u7ffc\u3001\u96d9\u754c"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SORT_VERSION",
+		"value": "\u7248\u672c"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND",
+		"value": "\u82f1\u96c4\u7a2e\u985e"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_MAJOR_VERSION",
+		"value": "\u7248\u672c\uff08\u767b\u5834\u6642\u671f\uff09"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_0",
+		"value": "\u50b3\u627f"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_1",
+		"value": "\u795e\u968e"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_2",
+		"value": "\u9023\u7ffc"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_3",
+		"value": "\u96d9\u754c"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_AGAINER",
+		"value": "\u6b4c\u5531\u3001\u8d77\u821e"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_SET_LOAD_SELECT_TROOP_REALTIME_PVP",
+		"value": "\u82f1\u96c4\u6c7a\u9b25\u90e8\u968a"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202112",
+		"value": "\u51b0\u795e\u708e\u795e\u3000\u7d50"
+	},
+	{
+		"key": "MID_SHOP_SPECIAL_DIALOG_MISSION_TITLE",
+		"value": "\u3010\u8d85\u7d1a\u8d85\u503c\u529f\u80fd\u3011\u52a0\u5165\u8005\u9650\u5b9a\u3000\u4efb\u9078\u53ec\u559a"
+	},
+	{
+		"key": "MID_SHOP_SPECIAL_DIALOG_MISSION_TEXT",
+		"value": "\u5728\u8d85\u82f1\u96c4\u30fbW\u8d85\u82f1\u96c4\u30fb\u50b3\u627f/\u795e\u968e\u82f1\u96c4\u53ec\u559a\u4e2d\\n\u9032\u884c\uff14\uff10\u6b21\u53ec\u559a\u5f8c\u5373\u53ef\u300c\u4efb\u9078\u53ec\u559a\u300d\u3002"
+	},
+	{
+		"key": "MID_SHOP_SPECIAL_BANNER",
+		"value": "\u8ffd\u52a0\u7279\u5178"
+	},
+	{
+		"key": "MID_LCFFPPP_DIALOG",
+		"value": "$a\u53ec\u559a\u6b21\u6578\u5df2\u9054\u5230$a0\u6b21\u3002\\n\u52a0\u5165FEH PASS\u5f8c\uff0c\\n\u5373\u53ef\u5f9e\u53ec\u559a\u9996\u9801\u9032\u884c\u300c\u4efb\u9078\u300d\u3002"
+	},
+	{
+		"key": "MID_LCFFPPP_INFO_DIALOG",
+		"value": "$a\u52a0\u5165FEH PASS\u5f8c\uff0c\\n\u518d\u9032\u884c$a0\u6b21\u53ec\u559a\\n\u5373\u53ef\u300c\u4efb\u9078\u300d\u2605\uff15\u7cbe\u9078\\n\uff0b\u7372\u5f97\u300c\u5929\u4e0a\u7684\u6d41\u661f\u300d\uff01"
+	},
+	{
+		"key": "MID_VOTE_TERM_202112_01",
+		"value": "\u8d85\u8d8a\u5e2b\u7236\u5427\uff01"
+	},
+	{
+		"key": "MID_WIN08_Party_Title",
+		"value": "\u8056\u591c\u76db\u5bb4"
+	},
+	{
+		"key": "MID_WIN08_Party_Common",
+		"value": "\u8981\u5728\u51ac\u796d\u7684\u8056\u591c\u88e1\u6e96\u5099\u5bb4\u6703\u3002\\n\u5169\u4eba\u770b\u8d77\u4f86\u90fd\u5f88\u958b\u5fc3\u3002"
+	},
+	{
+		"key": "MID_WIN08_Party_3",
+		"value": "\u6a39\u88dd\u98fe\u597d\u4e86\uff01\\n\u5728\u76db\u5927\u7684\u5bb4\u6703\u958b\u59cb\u524d\uff0c\u5169\u4eba\u90fd\u975e\u5e38\u8208\u596e\uff01"
+	},
+	{
+		"key": "MID_WIN08_Party_4",
+		"value": "\u5962\u83ef\u7684\u6599\u7406\u6e96\u5099\u597d\u4e86\uff01\\n\u5169\u4eba\u7684\u809a\u5b50\u767c\u51fa\u4e86\u6b61\u547c\u8072\uff01"
+	},
+	{
+		"key": "MID_WIN08_Party_5",
+		"value": "\u5927\u5bb6\u90fd\u5230\u9f4a\u4e86\uff0c\u4e00\u5207\u6e96\u5099\u5c31\u7dd2\uff01\\n\u8056\u591c\u7684\u591c\u8272\u96a8\u8457\u5bb4\u6703\u4e0a\u7684\u6b61\u547c\u8072\u6f38\u6fc3\u2026\u2026"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202112",
+		"value": "\u300c\u897f\u65b9\u4e4b\u8a18\u300d"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202112R",
+		"value": "\u5fa9\u523b\u30fb\u66b4\u96e8\u4e2d\u7684\u524d\u884c\u8005"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202201",
+		"value": "\u548c\u4f60\u4e00\u8d77\u904e\u65b0\u5e74"
+	},
+	{
 		"key": "MID_SEQUENTIAL_MAP_TERM_201712",
 		"value": "\u70ba\u4e86\u50b3\u9054\u611b\u8207\u548c\u5e73"
 	},
@@ -18482,5 +19402,2601 @@
 	{
 		"key": "MID_SEQUENTIAL_MAP_TERM_201911",
 		"value": "\u60a0\u9060\u7684\u9ec3\u6c99"
+	},
+	{
+		"key": "MID_EXTRA_SUBMENU_2",
+		"value": "\u5ba2\u6236\u652f\u63f4\u670d\u52d9\u7b49"
+	},
+	{
+		"key": "MID_EXTRA_FEEDBACK",
+		"value": "\u610f\u898b"
+	},
+	{
+		"key": "MID_OCCUPATION_RECOLLECTION_TITLE_202201",
+		"value": "\u827e\u9edb\u723e\u8cc8\u7279\u7b49\u4eba\u3000\uff12"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202201",
+		"value": "\u7bc9\u69cb\u672a\u4f86\u57fa\u790e\u4e4b\u4eba"
+	},
+	{
+		"key": "MID_PROFILECARD_REALTIME_PVP_RATE_GRADE",
+		"value": "\u82f1\u96c4\u6c7a\u9b25\u3000\u6311\u6230\u30fb\u9b25\u4f4d"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TITLE_1",
+		"value": "\u82f1\u96c4\u6c7a\u9b25\u3000\u6311\u6230"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_MAKE_TITLE_1_0",
+		"value": "\u82f1\u96c4\u6c7a\u9b25\u3000\u6311\u6230"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MAP_TITLE_1_0",
+		"value": "\u82f1\u96c4\u6c7a\u9b25\u3000\u6311\u6230"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GAINED_REWARDTYPE_GRADE_1",
+		"value": "$a\u82f1\u96c4\u6c7a\u9b25\u3000\u6311\u6230\u30fb\u9b25\u4f4d$a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GAINED_REWARDTYPE_RANK_1",
+		"value": "$a\u82f1\u96c4\u6c7a\u9b25\u3000\u6311\u6230\u30fb\u6392\u540d\u7b2c$a0\u540d"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RATE",
+		"value": "\u8a55\u50f9"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE",
+		"value": "\u9b25\u4f4d"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BONUS_PERSON",
+		"value": "\u672c\u6b21\u734e\u52f5\u89d2\u8272"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BONUS_PERSON_INFO",
+		"value": "\u6557\u5317\u7121\u6548\uff08\u50c5\u80fd\u767c\u52d5\uff11\u6b21\uff09\uff06\u6557\u5317\u6642\u6291\u5236\u8a55\u50f9\u6e1b\u5c11"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BATTLE_START_FAILED_NO_NOMAL_CHALLENGE_COUNT",
+		"value": "$a\u7531\u65bc\u5df2\u6557\u5317$a0\u6b21\uff0c\\n\u7121\u6cd5\u958b\u59cb\u5c0d\u6230\u3002\\n\u5c07\u734e\u52f5\u89d2\u8272\u7de8\u5165\u90e8\u968a\u5f8c\uff0c\\n\u53ef\u7e7c\u7e8c\u5c0d\u6230\u81f3\u6557\u5317$a1\u6b21\u70ba\u6b62\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BATTLE_START_FAILED_NO_ALL_CHALLENGE_COUNT",
+		"value": "$a\u7531\u65bc\u5df2\u6557\u5317$a0\u6b21\uff0c\\n\u7121\u6cd5\u958b\u59cb\u5c0d\u6230\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_NO_RIGHT_TO_PARTICIPATE_IN_EVENT_CONFIRM",
+		"value": "\u53c3\u52a0\u9019\u500b\u6d3b\u52d5\\n\u9700\u8981\u300c\u5c0d\u6230\u8005\u4e4b\u8b49\u300d\u3002\\n\\n\u300c\u5c0d\u6230\u8005\u4e4b\u8b49\u300d\\n\u53ef\u900f\u904e\u904a\u73a9\u7af6\u6280\u5834\u7684\\n\u559c\u611b\u82f1\u96c4\u5c0d\u6230\u7372\u5f97\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_NO_RIGHT_TO_PARTICIPATE_IN_EVENT_DECIDE",
+		"value": "\u524d\u5f80\u559c\u611b\u82f1\u96c4\u5c0d\u6230"
+	},
+	{
+		"key": "MID_ARENA_CHAIN_CLOSED_MODE_SELECT",
+		"value": "\u65bc\u82f1\u96c4\u6c7a\u9b25\u6d3b\u52d5\u9031\u4e0d\u6703\u8209\u8fa6\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_0",
+		"value": "\u521d\u5b78\u8005C"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_1",
+		"value": "\u521d\u5b78\u8005B"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_2",
+		"value": "\u521d\u5b78\u8005A"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_3",
+		"value": "\u9752\u9285C"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_4",
+		"value": "\u9752\u9285B"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_5",
+		"value": "\u9752\u9285A"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_6",
+		"value": "\u767d\u9280C"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_7",
+		"value": "\u767d\u9280B"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_8",
+		"value": "\u767d\u9280A"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_9",
+		"value": "\u9ec3\u91d1C"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_10",
+		"value": "\u9ec3\u91d1B"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_11",
+		"value": "\u9ec3\u91d1A"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_12",
+		"value": "\u767d\u91d1D"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_13",
+		"value": "\u767d\u91d1C"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_14",
+		"value": "\u767d\u91d1B"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_15",
+		"value": "\u767d\u91d1A"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_16",
+		"value": "\u947d\u77f3D"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_17",
+		"value": "\u947d\u77f3C"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_18",
+		"value": "\u947d\u77f3B"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_19",
+		"value": "\u947d\u77f3A"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_20",
+		"value": "\u5927\u5e2bD"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_21",
+		"value": "\u5927\u5e2bC"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_22",
+		"value": "\u5927\u5e2bB"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_23",
+		"value": "\u5927\u5e2bA"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CHALLENGE_TIMES",
+		"value": "\u5269\u9918\u6b21\u6578"
+	},
+	{
+		"key": "MID_REALTIME_PVP_REMAINING_DAY",
+		"value": "$a\u8ddd\u96e2\u7d50\u675f\u9084\u6709$a0\u5929"
+	},
+	{
+		"key": "MID_REALTIME_PVP_REMAINING_HOUR",
+		"value": "$a\u8ddd\u96e2\u7d50\u675f\u9084\u6709$a0\u5c0f\u6642"
+	},
+	{
+		"key": "MID_REALTIME_PVP_REMAINING_MINUTE",
+		"value": "$a\u8ddd\u96e2\u7d50\u675f\u9084\u6709$a0\u5206\u9418"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RANKING",
+		"value": "\u76ee\u524d\u6392\u540d"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BATTLE_START_RATE",
+		"value": "\u9032\u884c\u5c0d\u6230"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RESULT_GAIN_RATE",
+		"value": "\u7372\u5f97\u8a55\u50f9"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RESULT_NEXT_GRADE",
+		"value": "\u8ddd\u96e2\u4e0b\u500b\u9b25\u4f4d\u9084\u6709"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RESULT_GRADE_PROMOTION",
+		"value": "$a\u5347\u7d1a\u81f3$a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RESULT_GRADE_DEMOTION",
+		"value": "$a\u964d\u7d1a\u81f3$a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_REWARD_RANKING",
+		"value": "\u6392\u540d"
+	},
+	{
+		"key": "MID_REALTIME_PVP_SORT_DIALOG",
+		"value": "\u5831\u916c\u7a2e\u985e"
+	},
+	{
+		"key": "MID_REALTIME_PVP_REWARD_SORT",
+		"value": "$a\u5831\u916c\u7a2e\u985e\uff1a$a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RANKING_FRIEND",
+		"value": "\u597d\u53cb"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RANKING_UNCALCULATED_FRIEND",
+		"value": "\u6c92\u6709\u597d\u53cb\u53c3\u52a0\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_1_00",
+		"value": "\u5728\u6557\u5317\uff13\u6b21\u4e4b\u524d\uff0c\u80fd\u5920\u53d6\u5f97\u5e7e\u52dd\u5462\uff1f"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_1_01",
+		"value": "\u25c6\u82f1\u96c4\u6c7a\u9b25\u6311\u6230\u25c6\\n\u82f1\u96c4\u6c7a\u9b25\u4e2d\\n\u4ee5\u8a55\u50f9\u5236\u914d\u5c0d\u5c0d\u624b\u7684\u6230\u9b25\u3002\\n\\n\uff11\u500b\u8cfd\u5b63\u4e2d\u53ef\u6557\u5317\uff13\u6b21\uff0c\\n\u5728\u90a3\u4e4b\u524d\u53ef\u7121\u9650\u6b21\u6578\u6230\u9b25\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_1_02",
+		"value": "\u25c6\u8a55\u50f9\u8207\u9b25\u4f4d\u25c6\\n\u30fb\u8a55\u50f9\u6703\u96a8\u8457\\n\u3000\u6230\u7e3e\u800c\u8b8a\u52d5\u3002\\n\u30fb\u9b25\u4f4d\u5c07\u6839\u64da\u8a55\u50f9\u8b8a\u52d5\u3002\\n\u30fb\u4e0b\u500b\u8cfd\u5b63\u5c07\u4ee5\\n\u3000\u5404\u9b25\u4f4d\u898f\u5b9a\u7684\u8a55\u50f9\u958b\u59cb\u8a08\u7b97\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_1_03",
+		"value": "\u25c6\u7dad\u6301\u9b25\u4f4d\u7684\u7279\u5225\u689d\u4ef6\u25c6\\n\u53ea\u8981\u9b25\u4f4d\u9054\u5230\\n\uff14\u3001\uff17\u3001\uff11\uff10\u3001\uff11\uff13\uff0c\\n\u5373\u4f7f\u4e4b\u5f8c\u6557\u5317\uff0c\\n\u4e5f\u4e0d\u6703\u964d\u81f3\u4e0a\u8ff0\u9b25\u4f4d\u4e4b\u4e0b\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_1_04",
+		"value": "\u25c6\u8a55\u50f9\u589e\u6e1b\u25c6\\n\u30fb\u6557\u5317\u6642\u7684\u8a55\u50f9\u6e1b\u5c11\u6578\u503c\\n\u3000\u6703\u4f9d\u9b25\u4f4d\u7522\u751f\u8b8a\u5316\u3002\\n\u30fb\u82e5\u7372\u5f97\u5f97\u5206\uff0c\\n\u3000\u6557\u5317\u6642\u53ef\u6291\u5236\u8a55\u50f9\u7684\u6e1b\u5c11\u3002\\n\u30fb\u5c0d\u6230\u5c0d\u624b\u7684\u9b25\u4f4d\u9ad8\u65bc\u81ea\u5df1\u6642\uff0c\\n\u3000\u5c07\u63d0\u5347\u52dd\u5229\u6642\u589e\u52a0\u7684\u8a55\u50f9\uff0c\\n\u3000\u4ee5\u53ca\u964d\u4f4e\u6557\u5317\u6642\u6e1b\u5c11\u7684\u8a55\u50f9\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_1_05",
+		"value": "\u25c6\u734e\u52f5\u50b3\u627f\u795e\u968e\u82f1\u96c4\u25c6\\n\u5c07\u672c\u8cfd\u5b63\u7684\u734e\u52f5\u50b3\u627f\u795e\u968e\u82f1\u96c4\\n\u7de8\u5165\u90e8\u968a\u5f8c\uff0c\u6557\u5317\u6642\u53ef\u6291\u5236\u8a55\u50f9\u7684\u6e1b\u5c11\u3002\\n\u6291\u5236\u7684\u6e1b\u5c11\u6578\u503c\u70ba\uff14\uff10\u3002\\n\\n\u6b64\u5916\uff0c\u7b2c\u4e00\u6b21\u6557\u5317\u6642\uff0c\u4e0d\u6703\u8996\u70ba\u6557\u5317\u3002\\n\uff08\u53ef\u6557\u5317\u6b21\u6578\u70ba\u5e73\u5e38\u7684\uff13\u6b21\uff0b\uff11\u6b21\uff0c\\n\u3000\u56e0\u6b64\u53ef\u6230\u9b25\u81f3\u6557\u5317\uff14\u6b21\u70ba\u6b62\uff09"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_BLOOMED_WARNING",
+		"value": "\u5c07\u8981\u9001\u56de\\n\u6301\u6709\u958b\u82b1\u64c5\u9577\u7684\u89d2\u8272\u3002\\n\\n\u78ba\u5b9a\u8981\u9001\u56de\u55ce\uff1f"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_BLOOMED_WARNING",
+		"value": "\u5c07\u8981\u6d88\u8cbb\\n\u6301\u6709\u958b\u82b1\u64c5\u9577\u7684\u89d2\u8272\u3002\\n\\n\u78ba\u5b9a\u8981\u7e7c\u627f\u6280\u80fd\u55ce\uff1f"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMIT_BREAK_BLOOMED_WARNING",
+		"value": "\u5c07\u8981\u6d88\u8cbb\\n\u6301\u6709\u958b\u82b1\u64c5\u9577\u7684\u89d2\u8272\u3002\\n\\n\u78ba\u5b9a\u8981\u7a81\u7834\u6975\u9650\u55ce\uff1f"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_GENERATE_BLOOMED_WARNING",
+		"value": "\u5c07\u8981\u4ee5\u6301\u6709\u958b\u82b1\u64c5\u9577\u7684\u89d2\u8272\\n\u88fd\u4f5c\u79d8\u50b3\u66f8\u3002\\n\\n\u78ba\u5b9a\u8981\u88fd\u4f5c\u79d8\u50b3\u66f8\u55ce\uff1f"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_SKILL",
+		"value": "\u641c\u5c0b\u6301\u6709\u6280\u80fd"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_SKILL_PLACEHOLDER",
+		"value": "\u8acb\u8f38\u5165\u6280\u80fd\u540d\u7a31"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_SKILL_DIALOG",
+		"value": "\u8acb\u8f38\u5165\u6b32\u641c\u5c0b\u7684\u6280\u80fd\u540d\u7a31\\n\u6216\u6280\u80fd\u540d\u7a31\u7684\u4e00\u90e8\u5206\u3002"
+	},
+	{
+		"key": "MID_OCCUPATION_RECOLLECTION_TITLE_202201_2",
+		"value": "\u827e\u9edb\u723e\u8cc8\u7279\u7b49\u4eba\u3000\uff12"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202201_2",
+		"value": "\u70ba\u4f60\u800c\u5531"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202201",
+		"value": "\u300c\u5317\u65b9\u4e4b\u8a18\u300d"
+	},
+	{
+		"key": "MID_SUM02_Palm_Title",
+		"value": "\u88dc\u5145\u6c34\u5206"
+	},
+	{
+		"key": "MID_SUM02_Palm_Common",
+		"value": "\u5169\u4eba\u66dd\u66ec\u5728\u707c\u71b1\u7684\u592a\u967d\u5e95\u4e0b\u3002\\n\u4f3c\u4e4e\u6253\u7b97\u7528\u6930\u5b50\u6b62\u6e34\u3002"
+	},
+	{
+		"key": "MID_SUM02_Palm_3",
+		"value": "\u6c92\u63a5\u5230\u6930\u5b50\uff01\\n\u96a8\u5f8c\u5169\u4eba\u5171\u540c\u4eab\u7528\u6930\u5b50\uff0c\u6ecb\u6f64\u4e86\u5589\u56a8\uff01"
+	},
+	{
+		"key": "MID_SUM02_Palm_4",
+		"value": "\u5404\u81ea\u5f97\u5230\u4e86\u5f88\u68d2\u7684\u6930\u5b50\uff01\\n\u5169\u4eba\u4e92\u76f8\u7a31\u8b9a\u4e86\u5f7c\u6b64\u7684\u7cbe\u5f69\u8868\u73fe\uff01"
+	},
+	{
+		"key": "MID_SUM02_Palm_5",
+		"value": "\u7adf\u7136\u5f97\u5230\u4e86\u5927\u91cf\u7684\u6930\u5b50\uff01\\n\u5169\u4eba\u611f\u8b1d\u4e86\u5f7c\u6b64\u7684\u5e78\u904b\uff01"
+	},
+	{
+		"key": "MID_JOURNEYMIRROR_HELP_DIALOG_00",
+		"value": "\u25c6\u7570\u754c\u7684\u6c34\u93e1\u25c6\\n\u53ef\u5728\u6b64\u6162\u6162\u89c0\u770b\u5169\u4f4d\u82f1\u96c4\\n\u65bc\u7576\u4e0b\u7684\u77ac\u9593\\n\u5728\u4ec0\u9ebc\u5730\u65b9\u3001\u505a\u4ec0\u9ebc\u4e8b\u60c5\u3002"
+	},
+	{
+		"key": "MID_JOURNEYMIRROR_HELP_DIALOG_01",
+		"value": "\u25c6\u53cd\u6620\u73fe\u5be6\u6642\u9593\u25c6\\n\u7570\u754c\u7684\u6c34\u93e1\u6703\u6839\u64da\u73fe\u5be6\u6642\u9593\\n\u53cd\u6620\u96d9\u4eba\u4e4b\u65c5\u7684\u60c5\u6cc1\u3002\\n\\n\u5192\u96aa\u3001\u7528\u9910\u3001\\n\u4f11\u606f\u2026\u2026\\n\u8acb\u52d9\u5fc5\u89aa\u8eab\u9ad4\u9a57\\n\u8207\u82f1\u96c4\u5011\u4e00\u8d77\u6d3b\u5728\u7576\u4e0b\u7684\u611f\u89ba\u3002"
+	},
+	{
+		"key": "MID_JOURNEYMIRROR_HELP_DIALOG_02",
+		"value": "\u25c6\u9078\u64c7\u4e8b\u4ef6\u25c6\\n\u5728\u5192\u96aa\u4e2d\uff0c\u82f1\u96c4\u5011\u6709\\n\u6975\u4f4e\u6a5f\u7387\u6703\u9762\u81e8\u4ee4\u4eba\u8ff7\u60d8\u7684\u6289\u64c7\u3002\\n\\n\u5728\u9019\u7a2e\u6642\u5019\uff0c\u5c31\u9ede\u89f8\u756b\u9762\uff0c\\n\u5e6b\u52a9\u4ed6\u5011\u505a\u51fa\u6289\u64c7\u5427\u3002"
+	},
+	{
+		"key": "MID_JOURNEYMIRROR_HELP_DIALOG_03",
+		"value": "\u25c6\u9078\u64c7\u4e8b\u4ef6\u7684\u5831\u916c\u25c6\\n\u7576\u51fa\u73fe\u597d\u7684\u7d50\u679c\u6642\uff0c\\n\u82f1\u96c4\u5011\u6703\u8d08\u9001\u65e5\u8a18\u7684\u788e\u7247\u00d7\uff11\\n\u4f5c\u70ba\u611f\u8b1d\u7684\u5fc3\u610f\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR",
+		"value": "\u7570\u754c\u7684\u6c34\u93e1"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_CONFIRM_FIRST",
+		"value": "\u900f\u904e\u65b0\u8ffd\u52a0\u7684\u7570\u754c\u7684\u6c34\u93e1\uff0c\\n\u770b\u770b\u5169\u4f4d\u82f1\u96c4\u73fe\u5728\u7684\u60c5\u6cc1\u5427\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_CONFIRM",
+		"value": "\u900f\u904e\u7570\u754c\u7684\u6c34\u93e1\uff0c\\n\u770b\u770b\u5169\u4f4d\u82f1\u96c4\u73fe\u5728\u7684\u60c5\u6cc1\u5427\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_FAILED",
+		"value": "\u7121\u6cd5\u524d\u5f80\u7570\u754c\u7684\u6c34\u93e1\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TOUCH",
+		"value": "\u9ede\u89f8\u756b\u9762\uff0c\\n\u5f9e\u4e09\u500b\u9078\u9805\u4e2d\u64c7\u4e00\u5427\uff01"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_TITLE",
+		"value": "$a$a0$a1"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_TELOP",
+		"value": "$a$a0$a1\\n$a2"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_1",
+		"value": "\u5728\u539f\u91ce"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_2",
+		"value": "\u5728\u539f\u91ce"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_3",
+		"value": "\u5728\u539f\u91ce"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_4",
+		"value": "\u5728\u6a39\u6d77"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_5",
+		"value": "\u5728\u6a39\u6d77"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_6",
+		"value": "\u5728\u6a39\u6d77"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_7",
+		"value": "\u5728\u8352\u91ce"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_8",
+		"value": "\u5728\u8352\u91ce"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_9",
+		"value": "\u5728\u8352\u91ce"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_10",
+		"value": "\u5728\u6c99\u6f20"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_11",
+		"value": "\u5728\u6c99\u6f20"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_12",
+		"value": "\u5728\u6c99\u6f20"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_13",
+		"value": "\u5728\u907a\u8de1"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_14",
+		"value": "\u5728\u907a\u8de1"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_15",
+		"value": "\u5728\u907a\u8de1"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_16",
+		"value": "\u5728\u6d77\u908a"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_17",
+		"value": "\u5728\u6d77\u908a"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_18",
+		"value": "\u5728\u6d77\u908a"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_19",
+		"value": "\u5728\u96ea\u539f"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_20",
+		"value": "\u5728\u96ea\u539f"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_21",
+		"value": "\u5728\u96ea\u539f"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_22",
+		"value": "\u5728\u706b\u5c71"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_23",
+		"value": "\u5728\u6d1e\u7a9f"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_24",
+		"value": "\u5728\u8ff7\u5bae"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_25",
+		"value": "\u5728\u6eab\u6cc9"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_26",
+		"value": "\u5728\u6eab\u6cc9"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_27",
+		"value": "\u5728\u6a39\u852d\u4e0b"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_28",
+		"value": "\u5728\u6a39\u852d\u4e0b"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Meal_A",
+		"value": "\u5c0d\u8a71\u4e2d\u2026\u2026"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Meal_B",
+		"value": "\u5c0d\u8a71\u4e2d\u2026\u2026"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Meal_C",
+		"value": "\u70f9\u98ea\u4e2d\u2026\u2026"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Meal_D",
+		"value": "\u7528\u9910\u4e2d\u2026\u2026"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Move_A",
+		"value": "\u5192\u96aa\u4e2d\u2026\u2026"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Move_B",
+		"value": "\u5192\u96aa\u4e2d\u2026\u2026"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Action_A",
+		"value": "\u6230\u9b25\u4e2d\u2026\u2026"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Action_B",
+		"value": "\u4ea4\u6d89\u4e2d\u2026\u2026"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Action_C",
+		"value": "\u935b\u934a\u4e2d\u2026\u2026"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Action_D",
+		"value": "\u5165\u6d74\u4e2d\u2026\u2026"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Action_E",
+		"value": "\u5c0f\u61a9\u4e2d\u2026\u2026"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Construct_A",
+		"value": "\u7d2e\u71df\u4e2d\u2026\u2026"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Construct_B",
+		"value": "\u7d2e\u71df\u4e2d\u2026\u2026"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Rest_A",
+		"value": "\u4f11\u606f\u4e2d\u2026\u2026"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Rest_B",
+		"value": "\u4f11\u606f\u4e2d\u2026\u2026"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Rest_C",
+		"value": "\u4f11\u606f\u4e2d\u2026\u2026"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Rest_D",
+		"value": "\u4f11\u606f\u4e2d\u2026\u2026"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TITLE_Event_A",
+		"value": "\u5cb8\u908a\u627e\u8c9d\u6bbc"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TITLE_Event_B",
+		"value": "\u96ea\u4e2d\u7684\u5931\u7269"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TITLE_Event_C",
+		"value": "\u64ad\u5728\u907a\u8de1\u7684\u7a2e\u5b50"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TITLE_Event_D",
+		"value": "\u8ff7\u5bae\u4e2d\u7684\u5947\u602a\u62c9\u687f"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TITLE_Event_E",
+		"value": "\u8d08\u8207\u642d\u6a94\u7684\u79ae\u7269"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_A_Common",
+		"value": "\u5169\u4eba\u5728\u5cb8\u908a\u5c0b\u627e\u8c9d\u6bbc\u3002\\n\u4e0d\u77e5\u9053\u80fd\u4e0d\u80fd\u627e\u5230\u5fc3\u76ee\u4e2d\u7684\u8c9d\u6bbc\u5462\uff1f"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_A_Success",
+		"value": "\u627e\u5230\u4e86\u5f88\u68d2\u7684\u8c9d\u6bbc\uff01\\n\u5169\u4eba\u53c8\u589e\u52a0\u4e86\u4e00\u4ef6\u5145\u6eff\u56de\u61b6\u7684\u7269\u54c1\uff01"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_A_Fail",
+		"value": "\u64bf\u5230\u4e86\u7834\u9285\u721b\u9435\uff01\\n\u5cb8\u908a\u8b8a\u5f97\u4e7e\u6de8\u4e86\u4e00\u9ede\uff01"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_B_Common",
+		"value": "\u5728\u96ea\u4e2d\u907a\u5931\u4e86\u65c5\u8cbb\uff01\\n\u5169\u4eba\u5230\u5e95\u80fd\u4e0d\u80fd\u5c07\u5b83\u627e\u56de\u4f86\u5462\uff1f"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_B_Success",
+		"value": "\u6210\u529f\u627e\u56de\u65c5\u8cbb\uff01\\n\u5169\u4eba\u653e\u4e0b\u4e86\u5fc3\u4e2d\u7684\u5927\u77f3\u982d\uff01"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_B_Fail",
+		"value": "\u627e\u4e0d\u5230\u65c5\u8cbb\uff01\\n\u5169\u4eba\u505a\u597d\u4e86\u8981\u66ab\u6642\u9732\u5bbf\u7684\u5fc3\u7406\u6e96\u5099\uff01"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_C_Common",
+		"value": "\u5169\u4eba\u66ff\u7a2e\u5728\u907a\u8de1\u7684\u82b1\u6f86\u6c34\u3002\\n\u4e0d\u77e5\u9053\u6703\u4e0d\u6703\u958b\u51fa\u7f8e\u9e97\u7684\u82b1\u6735\u5462\u2026\u2026\uff1f"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_C_Success",
+		"value": "\u958b\u51fa\u4e86\u975e\u5e38\u5927\u6735\u7684\u82b1\uff01\\n\u8d85\u4e4e\u60f3\u50cf\u7684\u7f8e\u9e97\u82b1\u6735\u611f\u52d5\u4e86\u5169\u4eba\uff01"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_C_Fail",
+		"value": "\u4f3c\u4e4e\u6df7\u5165\u4e86\u4e0d\u540c\u54c1\u7a2e\u7684\u7a2e\u5b50\uff01\\n\u5169\u4eba\u5c0d\u9577\u5f97\u975e\u5e38\u8a6d\u7570\u7684\u82b1\u6735\u5927\u5403\u4e00\u9a5a\uff01"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_D_Common",
+		"value": "\u5728\u8ff7\u5bae\u6df1\u8655\u767c\u73fe\u4e86\uff13\u500b\u5947\u602a\u62c9\u687f\u2026\u2026\\n\u5169\u4eba\u5fcd\u4e0d\u4f4f\u597d\u5947\u5fc3\u2026\u2026\uff01"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_D_Success",
+		"value": "\u773c\u524d\u7adf\u7136\u51fa\u73fe\u4e86\u5bf6\u7bb1\uff01\\n\u5169\u4eba\u5c0d\u9019\u500b\u8c50\u78a9\u7684\u6210\u679c\u611f\u5230\u5f88\u9ad8\u8208\uff01"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_D_Fail",
+		"value": "\u4f3c\u4e4e\u62c9\u4e0b\u4e86\u932f\u8aa4\u7684\u62c9\u687f\uff01\\n\u5b88\u8b77\u8ca1\u5bf6\u7684\u6a5f\u95dc\u5411\u5169\u4eba\u8972\u4f86\uff01"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_E_Common",
+		"value": "\u5f9e\u642d\u6a94\u90a3\u88e1\u6536\u5230\u4e86\u5927\u91cf\u7684\u79ae\u7269\uff01\\n\u90a3\u9ebc\uff0c\u8981\u5148\u6253\u958b\u54ea\u4e00\u500b\u5462\u2026\u2026\uff1f"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_E_Success",
+		"value": "\u7bb1\u5b50\u88e1\u662f\u9bae\u8277\u596a\u76ee\u7684\u86cb\u7cd5\uff01\\n\u8b93\u4eba\u9ad8\u8208\u5f97\u4e0d\u7981\u7dbb\u653e\u7b11\u5bb9\uff01"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_E_Fail",
+		"value": "\u7bb1\u5b50\u88e1\u88dd\u8457\u6b98\u7f3a\u4e0d\u5168\u7684\u86cb\u7cd5\u2026\u2026\uff01\\n\u8b93\u4eba\u5f88\u64d4\u5fc3\u5176\u4ed6\u79ae\u7269\u662f\u5426\u5b8c\u597d\uff01"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_0",
+		"value": "\u5728\u65ed\u65e5\u9ad8\u5347\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_0_BG_22",
+		"value": "\u5728\u9ed1\u7159\u8986\u84cb\u65ed\u65e5\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_0_BG_23",
+		"value": "\u5728\u9023\u65ed\u65e5\u4e5f\u7121\u6cd5\u89f8\u53ca\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_0_BG_24",
+		"value": "\u5728\u9023\u65ed\u65e5\u4e5f\u7121\u6cd5\u89f8\u53ca\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_1",
+		"value": "\u5728\u967d\u5149\u8d8a\u4f86\u8d8a\u731b\u70c8\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_1_BG_22",
+		"value": "\u5728\u4e7e\u6db8\u7684\u5927\u5730\u7dbf\u5ef6\u4e0d\u65b7\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_1_BG_23",
+		"value": "\u5728\u5bd2\u6c23\u8972\u4eba\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_1_BG_24",
+		"value": "\u5728\u5bd2\u6c23\u8972\u4eba\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_1_BG_25",
+		"value": "\u5728\u967d\u5149\u7051\u843d\u6797\u9593\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_1_BG_27",
+		"value": "\u5728\u65b0\u7da0\u6416\u6643\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_2",
+		"value": "\u5728\u967d\u5149\u7167\u8000\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_2_BG_22",
+		"value": "\u5728\u9ed1\u7159\u906e\u63a9\u967d\u5149\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_2_BG_23",
+		"value": "\u5728\u767d\u5929\u4f9d\u7136\u9670\u6697\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_2_BG_24",
+		"value": "\u5728\u767d\u5929\u4f9d\u7136\u9670\u6697\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_3",
+		"value": "\u5728\u967d\u5149\u7051\u843d\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_3_BG_22",
+		"value": "\u5728\u6eb6\u5ca9\u7684\u71b1\u6c23\u707c\u71d2\u76ae\u819a\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_3_BG_23",
+		"value": "\u5728\u4ee4\u4eba\u5931\u53bb\u6642\u9593\u611f\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_3_BG_24",
+		"value": "\u5728\u4ee4\u4eba\u5931\u53bb\u6642\u9593\u611f\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_3_BG_25",
+		"value": "\u5728\u967d\u5149\u7167\u5c04\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_3_BG_27",
+		"value": "\u5728\u906e\u64cb\u967d\u5149\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_4",
+		"value": "\u5728\u67d3\u4e0a\u66ae\u8272\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_4_BG_22",
+		"value": "\u5728\u9ed1\u7159\u7030\u6f2b\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_4_BG_23",
+		"value": "\u5728\u6c38\u7121\u6b62\u5883\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_4_BG_24",
+		"value": "\u5728\u6c38\u7121\u6b62\u5883\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_4_BG_26",
+		"value": "\u5728\u88ab\u6a39\u6728\u5305\u570d\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_4_BG_28",
+		"value": "\u5728\u907f\u958b\u5915\u967d\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_5",
+		"value": "\u5728\u592a\u967d\u5df2\u7d93\u4e0b\u5c71\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_5_BG_22",
+		"value": "\u5728\u9ed1\u6697\u88ab\u6eb6\u5ca9\u85b0\u67d3\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_5_BG_23",
+		"value": "\u5728\u88ab\u5bc2\u975c\u5305\u570d\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_5_BG_24",
+		"value": "\u5728\u88ab\u5bc2\u975c\u5305\u570d\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_6",
+		"value": "\u5728\u6c92\u6709\u65c1\u4eba\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_6_BG_22",
+		"value": "\u5728\u665a\u4e0a\u4f9d\u7136\u9177\u71b1\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_6_BG_23",
+		"value": "\u5728\u6beb\u7121\u751f\u547d\u6c23\u606f\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_6_BG_24",
+		"value": "\u5728\u6beb\u7121\u751f\u547d\u6c23\u606f\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_7",
+		"value": "\u5728\u88ab\u5bc2\u975c\u7c60\u7f69\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_7_BG_22",
+		"value": "\u5728\u9060\u65b9\u50b3\u4f86\u5730\u9cf4\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_7_BG_23",
+		"value": "\u5728\u7531\u9ed1\u6697\u652f\u914d\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_7_BG_24",
+		"value": "\u5728\u7531\u9ed1\u6697\u652f\u914d\u7684"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_1",
+		"value": "\u539f\u91ce\u4e4b\u4e2d\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_2",
+		"value": "\u539f\u91ce\u4e4b\u4e2d\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_3",
+		"value": "\u539f\u91ce\u4e4b\u4e2d\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_4",
+		"value": "\u6a39\u6d77\u4e4b\u4e2d\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_5",
+		"value": "\u6a39\u6d77\u4e4b\u4e2d\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_6",
+		"value": "\u6a39\u6d77\u4e4b\u4e2d\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_7",
+		"value": "\u8352\u91ce\u4e4b\u4e2d\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_8",
+		"value": "\u8352\u91ce\u4e4b\u4e2d\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_9",
+		"value": "\u8352\u91ce\u4e4b\u4e2d\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_10",
+		"value": "\u6c99\u6f20\u4e4b\u4e2d\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_11",
+		"value": "\u6c99\u6f20\u4e4b\u4e2d\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_12",
+		"value": "\u6c99\u6f20\u4e4b\u4e2d\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_13",
+		"value": "\u907a\u8de1\u7fa4\u4e4b\u4e2d\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_14",
+		"value": "\u907a\u8de1\u7fa4\u4e4b\u4e2d\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_15",
+		"value": "\u907a\u8de1\u7fa4\u4e4b\u4e2d\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_16",
+		"value": "\u6d77\u908a\u8352\u91ce\u5c0f\u8def\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_17",
+		"value": "\u6d77\u908a\u8352\u91ce\u5c0f\u8def\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_18",
+		"value": "\u6d77\u908a\u8352\u91ce\u5c0f\u8def\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_19",
+		"value": "\u96ea\u539f\u4e4b\u4e2d\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_20",
+		"value": "\u96ea\u539f\u4e4b\u4e2d\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_21",
+		"value": "\u96ea\u539f\u4e4b\u4e2d\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_22",
+		"value": "\u706b\u5c71\u5c71\u9e93\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_23",
+		"value": "\u6d1e\u7a9f\u4e4b\u4e2d\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_24",
+		"value": "\u8ff7\u5bae\u4e4b\u4e2d\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_25",
+		"value": "\u6eab\u6cc9\u88e1\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_26",
+		"value": "\u6eab\u6cc9\u88e1\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_27",
+		"value": "\u6a39\u852d\u4e0b\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_28",
+		"value": "\u6a39\u852d\u4e0b\uff0c"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Meal_A",
+		"value": "\u5169\u4eba\u6b63\u5728\u5e73\u975c\u5730\u804a\u5929\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Meal_B",
+		"value": "\u5169\u4eba\u7684\u7b11\u8072\u5728\u8ff4\u97ff\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Meal_C",
+		"value": "\u5169\u4eba\u70f9\u98ea\u6642\u7684\u9999\u6c23\u7030\u6f2b\u56db\u5468\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Meal_D",
+		"value": "\u5169\u4eba\u6b63\u5728\u7d30\u7d30\u54c1\u5473\u7528\u9910\u7684\u6642\u5149\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Move_A",
+		"value": "\u5169\u4eba\u6b63\u5728\u9081\u6b65\u524d\u9032\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Move_B",
+		"value": "\u5169\u4eba\u6b63\u5728\u8f15\u5feb\u5730\u5954\u8dd1\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Action_A",
+		"value": "\u5169\u4eba\u6230\u9b25\u7684\u8072\u97f3\u97ff\u5fb9\u56db\u5468\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Action_B",
+		"value": "\u5169\u4eba\u4f3c\u4e4e\u6b63\u5c08\u5fc3\u5730\u9032\u884c\u4ea4\u6d89\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Action_C",
+		"value": "\u5169\u4eba\u6b63\u71b1\u8877\u65bc\u935b\u934a\u4e4b\u4e2d\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Action_D",
+		"value": "\u5169\u4eba\u6b63\u5728\u8212\u7de9\u65c5\u884c\u7684\u75b2\u52de\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Action_E",
+		"value": "\u5169\u4eba\u6b63\u5728\u5c0f\u61a9\u7247\u523b\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Construct_A",
+		"value": "\u5169\u4eba\u6b63\u5728\u6e96\u5099\u9732\u71df\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Construct_B",
+		"value": "\u5169\u4eba\u6b63\u5728\u5408\u529b\u642d\u5e33\u7bf7\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Rest_A",
+		"value": "\u5169\u4eba\u8eba\u5e73\u75b2\u618a\u7684\u8eab\u5b50\u5728\u4f11\u606f\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Rest_B",
+		"value": "\u5169\u4eba\u8eba\u5e73\u75b2\u618a\u7684\u8eab\u5b50\u5728\u4f11\u606f\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Rest_C",
+		"value": "\u5169\u4eba\u8eba\u5e73\u75b2\u618a\u7684\u8eab\u5b50\u5728\u4f11\u606f\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Rest_D",
+		"value": "\u5169\u4eba\u8eba\u5e73\u75b2\u618a\u7684\u8eab\u5b50\u5728\u4f11\u606f\u3002"
+	},
+	{
+		"key": "MID_SCF_\uff15\u5468\u5e74\u30b1\u30fc\u30ad",
+		"value": "\uff15\u9031\u5e74\u86cb\u7cd5"
+	},
+	{
+		"key": "MID_SCF_\uff15\u5468\u5e74\u30b1\u30fc\u30ad_HELP",
+		"value": "\u98db\u7a7a\u57ce\u7279\u5225\u6d3b\u52d5\u7684\u7269\u54c1\\n\u70ba\u4e86\u6176\u795d\uff15\u9031\u5e74\u800c\u88fd\u4f5c\u7684\u5de8\u5927\u86cb\u7cd5"
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202202",
+		"value": "\u8a18\u5ff5\u7528\u98db\u7a7a\u77f3"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202202",
+		"value": "\u7528\u65bc\u300c\u98db\u7a7a\u57ce\u300d\\n\u53ef\u4ee5\u88fd\u9020\u671f\u9593\u9650\u5b9a\u7684\u8a2d\u5099\\n\u671f\u9593\u4e00\u904e\uff0c\u5c07\u6703\u5168\u6578\u6d88\u5931\u3002"
+	},
+	{
+		"key": "MID_VOTE_TERM_202201",
+		"value": "\u751f\u5b58\u65bc\u6c99\u6f20\u4e4b\u4eba"
+	},
+	{
+		"key": "MID_PROFILECARD_REALTIME_PVP_ADVANCED_RATE_GRADE",
+		"value": "\u82f1\u96c4\u6c7a\u9b25\u3000\u751f\u5b58\u6230\u30fb\u9b25\u4f4d"
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ADVANCED_ORGANIZE",
+		"value": "\u82f1\u96c4\u6c7a\u9b25\u3000\u751f\u5b58\u6230\u7de8\u7d44"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TITLE_2",
+		"value": "\u82f1\u96c4\u6c7a\u9b25\u3000\u751f\u5b58\u6230"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_MAKE_TITLE_2_0",
+		"value": "\u82f1\u96c4\u6c7a\u9b25\u3000\u751f\u5b58\u6230"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MAP_TITLE_2_0",
+		"value": "\u82f1\u96c4\u6c7a\u9b25\u3000\u751f\u5b58\u6230"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GAINED_REWARDTYPE_GRADE_2",
+		"value": "$a\u82f1\u96c4\u6c7a\u9b25\u3000\u751f\u5b58\u6230\u30fb\u9b25\u4f4d$a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GAINED_REWARDTYPE_RANK_2",
+		"value": "$a\u82f1\u96c4\u6c7a\u9b25\u3000\u751f\u5b58\u6230\u30fb\u6392\u540d\u7b2c$a0\u540d"
+	},
+	{
+		"key": "MID_REALTIME_PVP_ADVANCED_BATTLE_START_FAILED_WARNING_TROOP_RESTRICTION_NONE",
+		"value": "\u6240\u6709\u6b04\u4f4d\u7686\u9808\u7de8\u5165\u82f1\u96c4\u3002\\n\\n\u52a0\u5165\u9023\u968a\u88e1\u7684\u82f1\u96c4\u4e0d\u80fd\u91cd\u8907\u3002\\n\\n\u4e00\u500b\u90e8\u968a\u4e2d\u6700\u591a\u53ea\u80fd\u7de8\u5165\uff11\u540d\\n\u53ef\u4f7f\u7528\u6b4c\u5531\u6216\u8d77\u821e\u7684\u82f1\u96c4\u3002\\n\\n\u4e00\u500b\u90e8\u968a\u4e2d\u6700\u591a\u53ea\u80fd\u7de8\u5165\uff11\u540d\\n\u53ef\u4f7f\u7528\u5b88\u8b77\u4eba\u7684\u82f1\u96c4\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_NO_RIGHT_TO_PARTICIPATE_IN_ADVANCED_EVENT_CONFIRM",
+		"value": "\u53c3\u52a0\u9019\u500b\u6d3b\u52d5\\n\u9700\u8981\u300c\u4e0a\u7d1a\u5c0d\u6230\u8005\u4e4b\u8b49\u300d\u3002\\n\\n\u300c\u4e0a\u7d1a\u5c0d\u6230\u8005\u4e4b\u8b49\u300d\\n\u53ef\u900f\u904e\u904a\u73a9\u7af6\u6280\u5834\u7684\\n\u559c\u611b\u82f1\u96c4\u5c0d\u6230\u7372\u5f97\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ADVANCED_TROOP_INDEX",
+		"value": "$a\u9023\u968a$a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_SIMPLE_LIMIT_TIME",
+		"value": "\u6642\u9593\u9650\u5236"
+	},
+	{
+		"key": "MID_REALTIME_PVP_SIMPLE_LIMIT_TIME_REST",
+		"value": "\u5269\u9918"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BAN_TROOP_TITLE",
+		"value": "\u9078\u64c7\u5c01\u5370\u90e8\u968a"
+	},
+	{
+		"key": "MID_REALTIME_PVP_SELECT_TROOP_TITLE",
+		"value": "\u9078\u64c7\u51fa\u64ca\u90e8\u968a"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BAN_TROOP_HELP",
+		"value": "$a\u8acb\u9078\u64c7$a0\u500b\\n\u8981\u5c01\u5370\u7684\u5c0d\u6230\u5c0d\u624b\u7684\u90e8\u968a\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_SELECT_TROOP_HELP",
+		"value": "\u8acb\u9078\u64c7\u8981\u51fa\u64ca\u7684\u90e8\u968a\u3002\\n\u7121\u6cd5\u9078\u64c7\u88ab\u5c0d\u6230\u5c0d\u624b\u5c01\u5370\u7684\u90e8\u968a\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HIDE_UNIT_INFO",
+		"value": "\u7121\u6cd5\u5728\u9019\u500b\u756b\u9762\\n\u78ba\u8a8d\u5c0d\u6230\u5c0d\u624b\u7684\u80fd\u529b\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_2_00",
+		"value": "\u300c\u5c01\u5370\u6575\u65b9\u90e8\u968a\u300d\u7684\u9810\u6e2c\u8207\u7b56\u7565\uff01"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_2_01",
+		"value": "\u25c6\u82f1\u96c4\u6c7a\u9b25\u751f\u5b58\u6230\u25c6\\n\u82f1\u96c4\u6c7a\u9b25\u4e2d\u4ee5\u8a55\u50f9\u5236\u914d\u5c0d\u5c0d\u624b\uff0c\\n\u53ef\u300c\u5c01\u5370\u6575\u65b9\u90e8\u968a\u300d\u7684\u6230\u9b25\u3002\\n\\n\uff11\u500b\u8cfd\u5b63\u4e2d\u53ef\u6557\u5317\uff13\u6b21\uff0c\\n\u5728\u90a3\u4e4b\u524d\u53ef\u7121\u9650\u6b21\u6578\u6230\u9b25\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_2_02",
+		"value": "\u25c6\u7de8\u7d44\u25c6\\n\u30fb\u4ee5\uff12\uff10\u540d\u82f1\u96c4\u7de8\u7d44\uff14\u500b\u90e8\u968a\uff0c\\n\u3000\u4e26\u4ee5\u5176\u4e2d\uff11\u500b\uff15\u4eba\u90e8\u968a\u6230\u9b25\u3002\\n\u30fb\u52a0\u5165\u7684\u82f1\u96c4\u4e0d\u80fd\u91cd\u8907\u3002\\n\u30fb\uff11\u500b\u90e8\u968a\u4e2d\u6700\u591a\u53ea\u80fd\u7de8\u5165\uff11\u540d\\n\u3000\u6301\u6709\u6b4c\u5531\u6216\u8d77\u821e\u6280\u80fd\u7684\u82f1\u96c4\u3002\\n\u30fb\uff11\u500b\u90e8\u968a\u4e2d\u6700\u591a\u53ea\u80fd\u7de8\u5165\uff11\u540d\\n\u3000\u6301\u6709\u5b88\u8b77\u4eba\u6280\u80fd\u7684\u82f1\u96c4\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_2_03",
+		"value": "\u25c6\u5c01\u5370\u6575\u65b9\u90e8\u968a\u25c6\\n\u30fb\u5f9e\u5c0d\u624b\u7684\uff14\u500b\u90e8\u968a\u4e2d\u9078\u64c7\\n\u3000\uff12\u500b\u90e8\u968a\u9032\u884c\u5c01\u5370\u3002\\n\u3000\u88ab\u5c01\u5370\u7684\u90e8\u968a\u7121\u6cd5\u51fa\u64ca\u3002\\n\\n\u30fb\u63a5\u8457\u5f9e\u81ea\u5df1\u5269\u9918\u7684\uff12\u500b\u90e8\u968a\u4e2d\\n\u3000\u9078\u64c7\uff11\u500b\u90e8\u968a\u9032\u884c\u6230\u9b25\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_2_04",
+		"value": "\u25c6\u8a55\u50f9\u8207\u9b25\u4f4d\u25c6\\n\u30fb\u8a55\u50f9\u6703\u96a8\u8457\\n\u3000\u6230\u7e3e\u800c\u8b8a\u52d5\u3002\\n\u30fb\u9b25\u4f4d\u5c07\u6839\u64da\u8a55\u50f9\u8b8a\u52d5\u3002\\n\u30fb\u4e0b\u500b\u8cfd\u5b63\u5c07\u4ee5\\n\u3000\u5404\u9b25\u4f4d\u898f\u5b9a\u7684\u8a55\u50f9\u958b\u59cb\u8a08\u7b97\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_2_05",
+		"value": "\u25c6\u8a55\u50f9\u589e\u6e1b\u25c6\\n\u30fb\u6557\u5317\u6642\u7684\u8a55\u50f9\u6e1b\u5c11\u6578\u503c\\n\u3000\u6703\u4f9d\u9b25\u4f4d\u7522\u751f\u8b8a\u5316\u3002\\n\u30fb\u82e5\u7372\u5f97\u5f97\u5206\uff0c\\n\u3000\u6557\u5317\u6642\u53ef\u6291\u5236\u8a55\u50f9\u7684\u6e1b\u5c11\u3002\\n\u30fb\u5c0d\u6230\u5c0d\u624b\u7684\u9b25\u4f4d\u9ad8\u65bc\u81ea\u5df1\u6642\uff0c\\n\u3000\u5c07\u63d0\u5347\u52dd\u5229\u6642\u589e\u52a0\u7684\u8a55\u50f9\uff0c\\n\u3000\u4ee5\u53ca\u964d\u4f4e\u6557\u5317\u6642\u6e1b\u5c11\u7684\u8a55\u50f9\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_2_06",
+		"value": "\u25c6\u7dad\u6301\u9b25\u4f4d\u7684\u7279\u5225\u689d\u4ef6\u25c6\\n\u53ea\u8981\u9b25\u4f4d\u9054\u5230\\n\uff14\u3001\uff17\u3001\uff11\uff10\u3001\uff11\uff13\uff0c\\n\u5373\u4f7f\u4e4b\u5f8c\u6557\u5317\uff0c\\n\u4e5f\u4e0d\u6703\u964d\u81f3\u4e0a\u8ff0\u9b25\u4f4d\u4e4b\u4e0b\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_2_07",
+		"value": "\u25c6\u734e\u52f5\u50b3\u627f\u795e\u968e\u82f1\u96c4\u25c6\\n\u5c07\u672c\u8cfd\u5b63\u7684\u734e\u52f5\u50b3\u627f\u795e\u968e\u82f1\u96c4\\n\u7de8\u5165\u90e8\u968a\u5f8c\uff0c\u6557\u5317\u6642\u53ef\u6291\u5236\u8a55\u50f9\u7684\u6e1b\u5c11\u3002\\n\u6291\u5236\u7684\u6e1b\u5c11\u6578\u503c\u70ba\uff14\uff10\u3002\\n\\n\u6b64\u5916\uff0c\u7b2c\u4e00\u6b21\u6557\u5317\u6642\uff0c\u4e0d\u6703\u8996\u70ba\u6557\u5317\u3002\\n\uff08\u53ef\u6557\u5317\u6b21\u6578\u70ba\u5e73\u5e38\u7684\uff13\u6b21\uff0b\uff11\u6b21\uff0c\\n\u3000\u56e0\u6b64\u53ef\u6230\u9b25\u81f3\u6557\u5317\uff14\u6b21\u70ba\u6b62\uff09"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_2_08",
+		"value": "\u25c6\u734e\u52f5\u50b3\u627f\u795e\u968e\u82f1\u96c4\u3000\u5176\u4ed6\u25c6\\n\uff14\u500b\u90e8\u968a\u4e2d\u53ea\u8981\u4efb\u4e00\u500b\u90e8\u968a\u5167\\n\u6709\uff11\u540d\u672c\u8cfd\u5b63\u7684\u734e\u52f5\u50b3\u627f\u795e\u968e\u82f1\u96c4\uff0c\\n\u5c31\u6703\u767c\u52d5\u734e\u52f5\u50b3\u627f\u795e\u968e\u82f1\u96c4\u7684\u6548\u679c\u3002\\n\\n\uff08\u5373\u4f7f\u8a72\u90e8\u968a\u88ab\u5c01\u5370\uff0c\\n\u3000\u6216\u662f\u672a\u4ee5\u8a72\u90e8\u968a\u9032\u884c\u6230\u9b25\uff0c\\n\u3000\u90fd\u6703\u767c\u52d5\u6548\u679c\uff09"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202202",
+		"value": "\u611f\u60c5\u878d\u6d3d\u7684\u89aa\u5b50\uff1f"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_CEIL_TEXT",
+		"value": "\u5728\u8d85\u82f1\u96c4\u30fbW\u8d85\u82f1\u96c4\u30fb\u50b3\u627f/\u795e\u968e\u82f1\u96c4\u30fb\u82f1\u96c4\u796d\u53ec\u559a\u4e2d\\n\u9032\u884c\uff14\uff10\u6b21\u53ec\u559a\u5f8c\u5373\u53ef\u300c\u4efb\u9078\u53ec\u559a\u300d\u3002"
+	},
+	{
+		"key": "MID_SCF_K0011",
+		"value": "\u5922\u4e4b\u570b\u4e4b\u57ce"
+	},
+	{
+		"key": "MID_SCF_K0011_Ex",
+		"value": "\u7279\u5fb5\uff1a\u6a4b\u6881"
+	},
+	{
+		"key": "MID_SCF_K0012",
+		"value": "\u60e1\u5922\u4e4b\u570b\u4e4b\u57ce"
+	},
+	{
+		"key": "MID_SCF_K0012_Ex",
+		"value": "\u7279\u5fb5\uff1a\u9632\u79a6\u5730\u5f62\uff0b\u6797\u5730"
+	},
+	{
+		"key": "MID_SUMMON_PROBABILITY_SUPER_AWAKENING_4",
+		"value": "\u8d85\u2605\uff14\u7279\u5225\u6a5f\u6703"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_SET_LOAD_SELECT_TROOP_REALTIME_PVP_ADVANCED",
+		"value": "\u82f1\u96c4\u6c7a\u9b25\u751f\u5b58\u6230"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_CONTAIN_LEARNABLE_SKILL",
+		"value": "\u5305\u542b\u5c1a\u672a\u5b78\u7fd2\u7684\u6280\u80fd"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202202",
+		"value": "\u4fe1\u5ff5\u5316\u70ba\u529b\u91cf"
+	},
+	{
+		"key": "MID_VOTE_TERM_202202",
+		"value": "\u570b\u6c11\u6295\u7968\u6c7a\u52dd\u9326\u6a19\u8cfd"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202202",
+		"value": "\u300c\u6771\u65b9\u4e4b\u8a18\u300d"
+	},
+	{
+		"key": "MID_AUT12_Cage_Title",
+		"value": "\u7e8c\u30fb\u8ff7\u5bae\u9677\u9631"
+	},
+	{
+		"key": "MID_AUT12_Cage_Common",
+		"value": "\u5169\u4eba\u614e\u91cd\u4ed4\u7d30\u5730\u63a2\u7d22\u6f06\u9ed1\u7684\u8ff7\u5bae\u3002\\n\u4f46\u537b\u758f\u5ffd\u4e86\u8173\u908a\u2026\u2026\uff01"
+	},
+	{
+		"key": "MID_AUT12_Cage_3",
+		"value": "\u5169\u4eba\u88ab\u56f0\u9032\u7262\u7c60\u88e1\u4e86\uff01\\n\u5f8c\u4f86\u7e3d\u7b97\u662f\u5408\u529b\u9003\u4e86\u51fa\u53bb\u3002"
+	},
+	{
+		"key": "MID_AUT12_Cage_4",
+		"value": "\u9748\u6a5f\u4e00\u52d5\u8b93\u642d\u6a94\u9003\u51fa\u53bb\u4e86\uff01\\n\u5169\u4eba\u4e92\u76f8\u914d\u5408\u651c\u624b\u5ea6\u904e\u96e3\u95dc\uff01"
+	},
+	{
+		"key": "MID_AUT12_Cage_5",
+		"value": "\u9760\u8457\u642d\u6a94\u5f37\u529b\u7684\u4e00\u64ca\u7834\u58de\u4e86\u7262\u7c60\uff01\\n\u5411\u53ef\u9760\u7684\u642d\u6a94\u8868\u9054\u4e86\u611f\u8b1d\uff01"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202203R",
+		"value": "\u5fa9\u523b\u30fb\u90a3\u96d9\u624b\u5b88\u8b77\u7684\u672a\u4f86"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_SEARCH_LABEL",
+		"value": "\u53ef\u641c\u5c0b\u6703\u6230ID\u64ad\u653e\u300c\u91cd\u64ad\u300d\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_COPY_BATTLEID",
+		"value": "\u8907\u88fd\u6703\u6230ID"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_CREATED_SEARCH_TOKEN",
+		"value": "$a\u5df2\u8907\u88fd\u81f3\u526a\u8cbc\u7c3f\u7684\\n\u6703\u6230ID\u70ba$a0\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_SEARCH_DIALOG",
+		"value": "\u8acb\u8f38\u5165\u6b32\u64ad\u653e\u91cd\u64ad\u7684\\n\u6703\u6230ID\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_SEARCH_PLACE_HOLDER",
+		"value": "\u8acb\u5728\u6b64\u8f38\u5165\u6703\u6230ID"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_INVALID_SEARCH_TOKEN",
+		"value": "\u8f38\u5165\u7684\u6703\u6230ID\u6709\u8aa4\u3002\\n\u8acb\u8f38\u5165\uff11\uff10\u4f4d\u534a\u5f62\u82f1\u6578\u5b57\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_MISSING_BATTLE_RECORD",
+		"value": "\u8f38\u5165\u7684\u6703\u6230ID\u6709\u8aa4\uff0c\\n\u6216\u6703\u6230ID\u5df2\u903e\u671f\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_CREATED_SEARCH_TOKEN_WARNING",
+		"value": "\u7d93\u904e\u4e00\u5b9a\u6642\u9593\u5f8c\\n\u5c07\u7121\u6cd5\u64ad\u653e\u91cd\u64ad\u3002"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202203",
+		"value": "\u54e5\u54e5\u7684\u670b\u53cb"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2022_0",
+		"value": "Heroes\u30fb\u7d0b\u7ae0\u306e\u8b0e\u30fbEchoes"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2022_1",
+		"value": "Heroes\u30fb\u8056\u6226\u306e\u7cfb\u8b5c\u30fb\u30c8\u30e9\u30ad\u30a2\uff17\uff17\uff16"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2022_2",
+		"value": "\u5c01\u5370\u306e\u5263\u30fb\u70c8\u706b\u306e\u5263\u30fb\u8056\u9b54\u306e\u5149\u77f3"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2022_3",
+		"value": "\u84bc\u708e\u306e\u8ecc\u8de1\u30fb\u6681\u306e\u5973\u795e"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2022_4",
+		"value": "\u899a\u9192\u30fb\uff49\uff46"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2022_5",
+		"value": "\u98a8\u82b1\u96ea\u6708"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202203",
+		"value": "\u300c\u5357\u65b9\u4e4b\u8a18\u300d"
+	},
+	{
+		"key": "MID_WIN03_Soup_Title",
+		"value": "\u71b1\u547c\u547c\u7684\u6e6f"
+	},
+	{
+		"key": "MID_WIN03_Soup_Common",
+		"value": "\u5728\u5bd2\u51b7\u7684\u5929\u6c23\u4e2d\u570d\u8457\u71df\u706b\u5c0f\u61a9\u3002\\n\u559d\u4e0b\u71b1\u547c\u547c\u7684\u6e6f\u4f86\u6eab\u6696\u8eab\u9ad4\u5427\u3002"
+	},
+	{
+		"key": "MID_WIN03_Soup_3",
+		"value": "\u6e6f\u7684\u71b1\u5ea6\u6eab\u6696\u4e86\u8eab\u9ad4\uff01\\n\u5169\u4eba\u6062\u5fa9\u4e86\u6d3b\u529b\uff01"
+	},
+	{
+		"key": "MID_WIN03_Soup_4",
+		"value": "\u4e00\u8d77\u559d\u5149\u4e86\u7f8e\u5473\u7684\u6e6f\uff01\\n\u5169\u4eba\u88ab\u67d4\u548c\u7684\u6eab\u6696\u570d\u7e5e\uff01"
+	},
+	{
+		"key": "MID_WIN03_Soup_5",
+		"value": "\u6e6f\u7684\u6548\u679c\u6e67\u73fe\uff01\\n\u6d3b\u529b\u8207\u6c57\u6c34\u5f9e\u9ad4\u5167\u6e67\u51fa\uff01"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202203",
+		"value": "\u5149\u8207\u95c7\u4ea4\u7e54\u7684\u672a\u4f86"
+	},
+	{
+		"key": "MID_VOTE_TERM_202204",
+		"value": "\u7121\u6cd5\u8cab\u7a7f\u7684\u93a7\u7532\uff01"
+	},
+	{
+		"key": "MID_CHAIN_ARENA_GAINED_REWARDTYPE_CONSECUTIVE_WIN",
+		"value": "$a\u7e1b\u9396\u9b25\u6280\u5834\u30fb\u9996\u6b21$a0\u9023\u52dd\u5831\u916c"
+	},
+	{
+		"key": "MID_CHAIN_ARENA_DIALOG_WITHDRAW_TEXT",
+		"value": "\u66ab\u6642\u64a4\u9000\u4e86\u3002\\n\uff08\u53ef\u4fdd\u7559\u76ee\u524d\u7684\u9023\u52dd\u6578\u53ca\u5f97\u5206\\n\u3000\u7e7c\u7e8c\u6311\u6230\uff09"
+	},
+	{
+		"key": "MID_CHAIN_ARENA_DIALOG_WITHDRAW_WARNING_REMAIN",
+		"value": "$a\u53ef\u66ab\u6642\u64a4\u9000\u7684\u6b21\u6578\u9084\u5269$a0\u6b21\u3002\\n\u4f46\u82e5\u662f\u7d50\u675f\u76ee\u524d\u7684\u6311\u6230\\n\u4e26\u91cd\u65b0\u9032\u884c\u6311\u6230\uff0c\\n\u53ef\u66ab\u6642\u64a4\u9000\u7684\u6b21\u6578\u5c07\u6703\u91cd\u7f6e\u3002"
+	},
+	{
+		"key": "MID_CHAIN_ARENA_DIALOG_WITHDRAW_WARNING_LAST",
+		"value": "\u53ef\u66ab\u6642\u64a4\u9000\u7684\u6b21\u6578\u5df2\u7528\u76e1\u3002\\n\u4f46\u82e5\u662f\u7d50\u675f\u76ee\u524d\u7684\u6311\u6230\\n\u4e26\u91cd\u65b0\u9032\u884c\u6311\u6230\uff0c\\n\u53ef\u66ab\u6642\u64a4\u9000\u7684\u6b21\u6578\u5c07\u6703\u91cd\u7f6e\u3002"
+	},
+	{
+		"key": "MID_CHAIN_ARENA_DIALOG_GIVEUP_WITHDRAW",
+		"value": "\u66ab\u6642\u64a4\u9000"
+	},
+	{
+		"key": "MID_CHAIN_ARENA_DIALOG_GIVEUP_WITHDRAW_TEXT",
+		"value": "$a\u8981\u653e\u68c4\u6311\u6230\u7e1b\u9396\u9b25\u6280\u5834\uff0c\\n\u68c4\u6b0a\u6295\u964d\u55ce\uff1f\\n\\n\u66ab\u6642\u64a4\u9000\u7684\u6b21\u6578\u5269\u9918$a0\u6b21\u3002"
+	},
+	{
+		"key": "MID_CHAIN_ARENA_COMBO_REWARD",
+		"value": "\u9023\u52dd\u5831\u916c"
+	},
+	{
+		"key": "MID_CHAIN_ARENA_PLUS_TITLE",
+		"value": "\u7e1b\u9396\u9b25\u6280\u5834\uff0b"
+	},
+	{
+		"key": "MID_OCCUPATION_RECOLLECTION_TITLE_202204",
+		"value": "\u5f17\u96f7\u96c5\u7b49\u4eba\u3000\uff11"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202204",
+		"value": "\u98e2\u8178\u8f46\u8f46\u968a\u54e1\u7684\u9996\u6b21\u4efb\u52d9"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_REORGANIZE_RETREAT_DECIDE",
+		"value": "\u66ab\u6642\u64a4\u9000"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_REORGANIZE_RETREAT_CONFIRM",
+		"value": "$a\u8981\u653e\u68c4\u6311\u6230\u9023\u7e8c\u5730\u5716\uff0c\\n\u68c4\u6b0a\u6295\u964d\u55ce\uff1f\\n\\n\u66ab\u6642\u64a4\u9000\u7684\u6b21\u6578\u5269\u9918$a0\u6b21\u3002"
+	},
+	{
+		"key": "MID_CHAIN_ARENA_HELP_DIALOG_10",
+		"value": "\u25c6\u66ab\u6642\u64a4\u9000\u25c6\\n\u9023\u6230\u4e2d\u50c5\u9650\u5169\u6b21\uff0c\u6557\u5317\u6642\\n\u53ef\u4fdd\u7559\u76ee\u524d\u7684\u9023\u52dd\u6578\u53ca\u5f97\u5206\\n\u56de\u5230\u6557\u5317\u524d\u7684\u72c0\u614b\u3002\\n\\n\u4f46\u82e5\u662f\u7d50\u675f\u76ee\u524d\u7684\u6311\u6230\\n\u4e26\u91cd\u65b0\u9032\u884c\u6311\u6230\uff0c\\n\u53ef\u66ab\u6642\u64a4\u9000\u7684\u6b21\u6578\u5c07\u6703\u91cd\u7f6e\u3002"
+	},
+	{
+		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60A",
+		"value": "\u505c\u6b62\u7684\u9b54\u6cd5\u9677\u9631"
+	},
+	{
+		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60A_BATTLE",
+		"value": "\u9b54\u6cd5\u9677\u9631"
+	},
+	{
+		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60A_HELP",
+		"value": "$a\u82e5\u6575\u4eba\u7d50\u675f\u79fb\u52d5\u6642\u4f4d\u65bc\u8a2d\u7f6e\u7684\u683c\u5b50\u5167\uff0c\u5c07\u767c\u52d5\u6548\u679c\\n\u82e5\u8a72\u6575\u4eba\uff28\uff30\u70ba$a0\u4ee5\u4e0b\uff0c\\n\u5247\u53d6\u6d88\u5176\u653b\u64ca\u3001\u4f7f\u7528\u8f14\u52a9\u6280\u80fd\u7684\u884c\u52d5\uff0c\\n\u4e26\u8996\u70ba\u5df2\u884c\u52d5\u72c0\u614b\\n\uff08\u7121\u6cd5\u4ee5\u89e3\u9664\u9677\u9631\u89e3\u9664\u9b54\u6cd5\u9677\u9631\uff09"
+	},
+	{
+		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60A_BATTLEHELP",
+		"value": "\u597d\u50cf\u8a2d\u7f6e\u8457\u4ec0\u9ebc\u6a5f\u95dc\u7684\u5730\u9762"
+	},
+	{
+		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60\u30c0\u30df\u30fc",
+		"value": "\u507d\u30fb\u505c\u6b62\u7684\u9b54\u6cd5\u9677\u9631"
+	},
+	{
+		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60\u30c0\u30df\u30fc_BATTLE",
+		"value": "\u9b54\u6cd5\u9677\u9631"
+	},
+	{
+		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60\u30c0\u30df\u30fc_HELP",
+		"value": "\u507d\u88dd\u6210\u505c\u6b62\u7684\u9b54\u6cd5\u9677\u9631\u7684\u4eff\u5192\u54c1"
+	},
+	{
+		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60\u30c0\u30df\u30fc_BATTLEHELP",
+		"value": "\u597d\u50cf\u8a2d\u7f6e\u8457\u4ec0\u9ebc\u6a5f\u95dc\u7684\u5730\u9762"
+	},
+	{
+		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60A_HOLIDAYHELP",
+		"value": "\u8e29\u5230\u5c31\u6703\u8996\u70ba\u5df2\u884c\u52d5\u72c0\u614b\u7684\u9677\u9631"
+	},
+	{
+		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60\u30c0\u30df\u30fc_HOLIDAYHELP",
+		"value": "\u8ddf\u771f\u6b63\u7684\u9677\u9631\u770b\u8d77\u4f86\u4e00\u6a23\u7684\u4eff\u5192\u54c1"
+	},
+	{
+		"key": "MID_SKYCASTLE_EDIT_FACILITY_CATEGORY_TITLE_DUMMY_TRAP",
+		"value": "\u507d\u30fb\u9677\u9631"
+	},
+	{
+		"key": "MID_SKYCASTLE_EDIT_FACILITY_CATEGORY_HELP_DUMMY_TRAP",
+		"value": "\u507d\u88dd\u6210\u9677\u9631\u7684\u4eff\u5192\u54c1"
+	},
+	{
+		"key": "MID_SKYCASTLE_EDIT_FACILITY_FILTER_CATEGORY_DUMMY_TRAP",
+		"value": "\u507d\u30fb\u9677\u9631"
+	},
+	{
+		"key": "MID_ERROR_SUBSCRIPTION_ALREADY_PURCHASED",
+		"value": "\u5df2\u52a0\u5165FEH PASS\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_03",
+		"value": "\u25c6\u6ce8\u610f\u25c6\\n\u7e7c\u627f\u9700\u8981\u6280\u80fd\u8cc7\u8cea\u7684\u6280\u80fd\u6642\uff0c\\n\u5fc5\u9808\u540c\u6642\u7e7c\u627f\u6307\u5b9a\u7684\u6280\u80fd\u3002\\n\\n\u4f8b\u5982\uff1a\u82e5\u60f3\u7e7c\u627f\u300c\u6b7b\u7dda\uff14\u300d\uff0c\\n\u5fc5\u9808\u540c\u6642\u7e7c\u627f\\n\u300c\u6b7b\u7dda\uff11\u300d\u300c\u6b7b\u7dda\uff12\u300d\u300c\u6b7b\u7dda\uff13\u300d\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_HELP_DIALOG_01_V0604",
+		"value": "\u25c6\u7a81\u7834\u6975\u9650\u25c6\\n\u5c07\uff12\u540d\u76f8\u540c\u7684\\n\u5925\u4f34\u80fd\u529b\u878d\u5408\u4e26\u8d85\u8d8a\u6975\u9650\u3002\\n\u80fd\u529b\u503c\u6703\u63d0\u5347\uff0c\u4e5f\u53ef\u7372\u5f97\uff33\uff30\u3002\\n\\n\u4f46\u8a2d\u5b9a\u70ba\u6d88\u6ec5\u65b9\u7684\u5925\u4f34\\n\u5c07\u6703\u6d88\u5931\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_HELP_DIALOG_02_V0604",
+		"value": "\u25c6\u6ce8\u610f\u25c6\\n\u8acb\u6ce8\u610f\uff0c\\n\u4ee5\u7a81\u7834\u6975\u9650\u63d0\u5347\u7684\u80fd\u529b\u503c\uff0c\\n\u4e00\u65e6\u9032\u884c\u300c\u89ba\u9192\u300d\u5c31\u6703\u6d88\u5931\u3002"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202204",
+		"value": "\u53ea\u8981\u90a3\u751f\u547d\u6563\u767c\u8457\u5149\u8f1d"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202205",
+		"value": "\u300c\u897f\u65b9\u4e4b\u8a18\u300d"
+	},
+	{
+		"key": "MID_SPR02_Surprise_Title",
+		"value": "\u5077\u8972"
+	},
+	{
+		"key": "MID_SPR02_Surprise_Common",
+		"value": "\u9019\u88e1\u662f\u8349\u6728\u53e2\u751f\u7684\u539f\u91ce\u3002\\n\u7a81\u7136\u9593\uff0c\u773c\u524d\u7684\u8349\u53e2\u6416\u6643\u4e86\uff01"
+	},
+	{
+		"key": "MID_SPR02_Surprise_3",
+		"value": "\u642d\u6a94\u7684\u884c\u52d5\u5feb\u5982\u9583\u96fb\uff01\\n\u4e00\u64ca\u5c31\u64ca\u9000\u4e86\u6575\u4eba\uff01"
+	},
+	{
+		"key": "MID_SPR02_Surprise_4",
+		"value": "\u6575\u4eba\uff01\uff1f\u2026\u2026\u539f\u4f86\u662f\u83f2\u554a\uff01\\n\u5169\u4eba\u9732\u51fa\u4e86\u5b89\u5fc3\u7684\u5fae\u7b11\uff01"
+	},
+	{
+		"key": "MID_SPR02_Surprise_5",
+		"value": "\u4ec0\u9ebc\u561b\uff0c\u539f\u4f86\u662f\u642d\u6a94\u7684\u60e1\u4f5c\u5287\uff01\\n\u88ab\u5c0d\u65b9\u7684\u71e6\u721b\u7b11\u5bb9\u5f71\u97ff\uff0c\u5169\u4eba\u4e00\u540c\u6b61\u7b11\u8d77\u4f86\uff01"
+	},
+	{
+		"key": "MID_VOTE_TERM_202205",
+		"value": "\u8cab\u5fb9\u9a0e\u58eb\u7cbe\u795e\u4e4b\u4eba"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_WITHDRAW_WARNING_REMAIN",
+		"value": "$a\u53ef\u66ab\u6642\u64a4\u9000\u7684\u6b21\u6578\u9084\u5269$a0\u6b21\u3002\\n\u4f46\u82e5\u662f\u7d50\u675f\u76ee\u524d\u7684\u6311\u6230\\n\u4e26\u91cd\u65b0\u9032\u884c\u6311\u6230\uff0c\\n\u53ef\u66ab\u6642\u64a4\u9000\u7684\u6b21\u6578\u5c07\u6703\u91cd\u7f6e\u3002"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_WITHDRAW_WARNING_LAST",
+		"value": "\u53ef\u66ab\u6642\u64a4\u9000\u7684\u6b21\u6578\u5df2\u7528\u76e1\u3002\\n\u4f46\u82e5\u662f\u7d50\u675f\u76ee\u524d\u7684\u6311\u6230\\n\u4e26\u91cd\u65b0\u9032\u884c\u6311\u6230\uff0c\\n\u53ef\u66ab\u6642\u64a4\u9000\u7684\u6b21\u6578\u5c07\u6703\u91cd\u7f6e\u3002"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_08_0605",
+		"value": "\u25c6\u66ab\u6642\u64a4\u9000\u25c6\u3000\u5f9e5/10\u7684\u8cfd\u5b63\u958b\u59cb\\n\u9023\u6230\u4e2d\u50c5\u9650\u5169\u6b21\uff0c\u6557\u5317\u6642\\n\u53ef\u4fdd\u7559\u76ee\u524d\u7684\u9023\u52dd\u6578\u53ca\u5f97\u5206\\n\u56de\u5230\u9b25\u6280\u5834\u9996\u9801\u3002\\n\\n\u4f46\u82e5\u662f\u7d50\u675f\u76ee\u524d\u7684\u6311\u6230\\n\u4e26\u91cd\u65b0\u9032\u884c\u6311\u6230\uff0c\\n\u53ef\u66ab\u6642\u64a4\u9000\u7684\u6b21\u6578\u5c07\u6703\u91cd\u7f6e\u3002"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202205",
+		"value": "\u4e0d\u9806\u5f9e\u7684\u9748\u9b42\u5011"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RELOGIN",
+		"value": "\u9023\u7dda\u4e2d\u65b7\u4e86\u3002\\n\u6b63\u5728\u91cd\u65b0\u9023\u7dda\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_OPPONENT_SELECTABLE_TROOP",
+		"value": "\u5c0d\u6230\u5c0d\u624b\u53ef\u9078\u64c7\u7684\u90e8\u968a"
+	},
+	{
+		"key": "MID_ITEM_GAIN_ELITE_CASTLE_SP",
+		"value": "$a\u7372\u5f97\\n$a0\uff01"
+	},
+	{
+		"key": "MID_ITEM_PRESENT_ELITE_CASTLE_SP",
+		"value": "$a\u5df2\u5c07$a0\\n\u9001\u81f3\u79ae\u7269\u76d2\u5167\u3002"
+	},
+	{
+		"key": "MID_ITEM_DIRECT_GAIN_ELITE_CASTLE_SP",
+		"value": "$a\u7372\u5f97\\n$a0\uff01\\n\u203b\u5c07\u76f4\u63a5\u53d6\u5f97\u5831\u916c\u3002"
+	},
+	{
+		"key": "MID_ITEM_GAIN_ELITE_CASTLE_SP_WARNING",
+		"value": "\u53ef\u65bc\u57ce\u5821\u756b\u9762\u7684\u300c\u8b8a\u66f4\u4e3b\u984c\u300d\\n\u8b8a\u66f4\u4e3b\u984c\u3002"
+	},
+	{
+		"key": "MID_ITEM_GAIN_ACCESSORY_AND_ELITE_CASTLE_SP_WARNING",
+		"value": "$a\u7121\u6cd5\u6301\u6709\u591a\u500b\u76f8\u540c\u7a2e\u985e\u7684\u8056\u5370\u3002\\n\u5982\u679c\u7372\u5f97\u591a\u500b\u76f8\u540c\u7a2e\u985e\u7684\u8056\u5370\uff0c\\n\u5c07\u6703\u81ea\u52d5\u8f49\u63db\u6210\u82f1\u96c4\u4e4b\u7ffc\u00d7$a0\u3002\\n\u53ef\u65bc\u57ce\u5821\u756b\u9762\u7684\u300c\u8b8a\u66f4\u4e3b\u984c\u300d\\n\u8b8a\u66f4\u4e3b\u984c\u3002"
+	},
+	{
+		"key": "MID_ITEM_GAIN_DRESS_ACCESSORY_AND_ELITE_CASTLE_SP_WARNING",
+		"value": "$a\u7121\u6cd5\u6301\u6709\u591a\u500b\u76f8\u540c\u7684\u98fe\u54c1\u3002\\n\u5982\u679c\u7372\u5f97\u591a\u500b\u76f8\u540c\u7684\u98fe\u54c1\uff0c\\n\u5c07\u6703\u81ea\u52d5\u8f49\u63db\u6210\u82f1\u96c4\u4e4b\u7ffc\u00d7$a0\u3002\\n\u53ef\u65bc\u57ce\u5821\u756b\u9762\u7684\u300c\u8b8a\u66f4\u4e3b\u984c\u300d\\n\u8b8a\u66f4\u4e3b\u984c\u3002"
+	},
+	{
+		"key": "MID_ITEM_GAIN_SKILL_AND_DRESS_ACCESSORY_AND_ELITE_CASTLE_SP_WARNING",
+		"value": "$a\u7121\u6cd5\u6301\u6709\u591a\u500b\u76f8\u540c\u7684\u8056\u5370\u30fb\u98fe\u54c1\u3002\\n\u5982\u679c\u7372\u5f97\u591a\u500b\u76f8\u540c\u7684\u8056\u5370\u30fb\u98fe\u54c1\uff0c\\n\u5c07\u6703\u81ea\u52d5\u8f49\u63db\u6210\u82f1\u96c4\u4e4b\u7ffc\u00d7$a0\u3002\\n\u53ef\u65bc\u57ce\u5821\u756b\u9762\u7684\u300c\u8b8a\u66f4\u4e3b\u984c\u300d\\n\u8b8a\u66f4\u4e3b\u984c\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202205_01",
+		"value": "\u300c\u5317\u65b9\u4e4b\u8a18\u300d"
+	},
+	{
+		"key": "MID_SPR08_Banquet_Title",
+		"value": "\u82f1\u96c4\u7684\u809a\u91cf"
+	},
+	{
+		"key": "MID_SPR08_Banquet_Common",
+		"value": "\u5728\u65c5\u5730\u7684\u9152\u9928\u586b\u98fd\u4e86\u809a\u5b50\u7684\u5169\u4eba\u3002\\n\u770b\u4f3c\u958b\u5fc3\u5730\u804a\u8457\u5929\uff0c\u53ef\u662f\u2026\u2026\uff1f"
+	},
+	{
+		"key": "MID_SPR08_Banquet_3",
+		"value": "\u642d\u6a94\u7a81\u7136\u596a\u9580\u800c\u51fa\uff01\\n\u770b\u4f86\u9019\u5c31\u662f\u72fc\u541e\u864e\u56a5\u6240\u8981\u627f\u64d4\u7684\u5f8c\u679c\u2026\u2026"
+	},
+	{
+		"key": "MID_SPR08_Banquet_4",
+		"value": "\u6599\u7406\u597d\u50cf\u5361\u5728\u5589\u56a8\u4e86\u2026\u2026\uff01\\n\u5f97\u5230\u6559\u8a13\uff0c\u77e5\u9053\u908a\u5403\u6771\u897f\u908a\u8aaa\u8a71\u5f88\u5371\u96aa\uff01"
+	},
+	{
+		"key": "MID_SPR08_Banquet_5",
+		"value": "\u642d\u6a94\u597d\u50cf\u2026\u2026\uff1f\u5c45\u7136\u53c8\u9ede\u4e86\uff01\uff1f\\n\u90a3\u4e86\u4e0d\u8d77\u7684\u809a\u91cf\u771f\u4ee4\u4eba\u9a5a\u5606\u554a\uff01"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202205R",
+		"value": "\u5fa9\u523b\u30fb\u5e0c\u671b\u7684\u5b88\u8b77\u8005\u5011"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202205",
+		"value": "\u80fd\u5e79\u5973\u6027\u7684\u65b0\u5a18\u796d\u5178"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_0",
+		"value": "\u4e9e\u65af\u514b\u57ce\u30fb\u66f8\u5eab"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_0",
+		"value": "$a\u9084\u6709$a0\uff0c\u64ca\u6557\u6575\u4eba\u6642\u53ef\u7372\u5f97\uff15\u500d\uff33\uff30\uff01\u6b64\u5f8c\u4ea6\u53ef\u6c38\u4e45\\n\u7372\u5f97\uff12\u500d\uff01\uff08\u82e5\u6709\u591a\u500b\u76f8\u540c\u7cfb\u7d71\u57ce\u5821\u6548\u679c\uff0c\u50c5\u53d6\u6700\u5927\u503c\uff09"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_REMAIN_DAYS",
+		"value": "$a$a0\u5929"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_REMAIN_HOURS",
+		"value": "$a$a0\u5c0f\u6642"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_REMAIN_MINUTES",
+		"value": "$a$a0\u5206\u9418"
+	},
+	{
+		"key": "MID_SHOP_CHANGE_WP_SP_BONUS_DAYS",
+		"value": "$a\u9084\u6709$a0\u5929\uff0c\u64ca\u6557\u6575\u4eba\u6642\u53ef\u7372\u5f97\uff15\u500d\uff33\uff30\uff01"
+	},
+	{
+		"key": "MID_SHOP_CHANGE_WP_SP_BONUS_HOURS",
+		"value": "$a\u9084\u6709$a0\u5c0f\u6642\uff0c\u64ca\u6557\u6575\u4eba\u6642\u53ef\u7372\u5f97\uff15\u500d\uff33\uff30\uff01"
+	},
+	{
+		"key": "MID_SHOP_CHANGE_WP_SP_BONUS_MINUTES",
+		"value": "$a\u9084\u6709$a0\u5206\u9418\uff0c\u64ca\u6557\u6575\u4eba\u6642\u53ef\u7372\u5f97\uff15\u500d\uff33\uff30\uff01"
+	},
+	{
+		"key": "MID_SHOP_CHANGE_WP_SP_BONUS_FOREVER",
+		"value": "\u64ca\u6557\u6575\u4eba\u6642\u53ef\u6c38\u4e45\u7372\u5f97\uff12\u500d\uff33\uff30\uff01"
+	},
+	{
+		"key": "MID_VOTE_TERM_202206",
+		"value": "\u52c7\u6562\u9762\u5c0d\u9ed1\u6697\uff01"
+	},
+	{
+		"key": "MID_CONFIG_REALTIME_PVP_OPPONENT_NAME_SECRET",
+		"value": "\u82f1\u96c4\u6c7a\u9b25\\n\u8b8a\u66f4\u5c0d\u624b\u7684\u986f\u793a\u540d\u7a31"
+	},
+	{
+		"key": "MID_CONFIG_ALLOW_LOW_RARITY_LIMIT_BREAK",
+		"value": "\u7a81\u7834\u6975\u9650\u3000\u53ef\u5c07\u6bd4\u57f9\\n\u80b2\u65b9\u4f4e\u2605\u4f5c\u70ba\u6d88\u6ec5\u65b9"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING6_2",
+		"value": "\u7b2c\uff16\u90e8\u5f8c\u534a\u6bb5\u958b\u982d\u5f71\u7247"
+	},
+	{
+		"key": "MID_HOME_SKY_CASTLE_RESTRICTION",
+		"value": "\u98db\u7a7a\u57ce\u6df7\u6c8c\u5b63\u7bc0\u7528\u7684\u9632\u885b\u90e8\u968a\\n\u672a\u7b26\u5408\u7de8\u7d44\u9650\u5236\u3002\\n\uff08\u5c07\u7531\u963f\u723e\u99ae\u65af\u3001\\n\u3000\u590f\u84c9\u3001\u5b89\u5a1c\u4ee3\u70ba\u9632\u885b\uff09\\n\\n\u8981\u7acb\u523b\u7de8\u8f2f\u9632\u885b\u5730\u5716\u55ce\uff1f"
+	},
+	{
+		"key": "MID_HOME_SKY_CASTLE_RESTRICTION_JUMP",
+		"value": "\u7de8\u8f2f"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202206",
+		"value": "\u9023\u7e6b\u672a\u4f86\u7684\u5730\u5716"
+	},
+	{
+		"key": "MID_SHOP_ORB_TAP_BUY",
+		"value": "\u30bf\u30c3\u30d7\u3057\u3066\u8cfc\u5165"
+	},
+	{
+		"key": "MID_SHOP_SCTA_NOTE",
+		"value": "\u30fb\u5bfe\u4fa1\u306e\u652f\u6255\u6642\u671f\u30fb\u65b9\u6cd5\u3001\u5f15\u6e21\u6642\u671f\u3001\u30ad\u30e3\u30f3\u30bb\u30eb\u306b\u3064\u3044\u3066\u306f\\n\u3000\u300c\u7279\u5b9a\u5546\u53d6\u5f15\u6cd5\u306b\u57fa\u3065\u304f\u8868\u793a\u300d\u3092\u3054\u78ba\u8a8d\u304f\u3060\u3055\u3044\u3002"
+	},
+	{
+		"key": "MID_SHOP_SCTA_NOTE_SCROLL",
+		"value": "\u30fb\u5bfe\u4fa1\u306e\u652f\u6255\u6642\u671f\u30fb\u65b9\u6cd5\u3001\u5f15\u6e21\u6642\u671f\u3001\\n\u3000\u30ad\u30e3\u30f3\u30bb\u30eb\u306b\u3064\u3044\u3066\u306f\\n\u3000\u300c\u7279\u5b9a\u5546\u53d6\u5f15\u6cd5\u306b\u57fa\u3065\u304f\u8868\u793a\u300d\u3092\\n\u3000\u3054\u78ba\u8a8d\u304f\u3060\u3055\u3044\u3002"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_TERM",
+		"value": "\u6709\u52b9\u671f\u9593\u3068\u81ea\u52d5\u66f4\u65b0\u306b\u3064\u3044\u3066"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_PURCHASE_V6_6",
+		"value": "\u52a0\u5165FEH PASS"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_WARNING_V6_6",
+		"value": "\u3010\u95dc\u65bc\u89e3\u7d04\u3011\\n\u30fb\u5c31\u7b97\u4e2d\u9014\u89e3\u7d04\uff0c\u5728\u6709\u6548\u671f\u9593\u4e2d\u4e5f\u53ef\u4ee5\u9818\u53d6\u7279\u5178\u3002\\n\u30fb\u8d85\u503c\u529f\u80fd\u5728\u6709\u6548\u671f\u9593\u7d50\u675f\u5f8c\u4fbf\u7121\u6cd5\u4f7f\u7528\u3002\\n\u30fb\u82e5\u6c92\u6709\u5728\u300cFEH PASS\u300d\u7684\u6709\u6548\u671f\u9593\u7d50\u675f\u524d24\u5c0f\u6642\u6216\u4ee5\u4e0a\\n\u3000\u505c\u6b62\u81ea\u52d5\u66f4\u65b0\uff0c\u300cFEH PASS\u300d\u5c07\u6703\u88ab\u81ea\u52d5\u66f4\u65b0\u3002\\n\u30fb\u300cFEH PASS\u300d\u6709\u6548\u671f\u9593\u7684\u78ba\u8a8d\u65b9\u6cd5\u4ee5\u53ca\\n\u3000\u505c\u6b62\u81ea\u52d5\u66f4\u65b0\u7684\u65b9\u6cd5\u8acb\u81f3\u300c\u5e38\u898b\u554f\u984c\u300d\\n\u3000\u9032\u884c\u78ba\u8a8d\u3002"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_NOTICE_V6_6",
+		"value": "\u30fb\u6709\u6548\u671f\u9593\u7d50\u675f\u6642\uff0c\u6bcb\u9808\u8fa6\u7406\u518d\u52a0\u5165\u624b\u7e8c\uff0c\\n\u3000\u5c31\u80fd\u81ea\u52d5\u52a0\u5165\u540c\u6a23\u7684\u300cFEH PASS\u300d\uff0c\\n\u3000\u6301\u7e8c\u4eab\u7528\u670d\u52d9\u3002\\n\u30fb\u5728\u8b8a\u66f4\u6210\u4e0d\u540cOS\u7684\u88dd\u7f6e\u5f8c\\n\u3000\u65b0\u52a0\u5165\u300cFEH PASS\u300d\u7684\u73a9\u5bb6\uff0c\\n\u3000\u8acb\u5728\u4ee5\u524d\u4f7f\u7528\u7684OS\u89e3\u7d04\u5f8c\u518d\u52a0\u5165\u3002\\n\u30fb\u795e\u88dd\u82f1\u96c4\u5c07\u6703\u5728\u767c\u5e03\u671f\u9593\u5167\u767b\u5165\u5f8c\u767c\u5e03\u3002\\n\u30fb\u82e5\u5728\u7279\u5b9a\u7684\u795e\u88dd\u82f1\u96c4\u7684\u767c\u5e03\u671f\u9593\u5373\u5c07\u7d50\u675f\u524d\\n\u3000\u52a0\u5165\u300cFEH PASS\u300d\uff0c\u53ef\u9818\u53d6\u795e\u88dd\u82f1\u96c4\u7684\u671f\u9593\\n\u3000\u5c07\u6703\u5f88\u77ed\uff0c\u8acb\u7279\u5225\u6ce8\u610f\u3002"
+	},
+	{
+		"key": "MID_SCF_K1005",
+		"value": "\u6b7b\u4e4b\u8352\u91ce"
+	},
+	{
+		"key": "MID_SCF_K1005_Ex",
+		"value": "\u5047\u671f\u5c08\u7528\u5730\u5f62"
+	},
+	{
+		"key": "MID_SCF_K1006",
+		"value": "\u5922\u4e2d\u6240\u898b\u7684\u5c71\u4e18"
+	},
+	{
+		"key": "MID_SCF_K1006_Ex",
+		"value": "\u5047\u671f\u5c08\u7528\u5730\u5f62"
+	},
+	{
+		"key": "MID_SCF_K1007",
+		"value": "\u6a5f\u68b0\u5821\u58d8"
+	},
+	{
+		"key": "MID_SCF_K1007_Ex",
+		"value": "\u5047\u671f\u5c08\u7528\u5730\u5f62"
+	},
+	{
+		"key": "MID_SKYCASTLEHOLIDAY_DIALOG_NEW_STOCK_ADD_MAP",
+		"value": "\u25c6\u8ffd\u52a0\u4e86\u5168\u65b0\u7684\u5730\u5716\u3002"
+	},
+	{
+		"key": "MID_SCF_K0013",
+		"value": "\u6b7b\u4e4b\u738b\u570b\u4e4b\u57ce"
+	},
+	{
+		"key": "MID_SCF_K0013_Ex",
+		"value": "\u7279\u5fb5\uff1a\u65b7\u57a3\u6b98\u58c1"
+	},
+	{
+		"key": "MID_SCF_K0014",
+		"value": "\u5c0f\u4eba\u570b\u4e4b\u57ce"
+	},
+	{
+		"key": "MID_SCF_K0014_Ex",
+		"value": "\u7279\u5fb5\uff1a\u6797\u5730"
+	},
+	{
+		"key": "MID_SCF_K0015",
+		"value": "\u5de8\u4eba\u4e4b\u570b\u4e4b\u57ce"
+	},
+	{
+		"key": "MID_SCF_K0015_Ex",
+		"value": "\u7279\u5fb5\uff1a\u65b7\u57a3\u6b98\u58c1"
+	},
+	{
+		"key": "MID_SKYCASTLE_BONUS_NEXTSEASON_WARNING",
+		"value": "\u4e0b\u500b\u8cfd\u5b63\u662f\u6df7\u6c8c\u7684\u5b63\u7bc0\u3002"
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_TEXT_BATTLE",
+		"value": "\u7121\u6cd5\u958b\u59cb\u6230\u9b25\u3002"
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_TEXT_TESTPLAY",
+		"value": "\u7121\u6cd5\u958b\u59cb\u6a21\u64ec\u6230\u3002"
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_TEXT_DISPATCH",
+		"value": "\u7121\u6cd5\u958b\u59cb\u6d3e\u9063\u3002"
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_WARNING_HEAD",
+		"value": "\u672a\u6eff\u8db3\u6df7\u6c8c\u5b63\u7bc0\u7684\\n\u4ee5\u4e0b\u9650\u5236\uff1a"
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_WARNING_HEAD_OFFENSE_1",
+		"value": "$a\u653b\u64ca\u90e8\u968a$a0\\n\u672a\u6eff\u8db3\u6df7\u6c8c\u5b63\u7bc0\u7684\\n\u4ee5\u4e0b\u9650\u5236\uff1a"
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_WARNING_HEAD_OFFENSE_2",
+		"value": "$a\u653b\u64ca\u90e8\u968a$a0\u3001$a1\\n\u672a\u6eff\u8db3\u6df7\u6c8c\u5b63\u7bc0\u7684\\n\u4ee5\u4e0b\u9650\u5236\uff1a"
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_WARNING_HEAD_OFFENSE_3",
+		"value": "$a\u653b\u64ca\u90e8\u968a$a0\u3001$a1\u3001$a2\\n\u672a\u6eff\u8db3\u6df7\u6c8c\u5b63\u7bc0\u7684\\n\u4ee5\u4e0b\u9650\u5236\uff1a"
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_WARNING_HEAD_OFFENSE_4",
+		"value": "$a\u653b\u64ca\u90e8\u968a$a0\u3001$a1\u3001$a2\u3001$a3\\n\u672a\u6eff\u8db3\u6df7\u6c8c\u5b63\u7bc0\u7684\\n\u4ee5\u4e0b\u9650\u5236\uff1a"
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_WARNING_HEAD_OFFENSE_5",
+		"value": "\u653b\u64ca\u90e8\u968a1\u30012\u30013\u30014\u30015\\n\u672a\u6eff\u8db3\u6df7\u6c8c\u5b63\u7bc0\u7684\\n\u4ee5\u4e0b\u9650\u5236\uff1a"
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_WARNING_0",
+		"value": "\u30fb\uff11\u500b\u90e8\u968a\u4e2d\u52a0\u5165\u7684\u82f1\u96c4\\n\u3000\u4e0d\u80fd\u91cd\u8907\u3002"
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_WARNING_1",
+		"value": "\u30fb\uff11\u500b\u90e8\u968a\u4e2d\u6700\u591a\u53ea\u80fd\u7de8\u5165\uff11\u540d\\n\u3000\u53ef\u4f7f\u7528\u6b4c\u5531\u6216\u8d77\u821e\u7684\u82f1\u96c4\u3002"
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_WARNING_2",
+		"value": "\u30fb\uff11\u500b\u90e8\u968a\u4e2d\u6700\u591a\u53ea\u80fd\u7de8\u5165\uff11\u540d\\n\u3000\u53ef\u4f7f\u7528\u5b88\u8b77\u4eba\u7684\u82f1\u96c4\u3002"
+	},
+	{
+		"key": "MID_SKYCASTLE_NO_LEGENDARY_SLOT_CONFIRM_DIALOG_TEXT_BATTLE",
+		"value": "\u8981\u9032\u884c\u6230\u9b25\u55ce\uff1f"
+	},
+	{
+		"key": "MID_SKYCASTLE_NO_LEGENDARY_SLOT_CONFIRM_DIALOG_TEXT_TESTPLAY",
+		"value": "\u8981\u958b\u59cb\u6a21\u64ec\u6230\u55ce\uff1f"
+	},
+	{
+		"key": "MID_SKYCASTLE_NO_LEGENDARY_SLOT_CONFIRM_DIALOG_TEXT_DISPATCH",
+		"value": "\u8981\u958b\u59cb\u6d3e\u9063\u55ce\uff1f"
+	},
+	{
+		"key": "MID_SKYCASTLE_NO_LEGENDARY_SLOT_CONFIRM_DIALOG_WARNING",
+		"value": "\u88ab\u7de8\u7d44\u81f3\u7279\u5225\u6b04\u4f4d\u7684\u82f1\u96c4\\n\u65bc\u672c\u5b63\u7bc0\u4e2d\u7121\u6548\u3002"
+	},
+	{
+		"key": "MID_SKYCASTLE_EDIT_CUSTOMSET_SEASON_SUCCESS_RESTRICTED",
+		"value": "\u6df7\u6c8c\u5b63\u7bc0\u7684\u9632\u885b\u90e8\u968a\\n\u672a\u6eff\u8db3\u7de8\u7d44\u9650\u5236\u3002\\n\u5c07\u7531\u7b49\u7d1a\uff14\uff10\u7684\\n\u963f\u723e\u99ae\u65af\u3001\u590f\u84c9\u3001\u5b89\u5a1c\\n\u4ee3\u70ba\u9632\u885b\u3002"
+	},
+	{
+		"key": "MID_SKYCASTLE_EDIT_CUSTOMSET_SEASON_SUCCESS_EMPTY_AND_RESTRICTED",
+		"value": "\u5df2\u8a2d\u5b9a\u5b63\u7bc0\u7684\u7d44\u5408\\n\u672a\u8a2d\u5b9a\u9632\u885b\u90e8\u968a\uff0c\\n\u6216\u672a\u6eff\u8db3\u6df7\u6c8c\u5b63\u7bc0\\n\u7684\u7de8\u7d44\u9650\u5236\u3002\\n\u5c07\u7531\u7b49\u7d1a\uff14\uff10\u7684\\n\u963f\u723e\u99ae\u65af\u3001\u590f\u84c9\u3001\u5b89\u5a1c\\n\u4ee3\u70ba\u9632\u885b\u3002"
+	},
+	{
+		"key": "MID_SKYCASTLE_EDIT_FLOOREDIT_BUY_BY_POINT_CONFIRM",
+		"value": "$a\u662f\u5426\u6d88\u8cbb\u4ea4\u6d41\u9ede\u6578\u00d7$a0\\n\u8b8a\u66f4\u5730\u5f62\uff1f"
+	},
+	{
+		"key": "MID_SKYCASTLE_BONUS_VERSION",
+		"value": "\u7248\u672c\\n(\u767b\u5834\u6642\u671f)"
+	},
+	{
+		"key": "MID_SKYCASTLE_BONUS_VERSION_HELP",
+		"value": "$a\u7248\u672c\uff08\u767b\u5834\u6642\u671f\uff09\u70ba$a0\u7684\u6240\u6709\u89d2\u8272\\n\u70ba\u8ffd\u52a0\u734e\u52f5\u89d2\u8272\u3002"
+	},
+	{
+		"key": "MID_SKYCASTLE_BATTLE_TOP_HELP_DIALOG_18_2",
+		"value": "\u25c6\u65bc\u5929\u754c\u7684\u8cfd\u5b63\u7d50\u675f\u6642\u25c6\\n\u30fb\u4f4d\u968e\uff13\uff17\u4ee5\u4e0b\u2192\u4f4d\u968e\uff12\uff13\\n\u30fb\u4f4d\u968e\uff13\uff18\u4ee5\u4e0a\u2192\u4f4d\u968e\uff13\uff11\uff08\u5929\u754c\uff09\\n\\n\u25c6\u5929\u754c\u7684\u898f\u5247\u25c6\\n\u30fb\u653b\u64ca\u6642\u5168\u54e1\u751f\u5b58\u734e\u52f5\\n\u3000\u653b\u64ca\u6642\u82e5\u5728\u5168\u54e1\u751f\u5b58\u7684\u72c0\u614b\u4e0b\u7372\u52dd\uff0c\\n\u3000\u5c07\u7372\u5f97\u8a55\u50f9\uff0b\uff11\uff10\u7684\u734e\u52f5\u3002"
+	},
+	{
+		"key": "MID_SKYCASTLE_BATTLE_TOP_HELP_DIALOG_19_2",
+		"value": "\u25c6\u98db\u7a7a\u57ce\u3000\u6df7\u6c8c\u5b63\u7bc0\u25c6\\n\u9019\u662f\u53d7\u5230\u6df7\u6c8c\u4e4b\u795e\u6d1b\u57fa\u652f\u914d\u7684\u98db\u7a7a\u57ce\u3002\\n\\n\u548c\u4e00\u822c\u7684\u98db\u7a7a\u57ce\u4e0d\u540c\uff0c\\n\u5c07\u4ee5\u6df7\u6c8c\u5b63\u7bc0\u5c08\u7528\u7684\u8a55\u50f9\\n\u548c\u898f\u5247\u6230\u9b25\u3002"
+	},
+	{
+		"key": "MID_SKYCASTLE_BATTLE_TOP_HELP_DIALOG_20",
+		"value": "\u25c6\u6df7\u6c8c\u5b63\u7bc0\u7684\u8ffd\u52a0\u734e\u52f5\u89d2\u8272\u25c6\\n\u6bcf\u6b21\u8209\u8fa6\u6642\uff0c\u7279\u5b9a\u7248\u672c\u7684\u6240\u6709\u89d2\u8272\\n\u5c07\u6210\u70ba\u8ffd\u52a0\u734e\u52f5\u89d2\u8272\u3002\\n\\n\u53ea\u6709\u4e00\u822c\u7684\u734e\u52f5\u89d2\u8272\u795e\u968e\u82f1\u96c4\\n\u6703\u6709\u5931\u6557\u6642\u7684\u4fdd\u96aa\u63aa\u65bd\uff0c\\n\u9664\u6b64\u4e4b\u5916\uff0c\u8ffd\u52a0\u734e\u52f5\u89d2\u8272\\n\u8207\u4e00\u822c\u7684\u734e\u52f5\u89d2\u8272\u76f8\u540c\u3002"
+	},
+	{
+		"key": "MID_SKYCASTLE_BATTLE_TOP_HELP_DIALOG_21",
+		"value": "\u25c6\u6df7\u6c8c\u5b63\u7bc0\u7684\u8a55\u50f9\u734e\u52f5\u25c6\\n\u30fb\u653b\u64ca\u90e8\u968a\\n\u3000\u30fb\u7121\u689d\u4ef6\u5730\u7372\u5f97\u8a55\u50f9\uff0b\uff17\uff10\\n\u3000\u30fb\u4ee5\u734e\u52f5\u89d2\u8272\u64ca\u6557\uff11\u540d\u4ee5\u4e0a\u7684\u6575\u4eba\u6642\\n\u3000\u3000\u7372\u5f97\u8a55\u50f9\u5c07\u6703\uff0b\uff12\uff10\\n\\n\u30fb\u9632\u885b\u90e8\u968a\\n\u3000\u30fb\u7121\u689d\u4ef6\u5730\u6291\u5236\u4e0b\u964d\u8a55\u50f9\u91cf\uff14\uff10"
+	},
+	{
+		"key": "MID_SKYCASTLE_BATTLE_TOP_HELP_DIALOG_22",
+		"value": "\u25c6\u5728\u6df7\u6c8c\u5b63\u7bc0\u4e2d\u7121\u6548\u7684\u9805\u76ee\u25c6\\n\u30fb\u5b63\u7bc0\u7684\u50b3\u627f\u6548\u679c\u3001\u795e\u968e\u6548\u679c\\n\u3000\u30fb\u6211\u65b9\u7684\u80fd\u529b\u503c\u4e0a\u5347\u6548\u679c\\n\u3000\u30fb\u900f\u904e\u8ce6\u4e88\u795d\u798f\u53ca\u7a81\u7834\u6975\u9650\\n\u3000\u3000\u7372\u5f97\u8a55\u50f9\u7684\u63d0\u5347\u3001\u4e0b\u964d\u8a55\u50f9\u7684\u6291\u5236\\n\u3000\u30fb\u7279\u5225\u6b04\u4f4d"
+	},
+	{
+		"key": "MID_SKYCASTLE_BATTLE_TOP_HELP_DIALOG_23",
+		"value": "\u25c6\u6df7\u6c8c\u5b63\u7bc0\u7684\u7de8\u7d44\u25c6\\n\u30fb\u52a0\u5165\u7684\u82f1\u96c4\u4e0d\u80fd\u91cd\u8907\u3002\\n\u30fb\uff11\u500b\u90e8\u968a\u4e2d\u6700\u591a\u53ea\u80fd\u7de8\u5165\uff11\u540d\\n\u3000\u6301\u6709\u6b4c\u5531\u6216\u8d77\u821e\u6280\u80fd\u7684\u82f1\u96c4\u3002\\n\u30fb\uff11\u500b\u90e8\u968a\u4e2d\u6700\u591a\u53ea\u80fd\u7de8\u5165\uff11\u540d\\n\u3000\u6301\u6709\u5b88\u8b77\u4eba\u6280\u80fd\u7684\u82f1\u96c4\u3002"
+	},
+	{
+		"key": "MID_SKYCASTLE_BATTLE_TOP_HELP_DIALOG_24",
+		"value": "\u25c6\u8207\u5f80\u5e38\u76f8\u540c\u7684\u8a55\u50f9\u734e\u52f5\u25c6\\n\u30fb\u5c07\u734e\u52f5\u89d2\u8272\u7de8\u5165\u653b\u64ca\u90e8\u968a\u4e2d\uff0c\\n\u3000\u7372\u5f97\u8a55\u50f9\u5c07\u6703\uff0b\uff12\uff10\\n\u30fb\u5728\u5929\u754c\u653b\u64ca\uff0c\u4e26\u5728\u5168\u54e1\u751f\u5b58\u7684\u72c0\u614b\u4e0b\\n\u3000\u7372\u52dd\u6642\uff0c\u7372\u5f97\u8a55\u50f9\u5c07\u6703\uff0b\uff11\uff10\\n\u30fb\u734e\u52f5\u795e\u968e\u82f1\u96c4\u5931\u6557\u6642\u7684\u4fdd\u96aa\u63aa\u65bd\\n\u3000\uff08\u653b\u64ca\u90e8\u968a\u3001\u9632\u885b\u90e8\u968a\u5169\u8005\u7686\u9069\u7528\uff09"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_OFFENSE_HELP_DIALOG_12",
+		"value": "\u25c6\u6df7\u6c8c\u5b63\u7bc0\u7684\u8ffd\u52a0\u734e\u52f5\u89d2\u8272\u25c6\\n\u6bcf\u6b21\u8209\u8fa6\u6642\uff0c\u7279\u5b9a\u7248\u672c\u7684\u6240\u6709\u89d2\u8272\\n\u5c07\u6210\u70ba\u8ffd\u52a0\u734e\u52f5\u89d2\u8272\u3002\\n\\n\u53ea\u6709\u4e00\u822c\u7684\u734e\u52f5\u89d2\u8272\u795e\u968e\u82f1\u96c4\\n\u6703\u6709\u5931\u6557\u6642\u7684\u4fdd\u96aa\u63aa\u65bd\uff0c\\n\u9664\u6b64\u4e4b\u5916\uff0c\u8ffd\u52a0\u734e\u52f5\u89d2\u8272\\n\u8207\u4e00\u822c\u7684\u734e\u52f5\u89d2\u8272\u76f8\u540c\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_OFFENSE_HELP_DIALOG_13",
+		"value": "\u25c6\u6df7\u6c8c\u5b63\u7bc0\u7684\u8a55\u50f9\u734e\u52f5\u25c6\\n\u30fb\u653b\u64ca\u90e8\u968a\\n\u3000\u30fb\u7121\u689d\u4ef6\u5730\u7372\u5f97\u8a55\u50f9\uff0b\uff17\uff10\\n\u3000\u30fb\u4ee5\u734e\u52f5\u89d2\u8272\u64ca\u6557\uff11\u540d\u4ee5\u4e0a\u7684\u6575\u4eba\u6642\\n\u3000\u3000\u7372\u5f97\u8a55\u50f9\u5c07\u6703\uff0b\uff12\uff10"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_OFFENSE_HELP_DIALOG_14",
+		"value": "\u25c6\u5728\u6df7\u6c8c\u5b63\u7bc0\u4e2d\u7121\u6548\u7684\u9805\u76ee\u25c6\\n\u30fb\u5b63\u7bc0\u7684\u50b3\u627f\u6548\u679c\u3001\u795e\u968e\u6548\u679c\\n\u3000\u30fb\u6211\u65b9\u7684\u80fd\u529b\u503c\u4e0a\u5347\u6548\u679c\\n\u3000\u30fb\u900f\u904e\u8ce6\u4e88\u795d\u798f\u53ca\u7a81\u7834\u6975\u9650\\n\u3000\u3000\u7372\u5f97\u8a55\u50f9\u7684\u63d0\u5347\u3001\u4e0b\u964d\u8a55\u50f9\u7684\u6291\u5236\\n\u3000\u30fb\u7279\u5225\u6b04\u4f4d"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_OFFENSE_HELP_DIALOG_15",
+		"value": "\u25c6\u6df7\u6c8c\u5b63\u7bc0\u7684\u7de8\u7d44\u25c6\\n\u30fb\u52a0\u5165\u7684\u82f1\u96c4\u4e0d\u80fd\u91cd\u8907\u3002\\n\u30fb\uff11\u500b\u90e8\u968a\u4e2d\u6700\u591a\u53ea\u80fd\u7de8\u5165\uff11\u540d\\n\u3000\u6301\u6709\u6b4c\u5531\u6216\u8d77\u821e\u6280\u80fd\u7684\u82f1\u96c4\u3002\\n\u30fb\uff11\u500b\u90e8\u968a\u4e2d\u6700\u591a\u53ea\u80fd\u7de8\u5165\uff11\u540d\\n\u3000\u6301\u6709\u5b88\u8b77\u4eba\u6280\u80fd\u7684\u82f1\u96c4\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_DEFENSE_HELP_DIALOG_12",
+		"value": "\u25c6\u6df7\u6c8c\u5b63\u7bc0\u7684\u8ffd\u52a0\u734e\u52f5\u89d2\u8272\u25c6\\n\u6bcf\u6b21\u8209\u8fa6\u6642\uff0c\u7279\u5b9a\u7248\u672c\u7684\u6240\u6709\u89d2\u8272\\n\u5c07\u6210\u70ba\u8ffd\u52a0\u734e\u52f5\u89d2\u8272\u3002\\n\\n\u53ea\u6709\u4e00\u822c\u7684\u734e\u52f5\u89d2\u8272\u795e\u968e\u82f1\u96c4\\n\u6703\u6709\u5931\u6557\u6642\u7684\u4fdd\u96aa\u63aa\u65bd\uff0c\\n\u9664\u6b64\u4e4b\u5916\uff0c\u8ffd\u52a0\u734e\u52f5\u89d2\u8272\\n\u8207\u4e00\u822c\u7684\u734e\u52f5\u89d2\u8272\u76f8\u540c\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_DEFENSE_HELP_DIALOG_13",
+		"value": "\u25c6\u6df7\u6c8c\u5b63\u7bc0\u7684\u8a55\u50f9\u734e\u52f5\u25c6\\n\u30fb\u9632\u885b\u90e8\u968a\\n\u3000\u30fb\u7121\u689d\u4ef6\u5730\u6291\u5236\u4e0b\u964d\u8a55\u50f9\u91cf\uff14\uff10"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_DEFENSE_HELP_DIALOG_14",
+		"value": "\u25c6\u5728\u6df7\u6c8c\u5b63\u7bc0\u4e2d\u7121\u6548\u7684\u9805\u76ee\u25c6\\n\u30fb\u5b63\u7bc0\u7684\u50b3\u627f\u6548\u679c\u3001\u795e\u968e\u6548\u679c\\n\u3000\u30fb\u6211\u65b9\u7684\u80fd\u529b\u503c\u4e0a\u5347\u6548\u679c\\n\u3000\u30fb\u900f\u904e\u8ce6\u4e88\u795d\u798f\u53ca\u7a81\u7834\u6975\u9650\\n\u3000\u3000\u7372\u5f97\u8a55\u50f9\u7684\u63d0\u5347\u3001\u4e0b\u964d\u8a55\u50f9\u7684\u6291\u5236\\n\u3000\u30fb\u7279\u5225\u6b04\u4f4d"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_DEFENSE_HELP_DIALOG_15",
+		"value": "\u25c6\u6df7\u6c8c\u5b63\u7bc0\u7684\u7de8\u7d44\u25c6\\n\u30fb\u52a0\u5165\u7684\u82f1\u96c4\u4e0d\u80fd\u91cd\u8907\u3002\\n\u30fb\uff11\u500b\u90e8\u968a\u4e2d\u6700\u591a\u53ea\u80fd\u7de8\u5165\uff11\u540d\\n\u3000\u6301\u6709\u6b4c\u5531\u6216\u8d77\u821e\u6280\u80fd\u7684\u82f1\u96c4\u3002\\n\u30fb\uff11\u500b\u90e8\u968a\u4e2d\u6700\u591a\u53ea\u80fd\u7de8\u5165\uff11\u540d\\n\u3000\u6301\u6709\u5b88\u8b77\u4eba\u6280\u80fd\u7684\u82f1\u96c4\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_OFFENSE_HELP_DIALOG_06_v0606",
+		"value": "\u25c6\u4f9d\u5b63\u7bc0\u7de8\u7d44\u6a21\u5f0f\uff11\u25c6\\n\u914d\u5408\u5b63\u7bc0\u5207\u63db\uff0c\\n\u5c07\u81ea\u52d5\u5207\u63db\u4f7f\u7528\u90e8\u968a\u7684\u7de8\u7d44\u6a21\u5f0f\u3002\\n\u203b\u5728\u98db\u7a7a\u57ce\u7684\u6559\u5b78\u6a21\u5f0f\\n\u3000\u7d50\u675f\u5f8c\u53ef\u9078\u64c7\u4f7f\u7528\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_DEFENSE_TROOP_RESTRICTED_WARNING",
+		"value": "\u7531\u65bc\u6df7\u6c8c\u5b63\u7bc0\u7684\u7de8\u7d44\u9650\u5236\uff0c\\n\u5c07\u7531\u7b49\u7d1a\uff14\uff10\u7684\\n\u963f\u723e\u99ae\u65af\u3001\u590f\u84c9\u3001\u5b89\u5a1c\\n\u4ee3\u70ba\u9632\u885b\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_DISABLE",
+		"value": "\u7121\u6cd5\u4f7f\u7528"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_HELP_DIALOG_03_V0606",
+		"value": "\u25c6\u74b0\u5883\u8a2d\u5b9a\u25c6\\n\u300c\u7a81\u7834\u6975\u9650\u3000\u53ef\u5c07\u6bd4\u57f9\\n\u3000\u80b2\u65b9\u4f4e\u2605\u4f5c\u70ba\u6d88\u6ec5\u65b9\u300d\\n\u8a2d\u5b9a\u70baOn\u5f8c\uff0c\\n\u5c31\u53ef\u5c07\u2605\u6bd4\u57f9\u80b2\u65b9\u4f4e\u7684\u82f1\u96c4\\n\u4f5c\u70ba\u6d88\u6ec5\u65b9\u4f7f\u7528\uff0c\u4e26\u7372\u5f97SP\u3002\\n\\n\u4f46\u7121\u6cd5\u63d0\u5347\u80fd\u529b\u503c\uff0c\u656c\u8acb\u6ce8\u610f\u3002"
+	},
+	{
+		"key": "MID_SEASON_HELP_CHAOS",
+		"value": "\u25c6\u98db\u7a7a\u57ce\u5b63\u7bc0\uff1a\u300c\u6df7\u6c8c\u300d\u25c6\\n\u548c\u4e00\u822c\u7684\u98db\u7a7a\u57ce\u4e0d\u540c\uff0c\\n\u5c07\u4ee5\u6df7\u6c8c\u5b63\u7bc0\u5c08\u7528\u7684\u8a55\u50f9\u548c\u898f\u5247\u6230\u9b25\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202206",
+		"value": "\u300c\u6771\u65b9\u4e4b\u8a18\u300d"
+	},
+	{
+		"key": "MID_SUM10_Care_Title",
+		"value": "\u548c\u6b66\u5177\u7684\u5c0d\u8a71"
+	},
+	{
+		"key": "MID_SUM10_Care_Common",
+		"value": "\u6b66\u5668\u5eab\u7684\u93a7\u7532\u57ae\u4e0b\u4f86\u4e86\u2026\u2026\uff01\\n\u5169\u4eba\u8a66\u5716\u6191\u8a18\u61b6\u5c07\u5176\u5fa9\u539f\uff01"
+	},
+	{
+		"key": "MID_SUM10_Care_3",
+		"value": "\u93a7\u7532\u518d\u6b21\u57ae\u4e86\u4e0b\u4f86\uff01\u611f\u89ba\u597d\u50cf\u88ab\\n\u4e0d\u6703\u8aaa\u8a71\u7684\u93a7\u7532\u8aaa\u4e86\u4fee\u884c\u5f97\u4e0d\u5920\uff01"
+	},
+	{
+		"key": "MID_SUM10_Care_4",
+		"value": "\u7e3d\u7b97\u5b8c\u6210\u4e86\uff01\u96d6\u7136\u597d\u50cf\u548c\u8a18\u61b6\u88e1\u7684\u6a23\u5b50\\n\u4e0d\u592a\u4e00\u6a23\uff0c\u4f46\u5169\u4eba\u89ba\u5f97\u5f88\u6709\u6210\u5c31\u611f\uff01"
+	},
+	{
+		"key": "MID_SUM10_Care_5",
+		"value": "\u5c07\u93a7\u7532\u7684\u59ff\u52e2\u64fa\u5f97\u6829\u6829\u5982\u751f\uff01\u770b\u8d77\u4f86\\n\u6bd4\u8a18\u61b6\u4e2d\u7684\u6a23\u5b50\u66f4\u52a0\u5f37\u5927\uff0c\u5169\u4eba\u5f88\u611f\u52d5\uff01"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202206",
+		"value": "\u76db\u590f\u7684\u6084\u6084\u8a71"
+	},
+	{
+		"key": "MID_VOTE_TERM_202207",
+		"value": "\u9f8d\u9a0e\u58eb\u6c7a\u9b25"
+	},
+	{
+		"key": "MID_EVENT_RECOLLECTION_SEQUENTIAL_MAP_ADDITIONAL_TALK_0",
+		"value": "\u8ffd\u52a0\u958b\u5834\u5287\u60c5"
+	},
+	{
+		"key": "MID_EVENT_RECOLLECTION_SEQUENTIAL_MAP_ADDITIONAL_TALK_1",
+		"value": "\u8ffd\u52a0\u7d50\u675f\u5287\u60c5"
+	},
+	{
+		"key": "MID_MAP_RESURRECTION_CONFIRM_ORB_V6_7",
+		"value": "\u30aa\u30fc\u30d6\u00d71\u3092\u6d88\u8cbb\u3057\u30661\u5ea6\u3001\\n\u4ef2\u9593\u5168\u54e1\u3092\u5fa9\u6d3b\u3055\u305b\u307e\u3059\u304b\uff1f\\n\uff08\u8ffd\u52a0\u3067\u4ee5\u4e0b\u306e\u52b9\u679c\u3082\u5f97\u3089\u308c\u307e\u3059\uff09\\n\u30fb\uff28\uff30\u5168\u56de\u5fa9\\n\u30fb\u884c\u52d5\u53ef\u80fd\\n\u30fb\u5965\u7fa9\u767a\u52d5\u53ef\u80fd\\n\\n\u203b\u30d5\u30a7\u30fc\u30d1\u30b9\u300c\u884c\u52d5\u524d\u306b\u623b\u305b\u308b\u300d\u6a5f\u80fd\u306f\\n\u81ea\u8ecd\u30bf\u30fc\u30f3\u3067\u5fa9\u6d3b\u3055\u305b\u305f\u5834\u5408\u3001\\n\u64cd\u4f5c\u5f8c\u3068\u6b21\u306e\u30bf\u30fc\u30f3\u958b\u59cb\u6642\u306f\u3001\\n\u300c\u5149\u306e\u52a0\u8b77\u4f7f\u7528\u5f8c\u306b\u623b\u3059\u300d\u306b\u306a\u308a\u307e\u3059\u3002\\n\u6575\u8ecd\u30bf\u30fc\u30f3\u3067\u5fa9\u6d3b\u3055\u305b\u305f\u5834\u5408\u3001\\n\u6b21\u306e\u30bf\u30fc\u30f3\u958b\u59cb\u6642\u306f\u5143\u306b\u623b\u305b\u305a\u3001\\n\u64cd\u4f5c\u5f8c\u306f\u300c\u4eca\u306e\u30bf\u30fc\u30f3\u958b\u59cb\u306b\u623b\u3059\u300d\u306b\\n\u306a\u308a\u307e\u3059\u3002"
+	},
+	{
+		"key": "MID_OCCUPATION_RECOLLECTION_TITLE_202207",
+		"value": "\u99ac\u723e\u65af\u7b49\u4eba\u3000\uff11"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202207R",
+		"value": "\u5fa9\u523b\u30fb\u7167\u4eae\u6df1\u6df5\u7684\u71c8\u706b"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202207",
+		"value": "\u751f\u8207\u6b7b\u7684\u516c\u4e3b\u3000\uff11"
+	},
+	{
+		"key": "MID_SHOP_SCTA_MENU_NOTE",
+		"value": "\u30fb\u5bfe\u4fa1\u306e\u652f\u6255\u6642\u671f\u30fb\u65b9\u6cd5\u3001\u5f15\u6e21\u6642\u671f\u3001\\n\u3000\u89e3\u9664\u30fb\u8fd4\u91d1\u306b\u3064\u3044\u3066\u306f\u3053\u3061\u3089\u3092\u3054\u78ba\u8a8d\u304f\u3060\u3055\u3044\u3002"
+	},
+	{
+		"key": "MID_SHOP_ARENA_CONFIRM_ORB_V6_7",
+		"value": "\u30aa\u30fc\u30d6\u00d71\u3092\u6d88\u8cbb\u3057\u3066\\n\u5bfe\u6226\u6a293\u56de\u5206\u3092\u56de\u5fa9\u3057\u307e\u3059\u304b\uff1f"
+	},
+	{
+		"key": "MID_SHOP_ARENA_NOTENOUGH_ORB_V6_7",
+		"value": "\u5bfe\u6226\u6a29\u304c\u4e0d\u8db3\u3057\u3066\u3044\u307e\u3059\u3002\\n\u30aa\u30fc\u30d6\u00d71\u3092\u6d88\u8cbb\u3057\u3066\\n\u5bfe\u6226\u6a293\u56de\u5206\u3092\u56de\u5fa9\u3057\u307e\u3059\u304b\uff1f"
+	},
+	{
+		"key": "MID_SHOP_EXPAND_CONFIRM_V6_7",
+		"value": "\u30aa\u30fc\u30d6\u00d71\u3092\u6d88\u8cbb\u3057\u3066\u4ee5\u4e0b\u306e\u901a\u308a\u306b\\n\u30ad\u30e3\u30e9\u53ce\u5bb9\u4eba\u6570\u3092\u62e1\u5f35\u3057\u307e\u3059\u304b\uff1f"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CONFIRM1_V6_7",
+		"value": "$a\u30aa\u30fc\u30d6\u00d7$a0\u3092\u6d88\u8cbb\u3057\u3066\u3001\\n$a1\u30921\u3064\u8cfc\u5165\u3057\u307e\u3059\u304b\uff1f\\n\\n\u57ce\u3092\u8cfc\u5165\u3059\u308b\u3068\u3001\u4eca\u5f8c\\n\u6c38\u4e45\u306b\u5165\u624b\u7d4c\u9a13\u5024\u304c\u30a2\u30c3\u30d7\u3057\u307e\u3059\u3002\\n\u307e\u305f\u3001\u6a21\u69d8\u66ff\u3048\u3067\\n\u30db\u30fc\u30e0\u753b\u9762\u306e\u30c6\u30fc\u30de\u3092\u5909\u66f4\u3067\u304d\u307e\u3059\u3002"
+	},
+	{
+		"key": "MID_SHOP_PREMIUM_CONFIRM_V6_7",
+		"value": "$a\u30aa\u30fc\u30d6\u00d7$a0\u3092\u6d88\u8cbb\u3057\u3066\u3001\\n\u98db\u7a7a\u57ce\u306e\u4f11\u65e5\u30d1\u30b9\u30921\u3064\u8cfc\u5165\u3057\u307e\u3059\u304b\uff1f"
+	},
+	{
+		"key": "MID_SKYCASTLE_EDIT_HELP_DIALOG_10_v0607",
+		"value": "\u25c6\u7d44\u5408\u7ba1\u7406\u25c6\\n\u30fb\u53ef\u4fdd\u5b58\u591a\u500b\u5730\u5716\\n\u3000\u53ca\u9632\u885b\u90e8\u968a\u7684\u7d44\u5408\u3002\\n\u30fb\u8a2d\u5b9a\u70ba\u5b63\u7bc0\u5c08\u7528\u7684\u7d44\u5408\uff0c\\n\u3000\u5c07\u6703\u5728\u8a72\u5b63\u7bc0\u81ea\u52d5\u5207\u63db\u3002"
+	},
+	{
+		"key": "MID_SKYCASTLE_EDIT_HELP_DIALOG_12_v0607",
+		"value": "\u25c6\u6a21\u64ec\u6230\u5b63\u7bc0\u8a2d\u5b9a\u25c6\\n\u9032\u884c\u6a21\u64ec\u6230\u8207\u597d\u53cb\u6a21\u64ec\u6230\u6642\\n\u53ef\u5207\u63db\u9069\u7528\u7684\u5b63\u7bc0\u3002"
+	},
+	{
+		"key": "MID_SUMMON_PURCHASE_CONFIRM_CONTINUE_V6_7",
+		"value": "$a\u30aa\u30fc\u30d6\u00d7$a0\u3092\u6d88\u8cbb\u3057\u3066\u3001\u3082\u3046\uff11\u56de\u53ec\u559a\u3057\u307e\u3059\u304b\uff1f"
+	},
+	{
+		"key": "MID_SUMMON_PURCHASE_CONFIRM_CONTINUE_REMAIN_DAYS",
+		"value": "$a\uff08\u7d42\u4e86\u307e\u3067\u3042\u3068$a0\u65e5\uff09"
+	},
+	{
+		"key": "MID_SUMMON_PURCHASE_CONFIRM_CONTINUE_REMAIN_HOURS",
+		"value": "$a\uff08\u7d42\u4e86\u307e\u3067\u3042\u3068$a0\u6642\u9593\uff09"
+	},
+	{
+		"key": "MID_SUMMON_PURCHASE_CONFIRM_CONTINUE_REMAIN_MINUTES",
+		"value": "$a\uff08\u7d42\u4e86\u307e\u3067\u3042\u3068$a0\u5206\uff09"
+	},
+	{
+		"key": "MID_SUMMON_PURCHASE_CONFIRM_CONTINUE_SCTA_NOTE",
+		"value": "\u5bfe\u4fa1\u306e\u652f\u6255\u6642\u671f\u30fb\u65b9\u6cd5\u3001\u5f15\u6e21\u6642\u671f\u3001\u89e3\u9664\u30fb\u8fd4\u91d1\u306b\u3064\u3044\u3066\u306f\u4ee5\u4e0b\u3092\u3054\u78ba\u8a8d\u304f\u3060\u3055\u3044\u3002"
+	},
+	{
+		"key": "MID_SUMMON_PURCHASE_CONFIRM_V6_7",
+		"value": "\u4ee5\u4e0b\u306e\u30a2\u30a4\u30c6\u30e0\u3092\u6d88\u8cbb\u3057\u3066\u3001\\n\u53ec\u559a\u3092\uff11\u56de\u884c\u3044\u307e\u3059\u304b\uff1f"
+	},
+	{
+		"key": "MID_SUMMON_PURCHASE_CONFIRM_REMAIN_DAYS",
+		"value": "$a\u7d42\u4e86\u307e\u3067\u3042\u3068$a0\u65e5"
+	},
+	{
+		"key": "MID_SUMMON_PURCHASE_CONFIRM_REMAIN_HOURS",
+		"value": "$a\u7d42\u4e86\u307e\u3067\u3042\u3068$a0\u6642\u9593"
+	},
+	{
+		"key": "MID_SUMMON_PURCHASE_CONFIRM_REMAIN_MINUTES",
+		"value": "$a\u7d42\u4e86\u307e\u3067\u3042\u3068$a0\u5206"
+	},
+	{
+		"key": "MID_ITEM_INFO_BACKGROUND",
+		"value": "\u8a73\u7d30\u72c0\u614b\u756b\u9762\u80cc\u666f"
+	},
+	{
+		"key": "MID_ITEM_GAIN_INFO_BACKGROUND",
+		"value": "$a\u7372\u5f97$a0\uff01"
+	},
+	{
+		"key": "MID_ITEM_PRESENT_INFO_BACKGROUND",
+		"value": "$a\u5df2\u5c07$a0\\n\u9001\u81f3\u79ae\u7269\u76d2\u5167\u3002"
+	},
+	{
+		"key": "MID_ITEM_DIRECT_GAIN_INFO_BACKGROUND",
+		"value": "$a\u7372\u5f97$a0\uff01\\n\u203b\u5c07\u76f4\u63a5\u53d6\u5f97\u5831\u916c\u3002"
+	},
+	{
+		"key": "MID_INFO_BACKGROUND_EDIT_HELP",
+		"value": "\u53ef\u8b8a\u66f4\u80cc\u666f\u3002"
+	},
+	{
+		"key": "MID_INFO_BACKGROUND_EDIT_CHANGE_SELF",
+		"value": "\u8b8a\u66f4\u9019\u500b\u82f1\u96c4\u7684\u80cc\u666f"
+	},
+	{
+		"key": "MID_INFO_BACKGROUND_EDIT_CHANGE_SAME",
+		"value": "\u8b8a\u66f4\u76f8\u540c\u80cc\u666f\u7684\u82f1\u96c4\u80cc\u666f"
+	},
+	{
+		"key": "MID_INFO_BACKGROUND_EDIT_CHANGE_ALL",
+		"value": "\u8b8a\u66f4\u5168\u90e8\u82f1\u96c4\u7684\u80cc\u666f"
+	},
+	{
+		"key": "MID_INFO_BACKGROUND_EDIT_CHANGE_SAME_CONFIRM",
+		"value": "$a\u8981\u8b8a\u66f4$a0\u540d\\n\u76f8\u540c\u80cc\u666f\u7684\u82f1\u96c4\u80cc\u666f\u55ce\uff1f"
+	},
+	{
+		"key": "MID_INFO_BACKGROUND_EDIT_CHANGE_ALL_CONFIRM",
+		"value": "\u8981\u8b8a\u66f4\u5168\u90e8\u82f1\u96c4\u7684\u80cc\u666f\u55ce\uff1f"
+	},
+	{
+		"key": "MID_INFO_BACKGROUND_EDIT_CHANGE_DECIDE",
+		"value": "\u8b8a\u66f4\u80cc\u666f"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202207",
+		"value": "\u8207\u7d55\u4e0d\u9000\u8b93\u7684\u610f\u5fd7\u540c\u5728"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202207_1",
+		"value": "\uff15\u5206\u9418\u8907\u7fd2\u7b2c\uff13\u90e8\u7684\u5287\u60c5"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202208",
+		"value": "\u300c\u5357\u65b9\u4e4b\u8a18\u300d"
+	},
+	{
+		"key": "MID_WIN13_Hole_Title",
+		"value": "\u6d88\u5931\u7684\u642d\u6a94"
+	},
+	{
+		"key": "MID_WIN13_Hole_Common",
+		"value": "\u627e\u5c0b\u5ffd\u7136\u4e0d\u898b\u8e64\u5f71\u7684\u642d\u6a94\u3002\\n\u2026\u2026\u773c\u524d\u7684\u6d1e\u88e1\u50b3\u4f86\u8072\u97f3\uff01\u5f97\u53bb\u5e6b\u5fd9\u624d\u884c\uff01"
+	},
+	{
+		"key": "MID_WIN13_Hole_3",
+		"value": "\u7adf\u7136\u9023\u81ea\u5df1\u4e5f\u88ab\u56f0\u5728\u6d1e\u88e1\u4e86\uff01\\n\u5169\u4eba\u76f8\u8996\u800c\u7b11\uff0c\u6709\u4e86\u5f7c\u6b64\u7e3d\u662f\u6703\u6709\u8fa6\u6cd5\u7684\uff01"
+	},
+	{
+		"key": "MID_WIN13_Hole_4",
+		"value": "\u536f\u8db3\u5e79\u52c1\u3001\u62da\u76e1\u5168\u529b\u5c07\u642d\u6a94\u62c9\u4e86\u4e0a\u4f86\uff01\\n\u770b\u5230\u642d\u6a94\u6c92\u4e8b\u5f8c\u611f\u5230\u5b89\u5fc3\u4e26\u5145\u6eff\u559c\u6085\uff01"
+	},
+	{
+		"key": "MID_WIN13_Hole_5",
+		"value": "\u642d\u6a94\u8df3\u51fa\u4f86\u4e86\uff01\u624b\u4e0a\u62ff\u7684\u662f\u2026\u2026\u5bf6\u77f3\uff01\uff1f\\n\u771f\u4f69\u670d\u5c31\u7b97\u5931\u6557\u4e5f\u8981\u5f9e\u4e2d\u5f97\u5230\u6536\u7a6b\u7684\u642d\u6a94\uff01"
+	},
+	{
+		"key": "MID_SCF_\u590f\u306e\u53ec\u559a\u77f3",
+		"value": "\u590f\u65e5\u53ec\u559a\u77f3"
+	},
+	{
+		"key": "MID_SCF_\u590f\u306e\u53ec\u559a\u77f3_HELP",
+		"value": "\u98db\u7a7a\u57ce\u7279\u5225\u6d3b\u52d5\u7684\u7269\u54c1\\n\u6563\u767c\u8457\u590f\u65e5\u6c1b\u570d\uff0c\u80fd\u5920\u53ec\u559a\u82f1\u96c4\u7684\u53ec\u559a\u77f3\uff0c\\n\u4f46\u4ed4\u7d30\u4e00\u770b\u662f\u9846\u897f\u74dc\u2026\u2026\u770b\u4f86\u662f\u53ec\u559a\u4e0d\u4e86\u4e86"
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202208",
+		"value": "\u8a18\u5ff5\u7528\u98db\u7a7a\u77f3"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202208",
+		"value": "\u7528\u65bc\u300c\u98db\u7a7a\u57ce\u300d\\n\u53ef\u4ee5\u88fd\u9020\u671f\u9593\u9650\u5b9a\u7684\u8a2d\u5099\\n\u671f\u9593\u4e00\u904e\uff0c\u5c07\u6703\u5168\u6578\u6d88\u5931\u3002"
+	},
+	{
+		"key": "MID_VOTE_TERM_202207_01",
+		"value": "\u8de8\u8d8a\u570b\u5883\u7684\u6232\u6c34\u5927\u6230"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_08_0608",
+		"value": "\u25c6\u66ab\u6642\u64a4\u9000\u25c6\\n\u9023\u6230\u4e2d\u50c5\u9650\u5169\u6b21\uff0c\u6557\u5317\u6642\\n\u53ef\u4fdd\u7559\u76ee\u524d\u7684\u9023\u52dd\u6578\u53ca\u5f97\u5206\\n\u56de\u5230\u9b25\u6280\u5834\u9996\u9801\u3002\\n\\n\u4f46\u82e5\u662f\u7d50\u675f\u76ee\u524d\u7684\u6311\u6230\\n\u4e26\u91cd\u65b0\u9032\u884c\u6311\u6230\uff0c\\n\u53ef\u66ab\u6642\u64a4\u9000\u7684\u6b21\u6578\u5c07\u6703\u91cd\u7f6e\u3002"
+	},
+	{
+		"key": "MID_HOME_CONNECT_BONDS_MISSION_NOTIFICATION",
+		"value": "\u53ef\u7372\u5f97\u6bcf\u65e5\u9650\u5b9a\uff11\u6b21\u904a\u73a9\u5831\u916c\u3002\\n\u8981\u79fb\u52d5\u81f3\u76f8\u9023\u7684\u7f88\u7d46\u55ce\uff1f"
+	},
+	{
+		"key": "MID_HOME_CONNECT_BONDS_NAVIGATION_JUMP",
+		"value": "\u524d\u5f80\u76f8\u9023\u7684\u7f88\u7d46"
+	},
+	{
+		"key": "MID_CONFIG_HOME_NOTIFICATION_CONNECT_BONDS",
+		"value": "\u76f8\u9023\u7684\u7f88\u7d46\\n\u57ce\u5821\u901a\u77e5"
+	},
+	{
+		"key": "MID_ITEM_CONNECT_BONDS_POTION",
+		"value": "\u7f88\u7d46\u7684\u71c8\u706b"
+	},
+	{
+		"key": "MID_ITEM_HELP_CONNECT_BONDS_POTION",
+		"value": "\u7528\u65bc\u300c\u76f8\u9023\u7684\u7f88\u7d46\u300d\\n\u76f8\u9023\u7684\u7f88\u7d46\u7d50\u675f\u5f8c\u5c07\u5168\u90e8\u6d88\u5931"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_TITLE",
+		"value": "\u76f8\u9023\u7684\u7f88\u7d46"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAMINA",
+		"value": "\u7f88\u7d46\u9ad4\u529b"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAMINA_POTION_NOTNECESSARY",
+		"value": "\u53ea\u6709\u5728\u7f88\u7d46\u9ad4\u529b\u70ba0\u6642\\n\u624d\u53ef\u56de\u5fa9\u3002"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAMINA_RECOVER_INSUFFICIENT",
+		"value": "\u7f88\u7d46\u9ad4\u529b\u4e0d\u8db3\u3002\\n\u662f\u5426\u6d88\u8cbb\u7f88\u7d46\u7684\u71c8\u706b\u00d71\\n\u56de\u5fa9\u7f88\u7d46\u9ad4\u529b\uff1f"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAMINA_RECOVER_CONFIRM",
+		"value": "\u662f\u5426\u6d88\u8cbb\u7f88\u7d46\u7684\u71c8\u706b\u00d71\\n\u56de\u5fa9\u7f88\u7d46\u9ad4\u529b\uff1f"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAMINA_RECOVER",
+		"value": "\u56de\u5fa9"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAMINA_RECOVER_DONE",
+		"value": "\u5df2\u6d88\u8cbb\u7f88\u7d46\u7684\u71c8\u706b\u00d71\\n\u56de\u5fa9\u7f88\u7d46\u9ad4\u529b\u3002"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_0",
+		"value": "\u8d77\u59cb\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_1",
+		"value": "\u7b2c\uff11\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_2",
+		"value": "\u7b2c\uff12\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_3",
+		"value": "\u7b2c\uff13\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_4",
+		"value": "\u7b2c\uff14\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_5",
+		"value": "\u7b2c\uff15\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_6",
+		"value": "\u7b2c\uff16\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_7",
+		"value": "\u7b2c\uff17\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_8",
+		"value": "\u7b2c\uff18\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_9",
+		"value": "\u7b2c\uff19\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_10",
+		"value": "\u7b2c\uff11\uff10\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_11",
+		"value": "\u7b2c\uff11\uff11\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_12",
+		"value": "\u7b2c\uff11\uff12\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_13",
+		"value": "\u7b2c\uff11\uff13\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_14",
+		"value": "\u7b2c\uff11\uff14\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_15",
+		"value": "\u7b2c\uff11\uff15\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_16",
+		"value": "\u7b2c\uff11\uff16\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_17",
+		"value": "\u7b2c\uff11\uff17\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_18",
+		"value": "\u7b2c\uff11\uff18\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_19",
+		"value": "\u7b2c\uff11\uff19\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_20",
+		"value": "\u7b2c\uff12\uff10\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_21",
+		"value": "\u7b2c\uff12\uff11\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_22",
+		"value": "\u7b2c\uff12\uff12\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_23",
+		"value": "\u7b2c\uff12\uff13\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_24",
+		"value": "\u7b2c\uff12\uff14\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_25",
+		"value": "\u7b2c\uff12\uff15\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_REMAINING_DAYS",
+		"value": "$a\u8ddd\u96e2\u7d50\u675f\u9084\u6709$a0\u5929"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_REMAINING_HOURS",
+		"value": "$a\u8ddd\u96e2\u7d50\u675f\u9084\u6709$a0\u5c0f\u6642"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_REMAINING_MINUTES",
+		"value": "$a\u8ddd\u96e2\u7d50\u675f\u9084\u6709$a0\u5206\u9418"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_CLOSED",
+		"value": "\u76ee\u524d\u672a\u8209\u8fa6\u3002"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_EVENT_END",
+		"value": "\u672c\u6b21\u6d3b\u52d5\u5df2\u7d50\u675f\u3002"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_SELECT",
+		"value": "\u9078\u64c7\u95dc\u5361"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_TERM_EXPIRED",
+		"value": "\u76ee\u524d\u672a\u8209\u8fa6\u3002"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_GAINED_REWARDTYPE_MISSION",
+		"value": "\u6bcf\u65e5\u9650\u5b9a\uff11\u6b21\u904a\u73a9\u5831\u916c"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_DAILY_BONUS_INFO",
+		"value": "\u6bcf\u65e5\u9650\u5b9a\uff11\u6b21\uff0c\u9996\u6b21\u904a\u73a9\u6642\\n\u53ef\u7372\u5f97\u5831\u916c\u3002\uff08\u6700\u591a\u9818\u53d6\uff17\u6b21\uff09"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_ENTRANCE_HELP",
+		"value": "\u53ec\u559a\u51fa\u7570\u754c\u53ec\u559a\u5e2b\u7684\u82f1\u96c4\uff0c\\n\u4ee5\u76f8\u9023\u7684\u7f88\u7d46\u4e4b\u529b\u5c07\u4e16\u754c\u5f9e\u9ed1\u6697\u4e2d\u89e3\u653e\uff01"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_REWARD",
+		"value": "\u6aa2\u8996\u5831\u916c"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_SCOUT_HELP",
+		"value": "\u8acb\u9078\u64c7\u8981\u66ff\u63db\u7684\u82f1\u96c4\u3002"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_SCOUT_NO_ACTION",
+		"value": "\u4e0d\u66ff\u63db"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_SCOUT_SELF",
+		"value": "\u81ea\u5df1"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_SCOUT_FRIEND",
+		"value": "\u597d\u53cb"
+	},
+	{
+		"key": "MID_MAP_PAIR_SKILL_LEVEL_LIMIT",
+		"value": "$a\u5728\u672c\u6d3b\u52d5\u4e2d\u9023\u7ffc\u6216\u96d9\u754c\u6280\u80fd\\n\u50c5\u53ef\u5728\u7b49\u7d1a$a0\u4ee5\u4e0a\u6642\u4f7f\u7528\u3002"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_HELP_DIALOG_00",
+		"value": "\u5176\u4ed6\u73a9\u5bb6\u7684\u82f1\u96c4\u6703\u7d66\u4e88\u5e6b\u52a9\uff01"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_HELP_DIALOG_01",
+		"value": "\u25c6\u76f8\u9023\u7684\u7f88\u7d46\u25c6\\n\u89e3\u653e\u88ab\u5c01\u9589\u4e4b\u795e\u6069\u5e03\u62c9\\n\u5c01\u9396\u7684\u7570\u754c\u5427\u3002\\n\\n\u8207\u7570\u754c\u82f1\u96c4\u7684\u7f88\u7d46\uff0c\\n\u53ef\u8b93\u6230\u5c40\u66f4\u5360\u512a\u52e2\u3002"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_HELP_DIALOG_02",
+		"value": "\u25c6\u51fa\u64ca\u25c6\\n\u5c07\u6d88\u8017\u7f88\u7d46\u9ad4\u529b\u3002\\n\\n\u25c6\u7f88\u7d46\u7684\u71c8\u706b\u25c6\\n\u6d88\u8017\u6b64\u9053\u5177\u5f8c\uff0c\\n\u5c07\u6703\u6062\u5fa9\u5168\u90e8\u7f88\u7d46\u9ad4\u529b\u3002"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_HELP_DIALOG_03",
+		"value": "\u25c6\u958b\u795e\u4e9e\u65af\u514b\u7684\u9b54\u6cd5\u9663\u25c6\\n\u53ea\u8981\u79fb\u52d5\u5230\u5730\u5716\u4e0a\\n\u300c\u4e9e\u65af\u514b\u9b54\u6cd5\u9663\u300d\u7684\u683c\u5b50\\n\u5c31\u80fd\u548c\u7570\u754c\u82f1\u96c4\u76f8\u9047\u3002\\n\\n\u53ef\u5f9e\u9078\u9805\u4e2d\u9078\u64c7\u5176\u4e2d\u4e00\u4eba\\n\u8207\u6240\u9078\u7684\u82f1\u96c4\u66ff\u63db\u4e26\u7e7c\u7e8c\u6230\u9b25\u3002\\n\u66ff\u63db\u5f8c\u53ef\u7acb\u5373\u884c\u52d5\u3002"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_HELP_DIALOG_04",
+		"value": "\u25c6\u5176\u4ed6\u25c6\\n\u30fb\u7121\u6cd5\u7372\u5f97\u7d93\u9a57\u503c\u548c\uff33\uff30\u3002"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202208",
+		"value": "\u751f\u8207\u6b7b\u7684\u516c\u4e3b\u3000\uff12"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DUPLICATION_ANDROID",
+		"value": "\u30fb\u5118\u7ba1\u5728\u81ea\u52d5\u66f4\u65b0\u6642\uff0c\\n\u3000Google\u5e33\u865f\u4ed8\u6b3e\u5931\u6557\u7684\u72c0\u6cc1\u4e0b\uff0c\\n\u3000\u8a2d\u5b9a\u5176\u4ed6Google\u5e33\u865f\u52a0\u5165FEH PASS\uff0c\\n\u3000\u4e5f\u6709\u53ef\u80fd\u5c0e\u81f4\u91cd\u8907\u52a0\u5165\uff0c\u656c\u8acb\u591a\u52a0\u6ce8\u610f\u3002"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202208",
+		"value": "\u7de8\u7e54\u672a\u4f86\u7684\u9748\u9b42\u5011"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_1",
+		"value": "\u602a\u76dc\u805a\u96c6\u7684\u9152\u9928"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_1",
+		"value": "$a\u9084\u6709$a0\uff0c\u64ca\u6557\u6575\u4eba\u6642\u53ef\u7372\u5f97\uff15\u500d\uff33\uff30\uff01\u6b64\u5f8c\u4ea6\u53ef\u6c38\u4e45\\n\u7372\u5f97\uff12\u500d\uff01\uff08\u82e5\u6709\u591a\u500b\u76f8\u540c\u7cfb\u7d71\u57ce\u5821\u6548\u679c\uff0c\u50c5\u53d6\u6700\u5927\u503c\uff09"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202209",
+		"value": "\u300c\u897f\u65b9\u4e4b\u8a18\u300d"
+	},
+	{
+		"key": "MID_SUM01_SandArt_Title",
+		"value": "\u56de\u6b78\u7ae5\u5fc3"
+	},
+	{
+		"key": "MID_SUM01_SandArt_Common",
+		"value": "\u5728\u7121\u908a\u7121\u969b\u7684\u6c99\u7058\u4e0a\uff0c\\n\u5169\u4eba\u4e0d\u7981\u5fd8\u6211\u5730\u73a9\u8457\u6c99\u3002"
+	},
+	{
+		"key": "MID_SUM01_SandArt_3",
+		"value": "\u57ce\u5821\u5b8c\u6210\uff01\u2026\u2026\u9019\u6642\u537b\u51fa\u73fe\u4e86\u8783\u87f9\uff01\\n\u57ce\u5821\u5012\u4e86\uff01\u8352\u8b2c\u7684\u73fe\u5be6\u8b93\u4eba\u611f\u5230\u7121\u5948\uff01"
+	},
+	{
+		"key": "MID_SUM01_SandArt_4",
+		"value": "\u6210\u529f\u5806\u4e86\u4e00\u5ea7\u7f8e\u9e97\u7684\u57ce\u5821\uff01\\n\u5169\u4eba\u5c0d\u6210\u54c1\u611f\u5230\u975e\u5e38\u6eff\u610f\uff01"
+	},
+	{
+		"key": "MID_SUM01_SandArt_5",
+		"value": "\u9020\u578b\u985b\u8986\u5e38\u8b58\u7684\u6c99\u96d5\u8a95\u751f\uff01\\n\u5169\u4eba\u7372\u5f97\u4e86\u6975\u5927\u7684\u6210\u5c31\u611f\uff01"
+	},
+	{
+		"key": "MID_VOTE_TERM_202208",
+		"value": "\u5049\u5927\u7684\u82f1\u96c4\u6c7a\u52dd\u9326\u6a19\u8cfd"
+	},
+	{
+		"key": "MID_CONFIG_HOME_NOTIFICATION_ARENA",
+		"value": "\u9b25\u6280\u5834\\n\u57ce\u5821\u901a\u77e5"
+	},
+	{
+		"key": "MID_HOME_SKY_CASTLE_DEGRADATION",
+		"value": "\u7531\u65bc\u4e00\u822c\u5b63\u7bc0\u548c\u6df7\u6c8c\u5b63\u7bc0\u5207\u63db\uff0c\\n\u800c\u4ee4\u4e0b\u6b21\u8cfd\u5b63\u7684\u4f4d\u968e\u4f4e\u65bc\u76ee\u524d\u8cfd\u5b63\u6642\uff0c\\n\u5c07\u6703\u767c\u751f\u4e0b\u8ff0\u60c5\u6cc1\u3002"
+	},
+	{
+		"key": "MID_HOME_SKY_CASTLE_DEGRADATION_WARNING_FORT_LEVEL",
+		"value": "$a\u30fb\u5821\u58d8\u7684\u7b49\u7d1a\u5f9e$a0\u4e0b\u964d\u81f3$a1\u3002"
+	},
+	{
+		"key": "MID_HOME_SKY_CASTLE_DEGRADATION_WARNING_SLOT_COUNT",
+		"value": "$a\u30fb\u8ffd\u52a0\u6b04\u4f4d\u6578\u91cf\u5f9e$a0\u6e1b\u5c11\u81f3$a1\u3002"
+	},
+	{
+		"key": "MID_HOME_ARENA_NO_WIN_NOTIFICATION",
+		"value": "\u5728\u9b25\u6280\u5834\u8d0f\u5f97\u52dd\u5229\u53ef\u7372\u5f97\u5831\u916c\u3002\\n\u8981\u79fb\u52d5\u81f3\u9b25\u6280\u5834\uff1f"
+	},
+	{
+		"key": "MID_HOME_ARENA_NAVIGATION_JUMP",
+		"value": "\u524d\u5f80\u9b25\u6280\u5834"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202209R",
+		"value": "\u5fa9\u523b\u30fb\u548c\u7406\u60f3\u4e00\u8d77\u5954\u99b3\u5427"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202209",
+		"value": "\u751f\u8207\u6b7b\u7684\u516c\u4e3b\u3000\uff13"
+	},
+	{
+		"key": "MID_SKYCASTLE_AUTO_ORGANIZE_REORGANIZE_TROOP",
+		"value": "\u8b8a\u66f4\u7de8\u7d44"
+	},
+	{
+		"key": "MID_SKYCASTLE_AUTO_ORGANIZE_NOT_REORGANIZE_TROOP",
+		"value": "\u7dad\u6301\u7de8\u7d44"
+	},
+	{
+		"key": "MID_SUMMON_UNABLE_RETURN_TEXT",
+		"value": "\u7121\u6cd5\u8fd4\u56de\u524d\u4e00\u756b\u9762\uff0c\\n\u8acb\u53ec\u559a\u82f1\u96c4\u3002"
+	},
+	{
+		"key": "MID_DIABOLOS",
+		"value": "\u9b54\u5668"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_WARNING_DIABOLOS",
+		"value": "\u7121\u6cd5\u540c\u6642\u88dd\u5099\u5df2\u7e7c\u627f\u7684\\n\u9b54\u5668\u53ca\u5c08\u7528\u6280\u80fd\uff08\u90e8\u5206\u6280\u80fd\u9664\u5916\uff09\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_WARNING_INHERITED_DIABOLOS",
+		"value": "\u5df2\u7e7c\u627f\u7684\u9b54\u5668\u7121\u6cd5\u518d\u6b21\u7e7c\u627f\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_INHERIT_WARNING_DIABOLOS_PERSON",
+		"value": "\u56e0\u88ab\u7e7c\u627f\u7684\u89d2\u8272\u70ba\u9b54\u5668\u82f1\u96c4\uff0c\\n\u6545\u5c07\u7559\u4e0b\u4e0d\u6703\u6d88\u5931\uff0c\\n\u4f46\u7121\u6cd5\u518d\u6b21\u8a2d\u5b9a\u70ba\u88ab\u7e7c\u627f\u7684\u89d2\u8272\uff0c\\n\u4e5f\u7121\u6cd5\u7559\u4e0b\u79d8\u50b3\u66f8\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_INHERIT_WARNING_DIABOLOS_SKILL",
+		"value": "\u5df2\u7e7c\u627f\u7684\u9b54\u5668\u7121\u6cd5\u518d\u6b21\u7e7c\u627f\u3002\\n\\n\u7121\u6cd5\u540c\u6642\u88dd\u5099\u5df2\u7e7c\u627f\u7684\\n\u9b54\u5668\u53ca\u5c08\u7528\u6280\u80fd\uff08\u90e8\u5206\u6280\u80fd\u9664\u5916\uff09\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_WARNING_DIABOLOS",
+		"value": "\u57f9\u80b2\u53ca\u6d88\u6ec5\u7684\u9b54\u5668\u82f1\u96c4\u7686\u53ef\u9032\u884c\u300c\u7279\u6b8a\u7e7c\u627f\u300d\u3002\\n\u7a81\u7834\u5f8c\u6b21\u6578\u50c5\u5269\uff11\u6b21\uff08\u4e0d\u6703\u589e\u52a0\u81f3\uff12\u6b21\u4ee5\u4e0a\uff09\u3002"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202209_01",
+		"value": "\u300c\u5317\u65b9\u4e4b\u8a18\u300d"
+	},
+	{
+		"key": "MID_AUT03_Mushroom_Title",
+		"value": "\u63a1\u6458\u79cb\u5929\u7684\u7f8e\u5473"
+	},
+	{
+		"key": "MID_AUT03_Mushroom_Common",
+		"value": "\u70ba\u4e86\u5c0b\u6c42\u7576\u5b63\u7684\u7f8e\u5473\u63a2\u7d22\u68ee\u6797\uff01\\n\u7a76\u7adf\u6536\u7a6b\u5982\u4f55\u5462\u2026\u2026\uff1f"
+	},
+	{
+		"key": "MID_AUT03_Mushroom_3",
+		"value": "\u5169\u4eba\u96d6\u7136\u5931\u53bb\u4e86\u5982\u5bf6\u77f3\u822c\u7684\u8461\u8404\uff0c\\n\u537b\u5b78\u5230\u4e86\u4e0d\u53ef\u4ee5\u5c0f\u770b\u91ce\u9ce5\u9019\u4ef6\u4e8b\u2026\u2026\uff01"
+	},
+	{
+		"key": "MID_AUT03_Mushroom_4",
+		"value": "\u7372\u5f97\u4e86\u6210\u5806\u7684\u9999\u83c7\uff01\\n\u4eca\u665a\u8981\u958b\u9999\u83c7\u6d3e\u5c0d\uff01"
+	},
+	{
+		"key": "MID_AUT03_Mushroom_5",
+		"value": "\u7372\u5f97\u4e86\u6eff\u6eff\u7684\u79cb\u5929\u7f8e\u5473\uff01\\n\u5169\u4eba\u6253\u5f9e\u5fc3\u5e95\u611f\u8b1d\u68ee\u6797\u7684\u6069\u8cdc\uff01"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202209",
+		"value": "\u5728\u6240\u9078\u7684\u9053\u8def\u76e1\u982d"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_04",
+		"value": "\u25c6\u9b54\u5668\u82f1\u96c4\u25c6\\n\u9b54\u5668\u82f1\u96c4\u6703\u9032\u884c\u7279\u6b8a\u7e7c\u627f\uff0c\\n\u800c\u4e0d\u662f\u9032\u884c\u4e00\u822c\u7684\u7e7c\u627f\u6280\u80fd\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_05",
+		"value": "\u25c6\u7279\u6b8a\u7e7c\u627f\u25c6\\n\u8207\u7e7c\u627f\u6280\u80fd\u4e0d\u540c\uff0c\\n\u300c\u6d88\u6ec5\u300d\u65b9\u7684\u82f1\u96c4\u4e0d\u6703\u6d88\u5931\uff0c\\n\u4f46\u6b21\u6578\u50c5\u9650\uff11\u6b21\u3002\\n\\n\u9032\u884c\u7279\u6b8a\u7e7c\u627f\u7684\u9b54\u5668\u82f1\u96c4\\n\u7121\u6cd5\u8f49\u63db\u70ba\u79d8\u50b3\u66f8\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_06",
+		"value": "\u25c6\u9b54\u5668\u6280\u80fd\u25c6\\n\u30fb\u9b54\u5668\u53ef\u88ab\u7e7c\u627f\u3002\\n\u30fb\u5df2\u7e7c\u627f\u7684\u9b54\u5668\\n\u3000\u7121\u6cd5\u4ee5\u7e7c\u627f\u6280\u80fd\u518d\u6b21\u7e7c\u627f\u3002"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_07",
+		"value": "\u25c6\u88dd\u5099\u9b54\u5668\u6280\u80fd\u7684\u9650\u5236\u25c6\\n\u30fb\u9664\u539f\u672c\u6301\u6709\u8a72\u9b54\u5668\u7684\u9b54\u5668\u82f1\u96c4\u672c\u4eba\u5916\\n\u3000\u7121\u6cd5\u540c\u6642\u88dd\u5099\\n\u3000\u9b54\u5668\u53ca\u5c08\u7528\u6280\u80fd\u3002\\n\u3000\uff08\u4f46\u50c5\u300c\u6b4c\u5531\u300d\u300c\u8d77\u821e\u300d\u300c\u594f\u6a02\u300d\\n\u3000\u3000\u70ba\u5c0d\u8c61\u5916\uff09\\n\u3000\uff08\u300c\u60a0\u60a0\u6416\u66f3\u300d\u7b49\u70ba\u5c0d\u8c61\u5167\uff09"
+	},
+	{
+		"key": "MID_UNIT_INFO_BLESSING_BLOOM",
+		"value": "\u958b\u82b1\u82f1\u96c4\uff1a\u300c\u7dbb\u653e\u500b\u6027\u300d\\n\\n\u539f\u672c\u6301\u6709\u7684\u64c5\u9577\u3001\u4e0d\u64c5\u9577\u7684\u80fd\u529b\u503c\u4e4b\u5916\uff0c\\n\u53ef\u4ee5\u53e6\u5916\u8ffd\u52a0\u65b0\u7684\u300c\u958b\u82b1\u64c5\u9577\u300d\u63d0\u5347\u80fd\u529b\u503c\\n\\n\u53ea\u8981\u4f7f\u7528\u300c\u7dbb\u653e\u82b1\u857e\u300d\uff0c\\n\u958b\u82b1\u82f1\u96c4\u4ee5\u5916\u7684\u82f1\u96c4\u4e5f\u53ef\u8ffd\u52a0\u300c\u958b\u82b1\u64c5\u9577\u300d\\n\uff08\u203b\u8a73\u60c5\u8a18\u8f09\u65bc\u300c\u7dbb\u653e\u500b\u6027\u300d\u5167\u7684\u8aaa\u660e\uff09"
+	},
+	{
+		"key": "MID_UNIT_INFO_BLESSING_DIABOLOS",
+		"value": "\u9b54\u5668\u82f1\u96c4\uff1a\u4f7f\u7528\u300c\u7279\u6b8a\u7e7c\u627f\u300d\u524d\\n\\n\u300c\u7279\u6b8a\u7e7c\u627f\u300d\u8207\u7e7c\u627f\u6280\u80fd\u4e0d\u540c\uff0c\\n\u300c\u6d88\u6ec5\u300d\u65b9\u7684\u82f1\u96c4\u4e0d\u6703\u6d88\u5931\\n\u53e6\u5916\u9b54\u5668\u53ef\u88ab\u7e7c\u627f\\n\u4f46\u7279\u6b8a\u7e7c\u627f\u7684\u6b21\u6578\u50c5\u9650\uff11\u6b21\\n\uff08\u203b\u8a73\u60c5\u8a18\u8f09\u65bc\u300c\u7e7c\u627f\u6280\u80fd\u300d\u5167\u7684\u8aaa\u660e\uff09"
+	},
+	{
+		"key": "MID_UNIT_INFO_BLESSING_DIABOLOS_LOST_RIGHT_OF_SKILL_INHERIT_SOURCE",
+		"value": "\u9b54\u5668\u82f1\u96c4\uff1a\u4f7f\u7528\u300c\u7279\u6b8a\u7e7c\u627f\u300d\u5f8c\\n\\n\u300c\u7279\u6b8a\u7e7c\u627f\u300d\u8207\u7e7c\u627f\u6280\u80fd\u4e0d\u540c\uff0c\\n\u300c\u6d88\u6ec5\u300d\u65b9\u7684\u82f1\u96c4\u4e0d\u6703\u6d88\u5931\\n\u53e6\u5916\u9b54\u5668\u53ef\u88ab\u7e7c\u627f\\n\u4f46\u7279\u6b8a\u7e7c\u627f\u7684\u6b21\u6578\u50c5\u9650\uff11\u6b21\\n\uff08\u203b\u8a73\u60c5\u8a18\u8f09\u65bc\u300c\u7e7c\u627f\u6280\u80fd\u300d\u5167\u7684\u8aaa\u660e\uff09"
+	},
+	{
+		"key": "MID_VOTE_TERM_202209",
+		"value": "\u706b\u7130\u5927\u6230\uff01"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_SCOUT_LOG",
+		"value": "\u82f1\u96c4\u7d00\u9304"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_SCOUT_LOG_NONE",
+		"value": "\u7121\u7d00\u9304\u3002"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_SCOUT_LOG_SELF",
+		"value": "\u60a8\u7684\u89d2\u8272\u3002"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_26",
+		"value": "\u7b2c\uff12\uff16\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_27",
+		"value": "\u7b2c\uff12\uff17\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_28",
+		"value": "\u7b2c\uff12\uff18\u5c01\u9396\u5730\u5340"
+	},
+	{
+		"key": "MID_IDOL_TOWER_REOPEN_TITLE",
+		"value": "\u5fa9\u523b\u30fb\u5076\u50cf\u7684\u5929\u6a13"
+	},
+	{
+		"key": "MID_IDOL_TICKET_HELP_DIALOG_06",
+		"value": "\u25c6\u5076\u50cf\u9593\u7684\u7a81\u7834\u6975\u9650\u25c6\\n\u30fb\u7a81\u7834\u6975\u9650\u6642\uff0c\\n\u3000\u82e5\u6d88\u6ec5\u65b9\u53ca\u57f9\u80b2\u65b9\u7686\u70ba\u5076\u50cf\uff0c\\n\u3000\u53ef\u7834\u4f8b\u9032\u884c\u7a81\u7834\u6975\u9650\u3002"
+	},
+	{
+		"key": "MID_MAP_SKYCASTLE_CHAOS_SEASON_KILL_BY_BONUS_PERSON_NOT_ACHIEVED",
+		"value": "\u672a\u4ee5\u734e\u52f5\u89d2\u8272\u64ca\u6557"
+	},
+	{
+		"key": "MID_MAP_SKYCASTLE_CHAOS_SEASON_KILL_BY_BONUS_PERSON_ACHIEVED",
+		"value": "\u5df2\u4ee5\u734e\u52f5\u89d2\u8272\u64ca\u6557"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TIME_LIMITED_FAVE_LEVEL_BONUS_DAY",
+		"value": "$a\u9031\u672b\u9650\u5b9a\uff01\u3000\u559c\u611b\u7b49\u7d1a\u734e\u52f5\uff01\u3000\u9084\u6709$a0\u5929"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TIME_LIMITED_FAVE_LEVEL_BONUS_HOUR",
+		"value": "$a\u9031\u672b\u9650\u5b9a\uff01\u3000\u559c\u611b\u7b49\u7d1a\u734e\u52f5\uff01\u3000\u9084\u6709$a0\u5c0f\u6642"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TIME_LIMITED_FAVE_LEVEL_BONUS_MINUTE",
+		"value": "$a\u9031\u672b\u9650\u5b9a\uff01\u3000\u559c\u611b\u7b49\u7d1a\u734e\u52f5\uff01\u3000\u9084\u6709$a0\u5206\u9418"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TIME_LIMITED_ADDITIONAL_RULE_CHANGE",
+		"value": "\u8cfd\u5b63\u72c0\u6cc1\u767c\u751f\u8b8a\u5316\uff0c\\n\u5373\u5c07\u8fd4\u56de\u9996\u9801\u3002"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_18",
+		"value": "\u25c6\u9031\u672b\u9650\u5b9a\u3000\u559c\u611b\u7b49\u7d1a\u734e\u52f5\u25c6\\n\\n\u30fb\u82e5\u7372\u5f97\u7684\u5f97\u5206\u5728\uff11\u4ee5\u4e0a\uff0c\\n\u3000\u7121\u8ad6\u52dd\u6557\uff0c\u559c\u611b\u7b49\u7d1a\\n\u3000\u518d\uff0b\uff11\uff10\u3002\\n\u3000\uff08\u6bcf\u9031\u672b\uff0c\u7279\u5b9a\u671f\u9593\u9650\u5b9a\uff09"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_19",
+		"value": "\u25c6\u9031\u672b\u9650\u5b9a\u3000\u81ea\u8a02\u898f\u5247\u25c6\\n\\n\u30fb\u53ef\u9078\u64c7\\n\u3000\u300cLV.40 \u7121\u7a81\u7834\u6975\u9650\uff06\u7f88\u7d46\u8a93\u7d04\u300d\u7684\\n\u3000\u81ea\u8a02\u898f\u5247\u3002\\n\u3000\uff08\u6bcf\u9031\u672b\uff0c\u7279\u5b9a\u671f\u9593\u9650\u5b9a\uff09"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202210",
+		"value": "\u751f\u8207\u6b7b\u7684\u516c\u4e3b\u3000\uff14"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202210_1",
+		"value": "\uff15\u5206\u9418\u8907\u7fd2\u7b2c\uff13\u90e8\u7684\u5287\u60c5"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202210_2",
+		"value": "\u300cWrithe\u300d\u9b54\u5668\u8207\u6c7a\u5fc3"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_CANCEL_CONTRACT",
+		"value": "\u89e3\u7d04"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_FILTER_NAME_TITLE",
+		"value": "\u6280\u80fd\u540d\u7a31"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_FILTER_TYPE_TITLE",
+		"value": "\u6280\u80fd\u7a2e\u985e"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202210",
+		"value": "\u300c\u6771\u65b9\u4e4b\u8a18\u300d"
+	},
+	{
+		"key": "MID_SUM13_Torch_Title",
+		"value": "\u9ed1\u6697\u7684\u6700\u6df1\u8655"
+	},
+	{
+		"key": "MID_SUM13_Torch_Common",
+		"value": "\u5169\u4eba\u5728\u6f06\u9ed1\u7684\u6d1e\u7a9f\u4e2d\u5f98\u5f8a\u3002\\n\u9ede\u4eae\u706b\u70ac\u5f8c\u5728\u90a3\u88e1\u7684\u662f\u2026\u2026\uff1f"
+	},
+	{
+		"key": "MID_SUM13_Torch_3",
+		"value": "\u6d1e\u7a9f\u7adf\u7136\u662f\u8759\u8760\u7684\u5de2\u7a74\uff01\\n\u5169\u4eba\u5fcd\u4e0d\u4f4f\u5c16\u53eb\u8d77\u4f86\uff01"
+	},
+	{
+		"key": "MID_SUM13_Torch_4",
+		"value": "\u7adf\u7136\u5728\u9762\u524d\u767c\u73fe\u4e86\u5bf6\u7bb1\uff01\\n\u5169\u4eba\u5c0d\u5f7c\u6b64\u7684\u5e78\u904b\u611f\u5230\u9ad8\u8208\uff01"
+	},
+	{
+		"key": "MID_SUM13_Torch_5",
+		"value": "\u7adf\u7136\u662f\u5806\u7a4d\u5982\u5c71\u7684\u91d1\u9280\u8ca1\u5bf6\uff01\\n\u5169\u4eba\u4e92\u76f8\u7a31\u980c\u5f7c\u6b64\u7684\u5192\u96aa\u7cbe\u795e\uff01"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202210",
+		"value": "\u529b\u91cf\u7684\u8c61\u5fb5"
+	},
+	{
+		"key": "MID_VOTE_TERM_202211",
+		"value": "\u5805\u5b9a\u4e0d\u79fb\u7684\u5fe0\u8aa0"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202211",
+		"value": "\u300c\u5357\u65b9\u4e4b\u8a18\u300d"
+	},
+	{
+		"key": "MID_AUT11_Smell_Title",
+		"value": "\u809a\u5b50\u9913\u7684\u5169\u4eba"
+	},
+	{
+		"key": "MID_AUT11_Smell_Common",
+		"value": "\u767c\u73fe\u6524\u8ca9\uff01\u4f46\u9322\u5305\u7a7a\u7a7a\u7684\u2026\u2026\\n\u5169\u4eba\u8a72\u600e\u9ebc\u8fa6\u2026\u2026\uff1f"
+	},
+	{
+		"key": "MID_AUT11_Smell_3",
+		"value": "\u8c93\u88ab\u5473\u9053\u5438\u5f15\u904e\u4f86\u4e86\uff01\\n\u5169\u4eba\u96d6\u7121\u6cd5\u586b\u98fd\u809a\u5b50\uff0c\u4f46\u5fc3\u9748\u537b\u5f97\u5230\u6eff\u8db3\uff01"
+	},
+	{
+		"key": "MID_AUT11_Smell_4",
+		"value": "\u5169\u4eba\u5206\u98df\u4e86\u4e00\u76e4\u6599\u7406\uff01\\n\u5169\u4eba\u89ba\u5f97\u9019\u6bd4\u4efb\u4f55\u6599\u7406\u90fd\u7f8e\u5473\uff01"
+	},
+	{
+		"key": "MID_AUT11_Smell_5",
+		"value": "\u5f97\u5230\u4e86\u8c50\u76db\u7684\u6599\u7406\u4f5c\u70ba\u64ca\u9000\u5c71\u8cca\u7684\u8b1d\u79ae\uff01\\n\u5169\u4eba\u9ad8\u8208\u5f97\u50cf\u5c0f\u5b69\u4e00\u6a23\uff01"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202211R",
+		"value": "\u5fa9\u523b\u30fb\u4fe1\u5ff5\u5316\u70ba\u529b\u91cf"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202211",
+		"value": "\u751f\u8207\u6b7b\u7684\u516c\u4e3b\u3000\uff15"
+	},
+	{
+		"key": "MID_OCCUPATION_RECOLLECTION_TITLE_202211",
+		"value": "\u6885\u4f0a\u7b49\u4eba\u3000\uff11"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202211",
+		"value": "\u7167\u8000\u7121\u660e\u4e4b\u6697\u7684\u5149\u8292"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_2",
+		"value": "\u6536\u7a6b\u796d\u4e4b\u591c"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_2",
+		"value": "$a\u9084\u6709$a0\uff0c\u64ca\u6557\u6575\u4eba\u6642\u53ef\u7372\u5f97\uff15\u500d\uff33\uff30\uff01\u6b64\u5f8c\u4ea6\u53ef\u6c38\u4e45\\n\u7372\u5f97\uff12\u500d\uff01\uff08\u82e5\u6709\u591a\u500b\u76f8\u540c\u7cfb\u7d71\u57ce\u5821\u6548\u679c\uff0c\u50c5\u53d6\u6700\u5927\u503c\uff09"
+	},
+	{
+		"key": "MID_VOTE_TERM_202212",
+		"value": "\u5fcd\u8005\u7684\u4fee\u884c\u9053\u5834"
 	}
 ]

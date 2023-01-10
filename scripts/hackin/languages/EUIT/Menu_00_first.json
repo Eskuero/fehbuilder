@@ -8188,6 +8188,926 @@
 		"value": "Tattiche armoniose"
 	},
 	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING5_3",
+		"value": "Finale libro V"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING6",
+		"value": "Seq. iniziale libro VI"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_211201",
+		"value": "In occasione dell'arrivo del\\nlibro VI, abbiamo in serbo per te\\nun nuovo stile per il tuo castello!\\n\\nVai a dare un'occhiata!"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_211201_DIALOG",
+		"value": "Ora che hai visto lo stile\\nSigillato, vuoi usarlo per\\nil tuo castello?"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_211201_REVERT_AFTER",
+		"value": "Se cambi idea, tocca Migliora\\ncastello, poi Cambia castello e\\ninfine Sigillato."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202112",
+		"value": "Spiriti travolgenti"
+	},
+	{
+		"key": "MID_PROFILECARD_FRIEND_CODE",
+		"value": "ID"
+	},
+	{
+		"key": "MID_PROFILECARD_FRIEND_CODE_PRIVATE",
+		"value": "Privato"
+	},
+	{
+		"key": "MID_PROFILECARD_USER_NAME",
+		"value": "Nome"
+	},
+	{
+		"key": "MID_PROFILECARD_ARENA_GRADE",
+		"value": "Rango arena"
+	},
+	{
+		"key": "MID_PROFILECARD_GOLDEN_THRONE_COUNT",
+		"value": "Troni d'oro"
+	},
+	{
+		"key": "MID_PROFILECARD_HOMETOWN",
+		"value": "Patria"
+	},
+	{
+		"key": "MID_PROFILECARD_PLAYSTYLE",
+		"value": "Stile di gioco"
+	},
+	{
+		"key": "MID_PROFILECARD_FAVORITE_CHARACTERS",
+		"value": "Eroi favoriti"
+	},
+	{
+		"key": "MID_PROFILECARD_CHARACTER_COUNT",
+		"value": "Eroi totali"
+	},
+	{
+		"key": "MID_PROFILECARD_BEGIN_EDIT",
+		"value": "Mod. scheda profilo"
+	},
+	{
+		"key": "MID_PROFILECARD_DECIDE_EDIT",
+		"value": "Conferma"
+	},
+	{
+		"key": "MID_PROFILECARD_CANCEL_DIALOG_TEXT",
+		"value": "Interrompere la modifica\\ndella scheda del profilo?"
+	},
+	{
+		"key": "MID_PROFILECARD_CANCEL_DIALOG_WARNING",
+		"value": "I cambiamenti non salvati andranno\\npersi."
+	},
+	{
+		"key": "MID_PROFILECARD_CANCEL_DIALOG_DECIDE",
+		"value": "Interrompi"
+	},
+	{
+		"key": "MID_PROFILECARD_EDIT_STYLE",
+		"value": "Modifica sfondo"
+	},
+	{
+		"key": "MID_PROFILECARD_PUBLICIZE_CARD",
+		"value": "Pubblico/Privato"
+	},
+	{
+		"key": "MID_PROFILECARD_DIALOG_BUTTON_DECIDE",
+		"value": "Cambia"
+	},
+	{
+		"key": "MID_PROFILECARD_DIALOG_SELECTED",
+		"value": "In uso"
+	},
+	{
+		"key": "MID_PROFILECARD_HOMETOWN_DIALOG_TEXT",
+		"value": "Scegli una patria."
+	},
+	{
+		"key": "MID_PROFILECARD_PLAYSTYLE_DIALOG_TEXT",
+		"value": "Scegli uno stile di gioco."
+	},
+	{
+		"key": "MID_PROFILECARD_CHARACTER_BACKGROUND_DIALOG_TEXT",
+		"value": "Scegli uno sfondo."
+	},
+	{
+		"key": "MID_PROFILECARD_STYLE_DIALOG_TEXT",
+		"value": "Cambia stile"
+	},
+	{
+		"key": "MID_PROFILECARD_STYLE_DIALOG_CARD_STYLE",
+		"value": "Stile scheda"
+	},
+	{
+		"key": "MID_PROFILECARD_STYLE_DIALOG_FRAME_COLOR",
+		"value": "Colore cornice"
+	},
+	{
+		"key": "MID_PROFILECARD_STYLE_DIALOG_CARD_COLOR",
+		"value": "Colore scheda"
+	},
+	{
+		"key": "MID_PROFILECARD_STYLE_DIALOG_BUTTON_DECIDE",
+		"value": "Conferma"
+	},
+	{
+		"key": "MID_PROFILECARD_PUBLICIZE_CARD_DIALOG_TEXT",
+		"value": "Vuoi un profilo pubblico?"
+	},
+	{
+		"key": "MID_PROFILECARD_PUBLICIZE_FRIEND_CODE_DIALOG_TEXT",
+		"value": "Vuoi un ID pubblico?"
+	},
+	{
+		"key": "MID_PROFILECARD_PUBLIC",
+		"value": "S\u00ec, pubblico"
+	},
+	{
+		"key": "MID_PROFILECARD_PRIVATE",
+		"value": "No, privato"
+	},
+	{
+		"key": "MID_PROFILECARD_DIALOG_FRIEND_CARD_PRIVATE",
+		"value": "$aIl profilo di $a0\\n\u00e8 privato."
+	},
+	{
+		"key": "MID_PROFILECARD_NOTICE_PUBLIC",
+		"value": "Il tuo profilo \u00e8 pubblico."
+	},
+	{
+		"key": "MID_PROFILECARD_NOTICE_PRIVATE",
+		"value": "Il tuo profilo \u00e8 privato."
+	},
+	{
+		"key": "MID_REALTIME_PVP_WIN_RULE_0",
+		"value": "$aMax turni: $a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_WIN_RULE_1",
+		"value": "$aSopravvivi con pi\u00f9 punti! Turni: $a0"
+	},
+	{
+		"key": "MID_MAP_TURN_END_WARNING_FOR_REALTIME_PVP",
+		"value": "Muovi tutte le unit\u00e0 che vuoi\\nprima di finire il tuo turno."
+	},
+	{
+		"key": "MID_MAP_FORCE_TURN_END_CONFIRM",
+		"value": "Non puoi compiere altre azioni.\\nIl turno finir\u00e0."
+	},
+	{
+		"key": "MID_MAP_OPPONENT_SURRENDER_CONFIRM",
+		"value": "Il tuo avversario si \u00e8 arreso."
+	},
+	{
+		"key": "MID_MAP_PAIR_SKILL_ONLY_ONCE_PER_TRUN",
+		"value": "Puoi usare solo 1 abilit\u00e0 armonica\\no abilit\u00e0 Coppia per turno."
+	},
+	{
+		"key": "MID_MAP_REALTIME_PVP_TELOP_PAIR_SKILL_PAIR",
+		"value": "$a$a0 ha usato\\nun'abilit\u00e0 Coppia!"
+	},
+	{
+		"key": "MID_MAP_REALTIME_PVP_TELOP_PAIR_SKILL_TWIN",
+		"value": "$a$a0 ha usato\\nun'abilit\u00e0 armonica!"
+	},
+	{
+		"key": "MID_MAP_REALTIME_PVP_TELOP_TURN_TITLE",
+		"value": "Turno"
+	},
+	{
+		"key": "MID_MAP_REALTIME_PVP_TELOP_TURN",
+		"value": "$aInizia $a0."
+	},
+	{
+		"key": "MID_MAP_REALTIME_PVP_TELOP_PHASE",
+		"value": "$aTocca a $a0."
+	},
+	{
+		"key": "MID_MAP_REPLAY_END_DRAW_CONFIRM",
+		"value": "Lo scontro \u00e8 finito in pareggio."
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ORGANIZE",
+		"value": "Squadre Duelli"
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ORGANIZE_CAPTAIN_SKILL_HELP",
+		"value": "Scegli un'abilit\u00e0 Comando da attivare."
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ORGANIZE_CAPTAIN_SKILL_CANCEL_CONFIRM",
+		"value": "Vuoi annullare i cambi?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ORGANIZE_CAPTAIN_SKILL_WARNING",
+		"value": "I cambi non verranno effettuati."
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ORGANIZE_CAPTAIN_SKILL_CANCEL_DECIDE",
+		"value": "Annulla modifiche"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TITLE_0",
+		"value": "Duelli Evocat."
+	},
+	{
+		"key": "MID_REALTIME_PVP_TITLE_0_DESCRIPTION",
+		"value": "Lotta in tempo reale. In Scontri di\\nfavore, il livello favore sale e puoi\\nottenere premi, se vinci o se perdi."
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_MAKE_TITLE_0_0",
+		"value": "Scontri di favore"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_MAKE_TITLE_0_1",
+		"value": "Duello libero"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MAP_TITLE_0_0",
+		"value": "Scontri di favore"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MAP_TITLE_0_1",
+		"value": "Duello libero"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MAP_TITLE_0_2",
+		"value": "Duello di prova"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GAINED_REWARDTYPE_FAVE_LEVEL_0",
+		"value": "$aLivello favore: $a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_FAVE_LEVEL",
+		"value": "Liv favore"
+	},
+	{
+		"key": "MID_REALTIME_PVP_WIN_COUNT",
+		"value": "Vittorie"
+	},
+	{
+		"key": "MID_REALTIME_PVP_REMAINING_CURRENT_MAP_DAY",
+		"value": "$aGiorni restanti per la mappa: $a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_REMAINING_CURRENT_MAP_HOUR",
+		"value": "$aOre restanti per la mappa: $a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_REMAINING_CURRENT_MAP_MINUTE",
+		"value": "$aMinuti restanti per la mappa: $a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_REWARD",
+		"value": "Ricompense"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_HISTORY",
+		"value": "Archivio"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_HISTORY_FREE",
+		"value": "Archivio liberi"
+	},
+	{
+		"key": "MID_REALTIME_PVP_FAVE_LEVEL_LIST",
+		"value": "Eroi favoriti"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TERM_EXPIRED",
+		"value": "Duelli non disponibili."
+	},
+	{
+		"key": "MID_REALTIME_PVP_DIALOG_END_OF_SEASON",
+		"value": "La stagione \u00e8 terminata e quindi\\ni risultati non verranno calcolati."
+	},
+	{
+		"key": "MID_REALTIME_PVP_CLOSED",
+		"value": "Duelli non disponibili."
+	},
+	{
+		"key": "MID_REALTIME_PVP_AGGREGATING",
+		"value": "Calcolo risultati..."
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_MAKE_WAIT",
+		"value": "Ricerca avversario..."
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_MAKE_WAIT_PASSWARD",
+		"value": "$aPassword: $a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_MAKE_ELAPSE_LEFT",
+		"value": "Tempo trascorso:"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_MAKE_ELAPSE_RIGHT",
+		"value": "$a$a0 s"
+	},
+	{
+		"key": "MID_REALTIME_PVP_OPPONENT_WAIT",
+		"value": "In attesa dell'avversario"
+	},
+	{
+		"key": "MID_REALTIME_PVP_LIMIT_TIME",
+		"value": "Tempo:"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RESERVE_TIME",
+		"value": "pi\u00f9"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TROOP_RESTRICTION_EDIT",
+		"value": "Opzioni abbinamento"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TROOP_RESTRICTION_EDIT_HELP",
+		"value": "Imposta restrizioni unit\u00e0."
+	},
+	{
+		"key": "MID_REALTIME_PVP_TROOP_RESTRICTION_NONE",
+		"value": "Nessuna restrizione"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TROOP_RESTRICTION_VERSION3",
+		"value": "Libro III e precedenti"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_EDIT",
+		"value": "Regole personali"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_USE_SELF",
+		"value": "Le tue regole"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_USE_OPPONENT",
+		"value": "Regole avversario"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_INFO_DISABLE",
+		"value": "Regole personali non disponibili."
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_INFO_USE_OPPONENT",
+		"value": "Verranno usate le regole avversario."
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_EDIT_HELP",
+		"value": "Scegli le regole."
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_RANDOM",
+		"value": "Auto"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_OFF",
+		"value": "S\u00ec"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_ON",
+		"value": "No"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_LIMIT_TIME_TITLE",
+		"value": "Limite di tempo"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_LIMIT_TIME_VALUE",
+		"value": "$a$a0 s"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_LIMIT_TIME_NONE",
+		"value": "Nessuno"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_MAP_TITLE",
+		"value": "Mappa"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CUSTOM_RULE_CAPABILITY_FIX_TITLE",
+		"value": "Liv 40 senza sostegno"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BATTLE_START_FAVE",
+		"value": "Scontri di favore"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BATTLE_START_FREE_BATTLE",
+		"value": "Duello libero"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BATTLE_START_TRANING",
+		"value": "Duello di prova"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BATTLE_START_CONFIRM",
+		"value": "Iniziare la battaglia?"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BATTLE_START_DECIDE",
+		"value": "Combatti"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BATTLE_START_FAILED",
+		"value": "Impossibile iniziare battaglia."
+	},
+	{
+		"key": "MID_REALTIME_PVP_INVALID_CAPTAIN_SKILL_CONFIRM",
+		"value": "Non otterrai l'effetto di un'abilit\u00e0\\nComando. Vuoi continuare?"
+	},
+	{
+		"key": "MID_REALTIME_PVP_INVALID_CAPTAIN_SKILL_WARNING_NOT_SET",
+		"value": "Nessuna abilit\u00e0 Comando impostata."
+	},
+	{
+		"key": "MID_REALTIME_PVP_INVALID_CAPTAIN_SKILL_DECIDE",
+		"value": "Continua"
+	},
+	{
+		"key": "MID_REALTIME_PVP_DIRTY_LOSE_CONFIRM",
+		"value": "La battaglia precedente si \u00e8\\nconclusa in modo scorretto."
+	},
+	{
+		"key": "MID_REALTIME_PVP_DIRTY_LOSE_WARNING",
+		"value": "La battaglia conter\u00e0 come\\nuna sconfitta."
+	},
+	{
+		"key": "MID_REALTIME_PVP_BATTLE_START_FAILED_WARNING_TROOP_RESTRICTION_NONE",
+		"value": "Ogni slot della tua squadra deve\\nessere occupato da un eroe.\\n\\nGli eroi duplicati non sono\\nconsentiti.\\n\\n\u00c8 ammesso solo 1 alleato\\ncon Canto o Danza in squadra.\\n\\n\u00c8 ammesso solo 1 alleato\\ncon Aiuto in squadra."
+	},
+	{
+		"key": "MID_REALTIME_PVP_BATTLE_START_FAILED_WARNING_TROOP_RESTRICTION_VERSION3",
+		"value": "Ogni slot della tua squadra deve\\nessere occupato da un eroe.\\n\\nGli eroi dal libro IV in poi non\\nsono consentiti.\\n\\nGli eroi duplicati non sono\\nconsentiti.\\n\\n\u00c8 ammesso solo 1 alleato\\ncon Canto o Danza in squadra.\\n\\n\u00c8 ammesso solo 1 alleato\\ncon Aiuto in squadra."
+	},
+	{
+		"key": "MID_REALTIME_PVP_PASSWARD_USE",
+		"value": "Password"
+	},
+	{
+		"key": "MID_REALTIME_PVP_PASSWARD_NOT_USE",
+		"value": "Senza password"
+	},
+	{
+		"key": "MID_REALTIME_PVP_PASSWARD_PLACE_HOLDER",
+		"value": "Imposta password"
+	},
+	{
+		"key": "MID_REALTIME_PVP_PASSWARD_TEXT",
+		"value": "Inserisci una password."
+	},
+	{
+		"key": "MID_REALTIME_PVP_PASSWARD_INFO",
+		"value": "Puoi scegliere una password e\\ncondividerla con un altro giocatore\\nper giocare con quest'ultimo. Scegline\\nuna di massimo 12 caratteri. Alcuni\\nsimboli non sono validi."
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCHING_EXPIRED",
+		"value": "Nessun avversario trovato. Attendi\\nprima di provare di nuovo."
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_FAILED",
+		"value": "Impossibile iniziare battaglia.\\nProva di nuovo."
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_FAILED_CUSTOM_RULE_MERGE_FAILED",
+		"value": "A causa di alcune incongruenze\\nnelle regole non \u00e8 stato possibile\\niniziare la battaglia."
+	},
+	{
+		"key": "MID_REALTIME_PVP_OPPONENT_DISCONNECTED",
+		"value": "L'avversario si \u00e8 disconnesso."
+	},
+	{
+		"key": "MID_REALTIME_PVP_OPPONENT_RECONNECT_WAIT",
+		"value": "Connessione interrotta. Attendi\\nche venga ripristinata."
+	},
+	{
+		"key": "MID_REALTIME_PVP_OPPONENT_RECONNECT_WAIT_TIMER",
+		"value": "$aAncora $a0 s"
+	},
+	{
+		"key": "MID_LOAD_RESUME_CONFIRM_REALTIME_PVP",
+		"value": "Dati battaglia trovati. Vuoi\\nriprendere lo scontro?"
+	},
+	{
+		"key": "MID_LOAD_RESUME_DECIDE_REALTIME_PVP",
+		"value": "S\u00ec"
+	},
+	{
+		"key": "MID_LOAD_RESUME_CANCEL_REALTIME_PVP",
+		"value": "No"
+	},
+	{
+		"key": "MID_LOAD_DISCARD_CONFIRM_REALTIME_PVP",
+		"value": "Eliminare dati battaglia?"
+	},
+	{
+		"key": "MID_LOAD_DISCARD_DECIDE_REALTIME_PVP",
+		"value": "Elimina"
+	},
+	{
+		"key": "MID_LOAD_OUT_OF_TERM_CONFIRM_REALTIME_PVP",
+		"value": "Non puoi riprendere la battaglia\\nperch\u00e9 non \u00e8 pi\u00f9 disponibile. I tuoi\\ndati battaglia verranno eliminati."
+	},
+	{
+		"key": "MID_REALTIME_PVP_RECONNECT_FAILED",
+		"value": "Non puoi riprendere la battaglia\\nper sessione scaduta, connessione\\ninterrotta o altre ragioni."
+	},
+	{
+		"key": "MID_CONFIG_ANIME_REALTIME_PVP",
+		"value": "Anim. combatt.\\nDuelli Evocat."
+	},
+	{
+		"key": "MID_CONFIG_ANIME_REALTIME_PVP_ON",
+		"value": "S\u00ec"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RESULT",
+		"value": "Risultati"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RESULT_NEXT",
+		"value": "OK"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RESULT_GAIN_FAVE_LEVEL",
+		"value": "Favore ottenuto"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RESULT_WARNING_FAVE_LEVEL",
+		"value": "Il livello favore di un eroe non pu\u00f2\\naumentare nei duelli liberi e in\\nquelli di prova."
+	},
+	{
+		"key": "MID_BATTLE_PREPARATION_ORGANIZE",
+		"value": "Squadre"
+	},
+	{
+		"key": "MID_BATTLE_PREPARATION_SKILL_SET",
+		"value": "Set di abilit\u00e0"
+	},
+	{
+		"key": "MID_BATTLE_PREPARATION_PREVIEW_MAP",
+		"value": "Vedi mappa"
+	},
+	{
+		"key": "MID_BATTLE_PREPARATION_PREVIEW_MAP_HELP",
+		"value": "Scegli la mappa che vuoi vedere."
+	},
+	{
+		"key": "MID_REALTIME_PVP_REWARD_TITLE",
+		"value": "Ricompense"
+	},
+	{
+		"key": "MID_REALTIME_PVP_REWARD_FAVE_INFO",
+		"value": "Basate sul livello dell'eroe con il favore pi\u00f9 alto."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_TITLE",
+		"value": "Archivio"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_WIN",
+		"value": "Vittoria!"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_DRAW",
+		"value": "Pareggio"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_LOSE",
+		"value": "Sconfitta"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_VERSUS",
+		"value": "Contro"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_REPLAY",
+		"value": "Riproduci"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_TIME_DAYS",
+		"value": "$a$a0 giorno/i fa"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_TIME_HOUR",
+		"value": "$a$a0 ora/e fa"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_TIME_MINUTES",
+		"value": "$a$a0 minuto/i fa"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_NO_HISTORY",
+		"value": "Nessun dato disponibile."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_FILTER",
+		"value": "$aFiltro:\u00a0$a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_FILTER_ALL",
+		"value": "tutto"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_FILTER_WIN",
+		"value": "vittorie"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_FILTER_LOSE",
+		"value": "sconfitte"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_FILTER_DRAW",
+		"value": "pareggi"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_FILTER_DIALOG",
+		"value": "Filtro"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_REPLAY_DIALOG",
+		"value": "Vuoi rivedere la battaglia?"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_REPLAY_DIALOG_CONFIRM",
+		"value": "Inizia riproduzione"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RANKING_TOP",
+		"value": "Gioc. migliori"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RANKING_AROUND_ME",
+		"value": "Tua posizione"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RANKING_UNCALCULATED_TOP",
+		"value": "Calcolo posizioni in corso."
+	},
+	{
+		"key": "MID_REALTIME_PVP_RANKING_UNCALCULATED_AROUND_ME",
+		"value": "Fuori classifica."
+	},
+	{
+		"key": "MID_REALTIME_PVP_RANKING_SORT_DIALOG",
+		"value": "Scegli opzione"
+	},
+	{
+		"key": "MID_REALTIME_PVP_FAVE_LEVEL_LIST_SORT",
+		"value": "$aPer: $a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_FAVE_LEVEL_LIST_SORT_DIALOG",
+		"value": "Ordina per..."
+	},
+	{
+		"key": "MID_REALTIME_PVP_FAVE_LEVEL_INFO",
+		"value": "Seleziona un eroe per vedere la classifica."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_00",
+		"value": "Lotta in tempo reale!"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_01",
+		"value": "\u25c6Eroi favoriti\u25c6\\nScegli un eroe come capitano,\\naumenta il suo favore e combatti!\\n\\nNon importa se vinci o perdi,\\npuoi comunque aumentare\\nil livello favore e ottenere premi."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_02",
+		"value": "\u25c6Livello favore\u25c6\\n\u30fb Vittoria: ottieni 10 punti\\n\u30fb Vittoria o sconfitta:\\nIl punteggio abbattimento e\\nquello occupazione si sommano\\nal totale. Massimo 10 punti\\naggiungibili. Continua a leggere\\nper ulteriori dettagli."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_03",
+		"value": "\u25c6Condizioni per la vittoria\u25c6\\n\u30fb Sconfiggi tutti i nemici entro\\ncinque turni.\\n\u30fb Sopravvivi per cinque turni e\\nottieni il punteggio pi\u00f9 alto."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_04",
+		"value": "\u25c6Ordine di movimento\u25c6\\n\u30fb Dopo che compi un'azione,\\ntocca all'avversario.\\n\u30fb L'uso di un'abilit\u00e0 armonica o\\nCoppia conta come un'azione\\n(soltanto un uso per turno).\\n\u30fb Se le squadre non hanno pi\u00f9\\nazioni, inizia il turno seguente."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_05",
+		"value": "\u25c6Ordine di movimento 2\u25c6\\nSe ti resta un'azione, puoi usare\\nun'abilit\u00e0 armonica/Coppia anche\\nse tutti gli eroi si sono mossi.\\n(Se tutti gli eroi hanno agito e non\\nsi pu\u00f2 usare un'abilit\u00e0 armonica\\no Coppia, il turno termina anche\\nse c'\u00e8 un'azione disponibile. )"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_06",
+		"value": "\u25c6Ordine di movimento 3\u25c6\\nIl giocatore con pi\u00f9 azioni restanti\\nalla fine di un turno si muover\u00e0\\nper primo in quello seguente.\\nSe il numero delle azioni \u00e8 uguale,\\nl'ordine di movimento rester\u00e0\\ninvariato."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_07",
+		"value": "\u25c6Bonus 1 di Rgg\u25c6\\nSe un eroe con 1 di Rgg sta\\nlottando contro uno con 2 di Rgg,\\nottiene Dif/Res +7.\\nNota: abilit\u00e0 speciali con area\\nd'effetto incluse. Il bonus non si\\napplica se l'unit\u00e0 usa Aiuto."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_08",
+		"value": "\u25c6Punteggio abbattimento\u25c6\\n\u30fb Se batti un nemico: +2\\n\u30fb Se lo batti con il capitano: +1\\n\u30fb Se batti il capitano nemico: +1\\n\\nEsempio: se il tuo capitano batte\\nquello dell'avversario: 2+1+1 = 4."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_09",
+		"value": "\u25c6Punteggio occupazione\u25c6\\nAlla fine di ogni turno, se hai\\nalmeno due eroi in pi\u00f9 rispetto\\nall'avversario nella zona contesa\\nal centro della mappa, ottieni\\ndue punti."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_10",
+		"value": "\u25c6Duello libero\u25c6\\nNon influenza il livello favore.\\nPuoi impostare password e\\nregole. Combatti come preferisci."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_11",
+		"value": "\u25c6Password\u25c6\\nSe un giocatore imposta\\nuna password, verr\u00e0 abbinato\\nsolo ad avversari che usano\\nquella password."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_12",
+		"value": "\u25c6Regole personali\u25c6\\nPuoi scegliere di impostare tu\\nle regole o di lasciar fare al tuo\\navversario.\\nSe usi le tue, l'abbinamento\\navverr\u00e0 solo con giocatori che\\nhanno impostato le stesse regole\\no che lasciano fare all'avversario."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_13",
+		"value": "\u25c6Duello di prova\u25c6\\nNon influenza il livello favore.\\nPuoi impostare le regole.\\n\\nInvece di lottare contro un altro\\ngiocatore, affronterai una squadra\\ncontrollata dall'IA."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_14",
+		"value": "\u25c6Limite vittorie\u25c6\\nC'\u00e8 un limite al numero di vittorie\\nregistrabili. (Il limite potrebbe\\nessere cambiato in futuro.)"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_15",
+		"value": "\u25c6Imprese\u25c6\\nLe battaglie in Duelli Evocat. non\\ninfluenzeranno i progressi delle\\nimprese.\\n\u25c6Disconnessione\u25c6\\nDurante una partita, pu\u00f2 essere\\nconsiderata come un abbandono\\ne quindi come una sconfitta."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_16",
+		"value": "\u25c6Turni\u25c6\\nUn turno \u00e8 formato da azioni\\ncompiute da ambo i giocatori, non\\nsolo da uno. Gli effetti delle abilit\u00e0\\ncon \"Durante il primo scontro\\ndell'unit\u00e0 nella fase del giocatore\\no in quella nemica\" si attivano solo\\nuna volta, nel 1\u00ba scontro dei turni."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_17",
+		"value": "\u25c6Impostazioni\u25c6\\nLe tue solite impostazioni\\npotrebbero essere sovrascritte\\nda quelle specifiche per Duelli\\nEvocat."
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ORGANIZE_HELP_DIALOG_00",
+		"value": "\u25c6Squadre Duelli\u25c6\\nQuesta opzione ti consente di\\ncreare una squadra da usare\\nin Duelli Evocat."
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ORGANIZE_HELP_DIALOG_01",
+		"value": "\u25c6Creazione della squadra\u25c6\\n\u30fb Una squadra \u00e8 formata da\\ncinque eroi.\\n\u30fb Eroi duplicati non consentiti.\\n\u30fb \u00c8 ammesso solo 1 alleato\\ncon Canto o Danza in squadra.\\n\u30fb \u00c8 ammesso solo 1 alleato\\ncon Aiuto in squadra."
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ORGANIZE_HELP_DIALOG_02",
+		"value": "\u25c6Doni\u25c6\\nIn Duelli Evocat., gli eroi che non\\nsono leggendari n\u00e9 mitici possono\\nricevere gli effetti leggendari\\na prescindere che abbiano\\nun Dono o meno."
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ORGANIZE_HELP_DIALOG_03",
+		"value": "\u25c6Duo\u25c6\\nNon si pu\u00f2 usare Duo quando si\\ngioca a Duelli Evocat.\\n\\nGli eroi leggendari con Duo\\nriceveranno bonus ai parametri\\nsolo quando la loro stagione \u00e8\\nattiva."
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ORGANIZE_HELP_DIALOG_04",
+		"value": "\u25c6Abilit\u00e0 Comando\u25c6\\nQuando crei una squadra, puoi\\nimpostare un'abilit\u00e0 Comando.\\n\\nSe il tuo capitano viene sconfitto,\\nl'effetto dell'abilit\u00e0 Comando non\\nsar\u00e0 pi\u00f9 attivo."
+	},
+	{
+		"key": "MID_REALTIME_PVP_BLUE_PHASE",
+		"value": "FASE DEI BLU"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RED_PHASE",
+		"value": "FASE DEI ROSSI"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV65541",
+		"value": "Sigillato"
+	},
+	{
+		"key": "MID_SCF_\u30a2\u30b7\u30e5\u306e\u77f3\u50cf",
+		"value": "Statua di Ash"
+	},
+	{
+		"key": "MID_SCF_\u30a2\u30b7\u30e5\u306e\u77f3\u50cf_HELP",
+		"value": "Una statua dell'attendente di Askr, con\\nsembianze da belva divina. Emana un fascino\\nche non lascia indifferente nessuno."
+	},
+	{
+		"key": "MID_SCF_\u30a8\u30eb\u30e0\u306e\u77f3\u50cf",
+		"value": "Statua di Elm"
+	},
+	{
+		"key": "MID_SCF_\u30a8\u30eb\u30e0\u306e\u77f3\u50cf_HELP",
+		"value": "Una statua dell'attendente di Embla, con\\nsembianze da belva divina. Le ali spiegate\\ntrasmettono una sensazione di inquietudine."
+	},
+	{
+		"key": "MID_SCF_\u30a8\u30f3\u30d6\u30e9\u5e1d\u56fd\u65d7",
+		"value": "Bandiera embliana"
+	},
+	{
+		"key": "MID_SCF_\u30a8\u30f3\u30d6\u30e9\u5e1d\u56fd\u65d7_HELP",
+		"value": "La bandiera della terra natia di Veronica,\\nl'Impero Embliano."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202112",
+		"value": "Monoliti eterei invernali"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202112",
+		"value": "Si usano per costruire strutture disponibili per\\nun periodo limitato in Blitz eterei. I monoliti\\nandranno persi allo scadere di tale periodo."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SORT_PAIR",
+		"value": "Cop./Arm."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SORT_VERSION",
+		"value": "Versione"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND",
+		"value": "Tipo"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_MAJOR_VERSION",
+		"value": "Uscita"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_0",
+		"value": "Leggend."
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_1",
+		"value": "Mitico"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_2",
+		"value": "Coppia"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_3",
+		"value": "Arm."
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_AGAINER",
+		"value": "Danza"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_SET_LOAD_SELECT_TROOP_REALTIME_PVP",
+		"value": "Sq. Duelli"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202112",
+		"value": "Ghiaccio e fuoco (fine)"
+	},
+	{
+		"key": "MID_SHOP_SPECIAL_DIALOG_MISSION_TITLE",
+		"value": "Vantaggio: evocazioni 5\u2605 gratis tessera Feh"
+	},
+	{
+		"key": "MID_SHOP_SPECIAL_DIALOG_MISSION_TEXT",
+		"value": "Un'evocazione 5\u2605 gratis dopo 40 evocazioni\\nin eventi Eroi speciali, mitici e leggendari."
+	},
+	{
+		"key": "MID_SHOP_SPECIAL_BANNER",
+		"value": "Vantaggio\\nextra!"
+	},
+	{
+		"key": "MID_LCFFPPP_DIALOG",
+		"value": "$aPuoi ottenere un eroe gratis dopo\\n$a0 evocazioni. Con una tessera\\nFeh attiva, ritira il tuo eroe\\ntoccando Evocazione 5\u2605 gratis."
+	},
+	{
+		"key": "MID_LCFFPPP_INFO_DIALOG",
+		"value": "$aCon una tessera Feh attiva, puoi\\nottenere un eroe con 5\u2605 gratis e\\nuna pietra celeste dopo soltanto\\naltre $a0 evocazioni!"
+	},
+	{
+		"key": "MID_VOTE_TERM_202112_01",
+		"value": "Da discepolo a maestro"
+	},
+	{
+		"key": "MID_WIN08_Party_Title",
+		"value": "Banchetto d'inverno"
+	},
+	{
+		"key": "MID_WIN08_Party_Common",
+		"value": "Stanno preparando un banchetto!\\nPerfetto per una notte d'inverno."
+	},
+	{
+		"key": "MID_WIN08_Party_3",
+		"value": "Hanno gi\u00e0 decorato l'albero della\\nfesta! Non vedevano l'ora di finirlo."
+	},
+	{
+		"key": "MID_WIN08_Party_4",
+		"value": "Hanno preparato un banchetto da\\nleccarsi i baffi. Fa gola a tutti!"
+	},
+	{
+		"key": "MID_WIN08_Party_5",
+		"value": "La tavola \u00e8 pronta e gli ospiti sono\\narrivati. \u00c8 ora di dare il via alle danze!"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202112",
+		"value": "Archivio dell'Ovest"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202112R",
+		"value": "Forze di volont\u00e0, atto 2\u00ba"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202201",
+		"value": "Solidariet\u00e0"
+	},
+	{
 		"key": "MID_SEQUENTIAL_MAP_TERM_201712",
 		"value": "Un dono di pace"
 	},
@@ -18482,5 +19402,2601 @@
 	{
 		"key": "MID_SEQUENTIAL_MAP_TERM_201911",
 		"value": "Le sabbie del tempo"
+	},
+	{
+		"key": "MID_EXTRA_SUBMENU_2",
+		"value": "Assistenza e altro"
+	},
+	{
+		"key": "MID_EXTRA_FEEDBACK",
+		"value": "Feedback"
+	},
+	{
+		"key": "MID_OCCUPATION_RECOLLECTION_TITLE_202201",
+		"value": "Edelgard e compagnia 2"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202201",
+		"value": "Nuove fondamenta"
+	},
+	{
+		"key": "MID_PROFILECARD_REALTIME_PVP_RATE_GRADE",
+		"value": "Duelli Evocat. C - Rango"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TITLE_1",
+		"value": "Duelli Evocat. C"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_MAKE_TITLE_1_0",
+		"value": "Duelli Evocat. C"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MAP_TITLE_1_0",
+		"value": "Duelli Evocat. C"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GAINED_REWARDTYPE_GRADE_1",
+		"value": "$aDuelli Evocat. C - Rango $a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GAINED_REWARDTYPE_RANK_1",
+		"value": "$aDuelli Evocat. C - Posizione $a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RATE",
+		"value": "Gloria"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE",
+		"value": "Rango"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BONUS_PERSON",
+		"value": "Eroi bonus attuali"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BONUS_PERSON_INFO",
+		"value": "Ignora 1\u00aa sconfitta e perdi meno gloria"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BATTLE_START_FAILED_NO_NOMAL_CHALLENGE_COUNT",
+		"value": "$aLa battaglia non pu\u00f2 iniziare\\nperch\u00e9 hai gi\u00e0 $a0 sconfitte.\\nCon un alleato bonus in squadra,\\npuoi lottare fino a $a1 sconfitte."
+	},
+	{
+		"key": "MID_REALTIME_PVP_BATTLE_START_FAILED_NO_ALL_CHALLENGE_COUNT",
+		"value": "$aLa battaglia non pu\u00f2 iniziare\\nperch\u00e9 hai gi\u00e0 $a0 sconfitte."
+	},
+	{
+		"key": "MID_REALTIME_PVP_NO_RIGHT_TO_PARTICIPATE_IN_EVENT_CONFIRM",
+		"value": "Per partecipare a questi eventi,\\ndevi prima ottenere Medaglie del\\nduellante.\\n\\nPuoi ottenerle giocando a Scontri\\ndi favore nell'anfiteatro."
+	},
+	{
+		"key": "MID_REALTIME_PVP_NO_RIGHT_TO_PARTICIPATE_IN_EVENT_DECIDE",
+		"value": "Scontri di favore"
+	},
+	{
+		"key": "MID_ARENA_CHAIN_CLOSED_MODE_SELECT",
+		"value": "Non disponibile durante Duelli Evocat."
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_0",
+		"value": "Novizio C"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_1",
+		"value": "Novizio B"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_2",
+		"value": "Novizio A"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_3",
+		"value": "Bronzo C"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_4",
+		"value": "Bronzo B"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_5",
+		"value": "Bronzo A"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_6",
+		"value": "Argento C"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_7",
+		"value": "Argento B"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_8",
+		"value": "Argento A"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_9",
+		"value": "Oro C"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_10",
+		"value": "Oro B"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_11",
+		"value": "Oro A"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_12",
+		"value": "Platino D"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_13",
+		"value": "Platino C"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_14",
+		"value": "Platino B"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_15",
+		"value": "Platino A"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_16",
+		"value": "Diamante D"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_17",
+		"value": "Diamante C"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_18",
+		"value": "Diamante B"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_19",
+		"value": "Diamante A"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_20",
+		"value": "Specialista D"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_21",
+		"value": "Specialista C"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_22",
+		"value": "Specialista B"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GRADE_NAME_23",
+		"value": "Specialista A"
+	},
+	{
+		"key": "MID_REALTIME_PVP_CHALLENGE_TIMES",
+		"value": "Ancora:"
+	},
+	{
+		"key": "MID_REALTIME_PVP_REMAINING_DAY",
+		"value": "$aFinisce tra $a0 g."
+	},
+	{
+		"key": "MID_REALTIME_PVP_REMAINING_HOUR",
+		"value": "$aFinisce tra $a0 h."
+	},
+	{
+		"key": "MID_REALTIME_PVP_REMAINING_MINUTE",
+		"value": "$aFinisce tra $a0 m."
+	},
+	{
+		"key": "MID_REALTIME_PVP_RANKING",
+		"value": "Classif. attuale"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BATTLE_START_RATE",
+		"value": "Battaglia"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RESULT_GAIN_RATE",
+		"value": "Gloria ottenuta"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RESULT_NEXT_GRADE",
+		"value": "Al prossimo rango:"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RESULT_GRADE_PROMOTION",
+		"value": "$aOra sei di rango $a0."
+	},
+	{
+		"key": "MID_REALTIME_PVP_RESULT_GRADE_DEMOTION",
+		"value": "$aOra sei di rango $a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_REWARD_RANKING",
+		"value": "Posizione"
+	},
+	{
+		"key": "MID_REALTIME_PVP_SORT_DIALOG",
+		"value": "Punteggio"
+	},
+	{
+		"key": "MID_REALTIME_PVP_REWARD_SORT",
+		"value": "$aPunteggio: $a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RANKING_FRIEND",
+		"value": "Amici"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RANKING_UNCALCULATED_FRIEND",
+		"value": "Nessun amico sta partecipando."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_1_00",
+		"value": "Quante vittorie puoi inanellare?"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_1_01",
+		"value": "\u25c6Duelli Evocat. C\u25c6\\nUna battaglia di Duelli Evocat. per\\nottenere gloria. Puoi combattere\\nfino a che non accumuli tre\\nsconfitte nella stagione in corso."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_1_02",
+		"value": "\u25c6Gloria e rango\u25c6\\n\u30fb La tua gloria sale e scende in\\nbase ai risultati delle tue battaglie.\\n\u30fb Il tuo rango si basa sulla gloria.\\n\u30fb All'inizio di una nuova stagione,\\npartirai con una data quantit\u00e0 di\\ngloria in base al tuo rango."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_1_03",
+		"value": "\u25c6Ranghi protetti\u25c6\\nDopo aver raggiunto i ranghi 4, 7,\\n10 e 13, non potrai retrocedere a\\nun rango inferiore anche se perdi\\nuna battaglia."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_1_04",
+		"value": "\u25c6Massimizzare la gloria\u25c6\\n\u30fb La quantit\u00e0 di gloria persa per\\nuna sconfitta si basa sul rango.\\n\u30fb Con un punteggio alto, perdi\\nmeno gloria per una sconfitta.\\n\u30fb Con un avversario di rango pi\u00f9\\nalto, ottieni pi\u00f9 gloria se lo batti e\\nne perdi meno se ti sconfigge."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_1_05",
+		"value": "\u25c6Eroi leggendari/mitici bonus\u25c6\\nMetti in squadra uno degli eroi\\ndella stagione in corso per\\nignorare la tua prima sconfitta\\n(cos\u00ec pu\u00f2 perdere fino a 4 volte\\ninvece che 3). Inoltre, il calo di\\ngloria quando perdi \u00e8 ridotto di\\n40 ad ogni sconfitta."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_BLOOMED_WARNING",
+		"value": "Stai per usare Congeda su un eroe\\ncon un pregio asceso.\\n\\nVuoi davvero congedare questo\\neroe?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_BLOOMED_WARNING",
+		"value": "Stai per usare Eredita abilit\u00e0 su\\nun eroe con un pregio asceso.\\n\\nVuoi davvero usare Eredita abilit\u00e0\\nsu questo eroe?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMIT_BREAK_BLOOMED_WARNING",
+		"value": "Stai per fondere un eroe con\\nun pregio asceso.\\n\\nVuoi davvero fondere questo eroe?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_GENERATE_BLOOMED_WARNING",
+		"value": "Stai per usare un eroe con un pregio\\nasceso per creare un manuale di lotta.\\n\\nVuoi davvero compilare un manuale di\\nlotta usando questo eroe?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_SKILL",
+		"value": "Cerca abilit\u00e0"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_SKILL_PLACEHOLDER",
+		"value": "Inserisci nome abilit\u00e0."
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_SKILL_DIALOG",
+		"value": "Inserisci il nome dell'abilit\u00e0 o\\nla parola chiave che vuoi cercare."
+	},
+	{
+		"key": "MID_OCCUPATION_RECOLLECTION_TITLE_202201_2",
+		"value": "Edelgard e compagnia 2"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202201_2",
+		"value": "Una canzone per te"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202201",
+		"value": "Archivio del Nord"
+	},
+	{
+		"key": "MID_SUM02_Palm_Title",
+		"value": "Razioni d'acqua"
+	},
+	{
+		"key": "MID_SUM02_Palm_Common",
+		"value": "Sotto quel sole cocente, solo l'acqua\\ndi cocco pu\u00f2 spegnere la sete!"
+	},
+	{
+		"key": "MID_SUM02_Palm_3",
+		"value": "Hanno raccolto solo un cocco, quindi\\ndovranno farselo bastare e dividerlo!"
+	},
+	{
+		"key": "MID_SUM02_Palm_4",
+		"value": "Ne hanno raccolti due! Ottimo.\\nUn brindisi alla loro salute!"
+	},
+	{
+		"key": "MID_SUM02_Palm_5",
+		"value": "Wow! Berranno acqua di cocco per\\nun anno! Complimenti!"
+	},
+	{
+		"key": "MID_JOURNEYMIRROR_HELP_DIALOG_00",
+		"value": "\u25c6Osservatorio\u25c6\\nPuoi usarlo per vedere cosa fanno\\ni due eroi mentre attraversano\\ni vari mondi."
+	},
+	{
+		"key": "MID_JOURNEYMIRROR_HELP_DIALOG_01",
+		"value": "\u25c6Orario del mondo reale\u25c6\\nLe attivit\u00e0 svolte dai due eroi sono\\ninfluenzate dall'orario del mondo\\nreale. Infatti, viaggiano, mangiano\\no vanno a dormire a seconda del\\nmomento della giornata in cui ti\\ntrovi!"
+	},
+	{
+		"key": "MID_JOURNEYMIRROR_HELP_DIALOG_02",
+		"value": "\u25c6Eventi Bivio\u25c6\\nDi tanto in tanto, ai tuoi eroi si\\npresenter\u00e0 un bivio lungo la via\\ne dovranno compiere una scelta.\\nQuando ci\u00f2 accade, tocca\\nlo schermo per aiutarli a prendere\\nuna decisione."
+	},
+	{
+		"key": "MID_JOURNEYMIRROR_HELP_DIALOG_03",
+		"value": "\u25c6Premi Bivio\u25c6\\nSe la scelta fatta al bivio porter\u00e0\\nbuoni risultati, gli eroi ti saranno\\nriconoscenti e ti doneranno 1\\nframmento di memoria."
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR",
+		"value": "Osservatorio"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_CONFIRM_FIRST",
+		"value": "Qui puoi trovare l'Osservatorio.\\nUsalo per vedere come procede\\nil viaggio dei tuoi eroi!"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_CONFIRM",
+		"value": "Serviti dell'Osservatorio\\nper scoprire come procede\\nil viaggio dei tuoi eroi!"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_FAILED",
+		"value": "L'Osservatorio non \u00e8 disponibile."
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TOUCH",
+		"value": "Tocca lo schermo per scegliere\\nuna delle tre opzioni!"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_TITLE",
+		"value": "$a$a1\\n$a0"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_TELOP",
+		"value": "$a$a0,\\n$a2\\n$a1."
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_1",
+		"value": "nella natura"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_2",
+		"value": "nella natura"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_3",
+		"value": "nella natura"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_4",
+		"value": "nella foresta"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_5",
+		"value": "nella foresta"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_6",
+		"value": "nella foresta"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_7",
+		"value": "in una landa"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_8",
+		"value": "in una landa"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_9",
+		"value": "in una landa"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_10",
+		"value": "nel deserto"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_11",
+		"value": "nel deserto"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_12",
+		"value": "nel deserto"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_13",
+		"value": "tra le rovine"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_14",
+		"value": "tra le rovine"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_15",
+		"value": "tra le rovine"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_16",
+		"value": "in spiaggia"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_17",
+		"value": "in spiaggia"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_18",
+		"value": "in spiaggia"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_19",
+		"value": "nella neve"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_20",
+		"value": "nella neve"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_21",
+		"value": "nella neve"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_22",
+		"value": "ai piedi di un vulcano"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_23",
+		"value": "in una grotta"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_24",
+		"value": "in un labirinto"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_25",
+		"value": "in una fonte termale"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_26",
+		"value": "in una fonte termale"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_27",
+		"value": "all'ombra"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_BG_28",
+		"value": "all'ombra"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Meal_A",
+		"value": "Quattro chiacchiere"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Meal_B",
+		"value": "Due risate"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Meal_C",
+		"value": "Cucinare"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Meal_D",
+		"value": "Mangiare"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Move_A",
+		"value": "Avventurarsi"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Move_B",
+		"value": "Camminare"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Action_A",
+		"value": "Duello"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Action_B",
+		"value": "Discutere"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Action_C",
+		"value": "Allenarsi"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Action_D",
+		"value": "Un bel bagno"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Action_E",
+		"value": "Rilassarsi"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Construct_A",
+		"value": "Accamparsi"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Construct_B",
+		"value": "Accamparsi"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Rest_A",
+		"value": "Riposarsi"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Rest_B",
+		"value": "Riposarsi"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Rest_C",
+		"value": "Riposarsi"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_ACTION_Rest_D",
+		"value": "Riposarsi"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TITLE_Event_A",
+		"value": "A caccia di conchiglie"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TITLE_Event_B",
+		"value": "Crisi finanziaria"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TITLE_Event_C",
+		"value": "Semi tra le rovine"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TITLE_Event_D",
+		"value": "Leve interessanti"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TITLE_Event_E",
+		"value": "Questione di gusti"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_A_Common",
+		"value": "Setacciano il bagnasciuga in cerca di\\nconchiglie... Riusciranno a trovarle?"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_A_Success",
+		"value": "Hanno trovato una bella conchiglia!\\nSar\u00e0 un ricordo prezioso!"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_A_Fail",
+		"value": "Tanta spazzatura, ma nessun tesoro.\\nAlmeno hanno fatto un po' di pulizia!"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_B_Common",
+		"value": "Hanno smarrito la sacca delle monete.\\nRiusciranno a ritrovarla?"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_B_Success",
+		"value": "Hanno ritrovato tutte le monete e\\ntirato un bel respiro di sollievo!"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_B_Fail",
+		"value": "Hanno guardato ovunque, ma senza\\nfortuna. Passeranno la notte al gelo."
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_C_Common",
+		"value": "Stanno piantando dei semi tra\\nle rovine... Spunter\u00e0 qualcosa?"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_C_Success",
+		"value": "Sono sbocciati dei bei fiori! Riescono\\na stento a trattenere le lacrime."
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_C_Fail",
+		"value": "Ma che semi avranno usato?\\nAnche l'occhio vuole la sua parte..."
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_D_Common",
+		"value": "Hanno trovato tre leve nel labirinto...\\nRiusciranno a resistere alla curiosit\u00e0?"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_D_Success",
+		"value": "\u00c8 apparso uno scrigno del tesoro!\\nUn bel colpo di fortuna!"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_D_Fail",
+		"value": "Hanno tirato la leva sbagliata e sono\\nscattate le trappole del labirinto!"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_E_Common",
+		"value": "Hanno voluto scambiarsi dei regali\\ne si chiedono quale aprire per primo."
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_E_Success",
+		"value": "Nella scatola c'era una torta squisita!\\nChi non vorrebbe un regalo cos\u00ec!"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_Event_E_Fail",
+		"value": "Nella scatola c'era una torta orribile!\\nNon sanno se aprire gli altri regali..."
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_0",
+		"value": "Mentre sorge il sole"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_0_BG_22",
+		"value": "Mentre il fumo oscura il sole"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_0_BG_23",
+		"value": "Mentre l'oscurit\u00e0 si infittisce"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_0_BG_24",
+		"value": "Mentre l'oscurit\u00e0 si infittisce"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_1",
+		"value": "Mentre il sole si fa pi\u00f9 intenso"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_1_BG_22",
+		"value": "Mentre l'arida terra si sgretola"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_1_BG_23",
+		"value": "Mentre soffia un vento freddo"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_1_BG_24",
+		"value": "Mentre soffia un vento freddo"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_1_BG_25",
+		"value": "Mentre i raggi attraversano le foglie"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_1_BG_27",
+		"value": "Mentre il vento muove le foglie"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_2",
+		"value": "Mentre il sole splende nel cielo"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_2_BG_22",
+		"value": "Mentre la cenere copre il sole"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_2_BG_23",
+		"value": "Mentre scocca un cupo mezzogiorno"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_2_BG_24",
+		"value": "Mentre scocca un cupo mezzogiorno"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_3",
+		"value": "Mentre la luce del sole splende"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_3_BG_22",
+		"value": "Mentre la lava consuma l'aria"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_3_BG_23",
+		"value": "Mentre il tempo sembra non scorrere"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_3_BG_24",
+		"value": "Mentre il tempo sembra non scorrere"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_3_BG_25",
+		"value": "Mentre il sole brilla dolcemente"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_3_BG_27",
+		"value": "Mentre la luce inizia ad affievolirsi"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_4",
+		"value": "Mentre il cielo diventa scarlatto"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_4_BG_22",
+		"value": "Mentre si formano nuvole di fumo"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_4_BG_23",
+		"value": "Mentre la luce si fa sempre pi\u00f9 tenue"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_4_BG_24",
+		"value": "Mentre la luce si fa sempre pi\u00f9 tenue"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_4_BG_26",
+		"value": "Mentre gli alberi offrono protezione"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_4_BG_28",
+		"value": "Mentre il sole inizia a calare"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_5",
+		"value": "Mentre il sole scompare all'orizzonte"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_5_BG_22",
+		"value": "Mentre i lapilli brillano nell'oscurit\u00e0"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_5_BG_23",
+		"value": "Mentre tutto si fa silenzioso"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_5_BG_24",
+		"value": "Mentre tutto si fa silenzioso"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_6",
+		"value": "Mentre la solitudine incombe"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_6_BG_22",
+		"value": "Mentre inizia una notte umida"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_6_BG_23",
+		"value": "Mentre il silenzio si fa pi\u00f9 assordante"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_6_BG_24",
+		"value": "Mentre il silenzio si fa pi\u00f9 assordante"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_7",
+		"value": "Mentre tutto sembra fermarsi"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_7_BG_22",
+		"value": "Mentre il magma ribolle"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_7_BG_23",
+		"value": "Mentre l'oscurit\u00e0 guadagna terreno"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_TIME_7_BG_24",
+		"value": "Mentre l'oscurit\u00e0 guadagna terreno"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_1",
+		"value": "nella vastit\u00e0 della natura selvaggia"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_2",
+		"value": "nella vastit\u00e0 della natura selvaggia"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_3",
+		"value": "nella vastit\u00e0 della natura selvaggia"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_4",
+		"value": "nel cuore di una fitta foresta"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_5",
+		"value": "nel cuore di una fitta foresta"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_6",
+		"value": "nel cuore di una fitta foresta"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_7",
+		"value": "in una landa desolata"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_8",
+		"value": "in una landa desolata"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_9",
+		"value": "in una landa desolata"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_10",
+		"value": "in un deserto sconfinato"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_11",
+		"value": "in un deserto sconfinato"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_12",
+		"value": "in un deserto sconfinato"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_13",
+		"value": "tra rovine cadenti"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_14",
+		"value": "tra rovine cadenti"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_15",
+		"value": "tra rovine cadenti"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_16",
+		"value": "in riva al mare"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_17",
+		"value": "in riva al mare"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_18",
+		"value": "in riva al mare"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_19",
+		"value": "tra cumuli di neve"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_20",
+		"value": "tra cumuli di neve"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_21",
+		"value": "tra cumuli di neve"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_22",
+		"value": "ai piedi di un vulcano"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_23",
+		"value": "nelle profondit\u00e0 del sottosuolo"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_24",
+		"value": "nei corridoi di un labirinto"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_25",
+		"value": "tra i vapori dell'acqua termale"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_26",
+		"value": "tra i vapori dell'acqua termale"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_27",
+		"value": "all'ombra di un albero secolare"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_PLACE_BG_28",
+		"value": "all'ombra di un albero secolare"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Meal_A",
+		"value": "fanno due chiacchiere"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Meal_B",
+		"value": "ridono a crepapelle"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Meal_C",
+		"value": "riempiono l'aria con un bel profumino"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Meal_D",
+		"value": "si riempiono la pancia"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Move_A",
+		"value": "continuano ad andare avanti"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Move_B",
+		"value": "procedono a passo lento"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Action_A",
+		"value": "duellano con passione"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Action_B",
+		"value": "discutono animatamente"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Action_C",
+		"value": "si allenano duramente"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Action_D",
+		"value": "si fanno un bel bagno caldo"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Action_E",
+		"value": "si concedono un momento di riposo"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Construct_A",
+		"value": "organizzano un campo base"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Construct_B",
+		"value": "iniziano a piantare le tende"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Rest_A",
+		"value": "vanno a dormire"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Rest_B",
+		"value": "vanno a dormire"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Rest_C",
+		"value": "vanno a dormire"
+	},
+	{
+		"key": "MID_JOURNEY_MIRROR_DEMO_Rest_D",
+		"value": "vanno a dormire"
+	},
+	{
+		"key": "MID_SCF_\uff15\u5468\u5e74\u30b1\u30fc\u30ad",
+		"value": "Torta anniversario"
+	},
+	{
+		"key": "MID_SCF_\uff15\u5468\u5e74\u30b1\u30fc\u30ad_HELP",
+		"value": "Una mastodontica torta preparata in\\noccasione del quinto anniversario.\\n\u00c8 un oggetto dell'evento."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202202",
+		"value": "Antichi monoliti eterei"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202202",
+		"value": "Si usano per costruire strutture disponibili per\\nun periodo limitato in Blitz eterei. I monoliti\\nandranno persi allo scadere di tale periodo."
+	},
+	{
+		"key": "MID_VOTE_TERM_202201",
+		"value": "Duellanti del deserto"
+	},
+	{
+		"key": "MID_PROFILECARD_REALTIME_PVP_ADVANCED_RATE_GRADE",
+		"value": "Duelli Evocat. S - Rango"
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ADVANCED_ORGANIZE",
+		"value": "Squadre Duelli S"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TITLE_2",
+		"value": "Duelli Evocat. S"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MATCH_MAKE_TITLE_2_0",
+		"value": "Duelli Evocat. S"
+	},
+	{
+		"key": "MID_REALTIME_PVP_MAP_TITLE_2_0",
+		"value": "Duelli Evocat. S"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GAINED_REWARDTYPE_GRADE_2",
+		"value": "$aDuelli Evocat. S - Rango $a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_GAINED_REWARDTYPE_RANK_2",
+		"value": "$aDuelli Evocat. S - Posizione $a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_ADVANCED_BATTLE_START_FAILED_WARNING_TROOP_RESTRICTION_NONE",
+		"value": "Ogni slot della tua squadra deve\\nessere occupato da un eroe.\\n\\nGli eroi duplicati non sono\\nconsentiti nel tuo reggimento.\\n\\n\u00c8 ammesso solo 1 alleato\\ncon Canto o Danza in squadra.\\n\\n\u00c8 ammesso solo 1 alleato\\ncon Aiuto in squadra."
+	},
+	{
+		"key": "MID_REALTIME_PVP_NO_RIGHT_TO_PARTICIPATE_IN_ADVANCED_EVENT_CONFIRM",
+		"value": "Per partecipare a questo evento\\ndevi possedere la Medaglia del\\nguerriero. Puoi ottenerla giocando\\na Scontri di favore nell'anfiteatro."
+	},
+	{
+		"key": "MID_UNIT_EDIT_REALTIME_PVP_ADVANCED_TROOP_INDEX",
+		"value": "$a$a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_SIMPLE_LIMIT_TIME",
+		"value": "Limite di tempo"
+	},
+	{
+		"key": "MID_REALTIME_PVP_SIMPLE_LIMIT_TIME_REST",
+		"value": "Restante"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BAN_TROOP_TITLE",
+		"value": "Escludi squadre"
+	},
+	{
+		"key": "MID_REALTIME_PVP_SELECT_TROOP_TITLE",
+		"value": "Selezione squadre"
+	},
+	{
+		"key": "MID_REALTIME_PVP_BAN_TROOP_HELP",
+		"value": "$aSeleziona per escludere $a0 delle squadre\\ndell'avversario."
+	},
+	{
+		"key": "MID_REALTIME_PVP_SELECT_TROOP_HELP",
+		"value": "Scegli una squadra per la battaglia. Non puoi\\nusare quelle escluse dal tuo avversario."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HIDE_UNIT_INFO",
+		"value": "Lo stato del tuo avversario non viene mostrato\\nsu questo schermo."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_2_00",
+		"value": "Escludi le squadre giuste!"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_2_01",
+		"value": "\u25c6Duelli Evocat. S\u25c6\\nUna battaglia di Duelli Evocat. per\\nottenere gloria, in cui puoi anche\\nescludere alcune squadre del tuo\\navversario.\\nPuoi combattere fino a che non\\naccumuli tre sconfitte nella\\nstagione in corso."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_2_02",
+		"value": "\u25c6Modifica delle squadre\u25c6\\n\u30fb Crea 4 squadre usando 20 eroi\\nin totale; cinque per squadra.\\n\u30fb Eroi duplicati non consentiti\\nnel tuo reggimento.\\n\u30fb In ogni squadra \u00e8 ammesso\\nsolo 1 alleato con Canto o Danza\\ne solo 1 alleato con Aiuto."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_2_03",
+		"value": "\u25c6Esclusione delle squadre\u25c6\\n\u30fb Puoi selezionare due delle\\nquattro squadre dell'avversario\\nda escludere.\\n\u30fb Verranno escluse anche due\\ndelle tue squadre. Scegli una tra\\nle due rimaste e scendi in campo!"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_2_04",
+		"value": "\u25c6Gloria e rango\u25c6\\n\u30fb La tua gloria cambia in base ai\\nrisultati ottenuti nelle battaglie.\\n\u30fb Il tuo rango si basa sulla gloria.\\n\u30fb All'inizio di una nuova stagione,\\npartirai con una data quantit\u00e0 di\\ngloria in base al tuo rango."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_2_05",
+		"value": "\u25c6Massimizzare la gloria\u25c6\\n\u30fb La quantit\u00e0 di gloria persa per\\nuna sconfitta si basa sul rango.\\n\u30fb Con un punteggio alto, perdi\\nmeno gloria per una sconfitta.\\n\u30fb Con un avversario di rango pi\u00f9\\nalto, ottieni pi\u00f9 gloria se lo batti e\\nne perdi meno se ti sconfigge."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_2_06",
+		"value": "\u25c6Ranghi protetti\u25c6\\nDopo aver raggiunto i ranghi 4, 7,\\n10 e 13, non potrai retrocedere a\\nun rango inferiore anche se perdi\\nuna battaglia."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_2_07",
+		"value": "\u25c6Eroi leggendari/mitici bonus\u25c6\\nMetti in squadra uno degli eroi\\ndella stagione in corso per\\nignorare la tua prima sconfitta\\n(cos\u00ec puoi perdere fino a 4 volte\\ninvece che 3). Inoltre, il calo di\\ngloria quando perdi \u00e8 ridotto di\\n40 ad ogni sconfitta."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_2_08",
+		"value": "\u25c6Eroi leggendari/mitici bonus\u25c6\\nSe un eroe leggendario o mitico\\nbonus \u00e8 membro di una delle tue\\nquattro squadre, il suo bonus si\\nattiver\u00e0.\\n\\n(Il bonus si attiva anche se l'eroe\\nfa parte di una squadra non scelta\\no esclusa.)"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202202",
+		"value": "Amore eterno"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_CEIL_TEXT",
+		"value": "Evocazione 5\u2605 gratis dopo 40 evocazioni in\\nEroi speciali/mitici/leggendari e Festa degli eroi."
+	},
+	{
+		"key": "MID_SCF_K0011",
+		"value": "Castello onirico"
+	},
+	{
+		"key": "MID_SCF_K0011_Ex",
+		"value": "Tratto: ponti"
+	},
+	{
+		"key": "MID_SCF_K0012",
+		"value": "Castello da incubo"
+	},
+	{
+		"key": "MID_SCF_K0012_Ex",
+		"value": "Tratto: terreno difensivo e boschi"
+	},
+	{
+		"key": "MID_SUMMON_PROBABILITY_SUPER_AWAKENING_4",
+		"value": "ES 4\u2605 (Prob.)"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_SET_LOAD_SELECT_TROOP_REALTIME_PVP_ADVANCED",
+		"value": "Duelli Evocat. S"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_CONTAIN_LEARNABLE_SKILL",
+		"value": "Include le non apprese"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202202",
+		"value": "Convinzione assoluta"
+	},
+	{
+		"key": "MID_VOTE_TERM_202202",
+		"value": "Fase finale SUE 2022"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202202",
+		"value": "Archivio dell'Est"
+	},
+	{
+		"key": "MID_AUT12_Cage_Title",
+		"value": "Altri pericoli nascosti"
+	},
+	{
+		"key": "MID_AUT12_Cage_Common",
+		"value": "I due eroi si avventurano con cautela,\\nma sono colti di sorpresa!"
+	},
+	{
+		"key": "MID_AUT12_Cage_3",
+		"value": "Oh no, che trappola insidiosa! Per\\nfuggire dovranno lavorare insieme."
+	},
+	{
+		"key": "MID_AUT12_Cage_4",
+		"value": "Che gran prontezza di riflessi! Non\\nresta che collaborare per scappare."
+	},
+	{
+		"key": "MID_AUT12_Cage_5",
+		"value": "La trappola \u00e8 stata distrutta in un solo\\ncolpo! Che squadra vincente!"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202203R",
+		"value": "Un futuro deciso, atto 2\u00ba"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_SEARCH_LABEL",
+		"value": "Cerca una riproduzione tramite l'ID battaglia."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_COPY_BATTLEID",
+		"value": "Copia ID battaglia"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_CREATED_SEARCH_TOKEN",
+		"value": "$aID battaglia copiato:\\n$a0"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_SEARCH_DIALOG",
+		"value": "Inserisci l'ID battaglia della\\nriproduzione che vuoi guardare."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_SEARCH_PLACE_HOLDER",
+		"value": "Inserisci ID battaglia"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_INVALID_SEARCH_TOKEN",
+		"value": "Hai inserito un ID battaglia non\\nvalido. Uno valido deve contenere\\n10 caratteri tra numeri e lettere."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_MISSING_BATTLE_RECORD",
+		"value": "L'ID battaglia che hai inserito\\nnon \u00e8 corretto oppure \u00e8 scaduto."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HISTORY_CREATED_SEARCH_TOKEN_WARNING",
+		"value": "Ogni riproduzione sar\u00e0 disponibile\\nsolo per un periodo di tempo\\nlimitato."
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202203",
+		"value": "Gli amici del fratello"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2022_0",
+		"value": "Heroes/Mystery/Shadows"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2022_1",
+		"value": "Heroes/Genealogy/Thracia 776"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2022_2",
+		"value": "Blazing/Binding/Sacred Stones"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2022_3",
+		"value": "Path of Radiance/Radiant Dawn"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2022_4",
+		"value": "Awakening/Fates"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2022_5",
+		"value": "Three Houses"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202203",
+		"value": "Archivio del Sud"
+	},
+	{
+		"key": "MID_WIN03_Soup_Title",
+		"value": "Zuppa nutriente"
+	},
+	{
+		"key": "MID_WIN03_Soup_Common",
+		"value": "Il fal\u00f2 illumina i cieli grigi. Una buona\\nzuppa bollente scalda le ossa..."
+	},
+	{
+		"key": "MID_WIN03_Soup_3",
+		"value": "Il calore della zuppa \u00e8 un toccasana e\\nravviva il loro fuoco interiore!"
+	},
+	{
+		"key": "MID_WIN03_Soup_4",
+		"value": "Hanno preparato una zuppa deliziosa,\\nche avvolge come un caldo abbraccio."
+	},
+	{
+		"key": "MID_WIN03_Soup_5",
+		"value": "La zuppa era davvero nutriente!\\nHanno recuperato le forze!"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202203",
+		"value": "Dal buio alla luce"
+	},
+	{
+		"key": "MID_VOTE_TERM_202204",
+		"value": "Difese impenetrabili"
+	},
+	{
+		"key": "MID_CHAIN_ARENA_GAINED_REWARDTYPE_CONSECUTIVE_WIN",
+		"value": "$aPremio Assalto arena: 1\u00aa volta $a0 vitt. di fila"
+	},
+	{
+		"key": "MID_CHAIN_ARENA_DIALOG_WITHDRAW_TEXT",
+		"value": "Ritirata tattica!\\n(Puoi continuare senza perdere\\nil tuo punteggio o la tua sequenza\\ndi vittorie.)"
+	},
+	{
+		"key": "MID_CHAIN_ARENA_DIALOG_WITHDRAW_WARNING_REMAIN",
+		"value": "$a\u00c8 possibile ordinare la ritirata tattica\\nsolo $a0 volta/e. Tuttavia, se azzeri\\nla sequenza, potrai ordinare di nuovo\\nla ritirata."
+	},
+	{
+		"key": "MID_CHAIN_ARENA_DIALOG_WITHDRAW_WARNING_LAST",
+		"value": "Hai usato l'ultima ritirata tattica che\\navevi. Potrai usarla di nuovo, se azzeri\\nla sequenza."
+	},
+	{
+		"key": "MID_CHAIN_ARENA_DIALOG_GIVEUP_WITHDRAW",
+		"value": "Ritirata tattica"
+	},
+	{
+		"key": "MID_CHAIN_ARENA_DIALOG_GIVEUP_WITHDRAW_TEXT",
+		"value": "$aVuoi arrenderti? Non potrai\\ncontinuare.\\n\\nRitirate tattiche restanti: $a0"
+	},
+	{
+		"key": "MID_CHAIN_ARENA_COMBO_REWARD",
+		"value": "Premio continuit\u00e0"
+	},
+	{
+		"key": "MID_CHAIN_ARENA_PLUS_TITLE",
+		"value": "Assalto arena+"
+	},
+	{
+		"key": "MID_OCCUPATION_RECOLLECTION_TITLE_202204",
+		"value": "Freyja e compagnia 1"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202204",
+		"value": "Il cibo \u00e8 salvo"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_REORGANIZE_RETREAT_DECIDE",
+		"value": "Ritirata tattica"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_REORGANIZE_RETREAT_CONFIRM",
+		"value": "$aVuoi arrenderti? Non potrai\\ncontinuare.\\n\\nRitirate tattiche restanti: $a0"
+	},
+	{
+		"key": "MID_CHAIN_ARENA_HELP_DIALOG_10",
+		"value": "\u25c6Ritirata tattica\u25c6\\nPuoi ritornare allo schermo\\nprecedente due volte per ogni\\nsequenza di vittorie senza perdere\\nil tuo punteggio o la tua sequenza.\\nSe azzeri la sequenza, tuttavia,\\nsar\u00e0 possibile utilizzare di nuovo\\nla ritirata tattica."
+	},
+	{
+		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60A",
+		"value": "Trappola malsana"
+	},
+	{
+		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60A_BATTLE",
+		"value": "Trappola magica"
+	},
+	{
+		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60A_HELP",
+		"value": "$aSe il nemico si ferma su questa struttura e ha\\nPS pari o inferiori a $a0, annulla attacco,\\nabilit\u00e0 di aiuto, ecc. e termina l'azione del\\nnemico. (Le trappole magiche non possono\\nessere disarmate da abilit\u00e0 Disinnesca.)"
+	},
+	{
+		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60A_BATTLEHELP",
+		"value": "Una sorta di trappola..."
+	},
+	{
+		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60\u30c0\u30df\u30fc",
+		"value": "Finta trap. malsana"
+	},
+	{
+		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60\u30c0\u30df\u30fc_BATTLE",
+		"value": "Trappola magica"
+	},
+	{
+		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60\u30c0\u30df\u30fc_HELP",
+		"value": "Sembra una trappola malsana, ma \u00e8 falsa."
+	},
+	{
+		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60\u30c0\u30df\u30fc_BATTLEHELP",
+		"value": "Una sorta di trappola..."
+	},
+	{
+		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60A_HOLIDAYHELP",
+		"value": "Se il nemico mette il piede in fallo,\\nla sua azione terminer\u00e0."
+	},
+	{
+		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60\u30c0\u30df\u30fc_HOLIDAYHELP",
+		"value": "Una falsa trappola che \u00e8 indistinguibile da\\nuna vera."
+	},
+	{
+		"key": "MID_SKYCASTLE_EDIT_FACILITY_CATEGORY_TITLE_DUMMY_TRAP",
+		"value": "False trappole"
+	},
+	{
+		"key": "MID_SKYCASTLE_EDIT_FACILITY_CATEGORY_HELP_DUMMY_TRAP",
+		"value": "Strutture fatte apposta per sembrare trappole."
+	},
+	{
+		"key": "MID_SKYCASTLE_EDIT_FACILITY_FILTER_CATEGORY_DUMMY_TRAP",
+		"value": "False trappole"
+	},
+	{
+		"key": "MID_ERROR_SUBSCRIPTION_ALREADY_PURCHASED",
+		"value": "Hai gi\u00e0 una tessera Feh."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_03",
+		"value": "\u25c6Attenzione\u25c6\\nQuando trasferisci abilit\u00e0 con\\nprerequisiti tramite Eredita abilit\u00e0,\\ndevi ereditare anche quelle che\\nsono considerate dei prerequisiti.\\nAd esempio, se vuoi Vita e morte\\n4, devi ereditare Vita e morte 1, 2\\ne 3."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_HELP_DIALOG_01_V0604",
+		"value": "\u25c6Fondere unit\u00e0\u25c6\\nPuoi incrementare i parametri di\\nun alleato e i suoi PA fondendolo\\ncon un'unit\u00e0 che abbia lo stesso\\nnome ed epiteto. L'unit\u00e0\\ndonatore verr\u00e0 perduta."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_HELP_DIALOG_02_V0604",
+		"value": "\u25c6Attenzione\u25c6\\nIncrementando il numero di \u2605 di\\nun alleato, si perdono i bonus ai\\nparametri derivanti dalla fusione\\ndei personaggi."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202204",
+		"value": "La luce del futuro"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202205",
+		"value": "Archivio dell'Ovest"
+	},
+	{
+		"key": "MID_SPR02_Surprise_Title",
+		"value": "Imboscata"
+	},
+	{
+		"key": "MID_SPR02_Surprise_Common",
+		"value": "Si fanno strada nel fitto sottobosco...\\nMa quel cespuglio si \u00e8 mosso!"
+	},
+	{
+		"key": "MID_SPR02_Surprise_3",
+		"value": "Hanno colpito con decisione. I nemici\\nsono stati messi a tacere in un istante!"
+	},
+	{
+		"key": "MID_SPR02_Surprise_4",
+		"value": "Non si tratta di nemici... ma di Feh!\\nLa coppia non pu\u00f2 che ridere."
+	},
+	{
+		"key": "MID_SPR02_Surprise_5",
+		"value": "Era solo uno scherzo! Le risate\\nsmorzano tutta la tensione."
+	},
+	{
+		"key": "MID_VOTE_TERM_202205",
+		"value": "Pugna cavalleresca"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_WITHDRAW_WARNING_REMAIN",
+		"value": "$a\u00c8 possibile ordinare la ritirata tattica\\nsolo $a0 volta/e. Tuttavia, se azzeri\\nla sequenza, potrai ordinare di nuovo\\nla ritirata."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_WITHDRAW_WARNING_LAST",
+		"value": "Hai usato l'ultima ritirata tattica che\\navevi. Potrai usarla di nuovo, se azzeri\\nla sequenza."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_08_0605",
+		"value": "\u25c6Ritirata tattica, dal 10 maggio\u25c6\\nPuoi ritornare allo schermo\\ndell'arena due volte per ogni\\nsequenza di vittorie senza perdere\\nil tuo punteggio o la tua sequenza.\\nSe azzeri la sequenza, tuttavia,\\nsar\u00e0 possibile utilizzare di nuovo\\nla ritirata tattica."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202205",
+		"value": "Fuori controllo"
+	},
+	{
+		"key": "MID_REALTIME_PVP_RELOGIN",
+		"value": "La connessione si \u00e8 interrotta.\\nRiconnessione in corso."
+	},
+	{
+		"key": "MID_REALTIME_PVP_OPPONENT_SELECTABLE_TROOP",
+		"value": "Squadre a disposizione del tuo avversario"
+	},
+	{
+		"key": "MID_ITEM_GAIN_ELITE_CASTLE_SP",
+		"value": "$aHai ricevuto: $a0!"
+	},
+	{
+		"key": "MID_ITEM_PRESENT_ELITE_CASTLE_SP",
+		"value": "$aNella lista dei regali \u00e8 stato\\naggiunto il seguente oggetto:\\n$a0!"
+	},
+	{
+		"key": "MID_ITEM_DIRECT_GAIN_ELITE_CASTLE_SP",
+		"value": "$aHai ricevuto: $a0!\\n*Ricompensa aggiunta al tuo inventario."
+	},
+	{
+		"key": "MID_ITEM_GAIN_ELITE_CASTLE_SP_WARNING",
+		"value": "Puoi cambiare stile selezionando\\nCambia castello nel menu."
+	},
+	{
+		"key": "MID_ITEM_GAIN_ACCESSORY_AND_ELITE_CASTLE_SP_WARNING",
+		"value": "$aNon puoi avere pi\u00f9 di 1 sigillo sacro\\ndello stesso tipo. Tutti i duplicati saranno\\nconvertiti in $a0 penne dell'eroe.\\nPuoi cambiare stile selezionando\\nCambia castello nel menu."
+	},
+	{
+		"key": "MID_ITEM_GAIN_DRESS_ACCESSORY_AND_ELITE_CASTLE_SP_WARNING",
+		"value": "$aNon puoi avere pi\u00f9 di 1 accessorio dello\\nstesso tipo. Tutti i duplicati saranno\\nconvertiti in $a0 penne dell'eroe.\\nPuoi cambiare stile selezionando\\nCambia castello nel menu."
+	},
+	{
+		"key": "MID_ITEM_GAIN_SKILL_AND_DRESS_ACCESSORY_AND_ELITE_CASTLE_SP_WARNING",
+		"value": "$aNon puoi avere pi\u00f9 di 1 sigillo sacro\\no accessorio dello stesso tipo.\\nTutti i duplicati saranno convertiti\\nin $a0 penne dell'eroe.\\nPuoi cambiare stile selezionando\\nCambia castello nel menu."
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202205_01",
+		"value": "Archivio del Nord"
+	},
+	{
+		"key": "MID_SPR08_Banquet_Title",
+		"value": "A stomaco pieno"
+	},
+	{
+		"key": "MID_SPR08_Banquet_Common",
+		"value": "Si fermano per mangiare e fare due\\nchiacchiere, quando all'improvviso..."
+	},
+	{
+		"key": "MID_SPR08_Banquet_3",
+		"value": "Che fa? Si scusa e corre via! Meglio\\nmangiare con moderazione..."
+	},
+	{
+		"key": "MID_SPR08_Banquet_4",
+		"value": "Oh no, ha rischiato di soffocare! Non\\nsi parla con la bocca piena..."
+	},
+	{
+		"key": "MID_SPR08_Banquet_5",
+		"value": "Wow! Ha pulito il piatto e ora ne\\nordina un altro! Che fame da lupi!"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202205R",
+		"value": "Custodi della fede, atto 2\u00ba"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202205",
+		"value": "Azzuffata nuziale"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_0",
+		"value": "Biblioteca di Askr"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_0",
+		"value": "$aI nemici conferiscono PA x5 per $a0 e\\nPA x2 da quel momento in avanti! (Non\\ncumulabile; si applica solo il valore pi\u00f9 alto.)"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_REMAIN_DAYS",
+		"value": "$a$a0 g"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_REMAIN_HOURS",
+		"value": "$a$a0 h"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_REMAIN_MINUTES",
+		"value": "$a$a0 m"
+	},
+	{
+		"key": "MID_SHOP_CHANGE_WP_SP_BONUS_DAYS",
+		"value": "$aOttieni PA x5 ancora per $a0 g!"
+	},
+	{
+		"key": "MID_SHOP_CHANGE_WP_SP_BONUS_HOURS",
+		"value": "$aOttieni PA x5 ancora per $a0 h!"
+	},
+	{
+		"key": "MID_SHOP_CHANGE_WP_SP_BONUS_MINUTES",
+		"value": "$aOttieni PA x5 ancora per $a0 m!"
+	},
+	{
+		"key": "MID_SHOP_CHANGE_WP_SP_BONUS_FOREVER",
+		"value": "Ottieni PA x2 dai nemici per sempre!"
+	},
+	{
+		"key": "MID_VOTE_TERM_202206",
+		"value": "Contro l'oscurit\u00e0"
+	},
+	{
+		"key": "MID_CONFIG_REALTIME_PVP_OPPONENT_NAME_SECRET",
+		"value": "Mod. nome sfidante\\nin Duelli Evocat."
+	},
+	{
+		"key": "MID_CONFIG_ALLOW_LOW_RARITY_LIMIT_BREAK",
+		"value": "Fondi eroi\\ncon meno \u2605"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING6_2",
+		"value": "Seq. centrale libro VI"
+	},
+	{
+		"key": "MID_HOME_SKY_CASTLE_RESTRICTION",
+		"value": "La configurazione difensiva viola\\nle restrizioni della stagione del\\ncaos di Blitz eterei. (Le unit\u00e0 non\\nidonee saranno sostituite da\\nAlfonse, Sharena e Anna.)\\n\\nVuoi modificare subito la mappa\\ndi difesa?"
+	},
+	{
+		"key": "MID_HOME_SKY_CASTLE_RESTRICTION_JUMP",
+		"value": "Modifica"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202206",
+		"value": "Tracciare il futuro"
+	},
+	{
+		"key": "MID_SHOP_ORB_TAP_BUY",
+		"value": "\u30bf\u30c3\u30d7\u3057\u3066\u8cfc\u5165"
+	},
+	{
+		"key": "MID_SHOP_SCTA_NOTE",
+		"value": "\u30fb\u5bfe\u4fa1\u306e\u652f\u6255\u6642\u671f\u30fb\u65b9\u6cd5\u3001\u5f15\u6e21\u6642\u671f\u3001\u30ad\u30e3\u30f3\u30bb\u30eb\u306b\u3064\u3044\u3066\u306f\\n\u3000\u300c\u7279\u5b9a\u5546\u53d6\u5f15\u6cd5\u306b\u57fa\u3065\u304f\u8868\u793a\u300d\u3092\u3054\u78ba\u8a8d\u304f\u3060\u3055\u3044\u3002"
+	},
+	{
+		"key": "MID_SHOP_SCTA_NOTE_SCROLL",
+		"value": "\u30fb\u5bfe\u4fa1\u306e\u652f\u6255\u6642\u671f\u30fb\u65b9\u6cd5\u3001\u5f15\u6e21\u6642\u671f\u3001\\n\u3000\u30ad\u30e3\u30f3\u30bb\u30eb\u306b\u3064\u3044\u3066\u306f\\n\u3000\u300c\u7279\u5b9a\u5546\u53d6\u5f15\u6cd5\u306b\u57fa\u3065\u304f\u8868\u793a\u300d\u3092\\n\u3000\u3054\u78ba\u8a8d\u304f\u3060\u3055\u3044\u3002"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_TERM",
+		"value": "\u6709\u52b9\u671f\u9593\u3068\u81ea\u52d5\u66f4\u65b0\u306b\u3064\u3044\u3066"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_PURCHASE_V6_6",
+		"value": "Ottieni la tessera Feh"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_WARNING_V6_6",
+		"value": "Informazioni sull'annullamento:\\n\u30fb Se annulli l'abbonamento, continuerai ad\\navere accesso ai vantaggi della tessera Feh\\nfino allo scadere del periodo di abbonamento\\ncorrente.\\n\u30fb Perderai l'accesso a questi vantaggi quando\\nil periodo di abbonamento sar\u00e0 scaduto.\\n\u30fb Se non annulli il rinnovo automatico\\nalmeno 24 ore prima che l'abbonamento\\nvenga rinnovato, il rinnovo della tua tessera\\nFeh si verificher\u00e0 automaticamente.\\n\u30fb Consulta le Domande frequenti per ulteriori\\ninformazioni su come controllare il periodo di\\nvalidit\u00e0 della tua tessera Feh, come annullare\\nil rinnovo automatico o come passare a un\\nnuovo dispositivo con un sistema operativo\\ndifferente."
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_NOTICE_V6_6",
+		"value": "\u30fb La tua tessera Feh verr\u00e0 rinnovata\\nin automatico ogni mese, mantenendo attivi\\ni tuoi vantaggi, a meno che tu non decida di\\nannullarla almeno 24 ore prima del momento\\nin cui si rinnova.\\n\u30fb Se usi un nuovo dispositivo con un sistema\\noperativo diverso da quello del vecchio\\ndispositivo, la tua tessera Feh non potr\u00e0\\nessere trasferita. Annulla l'abbonamento\\nprecedente prima di sottoscriverne un altro\\nsul nuovo dispositivo.\\n\u30fb Puoi ottenere eroi fulgenti effettuando\\nl'accesso durante il periodo in cui vengono\\ndistribuiti.\\n\u30fb Se sottoscrivi una tessera Feh verso la fine\\ndel periodo di distribuzione di un eroe fulgente,\\nassicurati di avere abbastanza tempo a\\ndisposizione per ottenerlo."
+	},
+	{
+		"key": "MID_SCF_K1005",
+		"value": "Piane dei morti"
+	},
+	{
+		"key": "MID_SCF_K1005_Ex",
+		"value": "Un terreno solo per resort."
+	},
+	{
+		"key": "MID_SCF_K1006",
+		"value": "Collina onirica"
+	},
+	{
+		"key": "MID_SCF_K1006_Ex",
+		"value": "Un terreno solo per resort."
+	},
+	{
+		"key": "MID_SCF_K1007",
+		"value": "Rocca meccanica"
+	},
+	{
+		"key": "MID_SCF_K1007_Ex",
+		"value": "Un terreno solo per resort."
+	},
+	{
+		"key": "MID_SKYCASTLEHOLIDAY_DIALOG_NEW_STOCK_ADD_MAP",
+		"value": "\u25c6 Aggiunta di nuove mappe."
+	},
+	{
+		"key": "MID_SCF_K0013",
+		"value": "Castello dei morti"
+	},
+	{
+		"key": "MID_SCF_K0013_Ex",
+		"value": "Tratto: mura pericolanti"
+	},
+	{
+		"key": "MID_SCF_K0014",
+		"value": "Castello dei nani"
+	},
+	{
+		"key": "MID_SCF_K0014_Ex",
+		"value": "Tratto: boschi"
+	},
+	{
+		"key": "MID_SCF_K0015",
+		"value": "Castello dei giganti"
+	},
+	{
+		"key": "MID_SCF_K0015_Ex",
+		"value": "Tratto: mura pericolanti"
+	},
+	{
+		"key": "MID_SKYCASTLE_BONUS_NEXTSEASON_WARNING",
+		"value": "La prossima sar\u00e0 la stagione del caos."
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_TEXT_BATTLE",
+		"value": "Impossibile avviare la battaglia."
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_TEXT_TESTPLAY",
+		"value": "Impossibile avviare batt. simulata."
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_TEXT_DISPATCH",
+		"value": "Impossibile inviare."
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_WARNING_HEAD",
+		"value": "I seguenti requisiti della stagione\\ndel caos non sono rispettati:"
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_WARNING_HEAD_OFFENSE_1",
+		"value": "$aLa squadra offensiva $a0 non\\nrispetta i seguenti requisiti della\\nstagione del caos:"
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_WARNING_HEAD_OFFENSE_2",
+		"value": "$aLe squadre offensive $a0 e $a1 non\\nrispettano i seguenti requisiti della\\nstagione del caos:"
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_WARNING_HEAD_OFFENSE_3",
+		"value": "$aLe squadre offensive $a0, $a1 e $a2 non\\nrispettano i seguenti requisiti della\\nstagione del caos:"
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_WARNING_HEAD_OFFENSE_4",
+		"value": "$aLe squadre offensive $a0, $a1, $a2 e $a3 non\\nrispettano i seguenti requisiti della\\nstagione del caos:"
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_WARNING_HEAD_OFFENSE_5",
+		"value": "Le squadre offensive 1, 2, 3, 4 e 5\\nnon rispettano i seguenti requisiti\\ndella stagione del caos:"
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_WARNING_0",
+		"value": "\u30fb Eroi duplicati non consentiti\\nin squadra."
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_WARNING_1",
+		"value": "\u30fb \u00c8 ammesso solo 1 alleato\\ncon Canto o Danza in squadra."
+	},
+	{
+		"key": "MID_SKYCASTLE_DIALOG_CHAOS_TROOP_RESTRICTED_WARNING_2",
+		"value": "\u30fb \u00c8 ammesso solo 1 alleato\\ncon Aiuto in squadra."
+	},
+	{
+		"key": "MID_SKYCASTLE_NO_LEGENDARY_SLOT_CONFIRM_DIALOG_TEXT_BATTLE",
+		"value": "Iniziare la battaglia?"
+	},
+	{
+		"key": "MID_SKYCASTLE_NO_LEGENDARY_SLOT_CONFIRM_DIALOG_TEXT_TESTPLAY",
+		"value": "Iniziare la battaglia simulata?"
+	},
+	{
+		"key": "MID_SKYCASTLE_NO_LEGENDARY_SLOT_CONFIRM_DIALOG_TEXT_DISPATCH",
+		"value": "Inviare?"
+	},
+	{
+		"key": "MID_SKYCASTLE_NO_LEGENDARY_SLOT_CONFIRM_DIALOG_WARNING",
+		"value": "Gli slot speciali non sono disponibili\\ndurante questa stagione e gli eroi che\\nsi trovano l\u00ec non saranno utilizzabili."
+	},
+	{
+		"key": "MID_SKYCASTLE_EDIT_CUSTOMSET_SEASON_SUCCESS_RESTRICTED",
+		"value": "Le attuali squadre difensive violano\\nle restrizioni della stagione del caos.\\nLe unit\u00e0 non idonee saranno sostituite\\nda Alfonse, Sharena e Anna di liv. 40."
+	},
+	{
+		"key": "MID_SKYCASTLE_EDIT_CUSTOMSET_SEASON_SUCCESS_EMPTY_AND_RESTRICTED",
+		"value": "Al momento non ci sono squadre\\ndifensive o quelle attuali violano\\nle restrizioni della stagione del caos.\\nLe unit\u00e0 non idonee saranno sostituite\\nda Alfonse, Sharena e Anna di liv. 40."
+	},
+	{
+		"key": "MID_SKYCASTLE_EDIT_FLOOREDIT_BUY_BY_POINT_CONFIRM",
+		"value": "$aUsare $a0 di affinit\u00e0 relax per\\npassare a questo terreno?"
+	},
+	{
+		"key": "MID_SKYCASTLE_BONUS_VERSION",
+		"value": "Uscita"
+	},
+	{
+		"key": "MID_SKYCASTLE_BONUS_VERSION_HELP",
+		"value": "$aTutti gli eroi usciti nella versione $a0.X\\nsaranno disponibili come eroi bonus."
+	},
+	{
+		"key": "MID_SKYCASTLE_BATTLE_TOP_HELP_DIALOG_18_2",
+		"value": "\u25c6Volta dei cieli a fine stagione\u25c6\\n\u30fb Rango 37 o meno \u2192 Rango 23\\n\u30fb Rango 38 o pi\u00f9 \u2192 Rango 31\\n\u25c6Regole della Volta dei cieli\u25c6\\n\u30fb Bonus sopravvivenza\\n    Se vinci con tutti gli alleati in\\n    vita, la tua quota aumenta di\\n    10."
+	},
+	{
+		"key": "MID_SKYCASTLE_BATTLE_TOP_HELP_DIALOG_19_2",
+		"value": "\u25c6Blitz eterei: stagione del caos\u25c6\\nL'ingannevole Loki ha creato\\nuna stagione speciale di Blitz\\neterei per ragioni personali e\\ncome sempre misteriose.\\nNella stagione del caos, sono in\\nvigore regole e valori della quota\\nunici di questa stagione."
+	},
+	{
+		"key": "MID_SKYCASTLE_BATTLE_TOP_HELP_DIALOG_20",
+		"value": "\u25c6Caos: eroi bonus\u25c6\\nIn ogni stagione del caos, tutti\\ngli eroi usciti in una data versione\\nsaranno disponibili come eroi\\nbonus aggiuntivi. Solo i normali\\neroi mitici bonus ridurranno\\nla quota persa per le difese fallite,\\nma \u00e8 l'unica differenza."
+	},
+	{
+		"key": "MID_SKYCASTLE_BATTLE_TOP_HELP_DIALOG_21",
+		"value": "\u25c6Caos: bonus alla quota\u25c6\\n\u30fb +70 di quota ottenuta a tutte\\nle squadre offensive. Quelle con\\nun eroe bonus che ha battuto\\nalmeno un nemico ricevono\\nun bonus extra di +20.\\n\u30fb 40 a tutte le squadre difensive\\nper mitigare la quota persa."
+	},
+	{
+		"key": "MID_SKYCASTLE_BATTLE_TOP_HELP_DIALOG_22",
+		"value": "\u25c6Caos: effetti disattivati\u25c6\\nI seguenti effetti leggendari/mitici\\nnon saranno attivi nella stagione\\ndel caos:\\n\u30fb Incremento parametri alleato\\n\u30fb Modifica della quota persa o\\nottenuta tramite Doni o fusioni\\n\u30fb Slot speciali"
+	},
+	{
+		"key": "MID_SKYCASTLE_BATTLE_TOP_HELP_DIALOG_23",
+		"value": "\u25c6Caos: creazione della squadra\u25c6\\n\u30fb Eroi duplicati non consentiti.\\n\u30fb \u00c8 ammesso solo 1 alleato\\ncon Canto o Danza in squadra.\\n\u30fb \u00c8 ammesso solo 1 alleato\\ncon Aiuto in squadra."
+	},
+	{
+		"key": "MID_SKYCASTLE_BATTLE_TOP_HELP_DIALOG_24",
+		"value": "\u25c6Bonus alla quota standard\u25c6\\n\u30fb +20 di quota se hai un eroe\\nbonus nella squadra offensiva.\\n\u30fb +10 se attacchi senza perdere\\nalleati nella Volta dei cieli.\\n\u30fb Se usi un eroe mitico bonus,\\nperdi meno quota."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_OFFENSE_HELP_DIALOG_12",
+		"value": "\u25c6Caos: eroi bonus\u25c6\\nIn ogni stagione del caos, tutti\\ngli eroi usciti in una data versione\\nsaranno disponibili come eroi\\nbonus aggiuntivi. Solo i normali\\neroi mitici bonus ridurranno\\nla quota persa per le difese fallite,\\nma \u00e8 l'unica differenza."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_OFFENSE_HELP_DIALOG_13",
+		"value": "\u25c6Caos: bonus alla quota\u25c6\\n\u30fb +70 di quota ottenuta a tutte\\nle squadre offensive. Quelle con\\nun eroe bonus che ha battuto\\nalmeno un nemico ricevono\\nun bonus extra di +20."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_OFFENSE_HELP_DIALOG_14",
+		"value": "\u25c6Caos: effetti disattivati\u25c6\\nI seguenti effetti leggendari/mitici\\nnon saranno attivi nella stagione\\ndel caos:\\n\u30fb Incremento parametri alleato\\n\u30fb Modifica della quota persa o\\nottenuta tramite Doni o fusioni\\n\u30fb Slot speciali"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_OFFENSE_HELP_DIALOG_15",
+		"value": "\u25c6Caos: creazione della squadra\u25c6\\n\u30fb Eroi duplicati non consentiti.\\n\u30fb \u00c8 ammesso solo 1 alleato\\ncon Canto o Danza in squadra.\\n\u30fb \u00c8 ammesso solo 1 alleato\\ncon Aiuto in squadra."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_DEFENSE_HELP_DIALOG_12",
+		"value": "\u25c6Caos: eroi bonus\u25c6\\nIn ogni stagione del caos, tutti\\ngli eroi usciti in una data versione\\nsaranno disponibili come eroi\\nbonus aggiuntivi. Solo i normali\\neroi mitici bonus ridurranno\\nla quota persa per le difese fallite,\\nma \u00e8 l'unica differenza."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_DEFENSE_HELP_DIALOG_13",
+		"value": "\u25c6Caos: bonus alla quota\u25c6\\n\u30fb 40 a tutte le squadre difensive\\nper mitigare la quota persa."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_DEFENSE_HELP_DIALOG_14",
+		"value": "\u25c6Caos: effetti disattivati\u25c6\\nI seguenti effetti leggendari/mitici\\nnon saranno attivi nella stagione\\ndel caos:\\n\u30fb Incremento parametri alleato\\n\u30fb Modifica della quota persa o\\nottenuta tramite Doni o fusioni\\n\u30fb Slot speciali"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_DEFENSE_HELP_DIALOG_15",
+		"value": "\u25c6Caos: creazione della squadra\u25c6\\n\u30fb Eroi duplicati non consentiti.\\n\u30fb \u00c8 ammesso solo 1 alleato\\ncon Canto o Danza in squadra.\\n\u30fb \u00c8 ammesso solo 1 alleato\\ncon Aiuto in squadra."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_OFFENSE_HELP_DIALOG_06_v0606",
+		"value": "\u25c6Squadre stagionali 1\u25c6\\nImposta le squadre offensive in\\nmodo che cambino in base alla\\nstagione. Ogni volta, verr\u00e0\\nmostrata la squadra attiva.\\nNota: questa opzione diventer\u00e0\\ndisponibile dopo aver completato\\nil tutorial di Blitz eterei."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_DEFENSE_TROOP_RESTRICTED_WARNING",
+		"value": "Per via delle restrizioni della\\nstagione del caos, Alfonse,\\nSharena e Anna di livello 40\\nsostituiranno le unit\u00e0 non idonee."
+	},
+	{
+		"key": "MID_UNIT_EDIT_DISABLE",
+		"value": "ND"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_HELP_DIALOG_03_V0606",
+		"value": "\u25c6Impostazioni\u25c6\\nPuoi attivare l'opzione\\nFondi eroi con meno \u2605 per\\neseguire una fusione usando\\nun'unit\u00e0 donatore con meno \u2605\\nrispetto a quella ricevente. Si\\nottengono PA da questa fusione,\\nma non un aumento dei parametri."
+	},
+	{
+		"key": "MID_SEASON_HELP_CHAOS",
+		"value": "\u25c6Blitz eterei: stagione del caos\u25c6\\nDurante la stagione del caos, saranno in vigore\\nregole e valori della quota propri di questa\\nstagione."
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202206",
+		"value": "Archivio dell'Est"
+	},
+	{
+		"key": "MID_SUM10_Care_Title",
+		"value": "L'arte dell'armatura"
+	},
+	{
+		"key": "MID_SUM10_Care_Common",
+		"value": "Ci sono pezzi d'armatura sparsi\\novunque. Riusciranno a ricomporla?"
+	},
+	{
+		"key": "MID_SUM10_Care_3",
+		"value": "L'armatura non sta in piedi! Non\\nhanno fatto un buon lavoro..."
+	},
+	{
+		"key": "MID_SUM10_Care_4",
+		"value": "Hanno rimesso tutti i pezzi al loro\\nposto! Beh, quasi tutti..."
+	},
+	{
+		"key": "MID_SUM10_Care_5",
+		"value": "Oltre ogni aspettativa, l'armatura\\n\u00e8 tornata come prima, se non meglio!"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202206",
+		"value": "Souvenir estivi"
+	},
+	{
+		"key": "MID_VOTE_TERM_202207",
+		"value": "Giostra del dragone"
+	},
+	{
+		"key": "MID_EVENT_RECOLLECTION_SEQUENTIAL_MAP_ADDITIONAL_TALK_0",
+		"value": "Introduzione supplementare"
+	},
+	{
+		"key": "MID_EVENT_RECOLLECTION_SEQUENTIAL_MAP_ADDITIONAL_TALK_1",
+		"value": "Epilogo supplementare"
+	},
+	{
+		"key": "MID_MAP_RESURRECTION_CONFIRM_ORB_V6_7",
+		"value": "\u30aa\u30fc\u30d6\u00d71\u3092\u6d88\u8cbb\u3057\u30661\u5ea6\u3001\\n\u4ef2\u9593\u5168\u54e1\u3092\u5fa9\u6d3b\u3055\u305b\u307e\u3059\u304b\uff1f\\n\uff08\u8ffd\u52a0\u3067\u4ee5\u4e0b\u306e\u52b9\u679c\u3082\u5f97\u3089\u308c\u307e\u3059\uff09\\n\u30fb\uff28\uff30\u5168\u56de\u5fa9\\n\u30fb\u884c\u52d5\u53ef\u80fd\\n\u30fb\u5965\u7fa9\u767a\u52d5\u53ef\u80fd\\n\\n\u203b\u30d5\u30a7\u30fc\u30d1\u30b9\u300c\u884c\u52d5\u524d\u306b\u623b\u305b\u308b\u300d\u6a5f\u80fd\u306f\\n\u81ea\u8ecd\u30bf\u30fc\u30f3\u3067\u5fa9\u6d3b\u3055\u305b\u305f\u5834\u5408\u3001\\n\u64cd\u4f5c\u5f8c\u3068\u6b21\u306e\u30bf\u30fc\u30f3\u958b\u59cb\u6642\u306f\u3001\\n\u300c\u5149\u306e\u52a0\u8b77\u4f7f\u7528\u5f8c\u306b\u623b\u3059\u300d\u306b\u306a\u308a\u307e\u3059\u3002\\n\u6575\u8ecd\u30bf\u30fc\u30f3\u3067\u5fa9\u6d3b\u3055\u305b\u305f\u5834\u5408\u3001\\n\u6b21\u306e\u30bf\u30fc\u30f3\u958b\u59cb\u6642\u306f\u5143\u306b\u623b\u305b\u305a\u3001\\n\u64cd\u4f5c\u5f8c\u306f\u300c\u4eca\u306e\u30bf\u30fc\u30f3\u958b\u59cb\u306b\u623b\u3059\u300d\u306b\\n\u306a\u308a\u307e\u3059\u3002"
+	},
+	{
+		"key": "MID_OCCUPATION_RECOLLECTION_TITLE_202207",
+		"value": "Marth e compagnia 1"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202207R",
+		"value": "Luce abissale, atto 2\u00ba"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202207",
+		"value": "Vita e morte 1"
+	},
+	{
+		"key": "MID_SHOP_SCTA_MENU_NOTE",
+		"value": "\u30fb\u5bfe\u4fa1\u306e\u652f\u6255\u6642\u671f\u30fb\u65b9\u6cd5\u3001\u5f15\u6e21\u6642\u671f\u3001\\n\u3000\u89e3\u9664\u30fb\u8fd4\u91d1\u306b\u3064\u3044\u3066\u306f\u3053\u3061\u3089\u3092\u3054\u78ba\u8a8d\u304f\u3060\u3055\u3044\u3002"
+	},
+	{
+		"key": "MID_SHOP_ARENA_CONFIRM_ORB_V6_7",
+		"value": "\u30aa\u30fc\u30d6\u00d71\u3092\u6d88\u8cbb\u3057\u3066\\n\u5bfe\u6226\u6a293\u56de\u5206\u3092\u56de\u5fa9\u3057\u307e\u3059\u304b\uff1f"
+	},
+	{
+		"key": "MID_SHOP_ARENA_NOTENOUGH_ORB_V6_7",
+		"value": "\u5bfe\u6226\u6a29\u304c\u4e0d\u8db3\u3057\u3066\u3044\u307e\u3059\u3002\\n\u30aa\u30fc\u30d6\u00d71\u3092\u6d88\u8cbb\u3057\u3066\\n\u5bfe\u6226\u6a293\u56de\u5206\u3092\u56de\u5fa9\u3057\u307e\u3059\u304b\uff1f"
+	},
+	{
+		"key": "MID_SHOP_EXPAND_CONFIRM_V6_7",
+		"value": "\u30aa\u30fc\u30d6\u00d71\u3092\u6d88\u8cbb\u3057\u3066\u4ee5\u4e0b\u306e\u901a\u308a\u306b\\n\u30ad\u30e3\u30e9\u53ce\u5bb9\u4eba\u6570\u3092\u62e1\u5f35\u3057\u307e\u3059\u304b\uff1f"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CONFIRM1_V6_7",
+		"value": "$a\u30aa\u30fc\u30d6\u00d7$a0\u3092\u6d88\u8cbb\u3057\u3066\u3001\\n$a1\u30921\u3064\u8cfc\u5165\u3057\u307e\u3059\u304b\uff1f\\n\\n\u57ce\u3092\u8cfc\u5165\u3059\u308b\u3068\u3001\u4eca\u5f8c\\n\u6c38\u4e45\u306b\u5165\u624b\u7d4c\u9a13\u5024\u304c\u30a2\u30c3\u30d7\u3057\u307e\u3059\u3002\\n\u307e\u305f\u3001\u6a21\u69d8\u66ff\u3048\u3067\\n\u30db\u30fc\u30e0\u753b\u9762\u306e\u30c6\u30fc\u30de\u3092\u5909\u66f4\u3067\u304d\u307e\u3059\u3002"
+	},
+	{
+		"key": "MID_SHOP_PREMIUM_CONFIRM_V6_7",
+		"value": "$a\u30aa\u30fc\u30d6\u00d7$a0\u3092\u6d88\u8cbb\u3057\u3066\u3001\\n\u98db\u7a7a\u57ce\u306e\u4f11\u65e5\u30d1\u30b9\u30921\u3064\u8cfc\u5165\u3057\u307e\u3059\u304b\uff1f"
+	},
+	{
+		"key": "MID_SKYCASTLE_EDIT_HELP_DIALOG_10_v0607",
+		"value": "\u25c6Gestione delle configurazioni\u25c6\\n\u30fb Puoi salvare pi\u00f9 mappe e\\nsquadre di difesa.\\n\u30fb Puoi applicare le impostazioni\\ndelle stagioni per far cambiare in\\nautomatico le configurazioni\\ninsieme alle stagioni."
+	},
+	{
+		"key": "MID_SKYCASTLE_EDIT_HELP_DIALOG_12_v0607",
+		"value": "\u25c6Imposta stagione Prova difese\u25c6\\nIn Prova difese e Batt. simulata\\namici, puoi scegliere la stagione\\nche desideri."
+	},
+	{
+		"key": "MID_SUMMON_PURCHASE_CONFIRM_CONTINUE_V6_7",
+		"value": "$a\u30aa\u30fc\u30d6\u00d7$a0\u3092\u6d88\u8cbb\u3057\u3066\u3001\u3082\u3046\uff11\u56de\u53ec\u559a\u3057\u307e\u3059\u304b\uff1f"
+	},
+	{
+		"key": "MID_SUMMON_PURCHASE_CONFIRM_CONTINUE_REMAIN_DAYS",
+		"value": "$a\uff08\u7d42\u4e86\u307e\u3067\u3042\u3068$a0\u65e5\uff09"
+	},
+	{
+		"key": "MID_SUMMON_PURCHASE_CONFIRM_CONTINUE_REMAIN_HOURS",
+		"value": "$a\uff08\u7d42\u4e86\u307e\u3067\u3042\u3068$a0\u6642\u9593\uff09"
+	},
+	{
+		"key": "MID_SUMMON_PURCHASE_CONFIRM_CONTINUE_REMAIN_MINUTES",
+		"value": "$a\uff08\u7d42\u4e86\u307e\u3067\u3042\u3068$a0\u5206\uff09"
+	},
+	{
+		"key": "MID_SUMMON_PURCHASE_CONFIRM_CONTINUE_SCTA_NOTE",
+		"value": "\u5bfe\u4fa1\u306e\u652f\u6255\u6642\u671f\u30fb\u65b9\u6cd5\u3001\u5f15\u6e21\u6642\u671f\u3001\u89e3\u9664\u30fb\u8fd4\u91d1\u306b\u3064\u3044\u3066\u306f\u4ee5\u4e0b\u3092\u3054\u78ba\u8a8d\u304f\u3060\u3055\u3044\u3002"
+	},
+	{
+		"key": "MID_SUMMON_PURCHASE_CONFIRM_V6_7",
+		"value": "\u4ee5\u4e0b\u306e\u30a2\u30a4\u30c6\u30e0\u3092\u6d88\u8cbb\u3057\u3066\u3001\\n\u53ec\u559a\u3092\uff11\u56de\u884c\u3044\u307e\u3059\u304b\uff1f"
+	},
+	{
+		"key": "MID_SUMMON_PURCHASE_CONFIRM_REMAIN_DAYS",
+		"value": "$a\u7d42\u4e86\u307e\u3067\u3042\u3068$a0\u65e5"
+	},
+	{
+		"key": "MID_SUMMON_PURCHASE_CONFIRM_REMAIN_HOURS",
+		"value": "$a\u7d42\u4e86\u307e\u3067\u3042\u3068$a0\u6642\u9593"
+	},
+	{
+		"key": "MID_SUMMON_PURCHASE_CONFIRM_REMAIN_MINUTES",
+		"value": "$a\u7d42\u4e86\u307e\u3067\u3042\u3068$a0\u5206"
+	},
+	{
+		"key": "MID_ITEM_INFO_BACKGROUND",
+		"value": "Sfondo dello status"
+	},
+	{
+		"key": "MID_ITEM_GAIN_INFO_BACKGROUND",
+		"value": "$aHai ricevuto: $a0!"
+	},
+	{
+		"key": "MID_ITEM_PRESENT_INFO_BACKGROUND",
+		"value": "$aNella lista dei regali \u00e8 stato\\naggiunto il seguente oggetto:\\n$a0!"
+	},
+	{
+		"key": "MID_ITEM_DIRECT_GAIN_INFO_BACKGROUND",
+		"value": "$aHai ricevuto: $a0!\\n*Ricompensa aggiunta al tuo inventario."
+	},
+	{
+		"key": "MID_INFO_BACKGROUND_EDIT_HELP",
+		"value": "Puoi cambiare lo sfondo"
+	},
+	{
+		"key": "MID_INFO_BACKGROUND_EDIT_CHANGE_SELF",
+		"value": "Cambia sfondo eroe"
+	},
+	{
+		"key": "MID_INFO_BACKGROUND_EDIT_CHANGE_SAME",
+		"value": "Cambia quelli uguali"
+	},
+	{
+		"key": "MID_INFO_BACKGROUND_EDIT_CHANGE_ALL",
+		"value": "Cambia tutti"
+	},
+	{
+		"key": "MID_INFO_BACKGROUND_EDIT_CHANGE_SAME_CONFIRM",
+		"value": "$aCambiare lo sfondo dello status\\ndegli eroi con lo stesso sfondo?\\n(Sfondi da cambiare: $a0)"
+	},
+	{
+		"key": "MID_INFO_BACKGROUND_EDIT_CHANGE_ALL_CONFIRM",
+		"value": "Cambiare lo sfondo dello status di\\ntutti i tuoi eroi?"
+	},
+	{
+		"key": "MID_INFO_BACKGROUND_EDIT_CHANGE_DECIDE",
+		"value": "S\u00ec"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202207",
+		"value": "Anima e corpo"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202207_1",
+		"value": "Riassunto del libro III"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202208",
+		"value": "Archivio del Sud"
+	},
+	{
+		"key": "MID_WIN13_Hole_Title",
+		"value": "Partner mancante"
+	},
+	{
+		"key": "MID_WIN13_Hole_Common",
+		"value": "Manca qualcuno, dove sar\u00e0? Oh!\\nDa quel buco si sente un grido!"
+	},
+	{
+		"key": "MID_WIN13_Hole_3",
+		"value": "Oh no! Ora il buco ha due ospiti!\\n\"Ne usciremo in fretta, insieme!\""
+	},
+	{
+		"key": "MID_WIN13_Hole_4",
+		"value": "Una mano amica, un braccio disteso\\ne... Di nuovo insieme, in ottima salute!"
+	},
+	{
+		"key": "MID_WIN13_Hole_5",
+		"value": "Oh, che scoperta! Sono... gioielli?!\\nUn vero diamante grezzo!"
+	},
+	{
+		"key": "MID_SCF_\u590f\u306e\u53ec\u559a\u77f3",
+		"value": "Pietra evocaestate"
+	},
+	{
+		"key": "MID_SCF_\u590f\u306e\u53ec\u559a\u77f3_HELP",
+		"value": "Una pietra di evocazione fasulla. Emana\\nun'aura estiva e ricorda un'anguria, ma non \u00e8 in\\ngrado di evocare eroi. \u00c8 un oggetto dell'evento."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202208",
+		"value": "Antichi monoliti eterei"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202208",
+		"value": "Si usano per costruire strutture disponibili per\\nun periodo limitato in Blitz eterei. I monoliti\\nandranno persi allo scadere di tale periodo."
+	},
+	{
+		"key": "MID_VOTE_TERM_202207_01",
+		"value": "Spuma di mare"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_08_0608",
+		"value": "\u25c6Ritirata tattica\u25c6\\nPuoi ritornare allo schermo\\ndell'arena due volte per ogni\\nsequenza di vittorie senza perdere\\nil tuo punteggio o la tua sequenza.\\nSe azzeri la sequenza, tuttavia,\\nsar\u00e0 possibile utilizzare di nuovo\\nle ritirate tattiche."
+	},
+	{
+		"key": "MID_HOME_CONNECT_BONDS_MISSION_NOTIFICATION",
+		"value": "Ricevi un premio al giorno.\\nAccedere a Legami spezzati?"
+	},
+	{
+		"key": "MID_HOME_CONNECT_BONDS_NAVIGATION_JUMP",
+		"value": "Legami spezzati"
+	},
+	{
+		"key": "MID_CONFIG_HOME_NOTIFICATION_CONNECT_BONDS",
+		"value": "Notifiche\\nLegami spezzati"
+	},
+	{
+		"key": "MID_ITEM_CONNECT_BONDS_POTION",
+		"value": "Lume riparatore"
+	},
+	{
+		"key": "MID_ITEM_HELP_CONNECT_BONDS_POTION",
+		"value": "Permette di partecipare a Legami spezzati."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_TITLE",
+		"value": "Legami spezzati"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAMINA",
+		"value": "Energia"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAMINA_POTION_NOTNECESSARY",
+		"value": "Puoi recuperare energia solo\\nquando l'hai esaurita tutta."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAMINA_RECOVER_INSUFFICIENT",
+		"value": "Non hai abbastanza energia.\\nVuoi usare un lume riparatore\\nper recuperarla?"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAMINA_RECOVER_CONFIRM",
+		"value": "Vuoi usare un lume riparatore per\\nrecuperare energia?"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAMINA_RECOVER",
+		"value": "Recupera"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAMINA_RECOVER_DONE",
+		"value": "Hai usato un lume riparatore per\\nrecuperare energia."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_0",
+		"value": "Barriera 0"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_1",
+		"value": "Barriera 1"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_2",
+		"value": "Barriera 2"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_3",
+		"value": "Barriera 3"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_4",
+		"value": "Barriera 4"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_5",
+		"value": "Barriera 5"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_6",
+		"value": "Barriera 6"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_7",
+		"value": "Barriera 7"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_8",
+		"value": "Barriera 8"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_9",
+		"value": "Barriera 9"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_10",
+		"value": "Barriera 10"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_11",
+		"value": "Barriera 11"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_12",
+		"value": "Barriera 12"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_13",
+		"value": "Barriera 13"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_14",
+		"value": "Barriera 14"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_15",
+		"value": "Barriera 15"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_16",
+		"value": "Barriera 16"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_17",
+		"value": "Barriera 17"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_18",
+		"value": "Barriera 18"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_19",
+		"value": "Barriera 19"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_20",
+		"value": "Barriera 20"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_21",
+		"value": "Barriera 21"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_22",
+		"value": "Barriera 22"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_23",
+		"value": "Barriera 23"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_24",
+		"value": "Barriera 24"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_25",
+		"value": "Barriera 25"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_REMAINING_DAYS",
+		"value": "$aFinisce tra $a0 g."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_REMAINING_HOURS",
+		"value": "$aFinisce tra $a0 h."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_REMAINING_MINUTES",
+		"value": "$aFinisce tra $a0 m."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_CLOSED",
+		"value": "Nessun evento in corso."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_EVENT_END",
+		"value": "Evento terminato."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_SELECT",
+		"value": "Seleziona fase"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_TERM_EXPIRED",
+		"value": "Nessun evento in corso."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_GAINED_REWARDTYPE_MISSION",
+		"value": "Gioca ogni giorno e vinci!"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_DAILY_BONUS_INFO",
+		"value": "Supera una mappa e ricevi un premio\\nuna volta al giorno, fino a sette giorni."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_ENTRANCE_HELP",
+		"value": "Usa gli eroi degli Evocatori e delle\\nEvocatrici di ogni dove!"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_REWARD",
+		"value": "Ricompense"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_SCOUT_HELP",
+		"value": "Scegli l'eroe che entrer\u00e0."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_SCOUT_NO_ACTION",
+		"value": "Non sostituire"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_SCOUT_SELF",
+		"value": "Tu"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_SCOUT_FRIEND",
+		"value": "Amici"
+	},
+	{
+		"key": "MID_MAP_PAIR_SKILL_LEVEL_LIMIT",
+		"value": "$aPer poter usare le abilit\u00e0 Coppia o\\narmoniche in questo evento,\\nserve il livello $a0 o pi\u00f9."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_HELP_DIALOG_00",
+		"value": "Gli eroi di altri eserciti ti assistono!"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_HELP_DIALOG_01",
+		"value": "\u25c6Legami spezzati\u25c6\\nLibera i mondi che sono stati\\nchiusi da Embla, divinit\u00e0 della\\nchiusura e della rottura dei\\nlegami.\\n\\nFormare dei legami con gli eroi di\\naltri eserciti ti dar\u00e0 un vantaggio!"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_HELP_DIALOG_02",
+		"value": "\u25c6Schieramento\u25c6\\n\u00c8 necessario spendere energia\\npropria di questo evento per\\nschierare unit\u00e0 in Legami spezzati.\\n\\n\u25c6Lume riparatore\u25c6\\nUsandolo recuperi tutta la tua\\nenergia in Legami spezzati."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_HELP_DIALOG_03",
+		"value": "\u25c6Portali del divino Askr\u25c6\\nSe sposti un'unit\u00e0 in uno spazio\\ncon un portale, puoi formare\\nlegami con eroi di altri mondi.\\nL'eroe che scegli sostituir\u00e0\\nquell'unit\u00e0 in battaglia. Dopo\\nla sostituzione, l'eroe pu\u00f2 agire\\nimmediatamente."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_HELP_DIALOG_04",
+		"value": "\u25c6Informazioni aggiuntive\u25c6\\nNon otterrai Esp o PA."
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202208",
+		"value": "Vita e morte 2"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DUPLICATION_ANDROID",
+		"value": "\u30fb Se provi ad abbonarti con un altro account\\nGoogle, il costo dell'abbonamento potrebbe\\nesserti addebitato due volte, anche se il rinnovo\\nautomatico dell'abbonamento collegato\\nall'account Google attuale non va a buon fine."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202208",
+		"value": "Tessere il fato"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_1",
+		"value": "Covo di ladri"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_1",
+		"value": "$aI nemici conferiscono PA x5 per $a0 e\\nPA x2 da quel momento in avanti! (Non\\ncumulabile; si applica solo il valore pi\u00f9 alto.)"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202209",
+		"value": "Archivio dell'Ovest"
+	},
+	{
+		"key": "MID_SUM01_SandArt_Title",
+		"value": "Sabbia e mare"
+	},
+	{
+		"key": "MID_SUM01_SandArt_Common",
+		"value": "Il piano di oggi \u00e8 costruire tanti\\ncastelli di sabbia in riva al mare."
+	},
+	{
+		"key": "MID_SUM01_SandArt_3",
+		"value": "Proprio quando stavano per finire, \u00e8\\nspuntato un granchio: che sciagura!"
+	},
+	{
+		"key": "MID_SUM01_SandArt_4",
+		"value": "Ne hanno fatto uno maestoso!\\nUn lavoro davvero niente male."
+	},
+	{
+		"key": "MID_SUM01_SandArt_5",
+		"value": "Che scultura all'avanguardia! \u00c8\\nun capolavoro di cui andare fieri."
+	},
+	{
+		"key": "MID_VOTE_TERM_202208",
+		"value": "Pugna dei valorosi"
+	},
+	{
+		"key": "MID_CONFIG_HOME_NOTIFICATION_ARENA",
+		"value": "Notifiche\\narena"
+	},
+	{
+		"key": "MID_HOME_SKY_CASTLE_DEGRADATION",
+		"value": "Il tuo rango pu\u00f2 diminuire da\\nuna stagione all'altra per varie\\nragioni, come il passaggio a\\nuna stagione del caos. Ecco\\ncosa si verificher\u00e0 in caso di\\ndiminuzione:"
+	},
+	{
+		"key": "MID_HOME_SKY_CASTLE_DEGRADATION_WARNING_FORT_LEVEL",
+		"value": "$a\u30fb Liv. della tua Fortezza: $a0 \u2192 $a1"
+	},
+	{
+		"key": "MID_HOME_SKY_CASTLE_DEGRADATION_WARNING_SLOT_COUNT",
+		"value": "$a\u30fb I tuoi slot aggiuntivi: $a0 \u2192 $a1"
+	},
+	{
+		"key": "MID_HOME_ARENA_NO_WIN_NOTIFICATION",
+		"value": "Puoi ottenere ricompense\\nvincendo duelli nell'arena.\\nVuoi andare all'arena?"
+	},
+	{
+		"key": "MID_HOME_ARENA_NAVIGATION_JUMP",
+		"value": "Vai all'arena"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202209R",
+		"value": "Con convinzione, atto 2\u00ba"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202209",
+		"value": "Vita e morte 3"
+	},
+	{
+		"key": "MID_SKYCASTLE_AUTO_ORGANIZE_REORGANIZE_TROOP",
+		"value": "Cambia squadre"
+	},
+	{
+		"key": "MID_SKYCASTLE_AUTO_ORGANIZE_NOT_REORGANIZE_TROOP",
+		"value": "Mantieni squadre"
+	},
+	{
+		"key": "MID_SUMMON_UNABLE_RETURN_TEXT",
+		"value": "Impossibile tornare allo schermo\\nprecedente. Evoca un eroe."
+	},
+	{
+		"key": "MID_DIABOLOS",
+		"value": "Arcana"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_WARNING_DIABOLOS",
+		"value": "Non \u00e8 possibile attivare armi arcane\\nereditate con molte abilit\u00e0 esclusive\\ndegli eroi, ma ci sono delle eccezioni."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_WARNING_INHERITED_DIABOLOS",
+		"value": "Una volta ereditata, un'arma arcana non pu\u00f2\\nessere ereditata di nuovo da un altro eroe."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_INHERIT_WARNING_DIABOLOS_PERSON",
+		"value": "Dato che l'unit\u00e0 donatore \u00e8 un eroe\\nincantato, non andr\u00e0 perso, ma non\\npotrai pi\u00f9 usarlo come donatore\\nin Eredit\u00e0 abilit\u00e0 o per creare\\nun manuale di lotta."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_INHERIT_WARNING_DIABOLOS_SKILL",
+		"value": "Una volta ereditata, un'arma arcana\\nnon pu\u00f2 essere ereditata di nuovo e\\nnon pu\u00f2 essere attivata con molte\\nabilit\u00e0 esclusive degli eroi (ma ci sono\\neccezioni)."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_WARNING_DIABOLOS",
+		"value": "Se fondi due eroi incantati, l'unit\u00e0 ricevente\\nnon guadagner\u00e0 un uso extra di eredit\u00e0 arcana."
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202209_01",
+		"value": "Archivio del Nord"
+	},
+	{
+		"key": "MID_AUT03_Mushroom_Title",
+		"value": "Sapori autunnali"
+	},
+	{
+		"key": "MID_AUT03_Mushroom_Common",
+		"value": "La foresta abbonda di delizie\\nautunnali! Cosa troveranno?"
+	},
+	{
+		"key": "MID_AUT03_Mushroom_3",
+		"value": "Hanno perso la loro preziosa uva...\\nAttenzione agli uccelli affamati!"
+	},
+	{
+		"key": "MID_AUT03_Mushroom_4",
+		"value": "Hanno trovato una montagna di\\nfunghi! Qui ci vuole un banchetto!"
+	},
+	{
+		"key": "MID_AUT03_Mushroom_5",
+		"value": "Hanno raccolto tutto ci\u00f2 che la foresta\\nha da offrire! La natura va ringraziata!"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202209",
+		"value": "Fine della corsa"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_04",
+		"value": "\u25c6Eroi incantati\u25c6\\nGli eroi incantati possono usare\\nun tipo speciale di eredit\u00e0, diversa\\nda quella usata dagli eroi in\\nnormali circostanze."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_05",
+		"value": "\u25c6Eredit\u00e0 arcana\u25c6\\nA differenza della normale\\neredit\u00e0, quando si effettua quella\\narcana, l'unit\u00e0 donatore non viene\\npersa (una volta per ogni\\nevocazione di un eroe incantato e\\nquest'ultimo in seguito non pu\u00f2\\ncreare manuali di lotta)."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_06",
+		"value": "\u25c6Armi arcane\u25c6\\n\u30fb Le armi arcane sono ereditabili.\\n\u30fb Una volta ereditata, un'arma\\narcana non pu\u00f2 pi\u00f9 essere\\nereditata tramite Eredita abilit\u00e0."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_07",
+		"value": "\u25c6Armi arcane: limitazioni\u25c6\\nSolo gli eroi incantati possono\\nattivare allo stesso tempo\\nun'arma arcana e un'abilit\u00e0\\nesclusiva (come Grigie onde) che\\nnon sia Canto, Danza o Suona."
+	},
+	{
+		"key": "MID_UNIT_INFO_BLESSING_BLOOM",
+		"value": "Eroi ascesi e tratti ascesi:\\nGli eroi ascesi hanno un pregio asceso che\\naumenta uno dei loro parametri in aggiunta\\nal pregio e al difetto standard.\\nI Boccioli ascendenti possono anche essere\\nusati per conferire tratti ascesi a eroi non\\nascesi. (Guarda i messaggi informativi nel\\nmenu Ascendi tratti per saperne di pi\u00f9.)"
+	},
+	{
+		"key": "MID_UNIT_INFO_BLESSING_DIABOLOS",
+		"value": "Eroi ascesi (prima di ereditare):\\nA differenza dell'eredit\u00e0 normale,\\nle armi arcane possono essere\\nereditate senza perdere il donatore.\\nPuoi farlo solo una volta per ogni\\neroe incantato evocato. (Guarda\\ni messaggi informativi nel menu\\nEredit\u00e0 abilit\u00e0 per saperne di pi\u00f9.)"
+	},
+	{
+		"key": "MID_UNIT_INFO_BLESSING_DIABOLOS_LOST_RIGHT_OF_SKILL_INHERIT_SOURCE",
+		"value": "Eroi ascesi (eredit\u00e0 arcana):\\nA differenza dell'eredit\u00e0 normale,\\nle armi arcane possono essere\\nereditate senza perdere il donatore.\\nPuoi farlo solo una volta per ogni\\neroe incantato evocato. (Guarda\\ni messaggi informativi nel menu\\nEredit\u00e0 abilit\u00e0 per saperne di pi\u00f9.)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202209",
+		"value": "Fuoco contro fuoco"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_SCOUT_LOG",
+		"value": "Archivio eroi"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_SCOUT_LOG_NONE",
+		"value": "Nessun dato."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_SCOUT_LOG_SELF",
+		"value": "Il tuo personaggio."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_26",
+		"value": "Barriera 26"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_27",
+		"value": "Barriera 27"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_STAGE_28",
+		"value": "Barriera 28"
+	},
+	{
+		"key": "MID_IDOL_TOWER_REOPEN_TITLE",
+		"value": "Sala degli ideali, atto 2\u00ba"
+	},
+	{
+		"key": "MID_IDOL_TICKET_HELP_DIALOG_06",
+		"value": "\u25c6Fondere gli eidos\u25c6\\nSe l'unit\u00e0 donatore e quella\\nricevente sono entrambe degli\\neidos, la loro fusione pu\u00f2 avvenire\\nsenza alcuna restrizione."
+	},
+	{
+		"key": "MID_MAP_SKYCASTLE_CHAOS_SEASON_KILL_BY_BONUS_PERSON_NOT_ACHIEVED",
+		"value": "Unit\u00e0 bonus senza vittorie"
+	},
+	{
+		"key": "MID_MAP_SKYCASTLE_CHAOS_SEASON_KILL_BY_BONUS_PERSON_ACHIEVED",
+		"value": "Vittoria per unit\u00e0 bonus"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TIME_LIMITED_FAVE_LEVEL_BONUS_DAY",
+		"value": "$aBonus favore del fine settimana: ancora $a0 g!"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TIME_LIMITED_FAVE_LEVEL_BONUS_HOUR",
+		"value": "$aBonus favore del fine settimana: ancora $a0 h!"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TIME_LIMITED_FAVE_LEVEL_BONUS_MINUTE",
+		"value": "$aBonus favore del fine settimana: ancora $a0 m!"
+	},
+	{
+		"key": "MID_REALTIME_PVP_TIME_LIMITED_ADDITIONAL_RULE_CHANGE",
+		"value": "Per via di modifiche alle stagioni,\\nti riporteremo al menu principale."
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_18",
+		"value": "\u25c6Favore del fine settimana\u25c6\\n\\nSe ottieni un punteggio di 1 o\\npi\u00f9, che tu vinca o che tu perda,\\notterrai un bonus di +10 al tuo\\nlivello favore. (Solo nei fine\\nsettimana durante i periodi\\nprestabiliti.)"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_19",
+		"value": "\u25c6Regole del fine settimana\u25c6\\n\\nPuoi selezionare la regola\\npersonale Liv 40 senza sostegno.\\n(Solo nei fine settimana durante\\ni periodi prestabiliti.)"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202210",
+		"value": "Vita e morte 4"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202210_1",
+		"value": "Riassunto del libro III"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202210_2",
+		"value": "Agonia"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_CANCEL_CONTRACT",
+		"value": "Annulla tessera"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_FILTER_NAME_TITLE",
+		"value": "Nome abilit\u00e0"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_FILTER_TYPE_TITLE",
+		"value": "Tipo abilit\u00e0"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202210",
+		"value": "Archivio dell'Est"
+	},
+	{
+		"key": "MID_SUM13_Torch_Title",
+		"value": "Gi\u00f9 nella grotta"
+	},
+	{
+		"key": "MID_SUM13_Torch_Common",
+		"value": "La coppia esplora una grotta buia.\\nCosa riveler\u00e0 la luce di una torcia?"
+	},
+	{
+		"key": "MID_SUM13_Torch_3",
+		"value": "Oh no, \u00e8 uno sciame di pipistrelli!\\nLa grotta si riempie di grida di paura!"
+	},
+	{
+		"key": "MID_SUM13_Torch_4",
+		"value": "Hanno scovato un forziere pieno di\\ntesori... Una coppia proprio fortunata!"
+	},
+	{
+		"key": "MID_SUM13_Torch_5",
+		"value": "Hanno scoperto una montagna di oro\\ne di argento! Che gran giorno!"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202210",
+		"value": "Forze arcane"
+	},
+	{
+		"key": "MID_VOTE_TERM_202211",
+		"value": "Lega della lealt\u00e0"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202211",
+		"value": "Archivio del Sud"
+	},
+	{
+		"key": "MID_AUT11_Smell_Title",
+		"value": "Pance brontolanti"
+	},
+	{
+		"key": "MID_AUT11_Smell_Common",
+		"value": "Hanno trovato del cibo... Ma non\\nhanno soldi! Cosa faranno?"
+	},
+	{
+		"key": "MID_AUT11_Smell_3",
+		"value": "Il profumino ha attirato dei gatti. Oggi\\nnon si mangia, ma almeno sono carini!"
+	},
+	{
+		"key": "MID_AUT11_Smell_4",
+		"value": "Hanno abbastanza da poter dividere\\nun piatto. Il miglior pasto di sempre!"
+	},
+	{
+		"key": "MID_AUT11_Smell_5",
+		"value": "Banditi sconfitti e cibo guadagnato!\\nChe goduria... Saltano dalla gioia!"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202211R",
+		"value": "Convinzione assoluta, atto 2\u00ba"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202211",
+		"value": "Vita e morte 5"
+	},
+	{
+		"key": "MID_OCCUPATION_RECOLLECTION_TITLE_202211",
+		"value": "Mae e compagnia 1"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202211",
+		"value": "Illuminare il cammino"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_2",
+		"value": "Sera del raccolto"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_2",
+		"value": "$aI nemici conferiscono PA x5 per $a0 e\\nPA x2 da quel momento in avanti! (Non\\ncumulabile; si applica solo il valore pi\u00f9 alto.)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202212",
+		"value": "Dojo ninja"
 	}
 ]
