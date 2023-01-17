@@ -106,6 +106,7 @@ icons = {
 	"11-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/e/e9/Icon_MiniUnit_Head_11.png?96?86",
 	"12-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a9/Icon_MiniUnit_Head_12.png?96?86",
 	"13-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/0c/Icon_MiniUnit_Head_13.png?96?86",
+	"14-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/3/33/Icon_MiniUnit_Head_14.png?96?86",
 	# Rarity Borders
 	"rarityborder1": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/1f/RarityBorder1.png?259?43",
 	"rarityborder2": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/54/RarityBorder2.png?259?43",
