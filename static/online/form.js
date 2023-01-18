@@ -104,18 +104,18 @@ async function populate(domitem, data, clean, bypass) {
 			if (value.includes("EID")) {
 				// For enemy units if they have a proper title use that and append a boss indicator
 				if (languages[newlang]["M" + value.replace("ID", "ID_HONOR")]) {
-					sorted[languages[newlang]["M" + value] + ": " + languages[newlang]["M" + value.replace("ID", "ID_HONOR")] + " (Boss)"] = value;
+					sorted[value] = languages[newlang]["M" + value] + ": " + languages[newlang]["M" + value.replace("ID", "ID_HONOR")] + " (Boss)";
 				// Otherwise just specify is a generic
 				} else {
-					sorted[languages[newlang]["M" + value] + ": " + "Generic"] = value;
+					sorted[value] = languages[newlang]["M" + value] + ": " + "Generic";
 				}
 			} else {
-				sorted[languages[newlang]["M" + value] + ": " + languages[newlang]["M" + value.replace("ID", "ID_HONOR")]] = value;
+				sorted[value] = languages[newlang]["M" + value] + ": " + languages[newlang]["M" + value.replace("ID", "ID_HONOR")];
 			}
 		});
-		sorted = Object.keys(sorted).sort().reduce((res, key) => (res[key] = sorted[key], res), {});
+		sorted = Object.keys(sorted).sort((a,b) => sorted[a].localeCompare(sorted[b])).reduce((acc,key) => { acc[key] = sorted[key]; return acc; }, {});
 		// Obtain the final data object that rebspicker can read
-		for (const [string, tag] of Object.entries(sorted)) {
+		for (const [tag, string] of Object.entries(sorted)) {
 			options[tag] = {"string": string};
 			if (other["duokeywords"][tag]) {
 				options[tag]["keywords"] = other["duokeywords"][tag];

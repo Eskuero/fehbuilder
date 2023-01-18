@@ -49,19 +49,19 @@ async function populate(domitem, data, clean, bypass = false) {
 			if (value.includes("EID")) {
 				// For enemy units if they have a proper title use that and append a boss indicator
 				if (languages[newlang]["M" + value.replace("ID", "ID_HONOR")]) {
-					sorted[languages[newlang]["M" + value] + ": " + languages[newlang]["M" + value.replace("ID", "ID_HONOR")] + " (Boss)"] = value;
+					sorted[value] = languages[newlang]["M" + value] + ": " + languages[newlang]["M" + value.replace("ID", "ID_HONOR")] + " (Boss)";
 				// Otherwise just specify is a generic
 				} else {
-					sorted[languages[newlang]["M" + value] + ": " + "Generic"] = value;
+					sorted[value] = languages[newlang]["M" + value] + ": " + "Generic";
 				}
 			} else {
-				sorted[languages[newlang]["M" + value] + ": " + languages[newlang]["M" + value.replace("ID", "ID_HONOR")]] = value;
+				sorted[value] = languages[newlang]["M" + value] + ": " + languages[newlang]["M" + value.replace("ID", "ID_HONOR")];
 			}
 		});
-		// Sort all the values byt visible string (https://www.w3docs.com/snippets/javascript/how-to-sort-javascript-object-by-key.html)
-		var sorted = Object.keys(sorted).sort().reduce((res, key) => (res[key] = sorted[key], res), {})
+		// Sort all the values by visible string
+		var sorted = Object.keys(sorted).sort((a,b) => sorted[a].localeCompare(sorted[b])).reduce((acc,key) => { acc[key] = sorted[key]; return acc; }, {});
 		// For each entry print an option
-		for (const [string, tag] of Object.entries(sorted)) {
+		for (const [tag, string] of Object.entries(sorted)) {
 			options[tag] = {"string": string};
 		}
 		// Generate the select
