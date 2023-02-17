@@ -1265,7 +1265,7 @@
 	},
 	{
 		"key": "MSID_H_\u6f06\u9ed2\u306e\u60aa\u5922",
-		"value": "Initiiert der Gegner den Kampf oder sind seine\\nKP zu Beginn des Kampfes \u2265 75 %, erleidet er\\nim Kampf Angr./Ver. -10 und der Schaden\\ndurch den ersten Angriff des Gegners wird im\\nKampf um 30 % reduziert. Initiiert der Gegner\\nden Kampf, enden die Aktionen der Gegner im\\nUmkreis von 4 Feldern des Ziels, die noch keine\\nAktion durchgef\u00fchrt haben, unmittelbar."
+		"value": "Initiiert der Gegner den Kampf oder sind seine\\nKP zu Beginn des Kampfes \u2265 75 %, erleidet er\\nim Kampf Angr./Ver. -10 und der Schaden\\ndurch den ersten Angriff des Gegners wird im\\nKampf um 30 % reduziert. Initiiert der Gegner\\nden Kampf, enden die Aktionen der Gegner mit\\nder geringsten Entfernung im Umkreis von\\n4 Feldern des Ziels, die noch keine Aktion\\ndurchgef\u00fchrt haben, unmittelbar."
 	},
 	{
 		"key": "MSID_H_\u4eba\u306b\u9b54\u9053\u3092\u6388\u3051\u3057\u8005",
@@ -1297,11 +1297,11 @@
 	},
 	{
 		"key": "MID_STAGE_HONOR_L0059",
-		"value": "Fomortiis"
+		"value": "Myth. Heldenkampf"
 	},
 	{
 		"key": "MID_STAGE_L0059",
-		"value": "Gotoh"
+		"value": "F & G"
 	},
 	{
 		"key": "MID_STAGE_HONOR_V0481",
