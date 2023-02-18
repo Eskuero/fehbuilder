@@ -78,8 +78,13 @@ languages["KOKR"] = strings
 for string in languages["USEN"]:
 	if string not in languages["KOKR"]:
 		# Do not print errors for ILLUST and VOICE strings (we still add them)
-		if not any(substr in string for substr in ["VOICE", "ILLUST", "EID"]):
-			print("                - Missing Korean translation for \"" + string + "\", falling back to English as \"" + languages["USEN"][string] + "\"")
+		if not any(substr in string for substr in ["VOICE", "ILLUST"]):
+			# If not an enemy unit always print the errors
+			if not any(substr in string for substr in ["EID"]):
+				print("                - Missing Korean translation for \"" + string + "\", falling back to English as \"" + languages["USEN"][string] + "\"")
+			# Else print the missing enemy unit if there's a corresponding playable unit
+			elif string.replace("EID", "PID") not in languages["USEN"]:
+				print("                - Missing Korean translation for \"" + string + "\", falling back to English as \"" + languages["USEN"][string] + "\"")
 		languages["KOKR"][string] = languages["USEN"][string]
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
