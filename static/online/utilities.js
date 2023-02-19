@@ -45,13 +45,18 @@ function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers
 	}
 
 	// Modify the level 1 stats based on the boons and banes provided
-	var truelevel1 = {
-		"HP": almosttruelevel1["HP"] + (boon == "HP" ? 1 : (bane == "HP" ? -1 : 0)),
+	var truelevel1hp = {
+		"HP": almosttruelevel1["HP"] + (boon == "HP" ? 1 : (bane == "HP" ? -1 : 0))
+	}
+	// We have to split the level 1 stats in HP and non HP because HP is always guaranteed to receive the first boost, even if not highest stat at lvl 1
+	var truelevel1other = {
 		"Atk": almosttruelevel1["Atk"] + (boon == "Atk" ? 1 : (bane == "Atk" ? -1 : 0)),
 		"Spd": almosttruelevel1["Spd"] + (boon == "Spd" ? 1 : (bane == "Spd" ? -1 : 0)),
 		"Def": almosttruelevel1["Def"] + (boon == "Def" ? 1 : (bane == "Def" ? -1 : 0)),
 		"Res": almosttruelevel1["Res"] + (boon == "Res" ? 1 : (bane == "Res" ? -1 : 0))
 	};
+	// We also have a combined copy
+	var truelevel1 = {...truelevel1hp, ...truelevel1other};
 	// Modify the growth based on the boons and banes provided
 	var truegrowth = {
 		"HP": growths[0] + (boon == "HP" ? 5 : (bane == "HP" ? -5 : 0)),
@@ -62,7 +67,7 @@ function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers
 	};
 
 	// We sort the level 1 stats to see the correct order to apply merges and dragonflowers
-	var sortedtruelevel1 = dictsort(truelevel1);
+	var sortedtruelevel1 = [["HP", truelevel1hp["HP"]], ...dictsort(truelevel1other)];
 
 	// Now disregard the bane if we are merged
 	if (merges > 0 && bane && bane != boon) {
