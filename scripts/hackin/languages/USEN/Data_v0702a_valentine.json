@@ -893,11 +893,11 @@
 	},
 	{
 		"key": "MSID_H_\u65b0\u5e74\u306e\u6226\u732b\u306e\u722a\u7259R",
-		"value": "If a skill compares unit's Spd to a foe's or ally's\\nSpd, treats unit's Spd as if granted Spd+10.\\nAt start of combat, if unit's HP \u2265 25%, grants\\nAtk/Spd+5 to unit and neutralizes effects that\\nguarantee foe's follow-up attacks and effects\\nthat prevent unit's follow-up attacks during\\ncombat."
+		"value": "If a skill compares unit's Spd to a foe's or ally's\\nSpd, treats unit's Spd as if granted +10.\\nAt start of combat, if unit's HP \u2265 25%, grants\\nAtk/Spd+5 to unit and neutralizes effects that\\nguarantee foe's follow-up attacks and effects\\nthat prevent unit's follow-up attacks during\\ncombat."
 	},
 	{
 		"key": "MSID_H_\u3084\u3055\u3057\u3044\u3086\u3081\u30fb\u795e",
-		"value": "Grants another action to target ally. Grants\\nAtk/Spd/Def/Res+4 and the following statuses\\nto target ally and allies in cardinal directions\\nof unit and target (excluding unit): \"unit can\\nmove to a space adjacent to any ally within 2\\nspaces\" and \"neutralizes penalties.\" (That turn\\nonly. Cannot target an ally with Sing or Dance.\\nThis skill treated as Sing or Dance.)"
+		"value": "Grants another action to target ally. Grants\\nAtk/Spd/Def/Res+4 and the following statuses\\nto target ally and allies in cardinal directions\\nof unit and target (excluding unit): \"unit can\\nmove to a space adjacent to any ally within 2\\nspaces\" and \"neutralizes penalties on unit\\nduring combat.\" (That turn only. Cannot target\\nan ally with Sing or Dance. This skill treated as\\nSing or Dance.)"
 	},
 	{
 		"key": "MSID_H_\u6b7b\u3093\u3067\u307b\u3057\u3044\u306e\u30fb\u795e",

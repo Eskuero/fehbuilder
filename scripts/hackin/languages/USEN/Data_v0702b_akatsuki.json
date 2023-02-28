@@ -593,7 +593,7 @@
 	},
 	{
 		"key": "MSID_H_\u30af\u30ea\u30df\u30a2\u5973\u738b\u306e\u738b\u7b0f",
-		"value": "Calculates damage from staff like other weapons.\\nAccelerates Special trigger (cooldown count-1;\\nmax cooldown count cannot be reduced\\nbelow 1). At start of turn, if unit is within\\n2 spaces of an ally, grants Atk/Spd+6 and\\nthe following status to unit and allies within\\n2 spaces for 1 turn: \"If unit initiates combat,\\nunit makes a guaranteed follow-up attack.\"\\nIf unit initiates combat or is within 2 spaces\\nof an ally, grants Atk/Spd+6 to unit and grants\\nbonus to unit's Atk/Spd = highest respective\\nAtk/Spd bonuses among unit and allies within\\n2 spaces \u00d7 1.5 (calculates each stat bonus\\nindependently)."
+		"value": "Calculates damage from staff like other weapons.\\nAccelerates Special trigger (cooldown count-1;\\nmax cooldown count cannot be reduced\\nbelow 1). At start of turn, if unit is within\\n2 spaces of an ally, grants Atk/Spd+6 and\\nthe following status to unit and allies within\\n2 spaces for 1 turn: \"If unit initiates combat,\\nunit makes a guaranteed follow-up attack.\"\\nIf unit initiates combat or is within 2 spaces\\nof an ally, grants Atk/Spd+6 to unit and grants\\nbonus to unit's Atk/Spd = highest respective\\nAtk/Spd bonuses among unit and allies within\\n2 spaces \u00d7 1.5 (calculates each stat bonus\\nindependently) during combat."
 	},
 	{
 		"key": "MSID_H_\u5730\u306e\u5973\u795e\u306e\u89d2",
