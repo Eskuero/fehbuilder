@@ -176,8 +176,8 @@ async function reload() {
 		let unitstats = [parseInt(selectadhp.value), parseInt(selectadatk.value), parseInt(selectadspd.value), parseInt(selectaddef.value), parseInt(selectadres.value)];
 		let unitgrowths = [parseInt(selectadhpgrowth.value), parseInt(selectadatkgrowth.value), parseInt(selectadspdgrowth.value), parseInt(selectaddefgrowth.value), parseInt(selectadresgrowth.value)];
 		for (let i = 0; i < unitgrowths.length; i++) {
-			if (unitgrowths[i] < 25 || unitgrowths[i] > 85 || unitgrowths[i] % 5 != 0) {
-				alert("Growth values for stats must be multiples of 5 between 25 and 85");
+			if (unitgrowths[i] < 25 || unitgrowths[i] > 90 || unitgrowths[i] % 5 != 0) {
+				alert("Growth values for stats must be multiples of 5 between 25 and 90");
 				// Clean the queue
 				renderingqueue.shift();
 				return;
