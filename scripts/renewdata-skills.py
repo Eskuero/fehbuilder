@@ -28,6 +28,7 @@ skills = {
 }
 categories = [skills["weapons"], skills["assists"], skills["specials"], skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"]]
 refines = {}
+allskills = {}
 
 # Get all the files that contain skill definitions and loop through them
 files = os.listdir("feh-assets-json/files/assets/Common/SRPG/Skill/")
@@ -36,6 +37,8 @@ for file in files:
 		data = json.load(datasource)
 		# SID_無し is skeleton data for a skill so we ignore
 		for entry in [entry for entry in data if entry["id_tag"] != "SID_無し"]:
+			# Do a clean copy in allskills first for later checks
+			allskills[entry["id_tag"]] = entry
 			# Store all the data except if it's a refine
 			if not entry["refine_base"] and entry["category"] in range(0, 7):
 				categories[entry["category"]][entry["id_tag"]] = {
@@ -85,8 +88,13 @@ for refinable in refines:
 	}
 	# For Effect refines we have skill references
 	if refine == "Effect":
+		basestats = skills["weapons"][refines[refinable]["baseWeapon"]]["refines"][refine]["stats"]
+		# If the refine had an effectid we must append stats to the base refine from the reference
+		if refines[refinable]["effectid"]:
+			effectstats = [value for value in allskills[refines[refinable]["effectid"]]["stats"].values()]
+			basestats = [basestats[0] + effectstats [0], basestats[1] + effectstats [1], basestats[2] + effectstats [2], basestats[3] + effectstats [3], basestats[4] + effectstats [4]]
 		skills["weapons"][refines[refinable]["baseWeapon"]]["refines"][refine].update({
-			"effectid": refines[refinable]["effectid"],
+			"stats": basestats,
 			"iconid": refines[refinable]["iconid"]
 		})
 

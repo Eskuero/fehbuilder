@@ -281,12 +281,6 @@ function weaponmodifiers(weapon, refine) {
 	// Obtain the values from the refined weapon if it has it available
 	if (refine) {
 		stats = weapon["refines"][refine]["stats"];
-		// If the weapon has an effect ID and we are refining for it we need to check if it has visible stats on it from a base skill (then add them)
-		if (weapon["refines"][refine]["effectid"]) {
-			stats = stats.map(function (value, index) {
-				return value + (allpassives[weapon["refines"][refine]["effectid"]] ? allpassives[weapon["refines"][refine]["effectid"]]["stats"] : [0,0,0,0,0])[index];
-			});
-		}
 	// Unrefined weapon, just use base values
 	} else {
 		stats = weapon["stats"];
