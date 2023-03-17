@@ -70,6 +70,9 @@ canvas = document.getElementById('canvas');
 fakecanvas = document.getElementById('fakecanvas');
 usedallies = document.getElementById('usedalliesform');
 
+// Some static variables
+const MAXHM = 9000
+
 // We store languages data for display of strings within the browser
 languages = {};
 

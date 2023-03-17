@@ -208,7 +208,7 @@ async function reload() {
 	// Print the amount of SP and HM
 	var numbertype = selectsp.value == "9999" ? 4 : 0;
 	printnumbers(preview, parseInt(selectsp.value), numbertype, 265, 1052, "end");
-	var numbertype = selecthm.value == "9000" ? 4 : 0;
+	var numbertype = selecthm.value == MAXHM ? 4 : 0;
 	printnumbers(preview, parseInt(selecthm.value), numbertype, 265, 1100, "end");
 
 	// Print the ascendent floret icon if selected
