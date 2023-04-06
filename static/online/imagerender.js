@@ -185,9 +185,10 @@ async function echoes() {
 	// Print the level string
 	preview.font = '22px FeH-Font'; preview.fillStyle = "#cd7b7b"; preview.strokeStyle = '#0a2533'; preview.textAlign = 'start';
 	preview.fillText(languages[language]["MID_LEVEL2"], 445, 7);
-	// Print the level 40. It was hardcoded previously so we just do this to make sure it doesn't look off side by side with the merge count
+	// Print the level. It was hardcoded previously so we just do this to make sure it doesn't look off side by side with the merge count
+	var level = selectlevel.value == "level1" ? "1" : "40";
 	preview.fillStyle = "white";
-	preview.fillText("40", 490, 7);
+	preview.fillText(level, 490, 7);
 
 	// If we have merges we add the text next to the level
 	if (merges > 0) {
@@ -456,7 +457,8 @@ async function condensed() {
 	preview.font = '20px FeH-Font'; preview.fillStyle = "#ffffff"; preview.strokeStyle = '#0a2533'; preview.textAlign = 'center';
 	preview.strokeText(languages[language]["MID_LEVEL2"], 501, 6); preview.fillText(languages[language]["MID_LEVEL2"], 501, 6);
 	// Print the level 40. It was hardcoded previously so we just do this to make sure it doesn't look off side by side with the merge count
-	printnumbers(preview, 40, 1, 480, 30, "start");
+	var level = selectlevel.value == "level1" ? 1 : 40;
+	printnumbers(preview, level, 1, 480, 30, "start");
 
 	// If we have merges we add the text next to the level
 	if (merges > 0) {
@@ -811,7 +813,8 @@ async function myunit() {
 	preview.font = '24px FeH-Font'; preview.fillStyle = "#ffffff"; preview.strokeStyle = '#0a2533'; preview.textAlign = 'start';
 	preview.strokeText(languages[language]["MID_LEVEL2"], 70, 746); preview.fillText(languages[language]["MID_LEVEL2"], 70, 746);
 	// Print the level 40. It was hardcoded previously so we just do this to make sure it doesn't look off side by side with the merge count
-	printnumbers(preview, 40, 1, 124, 745, "start");
+	var level = selectlevel.value == "level1" ? 1 : 40;
+	printnumbers(preview, level, 1, 124, 745, "start");
 
 	// If we have merges we add the text next to the level
 	if (merges > 0) {

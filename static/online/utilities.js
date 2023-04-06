@@ -110,12 +110,15 @@ function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers
 		stat = stat == 4 ? 0 : stat + 1;
 	}
 
+	// Decide if we will add growth values or not
+	var maxed = selectlevel.value == "level1" ? false : true;
+
 	return [
-		truelevel1["HP"] + generalgrowths[rarity-1][(truegrowth["HP"] / 5) - 4],
-		truelevel1["Atk"] + generalgrowths[rarity-1][(truegrowth["Atk"] / 5) - 4],
-		truelevel1["Spd"] + generalgrowths[rarity-1][(truegrowth["Spd"] / 5) - 4],
-		truelevel1["Def"] + generalgrowths[rarity-1][(truegrowth["Def"] / 5) - 4],
-		truelevel1["Res"] + generalgrowths[rarity-1][(truegrowth["Res"] / 5) - 4],
+		truelevel1["HP"] + (maxed ? generalgrowths[rarity-1][(truegrowth["HP"] / 5) - 4] : 0),
+		truelevel1["Atk"] + (maxed ? generalgrowths[rarity-1][(truegrowth["Atk"] / 5) - 4] : 0),
+		truelevel1["Spd"] + (maxed ? generalgrowths[rarity-1][(truegrowth["Spd"] / 5) - 4] : 0),
+		truelevel1["Def"] + (maxed ? generalgrowths[rarity-1][(truegrowth["Def"] / 5) - 4] : 0),
+		truelevel1["Res"] + (maxed ? generalgrowths[rarity-1][(truegrowth["Res"] / 5) - 4] : 0),
 	];
 }
 // Growth table from https://feheroes.fandom.com/wiki/Stat_growth (this is hardcoded because deriving the actual values from the base formula is increasingly tricky due aproximations .99999 decimals and such). Theorically we should be able to calculate with (math.trunc(truegrowth["Res"] * raritymultipliers[rarity-1]) / 100)

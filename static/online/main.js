@@ -29,6 +29,7 @@ selectascendent = document.getElementById('ascendent');
 selectbeast = document.getElementById('beast');
 selectrefines = document.getElementById('refine');
 selectblessings = document.getElementById('blessing');
+selectlevel = document.getElementById("level");
 selectsummoner = document.getElementById('summoner');
 selectattire = document.getElementById('attire');
 selectbonusunit = document.getElementById('bonusunit');
