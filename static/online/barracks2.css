@@ -1,0 +1,140 @@
+/* Main container container, open button and inner */
+#barracksdialog2 {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	z-index: 300;
+}
+
+#openbutton {
+	position: relative;
+	display: inline-block;
+	padding: 10px;
+	background-color: #006bde;
+	color: white;
+	cursor: pointer;
+	word-break: break-all;
+	max-width: 1em;
+	border-radius: 0 1em 1em 0;
+	font-weight: bold;
+}
+
+#barrackscontent {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -48em;
+	width: 48em;
+	height: 90vh;
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	transition: left 0.3s ease-in-out;
+	overflow-y: auto;
+	border-radius: 0 1em 1em 0;
+}
+
+/* Move whole dialogue once we hover */
+#barrackscontent.visible {
+	left: 0;
+}
+
+@media (max-aspect-ratio: 5/4) { /* Small screen layout */
+	#barrackscontent {
+		left: -48em;
+		width: 48em;
+	}
+}
+
+@media (min-resolution: 150dpi) and (max-aspect-ratio: 10/7), (orientation: portrait) { /* Mobile/Portrait layouts */
+	#barrackscontent {
+		left: -90vw;
+		width: 90vw;
+	}
+}
+
+/* CONTENT */
+.dialogform {
+	background-color: white;
+	padding: 1.5em 2.5em 1em 2.5em;
+	position: relative;
+	width: 43em;
+}
+
+@media (min-resolution: 150dpi) and (max-aspect-ratio: 10/7), (orientation: portrait) {  /* Mobile/Portrait layouts */
+	.dialogform {
+		width: calc(90vw - 5em);
+	}
+}
+/* Sections */
+.actionsform {
+	grid-template-rows: 2em;
+	grid-template-columns: repeat(4, auto); /* Use 5 size variable columns and a single row */
+	gap: 0.5em;
+}
+.build {
+	border-top: 1px solid black;
+	padding-top: 1em;
+	margin-top: 1em;
+	grid-template-rows: 2em;
+	grid-template-columns: repeat(3, 1fr); /* Use 5 size variable columns and a single row */
+}
+.settings {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 1em 0 1em 0;
+	margin-top: 1em;
+	grid-template-rows: 2em;
+	grid-template-columns: repeat(2, 1fr); /* Use 5 size variable columns and a single row */
+}
+
+@media (min-resolution: 150dpi) and (max-aspect-ratio: 10/7), (orientation: portrait) {  /* Mobile/Portrait layouts */
+	.actionsform {
+		grid-template-rows: repeat(2, 2em);
+		grid-template-columns: repeat(2, 1fr);
+		margin-bottom: 1em;
+	}
+	.build {
+		grid-template-columns: repeat(2, 1fr); /* Use 5 size variable columns and a single row */
+	}
+}
+
+/* List of all barracks */
+#unitlist {
+	display: flex;
+	gap: 0.5em;
+	margin-top: 1em;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 43em;
+	padding: 0 2.5em 1em 2.5em;
+}
+
+.barrackshero {
+	height: 5em;
+	width: 5em;
+	cursor: pointer;
+	display: flex;
+	background-size: cover;
+	box-sizing: border-box;
+	background-origin: border-box;
+}
+input[type="radio"]:checked + label.barrackshero {
+	border: 3px solid #006bde;
+}
+
+.barrackshero > .buildname {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	color: white;
+	background-color: #000000AA;
+	margin-top: auto;
+	width: 100%;
+}
+
+@media (min-resolution: 150dpi) and (max-aspect-ratio: 10/7), (orientation: portrait) {  /* Mobile/Portrait layouts */
+	#unitlist {
+		width: calc(90vw - 5em);
+	}
+}

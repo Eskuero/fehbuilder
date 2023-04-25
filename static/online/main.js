@@ -79,8 +79,6 @@ builds = [
 // This array will be used as rendering queue
 renderingqueue = [];
 
-// Dialog to manage your barracks
-barracksdialog = document.getElementById("barracksdialog");
 // Try to get all saved units
 if (localStorage.getItem('barracks')) {
 	barracks = JSON.parse(localStorage.getItem('barracks'));

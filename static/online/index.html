@@ -11,7 +11,7 @@
 		<script src="/common/rebspicker.js" defer></script>
 		<script src="utilities.js" defer></script>
 		<script src="form.js" defer></script>
-		<script src="barracks.js" defer></script>
+		<script src="barracks2.js" defer></script>
 		<script src="main.js" defer></script>
 		<script src="imagerender.js" defer></script>
 
@@ -21,7 +21,7 @@
 		<link rel="preload" href="/common/data/content/onlineother.json" as="fetch" type="text/json" crossorigin="anonymous">
 
 		<link rel="stylesheet" href="builder.css">
-		<link rel="stylesheet" href="barracks.css" media="print" onload="this.media='all'">
+		<link rel="stylesheet" href="barracks2.css" media="print" onload="this.media='all'">
 		<link rel="stylesheet" href="/common/rebspicker.css">
 
 		<link rel="icon" href="/common/assets/Feh.webp" />
@@ -65,7 +65,6 @@
 							<option value="KOKR">한국어</option>
 							<option value="USPT">Português</option>
 						</select>
-						<button class="actionbutton" onclick="openclosebarracks('open')">Barracks</button>
 					</div>
 				</div>
 				<div class="sectiontitle">
@@ -367,86 +366,89 @@
 				</div>
 			</div>
 		</div>
-		<div id="barracksdialog">
-			<div class="dialogform">
-				<div class="cerrar" onclick="openclosebarracks('close')" ></div>
-				<div class="section actionsform">
-					<button class="actionbutton" onclick="loadbuild()">Load</button>
-					<button class="actionbutton" onclick="savebuild()">Save</button>
-					<button class="actionbutton" onclick="removebuild()">Remove</button>
-					<button class="actionbutton" onclick="savebuild('overwrite')">Overwrite</button>
+		<div id="barracksdialog2">
+			<div id="openbutton">
+				BARRACKS
+			</div>
+			<div id="barrackscontent">
+				<div class="dialogform">
+					<div class="section actionsform">
+						<button class="actionbutton" onclick="loadbuild()" title="Load from barracks onto builder">Load</button>
+						<button class="actionbutton" onclick="savebuild()" title="Save from builder to barracks">Save</button>
+						<button class="actionbutton" onclick="removebuild()" title="Removed selected build from barracks">Remove</button>
+						<button class="actionbutton" onclick="savebuild('overwrite')" title="Overwrite from builder to selected barracks build">Overwrite</button>
+					</div>
+					<div class="section build">
+						<div class="row-property single">
+							<div class="imagelabel" style="--spriteid:1"></div>
+							<div class="textlabel" id="buildhero">-</div>
+						</div>
+						<div class="row-property double">
+							<div class="imagelabel" style="--spriteid:6"></div>
+							<div class="textlabel" id="buildmerges">-</div>
+							<div class="imagelabel" style="--spriteid:7"></div>
+							<div class="textlabel" id="buildflowers">-</div>
+						</div>
+						<div class="row-property double">
+							<div class="imagelabel" style="--spriteid:8"></div>
+							<div class="textlabel" id="buildboon">-</div>
+							<div class="imagelabel" style="--spriteid:9"></div>
+							<div class="textlabel" id="buildbane">-</div>
+						</div>
+						<div class="row-property double">
+							<div class="imagelabel" style="--spriteid:10"></div>
+							<div class="textlabel" id="buildascended">-</div>
+							<div class="imagelabel" style="--spriteid:12"></div>
+							<div class="textlabel" id="buildblessing">-</div>
+						</div>
+						<div class="row-property single">
+							<div class="imagelabel" style="--spriteid:13"></div>
+							<div class="textlabel" id="buildweapon">-</div>
+						</div>
+						<div class="row-property single">
+							<div class="imagelabel" style="--spriteid:14"></div>
+							<div class="textlabel" id="buildrefine">-</div>
+						</div>
+						<div class="row-property single">
+							<div class="imagelabel" style="--spriteid:15"></div>
+							<div class="textlabel" id="buildassist">-</div>
+						</div>
+						<div class="row-property single">
+							<div class="imagelabel" style="--spriteid:16"></div>
+							<div class="textlabel" id="buildspecial">-</div>
+						</div>
+						<div class="row-property single">
+							<div class="imagelabel" style="--spriteid:17"></div>
+							<div class="textlabel" id="buildA">-</div>
+						</div>
+						<div class="row-property single">
+							<div class="imagelabel" style="--spriteid:18"></div>
+							<div class="textlabel" id="buildB">-</div>
+						</div>
+						<div class="row-property single">
+							<div class="imagelabel" style="--spriteid:19"></div>
+							<div class="textlabel" id="buildC">-</div>
+						</div>
+						<div class="row-property single">
+							<div class="imagelabel" style="--spriteid:20"></div>
+							<div class="textlabel" id="buildS">-</div>
+						</div>
+					</div>
+					<div class="section settings">
+						<div class="row-property single">
+							<div class="imagelabel" style="--spriteid:43"></div>
+							<input type="text" id="searchbarracks" onchange="loadbarracks()" onkeyup="loadbarracks()" placeholder="Search...">
+						</div>
+						<div class="row-property single">
+							<div class="imagelabel" style="--spriteid:44"></div>
+							<select class="select-without-search double" id="sortbarracks" onchange="loadbarracks()">
+								<option value="older">Older first</option>
+								<option value="newer">Newer first</option>
+							</select>
+						</div>
+					</div>
 				</div>
-				<div class="row-property single">
-					<label class="textlabel">Build:</label>
-					<div id="selectbuild" onchange="showbuild()"></div>
-				</div>
-				<h2>Unit</h2>
-				<div class="section build">
-					<div class="row-property single">
-						<div class="imagelabel" style="--spriteid:1"></div>
-						<div class="textlabel" id="buildhero">-</div>
-					</div>
-					<div class="row-property double">
-						<div class="imagelabel" style="--spriteid:2"></div>
-						<div class="textlabel" id="buildattire">-</div>
-						<div class="imagelabel" style="--spriteid:5"></div>
-						<div class="textlabel" id="buildsupport">-</div>
-					</div>
-					<div class="row-property double">
-						<div class="imagelabel" style="--spriteid:6"></div>
-						<div class="textlabel" id="buildmerges">-</div>
-						<div class="imagelabel" style="--spriteid:7"></div>
-						<div class="textlabel" id="buildflowers">-</div>
-					</div>
-					<div class="row-property double">
-						<div class="imagelabel" style="--spriteid:8"></div>
-						<div class="textlabel" id="buildboon">-</div>
-						<div class="imagelabel" style="--spriteid:9"></div>
-						<div class="textlabel" id="buildbane">-</div>
-					</div>
-					<div class="row-property double">
-						<div class="imagelabel" style="--spriteid:10"></div>
-						<div class="textlabel" id="buildascended">-</div>
-						<div class="imagelabel" style="--spriteid:12"></div>
-						<div class="textlabel" id="buildblessing">-</div>
-					</div>
-				</div>
-				<h2>Skills</h2>
-				<div class="section build">
-					<div class="row-property single">
-						<div class="imagelabel" style="--spriteid:13"></div>
-						<div class="textlabel" id="buildweapon">-</div>
-					</div>
-					<div class="row-property single">
-						<div class="imagelabel" style="--spriteid:14"></div>
-						<div class="textlabel" id="buildrefine">-</div>
-					</div>
-					<div class="row-property single">
-						<div class="imagelabel" style="--spriteid:15"></div>
-						<div class="textlabel" id="buildassist">-</div>
-					</div>
-					<div class="row-property single">
-						<div class="imagelabel" style="--spriteid:16"></div>
-						<div class="textlabel" id="buildspecial">-</div>
-					</div>
-					<div class="row-property single">
-						<div class="imagelabel" style="--spriteid:17"></div>
-						<div class="textlabel" id="buildA">-</div>
-					</div>
-					<div class="row-property single">
-						<div class="imagelabel" style="--spriteid:18"></div>
-						<div class="textlabel" id="buildB">-</div>
-					</div>
-					<div class="row-property single">
-						<div class="imagelabel" style="--spriteid:19"></div>
-						<div class="textlabel" id="buildC">-</div>
-					</div>
-					<div class="row-property single">
-						<div class="imagelabel" style="--spriteid:20"></div>
-						<div class="textlabel" id="buildS">-</div>
-					</div>
-				</div>
-				<div style="margin-top: 1em">This data is a preview, but other info like mythic allies, background, art position, etc... is also saved.</div>
+				<div id="unitlist"></div>
 			</div>
 		</div>
     </body>
