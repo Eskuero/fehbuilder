@@ -69,11 +69,11 @@ languages = {};
 buildslot = 0;
 	// Initial data for each build slot
 builds = [
-	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,MAXHM,"Portrait","MyUnit","0","0","None","base","1","None", "", true],
-	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,MAXHM,"Portrait","MyUnit","0","0","None","base","1","None", "", true],
-	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,MAXHM,"Portrait","MyUnit","0","0","None","base","1","None", "", true],
-	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,MAXHM,"Portrait","MyUnit","0","0","None","base","1","None", "", true],
-	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,MAXHM,"Portrait","MyUnit","0","0","None","base","1","None", "", true]
+	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,MAXHM,"Portrait","MyUnit","0","0","None","base","1","None", "", true, "level40"],
+	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,MAXHM,"Portrait","MyUnit","0","0","None","base","1","None", "", true, "level40"],
+	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,MAXHM,"Portrait","MyUnit","0","0","None","base","1","None", "", true, "level40"],
+	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,MAXHM,"Portrait","MyUnit","0","0","None","base","1","None", "", true, "level40"],
+	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,MAXHM,"Portrait","MyUnit","0","0","None","base","1","None", "", true, "level40"]
 ];
 
 // This array will be used as rendering queue
