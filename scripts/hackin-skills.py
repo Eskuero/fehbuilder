@@ -98,10 +98,10 @@ for refinable in refines:
 			"iconid": refines[refinable]["iconid"]
 		})
 
-# FIXME: Do it from datamine! Complete seals data by getting which skills are available to buy and copying their counterparts data (except for the max setting, which depends on if it's the last seal of it's line)
-files = os.listdir("feh-assets-json/files/assets/Common/SRPG/SkillAccessory/")
+# Complete seals data by getting which skills are available to buy and copying their counterparts data (except for the max setting, which depends on if it's the last seal of it's line)
+files = os.listdir("hackin/sacredseals/")
 for file in files:
-	with open("feh-assets-json/files/assets/Common/SRPG/SkillAccessory/" + file, "r") as datasource:
+	with open("hackin/sacredseals/" + file, "r") as datasource:
 		data = json.load(datasource)
 		# Retrieve all normal skill data to get info because we don't know the category of the skill
 		allpassives = skills["passives"]["A"] | skills["passives"]["B"] | skills["passives"]["C"] | skills["passives"]["S"]

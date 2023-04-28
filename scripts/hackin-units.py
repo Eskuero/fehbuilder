@@ -22,10 +22,10 @@ heroes = {}
 with open("fullskills.json", "r") as datasource:
 	weapons = json.load(datasource)["weapons"]
 weaponevolutions = {}
-# FIXME: Do it from datamine! Get all the files that contain weapon evolution definitions and loop through them
-files = os.listdir("feh-assets-json/files/assets/Common/SRPG/WeaponRefine/")
+# Get all the files that contain weapon evolution definitions and loop through them
+files = os.listdir("hackin/weaponevolutions/")
 for file in files:
-	with open("feh-assets-json/files/assets/Common/SRPG/WeaponRefine/" + file, "r") as datasource:
+	with open("hackin/weaponevolutions/" + file, "r") as datasource:
 		data = json.load(datasource)
 		# Skip any weapon evolution not in the weapons to avoid adding normal refines
 		for entry in [entry for entry in data if entry["refined"] in weapons]:
