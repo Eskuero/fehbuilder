@@ -1,0 +1,406 @@
+[
+	{
+		"key": "MID_HOME_EXPLORER_MISSION_NOTIFICATION",
+		"value": "Obtenez une r\u00e9compense par jour.\\nOuvrir le menu Pi\u00e8ge de Gullveig ?"
+	},
+	{
+		"key": "MID_HOME_EXPLORER_NAVIGATION_JUMP",
+		"value": "Pi\u00e8ge de Gullveig"
+	},
+	{
+		"key": "MID_CONFIG_HOME_NOTIFICATION_EXPLORER",
+		"value": "Notif. d'accueil\\nPi\u00e8ge de Gullveig"
+	},
+	{
+		"key": "MID_EXPLORER_TITLE",
+		"value": "Pi\u00e8ge de Gullveig"
+	},
+	{
+		"key": "MID_EXPLORER_REMAINING_DAYS",
+		"value": "$aEncore $a0 j"
+	},
+	{
+		"key": "MID_EXPLORER_REMAINING_HOURS",
+		"value": "$aEncore $a0 h"
+	},
+	{
+		"key": "MID_EXPLORER_REMAINING_MINUTES",
+		"value": "$aEncore $a0 min"
+	},
+	{
+		"key": "MID_EXPLORER_STAMINA",
+		"value": "\u00c9nergie"
+	},
+	{
+		"key": "MID_EXPLORER_CLOSED",
+		"value": "\u00c9v\u00e9nement termin\u00e9."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_BUTTON_WORLD_MAP",
+		"value": "Faille temporelle"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_BUTTON_SYSTEM_MENU",
+		"value": "Voyager"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_BUTTON_REWARD",
+		"value": "R\u00e9comp."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_BONUS_AUTHORITY",
+		"value": "Jeux bonus"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_CONFIRM",
+		"value": "Commencer l'\u00e9v\u00e9nement ?"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_WARNING",
+		"value": "Vous ne pourrez changer votre \u00e9quipe\\npendant l'\u00e9v\u00e9nement que si vous\\nretournez au d\u00e9but. Le niveau des\\nh\u00e9ros sera de 40. Les emplacements\\ndes aptitudes A, B et C vides seront\\nremplis par des aptitudes au hasard."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_DECIDE",
+		"value": "Commencer"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_FAILED",
+		"value": "Impossible de commencer l'\u00e9v\u00e9nement."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_FAILED_WARNING_TROOP_RESTRICTION",
+		"value": "Tous les emplacements de votre\\n\u00e9quipe doivent \u00eatre occup\u00e9s par\\nun h\u00e9ros.\\n\\nImpossible d'utiliser plusieurs\\nexemplaires du m\u00eame h\u00e9ros.\\n\\nVous ne pouvez pas utiliser plus\\nd'un alli\u00e9 avec l'aptitude Chant ou\\nDanse.\\n\\nVous ne pouvez pas utiliser plus\\nd'un alli\u00e9 avec l'aptitude Sauveur."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_RESTORE_POINT",
+		"value": "Retourner au mini-boss"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_RESTORE_POINT_DIALOG_CONFIRM",
+		"value": "Aller au dernier mini-boss vaincu ?"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_RESTORE_POINT_DIALOG_WARNING",
+		"value": "Toute la progression sera perdue,\\nsauf les r\u00e9compenses. L'\u00e9nergie\\nconsomm\u00e9e sera restaur\u00e9e."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_RESTORE_POINT_DIALOG_DECIDE",
+		"value": "Voyager"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_FIRST",
+		"value": "Retourner au d\u00e9but"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_FIRST_DIALOG_CONFIRM",
+		"value": "Voulez-vous retourner au d\u00e9but ?"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_FIRST_DIALOG_WARNING",
+		"value": "$aToute la progression sera perdue,\\nsauf les r\u00e9compenses. L'\u00e9nergie\\nconsomm\u00e9e sera restaur\u00e9e. De tous\\nles grains du temps obtenus, $a0 %\\n($a1 max) seront conserv\u00e9s."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_FIRST_DIALOG_DECIDE",
+		"value": "Voyager"
+	},
+	{
+		"key": "MID_EXPLORER_WORLD_MAP_TITLE",
+		"value": "Faille temporelle"
+	},
+	{
+		"key": "MID_EXPLORER_WORLD_MAP_BUTTON_SKILL_EQUIP",
+		"value": "Aptitudes"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_TITLE",
+		"value": "$aFaille temporelle $a0"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_FINAL_BOSS",
+		"value": "Boss final"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_MID_BOSS",
+		"value": "Mini-boss"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_PASSIVE_A",
+		"value": "Aptitude A"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_PASSIVE_B",
+		"value": "Aptitude B"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_PASSIVE_C",
+		"value": "Aptitude C"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_SHOP",
+		"value": "Sceau de Vanir"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_INN",
+		"value": "Havre de paix"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIFFICULTY_0",
+		"value": "Novice"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIFFICULTY_1",
+		"value": "Interm\u00e9diaire"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIFFICULTY_2",
+		"value": "V\u00e9t\u00e9ran"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_CONNECT_NAME_AND_DIFFICULTY",
+		"value": "$a$a0 - $a1"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DAILY_BONUS_REWARD",
+		"value": "Une r\u00e9compense \u00e0 gagner chaque jour !"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DAILY_BONUS_INFO",
+		"value": "Gagnez une r\u00e9compense chaque jour\\nen terminant une carte. (5 jours max.)"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_FIRST_REWARD",
+		"value": "R\u00e9compense premi\u00e8re fois"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_FIRST_ADVANCED_REWARD",
+		"value": "R\u00e9compense niv. avanc\u00e9"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_FIRST_REWARD_AND_FIRST_ADVANCED_REWARD",
+		"value": "R\u00e9compense premi\u00e8re fois + niv. avanc\u00e9"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIALOG_DECIDE_BATTLE_START",
+		"value": "Combattre"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIALOG_DECIDE_SHOP",
+		"value": "Entrer"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIALOG_DECIDE_INN",
+		"value": "Entrer"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_START_FAILED_DIALOG_CONFIRM",
+		"value": "Impossible d'avancer."
+	},
+	{
+		"key": "MID_EXPLORER_AREA_START_FAILED_DIALOG_WARNING_TERM_EXPIRED",
+		"value": "\u00c9v\u00e9nement termin\u00e9."
+	},
+	{
+		"key": "MID_EXPLORER_AREA_START_FAILED_DIALOG_WARNING_NO_STAMINA",
+		"value": "\u00c9nergie insuffisante."
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_CATEGORY_PASSIVE_A",
+		"value": "Aptitude A"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_CATEGORY_PASSIVE_B",
+		"value": "Aptitude B"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_CATEGORY_PASSIVE_C",
+		"value": "Aptitude C"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_CATEGORY_REMOVE",
+		"value": "Supprimer"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_EQUIP_TITLE",
+		"value": "Modifier aptitudes"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_EQUIP_DIALOG_DECIDE",
+		"value": "Modifier"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_EQUIP_DIALOG_CONFIRM",
+		"value": "Modifier les aptitudes assign\u00e9es ?"
+	},
+	{
+		"key": "MID_EXPLORER__SKILL_EQUIP_CANCEL_DIALOG_CONFIRM",
+		"value": "Renoncer \u00e0 ces modifications ?"
+	},
+	{
+		"key": "MID_EXPLORER__SKILL_EQUIP_CANCEL_DIALOG_WARNING",
+		"value": "Toute modification non\\nsauvegard\u00e9e sera perdue."
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_EQUIP_CANCEL_DIALOG_DECIDE",
+		"value": "Renoncer"
+	},
+	{
+		"key": "MID_EXPLORER_EVENT_ITEM_UNLOCK_RANDOM_ORIGINAKL_SKILL",
+		"value": "D\u00e9verrouiller empl. al\u00e9atoire"
+	},
+	{
+		"key": "MID_EXPLORER_EVENT_ITEM_UNLOCK_RANDOM_ORIGINAKL_SKILL_RESULT",
+		"value": "$aAptitude d\u00e9verrouill\u00e9e pour\\n$a0."
+	},
+	{
+		"key": "MID_EXPLORER_EVENT_ITEM_UNLOCK_EXTENDED_SKILL",
+		"value": "D\u00e9verrouiller empl. d'\u00e9quipe"
+	},
+	{
+		"key": "MID_EXPLORER_EVENT_ITEM_OMIT",
+		"value": "$aet $a0 de plus"
+	},
+	{
+		"key": "MID_EXPLORER_BATTLE_REWARD_TITLE",
+		"value": "R\u00e9comp. combat"
+	},
+	{
+		"key": "MID_EXPLORER_BATTLE_REWARD_HELP",
+		"value": "Choisissez une r\u00e9compense."
+	},
+	{
+		"key": "MID_EXPLORER_BATTLE_REWARD_DIALOG_CONFIRM",
+		"value": "Voulez-vous cette r\u00e9compense ?"
+	},
+	{
+		"key": "MID_EXPLORER_BATTLE_REWARD_DIALOG_DECIDE",
+		"value": "Accepter"
+	},
+	{
+		"key": "MID_EXPLORER_INN_TALK_0",
+		"value": "$WmMPID_\u30a2\u30eb\u30d5\u30a9\u30f3\u30b9,ch00_01_Alfons_M_Normal,Face|Reposons-nous ici pour aujourd'hui.\\nOn dirait que le combat va encore\\ndurer, $Nu.$k$p"
+	},
+	{
+		"key": "MID_EXPLORER_INN_TALK_1",
+		"value": "$WmMPID_\u30b7\u30e3\u30ed\u30f3,ch00_02_Sharon_F_Normal,Face|Nous pouvons nous reposer ici\\npour aujourd'hui ! Je vais pr\u00e9parer\\nle repas !$k$p"
+	},
+	{
+		"key": "MID_EXPLORER_INN_TALK_2",
+		"value": "$WmMPID_\u30a2\u30f3\u30ca,ch00_03_Anna_F_Normal,Face|Campons ici. Nous n'irons pas\\nplus loin pour aujourd'hui !$k$p"
+	},
+	{
+		"key": "MID_EXPLORER_INN_TALK_3",
+		"value": "$WmMPID_\u30bb\u30a4\u30ba,ch00_46_Seith_F_Normal,Face|Reposez-vous, enfants de Midgard.\\nCet endroit a une aura r\u00e9paratrice\\nqui apaisera vos blessures...$k$p"
+	},
+	{
+		"key": "MID_EXPLORER_INN_DIALOG_CONFIRM",
+		"value": "PV restaur\u00e9s."
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_TITLE",
+		"value": "Sceau de Vanir"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_HELP",
+		"value": "S\u00e9lectionnez une aptitude \u00e0 d\u00e9verrouiller."
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_EMPTY",
+		"value": "Aucune aptitude \u00e0 d\u00e9verrouiller."
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_BUTTON_PURCHASE",
+		"value": "D\u00e9verrouiller"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_BUTTON_FINISH",
+		"value": "Quitter"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_BUTTON_DESELECT",
+		"value": "D\u00e9s\u00e9lectionner"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_PURCHASE_DIALOG_CONFIRM",
+		"value": "D\u00e9verrouiller la s\u00e9lection ?"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_PURCHASE_DIALOG_DECIDE",
+		"value": "D\u00e9verrouiller"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_FINISH_DIALOG_CONFIRM",
+		"value": "Voulez-vous annuler et quitter ?"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_FINISH_DIALOG_WARNING",
+		"value": "Vous ne pourrez pas revenir."
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_FINISH_DIALOG_DECIDE",
+		"value": "Quitter"
+	},
+	{
+		"key": "MID_EXPLORER_ENDING_TELOP",
+		"value": "Vous avez travers\u00e9 la faille temporelle\\net \u00eates de retour \u00e0 votre \u00e9poque !"
+	},
+	{
+		"key": "MID_EXPLORER_ENDING_DIALOG_CONFIRM",
+		"value": "F\u00e9licitations, vous avez \u00e9chapp\u00e9 au\\nPi\u00e8ge de Gullveig ! L'\u00e9v\u00e9nement\\nest d\u00e9sormais termin\u00e9. Vous pouvez\\nrevoir votre parcours sur cet \u00e9cran.\\nS'il vous reste des r\u00e9compenses \u00e0\\nr\u00e9cup\u00e9rer, vous pouvez \u00e9galement\\nutiliser \u00ab Voyager \u00bb pour r\u00e9essayer."
+	},
+	{
+		"key": "MID_EXPLORER_H_COMPATIBILITY",
+		"value": "Les sceaux D\u00e9pl. temporel conf\u00e8rent\\ndes avantage sp\u00e9ciaux. Unit\u00e9s grises :\\nic\u00f4ne \u00e0 gauche = ennemis ; ic\u00f4ne \u00e0\\ndroite = alli\u00e9s."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_00",
+		"value": "Utilisez vos aptitudes pour gagner !"
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_01",
+		"value": "\u25c6 Pi\u00e8ge de Gullveig \u25c6\\nTraversez la faille temporelle\\net revenez \u00e0 votre \u00e9poque. Dans\\nla faille temporelle, les variations\\ndu temps permettent d'\u00e9quiper vos\\nh\u00e9ros de nombreuses aptitudes !"
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_02",
+		"value": "\u25c6 \u00c9nergie \u25c6\\n\u30fb Se d\u00e9placer d'un endroit \u00e0\\nl'autre consomme 1 point\\nd'\u00e9nergie.\\n\u30fb L'\u00e9nergie sera uniquement\\nrestaur\u00e9e si vous perdez dans une\\nzone de mini-boss ou de boss final.\\n(Si elle est d\u00e9j\u00e0 \u00e0 son maximum,\\nelle ne sera pas restaur\u00e9e.)"
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_03",
+		"value": "\u25c6 \u00c0 propos de l'\u00e9v\u00e9nement \u25c6\\nLes sceaux sacr\u00e9s \u00e9quip\u00e9s par les\\nennemis augmentent les effets\\nde l'avantage tactique. Les unit\u00e9s\\ngrises auront des avantages et des\\nd\u00e9savantages. De plus, les PV des\\nh\u00e9ros sont conserv\u00e9s d'une carte\\n\u00e0 l'autre."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_04",
+		"value": "\u25c6 Composition de l'\u00e9quipe \u25c6\\n\u30fbImpossible d'utiliser plusieurs\\nexemplaires du m\u00eame h\u00e9ros.\\n\u30fb Vous ne pouvez pas utiliser plus\\nd'un alli\u00e9 avec l'aptitude Chant ou\\nDanse, ni plus d'un alli\u00e9 avec\\nl'aptitude Sauveur.\\n\u30fbTous les h\u00e9ros sont de niveau 40."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_05",
+		"value": "\u25c6 Aptitudes \u25c6\\n\u30fb Si un h\u00e9ros n'a pas d'aptitude\\nA, B, C ou S, une aptitude A, B\\nou C al\u00e9atoire lui sera assign\u00e9e.\\n\u30fb Les aptitudes A, B, C et S sont\\nd'abord verrouill\u00e9es et peuvent\\n\u00eatre d\u00e9verrouill\u00e9es gr\u00e2ce aux\\nr\u00e9compenses ou gr\u00e2ce \u00e0 un sceau\\nde Vanir."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_06",
+		"value": "\u25c6 Extension empl. d'aptitudes \u25c6\\nTous les h\u00e9ros obtiennent trois\\nautres niveaux d'emplacements\\nd'aptitudes A, B et C en plus des\\nemplacements normaux.\\nLe premier niveau est d\u00e9verrouill\u00e9\\nd\u00e8s le d\u00e9but, le reste est ensuite\\nd\u00e9verrouill\u00e9 avec les r\u00e9compenses."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_07",
+		"value": "\u25c6 H\u00e9ros de l'Appel aux armes \u25c6\\nEn plus d'obtenir une extension\\ndes emplacements d'aptitudes,\\nles h\u00e9ros de l'Appel aux\\narmes re\u00e7oivent PV +10,\\nAtq/Vit/D\u00e9f/R\u00e9s +4 et des\\nemplacements d'aptitudes S\\ngratuits pouvant \u00eatre \u00e9quip\u00e9s\\nd'aptitudes A, B ou C."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_08",
+		"value": "\u25c6 Modifier aptitudes \u25c6\\nVous pouvez ins\u00e9rer des aptitudes\\nque vous avez d\u00e9verrouill\u00e9es\\ndans les emplacements\\nd'aptitudes vides."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_09",
+		"value": "\u25c6 Voyager \u25c6\\n\u30fb Retourner au mini-boss : vous\\nrevenez au moment suivant votre\\nvictoire contre le dernier mini-boss\\net r\u00e9cup\u00e9rez l'\u00e9nergie consomm\u00e9e\\ndepuis.\\n\u30fb Retourner au d\u00e9but : vous\\nr\u00e9cup\u00e9rez toute l'\u00e9nergie\\nconsomm\u00e9e et vous conservez\\nune partie des grains du temps."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_10",
+		"value": "\u25c6 Sceau de Vanir \u25c6\\nVous pouvez utiliser des grains du\\ntemps afin de d\u00e9verrouiller des\\naptitudes et des emplacements.\\n\\n\u25c6 Havre de paix \u25c6\\nVous pouvez r\u00e9cup\u00e9rer des PV."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_11",
+		"value": "\u25c6 Autres informations \u25c6\\n\u30fb Les effets de saison des h\u00e9ros\\nl\u00e9gendaires et mythiques sont\\nd\u00e9sactiv\u00e9s.\\n\u30fb Les doubles aptitudes et les\\naptitudes harmonis\u00e9es ne peuvent\\npas \u00eatre utilis\u00e9es.\\n\u30fb Vous ne gagnez pas d'EXP ou\\nde PA.\\n\u30fb Il est possible de gagner\\ndu m\u00e9rite h\u00e9ro\u00efque."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202305",
+		"value": "Profond d\u00e9sespoir"
+	}
+]

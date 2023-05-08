@@ -1,0 +1,406 @@
+[
+	{
+		"key": "MID_HOME_EXPLORER_MISSION_NOTIFICATION",
+		"value": "Ricevi un premio al giorno.\\nAccedere a Spire del tempo?"
+	},
+	{
+		"key": "MID_HOME_EXPLORER_NAVIGATION_JUMP",
+		"value": "Spire del tempo"
+	},
+	{
+		"key": "MID_CONFIG_HOME_NOTIFICATION_EXPLORER",
+		"value": "Notifiche\\nSpire del tempo"
+	},
+	{
+		"key": "MID_EXPLORER_TITLE",
+		"value": "Spire del tempo"
+	},
+	{
+		"key": "MID_EXPLORER_REMAINING_DAYS",
+		"value": "$aAncora $a0 g"
+	},
+	{
+		"key": "MID_EXPLORER_REMAINING_HOURS",
+		"value": "$aAncora $a0 h"
+	},
+	{
+		"key": "MID_EXPLORER_REMAINING_MINUTES",
+		"value": "$aAncora $a0 m"
+	},
+	{
+		"key": "MID_EXPLORER_STAMINA",
+		"value": "Energia"
+	},
+	{
+		"key": "MID_EXPLORER_CLOSED",
+		"value": "Nessun evento in corso."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_BUTTON_WORLD_MAP",
+		"value": "Faglia infinita"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_BUTTON_SYSTEM_MENU",
+		"value": "Riavvolgi"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_BUTTON_REWARD",
+		"value": "Ricompense"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_BONUS_AUTHORITY",
+		"value": "Titoli bonus"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_CONFIRM",
+		"value": "Vuoi dare inizio all'evento?"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_WARNING",
+		"value": "Non potrai modificare la tua squadra\\ndurante l'evento, tranne nel caso in\\ncui tu decida di tornare all'inizio e\\nricominciare da capo. Gli eroi\\nrimarranno al livello 40. Gli slot per\\nle abilit\u00e0 di tipo A, B e C verranno\\nriempiti con abilit\u00e0 casuali."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_DECIDE",
+		"value": "Inizia"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_FAILED",
+		"value": "Impossibile dare inizio all'evento."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_FAILED_WARNING_TROOP_RESTRICTION",
+		"value": "Ogni slot della tua squadra deve\\nessere occupato da un eroe.\\n\\nGli eroi duplicati non sono\\nconsentiti.\\n\\n\u00c8 ammesso solo 1 alleato\\ncon Canto o Danza in squadra.\\n\\n\u00c8 ammesso solo 1 alleato\\ncon Aiuto in squadra."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_RESTORE_POINT",
+		"value": "Torna al miniboss"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_RESTORE_POINT_DIALOG_CONFIRM",
+		"value": "Vuoi tornare all'ultimo miniboss\\nsconfitto?"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_RESTORE_POINT_DIALOG_WARNING",
+		"value": "Tutti i progressi, a eccezione dei\\npremi, verranno persi. L'energia\\nconsumata verr\u00e0 ripristinata."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_RESTORE_POINT_DIALOG_DECIDE",
+		"value": "Riavvolgi"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_FIRST",
+		"value": "Torna all'inizio"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_FIRST_DIALOG_CONFIRM",
+		"value": "Vuoi tornare all'inizio?"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_FIRST_DIALOG_WARNING",
+		"value": "$aTutti i progressi, a eccezione dei\\npremi, verranno persi. L'energia\\nconsumata verr\u00e0 ripristinata. Solo\\n$a0% (massimo $a1) dei\\ngranelli di tempo accumulati fino a\\nquesto momento verranno mantenuti."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_FIRST_DIALOG_DECIDE",
+		"value": "Riavvolgi"
+	},
+	{
+		"key": "MID_EXPLORER_WORLD_MAP_TITLE",
+		"value": "Faglia infinita"
+	},
+	{
+		"key": "MID_EXPLORER_WORLD_MAP_BUTTON_SKILL_EQUIP",
+		"value": "Abilit\u00e0"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_TITLE",
+		"value": "$aFaglia infinita $a0"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_FINAL_BOSS",
+		"value": "Boss finale"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_MID_BOSS",
+		"value": "Miniboss"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_PASSIVE_A",
+		"value": "Abilit\u00e0 di tipo A"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_PASSIVE_B",
+		"value": "Abilit\u00e0 di tipo B"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_PASSIVE_C",
+		"value": "Abilit\u00e0 di tipo C"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_SHOP",
+		"value": "Sigillo dei vani"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_INN",
+		"value": "Porto sicuro"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIFFICULTY_0",
+		"value": "Facile"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIFFICULTY_1",
+		"value": "Intermedio"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIFFICULTY_2",
+		"value": "Avanzato"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_CONNECT_NAME_AND_DIFFICULTY",
+		"value": "$a$a0 - $a1"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DAILY_BONUS_REWARD",
+		"value": "Gioca ogni giorno e vinci!"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DAILY_BONUS_INFO",
+		"value": "Supera una mappa e ricevi un premio\\nuna volta al giorno, fino a 5 giorni."
+	},
+	{
+		"key": "MID_EXPLORER_AREA_FIRST_REWARD",
+		"value": "Ricompensa prima visita"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_FIRST_ADVANCED_REWARD",
+		"value": "Ricompensa livello avanzato"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_FIRST_REWARD_AND_FIRST_ADVANCED_REWARD",
+		"value": "Ricompensa prima visita e livello avanzato"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIALOG_DECIDE_BATTLE_START",
+		"value": "Combatti!"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIALOG_DECIDE_SHOP",
+		"value": "Entra"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIALOG_DECIDE_INN",
+		"value": "Entra"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_START_FAILED_DIALOG_CONFIRM",
+		"value": "Non puoi avanzare."
+	},
+	{
+		"key": "MID_EXPLORER_AREA_START_FAILED_DIALOG_WARNING_TERM_EXPIRED",
+		"value": "Nessun evento in corso."
+	},
+	{
+		"key": "MID_EXPLORER_AREA_START_FAILED_DIALOG_WARNING_NO_STAMINA",
+		"value": "Non hai abbastanza energia."
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_CATEGORY_PASSIVE_A",
+		"value": "Abilit\u00e0 di tipo A"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_CATEGORY_PASSIVE_B",
+		"value": "Abilit\u00e0 di tipo B"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_CATEGORY_PASSIVE_C",
+		"value": "Abilit\u00e0 di tipo C"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_CATEGORY_REMOVE",
+		"value": "Rimuovi"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_EQUIP_TITLE",
+		"value": "Cambia abilit\u00e0"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_EQUIP_DIALOG_DECIDE",
+		"value": "Cambia"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_EQUIP_DIALOG_CONFIRM",
+		"value": "Vuoi cambiare le abilit\u00e0 attivate?"
+	},
+	{
+		"key": "MID_EXPLORER__SKILL_EQUIP_CANCEL_DIALOG_CONFIRM",
+		"value": "Vuoi annullare le modifiche?"
+	},
+	{
+		"key": "MID_EXPLORER__SKILL_EQUIP_CANCEL_DIALOG_WARNING",
+		"value": "Le modifiche non salvate verranno\\nperse."
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_EQUIP_CANCEL_DIALOG_DECIDE",
+		"value": "Annulla"
+	},
+	{
+		"key": "MID_EXPLORER_EVENT_ITEM_UNLOCK_RANDOM_ORIGINAKL_SKILL",
+		"value": "Sblocco slot casuale"
+	},
+	{
+		"key": "MID_EXPLORER_EVENT_ITEM_UNLOCK_RANDOM_ORIGINAKL_SKILL_RESULT",
+		"value": "$aAbilit\u00e0 sbloccata per\\n$a0."
+	},
+	{
+		"key": "MID_EXPLORER_EVENT_ITEM_UNLOCK_EXTENDED_SKILL",
+		"value": "Sblocco slot squadra"
+	},
+	{
+		"key": "MID_EXPLORER_EVENT_ITEM_OMIT",
+		"value": "$ae $a0 in pi\u00f9"
+	},
+	{
+		"key": "MID_EXPLORER_BATTLE_REWARD_TITLE",
+		"value": "Ricompense"
+	},
+	{
+		"key": "MID_EXPLORER_BATTLE_REWARD_HELP",
+		"value": "Scegli una ricompensa."
+	},
+	{
+		"key": "MID_EXPLORER_BATTLE_REWARD_DIALOG_CONFIRM",
+		"value": "Vuoi questa ricompensa?"
+	},
+	{
+		"key": "MID_EXPLORER_BATTLE_REWARD_DIALOG_DECIDE",
+		"value": "S\u00ec"
+	},
+	{
+		"key": "MID_EXPLORER_INN_TALK_0",
+		"value": "$WmMPID_\u30a2\u30eb\u30d5\u30a9\u30f3\u30b9,ch00_01_Alfons_M_Normal,Face|Riposiamoci qui per oggi. Pare che\\nla nostra battaglia continuer\u00e0 ancora\\nper un po', $Nu.$k$p"
+	},
+	{
+		"key": "MID_EXPLORER_INN_TALK_1",
+		"value": "$WmMPID_\u30b7\u30e3\u30ed\u30f3,ch00_02_Sharon_F_Normal,Face|Riposiamoci qui per oggi! Mi metto\\nsubito a preparare qualcosa da\\nmangiare!$k$p"
+	},
+	{
+		"key": "MID_EXPLORER_INN_TALK_2",
+		"value": "$WmMPID_\u30a2\u30f3\u30ca,ch00_03_Anna_F_Normal,Face|Accampiamoci qui. Ci fermeremo per\\nil resto della giornata!$k$p"
+	},
+	{
+		"key": "MID_EXPLORER_INN_TALK_3",
+		"value": "$WmMPID_\u30bb\u30a4\u30ba,ch00_46_Seith_F_Normal,Face|Riposatevi, figli di Midgard. Questo\\nluogo ha un'aura rigenerante che vi\\ndar\u00e0 sollievo dalle ferite...$k$p"
+	},
+	{
+		"key": "MID_EXPLORER_INN_DIALOG_CONFIRM",
+		"value": "PS ripristinati."
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_TITLE",
+		"value": "Sigillo dei vani"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_HELP",
+		"value": "Seleziona un'abilit\u00e0 da sbloccare."
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_EMPTY",
+		"value": "Non ci sono abilit\u00e0 da sbloccare."
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_BUTTON_PURCHASE",
+		"value": "Sblocca"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_BUTTON_FINISH",
+		"value": "Esci"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_BUTTON_DESELECT",
+		"value": "Deseleziona"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_PURCHASE_DIALOG_CONFIRM",
+		"value": "Confermi la tua scelta?"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_PURCHASE_DIALOG_DECIDE",
+		"value": "Sblocca"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_FINISH_DIALOG_CONFIRM",
+		"value": "Vuoi annullare e uscire?"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_FINISH_DIALOG_WARNING",
+		"value": "Se esci non potrai rientrare."
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_FINISH_DIALOG_DECIDE",
+		"value": "Esci"
+	},
+	{
+		"key": "MID_EXPLORER_ENDING_TELOP",
+		"value": "Hai attraversato la faglia infinita e hai\\nfatto ritorno al tuo presente!"
+	},
+	{
+		"key": "MID_EXPLORER_ENDING_DIALOG_CONFIRM",
+		"value": "Congratulazioni, hai superato con\\nsuccesso le Spire del tempo!\\nL'evento termina ora. Trovi\\nun riepilogo del tuo viaggio in\\nquesto schermo. Se ci sono\\nricompense che devi ancora\\nraccogliere, puoi usare \"Riavvolgi\"\\nper fare un altro tentativo."
+	},
+	{
+		"key": "MID_EXPLORER_H_COMPATIBILITY",
+		"value": "I sigilli del tempo danno vantaggi unici\\nalle unit\u00e0. Tipo neutro: icona a sinistra\\nindica i nemici, a destra gli alleati."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_00",
+		"value": "Usa le abilit\u00e0 per battere i nemici!"
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_01",
+		"value": "\u25c6Spire del tempo\u25c6\\nAttraversa la Faglia infinita e torna\\nnel tuo presente. All'interno della\\nFaglia, le fluttuazioni temporali\\npermettono ai tuoi eroi di attivare\\ntantissime abilit\u00e0 differenti!"
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_02",
+		"value": "\u25c6Energia\u25c6\\n\u30fb Spostarsi da un luogo all'altro\\nrichiede 1 energia.\\n\u30fb L'energia viene ripristinata solo\\nse subisci una sconfitta nell'area\\ndi un miniboss o di un boss finale.\\n(Se la tua energia \u00e8 al massimo,\\nnon viene ripristinata.)"
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_03",
+		"value": "\u25c6Dettagli dell'evento\u25c6\\nI sigilli sacri in mano ai nemici\\npotenziano l'effetto del triangolo\\ndelle armi e le unit\u00e0 di tipo neutro\\navranno vantaggi e svantaggi.\\nInoltre, i PS degli eroi non\\ncambieranno tra una mappa e\\nl'altra."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_04",
+		"value": "\u25c6Modifica delle squadre\u25c6\\n\u30fb Eroi duplicati non consentiti.\\n\u30fb In ogni squadra \u00e8 ammesso\\nsolo 1 alleato con Canto o Danza\\ne solo 1 alleato con Aiuto.\\n\u30fb Tutti gli eroi hanno un livello\\nfisso di 40."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_05",
+		"value": "\u25c6Abilit\u00e0\u25c6\\n\u30fb Se un eroe non ha un'abilit\u00e0 di\\ntipo A, B, C o S attiva, ricever\u00e0\\nun'abilit\u00e0 di tipo A, B o C a caso.\\n\u30fb Inizialmente, le abilit\u00e0 di tipo A,\\nB, C e S sono bloccate. \u00c8 possibile\\nsbloccarle tramite le ricompense o\\nall'interno di un sigillo dei vani."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_06",
+		"value": "\u25c6Slot abilit\u00e0 ampliati\u25c6\\nIn aggiunta ai normali set di slot\\nabilit\u00e0, tutti gli eroi ricevono tre\\nlivelli di slot abilit\u00e0 di tipo A, B e C\\naggiuntivi. Il primo livello \u00e8\\nsbloccato in partenza e gli altri\\npossono essere sbloccati tramite\\nle ricompense."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_07",
+		"value": "\u25c6Eroi bonus\u25c6\\nOltre agli slot abilit\u00e0 ampliati,\\ngli eroi bonus ricevono PS +10,\\nAtt/Vel/Dif/Res +4 e slot abilit\u00e0 di\\ntipo S gratuiti che possono essere\\nequipaggiati con abilit\u00e0 di tipo\\nA, B o C."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_08",
+		"value": "\u25c6Cambia abilit\u00e0\u25c6\\nPuoi inserire le abilit\u00e0 che hai\\nsbloccato negli slot abilit\u00e0 aperti."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_09",
+		"value": "\u25c6Riavvolgi\u25c6\\n\u30fb Torna al miniboss: ti riporta\\nall'ultimo miniboss sconfitto e\\nti restituisce l'energia consumata\\na partire da quel momento.\\n\u30fb Torna all'inizio: ti restituisce\\ntutta l'energia e puoi conservare\\nanche alcuni granelli di tempo."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_10",
+		"value": "\u25c6Sigilli dei vani\u25c6\\nQui puoi utilizzare i granelli di\\ntempo per sbloccare abilit\u00e0 e\\nslot abilit\u00e0.\\n\\n\u25c6Porti sicuri\u25c6\\nQui puoi ripristinare i tuoi PS."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_11",
+		"value": "\u25c6Altre informazioni\u25c6\\n\u30fb Gli effetti stagionali degli eroi\\nleggendari e mitici sono disattivati.\\n\u30fb Non puoi usare abilit\u00e0 Coppia\\no armoniche.\\n\u30fb Non ottieni Esp o PA.\\n\u30fb Puoi ottenere valore eroe."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202305",
+		"value": "Disperazione senza fine"
+	}
+]
