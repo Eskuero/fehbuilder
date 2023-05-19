@@ -18,6 +18,13 @@ import math
 import os
 from PIL import Image
 
+#########
+# FIXME #: We download character sprites from wiki. Sounds like a pain to compose them for datamine
+#########
+import utils
+import requests
+import io
+
 try:
 	os.mkdir("temp")
 except:
@@ -158,3 +165,102 @@ for icon in icons:
 # Clean after us
 for tempfile in os.listdir("temp"):
 	os.unlink("temp/" + tempfile)
+
+
+
+
+
+#########
+# FIXME #: We download character sprites from wiki. Sounds like a pain to compose them for datamine
+#########
+print("\n     - Downloading character sprites...")
+# Split them in different lists to later be able to query by index
+ids = []
+arts = []
+for unit in units:
+	# Enemy units are not summonable anyway so skip them
+	if "EID_" in unit and not units[unit]["boss"]:
+		continue
+	truename = engrishname["M" + unit] + ((": " + engrishname[unit.replace("PID", "MPID_HONOR")]) if "PID_" in unit else "")
+	# Each pose has an expected wiki name (Enemy units as NPC only have the attack pose that we use as portrait
+	sprites = {
+		# Sprites at always with png extension
+		".webp": truename + "_Mini_Unit_Ok.png"
+	}
+	# Only query resplendent art if the hero is actually resplendent
+	if engrishname.get(unit.replace("PID", "MPID_VOICE") + "EX01", False):
+		sprites = sprites | {
+			"_Resplendent.webp": truename + "_Resplendent_Mini_Unit_Idle.png"
+	}
+	for sprite in sprites:
+		if not pathlib.Path("../data/img/sprites/" + unit + sprite).is_file():
+			ids.append(unit)
+			arts.append([sprite,sprites[sprite]])
+
+# We can only query 50 items every time
+offset = 0
+while offset < len(arts):
+	# Since the actual expected name is in the second position of each art item expand it properly
+	expandedart = [name[1] for name in arts[offset:offset+50]]
+	# Save all urls in their respective positions
+	for i, url in enumerate(utils.obtaintrueurl(expandedart)):
+		# Decide on the filename based on sprite and hero ID
+		filename = ids[offset:offset+50][i] + arts[offset:offset+50][i][0]
+		print("              - " + engrishname["M" + ids[offset:offset+50][i]] + " doesn't have " + filename, end = ": ")
+		# Grab and paste the art
+		try:
+			response = requests.get(url)
+			art = Image.open(io.BytesIO(response.content))
+			# We save the hero art as webp attempting the better compression method while being lossless to avoid quality drops
+			art.save("../data/img/sprites/" + filename, 'WEBP', lossless = True, quality = 100, method = 6)
+			print("Successfully downloaded", end = "\n")
+		# If anything went wrong on downloading and parsing the image fall back to an error one
+		except:
+			print("Failed to download")
+	offset += 50
+
+print("\n     - Downloading idle character sprites...")
+# Split them in different lists to later be able to query by index
+ids = []
+arts = []
+for unit in units:
+	# Enemy units are not summonable anyway so skip them
+	if "EID_" in unit and not units[unit]["boss"]:
+		continue
+	truename = engrishname["M" + unit] + ((": " + engrishname[unit.replace("PID", "MPID_HONOR")]) if "PID_" in unit else "")
+	# Each pose has an expected wiki name (Enemy units as NPC only have the attack pose that we use as portrait
+	sprites = {
+		# Sprites at always with png extension
+		".webp": truename + "_Mini_Unit_Idle.png"
+	}
+	# Only query resplendent art if the hero is actually resplendent
+	if engrishname.get(unit.replace("PID", "MPID_VOICE") + "EX01", False):
+		sprites = sprites | {
+			"_Resplendent.webp": truename + "_Resplendent_Mini_Unit_Idle.png"
+	}
+	for sprite in sprites:
+		if not pathlib.Path("../data/img/sprites-idle/" + unit + sprite).is_file():
+			ids.append(unit)
+			arts.append([sprite,sprites[sprite]])
+
+# We can only query 50 items every time
+offset = 0
+while offset < len(arts):
+	# Since the actual expected name is in the second position of each art item expand it properly
+	expandedart = [name[1] for name in arts[offset:offset+50]]
+	# Save all urls in their respective positions
+	for i, url in enumerate(utils.obtaintrueurl(expandedart)):
+		# Decide on the filename based on sprite and hero ID
+		filename = ids[offset:offset+50][i] + arts[offset:offset+50][i][0]
+		print("              - " + engrishname["M" + ids[offset:offset+50][i]] + " doesn't have " + filename, end = ": ")
+		# Grab and paste the art
+		try:
+			response = requests.get(url)
+			art = Image.open(io.BytesIO(response.content))
+			# We save the hero art as webp attempting the better compression method while being lossless to avoid quality drops
+			art.save("../data/img/sprites-idle/" + filename, 'WEBP', lossless = True, quality = 100, method = 6)
+			print("Successfully downloaded", end = "\n")
+		# If anything went wrong on downloading and parsing the image fall back to an error one
+		except:
+			print("Failed to download")
+	offset += 50
