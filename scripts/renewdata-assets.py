@@ -314,7 +314,7 @@ while offset < len(arts):
 	for i, url in enumerate(utils.obtaintrueurl(expandedart)):
 		# Decide on the filename based on face and hero ID
 		filename = ids[offset:offset+50][i] + arts[offset:offset+50][i][0]
-		print("              - " + engrishname["M" + ids[offset:offset+50][i]] + " doesn't have " + filename, end = ": ")
+		print("              - " + engrishname["M" + ids[offset:offset+50][i]] + " doesn't have '" + filename + "', trying to pull as '" + expandedart[i] + "'", end = ": ")
 		# Grab and paste the art
 		try:
 			response = requests.get(url)
@@ -365,7 +365,7 @@ while offset < len(arts):
 	for i, url in enumerate(utils.obtaintrueurl(expandedart)):
 		# Decide on the filename based on face and hero ID
 		filename = ids[offset:offset+50][i] + arts[offset:offset+50][i][0]
-		print("              - " + engrishname["M" + ids[offset:offset+50][i]] + " doesn't have " + filename, end = ": ")
+		print("              - " + engrishname["M" + ids[offset:offset+50][i]] + " doesn't have '" + filename + "', trying to pull as '" + expandedart[i] + "'", end = ": ")
 		# Grab and paste the art
 		try:
 			response = requests.get(url)
