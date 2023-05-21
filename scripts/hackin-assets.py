@@ -84,7 +84,7 @@ for unit in units:
 	for art in artlist:
 		if not pathlib.Path(LOCAL_BASE_PATH + art["localpath"]).is_file():
 			truename = engrishname["M" + unit] + ((": " + engrishname[unit.replace("PID", "MPID_HONOR")]) if "PID_" in unit else "")
-			print("\"" + truename + "\" missing asset \"" + art["localpath"] + "\", pulling from \"" + art["remotepath"] + "\"", end = ": ", flush = True)
+			print("              - \"" + truename + "\" missing asset \"" + art["localpath"] + "\", pulling from \"" + art["remotepath"] + "\"", end = ": ", flush = True)
 			try:
 				with open("temp/heroart", "wb+") as tempimage:
 					subprocess.run(['adb', 'shell', "su -c", "dd if=" + HEROES_BASE_PATH + art["remotepath"]], stdout=tempimage, stderr = subprocess.DEVNULL)
