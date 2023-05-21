@@ -92,11 +92,6 @@ async function init() {
 	// Build unit selects
 	populateall();
 
-	// Load and wait for the font to be ready
-	var font = new FontFace("FeH-Font", "url('/common/feh-font.woff2') format('woff2')");
-	await font.load();
-	document.fonts.add(font);
-
 	// Load the numberfont specifically since we will use it multiple times
 	await getimage(other["images"]["other"]["numberfont"]).then(img => {
 		numberfont = img;

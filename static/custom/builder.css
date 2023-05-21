@@ -275,3 +275,10 @@ h2 {
 a {
 	text-decoration: none;
 }
+/* FIXME: This hidden text makes sure we preload some fonts, otherwise first canvas render fails */
+.fontloader {
+	font-family: 'Feh-Font';
+	position: fixed;
+	color: transparent;
+	font-size: 0.1px;
+}

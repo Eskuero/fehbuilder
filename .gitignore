@@ -9,6 +9,7 @@ data/img/condensed-faces/*
 data/img/other/*
 data/img/icons/*
 **/*gz
+static/common/fonts/*
 !data/img/heroes/README
 !data/img/sprites/README
 !data/img/sprites-idle/README
@@ -17,6 +18,7 @@ data/img/icons/*
 !data/img/condensed-faces/README
 !data/img/other/README
 !data/img/icons/README
+!static/common/fonts/README
 */__pycache__/
 env/
 scripts/fehupdate-*
