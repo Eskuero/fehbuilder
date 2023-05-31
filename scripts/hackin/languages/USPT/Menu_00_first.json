@@ -8501,7 +8501,7 @@
 	},
 	{
 		"key": "MID_REALTIME_PVP_MATCH_MAKE_WAIT_PASSWARD",
-		"value": "$aSenha: $a0"
+		"value": "$aC\u00f3digo de batalha: $a0"
 	},
 	{
 		"key": "MID_REALTIME_PVP_MATCH_MAKE_ELAPSE_LEFT",
@@ -8649,23 +8649,23 @@
 	},
 	{
 		"key": "MID_REALTIME_PVP_PASSWARD_USE",
-		"value": "Senha"
+		"value": "C\u00f3digo de batalha"
 	},
 	{
 		"key": "MID_REALTIME_PVP_PASSWARD_NOT_USE",
-		"value": "Sem senha"
+		"value": "Sem c\u00f3digo"
 	},
 	{
 		"key": "MID_REALTIME_PVP_PASSWARD_PLACE_HOLDER",
-		"value": "Definir senha"
+		"value": "Definir c\u00f3digo"
 	},
 	{
 		"key": "MID_REALTIME_PVP_PASSWARD_TEXT",
-		"value": "Insira uma senha."
+		"value": "Insira um c\u00f3digo de batalha."
 	},
 	{
 		"key": "MID_REALTIME_PVP_PASSWARD_INFO",
-		"value": "Partidas poder\u00e3o ser restringidas a\\num advers\u00e1rio com a mesma senha.\\nA senha deve ter at\u00e9 12 caracteres.\\nAlguns caracteres especiais n\u00e3o\\npodem ser usados em senhas."
+		"value": "Partidas poder\u00e3o ser restringidas\\na um advers\u00e1rio com o mesmo\\nc\u00f3digo de batalha. O c\u00f3digo deve ter\\nat\u00e9 12 caracteres. Alguns caracteres\\nespeciais n\u00e3o s\u00e3o v\u00e1lidos."
 	},
 	{
 		"key": "MID_REALTIME_PVP_MATCHING_EXPIRED",
@@ -8913,11 +8913,11 @@
 	},
 	{
 		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_10",
-		"value": "-Duelo livre-\\nN\u00e3o afeta o n\u00edvel de predile\u00e7\u00e3o.\\n\u00c9 poss\u00edvel definir senhas e regras\\npersonalizadas. Lute como voc\u00ea\\nquiser."
+		"value": "-Duelo livre-\\nN\u00e3o afeta o n\u00edvel de predile\u00e7\u00e3o.\\n\u00c9 poss\u00edvel definir c\u00f3digos e regras\\npersonalizadas. Lute como voc\u00ea\\nquiser."
 	},
 	{
 		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_11",
-		"value": "-Senhas-\\nSe voc\u00ea definir uma senha, apenas\\njogadores com a mesma senha\\npoder\u00e3o jogar contra voc\u00ea."
+		"value": "-C\u00f3digos de batalha-\\nSe voc\u00ea definir um c\u00f3digo, apenas\\njogadores com o mesmo c\u00f3digo\\npoder\u00e3o jogar contra voc\u00ea."
 	},
 	{
 		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_12",

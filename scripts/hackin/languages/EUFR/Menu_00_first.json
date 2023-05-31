@@ -8501,7 +8501,7 @@
 	},
 	{
 		"key": "MID_REALTIME_PVP_MATCH_MAKE_WAIT_PASSWARD",
-		"value": "$aMot de passe : $a0"
+		"value": "$aCode de combat : $a0"
 	},
 	{
 		"key": "MID_REALTIME_PVP_MATCH_MAKE_ELAPSE_LEFT",
@@ -8649,23 +8649,23 @@
 	},
 	{
 		"key": "MID_REALTIME_PVP_PASSWARD_USE",
-		"value": "Mot de passe"
+		"value": "Avec code"
 	},
 	{
 		"key": "MID_REALTIME_PVP_PASSWARD_NOT_USE",
-		"value": "Sans mot de passe"
+		"value": "Sans code"
 	},
 	{
 		"key": "MID_REALTIME_PVP_PASSWARD_PLACE_HOLDER",
-		"value": "D\u00e9finir le mot de passe"
+		"value": "D\u00e9finir le code de combat"
 	},
 	{
 		"key": "MID_REALTIME_PVP_PASSWARD_TEXT",
-		"value": "Veuillez saisir un mot de passe."
+		"value": "Veuillez saisir un code de combat."
 	},
 	{
 		"key": "MID_REALTIME_PVP_PASSWARD_INFO",
-		"value": "Vous n'entrerez en comp\u00e9tition qu'avec\\ndes adversaires ayant le m\u00eame mot de\\npasse. Le mot de passe doit contenir\\n12 caract\u00e8res maximum. Certains\\nsymboles sp\u00e9ciaux ne peuvent pas\\n\u00eatre utilis\u00e9s dans les mots de passe."
+		"value": "Vous n'entrerez en comp\u00e9tition qu'avec\\ndes adversaires ayant le m\u00eame code\\nde combat. Celui-ci peut contenir\\n12 caract\u00e8res maximum. Certains\\ncaract\u00e8res sp\u00e9ciaux ne peuvent pas\\n\u00eatre utilis\u00e9s dans les codes de combat."
 	},
 	{
 		"key": "MID_REALTIME_PVP_MATCHING_EXPIRED",
@@ -8913,11 +8913,11 @@
 	},
 	{
 		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_10",
-		"value": "\u25c6 Duel libre \u25c6\\nN'affecte pas le niveau de faveur.\\nVous pouvez d\u00e9finir un mot de\\npasse et des r\u00e8gles personnalis\u00e9es.\\nCombattez comme vous voulez."
+		"value": "\u25c6 Duel libre \u25c6\\nN'affecte pas le niveau de faveur.\\nVous pouvez d\u00e9finir un code de\\ncombat et des r\u00e8gles\\npersonnalis\u00e9es.\\nCombattez comme vous voulez."
 	},
 	{
 		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_11",
-		"value": "\u25c6 Mots de passe \u25c6\\nSi vous d\u00e9finissez un mot de passe,\\nvous entrerez en comp\u00e9tition\\nuniquement avec des adversaires\\nayant le m\u00eame mot de passe."
+		"value": "\u25c6 Codes de combat \u25c6\\nSi vous d\u00e9finissez un code de\\ncombat, vous entrerez en\\ncomp\u00e9tition uniquement\\navec des adversaires ayant le\\nm\u00eame code de combat."
 	},
 	{
 		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_12",

@@ -8501,7 +8501,7 @@
 	},
 	{
 		"key": "MID_REALTIME_PVP_MATCH_MAKE_WAIT_PASSWARD",
-		"value": "$aContrase\u00f1a: $a0"
+		"value": "$aC\u00f3digo de batalla: $a0"
 	},
 	{
 		"key": "MID_REALTIME_PVP_MATCH_MAKE_ELAPSE_LEFT",
@@ -8649,23 +8649,23 @@
 	},
 	{
 		"key": "MID_REALTIME_PVP_PASSWARD_USE",
-		"value": "Con contrase\u00f1a"
+		"value": "Con c\u00f3digo"
 	},
 	{
 		"key": "MID_REALTIME_PVP_PASSWARD_NOT_USE",
-		"value": "Sin contrase\u00f1a"
+		"value": "Sin c\u00f3digo"
 	},
 	{
 		"key": "MID_REALTIME_PVP_PASSWARD_PLACE_HOLDER",
-		"value": "Establecer contrase\u00f1a"
+		"value": "Establecer c\u00f3digo"
 	},
 	{
 		"key": "MID_REALTIME_PVP_PASSWARD_TEXT",
-		"value": "Introduce una contrase\u00f1a."
+		"value": "Introduce un c\u00f3digo de batalla."
 	},
 	{
 		"key": "MID_REALTIME_PVP_PASSWARD_INFO",
-		"value": "Solo se te emparejar\u00e1 con el rival\\nque use la misma contrase\u00f1a. La\\ncontrase\u00f1a debe tener 12 caracteres\\no menos. Algunos s\u00edmbolos especiales\\nno pueden usarse en las contrase\u00f1as."
+		"value": "Establece un c\u00f3digo de batalla para\\nque solo se te empareje con un rival\\ncuyo c\u00f3digo coincida. Puedes usar\\nun m\u00e1ximo de 12 caracteres. Ciertos\\ns\u00edmbolos especiales no son v\u00e1lidos."
 	},
 	{
 		"key": "MID_REALTIME_PVP_MATCHING_EXPIRED",
@@ -8913,11 +8913,11 @@
 	},
 	{
 		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_10",
-		"value": "-Duelo libre-\\nNo afecta al nivel de favor.\\nSe pueden establecer contrase\u00f1as\\ny reglas propias. Lucha\\ncomo quieras."
+		"value": "-Duelo libre-\\nNo afecta al nivel de favor.\\nSe pueden establecer c\u00f3digos\\nde batalla y reglas propias.\\nLucha como quieras."
 	},
 	{
 		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_11",
-		"value": "-Contrase\u00f1as-\\nSi estableces una contrase\u00f1a,\\nsolo se te emparejar\u00e1 con rivales\\nque establezcan la misma\\ncontrase\u00f1a."
+		"value": "-C\u00f3digos de batalla-\\nSi estableces un c\u00f3digo de batalla,\\nsolo se te emparejar\u00e1 con rivales\\nque tengan ese mismo c\u00f3digo\\nde batalla."
 	},
 	{
 		"key": "MID_REALTIME_PVP_HELP_DIALOG_0_12",
