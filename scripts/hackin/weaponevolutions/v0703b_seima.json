@@ -1,1 +1,218 @@
-[{"orig":"SID_正々堂々の槍＋","refined":"SID_正々堂々の槍＋_ATK","use":[{"res_type":2,"count":50},{"res_type":1,"count":500}],"give":{"res_type":3,"count":50}},{"orig":"SID_正々堂々の槍＋","refined":"SID_正々堂々の槍＋_AGI","use":[{"res_type":2,"count":50},{"res_type":1,"count":500}],"give":{"res_type":3,"count":50}},{"orig":"SID_正々堂々の槍＋","refined":"SID_正々堂々の槍＋_DEF","use":[{"res_type":2,"count":50},{"res_type":1,"count":500}],"give":{"res_type":3,"count":50}},{"orig":"SID_正々堂々の槍＋","refined":"SID_正々堂々の槍＋_RES","use":[{"res_type":2,"count":50},{"res_type":1,"count":500}],"give":{"res_type":3,"count":50}},{"orig":"SID_守護の槍＋","refined":"SID_守護の槍＋_ATK","use":[{"res_type":2,"count":50},{"res_type":1,"count":500}],"give":{"res_type":3,"count":50}},{"orig":"SID_守護の槍＋","refined":"SID_守護の槍＋_AGI","use":[{"res_type":2,"count":50},{"res_type":1,"count":500}],"give":{"res_type":3,"count":50}},{"orig":"SID_守護の槍＋","refined":"SID_守護の槍＋_DEF","use":[{"res_type":2,"count":50},{"res_type":1,"count":500}],"give":{"res_type":3,"count":50}},{"orig":"SID_守護の槍＋","refined":"SID_守護の槍＋_RES","use":[{"res_type":2,"count":50},{"res_type":1,"count":500}],"give":{"res_type":3,"count":50}},{"orig":"SID_魔器ナーストレンド","refined":"SID_魔器ナーストレンド_ATK","use":[{"res_type":2,"count":200},{"res_type":1,"count":500}],"give":{"res_type":3,"count":200}},{"orig":"SID_魔器ナーストレンド","refined":"SID_魔器ナーストレンド_AGI","use":[{"res_type":2,"count":200},{"res_type":1,"count":500}],"give":{"res_type":3,"count":200}},{"orig":"SID_魔器ナーストレンド","refined":"SID_魔器ナーストレンド_DEF","use":[{"res_type":2,"count":200},{"res_type":1,"count":500}],"give":{"res_type":3,"count":200}},{"orig":"SID_魔器ナーストレンド","refined":"SID_魔器ナーストレンド_RES","use":[{"res_type":2,"count":200},{"res_type":1,"count":500}],"give":{"res_type":3,"count":200}}]
+[
+	{
+		"orig": "SID_\u6b63\u3005\u5802\u3005\u306e\u69cd\uff0b",
+		"refined": "SID_\u6b63\u3005\u5802\u3005\u306e\u69cd\uff0b_ATK",
+		"use": [
+			{
+				"res_type": 2,
+				"count": 50
+			},
+			{
+				"res_type": 1,
+				"count": 500
+			}
+		],
+		"give": {
+			"res_type": 3,
+			"count": 50
+		}
+	},
+	{
+		"orig": "SID_\u6b63\u3005\u5802\u3005\u306e\u69cd\uff0b",
+		"refined": "SID_\u6b63\u3005\u5802\u3005\u306e\u69cd\uff0b_AGI",
+		"use": [
+			{
+				"res_type": 2,
+				"count": 50
+			},
+			{
+				"res_type": 1,
+				"count": 500
+			}
+		],
+		"give": {
+			"res_type": 3,
+			"count": 50
+		}
+	},
+	{
+		"orig": "SID_\u6b63\u3005\u5802\u3005\u306e\u69cd\uff0b",
+		"refined": "SID_\u6b63\u3005\u5802\u3005\u306e\u69cd\uff0b_DEF",
+		"use": [
+			{
+				"res_type": 2,
+				"count": 50
+			},
+			{
+				"res_type": 1,
+				"count": 500
+			}
+		],
+		"give": {
+			"res_type": 3,
+			"count": 50
+		}
+	},
+	{
+		"orig": "SID_\u6b63\u3005\u5802\u3005\u306e\u69cd\uff0b",
+		"refined": "SID_\u6b63\u3005\u5802\u3005\u306e\u69cd\uff0b_RES",
+		"use": [
+			{
+				"res_type": 2,
+				"count": 50
+			},
+			{
+				"res_type": 1,
+				"count": 500
+			}
+		],
+		"give": {
+			"res_type": 3,
+			"count": 50
+		}
+	},
+	{
+		"orig": "SID_\u5b88\u8b77\u306e\u69cd\uff0b",
+		"refined": "SID_\u5b88\u8b77\u306e\u69cd\uff0b_ATK",
+		"use": [
+			{
+				"res_type": 2,
+				"count": 50
+			},
+			{
+				"res_type": 1,
+				"count": 500
+			}
+		],
+		"give": {
+			"res_type": 3,
+			"count": 50
+		}
+	},
+	{
+		"orig": "SID_\u5b88\u8b77\u306e\u69cd\uff0b",
+		"refined": "SID_\u5b88\u8b77\u306e\u69cd\uff0b_AGI",
+		"use": [
+			{
+				"res_type": 2,
+				"count": 50
+			},
+			{
+				"res_type": 1,
+				"count": 500
+			}
+		],
+		"give": {
+			"res_type": 3,
+			"count": 50
+		}
+	},
+	{
+		"orig": "SID_\u5b88\u8b77\u306e\u69cd\uff0b",
+		"refined": "SID_\u5b88\u8b77\u306e\u69cd\uff0b_DEF",
+		"use": [
+			{
+				"res_type": 2,
+				"count": 50
+			},
+			{
+				"res_type": 1,
+				"count": 500
+			}
+		],
+		"give": {
+			"res_type": 3,
+			"count": 50
+		}
+	},
+	{
+		"orig": "SID_\u5b88\u8b77\u306e\u69cd\uff0b",
+		"refined": "SID_\u5b88\u8b77\u306e\u69cd\uff0b_RES",
+		"use": [
+			{
+				"res_type": 2,
+				"count": 50
+			},
+			{
+				"res_type": 1,
+				"count": 500
+			}
+		],
+		"give": {
+			"res_type": 3,
+			"count": 50
+		}
+	},
+	{
+		"orig": "SID_\u9b54\u5668\u30ca\u30fc\u30b9\u30c8\u30ec\u30f3\u30c9",
+		"refined": "SID_\u9b54\u5668\u30ca\u30fc\u30b9\u30c8\u30ec\u30f3\u30c9_ATK",
+		"use": [
+			{
+				"res_type": 2,
+				"count": 200
+			},
+			{
+				"res_type": 1,
+				"count": 500
+			}
+		],
+		"give": {
+			"res_type": 3,
+			"count": 200
+		}
+	},
+	{
+		"orig": "SID_\u9b54\u5668\u30ca\u30fc\u30b9\u30c8\u30ec\u30f3\u30c9",
+		"refined": "SID_\u9b54\u5668\u30ca\u30fc\u30b9\u30c8\u30ec\u30f3\u30c9_AGI",
+		"use": [
+			{
+				"res_type": 2,
+				"count": 200
+			},
+			{
+				"res_type": 1,
+				"count": 500
+			}
+		],
+		"give": {
+			"res_type": 3,
+			"count": 200
+		}
+	},
+	{
+		"orig": "SID_\u9b54\u5668\u30ca\u30fc\u30b9\u30c8\u30ec\u30f3\u30c9",
+		"refined": "SID_\u9b54\u5668\u30ca\u30fc\u30b9\u30c8\u30ec\u30f3\u30c9_DEF",
+		"use": [
+			{
+				"res_type": 2,
+				"count": 200
+			},
+			{
+				"res_type": 1,
+				"count": 500
+			}
+		],
+		"give": {
+			"res_type": 3,
+			"count": 200
+		}
+	},
+	{
+		"orig": "SID_\u9b54\u5668\u30ca\u30fc\u30b9\u30c8\u30ec\u30f3\u30c9",
+		"refined": "SID_\u9b54\u5668\u30ca\u30fc\u30b9\u30c8\u30ec\u30f3\u30c9_RES",
+		"use": [
+			{
+				"res_type": 2,
+				"count": 200
+			},
+			{
+				"res_type": 1,
+				"count": 500
+			}
+		],
+		"give": {
+			"res_type": 3,
+			"count": 200
+		}
+	}
+]

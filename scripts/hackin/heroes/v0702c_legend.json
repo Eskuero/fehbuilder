@@ -1,1 +1,135 @@
-[{"id_tag":"PID_伝承ルフレ男","roman":"REFLET_M_LEGEND01","face_name":"ch04_07_Reflet_M_Legend01","face_name2":"ch04_07_Reflet_M_Legend01","legendary": {"duo_skill_id":"","bonus_effect": { "hp":3,"atk":0,"spd":0,"def":4,"res":0},"kind":1,"element":4,"bst":200,"pair_up":true,"ae_extra":false},"dragonflowers": {"max_count":5},"timestamp":null,"id_num":922,"version_num":702,"sort_value":100200,"origins":1024,"weapon_type":13,"tome_class":3,"move_type":0,"series":10,"random_pool":0,"permanent_hero":false,"base_vactor_id":223,"refresher":false,"base_stats": { "hp":18,"atk":15,"spd":6,"def":5,"res":7},"growth_rates": { "hp":50,"atk":70,"spd":55,"def":60,"res":55},"skills":[["SID_ウインド","","","","","","","","","","","SID_再移動制限1","",""],["SID_エルウインド","","","","","","","","","","SID_攻撃封じ1","SID_再移動制限2","",""],["SID_エルウインド","","","","","","SID_レクスカリバー","","SID_蛍火","","SID_攻撃封じ2","","",""],["SID_レクスカリバー","","SID_蛍火","","","","","","SID_華炎","","SID_攻撃封じ3","SID_再移動制限3","",""],["SID_神軍師の書","","SID_蛍火","","","","","","","SID_これも策のうちだよ","SID_攻撃封じ4","","",""]]}]
+[
+	{
+		"id_tag": "PID_\u4f1d\u627f\u30eb\u30d5\u30ec\u7537",
+		"roman": "REFLET_M_LEGEND01",
+		"face_name": "ch04_07_Reflet_M_Legend01",
+		"face_name2": "ch04_07_Reflet_M_Legend01",
+		"legendary": {
+			"duo_skill_id": "",
+			"bonus_effect": {
+				"hp": 3,
+				"atk": 0,
+				"spd": 0,
+				"def": 4,
+				"res": 0
+			},
+			"kind": 1,
+			"element": 4,
+			"bst": 200,
+			"pair_up": true,
+			"ae_extra": false
+		},
+		"dragonflowers": {
+			"max_count": 5
+		},
+		"timestamp": null,
+		"id_num": 922,
+		"version_num": 702,
+		"sort_value": 100200,
+		"origins": 1024,
+		"weapon_type": 13,
+		"tome_class": 3,
+		"move_type": 0,
+		"series": 10,
+		"random_pool": 0,
+		"permanent_hero": false,
+		"base_vactor_id": 223,
+		"refresher": false,
+		"base_stats": {
+			"hp": 18,
+			"atk": 15,
+			"spd": 6,
+			"def": 5,
+			"res": 7
+		},
+		"growth_rates": {
+			"hp": 50,
+			"atk": 70,
+			"spd": 55,
+			"def": 60,
+			"res": 55
+		},
+		"skills": [
+			[
+				"SID_\u30a6\u30a4\u30f3\u30c9",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"SID_\u518d\u79fb\u52d5\u5236\u96501",
+				"",
+				""
+			],
+			[
+				"SID_\u30a8\u30eb\u30a6\u30a4\u30f3\u30c9",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"SID_\u653b\u6483\u5c01\u30581",
+				"SID_\u518d\u79fb\u52d5\u5236\u96502",
+				"",
+				""
+			],
+			[
+				"SID_\u30a8\u30eb\u30a6\u30a4\u30f3\u30c9",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"SID_\u30ec\u30af\u30b9\u30ab\u30ea\u30d0\u30fc",
+				"",
+				"SID_\u86cd\u706b",
+				"",
+				"SID_\u653b\u6483\u5c01\u30582",
+				"",
+				"",
+				""
+			],
+			[
+				"SID_\u30ec\u30af\u30b9\u30ab\u30ea\u30d0\u30fc",
+				"",
+				"SID_\u86cd\u706b",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"SID_\u83ef\u708e",
+				"",
+				"SID_\u653b\u6483\u5c01\u30583",
+				"SID_\u518d\u79fb\u52d5\u5236\u96503",
+				"",
+				""
+			],
+			[
+				"SID_\u795e\u8ecd\u5e2b\u306e\u66f8",
+				"",
+				"SID_\u86cd\u706b",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"SID_\u3053\u308c\u3082\u7b56\u306e\u3046\u3061\u3060\u3088",
+				"SID_\u653b\u6483\u5c01\u30584",
+				"",
+				"",
+				""
+			]
+		]
+	}
+]

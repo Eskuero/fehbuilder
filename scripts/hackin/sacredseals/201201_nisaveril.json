@@ -1,1 +1,839 @@
-[{"id_tag":"SID_死線1","next_seal":"SID_死線2","prev_seal":null,"ss_coin":40,"ss_badge_type":1,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_死線2","next_seal":"SID_死線3","prev_seal":"SID_死線1","ss_coin":50,"ss_badge_type":1,"ss_badge":200,"ss_great_badge":60},{"id_tag":"SID_死線3","next_seal":null,"prev_seal":"SID_死線2","ss_coin":100,"ss_badge_type":1,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_金剛の呼吸","next_seal":null,"prev_seal":null,"ss_coin":40,"ss_badge_type":2,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_飛燕金剛の一撃1","next_seal":"SID_飛燕金剛の一撃2","prev_seal":null,"ss_coin":20,"ss_badge_type":2,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_飛燕金剛の一撃2","next_seal":null,"prev_seal":"SID_飛燕金剛の一撃1","ss_coin":100,"ss_badge_type":2,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_金剛明鏡の一撃1","next_seal":"SID_金剛明鏡の一撃2","prev_seal":null,"ss_coin":20,"ss_badge_type":3,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_金剛明鏡の一撃2","next_seal":null,"prev_seal":"SID_金剛明鏡の一撃1","ss_coin":100,"ss_badge_type":3,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_竜盾の紋章","next_seal":null,"prev_seal":null,"ss_coin":40,"ss_badge_type":3,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_攻撃守備の紋章1","next_seal":"SID_攻撃守備の紋章2","prev_seal":null,"ss_coin":20,"ss_badge_type":2,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_攻撃守備の紋章2","next_seal":null,"prev_seal":"SID_攻撃守備の紋章1","ss_coin":50,"ss_badge_type":2,"ss_badge":200,"ss_great_badge":60},{"id_tag":"SID_歩行の剛撃1","next_seal":"SID_歩行の剛撃2","prev_seal":null,"ss_coin":40,"ss_badge_type":2,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_歩行の剛撃2","next_seal":"SID_歩行の剛撃3","prev_seal":"SID_歩行の剛撃1","ss_coin":50,"ss_badge_type":2,"ss_badge":200,"ss_great_badge":60},{"id_tag":"SID_歩行の剛撃3","next_seal":null,"prev_seal":"SID_歩行の剛撃2","ss_coin":100,"ss_badge_type":2,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_金剛明鏡の構え1","next_seal":"SID_金剛明鏡の構え2","prev_seal":null,"ss_coin":20,"ss_badge_type":3,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_金剛明鏡の構え2","next_seal":null,"prev_seal":"SID_金剛明鏡の構え1","ss_coin":100,"ss_badge_type":3,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_守備の波・奇数1","next_seal":"SID_守備の波・奇数2","prev_seal":null,"ss_coin":20,"ss_badge_type":2,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_守備の波・奇数2","next_seal":"SID_守備の波・奇数3","prev_seal":"SID_守備の波・奇数1","ss_coin":50,"ss_badge_type":2,"ss_badge":200,"ss_great_badge":60},{"id_tag":"SID_守備の波・奇数3","next_seal":null,"prev_seal":"SID_守備の波・奇数2","ss_coin":100,"ss_badge_type":2,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_攻撃魔防の孤軍1","next_seal":"SID_攻撃魔防の孤軍2","prev_seal":null,"ss_coin":40,"ss_badge_type":3,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_攻撃魔防の孤軍2","next_seal":"SID_攻撃魔防の孤軍3","prev_seal":"SID_攻撃魔防の孤軍1","ss_coin":50,"ss_badge_type":3,"ss_badge":200,"ss_great_badge":60},{"id_tag":"SID_攻撃魔防の孤軍3","next_seal":null,"prev_seal":"SID_攻撃魔防の孤軍2","ss_coin":100,"ss_badge_type":3,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_守備魔防の城塞1","next_seal":"SID_守備魔防の城塞2","prev_seal":null,"ss_coin":20,"ss_badge_type":3,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_守備魔防の城塞2","next_seal":null,"prev_seal":"SID_守備魔防の城塞1","ss_coin":100,"ss_badge_type":3,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_攻撃速さの孤軍1","next_seal":"SID_攻撃速さの孤軍2","prev_seal":null,"ss_coin":40,"ss_badge_type":1,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_攻撃速さの孤軍2","next_seal":"SID_攻撃速さの孤軍3","prev_seal":"SID_攻撃速さの孤軍1","ss_coin":50,"ss_badge_type":1,"ss_badge":200,"ss_great_badge":60},{"id_tag":"SID_攻撃速さの孤軍3","next_seal":null,"prev_seal":"SID_攻撃速さの孤軍2","ss_coin":100,"ss_badge_type":1,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_生命の護符1","next_seal":"SID_生命の護符2","prev_seal":null,"ss_coin":40,"ss_badge_type":2,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_生命の護符2","next_seal":"SID_生命の護符3","prev_seal":"SID_生命の護符1","ss_coin":50,"ss_badge_type":2,"ss_badge":200,"ss_great_badge":60},{"id_tag":"SID_生命の護符3","next_seal":null,"prev_seal":"SID_生命の護符2","ss_coin":100,"ss_badge_type":2,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_速さの開放1","next_seal":"SID_速さの開放2","prev_seal":null,"ss_coin":20,"ss_badge_type":1,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_速さの開放2","next_seal":"SID_速さの開放3","prev_seal":"SID_速さの開放1","ss_coin":50,"ss_badge_type":1,"ss_badge":200,"ss_great_badge":60},{"id_tag":"SID_速さの開放3","next_seal":null,"prev_seal":"SID_速さの開放2","ss_coin":100,"ss_badge_type":1,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_先導の伝令・天1","next_seal":"SID_先導の伝令・天2","prev_seal":null,"ss_coin":40,"ss_badge_type":0,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_先導の伝令・天2","next_seal":"SID_先導の伝令・天3","prev_seal":"SID_先導の伝令・天1","ss_coin":50,"ss_badge_type":0,"ss_badge":200,"ss_great_badge":60},{"id_tag":"SID_先導の伝令・天3","next_seal":null,"prev_seal":"SID_先導の伝令・天2","ss_coin":100,"ss_badge_type":0,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_守備魔防の孤軍1","next_seal":"SID_守備魔防の孤軍2","prev_seal":null,"ss_coin":40,"ss_badge_type":3,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_守備魔防の孤軍2","next_seal":"SID_守備魔防の孤軍3","prev_seal":"SID_守備魔防の孤軍1","ss_coin":50,"ss_badge_type":3,"ss_badge":200,"ss_great_badge":60},{"id_tag":"SID_守備魔防の孤軍3","next_seal":null,"prev_seal":"SID_守備魔防の孤軍2","ss_coin":100,"ss_badge_type":3,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_魔防の開放1","next_seal":"SID_魔防の開放2","prev_seal":null,"ss_coin":20,"ss_badge_type":3,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_魔防の開放2","next_seal":"SID_魔防の開放3","prev_seal":"SID_魔防の開放1","ss_coin":50,"ss_badge_type":3,"ss_badge":200,"ss_great_badge":60},{"id_tag":"SID_魔防の開放3","next_seal":null,"prev_seal":"SID_魔防の開放2","ss_coin":100,"ss_badge_type":3,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_獣盾の紋章","next_seal":null,"prev_seal":null,"ss_coin":40,"ss_badge_type":3,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_攻撃守備の渾身1","next_seal":"SID_攻撃守備の渾身2","prev_seal":null,"ss_coin":20,"ss_badge_type":2,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_攻撃守備の渾身2","next_seal":"SID_攻撃守備の渾身3","prev_seal":"SID_攻撃守備の渾身1","ss_coin":50,"ss_badge_type":2,"ss_badge":200,"ss_great_badge":60},{"id_tag":"SID_攻撃守備の渾身3","next_seal":null,"prev_seal":"SID_攻撃守備の渾身2","ss_coin":100,"ss_badge_type":2,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_速さ守備の孤軍1","next_seal":"SID_速さ守備の孤軍2","prev_seal":null,"ss_coin":40,"ss_badge_type":2,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_速さ守備の孤軍2","next_seal":"SID_速さ守備の孤軍3","prev_seal":"SID_速さ守備の孤軍1","ss_coin":50,"ss_badge_type":2,"ss_badge":200,"ss_great_badge":60},{"id_tag":"SID_速さ守備の孤軍3","next_seal":null,"prev_seal":"SID_速さ守備の孤軍2","ss_coin":100,"ss_badge_type":2,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_速さ守備の大覚醒1","next_seal":"SID_速さ守備の大覚醒2","prev_seal":null,"ss_coin":20,"ss_badge_type":2,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_速さ守備の大覚醒2","next_seal":"SID_速さ守備の大覚醒3","prev_seal":"SID_速さ守備の大覚醒1","ss_coin":50,"ss_badge_type":2,"ss_badge":200,"ss_great_badge":60},{"id_tag":"SID_速さ守備の大覚醒3","next_seal":null,"prev_seal":"SID_速さ守備の大覚醒2","ss_coin":100,"ss_badge_type":2,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_攻撃守備の密集1","next_seal":"SID_攻撃守備の密集2","prev_seal":null,"ss_coin":20,"ss_badge_type":2,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_攻撃守備の密集2","next_seal":"SID_攻撃守備の密集3","prev_seal":"SID_攻撃守備の密集1","ss_coin":50,"ss_badge_type":2,"ss_badge":200,"ss_great_badge":60},{"id_tag":"SID_攻撃守備の密集3","next_seal":null,"prev_seal":"SID_攻撃守備の密集2","ss_coin":100,"ss_badge_type":2,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_刃のセッション1","next_seal":"SID_刃のセッション2","prev_seal":null,"ss_coin":40,"ss_badge_type":0,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_刃のセッション2","next_seal":"SID_刃のセッション3","prev_seal":"SID_刃のセッション1","ss_coin":50,"ss_badge_type":0,"ss_badge":200,"ss_great_badge":60},{"id_tag":"SID_刃のセッション3","next_seal":null,"prev_seal":"SID_刃のセッション2","ss_coin":100,"ss_badge_type":0,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_盾のセッション1","next_seal":"SID_盾のセッション2","prev_seal":null,"ss_coin":40,"ss_badge_type":1,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_盾のセッション2","next_seal":"SID_盾のセッション3","prev_seal":"SID_盾のセッション1","ss_coin":50,"ss_badge_type":1,"ss_badge":200,"ss_great_badge":60},{"id_tag":"SID_盾のセッション3","next_seal":null,"prev_seal":"SID_盾のセッション2","ss_coin":100,"ss_badge_type":1,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_速さ魔防の密集1","next_seal":"SID_速さ魔防の密集2","prev_seal":null,"ss_coin":20,"ss_badge_type":3,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_速さ魔防の密集2","next_seal":"SID_速さ魔防の密集3","prev_seal":"SID_速さ魔防の密集1","ss_coin":50,"ss_badge_type":3,"ss_badge":200,"ss_great_badge":60},{"id_tag":"SID_速さ魔防の密集3","next_seal":null,"prev_seal":"SID_速さ魔防の密集2","ss_coin":100,"ss_badge_type":3,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_攻撃魔防の密集1","next_seal":"SID_攻撃魔防の密集2","prev_seal":null,"ss_coin":20,"ss_badge_type":3,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_攻撃魔防の密集2","next_seal":"SID_攻撃魔防の密集3","prev_seal":"SID_攻撃魔防の密集1","ss_coin":50,"ss_badge_type":3,"ss_badge":200,"ss_great_badge":60},{"id_tag":"SID_攻撃魔防の密集3","next_seal":null,"prev_seal":"SID_攻撃魔防の密集2","ss_coin":100,"ss_badge_type":3,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_第41迷宮の覇者1","next_seal":"SID_第41迷宮の覇者2","prev_seal":null,"ss_coin":0,"ss_badge_type":0,"ss_badge":0,"ss_great_badge":0},{"id_tag":"SID_第41迷宮の覇者2","next_seal":null,"prev_seal":"SID_第41迷宮の覇者1","ss_coin":100,"ss_badge_type":0,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_第42迷宮の覇者1","next_seal":"SID_第42迷宮の覇者2","prev_seal":null,"ss_coin":0,"ss_badge_type":0,"ss_badge":0,"ss_great_badge":0},{"id_tag":"SID_第42迷宮の覇者2","next_seal":null,"prev_seal":"SID_第42迷宮の覇者1","ss_coin":100,"ss_badge_type":1,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_ニザヴェリルの理","next_seal":null,"prev_seal":null,"ss_coin":0,"ss_badge_type":0,"ss_badge":0,"ss_great_badge":0},{"id_tag":"SID_第43迷宮の覇者1","next_seal":"SID_第43迷宮の覇者2","prev_seal":null,"ss_coin":0,"ss_badge_type":0,"ss_badge":0,"ss_great_badge":0},{"id_tag":"SID_第43迷宮の覇者2","next_seal":null,"prev_seal":"SID_第43迷宮の覇者1","ss_coin":100,"ss_badge_type":2,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_第44迷宮の覇者1","next_seal":"SID_第44迷宮の覇者2","prev_seal":null,"ss_coin":0,"ss_badge_type":0,"ss_badge":0,"ss_great_badge":0},{"id_tag":"SID_第44迷宮の覇者2","next_seal":null,"prev_seal":"SID_第44迷宮の覇者1","ss_coin":100,"ss_badge_type":3,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_第45迷宮の覇者1","next_seal":"SID_第45迷宮の覇者2","prev_seal":null,"ss_coin":0,"ss_badge_type":0,"ss_badge":0,"ss_great_badge":0},{"id_tag":"SID_第45迷宮の覇者2","next_seal":null,"prev_seal":"SID_第45迷宮の覇者1","ss_coin":100,"ss_badge_type":1,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_第46迷宮の覇者1","next_seal":"SID_第46迷宮の覇者2","prev_seal":null,"ss_coin":0,"ss_badge_type":0,"ss_badge":0,"ss_great_badge":0},{"id_tag":"SID_第46迷宮の覇者2","next_seal":null,"prev_seal":"SID_第46迷宮の覇者1","ss_coin":100,"ss_badge_type":2,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_第47迷宮の覇者1","next_seal":"SID_第47迷宮の覇者2","prev_seal":null,"ss_coin":0,"ss_badge_type":0,"ss_badge":0,"ss_great_badge":0},{"id_tag":"SID_第47迷宮の覇者2","next_seal":null,"prev_seal":"SID_第47迷宮の覇者1","ss_coin":100,"ss_badge_type":3,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_グリンブルスティ","next_seal":null,"prev_seal":null,"ss_coin":0,"ss_badge_type":0,"ss_badge":0,"ss_great_badge":0},{"id_tag":"SID_第48迷宮の覇者1","next_seal":"SID_第48迷宮の覇者2","prev_seal":null,"ss_coin":0,"ss_badge_type":0,"ss_badge":0,"ss_great_badge":0},{"id_tag":"SID_第48迷宮の覇者2","next_seal":null,"prev_seal":"SID_第48迷宮の覇者1","ss_coin":100,"ss_badge_type":2,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_第49迷宮の覇者1","next_seal":"SID_第49迷宮の覇者2","prev_seal":null,"ss_coin":0,"ss_badge_type":0,"ss_badge":0,"ss_great_badge":0},{"id_tag":"SID_第49迷宮の覇者2","next_seal":null,"prev_seal":"SID_第49迷宮の覇者1","ss_coin":100,"ss_badge_type":3,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_第50迷宮の覇者1","next_seal":"SID_第50迷宮の覇者2","prev_seal":null,"ss_coin":0,"ss_badge_type":0,"ss_badge":0,"ss_great_badge":0},{"id_tag":"SID_第50迷宮の覇者2","next_seal":null,"prev_seal":"SID_第50迷宮の覇者1","ss_coin":100,"ss_badge_type":3,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_第51迷宮の覇者1","next_seal":"SID_第51迷宮の覇者2","prev_seal":null,"ss_coin":0,"ss_badge_type":0,"ss_badge":0,"ss_great_badge":0},{"id_tag":"SID_第51迷宮の覇者2","next_seal":null,"prev_seal":"SID_第51迷宮の覇者1","ss_coin":100,"ss_badge_type":0,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_第52迷宮の覇者1","next_seal":"SID_第52迷宮の覇者2","prev_seal":null,"ss_coin":0,"ss_badge_type":0,"ss_badge":0,"ss_great_badge":0},{"id_tag":"SID_第52迷宮の覇者2","next_seal":null,"prev_seal":"SID_第52迷宮の覇者1","ss_coin":100,"ss_badge_type":1,"ss_badge":1000,"ss_great_badge":400}]
+[
+	{
+		"id_tag": "SID_\u6b7b\u7dda1",
+		"next_seal": "SID_\u6b7b\u7dda2",
+		"prev_seal": null,
+		"ss_coin": 40,
+		"ss_badge_type": 1,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u6b7b\u7dda2",
+		"next_seal": "SID_\u6b7b\u7dda3",
+		"prev_seal": "SID_\u6b7b\u7dda1",
+		"ss_coin": 50,
+		"ss_badge_type": 1,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u6b7b\u7dda3",
+		"next_seal": null,
+		"prev_seal": "SID_\u6b7b\u7dda2",
+		"ss_coin": 100,
+		"ss_badge_type": 1,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u91d1\u525b\u306e\u547c\u5438",
+		"next_seal": null,
+		"prev_seal": null,
+		"ss_coin": 40,
+		"ss_badge_type": 2,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u98db\u71d5\u91d1\u525b\u306e\u4e00\u64831",
+		"next_seal": "SID_\u98db\u71d5\u91d1\u525b\u306e\u4e00\u64832",
+		"prev_seal": null,
+		"ss_coin": 20,
+		"ss_badge_type": 2,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u98db\u71d5\u91d1\u525b\u306e\u4e00\u64832",
+		"next_seal": null,
+		"prev_seal": "SID_\u98db\u71d5\u91d1\u525b\u306e\u4e00\u64831",
+		"ss_coin": 100,
+		"ss_badge_type": 2,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u91d1\u525b\u660e\u93e1\u306e\u4e00\u64831",
+		"next_seal": "SID_\u91d1\u525b\u660e\u93e1\u306e\u4e00\u64832",
+		"prev_seal": null,
+		"ss_coin": 20,
+		"ss_badge_type": 3,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u91d1\u525b\u660e\u93e1\u306e\u4e00\u64832",
+		"next_seal": null,
+		"prev_seal": "SID_\u91d1\u525b\u660e\u93e1\u306e\u4e00\u64831",
+		"ss_coin": 100,
+		"ss_badge_type": 3,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u7adc\u76fe\u306e\u7d0b\u7ae0",
+		"next_seal": null,
+		"prev_seal": null,
+		"ss_coin": 40,
+		"ss_badge_type": 3,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u5b88\u5099\u306e\u7d0b\u7ae01",
+		"next_seal": "SID_\u653b\u6483\u5b88\u5099\u306e\u7d0b\u7ae02",
+		"prev_seal": null,
+		"ss_coin": 20,
+		"ss_badge_type": 2,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u5b88\u5099\u306e\u7d0b\u7ae02",
+		"next_seal": null,
+		"prev_seal": "SID_\u653b\u6483\u5b88\u5099\u306e\u7d0b\u7ae01",
+		"ss_coin": 50,
+		"ss_badge_type": 2,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u6b69\u884c\u306e\u525b\u64831",
+		"next_seal": "SID_\u6b69\u884c\u306e\u525b\u64832",
+		"prev_seal": null,
+		"ss_coin": 40,
+		"ss_badge_type": 2,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u6b69\u884c\u306e\u525b\u64832",
+		"next_seal": "SID_\u6b69\u884c\u306e\u525b\u64833",
+		"prev_seal": "SID_\u6b69\u884c\u306e\u525b\u64831",
+		"ss_coin": 50,
+		"ss_badge_type": 2,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u6b69\u884c\u306e\u525b\u64833",
+		"next_seal": null,
+		"prev_seal": "SID_\u6b69\u884c\u306e\u525b\u64832",
+		"ss_coin": 100,
+		"ss_badge_type": 2,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u91d1\u525b\u660e\u93e1\u306e\u69cb\u30481",
+		"next_seal": "SID_\u91d1\u525b\u660e\u93e1\u306e\u69cb\u30482",
+		"prev_seal": null,
+		"ss_coin": 20,
+		"ss_badge_type": 3,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u91d1\u525b\u660e\u93e1\u306e\u69cb\u30482",
+		"next_seal": null,
+		"prev_seal": "SID_\u91d1\u525b\u660e\u93e1\u306e\u69cb\u30481",
+		"ss_coin": 100,
+		"ss_badge_type": 3,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u5b88\u5099\u306e\u6ce2\u30fb\u5947\u65701",
+		"next_seal": "SID_\u5b88\u5099\u306e\u6ce2\u30fb\u5947\u65702",
+		"prev_seal": null,
+		"ss_coin": 20,
+		"ss_badge_type": 2,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u5b88\u5099\u306e\u6ce2\u30fb\u5947\u65702",
+		"next_seal": "SID_\u5b88\u5099\u306e\u6ce2\u30fb\u5947\u65703",
+		"prev_seal": "SID_\u5b88\u5099\u306e\u6ce2\u30fb\u5947\u65701",
+		"ss_coin": 50,
+		"ss_badge_type": 2,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u5b88\u5099\u306e\u6ce2\u30fb\u5947\u65703",
+		"next_seal": null,
+		"prev_seal": "SID_\u5b88\u5099\u306e\u6ce2\u30fb\u5947\u65702",
+		"ss_coin": 100,
+		"ss_badge_type": 2,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u9b54\u9632\u306e\u5b64\u8ecd1",
+		"next_seal": "SID_\u653b\u6483\u9b54\u9632\u306e\u5b64\u8ecd2",
+		"prev_seal": null,
+		"ss_coin": 40,
+		"ss_badge_type": 3,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u9b54\u9632\u306e\u5b64\u8ecd2",
+		"next_seal": "SID_\u653b\u6483\u9b54\u9632\u306e\u5b64\u8ecd3",
+		"prev_seal": "SID_\u653b\u6483\u9b54\u9632\u306e\u5b64\u8ecd1",
+		"ss_coin": 50,
+		"ss_badge_type": 3,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u9b54\u9632\u306e\u5b64\u8ecd3",
+		"next_seal": null,
+		"prev_seal": "SID_\u653b\u6483\u9b54\u9632\u306e\u5b64\u8ecd2",
+		"ss_coin": 100,
+		"ss_badge_type": 3,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u5b88\u5099\u9b54\u9632\u306e\u57ce\u585e1",
+		"next_seal": "SID_\u5b88\u5099\u9b54\u9632\u306e\u57ce\u585e2",
+		"prev_seal": null,
+		"ss_coin": 20,
+		"ss_badge_type": 3,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u5b88\u5099\u9b54\u9632\u306e\u57ce\u585e2",
+		"next_seal": null,
+		"prev_seal": "SID_\u5b88\u5099\u9b54\u9632\u306e\u57ce\u585e1",
+		"ss_coin": 100,
+		"ss_badge_type": 3,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u901f\u3055\u306e\u5b64\u8ecd1",
+		"next_seal": "SID_\u653b\u6483\u901f\u3055\u306e\u5b64\u8ecd2",
+		"prev_seal": null,
+		"ss_coin": 40,
+		"ss_badge_type": 1,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u901f\u3055\u306e\u5b64\u8ecd2",
+		"next_seal": "SID_\u653b\u6483\u901f\u3055\u306e\u5b64\u8ecd3",
+		"prev_seal": "SID_\u653b\u6483\u901f\u3055\u306e\u5b64\u8ecd1",
+		"ss_coin": 50,
+		"ss_badge_type": 1,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u901f\u3055\u306e\u5b64\u8ecd3",
+		"next_seal": null,
+		"prev_seal": "SID_\u653b\u6483\u901f\u3055\u306e\u5b64\u8ecd2",
+		"ss_coin": 100,
+		"ss_badge_type": 1,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u751f\u547d\u306e\u8b77\u7b261",
+		"next_seal": "SID_\u751f\u547d\u306e\u8b77\u7b262",
+		"prev_seal": null,
+		"ss_coin": 40,
+		"ss_badge_type": 2,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u751f\u547d\u306e\u8b77\u7b262",
+		"next_seal": "SID_\u751f\u547d\u306e\u8b77\u7b263",
+		"prev_seal": "SID_\u751f\u547d\u306e\u8b77\u7b261",
+		"ss_coin": 50,
+		"ss_badge_type": 2,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u751f\u547d\u306e\u8b77\u7b263",
+		"next_seal": null,
+		"prev_seal": "SID_\u751f\u547d\u306e\u8b77\u7b262",
+		"ss_coin": 100,
+		"ss_badge_type": 2,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u901f\u3055\u306e\u958b\u653e1",
+		"next_seal": "SID_\u901f\u3055\u306e\u958b\u653e2",
+		"prev_seal": null,
+		"ss_coin": 20,
+		"ss_badge_type": 1,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u901f\u3055\u306e\u958b\u653e2",
+		"next_seal": "SID_\u901f\u3055\u306e\u958b\u653e3",
+		"prev_seal": "SID_\u901f\u3055\u306e\u958b\u653e1",
+		"ss_coin": 50,
+		"ss_badge_type": 1,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u901f\u3055\u306e\u958b\u653e3",
+		"next_seal": null,
+		"prev_seal": "SID_\u901f\u3055\u306e\u958b\u653e2",
+		"ss_coin": 100,
+		"ss_badge_type": 1,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u5148\u5c0e\u306e\u4f1d\u4ee4\u30fb\u59291",
+		"next_seal": "SID_\u5148\u5c0e\u306e\u4f1d\u4ee4\u30fb\u59292",
+		"prev_seal": null,
+		"ss_coin": 40,
+		"ss_badge_type": 0,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u5148\u5c0e\u306e\u4f1d\u4ee4\u30fb\u59292",
+		"next_seal": "SID_\u5148\u5c0e\u306e\u4f1d\u4ee4\u30fb\u59293",
+		"prev_seal": "SID_\u5148\u5c0e\u306e\u4f1d\u4ee4\u30fb\u59291",
+		"ss_coin": 50,
+		"ss_badge_type": 0,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u5148\u5c0e\u306e\u4f1d\u4ee4\u30fb\u59293",
+		"next_seal": null,
+		"prev_seal": "SID_\u5148\u5c0e\u306e\u4f1d\u4ee4\u30fb\u59292",
+		"ss_coin": 100,
+		"ss_badge_type": 0,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u5b88\u5099\u9b54\u9632\u306e\u5b64\u8ecd1",
+		"next_seal": "SID_\u5b88\u5099\u9b54\u9632\u306e\u5b64\u8ecd2",
+		"prev_seal": null,
+		"ss_coin": 40,
+		"ss_badge_type": 3,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u5b88\u5099\u9b54\u9632\u306e\u5b64\u8ecd2",
+		"next_seal": "SID_\u5b88\u5099\u9b54\u9632\u306e\u5b64\u8ecd3",
+		"prev_seal": "SID_\u5b88\u5099\u9b54\u9632\u306e\u5b64\u8ecd1",
+		"ss_coin": 50,
+		"ss_badge_type": 3,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u5b88\u5099\u9b54\u9632\u306e\u5b64\u8ecd3",
+		"next_seal": null,
+		"prev_seal": "SID_\u5b88\u5099\u9b54\u9632\u306e\u5b64\u8ecd2",
+		"ss_coin": 100,
+		"ss_badge_type": 3,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u9b54\u9632\u306e\u958b\u653e1",
+		"next_seal": "SID_\u9b54\u9632\u306e\u958b\u653e2",
+		"prev_seal": null,
+		"ss_coin": 20,
+		"ss_badge_type": 3,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u9b54\u9632\u306e\u958b\u653e2",
+		"next_seal": "SID_\u9b54\u9632\u306e\u958b\u653e3",
+		"prev_seal": "SID_\u9b54\u9632\u306e\u958b\u653e1",
+		"ss_coin": 50,
+		"ss_badge_type": 3,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u9b54\u9632\u306e\u958b\u653e3",
+		"next_seal": null,
+		"prev_seal": "SID_\u9b54\u9632\u306e\u958b\u653e2",
+		"ss_coin": 100,
+		"ss_badge_type": 3,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u7363\u76fe\u306e\u7d0b\u7ae0",
+		"next_seal": null,
+		"prev_seal": null,
+		"ss_coin": 40,
+		"ss_badge_type": 3,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u5b88\u5099\u306e\u6e3e\u8eab1",
+		"next_seal": "SID_\u653b\u6483\u5b88\u5099\u306e\u6e3e\u8eab2",
+		"prev_seal": null,
+		"ss_coin": 20,
+		"ss_badge_type": 2,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u5b88\u5099\u306e\u6e3e\u8eab2",
+		"next_seal": "SID_\u653b\u6483\u5b88\u5099\u306e\u6e3e\u8eab3",
+		"prev_seal": "SID_\u653b\u6483\u5b88\u5099\u306e\u6e3e\u8eab1",
+		"ss_coin": 50,
+		"ss_badge_type": 2,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u5b88\u5099\u306e\u6e3e\u8eab3",
+		"next_seal": null,
+		"prev_seal": "SID_\u653b\u6483\u5b88\u5099\u306e\u6e3e\u8eab2",
+		"ss_coin": 100,
+		"ss_badge_type": 2,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u901f\u3055\u5b88\u5099\u306e\u5b64\u8ecd1",
+		"next_seal": "SID_\u901f\u3055\u5b88\u5099\u306e\u5b64\u8ecd2",
+		"prev_seal": null,
+		"ss_coin": 40,
+		"ss_badge_type": 2,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u901f\u3055\u5b88\u5099\u306e\u5b64\u8ecd2",
+		"next_seal": "SID_\u901f\u3055\u5b88\u5099\u306e\u5b64\u8ecd3",
+		"prev_seal": "SID_\u901f\u3055\u5b88\u5099\u306e\u5b64\u8ecd1",
+		"ss_coin": 50,
+		"ss_badge_type": 2,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u901f\u3055\u5b88\u5099\u306e\u5b64\u8ecd3",
+		"next_seal": null,
+		"prev_seal": "SID_\u901f\u3055\u5b88\u5099\u306e\u5b64\u8ecd2",
+		"ss_coin": 100,
+		"ss_badge_type": 2,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u901f\u3055\u5b88\u5099\u306e\u5927\u899a\u91921",
+		"next_seal": "SID_\u901f\u3055\u5b88\u5099\u306e\u5927\u899a\u91922",
+		"prev_seal": null,
+		"ss_coin": 20,
+		"ss_badge_type": 2,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u901f\u3055\u5b88\u5099\u306e\u5927\u899a\u91922",
+		"next_seal": "SID_\u901f\u3055\u5b88\u5099\u306e\u5927\u899a\u91923",
+		"prev_seal": "SID_\u901f\u3055\u5b88\u5099\u306e\u5927\u899a\u91921",
+		"ss_coin": 50,
+		"ss_badge_type": 2,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u901f\u3055\u5b88\u5099\u306e\u5927\u899a\u91923",
+		"next_seal": null,
+		"prev_seal": "SID_\u901f\u3055\u5b88\u5099\u306e\u5927\u899a\u91922",
+		"ss_coin": 100,
+		"ss_badge_type": 2,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u5b88\u5099\u306e\u5bc6\u96c61",
+		"next_seal": "SID_\u653b\u6483\u5b88\u5099\u306e\u5bc6\u96c62",
+		"prev_seal": null,
+		"ss_coin": 20,
+		"ss_badge_type": 2,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u5b88\u5099\u306e\u5bc6\u96c62",
+		"next_seal": "SID_\u653b\u6483\u5b88\u5099\u306e\u5bc6\u96c63",
+		"prev_seal": "SID_\u653b\u6483\u5b88\u5099\u306e\u5bc6\u96c61",
+		"ss_coin": 50,
+		"ss_badge_type": 2,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u5b88\u5099\u306e\u5bc6\u96c63",
+		"next_seal": null,
+		"prev_seal": "SID_\u653b\u6483\u5b88\u5099\u306e\u5bc6\u96c62",
+		"ss_coin": 100,
+		"ss_badge_type": 2,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u5203\u306e\u30bb\u30c3\u30b7\u30e7\u30f31",
+		"next_seal": "SID_\u5203\u306e\u30bb\u30c3\u30b7\u30e7\u30f32",
+		"prev_seal": null,
+		"ss_coin": 40,
+		"ss_badge_type": 0,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u5203\u306e\u30bb\u30c3\u30b7\u30e7\u30f32",
+		"next_seal": "SID_\u5203\u306e\u30bb\u30c3\u30b7\u30e7\u30f33",
+		"prev_seal": "SID_\u5203\u306e\u30bb\u30c3\u30b7\u30e7\u30f31",
+		"ss_coin": 50,
+		"ss_badge_type": 0,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u5203\u306e\u30bb\u30c3\u30b7\u30e7\u30f33",
+		"next_seal": null,
+		"prev_seal": "SID_\u5203\u306e\u30bb\u30c3\u30b7\u30e7\u30f32",
+		"ss_coin": 100,
+		"ss_badge_type": 0,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u76fe\u306e\u30bb\u30c3\u30b7\u30e7\u30f31",
+		"next_seal": "SID_\u76fe\u306e\u30bb\u30c3\u30b7\u30e7\u30f32",
+		"prev_seal": null,
+		"ss_coin": 40,
+		"ss_badge_type": 1,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u76fe\u306e\u30bb\u30c3\u30b7\u30e7\u30f32",
+		"next_seal": "SID_\u76fe\u306e\u30bb\u30c3\u30b7\u30e7\u30f33",
+		"prev_seal": "SID_\u76fe\u306e\u30bb\u30c3\u30b7\u30e7\u30f31",
+		"ss_coin": 50,
+		"ss_badge_type": 1,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u76fe\u306e\u30bb\u30c3\u30b7\u30e7\u30f33",
+		"next_seal": null,
+		"prev_seal": "SID_\u76fe\u306e\u30bb\u30c3\u30b7\u30e7\u30f32",
+		"ss_coin": 100,
+		"ss_badge_type": 1,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u901f\u3055\u9b54\u9632\u306e\u5bc6\u96c61",
+		"next_seal": "SID_\u901f\u3055\u9b54\u9632\u306e\u5bc6\u96c62",
+		"prev_seal": null,
+		"ss_coin": 20,
+		"ss_badge_type": 3,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u901f\u3055\u9b54\u9632\u306e\u5bc6\u96c62",
+		"next_seal": "SID_\u901f\u3055\u9b54\u9632\u306e\u5bc6\u96c63",
+		"prev_seal": "SID_\u901f\u3055\u9b54\u9632\u306e\u5bc6\u96c61",
+		"ss_coin": 50,
+		"ss_badge_type": 3,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u901f\u3055\u9b54\u9632\u306e\u5bc6\u96c63",
+		"next_seal": null,
+		"prev_seal": "SID_\u901f\u3055\u9b54\u9632\u306e\u5bc6\u96c62",
+		"ss_coin": 100,
+		"ss_badge_type": 3,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u9b54\u9632\u306e\u5bc6\u96c61",
+		"next_seal": "SID_\u653b\u6483\u9b54\u9632\u306e\u5bc6\u96c62",
+		"prev_seal": null,
+		"ss_coin": 20,
+		"ss_badge_type": 3,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u9b54\u9632\u306e\u5bc6\u96c62",
+		"next_seal": "SID_\u653b\u6483\u9b54\u9632\u306e\u5bc6\u96c63",
+		"prev_seal": "SID_\u653b\u6483\u9b54\u9632\u306e\u5bc6\u96c61",
+		"ss_coin": 50,
+		"ss_badge_type": 3,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u9b54\u9632\u306e\u5bc6\u96c63",
+		"next_seal": null,
+		"prev_seal": "SID_\u653b\u6483\u9b54\u9632\u306e\u5bc6\u96c62",
+		"ss_coin": 100,
+		"ss_badge_type": 3,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u7b2c41\u8ff7\u5bae\u306e\u8987\u80051",
+		"next_seal": "SID_\u7b2c41\u8ff7\u5bae\u306e\u8987\u80052",
+		"prev_seal": null,
+		"ss_coin": 0,
+		"ss_badge_type": 0,
+		"ss_badge": 0,
+		"ss_great_badge": 0
+	},
+	{
+		"id_tag": "SID_\u7b2c41\u8ff7\u5bae\u306e\u8987\u80052",
+		"next_seal": null,
+		"prev_seal": "SID_\u7b2c41\u8ff7\u5bae\u306e\u8987\u80051",
+		"ss_coin": 100,
+		"ss_badge_type": 0,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u7b2c42\u8ff7\u5bae\u306e\u8987\u80051",
+		"next_seal": "SID_\u7b2c42\u8ff7\u5bae\u306e\u8987\u80052",
+		"prev_seal": null,
+		"ss_coin": 0,
+		"ss_badge_type": 0,
+		"ss_badge": 0,
+		"ss_great_badge": 0
+	},
+	{
+		"id_tag": "SID_\u7b2c42\u8ff7\u5bae\u306e\u8987\u80052",
+		"next_seal": null,
+		"prev_seal": "SID_\u7b2c42\u8ff7\u5bae\u306e\u8987\u80051",
+		"ss_coin": 100,
+		"ss_badge_type": 1,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u30cb\u30b6\u30f4\u30a7\u30ea\u30eb\u306e\u7406",
+		"next_seal": null,
+		"prev_seal": null,
+		"ss_coin": 0,
+		"ss_badge_type": 0,
+		"ss_badge": 0,
+		"ss_great_badge": 0
+	},
+	{
+		"id_tag": "SID_\u7b2c43\u8ff7\u5bae\u306e\u8987\u80051",
+		"next_seal": "SID_\u7b2c43\u8ff7\u5bae\u306e\u8987\u80052",
+		"prev_seal": null,
+		"ss_coin": 0,
+		"ss_badge_type": 0,
+		"ss_badge": 0,
+		"ss_great_badge": 0
+	},
+	{
+		"id_tag": "SID_\u7b2c43\u8ff7\u5bae\u306e\u8987\u80052",
+		"next_seal": null,
+		"prev_seal": "SID_\u7b2c43\u8ff7\u5bae\u306e\u8987\u80051",
+		"ss_coin": 100,
+		"ss_badge_type": 2,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u7b2c44\u8ff7\u5bae\u306e\u8987\u80051",
+		"next_seal": "SID_\u7b2c44\u8ff7\u5bae\u306e\u8987\u80052",
+		"prev_seal": null,
+		"ss_coin": 0,
+		"ss_badge_type": 0,
+		"ss_badge": 0,
+		"ss_great_badge": 0
+	},
+	{
+		"id_tag": "SID_\u7b2c44\u8ff7\u5bae\u306e\u8987\u80052",
+		"next_seal": null,
+		"prev_seal": "SID_\u7b2c44\u8ff7\u5bae\u306e\u8987\u80051",
+		"ss_coin": 100,
+		"ss_badge_type": 3,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u7b2c45\u8ff7\u5bae\u306e\u8987\u80051",
+		"next_seal": "SID_\u7b2c45\u8ff7\u5bae\u306e\u8987\u80052",
+		"prev_seal": null,
+		"ss_coin": 0,
+		"ss_badge_type": 0,
+		"ss_badge": 0,
+		"ss_great_badge": 0
+	},
+	{
+		"id_tag": "SID_\u7b2c45\u8ff7\u5bae\u306e\u8987\u80052",
+		"next_seal": null,
+		"prev_seal": "SID_\u7b2c45\u8ff7\u5bae\u306e\u8987\u80051",
+		"ss_coin": 100,
+		"ss_badge_type": 1,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u7b2c46\u8ff7\u5bae\u306e\u8987\u80051",
+		"next_seal": "SID_\u7b2c46\u8ff7\u5bae\u306e\u8987\u80052",
+		"prev_seal": null,
+		"ss_coin": 0,
+		"ss_badge_type": 0,
+		"ss_badge": 0,
+		"ss_great_badge": 0
+	},
+	{
+		"id_tag": "SID_\u7b2c46\u8ff7\u5bae\u306e\u8987\u80052",
+		"next_seal": null,
+		"prev_seal": "SID_\u7b2c46\u8ff7\u5bae\u306e\u8987\u80051",
+		"ss_coin": 100,
+		"ss_badge_type": 2,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u7b2c47\u8ff7\u5bae\u306e\u8987\u80051",
+		"next_seal": "SID_\u7b2c47\u8ff7\u5bae\u306e\u8987\u80052",
+		"prev_seal": null,
+		"ss_coin": 0,
+		"ss_badge_type": 0,
+		"ss_badge": 0,
+		"ss_great_badge": 0
+	},
+	{
+		"id_tag": "SID_\u7b2c47\u8ff7\u5bae\u306e\u8987\u80052",
+		"next_seal": null,
+		"prev_seal": "SID_\u7b2c47\u8ff7\u5bae\u306e\u8987\u80051",
+		"ss_coin": 100,
+		"ss_badge_type": 3,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u30b0\u30ea\u30f3\u30d6\u30eb\u30b9\u30c6\u30a3",
+		"next_seal": null,
+		"prev_seal": null,
+		"ss_coin": 0,
+		"ss_badge_type": 0,
+		"ss_badge": 0,
+		"ss_great_badge": 0
+	},
+	{
+		"id_tag": "SID_\u7b2c48\u8ff7\u5bae\u306e\u8987\u80051",
+		"next_seal": "SID_\u7b2c48\u8ff7\u5bae\u306e\u8987\u80052",
+		"prev_seal": null,
+		"ss_coin": 0,
+		"ss_badge_type": 0,
+		"ss_badge": 0,
+		"ss_great_badge": 0
+	},
+	{
+		"id_tag": "SID_\u7b2c48\u8ff7\u5bae\u306e\u8987\u80052",
+		"next_seal": null,
+		"prev_seal": "SID_\u7b2c48\u8ff7\u5bae\u306e\u8987\u80051",
+		"ss_coin": 100,
+		"ss_badge_type": 2,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u7b2c49\u8ff7\u5bae\u306e\u8987\u80051",
+		"next_seal": "SID_\u7b2c49\u8ff7\u5bae\u306e\u8987\u80052",
+		"prev_seal": null,
+		"ss_coin": 0,
+		"ss_badge_type": 0,
+		"ss_badge": 0,
+		"ss_great_badge": 0
+	},
+	{
+		"id_tag": "SID_\u7b2c49\u8ff7\u5bae\u306e\u8987\u80052",
+		"next_seal": null,
+		"prev_seal": "SID_\u7b2c49\u8ff7\u5bae\u306e\u8987\u80051",
+		"ss_coin": 100,
+		"ss_badge_type": 3,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u7b2c50\u8ff7\u5bae\u306e\u8987\u80051",
+		"next_seal": "SID_\u7b2c50\u8ff7\u5bae\u306e\u8987\u80052",
+		"prev_seal": null,
+		"ss_coin": 0,
+		"ss_badge_type": 0,
+		"ss_badge": 0,
+		"ss_great_badge": 0
+	},
+	{
+		"id_tag": "SID_\u7b2c50\u8ff7\u5bae\u306e\u8987\u80052",
+		"next_seal": null,
+		"prev_seal": "SID_\u7b2c50\u8ff7\u5bae\u306e\u8987\u80051",
+		"ss_coin": 100,
+		"ss_badge_type": 3,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u7b2c51\u8ff7\u5bae\u306e\u8987\u80051",
+		"next_seal": "SID_\u7b2c51\u8ff7\u5bae\u306e\u8987\u80052",
+		"prev_seal": null,
+		"ss_coin": 0,
+		"ss_badge_type": 0,
+		"ss_badge": 0,
+		"ss_great_badge": 0
+	},
+	{
+		"id_tag": "SID_\u7b2c51\u8ff7\u5bae\u306e\u8987\u80052",
+		"next_seal": null,
+		"prev_seal": "SID_\u7b2c51\u8ff7\u5bae\u306e\u8987\u80051",
+		"ss_coin": 100,
+		"ss_badge_type": 0,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u7b2c52\u8ff7\u5bae\u306e\u8987\u80051",
+		"next_seal": "SID_\u7b2c52\u8ff7\u5bae\u306e\u8987\u80052",
+		"prev_seal": null,
+		"ss_coin": 0,
+		"ss_badge_type": 0,
+		"ss_badge": 0,
+		"ss_great_badge": 0
+	},
+	{
+		"id_tag": "SID_\u7b2c52\u8ff7\u5bae\u306e\u8987\u80052",
+		"next_seal": null,
+		"prev_seal": "SID_\u7b2c52\u8ff7\u5bae\u306e\u8987\u80051",
+		"ss_coin": 100,
+		"ss_badge_type": 1,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	}
+]

@@ -1,1 +1,172 @@
-[{"id_tag":"EID_スカビオサ","roman":"SCABIOSA","face_name":"ch00_24_Scabiosa_F_Normal","face_name2":"ch00_24_Scabiosa_F_Normal","top_weapon":"SID_不幸の花","unique_assist1":"SID_踊る","unique_assist2":"SID_こわいゆめ","unique_special":null,"timestamp":null,"id_num":54,"is_npc":false,"weapon_type":13,"tome_class":3,"move_type":3,"random_allowed":false,"is_boss":true,"refresher":true,"is_enemy":true,"base_stats": {"hp":15,"atk":5,"spd":6,"def":2,"res":4},"growth_rates": {"hp":50,"atk":65,"spd":65,"def":30,"res":40}},{"id_tag":"EID_プルメリア","roman":"PLUMERIA","face_name":"ch00_25_Plumeria_F_Normal","face_name2":"ch00_25_Plumeria_F_Normal","top_weapon":"SID_豊潤の花","unique_assist1":"SID_踊る","unique_assist2":"SID_あまいゆめ","unique_special":null,"timestamp":null,"id_num":55,"is_npc":false,"weapon_type":11,"tome_class":5,"move_type":3,"random_allowed":false,"is_boss":true,"refresher":true,"is_enemy":true,"base_stats": {"hp":16,"atk":7,"spd":4,"def":2,"res":3},"growth_rates": {"hp":50,"atk":70,"spd":30,"def":30,"res":70}},{"id_tag":"EID_フレイヤ","roman":"FREYA","face_name":"ch00_27_Freya_F_Normal","face_name2":"ch00_27_Freya_F_Normal","top_weapon":"SID_悪夢の女王の角","unique_assist1":null,"unique_assist2":null,"unique_special":null,"timestamp":null,"id_num":56,"is_npc":false,"weapon_type":22,"tome_class":0,"move_type":2,"random_allowed":false,"is_boss":true,"refresher":false,"is_enemy":true,"base_stats": {"hp":15,"atk":9,"spd":10,"def":4,"res":6},"growth_rates": {"hp":55,"atk":65,"spd":75,"def":45,"res":35}},{"id_tag":"EID_フロージ","roman":"FRODA","face_name":"ch00_26_Froda_M_Normal","face_name2":"ch00_26_Froda_M_Normal","top_weapon":null,"unique_assist1":null,"unique_assist2":null,"unique_special":null,"timestamp":null,"id_num":57,"is_npc":false,"weapon_type":21,"tome_class":0,"move_type":2,"random_allowed":false,"is_boss":true,"refresher":false,"is_enemy":true,"base_stats": {"hp":16,"atk":11,"spd":2,"def":9,"res":6},"growth_rates": {"hp":55,"atk":65,"spd":30,"def":50,"res":75}},{"id_tag":"EID_フード","roman":"HOOD","face_name":"ch00_29_Hood_N_Normal","face_name2":"ch00_29_Hood_N_Normal","top_weapon":"SID_フォルクヴァング","unique_assist1":null,"unique_assist2":null,"unique_special":null,"timestamp":null,"id_num":58,"is_npc":true,"weapon_type":0,"tome_class":0,"move_type":0,"random_allowed":false,"is_boss":true,"refresher":false,"is_enemy":true,"base_stats": {"hp":18,"atk":9,"spd":4,"def":10,"res":7},"growth_rates": {"hp":60,"atk":70,"spd":40,"def":65,"res":50}}]
+[
+	{
+		"id_tag": "EID_\u30b9\u30ab\u30d3\u30aa\u30b5",
+		"roman": "SCABIOSA",
+		"face_name": "ch00_24_Scabiosa_F_Normal",
+		"face_name2": "ch00_24_Scabiosa_F_Normal",
+		"top_weapon": "SID_\u4e0d\u5e78\u306e\u82b1",
+		"unique_assist1": "SID_\u8e0a\u308b",
+		"unique_assist2": "SID_\u3053\u308f\u3044\u3086\u3081",
+		"unique_special": null,
+		"timestamp": null,
+		"id_num": 54,
+		"is_npc": false,
+		"weapon_type": 13,
+		"tome_class": 3,
+		"move_type": 3,
+		"random_allowed": false,
+		"is_boss": true,
+		"refresher": true,
+		"is_enemy": true,
+		"base_stats": {
+			"hp": 15,
+			"atk": 5,
+			"spd": 6,
+			"def": 2,
+			"res": 4
+		},
+		"growth_rates": {
+			"hp": 50,
+			"atk": 65,
+			"spd": 65,
+			"def": 30,
+			"res": 40
+		}
+	},
+	{
+		"id_tag": "EID_\u30d7\u30eb\u30e1\u30ea\u30a2",
+		"roman": "PLUMERIA",
+		"face_name": "ch00_25_Plumeria_F_Normal",
+		"face_name2": "ch00_25_Plumeria_F_Normal",
+		"top_weapon": "SID_\u8c4a\u6f64\u306e\u82b1",
+		"unique_assist1": "SID_\u8e0a\u308b",
+		"unique_assist2": "SID_\u3042\u307e\u3044\u3086\u3081",
+		"unique_special": null,
+		"timestamp": null,
+		"id_num": 55,
+		"is_npc": false,
+		"weapon_type": 11,
+		"tome_class": 5,
+		"move_type": 3,
+		"random_allowed": false,
+		"is_boss": true,
+		"refresher": true,
+		"is_enemy": true,
+		"base_stats": {
+			"hp": 16,
+			"atk": 7,
+			"spd": 4,
+			"def": 2,
+			"res": 3
+		},
+		"growth_rates": {
+			"hp": 50,
+			"atk": 70,
+			"spd": 30,
+			"def": 30,
+			"res": 70
+		}
+	},
+	{
+		"id_tag": "EID_\u30d5\u30ec\u30a4\u30e4",
+		"roman": "FREYA",
+		"face_name": "ch00_27_Freya_F_Normal",
+		"face_name2": "ch00_27_Freya_F_Normal",
+		"top_weapon": "SID_\u60aa\u5922\u306e\u5973\u738b\u306e\u89d2",
+		"unique_assist1": null,
+		"unique_assist2": null,
+		"unique_special": null,
+		"timestamp": null,
+		"id_num": 56,
+		"is_npc": false,
+		"weapon_type": 22,
+		"tome_class": 0,
+		"move_type": 2,
+		"random_allowed": false,
+		"is_boss": true,
+		"refresher": false,
+		"is_enemy": true,
+		"base_stats": {
+			"hp": 15,
+			"atk": 9,
+			"spd": 10,
+			"def": 4,
+			"res": 6
+		},
+		"growth_rates": {
+			"hp": 55,
+			"atk": 65,
+			"spd": 75,
+			"def": 45,
+			"res": 35
+		}
+	},
+	{
+		"id_tag": "EID_\u30d5\u30ed\u30fc\u30b8",
+		"roman": "FRODA",
+		"face_name": "ch00_26_Froda_M_Normal",
+		"face_name2": "ch00_26_Froda_M_Normal",
+		"top_weapon": null,
+		"unique_assist1": null,
+		"unique_assist2": null,
+		"unique_special": null,
+		"timestamp": null,
+		"id_num": 57,
+		"is_npc": false,
+		"weapon_type": 21,
+		"tome_class": 0,
+		"move_type": 2,
+		"random_allowed": false,
+		"is_boss": true,
+		"refresher": false,
+		"is_enemy": true,
+		"base_stats": {
+			"hp": 16,
+			"atk": 11,
+			"spd": 2,
+			"def": 9,
+			"res": 6
+		},
+		"growth_rates": {
+			"hp": 55,
+			"atk": 65,
+			"spd": 30,
+			"def": 50,
+			"res": 75
+		}
+	},
+	{
+		"id_tag": "EID_\u30d5\u30fc\u30c9",
+		"roman": "HOOD",
+		"face_name": "ch00_29_Hood_N_Normal",
+		"face_name2": "ch00_29_Hood_N_Normal",
+		"top_weapon": "SID_\u30d5\u30a9\u30eb\u30af\u30f4\u30a1\u30f3\u30b0",
+		"unique_assist1": null,
+		"unique_assist2": null,
+		"unique_special": null,
+		"timestamp": null,
+		"id_num": 58,
+		"is_npc": true,
+		"weapon_type": 0,
+		"tome_class": 0,
+		"move_type": 0,
+		"random_allowed": false,
+		"is_boss": true,
+		"refresher": false,
+		"is_enemy": true,
+		"base_stats": {
+			"hp": 18,
+			"atk": 9,
+			"spd": 4,
+			"def": 10,
+			"res": 7
+		},
+		"growth_rates": {
+			"hp": 60,
+			"atk": 70,
+			"spd": 40,
+			"def": 65,
+			"res": 50
+		}
+	}
+]

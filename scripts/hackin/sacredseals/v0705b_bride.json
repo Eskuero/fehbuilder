@@ -1,1 +1,56 @@
-[{"id_tag":"SID_速さ守備の奮起1","next_seal":"SID_速さ守備の奮起2","prev_seal":null,"ss_coin":40,"ss_badge_type":3,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_速さ守備の奮起2","next_seal":"SID_速さ守備の奮起3","prev_seal":"SID_速さ守備の奮起1","ss_coin":50,"ss_badge_type":3,"ss_badge":200,"ss_great_badge":60},{"id_tag":"SID_速さ守備の奮起3","next_seal":null,"prev_seal":"SID_速さ守備の奮起2","ss_coin":100,"ss_badge_type":3,"ss_badge":1000,"ss_great_badge":400},{"id_tag":"SID_守備魔防の機先1","next_seal":"SID_守備魔防の機先2","prev_seal":null,"ss_coin":20,"ss_badge_type":3,"ss_badge":100,"ss_great_badge":20},{"id_tag":"SID_守備魔防の機先2","next_seal":"SID_守備魔防の機先3","prev_seal":"SID_守備魔防の機先1","ss_coin":50,"ss_badge_type":3,"ss_badge":200,"ss_great_badge":60},{"id_tag":"SID_守備魔防の機先3","next_seal":null,"prev_seal":"SID_守備魔防の機先2","ss_coin":100,"ss_badge_type":3,"ss_badge":1000,"ss_great_badge":400}]
+[
+	{
+		"id_tag": "SID_\u901f\u3055\u5b88\u5099\u306e\u596e\u8d771",
+		"next_seal": "SID_\u901f\u3055\u5b88\u5099\u306e\u596e\u8d772",
+		"prev_seal": null,
+		"ss_coin": 40,
+		"ss_badge_type": 3,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u901f\u3055\u5b88\u5099\u306e\u596e\u8d772",
+		"next_seal": "SID_\u901f\u3055\u5b88\u5099\u306e\u596e\u8d773",
+		"prev_seal": "SID_\u901f\u3055\u5b88\u5099\u306e\u596e\u8d771",
+		"ss_coin": 50,
+		"ss_badge_type": 3,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u901f\u3055\u5b88\u5099\u306e\u596e\u8d773",
+		"next_seal": null,
+		"prev_seal": "SID_\u901f\u3055\u5b88\u5099\u306e\u596e\u8d772",
+		"ss_coin": 100,
+		"ss_badge_type": 3,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u5b88\u5099\u9b54\u9632\u306e\u6a5f\u51481",
+		"next_seal": "SID_\u5b88\u5099\u9b54\u9632\u306e\u6a5f\u51482",
+		"prev_seal": null,
+		"ss_coin": 20,
+		"ss_badge_type": 3,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u5b88\u5099\u9b54\u9632\u306e\u6a5f\u51482",
+		"next_seal": "SID_\u5b88\u5099\u9b54\u9632\u306e\u6a5f\u51483",
+		"prev_seal": "SID_\u5b88\u5099\u9b54\u9632\u306e\u6a5f\u51481",
+		"ss_coin": 50,
+		"ss_badge_type": 3,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u5b88\u5099\u9b54\u9632\u306e\u6a5f\u51483",
+		"next_seal": null,
+		"prev_seal": "SID_\u5b88\u5099\u9b54\u9632\u306e\u6a5f\u51482",
+		"ss_coin": 100,
+		"ss_badge_type": 3,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	}
+]

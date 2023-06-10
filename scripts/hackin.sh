@@ -22,3 +22,6 @@ gzip -fk ../data/content/*json;
 
 echo -e "\nExtracting missing assets from device..." >> fehupdate-$date.log 2>&1
 PYTHONUNBUFFERED=1 python3 hackin-assets.py >> fehupdate-$date.log 2>&1
+
+echo -e "\nBeautifying json outputs..." >> fehupdate-$date.log 2>&1
+PYTHONUNBUFFERED=1 python3 hackin-indenter.py >> fehupdate-$date.log 2>&1
