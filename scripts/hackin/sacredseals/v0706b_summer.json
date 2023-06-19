@@ -1,0 +1,47 @@
+[
+	{
+		"id_tag": "SID_\u653b\u6483\u306e\u6ce2\u30fb\u5947\u65701",
+		"next_seal": "SID_\u653b\u6483\u306e\u6ce2\u30fb\u5947\u65702",
+		"prev_seal": null,
+		"ss_coin": 20,
+		"ss_badge_type": 0,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u306e\u6ce2\u30fb\u5947\u65702",
+		"next_seal": "SID_\u653b\u6483\u306e\u6ce2\u30fb\u5947\u65703",
+		"prev_seal": "SID_\u653b\u6483\u306e\u6ce2\u30fb\u5947\u65701",
+		"ss_coin": 50,
+		"ss_badge_type": 0,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u306e\u6ce2\u30fb\u5947\u65703",
+		"next_seal": null,
+		"prev_seal": "SID_\u653b\u6483\u306e\u6ce2\u30fb\u5947\u65702",
+		"ss_coin": 100,
+		"ss_badge_type": 0,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u9b54\u9632\u306e\u5c01\u53701",
+		"next_seal": "SID_\u653b\u6483\u9b54\u9632\u306e\u5c01\u53702",
+		"prev_seal": null,
+		"ss_coin": 40,
+		"ss_badge_type": 3,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u9b54\u9632\u306e\u5c01\u53702",
+		"next_seal": null,
+		"prev_seal": "SID_\u653b\u6483\u9b54\u9632\u306e\u5c01\u53701",
+		"ss_coin": 100,
+		"ss_badge_type": 3,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	}
+]
