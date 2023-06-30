@@ -657,7 +657,7 @@
 	},
 	{
 		"key": "MSID_H_\u8001\u5de7\u306e\u30d6\u30ec\u30b9",
-		"value": "Al inicio de un ataque, si la unidad tiene\\nPV \u2265 25 %, obtiene Atq., Vel., Def. y Res. +4\\ndurante el combate y, adem\u00e1s, si no hay\\nning\u00fan efecto que anule las penalizaciones a\\nAtq., Vel., Def. y Res. del rival, inflige una\\ndurante el combate a cada uno de dichos\\natributos igual a 6 - la penalizaci\u00f3n actual de\\ncada uno de los atributos (m\u00ednimo: 0; cada\\npenalizaci\u00f3n se aplica por separado). Si la\\nunidad tiene PV \u2265 25 % al inicio de un ataque,\\ninflige Atq., Vel., Def. y Res. -6 al enemigo en\\nsu pr\u00f3xima acci\u00f3n. Contra enemigos con\\nalcance de 2, el da\u00f1o se calcula a partir de\\nla Def. o la Res. del enemigo (la que tenga el\\nvalor m\u00e1s bajo)."
+		"value": "Al inicio de un ataque, si la unidad tiene\\nPV \u2265 25 %, obtiene Atq., Vel., Def. y Res. +4\\ndurante el combate y, adem\u00e1s, si no hay\\nning\u00fan efecto que anule las penalizaciones a\\nAtq., Vel., Def. y Res. del rival, inflige una\\ndurante el combate a cada uno de dichos\\natributos igual a 6 - la penalizaci\u00f3n actual de\\ncada uno de los atributos (m\u00ednimo: 0; cada\\npenalizaci\u00f3n se aplica por separado). Si la\\nunidad tiene PV \u2265 25 % al inicio de un ataque,\\ninflige Atq., Vel., Def. y Res. -6 al enemigo en\\nsu pr\u00f3xima acci\u00f3n tras el ataque. Contra\\nenemigos con alcance de 2, el da\u00f1o se calcula\\na partir de la Def. o la Res. del enemigo (la que\\ntenga el valor m\u00e1s bajo)."
 	},
 	{
 		"key": "MSID_H_\u4eee\u9762\u306e\u9a0e\u58eb\u306e\u69cdR",
