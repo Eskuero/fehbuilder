@@ -1,0 +1,36 @@
+[
+	{
+		"id_tag": "EID_\u9b54\u5668\u30a2\u30a4\u30c8",
+		"roman": "EITR_WEAPON01_ENEMY",
+		"face_name": "ch00_52_Eitr_F_Weapon01",
+		"face_name2": "ch00_52_Eitr_F_Weapon01",
+		"top_weapon": "SID_\u9b54\u5668\u30fb\u865a\u7121\u306e\u89d2",
+		"unique_assist1": null,
+		"unique_assist2": null,
+		"unique_special": null,
+		"timestamp": null,
+		"id_num": 98,
+		"is_npc": false,
+		"weapon_type": 21,
+		"tome_class": 0,
+		"move_type": 2,
+		"random_allowed": false,
+		"is_boss": true,
+		"refresher": false,
+		"is_enemy": true,
+		"base_stats": {
+			"hp": 17,
+			"atk": 10,
+			"spd": 15,
+			"def": 2,
+			"res": 2
+		},
+		"growth_rates": {
+			"hp": 50,
+			"atk": 75,
+			"spd": 70,
+			"def": 70,
+			"res": 30
+		}
+	}
+]
