@@ -1,0 +1,70 @@
+[
+	{
+		"id_tag": "EID_\u30d8\u30a4\u30ba\u65750",
+		"roman": "HEITH_ENEMY0",
+		"face_name": "ch00_49_Heith_F_Enemy00",
+		"face_name2": "ch00_49_Heith_F_Enemy00",
+		"top_weapon": "SID_\u30d8\u30a4\u30ba\u6575",
+		"unique_assist1": "SID_\u9ec4\u91d1\u306e\u86c7",
+		"unique_assist2": null,
+		"unique_special": null,
+		"timestamp": null,
+		"id_num": 99,
+		"is_npc": false,
+		"weapon_type": 13,
+		"tome_class": 3,
+		"move_type": 0,
+		"random_allowed": false,
+		"is_boss": true,
+		"refresher": false,
+		"is_enemy": true,
+		"base_stats": {
+			"hp": 15,
+			"atk": 14,
+			"spd": 9,
+			"def": 4,
+			"res": 4
+		},
+		"growth_rates": {
+			"hp": 50,
+			"atk": 70,
+			"spd": 80,
+			"def": 55,
+			"res": 35
+		}
+	},
+	{
+		"id_tag": "EID_\u30d8\u30a4\u30ba\u6575",
+		"roman": "HEITH_ENEMY",
+		"face_name": "ch00_49_Heith_F_Enemy01",
+		"face_name2": "ch00_49_Heith_F_Enemy01",
+		"top_weapon": "SID_\u30d8\u30a4\u30ba\u6575",
+		"unique_assist1": "SID_\u9ec4\u91d1\u306e\u86c7",
+		"unique_assist2": null,
+		"unique_special": null,
+		"timestamp": null,
+		"id_num": 100,
+		"is_npc": false,
+		"weapon_type": 13,
+		"tome_class": 3,
+		"move_type": 0,
+		"random_allowed": false,
+		"is_boss": true,
+		"refresher": false,
+		"is_enemy": true,
+		"base_stats": {
+			"hp": 15,
+			"atk": 14,
+			"spd": 9,
+			"def": 4,
+			"res": 4
+		},
+		"growth_rates": {
+			"hp": 50,
+			"atk": 70,
+			"spd": 80,
+			"def": 55,
+			"res": 35
+		}
+	}
+]
