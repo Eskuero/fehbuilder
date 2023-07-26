@@ -568,7 +568,7 @@ function reset(section) {
 		break;
 		case "misc":
 			selectsp.value = "9999";
-			selecthm.value = "8000";
+			selecthm.value = MAXHM;
 			selectartstyle.value = "Portrait";
 			selecttemplate.value = "MyUnit";
 			selectoffsetX.value = "0";
