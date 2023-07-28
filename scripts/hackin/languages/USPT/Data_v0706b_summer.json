@@ -625,7 +625,7 @@
 	},
 	{
 		"key": "MSID_H_\u5dee\u3057\u9055\u30484",
-		"value": "No in\u00edcio do combate, se PV (uni.) \u2264 99% e a\\nunidade inicia o combate ou PV (ini.) = 100% e\\na unidade inicia o combate, inflige Def./Res. -4\\nao inimigo, reduz dano do primeiro ataque do\\ninimigo em 30%, a unidade faz um ataque duplo\\ngarantido e o dano infligido pelo pr\u00f3ximo ataque\\nda unidade \u00e9 igual ao dano total reduzido (o\\nefeito \u00e9 reiniciado ao final do combate; s\u00f3 o\\nvalor mais alto se aplica; n\u00e3o cumulativo)."
+		"value": "No in\u00edcio do combate, se PV (uni.) \u2264 99% e a\\nunidade inicia o combate ou PV (ini.) = 100% e\\na unidade inicia o combate, inflige Def./Res. -4\\nao inimigo, reduz dano do primeiro ataque do\\ninimigo em 30%, a unidade faz um ataque duplo\\ngarantido e o dano infligido pelo pr\u00f3ximo ataque\\nda unidade = 30% do dano de ataque do inimigo\\nantes de ser reduzido (o efeito \u00e9 reiniciado ao\\nfinal do combate; s\u00f3 o valor mais alto se aplica;\\nn\u00e3o cumulativo)."
 	},
 	{
 		"key": "MSID_H_\u901f\u3055\u5b88\u5099\u306e\u51ea4",
