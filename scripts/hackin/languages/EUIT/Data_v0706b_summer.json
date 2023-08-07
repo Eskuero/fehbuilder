@@ -625,7 +625,7 @@
 	},
 	{
 		"key": "MSID_H_\u5dee\u3057\u9055\u30484",
-		"value": "Se l'unit\u00e0 non ha tutti i PS all'inizio dello scontro\\ne attacca per prima o se il nemico ha tutti i PS\\nall'inizio dello scontro e l'unit\u00e0 attacca per prima,\\ninfligge Dif/Res -4 al nemico, riduce del 30%\\nil danno del primo attacco del nemico, l'unit\u00e0\\nesegue un attacco doppio e l'attacco successivo\\ndell'unit\u00e0 infligge danni per un valore pari\\nal totale del danno ridotto (si azzera alla fine\\ndello scontro; non cumulabile; si applica solo\\nil valore pi\u00f9 alto)."
+		"value": "Se l'unit\u00e0 non ha tutti i PS all'inizio dello scontro\\ne attacca per prima o se il nemico ha tutti i PS\\nall'inizio dello scontro e l'unit\u00e0 attacca per prima,\\ninfligge Dif/Res -4 al nemico, riduce del 30%\\nil danno del primo attacco del nemico, l'unit\u00e0\\nesegue un attacco doppio e l'attacco successivo\\ndell'unit\u00e0 infligge danni aggiuntivi pari al 30% del\\ndanno inflitto dall'attacco del nemico prima della\\nriduzione (si azzera alla fine dello scontro; non\\ncumulabile; si applica solo il valore pi\u00f9 alto)."
 	},
 	{
 		"key": "MSID_H_\u901f\u3055\u5b88\u5099\u306e\u51ea4",

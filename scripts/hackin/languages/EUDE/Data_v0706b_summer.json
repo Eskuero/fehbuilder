@@ -625,7 +625,7 @@
 	},
 	{
 		"key": "MSID_H_\u5dee\u3057\u9055\u30484",
-		"value": "Sind die KP der Einheit zu Beginn des Kampfes\\n\u2264 99 % und initiiert die Einheit den Kampf oder\\nsind die KP des Gegners = 100 % und initiiert\\ndie Einheit den Kampf, erleidet der Gegner Ver./\\nRes. -4, der Schaden durch den ersten Angriff\\ndes Gegners wird um 30 % reduziert, die Einheit\\nf\u00fchrt einen garantierten Folgeangriff aus und\\nder n\u00e4chste Angriff der Einheit verursacht\\nzus\u00e4tzlichen Schaden in H\u00f6he des gesamten\\nreduzierten Schadens (wird nach dem Kampf\\nzur\u00fcckgesetzt; bei mehreren \u00e4hnlichen Effekten\\nwird nur der h\u00f6chste angewandt)."
+		"value": "Sind die KP der Einheit zu Beginn des Kampfes\\n\u2264 99 % und initiiert die Einheit den Kampf oder\\nsind die KP des Gegners = 100 % und initiiert\\ndie Einheit den Kampf, erleidet der Gegner Ver./\\nRes. -4, der Schaden durch den ersten Angriff\\ndes Gegners wird um 30 % reduziert, die Einheit\\nf\u00fchrt einen garantierten Folgeangriff aus, zudem\\nverursacht der n\u00e4chste Angriff der Einheit zu-\\ns\u00e4tzlichen Schaden in H\u00f6he von 30 % des gegn.\\nAngriffs vor Verringerungen (wird nach dem\\nKampf zur\u00fcckgesetzt; bei mehreren \u00e4hnlichen\\nEffekten wird nur der h\u00f6chste angewandt)."
 	},
 	{
 		"key": "MSID_H_\u901f\u3055\u5b88\u5099\u306e\u51ea4",
