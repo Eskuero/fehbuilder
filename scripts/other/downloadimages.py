@@ -403,6 +403,8 @@ icons = {
 	"newyearsummonerbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/0b/Bg_DetailedStatus_NewYear_Reliance.webp?1067?1280",
 	"diningnormalbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/f/f6/Bg_DetailedStatus_Dining.webp?1067?1280",
 	"diningsummonerbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/54/Bg_DetailedStatus_Dining_Reliance.webp?1067?1280",
+	"librarynormalbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/13/Bg_DetailedStatus_Library.webp?1067?1280",
+	"librarysummonerbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/3/3a/Bg_DetailedStatus_Library_Reliance.webp?1067?1280",
 	# Other
 	"summoningaltar": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/4/42/BG_Summon_Stone.png?1067?1280",
 	"resplendent": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b8/Icon_GodWear_L.png?82?82",
