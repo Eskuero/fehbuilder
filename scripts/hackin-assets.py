@@ -86,8 +86,8 @@ for unit in units:
 			truename = engrishname["M" + unit] + ((": " + engrishname[unit.replace("PID", "MPID_HONOR")]) if "PID_" in unit else "")
 			print("              - \"" + truename + "\" missing asset \"" + art["localpath"] + "\", pulling from \"" + art["remotepath"] + "\"", end = ": ", flush = True)
 			try:
-				with open("temp/heroart", "wb+") as tempimage:
-					subprocess.run(['adb', 'shell', "su -c", "dd if=" + HEROES_BASE_PATH + art["remotepath"]], stdout=tempimage, stderr = subprocess.DEVNULL)
+				subprocess.run(['rsync', "--rsync-path", "/system/product/bin/rsync", 'device:' + HEROES_BASE_PATH + art["remotepath"], 'temp/heroart'], stderr = subprocess.DEVNULL)
+				with open("temp/heroart", "rb+") as tempimage:
 					image = Image.open(tempimage).resize(art["dimensions"])
 					# We save the icons as webp attempting the better compression method while being lossless to avoid quality drops
 					image.save(LOCAL_BASE_PATH + art["localpath"], 'WEBP')
@@ -102,15 +102,17 @@ with open("../data/content/fullskills.json", "r") as datasource:
 
 print("\n     - Pulling spritsheets for passive and weapon refine icons...")
 # First obtain all the icon spritesheets
-p = subprocess.Popen(['adb', 'shell', "su -c", "ls /data/data/com.nintendo.zaba/files/assets/Common/UI/Skill_Passive*"], stdout=subprocess.PIPE, stderr = subprocess.DEVNULL)
-spritesheets = p.communicate()[0].decode().split()
+getlist = subprocess.Popen(["ssh", "device"], stdout = subprocess.PIPE, stdin=subprocess.PIPE, stderr=subprocess.DEVNULL)
+# Command to execute to get the list of files
+command = "ls /data/data/com.nintendo.zaba/files/assets/Common/UI/Skill_Passive*"
+spritesheets = getlist.communicate(input=command.encode())[0].decode().split()
 # Pull each spritesheet and store them ordered
 orderedsheets = []
 for i in range(0, len(spritesheets)):
 	# Obtain the real index of the sheet. For that strip the filepath of everything but the number - 1
 	realindex = int(spritesheets[i].strip("/data/data/com.nintendo.zaba/files/assets/Common/UI/Skill_Passive").strip(".png")) - 1
-	with open("temp/sheet" + str(realindex), "wb+") as tempimage:
-		subprocess.run(['adb', 'shell', "su -c", "dd if=" + spritesheets[i]], stdout=tempimage, stderr = subprocess.DEVNULL)
+	subprocess.run(['rsync', "--rsync-path", "/system/product/bin/rsync", 'device:' + spritesheets[i], 'temp/sheet' + str(realindex)])
+	with open("temp/sheet" + str(realindex), "rb+") as tempimage:
 		orderedsheets.insert(realindex, Image.open(tempimage))
 
 print("\n     - Cropping individual passive and weapon refine icons...")
