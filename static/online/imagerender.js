@@ -854,7 +854,19 @@ async function myunit() {
 		// Position for text is off if we had an accessory and flowers
 		var offset = (accessory ? 27 : 0) + (flowers > 0 ? 147 : 0);
 		preview.strokeText(languages[language]["MID_EXP"], 308 + offset, 745); preview.fillText(languages[language]["MID_EXP"], 308 + offset, 745);
-		preview.strokeText(languages[language]["MID_UNIT_INFO_EXP_MAX"], 415 + offset, 745); preview.fillText(languages[language]["MID_UNIT_INFO_EXP_MAX"], 415 + offset, 745);
+		if (selectlevel.value == "level1") {
+			preview.font = '21px FeH-Font';
+			// Print "Next" exp level indicator
+			preview.strokeText(languages[language]["MID_UNIT_INFO_EXP_REMAIN"], 380 + offset, 743); preview.fillText(languages[language]["MID_UNIT_INFO_EXP_REMAIN"], 380 + offset, 743);
+			// Hardcode to 100 to next exp since we always use level 1
+			printnumbers(preview, 100, 1, 465 + offset, 742, "start", 0.8);
+			// Show an empty rectangle
+			preview.rect(380 + offset, 768, 130, 7);
+			preview.fillStyle = "#193135";
+			preview.fill();
+		} else {
+			preview.strokeText(languages[language]["MID_UNIT_INFO_EXP_MAX"], 415 + offset, 745); preview.fillText(languages[language]["MID_UNIT_INFO_EXP_MAX"], 415 + offset, 745);
+		}
 	}));
 
 	// If the weapon is valid try to print an icon
@@ -878,7 +890,7 @@ async function myunit() {
 		}));
 	}
 	// We always paste the text because it might as well be unarmed and have a "-"
-	preview.fillStyle = refine ? "#82f546" : "#ffffff";
+	preview.font = '24px FeH-Font'; preview.fillStyle = refine ? "#82f546" : "#ffffff";
 	preview.strokeText(printableweapon, 420, 806); preview.fillText(printableweapon, 420, 806);
 
 	var assist = selectassists.value == "None" ? "-" : languages[language]["M" + selectassists.value];
