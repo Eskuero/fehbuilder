@@ -1,0 +1,135 @@
+[
+	{
+		"id_tag": "PID_\u4f1d\u627f\u30ea\u30e5\u30fc\u30eb\u5973",
+		"roman": "LUEUE_F_LEGEND01",
+		"face_name": "ch19_01_Lueue_F_Legend01",
+		"face_name2": "ch19_01_Lueue_F_Legend01",
+		"legendary": {
+			"duo_skill_id": "",
+			"bonus_effect": {
+				"hp": 3,
+				"atk": 0,
+				"spd": 0,
+				"def": 4,
+				"res": 0
+			},
+			"kind": 1,
+			"element": 1,
+			"bst": 200,
+			"pair_up": true,
+			"ae_extra": false
+		},
+		"dragonflowers": {
+			"max_count": 5
+		},
+		"timestamp": null,
+		"id_num": 991,
+		"version_num": 708,
+		"sort_value": 100200,
+		"origins": 16384,
+		"weapon_type": 18,
+		"tome_class": 0,
+		"move_type": 0,
+		"series": 14,
+		"random_pool": 0,
+		"permanent_hero": false,
+		"base_vactor_id": 101,
+		"refresher": false,
+		"base_stats": {
+			"hp": 16,
+			"atk": 11,
+			"spd": 12,
+			"def": 5,
+			"res": 4
+		},
+		"growth_rates": {
+			"hp": 55,
+			"atk": 70,
+			"spd": 80,
+			"def": 65,
+			"res": 75
+		},
+		"skills": [
+			[
+				"SID_\u706b\u306e\u30d6\u30ec\u30b9",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				""
+			],
+			[
+				"SID_\u706b\u708e\u306e\u30d6\u30ec\u30b9",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"SID_\u653b\u6483\u901f\u3055\u306e\u79d8\u59651",
+				"SID_\u898b\u5207\u308a\u30fb\u53cd\u6483\u4e0d\u53ef1",
+				"SID_\u653b\u6483\u901f\u3055\u306e\u4fe1\u7fa91",
+				"",
+				""
+			],
+			[
+				"SID_\u706b\u708e\u306e\u30d6\u30ec\u30b9",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"SID_\u707c\u71b1\u306e\u30d6\u30ec\u30b9",
+				"",
+				"SID_\u661f\u5f71",
+				"SID_\u653b\u6483\u901f\u3055\u306e\u79d8\u59652",
+				"SID_\u898b\u5207\u308a\u30fb\u53cd\u6483\u4e0d\u53ef2",
+				"SID_\u653b\u6483\u901f\u3055\u306e\u4fe1\u7fa92",
+				"",
+				""
+			],
+			[
+				"SID_\u707c\u71b1\u306e\u30d6\u30ec\u30b9",
+				"",
+				"SID_\u661f\u5f71",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"SID_\u51f6\u661f",
+				"SID_\u653b\u6483\u901f\u3055\u306e\u79d8\u59653",
+				"SID_\u898b\u5207\u308a\u30fb\u53cd\u6483\u4e0d\u53ef3",
+				"SID_\u653b\u6483\u901f\u3055\u306e\u4fe1\u7fa93",
+				"",
+				""
+			],
+			[
+				"SID_\u795e\u7adc\u306e\u4f53\u8853",
+				"",
+				"SID_\u661f\u5f71",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"SID_\u7d46\u30fb\u795e\u7adc\u7834",
+				"SID_\u653b\u6483\u901f\u3055\u306e\u79d8\u59654",
+				"SID_\u898b\u5207\u308a\u30fb\u53cd\u6483\u4e0d\u53ef4",
+				"SID_\u653b\u6483\u901f\u3055\u306e\u4fe1\u67614",
+				"",
+				""
+			]
+		]
+	}
+]
