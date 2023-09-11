@@ -12,8 +12,23 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import json
+import sys
 import os
 import datetime
+
+MODE = os.environ["RENEWDATA_MODE"] if "RENEWDATA_MODE" in os.environ else False
+# Detect what update mode we are using
+if MODE == "hertz_wiki":
+	EVOLUTIONS_BASEDIR = "feh-assets-json/files/assets/Common/SRPG/WeaponRefine/"
+	HEROES_BASEDIR = "feh-assets-json/files/assets/Common/SRPG/Person/"
+	ENEMIES_BASEDIR = "feh-assets-json/files/assets/Common/SRPG/Enemy/"
+elif MODE == "hackin_device":
+	EVOLUTIONS_BASEDIR = "hackin/weaponevolutions/"
+	HEROES_BASEDIR = "hackin/heroes/"
+	ENEMIES_BASEDIR = "hackin/enemy/"
+else:
+	print("Invalid RENEWDATA_MODE enviroment variable, must be hertz_wiki or hackin_device")
+	sys.exit(1)
 
 # We store all the data in a single dict
 heroes = {}
@@ -23,9 +38,9 @@ with open("fullskills.json", "r") as datasource:
 	weapons = json.load(datasource)["weapons"]
 weaponevolutions = {}
 # Get all the files that contain weapon evolution definitions and loop through them
-files = os.listdir("hackin/weaponevolutions/")
+files = os.listdir(EVOLUTIONS_BASEDIR)
 for file in files:
-	with open("hackin/weaponevolutions/" + file, "r") as datasource:
+	with open(EVOLUTIONS_BASEDIR + file, "r") as datasource:
 		data = json.load(datasource)
 		# Skip any weapon evolution not in the weapons to avoid adding normal refines
 		for entry in [entry for entry in data if entry["refined"] in weapons]:
@@ -39,9 +54,9 @@ with open("fulllanguages.json", "r") as datasource:
 facenames = []
 
 # Get all the files that contain unit definitions and loop through them
-files = os.listdir("hackin/heroes/")
+files = os.listdir(HEROES_BASEDIR)
 for file in files:
-	with open("hackin/heroes/" + file, "r") as datasource:
+	with open(HEROES_BASEDIR + file, "r") as datasource:
 		data = json.load(datasource)
 		# PID_無し is skeleton data for a hero so we ignore it
 		for entry in [entry for entry in data if entry["id_tag"] != "PID_無し"]:
@@ -70,9 +85,9 @@ for file in files:
 				heroes[entry["id_tag"]]["basekit"].append(weaponevolutions[item])
 
 # Get all the files that contain enemy definitions and loop through them
-files = os.listdir("hackin/enemy/")
+files = os.listdir(ENEMIES_BASEDIR)
 for file in files:
-	with open("hackin/enemy/" + file, "r") as datasource:
+	with open(ENEMIES_BASEDIR + file, "r") as datasource:
 		data = json.load(datasource)
 		# EID_無し is skeleton data for a enemy so we ignore it.
 		for entry in [entry for entry in data if entry["id_tag"] != "EID_無し"]:
@@ -150,4 +165,3 @@ heroestier = {
 }
 with open("tierunits.json", "w") as outfile:
 	json.dump(heroestier, outfile)
-

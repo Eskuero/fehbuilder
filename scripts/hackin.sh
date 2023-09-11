@@ -29,7 +29,7 @@ python3 languages.py >> fehupdate-$DATE.log 2>&1
 echo -e "\n        - Skills..." >> fehupdate-$DATE.log 2>&1
 python3 skills.py >> fehupdate-$DATE.log 2>&1
 echo -e "\n        - Heroes..." >> fehupdate-$DATE.log 2>&1
-python3 hackin-units.py >> fehupdate-$DATE.log 2>&1
+python3 units.py >> fehupdate-$DATE.log 2>&1
 
 echo -e "\n        - Copying outputs to destination..." >> fehupdate-$DATE.log 2>&1
 mv *languages*.json ../data/languages/;

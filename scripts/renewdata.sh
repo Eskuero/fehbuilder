@@ -43,7 +43,7 @@ else
 	echo -e "\n        - Skills..." >> fehupdate-$DATE.log 2>&1
 	python3 skills.py >> fehupdate-$DATE.log 2>&1
 	echo -e "\n        - Heroes..." >> fehupdate-$DATE.log 2>&1
-	python3 renewdata-units.py >> fehupdate-$DATE.log 2>&1
+	python3 units.py >> fehupdate-$DATE.log 2>&1
 	# FIXME: UGH
 	echo -e "\n        - Summoning pools..." >> fehupdate-$DATE.log 2>&1
 	python3 summoning.py >> fehupdate-$DATE.log 2>&1
