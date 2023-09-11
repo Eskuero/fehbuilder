@@ -12,7 +12,20 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import json
+import sys
 import os
+
+MODE = os.environ["RENEWDATA_MODE"] if "RENEWDATA_MODE" in os.environ else False
+# Detect what update mode we are using
+if MODE == "hertz_wiki":
+	SKILLS_BASEDIR = "feh-assets-json/files/assets/Common/SRPG/Skill/"
+	SEALS_BASEDIR = "feh-assets-json/files/assets/Common/SRPG/SkillAccessory/"
+elif MODE == "hackin_device":
+	SKILLS_BASEDIR = "hackin/skills/"
+	SEALS_BASEDIR = "hackin/sacredseals/"
+else:
+	print("Invalid RENEWDATA_MODE enviroment variable, must be hertz_wiki or hackin_device")
+	sys.exit(1)
 
 # We store all the data in a single dict
 skills = {
@@ -31,9 +44,9 @@ refines = {}
 allskills = {}
 
 # Get all the files that contain skill definitions and loop through them
-files = os.listdir("feh-assets-json/files/assets/Common/SRPG/Skill/")
+files = os.listdir(SKILLS_BASEDIR)
 for file in files:
-	with open("feh-assets-json/files/assets/Common/SRPG/Skill/" + file, "r") as datasource:
+	with open(SKILLS_BASEDIR + file, "r") as datasource:
 		data = json.load(datasource)
 		# SID_無し is skeleton data for a skill so we ignore
 		for entry in [entry for entry in data if entry["id_tag"] != "SID_無し"]:
@@ -99,9 +112,9 @@ for refinable in refines:
 		})
 
 # Complete seals data by getting which skills are available to buy and copying their counterparts data (except for the max setting, which depends on if it's the last seal of it's line)
-files = os.listdir("feh-assets-json/files/assets/Common/SRPG/SkillAccessory/")
+files = os.listdir(SEALS_BASEDIR)
 for file in files:
-	with open("feh-assets-json/files/assets/Common/SRPG/SkillAccessory/" + file, "r") as datasource:
+	with open(SEALS_BASEDIR + file, "r") as datasource:
 		data = json.load(datasource)
 		# Retrieve all normal skill data to get info because we don't know the category of the skill
 		allpassives = skills["passives"]["A"] | skills["passives"]["B"] | skills["passives"]["C"] | skills["passives"]["S"]
@@ -152,7 +165,7 @@ skillscustom = {
 		weaponname: {
 			property: value
 			for property, value in properties.items() if property not in ["prf"]
-		} 
+		}
 		for weaponname, properties in skills["weapons"].items()
     },
 	"assists": skills["assists"],
@@ -162,7 +175,7 @@ skillscustom = {
 			passive: {
 				property: value
 				for property, value in properties.items() if property not in ["prf", "iconid"]
-			} 
+			}
 			for passive, properties in skills["passives"][passivecategory].items()
 		}
 		for passivecategory in ["A", "B", "C", "S"]

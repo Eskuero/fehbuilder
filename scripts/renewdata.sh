@@ -1,5 +1,6 @@
 #!/bin/sh
 date=$(date +"%Y-%m-%d-%H-%M"-%S)
+export RENEWDATA_MODE="hertz_wiki"
 
 if [[ "$2" != "--hackin" ]]; then
 	echo -e "---------------------------------------------------------" >> fehupdate-$date.log 2>&1
@@ -23,7 +24,7 @@ else
 	echo -e "\n        - Languages..." >> fehupdate-$date.log 2>&1
 	PYTHONUNBUFFERED=1 python3 renewdata-languages.py >> fehupdate-$date.log 2>&1
 	echo -e "\n        - Skills..." >> fehupdate-$date.log 2>&1
-	PYTHONUNBUFFERED=1 python3 renewdata-skills.py >> fehupdate-$date.log 2>&1
+	PYTHONUNBUFFERED=1 python3 skills.py >> fehupdate-$date.log 2>&1
 	echo -e "\n        - Heroes..." >> fehupdate-$date.log 2>&1
 	PYTHONUNBUFFERED=1 python3 renewdata-units.py >> fehupdate-$date.log 2>&1
 	# FIXME: UGH
