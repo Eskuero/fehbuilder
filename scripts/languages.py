@@ -12,7 +12,20 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import json
+import sys
 import os
+
+MODE = os.environ["RENEWDATA_MODE"] if "RENEWDATA_MODE" in os.environ else False
+# Detect what update mode we are using
+if MODE == "hertz_wiki":
+	LANGUAGES_BASEDIR = "feh-assets-json/files/assets/"
+	EXTRA_BASEDIR = "/Message/Data/"
+elif MODE == "hackin_device":
+	LANGUAGES_BASEDIR = "hackin/languages/"
+	EXTRA_BASEDIR = "/"
+else:
+	print("Invalid RENEWDATA_MODE enviroment variable, must be hertz_wiki or hackin_device")
+	sys.exit(1)
 
 # Obtain all blessed heroes to allow them in the customlanguages
 with open("fullother.json", "r") as datasource:
@@ -48,34 +61,35 @@ aetherstrings = [
 fullstrings = basicstrings + unitstrings + blessingstrings + aetherstrings
 
 for language in languages:
-	files = os.listdir("feh-assets-json/files/assets/" + language + "/Message/Data/")
+	files = os.listdir(LANGUAGES_BASEDIR + language + EXTRA_BASEDIR)
 	strings = {}
 	for file in files:
-		with open("feh-assets-json/files/assets/" + language + "/Message/Data/" + file, "r") as datasource:
+		with open(LANGUAGES_BASEDIR + language + EXTRA_BASEDIR + file, "r") as datasource:
 			data = json.load(datasource)
 			# We only add strings related to either skills or units as long as they are not descriptions
 			for string in [string for string in data if (any(substring in string["key"] for substring in ["MPID_", "MEID_", "MSID_"]) and not any(substring in string["key"] for substring in ["MPID_H_", "MEID_H_", "MSID_H_", "MPID_SEARCH_", "MSID_SEARCH_", "MPID_LEGEND_"])) or string["key"] in fullstrings]:
 				strings[string["key"]] = string["value"]
 	languages[language] = strings
 
-# Some languages are only inside the Menu but we only need specific keys from them.
-for language in languages:
-	files = os.listdir("feh-assets-json/files/assets/" + language + "/Message/Menu/")
-	strings = {}
-	for file in files:
-		with open("feh-assets-json/files/assets/" + language + "/Message/Menu/" + file, "r") as datasource:
-			data = json.load(datasource)
-			# We only add strings related to either skills or units as long as they are not descriptions
-			for string in [string for string in data if string["key"] in fullstrings]:
-				strings[string["key"]] = string["value"]
-	languages[language] = languages[language] | strings
+if MODE == "hertz_wiki":
+	# Some languages are only inside the Menu but we only need specific keys from them.
+	for language in languages:
+		files = os.listdir(LANGUAGES_BASEDIR + language + EXTRA_BASEDIR)
+		strings = {}
+		for file in files:
+			with open(LANGUAGES_BASEDIR + language + EXTRA_BASEDIR + file, "r") as datasource:
+				data = json.load(datasource)
+				# We only add strings related to either skills or units as long as they are not descriptions
+				for string in [string for string in data if string["key"] in fullstrings]:
+					strings[string["key"]] = string["value"]
+		languages[language] = languages[language] | strings
 
 # Parse Korean from the provided .csvs
 files = os.listdir("hackin/languages/KOKR/")
 strings = {}
-print("Parsing Korean language")
+print("            - Parsing Korean language")
 for file in files:
-		# Only read .csv files
+	# Only read .csv files
 	if ".csv" not in file:
 		continue
 	with open("hackin/languages/KOKR/" + file, "r") as datasource:

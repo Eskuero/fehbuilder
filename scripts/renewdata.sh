@@ -39,7 +39,7 @@ else
 	echo -e "\n        - Other..." >> fehupdate-$DATE.log 2>&1
 	python3 other.py >> fehupdate-$DATE.log 2>&1
 	echo -e "\n        - Languages..." >> fehupdate-$DATE.log 2>&1
-	python3 renewdata-languages.py >> fehupdate-$DATE.log 2>&1
+	python3 languages.py >> fehupdate-$DATE.log 2>&1
 	echo -e "\n        - Skills..." >> fehupdate-$DATE.log 2>&1
 	python3 skills.py >> fehupdate-$DATE.log 2>&1
 	echo -e "\n        - Heroes..." >> fehupdate-$DATE.log 2>&1
