@@ -12,7 +12,18 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import os
+import sys
 import json
+
+MODE = os.environ["RENEWDATA_MODE"] if "RENEWDATA_MODE" in os.environ else False
+# Detect what update mode we are using
+if MODE == "hertz_wiki":
+	HEROES_BASEDIR = "feh-assets-json/files/assets/Common/SRPG/Person/"
+elif MODE == "hackin_device":
+	HEROES_BASEDIR = "hackin/heroes/"
+else:
+	print("Invalid RENEWDATA_MODE enviroment variable, must be hertz_wiki or hackin_device")
+	sys.exit(1)
 
 # Load all the hardcoded data from the external file
 with open("hardcoded.json", "r") as datasource:
@@ -33,9 +44,9 @@ other = {
 }
 
 # Get all the files that contain unit definitions and loop through them
-files = os.listdir("hackin/heroes/")
+files = os.listdir(HEROES_BASEDIR)
 for file in files:
-	with open("hackin/heroes/" + file, "r") as datasource:
+	with open(HEROES_BASEDIR + file, "r") as datasource:
 		data = json.load(datasource)
 		# Only use the entries where the legendary field is not null
 		for entry in [entry for entry in data if entry["legendary"]]:

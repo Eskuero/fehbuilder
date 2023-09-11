@@ -23,7 +23,7 @@ echo "Updating submodules..." >> fehupdate-$DATE.log 2>&1
 git submodule update --remote >> fehupdate-$DATE.log 2>&1;
 
 echo -e "\n        - Other..." >> fehupdate-$DATE.log 2>&1
-python3 hackin-other.py >> fehupdate-$DATE.log 2>&1
+python3 other.py >> fehupdate-$DATE.log 2>&1
 echo -e "\n        - Languages..." >> fehupdate-$DATE.log 2>&1
 python3 hackin-languages.py >> fehupdate-$DATE.log 2>&1
 echo -e "\n        - Skills..." >> fehupdate-$DATE.log 2>&1
