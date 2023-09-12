@@ -290,7 +290,7 @@ for unit in units:
 	# Enemy units are not summonable anyway so skip them
 	if "EID_" in unit and not units[unit]["boss"]:
 		continue
-	truename = engrishname["M" + unit] + ": " + engrishname["M" + unit.replace("ID", "ID_HONOR")]
+	truename = engrishname["M" + unit] + ((": " + engrishname[unit.replace("PID", "MPID_HONOR")]) if "PID_" in unit else "")
 	# Each pose has an expected wiki name (Enemy units as NPC only have the attack pose that we use as portrait
 	faces = {
 		".webp": truename + "_Face_FC.webp"
@@ -333,7 +333,7 @@ print("\n       - Downloading character faces for condensed template...")
 ids = []
 arts = []
 for unit in units:
-	truename = engrishname["M" + unit] + ": " + engrishname["M" + unit.replace("ID", "ID_HONOR")]
+	truename = engrishname["M" + unit] + ((": " + engrishname[unit.replace("PID", "MPID_HONOR")]) if "PID_" in unit else "")
 	# Each pose has an expected wiki name (Enemy units as NPC only have the attack pose
 	if "EID_" in unit and not units[unit]["boss"]:
 		faces = {
