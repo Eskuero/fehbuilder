@@ -401,7 +401,7 @@
 	},
 	{
 		"key": "MSID_H_\u9023\u9583",
-		"value": "Si l'unit\u00e9 initie le combat ou si l'unit\u00e9 se trouve\\n\u00e0 2 cases ou moins d'un alli\u00e9, conf\u00e8re\\nAtq/Vit/D\u00e9f/R\u00e9s +8 \u00e0 l'unit\u00e9 pendant le combat.\\nSi l'unit\u00e9 initie le combat contre un fantassin qui\\nn'est pas un dragon ou une b\u00eate et que Vit de\\nl'unit\u00e9 \u2265 Vit de l'ennemi de 20\u00a0points ou plus,\\nconf\u00e8re l'effet \u00ab\u00a0efficace contre tous les types\\nd'armes\u00a0\u00bb \u00e0 l'unit\u00e9 pendant le combat. Si l'unit\u00e9\\ninitie le combat et que Vit de l'unit\u00e9 \u2265 Vit\\nde l'ennemi de 5\u00a0points ou plus, conf\u00e8re l'effet\\n\u00ab\u00a0efficace contre tous les types d'armes\u00a0\u00bb\\n\u00e0 l'unit\u00e9 pendant le combat."
+		"value": "Si l'unit\u00e9 initie le combat ou si l'unit\u00e9\\nse trouve \u00e0 2 cases ou moins d'un alli\u00e9,\\nconf\u00e8re Atq/Vit/D\u00e9f/R\u00e9s +8 \u00e0 l'unit\u00e9 pendant\\nle combat. Si l'unit\u00e9 initie le combat et que Vit\\nde l'unit\u00e9 \u2265 Vit de l'ennemi de 5 points ou plus,\\nconf\u00e8re l'effet \u00ab efficace contre tous les types\\nd'armes \u00bb \u00e0 l'unit\u00e9 pendant le combat (contre\\nun fantassin qui n'est pas un dragon ou une b\u00eate,\\nVit de l'unit\u00e9 doit \u00eatre \u2265 Vit de l\u2019ennemi\\nde 20 points ou plus)."
 	},
 	{
 		"key": "MSID_H_\u901f\u3055\u5c01\u30584",

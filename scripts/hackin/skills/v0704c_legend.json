@@ -121,7 +121,9 @@
 		"distant_counter": false,
 		"canto_range": 0,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": false,
+		"seers_snare_avail": true
 	},
 	{
 		"id_tag": "SID_\u653b\u6483\u901f\u3055\u306e\u596e\u90324",
@@ -245,6 +247,8 @@
 		"distant_counter": false,
 		"canto_range": 0,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": true,
+		"seers_snare_avail": true
 	}
 ]

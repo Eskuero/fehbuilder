@@ -121,7 +121,9 @@
 		"distant_counter": false,
 		"canto_range": 0,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": false,
+		"seers_snare_avail": true
 	},
 	{
 		"id_tag": "SID_\u65b0\u5e74\u3092\u958b\u304f\u89d2",
@@ -245,7 +247,9 @@
 		"distant_counter": false,
 		"canto_range": 0,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": false,
+		"seers_snare_avail": true
 	},
 	{
 		"id_tag": "SID_\u8cc0\u6b63\u306e\u6bcd\u514e\u306e\u722a\u7259",
@@ -369,7 +373,9 @@
 		"distant_counter": false,
 		"canto_range": 0,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": false,
+		"seers_snare_avail": true
 	},
 	{
 		"id_tag": "SID_\u8cc0\u6b63\u306e\u5b50\u514e\u306e\u722a\u7259",
@@ -493,7 +499,9 @@
 		"distant_counter": false,
 		"canto_range": 0,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": false,
+		"seers_snare_avail": true
 	},
 	{
 		"id_tag": "SID_\u65e7\u5e74\u3092\u9589\u3056\u3059\u722a\u7259",
@@ -617,7 +625,9 @@
 		"distant_counter": false,
 		"canto_range": 0,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": false,
+		"seers_snare_avail": true
 	},
 	{
 		"id_tag": "SID_\u9060\u53cd\u30fb\u91d1\u525b\u306e\u69cb\u3048",
@@ -741,7 +751,9 @@
 		"distant_counter": true,
 		"canto_range": 0,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": true,
+		"seers_snare_avail": true
 	},
 	{
 		"id_tag": "SID_\u5b88\u5099\u9b54\u9632\u306e\u79d8\u59651",
@@ -865,7 +877,9 @@
 		"distant_counter": false,
 		"canto_range": 0,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": true,
+		"seers_snare_avail": true
 	},
 	{
 		"id_tag": "SID_\u5b88\u5099\u9b54\u9632\u306e\u79d8\u59652",
@@ -989,7 +1003,9 @@
 		"distant_counter": false,
 		"canto_range": 0,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": true,
+		"seers_snare_avail": true
 	},
 	{
 		"id_tag": "SID_\u5b88\u5099\u9b54\u9632\u306e\u79d8\u59653",
@@ -1113,7 +1129,9 @@
 		"distant_counter": false,
 		"canto_range": 0,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": true,
+		"seers_snare_avail": true
 	},
 	{
 		"id_tag": "SID_\u5b88\u5099\u9b54\u9632\u306e\u79d8\u59654",
@@ -1237,7 +1255,9 @@
 		"distant_counter": false,
 		"canto_range": 0,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": true,
+		"seers_snare_avail": true
 	},
 	{
 		"id_tag": "SID_\u7d76\u5bfe\u5316\u8eab\u30fb\u8fd1\u5f711",
@@ -1361,7 +1381,9 @@
 		"distant_counter": false,
 		"canto_range": 254,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": true,
+		"seers_snare_avail": true
 	},
 	{
 		"id_tag": "SID_\u7d76\u5bfe\u5316\u8eab\u30fb\u8fd1\u5f712",
@@ -1485,7 +1507,9 @@
 		"distant_counter": false,
 		"canto_range": 254,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": true,
+		"seers_snare_avail": true
 	},
 	{
 		"id_tag": "SID_\u7d76\u5bfe\u5316\u8eab\u30fb\u8fd1\u5f713",
@@ -1609,7 +1633,9 @@
 		"distant_counter": false,
 		"canto_range": 254,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": true,
+		"seers_snare_avail": true
 	},
 	{
 		"id_tag": "SID_\u6bd4\u7ffc\u30a2\u30b9\u30af",
@@ -1733,6 +1759,8 @@
 		"distant_counter": false,
 		"canto_range": 0,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": true,
+		"seers_snare_avail": true
 	}
 ]

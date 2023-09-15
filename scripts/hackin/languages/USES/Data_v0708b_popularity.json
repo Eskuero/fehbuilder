@@ -873,6 +873,6 @@
 	},
 	{
 		"key": "MID_H_VEIN_1",
-		"value": "Aplica los siguientes efectos a la casilla:\\nentorpece el movimiento de los rivales\\ncon alcance de 2 (desplazarse hacia\\nesta casilla cuesta +1 movimiento;\\nel costo del movimiento no puede\\nexceder el n\u00famero de movimientos\\npermitidos de la unidad; el efecto \"la\\nunidad no se ver\u00e1 ralentizada por los\\nefectos del terreno\" no se aplica). Al\\ninicio del turno del rival, inflige 7 de\\nda\u00f1o al enemigo y, adem\u00e1s, le inflige\\notros 7 de da\u00f1o cuando empieza el\\ncombate (los efectos que reducen el\\nda\u00f1o \"durante el combate\" no se\\naplican; no reducir\u00e1 los PV del rival\\na menos de 1)."
+		"value": "Aplica los siguientes efectos a la casilla:\\nentorpece el movimiento de los rivales\\ncon alcance de 2 (desplazarse por\\nesta casilla cuesta +1 movimiento; no\\naplica al efecto \"la unidad no se ver\u00e1\\nralentizada por los efectos del terreno\";\\nel costo del movimiento no puede\\nexceder el n\u00famero de movimientos\\npermitidos de la unidad). Al inicio del\\nturno del rival, inflige 7 puntos de\\nda\u00f1o al enemigo y le inflige otros\\n7 puntos m\u00e1s cuando empieza el\\ncombate (los efectos que reducen el\\nda\u00f1o \"durante el combate\" no se\\naplican; no reducir\u00e1 los PV del rival\\na menos de 1)."
 	}
 ]

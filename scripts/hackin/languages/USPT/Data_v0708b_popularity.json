@@ -873,6 +873,6 @@
 	},
 	{
 		"key": "MID_H_VEIN_1",
-		"value": "Aplica os seguintes efeitos em um\\nespa\u00e7o: age como um terreno dif\u00edcil\\npara inimigos com alcance = 2 (passar\\npor este espa\u00e7o custa +1 movimento;\\no custo do movimento n\u00e3o pode\\nexceder o movimento permitido para\\na unidade; efeitos nos quais \"a unidade\\nn\u00e3o ser\u00e1 desacelerada pelo terreno\"\\nn\u00e3o se aplicam). No in\u00edcio da fase do\\ninimigo, inflige 7 pontos de dano ao\\ninimigo e tamb\u00e9m, quando o combate\\ncome\u00e7a, inflige mais 7 pontos de dano\\nao inimigo (n\u00e3o se aplica a efeitos que\\nreduzem dano durante o combate;\\nn\u00e3o reduz os PV do inimigo a menos\\ndo que 1)."
+		"value": "Aplica os seguintes efeitos em um\\nespa\u00e7o: age como um terreno dif\u00edcil\\npara inimigos com alcance = 2 (passar\\npor este espa\u00e7o custa +1 movimento;\\nn\u00e3o se aplica a efeitos de \"a unidade\\nn\u00e3o ser\u00e1 desacelerada pelo terreno\"; o\\ncusto do movimento n\u00e3o pode exceder\\no movimento permitido para a unidade).\\nNo in\u00edcio da fase do inimigo, inflige 7\\npontos de dano ao inimigo e tamb\u00e9m,\\nquando o combate come\u00e7a, inflige mais\\n7 pontos de dano ao inimigo (n\u00e3o se\\naplica a efeitos que reduzem dano\\ndurante o combate; n\u00e3o reduz os PV do\\ninimigo a menos do que 1)."
 	}
 ]

@@ -121,7 +121,9 @@
 		"distant_counter": false,
 		"canto_range": 0,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": false,
+		"seers_snare_avail": true
 	},
 	{
 		"id_tag": "SID_\u6ec5\u3073\u306e\u9b54\u62f3",
@@ -245,7 +247,9 @@
 		"distant_counter": false,
 		"canto_range": 0,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": false,
+		"seers_snare_avail": true
 	},
 	{
 		"id_tag": "SID_\u6f06\u9ed2\u306e\u60aa\u5922",
@@ -369,7 +373,9 @@
 		"distant_counter": false,
 		"canto_range": 0,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": false,
+		"seers_snare_avail": true
 	},
 	{
 		"id_tag": "SID_\u4eba\u306b\u9b54\u9053\u3092\u6388\u3051\u3057\u8005",
@@ -493,7 +499,9 @@
 		"distant_counter": false,
 		"canto_range": 0,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": false,
+		"seers_snare_avail": true
 	},
 	{
 		"id_tag": "SID_\u30ad\u30e3\u30f3\u30bb\u30eb4",
@@ -617,7 +625,9 @@
 		"distant_counter": false,
 		"canto_range": 0,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": true,
+		"seers_snare_avail": true
 	},
 	{
 		"id_tag": "SID_\u7d76\u5bfe\u5316\u8eab\u30fb\u8ffd\u64831",
@@ -741,7 +751,9 @@
 		"distant_counter": false,
 		"canto_range": 0,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": true,
+		"seers_snare_avail": true
 	},
 	{
 		"id_tag": "SID_\u7d76\u5bfe\u5316\u8eab\u30fb\u8ffd\u64832",
@@ -865,7 +877,9 @@
 		"distant_counter": false,
 		"canto_range": 0,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": true,
+		"seers_snare_avail": true
 	},
 	{
 		"id_tag": "SID_\u7d76\u5bfe\u5316\u8eab\u30fb\u8ffd\u64833",
@@ -989,6 +1003,8 @@
 		"distant_counter": false,
 		"canto_range": 0,
 		"pathfinder_range": 0,
-		"arcane_weapon": false
+		"arcane_weapon": false,
+		"unknown_byte_1": true,
+		"seers_snare_avail": true
 	}
 ]

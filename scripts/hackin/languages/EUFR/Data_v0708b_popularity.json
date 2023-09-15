@@ -873,6 +873,6 @@
 	},
 	{
 		"key": "MID_H_VEIN_1",
-		"value": "Les effets suivants s'appliquent\\n\u00e0 la case : fonctionne comme\\nun terrain difficile pour les ennemis\\navec une port\u00e9e de 2 (il faut utiliser\\n+1 mouvement pour se d\u00e9placer sur\\ncette case ; le total ne doit pas\\nd\u00e9passer la limite de mouvements\\naccord\u00e9e \u00e0 l'unit\u00e9 ; l'effet \u00ab l'unit\u00e9\\nn'est pas ralentie par les effets\\nde terrain \u00bb ne s'applique pas).\\nEn d\u00e9but de phase ennemie, inflige\\n7 d\u00e9g\u00e2ts \u00e0 l'ennemi, et apr\u00e8s le d\u00e9but\\ndu combat, lui inflige 7 d\u00e9g\u00e2ts en plus\\n(les effets qui r\u00e9duisent les d\u00e9g\u00e2ts\\npendant le combat ne s'appliquent\\npas ; les PV de l'ennemi ne peuvent\\npas descendre en dessous de 1)."
+		"value": "Les effets suivants s'appliquent \u00e0\\nla case : fonctionne comme un terrain\\ndifficile pour les ennemis avec\\nune port\u00e9e de 2 (il faut utiliser +1\\nmouvement pour se d\u00e9placer\\nsur cette case ; ne s'applique pas\\naux effets \u00ab l'unit\u00e9 n'est pas ralentie\\npar les effets de terrain \u00bb ; le total de\\nmouvements ne peut pas d\u00e9passer\\nla limite de mouvements accord\u00e9e \u00e0\\nl'unit\u00e9). En d\u00e9but de phase ennemie,\\ninflige 7 d\u00e9g\u00e2ts \u00e0 l'ennemi, et apr\u00e8s\\nle d\u00e9but du combat, lui inflige\\n7 d\u00e9g\u00e2ts en plus (les effets qui\\nr\u00e9duisent les d\u00e9g\u00e2ts pendant\\nle combat ne s'appliquent pas ;\\nles PV de l'ennemi ne peuvent pas\\ndescendre en dessous de 1)."
 	}
 ]
