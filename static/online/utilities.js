@@ -195,8 +195,6 @@ function setupdownload() {
 	// Convert canvas to a blob url
 	canvas.toBlob(function(blob) {
 		url = URL.createObjectURL(blob);
-		// Update the image element
-		fakecanvas.src = url;
 		// Update the download link
 		document.getElementById("downloadlink").href = url;
 		document.getElementById("downloadlink").download = "FeH Unit builder - " + truename;

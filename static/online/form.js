@@ -49,12 +49,15 @@ async function reload(scroll = false) {
 		await sleep(100);
 	}
 
+	// Hide default and show rendering canvas
+	preview.className = "unrendered";
+	canvas.className = "";
+	loadingoverlay.className = "";
 	var inittime = performance.now()
 	// Switch canvas size depending on selection and run the appropiate renderer
 	switch (selecttemplate.value) {
 		case "MyUnit":
 			canvas.width = "720"; canvas.height = "1280";
-			fakecanvas.width = "720"; fakecanvas.height = "1280";
 			var renderjob = myunit();
 			break;
 		case "Condensed":
@@ -63,12 +66,10 @@ async function reload(scroll = false) {
 				hpfont = img;
 			});
 			canvas.width = "720"; canvas.height = "202";
-			fakecanvas.width = "720"; fakecanvas.height = "202";
 			var renderjob = condensed();
 			break;
 		case "Echoes":
 			canvas.width = "720"; canvas.height = "540";
-			fakecanvas.width = "720"; fakecanvas.height = "540";
 			var renderjob = echoes();
 			break;
 	}
@@ -77,7 +78,11 @@ async function reload(scroll = false) {
 	await renderjob;
 	var finaltime = performance.now()
 
+	// Prepare download links
 	setupdownload();
+
+	// Hide loading
+	loadingoverlay.className = "unrendered";
 
 	// Autoscroll all the way up so the user can inmediately see the hero preview on portrait screens
 	if (scroll) {

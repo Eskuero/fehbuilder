@@ -46,8 +46,13 @@
 					<button onclick="switchbuild(3)">#4</button>
 					<button onclick="switchbuild(4)">#5</button>
 				</div>
-				<img id="fakecanvas" height="1280" width="720" alt="FEH Unit Builder" src="/common/base/placeholder.webp" />
+				<img id="preview" height="1280" width="720" alt="FEH Unit Builder" src="/common/base/placeholder.webp" />
 				<canvas id="canvas" class="unrendered"></canvas>
+				<div id="loadingoverlay" class="unrendered">
+					<div class="loadingcircle">
+						<div class="imagelabel" style="--spriteid:1"></div>
+					</div>
+				</div>
 			</div>
 			<div class="form">
 				<div class="section headerform">

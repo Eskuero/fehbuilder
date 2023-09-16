@@ -15,8 +15,10 @@
 var units, skills, other, languages;
 // Where we render the image
 canvas = document.getElementById('canvas');
-// Where we show the image
-fakecanvas = document.getElementById('fakecanvas');
+// Loading circle
+loadingoverlay = document.getElementById('loadingoverlay');
+// Placeholder initial preview
+preview = document.getElementById('preview');
 // The whole form since is a rebspicker listeners
 form = document.getElementsByClassName("form")[0];
 // All selects we have available
