@@ -129,6 +129,32 @@ with open("fullskills.json", "w") as outfile:
 	json.dump(skills, outfile)
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Version barebones for bandwith friendly initialization
+skillsskeleton = {
+	"weapons": {
+		weaponname: {}
+		for weaponname in skills["weapons"].keys()
+    },
+	"assists": {
+		assist: {}
+		for assist in skills["assists"].keys()
+    },
+	"specials": {
+		special: {}
+		for special in skills["specials"].keys()
+    },
+	"passives": {
+		passivecategory: {
+			passive: {}
+			for passive in skills["passives"][passivecategory].keys()
+		}
+		for passivecategory in ["A", "B", "C", "S"]
+    }
+}
+with open("skeletonskills.json", "w") as outfile:
+	json.dump(skillsskeleton, outfile)
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Version for usage in online unit builder (includes everything except icon indicator)
 skillsonline = {
 	"weapons": {

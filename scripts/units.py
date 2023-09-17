@@ -119,6 +119,15 @@ with open("fullunits.json", "w") as outfile:
 	json.dump(heroes, outfile)
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Version barebones for bandwith friendly initialization
+heroesskeleton = {
+	heroname: {}
+	for heroname in heroes.keys()
+}
+with open("skeletonunits.json", "w") as outfile:
+	json.dump(heroesskeleton, outfile)
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Version for usage in online unit builder (doesn't need origin, resplendent indicator or id)
 heroesonline = {
 	heroname: {
