@@ -1,44 +1,4 @@
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Affero General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-
-# You should have received a copy of the GNU Affero General Public License
-# along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-import requests
-import io
-import pathlib
-from PIL import Image
-
-# Create all temp routes as needed
-pathlib.Path("../../data/img/heroes").mkdir(parents=True, exist_ok=True)
-pathlib.Path("../../data/img/other").mkdir(parents=True, exist_ok=True)
-
-def download():
-	for icon in icons:
-		# By default we save on the "other" folder
-		location = "../../data/img/other/"
-		# Skip if the file is already downloaded
-		if pathlib.Path(location + icon + ".webp").is_file():
-			continue
-		print(icon)
-		# Grab and paste the heroes art in the image
-		response = requests.get(icons[icon].split("?")[0])
-		# We store the size as part of the URL and just grab it
-		dimensions = (int(icons[icon].split("?")[1]), int(icons[icon].split("?")[2]))
-		# Download the art image, make sure it has an alpha channel resize it according to the set config
-		art = Image.open(io.BytesIO(response.content)).convert("RGBA").resize(dimensions)
-		# We save the images as webp attempting the better compression method while being lossless to avoid quality drops
-		art.save(location + icon + ".webp", 'WEBP', lossless = True, quality = 100, method = 6)
-
-icons = {
-	# AR-D Maps
+{
 	"maps-springwater": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/f/f8/Map_K0001.webp?540?720",
 	"maps-wintry": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/7/70/Map_K0002.webp?540?720",
 	"maps-abandonedcastle": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a5/Map_K0003.webp?540?720",
@@ -54,7 +14,7 @@ icons = {
 	"maps-helcastle": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a9/Map_K0013.webp?540?720",
 	"maps-nioavellircastle": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/6/67/Map_K0014.webp?540?720",
 	"maps-jotunheimrcastle": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/21/Map_K0015.webp?540?720",
-	# AR-D elements
+
 	"maps-white-wall": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b9/Wall_normal_W_U.png?120?120",
 	"maps-white-crumbled-wall": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/1f/Wall_normal_Pillar_1.png?120?120",
 	"maps-white-half-wall": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/e/e3/Wall_normal_E_1.png?120?120",
@@ -65,7 +25,7 @@ icons = {
 	"maps-grey-l-wall": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/7/7f/Wall_inside_NE_1.png?120?120",
 	"maps-grey-pillar-wall": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/8a/Wall_inside_Pillar_U.png?120?120",
 	"maps-grey-pillar-crumbled-wall": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/e/ec/Wall_inside_Pillar_2.png?120?120",
-	# AR-D structures
+
 	"maps-bolttower": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/dc/Structure_Bolt_Tower.png?245?248",
 	"maps-catapult": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/0e/Structure_Catapult.png?252?264",
 	"maps-brigthshrine": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/6/64/Structure_Bright_Shrine.png?261?256",
@@ -91,7 +51,7 @@ icons = {
 	"maps-heavytrapfake": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/94/Trap01_Disable.webp?90?80",
 	"maps-hextrap": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/c0/Trap02_Edit.png?90?90",
 	"maps-hextrapfake": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/f/f7/Trap02_Disable.png?90?80",
-	# Gameheads
+
 	"0-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/d5/Icon_MiniUnit_Head_0.png?96?86",
 	"1-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/12/Icon_MiniUnit_Head_1.png?96?86",
 	"2-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a2/Icon_MiniUnit_Head_2.png?96?86",
@@ -107,18 +67,18 @@ icons = {
 	"12-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a9/Icon_MiniUnit_Head_12.png?96?86",
 	"13-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/0c/Icon_MiniUnit_Head_13.png?96?86",
 	"14-game": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/3/33/Icon_MiniUnit_Head_14.png?96?86",
-	# Rarity Borders
+
 	"rarityborder1": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/1f/RarityBorder1.png?259?43",
 	"rarityborder2": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/54/RarityBorder2.png?259?43",
 	"rarityborder3": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/22/RarityBorder3.png?259?43",
 	"rarityborder4": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b9/RarityBorder4.png?259?43",
 	"rarityborder5": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a0/RarityBorder5.png?259?43",
-	# Ascendent
+
 	"ascendent": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/13/Icon_FlowerBud_L.webp?58?58",
 	"Ascended": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/2a/Icon_Ascended.png?147?160",
-	# Rearmed
+
 	"Rearmed": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/8a/Icon_Rearmed.png?147?160",
-	# Movement types
+
 	"0-move": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/4/45/Icon_Move_Infantry.png?32?32",
 	"0-flower": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a4/Dragonflower_I.png?60?60",
 	"1-move": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/80/Icon_Move_Armored.png?32?32",
@@ -127,7 +87,7 @@ icons = {
 	"2-flower": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/f/f0/Dragonflower_C.png?60?60",
 	"3-move": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/7/73/Icon_Move_Flying.png?32?32",
 	"3-flower": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/5c/Dragonflower_F.png?60?60",
-	# Weapon types
+
 	"0-weapon": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/4/47/Icon_Class_Red_Sword.png?36?36",
 	"1-weapon": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/6/60/Icon_Class_Blue_Lance.png?32?32",
 	"2-weapon": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/6/6e/Icon_Class_Green_Axe.png?36?36",
@@ -152,12 +112,12 @@ icons = {
 	"21-weapon": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/3/30/Icon_Class_Blue_Beast.png?32?32",
 	"22-weapon": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/d7/Icon_Class_Green_Beast.png?36?36",
 	"23-weapon": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/02/Icon_Class_Colorless_Beast.png?32?32",
-	# Accesories
+
 	"Accesory-Hat": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/98/Accessory_Type_hat.png?32?32",
 	"Accesory-Hair": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/7/7c/Accessory_Type_hair.png?32?32",
 	"Accesory-Mask": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/ca/Accessory_Type_mask.png?32?32",
 	"Accesory-Tiara": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/db/Accessory_Type_tiara.png?32?32",
-	# Refines
+
 	"Atk-Refine": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/20/Attack_Plus_W.png?44?44",
 	"Spd-Refine": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/02/Speed_Plus_W.png?44?44",
 	"Def-Refine": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/cd/Defense_Plus_W.png?44?44",
@@ -165,12 +125,12 @@ icons = {
 	"Dazzling-Refine": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/5c/Dazzling_Staff_W.png?44?44",
 	"Wrathful-Refine": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/4/42/Wrathful_Staff_W.png?44?44",
 	"weapon-Refine": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/82/Icon_Skill_Weapon.png?44?44",
-	# Category indicator for skill icons
+
 	"indicator-skillA": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/6/68/Passive_Icon_A.png?21?21",
 	"indicator-skillB": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/6/6a/Passive_Icon_B.png?21?21",
 	"indicator-skillC": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/84/Passive_Icon_C.png?21?21",
 	"indicator-skillS": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/6/6f/Passive_Icon_S.png?21?21",
-	# Blessings that can be conferred
+
 	"1-Blessing": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/c5/Icon_LegendFire.png?147?160",
 	"1-Blessing-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/7/70/Map_Unit_Info_Fire_Blessing.png?54?59",
 	"1-Blessing-special": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/ab/Legendary_Effect_Fire.png?45?52",
@@ -195,8 +155,7 @@ icons = {
 	"8-Blessing": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/df/Icon_LegendLogic.png?147?160",
 	"8-Blessing-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/29/Map_Unit_Info_Anima_Blessing.png?54?59",
 	"8-Blessing-special": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/db/Mythic_Effect_Anima.png?45?52",
-	# Blessings locked to Mythic/Legendary heroes
-	# Fire
+
 	"1-Blessing-atk": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/09/Icon_LegendFireAtk.png?147?160",
 	"1-Blessing-atk-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/29/Icon_LegendFireAtkS.png?80?87",
 	"1-Blessing-atk-pairup": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/f/fc/Icon_LegendFireAtk_03.webp?147?160",
@@ -215,7 +174,7 @@ icons = {
 	"1-Blessing-res-pairup-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/3/38/Icon_LegendFireRes_03S.webp?80?87",
 	"1-Blessing-pairup": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/8b/Icon_LegendFireBtl.png?147?160",
 	"1-Blessing-pairup-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/2b/Icon_LegendFireBtlS.png?80?87",
-	# Water
+
 	"2-Blessing-atk": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/2a/Icon_LegendWaterAtk.png?147?160",
 	"2-Blessing-atk-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/91/Icon_LegendWaterAtkS.png?80?87",
 	"2-Blessing-atk-pairup": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/9c/Icon_LegendWaterAtk_03.webp?147?160",
@@ -234,7 +193,7 @@ icons = {
 	"2-Blessing-res-pairup-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/7/73/Icon_LegendWaterRes_03S.webp?80?87",
 	"2-Blessing-pairup": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/55/Icon_LegendWaterBtl.webp?147?160",
 	"2-Blessing-pairup-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/20/Icon_LegendWaterBtlS.webp?80?87",
-	# Wind
+
 	"3-Blessing-atk": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/de/Icon_LegendWindAtk.png?147?160",
 	"3-Blessing-atk-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/6/6f/Icon_LegendWindAtkS.png?80?87",
 	"3-Blessing-atk-pairup": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b9/Icon_LegendWindAtk_03.webp?147?160",
@@ -253,7 +212,7 @@ icons = {
 	"3-Blessing-res-pairup-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/11/Icon_LegendWindRes_03S.webp?80?87",
 	"3-Blessing-pairup": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/10/Icon_LegendWindBtl.webp?147?160",
 	"3-Blessing-pairup-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/17/Icon_LegendWindBtlS.webp?80?87",
-	# Earth
+
 	"4-Blessing-atk": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/3/34/Icon_LegendEarthAtk.png?147?160",
 	"4-Blessing-atk-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/86/Icon_LegendEarthAtkS.png?80?87",
 	"4-Blessing-atk-pairup": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a1/Icon_LegendEarthAtk_03.webp?147?160",
@@ -272,7 +231,7 @@ icons = {
 	"4-Blessing-res-pairup-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/3/3a/Icon_LegendEarthRes_03S.webp?80?87",
 	"4-Blessing-pairup": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/9a/Icon_LegendEarthBtl.png?147?160",
 	"4-Blessing-pairup-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/cd/Icon_LegendEarthBtlS.png?80?87",
-	# Light
+
 	"5-Blessing-atk": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/07/Icon_LegendLightAtk.webp?147?160",
 	"5-Blessing-atk-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/53/Icon_LegendLightAtkS.webp?80?87",
 	"5-Blessing-spd": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/f/f5/Icon_LegendLightSpd.webp?147?160",
@@ -289,7 +248,7 @@ icons = {
 	"5-Blessing-def-extrae-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/cf/Icon_LegendLightDef_02S.webp?80?87",
 	"5-Blessing-res-extrae": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/d7/Icon_LegendLightRes_02.webp?147?160",
 	"5-Blessing-res-extrae-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/c4/Icon_LegendLightRes_02S.webp?80?87",
-	# Dark
+
 	"6-Blessing-atk": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/83/Icon_LegendDarkAtk.webp?147?160",
 	"6-Blessing-atk-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/06/Icon_LegendDarkAtkS.webp?80?87",
 	"6-Blessing-spd": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/e/e9/Icon_LegendDarkSpd.png?147?160",
@@ -306,7 +265,7 @@ icons = {
 	"6-Blessing-def-extrae-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/ce/Icon_LegendDarkDef_02S.webp?80?87",
 	"6-Blessing-res-extrae": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/2e/Icon_LegendDarkRes_02.webp?147?160",
 	"6-Blessing-res-extrae-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/55/Icon_LegendDarkRes_02S.webp?80?87",
-	# Astra
+
 	"7-Blessing-atk": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/ba/Icon_LegendHeavenAtk.webp?147?160",
 	"7-Blessing-atk-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/1b/Icon_LegendHeavenAtkS.webp?80?87",
 	"7-Blessing-spd": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/27/Icon_LegendHeavenSpd.webp?147?160",
@@ -323,7 +282,7 @@ icons = {
 	"7-Blessing-def-extrae-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/f/fe/Icon_LegendHeavenDef_02S.webp?80?87",
 	"7-Blessing-res-extrae": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/9b/Icon_LegendHeavenRes_02.webp?147?160",
 	"7-Blessing-res-extrae-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/4/44/Icon_LegendHeavenRes_02S.webp?80?87",
-	# Anima
+
 	"8-Blessing-atk": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/7/74/Icon_LegendLogicAtk.png?147?160",
 	"8-Blessing-atk-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a4/Icon_LegendLogicAtkS.webp?80?87",
 	"8-Blessing-spd": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/92/Icon_LegendLogicSpd.webp?147?160",
@@ -340,18 +299,18 @@ icons = {
 	"8-Blessing-def-extrae-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/16/Icon_LegendLogicDef_02S.webp?80?87",
 	"8-Blessing-res-extrae": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/dd/Icon_LegendLogicRes_02.webp?147?160",
 	"8-Blessing-res-extrae-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/da/Icon_LegendLogicRes_02S.webp?80?87",
-	# Supports
+
 	"Support-C": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/88/Icon_Support_Summoner_C.png?147?160",
 	"Support-B": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/aa/Icon_Support_Summoner_B.png?147?160",
 	"Support-A": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a2/Icon_Support_Summoner_A.png?147?160",
 	"Support-S": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/8/8a/Icon_Support_Summoner_S.png?147?160",
-	# Duo icons
+
 	"Resonance": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b3/Icon_Resonance.png?147?160",
 	"Resonance-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/c4/Resonance.png?54?59",
 	"Duo": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/f/fb/Unit_Duo.png?147?160",
 	"Duo-mini": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/3/3a/Duo.png?54?59",
 	"DuoConversation": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/e/e0/DuoConversation.png?90?92",
-	# Duo/Resonance combinations
+
 	"1-Blessing-duo": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/7/78/Fire-duo.png?80?87",
 	"1-Blessing-resonance": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/c3/Fire-resonance.png?80?87",
 	"2-Blessing-duo": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b8/Water-duo.png?80?87",
@@ -368,7 +327,7 @@ icons = {
 	"7-Blessing-resonance": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a9/Astra-resonance.png?80?87",
 	"8-Blessing-duo": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/dc/Anima-duo.png?80?87",
 	"8-Blessing-resonance": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/f/f9/Anima-resonance.png?80?87",
-	# Favorite marks
+
 	"favorite_0": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a9/FavoriteMark0.png?90?92",
 	"favorite_1": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b2/FavoriteMark1.png?90?92",
 	"favorite_2": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/9b/FavoriteMark2.png?90?92",
@@ -378,19 +337,19 @@ icons = {
 	"favorite_6": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/6/6e/FavoriteMark6.png?90?92",
 	"favorite_7": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/17/FavoriteMark7.png?90?92",
 	"favorite_8": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/e/e8/FavoriteMark8.png?90?92",
-	# Rarity
+
 	"rarity1": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/2/2d/Icon_Rarity_1.png?53?53",
 	"rarity2": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/55/RarityLine2.png?90?53",
 	"rarity3": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/92/RarityLine3.png?126?53",
 	"rarity4": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/bf/RarityLine4.png?163?53",
 	"rarity5": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/a/a8/RarityLine5.png?200?53",
 	"rarityForma": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/0/02/RarityLineF.png?200?53",
-	# Summoning
+
 	"red_orb": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/1a/Red_Orb.png?160?160",
 	"blue_orb": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/bc/Blue_Orb.png?160?160",
 	"green_orb": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/d7/Green_Orb.png?160?160",
 	"colorless_orb": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/4/4e/Colorless_Orb.png?160?160",
-	# BGs
+
 	"basenormalbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/9/9d/BG_DetailedStatus.png?1067?1280",
 	"basesummonerbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/5c/Summoner_Support_Background.png?1067?1280",
 	"roomnormalbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/c/c9/Bg_DetailedStatus_Ask.webp?1067?1280",
@@ -405,11 +364,9 @@ icons = {
 	"diningsummonerbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/5/54/Bg_DetailedStatus_Dining_Reliance.webp?1067?1280",
 	"librarynormalbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/1/13/Bg_DetailedStatus_Library.webp?1067?1280",
 	"librarysummonerbg": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/3/3a/Bg_DetailedStatus_Library_Reliance.webp?1067?1280",
-	# Other
+
 	"summoningaltar": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/4/42/BG_Summon_Stone.png?1067?1280",
 	"resplendent": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b8/Icon_GodWear_L.png?82?82",
 	"resplendent-small": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/d/d9/Icon_GodWear.png?83?78",
 	"otherworldbond": "https://static.wikia.nocookie.net/feheroes_gamepedia_en/images/b/b5/Otherworld_Bond.png?46?46"
 }
-
-download()
