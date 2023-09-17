@@ -52,7 +52,7 @@ async function reload(scroll = false) {
 	// Hide default and show rendering canvas
 	preview.className = "unrendered";
 	canvas.className = "";
-	loadingoverlay.className = "";
+	loadingoverlay.className = "loadingoverlay";
 	var inittime = performance.now()
 	// Switch canvas size depending on selection and run the appropiate renderer
 	switch (selecttemplate.value) {

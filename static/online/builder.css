@@ -322,7 +322,7 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 /* Rotating loading circle */
-#loadingoverlay {
+.loadingoverlay {
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -338,7 +338,6 @@ input[type='number']::-webkit-inner-spin-button {
 	width: 3em;
 	height: 3em;
 	animation: rotateBorder 1s linear infinite;
-	position: absolute;
 }
 .loadingcircle > * {
 	width: 3em;
@@ -370,7 +369,7 @@ input[type='number']::-webkit-inner-spin-button {
   scrollbar-width: none; /* Hide all scrollbars to prevent them taking up space */
 }
 .unrendered {
-	display: none !important; /* Some items are never rendered at the beginning, if ever */
+	display: none; /* Some items are never rendered at the beginning, if ever */
 }
 .basekit {
 	background-color: rgb(92, 180, 224); /* Used to color basekit skills in selects */
