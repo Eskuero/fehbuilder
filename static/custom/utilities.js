@@ -233,8 +233,8 @@ summonerranks = {
 // Canvas position to render images passive icons at
 passiverender = {
 	"A": {"icon": [369, 945], "text": [420, 954], "indicator": [396, 966]},
-	"B": {"icon": [369, 994], "text": [420, 1003], "indicator": [396, 1016]},
-	"C": {"icon": [369, 1043], "text": [420, 1053], "indicator": [396, 1066]},
+	"B": {"icon": [369, 994], "text": [420, 1003], "indicator": [397, 1017]},
+	"C": {"icon": [369, 1043], "text": [420, 1053], "indicator": [397, 1067]},
 	"S": {"icon": [369, 1093], "text": [420, 1103], "indicator": [396, 1116]}
 };
 

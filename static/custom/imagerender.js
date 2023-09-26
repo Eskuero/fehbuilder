@@ -123,7 +123,7 @@ async function reload() {
 		preview.strokeText(artist, 47, 1242); preview.fillText(artist, 47, 1242);
 		// Print favorite icon
 		await getimage(other["images"]["favorite"][selectfavorite.value]).then(img => {
-			preview.drawImage(img, 3, 229, 90, 92);
+			preview.drawImage(img, 1, 226, 96, 96);
 		});
 		// Translate buttons
 		preview.font = '24px FeH-Font'; preview.textAlign = 'center'; preview.textBaseline = "middle";
@@ -237,9 +237,7 @@ async function reload() {
 		preview.drawImage(img, posX, 743, 32, 32);
 	});
 	await getimage(other["images"]["weapontype"][parseInt(selectweapontype.value)]).then(img => {
-		// We add an small offset on red weapons to make them look decent
-		let offset = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(parseInt(selectweapontype.value)) ? -2 : 0;
-		preview.drawImage(img, 20 + offset, 743 + offset);
+		preview.drawImage(img, 18, 741);
 	});
 	// Print the level string
 	preview.font = '24px FeH-Font'; preview.fillStyle = "#ffffff"; preview.strokeStyle = '#0a2533'; preview.textAlign = 'start';
@@ -308,7 +306,7 @@ async function reload() {
 	} else {
 		var printableweapon = "-";
 		await getimage(other["images"]["other"]["noweapon"]).then(img => {
-			preview.drawImage(img, 370, 797, 44, 44);
+			preview.drawImage(img, 370, 798, 44, 44);
 		});
 	}
 	// We always paste the text because it might as well be unarmed and have a "-"
@@ -350,7 +348,7 @@ async function reload() {
 		preview.fillText(name, passiverender[passives[i][0]]["text"][0], passiverender[passives[i][0]]["text"][1]);
 		// Print the category indicator
 		await getimage(other["images"]["skillindicators"][passives[i][0]]).then(img => {
-			preview.drawImage(img, passiverender[passives[i][0]]["indicator"][0], passiverender[passives[i][0]]["indicator"][1], 21, 21);
+			preview.drawImage(img, passiverender[passives[i][0]]["indicator"][0], passiverender[passives[i][0]]["indicator"][1]);
 		});
 	}
 
@@ -382,7 +380,7 @@ async function reload() {
 		// If appui is enabled we also print the conversation icon
 		if (appui.checked) {
 			await getimage(other["images"]["other"]["duoconversation"]).then(img => {
-				preview.drawImage(img, 3, 415);
+				preview.drawImage(img, 1, 412);
 			});
 		}
 	}

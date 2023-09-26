@@ -216,7 +216,7 @@ async function echoes() {
 			var weaponicon = "../common/icons/" + weapon + "-Effect.webp";
 		}
 		await getimage(weaponicon).then(img => {
-			preview.drawImage(img, 470, 150, 36, 36);
+			preview.drawImage(img, 470, 151, 36, 36);
 		});
 		// Get the string to print
 		var printableweapon = languages[language]["M" + weapon];
@@ -224,7 +224,7 @@ async function echoes() {
 	} else {
 		var printableweapon = "-";
 		await getimage(other["images"]["other"]["noweapon"]).then(img => {
-			preview.drawImage(img, 470, 150, 36, 36);
+			preview.drawImage(img, 470, 151, 36, 36);
 		});
 	}
 	// We always paste the text because it might as well be unarmed and have a "-"
@@ -475,7 +475,7 @@ async function condensed() {
 			weaponicon = "../common/icons/" + weapon + "-Effect.webp";
 		}
 		await getimage(weaponicon).then(img => {
-			preview.drawImage(img, 430, 60, 44, 44);
+			preview.drawImage(img, 430, 61, 44, 44);
 		});
 		// Get the string to print
 		var printableweapon = languages[language]["M" + weapon];
@@ -483,7 +483,7 @@ async function condensed() {
 	} else {
 		var printableweapon = "-";
 		await getimage(other["images"]["other"]["noweapon"]).then(img => {
-			preview.drawImage(img, 430, 60, 44, 44);
+			preview.drawImage(img, 430, 61, 44, 44);
 		});
 	}
 	// We always paste the text because it might as well be unarmed and have a "-"
@@ -511,7 +511,7 @@ async function condensed() {
 		}
 		// Print the category indicator
 		await getimage(other["images"]["skillindicators"][category]).then(img => {
-			preview.drawImage(img, passivecondensedrender[category]["indicator"][0], passivecondensedrender[category]["indicator"][1], 21, 21);
+			preview.drawImage(img, passivecondensedrender[category]["indicator"][0], passivecondensedrender[category]["indicator"][1]);
 		});
 	}
 
@@ -678,7 +678,7 @@ async function myunit() {
 		preview.strokeText(artist, 47, 1242); preview.fillText(artist, 47, 1242);
 		// Print favorite icon
 		renderjobs.push(getimage(other["images"]["favorite"][selectfavorite.value]).then(img => {
-			preview.drawImage(img, 3, 229, 90, 92);
+			preview.drawImage(img, 1, 226, 96, 96);
 		}));
 		// Translate buttons
 		preview.font = '24px FeH-Font'; preview.textAlign = 'center'; preview.textBaseline = "middle";
@@ -796,13 +796,11 @@ async function myunit() {
 		preview.drawImage(img, posX, 743, 32, 32);
 	}));
 	renderjobs.push(getimage(other["images"]["weapontype"][units[hero]["weapon"]]).then(async img => {
-		// We add an small offset on red weapons to make them look decent
-		let offset = [0, 3, 7, 11, 16, 20, 2, 5, 9, 13, 18, 22].includes(units[hero]["weapon"]) ? -2 : 0;
 		// If an accessory was defined, wait until the expansion is rendered
 		if (accessory) {
 			await accexpandjob;
 		}
-		preview.drawImage(img, 20 + offset, 743 + offset);
+		preview.drawImage(img, 18, 741);
 	}));
 
 	// If an accessory was defined, wait until the expansion is rendered
@@ -878,7 +876,7 @@ async function myunit() {
 			var weaponicon = "../common/icons/" + weapon + "-Effect.webp";
 		}
 		renderjobs.push(getimage(weaponicon).then(img => {
-			preview.drawImage(img, 370, 797, 44, 44);
+			preview.drawImage(img, 370, 798, 44, 44);
 		}));
 		// Get the string to print
 		var printableweapon = languages[language]["M" + weapon];
@@ -886,7 +884,7 @@ async function myunit() {
 	} else {
 		var printableweapon = "-";
 		renderjobs.push(getimage(other["images"]["other"]["noweapon"]).then(img => {
-			preview.drawImage(img, 370, 797, 44, 44);
+			preview.drawImage(img, 370, 798, 44, 44);
 		}));
 	}
 	// We always paste the text because it might as well be unarmed and have a "-"
@@ -913,13 +911,13 @@ async function myunit() {
 			// If we are rendering an icon for this category, wait until is rendered for the indicator
 			renderjobs.push(getimage(other["images"]["skillindicators"][category]).then(async img => {
 				await iconjob;
-				preview.drawImage(img, passiverender[category]["indicator"][0], passiverender[category]["indicator"][1], 21, 21);
+				preview.drawImage(img, passiverender[category]["indicator"][0], passiverender[category]["indicator"][1]);
 			}));
 			name = languages[language]["M" + skill];
 		} else {
 			// Print the category indicator
 			renderjobs.push(getimage(other["images"]["skillindicators"][category]).then(img => {
-				preview.drawImage(img, passiverender[category]["indicator"][0], passiverender[category]["indicator"][1], 21, 21);
+				preview.drawImage(img, passiverender[category]["indicator"][0], passiverender[category]["indicator"][1]);
 			}));
 		}
 		// We always write the text because it might be a simple "-"
@@ -964,7 +962,7 @@ async function myunit() {
 		// If appui is enabled we also print the conversation icon for duos/resonance
 		if (appui.checked && ["Duo", "Resonance"].includes(specialtype)) {
 			renderjobs.push(getimage(other["images"]["other"]["duoconversation"]).then(img => {
-				preview.drawImage(img, 3, 415);
+				preview.drawImage(img, 1, 412);
 			}));
 		}
 	}

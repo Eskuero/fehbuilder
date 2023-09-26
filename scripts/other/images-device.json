@@ -1,0 +1,1841 @@
+{
+	"maps-springwater": {
+		"actions": ["copy"],
+		"path": "Common/SkyCastle/Field/K0001.png"
+	},
+	"maps-wintry": {
+		"actions": ["copy"],
+		"path": "Common/SkyCastle/Field/K0002.png"
+	},
+	"maps-abandonedcastle": {
+		"actions": ["copy"],
+		"path": "Common/SkyCastle/Field/K0003.png"
+	},
+	"maps-snowdust": {
+		"actions": ["copy"],
+		"path": "Common/SkyCastle/Field/K0004.png"
+	},
+	"maps-desert": {
+		"actions": ["copy"],
+		"path": "Common/SkyCastle/Field/K0005.png"
+	},
+	"maps-springbreeze": {
+		"actions": ["copy"],
+		"path": "Common/SkyCastle/Field/K0006.png"
+	},
+	"maps-leafycanopy": {
+		"actions": ["copy"],
+		"path": "Common/SkyCastle/Field/K0007.png"
+	},
+	"maps-lostcastle": {
+		"actions": ["copy"],
+		"path": "Common/SkyCastle/Field/K0008.png"
+	},
+	"maps-brightgrassland": {
+		"actions": ["copy"],
+		"path": "Common/SkyCastle/Field/K0009.png"
+	},
+	"maps-lava": {
+		"actions": ["copy"],
+		"path": "Common/SkyCastle/Field/K0010.png"
+	},
+	"maps-dreamcastle": {
+		"actions": ["copy"],
+		"path": "Common/SkyCastle/Field/K0011.png"
+	},
+	"maps-nightmarecastle": {
+		"actions": ["copy"],
+		"path": "Common/SkyCastle/Field/K0012.png"
+	},
+	"maps-helcastle": {
+		"actions": ["copy"],
+		"path": "Common/SkyCastle/Field/K0013.png"
+	},
+	"maps-nioavellircastle": {
+		"actions": ["copy"],
+		"path": "Common/SkyCastle/Field/K0014.png"
+	},
+	"maps-jotunheimrcastle": {
+		"actions": ["copy"],
+		"path": "Common/SkyCastle/Field/K0015.png"
+	},
+	"maps-white-wall": {
+		"actions": ["crop", "resize"],
+		"path": "Common/Field/Common/Wallpattern.png",
+		"scale": [120,120],
+		"position": [1093,729],
+		"dimensions": [180,180]
+	},
+	"maps-white-crumbled-wall": {
+		"actions": ["crop", "resize"],
+		"path": "Common/Field/Common/Wallpattern.png",
+		"scale": [120,120],
+		"position": [1639,365],
+		"dimensions": [180,180]
+	},
+	"maps-white-half-wall": {
+		"actions": ["crop", "resize"],
+		"path": "Common/Field/Common/Wallpattern.png",
+		"scale": [120,120],
+		"position": [911,729],
+		"dimensions": [180,180]
+	},
+	"maps-grey-crumbled-wall": {
+		"actions": ["crop", "resize"],
+		"path": "Common/Field/Common/Wallpattern_inside.png",
+		"scale": [120,120],
+		"position": [1639,365],
+		"dimensions": [180,180]
+	},
+	"maps-grey-donut-wall": {
+		"actions": ["crop", "resize"],
+		"path": "Common/Field/Common/Wallpattern_inside.png",
+		"scale": [120,120],
+		"position": [365,729],
+		"dimensions": [180,180]
+	},
+	"maps-grey-bitten-wall": {
+		"actions": ["crop", "resize"],
+		"path": "Common/Field/Common/Wallpattern_inside.png",
+		"scale": [120,120],
+		"position": [1457,547],
+		"dimensions": [180,180]
+	},
+	"maps-grey-why-wall": {
+		"actions": ["crop", "resize"],
+		"path": "Common/Field/Common/Wallpattern_inside.png",
+		"scale": [120,120],
+		"position": [1457,365],
+		"dimensions": [180,180]
+	},
+	"maps-grey-l-wall": {
+		"actions": ["crop", "resize"],
+		"path": "Common/Field/Common/Wallpattern_inside.png",
+		"scale": [120,120],
+		"position": [911,547],
+		"dimensions": [180,180]
+	},
+	"maps-grey-pillar-wall": {
+		"actions": ["crop", "resize"],
+		"path": "Common/Field/Common/Wallpattern_inside.png",
+		"scale": [120,120],
+		"position": [1639,0],
+		"dimensions": [180,180]
+	},
+	"maps-grey-pillar-crumbled-wall": {
+		"actions": ["crop", "resize"],
+		"path": "Common/Field/Common/Wallpattern_inside.png",
+		"scale": [120,120],
+		"position": [1639,183],
+		"dimensions": [180,180]
+	},
+	"maps-bolttower": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Function01/BU.png",
+		"scale": [245,248]
+	},
+	"maps-catapult": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Function09/BU.png",
+		"scale": [252,264]
+	},
+	"maps-brigthshrine": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Function11/BU.png",
+		"scale": [261,256]
+	},
+	"maps-darkshrine": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Function12/BU.png",
+		"scale": [261,256]
+	},
+	"maps-duoshindrance": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Function13/BU.png",
+		"scale": [212,260]
+	},
+	"maps-fortress": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Function00/BU.png",
+		"scale": [252,248]
+	},
+	"maps-healingtower": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Function03/BU.png",
+		"scale": [264,257]
+	},
+	"maps-panicmanor": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Function08/BU.png",
+		"scale": [270,270]
+	},
+	"maps-tacticsroom": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Function02/BU.png",
+		"scale": [235,262]
+	},
+	"maps-armorschool": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Function05/BU.png",
+		"scale": [264,254]
+	},
+	"maps-flierschool": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Function07/BU.png",
+		"scale": [264,254]
+	},
+	"maps-infantryschool": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Function04/BU.png",
+		"scale": [264,254]
+	},
+	"maps-cavalryschool": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Function06/BU.png",
+		"scale": [264,254]
+	},
+	"maps-aetherfountain": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Resource00/BU.png",
+		"scale": [256,261]
+	},
+	"maps-aetheramphorae": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Resource01/BU.png",
+		"scale": [258,260]
+	},
+	"maps-inn": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Holiday02/BU.png",
+		"scale": [258,266]
+	},
+	"maps-field": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Holiday05/BU.png",
+		"scale": [270,264]
+	},
+	"maps-concerthall": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Holiday04/BU.png",
+		"scale": [258,273]
+	},
+	"maps-dininghall": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Holiday06/BU.png",
+		"scale": [261,261]
+	},
+	"maps-bolttrap": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Trap00/BU.png",
+		"scale": [90,90]
+	},
+	"maps-bolttrapfake": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Trap00/Disable.png",
+		"scale": [90,80]
+	},
+	"maps-heavytrap": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Trap01/BU.png",
+		"scale": [90,90]
+	},
+	"maps-heavytrapfake": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Trap01/Disable.png",
+		"scale": [90,80]
+	},
+	"maps-hextrap": {
+		"actions": ["content","resize"],
+		"path": "Common/SkyCastle/Chip/Trap02/BU.png",
+		"scale": [90,90]
+	},
+	"maps-hextrapfake": {
+		"actions": ["crop"],
+		"path": "Common/SkyCastle/Chip/Trap02/tex/Trap02.png",
+		"position": [159,2],
+		"dimensions": [90,80]
+	},
+	"0-game": {
+		"actions": ["crop"],
+		"path": "Common/UI/Status.png",
+		"position": [0,116],
+		"dimensions": [86,86]
+	},
+	"1-game": {
+		"actions": ["crop"],
+		"path": "Common/UI/Status.png",
+		"position": [86,116],
+		"dimensions": [86,86]
+	},
+	"2-game": {
+		"actions": ["crop"],
+		"path": "Common/UI/Status.png",
+		"position": [172,116],
+		"dimensions": [86,86]
+	},
+	"3-game": {
+		"actions": ["crop"],
+		"path": "Common/UI/Status.png",
+		"position": [258,116],
+		"dimensions": [86,86]
+	},
+	"4-game": {
+		"actions": ["crop"],
+		"path": "Common/UI/Status.png",
+		"position": [344,116],
+		"dimensions": [86,86]
+	},
+	"5-game": {
+		"actions": ["crop"],
+		"path": "Common/UI/Status.png",
+		"position": [444,116],
+		"dimensions": [86,86]
+	},
+	"6-game": {
+		"actions": ["crop"],
+		"path": "Common/UI/Status.png",
+		"position": [532,116],
+		"dimensions": [86,86]
+	},
+	"7-game": {
+		"actions": ["crop"],
+		"path": "Common/UI/Status.png",
+		"position": [624,116],
+		"dimensions": [86,86]
+	},
+	"8-game": {
+		"actions": ["crop"],
+		"path": "Common/UI/Status.png",
+		"position": [710,114],
+		"dimensions": [94,94]
+	},
+	"9-game": {
+		"actions": ["crop"],
+		"path": "Common/UI/Status.png",
+		"position": [803,114],
+		"dimensions": [90,90]
+	},
+	"10-game": {
+		"actions": ["crop"],
+		"path": "Common/UI/Status.png",
+		"position": [894,116],
+		"dimensions": [86,86]
+	},
+	"11-game": {
+		"actions": ["crop"],
+		"path": "Common/UI/Status.png",
+		"position": [984,116],
+		"dimensions": [88,88]
+	},
+	"12-game": {
+		"actions": ["crop"],
+		"path": "Common/UI/Status.png",
+		"position": [1071,112],
+		"dimensions": [92,92]
+	},
+	"13-game": {
+		"actions": ["crop"],
+		"path": "Common/UI/Status.png",
+		"position": [1165,116],
+		"dimensions": [86,86]
+	},
+	"14-game": {
+		"actions": ["crop"],
+		"path": "Common/UI/Status.png",
+		"position": [1254,116],
+		"dimensions": [86,86]
+	},
+	"rarityborder1": {
+		"actions": ["plist", "resize"],
+		"path": "USEN/UI/SRPGStatus.png",
+		"scale": [259,43],
+		"entry": "Frm_Name_1.png"
+	},
+	"rarityborder2": {
+		"actions": ["plist", "resize"],
+		"path": "USEN/UI/SRPGStatus.png",
+		"scale": [259,43],
+		"entry": "Frm_Name_2.png"
+	},
+	"rarityborder3": {
+		"actions": ["plist", "resize"],
+		"path": "USEN/UI/SRPGStatus.png",
+		"scale": [259,43],
+		"entry": "Frm_Name_3.png"
+	},
+	"rarityborder4": {
+		"actions": ["plist", "resize"],
+		"path": "USEN/UI/SRPGStatus.png",
+		"scale": [259,43],
+		"entry": "Frm_Name_4.png"
+	},
+	"rarityborder5": {
+		"actions": ["plist", "resize"],
+		"path": "USEN/UI/SRPGStatus.png",
+		"scale": [259,43],
+		"entry": "Frm_Name_5.png"
+	},
+	"ascendent": {
+		"actions": ["content", "resize"],
+		"path": "Common/UI/Icon_FlowerBud_L.png",
+		"scale": [58,58]
+	},
+	"Ascended": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Diabolos.png",
+		"entry": "Icon_FlowerBudPlayer.png",
+		"scale": [147,160]
+	},
+	"Rearmed": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Diabolos.png",
+		"entry": "Icon_MweaponPlayer2.png",
+		"scale": [147,160]
+	},
+	"0-move": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [32,32],
+		"position": [354,415],
+		"dimensions": [50,50]
+	},
+	"0-flower": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Item_2.png",
+		"entry": "Icon_Shinryu_Toho.png",
+		"scale": [60,60]
+	},
+	"1-move": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [32,32],
+		"position": [410,415],
+		"dimensions": [50,50]
+	},
+	"1-flower": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Item_2.png",
+		"entry": "Icon_Shinryu_Heavy.png",
+		"scale": [60,60]
+	},
+	"2-move": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [32,32],
+		"position": [466,415],
+		"dimensions": [50,50]
+	},
+	"2-flower": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Item_2.png",
+		"entry": "Icon_Shinryu_Knight.png",
+		"scale": [60,60]
+	},
+	"3-move": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [32,32],
+		"position": [522,415],
+		"dimensions": [50,50]
+	},
+	"3-flower": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Item_2.png",
+		"entry": "Icon_Shinryu_Fly.png",
+		"scale": [60,60]
+	},
+	"0-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [2,208],
+		"dimensions": [52,52]
+	},
+	"1-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [58,208],
+		"dimensions": [52,52]
+	},
+	"2-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [113,208],
+		"dimensions": [52,52]
+	},
+	"3-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [170,208],
+		"dimensions": [52,52]
+	},
+	"4-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [225,208],
+		"dimensions": [52,52]
+	},
+	"5-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [281,208],
+		"dimensions": [52,52]
+	},
+	"6-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [337,208],
+		"dimensions": [52,52]
+	},
+	"7-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [394,208],
+		"dimensions": [52,52]
+	},
+	"8-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [450,208],
+		"dimensions": [52,52]
+	},
+	"9-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [505,208],
+		"dimensions": [52,52]
+	},
+	"10-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [561,208],
+		"dimensions": [52,52]
+	},
+	"11-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [618,208],
+		"dimensions": [52,52]
+	},
+	"12-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [674,208],
+		"dimensions": [52,52]
+	},
+	"13-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [729,208],
+		"dimensions": [52,52]
+	},
+	"14-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [785,208],
+		"dimensions": [52,52]
+	},
+	"15-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [841,208],
+		"dimensions": [52,52]
+	},
+	"16-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [898,208],
+		"dimensions": [52,52]
+	},
+	"17-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [953,208],
+		"dimensions": [52,52]
+	},
+	"18-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [1009,208],
+		"dimensions": [52,52]
+	},
+	"19-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [1065,208],
+		"dimensions": [52,52]
+	},
+	"20-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [1122,208],
+		"dimensions": [52,52]
+	},
+	"21-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [1177,208],
+		"dimensions": [52,52]
+	},
+	"22-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [1233,208],
+		"dimensions": [52,52]
+	},
+	"23-weapon": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Status.png",
+		"scale": [36,36],
+		"position": [1289,208],
+		"dimensions": [52,52]
+	},
+	"Accesory-Hat": {
+		"actions": ["crop", "resize", "rotate"],
+		"path": "Common/UI/UnitEdit.png",
+		"scale": [32,32],
+		"position": [1367,222],
+		"dimensions": [50,50]
+	},
+	"Accesory-Hair": {
+		"actions": ["crop", "resize", "rotate"],
+		"path": "Common/UI/UnitEdit.png",
+		"scale": [32,32],
+		"position": [1367,278],
+		"dimensions": [50,50]
+	},
+	"Accesory-Mask": {
+		"actions": ["crop", "resize", "rotate"],
+		"path": "Common/UI/UnitEdit.png",
+		"scale": [32,32],
+		"position": [1367,334],
+		"dimensions": [50,50]
+	},
+	"Accesory-Tiara": {
+		"actions": ["crop", "resize", "rotate"],
+		"path": "Common/UI/UnitEdit.png",
+		"scale": [32,32],
+		"position": [1367,390],
+		"dimensions": [50,50]
+	},
+	"Atk-Refine": {
+		"actions": ["crop", "resize", "content"],
+		"path": "Common/UI/Skill_Passive3.png",
+		"scale": [44,44],
+		"position": [684,380],
+		"dimensions": [76,76]
+	},
+	"Spd-Refine": {
+		"actions": ["crop", "resize", "content"],
+		"path": "Common/UI/Skill_Passive3.png",
+		"scale": [44,44],
+		"position": [760,380],
+		"dimensions": [76,76]
+	},
+	"Def-Refine": {
+		"actions": ["crop", "resize", "content"],
+		"path": "Common/UI/Skill_Passive3.png",
+		"scale": [44,44],
+		"position": [836,380],
+		"dimensions": [76,76]
+	},
+	"Res-Refine": {
+		"actions": ["crop", "resize", "content"],
+		"path": "Common/UI/Skill_Passive3.png",
+		"scale": [44,44],
+		"position": [912,380],
+		"dimensions": [76,76]
+	},
+	"Dazzling-Refine": {
+		"actions": ["crop", "resize", "content"],
+		"path": "Common/UI/Skill_Passive3.png",
+		"scale": [44,44],
+		"position": [152,456],
+		"dimensions": [76,76]
+	},
+	"Wrathful-Refine": {
+		"actions": ["crop", "resize", "content"],
+		"path": "Common/UI/Skill_Passive3.png",
+		"scale": [44,44],
+		"position": [76,456],
+		"dimensions": [76,76]
+	},
+	"weapon-Refine": {
+		"actions": ["crop", "resize"],
+		"path": "Common/UI/Skill_Passive1.png",
+		"scale": [44,44],
+		"position": [83,9],
+		"dimensions": [63,63]
+	},
+	"indicator-skillA": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Common.png",
+		"scale": [21,21],
+		"entry": "Icon_PassiveA_L.png"
+	},
+	"indicator-skillB": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Common.png",
+		"scale": [19,19],
+		"entry": "Icon_PassiveB_L.png"
+	},
+	"indicator-skillC": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Common.png",
+		"scale": [19,19],
+		"entry": "Icon_PassiveC_L.png"
+	},
+	"indicator-skillS": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Common.png",
+		"scale": [21,21],
+		"entry": "Icon_AccessoryS.png"
+	},
+	"1-Blessing": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [147,160],
+		"entry": "Icon_BlessingFire.png"
+	},
+	"1-Blessing-mini": {
+		"actions": ["plist", "resize", "content"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [54,59],
+		"entry": "Icon_BlessingFireS.png"
+	},
+	"2-Blessing": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [147,160],
+		"entry": "Icon_BlessingWater.png"
+	},
+	"2-Blessing-mini": {
+		"actions": ["plist", "resize", "content"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [54,59],
+		"entry": "Icon_BlessingWaterS.png"
+	},
+	"3-Blessing": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [147,160],
+		"entry": "Icon_BlessingWind.png"
+	},
+	"3-Blessing-mini": {
+		"actions": ["plist", "resize", "content"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [54,59],
+		"entry": "Icon_BlessingWindS.png"
+	},
+	"4-Blessing": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [147,160],
+		"entry": "Icon_BlessingEarth.png"
+	},
+	"4-Blessing-mini": {
+		"actions": ["plist", "resize", "content"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [54,59],
+		"entry": "Icon_BlessingEarthS.png"
+	},
+	"5-Blessing": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [147,160],
+		"entry": "Icon_BlessingLight.png"
+	},
+	"5-Blessing-mini": {
+		"actions": ["plist", "resize", "content"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [54,59],
+		"entry": "Icon_BlessingLightS.png"
+	},
+	"6-Blessing": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [147,160],
+		"entry": "Icon_BlessingDark.png"
+	},
+	"6-Blessing-mini": {
+		"actions": ["plist", "resize", "content"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [54,59],
+		"entry": "Icon_BlessingDarkS.png"
+	},
+	"7-Blessing": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [147,160],
+		"entry": "Icon_BlessingHeaven.png"
+	},
+	"7-Blessing-mini": {
+		"actions": ["plist", "resize", "content"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [54,59],
+		"entry": "Icon_BlessingHeavenS.png"
+	},
+	"8-Blessing": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [147,160],
+		"entry": "Icon_BlessingLogic.png"
+	},
+	"8-Blessing-mini": {
+		"actions": ["plist", "resize", "content"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [54,59],
+		"entry": "Icon_BlessingLogicS.png"
+	},
+	"1-Blessing-atk": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendFireAtk.png",
+		"scale": [147,160]
+	},
+	"1-Blessing-atk-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendFireAtkS.png",
+		"scale": [80,87]
+	},
+	"1-Blessing-atk-pairup": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendFireAtk_03.png",
+		"scale": [147,160]
+	},
+	"1-Blessing-atk-pairup-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendFireAtk_03S.png",
+		"scale": [80,87]
+	},
+	"1-Blessing-spd": {
+		"actions": []
+	},
+	"1-Blessing-spd-mini": {
+		"actions": []
+	},
+	"1-Blessing-spd-pairup": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendFireSpd_03.png",
+		"scale": [147,160]
+	},
+	"1-Blessing-spd-pairup-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendFireSpd_03S.png",
+		"scale": [80,87]
+	},
+	"1-Blessing-def": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendFireDef.png",
+		"scale": [147,160]
+	},
+	"1-Blessing-def-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendFireDefS.png",
+		"scale": [80,87]
+	},
+	"1-Blessing-def-pairup": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendFireDef_03.png",
+		"scale": [147,160]
+	},
+	"1-Blessing-def-pairup-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendFireDef_03S.png",
+		"scale": [80,87]
+	},
+	"1-Blessing-res": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendFireRes.png",
+		"scale": [147,160]
+	},
+	"1-Blessing-res-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendFireResS.png",
+		"scale": [80,87]
+	},
+	"1-Blessing-res-pairup": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendFireRes_03.png",
+		"scale": [147,160]
+	},
+	"1-Blessing-res-pairup-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendFireRes_03S.png",
+		"scale": [80,87]
+	},
+	"1-Blessing-pairup": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendFireBtl.png",
+		"scale": [147,160]
+	},
+	"1-Blessing-pairup-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendFireBtlS.png",
+		"scale": [80,87]
+	},
+	"2-Blessing-atk": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWaterAtk.png",
+		"scale": [147,160]
+	},
+	"2-Blessing-atk-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWaterAtkS.png",
+		"scale": [80,87]
+	},
+	"2-Blessing-atk-pairup": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWaterAtk_03.png",
+		"scale": [147,160]
+	},
+	"2-Blessing-atk-pairup-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWaterAtk_03S.png",
+		"scale": [80,87]
+	},
+	"2-Blessing-spd": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWaterSpd.png",
+		"scale": [147,160]
+	},
+	"2-Blessing-spd-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWaterSpdS.png",
+		"scale": [80,87]
+	},
+	"2-Blessing-spd-pairup": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWaterSpd_03.png",
+		"scale": [147,160]
+	},
+	"2-Blessing-spd-pairup-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWaterSpd_03S.png",
+		"scale": [80,87]
+	},
+	"2-Blessing-def": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWaterDef.png",
+		"scale": [147,160]
+	},
+	"2-Blessing-def-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWaterDefS.png",
+		"scale": [80,87]
+	},
+	"2-Blessing-def-pairup": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWaterDef_03.png",
+		"scale": [147,160]
+	},
+	"2-Blessing-def-pairup-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWaterDef_03S.png",
+		"scale": [80,87]
+	},
+	"2-Blessing-res": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWaterRes.png",
+		"scale": [147,160]
+	},
+	"2-Blessing-res-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWaterResS.png",
+		"scale": [80,87]
+	},
+	"2-Blessing-res-pairup": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWaterRes_03.png",
+		"scale": [147,160]
+	},
+	"2-Blessing-res-pairup-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWaterRes_03S.png",
+		"scale": [80,87]
+	},
+	"2-Blessing-pairup": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWaterBtl.png",
+		"scale": [147,160]
+	},
+	"2-Blessing-pairup-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWaterBtlS.png",
+		"scale": [80,87]
+	},
+	"3-Blessing-atk": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWindAtk.png",
+		"scale": [147,160]
+	},
+	"3-Blessing-atk-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWindAtkS.png",
+		"scale": [80,87]
+	},
+	"3-Blessing-atk-pairup": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWindAtk_03.png",
+		"scale": [147,160]
+	},
+	"3-Blessing-atk-pairup-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWindAtk_03S.png",
+		"scale": [80,87]
+	},
+	"3-Blessing-spd": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWindSpd.png",
+		"scale": [147,160]
+	},
+	"3-Blessing-spd-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWindSpdS.png",
+		"scale": [80,87]
+	},
+	"3-Blessing-spd-pairup": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWindSpd_03.png",
+		"scale": [147,160]
+	},
+	"3-Blessing-spd-pairup-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWindSpd_03S.png",
+		"scale": [80,87]
+	},
+	"3-Blessing-def": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWindDef.png",
+		"scale": [147,160]
+	},
+	"3-Blessing-def-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWindDefS.png",
+		"scale": [80,87]
+	},
+	"3-Blessing-def-pairup": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWindDef_03.png",
+		"scale": [147,160]
+	},
+	"3-Blessing-def-pairup-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWindDef_03S.png",
+		"scale": [80,87]
+	},
+	"3-Blessing-res": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWindRes.png",
+		"scale": [147,160]
+	},
+	"3-Blessing-res-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWindResS.png",
+		"scale": [80,87]
+	},
+	"3-Blessing-res-pairup": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWindRes_03.png",
+		"scale": [147,160]
+	},
+	"3-Blessing-res-pairup-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWindRes_03S.png",
+		"scale": [80,87]
+	},
+	"3-Blessing-pairup": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWindBtl.png",
+		"scale": [147,160]
+	},
+	"3-Blessing-pairup-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendWindBtlS.png",
+		"scale": [80,87]
+	},
+	"4-Blessing-atk": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendEarthAtk.png",
+		"scale": [147,160]
+	},
+	"4-Blessing-atk-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendEarthAtkS.png",
+		"scale": [80,87]
+	},
+	"4-Blessing-atk-pairup": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendEarthAtk_03.png",
+		"scale": [147,160]
+	},
+	"4-Blessing-atk-pairup-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendEarthAtk_03S.png",
+		"scale": [80,87]
+	},
+	"4-Blessing-spd": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendEarthSpd.png",
+		"scale": [147,160]
+	},
+	"4-Blessing-spd-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendEarthSpdS.png",
+		"scale": [80,87]
+	},
+	"4-Blessing-spd-pairup": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendEarthSpd_03.png",
+		"scale": [147,160]
+	},
+	"4-Blessing-spd-pairup-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendEarthSpd_03S.png",
+		"scale": [80,87]
+	},
+	"4-Blessing-def": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendEarthDef.png",
+		"scale": [147,160]
+	},
+	"4-Blessing-def-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendEarthDefS.png",
+		"scale": [80,87]
+	},
+	"4-Blessing-def-pairup": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendEarthDef_03.png",
+		"scale": [147,160]
+	},
+	"4-Blessing-def-pairup-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendEarthDef_03S.png",
+		"scale": [80,87]
+	},
+	"4-Blessing-res": {
+		"actions": []
+	},
+	"4-Blessing-res-mini": {
+		"actions": []
+	},
+	"4-Blessing-res-pairup": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendEarthRes_03.png",
+		"scale": [147,160]
+	},
+	"4-Blessing-res-pairup-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendEarthRes_03S.png",
+		"scale": [80,87]
+	},
+	"4-Blessing-pairup": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendEarthBtl.png",
+		"scale": [147,160]
+	},
+	"4-Blessing-pairup-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendEarthBtlS.png",
+		"scale": [80,87]
+	},
+	"5-Blessing-atk": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightAtk.png",
+		"scale": [147,160]
+	},
+	"5-Blessing-atk-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightAtkS.png",
+		"scale": [80,87]
+	},
+	"5-Blessing-spd": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightSpd.png",
+		"scale": [147,160]
+	},
+	"5-Blessing-spd-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightSpdS.png",
+		"scale": [80,87]
+	},
+	"5-Blessing-def": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightDef.png",
+		"scale": [147,160]
+	},
+	"5-Blessing-def-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightDefS.png",
+		"scale": [80,87]
+	},
+	"5-Blessing-res": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightRes.png",
+		"scale": [147,160]
+	},
+	"5-Blessing-res-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightResS.png",
+		"scale": [80,87]
+	},
+	"5-Blessing-atk-extrae": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightAtk_02.png",
+		"scale": [147,160]
+	},
+	"5-Blessing-atk-extrae-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightAtk_02S.png",
+		"scale": [80,87]
+	},
+	"5-Blessing-spd-extrae": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightSpd_02.png",
+		"scale": [147,160]
+	},
+	"5-Blessing-spd-extrae-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightSpd_02S.png",
+		"scale": [80,87]
+	},
+	"5-Blessing-def-extrae": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightDef_02.png",
+		"scale": [147,160]
+	},
+	"5-Blessing-def-extrae-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightDef_02S.png",
+		"scale": [80,87]
+	},
+	"5-Blessing-res-extrae": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightRes_02.png",
+		"scale": [147,160]
+	},
+	"5-Blessing-res-extrae-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightRes_02S.png",
+		"scale": [80,87]
+	},
+	"6-Blessing-atk": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkAtk.png",
+		"scale": [147,160]
+	},
+	"6-Blessing-atk-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkAtkS.png",
+		"scale": [80,87]
+	},
+	"6-Blessing-spd": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkSpd.png",
+		"scale": [147,160]
+	},
+	"6-Blessing-spd-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkSpdS.png",
+		"scale": [80,87]
+	},
+	"6-Blessing-def": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkDef.png",
+		"scale": [147,160]
+	},
+	"6-Blessing-def-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkDefS.png",
+		"scale": [80,87]
+	},
+	"6-Blessing-res": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkRes.png",
+		"scale": [147,160]
+	},
+	"6-Blessing-res-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkResS.png",
+		"scale": [80,87]
+	},
+	"6-Blessing-atk-extrae": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkAtk_02.png",
+		"scale": [147,160]
+	},
+	"6-Blessing-atk-extrae-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkAtk_02S.png",
+		"scale": [80,87]
+	},
+	"6-Blessing-spd-extrae": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkSpd_02.png",
+		"scale": [147,160]
+	},
+	"6-Blessing-spd-extrae-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkSpd_02S.png",
+		"scale": [80,87]
+	},
+	"6-Blessing-def-extrae": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkDef_02.png",
+		"scale": [147,160]
+	},
+	"6-Blessing-def-extrae-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkDef_02S.png",
+		"scale": [80,87]
+	},
+	"6-Blessing-res-extrae": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkRes_02.png",
+		"scale": [147,160]
+	},
+	"6-Blessing-res-extrae-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkRes_02S.png",
+		"scale": [80,87]
+	},
+	"7-Blessing-atk": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendHeavenAtk.png",
+		"scale": [147,160]
+	},
+	"7-Blessing-atk-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendHeavenAtkS.png",
+		"scale": [80,87]
+	},
+	"7-Blessing-spd": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendHeavenSpd.png",
+		"scale": [147,160]
+	},
+	"7-Blessing-spd-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendHeavenSpdS.png",
+		"scale": [80,87]
+	},
+	"7-Blessing-def": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendHeavenDef.png",
+		"scale": [147,160]
+	},
+	"7-Blessing-def-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendHeavenDefS.png",
+		"scale": [80,87]
+	},
+	"7-Blessing-res": {
+		"actions": [],
+		"path": "Common/UI/Icon_LegendHeaven.png",
+		"scale": [147,160]
+	},
+	"7-Blessing-res-mini": {
+		"actions": [],
+		"path": "Common/UI/Icon_LegendHeavenResS.png",
+		"scale": [80,87]
+	},
+	"7-Blessing-atk-extrae": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendHeavenAtk_02.png",
+		"scale": [147,160]
+	},
+	"7-Blessing-atk-extrae-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendHeavenAtk_02S.png",
+		"scale": [80,87]
+	},
+	"7-Blessing-spd-extrae": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendHeavenSpd_02.png",
+		"scale": [147,160]
+	},
+	"7-Blessing-spd-extrae-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendHeavenSpd_02S.png",
+		"scale": [80,87]
+	},
+	"7-Blessing-def-extrae": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendHeavenDef_02.png",
+		"scale": [147,160]
+	},
+	"7-Blessing-def-extrae-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendHeavenDef_02S.png",
+		"scale": [80,87]
+	},
+	"7-Blessing-res-extrae": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendHeavenRes_02.png",
+		"scale": [147,160]
+	},
+	"7-Blessing-res-extrae-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendHeavenRes_02S.png",
+		"scale": [80,87]
+	},
+	"8-Blessing-atk": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicAtk.png",
+		"scale": [147,160]
+	},
+	"8-Blessing-atk-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicAtkS.png",
+		"scale": [80,87]
+	},
+	"8-Blessing-spd": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicSpd.png",
+		"scale": [147,160]
+	},
+	"8-Blessing-spd-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicSpdS.png",
+		"scale": [80,87]
+	},
+	"8-Blessing-def": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicDef.png",
+		"scale": [147,160]
+	},
+	"8-Blessing-def-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicDefS.png",
+		"scale": [80,87]
+	},
+	"8-Blessing-res": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicRes.png",
+		"scale": [147,160]
+	},
+	"8-Blessing-res-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicResS.png",
+		"scale": [80,87]
+	},
+	"8-Blessing-atk-extrae": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicAtk_02.png",
+		"scale": [147,160]
+	},
+	"8-Blessing-atk-extrae-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicAtk_02S.png",
+		"scale": [80,87]
+	},
+	"8-Blessing-spd-extrae": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicSpd_02.png",
+		"scale": [147,160]
+	},
+	"8-Blessing-spd-extrae-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicSpd_02S.png",
+		"scale": [80,87]
+	},
+	"8-Blessing-def-extrae": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicDef_02.png",
+		"scale": [147,160]
+	},
+	"8-Blessing-def-extrae-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicDef_02S.png",
+		"scale": [80,87]
+	},
+	"8-Blessing-res-extrae": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicRes_02.png",
+		"scale": [147,160]
+	},
+	"8-Blessing-res-extrae-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicRes_02S.png",
+		"scale": [80,87]
+	},
+	"Support-C": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/UnitEdit_2.png",
+		"scale": [147,160],
+		"entry": "Icon_ReliancePlayerC_L.png"
+	},
+	"Support-B": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/UnitEdit_2.png",
+		"scale": [147,160],
+		"entry": "Icon_ReliancePlayerB_L.png"
+	},
+	"Support-A": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/UnitEdit_2.png",
+		"scale": [147,160],
+		"entry": "Icon_ReliancePlayerA_L.png"
+	},
+	"Support-S": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/UnitEdit_2.png",
+		"scale": [147,160],
+		"entry": "Icon_ReliancePlayerS_L.png"
+	},
+	"Resonance": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/UnitEdit_2.png",
+		"scale": [147,160],
+		"entry": "Icon_TwinWorld.png"
+	},
+	"Resonance-mini": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [54,59],
+		"entry": "Icon_TwinWorldS.png"
+	},
+	"Duo": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/UnitEdit_2.png",
+		"scale": [147,160],
+		"entry": "Icon_PairPlayer.png"
+	},
+	"Duo-mini": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [54,59],
+		"entry": "Icon_LegendPairS.png"
+	},
+	"DuoConversation": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/UnitEdit.png",
+		"scale": [96,96],
+		"entry": "Btn_PairTalk.0.png"
+	},
+	"1-Blessing-duo": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendFirePairS.png"
+	},
+	"1-Blessing-resonance": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendFireTwinWorldS.png"
+	},
+	"2-Blessing-duo": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendWaterPairS.png"
+	},
+	"2-Blessing-resonance": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendWaterTwinWorldS.png"
+	},
+	"3-Blessing-duo": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendWindPairS.png"
+	},
+	"3-Blessing-resonance": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendWindTwinWorldS.png"
+	},
+	"4-Blessing-duo": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendEarthPairS.png"
+	},
+	"4-Blessing-resonance": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendEarthTwinWorldS.png"
+	},
+	"5-Blessing-duo": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendLightPairS.png"
+	},
+	"5-Blessing-resonance": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendLightTwinWorldS.png"
+	},
+	"6-Blessing-duo": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendDarkPairS.png"
+	},
+	"6-Blessing-resonance": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendDarkTwinWorldS.png"
+	},
+	"7-Blessing-duo": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendHeavenPairS.png"
+	},
+	"7-Blessing-resonance": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendHeavenTwinWorldS.png"
+	},
+	"8-Blessing-duo": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendLogicPairS.png"
+	},
+	"8-Blessing-resonance": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Blessing.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendLogicTwinWorldS.png"
+	},
+	"favorite_0": {
+		"actions": ["favorite", "content", "resize"],
+		"path": "Common/UI/UnitEdit.png",
+		"scale": [96,96],
+		"entry": "Btn_Lock.0.png"
+	},
+	"favorite_1": {
+		"actions": ["favorite", "content", "resize"],
+		"path": "Common/UI/UnitEdit.png",
+		"scale": [96,96],
+		"entry": "Btn_Lock.0.png"
+	},
+	"favorite_2": {
+		"actions": ["favorite", "content", "resize"],
+		"path": "Common/UI/UnitEdit.png",
+		"scale": [96,96],
+		"entry": "Btn_Lock.0.png"
+	},
+	"favorite_3": {
+		"actions": ["favorite", "content", "resize"],
+		"path": "Common/UI/UnitEdit.png",
+		"scale": [96,96],
+		"entry": "Btn_Lock.0.png"
+	},
+	"favorite_4": {
+		"actions": ["favorite", "content", "resize"],
+		"path": "Common/UI/UnitEdit.png",
+		"scale": [96,96],
+		"entry": "Btn_Lock.0.png"
+	},
+	"favorite_5": {
+		"actions": ["favorite", "content", "resize"],
+		"path": "Common/UI/UnitEdit.png",
+		"scale": [96,96],
+		"entry": "Btn_Lock.0.png"
+	},
+	"favorite_6": {
+		"actions": ["favorite", "content", "resize"],
+		"path": "Common/UI/UnitEdit.png",
+		"scale": [96,96],
+		"entry": "Btn_Lock.0.png"
+	},
+	"favorite_7": {
+		"actions": ["favorite", "content", "resize"],
+		"path": "Common/UI/UnitEdit.png",
+		"scale": [96,96],
+		"entry": "Btn_Lock.0.png"
+	},
+	"favorite_8": {
+		"actions": ["favorite", "content", "resize"],
+		"path": "Common/UI/UnitEdit.png",
+		"scale": [96,96],
+		"entry": "Btn_Lock.0.png"
+	},
+	"rarity1": {
+		"actions": ["rarity"],
+		"path": "Common/UI/UnitEdit_2.png",
+		"entry": "Star_1.png",
+		"scale": [53,53]
+	},
+	"rarity2": {
+		"actions": ["rarity"],
+		"path": "Common/UI/UnitEdit_2.png",
+		"entry": "Star_2.png",
+		"scale": [90,53]
+	},
+	"rarity3": {
+		"actions": ["rarity"],
+		"path": "Common/UI/UnitEdit_2.png",
+		"entry": "Star_3.png",
+		"scale": [126,53]
+	},
+	"rarity4": {
+		"actions": ["rarity"],
+		"path": "Common/UI/UnitEdit_2.png",
+		"entry": "Star_4.png",
+		"scale": [163,53]
+	},
+	"rarity5": {
+		"actions": ["rarity"],
+		"path": "Common/UI/UnitEdit_2.png",
+		"entry": "Star_5.png",
+		"scale": [200,53]
+	},
+	"rarityForma": {
+		"actions": ["rarity"],
+		"path": "Common/UI/UnitEdit_2.png",
+		"entry": "Star_5_Idol.png",
+		"scale": [200,53]
+	},
+	"red_orb": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Summon.png",
+		"scale": [160,160],
+		"entry": "Stone_R.png"
+	},
+	"blue_orb": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Summon.png",
+		"scale": [160,160],
+		"entry": "Stone_B.png"
+	},
+	"green_orb": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Summon.png",
+		"scale": [160,160],
+		"entry": "Stone_G.png"
+	},
+	"colorless_orb": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Summon.png",
+		"scale": [160,160],
+		"entry": "Stone_W.png"
+	},
+	"basenormalbg": {
+		"actions": ["resize"],
+		"path": "Common/UI/Bg_DetailedStatus.png",
+		"scale": [1067,1280]
+	},
+	"basesummonerbg": {
+		"actions": ["resize"],
+		"path": "Common/UI/Bg_DetailedStatus_Reliance.png",
+		"scale": [1067,1280]
+	},
+	"roomnormalbg": {
+		"actions": ["resize"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Ask.png",
+		"scale": [1067,1280]
+	},
+	"roomsummonerbg": {
+		"actions": ["resize"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Ask_Reliance.png",
+		"scale": [1067,1280]
+	},
+	"beachnormalbg": {
+		"actions": ["resize"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Beach.png",
+		"scale": [1067,1280]
+	},
+	"beachsummonerbg": {
+		"actions": ["resize"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Beach_Reliance.png",
+		"scale": [1067,1280]
+	},
+	"spookynormalbg": {
+		"actions": ["resize"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Halloween.png",
+		"scale": [1067,1280]
+	},
+	"spookysummonerbg": {
+		"actions": ["resize"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Halloween_Reliance.png",
+		"scale": [1067,1280]
+	},
+	"newyearnormalbg": {
+		"actions": ["resize"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_NewYear.png",
+		"scale": [1067,1280]
+	},
+	"newyearsummonerbg": {
+		"actions": ["resize"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_NewYear_Reliance.png",
+		"scale": [1067,1280]
+	},
+	"diningnormalbg": {
+		"actions": ["resize"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Dining.png",
+		"scale": [1067,1280]
+	},
+	"diningsummonerbg": {
+		"actions": ["resize"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Dining_Reliance.png",
+		"scale": [1067,1280]
+	},
+	"librarynormalbg": {
+		"actions": ["resize"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Library.png",
+		"scale": [1067,1280]
+	},
+	"librarysummonerbg": {
+		"actions": ["resize"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Library_Reliance.png",
+		"scale": [1067,1280]
+	},
+	"summoningaltar": {
+		"actions": ["resize"],
+		"path": "Common/UI/Bg_Summon_Stone.png",
+		"scale": [1067,1280]
+	},
+	"resplendent": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/UnitEdit_2.png",
+		"scale": [82,82],
+		"entry": "Icon_GodWear_L.png"
+	},
+	"resplendent-small": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Subscription/Subscription.png",
+		"scale": [82,82],
+		"entry": "Icon_GodWear.png"
+	},
+	"otherworldbond": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Item_2.png",
+		"scale": [46,46],
+		"entry": "Icon_ConnectBonds.png"
+	}
+}
