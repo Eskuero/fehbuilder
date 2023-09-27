@@ -13,7 +13,6 @@
 
 import json
 import pathlib
-import subprocess
 import math
 import os
 from PIL import Image
@@ -25,10 +24,14 @@ import utils
 import requests
 import io
 
-try:
-	os.mkdir("temp")
-except:
-	pass
+if "FEH_ASSETS_DIR" not in os.environ:
+	print("FEH_ASSETS_DIR must be a enviroment variable pointing to a folder with all feh assets")
+	sys.exit(1)
+else:
+	FEH_ASSETS_DIR = os.environ["FEH_ASSETS_DIR"]
+	if not pathlib.Path(FEH_ASSETS_DIR).is_dir():
+		print("FEH_ASSETS_DIR points to a non valid directory")
+		sys.exit(1)
 
 ##########################################################
 # Obtain all english translations for debugging purposes #
@@ -46,7 +49,7 @@ with open("../data/content/fullunits.json", "r") as datasource:
 	units = json.load(datasource)
 
 # Remote base location for all heroes data in an Android ADV
-HEROES_BASE_PATH = "/data/data/com.nintendo.zaba/files/assets/Common/Face/"
+HEROES_BASE_PATH = f"{FEH_ASSETS_DIR}/Common/Face/"
 
 # Loop through every hero definition to pull their art
 for unit in units:
@@ -86,8 +89,7 @@ for unit in units:
 			truename = engrishname["M" + unit] + ((": " + engrishname[unit.replace("PID", "MPID_HONOR")]) if "PID_" in unit else "")
 			print("              - \"" + truename + "\" missing asset \"" + art["localpath"] + "\", pulling from \"" + art["remotepath"] + "\"", end = ": ", flush = True)
 			try:
-				subprocess.run(['rsync', "--rsync-path", "/system/product/bin/rsync", 'device:' + HEROES_BASE_PATH + art["remotepath"], 'temp/heroart'], stderr = subprocess.DEVNULL)
-				with open("temp/heroart", "rb+") as tempimage:
+				with open(HEROES_BASE_PATH + art["remotepath"], "rb+") as tempimage:
 					image = Image.open(tempimage).resize(art["dimensions"])
 					# We save the icons as webp attempting the better compression method while being lossless to avoid quality drops
 					image.save(LOCAL_BASE_PATH + art["localpath"], 'WEBP')
@@ -101,18 +103,15 @@ with open("../data/content/fullskills.json", "r") as datasource:
 	skills = json.load(datasource)
 
 print("\n     - Pulling spritsheets for passive and weapon refine icons...")
-# First obtain all the icon spritesheets
-getlist = subprocess.Popen(["ssh", "device"], stdout = subprocess.PIPE, stdin=subprocess.PIPE, stderr=subprocess.DEVNULL)
-# Command to execute to get the list of files
-command = "ls /data/data/com.nintendo.zaba/files/assets/Common/UI/Skill_Passive*"
-spritesheets = getlist.communicate(input=command.encode())[0].decode().split()
+# Get the list of files that are spritelistis for passives
+spritesheetdir = f"{FEH_ASSETS_DIR}/Common/UI/"
+spritesheets = [dir for dir in os.listdir(spritesheetdir) if "Skill_Passive" in dir]
 # Pull each spritesheet and store them ordered
 orderedsheets = []
 for i in range(0, len(spritesheets)):
 	# Obtain the real index of the sheet. For that strip the filepath of everything but the number - 1
-	realindex = int(spritesheets[i].strip("/data/data/com.nintendo.zaba/files/assets/Common/UI/Skill_Passive").strip(".png")) - 1
-	subprocess.run(['rsync', "--rsync-path", "/system/product/bin/rsync", 'device:' + spritesheets[i], 'temp/sheet' + str(realindex)])
-	with open("temp/sheet" + str(realindex), "rb+") as tempimage:
+	realindex = int(spritesheets[i].strip("Skill_Passive").strip(".png")) - 1
+	with open(spritesheetdir + spritesheets[i], "rb+") as tempimage:
 		orderedsheets.insert(realindex, Image.open(tempimage))
 
 print("\n     - Cropping individual passive and weapon refine icons...")
@@ -163,11 +162,6 @@ for icon in icons:
 			print("Successful")
 		except:
 			print("Failed")
-
-# Clean after us
-for tempfile in os.listdir("temp"):
-	os.unlink("temp/" + tempfile)
-
 
 
 
