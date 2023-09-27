@@ -1746,79 +1746,64 @@
 		"entry": "Stone_W.png"
 	},
 	"basenormalbg": {
-		"actions": ["resize"],
-		"path": "Common/UI/Bg_DetailedStatus.png",
-		"scale": [1067,1280]
+		"actions": ["copy"],
+		"path": "Common/UI/Bg_DetailedStatus.png"
 	},
 	"basesummonerbg": {
-		"actions": ["resize"],
-		"path": "Common/UI/Bg_DetailedStatus_Reliance.png",
-		"scale": [1067,1280]
+		"actions": ["copy"],
+		"path": "Common/UI/Bg_DetailedStatus_Reliance.png"
 	},
 	"roomnormalbg": {
-		"actions": ["resize"],
-		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Ask.png",
-		"scale": [1067,1280]
+		"actions": ["copy"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Ask.png"
 	},
 	"roomsummonerbg": {
-		"actions": ["resize"],
-		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Ask_Reliance.png",
-		"scale": [1067,1280]
+		"actions": ["copy"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Ask_Reliance.png"
 	},
 	"beachnormalbg": {
-		"actions": ["resize"],
-		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Beach.png",
-		"scale": [1067,1280]
+		"actions": ["copy"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Beach.png"
 	},
 	"beachsummonerbg": {
-		"actions": ["resize"],
-		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Beach_Reliance.png",
-		"scale": [1067,1280]
+		"actions": ["copy"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Beach_Reliance.png"
 	},
 	"spookynormalbg": {
-		"actions": ["resize"],
-		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Halloween.png",
-		"scale": [1067,1280]
+		"actions": ["copy"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Halloween.png"
 	},
 	"spookysummonerbg": {
-		"actions": ["resize"],
-		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Halloween_Reliance.png",
-		"scale": [1067,1280]
+		"actions": ["copy"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Halloween_Reliance.png"
 	},
 	"newyearnormalbg": {
-		"actions": ["resize"],
-		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_NewYear.png",
-		"scale": [1067,1280]
+		"actions": ["copy"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_NewYear.png"
 	},
 	"newyearsummonerbg": {
-		"actions": ["resize"],
-		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_NewYear_Reliance.png",
-		"scale": [1067,1280]
+		"actions": ["copy"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_NewYear_Reliance.png"
 	},
 	"diningnormalbg": {
-		"actions": ["resize"],
-		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Dining.png",
-		"scale": [1067,1280]
+		"actions": ["copy"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Dining.png"
 	},
 	"diningsummonerbg": {
-		"actions": ["resize"],
-		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Dining_Reliance.png",
-		"scale": [1067,1280]
+		"actions": ["copy"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Dining_Reliance.png"
 	},
 	"librarynormalbg": {
-		"actions": ["resize"],
-		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Library.png",
-		"scale": [1067,1280]
+		"actions": ["copy"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Library.png"
 	},
 	"librarysummonerbg": {
-		"actions": ["resize"],
-		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Library_Reliance.png",
-		"scale": [1067,1280]
+		"actions": ["copy"],
+		"path": "Common/UI/Bg_DetailedStatus/Bg_DetailedStatus_Library_Reliance.png"
 	},
 	"summoningaltar": {
-		"actions": ["resize"],
-		"path": "Common/UI/Bg_Summon_Stone.png",
-		"scale": [1067,1280]
+		"actions": ["copy"],
+		"path": "Common/UI/Bg_Summon_Stone.png"
 	},
 	"resplendent": {
 		"actions": ["plist", "resize"],
