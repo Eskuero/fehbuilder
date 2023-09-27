@@ -66,7 +66,7 @@ for image in images:
 	# When copying we just move the tempart to the final destination, keep the .webp extension since it's the original format and skip all remaining actions even if asked.
 	if "copy" in actions:
 		try:
-			shutil.copy2(path, OUTPUT_DIR + image + ".webp")
+			shutil.copyfile(path, OUTPUT_DIR + image + ".webp")
 		except:
 			print(f"   - Failed to copy to final directory")
 			continue
