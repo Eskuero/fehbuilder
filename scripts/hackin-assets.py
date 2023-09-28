@@ -105,14 +105,6 @@ with open("../data/content/fullskills.json", "r") as datasource:
 print("\n     - Pulling spritsheets for passive and weapon refine icons...")
 # Get the list of files that are spritelistis for passives
 spritesheetdir = f"{FEH_ASSETS_DIR}/Common/UI/"
-spritesheets = [dir for dir in os.listdir(spritesheetdir) if "Skill_Passive" in dir]
-# Pull each spritesheet and store them ordered
-orderedsheets = []
-for i in range(0, len(spritesheets)):
-	# Obtain the real index of the sheet. For that strip the filepath of everything but the number - 1
-	realindex = int(spritesheets[i].strip("Skill_Passive").strip(".png")) - 1
-	with open(spritesheetdir + spritesheets[i], "rb+") as tempimage:
-		orderedsheets.insert(realindex, Image.open(tempimage))
 
 print("\n     - Cropping individual passive and weapon refine icons...")
 # For ease of looping create a big dictionary that specifies the expected local path and the iconid too
@@ -142,7 +134,8 @@ for icon in icons:
 		# Once we know which sheet we can calculate the ID within it by substracting the starting index from the one we are using
 		idwithin = icons[icon]["iconid"] - (sheet * 169)
 		# The starting object is the entire spritesheett, which we copy
-		iconimage = orderedsheets[sheet].copy()
+		with open(f"{spritesheetdir}/Skill_Passive{str(sheet+1)}.png", "rb+") as tempimage:
+			iconimage = Image.open(tempimage)
 		# Initially we are cropping all icons to 76 x 76 for ease on some checks
 		# We calculate the coordinates of each icon box knowing that each line is 13 icons wide
 		line = math.floor(idwithin / 13)
