@@ -1,0 +1,36 @@
+[
+	{
+		"id_tag": "EID_\u30d4\u30a2\u30cb\u30fc2",
+		"roman": "PEONY2_ENEMY",
+		"face_name": "ch00_23_Peony_F_Normal2",
+		"face_name2": "ch00_23_Peony_F_Normal2",
+		"top_weapon": "SID_\u89aa\u611b\u306e\u82b1",
+		"unique_assist1": "SID_\u8e0a\u308b",
+		"unique_assist2": "SID_\u3084\u3055\u3057\u3044\u3086\u3081",
+		"unique_special": null,
+		"timestamp": null,
+		"id_num": 102,
+		"is_npc": false,
+		"weapon_type": 2,
+		"tome_class": 0,
+		"move_type": 3,
+		"random_allowed": false,
+		"is_boss": true,
+		"refresher": true,
+		"is_enemy": true,
+		"base_stats": {
+			"hp": 17,
+			"atk": 9,
+			"spd": 9,
+			"def": 2,
+			"res": 4
+		},
+		"growth_rates": {
+			"hp": 50,
+			"atk": 70,
+			"spd": 80,
+			"def": 50,
+			"res": 55
+		}
+	}
+]
