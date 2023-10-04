@@ -189,7 +189,7 @@ function populate() {
 		if (other["blessed"][heroes[i]]) {
 			let blessing = document.createElement('img');
 			blessing.className = "iconinfo blessing";
-			blessing.src = "/common/other/" + other["blessed"][heroes[i]]["blessing"] + "-Blessing-special.webp";
+			blessing.src = "/common/other/" + other["blessed"][heroes[i]]["blessing"] + "-Blessing-mini.webp";
 			blessing.title = "Default Blessing";
 			opt.appendChild(blessing);
 		}
@@ -208,7 +208,7 @@ function changetype(caller) {
 	// Depending on the origin compose different urls
 	switch (iconid) {
 		case "blessing":
-			var url = "/common/other/" + iconnumber + "-Blessing-special.webp";
+			var url = "/common/other/" + iconnumber + "-Blessing-mini.webp";
 			break;
 		case "weapon":
 		case "move":

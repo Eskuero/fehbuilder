@@ -244,6 +244,9 @@ input[type=checkbox] {
 	height: 2em; /* Prevent the labels from blowing out */
 	margin: auto; /* Make sure they are centered within their space since not all square shaped */
 }
+.dinamiclabel#moveicon {
+	height: 1.7em;
+}
 .select-without-search {
 	font-size: inherit;
 	background-color: white;
