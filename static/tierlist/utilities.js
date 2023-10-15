@@ -204,7 +204,7 @@ function loadsave(save = selectsavelist.value) {
 			if (other["blessed"][character]) {
 				let blessing = document.createElement('img');
 				blessing.className = "iconinfo blessing";
-				blessing.src = "/common/other/" + other["blessed"][character]["blessing"] + "-Blessing-special.webp";
+				blessing.src = "/common/other/" + other["blessed"][character]["blessing"] + "-Blessing-mini.webp";
 				opt.appendChild(blessing);
 			}
 			tier.children[1].appendChild(opt);
