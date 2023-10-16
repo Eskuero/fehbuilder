@@ -735,6 +735,14 @@ async function myunit() {
 		"C": selectC.value == "None" ? false : selectC.value,
 		"S": selectS.value == "None" ? false : selectS.value
 	};
+	// Only add X if the value is not "None"
+	if (selectX.value != "None") {
+		passives["X"] = selectX.value;
+		// Start downloading the skill holder if so
+		var xskilljob = getimage(other["images"]["other"]["xskillholder"]).then(img => {
+			preview.drawImage(img, 342, 1112);
+		});
+	}
 	var summoner = selectsummoner.value == "None" ? false : selectsummoner.value;
 	var buffs = [
 		0,
@@ -900,6 +908,10 @@ async function myunit() {
 
 	// Render all the passives
 	for (const [category, skill] of Object.entries(passives)) {
+		// For category X we must make sure the holder is ready
+		if (category == "X") {
+			await xskilljob;
+		}
 		let name = "-";
 		// If the passive doesn't exist skip
 		if (allpassives[skill]) {

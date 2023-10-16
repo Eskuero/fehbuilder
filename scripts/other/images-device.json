@@ -713,6 +713,12 @@
 		"scale": [21,21],
 		"entry": "Icon_AccessoryS.png"
 	},
+	"indicator-skillX": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Resonate.png",
+		"scale": [21,21],
+		"entry": "Icon_PassiveX.png"
+	},
 	"1-Blessing": {
 		"actions": ["plist", "resize"],
 		"path": "Common/UI/Blessing.png",

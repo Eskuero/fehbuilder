@@ -54,6 +54,9 @@ def main():
 	# Load Btn_BgChange
 	Btn_BgChange = {}
 	Btn_BgChange["plist"], Btn_BgChange["image"] = loadasset("Btn_BgChange")
+	# Load Resonate
+	Resonate = {}
+	Resonate["plist"], Resonate["image"] = loadasset("Resonate")
 
 	# Crop out the base background
 	image = cropentry(Common_Window["plist"]["Wdw_List.png"], Common_Window["image"])
@@ -230,6 +233,14 @@ def main():
 	variantname = "foreground-ui"
 	# We can save this image right now before moving onto other variants
 	baseimage.save(OUTPUT_DIR + variantname + OUTPUT_EXTENSION, 'WEBP', lossless = True, quality = 100, method = 6)
+
+	# Now generate the individual holder for X skills that's only downloaded on demand
+	image = cropentry(Resonate["plist"]["Frm_InfoEdit_Resonate.png"], Resonate["image"])
+	imageexpanded = expandslot(image, (111,53), (329, 53), (0,0,55,53), (0, 0), (57,0,164,53), (272, 0), (56,0,57,53), 217, 55)
+	# Variant name for this image
+	variantname = "Xskillholder"
+	# We can save this image right now before moving onto other variants
+	imageexpanded.save(OUTPUT_DIR + variantname + OUTPUT_EXTENSION, 'WEBP', lossless = True, quality = 100, method = 6)
 
 def loadasset(path):
 	with open(FEH_ASSETS_DIR + "Common/UI/" + path + ".plist", "rb") as infile:

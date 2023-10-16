@@ -26,6 +26,7 @@ async function populateall(clean, bypass = []) {
 	selectB = await populate(document.getElementById('Bskill'), skills["passives"]["B"], clean);
 	selectC = await populate(document.getElementById('Cskill'), skills["passives"]["C"], clean);
 	selectS = await populate(document.getElementById('Sskill'), Object.assign({}, skills["passives"]["S"], cheats.checked ? Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"]) : {}), clean);
+	selectX = await populate(document.getElementById('Xskill'), skills["passives"]["X"], clean);
 	// Add only the required amount of flowers
 	updatedragonflowers();
 	// Update translations
@@ -173,9 +174,17 @@ async function populate(domitem, data, clean, bypass) {
 			if (data[value]["prf"]) {
 				if (basekit.includes(value)) {
 					add = true;
-					// For selects not a weapon, if the selected weapon is arcane and not in the units basekit, exclude prf skils
+					// For selects not a weapon, if there's an arcane weapon which is not in the units basekit, exclude prf skills
 					if (domitem.id != "weapon" && selectweapons.value != "None") {
 						if (skills["weapons"][selectweapons.value]["arcane"] && !basekit.includes(selectweapons.value)
+						// FIXME: We also ignore for Sing, Play and Dance. Find a better way?
+						&& !["SID_踊る","SID_奏でる","SID_歌う"].includes(value)) {
+							add = false;
+						}
+					}
+					// For selects not a weapon, if there's an echo skill which is not in the units basekit, exclude prf skills
+					if (domitem.id != "weapon" && selectX.value != "None") {
+						if (!basekit.includes(selectX.value)
 						// FIXME: We also ignore for Sing, Play and Dance. Find a better way?
 						&& !["SID_踊る","SID_奏でる","SID_歌う"].includes(value)) {
 							add = false;
@@ -369,7 +378,7 @@ function updatedragonflowers() {
 async function switchbuild(build) {
 	// List of values to be restored on each slot
 	var selects = [selectrarity, selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials,
-		selectassists, selectA, selectB, selectC, selectS, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef,
+		selectassists, selectA, selectB, selectC, selectS, selectX, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef,
 		selectres, selectatkpairup, selectspdpairup, selectdefpairup, selectrespairup, selectsp, selecthm, selectartstyle, selecttemplate,
 		selectoffsetY, selectoffsetX, selectmirror, selectbackground, selectfavorite, selectaccessory, selectotherworldbond, appui, selectlevel];
 
@@ -399,7 +408,7 @@ async function switchbuild(build) {
 	// Switch active slot
 	buildslot = build;
 	// Before restoring any changes skill slots must be cleaned since otherwise they will be ilegally carried over from other slots
-	var mustclean = [selectweapons, selectspecials, selectassists, selectA, selectB, selectC, selectS];
+	var mustclean = [selectweapons, selectspecials, selectassists, selectA, selectB, selectC, selectS, selectX];
 	for (let i = 0; i < mustclean.length; i++) {
 		mustclean[i].value = "None";
 	}
@@ -412,7 +421,7 @@ async function switchbuild(build) {
 	await populateall(false); statictranslations();
 	// List of values to be restored on each slot (we have to refresh this here again because some selects got regenerated and reassigned)
 	var selects = [selectrarity, selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials,
-		selectassists, selectA, selectB, selectC, selectS, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef,
+		selectassists, selectA, selectB, selectC, selectS, selectX, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef,
 		selectres, selectatkpairup, selectspdpairup, selectdefpairup, selectrespairup, selectsp, selecthm, selectartstyle, selecttemplate,
 		selectoffsetY, selectoffsetX, selectmirror, selectbackground, selectfavorite, selectaccessory, selectotherworldbond, appui, selectlevel];
 	// Trigger a rebuild of the refine select based on the selection of weapon
@@ -537,6 +546,7 @@ function reset(section) {
 			selectB.value = "None";
 			selectC.value = "None";
 			selectS.value = "None";
+			selectX.value = "None";
 			// Trigger a rebuild of the selects based on the language filters set
 			populateall(false);
 		break;
@@ -599,7 +609,8 @@ function applybasekit() {
 		"special": false,
 		"A": false,
 		"B": false,
-		"C": false
+		"C": false,
+		"X": false
 	};
 	var fullkit = units[selectheroes.value]["basekit"];
 	for (let i = 0; i < fullkit.length; i++) {
@@ -645,6 +656,12 @@ function applybasekit() {
 					basekit["C"] = fullkit[i];
 				}
 			}
+		} else if (skills["passives"]["X"][fullkit[i]]) {
+			for (let j = 0; j < selectX.options.length; j++) {
+				if (selectX.options[j].value == fullkit[i]) {
+					basekit["X"] = fullkit[i];
+				}
+			}
 		}
 	}
 	selectweapons.value = basekit["weapon"] ? basekit["weapon"] : "None";
@@ -661,6 +678,7 @@ function applybasekit() {
 	selectA.value = basekit["A"] ? basekit["A"] : "None";
 	selectB.value = basekit["B"] ? basekit["B"] : "None";
 	selectC.value = basekit["C"] ? basekit["C"] : "None";
+	selectX.value = basekit["X"] ? basekit["X"] : "None";
 
 	// Trigger a rebuild of the selects based on the language filters set
 	populateall(false);

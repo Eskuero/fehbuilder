@@ -302,7 +302,8 @@ passiverender = {
 	"A": {"icon": [369, 925], "text": [420, 936], "indicator": [396, 947]},
 	"B": {"icon": [369, 973], "text": [420, 984], "indicator": [397, 997]},
 	"C": {"icon": [369, 1021], "text": [420, 1032], "indicator": [397, 1045]},
-	"S": {"icon": [369, 1070], "text": [420, 1079], "indicator": [396, 1093]}
+	"S": {"icon": [369, 1070], "text": [420, 1079], "indicator": [396, 1093]},
+	"X": {"icon": [369, 1119], "text": [420, 1127], "indicator": [396, 1142]}
 };
 // Condensed canvas position to render images passive icons at
 passivecondensedrender = {

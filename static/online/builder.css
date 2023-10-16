@@ -130,8 +130,13 @@ body {
 	grid-template-rows: auto;
 	grid-template-columns: repeat(2, 1fr); /* Header, allies, buffs and pairups are undefined number of rows in two columns */
 }
-.unitform, .skillsform {
+.unitform {
 	grid-template-rows: repeat(4, auto); /* Unit and Skills section are two columns with 4 elements each */
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-flow: column;
+}
+.skillsform {
+	grid-template-rows: repeat(5, auto); /* Unit and Skills section are two columns with 4 elements each */
 	grid-template-columns: repeat(2, 1fr);
 	grid-auto-flow: column;
 }
@@ -169,6 +174,9 @@ body {
 }
 .row-property.fat {
 	grid-template-rows: auto; /* Allow this grid section to grow it's height indefinetely */
+}
+.row-property.rowsplaining {
+	grid-row: span 2;
 }
 .additionaloptions {
 	grid-template-columns: 1fr 2fr; /* Use a bit more of space for the checkboxes */
@@ -300,7 +308,7 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 /* Rebspicker variables */
-#selectheroes, #weapon, #special, #assist, #Askill, #Bskill, #Cskill, #Sskill {
+#selectheroes, #weapon, #special, #assist, #Askill, #Bskill, #Cskill, #Sskill, #Xskill {
 	--collapsed-select-height: 1.9em;
 	--select-width: 100%;
 	--list-item-max: 6;
