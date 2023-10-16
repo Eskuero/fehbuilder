@@ -138,6 +138,7 @@ othertier = {
 	"resonant": other["resonant"],
 	"ascended": other["ascended"],
 	"rearmed": other["rearmed"],
+	"attuned": other["attuned"],
 	"seasonals": hardcoded["seasonals"]
 }
 with open("tierother.json", "w") as outfile:
