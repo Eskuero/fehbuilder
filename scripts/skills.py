@@ -34,12 +34,13 @@ skills = {
 		"A": {},
 		"B": {},
 		"C": {},
+		"X": {},
 		"S": {}
 	},
 	"assists": {},
 	"specials": {}
 }
-categories = [skills["weapons"], skills["assists"], skills["specials"], skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"]]
+categories = [skills["weapons"], skills["assists"], skills["specials"], skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["X"], skills["passives"]["S"]]
 refines = {}
 allskills = {}
 
@@ -54,8 +55,8 @@ for file in files:
 			allskills[entry["id_tag"]] = entry
 			# Store all the data except if it's a refine
 			if not entry["refine_base"] and entry["category"] in range(0, 8):
-				# Force all exclusive seals to be ctargory 6 for easy of appending to the "categories" list
-				category = 6 if entry["category"] == 7 else entry["category"]
+				# All passives have weapon and move restrictions stored
+				category = entry["category"]
 				categories[category][entry["id_tag"]] = {
 					"weapon": entry["wep_equip"],
 					"move": entry["mov_equip"]
@@ -64,19 +65,19 @@ for file in files:
 				if entry["exclusive"]:
 					categories[category][entry["id_tag"]]["prf"] = True
 				# Always default to max false for seals since we modify the info later when filling the data
-				if not entry["next_skill"] and not entry["passive_next"] and entry["category"] not in [6,7]:
+				if not entry["next_skill"] and not entry["passive_next"] and category != 7:
 					categories[category][entry["id_tag"]]["max"] = True
 				# Specials and Assists do not provide visible stats
-				if entry["category"] not in [1,2]:
+				if category not in [1,2]:
 					categories[category][entry["id_tag"]]["stats"] = [value for value in entry["stats"].values()]
 				# For weapons add the might as part of the statsmodifiers for Atk, emtpy refines definition and indication of being arcane
-				if entry["category"] == 0:
+				if category == 0:
 					skills["weapons"][entry["id_tag"]]["stats"][1] += entry["might"]
 					skills["weapons"][entry["id_tag"]]["refines"] = {}
 					if entry["arcane_weapon"]:
 						skills["weapons"][entry["id_tag"]]["arcane"] = True
 				# For passives add the iconid at the top level
-				elif entry["category"] in range(3, 8):
+				elif category in range(3, 8):
 					categories[category][entry["id_tag"]]["iconid"] = entry["icon_id"]
 
 			# For refines we just store them separetely for later processing
@@ -174,7 +175,7 @@ skillsonline = {
 			}
 			for passive, properties in skills["passives"][passivecategory].items()
 		}
-		for passivecategory in ["A", "B", "C", "S"]
+		for passivecategory in ["A", "B", "C", "X", "S"]
     },
 	"assists": skills["assists"],
 	"specials": skills["specials"]
@@ -206,7 +207,7 @@ skillscustom = {
 			}
 			for passive, properties in skills["passives"][passivecategory].items()
 		}
-		for passivecategory in ["A", "B", "C", "S"]
+		for passivecategory in ["A", "B", "C", "X", "S"]
     }
 }
 with open("customskills.json", "w") as outfile:
