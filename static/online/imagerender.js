@@ -674,17 +674,17 @@ async function myunit() {
 			var voice = hero.includes("PID_") ? languages[language][hero.replace("PID", "MPID_VOICE")] : "";
 			var artist = hero.includes("PID_") ? languages[language][hero.replace("PID", "MPID_ILLUST")] : "";
 		}
-		preview.strokeText(voice, 47, 1213); preview.fillText(voice, 47, 1213);
-		preview.strokeText(artist, 47, 1242); preview.fillText(artist, 47, 1242);
+		preview.strokeText(voice, 47, 1222); preview.fillText(voice, 47, 1222);
+		preview.strokeText(artist, 47, 1251); preview.fillText(artist, 47, 1251);
 		// Print favorite icon
 		renderjobs.push(getimage(other["images"]["favorite"][selectfavorite.value]).then(img => {
-			preview.drawImage(img, 1, 226, 96, 96);
+			preview.drawImage(img, 0, 212, 96, 96);
 		}));
 		// Translate buttons
 		preview.font = '24px FeH-Font'; preview.textAlign = 'center'; preview.textBaseline = "middle";
-		preview.strokeText(languages[language]["MID_UNIT_INFO_TO_SKILLSET"], 126, 1175); preview.fillText(languages[language]["MID_UNIT_INFO_TO_SKILLSET"], 126, 1175);
-		preview.strokeText(languages[language]["MID_UNIT_INFO_TO_SKILLEQUIP"], 360, 1175); preview.fillText(languages[language]["MID_UNIT_INFO_TO_SKILLEQUIP"], 360, 1175);
-		preview.strokeText(languages[language]["MID_UNIT_INFO_TO_SKILLLEARN"], 594, 1175); preview.fillText(languages[language]["MID_UNIT_INFO_TO_SKILLLEARN"], 594, 1175);
+		preview.strokeText(languages[language]["MID_UNIT_INFO_TO_SKILLSET"], 126, 1193); preview.fillText(languages[language]["MID_UNIT_INFO_TO_SKILLSET"], 126, 1193);
+		preview.strokeText(languages[language]["MID_UNIT_INFO_TO_SKILLEQUIP"], 360, 1193); preview.fillText(languages[language]["MID_UNIT_INFO_TO_SKILLEQUIP"], 360, 1193);
+		preview.strokeText(languages[language]["MID_UNIT_INFO_TO_SKILLLEARN"], 594, 1193); preview.fillText(languages[language]["MID_UNIT_INFO_TO_SKILLLEARN"], 594, 1193);
 		preview.font = '26px FeH-Font';
 		preview.strokeText(languages[language]["MID_UNIT_INFO_TO_TALK"], 617, 47); preview.fillText(languages[language]["MID_UNIT_INFO_TO_TALK"], 617, 47);
 	}
@@ -710,11 +710,11 @@ async function myunit() {
 		} else {
 			preview.fillStyle = "#ffffff";
 		}
-		preview.strokeText(languages[language][statsstrings[i]], 115, 805 + (i * 49) + (i * 0.3)); preview.fillText(languages[language][statsstrings[i]], 115, 805 + (i * 49) + (i * 0.3));
+		preview.strokeText(languages[language][statsstrings[i]], 115, 789 + (i * 49) + (i * 0.3)); preview.fillText(languages[language][statsstrings[i]], 115, 789 + (i * 49) + (i * 0.3));
 	}
 	preview.font = '24px FeH-Font'; preview.fillStyle = 'white';
-	preview.strokeText(languages[language]["MID_SKILL_POINT"], 120, 1052); preview.fillText(languages[language]["MID_SKILL_POINT"], 120, 1052);
-	preview.strokeText(languages[language]["MID_HEROISM_POINT"], 115, 1103); preview.fillText(languages[language]["MID_HEROISM_POINT"], 115, 1103);
+	preview.strokeText(languages[language]["MID_SKILL_POINT"], 120, 1033); preview.fillText(languages[language]["MID_SKILL_POINT"], 120, 1033);
+	preview.strokeText(languages[language]["MID_HEROISM_POINT"], 115, 1081); preview.fillText(languages[language]["MID_HEROISM_POINT"], 115, 1081);
 
 	var flowers = parseInt(selectflowers.value);
 	// Obtain the calculated stats to draw
@@ -758,13 +758,13 @@ async function myunit() {
 		// Decide type of font depending on if we buffer, debuffed or neutral
 		let numbertype = buffs[i] > 0 ? 2 : (buffs[i] < 0 ? 3 : 0);
 		// Each stat name is pushed down by 49 pixels with an initial offset of 805
-		printnumbers(preview, statsmodifier[i], numbertype, 265, 805 + (i * 49) + (i * 0.3), "end");
+		printnumbers(preview, statsmodifier[i], numbertype, 265, 789 + (i * 49) + (i * -0.5), "end");
 	}
 	// Print the amount of SP and HM
 	var numbertype = selectsp.value == "9999" ? 4 : 0;
-	printnumbers(preview, parseInt(selectsp.value), numbertype, 265, 1052, "end");
+	printnumbers(preview, parseInt(selectsp.value), numbertype, 265, 1032, "end");
 	var numbertype = selecthm.value == MAXHM ? 4 : 0;
-	printnumbers(preview, parseInt(selecthm.value), numbertype, 265, 1100, "end");
+	printnumbers(preview, parseInt(selecthm.value), numbertype, 265, 1079, "end");
 
 	// Print the ascendent floret icon if selected
 	if (ascendent) {
@@ -777,11 +777,11 @@ async function myunit() {
 	if (accessory) {
 		// We always wait for extended baseinfo golder before printing anything else there
 		accexpandjob = getimage(other["images"]["other"]["accessoryexpand"]).then(img => {
-			preview.drawImage(img, 4, 732);
+			preview.drawImage(img, 4, 725);
 		});
 		renderjobs.push(getimage(other["images"]["accessory"][accessory]).then(async img => {
 			await accexpandjob;
-			preview.drawImage(img, 256, 743, 32, 32);
+			preview.drawImage(img, 256, 736, 32, 32);
 		}));
 	}
 
@@ -793,14 +793,14 @@ async function myunit() {
 		if (accessory) {
 			await accexpandjob;
 		}
-		preview.drawImage(img, posX, 743, 32, 32);
+		preview.drawImage(img, posX, 736, 32, 32);
 	}));
 	renderjobs.push(getimage(other["images"]["weapontype"][units[hero]["weapon"]]).then(async img => {
 		// If an accessory was defined, wait until the expansion is rendered
 		if (accessory) {
 			await accexpandjob;
 		}
-		preview.drawImage(img, 18, 741);
+		preview.drawImage(img, 18, 734);
 	}));
 
 	// If an accessory was defined, wait until the expansion is rendered
@@ -809,17 +809,17 @@ async function myunit() {
 	}
 	// Print the level string
 	preview.font = '24px FeH-Font'; preview.fillStyle = "#ffffff"; preview.strokeStyle = '#0a2533'; preview.textAlign = 'start';
-	preview.strokeText(languages[language]["MID_LEVEL2"], 70, 746); preview.fillText(languages[language]["MID_LEVEL2"], 70, 746);
+	preview.strokeText(languages[language]["MID_LEVEL2"], 70, 739); preview.fillText(languages[language]["MID_LEVEL2"], 70, 739);
 	// Print the level 40. It was hardcoded previously so we just do this to make sure it doesn't look off side by side with the merge count
 	var level = selectlevel.value == "level1" ? 1 : 40;
-	printnumbers(preview, level, 1, 124, 745, "start");
+	printnumbers(preview, level, 1, 124, 738, "start");
 
 	// If we have merges we add the text next to the level
 	if (merges > 0) {
 		// Decide type of font depending on if we are fully merged or not
 		var numbertype = merges == 10 ? 4 : 1;
-		printnumbers(preview, "+", numbertype, 163, 748, "start");
-		printnumbers(preview, merges, numbertype, 181, 745, "start");
+		printnumbers(preview, "+", numbertype, 163, 741, "start");
+		printnumbers(preview, merges, numbertype, 181, 738, "start");
 	}
 	preview.fillStyle = "#ffffff";
 
@@ -829,18 +829,18 @@ async function myunit() {
 		flholderjob = getimage(other["images"]["other"]["flowerholder"]).then(img => {
 			// Position is slightly off if we had an accessory
 			let posX = accessory ? 271 + 27 : 271;
-			preview.drawImage(img, posX, 732);
+			preview.drawImage(img, posX, 725);
 		});
 		renderjobs.push(getimage(other["images"]["flowers"][units[hero]["move"]]).then(async img => {
 			// Position is slightly off if we had an accessory
 			let posX = accessory ? 289 + 27 : 289;
 			// Wait until the expansion is rendered
 			await flholderjob;
-			preview.drawImage(img, posX, 727, 60, 60);
+			preview.drawImage(img, posX, 720, 60, 60);
 			// Position for flower amount is off if we had an accessory
 			var offset = (accessory ? 27 : 0);
-			printnumbers(preview, "+", 1, 345 + offset, 748, "start");
-			printnumbers(preview, flowers, 1, 364 + offset, 745, "start");
+			printnumbers(preview, "+", 1, 345 + offset, 741, "start");
+			printnumbers(preview, flowers, 1, 364 + offset, 738, "start");
 		}));
 	}
 
@@ -848,22 +848,22 @@ async function myunit() {
 	renderjobs.push(getimage(other["images"]["other"]["expindicator"]).then(img => {
 		// Position is off if we had an accessory and flowers
 		let posX = 271 + (accessory ? 27 : 0) + (flowers > 0 ? 147 : 0);
-		preview.drawImage(img, posX, 732);
+		preview.drawImage(img, posX, 725);
 		// Position for text is off if we had an accessory and flowers
 		var offset = (accessory ? 27 : 0) + (flowers > 0 ? 147 : 0);
-		preview.strokeText(languages[language]["MID_EXP"], 308 + offset, 745); preview.fillText(languages[language]["MID_EXP"], 308 + offset, 745);
+		preview.strokeText(languages[language]["MID_EXP"], 308 + offset, 738); preview.fillText(languages[language]["MID_EXP"], 308 + offset, 738);
 		if (selectlevel.value == "level1") {
 			preview.font = '21px FeH-Font';
 			// Print "Next" exp level indicator
-			preview.strokeText(languages[language]["MID_UNIT_INFO_EXP_REMAIN"], 380 + offset, 743); preview.fillText(languages[language]["MID_UNIT_INFO_EXP_REMAIN"], 380 + offset, 743);
+			preview.strokeText(languages[language]["MID_UNIT_INFO_EXP_REMAIN"], 380 + offset, 738); preview.fillText(languages[language]["MID_UNIT_INFO_EXP_REMAIN"], 380 + offset, 738);
 			// Hardcode to 100 to next exp since we always use level 1
-			printnumbers(preview, 100, 1, 465 + offset, 742, "start", 0.8);
+			printnumbers(preview, 100, 1, 465 + offset, 735, "start", 0.8);
 			// Show an empty rectangle
-			preview.rect(380 + offset, 768, 130, 7);
+			preview.rect(380 + offset, 761, 130, 7);
 			preview.fillStyle = "#193135";
 			preview.fill();
 		} else {
-			preview.strokeText(languages[language]["MID_UNIT_INFO_EXP_MAX"], 415 + offset, 745); preview.fillText(languages[language]["MID_UNIT_INFO_EXP_MAX"], 415 + offset, 745);
+			preview.strokeText(languages[language]["MID_UNIT_INFO_EXP_MAX"], 415 + offset, 738); preview.fillText(languages[language]["MID_UNIT_INFO_EXP_MAX"], 415 + offset, 738);
 		}
 	}));
 
@@ -876,7 +876,7 @@ async function myunit() {
 			var weaponicon = "../common/icons/" + weapon + "-Effect.webp";
 		}
 		renderjobs.push(getimage(weaponicon).then(img => {
-			preview.drawImage(img, 370, 798, 44, 44);
+			preview.drawImage(img, 370, 782, 44, 44);
 		}));
 		// Get the string to print
 		var printableweapon = languages[language]["M" + weapon];
@@ -884,19 +884,19 @@ async function myunit() {
 	} else {
 		var printableweapon = "-";
 		renderjobs.push(getimage(other["images"]["other"]["noweapon"]).then(img => {
-			preview.drawImage(img, 370, 798, 44, 44);
+			preview.drawImage(img, 370, 782, 44, 44);
 		}));
 	}
 	// We always paste the text because it might as well be unarmed and have a "-"
 	preview.font = '24px FeH-Font'; preview.fillStyle = refine ? "#82f546" : "#ffffff";
-	preview.strokeText(printableweapon, 420, 806); preview.fillText(printableweapon, 420, 806);
+	preview.strokeText(printableweapon, 420, 790); preview.fillText(printableweapon, 420, 790);
 
 	var assist = selectassists.value == "None" ? "-" : languages[language]["M" + selectassists.value];
 	var special = selectspecials.value == "None" ? "-" : languages[language]["M" + selectspecials.value];
 	// Print assist and special info
 	preview.fillStyle = "#ffffff";
-	preview.strokeText(assist, 420, 854); preview.fillText(assist, 420, 854);
-	preview.strokeText(special, 420, 904); preview.fillText(special, 420, 904);
+	preview.strokeText(assist, 420, 838); preview.fillText(assist, 420, 838);
+	preview.strokeText(special, 420, 888); preview.fillText(special, 420, 888);
 
 	// Render all the passives
 	for (const [category, skill] of Object.entries(passives)) {
@@ -962,7 +962,7 @@ async function myunit() {
 		// If appui is enabled we also print the conversation icon for duos/resonance
 		if (appui.checked && ["Duo", "Resonance"].includes(specialtype)) {
 			renderjobs.push(getimage(other["images"]["other"]["duoconversation"]).then(img => {
-				preview.drawImage(img, 1, 412);
+				preview.drawImage(img, 0, 398);
 			}));
 		}
 	}
