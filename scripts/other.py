@@ -36,6 +36,7 @@ other = {
 	"resonant": [],
 	"ascended": [],
 	"rearmed" : [],
+	"attuned" : [],
 	"duokeywords": hardcoded["duokeywords"],
 	"images": hardcoded["images"],
 	"seasonals": hardcoded["seasonals"],
@@ -63,9 +64,9 @@ for file in files:
 				# Extra slots in AR always give out stats
 				if entry["legendary"]["ae_extra"]:
 					other["blessed"][entry["id_tag"]]["variant"] += "-extrae"
-			# If the unit doesn't have element but is of kind 2, 3, 4, 5 is a rare special type we remember separately
-			elif entry["legendary"]["kind"] in [2, 3, 4, 5]:
-				specialtype = [None, None, "duo", "resonant", "ascended", "rearmed"][entry["legendary"]["kind"]]
+			# If the unit doesn't have element but is of kind 2, 3, 4, 5, 6 is a rare special type we remember separately
+			elif entry["legendary"]["kind"] in [2, 3, 4, 5, 6]:
+				specialtype = [None, None, "duo", "resonant", "ascended", "rearmed", "attuned"][entry["legendary"]["kind"]]
 				other[specialtype].append(entry["id_tag"])
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -80,6 +81,7 @@ otheronline = {
 	"duo": other["duo"],
 	"ascended": other["ascended"],
 	"rearmed": other["rearmed"],
+	"attuned": other["attuned"],
 	"resonant": other["resonant"],
 	"duokeywords": hardcoded["duokeywords"],
 	"images": hardcoded["images"]

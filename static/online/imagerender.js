@@ -948,6 +948,8 @@ async function myunit() {
 		var specialtype = "Ascended";
 	} else if (other["rearmed"].includes(hero)) {
 		var specialtype = "Rearmed";
+	} else if (other["attuned"].includes(hero)) {
+		var specialtype = "Attuned";
 	}
 	// Detect if we are printing more than three icons (this could happen on duo/blessed/summoner supported allies) so we can resize accordingly
 	var needsresize = blessing && summoner && specialtype ? true : false;

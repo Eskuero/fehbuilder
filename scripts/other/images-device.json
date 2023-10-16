@@ -392,6 +392,12 @@
 		"entry": "Icon_MweaponPlayer2.png",
 		"scale": [147,160]
 	},
+	"Attuned": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Resonate.png",
+		"entry": "Icon_ResonatePlayer1.png",
+		"scale": [147,160]
+	},
 	"0-move": {
 		"actions": ["crop", "resize"],
 		"path": "Common/UI/Status.png",
