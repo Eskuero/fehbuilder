@@ -710,10 +710,10 @@ async function myunit() {
 		} else {
 			preview.fillStyle = "#ffffff";
 		}
-		preview.strokeText(languages[language][statsstrings[i]], 115, 789 + (i * 49) + (i * 0.3)); preview.fillText(languages[language][statsstrings[i]], 115, 789 + (i * 49) + (i * 0.3));
+		preview.strokeText(languages[language][statsstrings[i]], 115, 789 + (i * 49) + (i * -0.5)); preview.fillText(languages[language][statsstrings[i]], 115, 789 + (i * 49) + (i * -0.5));
 	}
 	preview.font = '24px FeH-Font'; preview.fillStyle = 'white';
-	preview.strokeText(languages[language]["MID_SKILL_POINT"], 120, 1033); preview.fillText(languages[language]["MID_SKILL_POINT"], 120, 1033);
+	preview.strokeText(languages[language]["MID_SKILL_POINT"], 120, 1032); preview.fillText(languages[language]["MID_SKILL_POINT"], 120, 1032);
 	preview.strokeText(languages[language]["MID_HEROISM_POINT"], 115, 1081); preview.fillText(languages[language]["MID_HEROISM_POINT"], 115, 1081);
 
 	var flowers = parseInt(selectflowers.value);
