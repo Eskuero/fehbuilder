@@ -52,7 +52,7 @@ for weapon in [weapon for weapon in [weapon for weapon in skills["weapons"] if s
 	ids.append(weapon)
 	icons.append(engrishname["M" + weapon] + "_W.png")
 
-for passive in [passive for passive in skills["passives"]["A"] | skills["passives"]["B"] | skills["passives"]["C"] | skills["passives"]["S"] if not pathlib.Path("../data/img/icons/" + passive + ".webp").is_file()]:
+for passive in [passive for passive in skills["passives"]["A"] | skills["passives"]["B"] | skills["passives"]["C"] | skills["passives"]["S"] | skills["passives"]["X"] if not pathlib.Path("../data/img/icons/" + passive + ".webp").is_file()]:
 	ids.append(passive)
 	icons.append(engrishname["M" + passive] + ".png")
 

@@ -110,7 +110,7 @@ print("\n     - Cropping individual passive and weapon refine icons...")
 # For ease of looping create a big dictionary that specifies the expected local path and the iconid too
 icons = {}
 # First we loop the passives
-allpassives = skills["passives"]["A"] | skills["passives"]["B"] | skills["passives"]["C"] | skills["passives"]["S"]
+allpassives = skills["passives"]["A"] | skills["passives"]["B"] | skills["passives"]["C"] | skills["passives"]["S"] | skills["passives"]["X"]
 for passive in allpassives:
 	icons[passive] = {
 		"localpath": "icons/" + passive + ".webp",
