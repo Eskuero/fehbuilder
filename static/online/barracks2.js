@@ -29,6 +29,47 @@ document.addEventListener('click', (e) => {
 	}
 });
 
+// Default values for all categories in case we are updating
+barracksdefaults = {
+	"cheats": false,
+	"max": true,
+	"hero": "None",
+	"attire": "Normal",
+	"rarity": "5",
+	"beast": "no",
+	"support": "None",
+	"merges": "0",
+	"flowers": "0",
+	"boon": "None",
+	"bane": "None",
+	"ascended": "None",
+	"bonus": "no",
+	"blessing": "None",
+	"weapon": "None",
+	"refine": "None",
+	"assist": "None",
+	"special": "None",
+	"A": "None",
+	"B": "None",
+	"C": "None",
+	"S": "None",
+	"X": "None",
+	"allies": {},
+	"bonuses": ["0","0","0","0"],
+	"pairup": ["0","0","0","0"],
+	"sp": "9999",
+	"hm": "9000",
+	"art": "Portrait",
+	"template": "MyUnit",
+	"offsetX": "0",
+	"offsetY": "0",
+	"mirror": "None",
+	"background": "base",
+	"favorite": "1",
+	"accessory": "None",
+	"appui": true
+}
+
 async function loadbarracks() {
 	// First delete them all
 	while (unitlist.lastChild) {
@@ -90,23 +131,23 @@ function showbuild() {
 		document.getElementById("buildhero").innerHTML = languages[language]["M" + barracks[buildid]["hero"]] + ": " + (languages[selectlanguage.value][barracks[buildid]["hero"].replace("PID", "MPID_HONOR")] || "Generic");
 
 		// List of info that can be previewed easily
-		var showinfo = ["merges","flowers","boon","bane","ascended","refine"];
+		var showinfo = ["merges","flowers","boon","bane","ascended"];
 		for (i = 0; i < showinfo.length; i++) {
-			document.getElementById("build" + showinfo[i]).innerHTML = barracks[buildid][showinfo[i]];
+			document.getElementById("build" + showinfo[i]).innerHTML = barracks[buildid][showinfo[i]] ? barracks[buildid][showinfo[i]] : barracksdefaults[showinfo[i]];
 		}
 
 		// Show blessing name since we store a numeric value
 		var blessings = ["Fire","Water","Wind","Earth","Light","Dark","Astra"];
 		document.getElementById("buildblessing").innerHTML = barracks[buildid]["blessing"] != "None" ? blessings[barracks[buildid]["blessing"] - 1] : "-";
 
-		// Some other slots need to be translate on the fly
-		var translateinfo = ["weapon","assist","special","A","B","C","S"];
+		// Some other slots need to be translated on the fly
+		var translateinfo = ["weapon","assist","special","A","B","C","S","X"];
 		for (i = 0; i < translateinfo.length; i++) {
-			document.getElementById("build" + translateinfo[i]).innerHTML = barracks[buildid][translateinfo[i]] != "None" ? languages[language]["M" + barracks[buildid][translateinfo[i]]] : "-";
+			document.getElementById("build" + translateinfo[i]).innerHTML = barracks[buildid][translateinfo[i]] ? (languages[language]["M" + barracks[buildid][translateinfo[i]]] ?? barracksdefaults[translateinfo[i]]) : "-";
 		}
 	} else {
 		// Clear the preview since we are return to None in the select soon
-		var showinfo = ["hero","merges","flowers","boon","bane","ascended","blessing", "refine","weapon","assist","special","A","B","C","S"];
+		var showinfo = ["hero","merges","flowers","boon","bane","ascended","blessing", "refine","weapon","assist","special","A","B","C","S","X"];
 		for (i = 0; i < showinfo.length; i++) {
 			document.getElementById("build" + showinfo[i]).innerHTML = "-";
 		}
@@ -130,10 +171,10 @@ async function loadbuild() {
 	selectweapons.value = barracks[buildid]["weapon"];
 	updateRefine();
 	// Replace the most of the remaining easy info
-	var buildinfo = ["attire","rarity","beast","support","merges","flowers","boon","bane","ascended","bonus","blessing","refine","assist","special","A","B","C","S","sp","hm","art","template","offsetX","offsetY","mirror","background","favorite","accessory"]
-	var buildselects = [selectattire,selectrarity,selectbeast,selectsummoner,selectmerges,selectflowers,selectboons,selectbanes,selectascendent,selectbonusunit,selectblessings,selectrefines,selectassists,selectspecials,selectA,selectB,selectC,selectS,selectsp,selecthm,selectartstyle,selecttemplate,selectoffsetX,selectoffsetY,selectmirror,selectbackground,selectfavorite,selectaccessory]
+	var buildinfo = ["attire","rarity","beast","support","merges","flowers","boon","bane","ascended","bonus","blessing","refine","assist","special","A","B","C","S","X","sp","hm","art","template","offsetX","offsetY","mirror","background","favorite","accessory"]
+	var buildselects = [selectattire,selectrarity,selectbeast,selectsummoner,selectmerges,selectflowers,selectboons,selectbanes,selectascendent,selectbonusunit,selectblessings,selectrefines,selectassists,selectspecials,selectA,selectB,selectC,selectS,selectX,selectsp,selecthm,selectartstyle,selecttemplate,selectoffsetX,selectoffsetY,selectmirror,selectbackground,selectfavorite,selectaccessory]
 	for (i = 0; i < buildinfo.length; i++) {
-		buildselects[i].value = barracks[buildid][buildinfo[i]];
+		buildselects[i].value = barracks[buildid][buildinfo[i]] ? barracks[buildid][buildinfo[i]] : barracksdefaults[buildinfo[i]];
 	}
 
 	// Restore appui
@@ -216,6 +257,7 @@ async function savebuild(action = "save") {
 		"B": selectB.value,
 		"C": selectC.value,
 		"S": selectS.value,
+		"X": selectX.value,
 		"allies": allies,
 		"bonuses": [selectatk.value, selectspd.value, selectdef.value, selectres.value],
 		"pairup": [selectatkpairup.value, selectspdpairup.value, selectdefpairup.value, selectrespairup.value],
@@ -249,7 +291,7 @@ async function removebuild() {
 	if (barracks[buildid]) {
 		delete barracks[buildid];
 		// Clear the preview since we are return to None in the select soon
-		var showinfo = ["hero","merges","flowers","boon","bane","ascended","blessing", "refine","weapon","assist","special","A","B","C","S"];
+		var showinfo = ["hero","merges","flowers","boon","bane","ascended","blessing", "refine","weapon","assist","special","A","B","C","S","X"];
 		for (i = 0; i < showinfo.length; i++) {
 			document.getElementById("build" + showinfo[i]).innerHTML = "-";
 		}
