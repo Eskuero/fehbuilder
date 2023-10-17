@@ -86,7 +86,7 @@ async function init() {
 	languages[selectlanguage.value] = await fetch('/common/data/languages/unitlanguages-' + selectlanguage.value + '.json').then(response => {return response.json();});
 	units = await fetch('/common/data/content/customunits.json').then(response => {return response.json();});
 	skills = await fetch('/common/data/content/customskills.json').then(response => {return response.json();});
-	allpassives = Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"]);
+	allpassives = Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["S"], skills["passives"]["X"]);
 	other = await fetch('/common/data/content/customother.json').then(response => {return response.json();});
 
 	// Build unit selects

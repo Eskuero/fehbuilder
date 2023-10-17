@@ -240,6 +240,7 @@
 					<div><div class="imagelabel" onclick="swapskill(this,'Bskill')" style="--spriteid:18"></div></div>
 					<div><div class="imagelabel" onclick="swapskill(this,'Cskill')" style="--spriteid:19"></div></div>
 					<div><div class="imagelabel" onclick="swapskill(this,'Sskill')" style="--spriteid:20"></div></div>
+					<div><div class="imagelabel" onclick="swapskill(this,'Xskill')" style="--spriteid:41"></div></div>
 				</div>
 				<div class="section skillsform">
 					<div class="row-property single">
@@ -254,6 +255,7 @@
 						<div onchange="updatebases(this);reload()" id="Bskill" style="display:none"></div>
 						<div onchange="updatebases(this);reload()" id="Cskill" style="display:none"></div>
 						<div onchange="updatebases(this);reload()" id="Sskill" style="display:none"></div>
+						<div onchange="updatebases(this);reload()" id="Xskill" style="display:none"></div>
 					</div>
 					<div id="skill-icon" style="display:none" class="row-property single">
 						<label class="textlabel">Icon</label>
@@ -262,6 +264,7 @@
 						<input id="iconBskill" accept='image/*' onchange="reload()" type="file">
 						<input id="iconCskill" accept='image/*' onchange="reload()" type="file">
 						<input id="iconSskill" accept='image/*' onchange="reload()" type="file">
+						<input id="iconXskill" accept='image/*' onchange="reload()" type="file">
 					</div>
 					<div id="skill-name" class="row-property single">
 						<label class="textlabel">Name</label>
@@ -272,6 +275,7 @@
 						<input type="text" id="nameBskill" style="display:none" onchange="reload()" onkeyup="reload()">
 						<input type="text" id="nameCskill" style="display:none" onchange="reload()" onkeyup="reload()">
 						<input type="text" id="nameSskill" style="display:none" onchange="reload()" onkeyup="reload()">
+						<input type="text" id="nameXskill" style="display:none" onchange="reload()" onkeyup="reload()">
 					</div>
 				</div>
 				<div class="section listofstats" id="skill-stats" style="margin-top: 0.7em;">
@@ -283,6 +287,7 @@
 						<input type="number" id="hpBskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 						<input type="number" id="hpCskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 						<input type="number" id="hpSskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="hpXskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 					</div>
 
 					<div class="row-property single">
@@ -293,6 +298,7 @@
 						<input type="number" id="atkBskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 						<input type="number" id="atkCskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 						<input type="number" id="atkSskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="atkXskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 					</div>
 
 					<div class="row-property single">
@@ -303,6 +309,7 @@
 						<input type="number" id="spdBskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 						<input type="number" id="spdCskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 						<input type="number" id="spdSskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="spdXskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 					</div>
 
 					<div class="row-property single">
@@ -313,6 +320,7 @@
 						<input type="number" id="defBskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 						<input type="number" id="defCskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 						<input type="number" id="defSskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="defXskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 					</div>
 
 					<div class="row-property single">
@@ -323,6 +331,7 @@
 						<input type="number" id="resBskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 						<input type="number" id="resCskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 						<input type="number" id="resSskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
+						<input type="number" id="resXskill" style="display:none" onchange="reload()" min="-99" max="99" value="0">
 					</div>
 				</div>
 				<h2>Blessings</h2>

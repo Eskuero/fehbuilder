@@ -23,6 +23,7 @@ async function populateall(clean, bypass = false) {
 	selectB = await populate(document.getElementById('Bskill'), skills["passives"]["B"], clean);
 	selectC = await populate(document.getElementById('Cskill'), skills["passives"]["C"], clean);
 	selectS = await populate(document.getElementById('Sskill'), Object.assign({}, skills["passives"]["S"], cheats.checked ? Object.assign({}, skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"]) : {}), clean);
+	selectX = await populate(document.getElementById('Xskill'), skills["passives"]["X"], clean);
 	// Update translations
 	statictranslations();
 	// Make sure we don't end with invalid allies on the list
@@ -256,7 +257,7 @@ function swapskill(caller, target) {
 	}
 
 	// Only some type of skills types allow changing of the icon
-	var options = ["refine", "Askill", "Bskill", "Cskill", "Sskill"];
+	var options = ["refine", "Askill", "Bskill", "Cskill", "Sskill", "Xskill"];
 	if (options.includes(target)) {
 		// Always first make sure the row is actually visible
 		document.getElementById("skill-icon").style.display = "grid";
@@ -273,7 +274,7 @@ function swapskill(caller, target) {
 	}
 
 	// Everyone but refines allows changing the name
-	var options = ["weapon", "assist", "special", "Askill", "Bskill", "Cskill", "Sskill"];
+	var options = ["weapon", "assist", "special", "Askill", "Bskill", "Cskill", "Sskill", "Xskill"];
 	if (target != "refine") {
 		// Always first make sure the row is actually visible
 		document.getElementById("skill-name").style.display = "grid";
@@ -290,7 +291,7 @@ function swapskill(caller, target) {
 	}
 
 	// All types of skills allow modifying the visible stats except for assists and passives
-	var options = ["weapon", "refine", "Askill", "Bskill", "Cskill", "Sskill"];
+	var options = ["weapon", "refine", "Askill", "Bskill", "Cskill", "Sskill", "Xskill"];
 	var stats = ["hp", "atk", "spd", "def", "res"];
 	if (options.includes(target)) {
 		// Always first make sure the row is actually visible
@@ -312,7 +313,7 @@ function swapskill(caller, target) {
 	}
 
 	// For all skills now swap their selects
-	var options = ["weapon", "refine", "assist", "special", "Askill", "Bskill", "Cskill", "Sskill"];
+	var options = ["weapon", "refine", "assist", "special", "Askill", "Bskill", "Cskill", "Sskill", "Xskill"];
 	for (let i = 0; i < options.length; i++) {
 		if (options[i] == target) {
 			document.getElementById(options[i]).style.display = "block";
@@ -325,7 +326,7 @@ function swapskill(caller, target) {
 // Update the values in the inputs given a base skill
 function updatebases(caller) {
 	// Everyone but refines allows changing the name
-	var options = ["weapon", "assist", "special", "Askill", "Bskill", "Cskill", "Sskill"];
+	var options = ["weapon", "assist", "special", "Askill", "Bskill", "Cskill", "Sskill", "Xskill"];
 	if (options.includes(caller.id)) {
 		document.getElementById("name" + caller.id).value = caller.value != "None" ? languages[selectlanguage.value]["M" + caller.value] : "";
 	}
@@ -348,7 +349,7 @@ function updatebases(caller) {
 	}
 
 	// Apply the stats from the selected skill
-	if (["Askill", "Bskill", "Cskill", "Sskill"].includes(caller.id)) {
+	if (["Askill", "Bskill", "Cskill", "Sskill", "Xskill"].includes(caller.id)) {
 		for (let i = 0; i < stats.length; i++) {
 			document.getElementById(stats[i] + caller.id).value = caller.value != "None" ? allpassives[caller.value]["stats"][i] : 0;
 		}

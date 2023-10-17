@@ -163,7 +163,7 @@ input[type='number']::-webkit-inner-spin-button {
 .imagelabel {
 	height: 2em;
 	width: 2em;
-	--spritesheet-width: 41; /* This is the number of icons in each of row of the spritesheet */
+	--spritesheet-width: 42; /* This is the number of icons in each of row of the spritesheet */
 	background-image: url("/common/assets/custom.webp");
 	background-position: calc(var(--spriteid) * -100%) 0;
 	background-size: calc(var(--spritesheet-width) * 100%); /* If we increase the size of the background a 100% for each icon they will fit in any size */
@@ -235,7 +235,7 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 /* Rebspicker variables */
-#selectheroes, #weapon, #special, #assist, #Askill, #Bskill, #Cskill, #Sskill {
+#selectheroes, #weapon, #special, #assist, #Askill, #Bskill, #Cskill, #Sskill, #Xskill {
 	--collapsed-select-height: 1.9em;
 	--select-width: 100%;
 	--list-item-max: 6;
