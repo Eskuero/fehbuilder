@@ -386,8 +386,8 @@ async function reload() {
 		});
 		// If printed a duo icon the next's position icon must go further to the left
 		offsetX += needsresize ? 100 : 125;
-		// If appui is enabled we also print the conversation icon
-		if (appui.checked) {
+		// If appui is enabled we also print the conversation icon on duos and harmonics
+		if (appui.checked && ["Duo", "Resonance"].includes(selectherotype.value)) {
 			await getimage(other["images"]["other"]["duoconversation"]).then(img => {
 				preview.drawImage(img, 0, 398);
 			});
