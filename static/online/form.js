@@ -353,13 +353,13 @@ function showallies(clean = false, allies = {}) {
 function updatedragonflowers() {
 	// Get current value to restore it back if possible
 	var previousvalue = selectflowers.value;
-	// Default for cheating mode is 25
-	var flowers = 25;
+	// Default for cheating mode is MAXFLOWERS value
+	var flowers = MAXFLOWERS;
 	// First delete them all except the 0 element
 	while (selectflowers.lastChild && selectflowers.childElementCount > 1) {
 		selectflowers.removeChild(selectflowers.lastChild);
 	}
-	if (cheats.checked == false && selectheroes.value != "None") {
+	if (cheats.checked == false && selectheroes.value != "None" && units[selectheroes.value]["flowers"]) {
 		var flowers = units[selectheroes.value]["flowers"];
 	}
 	// Loop for each flower allowed

@@ -100,7 +100,6 @@ for file in files:
 				"growths": [value for value in entry["growth_rates"].values()],
 				"weapon": entry["weapon_type"],
 				"move": entry["move_type"],
-				"flowers": 25,
 				# For boss enemy units the basekit might contain a single weapon, otherwise empty
 				"basekit": [entry["top_weapon"]] if entry["is_boss"] else [],
 				"art": entry["face_name"],
