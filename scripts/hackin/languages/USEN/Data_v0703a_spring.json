@@ -609,7 +609,7 @@
 	},
 	{
 		"key": "MSID_H_\u6625\u306b\u5fae\u7761\u3080\u60aa\u5922\u306e\u5375",
-		"value": "$aGrants Spd+3. If a skill like Sing or Dance is\\nused, grants\u3010Foe Penalty Doubler\u3011to target\\nand allies within 2 spaces of target (excluding\\nunit) and inflicts\u3010Panic\u3011on foes in cardinal\\ndirections of unit and target. At start of\\ncombat, if unit's HP \u2265 25%, grants Atk/Spd+6\\nto unit during combat.\\n\\n\u3010Foe Penalty Doubler\u3011\\nInflicts penalty on foe's Atk/Spd/Def/Res\\nduring combat = any current penalty on each\\nof those stats through their next action.\\nCalculates each stat penalty independently.\\n\\n\u3010Panic\u3011\\nConverts bonuses on target into penalties\\nthrough its next action."
+		"value": "$aGrants Spd+3. If Sing or Dance is used,\\ngrants\u3010Foe Penalty Doubler\u3011to target and\\nallies within 2 spaces of target (excluding\\nunit) and inflicts\u3010Panic\u3011on foes in cardinal\\ndirections of unit and target. At start of\\ncombat, if unit's HP \u2265 25%, grants Atk/Spd+6\\nto unit during combat.\\n\\n\u3010Foe Penalty Doubler\u3011\\nInflicts penalty on foe's Atk/Spd/Def/Res\\nduring combat = any current penalty on each\\nof those stats through their next action.\\nCalculates each stat penalty independently.\\n\\n\u3010Panic\u3011\\nConverts bonuses on target into penalties\\nthrough its next action."
 	},
 	{
 		"key": "MSID_H_\u96e2\u8131\u306e\u884c\u8def4",
@@ -617,7 +617,7 @@
 	},
 	{
 		"key": "MSID_H_\u696d\u706b\u75be\u98a8\u306e\u821e\u30443",
-		"value": "$aIf a skill like Sing or Dance is used, enables\\n\u3010Canto (\uff11)\u3011and grants Atk/Spd+6 and\\n\u3010Desperation\u3011to target for 1 turn.\\n\\n\u3010Canto (\uff11)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move \uff11 space(s).\\n\\n(Unit moves according to movement type. Once\\nper turn. Cannot attack or assist. Only highest\\nvalue applied. Does not stack. After moving,\\nif a skill that grants another action would be\\ntriggered (like with Galeforce), Canto will\\ntrigger after the granted action. Unit's base\\nmovement has no effect on movement granted.\\nCannot warp (using skills like Wings of Mercy)\\na distance greater than \uff11 space(s).)\\n\\n\u3010Desperation\u3011\\nGrants the following effect for 1 turn: \"If unit\\ninitiates combat, unit can make a follow-up\\nattack before foe can counterattack.\""
+		"value": "$aIf Sing or Dance is used, enables\u3010Canto (\uff11)\u3011on\\nunit and grants Atk/Spd+6 and\u3010Desperation\u3011\\nto target for 1 turn.\\n\\n\u3010Canto (\uff11)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move \uff11 space(s).\\n\\n(Unit moves according to movement type. Once\\nper turn. Cannot attack or assist. Only highest\\nvalue applied. Does not stack. After moving,\\nif a skill that grants another action would be\\ntriggered (like with Galeforce), Canto will\\ntrigger after the granted action. Unit's base\\nmovement has no effect on movement granted.\\nCannot warp (using skills like Wings of Mercy)\\na distance greater than \uff11 space(s).)\\n\\n\u3010Desperation\u3011\\nGrants the following effect for 1 turn: \"If unit\\ninitiates combat, unit can make a follow-up\\nattack before foe can counterattack.\""
 	},
 	{
 		"key": "MSID_H_\u5929\u5e1d\u306e\u5263\u6539",
