@@ -30,7 +30,7 @@
 			"20": "white-crumbled-wall",
 			"23": "white-crumbled-wall",
 			"52": "white-wall",
-			"55":"white-crumbled-wall"
+			"55": "white-crumbled-wall"
 		},
 		"leafycanopy": {
 			"23": "trench",
@@ -78,6 +78,18 @@
 		"jotunheimrcastle": {
 			"31": "grey-pillar-crumbled-wall",
 			"34": "grey-pillar-crumbled-wall"
+		},
+		"openedupcastle": {
+			"21": "trench",
+			"24": "trench",
+			"31": "trench",
+			"34": "trench"
+		},
+		"closedupcastle": {
+			"41": "white-half-wall",
+			"42": "white-bridge-wall",
+			"43": "white-bridge-wall",
+			"44": "white-opposite-wall"
 		}
 	},
 	"structures": {

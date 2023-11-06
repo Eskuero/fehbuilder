@@ -59,6 +59,14 @@
 		"actions": ["copy"],
 		"path": "Common/SkyCastle/Field/K0015.png"
 	},
+	"maps-openedupcastle": {
+		"actions": ["copy"],
+		"path": "Common/SkyCastle/Field/K0016.png"
+	},
+	"maps-closedupcastle": {
+		"actions": ["copy"],
+		"path": "Common/SkyCastle/Field/K0017.png"
+	},
 	"maps-white-wall": {
 		"actions": ["crop", "resize"],
 		"path": "Common/Field/Common/Wallpattern.png",
@@ -78,6 +86,20 @@
 		"path": "Common/Field/Common/Wallpattern.png",
 		"scale": [120,120],
 		"position": [911,729],
+		"dimensions": [180,180]
+	},
+	"maps-white-opposite-wall": {
+		"actions": ["crop", "resize"],
+		"path": "Common/Field/Common/Wallpattern.png",
+		"scale": [120,120],
+		"position": [1457,729],
+		"dimensions": [180,180]
+	},
+	"maps-white-bridge-wall": {
+		"actions": ["crop", "resize"],
+		"path": "Common/Field/Common/Wallpattern.png",
+		"scale": [120,120],
+		"position": [365,0],
 		"dimensions": [180,180]
 	},
 	"maps-grey-crumbled-wall": {
