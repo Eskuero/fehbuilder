@@ -1,0 +1,36 @@
+[
+	{
+		"id_tag": "EID_\u9b54\u5668\u30ae\u30f3\u30cc\u30f3",
+		"roman": "GINNUNGAGAP_ENEMY01",
+		"face_name": "ch00_53_Ginnungagap_F_Weapon01",
+		"face_name2": "ch00_53_Ginnungagap_F_Weapon01",
+		"top_weapon": "SID_\u9b54\u5668\u30ae\u30f3\u30cc\u30f3\u30ac\u30ac\u30d7",
+		"unique_assist1": null,
+		"unique_assist2": null,
+		"unique_special": null,
+		"timestamp": null,
+		"id_num": 103,
+		"is_npc": false,
+		"weapon_type": 10,
+		"tome_class": 0,
+		"move_type": 2,
+		"random_allowed": false,
+		"is_boss": true,
+		"refresher": false,
+		"is_enemy": true,
+		"base_stats": {
+			"hp": 17,
+			"atk": 7,
+			"spd": 8,
+			"def": 7,
+			"res": 5
+		},
+		"growth_rates": {
+			"hp": 50,
+			"atk": 90,
+			"spd": 50,
+			"def": 50,
+			"res": 60
+		}
+	}
+]
