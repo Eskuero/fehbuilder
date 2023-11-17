@@ -629,7 +629,7 @@
 	},
 	{
 		"key": "MSID_H_\u9ed2\u9a0e\u306e\u5b64\u69cdR",
-		"value": "Al inicio de un ataque, si la unidad tiene\\nPV \u2265 25%, obtiene Atq., Vel., Def. y Res. +X\\ndurante el combate (donde X equivale al\\nn\u00famero de casillas desde la posici\u00f3n inicial\\nhasta la posici\u00f3n final de quien haya iniciado\\nel ataque \u00d7 2, + 4, m\u00e1ximo: 10) y reduce en\\nun 30 % el da\u00f1o que inflige el primer ataque\\ndel enemigo."
+		"value": "Al inicio de un ataque, si la unidad tiene\\nPV \u2265 25 %, obtiene Atq., Vel., Def. y Res. +X\\ndurante el combate (donde X equivale al\\nn\u00famero de casillas desde la posici\u00f3n inicial\\nhasta la posici\u00f3n final de quien haya iniciado\\nel ataque \u00d7 2, + 4, m\u00e1ximo: 10) y reduce en\\nun 30 % el da\u00f1o que inflige el primer ataque\\ndel enemigo."
 	},
 	{
 		"key": "MSID_H_\u30b5\u30ea\u30a8\u30eb\u306e\u5927\u938cR",
@@ -641,7 +641,7 @@
 	},
 	{
 		"key": "MSID_H_\u8b00\u7565\u306e\u6226\u5f13R",
-		"value": "Al inicio del turno, si hay enemigos situados en\\nun radio de 3 columnas y 3 filas respecto a la\\nunidad, inflige Def. -7 a dichos enemigos en su\\npr\u00f3xima acci\u00f3n y otorga Atq. +6 a la unidad\\nhasta el final del turno. Al inicio de un ataque,\\nsi la unidad tiene PV \u2265 25 %, obtiene Atq. y\\nVel. +5 durante el combate, su Atq. aumenta en\\ncombate en una cantidad equivalente a su\\nbonificaci\u00f3n actual de Atq. e inflige una\\npenalizaci\u00f3n a la Def. del rival en combate\\nequivalente a la penalizaci\u00f3n actual de la Def.\\ndel rival."
+		"value": "Al inicio del turno, si hay enemigos situados en\\nun radio de 3 columnas o 3 filas respecto a la\\nunidad, inflige Def. -7 a dichos enemigos en su\\npr\u00f3xima acci\u00f3n y otorga Atq. +6 a la unidad\\nhasta el final del turno. Al inicio de un ataque,\\nsi la unidad tiene PV \u2265 25 %, obtiene Atq. y\\nVel. +5 durante el combate, su Atq. aumenta en\\ncombate en una cantidad equivalente a su\\nbonificaci\u00f3n actual de Atq. e inflige una\\npenalizaci\u00f3n a la Def. del rival en combate\\nequivalente a la penalizaci\u00f3n actual de la Def.\\ndel rival."
 	},
 	{
 		"key": "MSID_H_\u795e\u7956\u306e\u6075\u307fR",
