@@ -37,6 +37,8 @@ mv *units.json *skills.json *other.json ../data/content/;
 echo -e "\n        - Compressing outputs..." >> fehupdate-$DATE.log 2>&1
 gzip -fk ../data/languages/*json;
 gzip -fk ../data/content/*json;
+brotli -f ../data/languages/*json;
+brotli -f ../data/content/*json;
 
 echo -e "\nExtracting missing assets from device..." >> fehupdate-$DATE.log 2>&1
 python3 hackin-assets.py >> fehupdate-$DATE.log 2>&1

@@ -53,6 +53,8 @@ else
 	echo -e "\n        - Compressing outputs..." >> fehupdate-$DATE.log 2>&1
 	gzip -fk ../data/content/*json;
 	gzip -fk ../data/languages/*json;
+	brotli -f ../data/languages/*json;
+	brotli -f ../data/content/*json;
 	echo -e "\n---------------------------------------------------------" >> fehupdate-$DATE.log 2>&1
 fi
 
