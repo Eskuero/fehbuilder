@@ -397,6 +397,8 @@ function filldefaults() {
 		selectadresgrowth.value = units[defaulthero]["growths"][4];
 		selectmovetype.value = units[defaulthero]["move"];
 		selectweapontype.value = units[defaulthero]["weapon"];
+		selectartist.value = languages[language]["M" + defaulthero.replace("ID", "ID_ILLUST")];
+		selectactor.value = languages[language]["M" + defaulthero.replace("ID", "ID_VOICE")];
 	}
 	// Make sure we update the images on the move/weapon type selects and enable or disable the best selector if necessary
 	changetype(selectmovetype);

@@ -117,8 +117,8 @@ async function reload() {
 	// Print the artist and actor names, as well as the favorite mark and other minor strings if appui is enabled
 	if (appui.checked) {
 		preview.fillStyle = 'white'; preview.strokeStyle = '#0a2533'; preview.textAlign = 'start'; preview.textBaseline = "top"; preview.font = '21px FeH-Font';
-		let voice = document.getElementById("actor").value ? document.getElementById("actor").value : "-";
-		let artist = document.getElementById("artist").value ? document.getElementById("artist").value : "-";
+		let voice = selectactor.value ? selectactor.value : "-";
+		let artist = selectartist.value ? selectartist.value : "-";
 		preview.strokeText(voice, 47, 1222); preview.fillText(voice, 47, 1222);
 		preview.strokeText(artist, 47, 1251); preview.fillText(artist, 47, 1251);
 		// Print favorite icon
