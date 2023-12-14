@@ -601,7 +601,7 @@
 	},
 	{
 		"key": "MSID_H_\u30d0\u30eb\u30dc\u306e\u52c7\u69cd",
-		"value": "Se l'unit\u00e0 si trova entro 3 spazi da un alleato,\\nconferisce Att/Dif +5 all'unit\u00e0 durante lo scontro.\\nInoltre, se il nemico attacca per primo, il danno\\nricevuto dall'attacco doppio del nemico sar\u00e0\\nridotto del 60% durante lo scontro. (Per le armi\\nstandard, con \"attacco doppio\" si intende\\nil secondo colpo, mentre per le armi che\\nconferiscono \"esegue due attacchi\", si intende\\nil terzo e il quarto colpo.)"
+		"value": "Se l'unit\u00e0 si trova entro 3 spazi da un alleato,\\nconferisce Att/Dif +5 all'unit\u00e0 durante lo scontro.\\nInoltre, se il nemico attacca per primo, il danno\\nricevuto dall'attacco doppio del nemico sar\u00e0\\nridotto del 60% durante lo scontro (con\\n\"attacco doppio\" si intende normalmente\\nil secondo colpo, mentre per gli effetti che\\nconferiscono \"esegue due attacchi\", si intende\\nil terzo e il quarto colpo)."
 	},
 	{
 		"key": "MSID_H_\u5fa9\u8b90\u306e\u70c8\u69cd",
@@ -665,7 +665,7 @@
 	},
 	{
 		"key": "MSID_H_\u900f\u9b54\u7adc\u306e\u30d6\u30ec\u30b9",
-		"value": "Anticipa l'attivazione dell'abilit\u00e0 speciale\\n(contatore -1). Se il nemico attacca per primo o\\nha almeno il 75% dei PS all'inizio dello scontro,\\nconferisce Att/Vel/Dif/Res +5 all'unit\u00e0, infligge\\nAtt/Vel/Dif/Res -X al nemico (il valore di X \u00e8\\npari al bonus attivo su ogni parametro del\\nnemico moltiplicato per 2; esempio: se il nemico\\nha un bonus di +7 alla Vel, infligge Vel -14, per\\nuna penalit\u00e0 netta di -7; ogni parametro \u00e8\\ncalcolato singolarmente), infligge danni aggiuntivi\\npari al 20% della Vel dell'unit\u00e0 (escluse le abilit\u00e0\\nspeciali con area d'effetto) e riduce di 7 i danni\\ndei primi attacchi del nemico durante lo scontro\\n(per le armi standard, con \"primi attacchi\" si\\nintende il primo colpo, mentre per le armi che\\nconferiscono \"esegue due attacchi\", si intende\\nil primo e il secondo colpo). Contro nemici con 2\\ndi Rgg, il danno \u00e8 calcolato usando Dif o Res\\ndel nemico (il valore pi\u00f9 basso)."
+		"value": "Anticipa l'attivazione dell'abilit\u00e0 speciale\\n(contatore -1). Se il nemico attacca per primo o\\nha almeno il 75% dei PS all'inizio dello scontro,\\nconferisce Att/Vel/Dif/Res +5 all'unit\u00e0, infligge\\nAtt/Vel/Dif/Res -X al nemico (il valore di X \u00e8\\npari al bonus attivo su ogni parametro del\\nnemico moltiplicato per 2; esempio: se il nemico\\nha un bonus di +7 alla Vel, infligge Vel -14, per\\nuna penalit\u00e0 netta di -7; ogni parametro \u00e8\\ncalcolato singolarmente), infligge danni aggiuntivi\\npari al 20% della Vel dell'unit\u00e0 (escluse le abilit\u00e0\\nspeciali con area d'effetto) e riduce di 7 i danni\\ndei primi attacchi del nemico durante lo scontro\\n(con \"primo attacco\" si intende normalmente\\nil primo colpo, mentre per gli effetti che\\nconferiscono \"esegue due attacchi\", si intende\\nil primo e il secondo colpo). Contro nemici con\\n2 di Rgg, il danno \u00e8 calcolato usando Dif o Res\\ndel nemico (il valore pi\u00f9 basso)."
 	},
 	{
 		"key": "MSID_H_\u904b\u547d\u30cf\u5909\u30ef\u30e9\u30ca\u30a4\u2026",
@@ -685,7 +685,7 @@
 	},
 	{
 		"key": "MSID_H_\u6167\u773c\u968a\u5f624",
-		"value": "Se il nemico attacca per primo, infligge Att/Vel -4\\nal nemico e annulla gli effetti che garantiscono\\nattacchi doppi al nemico e quelli che impediscono\\nattacchi doppi all'unit\u00e0 durante lo scontro. Inoltre,\\nse l'unit\u00e0 ha Vel uguale o superiore a Vel -10 del\\nnemico, riduce del 40% il danno del primo attacco\\ndel nemico durante lo scontro. (Per le armi\\nstandard, con \"primo attacco\" si intende solo\\nil primo colpo, mentre per le armi che\\nconferiscono \"esegue due attacchi\", si intende\\nil primo e il secondo colpo.)"
+		"value": "Se il nemico attacca per primo, infligge Att/Vel -4\\nal nemico e annulla gli effetti che garantiscono\\nattacchi doppi al nemico e quelli che impediscono\\nattacchi doppi all'unit\u00e0 durante lo scontro. Inoltre,\\nse l'unit\u00e0 ha Vel uguale o superiore a Vel -10 del\\nnemico, riduce del 40% il danno del primo attacco\\ndel nemico durante lo scontro (con \"primo\\nattacco\" si intende normalmente il primo colpo,\\nmentre per gli effetti che conferiscono \"esegue\\ndue attacchi\", si intende il primo e il secondo\\ncolpo)."
 	},
 	{
 		"key": "MSID_H_\u30bb\u30af\u30f4\u30a1\u30d9\u30af\u6539",

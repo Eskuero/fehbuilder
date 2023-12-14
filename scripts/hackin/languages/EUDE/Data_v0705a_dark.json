@@ -601,7 +601,7 @@
 	},
 	{
 		"key": "MSID_H_\u30d0\u30eb\u30dc\u306e\u52c7\u69cd",
-		"value": "Befindet sich die Einheit im Umkreis von\\n3 Feldern eines Verb\u00fcndeten, erh\u00e4lt sie im\\nKampf Angr./Ver. +5. Initiiert der Gegner\\nau\u00dferdem den Kampf, wird der Schaden des\\ngegnerischen Folgeangriffs im Kampf um 60 %\\nreduziert. (Bei Standardwaffen ist mit\\n\"Folgeangriff\" der zweite Schlag gemeint. Bei\\nWaffen, die \"Einheit greift 2-mal an\" erm\u00f6glichen,\\nsind der dritte und vierte Schlag gemeint.)"
+		"value": "Befindet sich die Einheit im Umkreis von\\n3 Feldern eines Verb\u00fcndeten, erh\u00e4lt sie im\\nKampf Angr./Ver. +5. Initiiert der Gegner\\nau\u00dferdem den Kampf, wird der Schaden des\\ngegnerischen Folgeangriffs im Kampf um 60 %\\nreduziert. (Mit \"Folgeangriff\" ist normalerweise\\nder zweite Schlag gemeint. Bei Effekten, die\\n\"Einheit greift 2-mal an\" erm\u00f6glichen, sind der\\ndritte und vierte Schlag gemeint.)"
 	},
 	{
 		"key": "MSID_H_\u5fa9\u8b90\u306e\u70c8\u69cd",
@@ -665,7 +665,7 @@
 	},
 	{
 		"key": "MSID_H_\u900f\u9b54\u7adc\u306e\u30d6\u30ec\u30b9",
-		"value": "Beschleunigt Spezialangriffe (Erholungszeit -1).\\nInitiiert der Gegner den Kampf oder sind die KP\\ndes Gegners zu Beginn des Kampfes \u2265 75 %,\\nerh\u00e4lt die Einheit Angr./Ges./Ver./Res. +5, der\\nGegner erleidet Angr./Ges./Ver./Res. -X (X =\\naktuell g\u00fcltige Boni auf jeden dieser Statuswerte\\nx2; Beispiel: Ist Ges. des Gegners um 7 erh\u00f6ht,\\nerleidet er Ges. -14, sodass er insgesamt Ges. -7\\nhat; jeder Wertebonus wird einzeln berechnet),\\ndie Einheit f\u00fcgt zus\u00e4tzlichen Schaden in H\u00f6he\\nvon 20 % ihres Ges.-Werts zu (ausgenommen\\nSpezialangriffe mit Fl\u00e4chenwirkung) und der\\nSchaden durch die ersten Angriffe des Gegners\\nwird im Kampf um 7 verringert. (Bei Standard-\\nwaffen ist mit \"erste Angriffe\" der erste Schlag\\ngemeint. Bei Waffen, die \"Einheit greift 2-mal\\nan\" erm\u00f6glichen, sind der erste und zweite\\nSchlag gemeint.) Ist Rw. des Gegners = 2, wird\\nSchaden durch Ver. oder Res. des Gegners\\nberechnet (geringerer Wert gilt)."
+		"value": "Beschleunigt Spezialangriffe (Erholungszeit -1).\\nInitiiert der Gegner den Kampf oder sind die KP\\ndes Gegners zu Beginn des Kampfes \u2265 75 %,\\nerh\u00e4lt die Einheit Angr./Ges./Ver./Res. +5, der\\nGegner erleidet Angr./Ges./Ver./Res. -X (X =\\naktuell g\u00fcltige Boni auf jeden dieser Statuswerte\\nx2; Beispiel: Ist Ges. des Gegners um 7 erh\u00f6ht,\\nerleidet er Ges. -14, sodass er insgesamt Ges. -7\\nhat; jeder Wertebonus wird einzeln berechnet),\\ndie Einheit f\u00fcgt zus\u00e4tzlichen Schaden in H\u00f6he\\nvon 20 % ihres Ges.-Werts zu (ausgenommen\\nSpezialangriffe mit Fl\u00e4chenwirkung) und der\\nSchaden durch die ersten Angriffe des Gegners\\nwird im Kampf um 7 verringert. (Mit \"erster\\nAngriff\" ist normalerweise der erste Schlag\\ngemeint. Bei Effekten, die \"Einheit greift 2-mal\\nan\" erm\u00f6glichen, sind der erste und zweite Schlag\\ngemeint.) Ist Rw. des Gegners = 2, wird Schaden\\ndurch Ver. oder Res. des Gegners berechnet\\n(geringerer Wert gilt)."
 	},
 	{
 		"key": "MSID_H_\u904b\u547d\u30cf\u5909\u30ef\u30e9\u30ca\u30a4\u2026",
@@ -685,7 +685,7 @@
 	},
 	{
 		"key": "MSID_H_\u6167\u773c\u968a\u5f624",
-		"value": "Initiiert der Gegner den Kampf, erleidet er\\nAngr./Ges. -4 und Effekte, die dem Gegner\\nFolgeangriffe garantieren oder Folgeangriffe\\nder Einheit verhindern, werden im Kampf\\naufgehoben. Ist au\u00dferdem Ges. der Einheit\\n\u2265 Ges. des Gegners -10, wird der Schaden durch\\nden ersten Angriff des Gegners im Kampf um\\n40 % reduziert. (Bei Standardwaffen ist mit\\n\"erster Angriff\" der erste Schlag gemeint. Bei\\nWaffen, die \"Einheit greift 2-mal an\" erm\u00f6glichen,\\nsind der erste und zweite Schlag gemeint.)"
+		"value": "Initiiert der Gegner den Kampf, erleidet er\\nAngr./Ges. -4 und Effekte, die dem Gegner\\nFolgeangriffe garantieren oder Folgeangriffe\\nder Einheit verhindern, werden im Kampf\\naufgehoben. Ist au\u00dferdem Ges. der Einheit\\n\u2265 Ges. des Gegners -10, wird der Schaden durch\\nden ersten Angriff des Gegners im Kampf um\\n40 % reduziert. (Mit \"erster Angriff\" ist normaler-\\nweise der erste Schlag gemeint. Bei Effekten,\\ndie \"Einheit greift 2-mal an\" erm\u00f6glichen, sind\\nder erste und zweite Schlag gemeint.)"
 	},
 	{
 		"key": "MSID_H_\u30bb\u30af\u30f4\u30a1\u30d9\u30af\u6539",

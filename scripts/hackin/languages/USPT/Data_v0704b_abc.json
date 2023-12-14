@@ -557,7 +557,7 @@
 	},
 	{
 		"key": "MSID_H_\u798f\u97f3\u306e\u30d6\u30ec\u30b9",
-		"value": "Acelera a execu\u00e7\u00e3o de habilidades especiais\\n(contagem regressiva -1). Se o inimigo inicia o\\ncombate ou PV (ini.) \u2265 75% no in\u00edcio do\\ncombate, concede Atq./Vel./Def./Res. +5 \u00e0\\nunidade, a unidade faz um ataque duplo\\ngarantido, inflige +1 \u00e0 contagem regressiva da\\nhabilidade especial do inimigo por cada ataque\\n(s\u00f3 o valor mais alto se aplica; n\u00e3o cumulativo)\\ne reduz o dano de ataques duplos do inimigo\\nem 30% da Res. da unidade durante o combate.\\n(Para armas comuns, \"ataque duplo\" significa o\\nsegundo ataque, para armas que garantem\\n\"unidade ataca duas vezes\", significa o terceiro\\ne quarto ataques.) Se o alcance do inimigo = 2,\\ncalcula o dano usando Def. ou Res. do inimigo\\n(a que tiver valor mais baixo)."
+		"value": "Acelera a execu\u00e7\u00e3o de habilidades especiais\\n(contagem regressiva -1). Se o inimigo inicia o\\ncombate ou PV (ini.) \u2265 75% no in\u00edcio do\\ncombate, concede Atq./Vel./Def./Res. +5 \u00e0\\nunidade, a unidade faz um ataque duplo\\ngarantido, inflige +1 \u00e0 contagem regressiva da\\nhabilidade especial do inimigo por cada ataque\\n(s\u00f3 o valor mais alto se aplica; n\u00e3o cumulativo)\\ne reduz o dano de ataques duplos do inimigo\\nem 30% da Res. da unidade durante o combate\\n(\"ataque duplo\" normalmente significa apenas o\\nsegundo golpe, para efeitos que concedem\\n\"unidade ataca duas vezes\", significa o terceiro\\ne quarto golpes). Se o alcance do inimigo = 2,\\ncalcula o dano usando Def. ou Res. do inimigo\\n(a que tiver valor mais baixo)."
 	},
 	{
 		"key": "MSID_H_\u5fe0\u7fa9\u306e\u69cd",

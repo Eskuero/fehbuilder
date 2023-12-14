@@ -601,7 +601,7 @@
 	},
 	{
 		"key": "MSID_H_\u30d0\u30eb\u30dc\u306e\u52c7\u69cd",
-		"value": "Se a unidade est\u00e1 em um raio de 3 espa\u00e7os\\nde um aliado, concede Atq./Def. +5 \u00e0 unidade\\ndurante o combate e tamb\u00e9m, se o inimigo inicia\\no combate, reduz o dano do ataque duplo do\\ninimigo em 60% durante o combate. (Para armas\\ncomuns, \"ataque duplo\" significa o segundo\\nataque. Para armas que garantem \"unidade\\nataca duas vezes\", significa o terceiro e quarto\\nataques.)"
+		"value": "Se a unidade est\u00e1 em um raio de 3 espa\u00e7os\\nde um aliado, concede Atq./Def. +5 \u00e0 unidade\\ndurante o combate e tamb\u00e9m, se o inimigo inicia\\no combate, reduz o dano do ataque duplo do\\ninimigo em 60% durante o combate. (\"ataque\\nduplo\" normalmente significa apenas o segundo\\ngolpe; para efeitos que concedem \"unidade ataca\\nduas vezes\", significa o terceiro e quarto golpes)."
 	},
 	{
 		"key": "MSID_H_\u5fa9\u8b90\u306e\u70c8\u69cd",
@@ -665,7 +665,7 @@
 	},
 	{
 		"key": "MSID_H_\u900f\u9b54\u7adc\u306e\u30d6\u30ec\u30b9",
-		"value": "Acelera a execu\u00e7\u00e3o de habilidades especiais\\n(contagem regressiva -1). Se o inimigo inicia o\\ncombate ou se PV (ini.) \u2265 75% no in\u00edcio do\\ncombate, concede Atq./Vel./Def./Res. +5 \u00e0\\nunidade, inflige Atq./Vel./Def./Res. -X no inimigo\\n(X= b\u00f4nus atual de cada atributo do inimigo \u00d7 2;\\nexemplo: se o inimigo tem um b\u00f4nus de Vel. +7,\\ninflige Vel. -14, para uma penalidade total de\\nVel. -7; calcula cada penalidade de atributo\\nseparadamente), inflige dano = 20% da Vel. da\\nunidade (exceto habilidades especiais com \u00e1rea\\nde efeito) e reduz o dano do primeiro ataque\\ndo inimigo em 7 durante o combate (para\\narmas comuns, \"primeiro ataque\" significa\\napenas o primeiro golpe; para armas que\\ngarantem \"unidade ataca duas vezes\", significa\\no primeiro e o segundo ataques). Se o alcance\\ndo inimigo = 2, calcula o dano usando Def. ou\\nRes. do inimigo, a que tiver valor mais baixo."
+		"value": "Acelera a execu\u00e7\u00e3o de habilidades especiais\\n(contagem regressiva -1). Se o inimigo inicia o\\ncombate ou se PV (ini.) \u2265 75% no in\u00edcio do\\ncombate, concede Atq./Vel./Def./Res. +5 \u00e0\\nunidade, inflige Atq./Vel./Def./Res. -X no inimigo\\n(X= b\u00f4nus atual de cada atributo do inimigo \u00d7 2;\\nexemplo: se o inimigo tem um b\u00f4nus de Vel. +7,\\ninflige Vel. -14, para uma penalidade total de\\nVel. -7; calcula cada penalidade de atributo\\nseparadamente), inflige dano = 20% da Vel. da\\nunidade (exceto habilidades especiais com \u00e1rea\\nde efeito) e reduz o dano do primeiro ataque\\ndo inimigo em 7 durante o combate (\"primeiro\\nataque\" normalmente significa apenas o primeiro\\ngolpe; para efeitos que concedem \"unidade ataca\\nduas vezes\", significa o primeiro e o segundo\\ngolpes). Se o alcance do inimigo = 2, calcula o\\ndano usando Def. ou Res. do inimigo (a que tiver\\nvalor mais baixo)."
 	},
 	{
 		"key": "MSID_H_\u904b\u547d\u30cf\u5909\u30ef\u30e9\u30ca\u30a4\u2026",
@@ -685,7 +685,7 @@
 	},
 	{
 		"key": "MSID_H_\u6167\u773c\u968a\u5f624",
-		"value": "Se o inimigo inicia o combate, inflige Atq./Vel. -4\\nno inimigo, neutraliza efeitos que garantem\\nataques duplos do inimigo e que impedem\\nataques duplos da unidade durante o combate\\ne tamb\u00e9m, se Vel. (uni.) > Vel. (ini.) -10, reduz o\\ndano do primeiro ataque do inimigo em 40%\\ndurante o combate. (Para armas comuns,\\n\"primeiro ataque\" significa apenas o primeiro\\ngolpe; para armas que garantem \"unidade ataca\\nduas vezes\", significa o primeiro e o segundo\\nataques.)"
+		"value": "Se o inimigo inicia o combate, inflige Atq./Vel. -4\\nno inimigo, neutraliza efeitos que garantem\\nataques duplos do inimigo e que impedem\\nataques duplos da unidade durante o combate\\ne tamb\u00e9m, se Vel. (uni.) > Vel. (ini.) -10, reduz o\\ndano do primeiro ataque do inimigo em 40%\\ndurante o combate (\"primeiro ataque\"\\nnormalmente significa apenas o primeiro golpe;\\npara efeitos que concedem \"unidade ataca\\nduas vezes\", significa o primeiro e o segundo\\ngolpes)."
 	},
 	{
 		"key": "MSID_H_\u30bb\u30af\u30f4\u30a1\u30d9\u30af\u6539",
@@ -697,7 +697,7 @@
 	},
 	{
 		"key": "MSID_H_\u611b\u306e\u796d\u5668\u6539",
-		"value": "$aConcede Vel. +3. No in\u00edcio do combate, se o\\nefeito\u3010B\u00f4nus\u3011est\u00e1 ativo\\nna unidade ou se PV (uni.) \u2265 25%, concede\\nAtq./Vel./Def./Res. +4 \u00e0 unidade, concede b\u00f4nus\\nde Atq./Vel. \u00e0 unidade durante o combate = 25%\\nda Def. do inimigo no in\u00edcio do combate e inflige\\npenalidade de Atq./Def. no inimigo durante o\\ncombate = 25% da Res. do inimigo no in\u00edcio\\ndo combate.\\n\\n\u3010B\u00f4nus\u3011\\nTodos os efeitos ativados \"por uma rodada\"\\nou \"apenas naquela rodada\". Inclui b\u00f4nus de\\nde habilidades como n\u00edmias e elevadas e os\\nefeitos positivos, como movimento extra ou\\nde habilidades como Dom\u00ednio."
+		"value": "$aConcede Vel. +3. No in\u00edcio do combate, se o\\nefeito\u3010B\u00f4nus\u3011est\u00e1 ativo\\nna unidade ou se PV (uni.) \u2265 25%, concede\\nAtq./Vel./Def./Res. +4 \u00e0 unidade, concede b\u00f4nus\\nde Atq./Vel. \u00e0 unidade durante o combate = 25%\\nda Def. do inimigo no in\u00edcio do combate e inflige\\npenalidade de Atq./Def. no inimigo durante o\\ncombate = 25% da Res. do inimigo no in\u00edcio\\ndo combate.\\n\\n\u3010B\u00f4nus\u3011\\nTodos os efeitos ativados \"por uma rodada\"\\nou \"apenas naquela rodada\". Inclui b\u00f4nus de\\nhabilidades como n\u00edmias e elevadas e os\\nefeitos positivos, como movimento extra ou\\nde habilidades como Dom\u00ednio."
 	},
 	{
 		"key": "MID_CHAPTER_TITLE_C0707",
@@ -709,23 +709,23 @@
 	},
 	{
 		"key": "MID_STAGE_TITLE_S7071",
-		"value": "Cap\u00edtulo 3-1"
+		"value": "Cap. 3: Parte 1"
 	},
 	{
 		"key": "MID_STAGE_TITLE_S7072",
-		"value": "Cap\u00edtulo 3-2"
+		"value": "Cap. 3: Parte 2"
 	},
 	{
 		"key": "MID_STAGE_TITLE_S7073",
-		"value": "Cap\u00edtulo 3-3"
+		"value": "Cap. 3: Parte 3"
 	},
 	{
 		"key": "MID_STAGE_TITLE_S7074",
-		"value": "Cap\u00edtulo 3-4"
+		"value": "Cap. 3: Parte 4"
 	},
 	{
 		"key": "MID_STAGE_TITLE_S7075",
-		"value": "Cap\u00edtulo 3-5"
+		"value": "Cap. 3: Parte 5"
 	},
 	{
 		"key": "MID_STAGE_S7071",

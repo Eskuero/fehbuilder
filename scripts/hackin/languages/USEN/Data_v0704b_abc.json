@@ -557,7 +557,7 @@
 	},
 	{
 		"key": "MSID_H_\u798f\u97f3\u306e\u30d6\u30ec\u30b9",
-		"value": "Accelerates Special trigger (cooldown count-1).\\nIf foe initiates combat or foe's HP \u2265 75% at\\nstart of combat, grants Atk/Spd/Def/Res+5\\nto unit, unit makes a guaranteed follow-up\\nattack, inflicts Special cooldown charge -1\\non foe per attack (only highest value applied;\\ndoes not stack), and reduces damage from\\nfoe's follow-up attack by 30% of unit's Res\\nduring combat. (For standard weapons,\\n\"follow-up attack\" means the second strike.\\nFor weapons that grant \"unit attacks twice,\"\\nit means the third and fourth strikes.) If foe's\\nRange = 2, calculates damage using the\\nlower of foe's Def or Res."
+		"value": "Accelerates Special trigger (cooldown count-1).\\nIf foe initiates combat or foe's HP \u2265 75% at\\nstart of combat, grants Atk/Spd/Def/Res+5\\nto unit, unit makes a guaranteed follow-up\\nattack, inflicts Special cooldown charge -1\\non foe per attack (only highest value applied;\\ndoes not stack), and reduces damage from\\nfoe's follow-up attack by 30% of unit's Res\\nduring combat (\"follow-up attack\" normally\\nmeans only the second strike; for effects that\\ngrant \"unit attacks twice,\" it means the third\\nand fourth strikes) If foe's Range = 2,\\ncalculates damage using the lower of\\nfoe's Def or Res."
 	},
 	{
 		"key": "MSID_H_\u5fe0\u7fa9\u306e\u69cd",

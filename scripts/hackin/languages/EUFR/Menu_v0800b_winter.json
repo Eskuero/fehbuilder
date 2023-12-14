@@ -1,0 +1,186 @@
+[
+	{
+		"key": "MID_AUTO_COOP_TITLE",
+		"value": "Combats auto d'affinit\u00e9"
+	},
+	{
+		"key": "MID_AUTO_COOP_CLOSED",
+		"value": "\u00c9v\u00e9nement termin\u00e9."
+	},
+	{
+		"key": "MID_AUTO_COOP_SCORE",
+		"value": "Score"
+	},
+	{
+		"key": "MID_AUTO_COOP_BONUS_AUTHORITY",
+		"value": "Jeux bonus"
+	},
+	{
+		"key": "MID_AUTO_COOP_DAILY_BONUS_INFO",
+		"value": "$aBonus : score x$a1. Encore $a0 fois aujourd'hui."
+	},
+	{
+		"key": "MID_AUTO_COOP_DAILY_REWARD_INFO",
+		"value": "$aGagnez les r\u00e9compenses ci-dessous chaque jour\\nen terminant une carte. ($a0 jours max.)"
+	},
+	{
+		"key": "MID_AUTO_COOP_TROOP_SELECTION",
+		"value": "Choisir une \u00e9quipe"
+	},
+	{
+		"key": "MID_AUTO_COOP_REWARD_CONFIRM",
+		"value": "R\u00e9compenses"
+	},
+	{
+		"key": "MID_AUTO_COOP_REMAINING_DAYS",
+		"value": "$aEncore $a0 j"
+	},
+	{
+		"key": "MID_AUTO_COOP_REMAINING_HOURS",
+		"value": "$aEncore $a0 h"
+	},
+	{
+		"key": "MID_AUTO_COOP_REMAINING_MINUTES",
+		"value": "$aEncore $a0 min"
+	},
+	{
+		"key": "MID_AUTO_COOP_REWARD_SCORE",
+		"value": "Score"
+	},
+	{
+		"key": "MID_AUTO_COOP_TROOP_SELECTION_INFO",
+		"value": "Choisissez une arm\u00e9e pour lutter \u00e0 ses c\u00f4t\u00e9s."
+	},
+	{
+		"key": "MID_AUTO_COOP_TROOP_SELECTION_STAMINA",
+		"value": "$a\u00c9nergie n\u00e9cessaire : $a0"
+	},
+	{
+		"key": "MID_AUTO_COOP_TROOP_SELECTION_FRIEND",
+		"value": "Amis"
+	},
+	{
+		"key": "MID_AUTO_COOP_TROOP_CONFIRM_DIALOG_TEXT",
+		"value": "Lutter aux c\u00f4t\u00e9s de cette arm\u00e9e ?"
+	},
+	{
+		"key": "MID_AUTO_COOP_TROOP_CONFIRM_DIALOG_OK",
+		"value": "Continuer"
+	},
+	{
+		"key": "MID_AUTO_COOP_AFFINITY_INFO",
+		"value": "Testez l'affinit\u00e9 des \u00e9quipes ! Elle change \u00e0 chaque fois !"
+	},
+	{
+		"key": "MID_AUTO_COOP_AFFINITY_VALUE_TITLE",
+		"value": "Affinit\u00e9"
+	},
+	{
+		"key": "MID_AUTO_COOP_AFFINITY_VALUE",
+		"value": "$a$a0 %"
+	},
+	{
+		"key": "MID_AUTO_COOP_DIFFICULTY_TITLE",
+		"value": "Combats auto d'affinit\u00e9"
+	},
+	{
+		"key": "MID_AUTO_COOP_AFFINITY_WITHOUT_BONUS",
+		"value": "$aAffinit\u00e9 : $a0 %"
+	},
+	{
+		"key": "MID_AUTO_COOP_AFFINITY_INFO_WITH_BONUS",
+		"value": "$aAffinit\u00e9 : $a0 %\\n+$a1 aux caract\u00e9ristiques des h\u00e9ros de votre \u00e9quipe !"
+	},
+	{
+		"key": "MID_AUTO_COOP_DETAIL_DIALOG_DAILY_REWARD_INFO",
+		"value": "$aGagnez une r\u00e9compense chaque jour\\nen terminant une carte. ($a0 jours max.)"
+	},
+	{
+		"key": "MID_AUTO_COOP_DETAIL_DIALOG_SCORE",
+		"value": "Record"
+	},
+	{
+		"key": "MID_AUTO_COOP_DAILY_BONUS_REWARD",
+		"value": "Une r\u00e9compense \u00e0 gagner chaque jour !"
+	},
+	{
+		"key": "MID_AUTO_COOP_SCORE_REWARD",
+		"value": "$aR\u00e9compenses (score cumul\u00e9) : $a0"
+	},
+	{
+		"key": "MID_AUTO_COOP_RESULT",
+		"value": "R\u00e9sultats"
+	},
+	{
+		"key": "MID_AUTO_COOP_RESULT_TELOP",
+		"value": "Points obtenus !"
+	},
+	{
+		"key": "MID_AUTO_COOP_RESULT_KILL",
+		"value": "Ennemis vaincus"
+	},
+	{
+		"key": "MID_AUTO_COOP_RESULT_ALIVE",
+		"value": "Survie"
+	},
+	{
+		"key": "MID_AUTO_COOP_RESULT_AFFINITY",
+		"value": "Bonus d'affinit\u00e9"
+	},
+	{
+		"key": "MID_AUTO_COOP_RESULT_DAILY_BONUS",
+		"value": "$aPoints x$a0 chaque jour"
+	},
+	{
+		"key": "MID_AUTO_COOP_RESULT_CURRENT_SCORE",
+		"value": "Score"
+	},
+	{
+		"key": "MID_AUTO_COOP_RESULT_TOTAL_SCORE",
+		"value": "Score cumul\u00e9"
+	},
+	{
+		"key": "MID_AUTO_COOP_DIALOG_END_OF_TERM",
+		"value": "Vos r\u00e9sultats n'ont pas \u00e9t\u00e9 pris\\nen compte car la saison a pris fin\\navant que vous n'ayez pu terminer\\nvotre partie."
+	},
+	{
+		"key": "MID_AUTOCOOP_HELP_DIALOG_00",
+		"value": "Quelle est leur affinit\u00e9 ?"
+	},
+	{
+		"key": "MID_AUTOCOOP_HELP_DIALOG_01",
+		"value": "\u25c6 Combats auto d'affinit\u00e9 \u25c6\\nVous d\u00e9ployez une \u00e9quipe aux\\nc\u00f4t\u00e9s de celle d'un autre joueur\\npour accomplir des missions\\ncoop\u00e9ratives. Le score obtenu\\nd\u00e9pend de l'affinit\u00e9 entre les deux\\n\u00e9quipes !"
+	},
+	{
+		"key": "MID_AUTOCOOP_HELP_DIALOG_02",
+		"value": "\u25c6 Choisissez vos alli\u00e9s \u25c6\\nParmi les trois joueurs dans la liste,\\nchoisissez celui ayant l'\u00e9quipe\\naux c\u00f4t\u00e9s de laquelle vous voulez\\nlutter."
+	},
+	{
+		"key": "MID_AUTOCOOP_HELP_DIALOG_03",
+		"value": "\u25c6 Affinit\u00e9 \u25c6\\nD\u00e9couvrez le degr\u00e9 d'affinit\u00e9 de\\nvotre \u00e9quipe avec les forces alli\u00e9es\\nque vous choisissez ! L'affinit\u00e9\\nfonctionne de fa\u00e7on myst\u00e9rieuse\\net impr\u00e9visible. Elle ne repr\u00e9sente\\npas les vrais sentiments entre les\\nh\u00e9ros. Une bonne affinit\u00e9 rend\\nvotre \u00e9quipe plus forte et\\naugmente votre score !"
+	},
+	{
+		"key": "MID_AUTOCOOP_HELP_DIALOG_04",
+		"value": "\u25c6 Astuces pour l'affinit\u00e9 \u25c6\\nVous aurez plus de chances\\nd'obtenir une affinit\u00e9 \u00e9lev\u00e9e si les\\ndeux \u00e9quipes sont compos\u00e9es de\\nquatre h\u00e9ros issus des deux jeux\\nbonus. Mais il y a aussi une part\\nimpr\u00e9visible dans l'affinit\u00e9. Vous\\npourriez donc obtenir des r\u00e9sultats\\ndiff\u00e9rents m\u00eame si vous utilisez\\nplusieurs fois les deux m\u00eames\\n\u00e9quipes."
+	},
+	{
+		"key": "MID_AUTOCOOP_HELP_DIALOG_05",
+		"value": "\u25c6 Batailles \u25c6\\nLes batailles se d\u00e9roulent\\nautomatiquement. Vous obtenez\\nun score en fonction des r\u00e9sultats\\nde chaque bataille, puis recevez\\ndes r\u00e9compenses en fonction\\nde votre score cumul\u00e9. Les effets\\nl\u00e9gendaires sont annul\u00e9s lors des\\ncombats automatiques."
+	},
+	{
+		"key": "MID_CONFIG_HOME_NOTIFICATION_AUTO_COOP",
+		"value": "Notif. d'accueil\\nCombats auto\\nd'affinit\u00e9"
+	},
+	{
+		"key": "MID_HOME_AUTO_COOP_NOTIFICATION",
+		"value": "Obtenez une r\u00e9compense par jour.\\nOuvrir menu Combats auto d'affinit\u00e9 ?"
+	},
+	{
+		"key": "MID_HOME_AUTO_COOP_NAVIGATION_JUMP",
+		"value": "Combats auto d'affinit\u00e9"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202312",
+		"value": "N\u00e9ant et r\u00eave (fin)"
+	}
+]

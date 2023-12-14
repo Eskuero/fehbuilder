@@ -601,7 +601,7 @@
 	},
 	{
 		"key": "MSID_H_\u30d0\u30eb\u30dc\u306e\u52c7\u69cd",
-		"value": "If unit is within 3 spaces of an ally, grants\\nAtk/Def+5 to unit during combat, and also,\\nif foe initiates combat, reduces damage from\\nfoe's follow-up attack by 60% during combat.\\n(For standard weapons, \"follow-up attack\"\\nmeans the second strike. For weapons that\\ngrant \"unit attacks twice,\" it means the third\\nand fourth strikes.)"
+		"value": "If unit is within 3 spaces of an ally, grants\\nAtk/Def+5 to unit during combat, and also,\\nif foe initiates combat, reduces damage from\\nfoe's follow-up attack by 60% during combat\\n(\"follow-up attack\" normally means only the\\nsecond strike; for effects that grant \"unit\\nattacks twice,\" it means the third and\\nfourth strikes)."
 	},
 	{
 		"key": "MSID_H_\u5fa9\u8b90\u306e\u70c8\u69cd",
@@ -665,7 +665,7 @@
 	},
 	{
 		"key": "MSID_H_\u900f\u9b54\u7adc\u306e\u30d6\u30ec\u30b9",
-		"value": "Accelerates Special trigger (cooldown count-1).\\nIf foe initiates combat or foe's HP \u2265 75% at\\nstart of combat, grants Atk/Spd/Def/Res+5\\nto unit, inflicts Atk/Spd/Def/Res-X on foe\\n(X = current bonus on each of foe's stats \u00d7 2;\\nexample: if foe has +7 bonus to Spd, inflicts\\nSpd-14, for a net penalty of Spd-7; calculates\\neach stat penalty independently), deals\\ndamage = 20% of unit's Spd (excluding\\narea-of-effect Specials), and reduces damage\\nfrom foe's first attacks by 7 during combat\\n(for standard weapons, \"first attacks\" means\\nonly the first strike; for weapons that grant\\n\"unit attacks twice,\" it means the first and\\nsecond strikes). If foe's Range = 2, calculates\\ndamage using the lower of foe's Def or Res."
+		"value": "Accelerates Special trigger (cooldown count-1).\\nIf foe initiates combat or foe's HP \u2265 75% at\\nstart of combat, grants Atk/Spd/Def/Res+5\\nto unit, inflicts Atk/Spd/Def/Res-X on foe\\n(X = current bonus on each of foe's stats \u00d7 2;\\nexample: if foe has +7 bonus to Spd, inflicts\\nSpd-14, for a net penalty of Spd-7; calculates\\neach stat penalty independently), deals\\ndamage = 20% of unit's Spd (excluding\\narea-of-effect Specials), and reduces damage\\nfrom foe's first attacks by 7 during combat\\n(\"first attack\" normally means only the first\\nstrike; for effects that grant \"unit attacks\\ntwice,\" it means the first and second strikes).\\nIf foe's Range = 2, calculates damage using\\nthe lower of foe's Def or Res."
 	},
 	{
 		"key": "MSID_H_\u904b\u547d\u30cf\u5909\u30ef\u30e9\u30ca\u30a4\u2026",
@@ -685,7 +685,7 @@
 	},
 	{
 		"key": "MSID_H_\u6167\u773c\u968a\u5f624",
-		"value": "If foe initiates combat, inflicts Atk/Spd-4 on\\nfoe and neutralizes effects that guarantee foe's\\nfollow-up attacks and effects that prevent\\nunit's follow-up attacks during combat, and\\nalso, if unit's Spd \u2265 foe's Spd-10, reduces\\ndamage from foe's first attack by 40% during\\ncombat. (For standard weapons, \"first attack\"\\nmeans only the first strike; for weapons that\\ngrant \"unit attacks twice,\" it means the first\\nand second strikes.)"
+		"value": "If foe initiates combat, inflicts Atk/Spd-4 on\\nfoe and neutralizes effects that guarantee foe's\\nfollow-up attacks and effects that prevent\\nunit's follow-up attacks during combat, and\\nalso, if unit's Spd \u2265 foe's Spd-10, reduces\\ndamage from foe's first attack by 40% during\\ncombat (\"first attack\" normally means only the\\nfirst strike; for effects that grant \"unit attacks\\ntwice,\" it means the first and second strikes)."
 	},
 	{
 		"key": "MSID_H_\u30bb\u30af\u30f4\u30a1\u30d9\u30af\u6539",
@@ -709,23 +709,23 @@
 	},
 	{
 		"key": "MID_STAGE_TITLE_S7071",
-		"value": "Chapter 3-1"
+		"value": "Chapter 3: Part 1"
 	},
 	{
 		"key": "MID_STAGE_TITLE_S7072",
-		"value": "Chapter 3-2"
+		"value": "Chapter 3: Part 2"
 	},
 	{
 		"key": "MID_STAGE_TITLE_S7073",
-		"value": "Chapter 3-3"
+		"value": "Chapter 3: Part 3"
 	},
 	{
 		"key": "MID_STAGE_TITLE_S7074",
-		"value": "Chapter 3-4"
+		"value": "Chapter 3: Part 4"
 	},
 	{
 		"key": "MID_STAGE_TITLE_S7075",
-		"value": "Chapter 3-5"
+		"value": "Chapter 3: Part 5"
 	},
 	{
 		"key": "MID_STAGE_S7071",
