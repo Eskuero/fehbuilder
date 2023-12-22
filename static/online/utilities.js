@@ -307,10 +307,11 @@ passiverender = {
 };
 // Condensed canvas position to render images passive icons at
 passivecondensedrender = {
-	"A": {"icon": [547, 9], "indicator": [572, 30]},
-	"B": {"icon": [585, 9], "indicator": [610, 32]},
-	"C": {"icon": [623, 9], "indicator": [651, 33]},
-	"S": {"icon": [661, 9], "indicator": [684, 32]}
+	"A": {"icon": [518, 9], "indicator": [543, 33]},
+	"B": {"icon": [556, 9], "indicator": [581, 35]},
+	"C": {"icon": [594, 9], "indicator": [622, 35]},
+	"S": {"icon": [632, 9], "indicator": [655, 35]},
+	"X": {"icon": [670, 9], "indicator": [696, 35]}
 };
 // Echoes canvas position to render images passive icons at
 passiveechoesrender = {

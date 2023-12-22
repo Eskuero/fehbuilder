@@ -411,6 +411,10 @@ async function condensed() {
 		"C": selectC.value == "None" ? false : selectC.value,
 		"S": selectS.value == "None" ? false : selectS.value
 	};
+	// Add the X slot only if it exists
+	if (selectX.value != "None") {
+		passives["X"] = selectX.value;
+	}
 	var summoner = selectsummoner.value == "None" ? false : selectsummoner.value;
 	var buffs = [
 		0,
@@ -455,14 +459,14 @@ async function condensed() {
 
 	// Print the level string
 	preview.font = '20px FeH-Font'; preview.fillStyle = "#ffffff"; preview.strokeStyle = '#0a2533'; preview.textAlign = 'center';
-	preview.strokeText(languages[language]["MID_LEVEL2"], 501, 6); preview.fillText(languages[language]["MID_LEVEL2"], 501, 6);
+	preview.strokeText(languages[language]["MID_LEVEL2"], 472, 6); preview.fillText(languages[language]["MID_LEVEL2"], 472, 6);
 	// Print the level 40. It was hardcoded previously so we just do this to make sure it doesn't look off side by side with the merge count
 	var level = selectlevel.value == "level1" ? 1 : 40;
-	printnumbers(preview, level, 1, 480, 30, "start");
+	printnumbers(preview, level, 1, 451, 30, "start");
 
 	// If we have merges we add the text next to the level
 	if (merges > 0) {
-		printnumbers(preview, "+", 1, 518, 32, "start");
+		printnumbers(preview, "+", 1, 489, 32, "start");
 	}
 
 	preview.font = '24px FeH-Font'; preview.textAlign = 'start';
