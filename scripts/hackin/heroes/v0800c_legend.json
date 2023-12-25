@@ -1,0 +1,147 @@
+[
+	{
+		"id_tag": "PID_\u4f1d\u627f\u30ab\u30df\u30e9",
+		"roman": "CAMILLA_LEGEND01",
+		"face_name": "ch05_28_Camilla_F_Legend01",
+		"face_name2": "ch05_28_Camilla_F_Legend01",
+		"legendary": {
+			"duo_skill_id": "",
+			"bonus_effect": {
+				"hp": 3,
+				"atk": 2,
+				"spd": 0,
+				"def": 0,
+				"res": 0
+			},
+			"kind": 1,
+			"element": 2,
+			"bst": 200,
+			"pair_up": true,
+			"ae_extra": false
+		},
+		"dragonflowers": {
+			"max_count": 5,
+			"costs": [
+				40,
+				80,
+				120,
+				160,
+				200
+			]
+		},
+		"timestamp": null,
+		"id_num": 1040,
+		"version_num": 800,
+		"sort_value": 500500,
+		"origins": 2048,
+		"weapon_type": 13,
+		"tome_class": 3,
+		"move_type": 3,
+		"series": 11,
+		"random_pool": 0,
+		"permanent_hero": false,
+		"base_vactor_id": 175,
+		"refresher": false,
+		"base_stats": {
+			"hp": 18,
+			"atk": 15,
+			"spd": 11,
+			"def": 3,
+			"res": 3
+		},
+		"growth_rates": {
+			"hp": 50,
+			"atk": 70,
+			"spd": 80,
+			"def": 45,
+			"res": 50
+		},
+		"skills": [
+			[
+				"SID_\u30a6\u30a4\u30f3\u30c9",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			[
+				"SID_\u30a8\u30eb\u30a6\u30a4\u30f3\u30c9",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u9b3c\u795e\u306e\u4e00\u64831",
+				null,
+				"SID_\u6b7b\u306e\u5410\u606f1",
+				null,
+				null
+			],
+			[
+				"SID_\u30a8\u30eb\u30a6\u30a4\u30f3\u30c9",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u30ec\u30af\u30b9\u30ab\u30ea\u30d0\u30fc",
+				null,
+				"SID_\u4f0f\u7adc",
+				"SID_\u9b3c\u795e\u98db\u71d5\u306e\u4e00\u64831",
+				null,
+				"SID_\u6b7b\u306e\u5410\u606f2",
+				null,
+				null
+			],
+			[
+				"SID_\u30ec\u30af\u30b9\u30ab\u30ea\u30d0\u30fc",
+				null,
+				"SID_\u4f0f\u7adc",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u7adc\u88c2",
+				"SID_\u9b3c\u795e\u98db\u71d5\u306e\u4e00\u64832",
+				null,
+				"SID_\u6b7b\u306e\u5410\u606f3",
+				null,
+				null
+			],
+			[
+				"SID_\u5996\u8276\u306a\u308b\u591c\u306e\u66f8",
+				null,
+				"SID_\u4f0f\u7adc",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u9b3c\u795e\u98db\u71d5\u306e\u96e2\u64833",
+				"SID_\u53ef\u611b\u304c\u3063\u3066\u3042\u3052\u308b",
+				"SID_\u6b7b\u306e\u7634\u6c17",
+				null,
+				null
+			]
+		]
+	}
+]

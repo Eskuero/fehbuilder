@@ -601,7 +601,7 @@
 	},
 	{
 		"key": "MSID_H_\u30d0\u30eb\u30dc\u306e\u52c7\u69cd",
-		"value": "Si la unidad se encuentra en un radio de 3 casillas\\nde un aliado, obtiene Atq. y Def. +5 en combate.\\nAdem\u00e1s, si el rival inicia el ataque, reduce en\\nun 60 % el da\u00f1o que sufre la unidad del ataque\\ndoble del enemigo durante el combate.\\n(Con armas normales, \"ataque doble\" se refiere\\na la segunda acometida; en armas que otorgan\\nel efecto de \"la unidad ataca dos veces\", se\\nrefiere a la tercera y a la cuarta acometida)."
+		"value": "Si la unidad se encuentra en un radio de 3 casillas\\nde un aliado, obtiene Atq. y Def. +5 en combate.\\nAdem\u00e1s, si el rival inicia el ataque, reduce en\\nun 60 % el da\u00f1o que sufre la unidad del ataque\\ndoble del enemigo durante el combate.\\n(\"ataque doble\" suele referirse solo al segundo\\ngolpe; en cambio, con efectos que otorgan\\n\"la unidad ataca dos veces\", se refiere\\nal tercero y al cuarto)."
 	},
 	{
 		"key": "MSID_H_\u5fa9\u8b90\u306e\u70c8\u69cd",
@@ -665,7 +665,7 @@
 	},
 	{
 		"key": "MSID_H_\u900f\u9b54\u7adc\u306e\u30d6\u30ec\u30b9",
-		"value": "Facilita la ejecuci\u00f3n de hab. esp. (-1 a la cuenta\\nregresiva). Si el rival inicia el ataque, o si tiene\\nPV \u2265 75 % al inicio del combate, otorga Atq.,\\nVel., Def. y Res. +5 a la unidad, inflige Atq., Vel.,\\nDef. y Res. -X al rival (donde X equivale a la\\nbonificaci\u00f3n actual de cada atributo del rival \u00d7 2;\\npor ejemplo, si un rival tiene una bonificaci\u00f3n de\\nVel. +7, inflige Vel. -14, y la penalizaci\u00f3n total\\nes de Vel. -7; cada penalizaci\u00f3n se aplica por\\nseparado), inflige un 20 % de la Vel. de la unidad\\ncomo da\u00f1o adicional (sin contar las hab. esp.\\ncon \u00e1rea de efecto) y reduce en 7 el da\u00f1o que\\ninfligen los primeros ataques del enemigo en\\ncombate (con armas normales, \"primeros\\nataques\" se refiere solo a la primera acometida;\\nen armas que otorgan el efecto de \"la unidad\\nataca dos veces\", se refiere a la primera y la\\nsegunda acometida). Contra enemigos con\\nalcance de 2, el da\u00f1o se calcula a partir de la\\nDef. o la Res. del enemigo (la que tenga el valor\\nm\u00e1s bajo)."
+		"value": "Facilita la ejecuci\u00f3n de hab. esp. (-1 a la cuenta\\nregresiva). Si el rival inicia el ataque, o si tiene\\nPV \u2265 75 % al inicio del combate, otorga Atq.,\\nVel., Def. y Res. +5 a la unidad, inflige Atq., Vel.,\\nDef. y Res. -X al rival (donde X equivale a la\\nbonificaci\u00f3n actual de cada atributo del rival \u00d7 2;\\npor ejemplo, si un rival tiene una bonificaci\u00f3n de\\nVel. +7, inflige Vel. -14, y la penalizaci\u00f3n total\\nes de Vel. -7; cada penalizaci\u00f3n se aplica por\\nseparado), inflige un 20 % de la Vel. de la unidad\\ncomo da\u00f1o adicional (sin contar las hab. esp.\\ncon \u00e1rea de efecto) y reduce en 7 el da\u00f1o que\\ninfligen los primeros ataques del enemigo en\\ncombate (\"primer ataque\" suele referirse solo\\nal primer golpe, en cambio, con efectos que\\notorgan \"la unidad ataca dos veces\", se refiere\\nal primero y al segundo). Contra enemigos con\\nalcance de 2, el da\u00f1o se calcula a partir de la\\nDef. o la Res. del enemigo (la que tenga el valor\\nm\u00e1s bajo)."
 	},
 	{
 		"key": "MSID_H_\u904b\u547d\u30cf\u5909\u30ef\u30e9\u30ca\u30a4\u2026",
@@ -685,7 +685,7 @@
 	},
 	{
 		"key": "MSID_H_\u6167\u773c\u968a\u5f624",
-		"value": "Si el rival inicia el ataque, inflige Atq. y Vel. -4\\nal rival y anula los efectos que garantizan un\\nataque doble de los enemigos y los que impiden\\nque sea la unidad quien ejecute uno durante\\nel combate. Adem\u00e1s, si la Vel. de la unidad \u2265 a\\nla Vel. del rival -10, reduce en un 40 % el da\u00f1o\\nque inflige el primer ataque del rival en combate\\n(con armas normales, \"primer ataque\" se refiere\\nsolo a la primera acometida; en armas que\\notorgan el efecto de \"la unidad ataca dos veces\",\\nse refiere a la primera y a la segunda acometida)."
+		"value": "Si el rival inicia el ataque, inflige Atq. y Vel. -4\\nal rival y anula los efectos que garantizan un\\nataque doble de los enemigos y los que impiden\\nque sea la unidad quien ejecute uno durante\\nel combate. Adem\u00e1s, si la Vel. de la unidad \u2265 a\\nla Vel. del rival -10, reduce en un 40 % el da\u00f1o\\nque inflige el primer ataque del rival en combate\\n(\"primer ataque\" suele referirse solo al primer\\ngolpe; en cambio, con efectos que otorgan\\n\"la unidad ataca dos veces\", se refiere al primero\\ny al segundo)."
 	},
 	{
 		"key": "MSID_H_\u30bb\u30af\u30f4\u30a1\u30d9\u30af\u6539",
