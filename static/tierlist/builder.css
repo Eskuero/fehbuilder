@@ -11,15 +11,12 @@ body {
 .contenedor {
 	width: calc(100vw - 2em);
 	height: calc(100vh - 2em);
-	display: flex;
-	gap: 0.5em;
-	margin: auto;
-	margin-top: 1em;
-	margin-bottom: 1em;
+	margin: 1em;
 }
 
 @media (min-resolution: 150dpi) and (max-aspect-ratio: 10/7), (orientation: portrait) { /* Mobile/Portrait layouts */
 	.contenedor {
+		display: flex;
 		flex-direction: column;
 		width: 90vw;
 		height: auto;
@@ -30,8 +27,9 @@ body {
 /* Tier list element */
 #tierlist {
 	height: min-content;
-	width: 50%;
+	width: calc(50% - 0.25em);
 	background-color: #222;
+	float: left;
 }
 .tier {
 	display: flex;
@@ -69,6 +67,7 @@ body {
 @media (min-resolution: 150dpi) and (max-aspect-ratio: 10/7), (orientation: portrait) { /* Mobile/Portrait layouts */
 	#tierlist {
 		width: auto;
+		float: initial;
 	}
 }
 
@@ -138,7 +137,8 @@ body {
 /* Form and sections */
 .form {
 	display: flex;
-	width: 50%;
+	width: calc(50% - 1.25em);
+	height: calc(100vh - 2em);
 	overflow-y: scroll;
 	flex-direction: column;
 	background: rgba(14, 51, 69, 0.6);
@@ -146,6 +146,9 @@ body {
 	text-align: initial;
 	padding: 1em 1.5em 0 1.5em;
 	box-sizing: border-box;
+	float: right;
+	position: fixed;
+	right: 1em;
 }
 .section {
 	display: grid; /* All sections are grids */
@@ -171,7 +174,6 @@ body {
 }
 #results {
 	display: flex;
-	min-height: 10em;
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 0.25em;
@@ -180,6 +182,8 @@ body {
 @media (min-resolution: 150dpi) and (max-aspect-ratio: 10/7), (orientation: portrait) { /* Mobile/Portrait layouts */
 	.form {
 		width: auto;
+		float: initial;
+		position: initial;
 	}
 	.savesform {
 		grid-template-rows: auto auto;
