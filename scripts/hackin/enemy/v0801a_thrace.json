@@ -1,0 +1,36 @@
+[
+	{
+		"id_tag": "EID_\u30d5\u30ec\u30b9\u30d9\u30eb\u30b0",
+		"roman": "HRESVELG",
+		"face_name": "ch00_55_Hresvelg_F_Normal",
+		"face_name2": "ch00_55_Hresvelg_F_Normal",
+		"top_weapon": "SID_\u5203\u306e\u846c\u308a\u624b\u306e\u722a",
+		"unique_assist1": null,
+		"unique_assist2": null,
+		"unique_special": null,
+		"timestamp": null,
+		"id_num": 104,
+		"is_npc": false,
+		"weapon_type": 21,
+		"tome_class": 0,
+		"move_type": 3,
+		"random_allowed": false,
+		"is_boss": true,
+		"refresher": false,
+		"is_enemy": true,
+		"base_stats": {
+			"hp": 17,
+			"atk": 10,
+			"spd": 6,
+			"def": 9,
+			"res": 7
+		},
+		"growth_rates": {
+			"hp": 50,
+			"atk": 75,
+			"spd": 90,
+			"def": 55,
+			"res": 40
+		}
+	}
+]
