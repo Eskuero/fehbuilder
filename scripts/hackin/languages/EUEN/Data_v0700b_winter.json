@@ -413,7 +413,7 @@
 	},
 	{
 		"key": "MSID_H_\u6bcd\u5a18\u306e\u9759\u3084\u304b\u306a\u795d\u798f",
-		"value": "$aAccelerates Special trigger (cooldown count-1).\\nAt start of turn, if unit is within 2 spaces of an\\nally, grants the following effects to unit and\\nallies within 2 spaces of unit for 1 turn: \"unit\\ncan move to a space adjacent to an ally within\\n2 spaces\" and\u3010Dual Strike\u3011.  If unit initiates\\ncombat or is within 2 spaces of an ally, grants\\nAtk/Spd+6 and Special cooldown charge +1\\nto unit per attack during combat. (Only highest\\nvalue applied. Does not stack.)\\n\\n\u3010Dual Strike\u3011\\nIf unit initiates combat and is adjacent to an\\nally with Dual Strike (excluding unit), unit\\nattacks twice. (That turn only. Does not stack.)"
+		"value": "$aAccelerates Special trigger (cooldown count-1).\\nAt start of turn, if unit is within 2 spaces of an\\nally, grants the following effects to unit and\\nallies within 2 spaces of unit for 1 turn: \"unit\\ncan move to a space adjacent to an ally\\nwithin 2 spaces\" and\u3010Dual Strike\u3011.\\nIf unit initiates combat or is within 2 spaces\\nof an ally, grants Atk/Spd+6 and Special\\ncooldown charge +1 to unit per attack\\nduring combat (only highest value applied;\\ndoes not stack).\\n\\n\u3010Dual Strike\u3011\\nIf unit initiates combat and is adjacent to an\\nally with Dual Strike (excluding unit), unit\\nattacks twice. (That turn only. Does not stack.)"
 	},
 	{
 		"key": "MSID_H_\u8358\u53b3\u306a\u308b\u795d\u798f\u306e\u8056\u65a7",
