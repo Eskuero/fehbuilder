@@ -37,8 +37,8 @@ function updatedialog(caller) {
 			if (selectstructure.options[j].value == structures[i].id && structures[i].parentElement.id != "results") {
 				todisable.push(selectstructure.options[j]);
 			}
-			// Don't allow more than six defensive structures
-			if (other["structures"][selectstructure.options[j].value]["type"] == "defensive" && maplimits["defensive"].length >= 6) {
+			// Don't allow more than five defensive structures, since fortress is included but mandatory
+			if (other["structures"][selectstructure.options[j].value]["type"] == "defensive" && maplimits["defensive"].length >= 5) {
 				// If the item already in the cell is a defensive structure don't disable them to allow replacing
 				let typeofchild = caller.firstChild ? other["structures"][caller.firstChild.id]["type"] : "none";
 				if (typeofchild != "defensive") {
@@ -152,8 +152,8 @@ function drop(ev) {
 		}
 		// If the data to be dropped is an structure check if it's not already limited in amount of type
 		if (data.className == "structure") {
-			// If it's of type defensive and we already have six different of those deny the drop
-			if (other["structures"][data.id]["type"] == "defensive" && maplimits["defensive"].length >= 6 && !maplimits["defensive"].includes(data.id)) {
+			// If it's of type defensive and we already have five different of those deny the drop
+			if (other["structures"][data.id]["type"] == "defensive" && maplimits["defensive"].length >= 5 && !maplimits["defensive"].includes(data.id)) {
 				return;
 			}
 			// If it's of type trap and we already have two different of those deny the drop
