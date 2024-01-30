@@ -33,6 +33,8 @@ async function populateall(clean, bypass = []) {
 	statictranslations();
 	// Add all allies to the list
 	fillblessed();
+	// Add all emblems to the list
+	fillemblems();
 	// Make sure we got a valid blessing for locked mythics/legendaries
 	validblessing();
 	// Disable or enable beast select based on unit
@@ -273,6 +275,29 @@ function swapstat(caller, target) {
 	}
 }
 
+async function fillemblems() {
+	var newlang = selectlanguage.value;
+	// Get current value to restore it back if possible
+	var previousvalue = selectemblemhero.value;
+	// First delete all emblems
+	while (selectemblemhero.lastChild) {
+		selectemblemhero.removeChild(selectemblemhero.lastChild);
+	}
+	// Always add the None option with it's proper translation
+	var opt = document.createElement('option');
+	opt.value = "None";
+	opt.innerHTML = languages[selectlanguage.value]["MSID_H_NONE"];
+	selectemblemhero.appendChild(opt);
+	for (i = 0; i < other["emblem"].length; i++) {
+		let opt = document.createElement('option');
+		let hero = other["emblem"][i]
+		opt.value = hero
+		opt.innerHTML = languages[newlang][hero.replace("PID", "MPID")]
+		selectemblemhero.appendChild(opt);
+	}
+	selectemblemhero.value = previousvalue;
+}
+
 async function fillblessed(clean = false, toberestored = []) {
 	var newlang = selectlanguage.value;
 	// We need to know which options to restore unless called clean
@@ -377,8 +402,8 @@ function updatedragonflowers() {
 
 async function switchbuild(build) {
 	// List of values to be restored on each slot
-	var selects = [selectrarity, selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials,
-		selectassists, selectA, selectB, selectC, selectS, selectX, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef,
+	var selects = [selectrarity, selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials, selectemblemhero,
+		selectemblemmerges,	selectassists, selectA, selectB, selectC, selectS, selectX, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef,
 		selectres, selectatkpairup, selectspdpairup, selectdefpairup, selectrespairup, selectsp, selecthm, selectartstyle, selecttemplate,
 		selectoffsetY, selectoffsetX, selectmirror, selectbackground, selectfavorite, selectaccessory, selectotherworldbond, appui, selectlevel];
 
@@ -420,8 +445,8 @@ async function switchbuild(build) {
 	// Trigger a rebuild of the selects based on the language filters set
 	await populateall(false); statictranslations();
 	// List of values to be restored on each slot (we have to refresh this here again because some selects got regenerated and reassigned)
-	var selects = [selectrarity, selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials,
-		selectassists, selectA, selectB, selectC, selectS, selectX, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef,
+	var selects = [selectrarity, selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials, selectemblemhero,
+		selectemblemmerges, selectassists, selectA, selectB, selectC, selectS, selectX, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef,
 		selectres, selectatkpairup, selectspdpairup, selectdefpairup, selectrespairup, selectsp, selecthm, selectartstyle, selecttemplate,
 		selectoffsetY, selectoffsetX, selectmirror, selectbackground, selectfavorite, selectaccessory, selectotherworldbond, appui, selectlevel];
 	// Trigger a rebuild of the refine select based on the selection of weapon
