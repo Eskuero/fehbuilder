@@ -1563,6 +1563,18 @@
 		"scale": [54,59],
 		"entry": "Icon_LegendPairS.png"
 	},
+	"Emblem": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Engage.png",
+		"scale": [147,160],
+		"entry": "Icon_EngagePlayer.png"
+	},
+	"Emblem-mini": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Engage.png",
+		"scale": [54,54],
+		"entry": "Icon_LegendEngageS.png"
+	},
 	"DuoConversation": {
 		"actions": ["plist", "resize"],
 		"path": "Common/UI/UnitEdit.png",
@@ -1581,6 +1593,12 @@
 		"scale": [80,87],
 		"entry": "Icon_LegendFireTwinWorldS.png"
 	},
+	"1-Blessing-emblem": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Engage.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendFireEngageS.png"
+	},
 	"2-Blessing-duo": {
 		"actions": ["plist", "resize"],
 		"path": "Common/UI/Blessing.png",
@@ -1592,6 +1610,12 @@
 		"path": "Common/UI/Blessing.png",
 		"scale": [80,87],
 		"entry": "Icon_LegendWaterTwinWorldS.png"
+	},
+	"2-Blessing-emblem": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Engage.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendWaterEngageS.png"
 	},
 	"3-Blessing-duo": {
 		"actions": ["plist", "resize"],
@@ -1605,6 +1629,12 @@
 		"scale": [80,87],
 		"entry": "Icon_LegendWindTwinWorldS.png"
 	},
+	"3-Blessing-emblem": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Engage.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendWindEngageS.png"
+	},
 	"4-Blessing-duo": {
 		"actions": ["plist", "resize"],
 		"path": "Common/UI/Blessing.png",
@@ -1616,6 +1646,12 @@
 		"path": "Common/UI/Blessing.png",
 		"scale": [80,87],
 		"entry": "Icon_LegendEarthTwinWorldS.png"
+	},
+	"4-Blessing-emblem": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Engage.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendEarthEngageS.png"
 	},
 	"5-Blessing-duo": {
 		"actions": ["plist", "resize"],
@@ -1629,6 +1665,12 @@
 		"scale": [80,87],
 		"entry": "Icon_LegendLightTwinWorldS.png"
 	},
+	"5-Blessing-emblem": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Engage.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendLightEngageS.png"
+	},
 	"6-Blessing-duo": {
 		"actions": ["plist", "resize"],
 		"path": "Common/UI/Blessing.png",
@@ -1640,6 +1682,12 @@
 		"path": "Common/UI/Blessing.png",
 		"scale": [80,87],
 		"entry": "Icon_LegendDarkTwinWorldS.png"
+	},
+	"6-Blessing-emblem": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Engage.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendDarkEngageS.png"
 	},
 	"7-Blessing-duo": {
 		"actions": ["plist", "resize"],
@@ -1653,6 +1701,12 @@
 		"scale": [80,87],
 		"entry": "Icon_LegendHeavenTwinWorldS.png"
 	},
+	"7-Blessing-emblem": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Engage.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendHeavenEngageS.png"
+	},
 	"8-Blessing-duo": {
 		"actions": ["plist", "resize"],
 		"path": "Common/UI/Blessing.png",
@@ -1664,6 +1718,12 @@
 		"path": "Common/UI/Blessing.png",
 		"scale": [80,87],
 		"entry": "Icon_LegendLogicTwinWorldS.png"
+	},
+	"8-Blessing-emblem": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Engage.png",
+		"scale": [80,87],
+		"entry": "Icon_LegendLogicEngageS.png"
 	},
 	"favorite_0": {
 		"actions": ["favorite", "content", "resize"],

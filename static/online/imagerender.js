@@ -520,11 +520,20 @@ async function condensed() {
 	}
 
 	var blessing = selectblessings.value == "None" ? false : parseInt(selectblessings.value);
-	var duoresonance = other["duo"].includes(hero) ? "duo" : (other["resonant"].includes(hero) ? "resonance" : false);
+	// This lists contains the categories with extra mini icons to be used on condensed layout
+	var dualcategories = ["duo", "resonant", "emblem"];
+	// Check if the hero belongs on any of them
+	var hasminiicon = false;
+	for (i = 0; i < dualcategories.length; i++) {
+		if (other[dualcategories[i]].includes(hero)) {
+			var hasminiicon = dualcategories[i];
+			break;
+		}
+	}
 	// Depending on the combination of the duo/blessing status change the icon rendered, as well as it's position
-	if (blessing && duoresonance) {
+	if (blessing && hasminiicon) {
 		// Duo heroes can't be pre-blessed, they at most have the normal variant of a manual bless
-		var blessingicon = "/common/other/" + blessing + "-Blessing-" + duoresonance + ".webp";
+		var blessingicon = "/common/other/" + blessing + "-Blessing-" + hasminiicon + ".webp";
 		await getimage(blessingicon).then(img => {
 			preview.drawImage(img, 90, 111);
 		});
@@ -540,10 +549,10 @@ async function condensed() {
 		await getimage(blessingicon).then(img => {
 			preview.drawImage(img, posX, posY);
 		});
-	} else if (duoresonance) {
-		var variant = duoresonance.charAt(0).toUpperCase() + duoresonance.slice(1) + "-mini";
-		var duoresonanceicon = other["images"]["other"][variant];
-		await getimage(duoresonanceicon).then(img => {
+	} else if (hasminiicon) {
+		var variant = hasminiicon.charAt(0).toUpperCase() + hasminiicon.slice(1) + "-mini";
+		var miniicon = other["images"]["other"][variant];
+		await getimage(miniicon).then(img => {
 			preview.drawImage(img, 104, 140);
 		});
 	}
@@ -954,6 +963,8 @@ async function myunit() {
 		var specialtype = "Rearmed";
 	} else if (other["attuned"].includes(hero)) {
 		var specialtype = "Attuned";
+	} else if (other["emblem"].includes(hero)) {
+		var specialtype = "Emblem";
 	}
 	// Detect if we are printing more than three icons (this could happen on duo/blessed/summoner supported allies) so we can resize accordingly
 	var needsresize = blessing && summoner && specialtype ? true : false;
