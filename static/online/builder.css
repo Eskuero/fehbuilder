@@ -176,7 +176,7 @@ body {
 	grid-template-rows: auto; /* Allow this grid section to grow it's height indefinetely */
 }
 .row-property.rowsplaining {
-	grid-row: span 2;
+	grid-row: span 2; /* This row will take two places. This is useful to push rows to the next column like when we had X slots but not yet Emblen skill */
 }
 .additionaloptions {
 	grid-template-columns: 1fr 2fr; /* Use a bit more of space for the checkboxes */
@@ -220,7 +220,7 @@ input[type='number']::-webkit-inner-spin-button {
 .imagelabel {
 	height: 2em;
 	width: 2em;
-	--spritesheet-width: 46; /* This is the number of icons in each of row of the spritesheet */
+	--spritesheet-width: 47; /* This is the number of icons in each of row of the spritesheet */
 	background-image: url("/common/assets/online.webp");
 	background-position: calc(var(--spriteid) * -100%) 0;
 	background-size: calc(var(--spritesheet-width) * 100%); /* If we increase the size of the background a 100% for each icon they will fit in any size */
