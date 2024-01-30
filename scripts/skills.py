@@ -38,9 +38,10 @@ skills = {
 		"S": {}
 	},
 	"assists": {},
-	"specials": {}
+	"specials": {},
+	"emblemskills": {}
 }
-categories = [skills["weapons"], skills["assists"], skills["specials"], skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["X"], skills["passives"]["S"]]
+categories = [skills["weapons"], skills["assists"], skills["specials"], skills["passives"]["A"], skills["passives"]["B"], skills["passives"]["C"], skills["passives"]["X"], skills["passives"]["S"], None, None, skills["emblemskills"]]
 refines = {}
 allskills = {}
 
@@ -91,6 +92,13 @@ for file in files:
 				if entry["refine_id"] not in [None, "SID_神罰の杖3", "SID_幻惑の杖3"]:
 					refines[entry["id_tag"]]["effectid"] = entry["refine_id"]
 					refines[entry["id_tag"]]["iconid"] = entry["icon_id"]
+
+			# For emblem skills we only need the icon id
+			elif entry["category"] == 10:
+				category = entry["category"]
+				categories[category][entry["id_tag"]] = {
+					"iconid": entry["icon_id"]
+				}
 
 refinenames = {"神": "Wrathful", "幻": "Dazzling", "ATK": "Atk", "AGI": "Spd", "DEF": "Def", "RES": "Res"}
 # For each refine defined update the original weapon info

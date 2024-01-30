@@ -110,7 +110,7 @@ print("\n     - Cropping individual passive and weapon refine icons...")
 # For ease of looping create a big dictionary that specifies the expected local path and the iconid too
 icons = {}
 # First we loop the passives
-allpassives = skills["passives"]["A"] | skills["passives"]["B"] | skills["passives"]["C"] | skills["passives"]["S"] | skills["passives"]["X"]
+allpassives = skills["passives"]["A"] | skills["passives"]["B"] | skills["passives"]["C"] | skills["passives"]["S"] | skills["passives"]["X"] | skills["emblemskills"]
 for passive in allpassives:
 	icons[passive] = {
 		"localpath": "icons/" + passive + ".webp",
@@ -127,7 +127,7 @@ for weapon in skills["weapons"]:
 # Check all localpaths and crop the icon if it doesn't exist already
 for icon in icons:
 	if not pathlib.Path(LOCAL_BASE_PATH + icons[icon]["localpath"]).is_file():
-		truename = engrishname["M" + icon]
+		truename = engrishname.get("M" + icon, icon)
 		print("          - \"" + truename + "\" missing asset \"" + icons[icon]["localpath"] + "\", cropping from spritesheet with ID " + str(icons[icon]["iconid"]), end = ": ", flush = True)
 		# Each spritesheet contains 169 icons, that means they end at +168 index. We divide by 169 and floor to detect which one
 		sheet = math.floor(icons[icon]["iconid"] / 169)
@@ -143,9 +143,10 @@ for icon in icons:
 		left = 76 * (idwithin - (line * 13))
 		iconimage = iconimage.crop((left, top, left + 76, top + 76))
 		# But we crop even further to different sizes depending on the existance of the shiny border or not, for that we get an specific pixel
-		# If the color of the pixel at 37,9 is (255, 241, 3, 255) that means we have a shiny border
+		# If the color of the pixel at 37,9 is (255, 241, 3, 255) that means we have a shiny border, if at 37,70 is (255, 241, 3, 252) it means emblem skill and we treat it the same
 		try:
-			isshiny = iconimage.getpixel((37, 9)) == (255, 241, 3, 255)
+			# FIXME: FIXME: THIS IS HORRIBLE
+			isshiny = (iconimage.getpixel((37, 9)) == (255, 241, 3, 255)) or (iconimage.getpixel((37, 70)) == (82, 25, 25, 252))
 			# When that happens we crop and resize less than usual
 			if isshiny:
 				iconimage = iconimage.crop((0, 0, 75, 76)).resize((48, 48))
