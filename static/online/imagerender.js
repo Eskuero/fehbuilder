@@ -919,6 +919,17 @@ async function myunit() {
 	preview.strokeText(assist, 420, 838); preview.fillText(assist, 420, 838);
 	preview.strokeText(special, 420, 888); preview.fillText(special, 420, 888);
 
+	// Print special icon, whether default or emblemhero
+	if (selectemblemhero.value == "None") {
+		renderjobs.push(getimage(other["images"]["other"]["special"]).then(img => {
+			preview.drawImage(img, 369, 875);
+		}));
+	} else {
+		renderjobs.push(getimage("../common/icons/" + selectemblemhero.value.replace("PID", "SID") + ".webp").then(img => {
+			preview.drawImage(img, 365, 874, 50, 50);
+		}));
+	}
+
 	// Render all the passives
 	for (const [category, skill] of Object.entries(passives)) {
 		// For category X we must make sure the holder is ready

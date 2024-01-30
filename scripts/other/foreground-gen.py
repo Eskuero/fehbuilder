@@ -27,8 +27,10 @@ else:
 		print("FEH_ASSETS_DIR points to a non valid directory")
 		sys.exit(1)
 
-# By default we save on the "other" folder
+# By default we save on the "base" folder
 OUTPUT_DIR = "../../data/img/base/"
+# Some other stuff can be saved to "other" since we no longer put it here directly
+INTERMEDIATE_OUTPUT_DIR = "../../data/img/other/"
 # EXTENSION to save picture at
 OUTPUT_EXTENSION = ".webp"
 
@@ -152,7 +154,9 @@ def main():
 	image = skillsheet.crop((234,4,301,74))
 	# Resize to a proper amount
 	image = image.resize((45,47))
-	baseimage = hookedalphacompositepaste(baseimage, image, (369, 875))
+	# UPDATED: We no longer print the icon directly on the foregroud, we save it alone to render later
+	#baseimage = hookedalphacompositepaste(baseimage, image, (369, 875))
+	image.save(INTERMEDIATE_OUTPUT_DIR + "special" + OUTPUT_EXTENSION, 'WEBP', lossless = True, quality = 100, method = 6)
 
 	# Print empty skill accessory for seals
 	image = cropentry(Common["plist"]["Icon_AccessoryBlank.png"], Common["image"])
