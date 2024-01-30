@@ -567,6 +567,8 @@ function reset(section) {
 			selectrefines.value = "None";
 			selectassists.value = "None";
 			selectspecials.value = "None";
+			selectemblemhero.value = "None";
+			selectemblemmerges.value = "0";
 			selectA.value = "None";
 			selectB.value = "None";
 			selectC.value = "None";
