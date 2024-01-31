@@ -979,7 +979,7 @@ async function myunit() {
 	if (other["duo"].includes(hero)) {
 		var specialtype = "Duo";
 	} else if (other["resonant"].includes(hero)) {
-		var specialtype = "Resonance";
+		var specialtype = "Resonant";
 	} else if (other["ascended"].includes(hero)) {
 		var specialtype = "Ascended";
 	} else if (other["rearmed"].includes(hero)) {
