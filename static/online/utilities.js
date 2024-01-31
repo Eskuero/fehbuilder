@@ -11,7 +11,7 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers) {
+function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers, emblemmerges) {
 	// Modify the level 1 stats based on the rarity provided
 	var almosttruelevel1 = {"HP": stats[0], "Atk": stats[1], "Spd": stats[2], "Def": stats[3], "Res": stats[4]};
 	// For 3 and 5 star rarity we can simply bump everything by 1 point
@@ -105,6 +105,14 @@ function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers
 	// We loop as many times as dragonflowers we got to apply the boosts, we save in a variable the next to be updated index
 	var stat = 0;
 	for (let i = 0; i < flowers; i++) {
+		// If we are neutral but merged we increase the first two stats twice
+		truelevel1[sortedtruelevel1[stat][0]] += 1;
+		stat = stat == 4 ? 0 : stat + 1;
+	}
+
+	// We loop as many times as emblemmerges we got to apply the boosts, we save in a variable the next to be updated index
+	var stat = 0;
+	for (let i = 0; i < emblemmerges; i++) {
 		// If we are neutral but merged we increase the first two stats twice
 		truelevel1[sortedtruelevel1[stat][0]] += 1;
 		stat = stat == 4 ? 0 : stat + 1;

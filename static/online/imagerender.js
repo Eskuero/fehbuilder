@@ -730,8 +730,9 @@ async function myunit() {
 	preview.strokeText(languages[language]["MID_HEROISM_POINT"], 115, 1081); preview.fillText(languages[language]["MID_HEROISM_POINT"], 115, 1081);
 
 	var flowers = parseInt(selectflowers.value);
+	var emblemmerges = selectemblemhero.value == "None" ? 0 : parseInt(selectemblemmerges.value);
 	// Obtain the calculated stats to draw
-	var statsmodifier = statcalc(units[hero]["stats"], units[hero]["growths"], rarity, boon, bane, ascendent, merges, flowers);
+	var statsmodifier = statcalc(units[hero]["stats"], units[hero]["growths"], rarity, boon, bane, ascendent, merges, flowers, emblemmerges);
 
 	var weapon = selectweapons.value == "None" ? false : selectweapons.value; var refine = selectrefines.value == "None" ? false : selectrefines.value;
 	// We have a couple of stats modifiers based on weapon, summoner support, attire, bonus unit, visible buffs and maybe not completely parsed A/S skills that we must add
@@ -964,11 +965,11 @@ async function myunit() {
 	}
 
 	// If the number of merges on the emblem is superior to zero, print it below the icon
-	if (selectemblemhero.value != "None" && selectemblemmerges.value != 0) {
+	if (selectemblemhero.value != "None" && emblemmerges != 0) {
 		// We must wait until the special icon is rendered
 		await specialiconjob;
 		preview.font = '15px FeH-Font'; preview.fillStyle = "#ffffff";
-		preview.strokeText("+" + selectemblemmerges.value, 393, 907); preview.fillText("+" + selectemblemmerges.value, 393, 907);
+		preview.strokeText("+" + emblemmerges, 393, 907); preview.fillText("+" + emblemmerges, 393, 907);
 	}
 
 	preview.font = '24px FeH-Font'; preview.fillStyle = "#ffffff";
