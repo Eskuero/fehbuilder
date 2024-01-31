@@ -917,6 +917,7 @@ async function myunit() {
 	// Print assist and special info
 	preview.fillStyle = "#ffffff";
 	preview.strokeText(assist, 420, 838); preview.fillText(assist, 420, 838);
+	preview.fillStyle = selectemblemhero.value != "None" ? "#82f546" : "#ffffff";
 	preview.strokeText(special, 420, 888); preview.fillText(special, 420, 888);
 
 	// Print special icon, whether default or emblemhero
@@ -925,11 +926,12 @@ async function myunit() {
 			preview.drawImage(img, 369, 875);
 		}));
 	} else {
-		renderjobs.push(getimage("../common/icons/" + selectemblemhero.value.replace("PID", "SID") + ".webp").then(img => {
+		specialiconjob = getimage("../common/icons/" + selectemblemhero.value.replace("PID", "SID") + ".webp").then(img => {
 			preview.drawImage(img, 365, 874, 50, 50);
-		}));
+		});
 	}
 
+	preview.font = '24px FeH-Font'; preview.fillStyle = "#ffffff";
 	// Render all the passives
 	for (const [category, skill] of Object.entries(passives)) {
 		// For category X we must make sure the holder is ready
@@ -961,6 +963,15 @@ async function myunit() {
 		preview.fillText(name, passiverender[category]["text"][0], passiverender[category]["text"][1]);
 	}
 
+	// If the number of merges on the emblem is superior to zero, print it below the icon
+	if (selectemblemhero.value != "None" && selectemblemmerges.value != 0) {
+		// We must wait until the special icon is rendered
+		await specialiconjob;
+		preview.font = '15px FeH-Font'; preview.fillStyle = "#ffffff";
+		preview.strokeText("+" + selectemblemmerges.value, 393, 907); preview.fillText("+" + selectemblemmerges.value, 393, 907);
+	}
+
+	preview.font = '24px FeH-Font'; preview.fillStyle = "#ffffff";
 	var blessing = selectblessings.value == "None" ? false : parseInt(selectblessings.value);
 	// If hero is of special type, detect which
 	var specialtype = false;
