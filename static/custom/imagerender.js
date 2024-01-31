@@ -320,6 +320,11 @@ async function reload() {
 	preview.strokeText(assist, 420, 838); preview.fillText(assist, 420, 838);
 	preview.strokeText(special, 420, 888); preview.fillText(special, 420, 888);
 
+	// Print special icon
+	getimage(other["images"]["other"]["special"]).then(img => {
+		preview.drawImage(img, 369, 875);
+	});
+
 	var passives = ["Askill", "Bskill", "Cskill", "Sskill"];
 	// Only add X if the value is not "None"
 	if (nameXskill.value) {
