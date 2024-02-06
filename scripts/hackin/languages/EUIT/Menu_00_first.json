@@ -21998,5 +21998,1749 @@
 	{
 		"key": "MID_VOTE_TERM_202212",
 		"value": "Dojo ninja"
+	},
+	{
+		"key": "MID_ARENA_BONUS_VERSION",
+		"value": "Uscita"
+	},
+	{
+		"key": "MID_ARENA_BONUS_VERSION_HELP",
+		"value": "$aTutti gli eroi usciti nella versione $a0.X\\nsaranno disponibili come eroi bonus."
+	},
+	{
+		"key": "MID_BOARD_GAME_HELP_DIALOG_14",
+		"value": "\u25c6Contrattacchi/Azioni concluse\u25c6\\nIn Pedine di Loki, gli effetti che\\nimpediscono agli alleati di\\ncontrattaccare e quelli che\\nfanno s\u00ec che le azioni dei tuoi\\nalleati vengano considerate\\nconcluse sono annullati."
+	},
+	{
+		"key": "MID_CONFIG_ANIME_AUTO",
+		"value": "Animazioni\\nbattaglia autom."
+	},
+	{
+		"key": "MID_CONFIG_IDOL_SOURCE_USER_NAME",
+		"value": "Mostra nome\\ncon le unit\u00e0 eidos"
+	},
+	{
+		"key": "MID_CONFIG_KEEP",
+		"value": "S\u00ec"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_TITLE",
+		"value": "Eidos raminghi"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_WARNING",
+		"value": "Completo fulgente, sigilli sacri, Doni, accessori\\ne pregi ascesi vengono persi. Sar\u00e0 equipaggiato\\nil numero massimo possibile di fiordidrago."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_DIALOG_CONFIRM_TEXT",
+		"value": "$aUsare $a0 per\\nricevere un alleato eidos?"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_DIALOG_CONFIRM_WARNING",
+		"value": "\u30fb L'unit\u00e0 eidos ottenuta come alleato\\nperder\u00e0 tutti i completi fulgenti,\\ni sigilli sacri, i pregi ascesi, i Doni e\\ngli accessori in suo possesso.\\n\u30fb L'unit\u00e0 eidos sar\u00e0 equipaggiata con\\nil numero massimo di fiordidrago.\\n\u30fb Gli eidos non possono essere usati\\ncome unit\u00e0 di partenza per fusioni e\\nin Eredita abilit\u00e0.\\n\u30fb Gli eidos non possono essere usati\\nper creare manuali di lotta."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_DIALOG_CONFIRM_DECIDE",
+		"value": "Aggiungi"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_DIALOG_SHORTAGE_WARNING",
+		"value": "$aNon hai abbastanza unit\u00e0 di\\n$a0."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_DIALOG_EXPIRED",
+		"value": "Legami raminghi non disponibili."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_INFO_REMAINING_DAYS",
+		"value": "$aAncora $a1 eidos e ancora $a0 g"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_INFO_REMAINING_HOURS",
+		"value": "$aAncora $a1 eidos e ancora $a0 h"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_INFO_REMAINING_MINUTES",
+		"value": "$aAncora $a1 eidos e ancora $a0 m"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_INFO_REACHED_LIMIT",
+		"value": "Non puoi allearti con un altro eidos."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_INFO_EXPIRED",
+		"value": "Il periodo di reclutamento \u00e8 terminato."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_BUTTON_ENABLE",
+		"value": "Aggiungi"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_BUTTON_DISABLE",
+		"value": "Reclutamento impossibile."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_BUTTON_OUT_OF_VERSION_RANGE",
+		"value": "$aEroe uscito dopo la ver. $a0.0"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_00",
+		"value": "\u25c6Ottieni eidos in Legami spezzati\u25c6\\nDurante e dopo un evento di\\nLegami spezzati, puoi usare\\nun legame ramingo per ottenere\\neroi dagli eserciti di altri giocatori\\ncome unit\u00e0 eidos."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_01",
+		"value": "\u25c6Legame ramingo\u25c6\\nI legami raminghi saranno resi\\nsaltuariamente disponibili per\\nl'acquisto all'emporio."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_02",
+		"value": "\u25c6Eroi reclutabili\u25c6\\nPuoi reclutare solo eroi rilasciati\\ntra la versione 1.0 e la versione\\n4.11 del gioco.\\n\\nNon puoi reclutare gli eroi che hai\\nschierato tu, Alfonse, Sharena e\\nAnna di un altro mondo."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_03",
+		"value": "\u25c6Cosa conservano gli eidos\u25c6\\nGli aumenti ai parametri derivanti\\ndai fiordidrago avranno il valore\\nmassimo possibile nel momento in\\ncui aggiungi l'eidos alla base (se\\nil massimo \u00e8 +15, otterr\u00e0 +15) a\\nprescindere dalla quantit\u00e0 di\\nfiordidrago ricevuta dall'eroe."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_04",
+		"value": "\u25c6Cosa ereditano gli eidos\u25c6\\n\u30fb Abilit\u00e0 attive\\n\u30fb Tratti"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_05",
+		"value": "\u25c6Cosa non ereditano gli eidos\u25c6\\n\u30fb Fusioni\\n\u30fb Pregi ascesi\\n\u30fb Completo fulgente\\n\u30fb Doni\\n\u30fb Sigilli sacri\\n\u30fb Accessori"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_06",
+		"value": "\u25c6Limitazioni degli eidos\u25c6\\nGli eidos non possono essere\\nusati come unit\u00e0 di partenza\\nper fusioni e in Eredita abilit\u00e0,\\nn\u00e9 usati per creare manuali\\ndi lotta."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_07",
+		"value": "\u25c6Fondere gli eidos\u25c6\\nSe l'unit\u00e0 donatore e quella\\nricevente sono entrambe degli\\neidos, la loro fusione pu\u00f2 avvenire\\nsenza alcuna restrizione."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_08",
+		"value": "\u25c6Varie\u25c6\\n\u30fb Gli eroi reclutati si uniranno al\\ntuo esercito come unit\u00e0 con 5\u2605 di\\nlivello 40.\\n\u30fb Non puoi ricevere Doni o altri\\noggetti legati a eroi particolari."
+	},
+	{
+		"key": "MID_ITEM_BOND_TICKET",
+		"value": "Legame ramingo"
+	},
+	{
+		"key": "MID_ITEM_HELP_BOND_TICKET",
+		"value": "Un tesoro che ti permette di reclutare eroi da\\naltri mondi come eidos in Eidos raminghi."
+	},
+	{
+		"key": "MID_SHOP_ORB_CAUTION2_WITH_BOND_TICKET",
+		"value": "$a\u00b7 Puoi usare sfere e legami raminghi\\nacquistati qui solo su dispositivi con\\nsistema operativo $a0."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_SCOUT_IDOLIZE_ICON_HELP",
+		"value": "Puoi vedere gli eroi reclutabili toccando\\nRecluta eidos."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_SCOUT_LOG_IDOLIZE",
+		"value": "Recluta eidos"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_REMAINING_DAYS",
+		"value": "$aRecluta eidos: ancora $a0 g"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_REMAINING_HOURS",
+		"value": "$aRecluta eidos: ancora $a0 h"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_REMAINING_MINUTES",
+		"value": "$aRecluta eidos: ancora $a0 m"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_BUY_BOND_TICKET",
+		"value": "Vai all'emporio"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_PURCHASED_BOND_TICKET",
+		"value": "Ottenuto"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_PURCHASE_NOTICE",
+		"value": "Dopo l'acquisto, puoi ritirare il tuo\\nlegame ramingo dalla lista dei regali."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_REWARD",
+		"value": "Premio inaugurale Recluta eidos"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING6_3",
+		"value": "Finale libro VI"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING7",
+		"value": "Seq. iniziale libro VII"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_V0700A",
+		"value": "In occasione dell'arrivo del\\nlibro VII, abbiamo in serbo per te\\nun nuovo stile per il tuo castello!\\n\\nVai a dare un'occhiata!"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_V0700A_DIALOG",
+		"value": "Ora che hai visto lo stile\\nLucente, vuoi usarlo per\\nil tuo castello?"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_V0700A_REVERT_AFTER",
+		"value": "Se cambi idea, tocca Migliora\\ncastello, poi Cambia castello e\\ninfine Lucente."
+	},
+	{
+		"key": "MID_HOME_PERSONAL_ANALYTICS_OPTIN_NOTIFICATION_MESSAGE_ANDROID",
+		"value": "Condivisione dei dati di utilizzo:\\nRaccogliamo e condividiamo dati\\nrelativi all'utilizzo del gioco per\\nanalizzare i report sui crash e,\\nladdove applicabile, personalizzare\\nla tua esperienza con i prodotti e\\ni servizi offerti da Nintendo.\\n\\nPuoi gestire la raccolta e la\\ncondivisione dei dati utilizzando\\ni pulsanti qui sotto.\\n\\nLe impostazioni aggiornate verranno\\nutilizzate una volta riavviata l'app.\\n\\nPuoi interrompere la raccolta dei\\ndati in ogni momento nel menu\\nVarie, toccando Assistenza e altro,\\npoi Condivisione dati di utilizzo e\\nmodificando l'impostazione in\\nNon condividere i dati.\\n\\nPer non ricevere pi\u00f9 notifiche al\\ndi fuori dell'app, modifica le\\nimpostazioni del tuo dispositivo\\nrelative a questa app."
+	},
+	{
+		"key": "MID_HOME_PERSONAL_ANALYTICS_OPTIN_NOTIFICATION_MESSAGE_IOS",
+		"value": "Condivisione dei dati di utilizzo:\\nRaccogliamo e condividiamo dati\\nrelativi all'utilizzo del gioco per\\nanalizzare i report sui crash e,\\nladdove applicabile, personalizzare\\nla tua esperienza con i prodotti e\\ni servizi offerti da Nintendo.\\n\\nPuoi gestire la raccolta e la\\ncondivisione dei dati utilizzando\\ni pulsanti qui sotto.\\n\\nLe impostazioni aggiornate verranno\\nutilizzate una volta riavviata l'app.\\n\\nPuoi interrompere la raccolta dei\\ndati in ogni momento nel menu\\nVarie, toccando Assistenza e altro,\\npoi Condivisione dati di utilizzo e\\nmodificando l'impostazione in\\nNon condividere i dati.\\n\\nPer non ricevere pi\u00f9 notifiche al\\ndi fuori dell'app, modifica le\\nimpostazioni del tuo dispositivo\\nrelative a questa app."
+	},
+	{
+		"key": "MID_HOME_PERSONAL_ANALYTICS_OPTIN_NOTIFICATION_DECIDE",
+		"value": "Condividi i dati"
+	},
+	{
+		"key": "MID_HOME_PERSONAL_ANALYTICS_OPTIN_NOTIFICATION_CANCEL",
+		"value": "Non condividere i dati"
+	},
+	{
+		"key": "MID_HOME_SUMMON_TICKET_NAVIGATION_JUMP",
+		"value": "Evoca"
+	},
+	{
+		"key": "MID_HOME_SUMMON_TICKET_NAVIGATION_MESSAGE",
+		"value": "Hai un coupon che puoi usare per\\nun eroe speciale della categoria\\n4\u2605(Prob.). Vuoi evocare?"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202212",
+		"value": "Nuovo risveglio"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV65542",
+		"value": "Lucente"
+	},
+	{
+		"key": "MID_SCF_\u5149\u306e\u5973\u795e\u306e\u50cf",
+		"value": "Idolo di luce"
+	},
+	{
+		"key": "MID_SCF_\u5149\u306e\u5973\u795e\u306e\u50cf_HELP",
+		"value": "La statua di una dea di Vanaheimr, il regno\\ndella luce. Emana un'aura di speranza.\\n\u00c8 un oggetto dell'evento."
+	},
+	{
+		"key": "MID_SCF_\u5149\u306e\u56fd\u306e\u690d\u7269",
+		"value": "Flora luminosa"
+	},
+	{
+		"key": "MID_SCF_\u5149\u306e\u56fd\u306e\u690d\u7269_HELP",
+		"value": "Una pianta da Vanaheimr, il regno della luce.\\nIl suo chiarore riesce a placare i cuori.\\n\u00c8 un oggetto dell'evento."
+	},
+	{
+		"key": "MID_SCF_\u9ec4\u91d1\u306e\u86c7\u306e\u546a\u3044",
+		"value": "Serpe maledetta"
+	},
+	{
+		"key": "MID_SCF_\u9ec4\u91d1\u306e\u86c7\u306e\u546a\u3044_HELP",
+		"value": "La statua di un serpente, le cui spire avvolgono\\nun cristallo dorato. La sua luce causa un senso\\ndi turbamento. \u00c8 un oggetto dell'evento."
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u304d\u306e\u3053_1",
+		"value": "consistente"
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u304d\u306e\u3053_2",
+		"value": "abbondante"
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u304d\u306e\u3053_3",
+		"value": "nutriente"
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u3044\u3082_1",
+		"value": "terra terra"
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u3044\u3082_2",
+		"value": "amidaceo"
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u3044\u3082_3",
+		"value": "spumoso"
+	},
+	{
+		"key": "MID_DISHES_\u30d5\u30e9\u30a4\u30c9\u30dd\u30c6\u30c8",
+		"value": "Patatine fritte"
+	},
+	{
+		"key": "MID_DISHES_\u713c\u304d\u30ad\u30ce\u30b3",
+		"value": "Funghi grigliati"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30c1\u30c3\u30d7\u30b9",
+		"value": "Patatine"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u3068\u30ad\u30ce\u30b3\u7092\u3081",
+		"value": "Patate e funghi saltati"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30d1\u30f3",
+		"value": "Pane di patate"
+	},
+	{
+		"key": "MID_DISHES_\u304b\u307c\u3061\u3083\u30dd\u30c6\u30c8\u30b5\u30e9\u30c0",
+		"value": "Insalata zucca e patate"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30b5\u30e9\u30c0",
+		"value": "Insalata di patate"
+	},
+	{
+		"key": "MID_DISHES_\u30d5\u30eb\u30fc\u30c4\u30dd\u30c6\u30c8\u30b5\u30e9\u30c0",
+		"value": "Insalata frutta e patate"
+	},
+	{
+		"key": "MID_DISHES_\u30d9\u30fc\u30b3\u30f3\u30dd\u30c6\u30c8",
+		"value": "Pancetta e patate"
+	},
+	{
+		"key": "MID_DISHES_\u5375\u30dd\u30c6\u30c8\u30b5\u30e9\u30c0",
+		"value": "Insalata uova e patate"
+	},
+	{
+		"key": "MID_DISHES_\u828b\u306e\u30c8\u30de\u30c8\u716e\u8fbc\u307f",
+		"value": "Zuppa rossa di patate"
+	},
+	{
+		"key": "MID_DISHES_\u30b9\u30d1\u30a4\u30b7\u30fc\u30dd\u30c6\u30c8",
+		"value": "Patate piccanti"
+	},
+	{
+		"key": "MID_DISHES_\u5927\u76db\u308a\u30ad\u30ce\u30b3",
+		"value": "Piatto di funghi"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u30d1\u30b9\u30bf",
+		"value": "Pasta con i funghi"
+	},
+	{
+		"key": "MID_DISHES_\u79cb\u306e\u9999\u308a\u30b9\u30fc\u30d7",
+		"value": "Zuppa autunnale"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u306e\u5305\u307f\u713c\u304d",
+		"value": "Funghi al cartoccio"
+	},
+	{
+		"key": "MID_DISHES_\u30d9\u30ea\u30fc\u306e\u30ad\u30ce\u30b3\u3042\u3048",
+		"value": "Bacche e funghi"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u30bd\u30fc\u30b9\u306e\u30b9\u30c6\u30fc\u30ad",
+		"value": "Bistecca ai funghi"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u306e\u30aa\u30e0\u30ec\u30c4",
+		"value": "Frittata di funghi"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u3068\u30c8\u30de\u30c8\u306e\u30b9\u30fc\u30d7",
+		"value": "Zuppa rossa di funghi"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u306e\u9999\u308a\u713c\u304d",
+		"value": "Funghi alle spezie"
+	},
+	{
+		"key": "MID_DISHES_\u30de\u30c3\u30b7\u30e5\u30dd\u30c6\u30c8",
+		"value": "Purea di patate"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30c1\u30c3\u30d7\u30b9\u30ad\u30ce\u30b3\u5473",
+		"value": "Patatine sapide"
+	},
+	{
+		"key": "MID_DISHES_\u3082\u3061\u3082\u3061\u30d1\u30f3",
+		"value": "Pane morbido"
+	},
+	{
+		"key": "MID_DISHES_\u30ba\u30c3\u30d1\u30fb\u30b0\u30b8\u30dc\u30f4\u30a1",
+		"value": "Zuppa ai funghi secchi"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u3068\u3044\u3082\u306e\u8089\u5dfb",
+		"value": "Involtino saporito"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30d1\u30a4",
+		"value": "Torta di patate"
+	},
+	{
+		"key": "MID_DISHES_\u30d4\u30fc\u30c6\u30d1\u30eb\u30c8",
+		"value": "Ravioli ripieni"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30d1\u30f3\u30b1\u30fc\u30ad",
+		"value": "Frittelle di patate"
+	},
+	{
+		"key": "MID_DISHES_\u30c8\u30de\u30c8\u30bd\u30fc\u30b9\u306e\u30cb\u30e7\u30c3\u30ad",
+		"value": "Gnocchi in salsa rossa"
+	},
+	{
+		"key": "MID_DISHES_\u30b5\u30e2\u30b5",
+		"value": "Triangolo fritto"
+	},
+	{
+		"key": "MID_DISHES_\u8089\u3058\u3083\u304c",
+		"value": "Zuppa carne e patate"
+	},
+	{
+		"key": "MID_DISHES_\u91ce\u83dc\u30b9\u30fc\u30d7",
+		"value": "Zuppa di verdure"
+	},
+	{
+		"key": "MID_DISHES_\u8fb2\u592b\u306e\u671d\u98df",
+		"value": "Colazione bucolica"
+	},
+	{
+		"key": "MID_DISHES_\u30a2\u30eb\u30fc\u30b4\u30fc\u30b7\u30e5\u30c8",
+		"value": "Curry, carne e patate"
+	},
+	{
+		"key": "MID_DISHES_\u5c71\u76db\u308a\u30ad\u30ce\u30b3",
+		"value": "Piattone di funghi"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u305f\u3063\u3077\u308a\u30b5\u30e9\u30c0",
+		"value": "Insalata con funghi"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u306e\u3066\u3093\u3077\u3089",
+		"value": "Tempura di funghi"
+	},
+	{
+		"key": "MID_DISHES_\u53ce\u7a6b\u796d\u306e\u30b9\u30fc\u30d7",
+		"value": "Zuppa del raccolto"
+	},
+	{
+		"key": "MID_DISHES_\u6c34\u708a\u304d",
+		"value": "Stufato"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u91ce\u83dc\u7092\u3081",
+		"value": "Saltata verde di funghi"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u3068\u30c8\u30de\u30c8\u306e\u5375\u7092\u3081",
+		"value": "Saltata rossa di funghi"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u3068\u5375\u306e\u9244\u677f\u713c\u304d",
+		"value": "Funghi strapazzati"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u30ab\u30ec\u30fc",
+		"value": "Curry di funghi"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u306e\u30d5\u30eb\u30b3\u30fc\u30b9",
+		"value": "Parata di patate"
+	},
+	{
+		"key": "MID_DISHES_\u53ce\u7a6b\u796d\u306e\u30d7\u30ec\u30fc\u30c8",
+		"value": "Piatto del raccolto"
+	},
+	{
+		"key": "MID_DISHES_\u30df\u30cd\u30b9\u30c8\u30ed\u30fc\u30cd",
+		"value": "Minestrone"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30b3\u30ed\u30c3\u30b1",
+		"value": "Crocchetta di patate"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c8\u30d5",
+		"value": "Bollito variegato"
+	},
+	{
+		"key": "MID_DISHES_\u91ce\u83dc\u30ab\u30ec\u30fc",
+		"value": "Curry di verdure"
+	},
+	{
+		"key": "MID_DISHES_\u7530\u820e\u306e\u30ab\u30ec\u30fc",
+		"value": "Curry alla campagnola"
+	},
+	{
+		"key": "MID_DISHES_\u30af\u30ed\u30c3\u30d7\u30ab\u30fc\u30ab",
+		"value": "Ravioli bolliti"
+	},
+	{
+		"key": "MID_DISHES_\u5922\u76db\u308a\u30ad\u30ce\u30b3",
+		"value": "Montagna di funghi"
+	},
+	{
+		"key": "MID_DISHES_\u30b9\u30c6\u30fc\u30ad\u306e\u5e0c\u5c11\u30ad\u30ce\u30b3\u4e57\u305b",
+		"value": "Bistecca e funghi"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u306e\u30d5\u30ea\u30ab\u30c3\u30bb",
+		"value": "Spezzatino di funghi"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u30d0\u30fc\u30ac\u30fc",
+		"value": "Medaglione di funghi"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u306e\u30d4\u30b6",
+		"value": "Pizza con i funghi"
+	},
+	{
+		"key": "MID_DISHES_\u30cf\u30f3\u30d0\u30fc\u30b0\u306e\u30ad\u30ce\u30b3\u4e57\u305b",
+		"value": "Carne e funghi"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u30b8\u30e3\u30eb\u30d5\u30ec\u30fc\u30b8\u30fc",
+		"value": "Curry e funghi"
+	},
+	{
+		"key": "MID_DISHES_\u6ecb\u990a\u5f37\u58ee\u30c9\u30ea\u30f3\u30af\uff0b",
+		"value": "Bevanda nutritiva+"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u306e\u30dc\u30eb\u30ac\u30ce\u30f3\u713c\u304d",
+		"value": "Funghi Bolganone"
+	},
+	{
+		"key": "MID_FOODS_\u304d\u306e\u3053",
+		"value": "Fungo"
+	},
+	{
+		"key": "MID_FOODS_\u3044\u3082",
+		"value": "Patata"
+	},
+	{
+		"key": "MID_FOODS_\u304d\u306e\u3053_HELP",
+		"value": "Nutriente e saporito! Sta bene con\\ntutto!"
+	},
+	{
+		"key": "MID_FOODS_\u3044\u3082_HELP",
+		"value": "Un ingrediente versatile! Si abbina a\\ncarne, verdure e tanto altro."
+	},
+	{
+		"key": "MID_SCH_\u6c34\u6d74\u3073\u30e6\u30f3\u30cc",
+		"value": "Yune galleggiante"
+	},
+	{
+		"key": "MID_SCH_\u6c34\u6d74\u3073\u30e6\u30f3\u30cc_HOLIDAYHELP",
+		"value": "Un giocattolo da bagno che galleggia in acqua."
+	},
+	{
+		"key": "MID_SCH_\u3058\u3093\u308f\u308a\u56de\u5fa9\u85ac",
+		"value": "Pozione curativa"
+	},
+	{
+		"key": "MID_SCH_\u3058\u3093\u308f\u308a\u56de\u5fa9\u85ac_HOLIDAYHELP",
+		"value": "Un giocattolo da bagno che galleggia in acqua."
+	},
+	{
+		"key": "MID_SCH_\u5165\u6d74\u4e2d\u306e\u5c40\u9577",
+		"value": "Fehnix a mollo"
+	},
+	{
+		"key": "MID_SCH_\u5165\u6d74\u4e2d\u306e\u5c40\u9577_HOLIDAYHELP",
+		"value": "Un giocattolo da bagno che galleggia in acqua."
+	},
+	{
+		"key": "MID_SCH_\u304a\u3084\u3059\u307f\u30d5\u30a7\u30fc",
+		"value": "Feh sonnacchiosa"
+	},
+	{
+		"key": "MID_SCH_\u304a\u3084\u3059\u307f\u30d5\u30a7\u30fc_HOLIDAYHELP",
+		"value": "Un pupazzetto da mettere sul letto."
+	},
+	{
+		"key": "MID_SCH_\u3059\u3084\u3059\u3084\u30d9\u30ec\u30c8",
+		"value": "Byleth di pezza"
+	},
+	{
+		"key": "MID_SCH_\u3059\u3084\u3059\u3084\u30d9\u30ec\u30c8_HOLIDAYHELP",
+		"value": "Un pupazzetto da mettere sul letto."
+	},
+	{
+		"key": "MID_SCH_\u3075\u308f\u3075\u308f\u795e\u7adc\u30d5\u30a1",
+		"value": "Peluche di Fae"
+	},
+	{
+		"key": "MID_SCH_\u3075\u308f\u3075\u308f\u795e\u7adc\u30d5\u30a1_HOLIDAYHELP",
+		"value": "Un pupazzetto da mettere sul letto."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202212",
+		"value": "Monoliti eterei invernali"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202212",
+		"value": "Si usano per costruire strutture disponibili per\\nun periodo limitato in Blitz eterei. I monoliti\\nandranno persi allo scadere di tale periodo."
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_4",
+		"value": "Asceso"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_5",
+		"value": "Incantato"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202212",
+		"value": "Vita e morte (fine)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202212_01",
+		"value": "Pallate di neve"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202301",
+		"value": "Archivio dell'Ovest"
+	},
+	{
+		"key": "MID_WIN05_IceFishing_Title",
+		"value": "Pesca sul ghiaccio"
+	},
+	{
+		"key": "MID_WIN05_IceFishing_Common",
+		"value": "Hanno deciso di pescare in un lago\\nghiacciato. Riusciranno nell'impresa?"
+	},
+	{
+		"key": "MID_WIN05_IceFishing_3",
+		"value": "Il pesciolino ha lottato con ardore! Per\\nquesta volta, accettano la sconfitta..."
+	},
+	{
+		"key": "MID_WIN05_IceFishing_4",
+		"value": "Ce l'hanno fatta nonostante il gelo!\\nAnche i pinguini fanno il tifo per loro!"
+	},
+	{
+		"key": "MID_WIN05_IceFishing_5",
+		"value": "Il loro buco nel ghiaccio era pieno di\\npesci! Stentavano a crederci!"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202301R",
+		"value": "Fuori controllo, atto 2\u00ba"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202301",
+		"value": "Regali ristoratori"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202301_2",
+		"value": "Figlie del Black Fang"
+	},
+	{
+		"key": "MID_SHOP_ERROR_PURCHASE_DISABLED",
+		"value": "Gli acquisti potrebbero essere\\nsottoposti a limitazioni. Controlla\\nle impostazioni del tuo dispositivo."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202301",
+		"value": "Emblemi ed eroi"
+	},
+	{
+		"key": "MID_DISHES_AUTHORITY_14_1",
+		"value": "Stile Elyos"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_AUTHORITY_14",
+		"value": "Engage"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202301_01",
+		"value": "Archivio del Nord"
+	},
+	{
+		"key": "MID_AUT04_Wood_Title",
+		"value": "Taglialegna"
+	},
+	{
+		"key": "MID_AUT04_Wood_Common",
+		"value": "Si stanno esercitando a spaccare\\nla legna! Accetteranno la sfida?"
+	},
+	{
+		"key": "MID_AUT04_Wood_3",
+		"value": "Il troncone si \u00e8 spaccato esattamente\\nin due! Servono colpi pi\u00f9 attenti..."
+	},
+	{
+		"key": "MID_AUT04_Wood_4",
+		"value": "I trucchi di un picchio sono stati\\nd'aiuto! Quanti modi per imparare!"
+	},
+	{
+		"key": "MID_AUT04_Wood_5",
+		"value": "Tagliare la legna non ha pi\u00f9 segreti\\nper loro! State attenti, tronchi!"
+	},
+	{
+		"key": "MID_SCF_\uff16\u5468\u5e74\u30b1\u30fc\u30ad",
+		"value": "Torte anniversario"
+	},
+	{
+		"key": "MID_SCF_\uff16\u5468\u5e74\u30b1\u30fc\u30ad_HELP",
+		"value": "Una sfarzosa merenda preparata per celebrare\\nil sesto anniversario. \u00c8 un oggetto dell'evento."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202302",
+		"value": "Antichi monoliti eterei"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202302",
+		"value": "Si usano per costruire strutture disponibili per\\nun periodo limitato in Blitz eterei. I monoliti\\nandranno persi allo scadere di tale periodo."
+	},
+	{
+		"key": "MID_VOTE_TERM_202301",
+		"value": "Amanti della natura"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_09",
+		"value": "\u25c6Eroi leggendari bonus\u25c6\\nIncludi uno di questi eroi nella tua\\nsquadra per ottenere i seguenti\\neffetti:\\n- Effetto punteggio massimo\\n- Effetto tutela dalla sconfitta"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_10",
+		"value": "\u25c6Effetto punteggio massimo\u25c6\\nIncludendo un eroe leggendario\\nbonus nella tua squadra potrai\\naffrontare i nemici con il massimo\\ndella forza possibile, ricevendo\\nil massimo dei punti ottenibili."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_11",
+		"value": "\u25c6Effetto tutela dalla sconfitta\u25c6\\nIncludendo un eroe leggendario\\nbonus nella tua squadra, non\\nperderai punti se una delle tue\\nunit\u00e0 viene sconfitta. (Se dovessi\\nperdere pi\u00f9 unit\u00e0, la riduzione del\\npunteggio sar\u00e0 calcolata come se\\navessi perso un'unit\u00e0 in meno.)"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_1_03_v0702",
+		"value": "\u25c6Ranghi: condizioni speciali\u25c6\\nNon retrocederai a un rango\\ninferiore in caso di sconfitta.\\n(Ci\u00f2 potrebbe comunque\\nverificarsi prima dell'evento\\nsuccessivo se il tuo rango \u00e8\\nsuperiore al rango protetto.)"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202302",
+		"value": "Il segreto del principe"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_PICKUP_CHARGE_TITLE",
+		"value": "Vantaggio 1: Corsia preferenziale speciale"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_PICKUP_CHARGE_TEXT",
+		"value": "Consente l'utilizzo di Corsia\\npreferenziale per gli eroi speciali."
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_MISSION_TITLE_V7_2",
+		"value": "Vantaggio 2: imprese speciali tessera Feh"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_RELIANCE_TITLE_V7_2",
+		"value": "Vantaggio 3: sostegno Evocat. ampliato"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_UNDO_TITLE_V7_2",
+		"value": "Vantaggio 4: Ripetizione"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_AUTO_PLAY_TITLE_V7_2",
+		"value": "Vantaggio 5: Avvio automatico"
+	},
+	{
+		"key": "MID_SUMMON_PICKUP_CHARGE_REMAINING_POINT",
+		"value": "$aEvocazioni di eroi con 5\u2605 non\\nsoggetti a preferenza restanti per\\nattivare Corsia preferenziale: $a0\\n"
+	},
+	{
+		"key": "MID_SUMMON_PICKUP_CHARGE_REMAINING_POINT_FEH_PASS",
+		"value": "$aEvocazioni di eroi con 5\u2605 non\\nsoggetti a preferenza restanti per\\nattivare Corsia preferenziale con\\nuna tessera Feh attiva: $a0"
+	},
+	{
+		"key": "MID_SUMMON_PICKUP_CHARGE",
+		"value": "Corsia preferenziale disponibile!\\nIl prossimo eroe evocato sar\u00e0\\ncon 5\u2605 (Pref.)!"
+	},
+	{
+		"key": "MID_SUMMON_PICKUP_CHARGE_FEH_PASS",
+		"value": "Corsia preferenziale disponibile\\ncon tessera Feh attiva! Il prossimo\\neroe evocato sar\u00e0 con 5\u2605 (Pref.)!"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202302",
+		"value": "Per il domani"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_3",
+		"value": "Sede dell'amore"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_3",
+		"value": "$aI nemici conferiscono PA x5 per $a0 e\\nPA x2 da quel momento in avanti! (Non\\ncumulabile; si applica solo il valore pi\u00f9 alto.)"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202302",
+		"value": "Archivio dell'Est"
+	},
+	{
+		"key": "MID_WIN14_Blizzard_Title",
+		"value": "Tormenta furiosa"
+	},
+	{
+		"key": "MID_WIN14_Blizzard_Common",
+		"value": "Una tormenta di neve! \u00c8 troppo\\npericoloso andare avanti..."
+	},
+	{
+		"key": "MID_WIN14_Blizzard_3",
+		"value": "Il vento ha spazzato via la loro tenda!\\nChe corsa per andare a riprenderla!"
+	},
+	{
+		"key": "MID_WIN14_Blizzard_4",
+		"value": "Hanno usato la neve per creare\\nun riparo! Ora possono rilassarsi!"
+	},
+	{
+		"key": "MID_WIN14_Blizzard_5",
+		"value": "Che bel rifugio di ghiaccio, \u00e8 stato\\nuno spasso! Il freddo ormai \u00e8 lontano!"
+	},
+	{
+		"key": "MID_VOTE_TERM_202303",
+		"value": "Fase finale SUE 2023"
+	},
+	{
+		"key": "MID_OCCUPATION_RECOLLECTION_TITLE_202303",
+		"value": "Annand e compagnia 1"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202303",
+		"value": "Vero lusso"
+	},
+	{
+		"key": "MID_SUMMON_PICKUP_CHARGE_FEH_PASS_AVAILABLE",
+		"value": "Corsia preferenziale disponibile!\\nIl prossimo eroe evocato sar\u00e0 con\\n5\u2605 (Pref.)! (Funzione disponibile\\nsolo con una Tessera Feh attiva.)"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2023_0",
+		"value": "Heroes/Mystery/Echoes"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2023_1",
+		"value": "Genealogy/Thracia 776"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2023_2",
+		"value": "Binding/Blazing/Sacred Stones"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2023_3",
+		"value": "Heroes/Radiance"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2023_4",
+		"value": "Awakening/Fates"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2023_5",
+		"value": "Three Houses/Three Hopes"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202303",
+		"value": "Archivio del sud"
+	},
+	{
+		"key": "MID_SPR14_Incubation_Title",
+		"value": "Il suono della vita"
+	},
+	{
+		"key": "MID_SPR14_Incubation_Common",
+		"value": "Hanno trovato un uovo in procinto di\\nschiudersi! Decidono di osservarlo..."
+	},
+	{
+		"key": "MID_SPR14_Incubation_3",
+		"value": "Oh no, \u00e8 arrivata la mamma! Che\\nversi minacciosi, meglio scappare!"
+	},
+	{
+		"key": "MID_SPR14_Incubation_4",
+		"value": "L'uccellino \u00e8 pieno di energia! Hanno\\npotuto ascoltare i suoi primi cinguettii!"
+	},
+	{
+		"key": "MID_SPR14_Incubation_5",
+		"value": "Oh! Dall'uovo \u00e8 nato un drago! Meglio\\nsgattaiolare via da quei ruggiti..."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202303",
+		"value": "Il futuro nei suoi occhi"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202304R",
+		"value": "Anima e corpo, atto 2\u00ba"
+	},
+	{
+		"key": "MID_VOTE_TERM_202304",
+		"value": "Acconciature divine"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202304",
+		"value": "Giovani promesse"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_PICKUP_CHARGE_TEXT_V7_4",
+		"value": "Usa Corsia preferenziale per gli eroi\\nspeciali e nelle Feste degli eroi\\n(eccetto Aiuto per iniziare)."
+	},
+	{
+		"key": "MID_TWIN_WORLD_AUTHORITY_14",
+		"value": "Engage"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202304",
+		"value": "Una nuova accademia"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202304",
+		"value": "Archivio dell'Ovest"
+	},
+	{
+		"key": "MID_AUT10_Training_Title",
+		"value": "Allenamento in coppia"
+	},
+	{
+		"key": "MID_AUT10_Training_Common",
+		"value": "Che freddo pungente! Meglio fare\\nun po' di esercizio per scaldarsi..."
+	},
+	{
+		"key": "MID_AUT10_Training_3",
+		"value": "Si allenano mettendo in pratica le loro\\ntecniche migliori! Ora s\u00ec che fa caldo..."
+	},
+	{
+		"key": "MID_AUT10_Training_4",
+		"value": "Hanno deciso di lottare tra loro! Che\\nbel modo per migliorare e scaldarsi!"
+	},
+	{
+		"key": "MID_AUT10_Training_5",
+		"value": "Hanno lottato senza esclusione di\\ncolpi! L'intera zona si \u00e8 fatta bollente!"
+	},
+	{
+		"key": "MID_VOTE_TERM_202305",
+		"value": "Giochi all'aperto"
+	},
+	{
+		"key": "MID_HOME_EXPLORER_MISSION_NOTIFICATION",
+		"value": "Ricevi un premio al giorno.\\nAccedere a Spire del tempo?"
+	},
+	{
+		"key": "MID_HOME_EXPLORER_NAVIGATION_JUMP",
+		"value": "Spire del tempo"
+	},
+	{
+		"key": "MID_CONFIG_HOME_NOTIFICATION_EXPLORER",
+		"value": "Notifiche\\nSpire del tempo"
+	},
+	{
+		"key": "MID_EXPLORER_TITLE",
+		"value": "Spire del tempo"
+	},
+	{
+		"key": "MID_EXPLORER_REMAINING_DAYS",
+		"value": "$aAncora $a0 g"
+	},
+	{
+		"key": "MID_EXPLORER_REMAINING_HOURS",
+		"value": "$aAncora $a0 h"
+	},
+	{
+		"key": "MID_EXPLORER_REMAINING_MINUTES",
+		"value": "$aAncora $a0 m"
+	},
+	{
+		"key": "MID_EXPLORER_STAMINA",
+		"value": "Energia"
+	},
+	{
+		"key": "MID_EXPLORER_CLOSED",
+		"value": "Nessun evento in corso."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_BUTTON_WORLD_MAP",
+		"value": "Faglia infinita"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_BUTTON_SYSTEM_MENU",
+		"value": "Riavvolgi"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_BUTTON_REWARD",
+		"value": "Ricompense"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_BONUS_AUTHORITY",
+		"value": "Titoli bonus"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_CONFIRM",
+		"value": "Vuoi dare inizio all'evento?"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_WARNING",
+		"value": "Non potrai modificare la tua squadra\\ndurante l'evento, tranne nel caso in\\ncui tu decida di tornare all'inizio e\\nricominciare da capo. Gli eroi\\nrimarranno al livello 40. Gli slot per\\nle abilit\u00e0 di tipo A, B e C verranno\\nriempiti con abilit\u00e0 casuali."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_DECIDE",
+		"value": "Inizia"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_FAILED",
+		"value": "Impossibile dare inizio all'evento."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_FAILED_WARNING_TROOP_RESTRICTION",
+		"value": "Ogni slot della tua squadra deve\\nessere occupato da un eroe.\\n\\nGli eroi duplicati non sono\\nconsentiti.\\n\\n\u00c8 ammesso solo 1 alleato\\ncon Canto o Danza in squadra.\\n\\n\u00c8 ammesso solo 1 alleato\\ncon Aiuto in squadra."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_RESTORE_POINT",
+		"value": "Torna al miniboss"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_RESTORE_POINT_DIALOG_CONFIRM",
+		"value": "Vuoi tornare all'ultimo miniboss\\nsconfitto?"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_RESTORE_POINT_DIALOG_WARNING",
+		"value": "Tutti i progressi, a eccezione dei\\npremi, verranno persi. L'energia\\nconsumata verr\u00e0 ripristinata."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_RESTORE_POINT_DIALOG_DECIDE",
+		"value": "Riavvolgi"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_FIRST",
+		"value": "Torna all'inizio"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_FIRST_DIALOG_CONFIRM",
+		"value": "Vuoi tornare all'inizio?"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_FIRST_DIALOG_WARNING",
+		"value": "$aTutti i progressi, a eccezione dei\\npremi, verranno persi. L'energia\\nconsumata verr\u00e0 ripristinata. Solo\\n$a0% (massimo $a1) dei\\ngranelli di tempo accumulati fino a\\nquesto momento verranno mantenuti."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_FIRST_DIALOG_DECIDE",
+		"value": "Riavvolgi"
+	},
+	{
+		"key": "MID_EXPLORER_WORLD_MAP_TITLE",
+		"value": "Faglia infinita"
+	},
+	{
+		"key": "MID_EXPLORER_WORLD_MAP_BUTTON_SKILL_EQUIP",
+		"value": "Abilit\u00e0"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_TITLE",
+		"value": "$aFaglia infinita $a0"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_FINAL_BOSS",
+		"value": "Boss finale"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_MID_BOSS",
+		"value": "Miniboss"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_PASSIVE_A",
+		"value": "Abilit\u00e0 di tipo A"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_PASSIVE_B",
+		"value": "Abilit\u00e0 di tipo B"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_PASSIVE_C",
+		"value": "Abilit\u00e0 di tipo C"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_SHOP",
+		"value": "Sigillo dei vani"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_INN",
+		"value": "Porto sicuro"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIFFICULTY_0",
+		"value": "Facile"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIFFICULTY_1",
+		"value": "Intermedio"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIFFICULTY_2",
+		"value": "Avanzato"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_CONNECT_NAME_AND_DIFFICULTY",
+		"value": "$a$a0 - $a1"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DAILY_BONUS_REWARD",
+		"value": "Gioca ogni giorno e vinci!"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DAILY_BONUS_INFO",
+		"value": "Supera una mappa e ricevi un premio\\nuna volta al giorno, fino a 5 giorni."
+	},
+	{
+		"key": "MID_EXPLORER_AREA_FIRST_REWARD",
+		"value": "Ricompensa prima visita"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_FIRST_ADVANCED_REWARD",
+		"value": "Ricompensa livello avanzato"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_FIRST_REWARD_AND_FIRST_ADVANCED_REWARD",
+		"value": "Ricompensa prima visita e livello avanzato"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIALOG_DECIDE_BATTLE_START",
+		"value": "Combatti!"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIALOG_DECIDE_SHOP",
+		"value": "Entra"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIALOG_DECIDE_INN",
+		"value": "Entra"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_START_FAILED_DIALOG_CONFIRM",
+		"value": "Non puoi avanzare."
+	},
+	{
+		"key": "MID_EXPLORER_AREA_START_FAILED_DIALOG_WARNING_TERM_EXPIRED",
+		"value": "Nessun evento in corso."
+	},
+	{
+		"key": "MID_EXPLORER_AREA_START_FAILED_DIALOG_WARNING_NO_STAMINA",
+		"value": "Non hai abbastanza energia."
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_CATEGORY_PASSIVE_A",
+		"value": "Abilit\u00e0 di tipo A"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_CATEGORY_PASSIVE_B",
+		"value": "Abilit\u00e0 di tipo B"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_CATEGORY_PASSIVE_C",
+		"value": "Abilit\u00e0 di tipo C"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_CATEGORY_REMOVE",
+		"value": "Rimuovi"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_EQUIP_TITLE",
+		"value": "Cambia abilit\u00e0"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_EQUIP_DIALOG_DECIDE",
+		"value": "Cambia"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_EQUIP_DIALOG_CONFIRM",
+		"value": "Vuoi cambiare le abilit\u00e0 attivate?"
+	},
+	{
+		"key": "MID_EXPLORER__SKILL_EQUIP_CANCEL_DIALOG_CONFIRM",
+		"value": "Vuoi annullare le modifiche?"
+	},
+	{
+		"key": "MID_EXPLORER__SKILL_EQUIP_CANCEL_DIALOG_WARNING",
+		"value": "Le modifiche non salvate verranno\\nperse."
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_EQUIP_CANCEL_DIALOG_DECIDE",
+		"value": "Annulla"
+	},
+	{
+		"key": "MID_EXPLORER_EVENT_ITEM_UNLOCK_RANDOM_ORIGINAKL_SKILL",
+		"value": "Sblocco slot casuale"
+	},
+	{
+		"key": "MID_EXPLORER_EVENT_ITEM_UNLOCK_RANDOM_ORIGINAKL_SKILL_RESULT",
+		"value": "$aAbilit\u00e0 sbloccata per\\n$a0."
+	},
+	{
+		"key": "MID_EXPLORER_EVENT_ITEM_UNLOCK_EXTENDED_SKILL",
+		"value": "Sblocco slot squadra"
+	},
+	{
+		"key": "MID_EXPLORER_EVENT_ITEM_OMIT",
+		"value": "$ae $a0 in pi\u00f9"
+	},
+	{
+		"key": "MID_EXPLORER_BATTLE_REWARD_TITLE",
+		"value": "Ricompense"
+	},
+	{
+		"key": "MID_EXPLORER_BATTLE_REWARD_HELP",
+		"value": "Scegli una ricompensa."
+	},
+	{
+		"key": "MID_EXPLORER_BATTLE_REWARD_DIALOG_CONFIRM",
+		"value": "Vuoi questa ricompensa?"
+	},
+	{
+		"key": "MID_EXPLORER_BATTLE_REWARD_DIALOG_DECIDE",
+		"value": "S\u00ec"
+	},
+	{
+		"key": "MID_EXPLORER_INN_TALK_0",
+		"value": "$WmMPID_\u30a2\u30eb\u30d5\u30a9\u30f3\u30b9,ch00_01_Alfons_M_Normal,Face|Riposiamoci qui per oggi. Pare che\\nla nostra battaglia continuer\u00e0 ancora\\nper un po', $Nu.$k$p"
+	},
+	{
+		"key": "MID_EXPLORER_INN_TALK_1",
+		"value": "$WmMPID_\u30b7\u30e3\u30ed\u30f3,ch00_02_Sharon_F_Normal,Face|Riposiamoci qui per oggi! Mi metto\\nsubito a preparare qualcosa da\\nmangiare!$k$p"
+	},
+	{
+		"key": "MID_EXPLORER_INN_TALK_2",
+		"value": "$WmMPID_\u30a2\u30f3\u30ca,ch00_03_Anna_F_Normal,Face|Accampiamoci qui. Ci fermeremo per\\nil resto della giornata!$k$p"
+	},
+	{
+		"key": "MID_EXPLORER_INN_TALK_3",
+		"value": "$WmMPID_\u30bb\u30a4\u30ba,ch00_46_Seith_F_Normal,Face|Riposatevi, figli di Midgard. Questo\\nluogo ha un'aura rigenerante che vi\\ndar\u00e0 sollievo dalle ferite...$k$p"
+	},
+	{
+		"key": "MID_EXPLORER_INN_DIALOG_CONFIRM",
+		"value": "PS ripristinati."
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_TITLE",
+		"value": "Sigillo dei vani"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_HELP",
+		"value": "Seleziona un'abilit\u00e0 da sbloccare."
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_EMPTY",
+		"value": "Non ci sono abilit\u00e0 da sbloccare."
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_BUTTON_PURCHASE",
+		"value": "Sblocca"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_BUTTON_FINISH",
+		"value": "Esci"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_BUTTON_DESELECT",
+		"value": "Deseleziona"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_PURCHASE_DIALOG_CONFIRM",
+		"value": "Confermi la tua scelta?"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_PURCHASE_DIALOG_DECIDE",
+		"value": "Sblocca"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_FINISH_DIALOG_CONFIRM",
+		"value": "Vuoi annullare e uscire?"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_FINISH_DIALOG_WARNING",
+		"value": "Se esci non potrai rientrare."
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_FINISH_DIALOG_DECIDE",
+		"value": "Esci"
+	},
+	{
+		"key": "MID_EXPLORER_ENDING_TELOP",
+		"value": "Hai attraversato la faglia infinita e hai\\nfatto ritorno al tuo presente!"
+	},
+	{
+		"key": "MID_EXPLORER_ENDING_DIALOG_CONFIRM",
+		"value": "Congratulazioni, hai superato con\\nsuccesso le Spire del tempo!\\nL'evento termina ora. Trovi\\nun riepilogo del tuo viaggio in\\nquesto schermo. Se ci sono\\nricompense che devi ancora\\nraccogliere, puoi usare \"Riavvolgi\"\\nper fare un altro tentativo."
+	},
+	{
+		"key": "MID_EXPLORER_H_COMPATIBILITY",
+		"value": "I sigilli del tempo danno vantaggi unici\\nalle unit\u00e0. Tipo neutro: icona a sinistra\\nindica i nemici, a destra gli alleati."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_00",
+		"value": "Usa le abilit\u00e0 per battere i nemici!"
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_01",
+		"value": "\u25c6Spire del tempo\u25c6\\nAttraversa la Faglia infinita e torna\\nnel tuo presente. All'interno della\\nFaglia, le fluttuazioni temporali\\npermettono ai tuoi eroi di attivare\\ntantissime abilit\u00e0 differenti!"
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_02",
+		"value": "\u25c6Energia\u25c6\\n\u30fb Spostarsi da un luogo all'altro\\nrichiede 1 energia.\\n\u30fb L'energia viene ripristinata in\\ncaso di sconfitta solo nell'area di\\nun miniboss o di un boss finale.\\n(Se la tua energia \u00e8 al massimo,\\nnon viene ripristinata.)"
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_03",
+		"value": "\u25c6Dettagli dell'evento\u25c6\\nI sigilli sacri in mano ai nemici\\npotenziano l'effetto del triangolo\\ndelle armi e le unit\u00e0 di tipo neutro\\navranno vantaggi e svantaggi.\\nInoltre, i PS degli eroi non\\ncambieranno tra una mappa e\\nl'altra."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_04",
+		"value": "\u25c6Modifica delle squadre\u25c6\\n\u30fb Eroi duplicati non consentiti.\\n\u30fb In ogni squadra \u00e8 ammesso\\nsolo 1 alleato con Canto o Danza\\ne solo 1 alleato con Aiuto.\\n\u30fb Tutti gli eroi hanno un livello\\nfisso di 40."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_05",
+		"value": "\u25c6Abilit\u00e0\u25c6\\n\u30fb Se un eroe non ha un'abilit\u00e0 di\\ntipo A, B, C o S attiva, ricever\u00e0\\nun'abilit\u00e0 di tipo A, B o C a caso.\\n\u30fb Inizialmente, le abilit\u00e0 di tipo A,\\nB, C e S sono bloccate. \u00c8 possibile\\nsbloccarle tramite le ricompense o\\nall'interno di un sigillo dei vani."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_06",
+		"value": "\u25c6Slot abilit\u00e0 ampliati\u25c6\\nIn aggiunta ai normali set di slot\\nabilit\u00e0, tutti gli eroi ricevono tre\\nlivelli di slot abilit\u00e0 di tipo A, B e C\\naggiuntivi. Il primo livello \u00e8\\nsbloccato in partenza e gli altri\\npossono essere sbloccati tramite\\nle ricompense."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_07",
+		"value": "\u25c6Eroi bonus\u25c6\\nOltre agli slot abilit\u00e0 ampliati,\\ngli eroi bonus ricevono PS +10,\\nAtt/Vel/Dif/Res +4 e slot abilit\u00e0 di\\ntipo S gratuiti che possono essere\\nequipaggiati con abilit\u00e0 di tipo\\nA, B o C."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_08",
+		"value": "\u25c6Cambia abilit\u00e0\u25c6\\nPuoi inserire le abilit\u00e0 che hai\\nsbloccato negli slot abilit\u00e0 aperti."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_09",
+		"value": "\u25c6Riavvolgi\u25c6\\n\u30fb Torna al miniboss: ti riporta\\nall'ultimo miniboss sconfitto e\\nti restituisce l'energia consumata\\na partire da quel momento.\\n\u30fb Torna all'inizio: ti restituisce\\ntutta l'energia e puoi conservare\\nanche alcuni granelli di tempo."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_10",
+		"value": "\u25c6Sigilli dei vani\u25c6\\nQui puoi utilizzare i granelli di\\ntempo per sbloccare abilit\u00e0 e\\nslot abilit\u00e0.\\n\\n\u25c6Porti sicuri\u25c6\\nQui puoi ripristinare i tuoi PS."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_11",
+		"value": "\u25c6Altre informazioni\u25c6\\n\u30fb Gli effetti stagionali degli eroi\\nleggendari e mitici sono disattivati.\\n\u30fb Non puoi usare abilit\u00e0 Coppia\\no armoniche.\\n\u30fb Non ottieni Esp o PA.\\n\u30fb Puoi ottenere valore eroe."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202305",
+		"value": "Disperazione senza fine"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202305",
+		"value": "Archivio del Nord"
+	},
+	{
+		"key": "MID_SUM15_SummerNight_Title",
+		"value": "Una notte d'estate"
+	},
+	{
+		"key": "MID_SUM15_SummerNight_Common",
+		"value": "Si addentrano nel cuore della foresta.\\nIl cielo si fa scuro e minaccioso..."
+	},
+	{
+		"key": "MID_SUM15_SummerNight_3",
+		"value": "Quei cespugli... si sono mossi?! Meglio\\nseguire l'istinto e correre al riparo!"
+	},
+	{
+		"key": "MID_SUM15_SummerNight_4",
+		"value": "Un nemico? Oh, era solo una rana!\\nHanno tirato un sospiro di sollievo."
+	},
+	{
+		"key": "MID_SUM15_SummerNight_5",
+		"value": "Che visione eterea! Le lucciole hanno\\nvolteggiato dolcemente intorno a loro."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202305R",
+		"value": "Fine della corsa, atto 2\u00ba"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202305",
+		"value": "Affari nuziali"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_4",
+		"value": "Sala delle nozze"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_4",
+		"value": "$aI nemici conferiscono PA x5 per $a0 e\\nPA x2 da quel momento in avanti! (Non\\ncumulabile; si applica solo il valore pi\u00f9 alto.)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202306",
+		"value": "Oscurit\u00e0 dilagante"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING7_2",
+		"value": "Seq. centrale libro VII"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202306",
+		"value": "La strada giusta"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202306",
+		"value": "Archivio dell'Est"
+	},
+	{
+		"key": "MID_SUM16_Sunflower_Title",
+		"value": "Campi di girasole"
+	},
+	{
+		"key": "MID_SUM16_Sunflower_Common",
+		"value": "La coppia \u00e8 in viaggio in piena estate,\\nma qualcuno scompare tra i girasoli..."
+	},
+	{
+		"key": "MID_SUM16_Sunflower_3",
+		"value": "Oh no, quante api! Scappano a gambe\\nlevate, gridando: \"Via!\""
+	},
+	{
+		"key": "MID_SUM16_Sunflower_4",
+		"value": "Riappare con un girasole tra i capelli!\\nChe splendore, quasi da far invidia!"
+	},
+	{
+		"key": "MID_SUM16_Sunflower_5",
+		"value": "Ecco che ritorna... con un bouquet!\\nChe sorrisi abbaglianti!"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202306",
+		"value": "Un'estate da ricordare"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202306R",
+		"value": "Forze arcane, atto 2\u00ba"
+	},
+	{
+		"key": "MID_VOTE_TERM_202307",
+		"value": "Tanto di cappello"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202307",
+		"value": "Nulla e sogni 1"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202307_1",
+		"value": "Seq. iniziale libro IV"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202307_2",
+		"value": "Seq. centrale libro IV"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202307_3",
+		"value": "Epilogo libro IV"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202307_4",
+		"value": "Lo speciale elfico"
+	},
+	{
+		"key": "MID_SKYCASTLE_RATE_UNINITIALIZED",
+		"value": "???"
+	},
+	{
+		"key": "MID_SKYCASTLE_GRADE_UNINITIALIZED",
+		"value": "???"
+	},
+	{
+		"key": "MID_SKYCASTLE_RANKING_UNINITIALIZED",
+		"value": "Quota non stabilita"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202307",
+		"value": "Orgoglio grezzo"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202307",
+		"value": "Archivio del Sud"
+	},
+	{
+		"key": "MID_WIN09_Clean_Title",
+		"value": "Grandi pulizie"
+	},
+	{
+		"key": "MID_WIN09_Clean_Common",
+		"value": "Hanno trovato riparo in una vecchia\\ncasa... Che improvvisa voglia di pulire!"
+	},
+	{
+		"key": "MID_WIN09_Clean_3",
+		"value": "Hanno trovato un diario e lo hanno\\nletto... Non hanno pulito pi\u00f9 nulla!"
+	},
+	{
+		"key": "MID_WIN09_Clean_4",
+		"value": "Hanno pulito fino all'alba! Ora s\u00ec che\\npossono continuare per la loro strada!"
+	},
+	{
+		"key": "MID_WIN09_Clean_5",
+		"value": "Hanno rimesso la casa a nuovo!\\nI pavimenti brillano come non mai!"
+	},
+	{
+		"key": "MID_SCF_\u771f\u590f\u306e\u8c9d\u3068\u30d5\u30a7\u30fc",
+		"value": "Feh spuma marina"
+	},
+	{
+		"key": "MID_SCF_\u771f\u590f\u306e\u8c9d\u3068\u30d5\u30a7\u30fc_HELP",
+		"value": "Una statua che raffigura Feh su una conchiglia\\nche sorge dal mare. Emana un'atmosfera estiva\\ne una sensazione di bellezza e amore."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202308",
+		"value": "Antichi monoliti eterei"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202308",
+		"value": "Si usano per costruire strutture disponibili per\\nun periodo limitato in Blitz eterei. I monoliti\\nandranno persi allo scadere di tale periodo."
+	},
+	{
+		"key": "MID_VOTE_TERM_202308",
+		"value": "Baccano in spiaggia"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202308",
+		"value": "Nulla e sogni 2"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_PICKUP_CHARGE_TEXT_V7_8",
+		"value": "Corsia preferenziale pu\u00f2 essere usata\\nper gli eventi Festa degli eroi e per\\ngli eventi di evocazione Eroi speciali."
+	},
+	{
+		"key": "MID_SCH_\u30af\u30fc\u30af\u30fc\u30bd\u30e9",
+		"value": "Sommie sonnellino"
+	},
+	{
+		"key": "MID_SCH_\u30af\u30fc\u30af\u30fc\u30bd\u30e9_HOLIDAYHELP",
+		"value": "Un pupazzetto da mettere sul letto."
+	},
+	{
+		"key": "MID_SCF_K0016",
+		"value": "Spalancato"
+	},
+	{
+		"key": "MID_SCF_K0016_Ex",
+		"value": "Tratto: terreno difensivo"
+	},
+	{
+		"key": "MID_SCF_K0017",
+		"value": "Sigillato"
+	},
+	{
+		"key": "MID_SCF_K0017_Ex",
+		"value": "Tratto: mura pericolanti"
+	},
+	{
+		"key": "MID_SKYCASTLE_DISPATCH_ENTRANCE_UNINITIALIZED",
+		"value": "Invio autom. (ancora ?)"
+	},
+	{
+		"key": "MID_SKYCASTLE_DISPATCH_UNABLE_UNINITIALIZED",
+		"value": "Per usare Invio automatico, devi\\nprima creare una squadra di eroi."
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202308",
+		"value": "Archivio dell'Ovest"
+	},
+	{
+		"key": "MID_SPR15_Meditation_Title",
+		"value": "Ritiro spirituale"
+	},
+	{
+		"key": "MID_SPR15_Meditation_Common",
+		"value": "Stanno meditando in un luogo remoto!\\nInsieme, si concentrano in silenzio..."
+	},
+	{
+		"key": "MID_SPR15_Meditation_3",
+		"value": "Un brontolio improvviso disturba\\nla quiete. Qui ci vuole uno spuntino!"
+	},
+	{
+		"key": "MID_SPR15_Meditation_4",
+		"value": "Meditando hanno liberato il loro\\nspirito... e raggiunto l'illuminazione!"
+	},
+	{
+		"key": "MID_SPR15_Meditation_5",
+		"value": "Un gatto interrompe la meditazione...\\nLa vera felicit\u00e0 \u00e8 giocare insieme!"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202308",
+		"value": "Spirale del fato"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_5",
+		"value": "T\u00e8 raffinato"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_5",
+		"value": "$aI nemici conferiscono PA x5 per $a0 e\\nPA x2 da quel momento in avanti! (Non\\ncumulabile; si applica solo il valore pi\u00f9 alto.)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202309",
+		"value": "Battaglia oltre il tempo"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202309",
+		"value": "Nulla e sogni 3"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202309",
+		"value": "Archivio del Nord"
+	},
+	{
+		"key": "MID_SUM17_BeachFlags_Title",
+		"value": "Corsa sulla sabbia"
+	},
+	{
+		"key": "MID_SUM17_BeachFlags_Common",
+		"value": "Una bandiera sventola nella brezza\\nmarina... Vince chi riesce a prenderla!"
+	},
+	{
+		"key": "MID_SUM17_BeachFlags_3",
+		"value": "Non riescono a decidere chi l'abbia\\nraggiunta prima... Ci vuole la rivincita!"
+	},
+	{
+		"key": "MID_SUM17_BeachFlags_4",
+		"value": "Sorpresa! A vincere \u00e8... un granchio?!\\nNessuno deve venire a saperlo!"
+	},
+	{
+		"key": "MID_SUM17_BeachFlags_5",
+		"value": "Corrono e corrono oltre la bandiera...\\nLa vera vittoria sta nella loro amicizia!"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202309",
+		"value": "Un faro di speranza"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202309R",
+		"value": "Emblemi ed eroi, atto 2\u00ba"
+	},
+	{
+		"key": "MID_VOTE_TERM_202309_01",
+		"value": "L'ira dei venti"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202310",
+		"value": "Nulla e sogni 4"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202310",
+		"value": "Archivio dell'Est"
+	},
+	{
+		"key": "MID_AUT14_Wallet_Title",
+		"value": "Dov'\u00e8 il portamonete?"
+	},
+	{
+		"key": "MID_AUT14_Wallet_Common",
+		"value": "Oh! Qualcuno ha perso il portafoglio...\\nDentro c'erano i soldi per il viaggio!"
+	},
+	{
+		"key": "MID_AUT14_Wallet_3",
+		"value": "Ma... Lo hanno perso tutt'e due!\\nIl viaggio prosegue in silenzio..."
+	},
+	{
+		"key": "MID_AUT14_Wallet_4",
+		"value": "Per fortuna era stato messo al sicuro!\\nFiu! Sarebbe stato un bel guaio..."
+	},
+	{
+		"key": "MID_AUT14_Wallet_5",
+		"value": "Un gufo gentile lo ha restituito!\\nLo hanno ringraziato ed \u00e8 volato via."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202310",
+		"value": "Visione onirica"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_WARNING_RESONATE",
+		"value": "Le abilit\u00e0 affini ereditate non possono\\nessere attivate con abilit\u00e0 esclusive\\ndiverse dalle armi (con eccezioni)."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_WARNING_INHERITED_RESONATE",
+		"value": "Una volta ereditate, le abilit\u00e0 affini ereditate non\\npossono essere ereditate di nuovo."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_INHERIT_WARNING_RESONATE_PERSON",
+		"value": "Dato che l'unit\u00e0 donatore \u00e8 un eroe\\naffine, non andr\u00e0 perso, ma non\\npotrai pi\u00f9 usarlo come donatore\\nin Eredita abilit\u00e0 o per creare\\nun manuale di lotta."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_INHERIT_WARNING_RESONATE_SKILL",
+		"value": "Una volta ereditate, le abilit\u00e0 affini\\nereditate non possono essere\\nereditate di nuovo e non possono\\nessere attivate con abilit\u00e0 esclusive\\ndiverse dalle armi (con eccezioni)."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_WARNING_RESONATE",
+		"value": "Se fondi due eroi affini, l'unit\u00e0 ricevente non\\nguadagner\u00e0 un'abilit\u00e0 affine extra."
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_6",
+		"value": "Affini"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_04_v0710",
+		"value": "\u25c6Eroi incantati/affini\u25c6\\nGli eroi incantati e affini possono\\nusare un tipo speciale di eredit\u00e0,\\ndiversa da quella usata dagli eroi\\nin normali circostanze."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_05_v0710",
+		"value": "\u25c6Eredit\u00e0 esclusiva\u25c6\\nA differenza della normale\\neredit\u00e0, quando si effettua quella\\nesclusiva, l'unit\u00e0 donatore non\\nviene persa (una volta per ogni\\neroe idoneo evocato e\\nquest'ultimo in seguito non pu\u00f2\\ncreare manuali di lotta)."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_06_v0710",
+		"value": "\u25c6Limiti dell'eredit\u00e0\u25c6\\n\u30fb Una volta ereditate, le abilit\u00e0\\ncome quelle affini o le armi arcane\\nnon possono pi\u00f9 essere ereditate\\nda un altro eroe."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_08",
+		"value": "\u25c6Abilit\u00e0 affini: limitazioni\u25c6\\nSolo gli eroi affini possono\\nattivare allo stesso tempo\\nun'abilit\u00e0 affine e un'abilit\u00e0\\nesclusiva (come Grigie onde) che\\nnon sia Canto, Danza o Suona."
+	},
+	{
+		"key": "MID_UNIT_INFO_BLESSING_RESONATE",
+		"value": "Eroi affini (prima di ereditare):\\nA differenza dell'eredit\u00e0 normale,\\nle abilit\u00e0 affini possono essere\\nereditate senza perdere il donatore.\\nPuoi farlo solo una volta per ogni\\neroe affine evocato. (Guarda\\ni messaggi informativi nel menu\\nEredita abilit\u00e0 per saperne di pi\u00f9.)"
+	},
+	{
+		"key": "MID_UNIT_INFO_BLESSING_RESONATE_LOST_RIGHT_OF_SKILL_INHERIT_SOURCE",
+		"value": "Eroi affini (eredit\u00e0 esclusiva):\\nA differenza dell'eredit\u00e0 normale,\\nle abilit\u00e0 affini possono essere\\nereditate senza perdere il donatore.\\nPuoi farlo solo una volta per ogni\\neroe affine evocato. (Guarda\\ni messaggi informativi nel menu\\nEredita abilit\u00e0 per saperne di pi\u00f9.)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202311",
+		"value": "Baldoria al raccolto"
+	},
+	{
+		"key": "MID_OCCUPATION_RECOLLECTION_TITLE_202311",
+		"value": "Ishtar e compagnia 1"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202311R",
+		"value": "Nuovo risveglio, atto 2\u00ba"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202311",
+		"value": "Nulla e sogni 5"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING7_3",
+		"value": "Finale libro VII"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202311",
+		"value": "Fiducia e speranza"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_6",
+		"value": "Villaggio ninja"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_6",
+		"value": "$aI nemici conferiscono PA x5 per $a0 e\\nPA x2 da quel momento in avanti! (Non\\ncumulabile; si applica solo il valore pi\u00f9 alto.)"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202311",
+		"value": "Archivio del Sud"
+	},
+	{
+		"key": "MID_WIN15_LostChild_Title",
+		"value": "Bambina perduta"
+	},
+	{
+		"key": "MID_WIN15_LostChild_Common",
+		"value": "Hanno incontrato una bambina triste!\\nRiusciranno a farla sorridere?"
+	},
+	{
+		"key": "MID_WIN15_LostChild_3",
+		"value": "Le smorfie non riescono a tirarla su di\\nmorale. Nessun altro sembra colpito..."
+	},
+	{
+		"key": "MID_WIN15_LostChild_4",
+		"value": "Una canzone la aiuta a tornare felice!\\nL'aria si riempie di un amabile calore."
+	},
+	{
+		"key": "MID_WIN15_LostChild_5",
+		"value": "Qui servono una canzone e un allegro\\nballetto! Madre e figlia sono riunite!"
+	},
+	{
+		"key": "MID_VOTE_TERM_202311_01",
+		"value": "Tra futuro e passato"
 	}
 ]

@@ -21998,5 +21998,1749 @@
 	{
 		"key": "MID_VOTE_TERM_202212",
 		"value": "Dojo ninja"
+	},
+	{
+		"key": "MID_ARENA_BONUS_VERSION",
+		"value": "Parution"
+	},
+	{
+		"key": "MID_ARENA_BONUS_VERSION_HELP",
+		"value": "$aTous les h\u00e9ros venus de la version $a0.X\\nseront disponibles en tant que h\u00e9ros concern\u00e9s\\npar Appel aux armes."
+	},
+	{
+		"key": "MID_BOARD_GAME_HELP_DIALOG_14",
+		"value": "\u25c6 Ripostes/Actions termin\u00e9es \u25c6\\nDans Pions de Loki, les effets qui\\nemp\u00eachent les alli\u00e9s de riposter\\net les effets des aptitudes ennemies\\nqui font que les actions des alli\u00e9s\\nsont consid\u00e9r\u00e9es comme termin\u00e9es\\nsont d\u00e9sactiv\u00e9s."
+	},
+	{
+		"key": "MID_CONFIG_ANIME_AUTO",
+		"value": "Animations\\nen combat auto"
+	},
+	{
+		"key": "MID_CONFIG_IDOL_SOURCE_USER_NAME",
+		"value": "Afficher le nom\\nd'utilisateur avec\\nles \u00e9veill\u00e9s"
+	},
+	{
+		"key": "MID_CONFIG_KEEP",
+		"value": "Oui"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_TITLE",
+		"value": "\u00c9veill\u00e9s de passage"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_WARNING",
+		"value": "Les tenues resplendissantes, sceaux sacr\u00e9s, atouts\\n\u00e9minents, b\u00e9n\u00e9dictions et accessoires sont perdus.\\nLe nombre maximal de dracofleurs s'appliquera."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_DIALOG_CONFIRM_TEXT",
+		"value": "$aUtiliser des $a0\\npour recruter un \u00e9veill\u00e9 ?"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_DIALOG_CONFIRM_WARNING",
+		"value": "\u30fb L'\u00e9veill\u00e9 qui devient votre alli\u00e9\\nperd ses tenues resplendissantes,\\nses sceaux sacr\u00e9s, ses atouts \u00e9minents,\\nses b\u00e9n\u00e9dictions et ses accessoires.\\n\u30fb Le nombre maximal de dracofleurs\\ns'appliquera \u00e0 l'\u00e9veill\u00e9.\\n\u30fb Les \u00e9veill\u00e9s ne peuvent servir de\\nsource pour les fusions ou l'option\\nTransmettre aptitudes.\\n\u30fb Les \u00e9veill\u00e9s ne peuvent pas \u00eatre\\nutilis\u00e9s pour cr\u00e9er des livrets militaires."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_DIALOG_CONFIRM_DECIDE",
+		"value": "Ajouter"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_DIALOG_SHORTAGE_WARNING",
+		"value": "$aVous n'avez pas assez de $a0."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_DIALOG_EXPIRED",
+		"value": "Liens de passage non disponibles."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_INFO_REMAINING_DAYS",
+		"value": "$aEncore $a1 \u00e9veill\u00e9(s)   Encore $a0 j"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_INFO_REMAINING_HOURS",
+		"value": "$aEncore $a1 \u00e9veill\u00e9(s)   Encore $a0 h"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_INFO_REMAINING_MINUTES",
+		"value": "$aEncore $a1 \u00e9veill\u00e9(s)   Encore $a0 min"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_INFO_REACHED_LIMIT",
+		"value": "Vous ne pouvez plus recruter d'\u00e9veill\u00e9s."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_INFO_EXPIRED",
+		"value": "La p\u00e9riode de recrutement est termin\u00e9e."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_BUTTON_ENABLE",
+		"value": "Ajouter"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_BUTTON_DISABLE",
+		"value": "Recrutement impossible."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_BUTTON_OUT_OF_VERSION_RANGE",
+		"value": "$aUnit\u00e9 ajout\u00e9e apr\u00e8s la ver. $a0.0"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_00",
+		"value": "\u25c6 \u00c9veill\u00e9s - Mondes connect\u00e9s \u25c6\\nPendant et apr\u00e8s un \u00e9v\u00e9nement de\\nMondes connect\u00e9s, vous pouvez\\nutiliser un lien de passage pour\\nobtenir des h\u00e9ros venus d'arm\u00e9es\\nd'autres joueurs en tant qu'\u00e9veill\u00e9s."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_01",
+		"value": "\u25c6 Lien de passage \u25c6\\nLes liens de passage sont parfois\\ndisponibles \u00e0 l'achat dans le menu\\n\u00ab Achats \u00bb."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_02",
+		"value": "\u25c6 H\u00e9ros pouvant \u00eatre recrut\u00e9s \u25c6\\nVous pouvez uniquement recruter\\ndes h\u00e9ros ayant \u00e9t\u00e9 ajout\u00e9s entre\\nla version 1.0 et la version 4.11.\\n\\nVous ne pouvez pas recruter les\\nh\u00e9ros que vous d\u00e9ployez, ou les\\nversions d'Alfonse, Sharena ou\\nAnna d'un autre monde."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_03",
+		"value": "\u25c6 Les \u00e9veill\u00e9s conservent \u25c6\\nLes bonus de caract\u00e9ristiques\\nconf\u00e9r\u00e9s par les dracofleurs seront\\n\u00e9quivalents \u00e0 la valeur maximale\\nautoris\u00e9e au moment o\u00f9 vous\\najoutez l'\u00e9veill\u00e9 \u00e0 votre caserne.\\n(Si le maximum est de +15, l'\u00e9veill\u00e9\\nobtient +15.) Les bonus sont\\nobtenus, peu importe le nombre\\nde dracofleurs que l'unit\u00e9 a re\u00e7u."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_04",
+		"value": "\u25c6 Les \u00e9veill\u00e9s h\u00e9ritent \u25c6\\n\u30fb Aptitudes \u00e9quip\u00e9es actuellement\\n\u30fb Attributs"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_05",
+		"value": "\u25c6 Les \u00e9veill\u00e9s n'h\u00e9ritent pas \u25c6\\n\u30fb Fusions\\n\u30fb Atouts \u00e9minents\\n\u30fb Tenues resplendissantes\\n\u30fb B\u00e9n\u00e9dictions\\n\u30fb Sceaux sacr\u00e9s\\n\u30fb Accessoires"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_06",
+		"value": "\u25c6 Restrictions \u25c6\\nLes \u00e9veill\u00e9s ne peuvent servir de\\nsource pour les fusions ou l'option\\nTransmettre aptitudes. Ils ne\\npeuvent pas non plus \u00eatre utilis\u00e9s\\npour cr\u00e9er des livrets militaires."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_07",
+		"value": "\u25c6 Fusionner les \u00e9veill\u00e9s \u25c6\\nIl est possible de fusionner deux\\n\u00e9veill\u00e9s si le donneur et le receveur\\nsont tous deux des \u00e9veill\u00e9s."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_08",
+		"value": "\u25c6 Divers \u25c6\\n\u30fb Les h\u00e9ros recrut\u00e9s rejoindront\\nvotre arm\u00e9e en tant qu'unit\u00e9s\\nde rang 5\u2605 et de niveau 40.\\n\u30fb Vous ne pouvez pas recevoir\\nde b\u00e9n\u00e9dictions ou d'autres objets\\nassoci\u00e9s \u00e0 des h\u00e9ros sp\u00e9cifiques."
+	},
+	{
+		"key": "MID_ITEM_BOND_TICKET",
+		"value": "Lien de passage"
+	},
+	{
+		"key": "MID_ITEM_HELP_BOND_TICKET",
+		"value": "Tr\u00e9sor qui permet de recruter des h\u00e9ros\\nd'autres mondes dans \u00c9veill\u00e9s de passage."
+	},
+	{
+		"key": "MID_SHOP_ORB_CAUTION2_WITH_BOND_TICKET",
+		"value": "$a\u00b7 Les orbes et liens de passage que\\n  vous achetez ici ne pourront \u00eatre\\n  utilis\u00e9s qu'avec les appareils $a0."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_SCOUT_IDOLIZE_ICON_HELP",
+		"value": "Vous pouvez consulter les h\u00e9ros pouvant \u00eatre\\nrecrut\u00e9s en touchant \u00ab Recrut. \u00e9veill\u00e9s \u00bb."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_SCOUT_LOG_IDOLIZE",
+		"value": "Recrut. \u00e9veill\u00e9s"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_REMAINING_DAYS",
+		"value": "$aEncore $a0 j pour recruter"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_REMAINING_HOURS",
+		"value": "$aEncore $a0 h pour recruter"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_REMAINING_MINUTES",
+		"value": "$aEncore $a0 min pour recruter"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_BUY_BOND_TICKET",
+		"value": "Vers menu \u00ab Achats \u00bb"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_PURCHASED_BOND_TICKET",
+		"value": "Obtenus"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_PURCHASE_NOTICE",
+		"value": "Une fois achet\u00e9, r\u00e9cup\u00e9rez votre lien\\nde passage dans votre liste de cadeaux."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_REWARD",
+		"value": "Recrut. \u00e9veill\u00e9s - r\u00e9compense de d\u00e9part"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING6_3",
+		"value": "Fin du livre VI"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING7",
+		"value": "Ouverture du livre VII"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_V0700A",
+		"value": "\u00c0 l'occasion du lancement du livre\\nVII, un nouveau style de ch\u00e2teau\\nest disponible !\\n\\nD\u00e9couvrez-le !"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_V0700A_DIALOG",
+		"value": "Voulez-vous utiliser le style de\\nch\u00e2teau Lumineux ?"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_V0700A_REVERT_AFTER",
+		"value": "Si vous changez d'avis, touchez\\nFortifier le ch\u00e2teau, puis Changer\\nle style et enfin Lumineux."
+	},
+	{
+		"key": "MID_HOME_PERSONAL_ANALYTICS_OPTIN_NOTIFICATION_MESSAGE_ANDROID",
+		"value": "Partage des donn\u00e9es :\\nNous recueillons et partageons vos\\ndonn\u00e9es d'utilisation du jeu afin d'analyser\\nles rapports d'erreur et, le cas \u00e9ch\u00e9ant,\\nde personnaliser vos exp\u00e9riences avec\\nles produits et services de Nintendo.\\n\\nVous pouvez modifier vos r\u00e9glages\\nconcernant la collecte et le partage de\\ndonn\u00e9es \u00e0 l'aide des boutons ci-dessous.\\n\\nLa modification de vos param\u00e8tres sera\\neffective une fois que l'application aura \u00e9t\u00e9\\nred\u00e9marr\u00e9e.\\n\\nVous pouvez arr\u00eater le partage de vos\\ndonn\u00e9es d'utilisation \u00e0 tout moment en\\ns\u00e9lectionnant \u00ab Ne pas partager \u00bb dans\\n\u00ab Partage des donn\u00e9es \u00bb depuis le menu\\n\u00ab Divers \u00bb, puis \u00ab\u00a0Informations, aide, etc.\u00a0\u00bb.\\n\\nPour ne plus recevoir de notifications en\\ndehors de l'application, modifiez les\\nautorisations de cette application dans\\nles param\u00e8tres de votre appareil."
+	},
+	{
+		"key": "MID_HOME_PERSONAL_ANALYTICS_OPTIN_NOTIFICATION_MESSAGE_IOS",
+		"value": "Partage des donn\u00e9es :\\nNous recueillons et partageons vos\\ndonn\u00e9es d'utilisation du jeu afin d'analyser\\nles rapports d'erreur et, le cas \u00e9ch\u00e9ant,\\nde personnaliser vos exp\u00e9riences avec\\nles produits et services de Nintendo.\\n\\nVous pouvez modifier vos r\u00e9glages\\nconcernant la collecte et le partage de\\ndonn\u00e9es \u00e0 l'aide des boutons ci-dessous.\\n\\nLa modification de vos param\u00e8tres sera\\neffective une fois que l'application aura \u00e9t\u00e9\\nred\u00e9marr\u00e9e.\\n\\nVous pouvez arr\u00eater le partage de vos\\ndonn\u00e9es d'utilisation \u00e0 tout moment en\\ns\u00e9lectionnant \u00ab Ne pas partager \u00bb dans\\n\u00ab Partage des donn\u00e9es \u00bb depuis le menu\\n\u00ab Divers \u00bb, puis \u00ab\u00a0Informations, aide, etc.\u00a0\u00bb.\\n\\nPour ne plus recevoir de notifications en\\ndehors de l'application, modifiez les\\nautorisations de cette application dans\\nles param\u00e8tres de votre appareil."
+	},
+	{
+		"key": "MID_HOME_PERSONAL_ANALYTICS_OPTIN_NOTIFICATION_DECIDE",
+		"value": "Partager mes donn\u00e9es"
+	},
+	{
+		"key": "MID_HOME_PERSONAL_ANALYTICS_OPTIN_NOTIFICATION_CANCEL",
+		"value": "Ne pas partager"
+	},
+	{
+		"key": "MID_HOME_SUMMON_TICKET_NAVIGATION_JUMP",
+		"value": "Invoquer"
+	},
+	{
+		"key": "MID_HOME_SUMMON_TICKET_NAVIGATION_MESSAGE",
+		"value": "Vous avez un ticket que vous pouvez\\nutiliser pour un h\u00e9ros sp\u00e9cial de la\\ncat\u00e9gorie Taux sp\u00e9cial 4\u2605. Invoquer ?"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202212",
+		"value": "Nouvel \u00e9veil"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV65542",
+		"value": "Lumineux"
+	},
+	{
+		"key": "MID_SCF_\u5149\u306e\u5973\u795e\u306e\u50cf",
+		"value": "Ic\u00f4ne de lumi\u00e8re"
+	},
+	{
+		"key": "MID_SCF_\u5149\u306e\u5973\u795e\u306e\u50cf_HELP",
+		"value": "Une statue d'une d\u00e9esse de Vanaheimr,\\nle royaume de lumi\u00e8re. Elle irradie une aura\\npleine d'espoir. Il s'agit d'un objet d'\u00e9v\u00e9nement."
+	},
+	{
+		"key": "MID_SCF_\u5149\u306e\u56fd\u306e\u690d\u7269",
+		"value": "Flore de lumi\u00e8re"
+	},
+	{
+		"key": "MID_SCF_\u5149\u306e\u56fd\u306e\u690d\u7269_HELP",
+		"value": "Une plante de Vanaheimr, le royaume de\\nlumi\u00e8re. Son \u00e9clat est apaisant. Il s'agit\\nd'un objet d'\u00e9v\u00e9nement."
+	},
+	{
+		"key": "MID_SCF_\u9ec4\u91d1\u306e\u86c7\u306e\u546a\u3044",
+		"value": "Serpent maudit"
+	},
+	{
+		"key": "MID_SCF_\u9ec4\u91d1\u306e\u86c7\u306e\u546a\u3044_HELP",
+		"value": "Une statue d'un serpent enroul\u00e9 autour d'une\\npierre dor\u00e9e. Sa lumi\u00e8re \u00e9th\u00e9r\u00e9e est inqui\u00e9tante.\\nIl s'agit d'un objet d'\u00e9v\u00e9nement."
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u304d\u306e\u3053_1",
+		"value": "g\u00e9n\u00e9reux"
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u304d\u306e\u3053_2",
+		"value": "rassasiant"
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u304d\u306e\u3053_3",
+		"value": "nourrissant"
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u3044\u3082_1",
+		"value": "terreux"
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u3044\u3082_2",
+		"value": "farineux"
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u3044\u3082_3",
+		"value": "moelleux"
+	},
+	{
+		"key": "MID_DISHES_\u30d5\u30e9\u30a4\u30c9\u30dd\u30c6\u30c8",
+		"value": "Frites"
+	},
+	{
+		"key": "MID_DISHES_\u713c\u304d\u30ad\u30ce\u30b3",
+		"value": "Champignons po\u00eal\u00e9s"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30c1\u30c3\u30d7\u30b9",
+		"value": "Chips"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u3068\u30ad\u30ce\u30b3\u7092\u3081",
+		"value": "Patates et champignons"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30d1\u30f3",
+		"value": "Pain de patates"
+	},
+	{
+		"key": "MID_DISHES_\u304b\u307c\u3061\u3083\u30dd\u30c6\u30c8\u30b5\u30e9\u30c0",
+		"value": "Potirons et patates"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30b5\u30e9\u30c0",
+		"value": "Salade de patates"
+	},
+	{
+		"key": "MID_DISHES_\u30d5\u30eb\u30fc\u30c4\u30dd\u30c6\u30c8\u30b5\u30e9\u30c0",
+		"value": "Salade patates et fruits"
+	},
+	{
+		"key": "MID_DISHES_\u30d9\u30fc\u30b3\u30f3\u30dd\u30c6\u30c8",
+		"value": "Bacon et patates"
+	},
+	{
+		"key": "MID_DISHES_\u5375\u30dd\u30c6\u30c8\u30b5\u30e9\u30c0",
+		"value": "Salade d'\u0153ufs et patates"
+	},
+	{
+		"key": "MID_DISHES_\u828b\u306e\u30c8\u30de\u30c8\u716e\u8fbc\u307f",
+		"value": "Soupe tomate-patate"
+	},
+	{
+		"key": "MID_DISHES_\u30b9\u30d1\u30a4\u30b7\u30fc\u30dd\u30c6\u30c8",
+		"value": "Patates \u00e9pic\u00e9es"
+	},
+	{
+		"key": "MID_DISHES_\u5927\u76db\u308a\u30ad\u30ce\u30b3",
+		"value": "Plat de champignons"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u30d1\u30b9\u30bf",
+		"value": "P\u00e2tes aux champignons"
+	},
+	{
+		"key": "MID_DISHES_\u79cb\u306e\u9999\u308a\u30b9\u30fc\u30d7",
+		"value": "Soupe de saison"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u306e\u5305\u307f\u713c\u304d",
+		"value": "Papillote champignons"
+	},
+	{
+		"key": "MID_DISHES_\u30d9\u30ea\u30fc\u306e\u30ad\u30ce\u30b3\u3042\u3048",
+		"value": "Champignons et baies"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u30bd\u30fc\u30b9\u306e\u30b9\u30c6\u30fc\u30ad",
+		"value": "Steak aux champignons"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u306e\u30aa\u30e0\u30ec\u30c4",
+		"value": "Omelette champignons"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u3068\u30c8\u30de\u30c8\u306e\u30b9\u30fc\u30d7",
+		"value": "Soupe tomate-champignon"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u306e\u9999\u308a\u713c\u304d",
+		"value": "Champignons \u00e9pic\u00e9s"
+	},
+	{
+		"key": "MID_DISHES_\u30de\u30c3\u30b7\u30e5\u30dd\u30c6\u30c8",
+		"value": "Pur\u00e9e de patates"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30c1\u30c3\u30d7\u30b9\u30ad\u30ce\u30b3\u5473",
+		"value": "Chips \u00e9pic\u00e9s"
+	},
+	{
+		"key": "MID_DISHES_\u3082\u3061\u3082\u3061\u30d1\u30f3",
+		"value": "Pain de mie"
+	},
+	{
+		"key": "MID_DISHES_\u30ba\u30c3\u30d1\u30fb\u30b0\u30b8\u30dc\u30f4\u30a1",
+		"value": "Soupe champignons s\u00e9ch\u00e9s"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u3068\u3044\u3082\u306e\u8089\u5dfb",
+		"value": "Roul\u00e9 sal\u00e9"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30d1\u30a4",
+		"value": "Tarte \u00e0 la patate"
+	},
+	{
+		"key": "MID_DISHES_\u30d4\u30fc\u30c6\u30d1\u30eb\u30c8",
+		"value": "Patates farcies"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30d1\u30f3\u30b1\u30fc\u30ad",
+		"value": "Galettes de patates"
+	},
+	{
+		"key": "MID_DISHES_\u30c8\u30de\u30c8\u30bd\u30fc\u30b9\u306e\u30cb\u30e7\u30c3\u30ad",
+		"value": "Gnocchis sauce tomate"
+	},
+	{
+		"key": "MID_DISHES_\u30b5\u30e2\u30b5",
+		"value": "Samoussa"
+	},
+	{
+		"key": "MID_DISHES_\u8089\u3058\u3083\u304c",
+		"value": "Rago\u00fbt patate-viande"
+	},
+	{
+		"key": "MID_DISHES_\u91ce\u83dc\u30b9\u30fc\u30d7",
+		"value": "Soupe de l\u00e9gumes"
+	},
+	{
+		"key": "MID_DISHES_\u8fb2\u592b\u306e\u671d\u98df",
+		"value": "Petit-d\u00e9jeuner fermier"
+	},
+	{
+		"key": "MID_DISHES_\u30a2\u30eb\u30fc\u30b4\u30fc\u30b7\u30e5\u30c8",
+		"value": "Curry patate-viande"
+	},
+	{
+		"key": "MID_DISHES_\u5c71\u76db\u308a\u30ad\u30ce\u30b3",
+		"value": "Plateau de champignons"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u305f\u3063\u3077\u308a\u30b5\u30e9\u30c0",
+		"value": "Salade de champignons"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u306e\u3066\u3093\u3077\u3089",
+		"value": "Tempura champignons"
+	},
+	{
+		"key": "MID_DISHES_\u53ce\u7a6b\u796d\u306e\u30b9\u30fc\u30d7",
+		"value": "Soupe d'automne"
+	},
+	{
+		"key": "MID_DISHES_\u6c34\u708a\u304d",
+		"value": "Rago\u00fbt"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u91ce\u83dc\u7092\u3081",
+		"value": "Po\u00eal\u00e9e de l\u00e9gumes"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u3068\u30c8\u30de\u30c8\u306e\u5375\u7092\u3081",
+		"value": "Po\u00eal\u00e9e de tomates"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u3068\u5375\u306e\u9244\u677f\u713c\u304d",
+		"value": "Champignons grill\u00e9s"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u30ab\u30ec\u30fc",
+		"value": "Curry de champignons"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u306e\u30d5\u30eb\u30b3\u30fc\u30b9",
+		"value": "Divers plats de patates"
+	},
+	{
+		"key": "MID_DISHES_\u53ce\u7a6b\u796d\u306e\u30d7\u30ec\u30fc\u30c8",
+		"value": "Plat festival d'automne"
+	},
+	{
+		"key": "MID_DISHES_\u30df\u30cd\u30b9\u30c8\u30ed\u30fc\u30cd",
+		"value": "Minestrone"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30b3\u30ed\u30c3\u30b1",
+		"value": "Croquette de patates"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c8\u30d5",
+		"value": "Pot-au-feu"
+	},
+	{
+		"key": "MID_DISHES_\u91ce\u83dc\u30ab\u30ec\u30fc",
+		"value": "Curry de l\u00e9gumes"
+	},
+	{
+		"key": "MID_DISHES_\u7530\u820e\u306e\u30ab\u30ec\u30fc",
+		"value": "Curry traditionnel"
+	},
+	{
+		"key": "MID_DISHES_\u30af\u30ed\u30c3\u30d7\u30ab\u30fc\u30ab",
+		"value": "Boulettes de patates"
+	},
+	{
+		"key": "MID_DISHES_\u5922\u76db\u308a\u30ad\u30ce\u30b3",
+		"value": "Pile de champignons"
+	},
+	{
+		"key": "MID_DISHES_\u30b9\u30c6\u30fc\u30ad\u306e\u5e0c\u5c11\u30ad\u30ce\u30b3\u4e57\u305b",
+		"value": "Filet aux champignons"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u306e\u30d5\u30ea\u30ab\u30c3\u30bb",
+		"value": "Fricass\u00e9e champignons"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u30d0\u30fc\u30ac\u30fc",
+		"value": "Hamburger champignons"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u306e\u30d4\u30b6",
+		"value": "Pizza aux champignons"
+	},
+	{
+		"key": "MID_DISHES_\u30cf\u30f3\u30d0\u30fc\u30b0\u306e\u30ad\u30ce\u30b3\u4e57\u305b",
+		"value": "Steak hach\u00e9 champignons"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u30b8\u30e3\u30eb\u30d5\u30ec\u30fc\u30b8\u30fc",
+		"value": "Champignons au curry"
+	},
+	{
+		"key": "MID_DISHES_\u6ecb\u990a\u5f37\u58ee\u30c9\u30ea\u30f3\u30af\uff0b",
+		"value": "Boisson \u00e9nerg\u00e9tique +"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u306e\u30dc\u30eb\u30ac\u30ce\u30f3\u713c\u304d",
+		"value": "Champignons Bolganone"
+	},
+	{
+		"key": "MID_FOODS_\u304d\u306e\u3053",
+		"value": "Champignon"
+	},
+	{
+		"key": "MID_FOODS_\u3044\u3082",
+		"value": "Patate"
+	},
+	{
+		"key": "MID_FOODS_\u304d\u306e\u3053_HELP",
+		"value": "Un aliment rassasiant et riche en\\nnutriments ! Avec sa texture, il peut\\naccompagner n\u2019importe quel plat !"
+	},
+	{
+		"key": "MID_FOODS_\u3044\u3082_HELP",
+		"value": "Un ingr\u00e9dient incroyablement\\npolyvalent ! Il s'associe avec\\nla viande, les l\u00e9gumes, et bien plus."
+	},
+	{
+		"key": "MID_SCH_\u6c34\u6d74\u3073\u30e6\u30f3\u30cc",
+		"value": "Yune flottante"
+	},
+	{
+		"key": "MID_SCH_\u6c34\u6d74\u3073\u30e6\u30f3\u30cc_HOLIDAYHELP",
+		"value": "Un accessoire de bain flottant sur l'eau."
+	},
+	{
+		"key": "MID_SCH_\u3058\u3093\u308f\u308a\u56de\u5fa9\u85ac",
+		"value": "Potion r\u00e9paratrice"
+	},
+	{
+		"key": "MID_SCH_\u3058\u3093\u308f\u308a\u56de\u5fa9\u85ac_HOLIDAYHELP",
+		"value": "Un accessoire de bain flottant sur l'eau."
+	},
+	{
+		"key": "MID_SCH_\u5165\u6d74\u4e2d\u306e\u5c40\u9577",
+		"value": "Chef de baignade"
+	},
+	{
+		"key": "MID_SCH_\u5165\u6d74\u4e2d\u306e\u5c40\u9577_HOLIDAYHELP",
+		"value": "Un accessoire de bain flottant sur l'eau."
+	},
+	{
+		"key": "MID_SCH_\u304a\u3084\u3059\u307f\u30d5\u30a7\u30fc",
+		"value": "Feh pour dormir"
+	},
+	{
+		"key": "MID_SCH_\u304a\u3084\u3059\u307f\u30d5\u30a7\u30fc_HOLIDAYHELP",
+		"value": "Une peluche \u00e0 placer sur un lit."
+	},
+	{
+		"key": "MID_SCH_\u3059\u3084\u3059\u3084\u30d9\u30ec\u30c8",
+		"value": "Peluche de Byleth"
+	},
+	{
+		"key": "MID_SCH_\u3059\u3084\u3059\u3084\u30d9\u30ec\u30c8_HOLIDAYHELP",
+		"value": "Une peluche \u00e0 placer sur un lit."
+	},
+	{
+		"key": "MID_SCH_\u3075\u308f\u3075\u308f\u795e\u7adc\u30d5\u30a1",
+		"value": "Fae en peluche"
+	},
+	{
+		"key": "MID_SCH_\u3075\u308f\u3075\u308f\u795e\u7adc\u30d5\u30a1_HOLIDAYHELP",
+		"value": "Une peluche \u00e0 placer sur un lit."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202212",
+		"value": "Pierres d'\u00e9ther gel\u00e9es"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202212",
+		"value": "Servent \u00e0 construire des structures \u00e0 dur\u00e9e\\nlimit\u00e9e dans le mode Raid c\u00e9leste. Une fois\\nla p\u00e9riode termin\u00e9e, les pierres sont perdues."
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_4",
+		"value": "\u00c9minent"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_5",
+		"value": "Myst."
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202212",
+		"value": "Vie et mort (fin)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202212_01",
+		"value": "Bataille de neige !"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202301",
+		"value": "Archives de l'ouest"
+	},
+	{
+		"key": "MID_WIN05_IceFishing_Title",
+		"value": "P\u00eache dans la glace"
+	},
+	{
+		"key": "MID_WIN05_IceFishing_Common",
+		"value": "Le duo a d\u00e9cid\u00e9 de p\u00eacher dans le lac\\ngel\u00e9. Attrapera-t-il quelque chose ?"
+	},
+	{
+		"key": "MID_WIN05_IceFishing_3",
+		"value": "Malgr\u00e9 sa taille, le poisson s'est bien\\nbattu ! Le duo s'avoue vaincu..."
+	},
+	{
+		"key": "MID_WIN05_IceFishing_4",
+		"value": "Le duo a attrap\u00e9 des poissons malgr\u00e9 la\\nglace. Des pingouins en sont t\u00e9moins !"
+	},
+	{
+		"key": "MID_WIN05_IceFishing_5",
+		"value": "Le trou creus\u00e9 par le duo regorge de\\npoissons. C'est absolument incroyable."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202301R",
+		"value": "Hors de contr\u00f4le, le retour"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202301",
+		"value": "Cadeaux renouvel\u00e9s"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202301_2",
+		"value": "Filles du Black Fang"
+	},
+	{
+		"key": "MID_SHOP_ERROR_PURCHASE_DISABLED",
+		"value": "Il est possible que l'achat soit restreint.\\nV\u00e9rifiez les param\u00e8tres de l'appareil."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202301",
+		"value": "Embl\u00e8mes et h\u00e9ros"
+	},
+	{
+		"key": "MID_DISHES_AUTHORITY_14_1",
+		"value": "fa\u00e7on Elyos"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_AUTHORITY_14",
+		"value": "Engage"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202301_01",
+		"value": "Archives du nord"
+	},
+	{
+		"key": "MID_AUT04_Wood_Title",
+		"value": "Couper du bois"
+	},
+	{
+		"key": "MID_AUT04_Wood_Common",
+		"value": "Le duo s'entra\u00eene \u00e0 couper du bois !\\nMais a-t-il vraiment le tour de main ?"
+	},
+	{
+		"key": "MID_AUT04_Wood_3",
+		"value": "Le tronc s'est bris\u00e9 en deux !\\nLe duo doit \u00eatre plus pr\u00e9cis..."
+	},
+	{
+		"key": "MID_AUT04_Wood_4",
+		"value": "Un pivert a donn\u00e9 une astuce au duo !\\nToute aide est bonne \u00e0 prendre !"
+	},
+	{
+		"key": "MID_AUT04_Wood_5",
+		"value": "Le duo ma\u00eetrise \u00e0 pr\u00e9sent la technique.\\nIl faut voir de quel bois il se chauffe !"
+	},
+	{
+		"key": "MID_SCF_\uff16\u5468\u5e74\u30b1\u30fc\u30ad",
+		"value": "G\u00e2teaux d'anniv."
+	},
+	{
+		"key": "MID_SCF_\uff16\u5468\u5e74\u30b1\u30fc\u30ad_HELP",
+		"value": "Un service \u00e0 th\u00e9 somptueux pr\u00e9par\u00e9 pour\\nle sixi\u00e8me anniversaire du jeu. Il s'agit\\nd'un objet d'\u00e9v\u00e9nement."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202302",
+		"value": "Pierres d'\u00e9ther sp\u00e9ciales"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202302",
+		"value": "Servent \u00e0 construire des structures \u00e0 dur\u00e9e\\nlimit\u00e9e dans le mode Raid c\u00e9leste. Une fois\\nla p\u00e9riode termin\u00e9e, les pierres sont perdues."
+	},
+	{
+		"key": "MID_VOTE_TERM_202301",
+		"value": "Rivalit\u00e9 naturelle"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_09",
+		"value": "\u25c6 H\u00e9ros l\u00e9gendaires bonus \u25c6\\nEn incluant un de ces h\u00e9ros dans\\nvotre \u00e9quipe, vous obtiendrez les\\neffets suivants :\\n- effet du score le plus \u00e9lev\u00e9 ;\\n- effet de protection lors d'une\\nd\u00e9faite."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_10",
+		"value": "\u25c6 Effet du score le plus \u00e9lev\u00e9 \u25c6\\nEn incluant un h\u00e9ros l\u00e9gendaire\\nbonus dans votre \u00e9quipe, vous\\npourrez affronter les \u00e9quipes\\nennemies avec la plus grande\\nforce possible, ce qui vous\\npermettra d'obtenir le score\\nle plus \u00e9lev\u00e9 possible."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_11",
+		"value": "\u25c6 Effet de protection et d\u00e9faite \u25c6\\nEn incluant un h\u00e9ros l\u00e9gendaire\\nbonus dans votre \u00e9quipe, vous\\n\u00e9viterez de perdre des points quand\\nune de vos unit\u00e9s est vaincue.\\n(Si des unit\u00e9s sont vaincues,\\nla r\u00e9duction de votre score est\\ncalcul\u00e9e comme si vous aviez\\nperdu un h\u00e9ros de moins.)"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_1_03_v0702",
+		"value": "\u25c6 \u00c9chelon : conditions sp\u00e9ciales \u25c6\\nVous ne redescendrez pas \u00e0 un\\n\u00e9chelon inf\u00e9rieur en cas de d\u00e9faite.\\n(Mais vous pouvez redescendre\\n\u00e0 un \u00e9chelon inf\u00e9rieur lors de la\\nr\u00e9initialisation pr\u00e9c\u00e9dant le\\nprochain \u00e9v\u00e9nement si vous \u00eates\\nau-dessus du palier des \u00e9chelons.)"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202302",
+		"value": "Le secret du prince"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_PICKUP_CHARGE_TITLE",
+		"value": "Privil\u00e8ge n\u00b0 1 : focus lumineux"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_PICKUP_CHARGE_TEXT",
+		"value": "Permet d'utiliser le focus lumineux\\npour obtenir des h\u00e9ros sp\u00e9ciaux."
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_MISSION_TITLE_V7_2",
+		"value": "Privil\u00e8ge n\u00b0 2 : qu\u00eates exclusives"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_RELIANCE_TITLE_V7_2",
+		"value": "Privil\u00e8ge n\u00b0 3 : soutien d'invocateur \u00e9largi"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_UNDO_TITLE_V7_2",
+		"value": "Privil\u00e8ge n\u00b0 4 : rejouer un tour"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_AUTO_PLAY_TITLE_V7_2",
+		"value": "Privil\u00e8ge n\u00b0 5 : carte automatique"
+	},
+	{
+		"key": "MID_SUMMON_PICKUP_CHARGE_REMAINING_POINT",
+		"value": "$aEncore $a0 invocation(s) de\\nh\u00e9ros 5\u2605 (Hors focus) avant\\nl'activation du focus lumineux."
+	},
+	{
+		"key": "MID_SUMMON_PICKUP_CHARGE_REMAINING_POINT_FEH_PASS",
+		"value": "$aEncore $a0 invocation(s) de\\nh\u00e9ros 5\u2605 (Hors focus) avant\\nl'activation du focus lumineux\\navec un abonnement au passe Feh."
+	},
+	{
+		"key": "MID_SUMMON_PICKUP_CHARGE",
+		"value": "Focus lumineux disponible !\\nLe prochain h\u00e9ros que vous\\ninvoquez sera un h\u00e9ros 5\u2605 (Focus)."
+	},
+	{
+		"key": "MID_SUMMON_PICKUP_CHARGE_FEH_PASS",
+		"value": "Focus lumineux disponible avec\\nun abonnement au passe Feh !\\nLe prochain h\u00e9ros que vous\\ninvoquez sera un h\u00e9ros 5\u2605 (Focus)."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202302",
+		"value": "D\u00e9cision pour l'avenir"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_3",
+		"value": "Si\u00e8ge de l'amour"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_3",
+		"value": "$aLes ennemis conf\u00e8rent PA x 5 pendant $a0,\\npuis PA x 2 apr\u00e8s cette p\u00e9riode ! (S'il y a\\nplusieurs effets similaires, seul le plus puissant\\ns'applique.)"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202302",
+		"value": "Archives de l'est"
+	},
+	{
+		"key": "MID_WIN14_Blizzard_Title",
+		"value": "Temp\u00eate d\u00e9cha\u00een\u00e9e"
+	},
+	{
+		"key": "MID_WIN14_Blizzard_Common",
+		"value": "Le duo traverse une temp\u00eate de neige.\\nContinuer \u00e0 avancer serait dangereux..."
+	},
+	{
+		"key": "MID_WIN14_Blizzard_3",
+		"value": "Leur tente a \u00e9t\u00e9 emport\u00e9e par le vent !\\nLe duo se pr\u00e9cipite pour la rattraper !"
+	},
+	{
+		"key": "MID_WIN14_Blizzard_4",
+		"value": "Le duo a construit une cabane avec\\nla neige ! Il peut se d\u00e9tendre \u00e0 l'abri !"
+	},
+	{
+		"key": "MID_WIN14_Blizzard_5",
+		"value": "Le duo s'est amus\u00e9 \u00e0 construire un bel\\nabri de glace et en a oubli\u00e9 le froid !"
+	},
+	{
+		"key": "MID_VOTE_TERM_202303",
+		"value": "UH\u00c9 2023 - finale"
+	},
+	{
+		"key": "MID_OCCUPATION_RECOLLECTION_TITLE_202303",
+		"value": "Annand et compagnie 1"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202303",
+		"value": "Luxe supr\u00eame"
+	},
+	{
+		"key": "MID_SUMMON_PICKUP_CHARGE_FEH_PASS_AVAILABLE",
+		"value": "Focus lumineux disponible !\\nVotre prochaine invocation\\n5\u2605 sera un h\u00e9ros du focus.\\n(Uniquement disponible avec un\\nabonnement actif au passe Feh.)"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2023_0",
+		"value": "Heroes / Mystery / Echoes"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2023_1",
+		"value": "Genealogy / Thracia 776"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2023_2",
+		"value": "Binding / Blazing / Sacred Stones"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2023_3",
+		"value": "Heroes / Radiance"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2023_4",
+		"value": "Awakening / Fates"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2023_5",
+		"value": "Three Houses / Three Hopes"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202303",
+		"value": "Archives du sud"
+	},
+	{
+		"key": "MID_SPR14_Incubation_Title",
+		"value": "Premi\u00e8res notes"
+	},
+	{
+		"key": "MID_SPR14_Incubation_Common",
+		"value": "Le duo a trouv\u00e9 un \u0153uf sur le point\\nd'\u00e9clore et veut assister au spectacle !"
+	},
+	{
+		"key": "MID_SPR14_Incubation_3",
+		"value": "La m\u00e8re du petit a rep\u00e9r\u00e9 le duo qui\\ns'enfuit devant ses cris mena\u00e7ants !"
+	},
+	{
+		"key": "MID_SPR14_Incubation_4",
+		"value": "Le petit est d\u00e9j\u00e0 plein de vie ! Le duo\\nl'\u00e9coute chanter ses premi\u00e8res notes."
+	},
+	{
+		"key": "MID_SPR14_Incubation_5",
+		"value": "L'\u0153uf contient un dragon ! Le duo s'enfuit\\ndiscr\u00e8tement au son des grognements..."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202303",
+		"value": "Son avenir radieux"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202304R",
+		"value": "Le c\u0153ur et l'\u00e2me, le retour"
+	},
+	{
+		"key": "MID_VOTE_TERM_202304",
+		"value": "Soyeux et divins"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202304",
+		"value": "D\u00e9buts prometteurs"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_PICKUP_CHARGE_TEXT_V7_4",
+		"value": "Utilisez les focus lumineux dans h. sp\u00e9ciaux\\net fest. des h\u00e9ros (sauf Soutien de novice)."
+	},
+	{
+		"key": "MID_TWIN_WORLD_AUTHORITY_14",
+		"value": "Engage"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202304",
+		"value": "Un nouveau lieu d'\u00e9tude"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202304",
+		"value": "Archives de l'ouest"
+	},
+	{
+		"key": "MID_AUT10_Training_Title",
+		"value": "Entra\u00eenement \u00e0 deux"
+	},
+	{
+		"key": "MID_AUT10_Training_Common",
+		"value": "Le duo a froid ! Il commence \u00e0\\ns'entra\u00eener pour se r\u00e9chauffer..."
+	},
+	{
+		"key": "MID_AUT10_Training_3",
+		"value": "Le duo met en pratique ses techniques.\\nCes mouvements lui donnent chaud..."
+	},
+	{
+		"key": "MID_AUT10_Training_4",
+		"value": "C'est l'heure de s'affronter... Le duo\\ns'am\u00e9liore autant qu'il se r\u00e9chauffe !"
+	},
+	{
+		"key": "MID_AUT10_Training_5",
+		"value": "Le combat s'intensifie. La chaleur a\\nd\u00e9sormais envahi toute la zone !"
+	},
+	{
+		"key": "MID_VOTE_TERM_202305",
+		"value": "Journ\u00e9e sportive"
+	},
+	{
+		"key": "MID_HOME_EXPLORER_MISSION_NOTIFICATION",
+		"value": "Obtenez une r\u00e9compense par jour.\\nOuvrir le menu Pi\u00e8ge de Gullveig ?"
+	},
+	{
+		"key": "MID_HOME_EXPLORER_NAVIGATION_JUMP",
+		"value": "Pi\u00e8ge de Gullveig"
+	},
+	{
+		"key": "MID_CONFIG_HOME_NOTIFICATION_EXPLORER",
+		"value": "Notif. d'accueil\\nPi\u00e8ge de Gullveig"
+	},
+	{
+		"key": "MID_EXPLORER_TITLE",
+		"value": "Pi\u00e8ge de Gullveig"
+	},
+	{
+		"key": "MID_EXPLORER_REMAINING_DAYS",
+		"value": "$aEncore $a0 j"
+	},
+	{
+		"key": "MID_EXPLORER_REMAINING_HOURS",
+		"value": "$aEncore $a0 h"
+	},
+	{
+		"key": "MID_EXPLORER_REMAINING_MINUTES",
+		"value": "$aEncore $a0 min"
+	},
+	{
+		"key": "MID_EXPLORER_STAMINA",
+		"value": "\u00c9nergie"
+	},
+	{
+		"key": "MID_EXPLORER_CLOSED",
+		"value": "\u00c9v\u00e9nement termin\u00e9."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_BUTTON_WORLD_MAP",
+		"value": "Faille temporelle"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_BUTTON_SYSTEM_MENU",
+		"value": "Voyager"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_BUTTON_REWARD",
+		"value": "R\u00e9comp."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_BONUS_AUTHORITY",
+		"value": "Jeux bonus"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_CONFIRM",
+		"value": "Commencer l'\u00e9v\u00e9nement ?"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_WARNING",
+		"value": "Vous ne pourrez changer votre \u00e9quipe\\npendant l'\u00e9v\u00e9nement que si vous\\nretournez au d\u00e9but. Le niveau des\\nh\u00e9ros sera de 40. Les emplacements\\ndes aptitudes A, B et C vides seront\\nremplis par des aptitudes au hasard."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_DECIDE",
+		"value": "Commencer"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_FAILED",
+		"value": "Impossible de commencer l'\u00e9v\u00e9nement."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_FAILED_WARNING_TROOP_RESTRICTION",
+		"value": "Tous les emplacements de votre\\n\u00e9quipe doivent \u00eatre occup\u00e9s par\\nun h\u00e9ros.\\n\\nImpossible d'utiliser plusieurs\\nexemplaires du m\u00eame h\u00e9ros.\\n\\nVous ne pouvez pas utiliser plus\\nd'un alli\u00e9 avec l'aptitude Chant ou\\nDanse.\\n\\nVous ne pouvez pas utiliser plus\\nd'un alli\u00e9 avec l'aptitude Sauveur."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_RESTORE_POINT",
+		"value": "Retourner au mini-boss"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_RESTORE_POINT_DIALOG_CONFIRM",
+		"value": "Aller au dernier mini-boss vaincu ?"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_RESTORE_POINT_DIALOG_WARNING",
+		"value": "Toute la progression sera perdue,\\nsauf les r\u00e9compenses. L'\u00e9nergie\\nconsomm\u00e9e sera restaur\u00e9e."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_RESTORE_POINT_DIALOG_DECIDE",
+		"value": "Voyager"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_FIRST",
+		"value": "Retourner au d\u00e9but"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_FIRST_DIALOG_CONFIRM",
+		"value": "Voulez-vous retourner au d\u00e9but ?"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_FIRST_DIALOG_WARNING",
+		"value": "$aToute la progression sera perdue,\\nsauf les r\u00e9compenses. L'\u00e9nergie\\nconsomm\u00e9e sera restaur\u00e9e. De tous\\nles grains du temps obtenus, $a0 %\\n($a1 max) seront conserv\u00e9s."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_FIRST_DIALOG_DECIDE",
+		"value": "Voyager"
+	},
+	{
+		"key": "MID_EXPLORER_WORLD_MAP_TITLE",
+		"value": "Faille temporelle"
+	},
+	{
+		"key": "MID_EXPLORER_WORLD_MAP_BUTTON_SKILL_EQUIP",
+		"value": "Aptitudes"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_TITLE",
+		"value": "$aFaille temporelle $a0"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_FINAL_BOSS",
+		"value": "Boss final"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_MID_BOSS",
+		"value": "Mini-boss"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_PASSIVE_A",
+		"value": "Aptitude A"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_PASSIVE_B",
+		"value": "Aptitude B"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_PASSIVE_C",
+		"value": "Aptitude C"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_SHOP",
+		"value": "Sceau de Vanir"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_INN",
+		"value": "Havre de paix"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIFFICULTY_0",
+		"value": "Novice"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIFFICULTY_1",
+		"value": "Interm\u00e9diaire"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIFFICULTY_2",
+		"value": "V\u00e9t\u00e9ran"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_CONNECT_NAME_AND_DIFFICULTY",
+		"value": "$a$a0 - $a1"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DAILY_BONUS_REWARD",
+		"value": "Une r\u00e9compense \u00e0 gagner chaque jour !"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DAILY_BONUS_INFO",
+		"value": "Gagnez une r\u00e9compense chaque jour\\nen terminant une carte. (5 jours max.)"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_FIRST_REWARD",
+		"value": "R\u00e9compense premi\u00e8re fois"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_FIRST_ADVANCED_REWARD",
+		"value": "R\u00e9compense niv. avanc\u00e9"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_FIRST_REWARD_AND_FIRST_ADVANCED_REWARD",
+		"value": "R\u00e9compense premi\u00e8re fois + niv. avanc\u00e9"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIALOG_DECIDE_BATTLE_START",
+		"value": "Combattre"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIALOG_DECIDE_SHOP",
+		"value": "Entrer"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIALOG_DECIDE_INN",
+		"value": "Entrer"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_START_FAILED_DIALOG_CONFIRM",
+		"value": "Impossible d'avancer."
+	},
+	{
+		"key": "MID_EXPLORER_AREA_START_FAILED_DIALOG_WARNING_TERM_EXPIRED",
+		"value": "\u00c9v\u00e9nement termin\u00e9."
+	},
+	{
+		"key": "MID_EXPLORER_AREA_START_FAILED_DIALOG_WARNING_NO_STAMINA",
+		"value": "\u00c9nergie insuffisante."
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_CATEGORY_PASSIVE_A",
+		"value": "Aptitude A"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_CATEGORY_PASSIVE_B",
+		"value": "Aptitude B"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_CATEGORY_PASSIVE_C",
+		"value": "Aptitude C"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_CATEGORY_REMOVE",
+		"value": "Supprimer"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_EQUIP_TITLE",
+		"value": "Modifier aptitudes"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_EQUIP_DIALOG_DECIDE",
+		"value": "Modifier"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_EQUIP_DIALOG_CONFIRM",
+		"value": "Modifier les aptitudes assign\u00e9es ?"
+	},
+	{
+		"key": "MID_EXPLORER__SKILL_EQUIP_CANCEL_DIALOG_CONFIRM",
+		"value": "Renoncer \u00e0 ces modifications ?"
+	},
+	{
+		"key": "MID_EXPLORER__SKILL_EQUIP_CANCEL_DIALOG_WARNING",
+		"value": "Toute modification non\\nsauvegard\u00e9e sera perdue."
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_EQUIP_CANCEL_DIALOG_DECIDE",
+		"value": "Renoncer"
+	},
+	{
+		"key": "MID_EXPLORER_EVENT_ITEM_UNLOCK_RANDOM_ORIGINAKL_SKILL",
+		"value": "D\u00e9verrouiller empl. al\u00e9atoire"
+	},
+	{
+		"key": "MID_EXPLORER_EVENT_ITEM_UNLOCK_RANDOM_ORIGINAKL_SKILL_RESULT",
+		"value": "$aAptitude d\u00e9verrouill\u00e9e pour\\n$a0."
+	},
+	{
+		"key": "MID_EXPLORER_EVENT_ITEM_UNLOCK_EXTENDED_SKILL",
+		"value": "D\u00e9verrouiller empl. d'\u00e9quipe"
+	},
+	{
+		"key": "MID_EXPLORER_EVENT_ITEM_OMIT",
+		"value": "$aet $a0 de plus"
+	},
+	{
+		"key": "MID_EXPLORER_BATTLE_REWARD_TITLE",
+		"value": "R\u00e9comp. combat"
+	},
+	{
+		"key": "MID_EXPLORER_BATTLE_REWARD_HELP",
+		"value": "Choisissez une r\u00e9compense."
+	},
+	{
+		"key": "MID_EXPLORER_BATTLE_REWARD_DIALOG_CONFIRM",
+		"value": "Voulez-vous cette r\u00e9compense ?"
+	},
+	{
+		"key": "MID_EXPLORER_BATTLE_REWARD_DIALOG_DECIDE",
+		"value": "Accepter"
+	},
+	{
+		"key": "MID_EXPLORER_INN_TALK_0",
+		"value": "$WmMPID_\u30a2\u30eb\u30d5\u30a9\u30f3\u30b9,ch00_01_Alfons_M_Normal,Face|Reposons-nous ici pour aujourd'hui.\\nOn dirait que le combat va encore\\ndurer, $Nu.$k$p"
+	},
+	{
+		"key": "MID_EXPLORER_INN_TALK_1",
+		"value": "$WmMPID_\u30b7\u30e3\u30ed\u30f3,ch00_02_Sharon_F_Normal,Face|Nous pouvons nous reposer ici\\npour aujourd'hui ! Je vais pr\u00e9parer\\nle repas !$k$p"
+	},
+	{
+		"key": "MID_EXPLORER_INN_TALK_2",
+		"value": "$WmMPID_\u30a2\u30f3\u30ca,ch00_03_Anna_F_Normal,Face|Campons ici. Nous n'irons pas\\nplus loin pour aujourd'hui !$k$p"
+	},
+	{
+		"key": "MID_EXPLORER_INN_TALK_3",
+		"value": "$WmMPID_\u30bb\u30a4\u30ba,ch00_46_Seith_F_Normal,Face|Reposez-vous, enfants de Midgard.\\nCet endroit a une aura r\u00e9paratrice\\nqui apaisera vos blessures...$k$p"
+	},
+	{
+		"key": "MID_EXPLORER_INN_DIALOG_CONFIRM",
+		"value": "PV restaur\u00e9s."
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_TITLE",
+		"value": "Sceau de Vanir"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_HELP",
+		"value": "S\u00e9lectionnez une aptitude \u00e0 d\u00e9verrouiller."
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_EMPTY",
+		"value": "Aucune aptitude \u00e0 d\u00e9verrouiller."
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_BUTTON_PURCHASE",
+		"value": "D\u00e9verrouiller"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_BUTTON_FINISH",
+		"value": "Quitter"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_BUTTON_DESELECT",
+		"value": "D\u00e9s\u00e9lectionner"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_PURCHASE_DIALOG_CONFIRM",
+		"value": "D\u00e9verrouiller la s\u00e9lection ?"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_PURCHASE_DIALOG_DECIDE",
+		"value": "D\u00e9verrouiller"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_FINISH_DIALOG_CONFIRM",
+		"value": "Voulez-vous annuler et quitter ?"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_FINISH_DIALOG_WARNING",
+		"value": "Vous ne pourrez pas revenir."
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_FINISH_DIALOG_DECIDE",
+		"value": "Quitter"
+	},
+	{
+		"key": "MID_EXPLORER_ENDING_TELOP",
+		"value": "Vous avez travers\u00e9 la faille temporelle\\net \u00eates de retour \u00e0 votre \u00e9poque !"
+	},
+	{
+		"key": "MID_EXPLORER_ENDING_DIALOG_CONFIRM",
+		"value": "F\u00e9licitations, vous avez \u00e9chapp\u00e9 au\\nPi\u00e8ge de Gullveig ! L'\u00e9v\u00e9nement\\nest d\u00e9sormais termin\u00e9. Vous pouvez\\nrevoir votre parcours sur cet \u00e9cran.\\nS'il vous reste des r\u00e9compenses \u00e0\\nr\u00e9cup\u00e9rer, vous pouvez \u00e9galement\\nutiliser \u00ab Voyager \u00bb pour r\u00e9essayer."
+	},
+	{
+		"key": "MID_EXPLORER_H_COMPATIBILITY",
+		"value": "Les sceaux D\u00e9pl. temporel conf\u00e8rent\\ndes avantage sp\u00e9ciaux. Unit\u00e9s grises :\\nic\u00f4ne \u00e0 gauche = ennemis ; ic\u00f4ne \u00e0\\ndroite = alli\u00e9s."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_00",
+		"value": "Utilisez vos aptitudes pour gagner !"
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_01",
+		"value": "\u25c6 Pi\u00e8ge de Gullveig \u25c6\\nTraversez la faille temporelle\\net revenez \u00e0 votre \u00e9poque. Dans\\nla faille temporelle, les variations\\ndu temps permettent d'\u00e9quiper vos\\nh\u00e9ros de nombreuses aptitudes !"
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_02",
+		"value": "\u25c6 \u00c9nergie \u25c6\\n\u30fb Se d\u00e9placer d'un endroit \u00e0\\nl'autre consomme 1 point\\nd'\u00e9nergie.\\n\u30fb L'\u00e9nergie sera restaur\u00e9e en cas\\nde d\u00e9faite uniquement dans une\\nzone de mini-boss ou de boss final.\\n(Si elle est d\u00e9j\u00e0 \u00e0 son maximum,\\nelle ne sera pas restaur\u00e9e.)"
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_03",
+		"value": "\u25c6 \u00c0 propos de l'\u00e9v\u00e9nement \u25c6\\nLes sceaux sacr\u00e9s \u00e9quip\u00e9s par les\\nennemis augmentent les effets\\nde l'avantage tactique. Les unit\u00e9s\\ngrises auront des avantages et des\\nd\u00e9savantages. De plus, les PV des\\nh\u00e9ros sont conserv\u00e9s d'une carte\\n\u00e0 l'autre."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_04",
+		"value": "\u25c6 Composition de l'\u00e9quipe \u25c6\\n\u30fbImpossible d'utiliser plusieurs\\nexemplaires du m\u00eame h\u00e9ros.\\n\u30fb Vous ne pouvez pas utiliser plus\\nd'un alli\u00e9 avec l'aptitude Chant ou\\nDanse, ni plus d'un alli\u00e9 avec\\nl'aptitude Sauveur.\\n\u30fbTous les h\u00e9ros sont de niveau 40."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_05",
+		"value": "\u25c6 Aptitudes \u25c6\\n\u30fb Si un h\u00e9ros n'a pas d'aptitude\\nA, B, C ou S, une aptitude A, B\\nou C al\u00e9atoire lui sera assign\u00e9e.\\n\u30fb Les aptitudes A, B, C et S sont\\nd'abord verrouill\u00e9es et peuvent\\n\u00eatre d\u00e9verrouill\u00e9es gr\u00e2ce aux\\nr\u00e9compenses ou gr\u00e2ce \u00e0 un sceau\\nde Vanir."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_06",
+		"value": "\u25c6 Extension empl. d'aptitudes \u25c6\\nTous les h\u00e9ros obtiennent trois\\nautres niveaux d'emplacements\\nd'aptitudes A, B et C en plus des\\nemplacements normaux.\\nLe premier niveau est d\u00e9verrouill\u00e9\\nd\u00e8s le d\u00e9but, le reste est ensuite\\nd\u00e9verrouill\u00e9 avec les r\u00e9compenses."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_07",
+		"value": "\u25c6 H\u00e9ros de l'Appel aux armes \u25c6\\nEn plus d'obtenir une extension\\ndes emplacements d'aptitudes,\\nles h\u00e9ros de l'Appel aux\\narmes re\u00e7oivent PV +10,\\nAtq/Vit/D\u00e9f/R\u00e9s +4 et des\\nemplacements d'aptitudes S\\ngratuits pouvant \u00eatre \u00e9quip\u00e9s\\nd'aptitudes A, B ou C."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_08",
+		"value": "\u25c6 Modifier aptitudes \u25c6\\nVous pouvez ins\u00e9rer des aptitudes\\nque vous avez d\u00e9verrouill\u00e9es\\ndans les emplacements\\nd'aptitudes vides."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_09",
+		"value": "\u25c6 Voyager \u25c6\\n\u30fb Retourner au mini-boss : vous\\nrevenez au moment suivant votre\\nvictoire contre le dernier mini-boss\\net r\u00e9cup\u00e9rez l'\u00e9nergie consomm\u00e9e\\ndepuis.\\n\u30fb Retourner au d\u00e9but : vous\\nr\u00e9cup\u00e9rez toute l'\u00e9nergie\\nconsomm\u00e9e et vous conservez\\nune partie des grains du temps."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_10",
+		"value": "\u25c6 Sceau de Vanir \u25c6\\nVous pouvez utiliser des grains du\\ntemps afin de d\u00e9verrouiller des\\naptitudes et des emplacements.\\n\\n\u25c6 Havre de paix \u25c6\\nVous pouvez r\u00e9cup\u00e9rer des PV."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_11",
+		"value": "\u25c6 Autres informations \u25c6\\n\u30fb Les effets de saison des h\u00e9ros\\nl\u00e9gendaires et mythiques sont\\nd\u00e9sactiv\u00e9s.\\n\u30fb Les doubles aptitudes et les\\naptitudes harmonis\u00e9es ne peuvent\\npas \u00eatre utilis\u00e9es.\\n\u30fb Vous ne gagnez pas d'EXP ou\\nde PA.\\n\u30fb Il est possible de gagner\\ndu m\u00e9rite h\u00e9ro\u00efque."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202305",
+		"value": "Profond d\u00e9sespoir"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202305",
+		"value": "Archives du nord"
+	},
+	{
+		"key": "MID_SUM15_SummerNight_Title",
+		"value": "Une sombre nuit d'\u00e9t\u00e9"
+	},
+	{
+		"key": "MID_SUM15_SummerNight_Common",
+		"value": "Le duo s'est aventur\u00e9 au plus profond de\\nla for\u00eat. Le ciel est sombre et mena\u00e7ant..."
+	},
+	{
+		"key": "MID_SUM15_SummerNight_3",
+		"value": "On dirait qu'un buisson a boug\u00e9 !\\nLe duo a le r\u00e9flexe d'aller se cacher !"
+	},
+	{
+		"key": "MID_SUM15_SummerNight_4",
+		"value": "Ce n'est pas un ennemi, mais juste\\nune grenouille ! Le duo est soulag\u00e9."
+	},
+	{
+		"key": "MID_SUM15_SummerNight_5",
+		"value": "Le duo est entour\u00e9 de lucioles. Quelle\\nambiance magique et apaisante !"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202305R",
+		"value": "Au bout du chemin, le retour"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202305",
+		"value": "Affaires nuptiales"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_4",
+		"value": "Salle de noces"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_4",
+		"value": "$aLes ennemis conf\u00e8rent PA x 5 pendant $a0,\\npuis PA x 2 apr\u00e8s cette p\u00e9riode ! (S'il y a\\nplusieurs effets similaires, seul le plus puissant\\ns'applique.)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202306",
+		"value": "Obscurit\u00e9 envahissante"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING7_2",
+		"value": "2e partie du livre VII"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202306",
+		"value": "Le chemin vers la force"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202306",
+		"value": "Archives de l'est"
+	},
+	{
+		"key": "MID_SUM16_Sunflower_Title",
+		"value": "Champs de tournesols"
+	},
+	{
+		"key": "MID_SUM16_Sunflower_Common",
+		"value": "Lors d'un voyage en plein \u00e9t\u00e9, un membre\\na disparu au milieu des tournesols..."
+	},
+	{
+		"key": "MID_SUM16_Sunflower_3",
+		"value": "Le duo crie et prend ses jambes \u00e0 son\\ncou en voyant un essaim d'abeilles !"
+	},
+	{
+		"key": "MID_SUM16_Sunflower_4",
+		"value": "Le duo r\u00e9appara\u00eet avec des tournesols\\nen guise de chapeaux ! Quelle allure !"
+	},
+	{
+		"key": "MID_SUM16_Sunflower_5",
+		"value": "Le duo revient avec un bouquet dans\\nles mains ! Leur sourire est radieux !"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202306",
+		"value": "Belle vie estivale"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202306R",
+		"value": "Afflux de pouvoir, le retour"
+	},
+	{
+		"key": "MID_VOTE_TERM_202307",
+		"value": "Je vous tire mon chapeau"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202307",
+		"value": "N\u00e9ant et r\u00eave 1"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202307_1",
+		"value": "Ouverture du livre IV"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202307_2",
+		"value": "2e partie du livre IV"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202307_3",
+		"value": "\u00c9pilogue du livre IV"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202307_4",
+		"value": "Sp\u00e9cial elfes"
+	},
+	{
+		"key": "MID_SKYCASTLE_RATE_UNINITIALIZED",
+		"value": "???"
+	},
+	{
+		"key": "MID_SKYCASTLE_GRADE_UNINITIALIZED",
+		"value": "???"
+	},
+	{
+		"key": "MID_SKYCASTLE_RANKING_UNINITIALIZED",
+		"value": "Altitude non d\u00e9finie"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202307",
+		"value": "Orgueil brut"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202307",
+		"value": "Archives du sud"
+	},
+	{
+		"key": "MID_WIN09_Clean_Title",
+		"value": "H\u00e9ros du nettoyage"
+	},
+	{
+		"key": "MID_WIN09_Clean_Common",
+		"value": "Le duo s'est abrit\u00e9 dans une vieille maison\\net a eu l'envie soudaine de tout nettoyer !"
+	},
+	{
+		"key": "MID_WIN09_Clean_3",
+		"value": "Le duo trouve un carnet et le parcourt...\\nLe m\u00e9nage n'a quasiment pas \u00e9t\u00e9 fait !"
+	},
+	{
+		"key": "MID_WIN09_Clean_4",
+		"value": "Le duo se retrousse les manches jusqu'au\\nlever du soleil, puis reprend sa route."
+	},
+	{
+		"key": "MID_WIN09_Clean_5",
+		"value": "La maison a retrouv\u00e9 toute sa splendeur !\\nM\u00eame le sol brille de propret\u00e9 !"
+	},
+	{
+		"key": "MID_SCF_\u771f\u590f\u306e\u8c9d\u3068\u30d5\u30a7\u30fc",
+		"value": "Feh \u00e0 la mer"
+	},
+	{
+		"key": "MID_SCF_\u771f\u590f\u306e\u8c9d\u3068\u30d5\u30a7\u30fc_HELP",
+		"value": "Une statue de Feh sur un coquillage. Elle\\nrepr\u00e9sente Feh \u00e9mergeant de l'eau, et une\\naura estivale respirant les concepts d'amour\\net de beaut\u00e9 en \u00e9mane."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202308",
+		"value": "Pierres d'\u00e9ther sp\u00e9ciales"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202308",
+		"value": "Servent \u00e0 construire des structures \u00e0 dur\u00e9e\\nlimit\u00e9e dans le mode Raid c\u00e9leste. Une fois\\nla p\u00e9riode termin\u00e9e, les pierres sont perdues."
+	},
+	{
+		"key": "MID_VOTE_TERM_202308",
+		"value": "Vacarme c\u00f4tier"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202308",
+		"value": "N\u00e9ant et r\u00eave 2"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_PICKUP_CHARGE_TEXT_V7_8",
+		"value": "Focus lumineux disponible dans les\\n\u00e9v\u00e9nements d'invocation de h\u00e9ros\\nsp\u00e9ciaux et les festivals des h\u00e9ros."
+	},
+	{
+		"key": "MID_SCH_\u30af\u30fc\u30af\u30fc\u30bd\u30e9",
+		"value": "Sommie endormi"
+	},
+	{
+		"key": "MID_SCH_\u30af\u30fc\u30af\u30fc\u30bd\u30e9_HOLIDAYHELP",
+		"value": "Une peluche \u00e0 placer sur un lit."
+	},
+	{
+		"key": "MID_SCF_K0016",
+		"value": "Ouvert"
+	},
+	{
+		"key": "MID_SCF_K0016_Ex",
+		"value": "Particularit\u00e9 : zones d\u00e9fensives"
+	},
+	{
+		"key": "MID_SCF_K0017",
+		"value": "Barricad\u00e9"
+	},
+	{
+		"key": "MID_SCF_K0017_Ex",
+		"value": "Particularit\u00e9 : murs fragiles"
+	},
+	{
+		"key": "MID_SKYCASTLE_DISPATCH_ENTRANCE_UNINITIALIZED",
+		"value": "Envoi auto (encore ??)"
+	},
+	{
+		"key": "MID_SKYCASTLE_DISPATCH_UNABLE_UNINITIALIZED",
+		"value": "Pour utiliser \u00ab Envoi automatique \u00bb,\\nvous devez d'abord cr\u00e9er une\\n\u00e9quipe de h\u00e9ros."
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202308",
+		"value": "Archives de l'ouest"
+	},
+	{
+		"key": "MID_SPR15_Meditation_Title",
+		"value": "S\u00e9ance de m\u00e9ditation"
+	},
+	{
+		"key": "MID_SPR15_Meditation_Common",
+		"value": "Concentr\u00e9, le duo m\u00e9dite en marge\\nde la soci\u00e9t\u00e9 ! Le silence r\u00e8gne..."
+	},
+	{
+		"key": "MID_SPR15_Meditation_3",
+		"value": "Les bruits d'un estomac rompent le\\nsilence. Le duo fait une pause et mange."
+	},
+	{
+		"key": "MID_SPR15_Meditation_4",
+		"value": "Parvenu \u00e0 un \u00e9tat de pleine conscience,\\nle duo atteint le v\u00e9ritable \u00e9veil spirituel !"
+	},
+	{
+		"key": "MID_SPR15_Meditation_5",
+		"value": "Des chats les d\u00e9concentrent... En jouant\\navec eux, le duo acc\u00e8de \u00e0 la b\u00e9atitude !"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202308",
+		"value": "La roue du destin"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_5",
+		"value": "R\u00e9union raffin\u00e9e"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_5",
+		"value": "$aLes ennemis conf\u00e8rent PA x 5 pendant $a0,\\npuis PA x 2 apr\u00e8s cette p\u00e9riode ! (S'il y a\\nplusieurs effets similaires, seul le plus puissant\\ns'applique.)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202309",
+		"value": "Bataille hors du temps"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202309",
+		"value": "N\u00e9ant et r\u00eave 3"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202309",
+		"value": "Archives du nord"
+	},
+	{
+		"key": "MID_SUM17_BeachFlags_Title",
+		"value": "Course dans le sable"
+	},
+	{
+		"key": "MID_SUM17_BeachFlags_Common",
+		"value": "Un drapeau flotte au gr\u00e9 de la brise.\\nLe membre arriv\u00e9 en premier a gagn\u00e9 !"
+	},
+	{
+		"key": "MID_SUM17_BeachFlags_3",
+		"value": "Qui a gagn\u00e9 ? Difficile de le savoir... Le\\nduo est pr\u00eat \u00e0 refaire un essai... ou 30 !"
+	},
+	{
+		"key": "MID_SUM17_BeachFlags_4",
+		"value": "Quel rebondissement : c'est un crabe\\nqui a gagn\u00e9 ?! Cela doit rester un secret."
+	},
+	{
+		"key": "MID_SUM17_BeachFlags_5",
+		"value": "Le duo court et en a oubli\u00e9 le drapeau...\\nL'amiti\u00e9 est leur v\u00e9ritable r\u00e9compense !"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202309",
+		"value": "Passage du flambeau"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202309R",
+		"value": "Embl\u00e8mes et h\u00e9ros, le retour"
+	},
+	{
+		"key": "MID_VOTE_TERM_202309_01",
+		"value": "Col\u00e8re des vents"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202310",
+		"value": "N\u00e9ant et r\u00eave 4"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202310",
+		"value": "Archives de l'est"
+	},
+	{
+		"key": "MID_AUT14_Wallet_Title",
+		"value": "O\u00f9 est le portefeuille ?"
+	},
+	{
+		"key": "MID_AUT14_Wallet_Common",
+		"value": "Oh oh ! Un portefeuille a \u00e9t\u00e9 perdu.\\nIl contenait l'argent pour le voyage !"
+	},
+	{
+		"key": "MID_AUT14_Wallet_3",
+		"value": "L'autre membre du duo a aussi perdu le\\nsien ! Le duo reprend la route en silence..."
+	},
+	{
+		"key": "MID_AUT14_Wallet_4",
+		"value": "Pfiou, il \u00e9tait gard\u00e9 en s\u00fbret\u00e9 ! Comment\\npeut-on oublier une telle chose..."
+	},
+	{
+		"key": "MID_AUT14_Wallet_5",
+		"value": "Un gentil hibou le leur a restitu\u00e9 !\\nLe duo le remercie et reprend la route."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202310",
+		"value": "Vision directrice"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_WARNING_RESONATE",
+		"value": "Les aptitudes de symbiose transmises\\nne peuvent pas \u00eatre assign\u00e9es avec\\ndes aptitudes exclusives autres\\nque des aptitudes d'armes (sauf\\nexceptions)."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_WARNING_INHERITED_RESONATE",
+		"value": "Les aptitudes de symbiose d\u00e9j\u00e0 transmises\\nne peuvent pas \u00eatre transmises \u00e0 nouveau."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_INHERIT_WARNING_RESONATE_PERSON",
+		"value": "Le donneur \u00e9tant un h\u00e9ros en\\nsymbiose, il ne sera pas perdu, mais il\\nsera inutilisable en tant que donneur\\nlors de la transmission d'aptitude\\nou de la cr\u00e9ation de livrets militaires."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_INHERIT_WARNING_RESONATE_SKILL",
+		"value": "Une fois transmise, une aptitude de\\nsymbiose ne peut pas \u00eatre \u00e0 nouveau\\ntransmise, ni assign\u00e9e avec des\\naptitudes exclusives autres que des\\naptitudes d'armes (sauf exceptions)."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_WARNING_RESONATE",
+		"value": "Lors de la fusion de deux h\u00e9ros en symbiose, le\\nreceveur n'obtient pas d'aptitude de symbiose\\nsuppl\u00e9mentaire."
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_6",
+		"value": "Symbiose"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_04_v0710",
+		"value": "\u25c6 H\u00e9ros myst\u00e9rieux/symbiose \u25c6\\nLes h\u00e9ros myst\u00e9rieux et les h\u00e9ros\\nen symbiose utilisent un type de\\ntransmission d'aptitudes diff\u00e9rent\\nde celui utilis\u00e9 par les autres h\u00e9ros\\nen temps normal."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_05_v0710",
+		"value": "\u25c6 Transmission d'\u00e9lite \u25c6\\nContrairement au processus de\\ntransmission d'aptitude standard,\\nlors d'une transmission d'\u00e9lite,\\nle donneur n'est pas perdu.\\n(Processus r\u00e9alisable seulement\\nune fois pour chaque invocation\\nde h\u00e9ros \u00e9ligible ; le h\u00e9ros \u00e9ligible\\nne pourra pas cr\u00e9er de livrets\\nmilitaires par la suite.)"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_06_v0710",
+		"value": "\u25c6 Limites de transmission \u25c6\\n\u30fb Une fois qu'une aptitude\\ncomme une arme arcane ou\\nune aptitude de symbiose est\\ntransmise, elle ne peut plus \u00eatre\\ntransmise \u00e0 un autre h\u00e9ros."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_08",
+		"value": "\u25c6 Apt. symbiose - restrictions \u25c6\\nSeuls les h\u00e9ros en symbiose\\npeuvent \u00eatre \u00e9quip\u00e9s\\nsimultan\u00e9ment de leur aptitude\\nde symbiose et d'une aptitude\\nexclusive comme Vagues grises\\n(sauf Chant, Danse ou Musique)."
+	},
+	{
+		"key": "MID_UNIT_INFO_BLESSING_RESONATE",
+		"value": "En symbiose - avant transmission\\nContrairement au processus de\\ntransmission d'aptitude standard, lors\\nde la transmission d'aptitudes de\\nsymbiose, le donneur n'est pas perdu.\\nCe processus n'est r\u00e9alisable qu'une\\nfois pour chaque invocation de h\u00e9ros\\nen symbiose. (Plus d'informations\\ndans les messages d'aide du menu\\n\u00ab\u00a0Transmettre aptitudes\u00a0\u00bb.)"
+	},
+	{
+		"key": "MID_UNIT_INFO_BLESSING_RESONATE_LOST_RIGHT_OF_SKILL_INHERIT_SOURCE",
+		"value": "En symbiose - transmission d'\u00e9lite\\nContrairement au processus de\\ntransmission d'aptitude standard, lors\\nde la transmission d'aptitudes de\\nsymbiose, le donneur n'est pas perdu.\\nCe processus n'est r\u00e9alisable qu'une\\nfois pour chaque invocation de h\u00e9ros\\nen symbiose. (Plus d'informations\\ndans les messages d'aide du menu\\n\u00ab\u00a0Transmettre aptitudes\u00a0\u00bb.)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202311",
+		"value": "Automne en f\u00eate"
+	},
+	{
+		"key": "MID_OCCUPATION_RECOLLECTION_TITLE_202311",
+		"value": "Ishtar et compagnie 1"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202311R",
+		"value": "Nouvel \u00e9veil, le retour"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202311",
+		"value": "N\u00e9ant et r\u00eave 5"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING7_3",
+		"value": "Fin du livre VII"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202311",
+		"value": "Marque de confiance"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_6",
+		"value": "Village ninja"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_6",
+		"value": "$aLes ennemis conf\u00e8rent PA x 5 pendant $a0,\\npuis PA x 2 apr\u00e8s cette p\u00e9riode ! (S'il y a\\nplusieurs effets similaires, seul le plus puissant\\ns'applique.)"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202311",
+		"value": "Archives du sud"
+	},
+	{
+		"key": "MID_WIN15_LostChild_Title",
+		"value": "Enfant perdue"
+	},
+	{
+		"key": "MID_WIN15_LostChild_Common",
+		"value": "Le duo tombe sur une petite fille en\\npleurs. Va-t-il r\u00e9ussir \u00e0 la faire sourire ?"
+	},
+	{
+		"key": "MID_WIN15_LostChild_3",
+		"value": "Le duo fait des grimaces, mais en vain.\\nPersonne ne semble impressionn\u00e9..."
+	},
+	{
+		"key": "MID_WIN15_LostChild_4",
+		"value": "Le duo chante et elle finit enfin par\\nsourire ! Quelle \u00e9nergie positive !"
+	},
+	{
+		"key": "MID_WIN15_LostChild_5",
+		"value": "L'enfant et sa m\u00e8re sont r\u00e9unies alors\\nque tout le monde chante et danse !"
+	},
+	{
+		"key": "MID_VOTE_TERM_202311_01",
+		"value": "Le pass\u00e9 face au futur"
 	}
 ]

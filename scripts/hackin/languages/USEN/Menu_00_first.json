@@ -21998,5 +21998,1749 @@
 	{
 		"key": "MID_VOTE_TERM_202212",
 		"value": "Ninja Dojo"
+	},
+	{
+		"key": "MID_ARENA_BONUS_VERSION",
+		"value": "Release Ver."
+	},
+	{
+		"key": "MID_ARENA_BONUS_VERSION_HELP",
+		"value": "$aAll Heroes released in Ver. $a0.X will be\\navailable as Bonus Heroes."
+	},
+	{
+		"key": "MID_BOARD_GAME_HELP_DIALOG_14",
+		"value": "Counters / Completed Actions:\\nIn Pawns of Loki, effects on allies\\nthat would prevent counterattacks\\nare deactivated. Foe skill effects\\nthat would cause your allies to\\nhave their actions count as\\ncompleted are also deactivated."
+	},
+	{
+		"key": "MID_CONFIG_ANIME_AUTO",
+		"value": "Auto-Battle\\nAnimations"
+	},
+	{
+		"key": "MID_CONFIG_IDOL_SOURCE_USER_NAME",
+		"value": "Display Usernames\\nwith Forma Units"
+	},
+	{
+		"key": "MID_CONFIG_KEEP",
+		"value": "Keep"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_TITLE",
+		"value": "Otherworld Forma"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_WARNING",
+		"value": "Resplendent Attire, Sacred Seals, Ascended\\nAssets, blessings, and accessories are lost.\\nDragonflowers will be applied at highest value."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_DIALOG_CONFIRM_TEXT",
+		"value": "$aUse $a0 to\\ngain a Forma as your ally?"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_DIALOG_CONFIRM_WARNING",
+		"value": "\u30fb The Forma unit gained as an ally\\nwill lose any Resplendent Attire,\\nSacred Seals, ascended assets,\\nblessings, and accessories they have.\\n\u30fb The Forma unit will come with the\\nmaximum number of Dragonflowers\\napplied.\\n\u30fb Forma cannot be used as the\\nsource for merges or Inherit Skill.\\n\u30fb Forma cannot be used to create\\nCombat Manuals."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_DIALOG_CONFIRM_DECIDE",
+		"value": "Add"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_DIALOG_SHORTAGE_WARNING",
+		"value": "$aYou do not have enough\\n$a0s."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_DIALOG_EXPIRED",
+		"value": "Otherworld Bonds are unavailable."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_INFO_REMAINING_DAYS",
+		"value": "$aForma left: $a1   Days left: $a0"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_INFO_REMAINING_HOURS",
+		"value": "$aForma left: $a1   Hours left: $a0"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_INFO_REMAINING_MINUTES",
+		"value": "$aForma left: $a1   Minutes left: $a0"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_INFO_REACHED_LIMIT",
+		"value": "You cannot make an ally of another Forma."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_INFO_EXPIRED",
+		"value": "The recruiting window has closed."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_BUTTON_ENABLE",
+		"value": "Add"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_BUTTON_DISABLE",
+		"value": "You cannot recruit this Hero."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_BUTTON_OUT_OF_VERSION_RANGE",
+		"value": "$aHero released after Ver. $a0.0"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_00",
+		"value": "Get Forma in Binding Worlds:\\nDuring and after a Binding Worlds\\nevent, you can use an Otherworld\\nBond to gain Heroes from other\\nplayers' armies as Forma units."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_01",
+		"value": "Otherworld Bond:\\nOtherworld Bonds are available\\nfor purchase from the Shop from\\ntime to time."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_02",
+		"value": "Recruitable Heroes:\\nYou can only recruit Heroes that\\nwere released between Ver. 1.0\\nand Ver. 4.11.\\n\\nYou cannot recruit Heroes you\\ndispatch, or the Alfonse, Sharena,\\nor Anna from another world."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_03",
+		"value": "What Carries Over to Forma:\\nDragonflower stat bonuses will\\nbe the maximum allowed at the\\ntime you add the Forma to your\\nBarracks. (If the maximum is +15,\\nthey will have +15.) The Forma\\ngets bonuses no matter how many\\nDragonflowers the Hero received."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_04",
+		"value": "What Forma Units Inherit:\\n\u30fb Skills currently equipped\\n\u30fb Traits"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_05",
+		"value": "What Forma Do Not Inherit:\\n\u30fb Merges\\n\u30fb Ascended Assets\\n\u30fb Resplendent Attire\\n\u30fb Blessings\\n\u30fb Sacred Seals\\n\u30fb Accessories"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_06",
+		"value": "Forma Restrictions:\\nForma cannot be used as the\\nsource for merges or Inherit Skill,\\nnor can they be used to create\\nCombat Manuals."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_07",
+		"value": "Merging Forma:\\nTwo Forma units can be merged,\\nas long as both the source and\\nthe target are Forma."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_08",
+		"value": "Miscellaneous:\\n\u30fb Recruited Heroes will join your\\narmy as 5\u2605, level 40 units.\\n\u30fb You cannot receive blessings\\nor other items linked to specific\\nHeroes."
+	},
+	{
+		"key": "MID_ITEM_BOND_TICKET",
+		"value": "Otherworld Bond"
+	},
+	{
+		"key": "MID_ITEM_HELP_BOND_TICKET",
+		"value": "A treasure that lets you recruit Heroes from\\nother worlds as Forma in Otherworld Forma."
+	},
+	{
+		"key": "MID_SHOP_ORB_CAUTION2_WITH_BOND_TICKET",
+		"value": "$a\u00b7 Orbs and Otherworld Bonds you\\n  purchase here will be available for\\n  use only on $a0 devices."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_SCOUT_IDOLIZE_ICON_HELP",
+		"value": "You can view the Heroes that are available\\nfor you to recruit by tapping Recruit Forma."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_SCOUT_LOG_IDOLIZE",
+		"value": "Recruit Forma"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_REMAINING_DAYS",
+		"value": "$aDays left to recruit Forma: $a0"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_REMAINING_HOURS",
+		"value": "$aHours left to recruit Forma: $a0"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_REMAINING_MINUTES",
+		"value": "$aMinutes left to recruit Forma: $a0"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_BUY_BOND_TICKET",
+		"value": "Go to Shop"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_PURCHASED_BOND_TICKET",
+		"value": "Collected"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_PURCHASE_NOTICE",
+		"value": "Once purchased, you can claim your\\nOtherworld Bond in your Present List."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_REWARD",
+		"value": "Recruit Forma - Starter Reward"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING6_3",
+		"value": "Book VI ending"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING7",
+		"value": "Book VII opening movie"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_V0700A",
+		"value": "To celebrate the arrival of\\nBook VII, a new castle design\\nis ready for you to use!\\n\\nTake a look!"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_V0700A_DIALOG",
+		"value": "Having checked out the\\nLuminous Castle design,\\ndo you want to use it?"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_V0700A_REVERT_AFTER",
+		"value": "If you change your mind, tap\\nUpgrade Castle, then Change\\nDesign, then Luminous Castle."
+	},
+	{
+		"key": "MID_HOME_PERSONAL_ANALYTICS_OPTIN_NOTIFICATION_MESSAGE_ANDROID",
+		"value": "Sharing Usage Data:\\nWe collect, and share, data about your\\nuse of this game in order to analyze\\ncrash reports and, if applicable,\\npersonalize your experiences\\nwith Nintendo products and\\nservices.\\n\\nYou can control this data collection\\nand sharing using the buttons below.\\n\\nUpdated settings will go into effect once\\nthe app has been restarted.\\n\\nYou can stop sending usage data at any\\ntime by going to the Sharing Usage Data\\nmenu via Misc., under Support, FAQ, etc.,\\nand changing the setting to Don't allow.\\n\\nIf you want to stop notifications from\\nappearing outside the app, you can\\nchange the permissions for this app\\nwithin your device's settings."
+	},
+	{
+		"key": "MID_HOME_PERSONAL_ANALYTICS_OPTIN_NOTIFICATION_MESSAGE_IOS",
+		"value": "Sharing Usage Data:\\nWe collect, and share, data about your\\nuse of this game in order to analyze\\ncrash reports and, if applicable,\\npersonalize your experiences\\nwith Nintendo products and\\nservices.\\n\\nYou can control this data collection\\nand sharing using the buttons below.\\n\\nUpdated settings will go into effect once\\nthe app has been restarted.\\n\\nYou can stop sending usage data at any\\ntime by going to the Sharing Usage Data\\nmenu via Misc., under Support, FAQ, etc.,\\nand changing the setting to Don't allow.\\n\\nIf you want to stop notifications from\\nappearing outside the app, you can\\nchange the permissions for this app\\nwithin your device's settings."
+	},
+	{
+		"key": "MID_HOME_PERSONAL_ANALYTICS_OPTIN_NOTIFICATION_DECIDE",
+		"value": "Allow"
+	},
+	{
+		"key": "MID_HOME_PERSONAL_ANALYTICS_OPTIN_NOTIFICATION_CANCEL",
+		"value": "Don't Allow"
+	},
+	{
+		"key": "MID_HOME_SUMMON_TICKET_NAVIGATION_JUMP",
+		"value": "To Summons"
+	},
+	{
+		"key": "MID_HOME_SUMMON_TICKET_NAVIGATION_MESSAGE",
+		"value": "You have a ticket you can use for a\\n4\u2605 Special Rate Hero. Summon now?"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202212",
+		"value": "New Awakening"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV65542",
+		"value": "Luminous Castle"
+	},
+	{
+		"key": "MID_SCF_\u5149\u306e\u5973\u795e\u306e\u50cf",
+		"value": "Icon of Light"
+	},
+	{
+		"key": "MID_SCF_\u5149\u306e\u5973\u795e\u306e\u50cf_HELP",
+		"value": "A statue of a goddess from Vanaheimr, the\\nrealm of light. It radiates a hopeful aura.\\nIt's an event item."
+	},
+	{
+		"key": "MID_SCF_\u5149\u306e\u56fd\u306e\u690d\u7269",
+		"value": "Light-Realm Flora"
+	},
+	{
+		"key": "MID_SCF_\u5149\u306e\u56fd\u306e\u690d\u7269_HELP",
+		"value": "Plant life from Vanaheimr, the realm of light.\\nIts brilliance is soothing. It's an event item."
+	},
+	{
+		"key": "MID_SCF_\u9ec4\u91d1\u306e\u86c7\u306e\u546a\u3044",
+		"value": "Serpent's Curse"
+	},
+	{
+		"key": "MID_SCF_\u9ec4\u91d1\u306e\u86c7\u306e\u546a\u3044_HELP",
+		"value": "A statue of a snake wrapped around a golden\\ncrystal. The ethereal light is unsettling. It's an\\nevent item."
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u304d\u306e\u3053_1",
+		"value": "Full-Bodied"
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u304d\u306e\u3053_2",
+		"value": "Filling"
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u304d\u306e\u3053_3",
+		"value": "Nutritious"
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u3044\u3082_1",
+		"value": "Earthy"
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u3044\u3082_2",
+		"value": "Starchy"
+	},
+	{
+		"key": "MID_DISHES_ARRANGE_\u3044\u3082_3",
+		"value": "Fluffy"
+	},
+	{
+		"key": "MID_DISHES_\u30d5\u30e9\u30a4\u30c9\u30dd\u30c6\u30c8",
+		"value": "French Fries"
+	},
+	{
+		"key": "MID_DISHES_\u713c\u304d\u30ad\u30ce\u30b3",
+		"value": "Grilled Mushrooms"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30c1\u30c3\u30d7\u30b9",
+		"value": "Potato Chips"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u3068\u30ad\u30ce\u30b3\u7092\u3081",
+		"value": "Potato-Shroom Fry"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30d1\u30f3",
+		"value": "Potato Bread"
+	},
+	{
+		"key": "MID_DISHES_\u304b\u307c\u3061\u3083\u30dd\u30c6\u30c8\u30b5\u30e9\u30c0",
+		"value": "Pumpkin-Potato Salad"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30b5\u30e9\u30c0",
+		"value": "Potato Salad"
+	},
+	{
+		"key": "MID_DISHES_\u30d5\u30eb\u30fc\u30c4\u30dd\u30c6\u30c8\u30b5\u30e9\u30c0",
+		"value": "Fruit and Potato Salad"
+	},
+	{
+		"key": "MID_DISHES_\u30d9\u30fc\u30b3\u30f3\u30dd\u30c6\u30c8",
+		"value": "Bacon and Potato"
+	},
+	{
+		"key": "MID_DISHES_\u5375\u30dd\u30c6\u30c8\u30b5\u30e9\u30c0",
+		"value": "Egg and Potato Salad"
+	},
+	{
+		"key": "MID_DISHES_\u828b\u306e\u30c8\u30de\u30c8\u716e\u8fbc\u307f",
+		"value": "Potato-Tomato Soup"
+	},
+	{
+		"key": "MID_DISHES_\u30b9\u30d1\u30a4\u30b7\u30fc\u30dd\u30c6\u30c8",
+		"value": "Spicy Potatoes"
+	},
+	{
+		"key": "MID_DISHES_\u5927\u76db\u308a\u30ad\u30ce\u30b3",
+		"value": "Mushroom Plate"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u30d1\u30b9\u30bf",
+		"value": "Mushrooms Pasta"
+	},
+	{
+		"key": "MID_DISHES_\u79cb\u306e\u9999\u308a\u30b9\u30fc\u30d7",
+		"value": "Autumnal Soup"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u306e\u5305\u307f\u713c\u304d",
+		"value": "Mushroom en Papillote"
+	},
+	{
+		"key": "MID_DISHES_\u30d9\u30ea\u30fc\u306e\u30ad\u30ce\u30b3\u3042\u3048",
+		"value": "Shrooms and Berries"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u30bd\u30fc\u30b9\u306e\u30b9\u30c6\u30fc\u30ad",
+		"value": "Shroom-Sauce Steak"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u306e\u30aa\u30e0\u30ec\u30c4",
+		"value": "Mushroom Omelet"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u3068\u30c8\u30de\u30c8\u306e\u30b9\u30fc\u30d7",
+		"value": "Tomato-Shroom Soup"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u306e\u9999\u308a\u713c\u304d",
+		"value": "Spiced Mushrooms"
+	},
+	{
+		"key": "MID_DISHES_\u30de\u30c3\u30b7\u30e5\u30dd\u30c6\u30c8",
+		"value": "Mashed Potatoes"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30c1\u30c3\u30d7\u30b9\u30ad\u30ce\u30b3\u5473",
+		"value": "Umami Potato Chips"
+	},
+	{
+		"key": "MID_DISHES_\u3082\u3061\u3082\u3061\u30d1\u30f3",
+		"value": "Soft Bread"
+	},
+	{
+		"key": "MID_DISHES_\u30ba\u30c3\u30d1\u30fb\u30b0\u30b8\u30dc\u30f4\u30a1",
+		"value": "Zupa Grzybowa"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u3068\u3044\u3082\u306e\u8089\u5dfb",
+		"value": "Savory Roll"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30d1\u30a4",
+		"value": "Potato Pie"
+	},
+	{
+		"key": "MID_DISHES_\u30d4\u30fc\u30c6\u30d1\u30eb\u30c8",
+		"value": "Pitepalt"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30d1\u30f3\u30b1\u30fc\u30ad",
+		"value": "Potato Pancakes"
+	},
+	{
+		"key": "MID_DISHES_\u30c8\u30de\u30c8\u30bd\u30fc\u30b9\u306e\u30cb\u30e7\u30c3\u30ad",
+		"value": "Gnocchi in Red Sauce"
+	},
+	{
+		"key": "MID_DISHES_\u30b5\u30e2\u30b5",
+		"value": "Samosa"
+	},
+	{
+		"key": "MID_DISHES_\u8089\u3058\u3083\u304c",
+		"value": "Meat and Potato Soup"
+	},
+	{
+		"key": "MID_DISHES_\u91ce\u83dc\u30b9\u30fc\u30d7",
+		"value": "Vegetable Soup"
+	},
+	{
+		"key": "MID_DISHES_\u8fb2\u592b\u306e\u671d\u98df",
+		"value": "Farmer's Breakfast"
+	},
+	{
+		"key": "MID_DISHES_\u30a2\u30eb\u30fc\u30b4\u30fc\u30b7\u30e5\u30c8",
+		"value": "Aloo Gosht"
+	},
+	{
+		"key": "MID_DISHES_\u5c71\u76db\u308a\u30ad\u30ce\u30b3",
+		"value": "Mushroom Meal"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u305f\u3063\u3077\u308a\u30b5\u30e9\u30c0",
+		"value": "Mushroom Salad"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u306e\u3066\u3093\u3077\u3089",
+		"value": "Mushroom Tempura"
+	},
+	{
+		"key": "MID_DISHES_\u53ce\u7a6b\u796d\u306e\u30b9\u30fc\u30d7",
+		"value": "Harvest Soup"
+	},
+	{
+		"key": "MID_DISHES_\u6c34\u708a\u304d",
+		"value": "Stew"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u91ce\u83dc\u7092\u3081",
+		"value": "Green Shroom Stir Fry"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u3068\u30c8\u30de\u30c8\u306e\u5375\u7092\u3081",
+		"value": "Red Shroom Stir Fry"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u3068\u5375\u306e\u9244\u677f\u713c\u304d",
+		"value": "Mushroom Scramble"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u30ab\u30ec\u30fc",
+		"value": "Mushroom Curry"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u306e\u30d5\u30eb\u30b3\u30fc\u30b9",
+		"value": "Multi-Course Potatoes"
+	},
+	{
+		"key": "MID_DISHES_\u53ce\u7a6b\u796d\u306e\u30d7\u30ec\u30fc\u30c8",
+		"value": "Harvest-Festival Plate"
+	},
+	{
+		"key": "MID_DISHES_\u30df\u30cd\u30b9\u30c8\u30ed\u30fc\u30cd",
+		"value": "Minestrone"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c6\u30c8\u30b3\u30ed\u30c3\u30b1",
+		"value": "Potato Croquette"
+	},
+	{
+		"key": "MID_DISHES_\u30dd\u30c8\u30d5",
+		"value": "Pot-au-Feu"
+	},
+	{
+		"key": "MID_DISHES_\u91ce\u83dc\u30ab\u30ec\u30fc",
+		"value": "Vegetable Curry"
+	},
+	{
+		"key": "MID_DISHES_\u7530\u820e\u306e\u30ab\u30ec\u30fc",
+		"value": "Country Curry"
+	},
+	{
+		"key": "MID_DISHES_\u30af\u30ed\u30c3\u30d7\u30ab\u30fc\u30ab",
+		"value": "Kroppkaka"
+	},
+	{
+		"key": "MID_DISHES_\u5922\u76db\u308a\u30ad\u30ce\u30b3",
+		"value": "Mushroom Mountain"
+	},
+	{
+		"key": "MID_DISHES_\u30b9\u30c6\u30fc\u30ad\u306e\u5e0c\u5c11\u30ad\u30ce\u30b3\u4e57\u305b",
+		"value": "Steak Delicacy"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u306e\u30d5\u30ea\u30ab\u30c3\u30bb",
+		"value": "Mushroom Fricassee"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u30d0\u30fc\u30ac\u30fc",
+		"value": "Mushroom Burger"
+	},
+	{
+		"key": "MID_DISHES_\u30ad\u30ce\u30b3\u306e\u30d4\u30b6",
+		"value": "Mushroom Pizza"
+	},
+	{
+		"key": "MID_DISHES_\u30cf\u30f3\u30d0\u30fc\u30b0\u306e\u30ad\u30ce\u30b3\u4e57\u305b",
+		"value": "Mushroom-Bun Burger"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u30b8\u30e3\u30eb\u30d5\u30ec\u30fc\u30b8\u30fc",
+		"value": "Mushroom Jalfrezi"
+	},
+	{
+		"key": "MID_DISHES_\u6ecb\u990a\u5f37\u58ee\u30c9\u30ea\u30f3\u30af\uff0b",
+		"value": "Supplemental Drink+"
+	},
+	{
+		"key": "MID_DISHES_\u304d\u306e\u3053\u306e\u30dc\u30eb\u30ac\u30ce\u30f3\u713c\u304d",
+		"value": "Bolganone Mushrooms"
+	},
+	{
+		"key": "MID_FOODS_\u304d\u306e\u3053",
+		"value": "Mushroom"
+	},
+	{
+		"key": "MID_FOODS_\u3044\u3082",
+		"value": "Potato"
+	},
+	{
+		"key": "MID_FOODS_\u304d\u306e\u3053_HELP",
+		"value": "Hearty and packed with nutrition!\\nThe texture complements everything!"
+	},
+	{
+		"key": "MID_FOODS_\u3044\u3082_HELP",
+		"value": "An incredibly versatile ingredient!\\nPairs with meat, greens, and more."
+	},
+	{
+		"key": "MID_SCH_\u6c34\u6d74\u3073\u30e6\u30f3\u30cc",
+		"value": "Floating Yune"
+	},
+	{
+		"key": "MID_SCH_\u6c34\u6d74\u3073\u30e6\u30f3\u30cc_HOLIDAYHELP",
+		"value": "A bath item that floats on water."
+	},
+	{
+		"key": "MID_SCH_\u3058\u3093\u308f\u308a\u56de\u5fa9\u85ac",
+		"value": "Restorative Potion"
+	},
+	{
+		"key": "MID_SCH_\u3058\u3093\u308f\u308a\u56de\u5fa9\u85ac_HOLIDAYHELP",
+		"value": "A bath item that floats on water."
+	},
+	{
+		"key": "MID_SCH_\u5165\u6d74\u4e2d\u306e\u5c40\u9577",
+		"value": "Bath-Time Chief"
+	},
+	{
+		"key": "MID_SCH_\u5165\u6d74\u4e2d\u306e\u5c40\u9577_HOLIDAYHELP",
+		"value": "A bath item that floats on water."
+	},
+	{
+		"key": "MID_SCH_\u304a\u3084\u3059\u307f\u30d5\u30a7\u30fc",
+		"value": "Sleepy-Time Feh"
+	},
+	{
+		"key": "MID_SCH_\u304a\u3084\u3059\u307f\u30d5\u30a7\u30fc_HOLIDAYHELP",
+		"value": "A stuffed toy meant to be placed on a bed."
+	},
+	{
+		"key": "MID_SCH_\u3059\u3084\u3059\u3084\u30d9\u30ec\u30c8",
+		"value": "Bedtime Byleth"
+	},
+	{
+		"key": "MID_SCH_\u3059\u3084\u3059\u3084\u30d9\u30ec\u30c8_HOLIDAYHELP",
+		"value": "A stuffed toy meant to be placed on a bed."
+	},
+	{
+		"key": "MID_SCH_\u3075\u308f\u3075\u308f\u795e\u7adc\u30d5\u30a1",
+		"value": "Fae Plush"
+	},
+	{
+		"key": "MID_SCH_\u3075\u308f\u3075\u308f\u795e\u7adc\u30d5\u30a1_HOLIDAYHELP",
+		"value": "A stuffed toy meant to be placed on a bed."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202212",
+		"value": "Frosty Aether Stones"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202212",
+		"value": "Used in Aether Raids to build structures that\\nare available for a limited time. If that period\\nhas elapsed, these stones will be lost."
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_4",
+		"value": "Ascended"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_5",
+		"value": "Rearmed"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202212",
+		"value": "Life & Death Finale"
+	},
+	{
+		"key": "MID_VOTE_TERM_202212_01",
+		"value": "Snowball Fight!"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202301",
+		"value": "Archive of the West"
+	},
+	{
+		"key": "MID_WIN05_IceFishing_Title",
+		"value": "Frozen Fishing"
+	},
+	{
+		"key": "MID_WIN05_IceFishing_Common",
+		"value": "They decided to fish the frozen lake.\\nWill they be able to catch anything?"
+	},
+	{
+		"key": "MID_WIN05_IceFishing_3",
+		"value": "That fish fought well, despite its size!\\nThe two admitted defeat, this time..."
+	},
+	{
+		"key": "MID_WIN05_IceFishing_4",
+		"value": "Despite the freeze, they caught some!\\nSome penguins even came to see!"
+	},
+	{
+		"key": "MID_WIN05_IceFishing_5",
+		"value": "Their fishing hole was full of fish!\\nThey almost couldn't believe it!"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202301R",
+		"value": "Revival: Beyond Control"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202301",
+		"value": "Renewing Gifts"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202301_2",
+		"value": "Daughters of the Black Fang"
+	},
+	{
+		"key": "MID_SHOP_ERROR_PURCHASE_DISABLED",
+		"value": "Ability to purchase may be restricted.\\nPlease check your device settings."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202301",
+		"value": "Emblems, Heroes"
+	},
+	{
+		"key": "MID_DISHES_AUTHORITY_14_1",
+		"value": "Elyos-Style"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_AUTHORITY_14",
+		"value": "Engage"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202301_01",
+		"value": "Archive of the North"
+	},
+	{
+		"key": "MID_AUT04_Wood_Title",
+		"value": "Chopping Wood"
+	},
+	{
+		"key": "MID_AUT04_Wood_Common",
+		"value": "They're practicing splitting firewood!\\nDo they have the chops for it?"
+	},
+	{
+		"key": "MID_AUT04_Wood_3",
+		"value": "The stump itself cracked in two!\\nMore careful swings are in order..."
+	},
+	{
+		"key": "MID_AUT04_Wood_4",
+		"value": "A woodpecker showed them a trick!\\nLessons can come from anywhere!"
+	},
+	{
+		"key": "MID_AUT04_Wood_5",
+		"value": "They have mastered the splitting arts!\\nNo wood can withstand their swings!"
+	},
+	{
+		"key": "MID_SCF_\uff16\u5468\u5e74\u30b1\u30fc\u30ad",
+		"value": "Anniversary Cakes"
+	},
+	{
+		"key": "MID_SCF_\uff16\u5468\u5e74\u30b1\u30fc\u30ad_HELP",
+		"value": "A lavish tea set put together to celebrate\\nthe sixth anniversary. It's an event item."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202302",
+		"value": "SP Aether Stones"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202302",
+		"value": "Used in Aether Raids to build structures that\\nare available for a limited time. If that period\\nhas elapsed, these stones will be lost."
+	},
+	{
+		"key": "MID_VOTE_TERM_202301",
+		"value": "Natural Competition"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_09",
+		"value": "Bonus Legendary Heroes:\\n\\nIncluding one of these Heroes\\non your team will grant you the\\nfollowing effects:\\n - Highest score effect\\n - Insurance effect when losing"
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_10",
+		"value": "Highest Score Effect:\\nIncluding a Bonus Legendary Hero\\non your team allows you to face\\nthe enemy teams with the highest\\npossible strength, allowing you to\\nearn the highest possible score."
+	},
+	{
+		"key": "MID_ARENA_DIALOG_HELP_11",
+		"value": "Insurance Effect When Losing:\\nIncluding a Bonus Legendary Hero\\non your team allows you to avoid\\nlosing points if one of your units\\nis defeated. (When you lose units,\\nyour score will be decreased as if\\nyou lost one fewer units.)"
+	},
+	{
+		"key": "MID_REALTIME_PVP_HELP_DIALOG_1_03_v0702",
+		"value": "Special Tier Conditions:\\nTier will not drop in the event\\nof losses. (Tiers above the Tier\\nthreshold may still decrease\\nduring the reset before the\\nnext event.)"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202302",
+		"value": "The Prince's Secret"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_PICKUP_CHARGE_TITLE",
+		"value": "Perk 1: Special Focus Charge"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_PICKUP_CHARGE_TEXT",
+		"value": "Grants the ability to use Focus Charge\\nfor Special Heroes."
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_MISSION_TITLE_V7_2",
+		"value": "Perk 2: Special Feh Pass Quests"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_RELIANCE_TITLE_V7_2",
+		"value": "Perk 3: Expanded Summoner Support"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_UNDO_TITLE_V7_2",
+		"value": "Perk 4: Re-Act"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_AUTO_PLAY_TITLE_V7_2",
+		"value": "Perk 5: Auto-Start"
+	},
+	{
+		"key": "MID_SUMMON_PICKUP_CHARGE_REMAINING_POINT",
+		"value": "$aNon-focus 5\u2605 Hero summons\\nleft until Focus Charge: $a0"
+	},
+	{
+		"key": "MID_SUMMON_PICKUP_CHARGE_REMAINING_POINT_FEH_PASS",
+		"value": "$aNon-focus 5\u2605 Hero summons\\nleft until Focus Charge: $a0,\\nwith a Feh Pass subscription."
+	},
+	{
+		"key": "MID_SUMMON_PICKUP_CHARGE",
+		"value": "Focus Charge available!\\nEnsures your next 5\u2605\\nsummon is a focus Hero!"
+	},
+	{
+		"key": "MID_SUMMON_PICKUP_CHARGE_FEH_PASS",
+		"value": "Focus Charge available with a Feh\\nPass subscription! Ensures your\\nnext 5\u2605 summon is a focus Hero!"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202302",
+		"value": "Deciding the Future"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_3",
+		"value": "Devotion Venue"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_3",
+		"value": "$aFoes grant 5x SP for the next $a0,\\nand then 2x SP thereafter! (Only highest\\nvalue applied. Does not stack.)"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202302",
+		"value": "Archive of the East"
+	},
+	{
+		"key": "MID_WIN14_Blizzard_Title",
+		"value": "Raging Blizzard"
+	},
+	{
+		"key": "MID_WIN14_Blizzard_Common",
+		"value": "They crossed a snowfield in a storm!\\nIt got too dangerous to continue on..."
+	},
+	{
+		"key": "MID_WIN14_Blizzard_3",
+		"value": "Their tent was blown away by winds!\\nThe two both rushed to retrieve it!"
+	},
+	{
+		"key": "MID_WIN14_Blizzard_4",
+		"value": "They packed snow to make a hut!\\nOut of the wind, they finally relaxed!"
+	},
+	{
+		"key": "MID_WIN14_Blizzard_5",
+		"value": "They made a stunning ice shelter!\\nForgetting the cold, they just had fun!"
+	},
+	{
+		"key": "MID_VOTE_TERM_202303",
+		"value": "AHR 2023 Finals"
+	},
+	{
+		"key": "MID_OCCUPATION_RECOLLECTION_TITLE_202303",
+		"value": "Annand and Company 1"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202303",
+		"value": "True Luxury?"
+	},
+	{
+		"key": "MID_SUMMON_PICKUP_CHARGE_FEH_PASS_AVAILABLE",
+		"value": "Focus Charge available! Your next\\n5\u2605summon will be a focus Hero!\\n(Focus Charge available only with\\nan active Feh Pass subscription.)"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2023_0",
+		"value": "Heroes / Mystery / Echoes"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2023_1",
+		"value": "Genealogy / Thracia 776"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2023_2",
+		"value": "Binding / Blazing / Sacred Stones"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2023_3",
+		"value": "Heroes / Radiance"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2023_4",
+		"value": "Awakening / Fates"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2023_5",
+		"value": "Three Houses / Three Hopes"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202303",
+		"value": "Archive of the South"
+	},
+	{
+		"key": "MID_SPR14_Incubation_Title",
+		"value": "Sounds of Life"
+	},
+	{
+		"key": "MID_SPR14_Incubation_Common",
+		"value": "They found an egg starting to hatch!\\nThe pair decided to watch the event..."
+	},
+	{
+		"key": "MID_SPR14_Incubation_3",
+		"value": "The hatchling's mother found them!\\nThey fled from its threatening cries!"
+	},
+	{
+		"key": "MID_SPR14_Incubation_4",
+		"value": "The hatchling was born full of spirit!\\nThey listened in on its first sounds."
+	},
+	{
+		"key": "MID_SPR14_Incubation_5",
+		"value": "Oh! A dragon hatched from the egg!\\nThey crept away, roars behind them..."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202303",
+		"value": "Her Shining Future"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202304R",
+		"value": "Revival: Heart and Soul"
+	},
+	{
+		"key": "MID_VOTE_TERM_202304",
+		"value": "Divine Hair Duels"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202304",
+		"value": "Promising Youth"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_PICKUP_CHARGE_TEXT_V7_4",
+		"value": "Use Focus Charges in Special Heroes\\n& Hero Fests (excl. Starter Support)."
+	},
+	{
+		"key": "MID_TWIN_WORLD_AUTHORITY_14",
+		"value": "Engage"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202304",
+		"value": "New World of Study"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202304",
+		"value": "Archive of the West"
+	},
+	{
+		"key": "MID_AUT10_Training_Title",
+		"value": "Training Partners"
+	},
+	{
+		"key": "MID_AUT10_Training_Common",
+		"value": "The two were chilled by the cold!\\nThey began training to warm up..."
+	},
+	{
+		"key": "MID_AUT10_Training_3",
+		"value": "They each practiced their techniques!\\nA warmth filled both their bodies..."
+	},
+	{
+		"key": "MID_AUT10_Training_4",
+		"value": "They sparred to test one another...\\nImprovement and warmth at once!"
+	},
+	{
+		"key": "MID_AUT10_Training_5",
+		"value": "They got serious with their sparring.\\nThe whole area started heating up!"
+	},
+	{
+		"key": "MID_VOTE_TERM_202305",
+		"value": "Field Day"
+	},
+	{
+		"key": "MID_HOME_EXPLORER_MISSION_NOTIFICATION",
+		"value": "Earn a reward once each day.\\nGo to Seer's Snare?"
+	},
+	{
+		"key": "MID_HOME_EXPLORER_NAVIGATION_JUMP",
+		"value": "Seer's Snare"
+	},
+	{
+		"key": "MID_CONFIG_HOME_NOTIFICATION_EXPLORER",
+		"value": "Seer's Snare\\nHome Notification"
+	},
+	{
+		"key": "MID_EXPLORER_TITLE",
+		"value": "Seer's Snare"
+	},
+	{
+		"key": "MID_EXPLORER_REMAINING_DAYS",
+		"value": "$aDays left: $a0"
+	},
+	{
+		"key": "MID_EXPLORER_REMAINING_HOURS",
+		"value": "$aHours left: $a0"
+	},
+	{
+		"key": "MID_EXPLORER_REMAINING_MINUTES",
+		"value": "$aMinutes left: $a0"
+	},
+	{
+		"key": "MID_EXPLORER_STAMINA",
+		"value": "Stamina"
+	},
+	{
+		"key": "MID_EXPLORER_CLOSED",
+		"value": "Event is now closed."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_BUTTON_WORLD_MAP",
+		"value": "Timeless Rift"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_BUTTON_SYSTEM_MENU",
+		"value": "Unwind Time"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_BUTTON_REWARD",
+		"value": "Rewards"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_BONUS_AUTHORITY",
+		"value": "Bonus Titles"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_CONFIRM",
+		"value": "Start the event?"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_WARNING",
+		"value": "You cannot change your team during\\nthe event except when you've started\\nagain by returning to the beginning.\\nHero levels will remain at 40. Empty\\nA, B, and C Skill slots will be filled\\nwith randomly selected skills."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_DECIDE",
+		"value": "Start"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_FAILED",
+		"value": "Unable to start event."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SET_TROOP_DIALOG_FAILED_WARNING_TROOP_RESTRICTION",
+		"value": "Every slot on your team must be\\nfilled by a Hero.\\n\\nDuplicate Heroes are not allowed.\\n\\nYou can include only one ally\\nthat can use Sing or Dance\\non your team.\\n\\nYou can include only one ally that\\ncan use Savior."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_RESTORE_POINT",
+		"value": "Return to Sub-boss"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_RESTORE_POINT_DIALOG_CONFIRM",
+		"value": "Go to the last sub-boss defeated?"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_RESTORE_POINT_DIALOG_WARNING",
+		"value": "All non-reward progress will be lost.\\nConsumed stamina will be restored."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_RESTORE_POINT_DIALOG_DECIDE",
+		"value": "Unwind Time"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_FIRST",
+		"value": "Return to Beginning"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_FIRST_DIALOG_CONFIRM",
+		"value": "Go back to the beginning?"
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_FIRST_DIALOG_WARNING",
+		"value": "$aAll non-reward progress will be lost.\\nConsumed stamina will be restored.\\nOf the Rift Vessels collected so far,\\n$a0% (max $a1) will be carried over."
+	},
+	{
+		"key": "MID_EXPLORER_ENTRANCE_SYSTEM_MENU_START_OVER_FROM_FIRST_DIALOG_DECIDE",
+		"value": "Unwind Time"
+	},
+	{
+		"key": "MID_EXPLORER_WORLD_MAP_TITLE",
+		"value": "Timeless Rift"
+	},
+	{
+		"key": "MID_EXPLORER_WORLD_MAP_BUTTON_SKILL_EQUIP",
+		"value": "Skills"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_TITLE",
+		"value": "$aTimeless Rift $a0"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_FINAL_BOSS",
+		"value": "Final Boss"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_MID_BOSS",
+		"value": "Sub-boss"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_PASSIVE_A",
+		"value": "A Skill"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_PASSIVE_B",
+		"value": "B Skill"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_PASSIVE_C",
+		"value": "C Skill"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_SHOP",
+		"value": "Vanir Seal"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_NAME_INN",
+		"value": "Safe Haven"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIFFICULTY_0",
+		"value": "Beginner"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIFFICULTY_1",
+		"value": "Intermediate"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIFFICULTY_2",
+		"value": "Advanced"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_CONNECT_NAME_AND_DIFFICULTY",
+		"value": "$a$a0 - $a1"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DAILY_BONUS_REWARD",
+		"value": "Play daily to earn rewards!"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DAILY_BONUS_INFO",
+		"value": "Clear a map to earn a reward once\\na day for up to five days."
+	},
+	{
+		"key": "MID_EXPLORER_AREA_FIRST_REWARD",
+		"value": "First-Time Reward"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_FIRST_ADVANCED_REWARD",
+		"value": "Advanced Reward"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_FIRST_REWARD_AND_FIRST_ADVANCED_REWARD",
+		"value": "First-Time + Advanced Reward"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIALOG_DECIDE_BATTLE_START",
+		"value": "Fight!"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIALOG_DECIDE_SHOP",
+		"value": "Enter Vanir Seal"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_DIALOG_DECIDE_INN",
+		"value": "Enter Safe Haven"
+	},
+	{
+		"key": "MID_EXPLORER_AREA_START_FAILED_DIALOG_CONFIRM",
+		"value": "Unable to advance."
+	},
+	{
+		"key": "MID_EXPLORER_AREA_START_FAILED_DIALOG_WARNING_TERM_EXPIRED",
+		"value": "Event is now closed."
+	},
+	{
+		"key": "MID_EXPLORER_AREA_START_FAILED_DIALOG_WARNING_NO_STAMINA",
+		"value": "You do not have enough stamina."
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_CATEGORY_PASSIVE_A",
+		"value": "A Skill"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_CATEGORY_PASSIVE_B",
+		"value": "B Skill"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_CATEGORY_PASSIVE_C",
+		"value": "C Skill"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_CATEGORY_REMOVE",
+		"value": "Remove"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_EQUIP_TITLE",
+		"value": "Change Skills"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_EQUIP_DIALOG_DECIDE",
+		"value": "Change"
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_EQUIP_DIALOG_CONFIRM",
+		"value": "Change your equipped skills?"
+	},
+	{
+		"key": "MID_EXPLORER__SKILL_EQUIP_CANCEL_DIALOG_CONFIRM",
+		"value": "Discard skill changes?"
+	},
+	{
+		"key": "MID_EXPLORER__SKILL_EQUIP_CANCEL_DIALOG_WARNING",
+		"value": "Unsaved changes will be lost."
+	},
+	{
+		"key": "MID_EXPLORER_SKILL_EQUIP_CANCEL_DIALOG_DECIDE",
+		"value": "Discard"
+	},
+	{
+		"key": "MID_EXPLORER_EVENT_ITEM_UNLOCK_RANDOM_ORIGINAKL_SKILL",
+		"value": "Random Slot Unlock"
+	},
+	{
+		"key": "MID_EXPLORER_EVENT_ITEM_UNLOCK_RANDOM_ORIGINAKL_SKILL_RESULT",
+		"value": "$aSkill unlocked for\\n$a0."
+	},
+	{
+		"key": "MID_EXPLORER_EVENT_ITEM_UNLOCK_EXTENDED_SKILL",
+		"value": "Team Slot Unlock"
+	},
+	{
+		"key": "MID_EXPLORER_EVENT_ITEM_OMIT",
+		"value": "$aand $a0 more"
+	},
+	{
+		"key": "MID_EXPLORER_BATTLE_REWARD_TITLE",
+		"value": "Battle Rewards"
+	},
+	{
+		"key": "MID_EXPLORER_BATTLE_REWARD_HELP",
+		"value": "Choose a reward."
+	},
+	{
+		"key": "MID_EXPLORER_BATTLE_REWARD_DIALOG_CONFIRM",
+		"value": "Is this the reward you want?"
+	},
+	{
+		"key": "MID_EXPLORER_BATTLE_REWARD_DIALOG_DECIDE",
+		"value": "Accept"
+	},
+	{
+		"key": "MID_EXPLORER_INN_TALK_0",
+		"value": "$WmMPID_\u30a2\u30eb\u30d5\u30a9\u30f3\u30b9,ch00_01_Alfons_M_Normal,Face|Let's rest here for today. It seems our\\nfight will continue for some time yet,\\n$Nu.$k$p"
+	},
+	{
+		"key": "MID_EXPLORER_INN_TALK_1",
+		"value": "$WmMPID_\u30b7\u30e3\u30ed\u30f3,ch00_02_Sharon_F_Normal,Face|Let's rest here for today, everyone!\\nI'll start preparing a meal for us!$k$p"
+	},
+	{
+		"key": "MID_EXPLORER_INN_TALK_2",
+		"value": "$WmMPID_\u30a2\u30f3\u30ca,ch00_03_Anna_F_Normal,Face|Let's camp here. We'll hold this\\nposition for the day!$k$p"
+	},
+	{
+		"key": "MID_EXPLORER_INN_TALK_3",
+		"value": "$WmMPID_\u30bb\u30a4\u30ba,ch00_46_Seith_F_Normal,Face|Please rest, children of Midgard.\\nThis place has a restorative aura\\nthat will likely soothe your wounds...$k$p"
+	},
+	{
+		"key": "MID_EXPLORER_INN_DIALOG_CONFIRM",
+		"value": "HP restored."
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_TITLE",
+		"value": "Vanir Seal"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_HELP",
+		"value": "Select a skill to unlock."
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_EMPTY",
+		"value": "There are no unlockable skills."
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_BUTTON_PURCHASE",
+		"value": "Unlock"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_BUTTON_FINISH",
+		"value": "Exit"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_BUTTON_DESELECT",
+		"value": "Deselect"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_PURCHASE_DIALOG_CONFIRM",
+		"value": "Unlock selection?"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_PURCHASE_DIALOG_DECIDE",
+		"value": "Unlock"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_FINISH_DIALOG_CONFIRM",
+		"value": "Do you want to cancel and exit?"
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_FINISH_DIALOG_WARNING",
+		"value": "You cannot return once you exit."
+	},
+	{
+		"key": "MID_EXPLORER_SHOP_FINISH_DIALOG_DECIDE",
+		"value": "Exit"
+	},
+	{
+		"key": "MID_EXPLORER_ENDING_TELOP",
+		"value": "You crossed the Timeless Rift\\nand returned to your own time!"
+	},
+	{
+		"key": "MID_EXPLORER_ENDING_DIALOG_CONFIRM",
+		"value": "Congratulations on escaping the\\nSeer's Snare! The event will now\\nend. You can review your journey\\non this screen. If there are any\\nrewards you have yet to collect,\\nyou can also use Unwind Time\\nto make another crossing."
+	},
+	{
+		"key": "MID_EXPLORER_H_COMPATIBILITY",
+		"value": "Time Traveler seals give units special\\nadvantages. For colorless, the icon on\\nthe left is foes and the right is allies."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_00",
+		"value": "Use your skills, defeat your foes!"
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_01",
+		"value": "Seer's Snare:\\nMake your way across the\\nTimeless Rift and return to your\\nown time. Within the Timeless\\nRift, fluctuations in time allow\\nyour Heroes to equip lots of\\ndifferent skills!"
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_02",
+		"value": "Stamina:\\n\u30fb Moving between locations will\\nconsume 1 stamina.\\n\u30fb Stamina will be restored in the\\ncase of defeat only when in a\\nsub-boss or final-boss area.\\n(If you already have maximum\\nstamina, none will be restored.)"
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_03",
+		"value": "Event Details:\\nThe Sacred Seals foes have\\nequipped cause the effects of\\nweapon-triangle advantage to be\\nmore pronounced\u2014and colorless\\nunits will have both advantages\\nand disadvantages. Also, Hero HP\\nis carried over between maps."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_04",
+		"value": "Editing Your Teams:\\n\u30fbDuplicate Heroes aren't allowed.\\n\u30fbEach team can include only one\\nally that can use Sing or Dance\\nand one ally with Savior.\\n\u30fbAll Heroes will have a static\\nlevel of 40."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_05",
+		"value": "Skills:\\n\u30fb If a Hero does not have an\\nA, B, C, or S Skill equipped, they\\nwill be equipped with a random\\nA, B, or C Skill.\\n\u30fb A, B, C, and S Skills start sealed\\nand are unlocked via either\\nrewards or a Vanir Seal."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_06",
+		"value": "Expanded Skill Slots:\\nIn addition to the normal set of\\nskill slots, all Heroes get three\\nextra levels of A, B, and C Skill\\nslots. The first level starts\\nunlocked, and the rest are\\nunlocked via rewards."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_07",
+		"value": "Bonus Heroes:\\nIn addition to expanded skill\\nslots, Bonus Heroes get HP+10,\\nAtk/Spd/Def/Res+4, and free\\nS Skill slots that can be equipped\\nwith A, B, or C Skills."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_08",
+		"value": "Change Skills:\\nYou can equip skills you've\\nunlocked to open skill slots."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_09",
+		"value": "Unwind Time:\\n\u30fb Return to Sub-boss: returns\\nyou to just after the last sub-boss\\nyou defeated, as well as the\\nstamina you've consumed since.\\n\u30fb Return to Beginning: returns all\\nyour stamina you consumed, and\\nyou keep some Rift Vessels too."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_10",
+		"value": "Vanir Seals:\\nConsume Rift Vessels here to\\nunlock skills and skill slots.\\n\\nSafe Havens:\\nRestore Hero HP here."
+	},
+	{
+		"key": "MID_EXPLORER_HELP_DIALOG_11",
+		"value": "More Information:\\n\u30fb Legendary and Mythic Hero\\nseasonal effects are deactivated.\\n\u30fb Neither Duo Skills nor\\nHarmonized Skills can be used.\\n\u30fb You do not get EXP or SP.\\n\u30fb You can obtain Hero Merit."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202305",
+		"value": "Depths of Despair"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202305",
+		"value": "Archive of the North"
+	},
+	{
+		"key": "MID_SUM15_SummerNight_Title",
+		"value": "A Dark Summer Night"
+	},
+	{
+		"key": "MID_SUM15_SummerNight_Common",
+		"value": "They ventured deep into the forest.\\nThe sky grew dark and foreboding..."
+	},
+	{
+		"key": "MID_SUM15_SummerNight_3",
+		"value": "Did something move in the bushes?!\\nTheir reflexes kicked in and they hid!"
+	},
+	{
+		"key": "MID_SUM15_SummerNight_4",
+		"value": "An enemy? Oh, it was just a frog!\\nThey both heaved a sigh of relief."
+	},
+	{
+		"key": "MID_SUM15_SummerNight_5",
+		"value": "Fireflies gently flittered around them.\\nWhat an ethereal, soothing sight!"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202305R",
+		"value": "Revival: The Path's End"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202305",
+		"value": "Bridal Business"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_4",
+		"value": "Bridal Festival Hall"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_4",
+		"value": "$aFoes grant 5x SP for the next $a0,\\nand then 2x SP thereafter! (Only highest\\nvalue applied. Does not stack.)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202306",
+		"value": "Pervading Darkness"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING7_2",
+		"value": "Mid-Book VII movie"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202306",
+		"value": "Strength in Service"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202306",
+		"value": "Archive of the East"
+	},
+	{
+		"key": "MID_SUM16_Sunflower_Title",
+		"value": "Sunflower Fields"
+	},
+	{
+		"key": "MID_SUM16_Sunflower_Common",
+		"value": "The two traveled during midsummer.\\nOne disappeared in the sunflowers..."
+	},
+	{
+		"key": "MID_SUM16_Sunflower_3",
+		"value": "They ran out fleeing a swarm of bees!\\nBoth of them bolted, shouting \"RUN!\""
+	},
+	{
+		"key": "MID_SUM16_Sunflower_4",
+		"value": "They reappeared in a sunflower hat!\\nA truly dazzling look, worthy of envy!"
+	},
+	{
+		"key": "MID_SUM16_Sunflower_5",
+		"value": "They reappeared with...a bouquet!\\nTheir smiles shone like the sun!"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202306",
+		"value": "Summer Lifestyle"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202306R",
+		"value": "Revival: Flow of Power"
+	},
+	{
+		"key": "MID_VOTE_TERM_202307",
+		"value": "Hats in the Ring"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202307",
+		"value": "Nihility & Dream 1"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202307_1",
+		"value": "Book IV Opening Movie"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202307_2",
+		"value": "Mid-Book IV Movie"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202307_3",
+		"value": "Book IV Epilogue"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202307_4",
+		"value": "The \u00c1lfar Special"
+	},
+	{
+		"key": "MID_SKYCASTLE_RATE_UNINITIALIZED",
+		"value": "???"
+	},
+	{
+		"key": "MID_SKYCASTLE_GRADE_UNINITIALIZED",
+		"value": "???"
+	},
+	{
+		"key": "MID_SKYCASTLE_RANKING_UNINITIALIZED",
+		"value": "Lift not set"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202307",
+		"value": "Unworked Pride"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202307",
+		"value": "Archive of the South"
+	},
+	{
+		"key": "MID_WIN09_Clean_Title",
+		"value": "Deep-Clean Heroes"
+	},
+	{
+		"key": "MID_WIN09_Clean_Common",
+		"value": "The two took shelter in an old house...\\nAn urge to clean took hold of them!"
+	},
+	{
+		"key": "MID_WIN09_Clean_3",
+		"value": "They found a diary and read from it...\\nHardly any cleaning got done at all!"
+	},
+	{
+		"key": "MID_WIN09_Clean_4",
+		"value": "They focused on cleaning until sunup!\\nSatisfied, they continued on the road!"
+	},
+	{
+		"key": "MID_WIN09_Clean_5",
+		"value": "They returned the house to its glory!\\nEven the floors shone and sparkled!"
+	},
+	{
+		"key": "MID_SCF_\u771f\u590f\u306e\u8c9d\u3068\u30d5\u30a7\u30fc",
+		"value": "Sea-Foam Feh"
+	},
+	{
+		"key": "MID_SCF_\u771f\u590f\u306e\u8c9d\u3068\u30d5\u30a7\u30fc_HELP",
+		"value": "A statue of Feh atop a seashell that radiates\\na summery aura. It depicts Feh rising from the\\nsea and exudes a sense of love and beauty."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202308",
+		"value": "SP Aether Stones"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202308",
+		"value": "Used in Aether Raids to build structures that\\nare available for a limited time. If that period\\nhas elapsed, these stones will be lost."
+	},
+	{
+		"key": "MID_VOTE_TERM_202308",
+		"value": "Beachside Brouhaha"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202308",
+		"value": "Nihility & Dream 2"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_PICKUP_CHARGE_TEXT_V7_8",
+		"value": "Focus Charge can be used for Special\\nHero summons and Hero Fest events."
+	},
+	{
+		"key": "MID_SCH_\u30af\u30fc\u30af\u30fc\u30bd\u30e9",
+		"value": "Belly-Rub Sommie"
+	},
+	{
+		"key": "MID_SCH_\u30af\u30fc\u30af\u30fc\u30bd\u30e9_HOLIDAYHELP",
+		"value": "A stuffed toy meant to be placed on a bed."
+	},
+	{
+		"key": "MID_SCF_K0016",
+		"value": "Opened-Up Castle"
+	},
+	{
+		"key": "MID_SCF_K0016_Ex",
+		"value": "Feature: defensive terrain"
+	},
+	{
+		"key": "MID_SCF_K0017",
+		"value": "Closed-Off Castle"
+	},
+	{
+		"key": "MID_SCF_K0017_Ex",
+		"value": "Feature: crumbling walls"
+	},
+	{
+		"key": "MID_SKYCASTLE_DISPATCH_ENTRANCE_UNINITIALIZED",
+		"value": "Auto-Dispatch (?? left)"
+	},
+	{
+		"key": "MID_SKYCASTLE_DISPATCH_UNABLE_UNINITIALIZED",
+		"value": "To use Auto-Dispatch, you must\\nfirst create a team of Heroes."
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202308",
+		"value": "Archive of the West"
+	},
+	{
+		"key": "MID_SPR15_Meditation_Title",
+		"value": "Meditation Retreat"
+	},
+	{
+		"key": "MID_SPR15_Meditation_Common",
+		"value": "They're meditating far from society!\\nTogether, they focus in silence..."
+	},
+	{
+		"key": "MID_SPR15_Meditation_3",
+		"value": "A growling stomach pierces the quiet.\\nForced to stop, they share a meal!"
+	},
+	{
+		"key": "MID_SPR15_Meditation_4",
+		"value": "The pair reaches their spiritual cores...\\nThey both shed their concept of self!"
+	},
+	{
+		"key": "MID_SPR15_Meditation_5",
+		"value": "A cat distracts from their focus...\\nBut in their play, they find true bliss!"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202308",
+		"value": "Turn of Fate"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_5",
+		"value": "Teatime Elegance"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_5",
+		"value": "$aFoes grant 5x SP for the next $a0,\\nand then 2x SP thereafter! (Only highest\\nvalue applied. Does not stack.)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202309",
+		"value": "Battle Beyond Time"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202309",
+		"value": "Nihility & Dream 3"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202309",
+		"value": "Archive of the North"
+	},
+	{
+		"key": "MID_SUM17_BeachFlags_Title",
+		"value": "Sandy Footrace"
+	},
+	{
+		"key": "MID_SUM17_BeachFlags_Common",
+		"value": "A single flag blows in the sea breeze...\\nWhoever gets there first wins!"
+	},
+	{
+		"key": "MID_SUM17_BeachFlags_3",
+		"value": "They couldn't agree who got it first...\\nNothing 30 rematches can't settle!"
+	},
+	{
+		"key": "MID_SUM17_BeachFlags_4",
+		"value": "Surprise twist ending! ...A crab won?!\\nNo one can know their secret shame."
+	},
+	{
+		"key": "MID_SUM17_BeachFlags_5",
+		"value": "They kept running past the flag...\\nThe real victory was friendship!"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202309",
+		"value": "Carrying the Torch"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202309R",
+		"value": "Revival: Emblems, Heroes"
+	},
+	{
+		"key": "MID_VOTE_TERM_202309_01",
+		"value": "Wrath of Winds"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202310",
+		"value": "Nihility & Dream 4"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202310",
+		"value": "Archive of the East"
+	},
+	{
+		"key": "MID_AUT14_Wallet_Title",
+		"value": "Wandering Wallet?"
+	},
+	{
+		"key": "MID_AUT14_Wallet_Common",
+		"value": "Uh-oh! Someone lost their wallet...\\nIt had all the funds for the trip inside!"
+	},
+	{
+		"key": "MID_AUT14_Wallet_3",
+		"value": "Wait\u2014they BOTH lost their wallets!\\nThe pair continued on in silence..."
+	},
+	{
+		"key": "MID_AUT14_Wallet_4",
+		"value": "Luckily it was held for safekeeping!\\nPhew! What a thing to forget..."
+	},
+	{
+		"key": "MID_AUT14_Wallet_5",
+		"value": "It was returned to them by a kind owl!\\nThey thanked it as it went on its way."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202310",
+		"value": "Guiding Vision"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_EQUIP_WARNING_RESONATE",
+		"value": "Inherited Attuned Skills cannot be\\nequipped with exclusive skills other\\nthan weapon skills (with exceptions)."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_WARNING_INHERITED_RESONATE",
+		"value": "Inherited Attuned Skills can't be inherited again."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_INHERIT_WARNING_RESONATE_PERSON",
+		"value": "Since the source ally is an Attuned\\nHero, they will not be lost, but you\\nwill no longer be able to use them\\nas a source ally when inheriting skills\\nor when creating Combat Manuals."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_INHERIT_WARNING_RESONATE_SKILL",
+		"value": "Inherited Attuned Skills cannot be\\ninherited again, nor can they be\\nequipped with exclusive skills other\\nthan weapon skills (with exceptions)."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_WARNING_RESONATE",
+		"value": "When merging two Attuned Heroes, the target\\nally will not gain an additional Attuned Skill."
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_6",
+		"value": "Attuned"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_04_v0710",
+		"value": "Rearmed/Attuned Heroes:\\nRearmed Heroes and Attuned\\nHeroes can use a special type of\\nskill inheritance that differs from\\nthe inheritance used by Heroes\\nunder typical circumstances."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_05_v0710",
+		"value": "Elite Inheritance:\\nIn contrast with inheritance as it\\nusually occurs, when performing\\nelite inheritance, the source ally\\nwill not be lost (once for each\\neligible summoned Hero, and\\nthe eligible Hero cannot create\\nCombat Manuals afterward)."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_06_v0710",
+		"value": "Inheritance Limits:\\n\u30fb Once a skill like an arcane\\nweapon or Attuned Skill has been\\ninherited, it cannot be inherited\\nagain by any other Hero."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_08",
+		"value": "Attuned Skills Restrictions:\\nOnly Attuned Heroes can equip\\nboth their Attuned Skill and\\nan exclusive skill (such as Gray\\nWaves, etc.) other than Sing,\\nDance, or Play at the same time."
+	},
+	{
+		"key": "MID_UNIT_INFO_BLESSING_RESONATE",
+		"value": "Attuned Heroes - Pre-Inheritance:\\nIn contrast with standard inheritance,\\nAttuned Skills can be inherited\\nand the source ally will not be lost in\\nthe process. This can be performed\\nonly once for each Attuned Hero\\nsummoned. (See the Inherit Skills\\nmenu Help messages to learn more.)"
+	},
+	{
+		"key": "MID_UNIT_INFO_BLESSING_RESONATE_LOST_RIGHT_OF_SKILL_INHERIT_SOURCE",
+		"value": "Attuned Heroes - Elite Inheritance:\\nIn contrast with standard inheritance,\\nAttuned Skills can be inherited\\nand the source ally will not be lost in\\nthe process. This can be performed\\nonly once for each Attuned Hero\\nsummoned. (See the Inherit Skills\\nmenu Help messages to learn more.)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202311",
+		"value": "Harvest Bash"
+	},
+	{
+		"key": "MID_OCCUPATION_RECOLLECTION_TITLE_202311",
+		"value": "Ishtar and Company 1"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202311R",
+		"value": "Revival: New Awakening"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202311",
+		"value": "Nihility & Dream 5"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING7_3",
+		"value": "Book VII ending"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202311",
+		"value": "Entrusted Hope"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_6",
+		"value": "Ninja Village"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_6",
+		"value": "$aFoes grant 5x SP for the next $a0,\\nand then 2x SP thereafter! (Only highest\\nvalue applied. Does not stack.)"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202311",
+		"value": "Archive of the South"
+	},
+	{
+		"key": "MID_WIN15_LostChild_Title",
+		"value": "Lost Little One"
+	},
+	{
+		"key": "MID_WIN15_LostChild_Common",
+		"value": "They come across a sad little girl!\\nWill they be able to make her smile?"
+	},
+	{
+		"key": "MID_WIN15_LostChild_3",
+		"value": "Silly poses fail to make her feel better.\\nNo one seems impressed either..."
+	},
+	{
+		"key": "MID_WIN15_LostChild_4",
+		"value": "Singing gets her back to smiling again!\\nThey fill the area with a warm energy."
+	},
+	{
+		"key": "MID_WIN15_LostChild_5",
+		"value": "A lively song and dance is in order!\\nThey reunite child and mother too!"
+	},
+	{
+		"key": "MID_VOTE_TERM_202311_01",
+		"value": "Past Meets Future"
 	}
 ]
