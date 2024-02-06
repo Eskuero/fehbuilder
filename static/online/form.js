@@ -192,6 +192,10 @@ async function populate(domitem, data, clean, bypass) {
 							add = false;
 						}
 					}
+					// In any case for attuned/rearmed we always allow any prf regarless of having an inheritted arcane or X skill
+					if (other["attuned"].includes(selectheroes.value) || other["rearmed"].includes(selectheroes.value)) {
+						add = true;
+					}
 				// If it isn't on the unit basekit he can't use it regarless of other conditions so we skip this iteration
 				} else {
 					return;
