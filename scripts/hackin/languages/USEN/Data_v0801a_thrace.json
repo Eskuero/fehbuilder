@@ -517,7 +517,7 @@
 	},
 	{
 		"key": "MSID_H_\u53cd\u7adc\u7a7f\u30fb\u627f",
-		"value": "Reduces damage from foe's attacks by 40%.\\nAfter Special triggers, unit's next attack deals\\ndamage = 40% of unit's Atk. (Boost resets at\\nthe end of combat.) If foe has the \"attacks\\ntwice\" effect, grants Special cooldown count-2\\nto unit after first Special trigger per combat.\\n"
+		"value": "Reduces damage from foe's attacks by 40%.\\nAfter Special triggers, unit's next attack deals\\ndamage = 40% of unit's Atk. (Boost resets at\\nthe end of combat.) If foe has the \"attacks\\ntwice\" effect, grants Special cooldown count-2\\nto unit after first Special trigger per combat."
 	},
 	{
 		"key": "MSID_H_\u5929\u4e0e\u306e\u9b54\u9053\u30fb\u627f",
@@ -549,7 +549,7 @@
 	},
 	{
 		"key": "MSID_H_\u5203\u306e\u846c\u308a\u624b\u306e\u722a",
-		"value": "$aAccelerates Special trigger (cooldown count-1).\\nAt start of turn, if unit's HP \u2265 25%, inflicts\\nSpd/Def-7,\u3010Exposure\u3011, and a penalty that\\nneutralizes non-Special \"if foe would reduce\\nunit's HP to 0, unit survives with 1 HP\" effects\\non nearest foe and foes within 2 spaces of\\nthem through their next actions. At start\\nof combat, if unit's HP \u2265 25%, grants\\nAtk/Spd/Def/Res+5 to unit and inflicts\\nAtk/Spd/Def-X on foe (X = number of foes\\nwithin 2 spaces of target with Bonuses or\\nPenalties active on them, excluding target, \u00d7 3,\\n+ 4; max 10), deals Y damage (Y = total number\\nof Bonuses and Penalties active on foe and any\\nfoe within 2 spaces of foe, excluding stat\\nbonuses and stat penalties; excluding when\\ndealing damage with an area-of-effect Special),\\nreduces damage from attacks by 40%, and\\nreduces the percentage of foe's non-Special\\n\"reduce damage by X%\" skills by 50% during\\ncombat. At start of turn, if unit is adjacent to\\nonly beast or dragon allies or if unit is not\\nadjacent to any ally, unit transforms (otherwise,\\nunit reverts). If unit transforms, unit can move\\n1 extra space (that turn only; does not stack)\\nand grants Atk+2 to unit.\\n\\n\u3010Exposure\u3011\\nFoe's attacks deal +10 damage."
+		"value": "$aAccelerates Special trigger (cooldown count-1).\\nAt start of turn, if unit's HP \u2265 25%, inflicts\\nSpd/Def-7,\u3010Exposure\u3011, and a penalty that\\nneutralizes non-Special \"if foe would reduce\\nunit's HP to 0, unit survives with 1 HP\" effects\\non nearest foe and foes within 2 spaces of\\nthem through their next actions. At start\\nof combat, if unit's HP \u2265 25%, grants\\nAtk/Spd/Def/Res+5 to unit and inflicts\\nAtk/Spd/Def-X on foe (X = number of foes\\nwithin 2 spaces of target with Bonuses or\\nPenalties active on them, excluding target, \u00d7 3,\\n+ 4; max 10), deals Y damage (Y = total number\\nof Bonuses and Penalties active on foe and any\\nfoe within 2 spaces of foe, excluding stat\\nbonuses and stat penalties, \u00d7 3; excluding when\\ndealing damage with an area-of-effect Special),\\nreduces damage from attacks by 40%, and\\nreduces the percentage of foe's non-Special\\n\"reduce damage by X%\" skills by 50% during\\ncombat. At start of turn, if unit is adjacent to\\nonly beast or dragon allies or if unit is not\\nadjacent to any ally, unit transforms (otherwise,\\nunit reverts). If unit transforms, unit can move\\n1 extra space (that turn only; does not stack)\\nand grants Atk+2 to unit.\\n\\n\u3010Exposure\u3011\\nFoe's attacks deal +10 damage."
 	},
 	{
 		"key": "MSID_H_\u96f7\u795e\u306e\u53f3\u8155",
@@ -589,7 +589,7 @@
 	},
 	{
 		"key": "MSID_H_\u795e\u7956\u7adc\u306e\u30d6\u30ec\u30b9\u6539",
-		"value": "Accelerates Special trigger (cooldown count-1).\\nIf foe's Range = 2, calculates damage using the\\nlower of foe's Def or Res. If foe initiates\\ncombat or if foe's HP \u2265 75% at start of combat,\\ngrants Atk/Spd/Def/Res+5 to unit, grants\\nSpecial cooldown charge +1 per unit's attack\\n(only highest value applied; does not stack),\\nand reduces damage from foe's first attack\\nby 7 during combat (\"first attack\" normally\\nmeans only the first strike; for effects that\\ngrant \"unit attacks twice,\" it means the first\\nand second strikes)."
+		"value": "Accelerates Special trigger (cooldown count-1).\\nIf foe's Range = 2, calculates damage using the\\nlower of foe's Def or Res. If foe initiates\\ncombat or if foe's HP \u2265 75% at start of combat,\\ngrants Atk/Spd/Def/Res+5 to unit, grants\\nSpecial cooldown charge +1 per attack\\n(only highest value applied; does not stack),\\nand reduces damage from foe's first attack\\nby 7 during combat (\"first attack\" normally\\nmeans only the first strike; for effects that\\ngrant \"unit attacks twice,\" it means the first\\nand second strikes)."
 	},
 	{
 		"key": "MID_CHAPTER_TITLE_C0803",
