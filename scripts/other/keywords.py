@@ -31,10 +31,12 @@ for hero in heroes:
 	# Skip enemy units
 	if "EID" in hero:
 		continue
-	keywords[hero] = {
-		language: translations[language]["M" + hero] + ": " + translations[language][hero.replace("PID", "MPID_HONOR")]
-		for language in languages
-	}
+	keywords[hero] = {}
+	for language in languages:
+		try:
+			keywords[hero][language] = translations[language]["M" + hero] + ": " + translations[language][hero.replace("PID", "MPID_HONOR")]
+		except KeyError:
+			print(f"Failed to get translation for hero {hero} at language {language}")
 
 with open("keywords.json", "w") as outfile:
     json.dump(keywords, outfile, indent='\t')
