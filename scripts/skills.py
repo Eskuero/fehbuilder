@@ -101,11 +101,17 @@ for file in files:
 				}
 
 refinenames = {"神": "Wrathful", "幻": "Dazzling", "ATK": "Atk", "AGI": "Spd", "DEF": "Def", "RES": "Res"}
+# Some weapons (for now only arcane staffs, allow merged refines of WrathFul/Dazzling + stats)
+refineextendednames = {"神_ATK": "Wrathful+Atk", "神_AGI": "Wrathful+Spd", "神_DEF": "Wrathful+Def", "神_RES": "Wrathful+Res",
+				  "幻_ATK": "Dazzling+Atk", "幻_AGI": "Dazzling+Spd", "幻_DEF": "Dazzling+Def", "幻_RES": "Dazzling+Res"}
 # For each refine defined update the original weapon info
 for refinable in refines:
 	# The last part of the refine ID is the one that indicates the type
 	refine = refinable.split("_")[-1]
 	refine = refinenames[refine] if refine in refinenames else "Effect"
+	# If we have a matching refineextended use that instead otherwise keep what be previously detected
+	refineextended = refinable.split("_")[-2] + "_" + refinable.split("_")[-1]
+	refine = refineextendednames[refineextended] if refineextended in refineextendednames else refine
 	# Always add the stats modifiers for the particular refine
 	skills["weapons"][refines[refinable]["baseWeapon"]]["refines"][refine] = {
 		"stats": refines[refinable]["stats"]

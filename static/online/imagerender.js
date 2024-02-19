@@ -210,7 +210,7 @@ async function echoes() {
 	// If the weapon is valid try to print an icon
 	if (weapon) {
 		// By default we always use the basic weapon icon or the predefined stat boosters ones
-		var weaponicon = ["Atk", "Spd", "Def", "Res", "Wrathful", "Dazzling"].includes(refine) ? other["images"]["refines"][refine] : other["images"]["other"]["noweapon"];
+		var weaponicon = other["images"]["refines"][refine] ? other["images"]["refines"][refine] : other["images"]["other"]["noweapon"];
 		// If the icon is an special effect we might have to download it
 		if (refine == "Effect" && skills["weapons"][weapon]["refines"]["Effect"]) {
 			var weaponicon = "../common/icons/" + weapon + "-Effect.webp";
@@ -473,7 +473,7 @@ async function condensed() {
 	// If the weapon is valid try to print an icon
 	if (weapon) {
 		// By default we always use the basic weapon icon or the predefined stat boosters ones
-		var weaponicon = ["Atk", "Spd", "Def", "Res", "Wrathful", "Dazzling"].includes(refine) ? other["images"]["refines"][refine] : other["images"]["other"]["noweapon"];
+		var weaponicon = other["images"]["refines"][refine] ? other["images"]["refines"][refine] : other["images"]["other"]["noweapon"];
 		// If the icon is an special effect we might have to download it
 		if (refine == "Effect" && skills["weapons"][weapon]["refines"]["Effect"]) {
 			weaponicon = "../common/icons/" + weapon + "-Effect.webp";
@@ -892,7 +892,7 @@ async function myunit() {
 	// If the weapon is valid try to print an icon
 	if (weapon) {
 		// By default we always use the basic weapon icon or the predefined stat boosters ones
-		var weaponicon = ["Atk", "Spd", "Def", "Res", "Wrathful", "Dazzling"].includes(refine) ? other["images"]["refines"][refine] : other["images"]["other"]["noweapon"];
+		var weaponicon = other["images"]["refines"][refine] ? other["images"]["refines"][refine] : other["images"]["other"]["noweapon"];
 		// If the icon is an special effect we might have to download it
 		if (refine == "Effect" && skills["weapons"][weapon]["refines"]["Effect"]) {
 			var weaponicon = "../common/icons/" + weapon + "-Effect.webp";
