@@ -344,12 +344,24 @@
 		"value": "$aEnables\u3010Canto (\uff11)\u3011.\\n\\nAccelerates Special trigger (cooldown count-1).\\nIf unit initiates combat or foe's Range = 2,\\nas combat begins, deals damage to foe = X%\\nof foe's Atk (if unit has weapon-triangle\\nadvantage or unit's Spd > foe's Spd, X = 40;\\notherwise, X = 20; effects that reduce damage\\nduring combat do not apply; will not reduce\\nfoe's HP below 1). If unit initiates combat or\\nfoe's Range = 2, grants Atk/Spd/Def/Res+5 to\\nunit, grants bonus to unit's Atk/Spd = 20%\\nof unit's Spd at start of combat, and reduces\\ndamage from foe's first attack by 30% during\\ncombat, and restores 7 HP to unit after combat.\\n\\n\u3010Canto (\uff11)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move \uff11 space(s).\\n\\n(Unit moves according to movement type. Once\\nper turn. Cannot attack or assist. Only highest\\nvalue applied. Does not stack. After moving,\\nif a skill that grants another action would be\\ntriggered (like with Galeforce), Canto will\\ntrigger after the granted action. Unit's base\\nmovement has no effect on movement granted.\\nCannot warp (using skills like Wings of Mercy)\\na distance greater than \uff11 space(s).)"
 	},
 	{
+		"key": "MSID_H_\u5996\u8276\u306a\u308b\u591c\u306e\u66f8_NOSKW",
+		"value": "$aEnables\u3010Canto (\uff11)\u3011.\\n\\nAccelerates Special trigger (cooldown count-1).\\nIf unit initiates combat or foe's Range = 2,\\nas combat begins, deals damage to foe = X%\\nof foe's Atk (if unit has weapon-triangle\\nadvantage or unit's Spd > foe's Spd, X = 40;\\notherwise, X = 20; effects that reduce damage\\nduring combat do not apply; will not reduce\\nfoe's HP below 1). If unit initiates combat or\\nfoe's Range = 2, grants Atk/Spd/Def/Res+5 to\\nunit, grants bonus to unit's Atk/Spd = 20%\\nof unit's Spd at start of combat, and reduces\\ndamage from foe's first attack by 30% during\\ncombat, and restores 7 HP to unit after combat."
+	},
+	{
 		"key": "MSID_H_\u53ef\u611b\u304c\u3063\u3066\u3042\u3052\u308b",
 		"value": "$aAt start of turn, if unit's HP \u2265 25%, inflicts\\nSpd/Res-7 and\u3010Sabotage\u3011on closest foes and\\nany foe within 2 spaces of those foes through\\ntheir next actions and grants \"reduces the\\npercentage of foe's non-Special 'reduce\\ndamage by X%' skills by 50% during combat\\n(excluding area-of-effect Specials)\" to unit\\nand allies within 2 spaces of unit for 1 turn.\\nAt start of combat, if unit's HP \u2265 25%, inflicts\\nSpd/Res-5 on foe, neutralizes effects that\\nprevent unit's follow-up attacks, and\\nneutralizes effects that inflict \"Special\\ncooldown charge -X\" on unit during combat.\\n\\n\u3010Sabotage\u3011\\nInflicts penalty on unit's Atk/Spd/Def/Res\\nduring combat = highest penalty on each\\nstat between unit and allies within 2 spaces\\nof unit through its next action. Calculates\\neach stat penalty independently."
 	},
 	{
+		"key": "MSID_H_\u53ef\u611b\u304c\u3063\u3066\u3042\u3052\u308b_NOSKW",
+		"value": "$aAt start of turn, if unit's HP \u2265 25%, inflicts\\nSpd/Res-7 and\u3010Sabotage\u3011on closest foes and\\nany foe within 2 spaces of those foes through\\ntheir next actions and grants \"reduces the\\npercentage of foe's non-Special 'reduce\\ndamage by X%' skills by 50% during combat\\n(excluding area-of-effect Specials)\" to unit\\nand allies within 2 spaces of unit for 1 turn.\\nAt start of combat, if unit's HP \u2265 25%, inflicts\\nSpd/Res-5 on foe, neutralizes effects that\\nprevent unit's follow-up attacks, and\\nneutralizes effects that inflict \"Special\\ncooldown charge -X\" on unit during combat."
+	},
+	{
 		"key": "MSID_H_\u6b7b\u306e\u7634\u6c17",
 		"value": "$aIf unit initiates combat, inflicts\\nAtk/Spd/Def/Res-5 on foe and neutralizes\\nfoe's bonuses (from skills like Fortify, Rally,\\netc.) during combat, and after combat, deals\\n7 damage to target and foes within 2 spaces\\nof target and applies\u3010Divine Vein (Haze)\u3011on\\ntarget's space and on each space within\\n2 spaces of target's space for 1 turn.\\n\\n\u3010Divine Vein (Haze)\u3011\\nApplies the following effects on space:\\nInflicts Atk/Spd/Def/Res-5 on foe and\\nneutralizes foe's bonuses (from skills like\\nFortify, Rally, etc.) during combat. (Divine\\nVein effects do not stack; replaces any\\nexisting Divine Vein effect; Divine Vein\\neffects applied simultaneously cancel\\neach other out.)"
+	},
+	{
+		"key": "MSID_H_\u6b7b\u306e\u7634\u6c17_NOSKW",
+		"value": "$aIf unit initiates combat, inflicts\\nAtk/Spd/Def/Res-5 on foe and neutralizes\\nfoe's bonuses (from skills like Fortify, Rally,\\netc.) during combat, and after combat, deals\\n7 damage to target and foes within 2 spaces\\nof target and applies\u3010Divine Vein (Haze)\u3011on\\ntarget's space and on each space within\\n2 spaces of target's space for 1 turn."
 	},
 	{
 		"key": "MID_STAGE_HONOR_L0070",

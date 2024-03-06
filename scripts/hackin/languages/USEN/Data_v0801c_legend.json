@@ -1492,6 +1492,10 @@
 		"value": "$aBoosts Special damage by 40% of unit's Spd.\\nNeutralizes effects that inflict \"Special cooldown\\ncharge -X\" on unit during combat. If unit's\\nSpecial is ready or has triggered during this\\ncombat,\u3010Potent Follow X%\u3011has\\ntriggered, and X \u2264 99, then X = 100. If unit's\\nor foe's Special is ready or triggered before\\nor during this combat, reduces damage from\\nfoe's next attack by 40% (once per combat;\\nexcluding area-of-effect Specials).\\n\\n\u3010Potent Follow X%\u3011\\nTriggers an additional follow-up attack\\nimmediately after unit's standard follow-up\\nattack and deals damage = X% of unit's normal\\nattack damage (if unit cannot make a follow-up\\nattack, this effect triggers when the standard\\nfollow-up attack would occur; this effect is\\ntreated like a follow-up attack, so effects like\\n\"reduce damage by X%\" still apply, but this\\neffect is not affected by effects that prevent\\nfollow-ups or \"attacks twice\" effects; only\\nhighest value applied; does not stack)."
 	},
 	{
+		"key": "MSID_H_\u30b9\u30bf\u30fc\u30e9\u30c3\u30b7\u30e5_NOSKW",
+		"value": "$aBoosts Special damage by 40% of unit's Spd.\\nNeutralizes effects that inflict \"Special cooldown\\ncharge -X\" on unit during combat. If unit's\\nSpecial is ready or has triggered during this\\ncombat,\u3010Potent Follow X%\u3011has\\ntriggered, and X \u2264 99, then X = 100. If unit's\\nor foe's Special is ready or triggered before\\nor during this combat, reduces damage from\\nfoe's next attack by 40% (once per combat;\\nexcluding area-of-effect Specials)."
+	},
+	{
 		"key": "MSID_H_\u653b\u6483\u901f\u3055\u306e\u7adc\u773c1",
 		"value": "If foe initiates combat or foe's HP \u2265 75%\\nat start of combat, grants Atk/Spd+2 to unit\\nduring combat, and also, if foe's attack can\\ntrigger foe's Special and unit's Res \u2265 foe's\\nRes+15 during combat, inflicts Special\\ncooldown count+1 on foe before foe's first\\nattack. (Cannot exceed the foe's maximum\\nSpecial cooldown.)"
 	},
@@ -1512,24 +1516,48 @@
 		"value": "$aInflicts Atk/Spd-4 on foe during combat. If\\na Rally Assist skill is used by unit or targets\\nunit, inflicts Atk/Spd-6,\u3010Guard\u3011,\\n\u3010Discord\u3011, and\u3010Schism\u3011on foes\\nin cardinal directions of unit and target\\nthrough their next actions.\\n\\n\u3010Guard\u3011\\nInflicts Special cooldown charge -1 on target\\nper attack during combat through its next action.\\n(Only highest value applied. Does not stack.)\\n\\n\u3010Discord\u3011\\nInflicts Atk/Spd/Def/Res-X on unit during\\ncombat (X = 2 + number of allies within\\n2 spaces of unit; max 5) through its\\nnext action.\\n\\n\u3010Schism\u3011\\nNeutralizes Triangle Attack, Dual Strike, and\\nPathfinder effects active on unit through\\nunit's next action. Unit is excluded from ally\\nTriangle Attack and Dual Strike effects\\ncalculated using numbers of allies. When this\\nstatus (Schism) is neutralized, Triangle Attack,\\nDual Strike, and Pathfinder effects are also\\nneutralized."
 	},
 	{
+		"key": "MSID_H_\u653b\u6483\u901f\u3055\u306e\u5927\u5171\u8b004_NOSKW",
+		"value": "$aInflicts Atk/Spd-4 on foe during combat. If\\na Rally Assist skill is used by unit or targets\\nunit, inflicts Atk/Spd-6,\u3010Guard\u3011,\\n\u3010Discord\u3011, and\u3010Schism\u3011on foes\\nin cardinal directions of unit and target\\nthrough their next actions."
+	},
+	{
 		"key": "MSID_H_\u795e\u901f1",
 		"value": "$aIf decreasing the Spd difference necessary to\\nmake a follow-up attack by 25 would allow\\nunit to trigger a follow-up attack (excluding\\nguaranteed or prevented follow-ups),\\ntriggers\u3010Potent Follow X%\u3011during\\ncombat (if unit cannot perform follow-up\\nand attack twice, X = 50; otherwise, X = 10).\\n\\n\u3010Potent Follow X%\u3011\\nTriggers an additional follow-up attack\\nimmediately after unit's standard follow-up\\nattack and deals damage = X% of unit's normal\\nattack damage (if unit cannot make a follow-up\\nattack, this effect triggers when the standard\\nfollow-up attack would occur; this effect is\\ntreated like a follow-up attack, so effects like\\n\"reduce damage by X%\" still apply, but this\\neffect is not affected by effects that prevent\\nfollow-ups or \"attacks twice\" effects; only\\nhighest value applied; does not stack)."
+	},
+	{
+		"key": "MSID_H_\u795e\u901f1_NOSKW",
+		"value": "$aIf decreasing the Spd difference necessary to\\nmake a follow-up attack by 25 would allow\\nunit to trigger a follow-up attack (excluding\\nguaranteed or prevented follow-ups),\\ntriggers\u3010Potent Follow X%\u3011during\\ncombat (if unit cannot perform follow-up\\nand attack twice, X = 50; otherwise, X = 10)."
 	},
 	{
 		"key": "MSID_H_\u795e\u901f2",
 		"value": "$aReduces damage from attacks during combat\\nand from area-of-effect Specials (excluding\\nR\u00f8kkr area-of-effect Specials) by 10%.\\nIf decreasing the Spd difference necessary to\\nmake a follow-up attack by 25 would allow\\nunit to trigger a follow-up attack (excluding\\nguaranteed or prevented follow-ups),\\ntriggers\u3010Potent Follow X%\u3011during\\ncombat (if unit cannot perform follow-up\\nand attack twice, X = 60; otherwise, X = 20).\\n\\n\u3010Potent Follow X%\u3011\\nTriggers an additional follow-up attack\\nimmediately after unit's standard follow-up\\nattack and deals damage = X% of unit's normal\\nattack damage (if unit cannot make a follow-up\\nattack, this effect triggers when the standard\\nfollow-up attack would occur; this effect is\\ntreated like a follow-up attack, so effects like\\n\"reduce damage by X%\" still apply, but this\\neffect is not affected by effects that prevent\\nfollow-ups or \"attacks twice\" effects; only\\nhighest value applied; does not stack)."
 	},
 	{
+		"key": "MSID_H_\u795e\u901f2_NOSKW",
+		"value": "$aReduces damage from attacks during combat\\nand from area-of-effect Specials (excluding\\nR\u00f8kkr area-of-effect Specials) by 10%.\\nIf decreasing the Spd difference necessary to\\nmake a follow-up attack by 25 would allow\\nunit to trigger a follow-up attack (excluding\\nguaranteed or prevented follow-ups),\\ntriggers\u3010Potent Follow X%\u3011during\\ncombat (if unit cannot perform follow-up\\nand attack twice, X = 60; otherwise, X = 20)."
+	},
+	{
 		"key": "MSID_H_\u795e\u901f3",
 		"value": "$aReduces damage from attacks during combat\\nand from area-of-effect Specials (excluding\\nR\u00f8kkr area-of-effect Specials) by 20%.\\nIf decreasing the Spd difference necessary to\\nmake a follow-up attack by 25 would allow\\nunit to trigger a follow-up attack (excluding\\nguaranteed or prevented follow-ups),\\ntriggers\u3010Potent Follow X%\u3011during\\ncombat (if unit cannot perform follow-up\\nand attack twice, X = 70; otherwise, X = 30).\\n\\n\u3010Potent Follow X%\u3011\\nTriggers an additional follow-up attack\\nimmediately after unit's standard follow-up\\nattack and deals damage = X% of unit's normal\\nattack damage (if unit cannot make a follow-up\\nattack, this effect triggers when the standard\\nfollow-up attack would occur; this effect is\\ntreated like a follow-up attack, so effects like\\n\"reduce damage by X%\" still apply, but this\\neffect is not affected by effects that prevent\\nfollow-ups or \"attacks twice\" effects; only\\nhighest value applied; does not stack)."
+	},
+	{
+		"key": "MSID_H_\u795e\u901f3_NOSKW",
+		"value": "$aReduces damage from attacks during combat\\nand from area-of-effect Specials (excluding\\nR\u00f8kkr area-of-effect Specials) by 20%.\\nIf decreasing the Spd difference necessary to\\nmake a follow-up attack by 25 would allow\\nunit to trigger a follow-up attack (excluding\\nguaranteed or prevented follow-ups),\\ntriggers\u3010Potent Follow X%\u3011during\\ncombat (if unit cannot perform follow-up\\nand attack twice, X = 70; otherwise, X = 30)."
 	},
 	{
 		"key": "MSID_H_\u795e\u901f4",
 		"value": "$aInflicts Spd/Def-4 on foe during combat and\\nreduces damage from attacks during combat\\nand from area-of-effect Specials (excluding\\nR\u00f8kkr area-of-effect Specials) by 30%.\\nIf decreasing the Spd difference necessary to\\nmake a follow-up attack by 25 would allow\\nunit to trigger a follow-up attack (excluding\\nguaranteed or prevented follow-ups),\\ntriggers\u3010Potent Follow X%\u3011during\\ncombat (if unit cannot perform follow-up\\nand attack twice, X = 80; otherwise, X = 40).\\n\\n\u3010Potent Follow X%\u3011\\nTriggers an additional follow-up attack\\nimmediately after unit's standard follow-up\\nattack and deals damage = X% of unit's normal\\nattack damage (if unit cannot make a follow-up\\nattack, this effect triggers when the standard\\nfollow-up attack would occur; this effect is\\ntreated like a follow-up attack, so effects like\\n\"reduce damage by X%\" still apply, but this\\neffect is not affected by effects that prevent\\nfollow-ups or \"attacks twice\" effects; only\\nhighest value applied; does not stack)."
 	},
 	{
+		"key": "MSID_H_\u795e\u901f4_NOSKW",
+		"value": "$aInflicts Spd/Def-4 on foe during combat and\\nreduces damage from attacks during combat\\nand from area-of-effect Specials (excluding\\nR\u00f8kkr area-of-effect Specials) by 30%.\\nIf decreasing the Spd difference necessary to\\nmake a follow-up attack by 25 would allow\\nunit to trigger a follow-up attack (excluding\\nguaranteed or prevented follow-ups),\\ntriggers\u3010Potent Follow X%\u3011during\\ncombat (if unit cannot perform follow-up\\nand attack twice, X = 80; otherwise, X = 40)."
+	},
+	{
 		"key": "MSID_H_\u30ea\u30c8\u30b9\u306e\u795e\u7adc\u738b",
 		"value": "$aAfter unit acts (if Canto triggers, after Canto),\\napplies\u3010Divine Vein (Stone)\u3011to spaces within\\n5 rows and 5 columns centered on unit for\\n1 turn. Grants Atk/Spd/Def/Res+4 to allies\\nwithin 5 rows and 5 columns centered on unit\\nand neutralizes effects that inflict \"Special\\ncooldown charge -X\" on those allies during\\ncombat. If there is an ally within 5 rows\\nand 5 columns centered on unit, grants\\nAtk/Spd/Def/Res+4 to unit, reduces damage\\nfrom attacks by 30% (excluding area-of-effect\\nSpecials), and neutralizes effects that inflict\\n\"Special cooldown charge -X\" on unit\\nduring combat.\\n\\n\u3010Divine Vein (Stone)\u3011\\nApplies the following effects on space for unit\\nand allies: Grants Def/Res+6 during combat,\\nreduces damage from foe's Specials by 10\\nduring combat (excluding area-of-effect\\nSpecials), and reduces damage from\\narea-of-effect Specials by 50% (excluding\\nR\u00f8kkr area-of-effect Specials). (Divine Vein\\neffects do not stack; replaces any existing\\nDivine Vein effect; Divine Vein effects applied\\nsimultaneously cancel each other out. Does not\\ncount as defensive terrain.)"
+	},
+	{
+		"key": "MSID_H_\u30ea\u30c8\u30b9\u306e\u795e\u7adc\u738b_NOSKW",
+		"value": "$aAfter unit acts (if Canto triggers, after Canto),\\napplies\u3010Divine Vein (Stone)\u3011to spaces within\\n5 rows and 5 columns centered on unit for\\n1 turn. Grants Atk/Spd/Def/Res+4 to allies\\nwithin 5 rows and 5 columns centered on unit\\nand neutralizes effects that inflict \"Special\\ncooldown charge -X\" on those allies during\\ncombat. If there is an ally within 5 rows\\nand 5 columns centered on unit, grants\\nAtk/Spd/Def/Res+4 to unit, reduces damage\\nfrom attacks by 30% (excluding area-of-effect\\nSpecials), and neutralizes effects that inflict\\n\"Special cooldown charge -X\" on unit\\nduring combat."
 	},
 	{
 		"key": "MSID_H_\u7d0b\u7ae0\u30de\u30eb\u30b9",

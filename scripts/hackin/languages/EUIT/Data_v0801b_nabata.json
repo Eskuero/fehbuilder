@@ -588,12 +588,24 @@
 		"value": "$aAnticipa l'attivazione dell'abilit\u00e0 speciale\\n(contatore -1). Se l'unit\u00e0 si trova entro 2 spazi\\nda un alleato all'inizio del turno, conferisce\\nVel/Res +6,\u3010Aumento bonus\u3011e\u3010Nega Panico\u3011\\nall'unit\u00e0 e agli alleati entro 2 spazi dall'unit\u00e0\\nper 1 turno. Se l'unit\u00e0 attacca per prima o si\\ntrova entro 2 spazi da un alleato, conferisce\\nAtt/Vel/Dif/Res +5 all'unit\u00e0, annulla gli effetti\\nche garantiscono attacchi doppi al nemico e\\nquelli che impediscono attacchi doppi all'unit\u00e0\\ne infligge danni aggiuntivi pari al 20% della Vel\\ndell'unit\u00e0 durante lo scontro (escluse le abilit\u00e0\\nspeciali con area d'effetto).\\n\\n\u3010Aumento bonus\u3011\\nConferisce un aumento ad Att/Vel/Dif/Res pari\\nal bonus attivo su ogni parametro dell'unit\u00e0\\ndurante lo scontro per 1 turno. Ogni parametro\\n\u00e8 calcolato singolarmente.\\n\\n\u3010Nega Panico\u3011\\nSe l'unit\u00e0 subisce Panico (i bonus diventano\\npenalit\u00e0), annulla l'effetto \"i bonus del bersaglio\\ndiventano penalit\u00e0\" per 1 turno. (Anche se\\nl'effetto \u00e8 annullato, lo stato di Panico rimane,\\ne viene considerato come stato di Penalit\u00e0.)"
 	},
 	{
+		"key": "MSID_H_\u7802\u6f20\u306e\u5929\u99ac\u9a0e\u58eb\u306e\u5263_NOSKW",
+		"value": "$aAnticipa l'attivazione dell'abilit\u00e0 speciale\\n(contatore -1). Se l'unit\u00e0 si trova entro 2 spazi\\nda un alleato all'inizio del turno, conferisce\\nVel/Res +6,\u3010Aumento bonus\u3011e\u3010Nega Panico\u3011\\nall'unit\u00e0 e agli alleati entro 2 spazi dall'unit\u00e0\\nper 1 turno. Se l'unit\u00e0 attacca per prima o si\\ntrova entro 2 spazi da un alleato, conferisce\\nAtt/Vel/Dif/Res +5 all'unit\u00e0, annulla gli effetti\\nche garantiscono attacchi doppi al nemico e\\nquelli che impediscono attacchi doppi all'unit\u00e0\\ne infligge danni aggiuntivi pari al 20% della Vel\\ndell'unit\u00e0 durante lo scontro (escluse le abilit\u00e0\\nspeciali con area d'effetto)."
+	},
+	{
 		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd",
 		"value": "$aSe l'unit\u00e0 si trova entro 2 spazi da un alleato\\nall'inizio del turno, conferisce \"l'unit\u00e0 non\\nsubisce rallentamenti dal terreno (non si\\napplica al terreno impraticabile)\" e\u3010Lama magica\u3011\\nall'unit\u00e0 per 1 turno. Se l'unit\u00e0 attacca per\\nprima o si trova entro 2 spazi da un alleato,\\nconferisce Att/Vel/Dif/Res +4 all'unit\u00e0 durante\\nlo scontro e infligge danni aggiuntivi pari\\nal 10% dell'Att dell'unit\u00e0 (escluse le abilit\u00e0\\nspeciali con area d'effetto).\\n\\n\u3010Lama magica\u3011\\nIl danno \u00e8 calcolato usando Dif o Res del\\nnemico (il valore pi\u00f9 basso) durante lo scontro\\nper 1 turno (inclusi i danni inflitti da abilit\u00e0\\nspeciali prima dello scontro)."
 	},
 	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd_NOSKW",
+		"value": "$aSe l'unit\u00e0 si trova entro 2 spazi da un alleato\\nall'inizio del turno, conferisce \"l'unit\u00e0 non\\nsubisce rallentamenti dal terreno (non si\\napplica al terreno impraticabile)\" e\u3010Lama magica\u3011\\nall'unit\u00e0 per 1 turno. Se l'unit\u00e0 attacca per\\nprima o si trova entro 2 spazi da un alleato,\\nconferisce Att/Vel/Dif/Res +4 all'unit\u00e0 durante\\nlo scontro e infligge danni aggiuntivi pari\\nal 10% dell'Att dell'unit\u00e0 (escluse le abilit\u00e0\\nspeciali con area d'effetto)."
+	},
+	{
 		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd\uff0b",
 		"value": "$aSe l'unit\u00e0 si trova entro 2 spazi da un alleato\\nall'inizio del turno, conferisce \"l'unit\u00e0 non\\nsubisce rallentamenti dal terreno (non si\\napplica al terreno impraticabile)\" e\u3010Lama magica\u3011\\nall'unit\u00e0 per 1 turno. Se l'unit\u00e0 attacca per\\nprima o si trova entro 2 spazi da un alleato,\\nconferisce Att/Vel/Dif/Res +4 all'unit\u00e0 durante\\nlo scontro e infligge danni aggiuntivi pari\\nal 10% dell'Att dell'unit\u00e0 (escluse le abilit\u00e0\\nspeciali con area d'effetto).\\n\\n\u3010Lama magica\u3011\\nIl danno \u00e8 calcolato usando Dif o Res del\\nnemico (il valore pi\u00f9 basso) durante lo scontro\\nper 1 turno (inclusi i danni inflitti da abilit\u00e0\\nspeciali prima dello scontro)."
+	},
+	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd\uff0b_NOSKW",
+		"value": "$aSe l'unit\u00e0 si trova entro 2 spazi da un alleato\\nall'inizio del turno, conferisce \"l'unit\u00e0 non\\nsubisce rallentamenti dal terreno (non si\\napplica al terreno impraticabile)\" e\u3010Lama magica\u3011\\nall'unit\u00e0 per 1 turno. Se l'unit\u00e0 attacca per\\nprima o si trova entro 2 spazi da un alleato,\\nconferisce Att/Vel/Dif/Res +4 all'unit\u00e0 durante\\nlo scontro e infligge danni aggiuntivi pari\\nal 10% dell'Att dell'unit\u00e0 (escluse le abilit\u00e0\\nspeciali con area d'effetto)."
 	},
 	{
 		"key": "MSID_H_\u6c38\u9060\u306e\u7406\u60f3\u90f7\u306e\u53cc\u65a7",
@@ -608,8 +620,16 @@
 		"value": "$aSe l'unit\u00e0 si trova entro 2 spazi da un alleato\\nall'inizio del turno, conferisce \"l'unit\u00e0 non\\nsubisce rallentamenti dal terreno (non si applica\\nal terreno impraticabile)\" e\u3010Disperazione\u3011\\nall'unit\u00e0 per 1 turno. Se l'unit\u00e0 attacca per\\nprima o si trova entro 2 spazi da un alleato,\\nconferisce Att/Vel/Dif/Res +4 all'unit\u00e0 durante\\nlo scontro e infligge danni aggiuntivi pari\\nal 10% dell'Att dell'unit\u00e0 (escluse le abilit\u00e0\\nspeciali con area d'effetto).\\n\\n\u3010Disperazione\u3011\\nConferisce il seguente effetto per 1 turno:\\n\"Se l'unit\u00e0 attacca per prima, l'eventuale\\nattacco doppio avr\u00e0 luogo prima del\\ncontrattacco avversario.\""
 	},
 	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u71ed\u53f0_NOSKW",
+		"value": "$aSe l'unit\u00e0 si trova entro 2 spazi da un alleato\\nall'inizio del turno, conferisce \"l'unit\u00e0 non\\nsubisce rallentamenti dal terreno (non si applica\\nal terreno impraticabile)\" e\u3010Disperazione\u3011\\nall'unit\u00e0 per 1 turno. Se l'unit\u00e0 attacca per\\nprima o si trova entro 2 spazi da un alleato,\\nconferisce Att/Vel/Dif/Res +4 all'unit\u00e0 durante\\nlo scontro e infligge danni aggiuntivi pari\\nal 10% dell'Att dell'unit\u00e0 (escluse le abilit\u00e0\\nspeciali con area d'effetto)."
+	},
+	{
 		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u71ed\u53f0\uff0b",
 		"value": "$aSe l'unit\u00e0 si trova entro 2 spazi da un alleato\\nall'inizio del turno, conferisce \"l'unit\u00e0 non\\nsubisce rallentamenti dal terreno (non si applica\\nal terreno impraticabile)\" e\u3010Disperazione\u3011\\nall'unit\u00e0 per 1 turno. Se l'unit\u00e0 attacca per\\nprima o si trova entro 2 spazi da un alleato,\\nconferisce Att/Vel/Dif/Res +4 all'unit\u00e0 durante\\nlo scontro e infligge danni aggiuntivi pari\\nal 10% dell'Att dell'unit\u00e0 (escluse le abilit\u00e0\\nspeciali con area d'effetto).\\n\\n\u3010Disperazione\u3011\\nConferisce il seguente effetto per 1 turno:\\n\"Se l'unit\u00e0 attacca per prima, l'eventuale\\nattacco doppio avr\u00e0 luogo prima del\\ncontrattacco avversario.\""
+	},
+	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u71ed\u53f0\uff0b_NOSKW",
+		"value": "$aSe l'unit\u00e0 si trova entro 2 spazi da un alleato\\nall'inizio del turno, conferisce \"l'unit\u00e0 non\\nsubisce rallentamenti dal terreno (non si applica\\nal terreno impraticabile)\" e\u3010Disperazione\u3011\\nall'unit\u00e0 per 1 turno. Se l'unit\u00e0 attacca per\\nprima o si trova entro 2 spazi da un alleato,\\nconferisce Att/Vel/Dif/Res +4 all'unit\u00e0 durante\\nlo scontro e infligge danni aggiuntivi pari\\nal 10% dell'Att dell'unit\u00e0 (escluse le abilit\u00e0\\nspeciali con area d'effetto)."
 	},
 	{
 		"key": "MSID_H_\u4e09\u96c4\u306e\u53cc\u5203",
@@ -630,6 +650,10 @@
 	{
 		"key": "MSID_H_\u53cc\u754c\u30a4\u30b0\u30ec\u30fc\u30cc",
 		"value": "$aConferisce\u3010Risonanza: lame\u3011\u3010Disperazione\u3011\\ne\u3010Slealt\u00e0\u3011all'unit\u00e0 e agli alleati che vengono\\ndagli stessi titoli da cui proviene l'unit\u00e0.\\n\\n\u3010Risonanza: lame\u3011\\nConferisce Att/Vel +4 durante lo scontro\\nper 1 turno.\\n\\n\u3010Disperazione\u3011\\nConferisce il seguente effetto per 1 turno:\\n\"Se l'unit\u00e0 attacca per prima, l'eventuale\\nattacco doppio avr\u00e0 luogo prima del\\ncontrattacco avversario.\"\\n\\n\u3010Slealt\u00e0\u3011\\nL'unit\u00e0 infligge danni aggiuntivi pari alla somma\\ndei bonus dell'unit\u00e0 per 1 turno."
+	},
+	{
+		"key": "MSID_H_\u53cc\u754c\u30a4\u30b0\u30ec\u30fc\u30cc_NOSKW",
+		"value": "$aConferisce\u3010Risonanza: lame\u3011\u3010Disperazione\u3011\\ne\u3010Slealt\u00e0\u3011all'unit\u00e0 e agli alleati che vengono\\ndagli stessi titoli da cui proviene l'unit\u00e0."
 	},
 	{
 		"key": "MID_CHAPTER_TITLE_CX093",

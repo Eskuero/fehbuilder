@@ -876,12 +876,20 @@
 		"value": "$aIf unit is within 3 spaces of a flying ally,\\nenables\u3010Canto (Rem. +1)\u3011.\\n\\nAt start of combat, if unit's HP \u2265 25%, grants\\nAtk/Spd/Def/Res+4 to unit during combat\\nand deals damage = 15% of unit's Atk\\n(excluding area-of-effect Specials), and also,\\nif the number of flying allies within 3 spaces\\nof unit \u2265 2, grants Special cooldown charge +1\\nto unit per attack during combat (only highest\\nvalue applied; does not stack).\\n\\n\u3010Canto (Rem. +1)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move spaces = any\\nmovement not already used that turn +1.\\n(If unit used a movement skill that warped\\nthem, its remaining movement is 0.)\\n\\n(Unit moves according to movement type. Once\\nper turn. Cannot attack or assist. Only highest\\nvalue applied. Does not stack. After moving,\\nif a skill that grants another action would be\\ntriggered (like with Galeforce), Canto will\\ntrigger after the granted action. Unit's base\\nmovement has no effect on movement granted.\\nCannot warp (using skills like Wings of Mercy)\\na distance greater than unit's remaining\\nmovement +1.)"
 	},
 	{
+		"key": "MSID_H_\u767d\u304d\u98db\u7fd4\u306e\u69cdR_NOSKW",
+		"value": "$aIf unit is within 3 spaces of a flying ally,\\nenables\u3010Canto (Rem. +1)\u3011.\\n\\nAt start of combat, if unit's HP \u2265 25%, grants\\nAtk/Spd/Def/Res+4 to unit during combat\\nand deals damage = 15% of unit's Atk\\n(excluding area-of-effect Specials), and also,\\nif the number of flying allies within 3 spaces\\nof unit \u2265 2, grants Special cooldown charge +1\\nto unit per attack during combat (only highest\\nvalue applied; does not stack)."
+	},
+	{
 		"key": "MSID_H_\u5e7b\u5f71\u30ed\u30f3\u30b0\u30dc\u30a6R",
 		"value": "Accelerates Special trigger (cooldown count-1).\\nAt start of combat, if unit's HP \u2265 25%, grants\\nAtk/Spd+5 to unit, neutralizes unit's penalties\\nto Atk/Spd, and neutralizes foe's bonuses\\nto Spd/Def (from skills like Fortify, Rally, etc.)\\nduring combat."
 	},
 	{
 		"key": "MSID_H_\u30de\u30af\u30d9\u30b9\u306e\u60d1\u66f8R",
 		"value": "$aAt start of odd-numbered turns, grants\\nDef/Res+6, \"foe cannot make a follow-up\\nattack,\" and \"neutralizes foe's bonuses during\\ncombat\" to unit and allies within 2 spaces of\\nunit for 1 turn. At start of even-numbered\\nturns, grants Atk/Spd+6, \"if unit initiates\\ncombat, unit makes a guaranteed follow-up\\nattack,\" and\u3010Hexblade\u3011to unit and allies within\\n2 spaces of unit for 1 turn. If foe initiates\\ncombat or if foe's HP \u2265 75% at start of\\ncombat, grants Atk/Spd/Def/Res+4 to unit\\nduring combat.\\n\\n\u3010Hexblade\u3011\\nCalculates damage using the lower of foe's\\nDef or Res during combat for 1 turn (including\\ndamage dealt by Specials before combat)."
+	},
+	{
+		"key": "MSID_H_\u30de\u30af\u30d9\u30b9\u306e\u60d1\u66f8R_NOSKW",
+		"value": "$aAt start of odd-numbered turns, grants\\nDef/Res+6, \"foe cannot make a follow-up\\nattack,\" and \"neutralizes foe's bonuses during\\ncombat\" to unit and allies within 2 spaces of\\nunit for 1 turn. At start of even-numbered\\nturns, grants Atk/Spd+6, \"if unit initiates\\ncombat, unit makes a guaranteed follow-up\\nattack,\" and\u3010Hexblade\u3011to unit and allies within\\n2 spaces of unit for 1 turn. If foe initiates\\ncombat or if foe's HP \u2265 75% at start of\\ncombat, grants Atk/Spd/Def/Res+4 to unit\\nduring combat."
 	},
 	{
 		"key": "MSID_H_\u61a7\u61ac\u306e\u5263",
@@ -904,6 +912,10 @@
 		"value": "$aGrants Res+3. At start of turn, inflicts\\nDef/Res-6,\u3010Panic\u3011, and\u3010Discord\u3011on foes\\nwithin 3 rows or 3 columns centered on unit\\nwith Res < unit's Res through their next actions.\\nAt start of combat, if unit's HP \u2265 25%, inflicts\\nAtk/Res-6 on foe during combat, unit makes\\na guaranteed follow-up attack, and unit deals\\n+X damage (X = total number of\u3010Penalty\u3011\\neffects active on foe and any foe within\\n2 spaces of foe, excluding stat penalties, \u00d7 4;\\nexcluding area-of-effect Specials).\\n\\n\u3010Panic\u3011\\nConverts bonuses on target into penalties\\nthrough its next action.\\n\\n\u3010Discord\u3011\\nInflicts Atk/Spd/Def/Res-X on unit during\\ncombat (X = 2 + number of allies within\\n2 spaces of unit; max 5) through its\\nnext action.\\n\\n\u3010Penalty\u3011\\nAll effects that last \"on foe through its next\\naction.\" Includes penalties inflicted by a skill\\nlike Panic or Threaten and negative status\\neffects (preventing counterattacks, restricting\\nmovement, or the effects of a skill like\\nTriangle Adept or Guard)."
 	},
 	{
+		"key": "MSID_H_\u7981\u66f8\u30ae\u30e0\u30ec\u30fc_NOSKW",
+		"value": "$aGrants Res+3. At start of turn, inflicts\\nDef/Res-6,\u3010Panic\u3011, and\u3010Discord\u3011on foes\\nwithin 3 rows or 3 columns centered on unit\\nwith Res < unit's Res through their next actions.\\nAt start of combat, if unit's HP \u2265 25%, inflicts\\nAtk/Res-6 on foe during combat, unit makes\\na guaranteed follow-up attack, and unit deals\\n+X damage (X = total number of\u3010Penalty\u3011\\neffects active on foe and any foe within\\n2 spaces of foe, excluding stat penalties, \u00d7 4;\\nexcluding area-of-effect Specials)."
+	},
+	{
 		"key": "MSID_H_\u30d2\u30fc\u30bf\u30c7\u30a3\u30a2",
 		"value": "If foe initiates combat or if foe's HP \u2265 75%\\nat start of combat, grants Atk+5 to unit, inflicts\\nAtk-5 on foe, and inflicts Special cooldown\\ncharge -1 on foe per attack during combat.\\n(Only highest value applied. Does not stack.)"
 	},
@@ -916,8 +928,16 @@
 		"value": "$aEnables\u3010Canto (\uff12)\u3011.\\n\\nAccelerates Special trigger (cooldown count-1).\\nAt start of combat, if unit's HP \u2265 25%, grants\\nAtk/Spd/Def/Res+5 to unit, grants Atk/Spd+X\\nto unit (X = 9, - 3 \u00d7 number of allies with\\nHP \u2264 40%; min 0), grants Special cooldown\\ncharge +1 to unit per attack (only highest\\nvalue applied; does not stack), and reduces\\ndamage from foe's first attack by 40% during\\ncombat (\"first attack\" normally means only the\\nfirst strike; for effects that grant \"unit attacks\\ntwice,\" it means the first and second strikes).\\nAt start of turn, if unit is adjacent to only beast\\nor dragon allies or is not adjacent to any ally,\\nunit transforms (otherwise, unit reverts). If unit\\ntransforms, grants Atk+2 to unit, inflicts\\nAtk/Def-Y on foe during combat (Y = number\\nof spaces from start position to end position\\nof whoever initiated combat, + 3; max 6),\\nand also, if Y \u2265 5, reduces damage from\\nfoe's first attack by 30% during combat.\\n\\n\u3010Canto (\uff12)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move \uff12 space(s).\\n\\n(Unit moves according to movement type. Once\\nper turn. Cannot attack or assist. Only highest\\nvalue applied. Does not stack. After moving,\\nif a skill that grants another action would be\\ntriggered (like with Galeforce), Canto will\\ntrigger after the granted action. Unit's base\\nmovement has no effect on movement granted.\\nCannot warp (using skills like Wings of Mercy)\\na distance greater than \uff12 space(s).)"
 	},
 	{
+		"key": "MSID_H_\u4e16\u754c\u6a39\u306e\u6817\u9f20\u306e\u5c3b\u5c3e_NOSKW",
+		"value": "$aEnables\u3010Canto (\uff12)\u3011.\\n\\nAccelerates Special trigger (cooldown count-1).\\nAt start of combat, if unit's HP \u2265 25%, grants\\nAtk/Spd/Def/Res+5 to unit, grants Atk/Spd+X\\nto unit (X = 9, - 3 \u00d7 number of allies with\\nHP \u2264 40%; min 0), grants Special cooldown\\ncharge +1 to unit per attack (only highest\\nvalue applied; does not stack), and reduces\\ndamage from foe's first attack by 40% during\\ncombat (\"first attack\" normally means only the\\nfirst strike; for effects that grant \"unit attacks\\ntwice,\" it means the first and second strikes).\\nAt start of turn, if unit is adjacent to only beast\\nor dragon allies or is not adjacent to any ally,\\nunit transforms (otherwise, unit reverts). If unit\\ntransforms, grants Atk+2 to unit, inflicts\\nAtk/Def-Y on foe during combat (Y = number\\nof spaces from start position to end position\\nof whoever initiated combat, + 3; max 6),\\nand also, if Y \u2265 5, reduces damage from\\nfoe's first attack by 30% during combat."
+	},
+	{
 		"key": "MSID_H_\u672a\u6765\u3092\u5909\u3048\u308b\u77b3",
 		"value": "$aUnit and target ally swap spaces. Grants\\nAtk/Spd+6,\u3010Treachery\u3011, and \"if unit\\ninitiates combat, reduces damage from foe's\\nfirst attack during combat by 40%\" to unit and\\ntarget ally for 1 turn. Grants another action to\\nunit. (Additional action granted once per\\nturn only.)\\n\\n\u3010Treachery\u3011\\nUnit deals additional damage = total bonuses\\non unit for 1 turn."
+	},
+	{
+		"key": "MSID_H_\u672a\u6765\u3092\u5909\u3048\u308b\u77b3_NOSKW",
+		"value": "$aUnit and target ally swap spaces. Grants\\nAtk/Spd+6,\u3010Treachery\u3011, and \"if unit\\ninitiates combat, reduces damage from foe's\\nfirst attack during combat by 40%\" to unit and\\ntarget ally for 1 turn. Grants another action to\\nunit. (Additional action granted once per\\nturn only.)"
 	},
 	{
 		"key": "MSID_H_\u7d76\u5bfe\u5316\u8eab\u30fb\u654f\u63774",
@@ -932,8 +952,16 @@
 		"value": "$aAfter unit acts (if Canto triggers, then after unit\\nacts and again after unit moves with Canto),\\napplies\u3010Divine Vein (Green)\u3011to unit's space and\\nspaces within 2 spaces of unit for 1 turn.\\nRestores 7 HP to allies within 2 spaces of\\nunit after their combat. If unit initiates\\ncombat or is within 2 spaces of an ally,\\ngrants Atk/Spd/Def/Res+4 to unit during\\ncombat, inflicts Special cooldown charge -1\\non foe per attack (only highest value applied;\\ndoes not stack), and restores 7 HP to unit\\nafter combat.\\n\\n\u3010Divine Vein (Green)\u3011\\nApplies the following effects on space for foes:\\nFoe cannot warp from this space or into this\\nspace (does not affect units with Pass skills or\\nwarp effects from structures like camps and\\nfortresses in Rival Domains). Inflicts Special\\ncooldown charge -1 on foe per attack (only\\nhighest value applied; does not stack). (Divine\\nVein effects do not stack; replaces any existing\\nDivine Vein effect; Divine Vein effects applied\\nsimultaneously cancel each other out.)"
 	},
 	{
+		"key": "MSID_H_\u7652\u3057\u624b\u306e\u5fc3_NOSKW",
+		"value": "$aAfter unit acts (if Canto triggers, then after unit\\nacts and again after unit moves with Canto),\\napplies\u3010Divine Vein (Green)\u3011to unit's space and\\nspaces within 2 spaces of unit for 1 turn.\\nRestores 7 HP to allies within 2 spaces of\\nunit after their combat. If unit initiates\\ncombat or is within 2 spaces of an ally,\\ngrants Atk/Spd/Def/Res+4 to unit during\\ncombat, inflicts Special cooldown charge -1\\non foe per attack (only highest value applied;\\ndoes not stack), and restores 7 HP to unit\\nafter combat."
+	},
+	{
 		"key": "MSID_H_\u5b88\u5099\u9b54\u9632\u306e\u596e\u90324",
 		"value": "$aAt start of turn, if number of allies adjacent to\\nunit \u2264 2, grants Def/Res+6 and\u3010Canto (\uff11)\u3011\\nto unit for 1 turn. If number of allies adjacent\\nto unit \u2264 1, grants Def/Res+3 to unit\\nduring combat.\\n\\n\u3010Canto (\uff11)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move \uff11 space(s).\\n\\n(Unit moves according to movement type. Once\\nper turn. Cannot attack or assist. Only highest\\nvalue applied. Does not stack. After moving,\\nif a skill that grants another action would be\\ntriggered (like with Galeforce), Canto will\\ntrigger after the granted action. Unit's base\\nmovement has no effect on movement granted.\\nCannot warp (using skills like Wings of Mercy)\\na distance greater than \uff11 space(s).)"
+	},
+	{
+		"key": "MSID_H_\u5b88\u5099\u9b54\u9632\u306e\u596e\u90324_NOSKW",
+		"value": "$aAt start of turn, if number of allies adjacent to\\nunit \u2264 2, grants Def/Res+6 and\u3010Canto (\uff11)\u3011\\nto unit for 1 turn. If number of allies adjacent\\nto unit \u2264 1, grants Def/Res+3 to unit\\nduring combat."
 	},
 	{
 		"key": "MSID_H_\u30d0\u30eb\u30e0\u30f3\u30af\u6539",
@@ -950,6 +978,10 @@
 	{
 		"key": "MSID_H_\u30de\u30af\u30d9\u30b9\u306e\u60d1\u66f8\u6539",
 		"value": "$aGrants Res+3. At start of odd-numbered turns,\\nif any foe's HP \u2264 unit's HP-1 and that foe is\\nnot adjacent to another foe, inflicts Atk/Spd-6\\nand\u3010Guard\u3011on that foe through its next\\naction. At start of even-numbered turns, if any\\nfoe's HP < unit's HP and that foe is\\nadjacent to another foe, inflicts Def/Res-6\\nand\u3010Panic\u3011on that foe through its next\\naction. At start of combat, if unit's HP \u2265 25%,\\ngrants Atk/Spd/Def/Res+4 to unit during\\ncombat.\\n\\n\u3010Guard\u3011\\nInflicts Special cooldown charge -1 on target\\nper attack during combat through its next action.\\n(Only highest value applied. Does not stack.)\\n\\n\u3010Panic\u3011\\nConverts bonuses on target into penalties\\nthrough its next action."
+	},
+	{
+		"key": "MSID_H_\u30de\u30af\u30d9\u30b9\u306e\u60d1\u66f8\u6539_NOSKW",
+		"value": "$aGrants Res+3. At start of odd-numbered turns,\\nif any foe's HP \u2264 unit's HP-1 and that foe is\\nnot adjacent to another foe, inflicts Atk/Spd-6\\nand\u3010Guard\u3011on that foe through its next\\naction. At start of even-numbered turns, if any\\nfoe's HP < unit's HP and that foe is\\nadjacent to another foe, inflicts Def/Res-6\\nand\u3010Panic\u3011on that foe through its next\\naction. At start of combat, if unit's HP \u2265 25%,\\ngrants Atk/Spd/Def/Res+4 to unit during\\ncombat."
 	},
 	{
 		"key": "MID_STAGE_SELECT_SCENARIO_MAIN_PART_8",

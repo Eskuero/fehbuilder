@@ -500,12 +500,20 @@
 		"value": "$aAt start of turn, inflicts Spd/Def-6\\nand\u3010Discord\u3011on closest foes within\\n5 spaces and any foe within 2 spaces\\nof those foes through their next actions.\\nAt start of combat, if unit's HP \u2265 25%,\\ngrants Atk/Spd+5 and Special cooldown\\ncharge +1 to unit per attack during combat\\n(only highest value applied; does not stack),\\nand after combat, if unit initiated combat\\nand attacked, deals 7 damage to target and\\nfoes within 2 spaces of target.\\n\\n\u3010Discord\u3011\\nInflicts Atk/Spd/Def/Res-X on unit during\\ncombat (X = 2 + number of allies within\\n2 spaces of unit; max 5) through its\\nnext action."
 	},
 	{
+		"key": "MSID_H_\u5f71\u8eab\u306e\u6697\u5668R_NOSKW",
+		"value": "$aAt start of turn, inflicts Spd/Def-6\\nand\u3010Discord\u3011on closest foes within\\n5 spaces and any foe within 2 spaces\\nof those foes through their next actions.\\nAt start of combat, if unit's HP \u2265 25%,\\ngrants Atk/Spd+5 and Special cooldown\\ncharge +1 to unit per attack during combat\\n(only highest value applied; does not stack),\\nand after combat, if unit initiated combat\\nand attacked, deals 7 damage to target and\\nfoes within 2 spaces of target."
+	},
+	{
 		"key": "MSID_H_\u696d\u708e\u30d5\u30a9\u30eb\u30d6\u30ec\u30a4\u30baR",
 		"value": "If unit initiates combat or is within 2 spaces of\\nan ally, grants Atk/Res+5 to unit during combat,\\nunit makes a guaranteed follow-up attack,\\ndeals damage = 15% of unit's Res (including\\nwhen dealing damage with a Special triggered\\nbefore combat), and reduces damage from\\nfoe's first attack during combat by 30%."
 	},
 	{
 		"key": "MSID_H_\u5e7b\u5f71\u30ed\u30c3\u30c9R",
 		"value": "$aAt start of turn, inflicts Atk/Res-6\\nand\u3010Sabotage\u3011on foes within 3 columns\\nor 3 rows centered on unit through their\\nnext actions. If foe initiates combat or if\\nfoe's HP \u2265 75% at start of combat, inflicts\\nAtk/Res-5 on foe during combat, deals\\ndamage = 15% of unit's Atk (excluding\\narea-of-effect Specials), and restores\\n7 HP to unit after combat.\\n\\n\u3010Sabotage\u3011\\nInflicts penalty on unit's Atk/Spd/Def/Res\\nduring combat = highest penalty on each\\nstat between unit and allies within 2 spaces\\nof unit through its next action. Calculates\\neach stat penalty independently."
+	},
+	{
+		"key": "MSID_H_\u5e7b\u5f71\u30ed\u30c3\u30c9R_NOSKW",
+		"value": "$aAt start of turn, inflicts Atk/Res-6\\nand\u3010Sabotage\u3011on foes within 3 columns\\nor 3 rows centered on unit through their\\nnext actions. If foe initiates combat or if\\nfoe's HP \u2265 75% at start of combat, inflicts\\nAtk/Res-5 on foe during combat, deals\\ndamage = 15% of unit's Atk (excluding\\narea-of-effect Specials), and restores\\n7 HP to unit after combat."
 	},
 	{
 		"key": "MSID_H_\u4e88\u5146\u306e\u98a8R",
@@ -524,16 +532,32 @@
 		"value": "$aBefore combat this unit initiates, foes\\nin an area near target take damage equal to\\n(unit's Atk - foe's Def or Res). After combat,\\nif unit's Special triggered, grants\u3010Canto (\uff11)\u3011\\nto unit and allies within 3 rows or 3 columns\\ncentered on unit for 1 turn (granted even\\nif unit's HP reaches 0).\\n\\n\u3010Canto (\uff11)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move \uff11 space(s).\\n\\n(Unit moves according to movement type. Once\\nper turn. Cannot attack or assist. Only highest\\nvalue applied. Does not stack. After moving,\\nif a skill that grants another action would be\\ntriggered (like with Galeforce), Canto will\\ntrigger after the granted action. Unit's base\\nmovement has no effect on movement granted.\\nCannot warp (using skills like Wings of Mercy)\\na distance greater than \uff11 space(s).)"
 	},
 	{
+		"key": "MSID_H_\u5929\u4e0e\u306e\u9b54\u9053\u30fb\u627f_NOSKW",
+		"value": "$aBefore combat this unit initiates, foes\\nin an area near target take damage equal to\\n(unit's Atk - foe's Def or Res). After combat,\\nif unit's Special triggered, grants\u3010Canto (\uff11)\u3011\\nto unit and allies within 3 rows or 3 columns\\ncentered on unit for 1 turn (granted even\\nif unit's HP reaches 0)."
+	},
+	{
 		"key": "MSID_H_\u738b\u8005\u306e\u5203",
 		"value": "$aGrants Spd+3. At start of turn, if unit is within\\n2 spaces of an ally, grants Atk/Spd+6 and the\\nfollowing status to unit and allies within 2\\nspaces for 1 turn: \"neutralizes penalties on\\nunit during combat.\" If unit initiates combat,\\nunit attacks twice. If unit initiates combat or\\nif unit is within 2 spaces of an ally, grants\\nAtk/Spd/Def/Res+5 to unit and grants Special\\ncooldown charge +1 to unit per attack during\\ncombat (only highest value applied; does\\nnot stack).\\n\\nEffect:\u3010Dagger \uff17\u3011\\n\\n\u3010Dagger \uff17\u3011\\nAfter combat, if unit attacked, inflicts\\nDef/Res-\uff17 on target and foes within\\n2 spaces of target through their next actions."
+	},
+	{
+		"key": "MSID_H_\u738b\u8005\u306e\u5203_NOSKW",
+		"value": "$aGrants Spd+3. At start of turn, if unit is within\\n2 spaces of an ally, grants Atk/Spd+6 and the\\nfollowing status to unit and allies within 2\\nspaces for 1 turn: \"neutralizes penalties on\\nunit during combat.\" If unit initiates combat,\\nunit attacks twice. If unit initiates combat or\\nif unit is within 2 spaces of an ally, grants\\nAtk/Spd/Def/Res+5 to unit and grants Special\\ncooldown charge +1 to unit per attack during\\ncombat (only highest value applied; does\\nnot stack).\\n\\nEffect:\u3010Dagger \uff17\u3011"
 	},
 	{
 		"key": "MSID_H_\u653b\u9632\u306e\u6697\u5668",
 		"value": "$aAt start of combat, if unit's HP \u2265 25%, grants\\nAtk/Spd+5 during combat and reduces damage\\nfrom foe's first attack during combat by 30%.\\n\\nEffect:\u3010Dagger \uff15\u3011\\n\\n\u3010Dagger \uff15\u3011\\nAfter combat, if unit attacked, inflicts\\nDef/Res-\uff15 on target and foes within\\n2 spaces of target through their next actions."
 	},
 	{
+		"key": "MSID_H_\u653b\u9632\u306e\u6697\u5668_NOSKW",
+		"value": "$aAt start of combat, if unit's HP \u2265 25%, grants\\nAtk/Spd+5 during combat and reduces damage\\nfrom foe's first attack during combat by 30%.\\n\\nEffect:\u3010Dagger \uff15\u3011"
+	},
+	{
 		"key": "MSID_H_\u653b\u9632\u306e\u6697\u5668\uff0b",
 		"value": "$aAt start of combat, if unit's HP \u2265 25%, grants\\nAtk/Spd+5 during combat and reduces damage\\nfrom foe's first attack during combat by 30%.\\n\\nEffect:\u3010Dagger \uff17\u3011\\n\\n\u3010Dagger \uff17\u3011\\nAfter combat, if unit attacked, inflicts\\nDef/Res-\uff17 on target and foes within\\n2 spaces of target through their next actions."
+	},
+	{
+		"key": "MSID_H_\u653b\u9632\u306e\u6697\u5668\uff0b_NOSKW",
+		"value": "$aAt start of combat, if unit's HP \u2265 25%, grants\\nAtk/Spd+5 during combat and reduces damage\\nfrom foe's first attack during combat by 30%.\\n\\nEffect:\u3010Dagger \uff17\u3011"
 	},
 	{
 		"key": "MSID_H_\u9b54\u5668\u30fb\u96f7\u516c\u306e\u66f8",
@@ -544,12 +568,24 @@
 		"value": "$aFoe cannot counterattack. Accelerates Special\\ntrigger (cooldown count-1; max cooldown count\\nvalue cannot be reduced below 1). At start of\\nturn, grants the\u3010Bonus\u3011effects active\\non the foe with the most\u3010Bonus\u3011effects\\nactive (excluding stat bonuses) to unit and\\nallies within 2 spaces for 1 turn, and\\nneutralizes\u3010Bonus\u3011effects active on\\nthat foe (excluding bonuses granted at the start\\nof the same turn). Inflicts Atk/Spd/Def/Res-4 on\\nfoes within 3 columns or 3 rows centered\\non unit during combat. At start of combat,\\nif unit's HP \u2265 25%, grants Atk/Spd+6 to unit\\nduring combat, and deals damage = number\\nof\u3010Bonus\u3011effects active on unit,\\nexcluding stat bonuses, \u00d7 5 (max 20;\\nexcluding area-of-effect Specials).\\n\\n\u3010Bonus\u3011\\nAll effects that last \"for 1 turn\" or \"that turn\\nonly.\" Includes bonuses granted by a skill\\nlike Rally or Hone and positive status effects\\n(extra movement or effects like Dominance)."
 	},
 	{
+		"key": "MSID_H_\u30b7\u30fc\u30d5_NOSKW",
+		"value": "$aFoe cannot counterattack. Accelerates Special\\ntrigger (cooldown count-1; max cooldown count\\nvalue cannot be reduced below 1). At start of\\nturn, grants the\u3010Bonus\u3011effects active\\non the foe with the most\u3010Bonus\u3011effects\\nactive (excluding stat bonuses) to unit and\\nallies within 2 spaces for 1 turn, and\\nneutralizes\u3010Bonus\u3011effects active on\\nthat foe (excluding bonuses granted at the start\\nof the same turn). Inflicts Atk/Spd/Def/Res-4 on\\nfoes within 3 columns or 3 rows centered\\non unit during combat. At start of combat,\\nif unit's HP \u2265 25%, grants Atk/Spd+6 to unit\\nduring combat, and deals damage = number\\nof\u3010Bonus\u3011effects active on unit,\\nexcluding stat bonuses, \u00d7 5 (max 20;\\nexcluding area-of-effect Specials)."
+	},
+	{
 		"key": "MSID_H_\u30ea\u30da\u30a2",
 		"value": "$aCalculates damage from staff like other weapons.\\nAccelerates Special trigger (cooldown count-1;\\nmax cooldown count value cannot be reduced\\nbelow 1). At start of turn, neutralizes\\nany\u3010Penalty\u3011on unit and allies\\nwithin 2 spaces of unit (excluding penalties\\ninflicted at start of turn) and restores 20 HP\\nto those units. Grants Atk/Spd/Def/Res+4 to\\nallies within 2 spaces during combat. At start\\nof combat, if unit's HP \u2265 25%, grants\\nAtk/Spd/Def/Res+5 to unit during combat\\nand unit makes a guaranteed follow-up attack.\\n\\n\u3010Penalty\u3011\\nAll effects that last \"on foe through its next\\naction.\" Includes penalties inflicted by a skill\\nlike Panic or Threaten and negative status\\neffects (preventing counterattacks, restricting\\nmovement, or the effects of a skill like\\nTriangle Adept or Guard)."
 	},
 	{
+		"key": "MSID_H_\u30ea\u30da\u30a2_NOSKW",
+		"value": "$aCalculates damage from staff like other weapons.\\nAccelerates Special trigger (cooldown count-1;\\nmax cooldown count value cannot be reduced\\nbelow 1). At start of turn, neutralizes\\nany\u3010Penalty\u3011on unit and allies\\nwithin 2 spaces of unit (excluding penalties\\ninflicted at start of turn) and restores 20 HP\\nto those units. Grants Atk/Spd/Def/Res+4 to\\nallies within 2 spaces during combat. At start\\nof combat, if unit's HP \u2265 25%, grants\\nAtk/Spd/Def/Res+5 to unit during combat\\nand unit makes a guaranteed follow-up attack."
+	},
+	{
 		"key": "MSID_H_\u5203\u306e\u846c\u308a\u624b\u306e\u722a",
 		"value": "$aAccelerates Special trigger (cooldown count-1).\\nAt start of turn, if unit's HP \u2265 25%, inflicts\\nSpd/Def-7,\u3010Exposure\u3011, and a penalty that\\nneutralizes non-Special \"if foe would reduce\\nunit's HP to 0, unit survives with 1 HP\" effects\\non nearest foe and foes within 2 spaces of\\nthem through their next actions. At start\\nof combat, if unit's HP \u2265 25%, grants\\nAtk/Spd/Def/Res+5 to unit and inflicts\\nAtk/Spd/Def-X on foe (X = number of foes\\nwithin 2 spaces of target with Bonuses or\\nPenalties active on them, excluding target, \u00d7 3,\\n+ 4; max 10), deals Y damage (Y = total number\\nof Bonuses and Penalties active on foe and any\\nfoe within 2 spaces of foe, excluding stat\\nbonuses and stat penalties, \u00d7 3; excluding when\\ndealing damage with an area-of-effect Special),\\nreduces damage from attacks by 40%, and\\nreduces the percentage of foe's non-Special\\n\"reduce damage by X%\" skills by 50% during\\ncombat. At start of turn, if unit is adjacent to\\nonly beast or dragon allies or if unit is not\\nadjacent to any ally, unit transforms (otherwise,\\nunit reverts). If unit transforms, unit can move\\n1 extra space (that turn only; does not stack)\\nand grants Atk+2 to unit.\\n\\n\u3010Exposure\u3011\\nFoe's attacks deal +10 damage."
+	},
+	{
+		"key": "MSID_H_\u5203\u306e\u846c\u308a\u624b\u306e\u722a_NOSKW",
+		"value": "$aAccelerates Special trigger (cooldown count-1).\\nAt start of turn, if unit's HP \u2265 25%, inflicts\\nSpd/Def-7,\u3010Exposure\u3011, and a penalty that\\nneutralizes non-Special \"if foe would reduce\\nunit's HP to 0, unit survives with 1 HP\" effects\\non nearest foe and foes within 2 spaces of\\nthem through their next actions. At start\\nof combat, if unit's HP \u2265 25%, grants\\nAtk/Spd/Def/Res+5 to unit and inflicts\\nAtk/Spd/Def-X on foe (X = number of foes\\nwithin 2 spaces of target with Bonuses or\\nPenalties active on them, excluding target, \u00d7 3,\\n+ 4; max 10), deals Y damage (Y = total number\\nof Bonuses and Penalties active on foe and any\\nfoe within 2 spaces of foe, excluding stat\\nbonuses and stat penalties, \u00d7 3; excluding when\\ndealing damage with an area-of-effect Special),\\nreduces damage from attacks by 40%, and\\nreduces the percentage of foe's non-Special\\n\"reduce damage by X%\" skills by 50% during\\ncombat. At start of turn, if unit is adjacent to\\nonly beast or dragon allies or if unit is not\\nadjacent to any ally, unit transforms (otherwise,\\nunit reverts). If unit transforms, unit can move\\n1 extra space (that turn only; does not stack)\\nand grants Atk+2 to unit."
 	},
 	{
 		"key": "MSID_H_\u96f7\u795e\u306e\u53f3\u8155",
@@ -564,8 +600,16 @@
 		"value": "$aEnables\u3010Canto (Rem.; Min \uff11)\u3011.\\nInflicts Spd/Res-4 on foe during combat\\nand unit deals +7 damage including when\\ndealing damage with a Special triggered\\nbefore combat.\\n\\n\u3010Canto (Rem.; Min \uff11)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move spaces = any\\nmovement not already used that turn (min \uff11;\\nif unit used a movement skill that warped\\nthem, its remaining movement is \uff11).\\n\\n(Unit moves according to movement type. Once\\nper turn. Cannot attack or assist. Only highest\\nvalue applied. Does not stack. After moving,\\nif a skill that grants another action would be\\ntriggered (like with Galeforce), Canto will\\ntrigger after the granted action. Unit's base\\nmovement has no effect on movement granted.\\nCannot warp (using skills like Wings of Mercy)\\na distance greater than unit's remaining\\nmovement.)"
 	},
 	{
+		"key": "MSID_H_\u901f\u3055\u9b54\u9632\u306e\u9060\u5f714_NOSKW",
+		"value": "$aEnables\u3010Canto (Rem.; Min \uff11)\u3011.\\nInflicts Spd/Res-4 on foe during combat\\nand unit deals +7 damage including when\\ndealing damage with a Special triggered\\nbefore combat."
+	},
+	{
 		"key": "MSID_H_\u653b\u6483\u901f\u3055\u306e\u8b00\u7b563",
 		"value": "$aAt start of player phase or enemy phase, if\\nany foes within 3 rows or 3 columns centered\\non unit have Res < unit's Res+5, inflicts\\nAtk/Spd-7,\u3010Ploy\u3011, and\u3010Exposure\u3011\\non those foes through their next actions.\\n\\n\u3010Ploy\u3011\\nNeutralizes\u3010Bonus Doubler\u3011,\u3010Treachery\u3011,\\nand\u3010Grand Strategy\u3011effects active on unit\\nduring combat through unit's next action.\\n\\n\u3010Exposure\u3011\\nFoe's attacks deal +10 damage.\\n\\n\u3010Bonus Doubler\u3011\\nGrants bonus to Atk/Spd/Def/Res during\\ncombat = current bonus on each of unit's stats\\nfor 1 turn. Calculates each stat bonus\\nindependently.\\n\\n\u3010Treachery\u3011\\nUnit deals additional damage = total bonuses\\non unit for 1 turn.\\n\\n\u3010Grand Strategy\u3011\\nGrants bonus to Atk/Spd/Def/Res during\\ncombat = current penalty on each of unit's\\nstats \u00d7 2 for 1 turn. (Example: if unit has -7\\npenalty to Atk, grants Atk+14, for a net bonus\\nof Atk+7.) Calculates each stat bonus\\nindependently.\\n\\nUnit's negative effects that last \"through\\nunit's next action\" will remain in effect until\\nthis status (Grand Strategy) is neutralized."
+	},
+	{
+		"key": "MSID_H_\u653b\u6483\u901f\u3055\u306e\u8b00\u7b563_NOSKW",
+		"value": "$aAt start of player phase or enemy phase, if\\nany foes within 3 rows or 3 columns centered\\non unit have Res < unit's Res+5, inflicts\\nAtk/Spd-7,\u3010Ploy\u3011, and\u3010Exposure\u3011\\non those foes through their next actions."
 	},
 	{
 		"key": "MSID_H_\u8d64\u3044\u7adc\u9a0e\u58eb\u306e\u65a7\u6539",
@@ -574,6 +618,10 @@
 	{
 		"key": "MSID_H_\u5f71\u8eab\u306e\u6697\u5668\u6539",
 		"value": "$aGrants Spd+3. If unit initiates combat or is\\nwithin 2 spaces of an ally, grants Atk/Spd+5 to\\nunit during combat and deals damage = 10% of\\nunit's Spd (excluding area-of-effect Specials),\\nand also, if unit's Spd > foe's Spd or unit is\\nwithin 2 spaces of unit's support partner\\n(if any), foe cannot counterattack. If unit\\ninitiates combat and unit is within 2 spaces\\nof support partner, unit and support partner\\nswap spaces after combat (if unit is within\\n2 spaces of more than one support partner,\\nswap does not occur).\\n\\nEffect:\u3010Dagger \uff17\u3011\\n\\n\u3010Dagger \uff17\u3011\\nAfter combat, if unit attacked, inflicts\\nDef/Res-\uff17 on target and foes within\\n2 spaces of target through their next actions."
+	},
+	{
+		"key": "MSID_H_\u5f71\u8eab\u306e\u6697\u5668\u6539_NOSKW",
+		"value": "$aGrants Spd+3. If unit initiates combat or is\\nwithin 2 spaces of an ally, grants Atk/Spd+5 to\\nunit during combat and deals damage = 10% of\\nunit's Spd (excluding area-of-effect Specials),\\nand also, if unit's Spd > foe's Spd or unit is\\nwithin 2 spaces of unit's support partner\\n(if any), foe cannot counterattack. If unit\\ninitiates combat and unit is within 2 spaces\\nof support partner, unit and support partner\\nswap spaces after combat (if unit is within\\n2 spaces of more than one support partner,\\nswap does not occur).\\n\\nEffect:\u3010Dagger \uff17\u3011"
 	},
 	{
 		"key": "MSID_H_\u696d\u708e\u30d5\u30a9\u30eb\u30d6\u30ec\u30a4\u30ba\u6539",
@@ -586,6 +634,10 @@
 	{
 		"key": "MSID_H_\u4e88\u5146\u306e\u98a8\u6539",
 		"value": "$aAccelerates Special trigger (cooldown count-1).\\nEffective against flying foes. If\u3010Bonus\u3011\\nis active on unit or if unit's HP \u2265 50% at start of\\ncombat, grants Atk/Spd+5 to unit during\\ncombat, neutralizes effects that guarantee foe's\\nfollow-up attacks and effects that prevent unit's\\nfollow-up attacks during combat, and deals\\ndamage = 15% of unit's Spd (excluding\\narea-of-effect Specials).\\n\\n\u3010Bonus\u3011\\nAll effects that last \"for 1 turn\" or \"that turn\\nonly.\" Includes bonuses granted by a skill\\nlike Rally or Hone and positive status effects\\n(extra movement or effects like Dominance)."
+	},
+	{
+		"key": "MSID_H_\u4e88\u5146\u306e\u98a8\u6539_NOSKW",
+		"value": "$aAccelerates Special trigger (cooldown count-1).\\nEffective against flying foes. If\u3010Bonus\u3011\\nis active on unit or if unit's HP \u2265 50% at start of\\ncombat, grants Atk/Spd+5 to unit during\\ncombat, neutralizes effects that guarantee foe's\\nfollow-up attacks and effects that prevent unit's\\nfollow-up attacks during combat, and deals\\ndamage = 15% of unit's Spd (excluding\\narea-of-effect Specials)."
 	},
 	{
 		"key": "MSID_H_\u795e\u7956\u7adc\u306e\u30d6\u30ec\u30b9\u6539",

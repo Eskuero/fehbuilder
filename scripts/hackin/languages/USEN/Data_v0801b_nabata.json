@@ -588,12 +588,24 @@
 		"value": "$aAccelerates Special trigger (cooldown count-1).\\nAt start of turn, if unit is within 2 spaces of an\\nally, grants Spd/Res+6,\u3010Bonus Doubler\u3011,\\nand\u3010Null Panic\u3011to unit and allies\\nwithin 2 spaces of unit for 1 turn. If unit\\ninitiates combat or is within 2 spaces of\\nan ally, grants Atk/Spd/Def/Res+5 to unit,\\nneutralizes effects that guarantee foe's\\nfollow-up attacks and effects that prevent\\nunit's follow-up attacks, and deals damage\\n= 20% of unit's Spd during combat (excluding\\narea-of-effect Specials).\\n\\n\u3010Bonus Doubler\u3011\\nGrants bonus to Atk/Spd/Def/Res during\\ncombat = current bonus on each of unit's stats\\nfor 1 turn. Calculates each stat bonus\\nindependently.\\n\\n\u3010Null Panic\u3011\\nIf unit is inflicted with Panic (bonuses converted\\ninto penalties), neutralizes the \"converts\\nbonuses on target into penalties\" effect for\\n1 turn. (Even though the effect is neutralized,\\nthe Panic status remains, and is treated as a\\nPenalty status.)"
 	},
 	{
+		"key": "MSID_H_\u7802\u6f20\u306e\u5929\u99ac\u9a0e\u58eb\u306e\u5263_NOSKW",
+		"value": "$aAccelerates Special trigger (cooldown count-1).\\nAt start of turn, if unit is within 2 spaces of an\\nally, grants Spd/Res+6,\u3010Bonus Doubler\u3011,\\nand\u3010Null Panic\u3011to unit and allies\\nwithin 2 spaces of unit for 1 turn. If unit\\ninitiates combat or is within 2 spaces of\\nan ally, grants Atk/Spd/Def/Res+5 to unit,\\nneutralizes effects that guarantee foe's\\nfollow-up attacks and effects that prevent\\nunit's follow-up attacks, and deals damage\\n= 20% of unit's Spd during combat (excluding\\narea-of-effect Specials)."
+	},
+	{
 		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd",
 		"value": "$aAt start of turn, if unit is within 2 spaces of an\\nally, grants \"unit cannot be slowed by terrain\\n(does not apply to impassable terrain)\" and\\n\u3010Hexblade\u3011to unit for 1 turn. If unit initiates\\ncombat or is within 2 spaces of an ally, grants\\nAtk/Spd/Def/Res+4 to unit during combat and\\ndeals damage = 10% of unit's Atk (excluding\\narea-of-effect Specials).\\n\\n\u3010Hexblade\u3011\\nCalculates damage using the lower of foe's\\nDef or Res during combat for 1 turn (including\\ndamage dealt by Specials before combat)."
 	},
 	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd_NOSKW",
+		"value": "$aAt start of turn, if unit is within 2 spaces of an\\nally, grants \"unit cannot be slowed by terrain\\n(does not apply to impassable terrain)\" and\\n\u3010Hexblade\u3011to unit for 1 turn. If unit initiates\\ncombat or is within 2 spaces of an ally, grants\\nAtk/Spd/Def/Res+4 to unit during combat and\\ndeals damage = 10% of unit's Atk (excluding\\narea-of-effect Specials)."
+	},
+	{
 		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd\uff0b",
 		"value": "$aAt start of turn, if unit is within 2 spaces of an\\nally, grants \"unit cannot be slowed by terrain\\n(does not apply to impassable terrain)\" and\\n\u3010Hexblade\u3011to unit for 1 turn. If unit initiates\\ncombat or is within 2 spaces of an ally, grants\\nAtk/Spd/Def/Res+4 to unit during combat and\\ndeals damage = 10% of unit's Atk (excluding\\narea-of-effect Specials).\\n\\n\u3010Hexblade\u3011\\nCalculates damage using the lower of foe's\\nDef or Res during combat for 1 turn (including\\ndamage dealt by Specials before combat)."
+	},
+	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd\uff0b_NOSKW",
+		"value": "$aAt start of turn, if unit is within 2 spaces of an\\nally, grants \"unit cannot be slowed by terrain\\n(does not apply to impassable terrain)\" and\\n\u3010Hexblade\u3011to unit for 1 turn. If unit initiates\\ncombat or is within 2 spaces of an ally, grants\\nAtk/Spd/Def/Res+4 to unit during combat and\\ndeals damage = 10% of unit's Atk (excluding\\narea-of-effect Specials)."
 	},
 	{
 		"key": "MSID_H_\u6c38\u9060\u306e\u7406\u60f3\u90f7\u306e\u53cc\u65a7",
@@ -608,8 +620,16 @@
 		"value": "$aAt start of turn, if unit is within 2 spaces of an\\nally, grants \"unit cannot be slowed by terrain\\n(does not apply to impassable terrain)\" and\\n\u3010Desperation\u3011to unit for 1 turn. If unit initiates\\ncombat or is within 2 spaces of an ally, grants\\nAtk/Spd/Def/Res+4 to unit during combat and\\ndeals damage = 10% of unit's Atk (excluding\\narea-of-effect Specials).\\n\\n\u3010Desperation\u3011\\nGrants the following effect for 1 turn: \"If unit\\ninitiates combat, unit can make a follow-up\\nattack before foe can counterattack.\""
 	},
 	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u71ed\u53f0_NOSKW",
+		"value": "$aAt start of turn, if unit is within 2 spaces of an\\nally, grants \"unit cannot be slowed by terrain\\n(does not apply to impassable terrain)\" and\\n\u3010Desperation\u3011to unit for 1 turn. If unit initiates\\ncombat or is within 2 spaces of an ally, grants\\nAtk/Spd/Def/Res+4 to unit during combat and\\ndeals damage = 10% of unit's Atk (excluding\\narea-of-effect Specials)."
+	},
+	{
 		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u71ed\u53f0\uff0b",
 		"value": "$aAt start of turn, if unit is within 2 spaces of an\\nally, grants \"unit cannot be slowed by terrain\\n(does not apply to impassable terrain)\" and\\n\u3010Desperation\u3011to unit for 1 turn. If unit initiates\\ncombat or is within 2 spaces of an ally, grants\\nAtk/Spd/Def/Res+4 to unit during combat and\\ndeals damage = 10% of unit's Atk (excluding\\narea-of-effect Specials).\\n\\n\u3010Desperation\u3011\\nGrants the following effect for 1 turn: \"If unit\\ninitiates combat, unit can make a follow-up\\nattack before foe can counterattack.\""
+	},
+	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u71ed\u53f0\uff0b_NOSKW",
+		"value": "$aAt start of turn, if unit is within 2 spaces of an\\nally, grants \"unit cannot be slowed by terrain\\n(does not apply to impassable terrain)\" and\\n\u3010Desperation\u3011to unit for 1 turn. If unit initiates\\ncombat or is within 2 spaces of an ally, grants\\nAtk/Spd/Def/Res+4 to unit during combat and\\ndeals damage = 10% of unit's Atk (excluding\\narea-of-effect Specials)."
 	},
 	{
 		"key": "MSID_H_\u4e09\u96c4\u306e\u53cc\u5203",
@@ -630,6 +650,10 @@
 	{
 		"key": "MSID_H_\u53cc\u754c\u30a4\u30b0\u30ec\u30fc\u30cc",
 		"value": "$aGrants\u3010Resonance: Blades\u3011,\u3010Treachery\u3011,\\nand\u3010Desperation\u3011to unit and allies from the\\nsame titles as unit.\\n\\n\u3010Resonance: Blades\u3011\\nGrants Atk/Spd+4 during combat for 1 turn.\\n\\n\u3010Treachery\u3011\\nUnit deals additional damage = total bonuses\\non unit for 1 turn.\\n\\n\u3010Desperation\u3011\\nGrants the following effect for 1 turn: \"If unit\\ninitiates combat, unit can make a follow-up\\nattack before foe can counterattack.\""
+	},
+	{
+		"key": "MSID_H_\u53cc\u754c\u30a4\u30b0\u30ec\u30fc\u30cc_NOSKW",
+		"value": "$aGrants\u3010Resonance: Blades\u3011,\u3010Treachery\u3011,\\nand\u3010Desperation\u3011to unit and allies from the\\nsame titles as unit."
 	},
 	{
 		"key": "MID_CHAPTER_TITLE_CX093",

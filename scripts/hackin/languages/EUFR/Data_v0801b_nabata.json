@@ -588,12 +588,24 @@
 		"value": "$aAcc\u00e9l\u00e8re l'activation des aptitudes sp\u00e9ciales\\n(compteur -1). En d\u00e9but de tour, si l'unit\u00e9 se\\ntrouve \u00e0 2 cases ou moins d'un alli\u00e9, conf\u00e8re\\nVit/R\u00e9s +6,\u3010Amplification\u3011et\u3010Anti-panique\u3011\\n\u00e0 l'unit\u00e9 et aux alli\u00e9s \u00e0 2 cases ou moins de l'unit\u00e9\\npendant un tour. Si l'unit\u00e9 initie le combat ou\\nse trouve \u00e0 2 cases ou moins d'un alli\u00e9, conf\u00e8re\\nAtq/Vit/D\u00e9f/R\u00e9s +5 \u00e0 l'unit\u00e9, neutralise les effets\\nqui garantissent \u00e0 l'ennemi de r\u00e9aliser des\\ndoubles frappes ou emp\u00eachent l'unit\u00e9 d'en\\nr\u00e9aliser, et inflige des d\u00e9g\u00e2ts suppl\u00e9mentaires\\n\u00e0 hauteur de 20\u00a0% de la Vit de l'unit\u00e9 pendant\\nle combat (aptitudes sp\u00e9ciales \u00e0 effet de zone\\nexclues).\\n\\n\u3010Amplification\u3011\\nPour chaque caract\u00e9ristique (Atq/Vit/D\u00e9f/R\u00e9s),\\nconf\u00e8re un boost \u00e9gal au boost actuel de l'unit\u00e9\\npendant le combat, pendant un tour.\\n\\n\u3010Anti-panique\u3011\\nSi l'unit\u00e9 est affect\u00e9e par Panique (bonus\\nconvertis en malus), neutralise l'effet \u00ab les\\nbonus de la cible se transforment en malus \u00bb\\npendant un tour. (M\u00eame si l'effet est neutralis\u00e9,\\nl'\u00e9tat inflig\u00e9 par Panique est conserv\u00e9, et est\\nconsid\u00e9r\u00e9 comme un \u00e9tat inflig\u00e9 par Malus)."
 	},
 	{
+		"key": "MSID_H_\u7802\u6f20\u306e\u5929\u99ac\u9a0e\u58eb\u306e\u5263_NOSKW",
+		"value": "$aAcc\u00e9l\u00e8re l'activation des aptitudes sp\u00e9ciales\\n(compteur -1). En d\u00e9but de tour, si l'unit\u00e9 se\\ntrouve \u00e0 2 cases ou moins d'un alli\u00e9, conf\u00e8re\\nVit/R\u00e9s +6,\u3010Amplification\u3011et\u3010Anti-panique\u3011\\n\u00e0 l'unit\u00e9 et aux alli\u00e9s \u00e0 2 cases ou moins de l'unit\u00e9\\npendant un tour. Si l'unit\u00e9 initie le combat ou\\nse trouve \u00e0 2 cases ou moins d'un alli\u00e9, conf\u00e8re\\nAtq/Vit/D\u00e9f/R\u00e9s +5 \u00e0 l'unit\u00e9, neutralise les effets\\nqui garantissent \u00e0 l'ennemi de r\u00e9aliser des\\ndoubles frappes ou emp\u00eachent l'unit\u00e9 d'en\\nr\u00e9aliser, et inflige des d\u00e9g\u00e2ts suppl\u00e9mentaires\\n\u00e0 hauteur de 20\u00a0% de la Vit de l'unit\u00e9 pendant\\nle combat (aptitudes sp\u00e9ciales \u00e0 effet de zone\\nexclues)."
+	},
+	{
 		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd",
 		"value": "$aEn d\u00e9but de tour, si l'unit\u00e9 se trouve \u00e0 2 cases\\nou moins d'un alli\u00e9, conf\u00e8re\u3010Lame maudite\u3011et\\nl'effet suivant \u00e0 l'unit\u00e9 pendant un tour\u00a0: \u00ab\u00a0l'unit\u00e9\\nn'est pas ralentie par les effets de terrain (sur une\\ncase terrain valide)\u00a0\u00bb. Si l'unit\u00e9 initie le combat\\nou se trouve \u00e0 2 cases ou moins d'un alli\u00e9,\\nconf\u00e8re Atq/Vit/D\u00e9f/R\u00e9s +4 \u00e0 l'unit\u00e9 pendant\\nle combat et inflige des d\u00e9g\u00e2ts suppl\u00e9mentaires\\n\u00e0 hauteur de 10\u00a0% de l'Atq de l'unit\u00e9 (aptitudes\\nsp\u00e9ciales \u00e0 effet de zone exclues).\\n\\n\u3010Lame maudite\u3011\\nLes d\u00e9g\u00e2ts sont calcul\u00e9s avec la D\u00e9f ou la R\u00e9s\\nde l'ennemi (la valeur la plus faible) pendant un\\ntour en combat (cet effet s'applique \u00e9galement\\npour les d\u00e9g\u00e2ts inflig\u00e9s par les aptitudes\\nsp\u00e9ciales d\u00e9clench\u00e9es avant le combat)"
 	},
 	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd_NOSKW",
+		"value": "$aEn d\u00e9but de tour, si l'unit\u00e9 se trouve \u00e0 2 cases\\nou moins d'un alli\u00e9, conf\u00e8re\u3010Lame maudite\u3011et\\nl'effet suivant \u00e0 l'unit\u00e9 pendant un tour\u00a0: \u00ab\u00a0l'unit\u00e9\\nn'est pas ralentie par les effets de terrain (sur une\\ncase terrain valide)\u00a0\u00bb. Si l'unit\u00e9 initie le combat\\nou se trouve \u00e0 2 cases ou moins d'un alli\u00e9,\\nconf\u00e8re Atq/Vit/D\u00e9f/R\u00e9s +4 \u00e0 l'unit\u00e9 pendant\\nle combat et inflige des d\u00e9g\u00e2ts suppl\u00e9mentaires\\n\u00e0 hauteur de 10\u00a0% de l'Atq de l'unit\u00e9 (aptitudes\\nsp\u00e9ciales \u00e0 effet de zone exclues)."
+	},
+	{
 		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd\uff0b",
 		"value": "$aEn d\u00e9but de tour, si l'unit\u00e9 se trouve \u00e0 2 cases\\nou moins d'un alli\u00e9, conf\u00e8re\u3010Lame maudite\u3011et\\nl'effet suivant \u00e0 l'unit\u00e9 pendant un tour\u00a0: \u00ab\u00a0l'unit\u00e9\\nn'est pas ralentie par les effets de terrain (sur une\\ncase terrain valide)\u00a0\u00bb. Si l'unit\u00e9 initie le combat\\nou se trouve \u00e0 2 cases ou moins d'un alli\u00e9,\\nconf\u00e8re Atq/Vit/D\u00e9f/R\u00e9s +4 \u00e0 l'unit\u00e9 pendant\\nle combat et inflige des d\u00e9g\u00e2ts suppl\u00e9mentaires\\n\u00e0 hauteur de 10\u00a0% de l'Atq de l'unit\u00e9 (aptitudes\\nsp\u00e9ciales \u00e0 effet de zone exclues).\\n\\n\u3010Lame maudite\u3011\\nLes d\u00e9g\u00e2ts sont calcul\u00e9s avec la D\u00e9f ou la R\u00e9s\\nde l'ennemi (la valeur la plus faible) pendant un\\ntour en combat (cet effet s'applique \u00e9galement\\npour les d\u00e9g\u00e2ts inflig\u00e9s par les aptitudes\\nsp\u00e9ciales d\u00e9clench\u00e9es avant le combat)"
+	},
+	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd\uff0b_NOSKW",
+		"value": "$aEn d\u00e9but de tour, si l'unit\u00e9 se trouve \u00e0 2 cases\\nou moins d'un alli\u00e9, conf\u00e8re\u3010Lame maudite\u3011et\\nl'effet suivant \u00e0 l'unit\u00e9 pendant un tour\u00a0: \u00ab\u00a0l'unit\u00e9\\nn'est pas ralentie par les effets de terrain (sur une\\ncase terrain valide)\u00a0\u00bb. Si l'unit\u00e9 initie le combat\\nou se trouve \u00e0 2 cases ou moins d'un alli\u00e9,\\nconf\u00e8re Atq/Vit/D\u00e9f/R\u00e9s +4 \u00e0 l'unit\u00e9 pendant\\nle combat et inflige des d\u00e9g\u00e2ts suppl\u00e9mentaires\\n\u00e0 hauteur de 10\u00a0% de l'Atq de l'unit\u00e9 (aptitudes\\nsp\u00e9ciales \u00e0 effet de zone exclues)."
 	},
 	{
 		"key": "MSID_H_\u6c38\u9060\u306e\u7406\u60f3\u90f7\u306e\u53cc\u65a7",
@@ -608,8 +620,16 @@
 		"value": "$aEn d\u00e9but de tour, si l'unit\u00e9 se trouve \u00e0 2 cases\\nou moins d'un alli\u00e9, conf\u00e8re\u3010Adr\u00e9naline\u3011\\net l'effet suivant \u00e0 l'unit\u00e9 pendant un tour\u00a0:\\n\u00ab\u00a0l'unit\u00e9 n'est pas ralentie par les effets\\nde terrain (sur une case terrain valide)\u00a0\u00bb.\\nSi l'unit\u00e9 initie le combat ou se trouve \u00e0 2 cases\\nou moins d'un alli\u00e9, conf\u00e8re Atq/Vit/D\u00e9f/R\u00e9s +4\\n\u00e0 l'unit\u00e9 pendant le combat et inflige des d\u00e9g\u00e2ts\\nsuppl\u00e9mentaires \u00e0 hauteur de 10\u00a0% de l'Atq\\nde l'unit\u00e9 (aptitudes sp\u00e9ciales \u00e0 effet de zone\\nexclues).\\n\\n\u3010Adr\u00e9naline\u3011\\nConf\u00e8re l'effet suivant pendant un tour : \u00ab Si\\nl'unit\u00e9 initie le combat, l'unit\u00e9 peut effectuer\\nune double frappe avant que l'ennemi ne\\nriposte. \u00bb"
 	},
 	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u71ed\u53f0_NOSKW",
+		"value": "$aEn d\u00e9but de tour, si l'unit\u00e9 se trouve \u00e0 2 cases\\nou moins d'un alli\u00e9, conf\u00e8re\u3010Adr\u00e9naline\u3011\\net l'effet suivant \u00e0 l'unit\u00e9 pendant un tour\u00a0:\\n\u00ab\u00a0l'unit\u00e9 n'est pas ralentie par les effets\\nde terrain (sur une case terrain valide)\u00a0\u00bb.\\nSi l'unit\u00e9 initie le combat ou se trouve \u00e0 2 cases\\nou moins d'un alli\u00e9, conf\u00e8re Atq/Vit/D\u00e9f/R\u00e9s +4\\n\u00e0 l'unit\u00e9 pendant le combat et inflige des d\u00e9g\u00e2ts\\nsuppl\u00e9mentaires \u00e0 hauteur de 10\u00a0% de l'Atq\\nde l'unit\u00e9 (aptitudes sp\u00e9ciales \u00e0 effet de zone\\nexclues)."
+	},
+	{
 		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u71ed\u53f0\uff0b",
 		"value": "$aEn d\u00e9but de tour, si l'unit\u00e9 se trouve \u00e0 2 cases\\nou moins d'un alli\u00e9, conf\u00e8re\u3010Adr\u00e9naline\u3011\\net l'effet suivant \u00e0 l'unit\u00e9 pendant un tour\u00a0:\\n\u00ab\u00a0l'unit\u00e9 n'est pas ralentie par les effets\\nde terrain (sur une case terrain valide)\u00a0\u00bb.\\nSi l'unit\u00e9 initie le combat ou se trouve \u00e0 2 cases\\nou moins d'un alli\u00e9, conf\u00e8re Atq/Vit/D\u00e9f/R\u00e9s +4\\n\u00e0 l'unit\u00e9 pendant le combat et inflige des d\u00e9g\u00e2ts\\nsuppl\u00e9mentaires \u00e0 hauteur de 10\u00a0% de l'Atq\\nde l'unit\u00e9 (aptitudes sp\u00e9ciales \u00e0 effet de zone\\nexclues).\\n\\n\u3010Adr\u00e9naline\u3011\\nConf\u00e8re l'effet suivant pendant un tour : \u00ab Si\\nl'unit\u00e9 initie le combat, l'unit\u00e9 peut effectuer\\nune double frappe avant que l'ennemi ne\\nriposte. \u00bb"
+	},
+	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u71ed\u53f0\uff0b_NOSKW",
+		"value": "$aEn d\u00e9but de tour, si l'unit\u00e9 se trouve \u00e0 2 cases\\nou moins d'un alli\u00e9, conf\u00e8re\u3010Adr\u00e9naline\u3011\\net l'effet suivant \u00e0 l'unit\u00e9 pendant un tour\u00a0:\\n\u00ab\u00a0l'unit\u00e9 n'est pas ralentie par les effets\\nde terrain (sur une case terrain valide)\u00a0\u00bb.\\nSi l'unit\u00e9 initie le combat ou se trouve \u00e0 2 cases\\nou moins d'un alli\u00e9, conf\u00e8re Atq/Vit/D\u00e9f/R\u00e9s +4\\n\u00e0 l'unit\u00e9 pendant le combat et inflige des d\u00e9g\u00e2ts\\nsuppl\u00e9mentaires \u00e0 hauteur de 10\u00a0% de l'Atq\\nde l'unit\u00e9 (aptitudes sp\u00e9ciales \u00e0 effet de zone\\nexclues)."
 	},
 	{
 		"key": "MSID_H_\u4e09\u96c4\u306e\u53cc\u5203",
@@ -630,6 +650,10 @@
 	{
 		"key": "MSID_H_\u53cc\u754c\u30a4\u30b0\u30ec\u30fc\u30cc",
 		"value": "$aConf\u00e8re\u3010\u00c9cho : lames\u3011,\u3010Tra\u00eetrise\u3011\\net\u3010Adr\u00e9naline\u3011\u00e0 l'unit\u00e9 et aux alli\u00e9s du m\u00eame\\njeu que l'unit\u00e9.\\n\\n\u3010\u00c9cho : lames\u3011\\nConf\u00e8re Atq/Vit +4 pendant un tour en combat.\\n\\n\u3010Tra\u00eetrise\u3011\\nL'unit\u00e9 inflige des d\u00e9g\u00e2ts suppl\u00e9mentaires\\n\u00e9quivalents au total de ses boosts pendant un\\ntour.\\n\\n\u3010Adr\u00e9naline\u3011\\nConf\u00e8re l'effet suivant pendant un tour : \u00ab Si\\nl'unit\u00e9 initie le combat, l'unit\u00e9 peut effectuer\\nune double frappe avant que l'ennemi ne\\nriposte. \u00bb"
+	},
+	{
+		"key": "MSID_H_\u53cc\u754c\u30a4\u30b0\u30ec\u30fc\u30cc_NOSKW",
+		"value": "$aConf\u00e8re\u3010\u00c9cho : lames\u3011,\u3010Tra\u00eetrise\u3011\\net\u3010Adr\u00e9naline\u3011\u00e0 l'unit\u00e9 et aux alli\u00e9s du m\u00eame\\njeu que l'unit\u00e9."
 	},
 	{
 		"key": "MID_CHAPTER_TITLE_CX093",

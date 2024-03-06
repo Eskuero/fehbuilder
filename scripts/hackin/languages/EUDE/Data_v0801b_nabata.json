@@ -588,12 +588,24 @@
 		"value": "$aBeschleunigt Spezialangriffe (Erholungszeit -1).\\nBefindet sich die Einheit zu Beginn des Zuges im\\nUmkreis von 2 Feldern eines Verb\u00fcndeten, erhal-\\nten Einheit und Verb\u00fcndete im Umkreis von 2 Fel-\\ndern der Einheit f\u00fcr 1 Zug \u3010Bonus-Doppler\u3011,\\n\u3010Panik-Negierung\u3011und Ges./Res. +6. Initiiert\\ndie Einheit den Kampf oder befindet sie sich im\\nUmkreis von 2 Feldern eines Verb\u00fcndeten, erh\u00e4lt\\nsie Angr./Ges./Ver./Res. +5, Effekte, die dem\\nGegner Folgeangriffe garantieren oder Folgean-\\ngriffe der Einheit verhindern, werden aufgehoben,\\nund sie f\u00fcgt im Kampf zus\u00e4tzlichen Schaden in\\nH\u00f6he von 20 % ihres Ges.-Werts zu (Spezialan-\\ngriffe mit Fl\u00e4chenwirkung ausgenommen).\\n\\n\u3010Bonus-Doppler\u3011\\nGew\u00e4hrt im Kampf Bonus auf\\nAngr./Ges./Ver./Res. = aktueller Bonus\\nauf jeden Statuswert der Einheit f\u00fcr 1 Zug.\\nJeder Wertebonus wird einzeln berechnet.\\n\\n\u3010Panik-Negierung\u3011\\nWirkt Panik (Boni werden zu Werteverringe-\\nrungen) auf die Einheit, so wird der Effekt \"Boni\\nvon Ziel werden ins Gegenteil umgewandelt\" f\u00fcr\\n1 Zug aufgehoben. (Auch wenn der Effekt\\nneutralisiert ist, bleibt der Statuseffekt \"Panik\"\\nbestehen und gilt als Statuseffekt \"Strafe\".)"
 	},
 	{
+		"key": "MSID_H_\u7802\u6f20\u306e\u5929\u99ac\u9a0e\u58eb\u306e\u5263_NOSKW",
+		"value": "$aBeschleunigt Spezialangriffe (Erholungszeit -1).\\nBefindet sich die Einheit zu Beginn des Zuges im\\nUmkreis von 2 Feldern eines Verb\u00fcndeten, erhal-\\nten Einheit und Verb\u00fcndete im Umkreis von 2 Fel-\\ndern der Einheit f\u00fcr 1 Zug \u3010Bonus-Doppler\u3011,\\n\u3010Panik-Negierung\u3011und Ges./Res. +6. Initiiert\\ndie Einheit den Kampf oder befindet sie sich im\\nUmkreis von 2 Feldern eines Verb\u00fcndeten, erh\u00e4lt\\nsie Angr./Ges./Ver./Res. +5, Effekte, die dem\\nGegner Folgeangriffe garantieren oder Folgean-\\ngriffe der Einheit verhindern, werden aufgehoben,\\nund sie f\u00fcgt im Kampf zus\u00e4tzlichen Schaden in\\nH\u00f6he von 20 % ihres Ges.-Werts zu (Spezialan-\\ngriffe mit Fl\u00e4chenwirkung ausgenommen)."
+	},
+	{
 		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd",
 		"value": "$aBefindet sich die Einheit zu Beginn des Zuges im\\nUmkreis von 2 Feldern eines Verb\u00fcndeten, erh\u00e4lt\\nsie f\u00fcr 1 Zug \"Einheit wird nicht durch die Gel\u00e4n-\\ndebeschaffenheit verlangsamt (gilt nicht f\u00fcr un-\\npassierbares Gel\u00e4nde)\" und\u3010Hexklinge\u3011. Initiiert\\ndie Einheit den Kampf oder befindet sie sich im\\nUmkreis von 2 Feldern eines Verb\u00fcndeten, erh\u00e4lt\\nsie im Kampf Angr./Ges./Ver./Res. +4 und f\u00fcgt\\nzus\u00e4tzlichen Schaden in der H\u00f6he von 10 % ihres\\nAngr.-Werts zu (Spezialangriffe mit Fl\u00e4chen-\\nwirkung ausgenommen).\\n\\n\u3010Hexklinge\u3011\\nSchaden (inkl. Schaden durch Spezialangriffe\\nvor dem Kampf) wird f\u00fcr 1 Zug durch Ver. oder\\nRes. des Gegners berechnet (geringerer Wert\\ngilt)."
 	},
 	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd_NOSKW",
+		"value": "$aBefindet sich die Einheit zu Beginn des Zuges im\\nUmkreis von 2 Feldern eines Verb\u00fcndeten, erh\u00e4lt\\nsie f\u00fcr 1 Zug \"Einheit wird nicht durch die Gel\u00e4n-\\ndebeschaffenheit verlangsamt (gilt nicht f\u00fcr un-\\npassierbares Gel\u00e4nde)\" und\u3010Hexklinge\u3011. Initiiert\\ndie Einheit den Kampf oder befindet sie sich im\\nUmkreis von 2 Feldern eines Verb\u00fcndeten, erh\u00e4lt\\nsie im Kampf Angr./Ges./Ver./Res. +4 und f\u00fcgt\\nzus\u00e4tzlichen Schaden in der H\u00f6he von 10 % ihres\\nAngr.-Werts zu (Spezialangriffe mit Fl\u00e4chen-\\nwirkung ausgenommen)."
+	},
+	{
 		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd\uff0b",
 		"value": "$aBefindet sich die Einheit zu Beginn des Zuges im\\nUmkreis von 2 Feldern eines Verb\u00fcndeten, erh\u00e4lt\\nsie f\u00fcr 1 Zug\u3010Hexklinge\u3011und \"Einheit wird nicht\\ndurch die Gel\u00e4ndebeschaffenheit verlangsamt\\n(gilt nicht f\u00fcr unpassierbares Gel\u00e4nde)\". Initiiert\\ndie Einheit den Kampf oder befindet sie sich im\\nUmkreis von 2 Feldern eines Verb\u00fcndeten, erh\u00e4lt\\nsie im Kampf Angr./Ges./Ver./Res. +4 und f\u00fcgt\\nzus\u00e4tzlichen Schaden in der H\u00f6he von 10 % ihres\\nAngr.-Werts zu (Spezialangriffe mit Fl\u00e4chen-\\nwirkung ausgenommen).\\n\\n\u3010Hexklinge\u3011\\nSchaden (inkl. Schaden durch Spezialangriffe\\nvor dem Kampf) wird f\u00fcr 1 Zug durch Ver. oder\\nRes. des Gegners berechnet (geringerer Wert\\ngilt)."
+	},
+	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd\uff0b_NOSKW",
+		"value": "$aBefindet sich die Einheit zu Beginn des Zuges im\\nUmkreis von 2 Feldern eines Verb\u00fcndeten, erh\u00e4lt\\nsie f\u00fcr 1 Zug\u3010Hexklinge\u3011und \"Einheit wird nicht\\ndurch die Gel\u00e4ndebeschaffenheit verlangsamt\\n(gilt nicht f\u00fcr unpassierbares Gel\u00e4nde)\". Initiiert\\ndie Einheit den Kampf oder befindet sie sich im\\nUmkreis von 2 Feldern eines Verb\u00fcndeten, erh\u00e4lt\\nsie im Kampf Angr./Ges./Ver./Res. +4 und f\u00fcgt\\nzus\u00e4tzlichen Schaden in der H\u00f6he von 10 % ihres\\nAngr.-Werts zu (Spezialangriffe mit Fl\u00e4chen-\\nwirkung ausgenommen)."
 	},
 	{
 		"key": "MSID_H_\u6c38\u9060\u306e\u7406\u60f3\u90f7\u306e\u53cc\u65a7",
@@ -608,8 +620,16 @@
 		"value": "$aBefindet sich die Einheit zu Beginn des Zuges im\\nUmkreis von 2 Feldern eines Verb\u00fcndeten, erh\u00e4lt\\nsie f\u00fcr 1 Zug\u3010Verzweiflung\u3011und \"Einheit wird\\nnicht durch die Gel\u00e4ndebeschaffenheit verlang-\\nsamt (gilt nicht f\u00fcr unpassierbares Gel\u00e4nde)\".\\nInitiiert die Einheit den Kampf o. befindet sie sich\\nim Umkreis von 2 Feldern eines Verb\u00fcndeten,\\nerh\u00e4lt sie im Kampf Angr./Ges./Ver./Res. +4 und\\nf\u00fcgt zus\u00e4tzlichen Schaden in der H\u00f6he von 10 %\\nihres Angr.-Werts zu (Spezialangriffe mit Fl\u00e4chen-\\nwirkung ausgenommen).\\n\\n\u3010Verzweiflung\u3011\\nVerleiht f\u00fcr 1 Zug den Effekt: \"Initiiert die\\nEinheit den Kampf, kann sie einen\\nFolgeangriff ausf\u00fchren, bevor der Gegner\\nkontern kann.\""
 	},
 	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u71ed\u53f0_NOSKW",
+		"value": "$aBefindet sich die Einheit zu Beginn des Zuges im\\nUmkreis von 2 Feldern eines Verb\u00fcndeten, erh\u00e4lt\\nsie f\u00fcr 1 Zug\u3010Verzweiflung\u3011und \"Einheit wird\\nnicht durch die Gel\u00e4ndebeschaffenheit verlang-\\nsamt (gilt nicht f\u00fcr unpassierbares Gel\u00e4nde)\".\\nInitiiert die Einheit den Kampf o. befindet sie sich\\nim Umkreis von 2 Feldern eines Verb\u00fcndeten,\\nerh\u00e4lt sie im Kampf Angr./Ges./Ver./Res. +4 und\\nf\u00fcgt zus\u00e4tzlichen Schaden in der H\u00f6he von 10 %\\nihres Angr.-Werts zu (Spezialangriffe mit Fl\u00e4chen-\\nwirkung ausgenommen)."
+	},
+	{
 		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u71ed\u53f0\uff0b",
 		"value": "$aBefindet sich die Einheit zu Beginn des Zuges im\\nUmkreis von 2 Feldern eines Verb\u00fcndeten, erh\u00e4lt\\nsie f\u00fcr 1 Zug\u3010Verzweiflung\u3011und \"Einheit wird\\nnicht durch die Gel\u00e4ndebeschaffenheit verlang-\\nsamt (gilt nicht f\u00fcr unpassierbares Gel\u00e4nde)\".\\nInitiiert die Einheit den Kampf o. befindet sie sich\\nim Umkreis von 2 Feldern eines Verb\u00fcndeten,\\nerh\u00e4lt sie im Kampf Angr./Ges./Ver./Res. +4 und\\nf\u00fcgt zus\u00e4tzlichen Schaden in der H\u00f6he von 10 %\\nihres Angr.-Werts zu (Spezialangriffe mit Fl\u00e4chen-\\nwirkung ausgenommen).\\n\\n\u3010Verzweiflung\u3011\\nVerleiht f\u00fcr 1 Zug den Effekt: \"Initiiert die\\nEinheit den Kampf, kann sie einen\\nFolgeangriff ausf\u00fchren, bevor der Gegner\\nkontern kann.\""
+	},
+	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u71ed\u53f0\uff0b_NOSKW",
+		"value": "$aBefindet sich die Einheit zu Beginn des Zuges im\\nUmkreis von 2 Feldern eines Verb\u00fcndeten, erh\u00e4lt\\nsie f\u00fcr 1 Zug\u3010Verzweiflung\u3011und \"Einheit wird\\nnicht durch die Gel\u00e4ndebeschaffenheit verlang-\\nsamt (gilt nicht f\u00fcr unpassierbares Gel\u00e4nde)\".\\nInitiiert die Einheit den Kampf o. befindet sie sich\\nim Umkreis von 2 Feldern eines Verb\u00fcndeten,\\nerh\u00e4lt sie im Kampf Angr./Ges./Ver./Res. +4 und\\nf\u00fcgt zus\u00e4tzlichen Schaden in der H\u00f6he von 10 %\\nihres Angr.-Werts zu (Spezialangriffe mit Fl\u00e4chen-\\nwirkung ausgenommen)."
 	},
 	{
 		"key": "MSID_H_\u4e09\u96c4\u306e\u53cc\u5203",
@@ -630,6 +650,10 @@
 	{
 		"key": "MSID_H_\u53cc\u754c\u30a4\u30b0\u30ec\u30fc\u30cc",
 		"value": "$aVerleiht der Einheit und Verb\u00fcndeten aus densel-\\nben Spielen wie die Einheit\u3010Resonanz: Klingen\u3011,\\n\u3010Verrat\u3011und\u3010Verzweiflung\u3011.\\n\\n\u3010Resonanz: Klingen\u3011\\nVerleiht Angr./Ges. +4 im Kampf f\u00fcr 1 Zug.\\n\\n\u3010Verrat\u3011\\nDie Einheit verursacht f\u00fcr 1 Zug zus\u00e4tzlichen\\nSchaden in H\u00f6he der gesamten Boni der\\nEinheit.\\n\\n\u3010Verzweiflung\u3011\\nVerleiht f\u00fcr 1 Zug den Effekt: \"Initiiert die\\nEinheit den Kampf, kann sie einen\\nFolgeangriff ausf\u00fchren, bevor der Gegner\\nkontern kann.\""
+	},
+	{
+		"key": "MSID_H_\u53cc\u754c\u30a4\u30b0\u30ec\u30fc\u30cc_NOSKW",
+		"value": "$aVerleiht der Einheit und Verb\u00fcndeten aus densel-\\nben Spielen wie die Einheit\u3010Resonanz: Klingen\u3011,\\n\u3010Verrat\u3011und\u3010Verzweiflung\u3011."
 	},
 	{
 		"key": "MID_CHAPTER_TITLE_CX093",

@@ -588,12 +588,24 @@
 		"value": "$aFacilita la ejecuci\u00f3n de habilidades especiales: - 1\\na la cuenta atr\u00e1s. Al inicio del turno, si la unidad\\nse encuentra en un radio de dos casillas de uno\\no m\u00e1s aliados, otorga Vel y Res + 6 y los\\nefectos\u3010Bonificaci\u00f3n doble\u3011y\u3010P\u00e1nico nulo\u3011a\\nla unidad y dichos aliados hasta el final del turno.\\nSi la unidad inicia el ataque, o si se encuentra\\nen un radio de dos casillas de un aliado, obtiene\\nAta, Vel, Def y Res + 5, se anulan los efectos\\nque garantizan un ataque doble del enemigo\\ny los que impiden que sea la unidad quien ejecute\\nuno y esta inflige un 20 % de su Vel como da\u00f1o\\nadicional en combate (sin contar las habilidades\\nespeciales con \u00e1rea de efecto).\\n\\n\u3010Bonificaci\u00f3n doble\u3011\\nAta, Vel, Def y Res de la unidad aumentan\\nen combate tanto como la bonificaci\u00f3n\\nactual de cada atributo hasta el final del turno.\\nCada mejora se aplica por separado.\\n\\n\u3010P\u00e1nico nulo\u3011\\nSi la unidad sufre P\u00e1nico (las bonificaciones se\\nconvierten en penalizaciones), anula el efecto\\nque convierte las bonificaciones del objetivo\\nen penalizaciones hasta el final del turno.\\n(Aunque el efecto P\u00e1nico se anule, el estado\\nalterado P\u00e1nico sigue presente, y se trata como\\nun estado alterado Penalizaci\u00f3n.)"
 	},
 	{
+		"key": "MSID_H_\u7802\u6f20\u306e\u5929\u99ac\u9a0e\u58eb\u306e\u5263_NOSKW",
+		"value": "$aFacilita la ejecuci\u00f3n de habilidades especiales: - 1\\na la cuenta atr\u00e1s. Al inicio del turno, si la unidad\\nse encuentra en un radio de dos casillas de uno\\no m\u00e1s aliados, otorga Vel y Res + 6 y los\\nefectos\u3010Bonificaci\u00f3n doble\u3011y\u3010P\u00e1nico nulo\u3011a\\nla unidad y dichos aliados hasta el final del turno.\\nSi la unidad inicia el ataque, o si se encuentra\\nen un radio de dos casillas de un aliado, obtiene\\nAta, Vel, Def y Res + 5, se anulan los efectos\\nque garantizan un ataque doble del enemigo\\ny los que impiden que sea la unidad quien ejecute\\nuno y esta inflige un 20 % de su Vel como da\u00f1o\\nadicional en combate (sin contar las habilidades\\nespeciales con \u00e1rea de efecto)."
+	},
+	{
 		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd",
 		"value": "$aAl inicio del turno, si la unidad se encuentra\\nen un radio de dos casillas de un aliado, obtiene\\nlos efectos \"la unidad no se ver\u00e1 ralentizada\\npor los efectos del terreno (no se aplica a casillas\\ninfranqueables)\" y\u3010Sortilegio\u3011hasta el final\\ndel turno. Si la unidad inicia el ataque,\\no si se encuentra en un radio de dos casillas\\nde un aliado, obtiene Ata, Vel, Def y Res + 4\\nen combate e inflige un 10 % de su Ata como\\nda\u00f1o adicional (sin contar las habilidades\\nespeciales con \u00e1rea de efecto).\\n\\n\u3010Sortilegio\u3011\\nEl da\u00f1o se calcula a partir de la Def o Res\\nen combate del enemigo (la que tenga el valor\\nm\u00e1s bajo) hasta el final del turno (incluso\\ncuando se inflige da\u00f1o al ejecutar una habilidad\\nespecial activada antes del enfrentamiento)."
 	},
 	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd_NOSKW",
+		"value": "$aAl inicio del turno, si la unidad se encuentra\\nen un radio de dos casillas de un aliado, obtiene\\nlos efectos \"la unidad no se ver\u00e1 ralentizada\\npor los efectos del terreno (no se aplica a casillas\\ninfranqueables)\" y\u3010Sortilegio\u3011hasta el final\\ndel turno. Si la unidad inicia el ataque,\\no si se encuentra en un radio de dos casillas\\nde un aliado, obtiene Ata, Vel, Def y Res + 4\\nen combate e inflige un 10 % de su Ata como\\nda\u00f1o adicional (sin contar las habilidades\\nespeciales con \u00e1rea de efecto)."
+	},
+	{
 		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd\uff0b",
 		"value": "$aAl inicio del turno, si la unidad se encuentra\\nen un radio de dos casillas de un aliado, obtiene\\nlos efectos \"la unidad no se ver\u00e1 ralentizada\\npor los efectos del terreno (no se aplica a casillas\\ninfranqueables)\" y\u3010Sortilegio\u3011hasta el final\\ndel turno. Si la unidad inicia el ataque,\\no si se encuentra en un radio de dos casillas\\nde un aliado, obtiene Ata, Vel, Def y Res + 4\\nen combate e inflige un 10 % de su Ata como\\nda\u00f1o adicional (sin contar las habilidades\\nespeciales con \u00e1rea de efecto).\\n\\n\u3010Sortilegio\u3011\\nEl da\u00f1o se calcula a partir de la Def o Res\\nen combate del enemigo (la que tenga el valor\\nm\u00e1s bajo) hasta el final del turno (incluso\\ncuando se inflige da\u00f1o al ejecutar una habilidad\\nespecial activada antes del enfrentamiento)."
+	},
+	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd\uff0b_NOSKW",
+		"value": "$aAl inicio del turno, si la unidad se encuentra\\nen un radio de dos casillas de un aliado, obtiene\\nlos efectos \"la unidad no se ver\u00e1 ralentizada\\npor los efectos del terreno (no se aplica a casillas\\ninfranqueables)\" y\u3010Sortilegio\u3011hasta el final\\ndel turno. Si la unidad inicia el ataque,\\no si se encuentra en un radio de dos casillas\\nde un aliado, obtiene Ata, Vel, Def y Res + 4\\nen combate e inflige un 10 % de su Ata como\\nda\u00f1o adicional (sin contar las habilidades\\nespeciales con \u00e1rea de efecto)."
 	},
 	{
 		"key": "MSID_H_\u6c38\u9060\u306e\u7406\u60f3\u90f7\u306e\u53cc\u65a7",
@@ -608,8 +620,16 @@
 		"value": "$aAl inicio del turno, si la unidad se encuentra\\nen un radio de dos casillas de un aliado, obtiene\\nlos efectos \"la unidad no se ver\u00e1 ralentizada\\npor los efectos del terreno (no se aplica a casillas\\ninfranqueables)\" y\u3010Arremetida\u3011hasta el final\\ndel turno. Si la unidad inicia el ataque,\\no si se encuentra en un radio de dos casillas\\nde un aliado, obtiene Ata, Vel, Def y Res + 4\\nen combate e inflige un 10 % de su Ata como\\nda\u00f1o adicional (sin contar las habilidades\\nespeciales con \u00e1rea de efecto).\\n\\n\u3010Arremetida\u3011\\nOtorga este efecto hasta el final del turno:\\n\"Si la unidad acomete primero al enemigo,\\natacar\u00e1 dos veces de manera inmediata\\nsi es posible.\""
 	},
 	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u71ed\u53f0_NOSKW",
+		"value": "$aAl inicio del turno, si la unidad se encuentra\\nen un radio de dos casillas de un aliado, obtiene\\nlos efectos \"la unidad no se ver\u00e1 ralentizada\\npor los efectos del terreno (no se aplica a casillas\\ninfranqueables)\" y\u3010Arremetida\u3011hasta el final\\ndel turno. Si la unidad inicia el ataque,\\no si se encuentra en un radio de dos casillas\\nde un aliado, obtiene Ata, Vel, Def y Res + 4\\nen combate e inflige un 10 % de su Ata como\\nda\u00f1o adicional (sin contar las habilidades\\nespeciales con \u00e1rea de efecto)."
+	},
+	{
 		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u71ed\u53f0\uff0b",
 		"value": "$aAl inicio del turno, si la unidad se encuentra\\nen un radio de dos casillas de un aliado, obtiene\\nlos efectos \"la unidad no se ver\u00e1 ralentizada\\npor los efectos del terreno (no se aplica a casillas\\ninfranqueables)\" y\u3010Arremetida\u3011hasta el final\\ndel turno. Si la unidad inicia el ataque,\\no si se encuentra en un radio de dos casillas\\nde un aliado, obtiene Ata, Vel, Def y Res + 4\\nen combate e inflige un 10 % de su Ata como\\nda\u00f1o adicional (sin contar las habilidades\\nespeciales con \u00e1rea de efecto).\\n\\n\u3010Arremetida\u3011\\nOtorga este efecto hasta el final del turno:\\n\"Si la unidad acomete primero al enemigo,\\natacar\u00e1 dos veces de manera inmediata\\nsi es posible.\""
+	},
+	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u71ed\u53f0\uff0b_NOSKW",
+		"value": "$aAl inicio del turno, si la unidad se encuentra\\nen un radio de dos casillas de un aliado, obtiene\\nlos efectos \"la unidad no se ver\u00e1 ralentizada\\npor los efectos del terreno (no se aplica a casillas\\ninfranqueables)\" y\u3010Arremetida\u3011hasta el final\\ndel turno. Si la unidad inicia el ataque,\\no si se encuentra en un radio de dos casillas\\nde un aliado, obtiene Ata, Vel, Def y Res + 4\\nen combate e inflige un 10 % de su Ata como\\nda\u00f1o adicional (sin contar las habilidades\\nespeciales con \u00e1rea de efecto)."
 	},
 	{
 		"key": "MSID_H_\u4e09\u96c4\u306e\u53cc\u5203",
@@ -630,6 +650,10 @@
 	{
 		"key": "MSID_H_\u53cc\u754c\u30a4\u30b0\u30ec\u30fc\u30cc",
 		"value": "$aOtorga los efectos\u3010Fragor: Hojas\u3011,\u3010Traici\u00f3n\u3011\\ny\u3010Arremetida\u3011a la unidad y a los aliados\\ndel mismo t\u00edtulo que la unidad.\\n\\n\u3010Fragor: Hojas\u3011\\nOtorga Ata y Vel + 4 en combate\\ndurante el resto del turno.\\n\\n\u3010Traici\u00f3n\u3011\\nLa unidad inflige una cantidad de da\u00f1o\\nadicional equivalente a su bonificaci\u00f3n total\\nhasta el final del turno.\\n\\n\u3010Arremetida\u3011\\nOtorga este efecto hasta el final del turno:\\n\"Si la unidad acomete primero al enemigo,\\natacar\u00e1 dos veces de manera inmediata\\nsi es posible.\""
+	},
+	{
+		"key": "MSID_H_\u53cc\u754c\u30a4\u30b0\u30ec\u30fc\u30cc_NOSKW",
+		"value": "$aOtorga los efectos\u3010Fragor: Hojas\u3011,\u3010Traici\u00f3n\u3011\\ny\u3010Arremetida\u3011a la unidad y a los aliados\\ndel mismo t\u00edtulo que la unidad."
 	},
 	{
 		"key": "MID_CHAPTER_TITLE_CX093",

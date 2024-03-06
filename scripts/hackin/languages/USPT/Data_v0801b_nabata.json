@@ -588,12 +588,24 @@
 		"value": "$aAcelera a execu\u00e7\u00e3o de habilidades especiais\\n(contagem regressiva -1). No in\u00edcio da rodada,\\nse a unidade est\u00e1 em um raio de 2 espa\u00e7os\\nde um aliado, concede Vel./Res. +6,\\n\u3010Dobra b\u00f4nus\u3011e\u3010P\u00e2nico nulo\u3011\u00e0 unidade\\ne aos aliados em um raio de 2 espa\u00e7os da unidade\\npor uma rodada. Se a unidade inicia o combate\\nou est\u00e1 em um raio de 2 espa\u00e7os de um aliado,\\nconcede Atq./Vel./Def./Res. +5 \u00e0 unidade,\\nneutraliza efeitos que garantem os ataques\\nduplos do inimigo e que impedem ataques duplos\\nda unidade, e inflige dano = 20% da Vel. (uni.)\\ndurante o combate (exclui habilidades especiais\\ncom \u00e1rea de efeito).\\n\\n\u3010Dobra b\u00f4nus\u3011\\nConcede b\u00f4nus de Atq./Vel./Def./Res. durante\\no combate igual ao b\u00f4nus atual em cada\\natributo da unidade por uma rodada. Calcula\\ncada b\u00f4nus de atributo de forma independente.\\n\\n\u3010P\u00e2nico nulo\u3011\\nSe a unidade sofrer P\u00e2nico (b\u00f4nus convertidos\\nem penalidades), neutraliza \"converte b\u00f4nus do\\nalvo em penalidades\" por uma rodada. (Embora\\no efeito tenha sido neutralizado, P\u00e2nico segue\\nativo e \u00e9 tratado como Penalidade.)"
 	},
 	{
+		"key": "MSID_H_\u7802\u6f20\u306e\u5929\u99ac\u9a0e\u58eb\u306e\u5263_NOSKW",
+		"value": "$aAcelera a execu\u00e7\u00e3o de habilidades especiais\\n(contagem regressiva -1). No in\u00edcio da rodada,\\nse a unidade est\u00e1 em um raio de 2 espa\u00e7os\\nde um aliado, concede Vel./Res. +6,\\n\u3010Dobra b\u00f4nus\u3011e\u3010P\u00e2nico nulo\u3011\u00e0 unidade\\ne aos aliados em um raio de 2 espa\u00e7os da unidade\\npor uma rodada. Se a unidade inicia o combate\\nou est\u00e1 em um raio de 2 espa\u00e7os de um aliado,\\nconcede Atq./Vel./Def./Res. +5 \u00e0 unidade,\\nneutraliza efeitos que garantem os ataques\\nduplos do inimigo e que impedem ataques duplos\\nda unidade, e inflige dano = 20% da Vel. (uni.)\\ndurante o combate (exclui habilidades especiais\\ncom \u00e1rea de efeito)."
+	},
+	{
 		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd",
 		"value": "$aNo in\u00edcio da rodada, se a unidade est\u00e1 em um raio\\nde 2 espa\u00e7os de um aliado, concede \"a unidade\\nn\u00e3o ser\u00e1 desacelerada pelo terreno (n\u00e3o se aplica\\na terrenos intransit\u00e1veis)\" e\u3010Espadahexa\u3011\u00e0\\nunidade por uma rodada. Se a unidade inicia o\\ncombate ou est\u00e1 em um raio de 2 espa\u00e7os de\\num aliado, concede Atq./Vel./Def./Res. +4 \u00e0\\nunidade durante o combate e inflige dano = 10%\\ndo Atq. (uni.) (exclui habilidades especiais com\\n\u00e1rea de efeito).\\n\\n\u3010Espadahexa\u3011\\nCalcula o dano usando Def. ou Res. do inimigo\\n(a que tiver valor mais baixo) durante o combate\\npor uma rodada (inclusive dano causado por\\nhabilidades especiais antes do combate)."
 	},
 	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd_NOSKW",
+		"value": "$aNo in\u00edcio da rodada, se a unidade est\u00e1 em um raio\\nde 2 espa\u00e7os de um aliado, concede \"a unidade\\nn\u00e3o ser\u00e1 desacelerada pelo terreno (n\u00e3o se aplica\\na terrenos intransit\u00e1veis)\" e\u3010Espadahexa\u3011\u00e0\\nunidade por uma rodada. Se a unidade inicia o\\ncombate ou est\u00e1 em um raio de 2 espa\u00e7os de\\num aliado, concede Atq./Vel./Def./Res. +4 \u00e0\\nunidade durante o combate e inflige dano = 10%\\ndo Atq. (uni.) (exclui habilidades especiais com\\n\u00e1rea de efeito)."
+	},
+	{
 		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd\uff0b",
 		"value": "$aNo in\u00edcio da rodada, se a unidade est\u00e1 em um raio\\nde 2 espa\u00e7os de um aliado, concede \"a unidade\\nn\u00e3o ser\u00e1 desacelerada pelo terreno (n\u00e3o se aplica\\na terrenos intransit\u00e1veis)\" e\u3010Espadahexa\u3011\u00e0\\nunidade por uma rodada. Se a unidade inicia o\\ncombate ou est\u00e1 em um raio de 2 espa\u00e7os de\\num aliado, concede Atq./Vel./Def./Res. +4 \u00e0\\nunidade durante o combate e inflige dano = 10%\\ndo Atq. (uni.) (exclui habilidades especiais com\\n\u00e1rea de efeito).\\n\\n\u3010Espadahexa\u3011\\nCalcula o dano usando Def. ou Res. do inimigo\\n(a que tiver valor mais baixo) durante o combate\\npor uma rodada (inclusive dano causado por\\nhabilidades especiais antes do combate)."
+	},
+	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u69cd\uff0b_NOSKW",
+		"value": "$aNo in\u00edcio da rodada, se a unidade est\u00e1 em um raio\\nde 2 espa\u00e7os de um aliado, concede \"a unidade\\nn\u00e3o ser\u00e1 desacelerada pelo terreno (n\u00e3o se aplica\\na terrenos intransit\u00e1veis)\" e\u3010Espadahexa\u3011\u00e0\\nunidade por uma rodada. Se a unidade inicia o\\ncombate ou est\u00e1 em um raio de 2 espa\u00e7os de\\num aliado, concede Atq./Vel./Def./Res. +4 \u00e0\\nunidade durante o combate e inflige dano = 10%\\ndo Atq. (uni.) (exclui habilidades especiais com\\n\u00e1rea de efeito)."
 	},
 	{
 		"key": "MSID_H_\u6c38\u9060\u306e\u7406\u60f3\u90f7\u306e\u53cc\u65a7",
@@ -608,8 +620,16 @@
 		"value": "$aNo in\u00edcio da rodada, se a unidade est\u00e1 em um\\nraio de 2 espa\u00e7os de um aliado, concede \"a\\nunidade n\u00e3o ser\u00e1 desacelerada pelo terreno (n\u00e3o\\nse aplica a terrenos intransit\u00e1veis)\"e\u3010Desespero\u3011\\n\u00e0 unidade por uma rodada. Se a unidade inicia o\\ncombate ou est\u00e1 em um raio de 2 espa\u00e7os de um\\naliado, concede Atq./Vel./Def./Res. +4 \u00e0 unidade\\ndurante o combate e inflige dano = 10% do\\nAtq. (uni.) (exclui habilidades especiais com\\n\u00e1rea de efeito).\\n\\n\u3010Desespero\u3011\\nConcede o seguinte efeito por uma rodada:\\n\"Se a unidade inicia o combate, ela\\npoder\u00e1 fazer um ataque duplo antes\\nde o inimigo contra-atacar.\""
 	},
 	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u71ed\u53f0_NOSKW",
+		"value": "$aNo in\u00edcio da rodada, se a unidade est\u00e1 em um\\nraio de 2 espa\u00e7os de um aliado, concede \"a\\nunidade n\u00e3o ser\u00e1 desacelerada pelo terreno (n\u00e3o\\nse aplica a terrenos intransit\u00e1veis)\"e\u3010Desespero\u3011\\n\u00e0 unidade por uma rodada. Se a unidade inicia o\\ncombate ou est\u00e1 em um raio de 2 espa\u00e7os de um\\naliado, concede Atq./Vel./Def./Res. +4 \u00e0 unidade\\ndurante o combate e inflige dano = 10% do\\nAtq. (uni.) (exclui habilidades especiais com\\n\u00e1rea de efeito)."
+	},
+	{
 		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u71ed\u53f0\uff0b",
 		"value": "$aNo in\u00edcio da rodada, se a unidade est\u00e1 em um\\nraio de 2 espa\u00e7os de um aliado, concede \"a\\nunidade n\u00e3o ser\u00e1 desacelerada pelo terreno (n\u00e3o\\nse aplica a terrenos intransit\u00e1veis)\"e\u3010Desespero\u3011\\n\u00e0 unidade por uma rodada. Se a unidade inicia o\\ncombate ou est\u00e1 em um raio de 2 espa\u00e7os de um\\naliado, concede Atq./Vel./Def./Res. +4 \u00e0 unidade\\ndurante o combate e inflige dano = 10% do\\nAtq. (uni.) (exclui habilidades especiais com\\n\u00e1rea de efeito).\\n\\n\u3010Desespero\u3011\\nConcede o seguinte efeito por uma rodada:\\n\"Se a unidade inicia o combate, ela\\npoder\u00e1 fazer um ataque duplo antes\\nde o inimigo contra-atacar.\""
+	},
+	{
+		"key": "MSID_H_\u30ca\u30d0\u30bf\u306e\u71ed\u53f0\uff0b_NOSKW",
+		"value": "$aNo in\u00edcio da rodada, se a unidade est\u00e1 em um\\nraio de 2 espa\u00e7os de um aliado, concede \"a\\nunidade n\u00e3o ser\u00e1 desacelerada pelo terreno (n\u00e3o\\nse aplica a terrenos intransit\u00e1veis)\"e\u3010Desespero\u3011\\n\u00e0 unidade por uma rodada. Se a unidade inicia o\\ncombate ou est\u00e1 em um raio de 2 espa\u00e7os de um\\naliado, concede Atq./Vel./Def./Res. +4 \u00e0 unidade\\ndurante o combate e inflige dano = 10% do\\nAtq. (uni.) (exclui habilidades especiais com\\n\u00e1rea de efeito)."
 	},
 	{
 		"key": "MSID_H_\u4e09\u96c4\u306e\u53cc\u5203",
@@ -630,6 +650,10 @@
 	{
 		"key": "MSID_H_\u53cc\u754c\u30a4\u30b0\u30ec\u30fc\u30cc",
 		"value": "$aConcede\u3010Resson\u00e2ncia: Espada\u3011,\\n\u3010Trai\u00e7\u00e3o\u3011e\u3010Desespero\u3011\u00e0 unidade\\ne a aliados dos mesmos t\u00edtulos.\\n\\n\u3010Resson\u00e2ncia: Espada\u3011\\nConcede Atq./Vel. +4 durante o combate\\npor uma rodada.\\n\\n\u3010Trai\u00e7\u00e3o\u3011\\nA unidade inflige dano adicional equivalente\\nao total de b\u00f4nus na unidade por uma rodada.\\n\\n\u3010Desespero\u3011\\nConcede o seguinte efeito por uma rodada:\\n\"Se a unidade inicia o combate, ela\\npoder\u00e1 fazer um ataque duplo antes\\nde o inimigo contra-atacar.\""
+	},
+	{
+		"key": "MSID_H_\u53cc\u754c\u30a4\u30b0\u30ec\u30fc\u30cc_NOSKW",
+		"value": "$aConcede\u3010Resson\u00e2ncia: Espada\u3011,\\n\u3010Trai\u00e7\u00e3o\u3011e\u3010Desespero\u3011\u00e0 unidade\\ne a aliados dos mesmos t\u00edtulos."
 	},
 	{
 		"key": "MID_CHAPTER_TITLE_CX093",
