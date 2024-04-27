@@ -1,0 +1,147 @@
+[
+	{
+		"id_tag": "PID_\u795e\u968e\u30ed\u30ad",
+		"roman": "LOKI_GOD01",
+		"face_name": "ch00_08_Loki_F_God01",
+		"face_name2": "ch00_08_Loki_F_God01",
+		"legendary": {
+			"duo_skill_id": "",
+			"bonus_effect": {
+				"hp": 5,
+				"atk": 3,
+				"spd": 0,
+				"def": 0,
+				"res": 0
+			},
+			"kind": 1,
+			"element": 6,
+			"bst": 0,
+			"pair_up": false,
+			"ae_extra": true
+		},
+		"dragonflowers": {
+			"max_count": 5,
+			"costs": [
+				40,
+				80,
+				120,
+				160,
+				200
+			]
+		},
+		"timestamp": null,
+		"id_num": 1090,
+		"version_num": 804,
+		"sort_value": 400095,
+		"origins": 1,
+		"weapon_type": 15,
+		"tome_class": 0,
+		"move_type": 3,
+		"series": 0,
+		"random_pool": 0,
+		"permanent_hero": false,
+		"base_vactor_id": 38,
+		"refresher": false,
+		"base_stats": {
+			"hp": 17,
+			"atk": 14,
+			"spd": 8,
+			"def": 3,
+			"res": 8
+		},
+		"growth_rates": {
+			"hp": 50,
+			"atk": 75,
+			"spd": 50,
+			"def": 30,
+			"res": 90
+		},
+		"skills": [
+			[
+				"SID_\u30a2\u30b5\u30eb\u30c8",
+				"SID_\u30e9\u30a4\u30d6",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			[
+				"SID_\u30a2\u30b5\u30eb\u30c8",
+				"SID_\u30e9\u30a4\u30d6",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u30d2\u30fc\u30eb",
+				"SID_\u6cbb\u7652",
+				"SID_\u653b\u6483\u9b54\u9632\u306e\u6a5f\u51481",
+				"SID_\u5e7b\u60d1\u306e\u67561",
+				null,
+				null,
+				null
+			],
+			[
+				"SID_\u30a2\u30b5\u30eb\u30c8",
+				"SID_\u30d2\u30fc\u30eb",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u30ea\u30bf\u30fc\u30f3",
+				"SID_\u7948\u308a",
+				"SID_\u653b\u6483\u9b54\u9632\u306e\u6a5f\u51482",
+				"SID_\u5e7b\u60d1\u306e\u67562",
+				null,
+				null,
+				null
+			],
+			[
+				"SID_\u30a2\u30b5\u30eb\u30c8",
+				"SID_\u30ea\u30bf\u30fc\u30f3",
+				"SID_\u6cbb\u7652",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u653b\u6483\u9b54\u9632\u306e\u6a5f\u51483",
+				"SID_\u5e7b\u60d1\u306e\u67563",
+				null,
+				null,
+				null
+			],
+			[
+				"SID_\u795e\u6756\u30bb\u30c3\u30af",
+				"SID_\u30ea\u30bf\u30fc\u30f3\uff0b",
+				"SID_\u7948\u308a",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u8f1d\u6620\u306e\u8056\u5149",
+				"SID_\u653b\u6483\u9b54\u9632\u306e\u6a5f\u51484",
+				"SID_\u5e7b\u60d1\u30fb\u4e0d\u548c\u306e\u70d9\u5370",
+				"SID_\u795e\u6756\u5929\u7a7a\u3092\u507d\u308b",
+				null,
+				null
+			]
+		]
+	}
+]
