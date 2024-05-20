@@ -1,0 +1,914 @@
+[
+	{
+		"key": "MDAID_\u65c5\u5148\u306e\u4e8c\u4eba\u306e\u795d\u798f\u306e\u8a3c",
+		"value": "Crested Blessings"
+	},
+	{
+		"key": "MDAID_H_\u65c5\u5148\u306e\u4e8c\u4eba\u306e\u795d\u798f\u306e\u8a3c",
+		"value": "Proof that two Heroes bested a boss\\non their journeys together. Serves as\\na souvenir from their travels."
+	},
+	{
+		"key": "MID_ENHANCE_HELP_64",
+		"value": "Neutralizes unit's damage reduction effects\\n  and if defeated, grants foe another action"
+	},
+	{
+		"key": "MID_MISSION_S202405BOARDGAME01_TITLE",
+		"value": "Pawns of Loki"
+	},
+	{
+		"key": "MID_MISSION_S202405BOARDGAME01_A1",
+		"value": "PoL: Complete a Game"
+	},
+	{
+		"key": "MID_MISSION_H_S202405BOARDGAME01_A1",
+		"value": "Finish all turns to complete a game of Pawns\\nof Loki."
+	},
+	{
+		"key": "MID_MISSION_S202405HERO02_TITLE",
+		"value": "Grand Hero Battles"
+	},
+	{
+		"key": "MID_MISSION_S202405HERO02_A1",
+		"value": "Defeat Linus"
+	},
+	{
+		"key": "MID_MISSION_H_S202405HERO02_A1",
+		"value": "Clear the Grand Hero Battle against Linus:\\nSavage Dog with Alfonse: Prince of Askr on\\nyour team."
+	},
+	{
+		"key": "MID_MISSION_S202405HERO02_A2",
+		"value": "Defeat Linus"
+	},
+	{
+		"key": "MID_MISSION_H_S202405HERO02_A2",
+		"value": "Clear the Grand Hero Battle against Linus:\\nSavage Dog on Lunatic or higher difficulty\\nwith Linus: Savage Dog on your team."
+	},
+	{
+		"key": "MID_MISSION_S202405HERO02_A3",
+		"value": "Defeat Linus"
+	},
+	{
+		"key": "MID_MISSION_H_S202405HERO02_A3",
+		"value": "Defeat Linus: Savage Dog at level 40 or higher\\nwith Alfonse: Prince of Askr."
+	},
+	{
+		"key": "MID_MISSION_S202405HERO02_A4",
+		"value": "Defeat Linus"
+	},
+	{
+		"key": "MID_MISSION_H_S202405HERO02_A4",
+		"value": "Defeat Linus: Savage Dog at level 40 or higher\\nwith Linus: Savage Dog."
+	},
+	{
+		"key": "MID_MISSION_S202405HERO02_A5",
+		"value": "Defeat Linus"
+	},
+	{
+		"key": "MID_MISSION_H_S202405HERO02_A5",
+		"value": "Clear the Grand Hero Battle against Linus:\\nSavage Dog on Lunatic or higher difficulty\\nusing only armored allies."
+	},
+	{
+		"key": "MID_MISSION_S202405JOURNEY01_TITLE",
+		"value": "Heroes Journey"
+	},
+	{
+		"key": "MID_MISSION_S202405JOURNEY01_A1",
+		"value": "Clear Heroes Journey"
+	},
+	{
+		"key": "MID_MISSION_H_S202405JOURNEY01_A1",
+		"value": "Clear Heroes Journey."
+	},
+	{
+		"key": "MID_MISSION_S202405JOURNEY01_A2",
+		"value": "Clear Heroes Journey"
+	},
+	{
+		"key": "MID_MISSION_H_S202405JOURNEY01_A2",
+		"value": "Clear Heroes Journey."
+	},
+	{
+		"key": "MID_MISSION_S202405KIZUNA01_TITLE",
+		"value": "Bound Hero Battle"
+	},
+	{
+		"key": "MID_MISSION_S202405KIZUNA01_A1",
+		"value": "Clear Bound Hero Battle"
+	},
+	{
+		"key": "MID_MISSION_H_S202405KIZUNA01_A1",
+		"value": "Clear the Bound Hero Battle against Arthur and\\nTine with Alfonse: Prince of Askr on your team."
+	},
+	{
+		"key": "MID_MISSION_S202405KIZUNA01_A2",
+		"value": "Clear Bound Hero Battle"
+	},
+	{
+		"key": "MID_MISSION_H_S202405KIZUNA01_A2",
+		"value": "Clear the Bound Hero Battle against Arthur and\\nTine on Lunatic or higher difficulty with\\nSharena: Princess of Askr on your team."
+	},
+	{
+		"key": "MID_MISSION_S202405KIZUNA01_A3",
+		"value": "Defeat Arthur"
+	},
+	{
+		"key": "MID_MISSION_H_S202405KIZUNA01_A3",
+		"value": "Defeat Arthur at level 40 or higher with\\nAlfonse: Prince of Askr."
+	},
+	{
+		"key": "MID_MISSION_S202405KIZUNA01_A4",
+		"value": "Defeat Tine"
+	},
+	{
+		"key": "MID_MISSION_H_S202405KIZUNA01_A4",
+		"value": "Defeat Tine at level 40 or higher with\\nSharena: Princess of Askr."
+	},
+	{
+		"key": "MID_MISSION_S202405KIZUNA01_A5",
+		"value": "Clear Bound Hero Battle"
+	},
+	{
+		"key": "MID_MISSION_H_S202405KIZUNA01_A5",
+		"value": "Clear the Bound Hero Battle against Arthur\\nand Tine on Lunatic or higher difficulty using\\nonly infantry allies."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_TITLE",
+		"value": "Armored Clash"
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A1",
+		"value": "KO Foe w/Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A1",
+		"value": "Defeat an armored foe with an armored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A2",
+		"value": "KO Foe w/Red Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A2",
+		"value": "Defeat an armored foe with a red armored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A3",
+		"value": "KO Foe w/Red Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A3",
+		"value": "Defeat an armored foe with a red armored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A4",
+		"value": "KO Foe w/Red Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A4",
+		"value": "Defeat an armored foe with a red armored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A5",
+		"value": "KO Foe w/Blue Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A5",
+		"value": "Defeat an armored foe with a blue\\narmored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A6",
+		"value": "KO Foe w/Blue Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A6",
+		"value": "Defeat an armored foe with a blue\\narmored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A7",
+		"value": "KO Foe w/Blue Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A7",
+		"value": "Defeat an armored foe with a blue\\narmored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A8",
+		"value": "KO Foe w/Green Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A8",
+		"value": "Defeat an armored foe with a green\\narmored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A9",
+		"value": "KO Foe w/Green Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A9",
+		"value": "Defeat an armored foe with a green\\narmored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A10",
+		"value": "KO Foe w/Green Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A10",
+		"value": "Defeat an armored foe with a green\\narmored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A11",
+		"value": "KO w/Colorless Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A11",
+		"value": "Defeat an armored foe with a colorless\\narmored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A12",
+		"value": "KO w/Colorless Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A12",
+		"value": "Defeat an armored foe with a colorless\\narmored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A13",
+		"value": "KO w/Colorless Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A13",
+		"value": "Defeat an armored foe with a colorless\\narmored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A14",
+		"value": "KO Red Foe w/Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A14",
+		"value": "Defeat a red armored foe with an\\narmored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A15",
+		"value": "KO Red Foe w/Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A15",
+		"value": "Defeat a red armored foe with an\\narmored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A16",
+		"value": "KO Red Foe w/Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A16",
+		"value": "Defeat a red armored foe with an\\narmored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A17",
+		"value": "KO Blue Foe w/Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A17",
+		"value": "Defeat a blue armored foe with an\\narmored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A18",
+		"value": "KO Blue Foe w/Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A18",
+		"value": "Defeat a blue armored foe with an\\narmored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A19",
+		"value": "KO Blue Foe w/Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A19",
+		"value": "Defeat a blue armored foe with an\\narmored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A20",
+		"value": "KO Green Foe w/Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A20",
+		"value": "Defeat a green armored foe with an\\narmored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A21",
+		"value": "KO Green Foe w/Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A21",
+		"value": "Defeat a green armored foe with an\\narmored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A22",
+		"value": "KO Green Foe w/Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A22",
+		"value": "Defeat a green armored foe with an\\narmored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A23",
+		"value": "KO Colorless w/Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A23",
+		"value": "Defeat a colorless armored foe with an\\narmored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A24",
+		"value": "KO Colorless w/Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A24",
+		"value": "Defeat a colorless armored foe with an\\narmored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A25",
+		"value": "KO Colorless w/Armored"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A25",
+		"value": "Defeat a colorless armored foe with an\\narmored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A26",
+		"value": "KO Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A26",
+		"value": "Defeat an armored foe that is level 40\\nor higher with an armored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A27",
+		"value": "KO Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A27",
+		"value": "Defeat an armored foe that is level 40\\nor higher with an armored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405MOVEVSMOVE01_A28",
+		"value": "KO Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202405MOVEVSMOVE01_A28",
+		"value": "Defeat an armored foe that is level 40\\nor higher with an armored ally."
+	},
+	{
+		"key": "MID_MISSION_S202405SENKA01_DAILY_TITLE",
+		"value": "Tempest Trials"
+	},
+	{
+		"key": "MID_MISSION_S202405SENKA01_DAILY_A1",
+		"value": "Clear Trial"
+	},
+	{
+		"key": "MID_MISSION_H_S202405SENKA01_DAILY_A1",
+		"value": "Clear one of the final maps in Tempest Trials."
+	},
+	{
+		"key": "MID_MISSION_S202405SENKA01_DAILY_A2",
+		"value": "Clear Trial"
+	},
+	{
+		"key": "MID_MISSION_H_S202405SENKA01_DAILY_A2",
+		"value": "Clear one of the final maps in Tempest Trials."
+	},
+	{
+		"key": "MID_MISSION_S202405SENKA01_DAILY_A3",
+		"value": "Clear Trial"
+	},
+	{
+		"key": "MID_MISSION_H_S202405SENKA01_DAILY_A3",
+		"value": "Clear one of the final maps in Tempest Trials."
+	},
+	{
+		"key": "MID_MISSION_S202405SENKA01_DAILY_A4",
+		"value": "Clear Trial"
+	},
+	{
+		"key": "MID_MISSION_H_S202405SENKA01_DAILY_A4",
+		"value": "Clear one of the final maps in Tempest Trials."
+	},
+	{
+		"key": "MID_MISSION_S202405SENKA02_DAILY_TITLE",
+		"value": "Tempest Trials"
+	},
+	{
+		"key": "MID_MISSION_S202405SENKA02_DAILY_A1",
+		"value": "Clear Trial"
+	},
+	{
+		"key": "MID_MISSION_H_S202405SENKA02_DAILY_A1",
+		"value": "Clear one of the final maps in Tempest Trials."
+	},
+	{
+		"key": "MID_MISSION_S202405SENKA02_DAILY_A2",
+		"value": "Clear Trial"
+	},
+	{
+		"key": "MID_MISSION_H_S202405SENKA02_DAILY_A2",
+		"value": "Clear one of the final maps in Tempest Trials."
+	},
+	{
+		"key": "MID_MISSION_S202405SENKA02_DAILY_A3",
+		"value": "Clear Trial"
+	},
+	{
+		"key": "MID_MISSION_H_S202405SENKA02_DAILY_A3",
+		"value": "Clear one of the final maps in Tempest Trials."
+	},
+	{
+		"key": "MID_MISSION_S202405SENKA02_DAILY_A4",
+		"value": "Clear Trial"
+	},
+	{
+		"key": "MID_MISSION_H_S202405SENKA02_DAILY_A4",
+		"value": "Clear one of the final maps in Tempest Trials."
+	},
+	{
+		"key": "MID_MISSION_S202405SUBSC02_TITLE",
+		"value": " Feh Pass"
+	},
+	{
+		"key": "MID_MISSION_S202405SUBSC02_A1",
+		"value": "KO Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202405SUBSC02_A1",
+		"value": "Defeat a foe."
+	},
+	{
+		"key": "MID_MISSION_S202405SUBSC02_A2",
+		"value": "KO Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202405SUBSC02_A2",
+		"value": "Defeat a foe."
+	},
+	{
+		"key": "MID_MISSION_S202405SUBSC02_A3",
+		"value": "Win Arena Duels"
+	},
+	{
+		"key": "MID_MISSION_H_S202405SUBSC02_A3",
+		"value": "Win Arena Duels at any difficulty."
+	},
+	{
+		"key": "MID_MISSION_S202405SUBSC02_A4",
+		"value": "Win Arena Duels"
+	},
+	{
+		"key": "MID_MISSION_H_S202405SUBSC02_A4",
+		"value": "Win Arena Duels at any difficulty."
+	},
+	{
+		"key": "MID_MISSION_S202405SUBSC02_A5",
+		"value": "KO Armored Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202405SUBSC02_A5",
+		"value": "Defeat an armored foe."
+	},
+	{
+		"key": "MID_MISSION_S202405SUBSC02_A6",
+		"value": "KO Flying Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202405SUBSC02_A6",
+		"value": "Defeat a flying foe."
+	},
+	{
+		"key": "MID_MISSION_W_S202405STORY_P01_TITLE",
+		"value": "Brides to Be"
+	},
+	{
+		"key": "MID_MISSION_W_S202405STORY_P01_A1",
+		"value": "Clear P98-1 on Lunatic"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202405STORY_P01_A1",
+		"value": "Clear Paralogue 98: Part 1 on Lunatic difficulty\\nwith a sword ally on your team. (Allies deployed\\nas cohorts using Pair Up do not count.) All four\\nallies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_S202405STORY_P01_A2",
+		"value": "Clear P98-2 on Lunatic"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202405STORY_P01_A2",
+		"value": "Clear Paralogue 98: Part 2 on Lunatic difficulty\\nwith a lance ally on your team. (Allies deployed\\nas cohorts using Pair Up do not count.) All four\\nallies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_S202405STORY_P01_A3",
+		"value": "Clear P98-3 on Lunatic"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202405STORY_P01_A3",
+		"value": "Clear Paralogue 98: Part 3 on Lunatic difficulty\\nwith an axe ally on your team. (Allies deployed\\nas cohorts using Pair Up do not count.) All four\\nallies must survive."
+	},
+	{
+		"key": "MPID_\u6bd4\u7ffc\u30b7\u30e3\u30ed\u30f3_v8.5",
+		"value": "Sharena"
+	},
+	{
+		"key": "MPID_\u82b1\u5ac1\u30e9\u30d4\u30b9",
+		"value": "Lapis"
+	},
+	{
+		"key": "MPID_SEARCH_\u82b1\u5ac1\u30e9\u30d4\u30b9",
+		"value": "Lapis"
+	},
+	{
+		"key": "MPID_\u82b1\u5ac1\u30a8\u30eb",
+		"value": "Nel"
+	},
+	{
+		"key": "MPID_SEARCH_\u82b1\u5ac1\u30a8\u30eb",
+		"value": "Nel"
+	},
+	{
+		"key": "MPID_\u82b1\u5ac1\u30a8\u30f3\u30d6\u30e9",
+		"value": "Embla"
+	},
+	{
+		"key": "MPID_SEARCH_\u82b1\u5ac1\u30a8\u30f3\u30d6\u30e9",
+		"value": "Embla"
+	},
+	{
+		"key": "MPID_\u82b1\u5a7f\u30b9\u30bf\u30eb\u30fc\u30af",
+		"value": "Alcryst"
+	},
+	{
+		"key": "MPID_SEARCH_\u82b1\u5a7f\u30b9\u30bf\u30eb\u30fc\u30af",
+		"value": "Alcryst"
+	},
+	{
+		"key": "MPID_HONOR_\u6bd4\u7ffc\u30b7\u30e3\u30ed\u30f3",
+		"value": "Pillars of Peace"
+	},
+	{
+		"key": "MPID_HONOR_\u82b1\u5ac1\u30e9\u30d4\u30b9",
+		"value": "Mighty Bride"
+	},
+	{
+		"key": "MPID_HONOR_\u82b1\u5ac1\u30a8\u30eb",
+		"value": "Stoic Bride"
+	},
+	{
+		"key": "MPID_HONOR_\u82b1\u5ac1\u30a8\u30f3\u30d6\u30e9",
+		"value": "Closed-Off Bride"
+	},
+	{
+		"key": "MPID_HONOR_\u82b1\u5a7f\u30b9\u30bf\u30eb\u30fc\u30af",
+		"value": "Tender Groom"
+	},
+	{
+		"key": "MPID_H_\u6bd4\u7ffc\u30b7\u30e3\u30ed\u30f3",
+		"value": "Sharena of Askr and Veronica of Embla\\ntogether at the bridal festival, dancing as one."
+	},
+	{
+		"key": "MPID_H_\u82b1\u5ac1\u30e9\u30d4\u30b9",
+		"value": "Prince Alcryst's retainer. Afraid of getting\\nher outfit dirty, she is behaving a little\\nmore modestly than usual. Appears in\\nFire Emblem Engage."
+	},
+	{
+		"key": "MPID_H_\u82b1\u5ac1\u30a8\u30eb",
+		"value": "A dragon from another world donning bridal\\ndress and thinking of the precious one she lost\\nlong ago. Appears in Fire Emblem Engage."
+	},
+	{
+		"key": "MPID_H_\u82b1\u5ac1\u30a8\u30f3\u30d6\u30e9",
+		"value": "God of the closed kingdom, which shares her\\nname. She has arrived at the bridal festival\\nadorned with a wedding dress of sorts."
+	},
+	{
+		"key": "MPID_H_\u82b1\u5a7f\u30b9\u30bf\u30eb\u30fc\u30af",
+		"value": "Second prince of Brodia. Feeling unworthy of\\nsuch outstanding garb, he nevertheless carries\\nhimself with an appropriate air of nobility.\\nAppears in Fire Emblem Engage."
+	},
+	{
+		"key": "MPID_VOICE_\u6bd4\u7ffc\u30b7\u30e3\u30ed\u30f3",
+		"value": "Julie Kliewer + Wendee Lee"
+	},
+	{
+		"key": "MPID_VOICE_\u82b1\u5ac1\u30e9\u30d4\u30b9",
+		"value": "Kimberly Woods"
+	},
+	{
+		"key": "MPID_VOICE_\u82b1\u5ac1\u30a8\u30eb",
+		"value": "Liz Morey"
+	},
+	{
+		"key": "MPID_VOICE_\u82b1\u5ac1\u30a8\u30f3\u30d6\u30e9",
+		"value": "Mayanna Berrin"
+	},
+	{
+		"key": "MPID_VOICE_\u82b1\u5a7f\u30b9\u30bf\u30eb\u30fc\u30af",
+		"value": "Micah Solusod"
+	},
+	{
+		"key": "MPID_VOICE_\u30ab\u30df\u30e9EX01",
+		"value": "Misty Lee"
+	},
+	{
+		"key": "MPID_ILLUST_\u6bd4\u7ffc\u30b7\u30e3\u30ed\u30f3",
+		"value": "hanekoto (\u306f\u306d\u3053\u3068)"
+	},
+	{
+		"key": "MPID_ILLUST_\u82b1\u5ac1\u30e9\u30d4\u30b9",
+		"value": "Miwabe Sakura (\u307f\u308f\u3079\u3055\u304f\u3089)"
+	},
+	{
+		"key": "MPID_ILLUST_\u82b1\u5ac1\u30a8\u30eb",
+		"value": "kiyu / Trys Inc."
+	},
+	{
+		"key": "MPID_ILLUST_\u82b1\u5ac1\u30a8\u30f3\u30d6\u30e9",
+		"value": "\u2200ir"
+	},
+	{
+		"key": "MPID_ILLUST_\u82b1\u5a7f\u30b9\u30bf\u30eb\u30fc\u30af",
+		"value": "namakawa (\u751f\u5ddd)"
+	},
+	{
+		"key": "MPID_ILLUST_\u30ab\u30df\u30e9EX01",
+		"value": "GomashioPonzu (\u3054\u307e\u3057\u304a\u30dd\u30f3\u9162)"
+	},
+	{
+		"key": "MPID_LEGEND_\u6bd4\u7ffc\u30b7\u30e3\u30ed\u30f3",
+		"value": "(Duo Skills can be used once per map by\\ntapping the Duo button. Duo Skills cannot\\nbe used by units deployed using Pair Up.)\\n\\nStandard Effect 1: Duel\\nIf unit is 5\u2605 and level 40 and unit's stats total\\nless than 205, treats unit's stats as 205 in\\nmodes like Arena. (Higher-scoring opponents\\nwill appear. Stat total calculation excludes any\\nvalues added by merges and skills.)"
+	},
+	{
+		"key": "MID_TIPS_Summon_v0805b_bride_01_\u6bd4\u7ffc\u30b7\u30e3\u30ed\u30f3",
+		"value": "Moves up to 4 spaces, takes up to\\n3 actions per turn, and can use Canto\\nto move up to 4 spaces three times!"
+	},
+	{
+		"key": "MID_TIPS_Summon_v0805b_bride_01_\u82b1\u5ac1\u30e9\u30d4\u30b9",
+		"value": "Inflicts penalties and Panic on groups\\nof foes, and grants extra actions to\\nallies who KO foes who fought Lapis."
+	},
+	{
+		"key": "MID_TIPS_Summon_v0805b_bride_01_\u82b1\u5ac1\u30a8\u30f3\u30d6\u30e9",
+		"value": "Transforms in any circumstance.\\nBlocks foes' protection. Speeds up\\nher and allies' Specials each turn!"
+	},
+	{
+		"key": "MID_TIPS_Summon_v0805b_bride_01_\u82b1\u5ac1\u30a8\u30eb",
+		"value": "Inflicts Special cooldown count+1\\nbefore foe attacks! Reduces damage\\nfrom first attacks, and then counters!"
+	},
+	{
+		"key": "MSID_\u91ce\u82b1\u306e\u82b1\u5ac1\u306e\u5927\u5263",
+		"value": "Wildflower Edge"
+	},
+	{
+		"key": "MSID_SEARCH_\u91ce\u82b1\u306e\u82b1\u5ac1\u306e\u5927\u5263",
+		"value": "Wildflower Edge"
+	},
+	{
+		"key": "MSID_\u4e8c\u56fd\u306e\u82b1\u5ac1\u306e\u30d6\u30fc\u30b1",
+		"value": "United Bouquet"
+	},
+	{
+		"key": "MSID_SEARCH_\u4e8c\u56fd\u306e\u82b1\u5ac1\u306e\u30d6\u30fc\u30b1",
+		"value": "United Bouquet"
+	},
+	{
+		"key": "MSID_\u30cf\u30fc\u30d7\u306e\u5f13",
+		"value": "Harp Bow"
+	},
+	{
+		"key": "MSID_SEARCH_\u30cf\u30fc\u30d7\u306e\u5f13",
+		"value": "Harp Bow"
+	},
+	{
+		"key": "MSID_\u30cf\u30fc\u30d7\u306e\u5f13\uff0b",
+		"value": "Harp Bow+"
+	},
+	{
+		"key": "MSID_SEARCH_\u30cf\u30fc\u30d7\u306e\u5f13\uff0b",
+		"value": "Harp Bow+"
+	},
+	{
+		"key": "MSID_\u7adc\u77f3\u306e\u30d6\u30fc\u30b1",
+		"value": "Dragonbloom"
+	},
+	{
+		"key": "MSID_SEARCH_\u7adc\u77f3\u306e\u30d6\u30fc\u30b1",
+		"value": "Dragonbloom"
+	},
+	{
+		"key": "MSID_\u7adc\u77f3\u306e\u30d6\u30fc\u30b1\uff0b",
+		"value": "Dragonbloom+"
+	},
+	{
+		"key": "MSID_SEARCH_\u7adc\u77f3\u306e\u30d6\u30fc\u30b1\uff0b",
+		"value": "Dragonbloom+"
+	},
+	{
+		"key": "MSID_\u9589\u3056\u3059\u82b1\u5ac1\u306e\u30d6\u30fc\u30b1",
+		"value": "Closing Florets"
+	},
+	{
+		"key": "MSID_SEARCH_\u9589\u3056\u3059\u82b1\u5ac1\u306e\u30d6\u30fc\u30b1",
+		"value": "Closing Florets"
+	},
+	{
+		"key": "MSID_\u653b\u6483\u901f\u3055\u306e\u7a81\u7834",
+		"value": "Atk/Spd Excel"
+	},
+	{
+		"key": "MSID_SEARCH_\u653b\u6483\u901f\u3055\u306e\u7a81\u7834",
+		"value": "Atk/Spd Excel"
+	},
+	{
+		"key": "MSID_\u6012\u6d9b\u30fb\u30ad\u30e3\u30f3\u30bb\u30eb4",
+		"value": "Flow Guard 4"
+	},
+	{
+		"key": "MSID_SEARCH_\u6012\u6d9b\u30fb\u30ad\u30e3\u30f3\u30bb\u30eb4",
+		"value": "Flow Guard 4"
+	},
+	{
+		"key": "MSID_\u7d76\u5bfe\u5316\u8eab\u30fb\u6025\u89721",
+		"value": "Beast Assault 1"
+	},
+	{
+		"key": "MSID_SEARCH_\u7d76\u5bfe\u5316\u8eab\u30fb\u6025\u89721",
+		"value": "Beast Assault 1"
+	},
+	{
+		"key": "MSID_\u7d76\u5bfe\u5316\u8eab\u30fb\u6025\u89722",
+		"value": "Beast Assault 2"
+	},
+	{
+		"key": "MSID_SEARCH_\u7d76\u5bfe\u5316\u8eab\u30fb\u6025\u89722",
+		"value": "Beast Assault 2"
+	},
+	{
+		"key": "MSID_\u7d76\u5bfe\u5316\u8eab\u30fb\u6025\u89723",
+		"value": "Beast Assault 3"
+	},
+	{
+		"key": "MSID_SEARCH_\u7d76\u5bfe\u5316\u8eab\u30fb\u6025\u89723",
+		"value": "Beast Assault 3"
+	},
+	{
+		"key": "MSID_\u7d76\u5bfe\u5316\u8eab\u30fb\u6025\u89724",
+		"value": "Beast Assault 4"
+	},
+	{
+		"key": "MSID_SEARCH_\u7d76\u5bfe\u5316\u8eab\u30fb\u6025\u89724",
+		"value": "Beast Assault 4"
+	},
+	{
+		"key": "MSID_\u3042\u306a\u305f\u306e\u30b7\u30e3\u30ed\u30f3",
+		"value": "Forever Yours"
+	},
+	{
+		"key": "MSID_SEARCH_\u3042\u306a\u305f\u306e\u30b7\u30e3\u30ed\u30f3",
+		"value": "Forever Yours"
+	},
+	{
+		"key": "MSID_\u3059\u3079\u3066\u3092\u9396\u3059\u4e16\u754c",
+		"value": "Absolute Closure"
+	},
+	{
+		"key": "MSID_SEARCH_\u3059\u3079\u3066\u3092\u9396\u3059\u4e16\u754c",
+		"value": "Absolute Closure"
+	},
+	{
+		"key": "MSID_H_\u91ce\u82b1\u306e\u82b1\u5ac1\u306e\u5927\u5263",
+		"value": "$aEnables\u3010Canto (Rem. +1)\u3011.\\nAccelerates Special trigger (cooldown count-1).\\n\\nIf unit has entered combat during the current\\nturn, allies within 5 spaces of unit can move to\\na space within 2 spaces of unit.\\n\\nIf unit initiates combat or is within 2 spaces\\nof an ally, grants Atk/Spd/Def/Res+5 to unit,\\ngrants bonus to unit's Atk/Spd/Def/Res = 15%\\nof unit's Spd at start of combat, deals damage\\n= 20% of unit's Spd (excluding area-of-effect\\nSpecials), and reduces damage from foe's first\\nattack by X% during combat (if it is unit's first\\ncombat initiated by unit or first combat initiated\\nby foe that turn, X = 80; otherwise, X = 40;\\n\"first attack\" normally means only the first strike;\\nfor effects that grant \"unit attacks twice,\" it\\nmeans the first and second strikes).\\n\\nIf unit initiates combat, deals 10 damage to\\ntarget and foes within 2 spaces of target after\\ncombat, and inflicts\u3010Share Spoils\u3011on target\\nthrough its next action.\\n\\n\u3010Canto (Rem. +1)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move again.\\n\\nThe distance of the movement is the remaining\\nmovement the unit had before the actions listed\\nabove + 1 (If unit used a movement skill that\\nwarps them, the remainder is 0). (Once per turn.\\nOnly highest value applied. Does not stack.)\\n\\n\u3010Share Spoils\u3011\\nInflicts Atk/Spd/Def/Res-5 on unit during\\ncombat and neutralizes \"reduces damage\\nby X%\" effects from unit's non-Special skills\\n(excluding area-of-effect Specials).\\nIf foe initiates combat and if unit is\\ndefeated in combat, grants another action\\nto that foe after combat (this effect has\\npriority over other similar effects, including\\nTime Is Light; in such cases, these other similar\\neffects are treated as not having triggered)."
+	},
+	{
+		"key": "MSID_H_\u91ce\u82b1\u306e\u82b1\u5ac1\u306e\u5927\u5263_NOSKW",
+		"value": "$aEnables\u3010Canto (Rem. +1)\u3011.\\nAccelerates Special trigger (cooldown count-1).\\n\\nIf unit has entered combat during the current\\nturn, allies within 5 spaces of unit can move to\\na space within 2 spaces of unit.\\n\\nIf unit initiates combat or is within 2 spaces\\nof an ally, grants Atk/Spd/Def/Res+5 to unit,\\ngrants bonus to unit's Atk/Spd/Def/Res = 15%\\nof unit's Spd at start of combat, deals damage\\n= 20% of unit's Spd (excluding area-of-effect\\nSpecials), and reduces damage from foe's first\\nattack by X% during combat (if it is unit's first\\ncombat initiated by unit or first combat initiated\\nby foe that turn, X = 80; otherwise, X = 40;\\n\"first attack\" normally means only the first strike;\\nfor effects that grant \"unit attacks twice,\" it\\nmeans the first and second strikes).\\n\\nIf unit initiates combat, deals 10 damage to\\ntarget and foes within 2 spaces of target after\\ncombat, and inflicts\u3010Share Spoils\u3011on target\\nthrough its next action."
+	},
+	{
+		"key": "MSID_H_\u4e8c\u56fd\u306e\u82b1\u5ac1\u306e\u30d6\u30fc\u30b1",
+		"value": "Accelerates Special trigger (cooldown count-1).\\n\\nAt start of turn, if unit's HP \u2265 25%, grants\\nAtk/Spd+6 to unit for 1 turn and unit can move\\n1 extra space (that turn only; does not stack).\\nAt start of combat, if unit's HP \u2265 25%, grants\\nbonus to unit's Atk/Spd/Def/Res = number of\\nallies within 3 rows or 3 columns centered on\\nunit \u00d7 3, + 5 (max 14), neutralizes effects that\\nguarantee foe's follow-up attacks and effects\\nthat prevent unit's follow-up attacks, and deals\\ndamage = 20% of unit's Spd during combat\\n(excluding area-of-effect Specials), and also,\\nwhen unit deals damage to foe during combat,\\nrestores X HP to unit (X = number of spaces\\nfrom start position to end position of whoever\\ninitiated combat \u00d7 3; max 12; triggers even if\\n0 damage is dealt)."
+	},
+	{
+		"key": "MSID_H_\u30cf\u30fc\u30d7\u306e\u5f13",
+		"value": "Effective against flying foes.\\n\\nIf unit initiates combat or foe's Range = 2,\\ngrants Atk/Spd/Def/Res+4 to unit, deals\\ndamage = 15% of unit's Spd (excluding\\narea-of-effect Specials), and reduces damage\\nfrom foe's first attack by X% during combat\\n(if it is unit's first combat initiated by unit or\\nfirst combat initiated by foe that turn, X = 60;\\notherwise, X = 30; \"first attack\" normally\\nmeans only the first strike; for effects that\\ngrant \"unit attacks twice,\" it means the first\\nand second strikes)."
+	},
+	{
+		"key": "MSID_H_\u30cf\u30fc\u30d7\u306e\u5f13\uff0b",
+		"value": "Effective against flying foes.\\n\\nIf unit initiates combat or foe's Range = 2,\\ngrants Atk/Spd/Def/Res+4 to unit, deals\\ndamage = 15% of unit's Spd (excluding\\narea-of-effect Specials), and reduces damage\\nfrom foe's first attack by X% during combat\\n(if it is unit's first combat initiated by unit or\\nfirst combat initiated by foe that turn, X = 60;\\notherwise, X = 30; \"first attack\" normally\\nmeans only the first strike; for effects that\\ngrant \"unit attacks twice,\" it means the first\\nand second strikes)."
+	},
+	{
+		"key": "MSID_H_\u7adc\u77f3\u306e\u30d6\u30fc\u30b1",
+		"value": "If unit initiates combat or is within 2 spaces\\nof an ally, grants Atk/Spd/Def/Res+4 to unit,\\ndeals damage = 15% of unit's Spd (excluding\\narea-of-effect Specials), and reduces damage\\nfrom foe's first attack by X% during combat\\n(if it is unit's first combat initiated by unit or\\nfirst combat initiated by foe that turn, X = 80;\\notherwise, X = 40; \"first attack\" normally means\\nonly the first strike; for effects that grant \"unit\\nattacks twice,\" it means the first and second\\nstrikes). If foe's Range = 2, calculates damage\\nusing the lower of foe's Def or Res."
+	},
+	{
+		"key": "MSID_H_\u7adc\u77f3\u306e\u30d6\u30fc\u30b1\uff0b",
+		"value": "If unit initiates combat or is within 2 spaces\\nof an ally, grants Atk/Spd/Def/Res+4 to unit,\\ndeals damage = 15% of unit's Spd (excluding\\narea-of-effect Specials), and reduces damage\\nfrom foe's first attack by X% during combat\\n(if it is unit's first combat initiated by unit or\\nfirst combat initiated by foe that turn, X = 80;\\notherwise, X = 40; \"first attack\" normally means\\nonly the first strike; for effects that grant \"unit\\nattacks twice,\" it means the first and second\\nstrikes). If foe's Range = 2, calculates damage\\nusing the lower of foe's Def or Res."
+	},
+	{
+		"key": "MSID_H_\u9589\u3056\u3059\u82b1\u5ac1\u306e\u30d6\u30fc\u30b1",
+		"value": "$aEnables\u3010Canto (Rem. +1)\u3011.\\nAccelerates Special trigger (cooldown count-1).\\n\\nAt start of turn, if unit's HP \u2265 25%, grants the\\nfollowing effect to unit and target allies\\n(if support partner is on player team, targets\\nany support partner within 2 spaces of unit;\\notherwise, targets ally with the highest Spd\\nwithin 2 spaces of unit): if Special cooldown\\ncount is at its maximum value, grants Special\\ncooldown count-2; if Special cooldown\\ncount is at its maximum value - 1, grants\\nSpecial cooldown count-1.\\n\\nAt start of combat, if unit's HP \u2265 25%, grants\\nbonus to unit's Atk/Spd/Def/Res during combat\\n= number of foes within 3 rows or 3 columns\\ncentered on unit \u00d7 3, + 5 (max 14), deals\\ndamage = 20% of unit's Spd (excluding\\narea-of-effect Specials), and reduces\\ndamage by 20% of unit's Spd (excluding\\narea-of-effect Specials).\\n\\nAt start of turn, if unit is adjacent to only beast\\nor dragon allies or if unit is not adjacent to any\\nally, unit transforms (otherwise, unit reverts).\\nIf unit transforms, grants Atk+2 and unit can\\nmove 1 extra space (that turn only; does\\nnot stack).\\n\\n\u3010Canto (Rem. +1)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move again.\\n\\nThe distance of the movement is the remaining\\nmovement the unit had before the actions listed\\nabove+1 (If unit used a movement skill that warps\\nthem, the remainder is 0).\\n\\n(Unit moves according to movement type. Once\\nper turn. Cannot attack or assist. Only highest\\nvalue applied. Does not stack. After moving,\\nif a skill that grants another action would be\\ntriggered (like with Galeforce), Canto will\\ntrigger after the granted action. Unit's base\\nmovement has no effect on movement granted.\\nCannot warp (using skills like Wings of Mercy)\\na distance greater than unit would be able to\\nmove with normal Canto movement.)"
+	},
+	{
+		"key": "MSID_H_\u9589\u3056\u3059\u82b1\u5ac1\u306e\u30d6\u30fc\u30b1_NOSKW",
+		"value": "$aEnables\u3010Canto (Rem. +1)\u3011.\\nAccelerates Special trigger (cooldown count-1).\\n\\nAt start of turn, if unit's HP \u2265 25%, grants the\\nfollowing effect to unit and target allies\\n(if support partner is on player team, targets\\nany support partner within 2 spaces of unit;\\notherwise, targets ally with the highest Spd\\nwithin 2 spaces of unit): if Special cooldown\\ncount is at its maximum value, grants Special\\ncooldown count-2; if Special cooldown\\ncount is at its maximum value - 1, grants\\nSpecial cooldown count-1.\\n\\nAt start of combat, if unit's HP \u2265 25%, grants\\nbonus to unit's Atk/Spd/Def/Res during combat\\n= number of foes within 3 rows or 3 columns\\ncentered on unit \u00d7 3, + 5 (max 14), deals\\ndamage = 20% of unit's Spd (excluding\\narea-of-effect Specials), and reduces\\ndamage by 20% of unit's Spd (excluding\\narea-of-effect Specials).\\n\\nAt start of turn, if unit is adjacent to only beast\\nor dragon allies or if unit is not adjacent to any\\nally, unit transforms (otherwise, unit reverts).\\nIf unit transforms, grants Atk+2 and unit can\\nmove 1 extra space (that turn only; does\\nnot stack)."
+	},
+	{
+		"key": "MSID_H_\u653b\u6483\u901f\u3055\u306e\u7a81\u7834",
+		"value": "If unit or foe initiates combat after moving\\nto a different space, grants Atk/Spd+6 and\\nAtk/Spd+X to unit during combat (X = number\\nof spaces from start position to end position\\nof whoever initiated combat; max 4), and also,\\nif unit initiates combat, reduces damage from\\nfoe's attacks by X \u00d7 3 during combat\\n(excluding area-of-effect Specials). If foe's\\nattack triggers foe's Special, reduces damage\\ndealt to unit by X \u00d7 3 during combat (excluding\\narea-of-effect Specials)."
+	},
+	{
+		"key": "MSID_H_\u6012\u6d9b\u30fb\u30ad\u30e3\u30f3\u30bb\u30eb4",
+		"value": "If unit initiates combat, inflicts Spd/Def-4 on\\nfoe, neutralizes effects that guarantee foe's\\nfollow-up attacks and effects that prevent\\nunit's follow-up attacks, and inflicts Special\\ncooldown charge -1 on foe per attack during\\ncombat (only highest value applied; does not\\nstack), and also, if foe's attack can trigger foe's\\nSpecial, inflicts Special cooldown count+1 on\\nfoe before foe's first attack during combat\\n(cannot exceed foe's maximum Special\\ncooldown)."
+	},
+	{
+		"key": "MSID_H_\u7d76\u5bfe\u5316\u8eab\u30fb\u6025\u89721",
+		"value": "If unit's HP = 100%, removes the condition\\nto transform.\\n\\nReduces the percentage of foe's non-Special\\n\"reduce damage by X%\" skills by 20% during\\ncombat (excluding area-of-effect Specials)."
+	},
+	{
+		"key": "MSID_H_\u7d76\u5bfe\u5316\u8eab\u30fb\u6025\u89722",
+		"value": "If unit's HP \u2265 50%, removes the condition to\\ntransform.\\n\\nReduces the percentage of foe's non-Special\\n\"reduce damage by X%\" skills by 30% during\\ncombat (excluding area-of-effect Specials)."
+	},
+	{
+		"key": "MSID_H_\u7d76\u5bfe\u5316\u8eab\u30fb\u6025\u89723",
+		"value": "Removes the condition to transform.\\n\\nReduces the percentage of foe's non-Special\\n\"reduce damage by X%\" skills by 40% during\\ncombat (excluding area-of-effect Specials)."
+	},
+	{
+		"key": "MSID_H_\u7d76\u5bfe\u5316\u8eab\u30fb\u6025\u89724",
+		"value": "Removes the condition to transform.\\n\\nInflicts Spd/Def-4 on foe and reduces the\\npercentage of foe's non-Special \"reduce\\ndamage by X%\" skills by 50% during combat\\n(excluding area-of-effect Specials)."
+	},
+	{
+		"key": "MSID_H_\u3042\u306a\u305f\u306e\u30b7\u30e3\u30ed\u30f3",
+		"value": "$aEnables\u3010Canto (Dist. +1; Max \uff14)\u3011.\\n\\nIf unit initiates combat or is within 3 spaces of\\nan ally, grants Atk/Spd/Def/Res+4 to unit,\\nreduces damage from attacks during combat\\nby 40% (excluding area-of-effect Specials), and\\nneutralizes effects that grant \"Special cooldown\\ncharge +X\" to foe or inflict \"Special cooldown\\ncharge -X\" on unit during combat.\\n\\nAfter unit acts, if an ally within 3 spaces of unit\\nenters into combat, grants another action to\\nunit after ally's combat, and if Canto has\\nalready been triggered, re-enables Canto\\n(once per turn; if another effect that grants\\naction to unit has been activated at the same\\ntime, this effect is also considered to have\\nbeen triggered).\\n\\n\u3010Canto (Dist. +1; Max \uff14)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move spaces = number\\nof spaces from start position to end position\\nof unit before the above, +1. (Max \uff14.)\\n\\n(Unit moves according to movement type. Once\\nper turn. Cannot attack or assist. Only highest\\nvalue applied. Does not stack. After moving,\\nif a skill that grants another action would be\\ntriggered (like with Galeforce), Canto will\\ntrigger after the granted action. Unit's base\\nmovement has no effect on movement granted.\\nCannot warp (using skills like Wings of Mercy)\\na distance greater than unit would be able to\\nmove with normal Canto movement.)"
+	},
+	{
+		"key": "MSID_H_\u3042\u306a\u305f\u306e\u30b7\u30e3\u30ed\u30f3_NOSKW",
+		"value": "$aEnables\u3010Canto (Dist. +1; Max \uff14)\u3011.\\n\\nIf unit initiates combat or is within 3 spaces of\\nan ally, grants Atk/Spd/Def/Res+4 to unit,\\nreduces damage from attacks during combat\\nby 40% (excluding area-of-effect Specials), and\\nneutralizes effects that grant \"Special cooldown\\ncharge +X\" to foe or inflict \"Special cooldown\\ncharge -X\" on unit during combat.\\n\\nAfter unit acts, if an ally within 3 spaces of unit\\nenters into combat, grants another action to\\nunit after ally's combat, and if Canto has\\nalready been triggered, re-enables Canto\\n(once per turn; if another effect that grants\\naction to unit has been activated at the same\\ntime, this effect is also considered to have\\nbeen triggered)."
+	},
+	{
+		"key": "MSID_H_\u3059\u3079\u3066\u3092\u9396\u3059\u4e16\u754c",
+		"value": "$aAt start of turn, inflicts\u3010Undefended\u3011and\\n\u3010Feud\u3011on foes within 3 columns or 3 rows\\ncentered on unit through their next actions.\\nAt start of turn, if any foe is within 3 columns or\\n3 rows centered on unit, grants\u3010Dodge\u3011to\\nunit and neutralizes any\u3010Penalty\u3011\\n(excluding penalties inflicted at start of turn).\\nIf unit transforms, grants Atk/Spd/Def/Res+4 to\\nunit and neutralizes effects that guarantee foe's\\nfollow-up attacks and effects that prevent unit's\\nfollow-up attacks during combat.\\n\\n\u3010Undefended\u3011\\nUnit cannot be protected by Savior through\\ntheir next action.\\n\\n\u3010Feud\u3011\\nDisables all ally skills (excluding unit's) during\\ncombat through unit's next action.\\n\\n\u3010Dodge\u3011\\nIf unit's Spd > foe's Spd, reduces damage from\\nattacks during combat and from area-of-effect\\nSpecials (excluding R\u00f8kkr area-of-effect\\nSpecials) by percentage = difference between\\nstats \u00d7 4 (max 40%).\\n\\n\u3010Penalty\u3011\\nAll effects that last \"on foe through its next\\naction.\" Includes penalties inflicted by a skill\\nlike Panic or Threaten and negative status\\neffects (preventing counterattacks, restricting\\nmovement, or the effects of a skill like\\nTriangle Adept or Guard)."
+	},
+	{
+		"key": "MSID_H_\u3059\u3079\u3066\u3092\u9396\u3059\u4e16\u754c_NOSKW",
+		"value": "$aAt start of turn, inflicts\u3010Undefended\u3011and\\n\u3010Feud\u3011on foes within 3 columns or 3 rows\\ncentered on unit through their next actions.\\nAt start of turn, if any foe is within 3 columns or\\n3 rows centered on unit, grants\u3010Dodge\u3011to\\nunit and neutralizes any\u3010Penalty\u3011\\n(excluding penalties inflicted at start of turn).\\nIf unit transforms, grants Atk/Spd/Def/Res+4 to\\nunit and neutralizes effects that guarantee foe's\\nfollow-up attacks and effects that prevent unit's\\nfollow-up attacks during combat."
+	},
+	{
+		"key": "MSID_H_\u6bd4\u7ffc\u30b7\u30e3\u30ed\u30f3",
+		"value": "Grants unit another action, and if Canto has\\nalready been triggered, re-enables Canto. (May\\nbe used only if unit has already acted and an\\nally within 3 spaces of unit has entered combat\\nduring the current turn.)"
+	},
+	{
+		"key": "MID_CHAPTER_TITLE_CX097",
+		"value": "Paralogue 98"
+	},
+	{
+		"key": "MID_CHAPTER_CX097",
+		"value": "Brides to Be"
+	},
+	{
+		"key": "MID_STAGE_TITLE_X0971",
+		"value": "Paralogue 98-1"
+	},
+	{
+		"key": "MID_STAGE_TITLE_X0972",
+		"value": "Paralogue 98-2"
+	},
+	{
+		"key": "MID_STAGE_TITLE_X0973",
+		"value": "Paralogue 98-3"
+	},
+	{
+		"key": "MID_STAGE_X0971",
+		"value": "Perfect Opportunity"
+	},
+	{
+		"key": "MID_STAGE_X0972",
+		"value": "So Pretty"
+	},
+	{
+		"key": "MID_STAGE_X0973",
+		"value": "Just the Two of Us"
+	},
+	{
+		"key": "MID_CHAPTER_ST_CX049",
+		"value": "P. 97 & 98"
+	},
+	{
+		"key": "MID_STAGE_TITLE_ST_X0096",
+		"value": "Paralogue 97"
+	},
+	{
+		"key": "MID_STAGE_TITLE_ST_X0097",
+		"value": "Paralogue 98"
+	},
+	{
+		"key": "MID_STAGE_TITLE_ST_X1097",
+		"value": "P. 97 & 98"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PB233",
+		"value": "Skill Studies 233"
+	},
+	{
+		"key": "MID_STAGE_PB233",
+		"value": "Brides, Askran & Emblian"
+	}
+]
