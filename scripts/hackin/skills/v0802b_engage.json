@@ -40,10 +40,10 @@
 		},
 		"skill_params": {
 			"hp": 0,
-			"atk": -200,
-			"spd": -200,
-			"def": -200,
-			"res": -200
+			"atk": 0,
+			"spd": 0,
+			"def": 0,
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 0,
@@ -168,10 +168,10 @@
 		},
 		"skill_params": {
 			"hp": 0,
-			"atk": -200,
-			"spd": -200,
-			"def": -200,
-			"res": -200
+			"atk": 0,
+			"spd": 0,
+			"def": 0,
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 0,
@@ -295,11 +295,11 @@
 			"res": 0
 		},
 		"skill_params": {
-			"hp": 1,
-			"atk": 2,
-			"spd": 6,
-			"def": 1,
-			"res": 10
+			"hp": 0,
+			"atk": 0,
+			"spd": 0,
+			"def": 0,
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 1,
@@ -423,11 +423,11 @@
 			"res": 0
 		},
 		"skill_params": {
-			"hp": 1,
-			"atk": 14,
-			"spd": 16,
-			"def": 2,
-			"res": 8
+			"hp": 0,
+			"atk": 0,
+			"spd": 0,
+			"def": 0,
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 64,
@@ -551,11 +551,11 @@
 			"res": 5
 		},
 		"skill_params": {
-			"hp": 1125,
-			"atk": 30,
-			"spd": -9,
-			"def": 9,
-			"res": 10
+			"hp": 0,
+			"atk": 0,
+			"spd": 0,
+			"def": 0,
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 32,
@@ -679,11 +679,11 @@
 			"res": 5
 		},
 		"skill_params": {
-			"hp": 7,
+			"hp": 0,
 			"atk": 0,
 			"spd": 0,
 			"def": 0,
-			"res": 6
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 65,
@@ -807,8 +807,8 @@
 			"res": 0
 		},
 		"skill_params": {
-			"hp": 1,
-			"atk": 45,
+			"hp": 0,
+			"atk": 0,
 			"spd": 0,
 			"def": 0,
 			"res": 0
@@ -935,11 +935,11 @@
 			"res": 9
 		},
 		"skill_params": {
-			"hp": 1,
-			"atk": 4080,
-			"spd": 1,
-			"def": -25,
-			"res": 2
+			"hp": 0,
+			"atk": 0,
+			"spd": 0,
+			"def": 0,
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 3,
@@ -1065,9 +1065,9 @@
 		"skill_params": {
 			"hp": 0,
 			"atk": 0,
-			"spd": 1,
-			"def": 1,
-			"res": 250
+			"spd": 0,
+			"def": 0,
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 0,
@@ -1191,11 +1191,11 @@
 			"res": 0
 		},
 		"skill_params": {
-			"hp": 20,
+			"hp": 0,
 			"atk": 0,
-			"spd": 1,
-			"def": 1290,
-			"res": 1
+			"spd": 0,
+			"def": 0,
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 3,
@@ -1319,7 +1319,7 @@
 			"res": -4
 		},
 		"skill_params": {
-			"hp": 7,
+			"hp": 0,
 			"atk": 0,
 			"spd": 0,
 			"def": 0,
@@ -1447,11 +1447,11 @@
 			"res": 0
 		},
 		"skill_params": {
-			"hp": 3,
+			"hp": 0,
 			"atk": 0,
-			"spd": -6,
+			"spd": 0,
 			"def": 0,
-			"res": -6
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 1,
@@ -1575,7 +1575,7 @@
 			"res": 0
 		},
 		"skill_params": {
-			"hp": 2,
+			"hp": 0,
 			"atk": 0,
 			"spd": 0,
 			"def": 0,
@@ -1703,11 +1703,11 @@
 			"res": 5
 		},
 		"skill_params": {
-			"hp": 7,
+			"hp": 0,
 			"atk": 0,
 			"spd": 0,
 			"def": 0,
-			"res": 6
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 65,
@@ -1831,11 +1831,11 @@
 			"res": 5
 		},
 		"skill_params": {
-			"hp": 7,
+			"hp": 0,
 			"atk": 0,
 			"spd": 0,
 			"def": 0,
-			"res": 6
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 65,
@@ -1959,11 +1959,11 @@
 			"res": 5
 		},
 		"skill_params": {
-			"hp": 7,
+			"hp": 0,
 			"atk": 0,
 			"spd": 0,
 			"def": 0,
-			"res": 6
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 65,
@@ -2087,11 +2087,11 @@
 			"res": 5
 		},
 		"skill_params": {
-			"hp": 7,
+			"hp": 0,
 			"atk": 0,
 			"spd": 0,
 			"def": 0,
-			"res": 6
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 65,
@@ -2215,11 +2215,11 @@
 			"res": 5
 		},
 		"skill_params": {
-			"hp": 7,
+			"hp": 0,
 			"atk": 0,
 			"spd": 0,
 			"def": 0,
-			"res": 6
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 65,
@@ -2343,11 +2343,11 @@
 			"res": 5
 		},
 		"skill_params": {
-			"hp": 7,
+			"hp": 0,
 			"atk": 0,
 			"spd": 0,
 			"def": 0,
-			"res": 6
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 65,
@@ -2471,11 +2471,11 @@
 			"res": 5
 		},
 		"skill_params": {
-			"hp": 7,
+			"hp": 0,
 			"atk": 0,
 			"spd": 0,
 			"def": 0,
-			"res": 6
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 65,
@@ -2599,11 +2599,11 @@
 			"res": 5
 		},
 		"skill_params": {
-			"hp": 7,
+			"hp": 0,
 			"atk": 0,
 			"spd": 0,
 			"def": 0,
-			"res": 6
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 65,
@@ -2728,10 +2728,10 @@
 		},
 		"skill_params": {
 			"hp": 0,
-			"atk": -200,
-			"spd": -200,
-			"def": -200,
-			"res": -200
+			"atk": 0,
+			"spd": 0,
+			"def": 0,
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 0,
@@ -2856,10 +2856,10 @@
 		},
 		"skill_params": {
 			"hp": 0,
-			"atk": -200,
-			"spd": -200,
-			"def": -200,
-			"res": -200
+			"atk": 0,
+			"spd": 0,
+			"def": 0,
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 0,
@@ -2984,10 +2984,10 @@
 		},
 		"skill_params": {
 			"hp": 0,
-			"atk": -200,
-			"spd": -200,
-			"def": -200,
-			"res": -200
+			"atk": 0,
+			"spd": 0,
+			"def": 0,
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 0,
@@ -3112,10 +3112,10 @@
 		},
 		"skill_params": {
 			"hp": 0,
-			"atk": -200,
-			"spd": -200,
-			"def": -200,
-			"res": -200
+			"atk": 0,
+			"spd": 0,
+			"def": 0,
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 0,

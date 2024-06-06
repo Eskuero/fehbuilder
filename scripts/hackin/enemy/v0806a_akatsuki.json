@@ -1,0 +1,36 @@
+[
+	{
+		"id_tag": "EID_\u30a8\u30a4\u30af\u30b9\u30eb\u30cb\u30eb",
+		"roman": "EIKTHYRNIR",
+		"face_name": "ch00_57_Eikthyrnir_M_Normal",
+		"face_name2": "ch00_57_Eikthyrnir_M_Normal",
+		"top_weapon": "SID_\u4f53\u306e\u846c\u308a\u624b\u306e\u89d2",
+		"unique_assist1": null,
+		"unique_assist2": null,
+		"unique_special": null,
+		"timestamp": null,
+		"id_num": 106,
+		"is_npc": false,
+		"weapon_type": 23,
+		"tome_class": 0,
+		"move_type": 2,
+		"random_allowed": false,
+		"is_boss": true,
+		"refresher": false,
+		"is_enemy": true,
+		"base_stats": {
+			"hp": 20,
+			"atk": 11,
+			"spd": 2,
+			"def": 7,
+			"res": 7
+		},
+		"growth_rates": {
+			"hp": 55,
+			"atk": 80,
+			"spd": 30,
+			"def": 90,
+			"res": 50
+		}
+	}
+]

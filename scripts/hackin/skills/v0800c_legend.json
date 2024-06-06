@@ -39,11 +39,11 @@
 			"res": 5
 		},
 		"skill_params": {
-			"hp": 220,
-			"atk": 6,
+			"hp": 0,
+			"atk": 0,
 			"spd": 0,
 			"def": 0,
-			"res": 6
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 30,
@@ -167,11 +167,11 @@
 			"res": -5
 		},
 		"skill_params": {
-			"hp": 2,
+			"hp": 0,
 			"atk": 0,
-			"spd": -7,
+			"spd": 0,
 			"def": 0,
-			"res": -7
+			"res": 0
 		},
 		"skill_params2": {
 			"hp": 48,
@@ -295,9 +295,9 @@
 			"res": -5
 		},
 		"skill_params": {
-			"hp": 3,
-			"atk": 1,
-			"spd": 1,
+			"hp": 0,
+			"atk": 0,
+			"spd": 0,
 			"def": 0,
 			"res": 0
 		},
