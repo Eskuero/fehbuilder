@@ -295,11 +295,17 @@ async function fillemblems() {
 	for (i = 0; i < other["emblem"].length; i++) {
 		let opt = document.createElement('option');
 		let hero = other["emblem"][i]
-		opt.value = hero
-		opt.innerHTML = languages[newlang][hero.replace("PID", "MPID")]
-		selectemblemhero.appendChild(opt);
+		// Now if the currently selected hero is an emblem skip adding it as an option in the list
+		if (selectheroes.value != hero) {
+			opt.value = hero
+			opt.innerHTML = languages[newlang][hero.replace("PID", "MPID")]
+			selectemblemhero.appendChild(opt);
+		}
 	}
-	selectemblemhero.value = previousvalue;
+	// Do not restore the value if the previous value is the same as the selected hero since we have skipped it during the loop
+	if (selectheroes.value != previousvalue) {
+		selectemblemhero.value = previousvalue;
+	}
 }
 
 async function fillblessed(clean = false, toberestored = []) {
