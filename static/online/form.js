@@ -296,14 +296,14 @@ async function fillemblems() {
 		let opt = document.createElement('option');
 		let hero = other["emblem"][i]
 		// Now if the currently selected hero is an emblem skip adding it as an option in the list
-		if (selectheroes.value != hero) {
+		if (selectheroes.value != hero || cheats.checked == true) {
 			opt.value = hero
 			opt.innerHTML = languages[newlang][hero.replace("PID", "MPID")]
 			selectemblemhero.appendChild(opt);
 		}
 	}
 	// Do not restore the value if the previous value is the same as the selected hero since we have skipped it during the loop
-	if (selectheroes.value != previousvalue) {
+	if (selectheroes.value != previousvalue || cheats.checked == true) {
 		selectemblemhero.value = previousvalue;
 	}
 }
