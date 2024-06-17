@@ -633,7 +633,7 @@
 	},
 	{
 		"key": "MSID_H_\u4e09\u96c4\u306e\u53cc\u5203",
-		"value": "Cuando se ejecutan habilidades especiales,\\nla unidad aumenta el da\u00f1o en una cuant\u00eda\\nequivalente al 40 % de su Res y se anulan las\\nreducciones de da\u00f1o de habilidades no especiales\\ndel rival. Al inicio del combate, si la habilidad\\nespecial de la unidad est\u00e1 activa y su Res supera\\nla Res del rival, se reduce en un X % el da\u00f1o\\nde las habilidades especiales con \u00e1rea de efecto\\n(sin contar las efectuadas por Sombras)\\ny el de los ataques durante el enfrentamiento,\\ndonde X equivale a la diferencia de atributos\\nde Res \u00d7 3 (hasta un m\u00e1ximo del 30 %)."
+		"value": "Cuando se ejecutan habilidades especiales,\\nla unidad aumenta el da\u00f1o en una cuant\u00eda\\nequivalente al 40 % de su Res y se anulan\\nlos efectos de las habilidades no especiales\\ndel rival que reducen el da\u00f1o porcentualmente.\\nAl inicio del combate, si la habilidad especial\\nde la unidad est\u00e1 activa y su Res supera la Res\\ndel rival, se reduce en un X % el da\u00f1o\\nde las habilidades especiales con \u00e1rea de efecto\\n(sin contar las efectuadas por Sombras)\\ny el de los ataques durante el enfrentamiento,\\ndonde X equivale a la diferencia de atributos\\nde Res \u00d7 3 (hasta un m\u00e1ximo del 30 %)."
 	},
 	{
 		"key": "MSID_H_\u653b\u6483\u5b88\u5099\u306e\u9632\u58c14",
