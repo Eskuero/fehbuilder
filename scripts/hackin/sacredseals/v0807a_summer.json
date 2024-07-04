@@ -1,0 +1,83 @@
+[
+	{
+		"id_tag": "SID_\u653b\u6483\u901f\u3055\u306e\u727d\u52361",
+		"next_seal": "SID_\u653b\u6483\u901f\u3055\u306e\u727d\u52362",
+		"prev_seal": null,
+		"ss_coin": 40,
+		"ss_badge_type": 1,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u901f\u3055\u306e\u727d\u52362",
+		"next_seal": "SID_\u653b\u6483\u901f\u3055\u306e\u727d\u52363",
+		"prev_seal": "SID_\u653b\u6483\u901f\u3055\u306e\u727d\u52361",
+		"ss_coin": 50,
+		"ss_badge_type": 1,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u901f\u3055\u306e\u727d\u52363",
+		"next_seal": null,
+		"prev_seal": "SID_\u653b\u6483\u901f\u3055\u306e\u727d\u52362",
+		"ss_coin": 100,
+		"ss_badge_type": 1,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u5b88\u5099\u9b54\u9632\u306e\u5e72\u6e091",
+		"next_seal": "SID_\u5b88\u5099\u9b54\u9632\u306e\u5e72\u6e092",
+		"prev_seal": null,
+		"ss_coin": 20,
+		"ss_badge_type": 3,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u5b88\u5099\u9b54\u9632\u306e\u5e72\u6e092",
+		"next_seal": "SID_\u5b88\u5099\u9b54\u9632\u306e\u5e72\u6e093",
+		"prev_seal": "SID_\u5b88\u5099\u9b54\u9632\u306e\u5e72\u6e091",
+		"ss_coin": 50,
+		"ss_badge_type": 3,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u5b88\u5099\u9b54\u9632\u306e\u5e72\u6e093",
+		"next_seal": null,
+		"prev_seal": "SID_\u5b88\u5099\u9b54\u9632\u306e\u5e72\u6e092",
+		"ss_coin": 100,
+		"ss_badge_type": 3,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u7b2c84\u8ff7\u5bae\u306e\u8987\u80051",
+		"next_seal": "SID_\u7b2c84\u8ff7\u5bae\u306e\u8987\u80052",
+		"prev_seal": null,
+		"ss_coin": 0,
+		"ss_badge_type": 0,
+		"ss_badge": 0,
+		"ss_great_badge": 0
+	},
+	{
+		"id_tag": "SID_\u7b2c84\u8ff7\u5bae\u306e\u8987\u80052",
+		"next_seal": "SID_\u7b2c84\u8ff7\u5bae\u306e\u8987\u80053",
+		"prev_seal": "SID_\u7b2c84\u8ff7\u5bae\u306e\u8987\u80051",
+		"ss_coin": 50,
+		"ss_badge_type": 2,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u7b2c84\u8ff7\u5bae\u306e\u8987\u80053",
+		"next_seal": null,
+		"prev_seal": "SID_\u7b2c84\u8ff7\u5bae\u306e\u8987\u80052",
+		"ss_coin": 100,
+		"ss_badge_type": 2,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	}
+]
