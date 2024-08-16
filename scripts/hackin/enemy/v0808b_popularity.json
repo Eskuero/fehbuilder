@@ -1,0 +1,36 @@
+[
+	{
+		"id_tag": "EID_\u30ec\u30fc\u30e9\u30ba",
+		"roman": "LERAZR",
+		"face_name": "ch00_59_Lerazr_M_Normal",
+		"face_name2": "ch00_59_Lerazr_M_Normal",
+		"top_weapon": "SID_\u5fc3\u306e\u846c\u308a\u624b\u306e\u679d",
+		"unique_assist1": null,
+		"unique_assist2": null,
+		"unique_special": null,
+		"timestamp": null,
+		"id_num": 108,
+		"is_npc": false,
+		"weapon_type": 23,
+		"tome_class": 0,
+		"move_type": 1,
+		"random_allowed": false,
+		"is_boss": true,
+		"refresher": false,
+		"is_enemy": true,
+		"base_stats": {
+			"hp": 23,
+			"atk": 12,
+			"spd": 3,
+			"def": 10,
+			"res": 8
+		},
+		"growth_rates": {
+			"hp": 60,
+			"atk": 80,
+			"spd": 30,
+			"def": 75,
+			"res": 90
+		}
+	}
+]

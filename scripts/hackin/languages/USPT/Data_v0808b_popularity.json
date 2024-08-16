@@ -1,0 +1,866 @@
+[
+	{
+		"key": "MDAID_\u624b\u7e2b\u3044\u306e\u3069\u3046\u3076\u3064",
+		"value": "Pel\u00facia artesanal"
+	},
+	{
+		"key": "MDAID_H_\u624b\u7e2b\u3044\u306e\u3069\u3046\u3076\u3064",
+		"value": "Um ouri\u00e7o de pel\u00facia de Bernadetta.\\nFoi costurado \u00e0 m\u00e3o e tem um bolso\\ninterno em que se pode guardar\\npequenos objetos."
+	},
+	{
+		"key": "MDAID_\u624b\u7e2b\u3044\u306e\u3069\u3046\u3076\u3064\u30fb\u6975",
+		"value": "Pel\u00facia artesanal +"
+	},
+	{
+		"key": "MDAID_H_\u624b\u7e2b\u3044\u306e\u3069\u3046\u3076\u3064\u30fb\u6975",
+		"value": "Um ursinho de pel\u00facia de Bernadetta.\\nTanto a pel\u00facia quanto os trajes foram\\ncosturados \u00e0 m\u00e3o de forma cuidadosa."
+	},
+	{
+		"key": "MDAID_\u9078\u3070\u308c\u3057\u53c2\u8b00\u306e\u5e3d\u5b50",
+		"value": "Capuz da conselheira"
+	},
+	{
+		"key": "MDAID_H_\u9078\u3070\u308c\u3057\u53c2\u8b00\u306e\u5e3d\u5b50",
+		"value": "Um capuz de alta qualidade de Robin.\\nFoi dado a ela junto com o uniforme\\nde estrategista quando ela foi\\nnomeada conselheira de guerra."
+	},
+	{
+		"key": "MDAID_\u9078\u3070\u308c\u3057\u53c2\u8b00\u306e\u5e3d\u5b50\u30fb\u6975",
+		"value": "Capuz da conselheira +"
+	},
+	{
+		"key": "MDAID_H_\u9078\u3070\u308c\u3057\u53c2\u8b00\u306e\u5e3d\u5b50\u30fb\u6975",
+		"value": "Um capuz de alta qualidade de Robin.\\nHabilidosamente bordado com a\\nmarca da fam\u00edlia real de Ylisse."
+	},
+	{
+		"key": "MDAID_\u7279\u52d9\u6a5f\u95a2\u306e\u7ffc",
+		"value": "Asas de batalha"
+	},
+	{
+		"key": "MDAID_H_\u7279\u52d9\u6a5f\u95a2\u306e\u7ffc",
+		"value": "Armadura em forma de asa de\\nAlfonse. Essa \u00e9 uma prova de\\nafilia\u00e7\u00e3o \u00e0 Ordem dos Her\u00f3is."
+	},
+	{
+		"key": "MDAID_\u7279\u52d9\u6a5f\u95a2\u306e\u7ffc\u30fb\u6975",
+		"value": "Asas de batalha +"
+	},
+	{
+		"key": "MDAID_H_\u7279\u52d9\u6a5f\u95a2\u306e\u7ffc\u30fb\u6975",
+		"value": "Armadura em forma de asa de\\nAlfonse. Pertenceu a Gustav e est\u00e1\\nmarcada com as cicatrizes de\\nin\u00fameras batalhas."
+	},
+	{
+		"key": "MDAID_\u30a8\u30d4\u30bf\u30d5\u306e\u515c",
+		"value": "Elmo do s\u00e1bio"
+	},
+	{
+		"key": "MDAID_H_\u30a8\u30d4\u30bf\u30d5\u306e\u515c",
+		"value": "Um elmo com chifres de Felix. O\\ncuidado e a habilidade do artes\u00e3o\\npodem ser vistos em cada detalhe."
+	},
+	{
+		"key": "MDAID_\u30a8\u30d4\u30bf\u30d5\u306e\u515c\u30fb\u6975",
+		"value": "Elmo do s\u00e1bio +"
+	},
+	{
+		"key": "MDAID_H_\u30a8\u30d4\u30bf\u30d5\u306e\u515c\u30fb\u6975",
+		"value": "Um elmo com chifres de Felix. O\\nescudo de Fraldarius na parte frontal\\nconcede um ar heroico a quem o usa."
+	},
+	{
+		"key": "MDAID_\u65c5\u5148\u306e\u30d5\u30a7\u30fc\u306e\u304a\u9762",
+		"value": "M\u00e1scara da Feh"
+	},
+	{
+		"key": "MDAID_H_\u65c5\u5148\u306e\u30d5\u30a7\u30fc\u306e\u304a\u9762",
+		"value": "Prova de que dois her\u00f3is derrotaram\\num chef\u00e3o em sua jornada juntos.\\n\u00c9 uma lembran\u00e7a das suas viagens."
+	},
+	{
+		"key": "MID_ENHANCE_HELP_69",
+		"value": "Se PV (uni.) \u2264 99%, concede Atq. +5 e permite\\no uso de Desespero e Emboscada"
+	},
+	{
+		"key": "MID_MISSION_S202408HERO01_TITLE",
+		"value": "Grande her\u00f3i"
+	},
+	{
+		"key": "MID_MISSION_S202408HERO01_A1",
+		"value": "Derrotar Cyril"
+	},
+	{
+		"key": "MID_MISSION_H_S202408HERO01_A1",
+		"value": "Complete a batalha do grande her\u00f3i contra\\nCyril: Criado de Rhea com Sharena: Princesa\\nde Askr na sua equipe."
+	},
+	{
+		"key": "MID_MISSION_S202408HERO01_A2",
+		"value": "Derrotar Cyril"
+	},
+	{
+		"key": "MID_MISSION_H_S202408HERO01_A2",
+		"value": "Complete a batalha do grande her\u00f3i contra\\nCyril: Criado de Rhea no modo extremo ou\\nsuperior com Cyril: Criado de Rhea na\\nsua equipe."
+	},
+	{
+		"key": "MID_MISSION_S202408HERO01_A3",
+		"value": "Derrotar Cyril"
+	},
+	{
+		"key": "MID_MISSION_H_S202408HERO01_A3",
+		"value": "Derrote Cyril: Criado de Rhea no n\u00edvel 40 ou\\nsuperior com Sharena: Princesa de Askr."
+	},
+	{
+		"key": "MID_MISSION_S202408HERO01_A4",
+		"value": "Derrotar Cyril"
+	},
+	{
+		"key": "MID_MISSION_H_S202408HERO01_A4",
+		"value": "Derrote Cyril: Criado de Rhea no n\u00edvel 40 ou\\nsuperior com Cyril: Criado de Rhea."
+	},
+	{
+		"key": "MID_MISSION_S202408HERO01_A5",
+		"value": "Derrotar Cyril"
+	},
+	{
+		"key": "MID_MISSION_H_S202408HERO01_A5",
+		"value": "Complete a batalha do grande her\u00f3i contra\\nCyril: Criado de Rhea no modo extremo ou\\nsuperior usando apenas aliados voadores."
+	},
+	{
+		"key": "MID_MISSION_S202408JOURNEY01_TITLE",
+		"value": "Jornada dupla"
+	},
+	{
+		"key": "MID_MISSION_S202408JOURNEY01_A1",
+		"value": "Completar jornada dupla"
+	},
+	{
+		"key": "MID_MISSION_H_S202408JOURNEY01_A1",
+		"value": "Complete a jornada dupla."
+	},
+	{
+		"key": "MID_MISSION_S202408JOURNEY01_A2",
+		"value": "Completar jornada dupla"
+	},
+	{
+		"key": "MID_MISSION_H_S202408JOURNEY01_A2",
+		"value": "Complete a jornada dupla."
+	},
+	{
+		"key": "MID_MISSION_S202408SUBSC02_TITLE",
+		"value": " Passe da Feh"
+	},
+	{
+		"key": "MID_MISSION_S202408SUBSC02_A1",
+		"value": "Derrotar inimigo"
+	},
+	{
+		"key": "MID_MISSION_H_S202408SUBSC02_A1",
+		"value": "Derrote um inimigo."
+	},
+	{
+		"key": "MID_MISSION_S202408SUBSC02_A2",
+		"value": "Derrotar inimigo"
+	},
+	{
+		"key": "MID_MISSION_H_S202408SUBSC02_A2",
+		"value": "Derrote um inimigo."
+	},
+	{
+		"key": "MID_MISSION_S202408SUBSC02_A3",
+		"value": "Vit\u00f3ria na Arena"
+	},
+	{
+		"key": "MID_MISSION_H_S202408SUBSC02_A3",
+		"value": "Ven\u00e7a combates na Arena em qualquer\\nmodo de dificuldade."
+	},
+	{
+		"key": "MID_MISSION_S202408SUBSC02_A4",
+		"value": "Vit\u00f3ria na Arena"
+	},
+	{
+		"key": "MID_MISSION_H_S202408SUBSC02_A4",
+		"value": "Ven\u00e7a combates na Arena em qualquer\\nmodo de dificuldade."
+	},
+	{
+		"key": "MID_MISSION_S202408SUBSC02_A5",
+		"value": "Derrotar inimigo armadura"
+	},
+	{
+		"key": "MID_MISSION_H_S202408SUBSC02_A5",
+		"value": "Derrote um inimigo de armadura."
+	},
+	{
+		"key": "MID_MISSION_S202408SUBSC02_A6",
+		"value": "Derrotar inimigo voador"
+	},
+	{
+		"key": "MID_MISSION_H_S202408SUBSC02_A6",
+		"value": "Derrote um inimigo voador."
+	},
+	{
+		"key": "MID_MISSION_S202408VSTYPE01_TITLE",
+		"value": "Lutas cinzas"
+	},
+	{
+		"key": "MID_MISSION_S202408VSTYPE01_A1",
+		"value": "Derrotar inimigo cinza"
+	},
+	{
+		"key": "MID_MISSION_H_S202408VSTYPE01_A1",
+		"value": "Derrote um inimigo cinza."
+	},
+	{
+		"key": "MID_MISSION_S202408VSTYPE01_A2",
+		"value": "Derrotar inimigo cinza"
+	},
+	{
+		"key": "MID_MISSION_H_S202408VSTYPE01_A2",
+		"value": "Derrote um inimigo cinza com um aliado\\nque usa lan\u00e7a."
+	},
+	{
+		"key": "MID_MISSION_S202408VSTYPE01_A3",
+		"value": "Derrotar inimigo cinza"
+	},
+	{
+		"key": "MID_MISSION_H_S202408VSTYPE01_A3",
+		"value": "Derrote um inimigo cinza com um aliado\\nque usa tomo azul."
+	},
+	{
+		"key": "MID_MISSION_S202408VSTYPE01_A4",
+		"value": "Derrotar inimigo cinza"
+	},
+	{
+		"key": "MID_MISSION_H_S202408VSTYPE01_A4",
+		"value": "Derrote um inimigo cinza com um aliado\\nde cavalaria azul."
+	},
+	{
+		"key": "MID_MISSION_S202408VSTYPE01_A5",
+		"value": "Derrotar inimigo cinza"
+	},
+	{
+		"key": "MID_MISSION_H_S202408VSTYPE01_A5",
+		"value": "Derrote um inimigo cinza de n\u00edvel 10 ou superior\\ncom um aliado que usa espada."
+	},
+	{
+		"key": "MID_MISSION_S202408VSTYPE01_A6",
+		"value": "Derrotar inimigo cinza"
+	},
+	{
+		"key": "MID_MISSION_H_S202408VSTYPE01_A6",
+		"value": "Derrote um inimigo cinza de n\u00edvel 10 ou superior\\ncom um aliado que usa tomo vermelho."
+	},
+	{
+		"key": "MID_MISSION_S202408VSTYPE01_A7",
+		"value": "Derrotar inimigo cinza"
+	},
+	{
+		"key": "MID_MISSION_H_S202408VSTYPE01_A7",
+		"value": "Derrote um inimigo cinza de n\u00edvel 10 ou\\nsuperior com um aliado de infantaria vermelha."
+	},
+	{
+		"key": "MID_MISSION_S202408VSTYPE01_A8",
+		"value": "Derrotar inimigo cinza"
+	},
+	{
+		"key": "MID_MISSION_H_S202408VSTYPE01_A8",
+		"value": "Derrote um inimigo cinza de n\u00edvel 20 ou\\nsuperior com um aliado que usa machado."
+	},
+	{
+		"key": "MID_MISSION_S202408VSTYPE01_A9",
+		"value": "Derrotar inimigo cinza"
+	},
+	{
+		"key": "MID_MISSION_H_S202408VSTYPE01_A9",
+		"value": "Derrote um inimigo cinza de n\u00edvel 20 ou superior\\ncom um aliado que usa tomo verde."
+	},
+	{
+		"key": "MID_MISSION_S202408VSTYPE01_A10",
+		"value": "Derrotar inimigo cinza"
+	},
+	{
+		"key": "MID_MISSION_H_S202408VSTYPE01_A10",
+		"value": "Derrote um inimigo cinza de n\u00edvel 20 ou\\nsuperior com um aliado que usa armadura\\nverde."
+	},
+	{
+		"key": "MID_MISSION_S202408VSTYPE01_A11",
+		"value": "Derrotar inimigo cinza"
+	},
+	{
+		"key": "MID_MISSION_H_S202408VSTYPE01_A11",
+		"value": "Derrote um inimigo cinza de n\u00edvel 30 ou\\nsuperior com um aliado que usa arco cinza."
+	},
+	{
+		"key": "MID_MISSION_S202408VSTYPE01_A12",
+		"value": "Derrotar inimigo cinza"
+	},
+	{
+		"key": "MID_MISSION_H_S202408VSTYPE01_A12",
+		"value": "Derrote um inimigo cinza de n\u00edvel 30 ou superior\\ncom um aliado que usa adaga cinza."
+	},
+	{
+		"key": "MID_MISSION_S202408VSTYPE01_A13",
+		"value": "Derrotar inimigo cinza"
+	},
+	{
+		"key": "MID_MISSION_H_S202408VSTYPE01_A13",
+		"value": "Derrote um inimigo cinza de n\u00edvel 30 ou\\nsuperior com um aliado voador cinza."
+	},
+	{
+		"key": "MID_MISSION_S202408VSTYPE01_A14",
+		"value": "Derrotar inimigo cinza"
+	},
+	{
+		"key": "MID_MISSION_H_S202408VSTYPE01_A14",
+		"value": "Derrote um inimigo cinza de n\u00edvel 40\\nou superior."
+	},
+	{
+		"key": "MID_MISSION_W_S202408STORY_C01_TITLE",
+		"value": "Negocia\u00e7\u00e3o vital"
+	},
+	{
+		"key": "MID_MISSION_W_S202408STORY_C01_A1",
+		"value": "Cap. 10 - Parte 1: Extremo"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202408STORY_C01_A1",
+		"value": "Complete a 1\u00aa parte do cap\u00edtulo 10 do Livro\\nVIII no modo extremo com um aliado que usa\\nespada na sua equipe. (Aliados enviados \u00e0\\nbatalha em parceria como auxiliares n\u00e3o\\ncontam.) Todos os quatro aliados precisam\\nsobreviver."
+	},
+	{
+		"key": "MID_MISSION_W_S202408STORY_C01_A2",
+		"value": "Cap. 10 - Parte 2: Extremo"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202408STORY_C01_A2",
+		"value": "Complete a 2\u00aa parte do cap\u00edtulo 10 do Livro\\nVIII no modo extremo com um aliado que usa\\nlan\u00e7a na sua equipe. (Aliados enviados \u00e0\\nbatalha em parceria como auxiliares n\u00e3o\\ncontam.) Todos os quatro aliados precisam\\nsobreviver."
+	},
+	{
+		"key": "MID_MISSION_W_S202408STORY_C01_A3",
+		"value": "Cap. 10 - Parte 3: Extremo"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202408STORY_C01_A3",
+		"value": "Complete a 3\u00aa parte do cap\u00edtulo 10 do Livro\\nVIII no modo extremo com um aliado que usa\\nmachado na sua equipe. (Aliados enviados \u00e0\\nbatalha em parceria como auxiliares n\u00e3o\\ncontam.) Todos os quatro aliados precisam\\nsobreviver."
+	},
+	{
+		"key": "MID_MISSION_W_S202408STORY_C01_A4",
+		"value": "Cap. 10 - Parte 4: Extremo"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202408STORY_C01_A4",
+		"value": "Complete a 4\u00aa parte do cap\u00edtulo 10 do Livro\\nVIII no modo extremo com um aliado que usa\\nespada na sua equipe. (Aliados enviados \u00e0\\nbatalha em parceria como auxiliares n\u00e3o\\ncontam.) Todos os quatro aliados precisam\\nsobreviver."
+	},
+	{
+		"key": "MID_MISSION_W_S202408STORY_C01_A5",
+		"value": "Cap. 10 - Parte 5: Extremo"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202408STORY_C01_A5",
+		"value": "Complete a 5\u00aa parte do cap\u00edtulo 10 do Livro\\nVIII no modo extremo com um aliado que usa\\nlan\u00e7a na sua equipe. (Aliados enviados \u00e0\\nbatalha em parceria como auxiliares n\u00e3o\\ncontam.) Todos os quatro aliados precisam\\nsobreviver."
+	},
+	{
+		"key": "MPID_\u7dcf\u9078\u6319\u30a2\u30eb\u30d5\u30a9\u30f3\u30b9",
+		"value": "Alfonse"
+	},
+	{
+		"key": "MPID_SEARCH_\u7dcf\u9078\u6319\u30a2\u30eb\u30d5\u30a9\u30f3\u30b9",
+		"value": "Alfonse"
+	},
+	{
+		"key": "MPID_\u7dcf\u9078\u6319\u30d9\u30eb\u30ca\u30c7\u30c3\u30bf",
+		"value": "Bernadetta"
+	},
+	{
+		"key": "MPID_SEARCH_\u7dcf\u9078\u6319\u30d9\u30eb\u30ca\u30c7\u30c3\u30bf",
+		"value": "Bernadetta"
+	},
+	{
+		"key": "MPID_\u7dcf\u9078\u6319\u30d5\u30a7\u30ea\u30af\u30b9",
+		"value": "Felix"
+	},
+	{
+		"key": "MPID_SEARCH_\u7dcf\u9078\u6319\u30d5\u30a7\u30ea\u30af\u30b9",
+		"value": "Felix"
+	},
+	{
+		"key": "MPID_\u7dcf\u9078\u6319\u30eb\u30d5\u30ec\u5973",
+		"value": "Robin"
+	},
+	{
+		"key": "MPID_SEARCH_\u7dcf\u9078\u6319\u30eb\u30d5\u30ec\u5973",
+		"value": "Robin"
+	},
+	{
+		"key": "MPID_\u30d1\u30cd\u30c8\u30cd",
+		"value": "Panette"
+	},
+	{
+		"key": "MPID_SEARCH_\u30d1\u30cd\u30c8\u30cd",
+		"value": "Panette"
+	},
+	{
+		"key": "MEID_\u30ec\u30fc\u30e9\u30ba",
+		"value": "L\u00e6ra\u00f0r"
+	},
+	{
+		"key": "MPID_\u738b\u58f0",
+		"value": "O monarca"
+	},
+	{
+		"key": "MPID_SEARCH_\u738b\u58f0",
+		"value": "O monarca"
+	},
+	{
+		"key": "MPID_HONOR_\u7dcf\u9078\u6319\u30a2\u30eb\u30d5\u30a9\u30f3\u30b9",
+		"value": "Herdeiro de Askr"
+	},
+	{
+		"key": "MPID_HONOR_\u7dcf\u9078\u6319\u30d9\u30eb\u30ca\u30c7\u30c3\u30bf",
+		"value": "Protegida solit\u00e1ria"
+	},
+	{
+		"key": "MPID_HONOR_\u7dcf\u9078\u6319\u30d5\u30a7\u30ea\u30af\u30b9",
+		"value": "S\u00e1bio da espada"
+	},
+	{
+		"key": "MPID_HONOR_\u7dcf\u9078\u6319\u30eb\u30d5\u30ec\u5973",
+		"value": "Leal ao vener\u00e1vel"
+	},
+	{
+		"key": "MPID_HONOR_\u30d1\u30cd\u30c8\u30cd",
+		"value": "Rixosa classuda"
+	},
+	{
+		"key": "MEID_HONOR_\u30ec\u30fc\u30e9\u30ba",
+		"value": "Cora\u00e7\u00e3o silenciador"
+	},
+	{
+		"key": "MPID_H_\u7dcf\u9078\u6319\u30a2\u30eb\u30d5\u30a9\u30f3\u30b9",
+		"value": "Pr\u00edncipe sisudo e am\u00e1vel de Askr. Usando o\\nmesmo traje que um dia foi usado por seu pai,\\nele encontrou uma nova determina\u00e7\u00e3o e um\\nnovo prop\u00f3sito."
+	},
+	{
+		"key": "MPID_H_\u7dcf\u9078\u6319\u30d9\u30eb\u30ca\u30c7\u30c3\u30bf",
+		"value": "Filha do conde Varley, ministro da religi\u00e3o do\\nimp\u00e9rio adrestriano. Por ser muito t\u00edmida\\nprefere se isolar em seus aposentos. Aparece\\nem Fire Emblem: Three Houses."
+	},
+	{
+		"key": "MPID_H_\u7dcf\u9078\u6319\u30d5\u30a7\u30ea\u30af\u30b9",
+		"value": "Segundo filho da prestigiosa fam\u00edlia real da casa\\nFraldarius do reino sagrado de Faerghus.\\nEnfrentar\u00e1 qualquer advers\u00e1rio que considere\\nhabilidoso para se fortalecer. Aparece em Fire\\nEmblem: Three Houses."
+	},
+	{
+		"key": "MPID_H_\u7dcf\u9078\u6319\u30eb\u30d5\u30ec\u5973",
+		"value": "Estrategista de Ylisse e fiel a Chrom.\\nEla veste um novo traje e oferece sua for\u00e7a\\nao vener\u00e1vel e ao seu povo. Aparece em\\nFire Emblem Awakening."
+	},
+	{
+		"key": "MPID_H_\u30d1\u30cd\u30c8\u30cd",
+		"value": "Guerreira de Solm e criada de Timerra. Sua fala\\npeculiar, \u00e0s vezes, carece de naturalidade e\\npode ser inconsistente. Aparece em\\nFire Emblem Engage."
+	},
+	{
+		"key": "MEID_H_\u30ec\u30fc\u30e9\u30ba",
+		"value": "L\u00edder das m\u00e3os curativas de Yggdrasill. Ele \u00e9\\nconhecido por controlar o cora\u00e7\u00e3o das pessoas."
+	},
+	{
+		"key": "MPID_VOICE_\u7dcf\u9078\u6319\u30a2\u30eb\u30d5\u30a9\u30f3\u30b9",
+		"value": "Ray Chase"
+	},
+	{
+		"key": "MPID_VOICE_\u7dcf\u9078\u6319\u30d9\u30eb\u30ca\u30c7\u30c3\u30bf",
+		"value": "Erica Mendez"
+	},
+	{
+		"key": "MPID_VOICE_\u7dcf\u9078\u6319\u30d5\u30a7\u30ea\u30af\u30b9",
+		"value": "Lucien Dodge"
+	},
+	{
+		"key": "MPID_VOICE_\u7dcf\u9078\u6319\u30eb\u30d5\u30ec\u5973",
+		"value": "Lauren Landa"
+	},
+	{
+		"key": "MPID_VOICE_\u30d1\u30cd\u30c8\u30cd",
+		"value": "Melissa Hutchison"
+	},
+	{
+		"key": "MEID_VOICE_\u30ec\u30fc\u30e9\u30ba",
+		"value": "Bob Carter"
+	},
+	{
+		"key": "MPID_VOICE_\u30cf\u30fc\u30ebEX01",
+		"value": "Jake Eberle"
+	},
+	{
+		"key": "MPID_ILLUST_\u7dcf\u9078\u6319\u30a2\u30eb\u30d5\u30a9\u30f3\u30b9",
+		"value": "Niji Hayashi (\u30cb\u30b8\u30cf\u30e4\u30b7)"
+	},
+	{
+		"key": "MPID_ILLUST_\u7dcf\u9078\u6319\u30d9\u30eb\u30ca\u30c7\u30c3\u30bf",
+		"value": "Gesoking (\u30b2\u30bd\u304d\u3093\u3050)"
+	},
+	{
+		"key": "MPID_ILLUST_\u7dcf\u9078\u6319\u30d5\u30a7\u30ea\u30af\u30b9",
+		"value": "lack"
+	},
+	{
+		"key": "MPID_ILLUST_\u7dcf\u9078\u6319\u30eb\u30d5\u30ec\u5973",
+		"value": "Wada Sachiko (\u30ef\u30c0\u30b5\u30c1\u30b3)"
+	},
+	{
+		"key": "MPID_ILLUST_\u30d1\u30cd\u30c8\u30cd",
+		"value": "nekomochi (\u30cd\u30b3\u30e2\u30c1) / Trys Inc."
+	},
+	{
+		"key": "MEID_ILLUST_\u30ec\u30fc\u30e9\u30ba",
+		"value": "Kozaki Yusuke (\u30b3\u30b6\u30ad\u30e6\u30fc\u30b9\u30b1)"
+	},
+	{
+		"key": "MPID_ILLUST_\u30cf\u30fc\u30ebEX01",
+		"value": "kou (\u30b3\u30a6)"
+	},
+	{
+		"key": "MID_TIPS_Summon_v0808b_popularity_01_\u7dcf\u9078\u6319\u30a2\u30eb\u30d5\u30a9\u30f3\u30b9",
+		"value": "Seu ex\u00e9rcito fica mais forte a cada\\nrodada e com cada ativa\u00e7\u00e3o de\\nhabilidade especial. A resist\u00eancia dele\\n\u00e9 capaz de suportar ataques inimigos."
+	},
+	{
+		"key": "MID_TIPS_Summon_v0808b_popularity_01_\u7dcf\u9078\u6319\u30d5\u30a7\u30ea\u30af\u30b9",
+		"value": "Ele realiza at\u00e9 tr\u00eas a\u00e7\u00f5es por rodada e\\npode derrotar inimigos a dist\u00e2ncia.\\nSua Nova esp. trov\u00e3o \u00e9 capaz de\\ndestruir qualquer armadura."
+	},
+	{
+		"key": "MID_TIPS_Summon_v0808b_popularity_01_\u7dcf\u9078\u6319\u30d9\u30eb\u30ca\u30c7\u30c3\u30bf",
+		"value": "Agora ela \u00e9 capaz de infligir Paranoia\\n\u00e0queles ao redor dela! Pode realizar\\nquatro ataques intercalados com sua\\npoderosa habilidade especial."
+	},
+	{
+		"key": "MID_TIPS_Summon_v0808b_popularity_01_\u7dcf\u9078\u6319\u30eb\u30d5\u30ec\u5973",
+		"value": "Ela impede o avan\u00e7o do inimigo com\\nparedes de gelo! Se os inimigos se\\naproximarem, ela acaba com eles com\\nsua poderosa habilidade especial."
+	},
+	{
+		"key": "MSID_\u932c\u78e8\u30b5\u30f3\u30c0\u30fc\u30bd\u30fc\u30c9",
+		"value": "Nova esp. trov\u00e3o"
+	},
+	{
+		"key": "MSID_SEARCH_\u932c\u78e8\u30b5\u30f3\u30c0\u30fc\u30bd\u30fc\u30c9",
+		"value": "Nova esp. trovao"
+	},
+	{
+		"key": "MSID_\u738b\u65a7\u30b0\u30ea\u30c8\u30cb\u30eb",
+		"value": "Glitnir majestoso"
+	},
+	{
+		"key": "MSID_SEARCH_\u738b\u65a7\u30b0\u30ea\u30c8\u30cb\u30eb",
+		"value": "Glitnir majestoso"
+	},
+	{
+		"key": "MSID_\u30d9\u30eb\u30bb\u30eb\u30af\u306e\u65a7",
+		"value": "Mach. Berserker"
+	},
+	{
+		"key": "MSID_SEARCH_\u30d9\u30eb\u30bb\u30eb\u30af\u306e\u65a7",
+		"value": "Mach. Berserker"
+	},
+	{
+		"key": "MSID_\u5c3d\u304d\u3056\u308b\u3082\u306e",
+		"value": "O inesgot\u00e1vel"
+	},
+	{
+		"key": "MSID_SEARCH_\u5c3d\u304d\u3056\u308b\u3082\u306e",
+		"value": "O inesgotavel"
+	},
+	{
+		"key": "MSID_\u8056\u738b\u306e\u53c2\u8b00\u306e\u8853\u66f8",
+		"value": "Vias vener\u00e1veis"
+	},
+	{
+		"key": "MSID_SEARCH_\u8056\u738b\u306e\u53c2\u8b00\u306e\u8853\u66f8",
+		"value": "Vias veneraveis"
+	},
+	{
+		"key": "MSID_\u5fc3\u306e\u846c\u308a\u624b\u306e\u679d",
+		"value": "Ramo silenciador"
+	},
+	{
+		"key": "MSID_SEARCH_\u5fc3\u306e\u846c\u308a\u624b\u306e\u679d",
+		"value": "Ramo silenciador"
+	},
+	{
+		"key": "MSID_\u738b\u5668",
+		"value": "Requisitos de rei"
+	},
+	{
+		"key": "MSID_SEARCH_\u738b\u5668",
+		"value": "Requisitos de rei"
+	},
+	{
+		"key": "MSID_\u66f2\u5c04",
+		"value": "Tiro curvado"
+	},
+	{
+		"key": "MSID_SEARCH_\u66f2\u5c04",
+		"value": "Tiro curvado"
+	},
+	{
+		"key": "MSID_\u91ce\u6226\u7bc9\u57ce",
+		"value": "Fortifica\u00e7\u00f5es"
+	},
+	{
+		"key": "MSID_SEARCH_\u91ce\u6226\u7bc9\u57ce",
+		"value": "Fortificacoes"
+	},
+	{
+		"key": "MSID_\u4e00\u5339\u72fc",
+		"value": "Lobo solit\u00e1rio"
+	},
+	{
+		"key": "MSID_SEARCH_\u4e00\u5339\u72fc",
+		"value": "Lobo solitario"
+	},
+	{
+		"key": "MSID_\u8aad\u307f\u901a\u308a\u3067\u3059\uff01",
+		"value": "Segundo o plano"
+	},
+	{
+		"key": "MSID_SEARCH_\u8aad\u307f\u901a\u308a\u3067\u3059\uff01",
+		"value": "Segundo o plano"
+	},
+	{
+		"key": "MSID_\u4e00\u65b0",
+		"value": "Reabertura"
+	},
+	{
+		"key": "MSID_SEARCH_\u4e00\u65b0",
+		"value": "Reabertura"
+	},
+	{
+		"key": "MSID_\u88ab\u5bb3\u5984\u60f3",
+		"value": "Paranoia"
+	},
+	{
+		"key": "MSID_SEARCH_\u88ab\u5bb3\u5984\u60f3",
+		"value": "Paranoia"
+	},
+	{
+		"key": "MSID_\u958b\u95e2\u306e\u9f13\u52d5",
+		"value": "Pulso de cria\u00e7\u00e3o"
+	},
+	{
+		"key": "MSID_SEARCH_\u958b\u95e2\u306e\u9f13\u52d5",
+		"value": "Pulso de criacao"
+	},
+	{
+		"key": "MSID_\u8fc5\u96f7\u98a8\u70c8\u30fb\u7121\u6975",
+		"value": "Temp. sem fim"
+	},
+	{
+		"key": "MSID_SEARCH_\u8fc5\u96f7\u98a8\u70c8\u30fb\u7121\u6975",
+		"value": "Temp. sem fim"
+	},
+	{
+		"key": "MSID_\u88ab\u5bb3\u5984\u60f3\u72b6\u614b",
+		"value": "Paranoia"
+	},
+	{
+		"key": "MSID_SEARCH_\u88ab\u5bb3\u5984\u60f3\u72b6\u614b",
+		"value": "Paranoia"
+	},
+	{
+		"key": "MSID_H_\u932c\u78e8\u30b5\u30f3\u30c0\u30fc\u30bd\u30fc\u30c9",
+		"value": "Acelera a execu\u00e7\u00e3o de habilidades especiais\\n(contagem regressiva -2; o valor m\u00e1ximo da\\ncontagem regressiva n\u00e3o pode ser reduzido a\\nmenos de 1).\\n\\nA unidade pode contra-atacar,\\nindependentemente do alcance do inimigo.\\nCalcula o dano usando Def. (ini.) ou Res. (ini.)\\n(a que tiver valor mais baixo).\\n\\nNo in\u00edcio do combate, se PV (ini.) \u2265 75% ou se\\no n\u00famero de aliados adjacentes \u00e0 unidade \u2264 1,\\nconcede Atq./Vel./Def./Res. +5 \u00e0 unidade,\\nconcede b\u00f4nus de Atq./Vel./Def./Res. \u00e0 unidade\\n= 15% da Vel. (uni.), neutraliza efeitos que\\ninfligem \"+X \u00e0 contagem regressiva da habilidade\\nespecial\" \u00e0 unidade e reduz em 50% a\\npercentagem de habilidades n\u00e3o especiais que\\n\"reduzem uma percentagem do dano\" do inimigo\\ndurante o combate (exclui habilidades especiais\\ncom \u00e1rea de efeito)."
+	},
+	{
+		"key": "MSID_H_\u738b\u65a7\u30b0\u30ea\u30c8\u30cb\u30eb",
+		"value": "$aPermite o uso de\\n\u3010Mobilidade (Dist. +1; M\u00e1ximo: \uff14)\u3011.\\nAcelera a execu\u00e7\u00e3o de habilidades especiais.\\n(contagem regressiva -1).\\n\\nNo in\u00edcio da rodada, se h\u00e1 um aliado em um\\nraio de 3 linhas ou 3 colunas centradas na\\nunidade, concede Def./Res. +6 \u00e0 unidade\\npor uma rodada, a unidade pode se mover\\n1 espa\u00e7o extra (apenas naquela rodada; n\u00e3o\\ncumulativo), e tamb\u00e9m, se a contagem regressiva\\nda habilidade especial da unidade estiver no\\nseu valor m\u00e1ximo, concede -1 \u00e0 contagem\\nregressiva da habilidade especial.\\n\\nSe a unidade inicia o combate ou se h\u00e1 um\\naliado em um raio de 3 linhas ou 3 colunas\\ncentradas na unidade, concede Def./Res. +X \u00e0\\nunidade, inflige Def./Res. -X ao inimigo (X = 5\\n+ n\u00famero de aliados em um raio de 3 linhas ou\\n3 colunas centradas na unidade \u00d7 3; m\u00e1x.: 14),\\ninflige dano = 10% da Def. (uni.) (exclui\\nhabilidades especiais com \u00e1rea de efeito), reduz\\no dano dos ataques do inimigo em 10% da\\nDef. (uni.) durante o combate (exclui habilidades\\nespeciais com \u00e1rea de efeito), e tamb\u00e9m, quando\\na habilidade especial \u00e9 ativada, neutraliza efeitos\\nque \"reduzem uma percentagem do dano infligido\\npor habilidades n\u00e3o especiais\" do inimigo (exclui\\nhabilidades especiais com \u00e1rea de efeito).\\n\\nSe a unidade inicia o combate ou se h\u00e1 um\\naliado em um raio de 3 linhas ou 3 colunas\\ncentradas na unidade, ap\u00f3s o combate, se\\na contagem regressiva da habilidade especial\\nda unidade estiver no seu valor m\u00e1ximo, concede\\n-1 \u00e0 contagem regressiva da habilidade especial.\\n\\n\u3010Mobilidade (Dist. +1; M\u00e1ximo: \uff14)\u3011\\nAp\u00f3s um ataque, uma habilidade de apoio ou\\na destrui\u00e7\u00e3o de uma estrutura, a unidade pode\\nse mover por um n\u00famero de espa\u00e7os igual ao\\nn\u00famero de espa\u00e7os entre a posi\u00e7\u00e3o inicial e a\\nposi\u00e7\u00e3o final da unidade antes da a\u00e7\u00e3o em\\nquest\u00e3o +1 (m\u00e1x.: \uff14).\\n\\n(A unidade se move de acordo com o tipo de\\nmovimento. Uma vez por rodada. N\u00e3o pode\\natacar ou dar apoio. S\u00f3 o valor mais alto se\\naplica. N\u00e3o cumulativo. Se, ap\u00f3s se mover, uma\\nhabilidade que concede outra a\u00e7\u00e3o, como\\nIntemp\u00e9rie, for ativada, Mobilidade ser\u00e1 ativada\\nap\u00f3s a a\u00e7\u00e3o concedida. O movimento base n\u00e3o\\nafeta o movimento concedido. N\u00e3o pode se\\ndeslocar usando habilidades como Asas\\npiedosas por mais espa\u00e7os do que a unidade\\npoderia percorrer normalmente com Mobilidade.)"
+	},
+	{
+		"key": "MSID_H_\u738b\u65a7\u30b0\u30ea\u30c8\u30cb\u30eb_NOSKW",
+		"value": "$aPermite o uso de\\n\u3010Mobilidade (Dist. +1; M\u00e1ximo: \uff14)\u3011.\\nAcelera a execu\u00e7\u00e3o de habilidades especiais.\\n(contagem regressiva -1).\\n\\nNo in\u00edcio da rodada, se h\u00e1 um aliado em um\\nraio de 3 linhas ou 3 colunas centradas na\\nunidade, concede Def./Res. +6 \u00e0 unidade\\npor uma rodada, a unidade pode se mover\\n1 espa\u00e7o extra (apenas naquela rodada; n\u00e3o\\ncumulativo), e tamb\u00e9m, se a contagem regressiva\\nda habilidade especial da unidade estiver no\\nseu valor m\u00e1ximo, concede -1 \u00e0 contagem\\nregressiva da habilidade especial.\\n\\nSe a unidade inicia o combate ou se h\u00e1 um\\naliado em um raio de 3 linhas ou 3 colunas\\ncentradas na unidade, concede Def./Res. +X \u00e0\\nunidade, inflige Def./Res. -X ao inimigo (X = 5\\n+ n\u00famero de aliados em um raio de 3 linhas ou\\n3 colunas centradas na unidade \u00d7 3; m\u00e1x.: 14),\\ninflige dano = 10% da Def. (uni.) (exclui\\nhabilidades especiais com \u00e1rea de efeito), reduz\\no dano dos ataques do inimigo em 10% da\\nDef. (uni.) durante o combate (exclui habilidades\\nespeciais com \u00e1rea de efeito), e tamb\u00e9m, quando\\na habilidade especial \u00e9 ativada, neutraliza efeitos\\nque \"reduzem uma percentagem do dano infligido\\npor habilidades n\u00e3o especiais\" do inimigo (exclui\\nhabilidades especiais com \u00e1rea de efeito).\\n\\nSe a unidade inicia o combate ou se h\u00e1 um\\naliado em um raio de 3 linhas ou 3 colunas\\ncentradas na unidade, ap\u00f3s o combate, se\\na contagem regressiva da habilidade especial\\nda unidade estiver no seu valor m\u00e1ximo, concede\\n-1 \u00e0 contagem regressiva da habilidade especial."
+	},
+	{
+		"key": "MSID_H_\u30d9\u30eb\u30bb\u30eb\u30af\u306e\u65a7",
+		"value": "Acelera a execu\u00e7\u00e3o de habilidades especiais\\n(contagem regressiva -1).\\n\\nNo in\u00edcio da rodada, para a unidade e aliados em\\num raio de 2 espa\u00e7os da unidade, se a contagem\\nregressiva da habilidade especial estiver em seu\\nvalor m\u00e1ximo, concede -1 \u00e0 contagem regressiva\\nda habilidade especial.\\n\\nSe o inimigo inicia o combate ou se PV (ini.) \u2265\\n75% no in\u00edcio do combate, concede b\u00f4nus de\\nAtq./Vel./Def./Res. \u00e0 unidade = 25% do Atq. (ini.)\\nno in\u00edcio do combate - 4 (m\u00e1x.: 14; m\u00edn.: 5), a\\nunidade faz um ataque duplo garantido, inflige\\ndano = dano infligido \u00e0 unidade (m\u00e1x.: 30; exclui\\nhabilidades especiais com \u00e1rea de efeito) e\\ninflige dano = 15% do Atq. (uni.) durante o\\ncombate (exclui habilidades especiais com \u00e1rea\\nde efeito)."
+	},
+	{
+		"key": "MSID_H_\u5c3d\u304d\u3056\u308b\u3082\u306e",
+		"value": "$aPermite o uso de\u3010Mobilidade (Dist.; M\u00e1ximo: \uff13)\u3011.\\nAcelera a execu\u00e7\u00e3o de habilidades especiais\\n(contagem regressiva -1). Eficaz contra inimigos\\nvoadores. A unidade ataca duas vezes, mesmo\\nse o inimigo inicia o combate.\\n\\nSe a unidade inicia o combate ou se\u3010B\u00f4nus\u3011\\nest\u00e1 ativo na unidade, concede Atq./Vel./Def./\\nRes. +5 \u00e0 unidade, concede b\u00f4nus de Atq./Vel./\\nDef./Res. \u00e0 unidade = 15% da Vel. (uni.) no in\u00edcio\\ndo combate, inflige dano = 20% da Vel. (uni.)\\n(exclui habilidades especiais com \u00e1rea de efeito)\\ne reduz em 50% a percentagem de habilidades\\nn\u00e3o especiais que \"reduzem uma percentagem\\ndo dano\" do inimigo durante o combate (exclui\\nhabilidades especiais com \u00e1rea de efeito).\\n\\n\u3010Mobilidade (Dist.; M\u00e1ximo: \uff13)\u3011\\nAp\u00f3s um ataque, uma habilidade de apoio ou\\na destrui\u00e7\u00e3o de uma estrutura, a unidade pode\\nse mover por um n\u00famero de espa\u00e7os igual ao\\nn\u00famero de espa\u00e7os entre a posi\u00e7\u00e3o inicial e a\\nposi\u00e7\u00e3o para a qual a unidade se moveu antes\\nde agir (m\u00e1x.: \uff13).\\n\\n(A unidade se move de acordo com o tipo de\\nmovimento. Uma vez por rodada. N\u00e3o pode\\natacar ou dar apoio. S\u00f3 o valor mais alto se\\naplica. N\u00e3o cumulativo. Se, ap\u00f3s se mover, uma\\nhabilidade que concede outra a\u00e7\u00e3o, como\\nIntemp\u00e9rie, for ativada, Mobilidade ser\u00e1 ativada\\nap\u00f3s a a\u00e7\u00e3o concedida. O movimento base n\u00e3o\\nafeta o movimento concedido. N\u00e3o pode se\\ndeslocar usando habilidades como Asas\\npiedosas por mais espa\u00e7os do que a unidade\\npoderia percorrer normalmente com Mobilidade.)\\n\\n\u3010B\u00f4nus\u3011\\nTodos os efeitos ativados \"por uma rodada\"\\nou \"apenas naquela rodada\". Inclui b\u00f4nus de\\nhabilidades como n\u00edmias e elevadas e os\\nefeitos positivos, como movimento extra ou\\nde habilidades como Dom\u00ednio."
+	},
+	{
+		"key": "MSID_H_\u5c3d\u304d\u3056\u308b\u3082\u306e_NOSKW",
+		"value": "$aPermite o uso de\u3010Mobilidade (Dist.; M\u00e1ximo: \uff13)\u3011.\\nAcelera a execu\u00e7\u00e3o de habilidades especiais\\n(contagem regressiva -1). Eficaz contra inimigos\\nvoadores. A unidade ataca duas vezes, mesmo\\nse o inimigo inicia o combate.\\n\\nSe a unidade inicia o combate ou se\u3010B\u00f4nus\u3011\\nest\u00e1 ativo na unidade, concede Atq./Vel./Def./\\nRes. +5 \u00e0 unidade, concede b\u00f4nus de Atq./Vel./\\nDef./Res. \u00e0 unidade = 15% da Vel. (uni.) no in\u00edcio\\ndo combate, inflige dano = 20% da Vel. (uni.)\\n(exclui habilidades especiais com \u00e1rea de efeito)\\ne reduz em 50% a percentagem de habilidades\\nn\u00e3o especiais que \"reduzem uma percentagem\\ndo dano\" do inimigo durante o combate (exclui\\nhabilidades especiais com \u00e1rea de efeito)."
+	},
+	{
+		"key": "MSID_H_\u8056\u738b\u306e\u53c2\u8b00\u306e\u8853\u66f8",
+		"value": "$aAcelera a execu\u00e7\u00e3o de habilidades especiais\\n(contagem regressiva -1).\\n\\nSe uma unidade usa ou recebe uma habilidade\\nde apoio n\u00edmia ou de deslocamento (como ref\u00fagio,\\nempurr\u00e3o, teletransporte, etc.) e se n\u00e3o h\u00e1\\nqualquer\u3010Veia divina (G)\u3011aplicada pela unidade\\nou pelos aliados, aplica\u3010Veia divina (G)\u3011em\\nespa\u00e7os a 2 espa\u00e7os de dist\u00e2ncia do alvo ap\u00f3s\\no movimento por uma rodada (exclui espa\u00e7os\\nocupados por um inimigo, terreno destrut\u00edvel\\ndiferente de\u3010Veia divina (G)\u3011e espa\u00e7os de\\nteletransporte em Dom\u00ednios rivais).\\n\\nAp\u00f3s a unidade agir (se Mobilidade for ativada,\\nap\u00f3s us\u00e1-la) ou no in\u00edcio da fase do inimigo ao\\ndefender nas Investidas et\u00e9reas, se n\u00e3o h\u00e1\\nqualquer\u3010Veia divina (G)\u3011aplicada pela unidade\\nou pelos aliados, aplica\u3010Veia divina (G)\u3011em\\nespa\u00e7os a 2 espa\u00e7os de dist\u00e2ncia da unidade\\npor uma rodada (exclui espa\u00e7os ocupados por\\num inimigo, terreno destrut\u00edvel e espa\u00e7os de\\nteletransporte em Dom\u00ednios rivais).\\n\\nNo in\u00edcio do combate, se PV (uni.) \u2265 25%, inflige\\npenalidade de Atq./Vel./Res. ao inimigo = 5 +\\nn\u00famero de aliados em um raio de 3 linhas ou\\n3 colunas centradas na unidade \u00d7 3 (m\u00e1x.: 14),\\nneutraliza penalidades na unidade, neutraliza\\nefeitos que infligem \"+X \u00e0 contagem regressiva\\nda habilidade especial\" \u00e0 unidade durante o\\ncombate, e tamb\u00e9m, quando a habilidade especial\\n\u00e9 ativada, neutraliza efeitos que \"reduzem uma\\npercentagem do dano infligido por habilidades\\nn\u00e3o especiais\" do inimigo durante o combate\\n(exclui habilidades especiais com \u00e1rea de efeito).\\n\\n\u3010Veia divina (G)\u3011\\nAplica os seguintes estados em um espa\u00e7o: os\\ninimigos tratam o espa\u00e7o como terreno\\nintransit\u00e1vel enquanto o estado est\u00e1 ativo,\\nmas o estado pode ser destru\u00eddo (com 1 PV).\\nOs aliados podem se mover para o espa\u00e7o e\\nocup\u00e1-lo. Se qualquer aliado ocupar um espa\u00e7o\\ncom Veia divina (G), os ataques direcionados a\\nesse espa\u00e7o ir\u00e3o atingir o aliado em vez de\\ndestruir a Veia divina (G). (Efeitos de Veia divina\\nn\u00e3o s\u00e3o cumulativos; substitui qualquer outro\\nefeito de Veia divina; efeitos de Veia divina\\naplicados simultaneamente ser\u00e3o mutuamente\\ncancelados. N\u00e3o conta como terreno defensivo.\\nN\u00e3o \u00e9 ativado em Pe\u00f5es da Loki.)"
+	},
+	{
+		"key": "MSID_H_\u8056\u738b\u306e\u53c2\u8b00\u306e\u8853\u66f8_NOSKW",
+		"value": "$aAcelera a execu\u00e7\u00e3o de habilidades especiais\\n(contagem regressiva -1).\\n\\nSe uma unidade usa ou recebe uma habilidade\\nde apoio n\u00edmia ou de deslocamento (como ref\u00fagio,\\nempurr\u00e3o, teletransporte, etc.) e se n\u00e3o h\u00e1\\nqualquer\u3010Veia divina (G)\u3011aplicada pela unidade\\nou pelos aliados, aplica\u3010Veia divina (G)\u3011em\\nespa\u00e7os a 2 espa\u00e7os de dist\u00e2ncia do alvo ap\u00f3s\\no movimento por uma rodada (exclui espa\u00e7os\\nocupados por um inimigo, terreno destrut\u00edvel\\ndiferente de\u3010Veia divina (G)\u3011e espa\u00e7os de\\nteletransporte em Dom\u00ednios rivais).\\n\\nAp\u00f3s a unidade agir (se Mobilidade for ativada,\\nap\u00f3s us\u00e1-la) ou no in\u00edcio da fase do inimigo ao\\ndefender nas Investidas et\u00e9reas, se n\u00e3o h\u00e1\\nqualquer\u3010Veia divina (G)\u3011aplicada pela unidade\\nou pelos aliados, aplica\u3010Veia divina (G)\u3011em\\nespa\u00e7os a 2 espa\u00e7os de dist\u00e2ncia da unidade\\npor uma rodada (exclui espa\u00e7os ocupados por\\num inimigo, terreno destrut\u00edvel e espa\u00e7os de\\nteletransporte em Dom\u00ednios rivais).\\n\\nNo in\u00edcio do combate, se PV (uni.) \u2265 25%, inflige\\npenalidade de Atq./Vel./Res. ao inimigo = 5 +\\nn\u00famero de aliados em um raio de 3 linhas ou\\n3 colunas centradas na unidade \u00d7 3 (m\u00e1x.: 14),\\nneutraliza penalidades na unidade, neutraliza\\nefeitos que infligem \"+X \u00e0 contagem regressiva\\nda habilidade especial\" \u00e0 unidade durante o\\ncombate, e tamb\u00e9m, quando a habilidade especial\\n\u00e9 ativada, neutraliza efeitos que \"reduzem uma\\npercentagem do dano infligido por habilidades\\nn\u00e3o especiais\" do inimigo durante o combate\\n(exclui habilidades especiais com \u00e1rea de efeito)."
+	},
+	{
+		"key": "MSID_H_\u5fc3\u306e\u846c\u308a\u624b\u306e\u679d",
+		"value": "$aAcelera a execu\u00e7\u00e3o de habilidades especiais\\n(contagem regressiva -1).\\n\\nNo in\u00edcio da rodada, se PV (uni.) \u2265 25%, inflige\\nDef./Res. -7, P\u00e2nico e\u3010Sabotagem\u3011aos inimigos\\nmais pr\u00f3ximos e a qualquer inimigo em um raio\\nde 2 espa\u00e7os desses inimigos nas pr\u00f3ximas a\u00e7\u00f5es\\ndeles, inflige\u3010Isca escolhida\u3011e um\\nestado que impede contra-ataques aos inimigos\\ncom a menor Def. com alcance = 1, aos inimigos\\ncom a menor Def. com alcance = 2 entre os\\ninimigos mais pr\u00f3ximos e a qualquer inimigo em\\num raio de 2 espa\u00e7os desses inimigos nas\\npr\u00f3ximas a\u00e7\u00f5es deles.\\n\\nNo in\u00edcio do combate, se PV (uni.) \u2265 25%, inflige\\npenalidade de Atq./Def. ao inimigo = 20% da Res.\\n(uni.) no in\u00edcio do combate + 6, concede -2 \u00e0\\ncontagem regressiva da habilidade especial da\\nunidade antes do primeiro ataque do inimigo,\\nreduz o dano dos ataques do inimigo em 20%\\nda Res. (uni.) durante o combate (exclui\\nhabilidades especiais com \u00e1rea de efeito), e\\ntamb\u00e9m, se o ataque do inimigo ativa a\\nhabilidade especial dele, reduz o dano dos\\nataques do inimigo em 20% da Res. (uni.)\\ndurante o combate (exclui habilidades especiais\\ncom \u00e1rea de efeito) e restaura 7 PV \u00e0 unidade\\nap\u00f3s o combate.\\n\\nNo in\u00edcio da rodada, se a unidade est\u00e1 adjacente\\na apenas aliados drag\u00e3o ou fera, ou se a unidade\\nn\u00e3o est\u00e1 adjacente a nenhum aliado, a unidade\\nse transforma (caso contr\u00e1rio, ela volta \u00e0 sua\\nforma original). Se a unidade se transforma,\\nconcede Atq. +2 e a unidade pode contra-atacar,\\nindependentemente do alcance do inimigo.\\n\\n\u3010Sabotagem\u3011\\nInflige uma penalidade de Atq./Vel./Def./Res.\\nna unidade durante o combate = o valor mais\\nalto de cada penalidade de atributo entre a\\nunidade e os aliados em um raio de 2 espa\u00e7os\\nda unidade na sua pr\u00f3xima a\u00e7\u00e3o. Calcula cada\\npenalidade de atributo separadamente.\\n\\n\u3010Isca escolhida\u3011\\nSe o alcance do inimigo = alcance da unidade\\ne o inimigo inicia o combate contra um aliado\\nem um raio de 2 espa\u00e7os da unidade, ativa\\n\u3010Salvador\u3011na unidade (apenas naquela\\nrodada; o efeito s\u00f3 \u00e9 ativado se a unidade n\u00e3o\\nestiver equipada com uma habilidade que pode\\nativar o efeito Salvador).\\n\\n\u3010Salvador\u3011\\nA unidade ocupa o espa\u00e7o do aliado, entra em\\ncombate no lugar dele e recebe todos os\\nefeitos ap\u00f3s o combate."
+	},
+	{
+		"key": "MSID_H_\u5fc3\u306e\u846c\u308a\u624b\u306e\u679d_NOSKW",
+		"value": "$aAcelera a execu\u00e7\u00e3o de habilidades especiais\\n(contagem regressiva -1).\\n\\nNo in\u00edcio da rodada, se PV (uni.) \u2265 25%, inflige\\nDef./Res. -7, P\u00e2nico e\u3010Sabotagem\u3011aos inimigos\\nmais pr\u00f3ximos e a qualquer inimigo em um raio\\nde 2 espa\u00e7os desses inimigos nas pr\u00f3ximas a\u00e7\u00f5es\\ndeles, inflige\u3010Isca escolhida\u3011e um\\nestado que impede contra-ataques aos inimigos\\ncom a menor Def. com alcance = 1, aos inimigos\\ncom a menor Def. com alcance = 2 entre os\\ninimigos mais pr\u00f3ximos e a qualquer inimigo em\\num raio de 2 espa\u00e7os desses inimigos nas\\npr\u00f3ximas a\u00e7\u00f5es deles.\\n\\nNo in\u00edcio do combate, se PV (uni.) \u2265 25%, inflige\\npenalidade de Atq./Def. ao inimigo = 20% da Res.\\n(uni.) no in\u00edcio do combate + 6, concede -2 \u00e0\\ncontagem regressiva da habilidade especial da\\nunidade antes do primeiro ataque do inimigo,\\nreduz o dano dos ataques do inimigo em 20%\\nda Res. (uni.) durante o combate (exclui\\nhabilidades especiais com \u00e1rea de efeito), e\\ntamb\u00e9m, se o ataque do inimigo ativa a\\nhabilidade especial dele, reduz o dano dos\\nataques do inimigo em 20% da Res. (uni.)\\ndurante o combate (exclui habilidades especiais\\ncom \u00e1rea de efeito) e restaura 7 PV \u00e0 unidade\\nap\u00f3s o combate.\\n\\nNo in\u00edcio da rodada, se a unidade est\u00e1 adjacente\\na apenas aliados drag\u00e3o ou fera, ou se a unidade\\nn\u00e3o est\u00e1 adjacente a nenhum aliado, a unidade\\nse transforma (caso contr\u00e1rio, ela volta \u00e0 sua\\nforma original). Se a unidade se transforma,\\nconcede Atq. +2 e a unidade pode contra-atacar,\\nindependentemente do alcance do inimigo."
+	},
+	{
+		"key": "MSID_H_\u738b\u5668",
+		"value": "$aAumenta o dano em 30% da Def. (uni.)\\n+ Def.\u3010Grande talento\u3011ao executar\\nhabilidades especiais.\\n\\nReduz o dano de ataques em X% durante\\no combate (X = 40, - 10 \u00d7 valor atual da\\ncontagem regressiva da habilidade\\nespecial).\\n\\nNo in\u00edcio da rodada, concede Atq./Def./Res.\\n\u3010Grande talento\u3011+2 \u00e0 unidade e Atq.Def./Res.\\n\u3010Grande talento\u3011+1 aos aliados em um raio\\nde 3 linhas ou 3 colunas centradas\\nna unidade.\\n\\nAp\u00f3s o combate, se a habilidade especial da\\nunidade \u00e9 ativada, concede Atq./Def./Res.\\n\u3010Grande talento\u3011+4 \u00e0 unidade e concede\\nAtq./Def./Res.\u3010Grande talento\u3011+2 aos aliados em\\num raio de 3 linhas ou 3 colunas centradas\\nna unidade.\\n\\n(Esta habilidade concede um m\u00e1ximo\\nde\u3010Grande talento\u3011+20 \u00e0 unidade e\\n\u3010Grande talento\u3011+10 aos aliados).\\n\\n\u3010Grande talento\u3011\\nAdiciona o valor de Grande talento (+X) aos\\natributos especificados (at\u00e9 o final da batalha;\\no valor m\u00e1ximo de X \u00e9 determinado pelo atributo\\ncom um limite de 99, cada atributo \u00e9 calculado\\nseparadamente; melhorias aos atributos n\u00e3o\\ncontam como efeitos de b\u00f4nus)."
+	},
+	{
+		"key": "MSID_H_\u738b\u5668_NOSKW",
+		"value": "$aAumenta o dano em 30% da Def. (uni.)\\n+ Def.\u3010Grande talento\u3011ao executar\\nhabilidades especiais.\\n\\nReduz o dano de ataques em X% durante\\no combate (X = 40, - 10 \u00d7 valor atual da\\ncontagem regressiva da habilidade\\nespecial).\\n\\nNo in\u00edcio da rodada, concede Atq./Def./Res.\\n\u3010Grande talento\u3011+2 \u00e0 unidade e Atq.Def./Res.\\n\u3010Grande talento\u3011+1 aos aliados em um raio\\nde 3 linhas ou 3 colunas centradas\\nna unidade.\\n\\nAp\u00f3s o combate, se a habilidade especial da\\nunidade \u00e9 ativada, concede Atq./Def./Res.\\n\u3010Grande talento\u3011+4 \u00e0 unidade e concede\\nAtq./Def./Res.\u3010Grande talento\u3011+2 aos aliados em\\num raio de 3 linhas ou 3 colunas centradas\\nna unidade.\\n\\n(Esta habilidade concede um m\u00e1ximo\\nde\u3010Grande talento\u3011+20 \u00e0 unidade e\\n\u3010Grande talento\u3011+10 aos aliados)."
+	},
+	{
+		"key": "MSID_H_\u66f2\u5c04",
+		"value": "Aumenta o dano infligido pela habilidade\\nespecial em 30% usando Vel. (ini.) ou Def. (ini.)\\n(a que tiver valor mais baixo).\\n\\nSe a habilidade especial da unidade ou do\\ninimigo est\u00e1 pronta, ou foi ativada antes ou\\ndurante esse combate e se a unidade puder\\natacar durante o combate, reduz o dano do\\npr\u00f3ximo ataque do inimigo em 40% (uma\\nvez por combate; exclui habilidades especiais\\ncom \u00e1rea de efeito)."
+	},
+	{
+		"key": "MSID_H_\u91ce\u6226\u7bc9\u57ce",
+		"value": "$aInflige Atq. -5. Concede Def./Res. +7.\\n\\nSe a unidade est\u00e1 em um espa\u00e7o que tem o\\nefeito de Veia divina, a unidade pode\\ncontra-atacar, independentemente do alcance\\ndo inimigo.\\n\\nSe a unidade inicia o combate, concede Def./\\nRes. +6 \u00e0 unidade e reduz o dano infligido pelas\\nhabilidades especiais do inimigo em 10 pontos\\ndurante o combate (exclui habilidades especiais\\ncom \u00e1rea de efeito).\\n\\nSe a unidade entrou em combate durante a\\nrodada atual, ap\u00f3s a unidade agir (se Mobilidade\\nfor ativada, ap\u00f3s us\u00e1-la), aplica\u3010Veia divina (P)\u3011\\nao espa\u00e7o da unidade e a espa\u00e7os em um raio\\nde 2 espa\u00e7os da unidade por uma rodada.\\n\\n\u3010Veia divina (P)\u3011\\nAplica os seguintes efeitos em um espa\u00e7o para\\na unidade e aliados: concede Def./Res. +6\\ndurante o combate, reduz o dano das habilidades\\nespeciais do inimigo em 10 pontos durante o\\ncombate (exclui habilidades especiais com \u00e1rea\\nde efeito) e reduz em 50% o dano de habilidades\\nespeciais com \u00e1rea de efeito (exceto as\\nexecutadas por R\u00f8kkr). (Efeitos de Veia divina\\nn\u00e3o s\u00e3o cumulativos; substitui qualquer outro\\nefeito de Veia divina; efeitos de Veia divina\\naplicados simultaneamente ser\u00e3o mutuamente\\ncancelados. N\u00e3o conta como terreno defensivo.)"
+	},
+	{
+		"key": "MSID_H_\u91ce\u6226\u7bc9\u57ce_NOSKW",
+		"value": "$aInflige Atq. -5. Concede Def./Res. +7.\\n\\nSe a unidade est\u00e1 em um espa\u00e7o que tem o\\nefeito de Veia divina, a unidade pode\\ncontra-atacar, independentemente do alcance\\ndo inimigo.\\n\\nSe a unidade inicia o combate, concede Def./\\nRes. +6 \u00e0 unidade e reduz o dano infligido pelas\\nhabilidades especiais do inimigo em 10 pontos\\ndurante o combate (exclui habilidades especiais\\ncom \u00e1rea de efeito).\\n\\nSe a unidade entrou em combate durante a\\nrodada atual, ap\u00f3s a unidade agir (se Mobilidade\\nfor ativada, ap\u00f3s us\u00e1-la), aplica\u3010Veia divina (P)\u3011\\nao espa\u00e7o da unidade e a espa\u00e7os em um raio\\nde 2 espa\u00e7os da unidade por uma rodada."
+	},
+	{
+		"key": "MSID_H_\u4e00\u5339\u72fc",
+		"value": "$aSe uma habilidade compara a Vel. da unidade\\ncom a de outra, ela ser\u00e1 calculada somando +7\\npontos a seu valor real.\\n\\nSe a unidade n\u00e3o usou ou recebeu uma\\nhabilidade de apoio durante a rodada atual,\\nconcede outra a\u00e7\u00e3o \u00e0 unidade e\\ninflige\u3010Isolamento\u3011\u00e0 unidade e \u00e0 unidade\\nauxiliar em parceria nas pr\u00f3ximas a\u00e7\u00f5es delas\\nnos seguintes casos: A) se a unidade iniciou\\no combate, ou B) se a unidade agiu sem ter\\nentrado em combate (tem prioridade sobre\\nMobilidade; uma vez por rodada, A e B s\u00e3o\\ncontados separadamente).\\n\\nNo in\u00edcio do combate, se PV (uni.) \u2265 25% ou\\nse o n\u00famero de aliados adjacentes \u00e0 unidade \u2264 1,\\ninflige Atq./Vel./Def./Res. -5 ao inimigo e inflige\\ndano = 20% da Vel. (uni.) (inclusive quando inflige\\ndano com uma habilidade especial ativada antes\\ndo combate) reduz o dano de ataques do inimigo\\nem 20% da Vel. (uni.) durante o combate\\n(inclusive quando sofre dano de uma habilidade\\nespecial ativada antes do combate), e tamb\u00e9m,\\nquando o ataque do inimigo ativa a habilidade\\nespecial dele, reduz o dano em 20% da Vel. (uni.)\\n(inclusive quando sofre dano de uma habilidade\\nespecial ativada antes do combate).\\n\\n\u3010Isolamento\u3011\\nAlvo n\u00e3o pode usar ou ser alvo de habilidades\\nde apoio na sua pr\u00f3xima a\u00e7\u00e3o. (Alvo n\u00e3o pode\\nusar ou ser alvo de habilidades como Dan\u00e7ar e\\nCantar, habilidades que neutralizam as\\npenalidades de aliados como Restaura\u00e7\u00e3o e\\nOrdem severa+, etc.)"
+	},
+	{
+		"key": "MSID_H_\u4e00\u5339\u72fc_NOSKW",
+		"value": "$aSe uma habilidade compara a Vel. da unidade\\ncom a de outra, ela ser\u00e1 calculada somando +7\\npontos a seu valor real.\\n\\nSe a unidade n\u00e3o usou ou recebeu uma\\nhabilidade de apoio durante a rodada atual,\\nconcede outra a\u00e7\u00e3o \u00e0 unidade e\\ninflige\u3010Isolamento\u3011\u00e0 unidade e \u00e0 unidade\\nauxiliar em parceria nas pr\u00f3ximas a\u00e7\u00f5es delas\\nnos seguintes casos: A) se a unidade iniciou\\no combate, ou B) se a unidade agiu sem ter\\nentrado em combate (tem prioridade sobre\\nMobilidade; uma vez por rodada, A e B s\u00e3o\\ncontados separadamente).\\n\\nNo in\u00edcio do combate, se PV (uni.) \u2265 25% ou\\nse o n\u00famero de aliados adjacentes \u00e0 unidade \u2264 1,\\ninflige Atq./Vel./Def./Res. -5 ao inimigo e inflige\\ndano = 20% da Vel. (uni.) (inclusive quando inflige\\ndano com uma habilidade especial ativada antes\\ndo combate) reduz o dano de ataques do inimigo\\nem 20% da Vel. (uni.) durante o combate\\n(inclusive quando sofre dano de uma habilidade\\nespecial ativada antes do combate), e tamb\u00e9m,\\nquando o ataque do inimigo ativa a habilidade\\nespecial dele, reduz o dano em 20% da Vel. (uni.)\\n(inclusive quando sofre dano de uma habilidade\\nespecial ativada antes do combate)."
+	},
+	{
+		"key": "MSID_H_\u8aad\u307f\u901a\u308a\u3067\u3059\uff01",
+		"value": "$aNo in\u00edcio da rodada, se PV (uni.) \u2265 25%, concede\\nAtq./Vel. +6 e\u3010Mobilidade (\uff11)\u3011\u00e0 unidade\\ne aos aliados em um raio de 2 espa\u00e7os da\\nunidade por uma rodada, e tamb\u00e9m, inflige\\n\u3010Espectro silente\u3011e\u3010P\u00e2nico\u3011aos inimigos\\nmais pr\u00f3ximos e qualquer inimigo em um raio\\nde 2 espa\u00e7os desses inimigos nas pr\u00f3ximas\\na\u00e7\u00f5es deles.\\n\\nNo in\u00edcio do combate, se PV (uni.) \u2265 25%, inflige\\nAtq./Vel./Res. -5 ao inimigo, a unidade inflige +X\\n\u00d7 5 de dano (m\u00e1x.: 25; exclui habilidades especiais\\ncom \u00e1rea de efeito) e reduz o dano do primeiro\\nataque do inimigo em X \u00d7 3 (m\u00e1x.: 15) durante o\\ncombate (X = n\u00famero de efeitos de b\u00f4nus ativos\\nna unidade, excluindo b\u00f4nus de atributo,\\n+ n\u00famero de efeitos de penalidade ativos no\\ninimigo, excluindo penalidades de atributo;\\n\"primeiro ataque\" normalmente significa apenas\\no primeiro golpe; para efeitos que concedem\\n\"unidade ataca duas vezes\", significa o primeiro\\ne o segundo golpes).\\n\\n\u3010Mobilidade (\uff11)\u3011\\nAp\u00f3s um ataque, uma habilidade de apoio ou a\\ndestrui\u00e7\u00e3o de uma estrutura, a unidade pode se\\nmover \uff11 espa\u00e7o(s) (uma vez por\\nrodada; s\u00f3 o valor mais alto se aplica;\\nn\u00e3o cumulativo).\\n\\n\u3010Espectro silente\u3011\\nInflige Atq./Vel./Def./Res. -5 \u00e0 unidade durante o\\ncombate. Se o ataque da unidade pode ativar a\\nhabilidade especial dela, inflige +1 \u00e0 contagem\\nregressiva da habilidade especial da unidade\\nantes do primeiro ataque da unidade durante o\\ncombate (n\u00e3o pode superar o valor m\u00e1ximo da\\ncontagem regressiva da habilidade especial da\\nunidade). Se o valor m\u00e1ximo da contagem\\nregressiva da habilidade especial da unidade \u00e9\\nreduzido (acelerando a ativa\u00e7\u00e3o da habilidade\\nespecial) e se o ataque do inimigo pode ativar a\\nhabilidade especial dele, concede -1 \u00e0 contagem\\nregressiva da habilidade especial do inimigo\\nantes do primeiro ataque da unidade durante o\\ncombate.\\n\\n\u3010P\u00e2nico\u3011\\nConverte b\u00f4nus do alvo em penalidades\\nna sua pr\u00f3xima a\u00e7\u00e3o."
+	},
+	{
+		"key": "MSID_H_\u8aad\u307f\u901a\u308a\u3067\u3059\uff01_NOSKW",
+		"value": "$aNo in\u00edcio da rodada, se PV (uni.) \u2265 25%, concede\\nAtq./Vel. +6 e\u3010Mobilidade (\uff11)\u3011\u00e0 unidade\\ne aos aliados em um raio de 2 espa\u00e7os da\\nunidade por uma rodada, e tamb\u00e9m, inflige\\n\u3010Espectro silente\u3011e\u3010P\u00e2nico\u3011aos inimigos\\nmais pr\u00f3ximos e qualquer inimigo em um raio\\nde 2 espa\u00e7os desses inimigos nas pr\u00f3ximas\\na\u00e7\u00f5es deles.\\n\\nNo in\u00edcio do combate, se PV (uni.) \u2265 25%, inflige\\nAtq./Vel./Res. -5 ao inimigo, a unidade inflige +X\\n\u00d7 5 de dano (m\u00e1x.: 25; exclui habilidades especiais\\ncom \u00e1rea de efeito) e reduz o dano do primeiro\\nataque do inimigo em X \u00d7 3 (m\u00e1x.: 15) durante o\\ncombate (X = n\u00famero de efeitos de b\u00f4nus ativos\\nna unidade, excluindo b\u00f4nus de atributo,\\n+ n\u00famero de efeitos de penalidade ativos no\\ninimigo, excluindo penalidades de atributo;\\n\"primeiro ataque\" normalmente significa apenas\\no primeiro golpe; para efeitos que concedem\\n\"unidade ataca duas vezes\", significa o primeiro\\ne o segundo golpes)."
+	},
+	{
+		"key": "MSID_H_\u4e00\u65b0",
+		"value": "No in\u00edcio do combate, se PV (uni.) \u2265 25%, inflige\\nAtq. -5 ao inimigo, inflige +1 \u00e0 contagem\\nregressiva da habilidade especial do inimigo\\npor cada ataque (s\u00f3 o valor mais alto se aplica;\\nn\u00e3o cumulativo), inflige dano = X% da Def. (uni.)\\n(exclui habilidades especiais com \u00e1rea de efeito)\\ne reduz o dano de ataques do inimigo em X% da\\nDef. (uni.) durante o combate (exclui habilidades\\nespeciais com \u00e1rea de efeito; se a unidade pode\\nfazer um ataque duplo ou se a unidade ativa o\\nefeito \"unidade ataca duas vezes\", X = 10; caso\\ncontr\u00e1rio, X = 20)."
+	},
+	{
+		"key": "MSID_H_\u88ab\u5bb3\u5984\u60f3",
+		"value": "$aNo in\u00edcio da rodada, concede\u3010Ataque duplo nulo\u3011\\n\u00e0 unidade, concede\u3010Paranoia\u3011\u00e0 unidade e\\naos aliados em um raio de 2 espa\u00e7os da unidade\\npor uma rodada e inflige 1 ponto de dano \u00e0\\nunidade e a esses aliados. No in\u00edcio da rodada,\\nse a unidade est\u00e1 em um raio de 5 espa\u00e7os de\\num inimigo, inflige efeitos de\u3010Penalidade\u3011\\nativos na unidade aos inimigos mais pr\u00f3ximos e\\nqualquer inimigo em um raio de 2 espa\u00e7os\\ndesses inimigos e neutraliza quaisquer efeitos de\\n\u3010Penalidade\u3011ativos na unidade (exclui\\npenalidade infligidas no in\u00edcio da rodada).\\n\\nNo in\u00edcio do combate, se PV (uni.) \u2264 99%, concede\\nAtq./Vel. +5 \u00e0 unidade e neutraliza efeitos que\\ninfligem \"+X \u00e0 contagem regressiva da habilidade\\nespecial\" \u00e0 unidade durante o combate.\\n\\n\u3010Ataque duplo nulo\u3011\\nSe Vel. (unidade) > Vel. (inimigo) durante o\\ncombate, neutraliza efeitos que garantem\\nataques duplos do inimigo e que impedem\\nataques duplos da unidade por uma rodada.\\n\\n\u3010Paranoia\u3011\\nNo in\u00edcio do combate, se PV (uni.) \u2264 99%, concede\\nAtq. +5 \u00e0 unidade durante o combate, e tamb\u00e9m,\\nse a unidade inicia o combate, a unidade pode\\nfazer um ataque duplo antes do pr\u00f3ximo ataque\\ndo inimigo durante o combate.\\n\\nNo in\u00edcio do combate, se PV (uni.) \u2264 99%, se o\\ninimigo inicia o combate, e se o alcance desse\\ninimigo = alcance da unidade ou ao n\u00famero de\\nefeitos de\u3010Penalidade\u3011ativos no\\ninimigo, excluindo penalidades de atributos, \u2265 3,\\na unidade pode contra-atacar antes do primeiro\\nataque do inimigo (exceto quando o efeito\\nSalvador da unidade \u00e9 ativado).\\n\\n\u3010Penalidade\u3011\\nTodos os efeitos infligidos \"no inimigo na\\nsua pr\u00f3xima a\u00e7\u00e3o\". Inclui penalidades de\\nhabilidades como p\u00e2nico e minazes e\\nefeitos negativos (impedindo contra-ataques,\\nrestringindo movimentos, ou os efeitos de\\nhabilidades como refinatri\u00e2ngulo ou guarda)."
+	},
+	{
+		"key": "MSID_H_\u88ab\u5bb3\u5984\u60f3_NOSKW",
+		"value": "$aNo in\u00edcio da rodada, concede\u3010Ataque duplo nulo\u3011\\n\u00e0 unidade, concede\u3010Paranoia\u3011\u00e0 unidade e\\naos aliados em um raio de 2 espa\u00e7os da unidade\\npor uma rodada e inflige 1 ponto de dano \u00e0\\nunidade e a esses aliados. No in\u00edcio da rodada,\\nse a unidade est\u00e1 em um raio de 5 espa\u00e7os de\\num inimigo, inflige efeitos de\u3010Penalidade\u3011\\nativos na unidade aos inimigos mais pr\u00f3ximos e\\nqualquer inimigo em um raio de 2 espa\u00e7os\\ndesses inimigos e neutraliza quaisquer efeitos de\\n\u3010Penalidade\u3011ativos na unidade (exclui\\npenalidade infligidas no in\u00edcio da rodada).\\n\\nNo in\u00edcio do combate, se PV (uni.) \u2264 99%, concede\\nAtq./Vel. +5 \u00e0 unidade e neutraliza efeitos que\\ninfligem \"+X \u00e0 contagem regressiva da habilidade\\nespecial\" \u00e0 unidade durante o combate."
+	},
+	{
+		"key": "MSID_H_\u958b\u95e2\u306e\u9f13\u52d5",
+		"value": "$aSe\u3010Penalidade\u3011est\u00e1 ativo no inimigo,\\nconcede Atq./Vel. +3 \u00e0 unidade durante o\\ncombate, e tamb\u00e9m, se o ataque da unidade\\npode ativar a habilidade especial dela, concede\\n-X \u00e0 contagem regressiva da habilidade especial\\nda unidade antes do primeiro ataque da unidade\\ndurante o combate (X = n\u00famero de efeitos\\nde\u3010Penalidade\u3011ativos no inimigo,\\nexcluindo penalidades de atributo; m\u00e1x.: 2).\\n\\n\u3010Penalidade\u3011\\nTodos os efeitos infligidos \"no inimigo na\\nsua pr\u00f3xima a\u00e7\u00e3o\". Inclui penalidades de\\nhabilidades como p\u00e2nico e minazes e\\nefeitos negativos (impedindo contra-ataques,\\nrestringindo movimentos, ou os efeitos de\\nhabilidades como refinatri\u00e2ngulo ou guarda)."
+	},
+	{
+		"key": "MSID_H_\u958b\u95e2\u306e\u9f13\u52d5_NOSKW",
+		"value": "$aSe\u3010Penalidade\u3011est\u00e1 ativo no inimigo,\\nconcede Atq./Vel. +3 \u00e0 unidade durante o\\ncombate, e tamb\u00e9m, se o ataque da unidade\\npode ativar a habilidade especial dela, concede\\n-X \u00e0 contagem regressiva da habilidade especial\\nda unidade antes do primeiro ataque da unidade\\ndurante o combate (X = n\u00famero de efeitos\\nde\u3010Penalidade\u3011ativos no inimigo,\\nexcluindo penalidades de atributo; m\u00e1x.: 2)."
+	},
+	{
+		"key": "MSID_H_\u8fc5\u96f7\u98a8\u70c8\u30fb\u7121\u6975",
+		"value": "No in\u00edcio da rodada, a unidade pode se mover 1\\nespa\u00e7o extra (apenas naquela rodada;\\nn\u00e3o cumulativo).\\n\\nSe a unidade ou o inimigo iniciam o combate\\nap\u00f3s se moverem a um espa\u00e7o diferente,\\nconcede b\u00f4nus de Atq./Vel./Def./Res. \u00e0\\nunidade = n\u00famero de espa\u00e7os entre a posi\u00e7\u00e3o\\ninicial e a posi\u00e7\u00e3o final de quem iniciou\\no combate (m\u00e1x.: 3) e neutraliza os b\u00f4nus de\\nhabilidades do inimigo (como intensas, n\u00edmias,\\netc.) durante o combate."
+	},
+	{
+		"key": "MID_CHAPTER_TITLE_C0810",
+		"value": "Livro VIII, Cap. 10"
+	},
+	{
+		"key": "MID_CHAPTER_C0810",
+		"value": "Negocia\u00e7\u00e3o vital"
+	},
+	{
+		"key": "MID_STAGE_TITLE_S8101",
+		"value": "Cap\u00edtulo 10-1"
+	},
+	{
+		"key": "MID_STAGE_TITLE_S8102",
+		"value": "Cap\u00edtulo 10-2"
+	},
+	{
+		"key": "MID_STAGE_TITLE_S8103",
+		"value": "Cap\u00edtulo 10-3"
+	},
+	{
+		"key": "MID_STAGE_TITLE_S8104",
+		"value": "Cap\u00edtulo 10-4"
+	},
+	{
+		"key": "MID_STAGE_TITLE_S8105",
+		"value": "Cap\u00edtulo 10-5"
+	},
+	{
+		"key": "MID_STAGE_S8101",
+		"value": "Cara a cara"
+	},
+	{
+		"key": "MID_STAGE_S8102",
+		"value": "Herdeiro de Askr"
+	},
+	{
+		"key": "MID_STAGE_S8103",
+		"value": "Leal ao vener\u00e1vel"
+	},
+	{
+		"key": "MID_STAGE_S8104",
+		"value": "S\u00e1bio da espada"
+	},
+	{
+		"key": "MID_STAGE_S8105",
+		"value": "Fam\u00edlia perdida"
+	},
+	{
+		"key": "MID_STAGE_HONOR_T0182",
+		"value": "Batalha de v\u00ednculos"
+	},
+	{
+		"key": "MID_STAGE_T0182",
+		"value": "R & E"
+	},
+	{
+		"key": "MID_STAGE_HONOR_T0181",
+		"value": "Rixosa classuda"
+	},
+	{
+		"key": "MID_STAGE_T0181",
+		"value": "Panette"
+	},
+	{
+		"key": "MID_CHAPTER_ST_C0809",
+		"value": "Cap\u00edtulos 9 e 10"
+	},
+	{
+		"key": "MID_STAGE_TITLE_ST_S0809",
+		"value": "Cap\u00edtulo 9"
+	},
+	{
+		"key": "MID_STAGE_TITLE_ST_S0810",
+		"value": "Cap\u00edtulo 10"
+	},
+	{
+		"key": "MID_STAGE_TITLE_ST_S1810",
+		"value": "Cap\u00edtulos 9 e 10"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PB243",
+		"value": "Habilidades 243"
+	},
+	{
+		"key": "MID_STAGE_PB243",
+		"value": "For\u00e7as opostas"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PB244",
+		"value": "Habilidades 244"
+	},
+	{
+		"key": "MID_STAGE_PB244",
+		"value": "Estrat\u00e9gia vantajosa"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PC128",
+		"value": "Especialista 128"
+	},
+	{
+		"key": "MID_STAGE_PC128",
+		"value": "Teste de coragem de Askr"
+	},
+	{
+		"key": "MID_VEIN_5",
+		"value": "Veia divina (G)"
+	},
+	{
+		"key": "MID_H_VEIN_5",
+		"value": "Aplica os seguintes estados em um\\nespa\u00e7o: os inimigos tratam o\\nespa\u00e7o como terreno intransit\u00e1vel\\nenquanto o estado est\u00e1 ativo, mas o\\nestado pode ser destru\u00eddo (com 1 PV).\\nOs aliados podem se mover para o\\nespa\u00e7o e ocup\u00e1-lo. Se qualquer aliado\\nocupar um espa\u00e7o com Veia divina (G),\\nos ataques direcionados a esse espa\u00e7o\\nir\u00e3o atingir o aliado em vez de destruir\\na Veia divina (G)."
+	}
+]
