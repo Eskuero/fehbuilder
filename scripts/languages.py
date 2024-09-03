@@ -32,7 +32,7 @@ with open("fullother.json", "r") as datasource:
 	blessed = json.load(datasource)["blessed"]
 	
 # Big dictionary to store all translations
-languages = {"EUDE": {}, "EUES": {}, "USES": {}, "EUFR": {}, "EUIT": {}, "JPJA": {}, "TWZH": {}, "USEN": {}, "EUEN": {}, "USPT": {}}
+languages = {"EUDE": {}, "EUES": {}, "USES": {}, "EUFR": {}, "EUIT": {}, "JPJA": {}, "TWZH": {}, "USEN": {}, "EUEN": {}, "USPT": {}, "KOKR": {}}
 
 # This is a list of strings for translating the UI and must be included
 basicstrings = [
@@ -64,6 +64,9 @@ for language in languages:
 	files = os.listdir(LANGUAGES_BASEDIR + language + EXTRA_BASEDIR)
 	strings = {}
 	for file in files:
+		# Only read .json files
+		if ".json" not in file:
+			continue
 		with open(LANGUAGES_BASEDIR + language + EXTRA_BASEDIR + file, "r") as datasource:
 			data = json.load(datasource)
 			# We only add strings related to either skills or units as long as they are not descriptions
@@ -83,22 +86,6 @@ if MODE == "hertz_wiki":
 				for string in [string for string in data if string["key"] in fullstrings]:
 					strings[string["key"]] = string["value"]
 		languages[language] = languages[language] | strings
-
-# Parse Korean from the provided .csvs
-files = os.listdir("hackin/languages/KOKR/")
-strings = {}
-print("            - Parsing Korean language")
-for file in files:
-	# Only read .csv files
-	if ".csv" not in file:
-		continue
-	with open("hackin/languages/KOKR/" + file, "r") as datasource:
-		data = datasource.read().splitlines()
-		# Only take the last split by "," to avoid losing data
-		for line in data:
-			split = line.rsplit(",", 1)
-			strings[split[1]] = split[0]
-languages["KOKR"] = strings
 
 # Go through each string in english and make sure we have a translation in Korean
 for string in languages["USEN"]:
