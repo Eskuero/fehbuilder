@@ -39,6 +39,8 @@ async function populateall(clean, bypass = []) {
 	validblessing();
 	// Disable or enable beast select based on unit
 	beastcheck();
+	// Disable or enable aide select based on unit
+	aidecheck();
 }
 
 async function reload(scroll = false) {
@@ -500,6 +502,16 @@ function beastcheck() {
 	}
 }
 
+function aidecheck() {
+	if (other["aided"].includes(selectheroes.value)) {
+		selectaide.disabled = true;
+		selectaide.value = "yes";
+	} else {
+		selectaide.disabled = false;
+		selectaide.value = "no";
+	}
+}
+
 function validblessing() {
 	// Check if the hero is listed as pre-blessed, update and lock
 	if (other["blessed"][selectheroes.value]) {
@@ -568,6 +580,10 @@ function reset(section) {
 			// Reset select blessings only if it's not locked (otherwise it means we have a mythic/legendary)
 			if (!selectblessings.disabled) {
 				selectblessings.value = "None";
+			}
+			// Reset aided status only if it's not locked (otherwise it means we have an aided hero)
+			if (!selectaide.disabled) {
+				selectaide.value = "no";
 			}
 			selectlevel.value = "level40";
 		break;

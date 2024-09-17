@@ -731,8 +731,9 @@ async function myunit() {
 
 	var flowers = parseInt(selectflowers.value);
 	var emblemmerges = selectemblemhero.value == "None" ? 0 : parseInt(selectemblemmerges.value);
+	var aide = selectaide.value == "no" ? false : true;
 	// Obtain the calculated stats to draw
-	var statsmodifier = statcalc(units[hero]["stats"], units[hero]["growths"], rarity, boon, bane, ascendent, merges, flowers, emblemmerges);
+	var statsmodifier = statcalc(units[hero]["stats"], units[hero]["growths"], rarity, boon, bane, ascendent, merges, flowers, emblemmerges, aide);
 
 	var weapon = selectweapons.value == "None" ? false : selectweapons.value; var refine = selectrefines.value == "None" ? false : selectrefines.value;
 	// We have a couple of stats modifiers based on weapon, summoner support, attire, bonus unit, visible buffs and maybe not completely parsed A/S skills that we must add
@@ -792,6 +793,12 @@ async function myunit() {
 	if (ascendent) {
 		renderjobs.push(getimage(other["images"]["other"]["ascendent"]).then(img => {
 			preview.drawImage(img, 10, 502);
+		}));
+	}
+	// Print aide icon if hero had one aide applied and it's not a naturally aided hero
+	if (aide && !other["aided"].includes(hero)) {
+		renderjobs.push(getimage(other["images"]["other"]["aide"]).then(img => {
+			preview.drawImage(img, 10, 606);
 		}));
 	}
 
@@ -988,6 +995,8 @@ async function myunit() {
 		var specialtype = "Attuned";
 	} else if (other["emblem"].includes(hero)) {
 		var specialtype = "Emblem";
+	} else if (other["aided"].includes(hero)) {
+		var specialtype = "Aided";
 	}
 	// Detect if we are printing more than three icons (this could happen on duo/blessed/summoner supported allies) so we can resize accordingly
 	var needsresize = blessing && summoner && specialtype ? true : false;

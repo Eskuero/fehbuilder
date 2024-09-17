@@ -220,7 +220,7 @@ input[type='number']::-webkit-inner-spin-button {
 .imagelabel {
 	height: 2em;
 	width: 2em;
-	--spritesheet-width: 47; /* This is the number of icons in each of row of the spritesheet */
+	--spritesheet-width: 48; /* This is the number of icons in each of row of the spritesheet */
 	background-image: url("/common/assets/online.webp");
 	background-position: calc(var(--spriteid) * -100%) 0;
 	background-size: calc(var(--spritesheet-width) * 100%); /* If we increase the size of the background a 100% for each icon they will fit in any size */

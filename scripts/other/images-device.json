@@ -424,6 +424,11 @@
 		"entry": "Icon_ResonatePlayer1.png",
 		"scale": [147,160]
 	},
+	"Aided": {
+		"actions": ["resize"],
+		"path": "Common/UI/tamer/Icon_tamerPlayer.png",
+		"scale": [147,160]
+	},
 	"0-move": {
 		"actions": ["crop", "resize"],
 		"path": "Common/UI/Status.png",
@@ -1944,5 +1949,10 @@
 		"path": "Common/UI/Item_2.png",
 		"scale": [46,46],
 		"entry": "Icon_ConnectBonds.png"
+	},
+	"aide": {
+		"actions": ["resize"],
+		"path": "Common/UI/tamer/Icon_tamer.png",
+		"scale": [55,55]
 	}
 }

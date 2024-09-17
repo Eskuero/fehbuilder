@@ -38,6 +38,7 @@ other = {
 	"rearmed" : [],
 	"attuned" : [],
 	"emblem" : [],
+	"aided": [],
 	"duokeywords": hardcoded["duokeywords"],
 	"images": hardcoded["images"],
 	"seasonals": hardcoded["seasonals"],
@@ -66,8 +67,8 @@ for file in files:
 				if entry["legendary"]["ae_extra"]:
 					other["blessed"][entry["id_tag"]]["variant"] += "-extrae"
 			# If the unit doesn't have element but is of kind 2, 3, 4, 5, 6 is a rare special type we remember separately
-			elif entry["legendary"]["kind"] in [2, 3, 4, 5, 6, 7]:
-				specialtype = [None, None, "duo", "resonant", "ascended", "rearmed", "attuned", "emblem"][entry["legendary"]["kind"]]
+			elif entry["legendary"]["kind"] in [2, 3, 4, 5, 6, 7, 8]:
+				specialtype = [None, None, "duo", "resonant", "ascended", "rearmed", "attuned", "emblem", "aided"][entry["legendary"]["kind"]]
 				other[specialtype].append(entry["id_tag"])
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -84,6 +85,7 @@ otheronline = {
 	"rearmed": other["rearmed"],
 	"attuned": other["attuned"],
 	"emblem": other["emblem"],
+	"aided": other["aided"],
 	"resonant": other["resonant"],
 	"duokeywords": hardcoded["duokeywords"],
 	"images": hardcoded["images"]
@@ -142,6 +144,7 @@ othertier = {
 	"rearmed": other["rearmed"],
 	"attuned": other["attuned"],
 	"emblem": other["emblem"],
+	"aided": other["aided"],
 	"seasonals": hardcoded["seasonals"]
 }
 with open("tierother.json", "w") as outfile:

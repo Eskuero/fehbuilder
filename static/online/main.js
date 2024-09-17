@@ -38,6 +38,7 @@ selectsummoner = document.getElementById('summoner');
 selectattire = document.getElementById('attire');
 selectbonusunit = document.getElementById('bonusunit');
 selectallies = document.getElementById('allies');
+selectaide = document.getElementById('aide');
 selectatk = document.getElementById('atk');
 selectspd = document.getElementById('spd');
 selectdef = document.getElementById('def');
