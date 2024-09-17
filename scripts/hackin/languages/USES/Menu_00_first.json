@@ -13281,7 +13281,7 @@
 	},
 	{
 		"key": "MID_SCF_\u843d\u96f7\u306e\u7f60A_HELP",
-		"value": "$aSi el rival termina su movimiento en la casilla\\nde la estructura, inflige $a0 de da\u00f1o al rival\\ny a todas las unidades en un radio de tres\\ncasillas. (Anula las habilidades de ataque\\ny de apoyo del rival)."
+		"value": "$aSi el rival termina su movimiento en la casilla\\nen la que se encuentra la estructura, inflige $a0\\npuntos de da\u00f1o al rival y a todas las unidades\\nen un radio de 3 casillas. (Anula el ataque,\\nlas habilidades de apoyo, etc., del enemigo.)"
 	},
 	{
 		"key": "MID_SCF_\u843d\u96f7\u306e\u7f60A_BATTLEHELP",
@@ -13297,7 +13297,7 @@
 	},
 	{
 		"key": "MID_SCF_\u91cd\u5727\u306e\u7f60A_HELP",
-		"value": "$aSi el rival se mueve a esta estructura, su\\nmovimiento y el de las unidades en un radio de\\n2 casillas con PV menor o igual que $a0 queda\\nrestringido a 1 casilla en su pr\u00f3xima acci\u00f3n.\\n(Anula hab. de ataque y apoyo del rival)."
+		"value": "$aSi el rival se mueve a esta estructura, su\\nmovimiento y el de las unidades en un radio de\\ndos casillas con PV menor o igual que $a0 queda\\nrestringido a una casilla en su pr\u00f3xima acci\u00f3n.\\n(Anula hab. de ataque y apoyo del rival)."
 	},
 	{
 		"key": "MID_SCF_\u91cd\u5727\u306e\u7f60A_BATTLEHELP",
@@ -20705,7 +20705,7 @@
 	},
 	{
 		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60A_HELP",
-		"value": "$aSi el rival se detiene en ella y tiene PV \u2264 $a0,\\nanula las habilidades de ataque y apoyo de este\\ny pone fin a su acci\u00f3n. Las trampas m\u00e1gicas no\\npueden quitarse con habilidades de Quitar\\ntrampa."
+		"value": "$aSi el rival se detiene en ella y tiene PV \u2264 $a0,\\nanula el ataque, las habilidades de apoyo, etc.,\\nde este y pone fin a su acci\u00f3n. Las trampas\\nm\u00e1gicas no pueden quitarse con habilidades\\nde Quitar trampa."
 	},
 	{
 		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60A_BATTLEHELP",
@@ -22245,7 +22245,7 @@
 	},
 	{
 		"key": "MID_DISHES_ARRANGE_\u304d\u306e\u3053_1",
-		"value": "apetitosa"
+		"value": "apetitoso"
 	},
 	{
 		"key": "MID_DISHES_ARRANGE_\u304d\u306e\u3053_2",
@@ -22253,7 +22253,7 @@
 	},
 	{
 		"key": "MID_DISHES_ARRANGE_\u304d\u306e\u3053_3",
-		"value": "nutritiva"
+		"value": "nutritivo"
 	},
 	{
 		"key": "MID_DISHES_ARRANGE_\u3044\u3082_1",
@@ -22261,11 +22261,11 @@
 	},
 	{
 		"key": "MID_DISHES_ARRANGE_\u3044\u3082_2",
-		"value": "harinosa"
+		"value": "harinoso"
 	},
 	{
 		"key": "MID_DISHES_ARRANGE_\u3044\u3082_3",
-		"value": "esponjosa"
+		"value": "esponjoso"
 	},
 	{
 		"key": "MID_DISHES_\u30d5\u30e9\u30a4\u30c9\u30dd\u30c6\u30c8",

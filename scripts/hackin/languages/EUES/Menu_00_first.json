@@ -13281,7 +13281,7 @@
 	},
 	{
 		"key": "MID_SCF_\u843d\u96f7\u306e\u7f60A_HELP",
-		"value": "$aSi el rival termina su movimiento en la casilla\\nen la que se encuentra la estructura, inflige\\n$a0 de da\u00f1o al rival y a todas las unidades\\nen un radio de tres casillas. (Neutraliza las\\nhabilidades de ataque y apoyo del enemigo.)"
+		"value": "$aSi el enemigo acaba su movimiento en la casilla\\nen la que se encuentra la estructura, inflige $a0\\npuntos de da\u00f1o al rival y a todas las unidades\\nsituadas en un radio de 3 casillas. (Anula el\\nataque, las habilidades de apoyo, etc., del rival.)"
 	},
 	{
 		"key": "MID_SCF_\u843d\u96f7\u306e\u7f60A_BATTLEHELP",
@@ -13297,7 +13297,7 @@
 	},
 	{
 		"key": "MID_SCF_\u91cd\u5727\u306e\u7f60A_HELP",
-		"value": "$aSi el rival se detiene en ella, restringe\\nsu movimiento y el de todas las unidades en\\nun radio de 2 casillas con $a0 PV o menos\\na 1 casilla en su pr\u00f3xima acci\u00f3n. Anula las\\nhabilidades de ataque y apoyo del enemigo."
+		"value": "$aSi el rival se detiene en ella, este y las unidades\\nsituadas en un radio de dos casillas con $a0 PV\\no menos, solo podr\u00e1n moverse una casilla en su\\npr\u00f3xima acci\u00f3n. (Anula el ataque, las habilidades\\nde apoyo, etc., del enemigo.)"
 	},
 	{
 		"key": "MID_SCF_\u91cd\u5727\u306e\u7f60A_BATTLEHELP",
@@ -20705,7 +20705,7 @@
 	},
 	{
 		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60A_HELP",
-		"value": "$aSi el rival se detiene en ella y tiene PV \u2264 $a0,\\nanula las habilidades de ataque y apoyo de este\\ny pone fin a su acci\u00f3n. Las trampas m\u00e1gicas no\\npueden quitarse con habilidades de Quitar\\ntrampa."
+		"value": "$aSi el rival se detiene en ella y tiene PV \u2264 $a0,\\nanula el ataque, las habilidades de apoyo, etc.,\\nde este y pone fin a su acci\u00f3n. (Las trampas\\nm\u00e1gicas no pueden desactivarse con habilidades\\nde Quitar trampa.)"
 	},
 	{
 		"key": "MID_SCF_\u505c\u6b62\u306e\u7f60A_BATTLEHELP",
