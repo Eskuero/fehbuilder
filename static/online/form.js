@@ -415,9 +415,9 @@ function updatedragonflowers() {
 async function switchbuild(build) {
 	// List of values to be restored on each slot
 	var selects = [selectrarity, selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials, selectemblemhero,
-		selectemblemmerges,	selectassists, selectA, selectB, selectC, selectS, selectX, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef,
+		selectemblemmerges, selectassists, selectA, selectB, selectC, selectS, selectX, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef,
 		selectres, selectatkpairup, selectspdpairup, selectdefpairup, selectrespairup, selectsp, selecthm, selectartstyle, selecttemplate,
-		selectoffsetY, selectoffsetX, selectmirror, selectbackground, selectfavorite, selectaccessory, selectotherworldbond, appui, selectlevel];
+		selectoffsetY, selectoffsetX, selectmirror, selectbackground, selectfavorite, selectaccessory, selectotherworldbond, appui, selectlevel, selectaide];
 
 	// First save changes to current slot (heroes, cheats, language, maxskill, weapons and blessings are to be done first because they affect the content of other selects)
 	builds[buildslot][0] = selectheroes.value;
@@ -460,7 +460,7 @@ async function switchbuild(build) {
 	var selects = [selectrarity, selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials, selectemblemhero,
 		selectemblemmerges, selectassists, selectA, selectB, selectC, selectS, selectX, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef,
 		selectres, selectatkpairup, selectspdpairup, selectdefpairup, selectrespairup, selectsp, selecthm, selectartstyle, selecttemplate,
-		selectoffsetY, selectoffsetX, selectmirror, selectbackground, selectfavorite, selectaccessory, selectotherworldbond, appui, selectlevel];
+		selectoffsetY, selectoffsetX, selectmirror, selectbackground, selectfavorite, selectaccessory, selectotherworldbond, appui, selectlevel, selectaide];
 	// Trigger a rebuild of the refine select based on the selection of weapon
 	selectweapons.value = builds[buildslot][4];
 	updateRefine();
