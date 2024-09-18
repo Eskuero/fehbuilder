@@ -543,6 +543,7 @@ function maximize() {
 	selectmerges.value = "10";
 	selectflowers.value = units[selectheroes.value]["flowers"];
 	selectsummoner.value = "S";
+	selectaide.value = "yes";
 	// Only choose resplendent if it's a legit one
 	if (languages[selectlanguage.value][selectheroes.value.replace("PID", "MPID_VOICE") + "EX01"]) {
 		selectattire.value = "Resplendent";
