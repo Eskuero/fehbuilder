@@ -508,7 +508,6 @@ function aidecheck() {
 		selectaide.value = "yes";
 	} else {
 		selectaide.disabled = false;
-		selectaide.value = "no";
 	}
 }
 
