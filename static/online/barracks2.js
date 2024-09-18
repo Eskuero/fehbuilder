@@ -45,6 +45,7 @@ barracksdefaults = {
 	"ascended": "None",
 	"bonus": "no",
 	"blessing": "None",
+	"aide": "no",
 	"weapon": "None",
 	"refine": "None",
 	"assist": "None",
@@ -173,8 +174,8 @@ async function loadbuild() {
 	selectweapons.value = barracks[buildid]["weapon"];
 	updateRefine();
 	// Replace the most of the remaining easy info
-	var buildinfo = ["attire","rarity","beast","support","merges","flowers","boon","bane","ascended","bonus","blessing","refine","assist","special", "emblemhero", "emblemmerges","A","B","C","S","X","sp","hm","art","template","offsetX","offsetY","mirror","background","favorite","accessory"]
-	var buildselects = [selectattire,selectrarity,selectbeast,selectsummoner,selectmerges,selectflowers,selectboons,selectbanes,selectascendent,selectbonusunit,selectblessings,selectrefines,selectassists,selectspecials,selectemblemhero,selectemblemmerges,selectA,selectB,selectC,selectS,selectX,selectsp,selecthm,selectartstyle,selecttemplate,selectoffsetX,selectoffsetY,selectmirror,selectbackground,selectfavorite,selectaccessory]
+	var buildinfo = ["attire","rarity","beast","support","merges","flowers","boon","bane","ascended","bonus","blessing","refine","assist","special", "emblemhero", "emblemmerges","A","B","C","S","X","sp","hm","art","template","offsetX","offsetY","mirror","background","favorite","accessory", "aide"]
+	var buildselects = [selectattire,selectrarity,selectbeast,selectsummoner,selectmerges,selectflowers,selectboons,selectbanes,selectascendent,selectbonusunit,selectblessings,selectrefines,selectassists,selectspecials,selectemblemhero,selectemblemmerges,selectA,selectB,selectC,selectS,selectX,selectsp,selecthm,selectartstyle,selecttemplate,selectoffsetX,selectoffsetY,selectmirror,selectbackground,selectfavorite,selectaccessory,selectaide]
 	for (i = 0; i < buildinfo.length; i++) {
 		buildselects[i].value = barracks[buildid][buildinfo[i]] ? barracks[buildid][buildinfo[i]] : barracksdefaults[buildinfo[i]];
 	}
@@ -251,6 +252,7 @@ async function savebuild(action = "save") {
 		"ascended": selectascendent.value,
 		"bonus": selectbonusunit.value,
 		"blessing": selectblessings.value,
+		"aide": selectaide.value,
 		"weapon": selectweapons.value,
 		"refine": selectrefines.value,
 		"assist": selectassists.value,
