@@ -1,0 +1,36 @@
+[
+	{
+		"id_tag": "EID_\u9b54\u5668\u30b7\u30a2\u30c1",
+		"roman": "THJAZI_ENEMY",
+		"face_name": "ch00_61_Thjazi_F_Normal",
+		"face_name2": "ch00_61_Thjazi_F_Normal",
+		"top_weapon": "SID_\u9b54\u5668\u30fb\u30e8\u30c8\u30a5\u30f3\u306e\u65a7",
+		"unique_assist1": null,
+		"unique_assist2": null,
+		"unique_special": null,
+		"timestamp": null,
+		"id_num": 111,
+		"is_npc": false,
+		"weapon_type": 2,
+		"tome_class": 0,
+		"move_type": 1,
+		"random_allowed": false,
+		"is_boss": true,
+		"refresher": false,
+		"is_enemy": true,
+		"base_stats": {
+			"hp": 22,
+			"atk": 10,
+			"spd": 2,
+			"def": 11,
+			"res": 11
+		},
+		"growth_rates": {
+			"hp": 60,
+			"atk": 90,
+			"spd": 35,
+			"def": 80,
+			"res": 70
+		}
+	}
+]
