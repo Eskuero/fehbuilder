@@ -1,0 +1,70 @@
+[
+	{
+		"id_tag": "EID_\u30d0\u30eb\u30c9\u30eb",
+		"roman": "BALDR",
+		"face_name": "ch00_63_Baldr_F_Normal",
+		"face_name2": "ch00_63_Baldr_F_Normal",
+		"top_weapon": "SID_\u5929\u65e5\u306e\u795e\u5263",
+		"unique_assist1": null,
+		"unique_assist2": null,
+		"unique_special": null,
+		"timestamp": null,
+		"id_num": 112,
+		"is_npc": false,
+		"weapon_type": 0,
+		"tome_class": 0,
+		"move_type": 3,
+		"random_allowed": false,
+		"is_boss": true,
+		"refresher": false,
+		"is_enemy": true,
+		"base_stats": {
+			"hp": 18,
+			"atk": 11,
+			"spd": 8,
+			"def": 5,
+			"res": 8
+		},
+		"growth_rates": {
+			"hp": 50,
+			"atk": 80,
+			"spd": 90,
+			"def": 55,
+			"res": 45
+		}
+	},
+	{
+		"id_tag": "EID_\u30d8\u30ba",
+		"roman": "HEZ",
+		"face_name": "ch00_64_Hez_F_Normal",
+		"face_name2": "ch00_64_Hez_F_Normal",
+		"top_weapon": "SID_\u5915\u5f71\u306e\u795e\u5f13",
+		"unique_assist1": null,
+		"unique_assist2": null,
+		"unique_special": null,
+		"timestamp": null,
+		"id_num": 113,
+		"is_npc": false,
+		"weapon_type": 4,
+		"tome_class": 0,
+		"move_type": 3,
+		"random_allowed": false,
+		"is_boss": true,
+		"refresher": false,
+		"is_enemy": true,
+		"base_stats": {
+			"hp": 16,
+			"atk": 10,
+			"spd": 7,
+			"def": 5,
+			"res": 9
+		},
+		"growth_rates": {
+			"hp": 50,
+			"atk": 85,
+			"spd": 55,
+			"def": 35,
+			"res": 90
+		}
+	}
+]
