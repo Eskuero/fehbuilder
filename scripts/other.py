@@ -46,6 +46,15 @@ other = {
 	"structures": hardcoded["structures"]
 }
 
+# Decide which extra effects this unit grants on Aether Raids based on the "ae_extra" bitmask
+def ae_extra_bitmask(bitmask):
+	effects = ["extrae", "partycall"]
+	result = ""
+	for i in range(len(effects)):
+		if bitmask & (1 << i):
+			result += f"-{effects[i]}"
+	return result
+
 # Get all the files that contain unit definitions and loop through them
 files = os.listdir(HEROES_BASEDIR)
 for file in files:
@@ -64,8 +73,8 @@ for file in files:
 				if entry["legendary"]["pair_up"]:
 					other["blessed"][entry["id_tag"]]["variant"] += "-pairup" if other["blessed"][entry["id_tag"]]["variant"] else "pairup"
 				# Extra slots in AR always give out stats
-				if entry["legendary"]["ae_extra"]:
-					other["blessed"][entry["id_tag"]]["variant"] += "-extrae"
+				if entry["legendary"]["ae_extra"] > 0:
+					other["blessed"][entry["id_tag"]]["variant"] += ae_extra_bitmask(entry["legendary"]["ae_extra"])
 			# If the unit doesn't have element but is of kind 2, 3, 4, 5, 6 is a rare special type we remember separately
 			elif entry["legendary"]["kind"] in [2, 3, 4, 5, 6, 7, 8]:
 				specialtype = [None, None, "duo", "resonant", "ascended", "rearmed", "attuned", "emblem", "aided"][entry["legendary"]["kind"]]

@@ -1284,6 +1284,46 @@
 		"path": "Common/UI/Icon_LegendLightRes_02S.png",
 		"scale": [80,87]
 	},
+	"5-Blessing-atk-extrae-partycall": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightAtk_03.png",
+		"scale": [147,160]
+	},
+	"5-Blessing-atk-extrae-partycall-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightAtk_03S.png",
+		"scale": [80,87]
+	},
+	"5-Blessing-spd-extrae-partycall": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightSpd_03.png",
+		"scale": [147,160]
+	},
+	"5-Blessing-spd-extrae-partycall-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightSpd_03S.png",
+		"scale": [80,87]
+	},
+	"5-Blessing-def-extrae-partycall": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightDef_03.png",
+		"scale": [147,160]
+	},
+	"5-Blessing-def-extrae-partycall-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightDef_03S.png",
+		"scale": [80,87]
+	},
+	"5-Blessing-res-extrae-partycall": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightRes_03.png",
+		"scale": [147,160]
+	},
+	"5-Blessing-res-extrae-partycall-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLightRes_03S.png",
+		"scale": [80,87]
+	},
 	"6-Blessing-atk": {
 		"actions": ["resize"],
 		"path": "Common/UI/Icon_LegendDarkAtk.png",
@@ -1362,6 +1402,46 @@
 	"6-Blessing-res-extrae-mini": {
 		"actions": ["resize"],
 		"path": "Common/UI/Icon_LegendDarkRes_02S.png",
+		"scale": [80,87]
+	},
+	"6-Blessing-atk-extrae-partycall": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkAtk_03.png",
+		"scale": [147,160]
+	},
+	"6-Blessing-atk-extrae-partycall-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkAtk_03S.png",
+		"scale": [80,87]
+	},
+	"6-Blessing-spd-extrae-partycall": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkSpd_03.png",
+		"scale": [147,160]
+	},
+	"6-Blessing-spd-extrae-partycall-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkSpd_03S.png",
+		"scale": [80,87]
+	},
+	"6-Blessing-def-extrae-partycall": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkDef_03.png",
+		"scale": [147,160]
+	},
+	"6-Blessing-def-extrae-partycall-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkDef_03S.png",
+		"scale": [80,87]
+	},
+	"6-Blessing-res-extrae-partycall": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkRes_03.png",
+		"scale": [147,160]
+	},
+	"6-Blessing-res-extrae-partycall-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendDarkRes_03S.png",
 		"scale": [80,87]
 	},
 	"7-Blessing-atk": {
@@ -1444,6 +1524,46 @@
 		"path": "Common/UI/Icon_LegendHeavenRes_02S.png",
 		"scale": [80,87]
 	},
+	"7-Blessing-atk-extrae-partycall": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendHeavenAtk_03.png",
+		"scale": [147,160]
+	},
+	"7-Blessing-atk-extrae-partycall-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendHeavenAtk_03S.png",
+		"scale": [80,87]
+	},
+	"7-Blessing-spd-extrae-partycall": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendHeavenSpd_03.png",
+		"scale": [147,160]
+	},
+	"7-Blessing-spd-extrae-partycall-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendHeavenSpd_03S.png",
+		"scale": [80,87]
+	},
+	"7-Blessing-def-extrae-partycall": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendHeavenDef_03.png",
+		"scale": [147,160]
+	},
+	"7-Blessing-def-extrae-partycall-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendHeavenDef_03S.png",
+		"scale": [80,87]
+	},
+	"7-Blessing-res-extrae-partycall": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendHeavenRes_03.png",
+		"scale": [147,160]
+	},
+	"7-Blessing-res-extrae-partycall-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendHeavenRes_03S.png",
+		"scale": [80,87]
+	},
 	"8-Blessing-atk": {
 		"actions": ["resize"],
 		"path": "Common/UI/Icon_LegendLogicAtk.png",
@@ -1522,6 +1642,46 @@
 	"8-Blessing-res-extrae-mini": {
 		"actions": ["resize"],
 		"path": "Common/UI/Icon_LegendLogicRes_02S.png",
+		"scale": [80,87]
+	},
+	"8-Blessing-atk-extrae-partycall": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicAtk_03.png",
+		"scale": [147,160]
+	},
+	"8-Blessing-atk-extrae-partycall-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicAtk_03S.png",
+		"scale": [80,87]
+	},
+	"8-Blessing-spd-extrae-partycall": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicSpd_03.png",
+		"scale": [147,160]
+	},
+	"8-Blessing-spd-extrae-partycall-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicSpd_03S.png",
+		"scale": [80,87]
+	},
+	"8-Blessing-def-extrae-partycall": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicDef_03.png",
+		"scale": [147,160]
+	},
+	"8-Blessing-def-extrae-partycall-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicDef_03S.png",
+		"scale": [80,87]
+	},
+	"8-Blessing-res-extrae-partycall": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicRes_03.png",
+		"scale": [147,160]
+	},
+	"8-Blessing-res-extrae-partycall-mini": {
+		"actions": ["resize"],
+		"path": "Common/UI/Icon_LegendLogicRes_03S.png",
 		"scale": [80,87]
 	},
 	"Support-C": {
