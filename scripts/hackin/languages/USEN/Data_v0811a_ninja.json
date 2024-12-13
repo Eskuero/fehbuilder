@@ -605,11 +605,11 @@
 	},
 	{
 		"key": "MSID_H_\u751f\u5b58\u672c\u80fd\u306e\u5f13R",
-		"value": "$aAt start of turn, if unit's HP \u2265 25%, inflicts\\nSpd/Def-7 and\u3010Sabotage\u3011on closest foes and\\nfoes within 2 spaces of those foes through\\ntheir next actions.\\n\\nAt start of combat, if unit's HP \u2265 25, grants\\nAtk/Spd+6 to unit, neutralizes unit's penalties\\nto Atk/Spd, and deals damage = 20% of unit's\\nSpd during combat (excluding area-of-effect\\nSpecials).\\n\\n\u3010Sabotage\u3011\\nInflicts penalty on unit's Atk/Spd/Def/Res\\nduring combat = highest penalty on each\\nstat between unit and allies within 2 spaces\\nof unit through its next action. Calculates\\neach stat penalty independently."
+		"value": "$aAt start of turn, if unit's HP \u2265 25%, inflicts\\nSpd/Def-7 and\u3010Sabotage\u3011on closest foes and\\nfoes within 2 spaces of those foes through\\ntheir next actions.\\n\\nAt start of combat, if unit's HP \u2265 25%, grants\\nAtk/Spd+6 to unit, neutralizes unit's penalties\\nto Atk/Spd, and deals damage = 20% of unit's\\nSpd during combat (excluding area-of-effect\\nSpecials).\\n\\n\u3010Sabotage\u3011\\nInflicts penalty on unit's Atk/Spd/Def/Res\\nduring combat = highest penalty on each\\nstat between unit and allies within 2 spaces\\nof unit through its next action. Calculates\\neach stat penalty independently."
 	},
 	{
 		"key": "MSID_H_\u751f\u5b58\u672c\u80fd\u306e\u5f13R_NOSKW",
-		"value": "$aAt start of turn, if unit's HP \u2265 25%, inflicts\\nSpd/Def-7 and\u3010Sabotage\u3011on closest foes and\\nfoes within 2 spaces of those foes through\\ntheir next actions.\\n\\nAt start of combat, if unit's HP \u2265 25, grants\\nAtk/Spd+6 to unit, neutralizes unit's penalties\\nto Atk/Spd, and deals damage = 20% of unit's\\nSpd during combat (excluding area-of-effect\\nSpecials)."
+		"value": "$aAt start of turn, if unit's HP \u2265 25%, inflicts\\nSpd/Def-7 and\u3010Sabotage\u3011on closest foes and\\nfoes within 2 spaces of those foes through\\ntheir next actions.\\n\\nAt start of combat, if unit's HP \u2265 25%, grants\\nAtk/Spd+6 to unit, neutralizes unit's penalties\\nto Atk/Spd, and deals damage = 20% of unit's\\nSpd during combat (excluding area-of-effect\\nSpecials)."
 	},
 	{
 		"key": "MSID_H_\u30a2\u30fc\u30ea\u30a2\u30ebR",
