@@ -1,0 +1,614 @@
+[
+	{
+		"key": "MDAID_\u8056\u5973\u306e\u982d\u98fe\u308a\u30fb\u91d1",
+		"value": "Ornem. de sainte d'or"
+	},
+	{
+		"key": "MDAID_H_\u8056\u5973\u306e\u982d\u98fe\u308a\u30fb\u91d1",
+		"value": "Troph\u00e9e pour une victoire contre\\nla version Embl\u00e8me de Lyn."
+	},
+	{
+		"key": "MID_ENHANCE_HELP_76",
+		"value": "Conf\u00e8re compteur -1 \u00e0 l'unit\u00e9 avant\\n sa premi\u00e8re attaque pendant le combat."
+	},
+	{
+		"key": "MID_MISSION_S202412MJOLNIR02_TITLE",
+		"value": "Assaut de Mj\u00f6lnir"
+	},
+	{
+		"key": "MID_MISSION_S202412MJOLNIR02_A1",
+		"value": "Victoire : avatar"
+	},
+	{
+		"key": "MID_MISSION_H_S202412MJOLNIR02_A1",
+		"value": "Vaincre des ennemis avec votre avatar dans\\nl'Assaut de Mj\u00f6lnir."
+	},
+	{
+		"key": "MID_MISSION_S202412MJOLNIR02_A2",
+		"value": "Victoire : avatar"
+	},
+	{
+		"key": "MID_MISSION_H_S202412MJOLNIR02_A2",
+		"value": "Vaincre des ennemis avec votre avatar dans\\nl'Assaut de Mj\u00f6lnir."
+	},
+	{
+		"key": "MID_MISSION_S202412SUBSC02_TITLE",
+		"value": "Passe Feh"
+	},
+	{
+		"key": "MID_MISSION_S202412SUBSC02_A1",
+		"value": "Victoire"
+	},
+	{
+		"key": "MID_MISSION_H_S202412SUBSC02_A1",
+		"value": "Vaincre des ennemis."
+	},
+	{
+		"key": "MID_MISSION_S202412SUBSC02_A2",
+		"value": "Victoire"
+	},
+	{
+		"key": "MID_MISSION_H_S202412SUBSC02_A2",
+		"value": "Vaincre des ennemis."
+	},
+	{
+		"key": "MID_MISSION_S202412SUBSC02_A3",
+		"value": "Duelliste"
+	},
+	{
+		"key": "MID_MISSION_H_S202412SUBSC02_A3",
+		"value": "Remporter des duels en ar\u00e8ne dans n'importe\\nquelle cat\u00e9gorie."
+	},
+	{
+		"key": "MID_MISSION_S202412SUBSC02_A4",
+		"value": "Duelliste"
+	},
+	{
+		"key": "MID_MISSION_H_S202412SUBSC02_A4",
+		"value": "Remporter des duels en ar\u00e8ne dans n'importe\\nquelle cat\u00e9gorie."
+	},
+	{
+		"key": "MID_MISSION_S202412SUBSC02_A5",
+		"value": "Cible : unit\u00e9s en armure"
+	},
+	{
+		"key": "MID_MISSION_H_S202412SUBSC02_A5",
+		"value": "Vaincre des unit\u00e9s en armure."
+	},
+	{
+		"key": "MID_MISSION_S202412SUBSC02_A6",
+		"value": "Cible : unit\u00e9s volantes"
+	},
+	{
+		"key": "MID_MISSION_H_S202412SUBSC02_A6",
+		"value": "Vaincre des unit\u00e9s volantes."
+	},
+	{
+		"key": "MID_MISSION_S202412USEWEAPON01_TITLE",
+		"value": "Art de la lance"
+	},
+	{
+		"key": "MID_MISSION_S202412USEWEAPON01_A1",
+		"value": "Victoire : lance"
+	},
+	{
+		"key": "MID_MISSION_H_S202412USEWEAPON01_A1",
+		"value": "Vaincre des unit\u00e9s maniant l'\u00e9p\u00e9e avec des\\nunit\u00e9s maniant la lance."
+	},
+	{
+		"key": "MID_MISSION_S202412USEWEAPON01_A2",
+		"value": "Victoire : lance"
+	},
+	{
+		"key": "MID_MISSION_H_S202412USEWEAPON01_A2",
+		"value": "Vaincre des unit\u00e9s maniant la lance avec des\\nunit\u00e9s maniant la lance."
+	},
+	{
+		"key": "MID_MISSION_S202412USEWEAPON01_A3",
+		"value": "Victoire : lance"
+	},
+	{
+		"key": "MID_MISSION_H_S202412USEWEAPON01_A3",
+		"value": "Vaincre des unit\u00e9s maniant la hache avec des\\nunit\u00e9s maniant la lance."
+	},
+	{
+		"key": "MID_MISSION_S202412USEWEAPON01_A4",
+		"value": "Victoire : lance"
+	},
+	{
+		"key": "MID_MISSION_H_S202412USEWEAPON01_A4",
+		"value": "Vaincre des unit\u00e9s grises maniant l'arc\\navec des unit\u00e9s maniant la lance."
+	},
+	{
+		"key": "MID_MISSION_S202412USEWEAPON01_A5",
+		"value": "Victoire : lance"
+	},
+	{
+		"key": "MID_MISSION_H_S202412USEWEAPON01_A5",
+		"value": "Vaincre des unit\u00e9s grises maniant la dague\\navec des unit\u00e9s maniant la lance."
+	},
+	{
+		"key": "MID_MISSION_S202412USEWEAPON01_A6",
+		"value": "Victoire : lance"
+	},
+	{
+		"key": "MID_MISSION_H_S202412USEWEAPON01_A6",
+		"value": "Vaincre des unit\u00e9s maniant le b\u00e2ton avec des\\nunit\u00e9s maniant la lance."
+	},
+	{
+		"key": "MID_MISSION_S202412USEWEAPON01_A7",
+		"value": "Domination : lance"
+	},
+	{
+		"key": "MID_MISSION_H_S202412USEWEAPON01_A7",
+		"value": "Vaincre des unit\u00e9s maniant l'\u00e9p\u00e9e de\\nniveau 30 ou sup\u00e9rieur avec des unit\u00e9s\\nmaniant la lance."
+	},
+	{
+		"key": "MID_MISSION_S202412USEWEAPON01_A8",
+		"value": "Domination : lance"
+	},
+	{
+		"key": "MID_MISSION_H_S202412USEWEAPON01_A8",
+		"value": "Vaincre des unit\u00e9s maniant la lance de\\nniveau 30 ou sup\u00e9rieur avec des unit\u00e9s\\nmaniant la lance."
+	},
+	{
+		"key": "MID_MISSION_S202412USEWEAPON01_A9",
+		"value": "Domination : lance"
+	},
+	{
+		"key": "MID_MISSION_H_S202412USEWEAPON01_A9",
+		"value": "Vaincre des unit\u00e9s maniant la hache de\\nniveau 30 ou sup\u00e9rieur avec des unit\u00e9s\\nmaniant la lance."
+	},
+	{
+		"key": "MID_MISSION_S202412USEWEAPON01_A10",
+		"value": "Domination : lance"
+	},
+	{
+		"key": "MID_MISSION_H_S202412USEWEAPON01_A10",
+		"value": "Vaincre des unit\u00e9s grises maniant l'arc de\\nniveau 30 ou sup\u00e9rieur avec des unit\u00e9s\\nmaniant la lance."
+	},
+	{
+		"key": "MID_MISSION_S202412USEWEAPON01_A11",
+		"value": "Domination : lance"
+	},
+	{
+		"key": "MID_MISSION_H_S202412USEWEAPON01_A11",
+		"value": "Vaincre des unit\u00e9s grises maniant la dague de\\nniveau 30 ou sup\u00e9rieur avec des unit\u00e9s\\nmaniant la lance."
+	},
+	{
+		"key": "MID_MISSION_S202412USEWEAPON01_A12",
+		"value": "Domination : lance"
+	},
+	{
+		"key": "MID_MISSION_H_S202412USEWEAPON01_A12",
+		"value": "Vaincre des unit\u00e9s maniant le b\u00e2ton de\\nniveau 30 ou sup\u00e9rieur avec des unit\u00e9s\\nmaniant la lance."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_TITLE",
+		"value": "Qu\u00eates : tournoi"
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A1",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A1",
+		"value": "Remporter des batailles au cours d'un tournoi."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A2",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A2",
+		"value": "Remporter des batailles au cours d'un tournoi."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A3",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A3",
+		"value": "Remporter des batailles au cours d'un tournoi."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A4",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A4",
+		"value": "Remporter des batailles au cours d'un tournoi."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A5",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A5",
+		"value": "Remporter des batailles au cours d'un tournoi."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A6",
+		"value": "Tour : deuxi\u00e8me strate"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A6",
+		"value": "Terminer la 2e strate de la tour d'entra\u00eenement."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A7",
+		"value": "Tour : cinqui\u00e8me strate"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A7",
+		"value": "Terminer la 5e strate de la tour d'entra\u00eenement."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A8",
+		"value": "Tour : huiti\u00e8me strate"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A8",
+		"value": "Terminer la 8e strate de la tour d'entra\u00eenement."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A9",
+		"value": "Duelliste"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A9",
+		"value": "Remporter des duels en ar\u00e8ne dans n'importe\\nquelle cat\u00e9gorie."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A10",
+		"value": "Duelliste"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A10",
+		"value": "Remporter des duels en ar\u00e8ne dans n'importe\\nquelle cat\u00e9gorie."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A11",
+		"value": "Duelliste interm\u00e9diaire"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A11",
+		"value": "Remporter des duels en ar\u00e8ne de cat\u00e9gorie\\nInterm\u00e9diaire ou sup\u00e9rieure."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A12",
+		"value": "Duelliste interm\u00e9diaire"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A12",
+		"value": "Remporter des duels en ar\u00e8ne de cat\u00e9gorie\\nInterm\u00e9diaire ou sup\u00e9rieure."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A13",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A13",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 rouge dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A14",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A14",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 bleue dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A15",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A15",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 verte dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A16",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A16",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 grise dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A17",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A17",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 rouge dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A18",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A18",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 bleue dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A19",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A19",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 verte dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A20",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A20",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 grise dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A21",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A21",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 rouge dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A22",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A22",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 bleue dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A23",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A23",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 verte dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_S202412VOTE01_A24",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202412VOTE01_A24",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 grise dans votre \u00e9quipe."
+	},
+	{
+		"key": "MPID_\u7d0b\u7ae0\u30ea\u30f3",
+		"value": "Lyn"
+	},
+	{
+		"key": "MPID_SEARCH_\u7d0b\u7ae0\u30ea\u30f3",
+		"value": "Lyn"
+	},
+	{
+		"key": "MPID_HONOR_\u7d0b\u7ae0\u30ea\u30f3",
+		"value": "Flammes"
+	},
+	{
+		"key": "MPID_H_\u7d0b\u7ae0\u30ea\u30f3",
+		"value": "L'un des Embl\u00e8mes ayant \u00e9t\u00e9 invoqu\u00e9s en Elyos.\\nElle r\u00e9side dans l'Anneau de la Lady de Sacae.\\nAppara\u00eet dans Fire Emblem: The Blazing Blade /\\nFire Emblem Engage."
+	},
+	{
+		"key": "MPID_VOICE_\u7d0b\u7ae0\u30ea\u30f3",
+		"value": "Wendee Lee"
+	},
+	{
+		"key": "MPID_ILLUST_\u7d0b\u7ae0\u30ea\u30f3",
+		"value": "Essual (\u30a8\u30b7\u30e5\u30a2\u30eb)"
+	},
+	{
+		"key": "MID_TIPS_Summon_v0900c_legend_01_\u7d0b\u7ae0\u30ea\u30f3",
+		"value": "Elle peut attaquer 3 fois des ennemis\\n\u00e0 6 cases de distance en changeant de\\nstyle ! L'alli\u00e9 avec lequel elle a fusionn\u00e9\\npeut aussi attaquer \u00e0 5 cases de distance."
+	},
+	{
+		"key": "MPID_VOICE_\u30af\u30ed\u30fc\u30c9EX01",
+		"value": "Joe Zieja"
+	},
+	{
+		"key": "MPID_ILLUST_\u30af\u30ed\u30fc\u30c9EX01",
+		"value": "Hiiragi Akio (\u67ca\u6681\u751f)"
+	},
+	{
+		"key": "MSID_\u8349\u539f\u306e\u516c\u5973\u306e\u5f13",
+		"value": "Arc de Sacae"
+	},
+	{
+		"key": "MSID_SEARCH_\u8349\u539f\u306e\u516c\u5973\u306e\u5f13",
+		"value": "Arc de Sacae"
+	},
+	{
+		"key": "MSID_\u6d41\u661f\u7fa4",
+		"value": "Temp\u00eate astra"
+	},
+	{
+		"key": "MSID_SEARCH_\u6d41\u661f\u7fa4",
+		"value": "Tempete astra"
+	},
+	{
+		"key": "MSID_\u901f\u3055\u306e\u5438\u53ce1",
+		"value": "Vole-Vitesse 1"
+	},
+	{
+		"key": "MSID_SEARCH_\u901f\u3055\u306e\u5438\u53ce1",
+		"value": "Vole-Vitesse 1"
+	},
+	{
+		"key": "MSID_\u901f\u3055\u306e\u5438\u53ce2",
+		"value": "Vole-Vitesse 2"
+	},
+	{
+		"key": "MSID_SEARCH_\u901f\u3055\u306e\u5438\u53ce2",
+		"value": "Vole-Vitesse 2"
+	},
+	{
+		"key": "MSID_\u901f\u3055\u306e\u5438\u53ce3",
+		"value": "Vole-Vitesse 3"
+	},
+	{
+		"key": "MSID_SEARCH_\u901f\u3055\u306e\u5438\u53ce3",
+		"value": "Vole-Vitesse 3"
+	},
+	{
+		"key": "MSID_\u901f\u3055\u306e\u5438\u53ce4",
+		"value": "Vole-Vitesse 4"
+	},
+	{
+		"key": "MSID_SEARCH_\u901f\u3055\u306e\u5438\u53ce4",
+		"value": "Vole-Vitesse 4"
+	},
+	{
+		"key": "MSID_\u521d\u6483\u306e\u9f13\u52d5\u72b6\u614b",
+		"value": "Pouls pr\u00e9vention"
+	},
+	{
+		"key": "MSID_SEARCH_\u521d\u6483\u306e\u9f13\u52d5\u72b6\u614b",
+		"value": "Pouls prevention"
+	},
+	{
+		"key": "MSID_H_\u8349\u539f\u306e\u516c\u5973\u306e\u5f13",
+		"value": "$aAcc\u00e9l\u00e8re l'activation des aptitudes sp\u00e9ciales\\n(compteur -1). Efficace contre les unit\u00e9s volantes.\\n\\nEn d\u00e9but de tour, si l'unit\u00e9 se trouve \u00e0 2\u00a0cases\\nou moins d'un alli\u00e9, conf\u00e8re Atq/Vit +6,\\n\u3010Adr\u00e9naline\u3011et\u3010Pouls pr\u00e9vention\u3011\u00e0 l'unit\u00e9\\net aux alli\u00e9s \u00e0 2\u00a0cases ou moins de l'unit\u00e9\\npendant un tour.\\n\\nSi l'unit\u00e9 se trouve \u00e0 3\u00a0cases ou moins d'un alli\u00e9,\\nconf\u00e8re un boost d'Atq/Vit \u00e0 l'unit\u00e9 \u00e9quivalent\\n\u00e0 6 + 20\u00a0% de la Vit de l'unit\u00e9 au d\u00e9but du\\ncombat, inflige 7\u00a0d\u00e9g\u00e2ts suppl\u00e9mentaires\\n(aptitudes sp\u00e9ciales \u00e0 effet de zone exclues)\\net r\u00e9duit de 50\u00a0% le pourcentage des aptitudes\\ndes ennemis (sauf aptitudes sp\u00e9ciales) qui\\nr\u00e9duisent les d\u00e9g\u00e2ts \u00e0 hauteur d'un certain\\npourcentage pendant le combat (aptitudes\\nsp\u00e9ciales \u00e0 effet de zone exclues), et si r\u00e9duire\\nde 25 la diff\u00e9rence de Vit n\u00e9cessaire pour\\nr\u00e9aliser une double frappe devait d\u00e9clencher\\nune double frappe de l'unit\u00e9 (doubles frappes\\ngaranties ou annul\u00e9es exclues),\\n\u3010Double puissant X %\u3011se d\u00e9clenche pendant\\nle combat (si l'unit\u00e9 ne peut pas effectuer\\nune double frappe ni attaquer deux fois, X = 80\u00a0;\\ndans le cas contraire, X = 40).\\n\\n\u3010Adr\u00e9naline\u3011\\nConf\u00e8re l'effet suivant pendant un tour : \u00ab Si\\nl'unit\u00e9 initie le combat, l'unit\u00e9 peut effectuer\\nune double frappe avant que l'ennemi ne\\nriposte. \u00bb\\n\\n\u3010Pouls pr\u00e9vention\u3011\\nConf\u00e8re compteur -1 \u00e0 l'unit\u00e9 avant sa premi\u00e8re\\nattaque pendant le combat.\\n\\n\u3010Double puissant X %\u3011\\nD\u00e9clenche une frappe suppl\u00e9mentaire\\ndirectement apr\u00e8s une double frappe standard\\nde l'unit\u00e9 et inflige des d\u00e9g\u00e2ts suppl\u00e9mentaires\\n\u00e0 hauteur de X\u00a0% des d\u00e9g\u00e2ts de l'attaque\\nnormale de l'unit\u00e9 (si l'unit\u00e9 ne peut pas r\u00e9aliser\\nune double frappe, cet effet se d\u00e9clenche au\\nmoment o\u00f9 la double frappe standard aurait\\nlieu ; cet effet \u00e9tant trait\u00e9 comme une double\\nfrappe, les effets qui r\u00e9duisent les d\u00e9g\u00e2ts \u00e0\\nhauteur d'un certain pourcentage s'appliquent,\\nmais les effets emp\u00eachant les doubles frappes\\nou ceux permettant d'attaquer deux fois ne\\ns\u2019appliquent pas ; s'il y a plusieurs effets\\nsimilaires, seul le plus puissant s'applique)."
+	},
+	{
+		"key": "MSID_H_\u8349\u539f\u306e\u516c\u5973\u306e\u5f13_NOSKW",
+		"value": "$aAcc\u00e9l\u00e8re l'activation des aptitudes sp\u00e9ciales\\n(compteur -1). Efficace contre les unit\u00e9s volantes.\\n\\nEn d\u00e9but de tour, si l'unit\u00e9 se trouve \u00e0 2\u00a0cases\\nou moins d'un alli\u00e9, conf\u00e8re Atq/Vit +6,\\n\u3010Adr\u00e9naline\u3011et\u3010Pouls pr\u00e9vention\u3011\u00e0 l'unit\u00e9\\net aux alli\u00e9s \u00e0 2\u00a0cases ou moins de l'unit\u00e9\\npendant un tour.\\n\\nSi l'unit\u00e9 se trouve \u00e0 3\u00a0cases ou moins d'un alli\u00e9,\\nconf\u00e8re un boost d'Atq/Vit \u00e0 l'unit\u00e9 \u00e9quivalent\\n\u00e0 6 + 20\u00a0% de la Vit de l'unit\u00e9 au d\u00e9but du\\ncombat, inflige 7\u00a0d\u00e9g\u00e2ts suppl\u00e9mentaires\\n(aptitudes sp\u00e9ciales \u00e0 effet de zone exclues)\\net r\u00e9duit de 50\u00a0% le pourcentage des aptitudes\\ndes ennemis (sauf aptitudes sp\u00e9ciales) qui\\nr\u00e9duisent les d\u00e9g\u00e2ts \u00e0 hauteur d'un certain\\npourcentage pendant le combat (aptitudes\\nsp\u00e9ciales \u00e0 effet de zone exclues), et si r\u00e9duire\\nde 25 la diff\u00e9rence de Vit n\u00e9cessaire pour\\nr\u00e9aliser une double frappe devait d\u00e9clencher\\nune double frappe de l'unit\u00e9 (doubles frappes\\ngaranties ou annul\u00e9es exclues),\\n\u3010Double puissant X %\u3011se d\u00e9clenche pendant\\nle combat (si l'unit\u00e9 ne peut pas effectuer\\nune double frappe ni attaquer deux fois, X = 80\u00a0;\\ndans le cas contraire, X = 40)."
+	},
+	{
+		"key": "MSID_H_\u6d41\u661f\u7fa4",
+		"value": "$aAugmente les d\u00e9g\u00e2ts \u00e0 hauteur de 40\u00a0% de la Vit\\nde l'unit\u00e9 si l'aptitude sp\u00e9ciale se d\u00e9clenche.\\n\\nSi l'aptitude sp\u00e9ciale de l'unit\u00e9 est pr\u00eate\\nou qu'elle s'est d\u00e9clench\u00e9e pendant ce combat,\\nsi\u3010Double puissant X %\u3011s'est d\u00e9clench\u00e9 et que\\nX\u00a0\u2264\u00a099, alors X\u00a0= 100.\\n\\nL'unit\u00e9 peut utiliser le\u3010Style\u3011suivant\u00a0:\\n\u2015\u2015\u2015\u2015\u2015 Style Temp\u00eate Astra \u2015\u2015\u2015\u2015\u2015\\nL'unit\u00e9 peut attaquer les ennemis \u00e0 6\u00a0cases\\nou moins de l'unit\u00e9 et ceux situ\u00e9s dans une croix\\nde 3\u00a0cases de long sur 3 de haut ayant pour\\ncentre l'unit\u00e9, peu importe la port\u00e9e de l'unit\u00e9.\\nL'unit\u00e9 subit une riposte si l'une des conditions\\nsuivantes est remplie\u00a0: l'ennemi est une unit\u00e9\\nen armure avec une port\u00e9e de 2, l'ennemi peut\\nriposter peu importe la distance \u00e0 laquelle\\nse trouve l'unit\u00e9, ou la port\u00e9e de l'ennemi\\nest \u00e9gale \u00e0 la distance entre l'unit\u00e9 et l'ennemi.\\n\\nL'unit\u00e9 ne peut ni se d\u00e9placer ni attaquer des\\nstructures, les effets de d\u00e9placement d'apr\u00e8s\\ncombat n'ont pas lieu et le d\u00e9placement restant\\nconf\u00e9r\u00e9 par Mobilit\u00e9 est consid\u00e9r\u00e9 comme \u00e9tant\\nde 0. La port\u00e9e de l'effet d'aptitude est\\nconsid\u00e9r\u00e9e comme \u00e9tant de 2, y compris\\npour les effets d'aptitude bas\u00e9s sur la port\u00e9e\\nd'attaque, comme Pavois et \u00c9gide. Ce style\\nne peut \u00eatre utilis\u00e9 qu'une fois par tour.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\n\\n\u3010Double puissant X %\u3011\\nD\u00e9clenche une frappe suppl\u00e9mentaire\\ndirectement apr\u00e8s une double frappe standard\\nde l'unit\u00e9 et inflige des d\u00e9g\u00e2ts suppl\u00e9mentaires\\n\u00e0 hauteur de X\u00a0% des d\u00e9g\u00e2ts de l'attaque\\nnormale de l'unit\u00e9 (si l'unit\u00e9 ne peut pas r\u00e9aliser\\nune double frappe, cet effet se d\u00e9clenche au\\nmoment o\u00f9 la double frappe standard aurait\\nlieu ; cet effet \u00e9tant trait\u00e9 comme une double\\nfrappe, les effets qui r\u00e9duisent les d\u00e9g\u00e2ts \u00e0\\nhauteur d'un certain pourcentage s'appliquent,\\nmais les effets emp\u00eachant les doubles frappes\\nou ceux permettant d'attaquer deux fois ne\\ns\u2019appliquent pas ; s'il y a plusieurs effets\\nsimilaires, seul le plus puissant s'applique).\\n\\n\u3010Style\u3011\\nChangez de style en utilisant le bouton \u00ab Style \u00bb\\nen bas de l'\u00e9cran.\\n\\nLe style d'une unit\u00e9 est actif uniquement lorsque\\ncette unit\u00e9 est en train d'agir. Quand l'unit\u00e9 est\\n\u00e9quip\u00e9e d'une aptitude ayant un style, elle ne\\npourra pas utiliser de doubles aptitudes ou\\nd'aptitudes harmonis\u00e9es. L'utilisation du style\\nest d\u00e9sactiv\u00e9e quand l'unit\u00e9 est d\u00e9ploy\u00e9e avec\\nDuo ou qu'elle est \u00e9quip\u00e9e de plusieurs aptitudes\\nayant un style."
+	},
+	{
+		"key": "MSID_H_\u6d41\u661f\u7fa4_NOSKW",
+		"value": "$aAugmente les d\u00e9g\u00e2ts \u00e0 hauteur de 40\u00a0% de la Vit\\nde l'unit\u00e9 si l'aptitude sp\u00e9ciale se d\u00e9clenche.\\n\\nSi l'aptitude sp\u00e9ciale de l'unit\u00e9 est pr\u00eate\\nou qu'elle s'est d\u00e9clench\u00e9e pendant ce combat,\\nsi\u3010Double puissant X %\u3011s'est d\u00e9clench\u00e9 et que\\nX\u00a0\u2264\u00a099, alors X\u00a0= 100.\\n\\nL'unit\u00e9 peut utiliser le\u3010Style\u3011suivant\u00a0:\\n\u2015\u2015\u2015\u2015\u2015 Style Temp\u00eate Astra \u2015\u2015\u2015\u2015\u2015\\nL'unit\u00e9 peut attaquer les ennemis \u00e0 6\u00a0cases\\nou moins de l'unit\u00e9 et ceux situ\u00e9s dans une croix\\nde 3\u00a0cases de long sur 3 de haut ayant pour\\ncentre l'unit\u00e9, peu importe la port\u00e9e de l'unit\u00e9.\\nL'unit\u00e9 subit une riposte si l'une des conditions\\nsuivantes est remplie\u00a0: l'ennemi est une unit\u00e9\\nen armure avec une port\u00e9e de 2, l'ennemi peut\\nriposter peu importe la distance \u00e0 laquelle\\nse trouve l'unit\u00e9, ou la port\u00e9e de l'ennemi\\nest \u00e9gale \u00e0 la distance entre l'unit\u00e9 et l'ennemi.\\n\\nL'unit\u00e9 ne peut ni se d\u00e9placer ni attaquer des\\nstructures, les effets de d\u00e9placement d'apr\u00e8s\\ncombat n'ont pas lieu et le d\u00e9placement restant\\nconf\u00e9r\u00e9 par Mobilit\u00e9 est consid\u00e9r\u00e9 comme \u00e9tant\\nde 0. La port\u00e9e de l'effet d'aptitude est\\nconsid\u00e9r\u00e9e comme \u00e9tant de 2, y compris\\npour les effets d'aptitude bas\u00e9s sur la port\u00e9e\\nd'attaque, comme Pavois et \u00c9gide. Ce style\\nne peut \u00eatre utilis\u00e9 qu'une fois par tour.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015"
+	},
+	{
+		"key": "MSID_H_\u901f\u3055\u306e\u5438\u53ce1",
+		"value": "$aEn d\u00e9but de tour, conf\u00e8re la valeur de la Vit de\\n\u3010Grand talent\u3011+1 \u00e0 l'unit\u00e9.\\n\\nApr\u00e8s le combat, si l'unit\u00e9 a attaqu\u00e9, conf\u00e8re\\nla valeur de la Vit de\u3010Grand talent\u3011+1 \u00e0 l'unit\u00e9.\\n\\nInflige des d\u00e9g\u00e2ts suppl\u00e9mentaires \u00e0 hauteur\\nde 5\u00a0% de la Vit de l'unit\u00e9 pendant le combat\\n(aptitudes sp\u00e9ciales \u00e0 effet de zone exclues).\\n\\n(Cette aptitude conf\u00e8re un maximum de\\n\u3010Grand talent\u3011+5.)\\n\\n\u3010Grand talent\u3011\\nAjoute la valeur de Grand talent (+X) \u00e0 des\\ncaract\u00e9ristiques sp\u00e9cifi\u00e9es (jusqu'\u00e0 la fin\\ndu combat ; la valeur maximale de X est\\nd\u00e9termin\u00e9e par la caract\u00e9ristique atteignant\\nla limite de 99, chaque caract\u00e9ristique est\\ncalcul\u00e9e s\u00e9par\u00e9ment ; les augmentations\\nde caract\u00e9ristiques ne sont pas consid\u00e9r\u00e9es\\ncomme des effets de boost)."
+	},
+	{
+		"key": "MSID_H_\u901f\u3055\u306e\u5438\u53ce1_NOSKW",
+		"value": "$aEn d\u00e9but de tour, conf\u00e8re la valeur de la Vit de\\n\u3010Grand talent\u3011+1 \u00e0 l'unit\u00e9.\\n\\nApr\u00e8s le combat, si l'unit\u00e9 a attaqu\u00e9, conf\u00e8re\\nla valeur de la Vit de\u3010Grand talent\u3011+1 \u00e0 l'unit\u00e9.\\n\\nInflige des d\u00e9g\u00e2ts suppl\u00e9mentaires \u00e0 hauteur\\nde 5\u00a0% de la Vit de l'unit\u00e9 pendant le combat\\n(aptitudes sp\u00e9ciales \u00e0 effet de zone exclues).\\n\\n(Cette aptitude conf\u00e8re un maximum de\\n\u3010Grand talent\u3011+5.)"
+	},
+	{
+		"key": "MSID_H_\u901f\u3055\u306e\u5438\u53ce2",
+		"value": "$aEn d\u00e9but de tour, conf\u00e8re la valeur de la Vit de\\n\u3010Grand talent\u3011+1 \u00e0 l'unit\u00e9.\\n\\nApr\u00e8s le combat, si l'unit\u00e9 a attaqu\u00e9, conf\u00e8re\\nla valeur de la Vit de\u3010Grand talent\u3011+2 \u00e0 l'unit\u00e9.\\n\\nInflige des d\u00e9g\u00e2ts suppl\u00e9mentaires \u00e0 hauteur\\nde 10\u00a0% de la Vit de l'unit\u00e9 pendant le combat\\n(aptitudes sp\u00e9ciales \u00e0 effet de zone exclues).\\n\\n(Cette aptitude conf\u00e8re un maximum de\\n\u3010Grand talent\u3011+10.)\\n\\n\u3010Grand talent\u3011\\nAjoute la valeur de Grand talent (+X) \u00e0 des\\ncaract\u00e9ristiques sp\u00e9cifi\u00e9es (jusqu'\u00e0 la fin\\ndu combat ; la valeur maximale de X est\\nd\u00e9termin\u00e9e par la caract\u00e9ristique atteignant\\nla limite de 99, chaque caract\u00e9ristique est\\ncalcul\u00e9e s\u00e9par\u00e9ment ; les augmentations\\nde caract\u00e9ristiques ne sont pas consid\u00e9r\u00e9es\\ncomme des effets de boost)."
+	},
+	{
+		"key": "MSID_H_\u901f\u3055\u306e\u5438\u53ce2_NOSKW",
+		"value": "$aEn d\u00e9but de tour, conf\u00e8re la valeur de la Vit de\\n\u3010Grand talent\u3011+1 \u00e0 l'unit\u00e9.\\n\\nApr\u00e8s le combat, si l'unit\u00e9 a attaqu\u00e9, conf\u00e8re\\nla valeur de la Vit de\u3010Grand talent\u3011+2 \u00e0 l'unit\u00e9.\\n\\nInflige des d\u00e9g\u00e2ts suppl\u00e9mentaires \u00e0 hauteur\\nde 10\u00a0% de la Vit de l'unit\u00e9 pendant le combat\\n(aptitudes sp\u00e9ciales \u00e0 effet de zone exclues).\\n\\n(Cette aptitude conf\u00e8re un maximum de\\n\u3010Grand talent\u3011+10.)"
+	},
+	{
+		"key": "MSID_H_\u901f\u3055\u306e\u5438\u53ce3",
+		"value": "$aEn d\u00e9but de tour, conf\u00e8re la valeur de la Vit de\\n\u3010Grand talent\u3011+1 \u00e0 l'unit\u00e9.\\n\\nApr\u00e8s le combat, si l'unit\u00e9 a attaqu\u00e9, conf\u00e8re\\nla valeur de la Vit de\u3010Grand talent\u3011+3 \u00e0 l'unit\u00e9.\\n\\nInflige des d\u00e9g\u00e2ts suppl\u00e9mentaires \u00e0 hauteur\\nde 15\u00a0% de la Vit de l'unit\u00e9 pendant le combat\\n(aptitudes sp\u00e9ciales \u00e0 effet de zone exclues).\\n\\n(Cette aptitude conf\u00e8re un maximum de\\n\u3010Grand talent\u3011+15.)\\n\\n\u3010Grand talent\u3011\\nAjoute la valeur de Grand talent (+X) \u00e0 des\\ncaract\u00e9ristiques sp\u00e9cifi\u00e9es (jusqu'\u00e0 la fin\\ndu combat ; la valeur maximale de X est\\nd\u00e9termin\u00e9e par la caract\u00e9ristique atteignant\\nla limite de 99, chaque caract\u00e9ristique est\\ncalcul\u00e9e s\u00e9par\u00e9ment ; les augmentations\\nde caract\u00e9ristiques ne sont pas consid\u00e9r\u00e9es\\ncomme des effets de boost)."
+	},
+	{
+		"key": "MSID_H_\u901f\u3055\u306e\u5438\u53ce3_NOSKW",
+		"value": "$aEn d\u00e9but de tour, conf\u00e8re la valeur de la Vit de\\n\u3010Grand talent\u3011+1 \u00e0 l'unit\u00e9.\\n\\nApr\u00e8s le combat, si l'unit\u00e9 a attaqu\u00e9, conf\u00e8re\\nla valeur de la Vit de\u3010Grand talent\u3011+3 \u00e0 l'unit\u00e9.\\n\\nInflige des d\u00e9g\u00e2ts suppl\u00e9mentaires \u00e0 hauteur\\nde 15\u00a0% de la Vit de l'unit\u00e9 pendant le combat\\n(aptitudes sp\u00e9ciales \u00e0 effet de zone exclues).\\n\\n(Cette aptitude conf\u00e8re un maximum de\\n\u3010Grand talent\u3011+15.)"
+	},
+	{
+		"key": "MSID_H_\u901f\u3055\u306e\u5438\u53ce4",
+		"value": "$aEn d\u00e9but de tour, conf\u00e8re la valeur de la Vit de\\n\u3010Grand talent\u3011+1 \u00e0 l'unit\u00e9.\\n\\nApr\u00e8s le combat, si l'unit\u00e9 a attaqu\u00e9, conf\u00e8re\\nla valeur de la Vit de\u3010Grand talent\u3011+4 \u00e0 l'unit\u00e9.\\n\\nInflige Vit/D\u00e9f -4 \u00e0 l'ennemi, l'unit\u00e9 inflige des\\nd\u00e9g\u00e2ts suppl\u00e9mentaires \u00e0 hauteur de 20\u00a0% de\\nla Vit de l'unit\u00e9 (aptitudes sp\u00e9ciales \u00e0 effet de\\nzone exclues), neutralise les malus affectant\\nla Vit de l'unit\u00e9 ainsi que les effets qui infligent\\ncompteur +X \u00e0 l'unit\u00e9 pendant le combat.\\n\\n(Cette aptitude conf\u00e8re un maximum de\\n\u3010Grand talent\u3011+20.)\\n\\n\u3010Grand talent\u3011\\nAjoute la valeur de Grand talent (+X) \u00e0 des\\ncaract\u00e9ristiques sp\u00e9cifi\u00e9es (jusqu'\u00e0 la fin\\ndu combat ; la valeur maximale de X est\\nd\u00e9termin\u00e9e par la caract\u00e9ristique atteignant\\nla limite de 99, chaque caract\u00e9ristique est\\ncalcul\u00e9e s\u00e9par\u00e9ment ; les augmentations\\nde caract\u00e9ristiques ne sont pas consid\u00e9r\u00e9es\\ncomme des effets de boost)."
+	},
+	{
+		"key": "MSID_H_\u901f\u3055\u306e\u5438\u53ce4_NOSKW",
+		"value": "$aEn d\u00e9but de tour, conf\u00e8re la valeur de la Vit de\\n\u3010Grand talent\u3011+1 \u00e0 l'unit\u00e9.\\n\\nApr\u00e8s le combat, si l'unit\u00e9 a attaqu\u00e9, conf\u00e8re\\nla valeur de la Vit de\u3010Grand talent\u3011+4 \u00e0 l'unit\u00e9.\\n\\nInflige Vit/D\u00e9f -4 \u00e0 l'ennemi, l'unit\u00e9 inflige des\\nd\u00e9g\u00e2ts suppl\u00e9mentaires \u00e0 hauteur de 20\u00a0% de\\nla Vit de l'unit\u00e9 (aptitudes sp\u00e9ciales \u00e0 effet de\\nzone exclues), neutralise les malus affectant\\nla Vit de l'unit\u00e9 ainsi que les effets qui infligent\\ncompteur +X \u00e0 l'unit\u00e9 pendant le combat.\\n\\n(Cette aptitude conf\u00e8re un maximum de\\n\u3010Grand talent\u3011+20.)"
+	},
+	{
+		"key": "MSID_H_\u7d0b\u7ae0\u30ea\u30f3",
+		"value": "$aSi l'aptitude sp\u00e9ciale se d\u00e9clenche, augmente\\nles d\u00e9g\u00e2ts d'une valeur \u00e9gale \u00e0 la valeur\\nmaximale du compteur d'aptitude sp\u00e9ciale\\nde l'unit\u00e9 \u00d74 (aptitudes sp\u00e9ciales \u00e0 effet\\nde zone exclues).\\n\\nL'unit\u00e9 peut utiliser le\u3010Style\u3011suivant\u00a0:\\n\u2015\u2015\u2015\u2015\u2015 Style Embl\u00e8me Lyn \u2015\u2015\u2015\u2015\u2015\\nL'unit\u00e9 peut attaquer les ennemis \u00e0 5\u00a0cases\\nou moins de l'unit\u00e9 et ceux situ\u00e9s dans une croix\\nde 3\u00a0cases de long sur 3 de haut ayant pour\\ncentre l'unit\u00e9, peu importe la port\u00e9e de l'unit\u00e9.\\nL'unit\u00e9 subit une riposte si l'une des conditions\\nsuivantes est remplie\u00a0: l'ennemi est une unit\u00e9\\nen armure avec une port\u00e9e de 2, l'ennemi peut\\nriposter peu importe la distance \u00e0 laquelle\\nse trouve l'unit\u00e9, ou la port\u00e9e de l'ennemi\\nest \u00e9gale \u00e0 la distance entre l'unit\u00e9 et l'ennemi.\\n\\nL'unit\u00e9 ne peut ni se d\u00e9placer ni attaquer\\ndes structures, les effets de d\u00e9placement d'apr\u00e8s\\ncombat n'ont pas lieu, les aptitudes sp\u00e9ciales\\n\u00e0 effet de zone de l'unit\u00e9 ne peuvent pas \u00eatre\\nd\u00e9clench\u00e9es et le d\u00e9placement restant conf\u00e9r\u00e9\\npar Mobilit\u00e9 est consid\u00e9r\u00e9 comme \u00e9tant de 0.\\nLa port\u00e9e de l'effet d'aptitude est consid\u00e9r\u00e9e\\ncomme \u00e9tant de 2, y compris pour les effets\\nd'aptitude bas\u00e9s sur la port\u00e9e d'attaque, comme\\nPavois et \u00c9gide. Ce style ne peut \u00eatre utilis\u00e9 que\\nsi la port\u00e9e de l'unit\u00e9 = 2 et n'est pas disponible\\nau premier tour. Une fois utilis\u00e9, il n'est plus\\ndisponible pendant deux tours.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\n\\n\u3010Style\u3011\\nChangez de style en utilisant le bouton \u00ab Style \u00bb\\nen bas de l'\u00e9cran.\\n\\nLe style d'une unit\u00e9 est actif uniquement lorsque\\ncette unit\u00e9 est en train d'agir. Quand l'unit\u00e9 est\\n\u00e9quip\u00e9e d'une aptitude ayant un style, elle ne\\npourra pas utiliser de doubles aptitudes ou\\nd'aptitudes harmonis\u00e9es. L'utilisation du style\\nest d\u00e9sactiv\u00e9e quand l'unit\u00e9 est d\u00e9ploy\u00e9e avec\\nDuo ou qu'elle est \u00e9quip\u00e9e de plusieurs aptitudes\\nayant un style."
+	},
+	{
+		"key": "MSID_H_\u7d0b\u7ae0\u30ea\u30f3_NOSKW",
+		"value": "$aSi l'aptitude sp\u00e9ciale se d\u00e9clenche, augmente\\nles d\u00e9g\u00e2ts d'une valeur \u00e9gale \u00e0 la valeur\\nmaximale du compteur d'aptitude sp\u00e9ciale\\nde l'unit\u00e9 \u00d74 (aptitudes sp\u00e9ciales \u00e0 effet\\nde zone exclues).\\n\\nL'unit\u00e9 peut utiliser le\u3010Style\u3011suivant\u00a0:\\n\u2015\u2015\u2015\u2015\u2015 Style Embl\u00e8me Lyn \u2015\u2015\u2015\u2015\u2015\\nL'unit\u00e9 peut attaquer les ennemis \u00e0 5\u00a0cases\\nou moins de l'unit\u00e9 et ceux situ\u00e9s dans une croix\\nde 3\u00a0cases de long sur 3 de haut ayant pour\\ncentre l'unit\u00e9, peu importe la port\u00e9e de l'unit\u00e9.\\nL'unit\u00e9 subit une riposte si l'une des conditions\\nsuivantes est remplie\u00a0: l'ennemi est une unit\u00e9\\nen armure avec une port\u00e9e de 2, l'ennemi peut\\nriposter peu importe la distance \u00e0 laquelle\\nse trouve l'unit\u00e9, ou la port\u00e9e de l'ennemi\\nest \u00e9gale \u00e0 la distance entre l'unit\u00e9 et l'ennemi.\\n\\nL'unit\u00e9 ne peut ni se d\u00e9placer ni attaquer\\ndes structures, les effets de d\u00e9placement d'apr\u00e8s\\ncombat n'ont pas lieu, les aptitudes sp\u00e9ciales\\n\u00e0 effet de zone de l'unit\u00e9 ne peuvent pas \u00eatre\\nd\u00e9clench\u00e9es et le d\u00e9placement restant conf\u00e9r\u00e9\\npar Mobilit\u00e9 est consid\u00e9r\u00e9 comme \u00e9tant de 0.\\nLa port\u00e9e de l'effet d'aptitude est consid\u00e9r\u00e9e\\ncomme \u00e9tant de 2, y compris pour les effets\\nd'aptitude bas\u00e9s sur la port\u00e9e d'attaque, comme\\nPavois et \u00c9gide. Ce style ne peut \u00eatre utilis\u00e9 que\\nsi la port\u00e9e de l'unit\u00e9 = 2 et n'est pas disponible\\nau premier tour. Une fois utilis\u00e9, il n'est plus\\ndisponible pendant deux tours.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015"
+	},
+	{
+		"key": "MID_STAGE_HONOR_L0082",
+		"value": "Flammes"
+	},
+	{
+		"key": "MID_STAGE_L0082",
+		"value": "Lyn"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PB257",
+		"value": "Aptitudes 257"
+	},
+	{
+		"key": "MID_STAGE_PB257",
+		"value": "Flammes"
+	},
+	{
+		"key": "MID_TRIP_TITLE_202412",
+		"value": "Bataille \u00e0 trois"
+	},
+	{
+		"key": "MID_TRIP_PLACE_202412_00",
+		"value": "Garreg Mach"
+	},
+	{
+		"key": "MID_TRIP_PLACE_202412_01",
+		"value": "Ailell"
+	},
+	{
+		"key": "MID_TRIP_PLACE_202412_02",
+		"value": "Pont de Myrddin"
+	},
+	{
+		"key": "MID_TRIP_PLACE_202412_03",
+		"value": "Plaine de Gronder"
+	},
+	{
+		"key": "MID_TRIP_PLACE_202412_04",
+		"value": "Enbarr"
+	},
+	{
+		"key": "MID_TRIP_ENEMY_202412A_0",
+		"value": "Edelgard"
+	},
+	{
+		"key": "MID_TRIP_ENEMY_202412A_1",
+		"value": "Hubert"
+	},
+	{
+		"key": "MID_TRIP_ENEMY_202412A_2",
+		"value": "Chevalier Macabre"
+	},
+	{
+		"key": "MID_TRIP_ENEMY_202412A_3",
+		"value": "B\u00eate d\u00e9moniaque g\u00e9ante"
+	},
+	{
+		"key": "MID_TRIP_HINT_202412A",
+		"value": "L'arm\u00e9e imp\u00e9riale maniant $Iw2|,\\n$Iw11| et $Iw1| attend !"
+	},
+	{
+		"key": "MID_TRIP_SAGA_202412_PROLOGUE",
+		"value": "Trois puissances se disputaient le\\ncontr\u00f4le de F\u00f3dlan, une terre sous\\nl'\u0153il vigilant d'une d\u00e9esse. En son\\ncentre se trouvait le monast\u00e8re de\\nGarreg Mach. C'est l\u00e0 que la princesse\\nimp\u00e9riale, le prince h\u00e9ritier et le futur\\nchef de l'Alliance \u00e9tudi\u00e8rent ensemble\\nsous la supervision de l'archev\u00eaque\\nde l'\u00c9glise de Seiros..."
+	},
+	{
+		"key": "MID_TRIP_SAGA_202206_00",
+		"value": "Dans un acte de r\u00e9bellion, l'\u00c9glise\\noccidentale chargea l'homme masqu\u00e9,\\nconnu comme le Chevalier Macabre,\\nd'attaquer le monast\u00e8re. L'assaut se\\nr\u00e9v\u00e9la \u00eatre un \u00e9chec, mais il parvint\\ntout de m\u00eame \u00e0 capturer deux\\n\u00e9tudiantes. Parti \u00e0 leur recherche dans\\nl'espoir de les secourir, Byleth tomba\\nsur l'Empereur des Flammes, un autre\\nennemi masqu\u00e9 bien d\u00e9cid\u00e9 \u00e0\\ns'interposer entre les deux..."
+	},
+	{
+		"key": "MID_TRIP_SAGA_202206_01",
+		"value": "Dans le chaos d'une violente crise\\ntouchant Remire o\u00f9 les habitants\\ns'entretu\u00e8rent, Byleth et ses \u00e9l\u00e8ves\\nremarqu\u00e8rent \u00e0 nouveau la pr\u00e9sence\\ndu Chevalier Macabre. Devant cette\\nsc\u00e8ne tragique, L'Empereur des\\nFlammes proposa \u00e0 Byleth de former\\nune alliance. Suite au refus de celui-ci,\\nil disparut apr\u00e8s lui avoir dit qu'il finirait\\npar d\u00e9plorer ce choix..."
+	},
+	{
+		"key": "MID_TRIP_SAGA_202206_02",
+		"value": "Apr\u00e8s avoir \u00e9t\u00e9 inform\u00e9s de\\nl'apparition de b\u00eates d\u00e9moniaques,\\nByleth et Jeralt s'empress\u00e8rent\\nd'intervenir. Jeralt fut \u00e9mu par le\\ncourage de son fils, mais peu apr\u00e8s,\\nil fut victime de la lame d'une\\nmeurtri\u00e8re se faisant passer pour\\nune \u00e9l\u00e8ve. Il rendit son dernier\\nsouffle dans les bras de Byleth,\\nd\u00e9chir\u00e9 par le deuil."
+	},
+	{
+		"key": "MID_TRIP_SAGA_202206_03",
+		"value": "Byleth poursuivit la responsable du\\nmeurtre de son p\u00e8re dans la for\u00eat\\nscell\u00e9e, dont l'entr\u00e9e \u00e9tait interdite.\\nApr\u00e8s \u00eatre tomb\u00e9 dans le pi\u00e8ge tendu\\npar ses ennemis, Byleth fusionna avec\\nla d\u00e9esse avant de ressusciter. Il fut\\nalors invit\u00e9 \u00e0 entrer dans la tombe\\nsacr\u00e9e pour recevoir une r\u00e9v\u00e9lation\\ndivine, mais l'Empereur des Flammes\\narriva peu apr\u00e8s, suivi de ses troupes..."
+	},
+	{
+		"key": "MID_TRIP_SAGA_202206_04",
+		"value": "L'Empereur des Flammes n'\u00e9tait autre\\nqu'Edelgard, imp\u00e9ratrice de l'Empire\\nd'Adrestia fra\u00eechement couronn\u00e9e\\net d\u00e9l\u00e9gu\u00e9e de la maison des Aigles\\nde jais. Contrainte de se replier sur\\nle territoire imp\u00e9rial, Edelgard d\u00e9clara\\nfermement la guerre \u00e0 l'\u00c9glise de\\nSeiros, obligeant Byleth \u00e0 choisir\\nentre elle et le reste des \u00e9tudiants\\nd\u00e9fendant le monast\u00e8re."
+	}
+]
