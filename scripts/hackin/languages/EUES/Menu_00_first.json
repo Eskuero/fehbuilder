@@ -23742,5 +23742,1293 @@
 	{
 		"key": "MID_VOTE_TERM_202311_01",
 		"value": "Pasado frente a futuro"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_02_v0800",
+		"value": "-H\u00e9roes reclutables-\\nSolo puedes reclutar a h\u00e9roes que\\nse a\u00f1adieran al juego entre las\\nversiones 1.0 y 5.11.\\n\\nNo puedes reclutar a los h\u00e9roes\\nque despliegues ni tampoco a las\\nversiones de Alfonse, Sharena\\no Anna de otro mundo."
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING8",
+		"value": "Libro VIII - Apertura"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_V0800A",
+		"value": "Para conmemorar la llegada\\ndel libro VIII, \u00a1hay un nuevo\\ndise\u00f1o de castillo disponible!\\n\\n\u00a1Echa un vistazo!"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_V0800A_DIALOG",
+		"value": "Ahora que has visto el dise\u00f1o\\ndel castillo de Yggdrasill,\\n\u00bfquieres usarlo?"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_V0800A_REVERT_AFTER",
+		"value": "Si cambias de idea, toca \"Castillo\\nde Yggdrasill\" bajo \"Remodelar\"\\nen el men\u00fa \"Mejorar el castillo\"."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202312",
+		"value": "Grandes expectativas"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV65543",
+		"value": "Castillo de Yggdrasill"
+	},
+	{
+		"key": "MID_SCF_\u4e16\u754c\u6a39\u306e\u8056\u7363\u306e\u50cf",
+		"value": "Estatua Yggdrasill"
+	},
+	{
+		"key": "MID_SCF_\u4e16\u754c\u6a39\u306e\u8056\u7363\u306e\u50cf_HELP",
+		"value": "Estatua de un habitante de Yggdrasill,\\nel reino del \u00e1rbol del mundo. Sientes c\u00f3mo\\nte rodea su poder curativo cuando te acercas\\na ella. Es un objeto del evento."
+	},
+	{
+		"key": "MID_SCF_\u4e16\u754c\u6a39\u306e\u9580",
+		"value": "Puerta del \u00e1rbol"
+	},
+	{
+		"key": "MID_SCF_\u4e16\u754c\u6a39\u306e\u9580_HELP",
+		"value": "Puerta de Yggdrasill, el reino del \u00e1rbol\\ndel mundo. El silencio que rodea el \u00e1rbol\\nm\u00edstico apacigua tu coraz\u00f3n. Es un objeto\\ndel evento."
+	},
+	{
+		"key": "MID_SCF_\u63b2\u793a\u3055\u308c\u305f\u624b\u914d\u66f8",
+		"value": "Cartel \u00abSe busca\u00bb"
+	},
+	{
+		"key": "MID_SCF_\u63b2\u793a\u3055\u308c\u305f\u624b\u914d\u66f8_HELP",
+		"value": "Cartel de \u00abSe busca\u00bb de Yggdrasill, el reino\\ndel \u00e1rbol del mundo. \u00bfQui\u00e9n lo habr\u00e1 colgado,\\ny por qu\u00e9? Es un objeto del evento."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202312",
+		"value": "Piedras et\u00e9reas heladas"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202312",
+		"value": "Permiten construir estructuras disponibles\\npor tiempo limitado en los asaltos et\u00e9reos.\\nTras ese periodo, las piedras se perder\u00e1n."
+	},
+	{
+		"key": "MID_AUTO_COOP_TITLE",
+		"value": "Combate de afinidad"
+	},
+	{
+		"key": "MID_AUTO_COOP_CLOSED",
+		"value": "Evento no disponible."
+	},
+	{
+		"key": "MID_AUTO_COOP_SCORE",
+		"value": "Puntos:"
+	},
+	{
+		"key": "MID_AUTO_COOP_BONUS_AUTHORITY",
+		"value": "T\u00edtulos destacados"
+	},
+	{
+		"key": "MID_AUTO_COOP_DAILY_BONUS_INFO",
+		"value": "$aBonificaci\u00f3n: Ptos. x $a1 ($a0 m\u00e1s hoy)"
+	},
+	{
+		"key": "MID_AUTO_COOP_DAILY_REWARD_INFO",
+		"value": "$aSupera un mapa a diario para ganar estos\\npremios (hasta un m\u00e1ximo de $a0 d\u00edas)."
+	},
+	{
+		"key": "MID_AUTO_COOP_TROOP_SELECTION",
+		"value": "Elige un batall\u00f3n"
+	},
+	{
+		"key": "MID_AUTO_COOP_REWARD_CONFIRM",
+		"value": "Ver premios"
+	},
+	{
+		"key": "MID_AUTO_COOP_REMAINING_DAYS",
+		"value": "$aD\u00edas restantes: $a0"
+	},
+	{
+		"key": "MID_AUTO_COOP_REMAINING_HOURS",
+		"value": "$aHoras restantes: $a0"
+	},
+	{
+		"key": "MID_AUTO_COOP_REMAINING_MINUTES",
+		"value": "$aMinutos restantes: $a0"
+	},
+	{
+		"key": "MID_AUTO_COOP_REWARD_SCORE",
+		"value": "Puntos:"
+	},
+	{
+		"key": "MID_AUTO_COOP_TROOP_SELECTION_INFO",
+		"value": "Elige un batall\u00f3n aliado junto con el que luchar."
+	},
+	{
+		"key": "MID_AUTO_COOP_TROOP_SELECTION_STAMINA",
+		"value": "$aCoste de energ\u00eda: $a0"
+	},
+	{
+		"key": "MID_AUTO_COOP_TROOP_SELECTION_FRIEND",
+		"value": "Amigos"
+	},
+	{
+		"key": "MID_AUTO_COOP_TROOP_CONFIRM_DIALOG_TEXT",
+		"value": "\u00bfLuchar junto a este batall\u00f3n?"
+	},
+	{
+		"key": "MID_AUTO_COOP_TROOP_CONFIRM_DIALOG_OK",
+		"value": "Continuar"
+	},
+	{
+		"key": "MID_AUTO_COOP_AFFINITY_INFO",
+		"value": "\u00a1Descubre la afinidad entre sus l\u00edderes! Ser\u00e1 distinta cada vez."
+	},
+	{
+		"key": "MID_AUTO_COOP_AFFINITY_VALUE_TITLE",
+		"value": "Afinidad:"
+	},
+	{
+		"key": "MID_AUTO_COOP_AFFINITY_VALUE",
+		"value": "$a$a0 %"
+	},
+	{
+		"key": "MID_AUTO_COOP_DIFFICULTY_TITLE",
+		"value": "Combate de afinidad"
+	},
+	{
+		"key": "MID_AUTO_COOP_AFFINITY_WITHOUT_BONUS",
+		"value": "$aAfinidad: $a0 %"
+	},
+	{
+		"key": "MID_AUTO_COOP_AFFINITY_INFO_WITH_BONUS",
+		"value": "$aAfinidad: $a0 %\\n+ $a1 a los atributos de tus h\u00e9roes"
+	},
+	{
+		"key": "MID_AUTO_COOP_DETAIL_DIALOG_DAILY_REWARD_INFO",
+		"value": "$aSupera un mapa a diario para ganar un premio\\n(hasta un m\u00e1ximo de $a0 d\u00edas)."
+	},
+	{
+		"key": "MID_AUTO_COOP_DETAIL_DIALOG_SCORE",
+		"value": "R\u00e9cord"
+	},
+	{
+		"key": "MID_AUTO_COOP_DAILY_BONUS_REWARD",
+		"value": "\u00a1Gana recompensas diarias!"
+	},
+	{
+		"key": "MID_AUTO_COOP_SCORE_REWARD",
+		"value": "$aPremios por puntos acumulados: $a0"
+	},
+	{
+		"key": "MID_AUTO_COOP_RESULT",
+		"value": "Resultados"
+	},
+	{
+		"key": "MID_AUTO_COOP_RESULT_TELOP",
+		"value": "\u00a1Puntos obtenidos!"
+	},
+	{
+		"key": "MID_AUTO_COOP_RESULT_KILL",
+		"value": "Enemigos derrotados"
+	},
+	{
+		"key": "MID_AUTO_COOP_RESULT_ALIVE",
+		"value": "Supervivencia"
+	},
+	{
+		"key": "MID_AUTO_COOP_RESULT_AFFINITY",
+		"value": "Bonificaci\u00f3n de afinidad"
+	},
+	{
+		"key": "MID_AUTO_COOP_RESULT_DAILY_BONUS",
+		"value": "$aPuntos \u00d7 $a0 a diario"
+	},
+	{
+		"key": "MID_AUTO_COOP_RESULT_CURRENT_SCORE",
+		"value": "Puntos"
+	},
+	{
+		"key": "MID_AUTO_COOP_RESULT_TOTAL_SCORE",
+		"value": "Puntos acumulados"
+	},
+	{
+		"key": "MID_AUTO_COOP_DIALOG_END_OF_TERM",
+		"value": "El resultado no cuenta porque\\nel combate no ha finalizado\\nantes del fin de la temporada."
+	},
+	{
+		"key": "MID_AUTOCOOP_HELP_DIALOG_00",
+		"value": "\u00bfCu\u00e1l es su afinidad?"
+	},
+	{
+		"key": "MID_AUTOCOOP_HELP_DIALOG_01",
+		"value": "-Combate de afinidad-\\nDespliega un batall\u00f3n junto con\\nel de otro jugador para superar\\nmisiones cooperativas. Los\\ncombates ser\u00e1n autom\u00e1ticos.\\n\u00a1La puntuaci\u00f3n final depender\u00e1\\nde la afinidad entre ambos\\nbatallones!"
+	},
+	{
+		"key": "MID_AUTOCOOP_HELP_DIALOG_02",
+		"value": "-Escoge a tus aliados-\\nDe una lista de tres, escoge\\nal jugador cuyo batall\u00f3n\\nquieras reclutar."
+	},
+	{
+		"key": "MID_AUTOCOOP_HELP_DIALOG_03",
+		"value": "-Afinidad-\\n\u00a1Descubre la afinidad entre\\ntus fuerzas y las del batall\u00f3n\\naliado que escojas! La afinidad es\\nextra\u00f1a y no se puede predecir.\\nNo se debe interpretar como\\nlos verdaderos sentimientos\\nde los h\u00e9roes. Cuanto mayor sea\\nsu afinidad, m\u00e1s fuertes ser\u00e1n\\ntus unidades y m\u00e1s puntos extra\\nse a\u00f1adir\u00e1n a tu puntuaci\u00f3n."
+	},
+	{
+		"key": "MID_AUTOCOOP_HELP_DIALOG_04",
+		"value": "-Pistas para la afinidad-\\nEs m\u00e1s probable que consigas\\nuna afinidad alta si ambos\\nbatallones incluyen cuatro h\u00e9roes\\nde los dos t\u00edtulos destacados.\\nLa afinidad tambi\u00e9n depende\\nde la suerte. Es posible que\\nobtengas resultados distintos\\nal elegir los dos mismos\\nbatallones m\u00faltiples veces."
+	},
+	{
+		"key": "MID_AUTOCOOP_HELP_DIALOG_05",
+		"value": "-Batallas-\\nLas batallas suceden de forma\\nautom\u00e1tica. La puntuaci\u00f3n que\\nobtienes se basa en los resultados\\nde cada batalla, y lograr\u00e1s premios\\nseg\u00fan la puntuaci\u00f3n que hayas\\nacumulado. Los efectos\\nlegendarios se anulan en\\neste tipo de combates."
+	},
+	{
+		"key": "MID_CONFIG_HOME_NOTIFICATION_AUTO_COOP",
+		"value": "Notif. del castillo:\\nCombate afinidad"
+	},
+	{
+		"key": "MID_HOME_AUTO_COOP_NOTIFICATION",
+		"value": "Gana una recompensa cada d\u00eda.\\n\u00bfIr a Combate de afinidad?"
+	},
+	{
+		"key": "MID_HOME_AUTO_COOP_NAVIGATION_JUMP",
+		"value": "Combate de afinidad"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202312",
+		"value": "Vac\u00edo y sue\u00f1o (Final)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202312",
+		"value": "\u00a1Este tesoro es m\u00edo!"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202401",
+		"value": "Archivo del oeste"
+	},
+	{
+		"key": "MID_SPR16_Picnic_Title",
+		"value": "P\u00edcnic"
+	},
+	{
+		"key": "MID_SPR16_Picnic_Common",
+		"value": "\u00a1La pareja se va de p\u00edcnic! Incluso\\nhan preparado una cesta con comida."
+	},
+	{
+		"key": "MID_SPR16_Picnic_3",
+		"value": "Se le ha ca\u00eddo el s\u00e1ndwich...\\nLa p\u00e9rdida es atroz."
+	},
+	{
+		"key": "MID_SPR16_Picnic_4",
+		"value": "\u00a1Compartir hace que sepa a\u00fan mejor!\\nA barriga llena, coraz\u00f3n contento."
+	},
+	{
+		"key": "MID_SPR16_Picnic_5",
+		"value": "\u00a1Han tra\u00eddo un mont\u00f3n de cosas!\\nPodr\u00e1n charlar y comer sin parar."
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202401",
+		"value": "Sue\u00f1o confiado"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202401",
+		"value": "Caminos entrelazados"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202401R",
+		"value": "Vuelve Desesperaci\u00f3n sin fin"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202401_2",
+		"value": "Erigir una utop\u00eda"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202402",
+		"value": "Archivo del norte"
+	},
+	{
+		"key": "MID_SUM18_Thunder_Title",
+		"value": "Tormenta"
+	},
+	{
+		"key": "MID_SUM18_Thunder_Common",
+		"value": "La pareja se resguarda del aguacero.\\nLos truenos les asustan un poquito..."
+	},
+	{
+		"key": "MID_SUM18_Thunder_3",
+		"value": "Un rayo ha hecho trizas un \u00e1rbol.\\nLa pareja se refugia del desastre."
+	},
+	{
+		"key": "MID_SUM18_Thunder_4",
+		"value": "\u00a1Un rayo ha acabado con un enemigo!\\nQu\u00e9 suerte; \u00bfser\u00e1 cosa del karma?"
+	},
+	{
+		"key": "MID_SUM18_Thunder_5",
+		"value": "\u00a1Nadie ha salido herido! Ni siquiera\\nel conejito al que han salvado."
+	},
+	{
+		"key": "MID_SCF_\uff17\u5468\u5e74\u30b1\u30fc\u30ad",
+		"value": "Tarta festiva"
+	},
+	{
+		"key": "MID_SCF_\uff17\u5468\u5e74\u30b1\u30fc\u30ad_HELP",
+		"value": "Tarta gigante que conmemora el s\u00e9ptimo\\naniversario. Es un objeto del evento."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202401",
+		"value": "Piedras et\u00e9reas +"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202401",
+		"value": "Permiten construir estructuras disponibles\\npor tiempo limitado en los asaltos et\u00e9reos.\\nTras ese periodo, las piedras se perder\u00e1n."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_SET_LOAD_WARNING_ENGAGED_RESET",
+		"value": "Se anular\u00e1n las fusiones con otros\\nh\u00e9roes."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_SET_LOAD_WARNING_ENGAGED_DUPLICATION",
+		"value": "No se puede efectuar la fusi\u00f3n.\\nLas unidades no pueden fusionarse\\ncon m\u00faltiples h\u00e9roes Emblema."
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_7",
+		"value": "Emblema"
+	},
+	{
+		"key": "MID_UNIT_EDIT_ENGAGE",
+		"value": "Fusionar"
+	},
+	{
+		"key": "MID_UNIT_EDIT_ENGAGE_HELP1",
+		"value": "Elige un h\u00e9roe Emblema."
+	},
+	{
+		"key": "MID_UNIT_EDIT_ENGAGE_HELP2",
+		"value": "Elige una unidad para fusionarla."
+	},
+	{
+		"key": "MID_UNIT_EDIT_ENGAGE_DIALOG_BEFORE",
+		"value": "Antes"
+	},
+	{
+		"key": "MID_UNIT_EDIT_ENGAGE_DIALOG_AFTER",
+		"value": "Despu\u00e9s"
+	},
+	{
+		"key": "MID_UNIT_EDIT_ENGAGE_DIALOG_CONFIRM",
+		"value": "$aUna vez completada la fusi\u00f3n,\\nse mejorar\u00e1 la habilidad especial\\nde la unidad y aumentar\u00e1n sus\\natributos seg\u00fan el n.\u00ba de veces que se\\nhaya combinado el h\u00e9roe Emblema.\\n\u00bfQuieres fusionar a $a0\\ncon $a1?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_ENGAGE_DIALOG_WARNING",
+		"value": "Los h\u00e9roes Emblema solo pueden\\nfusionarse con una unidad a la vez,\\npero es posible cambiar dicha unidad\\nen cualquier momento."
+	},
+	{
+		"key": "MID_UNIT_EDIT_ENGAGE_DIALOG_BUTTON_DECIDE",
+		"value": "Fusionar"
+	},
+	{
+		"key": "MID_UNIT_EDIT_ENGAGE_DIALOG_RESET",
+		"value": "\u00bfQuieres romper la fusi\u00f3n entre\\nestos h\u00e9roes?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_ENGAGE_DIALOG_BUTTON_RESET",
+		"value": "Escisi\u00f3n"
+	},
+	{
+		"key": "MID_UNIT_EDIT_ENGAGE_DIALOG_SUCCESS",
+		"value": "Se ha actualizado el estado de fusi\u00f3n."
+	},
+	{
+		"key": "MID_UNIT_EDIT_ENGAGE_EMPTY",
+		"value": "No hay h\u00e9roes Emblema disponibles."
+	},
+	{
+		"key": "MID_UNIT_EDIT_ENGAGE_HELP_DIALOG_00",
+		"value": "Fusionar con Emblemas"
+	},
+	{
+		"key": "MID_UNIT_EDIT_ENGAGE_HELP_DIALOG_01",
+		"value": "-Fusi\u00f3n-\\nLos h\u00e9roes Emblema pueden\\nfusionarse con otras unidades.\\nAl hacerlo, el h\u00e9roe Emblema\\npodr\u00e1 otorgar poderes especiales\\na la otra unidad."
+	},
+	{
+		"key": "MID_UNIT_EDIT_ENGAGE_HELP_DIALOG_02",
+		"value": "-Efecto: Mejora de hab. especial-\\nLa habilidad especial de la unidad\\nfusionada mejora (las mejoras\\nvar\u00edan seg\u00fan el h\u00e9roe Emblema)."
+	},
+	{
+		"key": "MID_UNIT_EDIT_ENGAGE_HELP_DIALOG_03",
+		"value": "-Efecto: Mejora de atributos-\\nLas unidades fusionadas obtienen\\nmejoras de atributos seg\u00fan el n.\u00ba\\nde combinaciones del h\u00e9roe\\nEmblema. Cada combinaci\u00f3n\\notorga el efecto de una dracoflor.\\nEstas mejoras no afectan\\nal c\u00e1lculo de los atributos\\nen modos como el coliseo."
+	},
+	{
+		"key": "MID_UNIT_EDIT_ENGAGE_HELP_DIALOG_04",
+		"value": "-M\u00e1s informaci\u00f3n-\\nLos h\u00e9roes Emblema no pueden\\nfusionarse con duplicados\\nde s\u00ed mismos."
+	},
+	{
+		"key": "MID_VOTE_TERM_202401",
+		"value": "Encuentro maternal"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202402",
+		"value": "Lazos florecientes"
+	},
+	{
+		"key": "MID_SHOP_SUBSCRIPTION_DIALOG_CEIL_TEXT_V8_2",
+		"value": "Una invocaci\u00f3n 5 \u2605 gratis tras 40 invocaciones\\nen cada evento especial, legendario, m\u00edtico,\\nde Emblema y de festival de los h\u00e9roes."
+	},
+	{
+		"key": "MID_SUMMON_CEILING_PICKUP_UNIT_LIST_ONLY_FEHPASS",
+		"value": "Obt\u00e9n uno de estos h\u00e9roes gratis\\ncon una suscripci\u00f3n al pase de Feh."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_INHERIT_WARNING_DIABOLOS_SKILL_NO_DISPARITY_LIMIT",
+		"value": "Una vez legada un arma arcana, no se\\npuede volver a legar a otro h\u00e9roe."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_INHERIT_WARNING_RESONATE_SKILL_NO_DISPARITY_LIMIT",
+		"value": "Las habilidades afines solo pueden\\nlegarse una vez."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_00_v0802",
+		"value": "-Legar habilidades-\\nUna unidad puede recibir hasta\\ncinco habilidades de un aliado.\\nEl donante desaparecer\u00e1.\\n\\nLas habilidades recibidas se\\na\u00f1aden a la lista de la unidad\\nreceptora, que puede aprenderlas\\nde manera normal, aunque\\nnecesitar\u00e1 un 50 % m\u00e1s de PH."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_03__v0802",
+		"value": "-Aviso-\\nAl transferir habilidades con\\nrequisito previo mediante Legar\\nhabilidad, debes legar tambi\u00e9n\\nel requisito previo. Por ejemplo,\\nsi quieres legar Dar y tomar 4,\\nla unidad resultante deber\u00e1 tener\\ntambi\u00e9n Dar y tomar 1, 2 y 3."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_07_v0802",
+		"value": "-Transmisi\u00f3n de \u00e9lite: restricc.-\\nSolo los h\u00e9roes misteriosos y\\nlos afines pueden tener asignadas\\nsu arma arcana y una habilidad\\nexclusiva (p. ej., Grises olas)\\na la vez, excepto Cantar, Bailar\\no Tocar."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_HELP_DIALOG_08_v0802",
+		"value": "-Transmisi\u00f3n de \u00e9lite: restricc.-\\nSolo los h\u00e9roes misteriosos y\\nlos afines pueden tener asignadas\\nsu habilidad af\u00edn y una habilidad\\nexclusiva (p. ej., Grises olas)\\na la vez, excepto Cantar, Bailar\\no Tocar."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_5_HELP2",
+		"value": "Selecciona un m\u00e1ximo de cinco habilidades."
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202402_01",
+		"value": "Archivo del este"
+	},
+	{
+		"key": "MID_AUT15_Wall_Title",
+		"value": "Laberinto en espiral"
+	},
+	{
+		"key": "MID_AUT15_Wall_Common",
+		"value": "La pareja explora un laberinto. En\\nlas profundidades, hay una palanca..."
+	},
+	{
+		"key": "MID_AUT15_Wall_3",
+		"value": "\u00a1Una trampa! Con esfuerzo, logran\\nescapar... \u00a1Qu\u00e9 gran equipo forman!"
+	},
+	{
+		"key": "MID_AUT15_Wall_4",
+		"value": "\u00a1Es una trampa! Evaden el peligro...\\n\u00a1y no tardan en dominar el laberinto!"
+	},
+	{
+		"key": "MID_AUT15_Wall_5",
+		"value": "Esta trampa... \u00a1qu\u00e9 divertida es!\\nJuegan hasta hartarse."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202402",
+		"value": "Deshielo ilustrado"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_7",
+		"value": "Nevada nost\u00e1lgica"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_7",
+		"value": "$aLos enemigos otorgan PH \u00d7 5 durante $a0\\ny PH \u00d7 2 tras ese periodo. (Solo se aplica\\nel valor m\u00e1s alto. No acumulable.)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202403",
+		"value": "ETDUH 2024: Final"
+	},
+	{
+		"key": "MID_CONFIG_SHOW_SKILL_KEYWORD",
+		"value": "Mostrar palabras\\nclaves de las\\nhabilidades"
+	},
+	{
+		"key": "MID_IDOL_TOWER_HELP_DIALOG_06",
+		"value": "-Sobre mejorar a las quimeras-\\n\u30fb A partir de la sala 13, se\\nmostrar\u00e1n por ranura dos\\nhabilidades con un coste de PH\\nsuperior a un valor determinado.\\n\u30fb A partir de la sala 25,\\naparecer\u00e1n habilidades con un\\ncoste de PH especialmente alto."
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202403",
+		"value": "Buscando una musa"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2024_0",
+		"value": "Heroes / Mystery / Echoes"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2024_1",
+		"value": "Genealogy / Thracia 776"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2024_2",
+		"value": "Binding / Blazing / Sacred Stones"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2024_3",
+		"value": "Heroes / Radiance"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2024_4",
+		"value": "Awakening / Fates"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2024_5",
+		"value": "Three Houses / Engage"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202403",
+		"value": "Archivo del sur"
+	},
+	{
+		"key": "MID_WIN16_Capsicum_Title",
+		"value": "Guindillas"
+	},
+	{
+		"key": "MID_WIN16_Capsicum_Common",
+		"value": "El aire g\u00e9lido les abre el apetito.\\nCombaten el fr\u00edo comiendo guindillas."
+	},
+	{
+		"key": "MID_WIN16_Capsicum_3",
+		"value": "\u00a1Pican un mont\u00f3n! Acaban cubiertos\\nde nieve... y con m\u00e1s fr\u00edo que antes."
+	},
+	{
+		"key": "MID_WIN16_Capsicum_4",
+		"value": "Aguantan el picor... Una sensaci\u00f3n\\nc\u00e1lida los invade por dentro."
+	},
+	{
+		"key": "MID_WIN16_Capsicum_5",
+		"value": "El calor les sale por los poros... \u00a1y en\\nel bosque se abre paso la primavera!"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202403",
+		"value": "Llama de la esperanza"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202403R",
+		"value": "Vuelve Orgullo sin pulir"
+	},
+	{
+		"key": "MID_VOTE_TERM_202403_01",
+		"value": "Clasificaci\u00f3n conejil"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202404",
+		"value": "Joven Venerable"
+	},
+	{
+		"key": "MID_SKILL_SET_EDIT_HELP_DIALOG_00_v0804",
+		"value": "-Sets de habilidades-\\nCon los sets de habilidades\\npuedes cambiar r\u00e1pidamente\\nlas habilidades y los sellos sacros\\nde tus aliados.\\n\\nPuedes crear hasta 10 sets\\npara cada aliado."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMIT_BREAK_DIALOG_WARNING_DIABOLOS",
+		"value": "Perder\u00e1s una transmisi\u00f3n de \u00e9lite."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMIT_BREAK_DIALOG_RECONFIRM_WARNING_DIABOLOS",
+		"value": "Perder\u00e1s una transmisi\u00f3n de \u00e9lite.\\n\\n\u00bfSeguro que quieres continuar?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_DIALOG_RECONFIRM_WARNING_DIABOLOS",
+		"value": "No es posible usar a la vez un arma\\narcana heredada y una habilidad\\nexclusiva, salvo excepciones.\\n\\n\u00bfSeguro que quieres continuar?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_DIALOG_RECONFIRM_WARNING_RESONATE",
+		"value": "No es posible usar a la vez\\nuna habilidad af\u00edn heredada\\ny una habilidad exclusiva que\\nno sea un arma, salvo excepciones.\\n\\n\u00bfSeguro que quieres continuar?"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202404",
+		"value": "Archivo del oeste"
+	},
+	{
+		"key": "MID_SPR17_Fountain_Title",
+		"value": "Encuentro en la fuente"
+	},
+	{
+		"key": "MID_SPR17_Fountain_Common",
+		"value": "Acordaron reunirse en la fuente,\\npero parece que alguien llega tarde."
+	},
+	{
+		"key": "MID_SPR17_Fountain_3",
+		"value": "\u00a1Tan cerca y a la vez tan lejos!\\n\u00bfConseguir\u00e1n encontrarse?"
+	},
+	{
+		"key": "MID_SPR17_Fountain_4",
+		"value": "El agua deja de fluir y... sus miradas\\nse encuentran. \u00a1Qu\u00e9 felicidad!"
+	},
+	{
+		"key": "MID_SPR17_Fountain_5",
+		"value": "El contratiempo les permite disfrutar\\nde un espect\u00e1culo fascinante."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202404",
+		"value": "Pasar a la acci\u00f3n"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_WARNING_DIABOLOS_FOR_IDOL",
+		"value": "Las quimeras no podr\u00e1n usarse como unidades\\ndonantes para legar habilidades, lo que incluye\\na los h\u00e9roes misteriosos."
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMITBREAK_WARNING_RESONATE_FOR_IDOL",
+		"value": "Las quimeras no podr\u00e1n usarse como unidades\\ndonantes para legar habilidades, lo que incluye\\na los h\u00e9roes afines."
+	},
+	{
+		"key": "MID_HERO_TRIAL_HELP_DIALOG_06",
+		"value": "-Pruebas combinadas-\\nPruebas especiales que requieren\\nh\u00e9roes Emblema, legendarios\\no m\u00edticos que hayan sido a\u00f1adidos\\nal juego a partir de la versi\u00f3n 8.4\\ny que se hayan combinado.\\nLas pruebas combinadas son\\nm\u00e1s dif\u00edciles y puedes conseguir\\n600 dracoflores si las superas."
+	},
+	{
+		"key": "MID_STAGE_SELECT_HERO_TRIAL_LIMIT_BREAK",
+		"value": "Pruebas combinadas"
+	},
+	{
+		"key": "MID_VOTE_TERM_202405",
+		"value": "Maestros de la magia"
+	},
+	{
+		"key": "MID_CONFIG_TAP_DELAY_PROTECTION",
+		"value": "Reducir el tiempo\\nde retraso al tocar"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202405",
+		"value": "Portal al olvido"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202405",
+		"value": "Archivo del norte"
+	},
+	{
+		"key": "MID_SUM19_Fireworks_Title",
+		"value": "Fuegos artificiales"
+	},
+	{
+		"key": "MID_SUM19_Fireworks_Common",
+		"value": "Se van a lanzar los fuegos artificiales\\nespeciales que dan fin al espect\u00e1culo."
+	},
+	{
+		"key": "MID_SUM19_Fireworks_3",
+		"value": "\u00bfEso es todo? \u00a1Qu\u00e9 decepci\u00f3n!\\nNo ha sido m\u00e1s que humo..."
+	},
+	{
+		"key": "MID_SUM19_Fireworks_4",
+		"value": "Los fuegos artificiales forman\\nun coraz\u00f3n y el d\u00fao se ruboriza."
+	},
+	{
+		"key": "MID_SUM19_Fireworks_5",
+		"value": "\u00a1El cielo se ilumina con la imagen de\\nFeh! La ciudad entera salta de alegr\u00eda."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202405R",
+		"value": "Vuelve Giro del destino"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202405",
+		"value": "Solo por hoy"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_8",
+		"value": "Campamento askro"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_8",
+		"value": "$aLos enemigos otorgan PH \u00d7 5 durante $a0\\ny PH \u00d7 2 tras ese periodo. (Solo se aplica\\nel valor m\u00e1s alto. No acumulable.)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202406",
+		"value": "Choque de oscuridad"
+	},
+	{
+		"key": "MID_CONFIG_HOME_NOTIFICATION_COOP_TRIAL",
+		"value": "Notif. del castillo:\\nFrente cooperativo"
+	},
+	{
+		"key": "MID_COOP_TRIAL_TITLE",
+		"value": "Frente cooperativo"
+	},
+	{
+		"key": "MID_COOP_TRIAL_CLOSED",
+		"value": "Evento no disponible."
+	},
+	{
+		"key": "MID_COOP_TRIAL_REWARD_CONFIRM",
+		"value": "Premios"
+	},
+	{
+		"key": "MID_COOP_TRIAL_ORGANIZE_DISPATCH",
+		"value": "Elegir emisarios"
+	},
+	{
+		"key": "MID_COOP_TRIAL_REMAINING_DAYS",
+		"value": "$aD\u00edas restantes: $a0"
+	},
+	{
+		"key": "MID_COOP_TRIAL_REMAINING_HOURS",
+		"value": "$aHoras restantes: $a0"
+	},
+	{
+		"key": "MID_COOP_TRIAL_REMAINING_MINUTES",
+		"value": "$aMinutos restantes: $a0"
+	},
+	{
+		"key": "MID_COOP_TRIAL_FIRST_REWARD_INFO",
+		"value": "Premios disponibles"
+	},
+	{
+		"key": "MID_COOP_TRIAL_START_BATTLE",
+		"value": "\u00a1A luchar!"
+	},
+	{
+		"key": "MID_COOP_TRIAL_TOP_INFO",
+		"value": "$aA\u00fana tus unidades y emisarios de otro\\njugador para que libren $a0 batallas."
+	},
+	{
+		"key": "MID_COOP_TRIAL_AUTHORITY_BONUS_TITLE",
+		"value": "Bonificaci\u00f3n"
+	},
+	{
+		"key": "MID_COOP_TRIAL_AUTHORITY_BONUS",
+		"value": "PV + 10 y Ata, Vel, Def y Res + 4 a tus h\u00e9roes\\ny emisarios que provengan del mismo juego."
+	},
+	{
+		"key": "MID_COOP_TRIAL_FIRST_REWARD",
+		"value": "Recompensa (1.\u00aa victoria)"
+	},
+	{
+		"key": "MID_COOP_TRIAL_MAP_REWARD",
+		"value": "$aPremios por victoria ($a0)"
+	},
+	{
+		"key": "MID_COOP_TRIAL_DIALOG_END_OF_TERM",
+		"value": "El resultado no cuenta porque\\nel combate no ha finalizado\\nantes del fin del evento."
+	},
+	{
+		"key": "MID_COOP_TRIAL_TROOP_SELECTION_CAPTION",
+		"value": "Selecciona un batall\u00f3n."
+	},
+	{
+		"key": "MID_COOP_TRIAL_TROOP_SELECTION_WIN_COUNT",
+		"value": "$aBatallas superadas: $a0/$a1"
+	},
+	{
+		"key": "MID_COOP_TRIAL_TROOP_SELECTION_DECIDE",
+		"value": "Elegir este batall\u00f3n"
+	},
+	{
+		"key": "MID_COOP_TRIAL_TROOP_CONFIRM_TEXT",
+		"value": "\u00bfLuchar junto a este batall\u00f3n?"
+	},
+	{
+		"key": "MID_COOP_TRIAL_TROOP_CONFIRM_OK",
+		"value": "Continuar"
+	},
+	{
+		"key": "MID_COOP_TRIAL_SURRENDER",
+		"value": "Rendirse"
+	},
+	{
+		"key": "MID_COOP_TRIAL_SUSPEND",
+		"value": "Interrumpir"
+	},
+	{
+		"key": "MID_COOP_TRIAL_SURRENDER_CONFIRM",
+		"value": "\u00bfSeguro que quieres rendirte?\\nSi lo haces, no podr\u00e1s continuar."
+	},
+	{
+		"key": "MID_COOP_TRIAL_SURRENDER_CONFIRM_YES",
+		"value": "Confirmar"
+	},
+	{
+		"key": "MID_COOP_TRIAL_SURRENDER_CONFIRM_NO",
+		"value": "Volver a la batalla"
+	},
+	{
+		"key": "MID_COOP_TRIAL_ORGANIZE_DISPATCH_INFO",
+		"value": "Crea el batall\u00f3n que enviar\u00e1s como emisario."
+	},
+	{
+		"key": "MID_COOP_TRIAL_ASSIGN_MY_UNITS",
+		"value": "A\u00f1ade a tus h\u00e9roes"
+	},
+	{
+		"key": "MID_COOP_TRIAL_TROOP_RESTRICTION_EMPTY",
+		"value": "Tu batall\u00f3n no tiene suficientes\\nmiembros."
+	},
+	{
+		"key": "MID_COOP_TRIAL_TROOP_RESTRICTION_GUEST_COUNT",
+		"value": "A\u00f1ade al menos a 2 unidades m\u00e1s\\nde otro jugador."
+	},
+	{
+		"key": "MID_COOP_TRIAL_TROOP_RESTRICTION_PERSON_COUNT",
+		"value": "\u30fb No se pueden incluir h\u00e9roes\\nduplicados."
+	},
+	{
+		"key": "MID_COOP_TRIAL_TROOP_RESTRICTION_AGAINER_COUNT",
+		"value": "\u30fb Solo se permite incluir una unidad\\nque pueda usar \"Cantar\" o \"Bailar\"."
+	},
+	{
+		"key": "MID_COOP_TRIAL_TROOP_RESTRICTION_GUARDIAN_COUNT",
+		"value": "\u30fb Solo se permite incluir una unidad\\nque pueda usar \"Protecci\u00f3n\"."
+	},
+	{
+		"key": "MID_COOP_TRIAL_ORGANIZE_INFO",
+		"value": "A\u00f1ade a hasta 2 de tus unidades al batall\u00f3n."
+	},
+	{
+		"key": "MID_COOP_TRIAL_RESULT_TITLE",
+		"value": "Resultados"
+	},
+	{
+		"key": "MID_COOP_TRIAL_FAILED_TERM_END",
+		"value": "No puedes avanzar."
+	},
+	{
+		"key": "MID_COOPTRIAL_HELP_DIALOG_00",
+		"value": "\u00a1Colabora para vencer!"
+	},
+	{
+		"key": "MID_COOPTRIAL_HELP_DIALOG_01",
+		"value": "-Frente cooperativo-\\nSelecciona h\u00e9roes de tu ej\u00e9rcito\\ny del ej\u00e9rcito de otro jugador para\\nformar un batall\u00f3n y enfrentarte\\na enemigos poderosos."
+	},
+	{
+		"key": "MID_COOPTRIAL_HELP_DIALOG_02",
+		"value": "-Elige qu\u00e9 emisarios reclutar-\\nSe te ofrecer\u00e1 una lista con tres\\njugadores. Selecciona a aquel\\ncuyos h\u00e9roes te gustar\u00eda que\\nformaran parte de tu batall\u00f3n."
+	},
+	{
+		"key": "MID_COOPTRIAL_HELP_DIALOG_03",
+		"value": "-Elige la dificultad-\\nSi superas un nivel de dificultad,\\nobtendr\u00e1s las recompensas de\\ntodos los niveles inferiores."
+	},
+	{
+		"key": "MID_COOPTRIAL_HELP_DIALOG_04",
+		"value": "-Formar batallones-\\nSelecciona a los cuatro h\u00e9roes\\nque combatir\u00e1n juntos. Al menos\\ndos de ellos deben pertenecer\\nal ej\u00e9rcito de otro jugador."
+	},
+	{
+		"key": "MID_COOPTRIAL_HELP_DIALOG_05",
+		"value": "-Editar batallones-\\nSolo se permite incluir una\\nunidad que pueda usar \"Cantar\"\\no \"Bailar\" y otra que pueda usar\\n\"Protecci\u00f3n\"."
+	},
+	{
+		"key": "MID_COOPTRIAL_HELP_DIALOG_06",
+		"value": "-Reglas-\\n\u30fb No se pueden incluir h\u00e9roes\\nduplicados.\\n\u30fb Cada h\u00e9roe puede participar\\nen una sola batalla por asalto\\n(no puedes usar duplicados\\nde h\u00e9roes que ya hayas usado)."
+	},
+	{
+		"key": "MID_COOPTRIAL_HELP_DIALOG_07",
+		"value": "-Consejo-\\nSi tu batall\u00f3n incluye un h\u00e9roe\\nde tu ej\u00e9rcito y otro del otro\\njugador provenientes del mismo\\nt\u00edtulo, obtendr\u00e1n Ata, Vel, Def\\ny Res + 4, as\u00ed como + 10\\na sus PV m\u00e1ximos."
+	},
+	{
+		"key": "MID_COOPTRIAL_HELP_DIALOG_08",
+		"value": "-M\u00e1s informaci\u00f3n-\\nLos efectos de la temporada de\\nlos h\u00e9roes m\u00edticos y legendarios\\nest\u00e1n desactivados. No se pueden\\nusar habilidades dobles ni\\narmonizadas. No se conceder\u00e1\\nExp ni PH, y no se podr\u00e1n usar\\nauxilios radiantes."
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING8_2",
+		"value": "Libro VIII - Interludio"
+	},
+	{
+		"key": "MID_HOME_COOP_TRIAL_NOTIFICATION",
+		"value": "Hay premios disponibles por jugar\\npor primera vez.\\n\u00bfIr a Frente cooperativo?"
+	},
+	{
+		"key": "MID_HOME_COOP_TRIAL_NAVIGATION_JUMP",
+		"value": "Frente cooperativo"
+	},
+	{
+		"key": "MID_IDOL_TICKET_HELP_DIALOG_05_v0806",
+		"value": "-Limitaciones-\\nLas quimeras no podr\u00e1n usarse\\ncomo unidades donantes para\\ncombinar h\u00e9roes o legar\\nhabilidades ni como unidades\\ndonantes en una transmisi\u00f3n\\nde \u00e9lite de h\u00e9roes misteriosos\\no afines. Del mismo modo,\\ntampoco se podr\u00e1n usar para\\ncrear manuales de combate."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202406",
+		"value": "El alba del futuro"
+	},
+	{
+		"key": "MID_SCF_K0018",
+		"value": "Castillo luminoso"
+	},
+	{
+		"key": "MID_SCF_K0018_Ex",
+		"value": "Incluye terreno defensivo y bosques."
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202406",
+		"value": "Archivo del este"
+	},
+	{
+		"key": "MID_AUT16_FallenTree_Title",
+		"value": "El \u00e1rbol ca\u00eddo"
+	},
+	{
+		"key": "MID_AUT16_FallenTree_Common",
+		"value": "Un \u00e1rbol ca\u00eddo bloquea el camino.\\n\u00a1Hay que quitarlo de en medio!"
+	},
+	{
+		"key": "MID_AUT16_FallenTree_3",
+		"value": "Han conseguido deshacerse del \u00e1rbol,\\npero han agotado todas sus fuerzas..."
+	},
+	{
+		"key": "MID_AUT16_FallenTree_4",
+		"value": "Han acabado tallando un pajarito\\nde madera. \u00a1Menudo talento!"
+	},
+	{
+		"key": "MID_AUT16_FallenTree_5",
+		"value": "\u00a1\u00bfUna escultura de Feh?! Sienten\\nuna gran alegr\u00eda, \u00a1Feh incluida!"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202406",
+		"value": "Regalo veraniego"
+	},
+	{
+		"key": "MID_VOTE_TERM_202406_01",
+		"value": "Contienda de espadas"
+	},
+	{
+		"key": "MID_OCCUPATION_RECOLLECTION_TITLE_202407",
+		"value": "Raigh y compa\u00f1\u00eda 1"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202407",
+		"value": "Rey antiguo, reina futura 1"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202407_1",
+		"value": "Libro V - Escena inicial"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202407_2",
+		"value": "Libro V - Interludio"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202407_3",
+		"value": "Libro V - Ep\u00edlogo"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_SET_EDIT_HELP5",
+		"value": "Elige un h\u00e9roe Emblema."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_SET_EDIT_SELECT_ENGAGE",
+		"value": "Elegir Emblema"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202407",
+		"value": "Devoci\u00f3n por proteger"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202407",
+		"value": "Archivo del sur"
+	},
+	{
+		"key": "MID_WIN17_UnderRock_Title",
+		"value": "Escapada rocosa"
+	},
+	{
+		"key": "MID_WIN17_UnderRock_Common",
+		"value": "Oyen un ruido procedente de debajo\\nde la roca. \u00a1Deciden investigarlo!"
+	},
+	{
+		"key": "MID_WIN17_UnderRock_3",
+		"value": "\u00a1Un enemigo sale del agujero! Es hora\\nde salir pitand... Eh... Irse con calma..."
+	},
+	{
+		"key": "MID_WIN17_UnderRock_4",
+		"value": "Con su valor, han liberado al viajero\\natrapado. Lo escoltan hasta el pueblo."
+	},
+	{
+		"key": "MID_WIN17_UnderRock_5",
+		"value": "\u00bfGatos? \u00bfUn perro? \u00bfUn conejito?\\n\u00a1Qu\u00e9 monos! El d\u00fao est\u00e1 cautivado..."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202407R",
+		"value": "Vuelve Visi\u00f3n gu\u00eda"
+	},
+	{
+		"key": "MID_SCF_\u30d3\u30fc\u30c1\u3068\u30d5\u30a7\u30fc",
+		"value": "Feh en la playa"
+	},
+	{
+		"key": "MID_SCF_\u30d3\u30fc\u30c1\u3068\u30d5\u30a7\u30fc_HELP",
+		"value": "Estatua de Feh disfrutando de las vacaciones\\nde verano en la playa y relaj\u00e1ndose a pata\\nsuelta. Es un objeto del evento."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202408",
+		"value": "Piedras et\u00e9reas +"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202408",
+		"value": "Permiten construir estructuras disponibles\\npor tiempo limitado en los asaltos et\u00e9reos.\\nTras ese periodo, las piedras se perder\u00e1n."
+	},
+	{
+		"key": "MID_VOTE_TERM_202408",
+		"value": "Encuentro refrescante"
+	},
+	{
+		"key": "MID_JOURNEY_HELP_DIALOG_03_03_v0808",
+		"value": "-Recuerdos disponibles-\\nPuedes desbloquear un recuerdo\\nusando 10 fragmentos\\nde recuerdo.\\n\\nPuedes desbloquear recuerdos\\nhasta seis veces en cada evento\\nde Viaje heroico."
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202408",
+		"value": "Rey antiguo, reina futura 2"
+	},
+	{
+		"key": "MID_CAPABILITY_LARGE_VESSEL",
+		"value": "Gran talento"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202408",
+		"value": "Archivo del oeste"
+	},
+	{
+		"key": "MID_SPR18_Alone_Title",
+		"value": "Mejor en compa\u00f1\u00eda"
+	},
+	{
+		"key": "MID_SPR18_Alone_Common",
+		"value": "Se escabulle a altas horas de la noche.\\n\u00bfQu\u00e9 se traer\u00e1 entre manos?"
+	},
+	{
+		"key": "MID_SPR18_Alone_3",
+		"value": "\u00bfComerse una galleta? \u00a1Qu\u00e9 injusto!\\nMenuda forma de complicar las cosas."
+	},
+	{
+		"key": "MID_SPR18_Alone_4",
+		"value": "\u00bfEntrenar por su cuenta? \u00a1Buena\\nidea! Pero en compa\u00f1\u00eda es a\u00fan mejor."
+	},
+	{
+		"key": "MID_SPR18_Alone_5",
+		"value": "\u00a1El amanecer es precioso! Ha valido\\nla pena entrenar toda la noche."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202408",
+		"value": "Un rayo de esperanza"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_9",
+		"value": "Festival hoshidano"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_9",
+		"value": "$aLos enemigos otorgan PH \u00d7 5 durante $a0\\ny PH \u00d7 2 tras ese periodo. (Solo se aplica\\nel valor m\u00e1s alto. No acumulable.)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202408_01",
+		"value": "Reuni\u00f3n distinguida"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202409",
+		"value": "Rey antiguo, reina futura 3"
+	},
+	{
+		"key": "MID_UNIT_EDIT_ENGAGE_HELP_DIALOG_04_v0809a",
+		"value": "-M\u00e1s informaci\u00f3n-\\nLos h\u00e9roes Emblema no pueden\\nfusionarse con duplicados\\nde s\u00ed mismos.\\n\\nLos h\u00e9roes Emblema solo pueden\\nfusionarse con una unidad,\\naunque tengas varias copias\\nde ella."
+	},
+	{
+		"key": "MID_CONFIG_SHOW_TAMER_ACCESSORY",
+		"value": "Mostrar auxilio"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_05_v0809b",
+		"value": "-\u00bfQu\u00e9 no heredan las quimeras?-\\n\u30fb Las combinaciones\\n\u30fb Los puntos fuertes florecientes\\n\u30fb El atuendo resplandeciente\\n\u30fb Las esencias auxiliadoras\\n\u30fb Las bendiciones\\n\u30fb Los sellos sacros\\n\u30fb Los accesorios"
+	},
+	{
+		"key": "MID_ITEM_TAMER_SOUL",
+		"value": "Esencia auxiliadora"
+	},
+	{
+		"key": "MID_ITEM_HELP_TAMER_SOUL",
+		"value": "Tras usar la esencia auxiliadora en una unidad,\\nesta puede equiparse con auxilios y obtiene\\nPV, Ata, Vel, Def y Res + 1."
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202409",
+		"value": "Archivo del norte"
+	},
+	{
+		"key": "MID_AUT17_Waterfall_Title",
+		"value": "Sucesos en cascada"
+	},
+	{
+		"key": "MID_AUT17_Waterfall_Common",
+		"value": "\u00a1Meditan bajo la cortina de agua!\\nEl estruendo afina sus sentidos."
+	},
+	{
+		"key": "MID_AUT17_Waterfall_3",
+		"value": "\u00a1Algo duro les golpea! \u00a1Auch! Parece\\nque tendr\u00e1n que entrenar m\u00e1s..."
+	},
+	{
+		"key": "MID_AUT17_Waterfall_4",
+		"value": "\u00a1Camarada al rescate! Se salvan por\\nsu sagacidad y sus r\u00e1pidos reflejos."
+	},
+	{
+		"key": "MID_AUT17_Waterfall_5",
+		"value": "Gracias al agua, se mantienen alerta...\\nEs como si... \u00a1bailasen con el peligro!"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202409",
+		"value": "Esp\u00edritus ardientes"
+	},
+	{
+		"key": "MID_SKYCASTLE_EDIT_ADDFACILITY_HELP_DIALOG_03",
+		"value": "-Bonificaci\u00f3n del l\u00edmite de \u00e9ter-\\nCuando las \u00e1nforas de \u00e9ter llegan\\nal nivel 4, aumenta a 400 su l\u00edmite\\nde almacenamiento de \u00e9ter\\n(al inicio de la temporada, el \u00e9ter\\nest\u00e1 en 250)."
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_8",
+		"value": "Auxiliad."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_USED_TAMER_SOUL_WARNING",
+		"value": "Est\u00e1s a punto de usar la opci\u00f3n\\n\"Enviar a casa\" con un h\u00e9roe que\\ntiene una esencia auxiliadora.\\n\u00bfSeguro que quieres enviar\\na casa a este h\u00e9roe?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_USED_TAMER_SOUL_WARNING",
+		"value": "Est\u00e1s a punto de usar la opci\u00f3n\\n\"Legar habilidad\" con un h\u00e9roe que\\ntiene una esencia auxiliadora.\\n\\n\u00bfSeguro que quieres hacerlo?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMIT_BREAK_USED_TAMER_SOUL_WARNING",
+		"value": "Est\u00e1s a punto de combinar a un h\u00e9roe\\nque tiene una esencia auxiliadora.\\n\\n\u00bfSeguro que quieres combinarlo?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_GENERATE_USED_TAMER_SOUL_WARNING",
+		"value": "Est\u00e1s a punto de recopilar un manual\\nde combate de un h\u00e9roe que tiene\\nuna esencia auxiliadora.\\n\\n\u00bfSeguro que quieres hacerlo?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_TAMER_SOUL",
+		"value": "Usar esencia auxiliad."
+	},
+	{
+		"key": "MID_UNIT_EDIT_TAMER_SOUL_CONFIRM",
+		"value": "\u00bfUsar una esencia auxiliadora?\\n\\nLos h\u00e9roes que reciban una esencia\\nauxiliadora podr\u00e1n equipar auxilios.\\nAdem\u00e1s, obtendr\u00e1n PV, Ata, Vel, Def\\ny Res + 1."
+	},
+	{
+		"key": "MID_UNIT_EDIT_TAMER_SOUL_CONFIRM_DECIDE",
+		"value": "Usar esencia auxiliad."
+	},
+	{
+		"key": "MID_UNIT_EDIT_TAMER_SOUL_INFO",
+		"value": "Elige a qu\u00e9 h\u00e9roe dar una esencia auxiliadora."
+	},
+	{
+		"key": "MID_UNIT_INFO_BLESSING_TAMER",
+		"value": "H\u00e9roe auxiliador\\n\\nPV, Ata, Vel, Def y Res + 1\\n\\nUsa las esencias auxiliadoras en h\u00e9roes que no\\nsean auxiliadores para que obtengan PV, Ata,\\nVel, Def y Res + 1. Adem\u00e1s, podr\u00e1n equiparse\\nauxilios como accesorios."
+	},
+	{
+		"key": "MID_UNIT_EDIT_TAMER_SOUL_HELP_DIALOG_00",
+		"value": "-Uso de las esencias auxiliadoras-\\nAl usar una esencia auxiliadora\\nen una unidad, esta obtiene PV,\\nAta, Vel, Def y Res + 1, as\u00ed como\\nla capacidad de equiparse auxilios\\ncomo accesorios."
+	},
+	{
+		"key": "MID_UNIT_EDIT_TAMER_SOUL_HELP_DIALOG_01",
+		"value": "-Efectos en el coliseo-\\nLas mejoras obtenidas mediante\\nel uso de esencias auxiliadoras\\nno afectan a la forma en que\\nse calculan los atributos\\nal seleccionar rivales en\\nmodos como el coliseo."
+	},
+	{
+		"key": "MID_UNIT_EDIT_TAMER_SOUL_HELP_DIALOG_02",
+		"value": "-M\u00e1s informaci\u00f3n-\\nPuedes equipar auxilios en h\u00e9roes\\nque no sean auxiliadores.\\nPuedes equipar un mismo auxilio\\nen tantas unidades como quieras,\\nsiempre y cuando estas hayan\\nrecibido una esencia auxiliadora."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202409R",
+		"value": "Vuelve Grandes expectativas"
+	},
+	{
+		"key": "MID_VOTE_TERM_202409",
+		"value": "An\u00e1logos al hielo"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202410",
+		"value": "Rey antiguo, reina futura 4"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202410_1",
+		"value": "Libro V - Escena inicial"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202410_2",
+		"value": "Libro V - Interludio"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202410_3",
+		"value": "Libro V - Ep\u00edlogo"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202410_4",
+		"value": "Un auxilio para el d\u00eda a d\u00eda (1)"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202410_5",
+		"value": "Un auxilio para el d\u00eda a d\u00eda (2)"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202410",
+		"value": "Archivo del este"
+	},
+	{
+		"key": "MID_SUM20_VolcanicBombs_Title",
+		"value": "Bombas volc\u00e1nicas"
+	},
+	{
+		"key": "MID_SUM20_VolcanicBombs_Common",
+		"value": "La pareja atraviesa la falda del volc\u00e1n\\ny... \u00a1una bomba de lava cae en picado!"
+	},
+	{
+		"key": "MID_SUM20_VolcanicBombs_3",
+		"value": "\u00a1Salen volando a causa del impacto!\\nLa naturaleza no tiene piedad..."
+	},
+	{
+		"key": "MID_SUM20_VolcanicBombs_4",
+		"value": "En el \u00faltimo momento... \u00a1logran\\nesquivarla! \u00a1Uf! Por los pelos..."
+	},
+	{
+		"key": "MID_SUM20_VolcanicBombs_5",
+		"value": "Reaccionan r\u00e1pido y la mandan lejos.\\n\u00a1Parece que el volc\u00e1n se ha rendido!"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202410",
+		"value": "Futuro latente"
+	},
+	{
+		"key": "MID_VOTE_TERM_202410",
+		"value": "Talento floreciente"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202411R",
+		"value": "Vuelve Deshielo ilustrado"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202411",
+		"value": "Rey antiguo, reina futura 5"
+	},
+	{
+		"key": "MID_UNIT_EDIT_CHANGING",
+		"value": "Elegidos"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING8_3",
+		"value": "Fin del libro VIII"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202411",
+		"value": "Archivo del sur"
+	},
+	{
+		"key": "MID_WIN18_Library_Title",
+		"value": "La biblioteca"
+	},
+	{
+		"key": "MID_WIN18_Library_Common",
+		"value": "\u00a1Comienzan a leer el mismo libro\\na la vez! \u00bfQu\u00e9 historia descubrir\u00e1n?"
+	},
+	{
+		"key": "MID_WIN18_Library_3",
+		"value": "La trama engancha y se pelean por\\nel tomo. Al final, nadie se lo queda."
+	},
+	{
+		"key": "MID_WIN18_Library_4",
+		"value": "\u00a1Es una historia rom\u00e1ntica! Oh...\\nLes da un vuelco el coraz\u00f3n."
+	},
+	{
+		"key": "MID_WIN18_Library_5",
+		"value": "\u00a1Era solo el primero! Leen y leen...\\nhasta perder la noci\u00f3n del tiempo."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202411",
+		"value": "Luz inspiradora"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_10",
+		"value": "Adorno temprano"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_10",
+		"value": "$aLos enemigos otorgan PH \u00d7 5 durante $a0\\ny PH \u00d7 2 tras ese periodo. (Solo se aplica\\nel valor m\u00e1s alto. No acumulable.)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202411",
+		"value": "\u00a1Ninjas, formaci\u00f3n!"
 	}
 ]
