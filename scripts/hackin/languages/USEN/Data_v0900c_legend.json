@@ -489,7 +489,7 @@
 	},
 	{
 		"key": "MSID_H_\u901f\u3055\u306e\u5438\u53ce1",
-		"value": "$aAt start of turn, grants Spd\u3010Great Talent\u3011+1\\nto unit.\\n\\nAfter combat, if unit attacked, grants\\nSpd\u3010Great Talent\u3011+1 to unit.\\n\\nDeals damage = 5% of unit's Spd during\\ncombat (excluding area-of-effect Specials).\\n\\n(This skill grants max of\u3010Great Talent\u3011+5.)\\n\\n\u3010Great Talent\u3011\\nAdds value of Great Talent (+X) to specified\\nstats (until end of battle; max value of X is\\ndetermined by the stat reaching the limit of 99,\\neach stat calculated separately; stat increases\\nare not treated as Bonus effects)."
+		"value": "$aAt start of turn, grants Spd\u3010Great Talent\u3011+1\\nto unit.\\n\\nAfter combat, if unit attacked, grants\\nSpd\u3010Great Talent\u3011+1 to unit.\\n\\nDeals damage = 5% of unit's Spd during\\ncombat (excluding area-of-effect Specials).\\n\\n(This skill grants max of\u3010Great Talent\u3011+5.)\\n\\n\u3010Great Talent\u3011\\nAdds value of Great Talent (+X) to specified\\nstats (until end of battle; max value of X is\\ndetermined by the stat reaching the limit of 99,\\neach stat calculated separately and cannot\\nexceed max value for each skill; stat increases\\nare not treated as Bonus effects)."
 	},
 	{
 		"key": "MSID_H_\u901f\u3055\u306e\u5438\u53ce1_NOSKW",
@@ -497,7 +497,7 @@
 	},
 	{
 		"key": "MSID_H_\u901f\u3055\u306e\u5438\u53ce2",
-		"value": "$aAt start of turn, grants Spd\u3010Great Talent\u3011+1\\nto unit.\\n\\nAfter combat, if unit attacked, grants\\nSpd\u3010Great Talent\u3011+2 to unit.\\n\\nDeals damage = 10% of unit's Spd during\\ncombat (excluding area-of-effect Specials).\\n\\n(This skill grants max of\u3010Great Talent\u3011+10.)\\n\\n\u3010Great Talent\u3011\\nAdds value of Great Talent (+X) to specified\\nstats (until end of battle; max value of X is\\ndetermined by the stat reaching the limit of 99,\\neach stat calculated separately; stat increases\\nare not treated as Bonus effects)."
+		"value": "$aAt start of turn, grants Spd\u3010Great Talent\u3011+1\\nto unit.\\n\\nAfter combat, if unit attacked, grants\\nSpd\u3010Great Talent\u3011+2 to unit.\\n\\nDeals damage = 10% of unit's Spd during\\ncombat (excluding area-of-effect Specials).\\n\\n(This skill grants max of\u3010Great Talent\u3011+10.)\\n\\n\u3010Great Talent\u3011\\nAdds value of Great Talent (+X) to specified\\nstats (until end of battle; max value of X is\\ndetermined by the stat reaching the limit of 99,\\neach stat calculated separately and cannot\\nexceed max value for each skill; stat increases\\nare not treated as Bonus effects)."
 	},
 	{
 		"key": "MSID_H_\u901f\u3055\u306e\u5438\u53ce2_NOSKW",
@@ -505,7 +505,7 @@
 	},
 	{
 		"key": "MSID_H_\u901f\u3055\u306e\u5438\u53ce3",
-		"value": "$aAt start of turn, grants Spd\u3010Great Talent\u3011+1\\nto unit.\\n\\nAfter combat, if unit attacked, grants\\nSpd\u3010Great Talent\u3011+3 to unit.\\n\\nDeals damage = 15% of unit's Spd during\\ncombat (excluding area-of-effect Specials).\\n\\n(This skill grants max of\u3010Great Talent\u3011+15.)\\n\\n\u3010Great Talent\u3011\\nAdds value of Great Talent (+X) to specified\\nstats (until end of battle; max value of X is\\ndetermined by the stat reaching the limit of 99,\\neach stat calculated separately; stat increases\\nare not treated as Bonus effects)."
+		"value": "$aAt start of turn, grants Spd\u3010Great Talent\u3011+1\\nto unit.\\n\\nAfter combat, if unit attacked, grants\\nSpd\u3010Great Talent\u3011+3 to unit.\\n\\nDeals damage = 15% of unit's Spd during\\ncombat (excluding area-of-effect Specials).\\n\\n(This skill grants max of\u3010Great Talent\u3011+15.)\\n\\n\u3010Great Talent\u3011\\nAdds value of Great Talent (+X) to specified\\nstats (until end of battle; max value of X is\\ndetermined by the stat reaching the limit of 99,\\neach stat calculated separately and cannot\\nexceed max value for each skill; stat increases\\nare not treated as Bonus effects)."
 	},
 	{
 		"key": "MSID_H_\u901f\u3055\u306e\u5438\u53ce3_NOSKW",
@@ -513,7 +513,7 @@
 	},
 	{
 		"key": "MSID_H_\u901f\u3055\u306e\u5438\u53ce4",
-		"value": "$aAt start of turn, grants Spd\u3010Great Talent\u3011+1\\nto unit.\\n\\nAfter combat, if unit attacked, grants\\nSpd\u3010Great Talent\u3011+4 to unit.\\n\\nInflicts Spd/Def-4 on foe, unit deals damage =\\n20% of unit's Spd (excluding area-of-effect\\nSpecials), neutralizes unit's penalties to Spd,\\nand neutralizes effects that inflict \"Special\\ncooldown charge -X\" on unit during combat.\\n\\n(This skill grants max of\u3010Great Talent\u3011+20.)\\n\\n\u3010Great Talent\u3011\\nAdds value of Great Talent (+X) to specified\\nstats (until end of battle; max value of X is\\ndetermined by the stat reaching the limit of 99,\\neach stat calculated separately; stat increases\\nare not treated as Bonus effects)."
+		"value": "$aAt start of turn, grants Spd\u3010Great Talent\u3011+1\\nto unit.\\n\\nAfter combat, if unit attacked, grants\\nSpd\u3010Great Talent\u3011+4 to unit.\\n\\nInflicts Spd/Def-4 on foe, unit deals damage =\\n20% of unit's Spd (excluding area-of-effect\\nSpecials), neutralizes unit's penalties to Spd,\\nand neutralizes effects that inflict \"Special\\ncooldown charge -X\" on unit during combat.\\n\\n(This skill grants max of\u3010Great Talent\u3011+20.)\\n\\n\u3010Great Talent\u3011\\nAdds value of Great Talent (+X) to specified\\nstats (until end of battle; max value of X is\\ndetermined by the stat reaching the limit of 99,\\neach stat calculated separately and cannot\\nexceed max value for each skill; stat increases\\nare not treated as Bonus effects)."
 	},
 	{
 		"key": "MSID_H_\u901f\u3055\u306e\u5438\u53ce4_NOSKW",

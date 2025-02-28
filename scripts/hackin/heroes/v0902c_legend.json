@@ -1,0 +1,147 @@
+[
+	{
+		"id_tag": "PID_\u4f1d\u627f\u30b5\u30af\u30e9",
+		"roman": "SAKURA_LEGEND01",
+		"face_name": "ch05_18_Sakura_F_Legend01",
+		"face_name2": "ch05_18_Sakura_F_Legend01",
+		"legendary": {
+			"duo_skill_id": "",
+			"bonus_effect": {
+				"hp": 3,
+				"atk": 0,
+				"spd": 0,
+				"def": 0,
+				"res": 4
+			},
+			"kind": 1,
+			"element": 4,
+			"bst": 215,
+			"pair_up": true,
+			"ae_extra": 0
+		},
+		"dragonflowers": {
+			"max_count": 5,
+			"costs": [
+				40,
+				80,
+				120,
+				160,
+				200
+			]
+		},
+		"timestamp": null,
+		"id_num": 1213,
+		"version_num": 902,
+		"sort_value": 201200,
+		"origins": 2048,
+		"weapon_type": 15,
+		"tome_class": 0,
+		"move_type": 3,
+		"series": 11,
+		"random_pool": 0,
+		"permanent_hero": false,
+		"base_vactor_id": 73,
+		"refresher": false,
+		"base_stats": {
+			"hp": 17,
+			"atk": 9,
+			"spd": 14,
+			"def": 6,
+			"res": 5
+		},
+		"growth_rates": {
+			"hp": 50,
+			"atk": 90,
+			"spd": 75,
+			"def": 40,
+			"res": 50
+		},
+		"skills": [
+			[
+				"SID_\u30a2\u30b5\u30eb\u30c8",
+				"SID_\u30e9\u30a4\u30d6",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			[
+				"SID_\u30a2\u30b5\u30eb\u30c8",
+				"SID_\u30e9\u30a4\u30d6",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u30ea\u30e9\u30a4\u30d6",
+				"SID_\u6cbb\u7652",
+				"SID_\u653b\u6483\u901f\u3055\u306e\u5bc6\u96c61",
+				"SID_\u3054\u5949\u4ed5\u306e\u559c\u30731",
+				null,
+				null,
+				null
+			],
+			[
+				"SID_\u30a2\u30b5\u30eb\u30c8",
+				"SID_\u30ea\u30e9\u30a4\u30d6",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u30a2\u30a4\u30b9\u30ed\u30c3\u30af",
+				"SID_\u7948\u308a",
+				"SID_\u653b\u6483\u901f\u3055\u306e\u5bc6\u96c62",
+				"SID_\u3054\u5949\u4ed5\u306e\u559c\u30732",
+				null,
+				null,
+				null
+			],
+			[
+				"SID_\u30a2\u30b5\u30eb\u30c8",
+				"SID_\u30a2\u30a4\u30b9\u30ed\u30c3\u30af",
+				"SID_\u6cbb\u7652",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u653b\u6483\u901f\u3055\u306e\u5bc6\u96c63",
+				"SID_\u3054\u5949\u4ed5\u306e\u559c\u30733",
+				null,
+				null,
+				null
+			],
+			[
+				"SID_\u4e03\u96e3\u5373\u6ec5",
+				"SID_\u30a2\u30a4\u30b9\u30ed\u30c3\u30af\uff0b",
+				"SID_\u7948\u308a",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u91cd\u5727\u306e\u8056\u5149",
+				"SID_\u653b\u6483\u901f\u3055\u306e\u5e03\u6559",
+				"SID_\u6fc0\u52b1\u30fb\u5f37\u5316\u7121\u52b9",
+				"SID_\u5c0f\u3055\u306a\u58f0\u63f4",
+				null,
+				null
+			]
+		]
+	}
+]
