@@ -689,7 +689,7 @@
 	},
 	{
 		"key": "MSID_H_\u59cb\u307e\u308a\u306e\u9f13\u52d5\u30fb\u5203",
-		"value": "Se il contatore dell'abilit\u00e0 speciale dell'unit\u00e0 \u00e8\\nal massimo all'inizio del turno, conferisce\\ncontatore -1 all'unit\u00e0.\\n\\nAtt/Vel dell'unit\u00e0 aumentano di un valore pari\\nal valore massimo del contatore dell'unit\u00e0 pi\u00f9 2\\ndurante lo scontro. Inoltre, se il contatore\\ndell'abilit\u00e0 speciale dell'unit\u00e0 \u00e8 al massimo\\ndopo lo scontro, conferisce contatore -1 all'unit\u00e0."
+		"value": "Se il contatore dell'abilit\u00e0 speciale dell'unit\u00e0 \u00e8\\nal massimo all'inizio del turno, conferisce\\ncontatore -1 all'unit\u00e0.\\n\\nAtt/Vel dell'unit\u00e0 aumentano durante lo scontro\\ndi un valore pari al valore massimo del contatore\\ndell'unit\u00e0 pi\u00f9 2. Inoltre, se il contatore dell'abilit\u00e0\\nspeciale dell'unit\u00e0 \u00e8 al massimo dopo lo scontro,\\nconferisce contatore -1 all'unit\u00e0."
 	},
 	{
 		"key": "MSID_H_\u53cc\u754c\u30de\u30ea\u30ab",
