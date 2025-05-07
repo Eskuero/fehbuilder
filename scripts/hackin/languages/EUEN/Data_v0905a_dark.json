@@ -1,0 +1,1238 @@
+[
+	{
+		"key": "MDAID_\u90aa\u7adc\u30ce\u5370",
+		"value": "Fell Dragon Seal"
+	},
+	{
+		"key": "MDAID_H_\u90aa\u7adc\u30ce\u5370",
+		"value": "An ornament of Alear's that symbolizes\\nGradlon. It is a mark given to Fell\\nDragon worshippers."
+	},
+	{
+		"key": "MDAID_\u90aa\u7adc\u30ce\u5370\u30fb\u6975",
+		"value": "Fell Dragon Seal EX"
+	},
+	{
+		"key": "MDAID_H_\u90aa\u7adc\u30ce\u5370\u30fb\u6975",
+		"value": "An ornament of Alear's that overflows\\nwith an ominous presence. It is a mark\\ngiven to Fell Dragon worshippers."
+	},
+	{
+		"key": "MDAID_\u90aa\u7adc\u30ce\u5fa1\u5b50\u30ce\u88c5\u8eab\u5177",
+		"value": "Fallen Heirloom"
+	},
+	{
+		"key": "MDAID_H_\u90aa\u7adc\u30ce\u5fa1\u5b50\u30ce\u88c5\u8eab\u5177",
+		"value": "An ornament passed down from\\nSombron, handed to Alear. It is a mark\\ngiven to Fell Dragon worshippers."
+	},
+	{
+		"key": "MDAID_\u90aa\u7adc\u30ce\u5fa1\u5b50\u30ce\u88c5\u8eab\u5177\u30fb\u6975",
+		"value": "Fallen Heirloom EX"
+	},
+	{
+		"key": "MDAID_H_\u90aa\u7adc\u30ce\u5fa1\u5b50\u30ce\u88c5\u8eab\u5177\u30fb\u6975",
+		"value": "An ornament of an ominous tone from\\nSombron, handed to Alear. It is a mark\\ngiven to Fell Dragon worshippers."
+	},
+	{
+		"key": "MDAID_\u9b54\u7363\u306e\u65ad\u7247",
+		"value": "Beastly Fragment"
+	},
+	{
+		"key": "MDAID_H_\u9b54\u7363\u306e\u65ad\u7247",
+		"value": "A piece of Dedue's Demonic Beast\\narmor, made of thick metal and shaped\\ninto something of a mask."
+	},
+	{
+		"key": "MDAID_\u9b54\u7363\u306e\u65ad\u7247\u30fb\u6975",
+		"value": "Beastly Fragment EX"
+	},
+	{
+		"key": "MDAID_H_\u9b54\u7363\u306e\u65ad\u7247\u30fb\u6975",
+		"value": "A piece of Dedue's Demonic Beast\\narmor, discolored into a dark crimson\\ndue to its rampaging power."
+	},
+	{
+		"key": "MDAID_\u4fee\u9053\u5973\u306e\u5e3d\u5b50",
+		"value": "Cleric's Hat"
+	},
+	{
+		"key": "MDAID_H_\u4fee\u9053\u5973\u306e\u5e3d\u5b50",
+		"value": "A hat that clerics wear from Lena. It\\nhas been influenced by a dark power\\nand is cloaked in an ominous aura."
+	},
+	{
+		"key": "MDAID_\u4fee\u9053\u5973\u306e\u5e3d\u5b50\u30fb\u6975",
+		"value": "Cleric's Hat EX"
+	},
+	{
+		"key": "MDAID_H_\u4fee\u9053\u5973\u306e\u5e3d\u5b50\u30fb\u6975",
+		"value": "A hat that clerics wear from Lena. It\\nhas been influenced by the Shadow\\nDragon's power, staining it dark."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_3",
+		"value": "Unit can move 1 extra space (does not stack).\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_6",
+		"value": "Can move to space next to ally within 2 spaces.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_9",
+		"value": "Grants bonus to Atk/Spd/Def/Res during\\ncombat = current bonus on each of unit's stats.\\nCalculates each stat bonus independently.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_12",
+		"value": "Unit deals additional damage = total penalties\\non foe.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_13",
+		"value": "Grants Atk/Spd+4 during combat.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_14",
+		"value": "If unit initiates combat, unit can make a\\nfollow-up attack before foe can counterattack.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_15",
+		"value": "Grants Def/Res+4 during combat and the\\nfollowing effect: \"During unit's first combat\\nin player phase or enemy phase, foe cannot\\nmake a follow-up attack.\"\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_16",
+		"value": "If foe initiates combat, unit can counterattack\\nbefore foe's first attack.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_19",
+		"value": "Foes cannot follow up.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_21",
+		"value": "If unit's Spd > foe's Spd, reduces damage from\\nattacks during combat and from area-of-effect\\nSpecials (excluding R\u00f8kkr area-of-effect\\nSpecials) by percentage = difference between\\nstats \u00d7 4 (max 40%).\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_27",
+		"value": "If unit's Spd > foe's Spd during combat,\\nneutralizes effects that guarantee foe's\\nfollow-up attacks and effects that prevent\\nunit's follow-up attacks.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_28",
+		"value": "When an ally moves through unit's space, that\\nspace is counted as 0 spaces moved instead of\\n1 space. (Unit's space can be freely added to\\nally's normal movement. Applies only to allies\\nwith movement types that allow movement\\nthrough unit's space.)\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_30",
+		"value": "Neutralizes bonuses on foe.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_31",
+		"value": "Grants bonus to Atk/Spd/Def/Res during\\ncombat = current penalty on each of unit's\\nstats \u00d7 2. (Example: if unit has -7 penalty to\\nAtk, grants Atk+14, for a net bonus of Atk+7.)\\nCalculates each stat bonus independently.\\n\\nUnit's negative effects that last \"through\\nunit's next action\" will remain in effect until\\nthis status (Grand Strategy) is neutralized.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_34",
+		"value": "Grants Special cooldown charge +1 per attack\\nduring combat (only highest value applied;\\ndoes not stack).\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_35",
+		"value": "Unit deals additional damage = total bonuses\\non unit.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_36",
+		"value": "Foes cannot warp into spaces within 4 spaces\\nof unit. (Does not affect foes with Pass skills or\\nwarp effects from structures, like camps and\\nfortresses in Rival Domains.)\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_37",
+		"value": "Unit can move up to 3 spaces in any cardinal\\ndirection. (Cannot move through foes, terrain\\nthat blocks movement, or effects of skills like\\nObstruct. Granted movement treated as\\nWarp movement.)\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_39",
+		"value": "After an attack, Assist skill, or structure\\ndestruction, unit can move 1 space\\n(once per turn; only highest value applied;\\ndoes not stack).\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_40",
+		"value": "Inflicts penalty on foe's Atk/Spd/Def/Res\\nduring combat = any current penalty on each\\nof those stats. Calculates each stat penalty\\nindependently.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_44",
+		"value": "Unit cannot be slowed by terrain (does not\\napply to impassable terrain).\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_45",
+		"value": "Reduces damage from area-of-effect Specials\\nby 80%.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_46",
+		"value": "Neutralizes penalties.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_47",
+		"value": "Calculates damage using the lower of foe's\\nDef or Res during combat (including damage\\ndealt by Specials before combat).\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_51",
+		"value": "Grants Atk/Spd/Def/Res+5 to unit during\\ncombat and if unit's attack can trigger unit's\\nSpecial, grants Special cooldown count-X to\\nunit before unit's first attack during combat\\n(X = 1 if unit can trigger the \"unit attacks twice\"\\neffect or if unit's maximum Special cooldown\\ncount is reduced (Special trigger is accelerated);\\notherwise, X = 2).\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_52",
+		"value": "If it is unit's first combat initiated by\\nfoe this turn, reduces damage from foe's first\\nattack by 80% during combat (that turn only;\\n\"first attack\" normally means only the first\\nstrike; for effects that grant \"unit attacks twice,\"\\nit means the first and second strikes).\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_56",
+		"value": "If unit initiates combat, grants bonus to unit's\\nAtk/Spd/Def/Res = number of spaces from\\nstart position to end position of unit during\\ncombat (max 3).\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_57",
+		"value": "Allies within 4 spaces of unit can move to\\na space adjacent to unit.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_58",
+		"value": "If unit initiates combat, reduces damage from\\nfoe's first attack by 40%.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_59",
+		"value": "Reduces the percentage of foe's non-Special\\n\"reduce damage by X%\" skills by 50% during\\ncombat (excluding area-of-effect Specials).\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_63",
+		"value": "$aAfter combat, if unit attacked, grants any\\n\u3010Bonus\u3011effects active on target and\\nfoes within 2 spaces of target to unit and\\nallies with the Essence Drain effect, and\\nneutralizes any\u3010Bonus\u3011active on\\ntarget and foes within 2 spaces of target\\n(excluding Bonus effects being granted at\\nthe same time). After combat, if foe was\\ndefeated in combat, restores 10 HP to unit\\nand allies with the Essence Drain effect.\\n(For 1 turn.)\\n\\n\u3010Bonus\u3011\\nAll effects that last \"for 1 turn\" or \"that turn\\nonly.\" Includes bonuses granted by a skill\\nlike Rally or Hone and positive status effects\\n(extra movement or effects like Dominance)."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_63_NOSKW",
+		"value": "$aAfter combat, if unit attacked, grants any\\n\u3010Bonus\u3011effects active on target and\\nfoes within 2 spaces of target to unit and\\nallies with the Essence Drain effect, and\\nneutralizes any\u3010Bonus\u3011active on\\ntarget and foes within 2 spaces of target\\n(excluding Bonus effects being granted at\\nthe same time). After combat, if foe was\\ndefeated in combat, restores 10 HP to unit\\nand allies with the Essence Drain effect.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_66",
+		"value": "Foes with Range = 1 cannot move through\\nspaces adjacent to unit (does not affect foes\\nwith Pass skills).\\n\\nFoes with Range = 2 cannot move through\\nspaces within 2 spaces of unit (does not affect\\nfoes with Pass skills).\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_68",
+		"value": "$aNeutralizes\u3010Deep Wounds\u3011during combat.\\n\\nRestores 20 HP to unit as unit's combat\\nbegins (triggers after effects that deal damage\\nas combat begins; only highest value applied;\\ndoes not stack). If it is unit's first combat\\ninitiated by foe or first combat initiated by unit\\nthat turn, reduces damage from foe's attacks\\nby 10 during combat (excluding area-of-effect\\nSpecials).\\n(For 1 turn.)\\n\\n\u3010Deep Wounds\u3011\\nUnit's HP cannot be healed through its\\nnext action."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_68_NOSKW",
+		"value": "$aNeutralizes\u3010Deep Wounds\u3011during combat.\\n\\nRestores 20 HP to unit as unit's combat\\nbegins (triggers after effects that deal damage\\nas combat begins; only highest value applied;\\ndoes not stack). If it is unit's first combat\\ninitiated by foe or first combat initiated by unit\\nthat turn, reduces damage from foe's attacks\\nby 10 during combat (excluding area-of-effect\\nSpecials).\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_69",
+		"value": "$aAt start of combat, if unit's HP \u2264 99%, grants\\nAtk+5 to unit during combat, and also, if unit\\ninitiates combat, unit can make a follow-up\\nattack before foe's next attack.\\n\\nAt start of combat, if unit's HP \u2264 99%, if foe\\ninitiates combat, and if either that foe's Range\\n= unit's Range or number of\u3010Penalty\u3011effects\\nactive on foe excluding stat penalties \u2265 3, unit\\ncan counterattack before foe's first attack\\n(excluding when unit's Savior effect triggers).\\n(For 1 turn.)\\n\\n\u3010Penalty\u3011\\nAll effects that last \"on foe through its next\\naction.\" Includes penalties inflicted by a skill\\nlike Panic or Threaten and negative status\\neffects (preventing counterattacks, restricting\\nmovement, or the effects of a skill like\\nTriangle Adept or Guard)."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_69_NOSKW",
+		"value": "$aAt start of combat, if unit's HP \u2264 99%, grants\\nAtk+5 to unit during combat, and also, if unit\\ninitiates combat, unit can make a follow-up\\nattack before foe's next attack.\\n\\nAt start of combat, if unit's HP \u2264 99%, if foe\\ninitiates combat, and if either that foe's Range\\n= unit's Range or number of\u3010Penalty\u3011effects\\nactive on foe excluding stat penalties \u2265 3, unit\\ncan counterattack before foe's first attack\\n(excluding when unit's Savior effect triggers).\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_70",
+		"value": "Unit can move 2 extra spaces (only highest\\nvalue applied; does not stack).\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_71",
+		"value": "$aEnables\u3010Canto (\uff12)\u3011.\\n\\nGrants Atk/Spd/Def/Res+5 to unit and reduces\\ndamage from foe's first attack by 7 during\\ncombat (\"first attack\" normally means only\\nthe first strike; for effects that grant \"unit\\nattacks twice,\" it means the first and second\\nstrikes), and also, if unit initiates combat and\\nfoe's attack can trigger foe's Special, inflicts\\nSpecial cooldown count+1 on foe before\\nfoe's first attack during combat (cannot\\nexceed the foe's maximum Special cooldown).\\n(For 1 turn.)\\n\\n\u3010Canto (\uff12)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move \uff12 space(s).\\n\\n(Unit moves according to movement type. Once\\nper turn. Cannot attack or assist. Only highest\\nvalue applied. Does not stack. After moving,\\nif a skill that grants another action would be\\ntriggered (like with Galeforce), Canto will\\ntrigger after the granted action. Unit's base\\nmovement has no effect on movement granted.\\nCannot warp (using skills like Wings of Mercy)\\na distance greater than unit would be able to\\nmove with normal Canto movement.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_71_NOSKW",
+		"value": "$aEnables\u3010Canto (\uff12)\u3011.\\n\\nGrants Atk/Spd/Def/Res+5 to unit and reduces\\ndamage from foe's first attack by 7 during\\ncombat (\"first attack\" normally means only\\nthe first strike; for effects that grant \"unit\\nattacks twice,\" it means the first and second\\nstrikes), and also, if unit initiates combat and\\nfoe's attack can trigger foe's Special, inflicts\\nSpecial cooldown count+1 on foe before\\nfoe's first attack during combat (cannot\\nexceed the foe's maximum Special cooldown).\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_72",
+		"value": "Inflicts Spd/Def/Res-4 on foes within 3 spaces\\nof unit during combat.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_73",
+		"value": "$aGrants Atk/Spd/Def/Res+5 to unit during\\ncombat and restores 10 HP to unit after\\ncombat.\\n\\nWhen a foe triggers both \"grants the\u3010Bonus\u3011\\neffects active on foe\" and \"neutralizes any\\n\u3010Bonus\u3011active on foe\" effects from skills\\nsuch as Essence Drain on unit with this status\\nactive, prevents those effects on unit and\\nother targets and neutralizes any\u3010Bonus\u3011effects\\nactive on that foe (does not neutralize\u3010Bonus\u3011\\neffects applied at the same time).\\n(For 1 turn.)\\n\\n\u3010Bonus\u3011\\nAll effects that last \"for 1 turn\" or \"that turn\\nonly.\" Includes bonuses granted by a skill\\nlike Rally or Hone and positive status effects\\n(extra movement or effects like Dominance)."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_73_NOSKW",
+		"value": "$aGrants Atk/Spd/Def/Res+5 to unit during\\ncombat and restores 10 HP to unit after\\ncombat.\\n\\nWhen a foe triggers both \"grants the\u3010Bonus\u3011\\neffects active on foe\" and \"neutralizes any\\n\u3010Bonus\u3011active on foe\" effects from skills\\nsuch as Essence Drain on unit with this status\\nactive, prevents those effects on unit and\\nother targets and neutralizes any\u3010Bonus\u3011effects\\nactive on that foe (does not neutralize\u3010Bonus\u3011\\neffects applied at the same time).\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_74",
+		"value": "$aGrants bonus to unit's Atk/Spd/Def/Res =\\nnumber of types of\u3010Bonus\u3011effects, excluding\\nstat bonuses, and\u3010Penalty\u3011effects, excluding\\nstat penalties, active on player team and enemy\\nteam during combat (max 7).\\n(For 1 turn.)\\n\\n\u3010Bonus\u3011\\nAll effects that last \"for 1 turn\" or \"that turn\\nonly.\" Includes bonuses granted by a skill\\nlike Rally or Hone and positive status effects\\n(extra movement or effects like Dominance).\\n\\n\u3010Penalty\u3011\\nAll effects that last \"on foe through its next\\naction.\" Includes penalties inflicted by a skill\\nlike Panic or Threaten and negative status\\neffects (preventing counterattacks, restricting\\nmovement, or the effects of a skill like\\nTriangle Adept or Guard)."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_74_NOSKW",
+		"value": "$aGrants bonus to unit's Atk/Spd/Def/Res =\\nnumber of types of\u3010Bonus\u3011effects, excluding\\nstat bonuses, and\u3010Penalty\u3011effects, excluding\\nstat penalties, active on player team and enemy\\nteam during combat (max 7).\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_76",
+		"value": "Grants Special cooldown count-1 to unit\\nbefore unit's first attack during combat.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_77",
+		"value": "Increases Spd difference necessary for foe to\\nmake a follow-up attack by 10 during combat.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_78",
+		"value": "$aIf decreasing the Spd difference necessary to\\nmake a follow-up attack by 25 would allow\\nunit to trigger a follow-up attack (excluding\\nguaranteed or prevented follow-ups),\\ntriggers\u3010Potent Follow X%\u3011during combat\\n(if unit cannot perform follow-up and attack\\ntwice, X = 80; otherwise, X = 40).\\n(For 1 turn.)\\n\\n\u3010Potent Follow X%\u3011\\nTriggers an additional follow-up attack\\nimmediately after unit's standard follow-up\\nattack and deals damage = X% of unit's normal\\nattack damage (if unit cannot make a follow-up\\nattack, this effect triggers when the standard\\nfollow-up attack would occur; this effect is\\ntreated like a follow-up attack, so effects like\\n\"reduce damage by X%\" still apply, but this\\neffect is not affected by effects that prevent\\nfollow-ups or \"attacks twice\" effects; only\\nhighest value applied; does not stack)."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_78_NOSKW",
+		"value": "$aIf decreasing the Spd difference necessary to\\nmake a follow-up attack by 25 would allow\\nunit to trigger a follow-up attack (excluding\\nguaranteed or prevented follow-ups),\\ntriggers\u3010Potent Follow X%\u3011during combat\\n(if unit cannot perform follow-up and attack\\ntwice, X = 80; otherwise, X = 40).\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_79",
+		"value": "$aEnables\u3010Canto (\uff12)\u3011.\\n\\nWhen\u3010Canto Control\u3011is applied to unit,\\nif unit's Range = 1, unit can move 2 spaces\\nwith Canto instead of 1 space, and if unit's\\nRange = 2, unit can move 1 space with Canto\\ninstead of 0 spaces.\\n(For 1 turn.)\\n\\n\u3010Canto (\uff12)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move \uff12 space(s).\\n\\n(Unit moves according to movement type. Once\\nper turn. Cannot attack or assist. Only highest\\nvalue applied. Does not stack. After moving,\\nif a skill that grants another action would be\\ntriggered (like with Galeforce), Canto will\\ntrigger after the granted action. Unit's base\\nmovement has no effect on movement granted.\\nCannot warp (using skills like Wings of Mercy)\\na distance greater than unit would be able to\\nmove with normal Canto movement.)\\n\\n\u3010Canto Control\u3011\\nLimits the number of spaces target can move\\nwith Canto through their next action. If target's\\nRange = 1, target can move 1 space when\\nCanto triggers. If target's Range = 2, target's\\naction ends when Canto triggers."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_79_NOSKW",
+		"value": "$aEnables\u3010Canto (\uff12)\u3011.\\n\\nWhen\u3010Canto Control\u3011is applied to unit,\\nif unit's Range = 1, unit can move 2 spaces\\nwith Canto instead of 1 space, and if unit's\\nRange = 2, unit can move 1 space with Canto\\ninstead of 0 spaces.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_80",
+		"value": "Inflicts Atk/Spd/Def/Res-5 on foe and inflicts\\npenalty on each of those stats = 5 - current\\npenalty on each of those stats during combat\\n(min 0; calculates each stat penalty\\nindependently).\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_81",
+		"value": "Neutralizes \"effective against\" bonuses for all\\nmovement types.\\n\\nGrants bonus to unit's Atk/Spd/Def/Res =\\nhighest bonus on each stat between unit and\\nallies within 2 spaces of unit (calculates each\\nstat bonus independently) and reduces damage\\nfrom foe's first attack by 10 during combat\\n(\"first attack\" normally means only the first\\nstrike; for effects that grant \"unit attacks\\ntwice,\" it means the first and second strikes).\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_82",
+		"value": "Inflicts Atk/Spd/Def/Res-4 on foe and\\nneutralizes effects that prevent unit's\\ncounterattacks during combat, any \"reduces\\ndamage by X%\" effect that can be triggered\\nonly once per combat by unit's equipped\\nSpecial skill can be triggered up to twice\\nper combat (excludes boosted Special effects\\nfrom engaging; only highest value applied;\\ndoes not stack), and also, when unit or foe\\nis engaged, inflicts an additional\\nAtk/Spd/Def/Res-2 on foe during combat.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_HELP_82",
+		"value": "Neutralizes counter prevention; reduce-damage\\n  effects from Special trigger twice per combat"
+	},
+	{
+		"key": "MID_MISSION_S202505MJOLNIR01_TITLE",
+		"value": "Mj\u00f6lnir's Strike"
+	},
+	{
+		"key": "MID_MISSION_S202505MJOLNIR01_A1",
+		"value": "KO w/Summoner"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MJOLNIR01_A1",
+		"value": "Defeat a foe with the My Summoner unit\\nin Mj\u00f6lnir's Strike."
+	},
+	{
+		"key": "MID_MISSION_S202505MJOLNIR01_A2",
+		"value": "KO w/Summoner"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MJOLNIR01_A2",
+		"value": "Defeat a foe with the My Summoner unit\\nin Mj\u00f6lnir's Strike."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_TITLE",
+		"value": "Flying Clash"
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A1",
+		"value": "KO Foe w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A1",
+		"value": "Defeat a flying foe with a flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A2",
+		"value": "KO Foe w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A2",
+		"value": "Defeat a flying foe with a red flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A3",
+		"value": "KO Foe w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A3",
+		"value": "Defeat a flying foe with a red flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A4",
+		"value": "KO Foe w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A4",
+		"value": "Defeat a flying foe with a red flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A5",
+		"value": "KO Foe w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A5",
+		"value": "Defeat a flying foe with a blue flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A6",
+		"value": "KO Foe w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A6",
+		"value": "Defeat a flying foe with a blue flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A7",
+		"value": "KO Foe w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A7",
+		"value": "Defeat a flying foe with a blue flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A8",
+		"value": "KO Foe w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A8",
+		"value": "Defeat a flying foe with a green flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A9",
+		"value": "KO Foe w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A9",
+		"value": "Defeat a flying foe with a green flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A10",
+		"value": "KO Foe w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A10",
+		"value": "Defeat a flying foe with a green flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A11",
+		"value": "KO Foe w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A11",
+		"value": "Defeat a flying foe with a colorless flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A12",
+		"value": "KO Foe w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A12",
+		"value": "Defeat a flying foe with a colorless flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A13",
+		"value": "KO Foe w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A13",
+		"value": "Defeat a flying foe with a colorless flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A14",
+		"value": "KO Red Foe w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A14",
+		"value": "Defeat a red flying foe with a flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A15",
+		"value": "KO Red Foe w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A15",
+		"value": "Defeat a red flying foe with a flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A16",
+		"value": "KO Red Foe w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A16",
+		"value": "Defeat a red flying foe with a flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A17",
+		"value": "KO Blue Foe w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A17",
+		"value": "Defeat a blue flying foe with a flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A18",
+		"value": "KO Blue Foe w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A18",
+		"value": "Defeat a blue flying foe with a flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A19",
+		"value": "KO Blue Foe w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A19",
+		"value": "Defeat a blue flying foe with a flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A20",
+		"value": "KO Green Foe w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A20",
+		"value": "Defeat a green flying foe with a flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A21",
+		"value": "KO Green Foe w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A21",
+		"value": "Defeat a green flying foe with a flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A22",
+		"value": "KO Green Foe w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A22",
+		"value": "Defeat a green flying foe with a flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A23",
+		"value": "KO Colorless w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A23",
+		"value": "Defeat a colorless flying foe with a flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A24",
+		"value": "KO Colorless w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A24",
+		"value": "Defeat a colorless flying foe with a flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A25",
+		"value": "KO Colorless w/Flying"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A25",
+		"value": "Defeat a colorless flying foe with a flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A26",
+		"value": "KO Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A26",
+		"value": "Defeat a flying foe that is level 40 or higher\\nwith a flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A27",
+		"value": "KO Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A27",
+		"value": "Defeat a flying foe that is level 40 or higher\\nwith a flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505MOVEVSMOVE01_A28",
+		"value": "KO Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202505MOVEVSMOVE01_A28",
+		"value": "Defeat a flying foe that is level 40 or higher\\nwith a flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202505SUBSC01_TITLE",
+		"value": " Feh Pass"
+	},
+	{
+		"key": "MID_MISSION_S202505SUBSC01_A1",
+		"value": "KO Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202505SUBSC01_A1",
+		"value": "Defeat a foe."
+	},
+	{
+		"key": "MID_MISSION_S202505SUBSC01_A2",
+		"value": "KO Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202505SUBSC01_A2",
+		"value": "Defeat a foe."
+	},
+	{
+		"key": "MID_MISSION_S202505SUBSC01_A3",
+		"value": "Win Arena Duel"
+	},
+	{
+		"key": "MID_MISSION_H_S202505SUBSC01_A3",
+		"value": "Win an Arena Duel at any difficulty."
+	},
+	{
+		"key": "MID_MISSION_S202505SUBSC01_A4",
+		"value": "Win Arena Duel"
+	},
+	{
+		"key": "MID_MISSION_H_S202505SUBSC01_A4",
+		"value": "Win an Arena Duel at any difficulty."
+	},
+	{
+		"key": "MID_MISSION_S202505SUBSC01_A5",
+		"value": "KO Armored Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202505SUBSC01_A5",
+		"value": "Defeat an armored foe."
+	},
+	{
+		"key": "MID_MISSION_S202505SUBSC01_A6",
+		"value": "KO Flying Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202505SUBSC01_A6",
+		"value": "Defeat a flying foe."
+	},
+	{
+		"key": "MID_MISSION_W_S202505STORY_C01_TITLE",
+		"value": "Fall from Heaven"
+	},
+	{
+		"key": "MID_MISSION_W_S202505STORY_C01_A1",
+		"value": "Clear 7-1 on Lunatic"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202505STORY_C01_A1",
+		"value": "Clear Book IX, Chapter 7: Part 1 on Lunatic\\ndifficulty with a lance ally on your team. (Allies\\ndeployed as cohorts using Pair Up do not\\ncount.) All four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_S202505STORY_C01_A2",
+		"value": "Clear 7-2 on Lunatic"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202505STORY_C01_A2",
+		"value": "Clear Book IX, Chapter 7: Part 2 on Lunatic\\ndifficulty with an axe ally on your team. (Allies\\ndeployed as cohorts using Pair Up do not\\ncount.) All four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_S202505STORY_C01_A3",
+		"value": "Clear 7-3 on Lunatic"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202505STORY_C01_A3",
+		"value": "Clear Book IX, Chapter 7: Part 3 on Lunatic\\ndifficulty with a sword ally on your team. (Allies\\ndeployed as cohorts using Pair Up do not\\ncount.) All four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_S202505STORY_C01_A4",
+		"value": "Clear 7-4 on Lunatic"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202505STORY_C01_A4",
+		"value": "Clear Book IX, Chapter 7: Part 4 on Lunatic\\ndifficulty with a lance ally on your team. (Allies\\ndeployed as cohorts using Pair Up do not\\ncount.) All four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_S202505STORY_C01_A5",
+		"value": "Clear 7-5 on Lunatic"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202505STORY_C01_A5",
+		"value": "Clear Book IX, Chapter 7: Part 5 on Lunatic\\ndifficulty with an axe ally on your team. (Allies\\ndeployed as cohorts using Pair Up do not\\ncount.) All four allies must survive."
+	},
+	{
+		"key": "MID_MUSIC_NAME_BGM_MNS_FE12_11",
+		"value": "Those Against Fate"
+	},
+	{
+		"key": "MID_MUSIC_NAME_BGM_MNS_FE16_22",
+		"value": "A Gentle Breeze"
+	},
+	{
+		"key": "MPID_\u95c7\u30ea\u30e5\u30fc\u30eb\u5973",
+		"value": "Alear"
+	},
+	{
+		"key": "MPID_SEARCH_\u95c7\u30ea\u30e5\u30fc\u30eb\u5973",
+		"value": "Alear"
+	},
+	{
+		"key": "MPID_\u95c7\u30ea\u30e5\u30fc\u30eb\u7537",
+		"value": "Alear"
+	},
+	{
+		"key": "MPID_SEARCH_\u95c7\u30ea\u30e5\u30fc\u30eb\u7537",
+		"value": "Alear"
+	},
+	{
+		"key": "MPID_\u9b54\u5668\u9b54\u7363\u30c9\u30a5\u30c9\u30a5\u30fc",
+		"value": "Dedue"
+	},
+	{
+		"key": "MPID_SEARCH_\u9b54\u5668\u9b54\u7363\u30c9\u30a5\u30c9\u30a5\u30fc",
+		"value": "Dedue"
+	},
+	{
+		"key": "MPID_\u95c7\u30ec\u30ca",
+		"value": "Lena"
+	},
+	{
+		"key": "MPID_SEARCH_\u95c7\u30ec\u30ca",
+		"value": "Lena"
+	},
+	{
+		"key": "MPID_\u30d5\u30a1\u30d5\u30cb\u30fc\u30eb\u5473\u65b9",
+		"value": "F\u00e1fnir"
+	},
+	{
+		"key": "MPID_SEARCH_\u30d5\u30a1\u30d5\u30cb\u30fc\u30eb\u5473\u65b9",
+		"value": "Fafnir"
+	},
+	{
+		"key": "MEID_\u30d0\u30eb\u30c9\u30eb2",
+		"value": "Baldr"
+	},
+	{
+		"key": "MPID_HONOR_\u95c7\u30ea\u30e5\u30fc\u30eb\u5973",
+		"value": "Red Days Past"
+	},
+	{
+		"key": "MPID_HONOR_\u95c7\u30ea\u30e5\u30fc\u30eb\u7537",
+		"value": "Fell Dragon Child"
+	},
+	{
+		"key": "MPID_HONOR_\u9b54\u5668\u9b54\u7363\u30c9\u30a5\u30c9\u30a5\u30fc",
+		"value": "Dauntless Beast"
+	},
+	{
+		"key": "MPID_HONOR_\u95c7\u30ec\u30ca",
+		"value": "Bereft Angel"
+	},
+	{
+		"key": "MPID_HONOR_\u30d5\u30a1\u30d5\u30cb\u30fc\u30eb\u5473\u65b9",
+		"value": "King of Desolation"
+	},
+	{
+		"key": "MEID_HONOR_\u30d0\u30eb\u30c9\u30eb2",
+		"value": "Celestial Sun God"
+	},
+	{
+		"key": "MPID_H_\u95c7\u30ea\u30e5\u30fc\u30eb\u5973",
+		"value": "One of the Fell Dragon's countless children. At\\nher father's command, she desires the Emblem\\nRings. Appears in Fire Emblem Engage."
+	},
+	{
+		"key": "MPID_H_\u95c7\u30ea\u30e5\u30fc\u30eb\u7537",
+		"value": "One of the Fell Dragon Sombron's countless\\nchildren. Dissociated from his emotions, he\\nacts out his father's orders. Appears in Fire\\nEmblem Engage."
+	},
+	{
+		"key": "MPID_H_\u9b54\u5668\u9b54\u7363\u30c9\u30a5\u30c9\u30a5\u30fc",
+		"value": "Uses a Crest Stone to transform into a Demonic\\nBeast in battle, repaying his debt to Dimitri, who\\nsaved his life. Appears in Fire Emblem:\\nThree Houses."
+	},
+	{
+		"key": "MPID_H_\u95c7\u30ec\u30ca",
+		"value": "A cleric from Macedon whose mind was stolen\\nby Gharnef to be used as a sacrifice in the\\nresurrection of Medeus. Appears in Fire\\nEmblem: Mystery of the Emblem."
+	},
+	{
+		"key": "MPID_H_\u30d5\u30a1\u30d5\u30cb\u30fc\u30eb\u5473\u65b9",
+		"value": "King of Ni\u00f0avellir who rose from his station as\\na lowly soldier. Remembers nothing of his past."
+	},
+	{
+		"key": "MEID_H_\u30d0\u30eb\u30c9\u30eb2",
+		"value": "A god of \u00c1sgar\u00f0r, the celestial realm, with a\\nconceited nature. Responsible for accompanying\\naccused criminals to the place of judgment."
+	},
+	{
+		"key": "MPID_VOICE_\u95c7\u30ea\u30e5\u30fc\u30eb\u5973",
+		"value": "Endo Aya (\u9060\u85e4\u7dbe)"
+	},
+	{
+		"key": "MPID_VOICE_\u95c7\u30ea\u30e5\u30fc\u30eb\u7537",
+		"value": "Brandon McInnis"
+	},
+	{
+		"key": "MPID_VOICE_\u9b54\u5668\u9b54\u7363\u30c9\u30a5\u30c9\u30a5\u30fc",
+		"value": "Ben Lepley"
+	},
+	{
+		"key": "MPID_VOICE_\u95c7\u30ec\u30ca",
+		"value": "Brittany Cox"
+	},
+	{
+		"key": "MPID_VOICE_\u30d5\u30a1\u30d5\u30cb\u30fc\u30eb\u5473\u65b9",
+		"value": "Griffin Puatu"
+	},
+	{
+		"key": "MPID_VOICE_\u30a2\u30c6\u30caEX01",
+		"value": "Cristina Vee"
+	},
+	{
+		"key": "MEID_VOICE_\u30d0\u30eb\u30c9\u30eb2",
+		"value": "Sam Slade"
+	},
+	{
+		"key": "MPID_ILLUST_\u95c7\u30ea\u30e5\u30fc\u30eb\u5973",
+		"value": "kainown"
+	},
+	{
+		"key": "MPID_ILLUST_\u95c7\u30ea\u30e5\u30fc\u30eb\u7537",
+		"value": "\uff24d"
+	},
+	{
+		"key": "MPID_ILLUST_\u9b54\u5668\u9b54\u7363\u30c9\u30a5\u30c9\u30a5\u30fc",
+		"value": "so-taro (\u5275-taro)"
+	},
+	{
+		"key": "MPID_ILLUST_\u95c7\u30ec\u30ca",
+		"value": "Hitowa (\u3072\u3068\u548c)"
+	},
+	{
+		"key": "MPID_ILLUST_\u30d5\u30a1\u30d5\u30cb\u30fc\u30eb\u5473\u65b9",
+		"value": "Kozaki Yusuke (\u30b3\u30b6\u30ad\u30e6\u30fc\u30b9\u30b1)"
+	},
+	{
+		"key": "MEID_ILLUST_\u30d0\u30eb\u30c9\u30eb2",
+		"value": "Maeshima Shigeki (\u524d\u5d8b\u91cd\u6a5f)"
+	},
+	{
+		"key": "MPID_ILLUST_\u30a2\u30c6\u30caEX01",
+		"value": "Clover.K (\u9ed2\u8449.K)"
+	},
+	{
+		"key": "MID_TIPS_Summon_v0905a_dark_01_\u9b54\u5668\u9b54\u7363\u30c9\u30a5\u30c9\u30a5\u30fc",
+		"value": "Protects support partners within four\\nspaces. Can warp to allies, and\\ncrushes foes with a powerful Special!"
+	},
+	{
+		"key": "MID_TIPS_Summon_v0905a_dark_01_\u95c7\u30ea\u30e5\u30fc\u30eb\u5973",
+		"value": "Radiates Fell Spirit, bolstering allies.\\nCan counter from afar, and unleashes\\na string of attacks with Specials!"
+	},
+	{
+		"key": "MID_TIPS_Summon_v0905a_dark_01_\u95c7\u30ea\u30e5\u30fc\u30eb\u7537",
+		"value": "Can survive a deadly attack! Blocks\\nfoes with endurance and clears those\\nwho stage an assault!"
+	},
+	{
+		"key": "MID_TIPS_Summon_v0905a_dark_01_\u95c7\u30ec\u30ca",
+		"value": "Saves allies within three spaces once,\\nand fully heals them! Increases her\\nand allies' stats and nullifies penalties."
+	},
+	{
+		"key": "MID_TIPS_Summon_v0905a_dark_08_\u4f1d\u627f\u30c7\u30a3\u30a2\u30c9\u30e9",
+		"value": "Effectively raises Atk/Res by up to 55!\\nIf within three spaces of an ally, she\\ncan recover. Effective against dragons!"
+	},
+	{
+		"key": "MID_TIPS_Summon_v0905a_dark_09_\u4f1d\u627f\u30df\u30eb\u30e9",
+		"value": "Can increase damage dealt by up to\\n25, and takes 22 less damage! Inhibits\\nfoe warps with her support partner!"
+	},
+	{
+		"key": "MSID_\u7b2c94\u8ff7\u5bae\u306e\u8987\u80051",
+		"value": "Squad Ace CP 1"
+	},
+	{
+		"key": "MSID_SEARCH_\u7b2c94\u8ff7\u5bae\u306e\u8987\u80051",
+		"value": "Squad Ace CP 1"
+	},
+	{
+		"key": "MSID_\u7b2c94\u8ff7\u5bae\u306e\u8987\u80052",
+		"value": "Squad Ace CP 2"
+	},
+	{
+		"key": "MSID_SEARCH_\u7b2c94\u8ff7\u5bae\u306e\u8987\u80052",
+		"value": "Squad Ace CP 2"
+	},
+	{
+		"key": "MSID_\u7b2c94\u8ff7\u5bae\u306e\u8987\u80053",
+		"value": "Squad Ace CP 3"
+	},
+	{
+		"key": "MSID_SEARCH_\u7b2c94\u8ff7\u5bae\u306e\u8987\u80053",
+		"value": "Squad Ace CP 3"
+	},
+	{
+		"key": "MSID_\u8cb4\u5a66\u4eba\u306e\u5f13",
+		"value": "Noble Bow"
+	},
+	{
+		"key": "MSID_SEARCH_\u8cb4\u5a66\u4eba\u306e\u5f13",
+		"value": "Noble Bow"
+	},
+	{
+		"key": "MSID_\u54c0\u6b4c\u306e\u66f8",
+		"value": "Tome of Grief"
+	},
+	{
+		"key": "MSID_SEARCH_\u54c0\u6b4c\u306e\u66f8",
+		"value": "Tome of Grief"
+	},
+	{
+		"key": "MSID_\u8056\u795e\u3068\u6697\u9ed2\u795e\u2026\u30fb\u627f",
+		"value": "Balance Circlet II"
+	},
+	{
+		"key": "MSID_SEARCH_\u8056\u795e\u3068\u6697\u9ed2\u795e\u2026\u30fb\u627f",
+		"value": "Balance Circlet II"
+	},
+	{
+		"key": "MSID_\u95c7\u306e\u6a39\u6d77\u306e\u5b88\u2026\u30fb\u627f",
+		"value": "Darkling Guard II"
+	},
+	{
+		"key": "MSID_SEARCH_\u95c7\u306e\u6a39\u6d77\u306e\u5b88\u2026\u30fb\u627f",
+		"value": "Darkling Guard II"
+	},
+	{
+		"key": "MSID_\u90aa\u7adc\u306e\u5fa1\u5b50\u306e\u5263",
+		"value": "Fell Child's Blade"
+	},
+	{
+		"key": "MSID_SEARCH_\u90aa\u7adc\u306e\u5fa1\u5b50\u306e\u5263",
+		"value": "Fell Child's Blade"
+	},
+	{
+		"key": "MSID_\u6a5f\u69cb\u30d5\u30ec\u30a4\u30ba\u30de\u30eb",
+		"value": "Iron Hrei\u00f0marr"
+	},
+	{
+		"key": "MSID_SEARCH_\u6a5f\u69cb\u30d5\u30ec\u30a4\u30ba\u30de\u30eb",
+		"value": "Iron Hrei\u00f0marr"
+	},
+	{
+		"key": "MSID_\u751f\u8d04\u306e\u8056\u5973\u306e\u6756",
+		"value": "Martyr's Staff"
+	},
+	{
+		"key": "MSID_SEARCH_\u751f\u8d04\u306e\u8056\u5973\u306e\u6756",
+		"value": "Martyr's Staff"
+	},
+	{
+		"key": "MSID_\u90aa\u7adc\u306e\u5fa1\u5b50\u306e\u4f53\u8853",
+		"value": "Fell Child's Arts"
+	},
+	{
+		"key": "MSID_SEARCH_\u90aa\u7adc\u306e\u5fa1\u5b50\u306e\u4f53\u8853",
+		"value": "Fell Child's Arts"
+	},
+	{
+		"key": "MSID_\u9b54\u5668\u30fb\u7d0b\u7ae0\u77f3",
+		"value": "Arcane Crest"
+	},
+	{
+		"key": "MSID_SEARCH_\u9b54\u5668\u30fb\u7d0b\u7ae0\u77f3",
+		"value": "Arcane Crest"
+	},
+	{
+		"key": "MSID_\u90aa\u7adc\u7834",
+		"value": "Fell Blast"
+	},
+	{
+		"key": "MSID_SEARCH_\u90aa\u7adc\u7834",
+		"value": "Fell Blast"
+	},
+	{
+		"key": "MSID_\u7d46\u3092\u5f15\u304d\u88c2\u304f\u3082\u306e",
+		"value": "Bond Breaker"
+	},
+	{
+		"key": "MSID_SEARCH_\u7d46\u3092\u5f15\u304d\u88c2\u304f\u3082\u306e",
+		"value": "Bond Breaker"
+	},
+	{
+		"key": "MSID_\u706b\u5730\u6c34\u306e\u547d\u8108",
+		"value": "Diluvial Boost"
+	},
+	{
+		"key": "MSID_SEARCH_\u706b\u5730\u6c34\u306e\u547d\u8108",
+		"value": "Diluvial Boost"
+	},
+	{
+		"key": "MSID_\u653b\u6483\u5b88\u5099\u306e\u5171\u6804",
+		"value": "Atk/Def Fortune"
+	},
+	{
+		"key": "MSID_SEARCH_\u653b\u6483\u5b88\u5099\u306e\u5171\u6804",
+		"value": "Atk/Def Fortune"
+	},
+	{
+		"key": "MSID_\u653b\u6483\u9b54\u9632\u306e\u798f\u97f3",
+		"value": "Atk/Res Tidings"
+	},
+	{
+		"key": "MSID_SEARCH_\u653b\u6483\u9b54\u9632\u306e\u798f\u97f3",
+		"value": "Atk/Res Tidings"
+	},
+	{
+		"key": "MSID_\u5f37\u8972\u968a\u5f62",
+		"value": "Assault Fighter"
+	},
+	{
+		"key": "MSID_SEARCH_\u5f37\u8972\u968a\u5f62",
+		"value": "Assault Fighter"
+	},
+	{
+		"key": "MSID_\u5965\u7fa9\u968a\u5f62\u30fb\u7adc\u773c",
+		"value": "Scowling Fighter"
+	},
+	{
+		"key": "MSID_SEARCH_\u5965\u7fa9\u968a\u5f62\u30fb\u7adc\u773c",
+		"value": "Scowling Fighter"
+	},
+	{
+		"key": "MSID_\u901f\u3055\u5b88\u5099\u306e\u5203\u58c1",
+		"value": "S/D Spiked Wall"
+	},
+	{
+		"key": "MSID_SEARCH_\u901f\u3055\u5b88\u5099\u306e\u5203\u58c1",
+		"value": "S/D Spiked Wall"
+	},
+	{
+		"key": "MSID_\u304a\u308c\u306e\u3001\u305f\u3060\u4e00\u4eba\u306e",
+		"value": "For the True King"
+	},
+	{
+		"key": "MSID_SEARCH_\u304a\u308c\u306e\u3001\u305f\u3060\u4e00\u4eba\u306e",
+		"value": "For the True King"
+	},
+	{
+		"key": "MSID_\u6c37\u69cd\u30d5\u30a3\u30f3\u30d6\u30ebR",
+		"value": "Icy Fimbulvetr"
+	},
+	{
+		"key": "MSID_SEARCH_\u6c37\u69cd\u30d5\u30a3\u30f3\u30d6\u30ebR",
+		"value": "Icy Fimbulvetr"
+	},
+	{
+		"key": "MSID_H_\u7b2c94\u8ff7\u5bae\u306e\u8987\u80051",
+		"value": "Grants HP+3, Spd/Def+1."
+	},
+	{
+		"key": "MSID_H_\u7b2c94\u8ff7\u5bae\u306e\u8987\u80052",
+		"value": "Grants HP+4, Spd/Def+2."
+	},
+	{
+		"key": "MSID_H_\u7b2c94\u8ff7\u5bae\u306e\u8987\u80053",
+		"value": "Grants HP+5, Spd/Def+3."
+	},
+	{
+		"key": "MSID_H_\u8cb4\u5a66\u4eba\u306e\u5f13",
+		"value": "$aEffective against flying foes.\\n\\nFor foes within 3 rows or 3 columns centered\\non unit, inflicts Atk/Spd/Def/Res-5 and\\nneutralizes foe's bonuses during combat,\\nand those foes cannot recover HP during\\nor after combat. (When an effect such as\\n\u3010Feud\u3011is triggered for allies, excluding unit,\\nthat effect will also neutralize this skill's\\n\"cannot recover HP after combat\" effect on\\ntheir foes.)\\n\\nAt start of combat, if unit's HP \u2265 25%, grants\\nbonus to unit's Atk/Spd/Def/Res = 10% of\\nunit's Spd at start of combat and reduces\\ndamage from foe's first attack by 7 during\\ncombat (\"first attack\" normally means only the\\nfirst strike; for effects that grant \"unit attacks\\ntwice,\" it means the first and second strikes).\\n\\n\u3010Feud\u3011\\nDisables all ally skills (excluding unit's) during\\ncombat through unit's next action."
+	},
+	{
+		"key": "MSID_H_\u8cb4\u5a66\u4eba\u306e\u5f13_NOSKW",
+		"value": "$aEffective against flying foes.\\n\\nFor foes within 3 rows or 3 columns centered\\non unit, inflicts Atk/Spd/Def/Res-5 and\\nneutralizes foe's bonuses during combat,\\nand those foes cannot recover HP during\\nor after combat. (When an effect such as\\n\u3010Feud\u3011is triggered for allies, excluding unit,\\nthat effect will also neutralize this skill's\\n\"cannot recover HP after combat\" effect on\\ntheir foes.)\\n\\nAt start of combat, if unit's HP \u2265 25%, grants\\nbonus to unit's Atk/Spd/Def/Res = 10% of\\nunit's Spd at start of combat and reduces\\ndamage from foe's first attack by 7 during\\ncombat (\"first attack\" normally means only the\\nfirst strike; for effects that grant \"unit attacks\\ntwice,\" it means the first and second strikes)."
+	},
+	{
+		"key": "MSID_H_\u54c0\u6b4c\u306e\u66f8",
+		"value": "At start of turn, if unit's HP \u2265 25%, inflicts\\nAtk/Res-7 and status preventing counterattacks\\non closest foes and foes within 2 spaces of\\nthose foes through their next actions.\\n\\nAt start of combat, if unit's HP \u2265 25%, grants\\nAtk/Spd/Def/Res+5 to unit, neutralizes foe's\\nbonuses to Atk/Res, and grants Special\\ncooldown charge +1 to unit per attack\\nduring combat (only highest value applied;\\ndoes not stack)."
+	},
+	{
+		"key": "MSID_H_\u7cbe\u970a\u306e\u68ee\u306e\u79d8\u672cR",
+		"value": "At start of turn, and at start of enemy phase\\n(except for in Summoner Duels), if unit is\\nwithin 2 spaces of an ally, grants Atk/Res+6\\nand \"neutralizes unit's penalties during combat\"\\nto unit and allies within 2 spaces of unit for\\n1 turn, and also, for unit and allies within 2\\nspaces of unit, if Special cooldown count\\nis at its maximum value, grants Special\\ncooldown count-1.\\n\\nFor allies within 2 spaces of unit, if Special\\ncooldown count is at its maximum value after\\ncombat, grants Special cooldown count-1.\\n\\nIf unit initiates combat or is within 3 spaces\\nof an ally, inflicts Atk/Res-6 on foe and deals\\ndamage = 20% of unit's Res during combat\\n(excluding area-of-effect Specials), and\\nrestores 7 HP to unit after combat, and also,\\nif Special cooldown count is at its maximum\\nvalue, grants Special cooldown count-1\\nafter combat."
+	},
+	{
+		"key": "MSID_H_\u7adc\u795e\u306e\u30d6\u30ec\u30b9R",
+		"value": "For foes within 3 rows or 3 columns centered\\non unit, inflicts Atk/Spd/Def/Res-5 and reduces\\nthe percentage of foe's non-Special \"reduce\\ndamage by X%\" skills by 50% during combat.\\n(excluding area-of-effect Specials).\\n\\nIf foe initiates combat or foe's HP \u2265 75%\\nat start of combat, inflicts penalty on foe's\\nAtk/Spd/Def/Res = 10% of unit's Def at start\\nof combat and reduces damage from foe's\\nattacks by X \u00d7 3 during combat (max 15;\\nX = number of Bonus effects active on unit\\nand foe, excluding stat bonuses; excluding\\narea-of-effect Specials)."
+	},
+	{
+		"key": "MSID_H_\u30d5\u30ea\u30b9\u30c8R",
+		"value": "$aEnables\u3010Canto (Rem.; Min \uff11)\u3011.\\nAccelerates Special trigger (cooldown count-1).\\n\\nIf unit initiates combat or is within 2 spaces\\nof an ally, grants Atk/Spd+6 to unit, deals\\ndamage = damage dealt to unit \u00d7 2, + 5\\n(max 21; excluding area-of-effect Specials),\\nand neutralizes effects that guarantee foe's\\nfollow-up attacks and effects that prevent\\nunit's follow-up attacks during combat.\\n\\n\u3010Canto (Rem.; Min \uff11)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move spaces = any\\nmovement not already used that turn (min. \uff11;\\nif unit used a movement skill that warped\\nthem, unit can move \uff11 space(s)).\\n(Once per turn. Only highest value applied.\\nDoes not stack.)"
+	},
+	{
+		"key": "MSID_H_\u30d5\u30ea\u30b9\u30c8R_NOSKW",
+		"value": "$aEnables\u3010Canto (Rem.; Min \uff11)\u3011.\\nAccelerates Special trigger (cooldown count-1).\\n\\nIf unit initiates combat or is within 2 spaces\\nof an ally, grants Atk/Spd+6 to unit, deals\\ndamage = damage dealt to unit \u00d7 2, + 5\\n(max 21; excluding area-of-effect Specials),\\nand neutralizes effects that guarantee foe's\\nfollow-up attacks and effects that prevent\\nunit's follow-up attacks during combat."
+	},
+	{
+		"key": "MSID_H_\u7834\u6ec5\u306e\u90aa\u66f8R",
+		"value": "$aAt start of player phase or enemy phase,\\nif unit's HP \u2265 25%, inflicts Atk/Res-7,\\n\u3010Hush Spectrum\u3011, and\u3010Ploy\u3011on closest foes\\nand any foes within 2 spaces of those foes\\nthrough their next actions.\\n\\nAt start of combat, if unit's HP \u2265 25%, inflicts\\npenalty on foe's Atk/Res = 10% of unit's Res\\nat start of combat + 6 and reduces damage\\nfrom foe's attacks by 20% of unit's Res during\\ncombat (excluding area-of-effect Specials).\\n\\n\u3010Hush Spectrum\u3011\\nInflicts Atk/Spd/Def/Res-5 on unit during\\ncombat. If unit's attack can trigger unit's\\nSpecial, inflicts Special cooldown count+1 on\\nunit before unit's first attack during combat\\n(cannot exceed the unit's maximum Special\\ncooldown). If unit's maximum Special cooldown\\ncount is reduced (Special trigger is accelerated)\\nand if foe's attack can trigger foe's Special,\\ngrants Special cooldown count-1 to foe before\\nunit's first attack during combat.\\n\\n\u3010Ploy\u3011\\nNeutralizes Bonus Doubler, Treachery,\\nand Grand Strategy effects active on unit\\nduring combat through unit's next action."
+	},
+	{
+		"key": "MSID_H_\u7834\u6ec5\u306e\u90aa\u66f8R_NOSKW",
+		"value": "$aAt start of player phase or enemy phase,\\nif unit's HP \u2265 25%, inflicts Atk/Res-7,\\n\u3010Hush Spectrum\u3011, and\u3010Ploy\u3011on closest foes\\nand any foes within 2 spaces of those foes\\nthrough their next actions.\\n\\nAt start of combat, if unit's HP \u2265 25%, inflicts\\npenalty on foe's Atk/Res = 10% of unit's Res\\nat start of combat + 6 and reduces damage\\nfrom foe's attacks by 20% of unit's Res during\\ncombat (excluding area-of-effect Specials)."
+	},
+	{
+		"key": "MSID_H_\u6c37\u69cd\u30d5\u30a3\u30f3\u30d6\u30ebR",
+		"value": "$aAt start of combat, if unit's HP \u2265 25%, inflicts\\npenalty on foe's Atk/Spd/Res = 10% of unit's\\nRes at start of combat + 5 and deals damage\\n= 20% of unit's Res during combat (excluding\\narea-of-effect Specials).\\n\\nWhen Canto triggers, enables unit to use\\n\u3010Sing/Dance\u3011(once per turn; if similar\\neffects are active, this effect does not trigger;\\nthis effect is not treated as an Assist skill, nor\\nis it treated as a Sing or Dance skill).\\n\\n\u3010Sing/Dance\u3011\\nRange = 1. Grants another action to target ally."
+	},
+	{
+		"key": "MSID_H_\u6c37\u69cd\u30d5\u30a3\u30f3\u30d6\u30ebR_NOSKW",
+		"value": "$aAt start of combat, if unit's HP \u2265 25%, inflicts\\npenalty on foe's Atk/Spd/Res = 10% of unit's\\nRes at start of combat + 5 and deals damage\\n= 20% of unit's Res during combat (excluding\\narea-of-effect Specials).\\n\\nWhen Canto triggers, enables unit to use\\n\u3010Sing/Dance\u3011(once per turn; if similar\\neffects are active, this effect does not trigger;\\nthis effect is not treated as an Assist skill, nor\\nis it treated as a Sing or Dance skill)."
+	},
+	{
+		"key": "MSID_H_\u8cb4\u5a66\u4eba\u306e\u5f13R",
+		"value": "Accelerates Special trigger (cooldown count-1).\\n\\nIf unit initiates combat or is within 2 spaces\\nof an ally, grants Atk/Spd/Def/Res+5 to unit,\\ndeals damage = 20% of unit's Spd (excluding\\narea-of-effect Specials), and grants Special\\ncooldown count-1 to unit before unit's first\\nattack during combat, and restores 7 HP to\\nunit after combat."
+	},
+	{
+		"key": "MSID_H_\u54c0\u6b4c\u306e\u66f8R",
+		"value": "At start of combat, if unit's HP \u2265 25%,\\ngrants Atk/Spd/Def/Res+5 to unit, neutralizes\\npenalties to unit's Atk/Res, deals damage =\\n20% of unit's Res (excluding area-of-effect\\nSpecials), and unit makes a guaranteed\\nfollow-up attack during combat."
+	},
+	{
+		"key": "MSID_H_\u8056\u795e\u3068\u6697\u9ed2\u795e\u2026\u30fb\u627f",
+		"value": "When Special triggers, boosts damage by 40%\\nof unit's Res and neutralizes \"reduces damage\\nby X%\" effects from foe's non-Special skills.\\n\\nIf unit's or foe's Special is ready or if unit's or\\nfoe's Special triggered before or during this\\ncombat and if unit can attack in combat,\\nreduces damage from foe's next attack by 40%\\n(once per combat; excluding area-of-effect\\nSpecials).\\n\\nIf unit\u2019s HP > 1 and foe would reduce unit's\\nHP to 0 during combat, unit survives with 1 HP\\n(once per combat; considered a non-Special\\neffect; does not stack with non-Special effects\\nthat allow unit to survive with 1 HP if foe's\\nattack would reduce unit's HP to 0)."
+	},
+	{
+		"key": "MSID_H_\u95c7\u306e\u6a39\u6d77\u306e\u5b88\u2026\u30fb\u627f",
+		"value": "$aEnables\u3010Canto (\uff12)\u3011.\\n\\nAt start of player phase or enemy phase, grants\\nDef/Res+6, \"foe cannot make a follow-up\\nattack,\" \"neutralizes 'effective against flying'\\nbonuses,\"\u3010Warp Bubble\u3011, and\u3010Bulwark\u3011to unit\\nand target allies within 3 spaces of unit for 1\\nturn. (If support partner is on player team,\\ntargets any support partner; otherwise, targets\\nally with the highest Def on player team,\\nexcluding unit.)\\n\\nIf unit is within 3 spaces of an ally, grants\\nAtk/Spd/Def/Res+5 to unit, neutralizes penalties\\nto unit's Atk, neutralizes foe's bonuses to Atk,\\nreduces damage from foe's attacks by 7\\n(excluding area-of-effect Specials), and grants\\nSpecial cooldown charge +1 to unit per attack\\nduring combat (only highest value applied;\\ndoes not stack).\\n\\n\u3010Canto (\uff12)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move \uff12 space(s).\\n(Once per turn. Only highest value applied.\\nDoes not stack.)\\n\\n\u3010Warp Bubble\u3011\\nFoes cannot warp into spaces within 4 spaces\\nof unit. (Does not affect foes with Pass skills or\\nwarp effects from structures, like camps and\\nfortresses in Rival Domains.)\\n\\n\u3010Bulwark\u3011\\nFoes with Range = 1 cannot move through\\nspaces adjacent to unit (does not affect foes\\nwith Pass skills).\\n\\nFoes with Range = 2 cannot move through\\nspaces within 2 spaces of unit (does not affect\\nfoes with Pass skills)."
+	},
+	{
+		"key": "MSID_H_\u95c7\u306e\u6a39\u6d77\u306e\u5b88\u2026\u30fb\u627f_NOSKW",
+		"value": "$aEnables\u3010Canto (\uff12)\u3011.\\n\\nAt start of player phase or enemy phase, grants\\nDef/Res+6, \"foe cannot make a follow-up\\nattack,\" \"neutralizes 'effective against flying'\\nbonuses,\"\u3010Warp Bubble\u3011, and\u3010Bulwark\u3011to unit\\nand target allies within 3 spaces of unit for 1\\nturn. (If support partner is on player team,\\ntargets any support partner; otherwise, targets\\nally with the highest Def on player team,\\nexcluding unit.)\\n\\nIf unit is within 3 spaces of an ally, grants\\nAtk/Spd/Def/Res+5 to unit, neutralizes penalties\\nto unit's Atk, neutralizes foe's bonuses to Atk,\\nreduces damage from foe's attacks by 7\\n(excluding area-of-effect Specials), and grants\\nSpecial cooldown charge +1 to unit per attack\\nduring combat (only highest value applied;\\ndoes not stack)."
+	},
+	{
+		"key": "MSID_H_\u90aa\u7adc\u306e\u5fa1\u5b50\u306e\u5263",
+		"value": "Accelerates Special trigger (cooldown count-1).\\n\\nFor foes within 3 rows or 3 columns centered\\non unit, inflicts Atk/Spd/Def/Res-5 and\\nneutralizes foe's bonuses during combat.\\n\\nIf foe initiates combat or if unit's HP \u2265 25%\\nat start of combat, inflicts penalty on foe's\\nAtk/Spd/Def/Res = number of distinct game\\ntitles among allies within 3 spaces of unit \u00d7 3,\\n+ 4 (max 10), reduces the percentage of foe's\\nnon-Special \"reduce damage by X%\" skills by\\n50% (excluding area-of-effect Specials), unit\\ndeals +X damage (excluding area-of-effect\\nSpecials), reduces damage from foe's attacks\\nby X (excluding area-of-effect Specials), and\\nreduces damage from foe's Specials by X\\nduring combat (excluding area-of-effect\\nSpecials; X = 20% of unit's Spd), and\\nrestores 7 HP to unit after combat."
+	},
+	{
+		"key": "MSID_H_\u6a5f\u69cb\u30d5\u30ec\u30a4\u30ba\u30de\u30eb",
+		"value": "$aGrants Atk+3.\\n\\nEnables\u3010Canto (Dist. +2; Max \uff15)\u3011during\\nturns 1 through 4.\\n\\nFor foes within 3 rows or 3 columns centered\\non unit, inflicts Atk/Spd/Def-5, inflicts Special\\ncooldown charge -1 on foe per attack (only\\nhighest value applied; does not stack), and\\nthose foes suffer guaranteed follow-up attacks\\nduring combat.\\n\\nAt start of combat, if unit's HP \u2265 25%, grants\\nbonus to unit's Atk/Spd/Def/Res = number of\\nfoes within 3 rows or 3 columns centered on\\nunit \u00d7 3 (max 9), deals damage = 15% of unit's\\nAtk (excluding area-of-effect Specials), and\\ngrants Special cooldown count-X to unit\\nbefore unit's first attack during combat\\n(X = number of spaces from start position\\nto end position of whoever initiated combat,\\nmax 3).\\n\\n\u3010Canto (Dist. +2; Max \uff15)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move spaces = number\\nof spaces from start position to end position\\nof unit before the above, +2. (Max \uff15.)\\n\\n(Unit moves according to movement type. Once\\nper turn. Cannot attack or assist. Only highest\\nvalue applied. Does not stack. After moving,\\nif a skill that grants another action would be\\ntriggered (like with Galeforce), Canto will\\ntrigger after the granted action. Unit's base\\nmovement has no effect on movement granted.\\nCannot warp (using skills like Wings of Mercy)\\na distance greater than unit would be able to\\nmove with normal Canto movement.)"
+	},
+	{
+		"key": "MSID_H_\u6a5f\u69cb\u30d5\u30ec\u30a4\u30ba\u30de\u30eb_NOSKW",
+		"value": "$aGrants Atk+3.\\n\\nEnables\u3010Canto (Dist. +2; Max \uff15)\u3011during\\nturns 1 through 4.\\n\\nFor foes within 3 rows or 3 columns centered\\non unit, inflicts Atk/Spd/Def-5, inflicts Special\\ncooldown charge -1 on foe per attack (only\\nhighest value applied; does not stack), and\\nthose foes suffer guaranteed follow-up attacks\\nduring combat.\\n\\nAt start of combat, if unit's HP \u2265 25%, grants\\nbonus to unit's Atk/Spd/Def/Res = number of\\nfoes within 3 rows or 3 columns centered on\\nunit \u00d7 3 (max 9), deals damage = 15% of unit's\\nAtk (excluding area-of-effect Specials), and\\ngrants Special cooldown count-X to unit\\nbefore unit's first attack during combat\\n(X = number of spaces from start position\\nto end position of whoever initiated combat,\\nmax 3)."
+	},
+	{
+		"key": "MSID_H_\u751f\u8d04\u306e\u8056\u5973\u306e\u6756",
+		"value": "$aCalculates damage from staff like other\\nweapons. Accelerates Special trigger\\n(cooldown count-1; max cooldown count\\nvalue cannot be reduced below 1).\\n\\nAt start of player phase or enemy phase,\\nif unit is within 3 spaces of an ally, grants\\nAtk/Res+6,\u3010Bonus Doubler\u3011, and \"neutralizes\\npenalties on unit during combat\" to unit and\\nallies within 3 spaces of unit for 1 turn.\\n\\nIf unit initiates combat or is within 3 spaces\\nof an ally, inflicts penalty on foe's Atk/Res =\\n20% of unit's Res at start of combat + 6,\\nunit deals +X \u00d7 5 damage (X = the total of\\nthe number of Bonus effects active on unit\\nand the number of Penalty effects active\\non foe, excluding stat bonuses and stat\\npenalties; max 5; excluding area-of-effect\\nSpecials; if the \"calculates damage from\\nstaff like other weapons\" effect is neutralized,\\ndamage from staff is calculated after combat\\ndamage is added), and unit makes a\\nguaranteed follow-up attack during combat.\\n\\nGrants Atk/Res+5 to allies within 3 spaces\\nof unit during combat.\\n\\nGrants \"if unit's HP > 1 and foe would reduce\\nunit's HP to 0 during combat, unit survives\\nwith 1 HP and after combat, restores 99 HP\\nto unit\" to allies within 3 spaces of unit (effect\\nonly triggers for player's team once per map\\nand does not stack with non-Special effects\\nthat allow unit to survive with 1 HP if foe's\\nattack would reduce unit's HP to 0; when any\\nother such effect triggers on an ally granted\\nthis effect, this effect will trigger too).\\n\\n\u3010Bonus Doubler\u3011\\nGrants bonus to Atk/Spd/Def/Res during\\ncombat = current bonus on each of unit's stats\\nfor 1 turn. Calculates each stat bonus\\nindependently."
+	},
+	{
+		"key": "MSID_H_\u751f\u8d04\u306e\u8056\u5973\u306e\u6756_NOSKW",
+		"value": "$aCalculates damage from staff like other\\nweapons. Accelerates Special trigger\\n(cooldown count-1; max cooldown count\\nvalue cannot be reduced below 1).\\n\\nAt start of player phase or enemy phase,\\nif unit is within 3 spaces of an ally, grants\\nAtk/Res+6,\u3010Bonus Doubler\u3011, and \"neutralizes\\npenalties on unit during combat\" to unit and\\nallies within 3 spaces of unit for 1 turn.\\n\\nIf unit initiates combat or is within 3 spaces\\nof an ally, inflicts penalty on foe's Atk/Res =\\n20% of unit's Res at start of combat + 6,\\nunit deals +X \u00d7 5 damage (X = the total of\\nthe number of Bonus effects active on unit\\nand the number of Penalty effects active\\non foe, excluding stat bonuses and stat\\npenalties; max 5; excluding area-of-effect\\nSpecials; if the \"calculates damage from\\nstaff like other weapons\" effect is neutralized,\\ndamage from staff is calculated after combat\\ndamage is added), and unit makes a\\nguaranteed follow-up attack during combat.\\n\\nGrants Atk/Res+5 to allies within 3 spaces\\nof unit during combat.\\n\\nGrants \"if unit's HP > 1 and foe would reduce\\nunit's HP to 0 during combat, unit survives\\nwith 1 HP and after combat, restores 99 HP\\nto unit\" to allies within 3 spaces of unit (effect\\nonly triggers for player's team once per map\\nand does not stack with non-Special effects\\nthat allow unit to survive with 1 HP if foe's\\nattack would reduce unit's HP to 0; when any\\nother such effect triggers on an ally granted\\nthis effect, this effect will trigger too)."
+	},
+	{
+		"key": "MSID_H_\u90aa\u7adc\u306e\u5fa1\u5b50\u306e\u4f53\u8853",
+		"value": "Accelerates Special trigger (cooldown count-1).\\nUnit attacks twice (even if foe initiates combat,\\nunit attacks twice).\\n\\nIf foe's Range = 2, calculates damage using\\nthe lower of foe's Def or Res.\\n\\nIf foe initiates combat or if unit's HP \u2265 25%\\nat start of combat, inflicts penalty on foe's\\nAtk/Def/Res = number of distinct game titles\\namong allies within 3 spaces of unit \u00d7 3, + 9\\n(max 15; if unit triggers Savior, value is treated\\nas 15), reduces the percentage of foe's\\nnon-Special \"reduce damage by X%\" skills by\\n50% (excluding area-of-effect Specials), unit\\ndeals +X damage (X = 20% of unit's Res;\\nexcluding area-of-effect Specials), reduces\\ndamage from foe's attacks by X (excluding\\narea-of-effect Specials), and reduces damage\\nfrom foe's Specials by X during combat\\n(excluding area-of-effect Specials)."
+	},
+	{
+		"key": "MSID_H_\u9b54\u5668\u30fb\u7d0b\u7ae0\u77f3",
+		"value": "Accelerates Special trigger (cooldown count-1).\\n\\nIf foe initiates combat or if unit's HP \u2265 25%\\nat start of combat, grants bonus to unit's\\nAtk/Spd/Def/Res = 25% of foe's Atk at start\\nof combat - 4 (max 14; min 5), neutralizes\\npenalties on unit, deals damage = 15% of\\nunit's Atk (including area-of-effect Specials),\\nreduces damage from foe's attacks by 15%\\nof unit's Atk (including area-of-effect Specials;\\nexcluding R\u00f8kkr area-of-effect Specials),\\nand grants Special cooldown count-1 to unit\\nbefore unit's first attack during combat.\\n\\nAt start of turn, if unit is adjacent to only beast\\nor dragon allies or if unit is not adjacent to any\\nally, unit transforms (otherwise, unit reverts).\\nIf unit transforms, grants Atk+2, and unit can\\ncounterattack regardless of foe's range."
+	},
+	{
+		"key": "MSID_H_\u90aa\u7adc\u7834",
+		"value": "$aBoosts damage by 50% of unit's Res when\\nSpecial triggers.\\n\\nAt start of player phase or enemy phase, if\\nunit's HP \u2265 25%, grants\u3010Fell Spirit\u3011to unit\\nand allies within 2 spaces of unit for 1 turn.\\n\\nIf foe initiates combat, if unit's or foe's\\nSpecial is ready, or if unit's or foe's Special\\ntriggered before or during this combat,\\nreduces damage from foe's next attack by\\n40% (once per combat; excluding\\narea-of-effect Specials).\\n\\nUnit can counterattack regardless of foe's\\nrange during combat.\\n\\n\u3010Fell Spirit\u3011\\nInflicts Atk/Spd/Def/Res-4 on foe and\\nneutralizes effects that prevent unit's\\ncounterattacks during combat, any \"reduces\\ndamage by X%\" effect that can be triggered\\nonly once per combat by unit's equipped\\nSpecial skill can be triggered up to twice\\nper combat (excludes boosted Special effects\\nfrom engaging; only highest value applied;\\ndoes not stack), and also, when unit or foe\\nis engaged, inflicts an additional\\nAtk/Spd/Def/Res-2 on foe during combat.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MSID_H_\u90aa\u7adc\u7834_NOSKW",
+		"value": "$aBoosts damage by 50% of unit's Res when\\nSpecial triggers.\\n\\nAt start of player phase or enemy phase, if\\nunit's HP \u2265 25%, grants\u3010Fell Spirit\u3011to unit\\nand allies within 2 spaces of unit for 1 turn.\\n\\nIf foe initiates combat, if unit's or foe's\\nSpecial is ready, or if unit's or foe's Special\\ntriggered before or during this combat,\\nreduces damage from foe's next attack by\\n40% (once per combat; excluding\\narea-of-effect Specials).\\n\\nUnit can counterattack regardless of foe's\\nrange during combat."
+	},
+	{
+		"key": "MSID_H_\u7d46\u3092\u5f15\u304d\u88c2\u304f\u3082\u306e",
+		"value": "$aUnit can counterattack regardless of foe's range.\\n\\nAt start of player phase or enemy phase, if\\nunit's HP \u2265 25%, grants\u3010Fell Spirit\u3011to unit\\nand allies within 2 spaces of unit for 1 turn,\\nand inflicts Atk/Spd-7 and\u3010Schism\u3011on\\nclosest foes and any foes within 2 spaces of\\nthose foes through their next actions.\\n\\nIf foe initiates combat or if unit's HP \u2265 25%\\nat start of combat, grants Atk/Spd/Def/Res+9\\nto unit and reduces damage from foe's first\\nattack by 7 during combat (\"first attack\"\\nnormally means only the first strike; for effects\\nthat grant \"unit attacks twice,\" it means the\\nfirst and second strikes), and also, if unit's\\nHP > 1 and foe would reduce unit's HP to 0,\\nunit survives with 1 HP (once per combat;\\ndoes not stack with non-Special effects that\\nallow unit to survive with 1 HP if foe's attack\\nwould reduce HP to 0).\\n\\n\u3010Fell Spirit\u3011\\nInflicts Atk/Spd/Def/Res-4 on foe and\\nneutralizes effects that prevent unit's\\ncounterattacks during combat, any \"reduces\\ndamage by X%\" effect that can be triggered\\nonly once per combat by unit's equipped\\nSpecial skill can be triggered up to twice\\nper combat (excludes boosted Special effects\\nfrom engaging; only highest value applied;\\ndoes not stack), and also, when unit or foe\\nis engaged, inflicts an additional\\nAtk/Spd/Def/Res-2 on foe during combat.\\n(For 1 turn.)\\n\\n\u3010Schism\u3011\\nNeutralizes Triangle Attack, Dual Strike, and\\nPathfinder effects active on unit through\\nunit's next action. Unit is excluded from ally\\nTriangle Attack and Dual Strike effects\\ncalculated using numbers of allies. When this\\nstatus (Schism) is neutralized, Triangle Attack,\\nDual Strike, and Pathfinder effects are also\\nneutralized."
+	},
+	{
+		"key": "MSID_H_\u7d46\u3092\u5f15\u304d\u88c2\u304f\u3082\u306e_NOSKW",
+		"value": "$aUnit can counterattack regardless of foe's range.\\n\\nAt start of player phase or enemy phase, if\\nunit's HP \u2265 25%, grants\u3010Fell Spirit\u3011to unit\\nand allies within 2 spaces of unit for 1 turn,\\nand inflicts Atk/Spd-7 and\u3010Schism\u3011on\\nclosest foes and any foes within 2 spaces of\\nthose foes through their next actions.\\n\\nIf foe initiates combat or if unit's HP \u2265 25%\\nat start of combat, grants Atk/Spd/Def/Res+9\\nto unit and reduces damage from foe's first\\nattack by 7 during combat (\"first attack\"\\nnormally means only the first strike; for effects\\nthat grant \"unit attacks twice,\" it means the\\nfirst and second strikes), and also, if unit's\\nHP > 1 and foe would reduce unit's HP to 0,\\nunit survives with 1 HP (once per combat;\\ndoes not stack with non-Special effects that\\nallow unit to survive with 1 HP if foe's attack\\nwould reduce HP to 0)."
+	},
+	{
+		"key": "MSID_H_\u706b\u5730\u6c34\u306e\u547d\u8108",
+		"value": "Grants HP+5.\\n\\nIf foe initiates combat or if unit's HP \u2265 50%\\nat start of combat, grants Atk/Def/Res+9 to\\nunit during combat and restores 7 HP to unit\\nafter combat."
+	},
+	{
+		"key": "MSID_H_\u653b\u6483\u5b88\u5099\u306e\u5171\u6804",
+		"value": "If unit can transform, transformation effects\\ngain \"if unit is within 2 spaces of a beast or\\ndragon ally, or if number of adjacent allies\\nother than beast or dragon allies \u2264 2\" as\\na trigger condition (in addition to existing\\nconditions).\\n\\nIf defending in Aether Raids, at the start of\\nenemy turn 1, if conditions for transforming\\nare met, unit transforms.\\n\\nIf unit is transformed or if foe initiates combat,\\ngrants Atk/Def+8 to unit and neutralizes foe's\\nbonuses to Atk/Def during combat, and\\nrestores 7 HP to unit after combat."
+	},
+	{
+		"key": "MSID_H_\u653b\u6483\u9b54\u9632\u306e\u798f\u97f3",
+		"value": "If unit initiates combat or is within 3 spaces\\nof an ally, grants bonus to unit's Atk/Res =\\nnumber of allies within 3 spaces of unit \u00d7 2,\\n+ 8 (max 12), and foe cannot counterattack\\nduring combat."
+	},
+	{
+		"key": "MSID_H_\u5f37\u8972\u968a\u5f62",
+		"value": "If unit initiates combat or is within 3 spaces of\\nan ally, inflicts Atk/Def-4 on foe, deals damage\\n= 20% of unit's Def (excluding area-of-effect\\nSpecials), reduces damage from foe's attacks\\nby 20% of unit's Def (excluding area-of-effect\\nSpecials), unit makes a guaranteed follow-up\\nattack, and reduces the percentage of foe's\\nnon-Special \"reduce damage by X%\" skills by\\n50% during combat (excluding area-of-effect\\nSpecials)."
+	},
+	{
+		"key": "MSID_H_\u5965\u7fa9\u968a\u5f62\u30fb\u7adc\u773c",
+		"value": "If foe initiates combat or if unit's HP \u2265 25%\\nat start of combat, inflicts Atk/Res-4 on foe,\\ndeals damage = 20% of unit's Res (excluding\\narea-of-effect Specials), reduces damage from\\nfoe's attacks by 20% of unit's Res (excluding\\narea-of-effect Specials), and grants Special\\ncooldown charge +1 to unit per attack during\\ncombat (only highest value applied; does not\\nstack), and also, if foe's attack can trigger\\nfoe's Special and unit's Res \u2265 foe's Res+5,\\ninflicts Special cooldown count+1 on foe\\nbefore foe's first attack during combat\\n(cannot exceed the foe's maximum Special\\ncooldown)."
+	},
+	{
+		"key": "MSID_H_\u901f\u3055\u5b88\u5099\u306e\u5203\u58c1",
+		"value": "Foes with Range = 1 cannot move through\\nspaces adjacent to unit (does not affect foes\\nwith Pass skills).\\n\\nFoes with Range = 2 cannot move through\\nspaces within 2 spaces of unit (does not\\naffect foes with Pass skills).\\n\\nInflicts Spd/Def-4 on foe, deals damage = 15%\\nof the greater of unit's Spd or Def (excluding\\narea-of-effect Specials), reduces damage from\\nfoe's first attack by 7 (\"first attack\" normally\\nmeans only the first strike; for effects that\\ngrant \"unit attacks twice,\" it means the first and\\nsecond strikes), and neutralizes effects that\\ninflict \"Special cooldown charge -X\" on unit\\nduring combat."
+	},
+	{
+		"key": "MSID_H_\u304a\u308c\u306e\u3001\u305f\u3060\u4e00\u4eba\u306e",
+		"value": "$aIf foe with Range = 2 initiates combat against\\nan ally within 2 spaces of unit, triggers\\n\u3010Savior\u3011on unit.\\n\\nIf foe initiates combat against target ally\\nwithin 4 spaces of unit, triggers\u3010Savior\u3011\\non unit. (If support partner is on player team,\\ntarget ally is any support partner; otherwise,\\ntarget ally is the ally with the highest Atk on\\nplayer team, excluding unit.)\\n\\nUnit can move to a space within 2 spaces\\nof target ally.\\n\\nIf unit is transformed or if foe initiates combat,\\ngrants Atk/Def/Res+5 to unit, unit deals +7\\ndamage (excluding area-of-effect Specials),\\nreduces damage from foe's attacks by 7\\n(excluding area-of-effect Specials), and grants\\nSpecial cooldown count-1 to unit before unit's\\nfirst attack during combat, and any \"reduces\\ndamage by X%\" effect that can be triggered\\nonly once per combat by unit's equipped\\nSpecial skill can be triggered up to twice per\\ncombat (excludes boosted Special effects\\nfrom engaging; only highest value applied;\\ndoes not stack).\\n\\n\u3010Savior\u3011\\nUnit takes ally's space, enters combat in ally's\\nplace, and receives all after-combat effects.\\n\\nSavior will not trigger if ally is on terrain that\\nunit cannot move to or if multiple units are able\\nto use Savior during the same combat. If Savior\\ntriggers, after-combat movement effects do\\nnot occur."
+	},
+	{
+		"key": "MSID_H_\u304a\u308c\u306e\u3001\u305f\u3060\u4e00\u4eba\u306e_NOSKW",
+		"value": "$aIf foe with Range = 2 initiates combat against\\nan ally within 2 spaces of unit, triggers\\n\u3010Savior\u3011on unit.\\n\\nIf foe initiates combat against target ally\\nwithin 4 spaces of unit, triggers\u3010Savior\u3011\\non unit. (If support partner is on player team,\\ntarget ally is any support partner; otherwise,\\ntarget ally is the ally with the highest Atk on\\nplayer team, excluding unit.)\\n\\nUnit can move to a space within 2 spaces\\nof target ally.\\n\\nIf unit is transformed or if foe initiates combat,\\ngrants Atk/Def/Res+5 to unit, unit deals +7\\ndamage (excluding area-of-effect Specials),\\nreduces damage from foe's attacks by 7\\n(excluding area-of-effect Specials), and grants\\nSpecial cooldown count-1 to unit before unit's\\nfirst attack during combat, and any \"reduces\\ndamage by X%\" effect that can be triggered\\nonly once per combat by unit's equipped\\nSpecial skill can be triggered up to twice per\\ncombat (excludes boosted Special effects\\nfrom engaging; only highest value applied;\\ndoes not stack)."
+	},
+	{
+		"key": "MSID_H_\u7cbe\u970a\u306e\u68ee\u306e\u79d8\u672c\u6539",
+		"value": "Accelerates Special trigger (cooldown count-1).\\nEffective against dragon foes.\\n\\nIf unit initiates combat or is within 3 spaces\\nof an ally, inflicts Atk/Res-6 on foe, reduces\\ndamage from foe's attacks by 20% of unit's\\nRes (excluding area-of-effect Specials), unit\\nmakes a guaranteed follow-up attack, and\\ndisables foe's skills that \"calculate damage\\nusing the lower of foe's Def or Res\" during\\ncombat, and also, if unit's Res > foe's Res\\nat start of combat, inflicts penalty on foe's\\nAtk/Res during combat = difference between\\nRes stats at start of combat (max 16)."
+	},
+	{
+		"key": "MSID_H_\u7adc\u795e\u306e\u30d6\u30ec\u30b9\u6539",
+		"value": "$aAccelerates Special trigger (cooldown count-1).\\n\\nIf foe's Range = 2, calculates damage using\\nthe lower of foe's Def or Res.\\n\\nIf unit initiates combat or is within 3 spaces\\nof an ally, inflicts Atk/Spd/Def/Res-5 on foe,\\nunit deals +X \u00d7 5 damage (max 25; X = number\\nof\u3010Bonus\u3011effects active on unit and\\nfoe, excluding stat bonuses; excluding\\narea-of-effect Specials), and unit makes a\\nguaranteed follow-up attack during combat,\\nand reduces damage from attacks during\\ncombat and from area-of-effect Specials\\n(excluding R\u00f8kkr area-of-effect Specials)\\nby 40%.\\n\\n\u3010Bonus\u3011\\nAll effects that last \"for 1 turn\" or \"that turn\\nonly.\" Includes bonuses granted by a skill\\nlike Rally or Hone and positive status effects\\n(extra movement or effects like Dominance)."
+	},
+	{
+		"key": "MSID_H_\u7adc\u795e\u306e\u30d6\u30ec\u30b9\u6539_NOSKW",
+		"value": "$aAccelerates Special trigger (cooldown count-1).\\n\\nIf foe's Range = 2, calculates damage using\\nthe lower of foe's Def or Res.\\n\\nIf unit initiates combat or is within 3 spaces\\nof an ally, inflicts Atk/Spd/Def/Res-5 on foe,\\nunit deals +X \u00d7 5 damage (max 25; X = number\\nof\u3010Bonus\u3011effects active on unit and\\nfoe, excluding stat bonuses; excluding\\narea-of-effect Specials), and unit makes a\\nguaranteed follow-up attack during combat,\\nand reduces damage from attacks during\\ncombat and from area-of-effect Specials\\n(excluding R\u00f8kkr area-of-effect Specials)\\nby 40%."
+	},
+	{
+		"key": "MSID_H_\u30d5\u30ea\u30b9\u30c8\u6539",
+		"value": "$aGrants Spd+3. At start of turn, if unit is within\\n2 spaces of an ally, grants\u3010Paranoia\u3011and\\n\"Special cooldown charge +1 per attack during\\ncombat (only highest value applied; does not\\nstack)\" to unit and allies within 2 spaces of unit\\nfor 1 turn, and deals 1 damage to unit and\\nthose allies.\\n\\nAt start of combat, if unit's HP \u2264 99% or if\\nPenalty is active on unit, grants bonus to unit's\\nAtk/Spd = 10% of unit's Spd at start of combat\\n+ 6, deals damage = 20% of unit's Spd\\n(excluding area-of-effect Specials), and\\nreduces damage from foe's first attack by\\n30% during combat (\"first attack\" normally\\nmeans only the first strike; for effects that\\ngrant \"unit attacks twice,\" it means the first\\nand second strikes).\\n\\n\u3010Paranoia\u3011\\nAt start of combat, if unit's HP \u2264 99%, grants\\nAtk+5 to unit during combat, and also, if unit\\ninitiates combat, unit can make a follow-up\\nattack before foe's next attack.\\n\\nAt start of combat, if unit's HP \u2264 99%, if foe\\ninitiates combat, and if either that foe's Range\\n= unit's Range or number of Penalty effects\\nactive on foe excluding stat penalties \u2265 3, unit\\ncan counterattack before foe's first attack\\n(excluding when unit's Savior effect triggers)."
+	},
+	{
+		"key": "MSID_H_\u30d5\u30ea\u30b9\u30c8\u6539_NOSKW",
+		"value": "$aGrants Spd+3. At start of turn, if unit is within\\n2 spaces of an ally, grants\u3010Paranoia\u3011and\\n\"Special cooldown charge +1 per attack during\\ncombat (only highest value applied; does not\\nstack)\" to unit and allies within 2 spaces of unit\\nfor 1 turn, and deals 1 damage to unit and\\nthose allies.\\n\\nAt start of combat, if unit's HP \u2264 99% or if\\nPenalty is active on unit, grants bonus to unit's\\nAtk/Spd = 10% of unit's Spd at start of combat\\n+ 6, deals damage = 20% of unit's Spd\\n(excluding area-of-effect Specials), and\\nreduces damage from foe's first attack by\\n30% during combat (\"first attack\" normally\\nmeans only the first strike; for effects that\\ngrant \"unit attacks twice,\" it means the first\\nand second strikes)."
+	},
+	{
+		"key": "MSID_H_\u7834\u6ec5\u306e\u90aa\u66f8\u6539",
+		"value": "Grants Atk+3. At start of combat, if unit's\\nHP \u2265 25%, inflicts Atk/Res-6 on foe,\\nneutralizes foe's bonuses to Atk/Res, and\\nunit deals +X damage during combat (X =\\nhighest total penalties among target and\\nfoes within 2 spaces of target; excluding\\narea-of-effect Specials), and also, following\\neffects will occur based on the value of total\\nbonuses on unit + value of total penalties on\\nfoe: if \u2265 5, \"foe cannot make a follow-up\\nattack\"; and if \u2265 10, \"unit makes a guaranteed\\nfollow-up attack\"; and if \u2265 15, \"inflicts Special\\ncooldown charge -1 on foe per attack\\nduring combat.\""
+	},
+	{
+		"key": "MSID_H_\u6c37\u69cd\u30d5\u30a3\u30f3\u30d6\u30eb\u6539",
+		"value": "$aGrants Atk+3.\\n\\nIf there is a dragon, beast, cavalry, or flying\\nally on the map, enables\u3010Canto (\uff12)\u3011.\\n\\nAt start of player phase or enemy phase,\\ninflicts Atk/Res-7,\u3010Exposure\u3011, and\u3010Guard\u3011\\non foes with Res < unit's Res and that are\\nwithin 2 spaces of another foe through their\\nnext actions.\\n\\nAt start of combat, if unit's HP \u2265 25%, inflicts\\nAtk/Res-6 and Spd-5 on foe and unit makes\\na guaranteed follow-up attack during combat,\\nand also, when unit deals damage to foe during\\ncombat, restores 7 HP to unit.\\n\\n\u3010Canto (\uff12)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move \uff12 space(s).\\n(Once per turn. Only highest value applied.\\nDoes not stack.)\\n\\n\u3010Exposure\u3011\\nFoe's attacks deal +10 damage.\\n\\n\u3010Guard\u3011\\nInflicts Special cooldown charge -1 on target\\nper attack during combat through its next action.\\n(Only highest value applied. Does not stack.)"
+	},
+	{
+		"key": "MSID_H_\u6c37\u69cd\u30d5\u30a3\u30f3\u30d6\u30eb\u6539_NOSKW",
+		"value": "$aGrants Atk+3.\\n\\nIf there is a dragon, beast, cavalry, or flying\\nally on the map, enables\u3010Canto (\uff12)\u3011.\\n\\nAt start of player phase or enemy phase,\\ninflicts Atk/Res-7,\u3010Exposure\u3011, and\u3010Guard\u3011\\non foes with Res < unit's Res and that are\\nwithin 2 spaces of another foe through their\\nnext actions.\\n\\nAt start of combat, if unit's HP \u2265 25%, inflicts\\nAtk/Res-6 and Spd-5 on foe and unit makes\\na guaranteed follow-up attack during combat,\\nand also, when unit deals damage to foe during\\ncombat, restores 7 HP to unit."
+	},
+	{
+		"key": "MID_CHAPTER_TITLE_C0907",
+		"value": "Book IX, Chapter 7"
+	},
+	{
+		"key": "MID_CHAPTER_C0907",
+		"value": "Fall from Heaven"
+	},
+	{
+		"key": "MID_STAGE_TITLE_S9071",
+		"value": "Chapter 7-1"
+	},
+	{
+		"key": "MID_STAGE_TITLE_S9072",
+		"value": "Chapter 7-2"
+	},
+	{
+		"key": "MID_STAGE_TITLE_S9073",
+		"value": "Chapter 7-3"
+	},
+	{
+		"key": "MID_STAGE_TITLE_S9074",
+		"value": "Chapter 7-4"
+	},
+	{
+		"key": "MID_STAGE_TITLE_S9075",
+		"value": "Chapter 7-5"
+	},
+	{
+		"key": "MID_STAGE_S9071",
+		"value": "All is Lost"
+	},
+	{
+		"key": "MID_STAGE_S9072",
+		"value": "Red Days Past"
+	},
+	{
+		"key": "MID_STAGE_S9073",
+		"value": "Dauntless Beast"
+	},
+	{
+		"key": "MID_STAGE_S9074",
+		"value": "Fell Dragon Child"
+	},
+	{
+		"key": "MID_STAGE_S9075",
+		"value": "Heavenly Advent"
+	},
+	{
+		"key": "MID_STAGE_HONOR_T0199",
+		"value": "King of Desolation"
+	},
+	{
+		"key": "MID_STAGE_T0199",
+		"value": "F\u00e1fnir"
+	},
+	{
+		"key": "MID_STAGE_TITLE_SB_0094",
+		"value": "94th Assault"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PB272",
+		"value": "Skill Studies 272"
+	},
+	{
+		"key": "MID_STAGE_PB272",
+		"value": "Fell Children"
+	}
+]
