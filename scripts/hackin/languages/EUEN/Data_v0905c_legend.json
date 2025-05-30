@@ -1,0 +1,746 @@
+[
+	{
+		"key": "MDAID_\u30de\u30c3\u30c9\u30e1\u30ac\u30cd\u30fb\u91d1",
+		"value": "Gold Mad Spectacles"
+	},
+	{
+		"key": "MDAID_H_\u30de\u30c3\u30c9\u30e1\u30ac\u30cd\u30fb\u91d1",
+		"value": "Proof of victory over Legendary\\nBlack Knight."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_84",
+		"value": "Reduces the effect of Deep Wounds by 50%\\nduring combat and restores 40% of unit's\\nmaximum HP as unit's combat begins\\n(triggers after effects that deal damage as\\ncombat begins; only highest value applied;\\ndoes not stack).\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_85",
+		"value": "Reduces damage from foe's first attack by 7\\nduring combat (\"first attack\" normally means\\nonly the first strike; for effects that grant \"unit\\nattacks twice,\" it means the first and second\\nstrikes), and also, unit's next attack deals\\ndamage = total damage reduced from foe's\\nfirst attack (by any source, including\\nother skills). Resets at end of combat.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_HELP_84",
+		"value": "Reduces Deep Wounds by 50%, restores 40%\\n  of max HP as combat begins"
+	},
+	{
+		"key": "MID_ENHANCE_HELP_85",
+		"value": "-7 damage from first attacks, and unit's next\\n  attack deals damage = total damage reduction"
+	},
+	{
+		"key": "MID_MISSION_M202506A_TITLE",
+		"value": "Jun Quests"
+	},
+	{
+		"key": "MID_MISSION_M202506A_A1",
+		"value": "Arena Assault: Win 1"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A1",
+		"value": "Win one battle in Arena Assault."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A2",
+		"value": "Arena Assault: 3 in a Row"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A2",
+		"value": "Win three consecutive battles\\nin Arena Assault."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A3",
+		"value": "Arena Assault: 5 in a Row"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A3",
+		"value": "Win five consecutive battles\\nin Arena Assault."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A4",
+		"value": "KO w/Alfonse"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A4",
+		"value": "Defeat a foe with Alfonse: Prince of Askr."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A5",
+		"value": "KO w/Sharena"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A5",
+		"value": "Defeat a foe with Sharena: Princess of Askr."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A6",
+		"value": "KO w/Anna"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A6",
+		"value": "Defeat a foe with Anna: Commander."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A7",
+		"value": "KO Red Foe"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A7",
+		"value": "Defeat a red foe."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A8",
+		"value": "KO Blue Foe"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A8",
+		"value": "Defeat a blue foe."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A9",
+		"value": "KO Green Foe"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A9",
+		"value": "Defeat a green foe."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A10",
+		"value": "KO Colorless Foe"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A10",
+		"value": "Defeat a colorless foe."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A11",
+		"value": "KO Infantry Foe"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A11",
+		"value": "Defeat an infantry foe."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A12",
+		"value": "KO Armored Foe"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A12",
+		"value": "Defeat an armored foe."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A13",
+		"value": "KO Cavalry Foe"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A13",
+		"value": "Defeat a cavalry foe."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A14",
+		"value": "KO Flying Foe"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A14",
+		"value": "Defeat a flying foe."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A15",
+		"value": "Clear 1-1"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A15",
+		"value": "Clear Book VII, Chapter 1: Part 1 on Lunatic\\ndifficulty. All four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A16",
+		"value": "Clear 1-2"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A16",
+		"value": "Clear Book VII, Chapter 1: Part 2 on Lunatic\\ndifficulty. All four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A17",
+		"value": "Clear 1-3"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A17",
+		"value": "Clear Book VII, Chapter 1: Part 3 on Lunatic\\ndifficulty. All four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A18",
+		"value": "Clear 1-4"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A18",
+		"value": "Clear Book VII, Chapter 1: Part 4 on Lunatic\\ndifficulty. All four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A19",
+		"value": "Clear 1-5"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A19",
+		"value": "Clear Book VII, Chapter 1: Part 5 on Lunatic\\ndifficulty. All four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A20",
+		"value": "AR: Attack Successfully"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A20",
+		"value": "Successfully attack in Aether Raids."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A21",
+		"value": "AR: Attack Successfully"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A21",
+		"value": "Successfully attack in Aether Raids."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A22",
+		"value": "AR: Attack Successfully"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A22",
+		"value": "Successfully attack in Aether Raids."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A23",
+		"value": "Win Arena Duel"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A23",
+		"value": "Win an Arena Duel at any difficulty."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A24",
+		"value": "Win Arena Duel"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A24",
+		"value": "Win an Arena Duel at any difficulty."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A25",
+		"value": "Win Arena Duel"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A25",
+		"value": "Win an Arena Duel at any difficulty."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_TITLE",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A1",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A1",
+		"value": "Win a battle in the Voting Gauntlet."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A2",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A2",
+		"value": "Win a battle in the Voting Gauntlet."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A3",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A3",
+		"value": "Win a battle in the Voting Gauntlet."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A4",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A4",
+		"value": "Win a battle in the Voting Gauntlet."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A5",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A5",
+		"value": "Win a battle in the Voting Gauntlet."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A6",
+		"value": "Tower: 2nd Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A6",
+		"value": "Clear the second stratum of the Training Tower."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A7",
+		"value": "Tower: 5th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A7",
+		"value": "Clear the fifth stratum of the Training Tower."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A8",
+		"value": "Tower: 8th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A8",
+		"value": "Clear the eighth stratum of the Training Tower."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A9",
+		"value": "Win Arena Duel"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A9",
+		"value": "Win an Arena Duel at any difficulty."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A10",
+		"value": "Win Arena Duel"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A10",
+		"value": "Win an Arena Duel at any difficulty."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A11",
+		"value": "Win Int.+ Arena Duel"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A11",
+		"value": "Win an Arena Duel on Intermediate or higher\\ndifficulty."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A12",
+		"value": "Win Int.+ Arena Duel"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A12",
+		"value": "Win an Arena Duel on Intermediate or higher\\ndifficulty."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A13",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A13",
+		"value": "Win a battle in the Voting Gauntlet with a red\\nally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A14",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A14",
+		"value": "Win a battle in the Voting Gauntlet with a blue\\nally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A15",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A15",
+		"value": "Win a battle in the Voting Gauntlet with a green\\nally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A16",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A16",
+		"value": "Win a battle in the Voting Gauntlet with a\\ncolorless ally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A17",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A17",
+		"value": "Win a battle in the Voting Gauntlet with a red\\nally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A18",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A18",
+		"value": "Win a battle in the Voting Gauntlet with a blue\\nally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A19",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A19",
+		"value": "Win a battle in the Voting Gauntlet with a green\\nally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A20",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A20",
+		"value": "Win a battle in the Voting Gauntlet with a\\ncolorless ally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A21",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A21",
+		"value": "Win a battle in the Voting Gauntlet with a red\\nally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A22",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A22",
+		"value": "Win a battle in the Voting Gauntlet with a blue\\nally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A23",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A23",
+		"value": "Win a battle in the Voting Gauntlet with a green\\nally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A24",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A24",
+		"value": "Win a battle in the Voting Gauntlet with a\\ncolorless ally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202506MJOLNIR01_TITLE",
+		"value": "Mj\u00f6lnir's Strike"
+	},
+	{
+		"key": "MID_MISSION_S202506MJOLNIR01_A1",
+		"value": "KO w/Summoner"
+	},
+	{
+		"key": "MID_MISSION_H_S202506MJOLNIR01_A1",
+		"value": "Defeat a foe with the My Summoner unit\\nin Mj\u00f6lnir's Strike."
+	},
+	{
+		"key": "MID_MISSION_S202506MJOLNIR01_A2",
+		"value": "KO w/Summoner"
+	},
+	{
+		"key": "MID_MISSION_H_S202506MJOLNIR01_A2",
+		"value": "Defeat a foe with the My Summoner unit\\nin Mj\u00f6lnir's Strike."
+	},
+	{
+		"key": "MID_MISSION_S202506TAPBTL01_TITLE",
+		"value": "Tap Battle"
+	},
+	{
+		"key": "MID_MISSION_S202506TAPBTL01_A1",
+		"value": "Clear Floors 1-5"
+	},
+	{
+		"key": "MID_MISSION_H_S202506TAPBTL01_A1",
+		"value": "Clear floors 1-5 in Tap Battle."
+	},
+	{
+		"key": "MID_MISSION_S202506TAPBTL01_A2",
+		"value": "Clear Floors 16-20"
+	},
+	{
+		"key": "MID_MISSION_H_S202506TAPBTL01_A2",
+		"value": "Clear floors 16-20 in Tap Battle."
+	},
+	{
+		"key": "MID_MISSION_S202506TAPBTL01_A3",
+		"value": "Clear Floors 36-40"
+	},
+	{
+		"key": "MID_MISSION_H_S202506TAPBTL01_A3",
+		"value": "Clear floors 36-40 in Tap Battle."
+	},
+	{
+		"key": "MID_MISSION_S202506TAPBTL01_A4",
+		"value": "Clear Floors 56-60"
+	},
+	{
+		"key": "MID_MISSION_H_S202506TAPBTL01_A4",
+		"value": "Clear floors 56-60 in Tap Battle."
+	},
+	{
+		"key": "MID_MISSION_S202506TAPBTL01_A5",
+		"value": "Clear Floors 76-80"
+	},
+	{
+		"key": "MID_MISSION_H_S202506TAPBTL01_A5",
+		"value": "Clear floors 76-80 in Tap Battle."
+	},
+	{
+		"key": "MID_MISSION_S202506TAPBTL01_A6",
+		"value": "Clear Floors 96-100"
+	},
+	{
+		"key": "MID_MISSION_H_S202506TAPBTL01_A6",
+		"value": "Clear floors 96-100 in Tap Battle."
+	},
+	{
+		"key": "MID_MISSION_S202506TAPBTL01_A7",
+		"value": "Clear Extra Stage 2"
+	},
+	{
+		"key": "MID_MISSION_H_S202506TAPBTL01_A7",
+		"value": "Clear Extra Stage 2 in Tap Battle. (Extra Stage\\n2 is playable after it unlocks.)"
+	},
+	{
+		"key": "MID_MISSION_S202506TAPBTL01_A8",
+		"value": "Clear Extra Stage 3"
+	},
+	{
+		"key": "MID_MISSION_H_S202506TAPBTL01_A8",
+		"value": "Clear Extra Stage 3 in Tap Battle. (Extra Stage\\n3 is playable after it unlocks.)"
+	},
+	{
+		"key": "MID_MISSION_S202506TAPBTL01_A9",
+		"value": "Clear Extra Stage 4"
+	},
+	{
+		"key": "MID_MISSION_H_S202506TAPBTL01_A9",
+		"value": "Clear Extra Stage 4 in Tap Battle. (Extra Stage\\n4 is playable after it unlocks.)"
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_TITLE",
+		"value": "Jun Training"
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A1",
+		"value": "Tower: 1st Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A1",
+		"value": "Clear the first stratum of the Training Tower.\\nAll four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A2",
+		"value": "Tower: 2nd Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A2",
+		"value": "Clear the second stratum of the Training Tower.\\nAll four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A3",
+		"value": "Tower: 3rd Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A3",
+		"value": "Clear the third stratum of the Training Tower.\\nAll four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A4",
+		"value": "Tower: 4th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A4",
+		"value": "Clear the fourth stratum of the Training Tower.\\nAll four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A5",
+		"value": "Tower: 5th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A5",
+		"value": "Clear the fifth stratum of the Training Tower.\\nAll four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A6",
+		"value": "Tower: 6th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A6",
+		"value": "Clear the sixth stratum of the Training Tower.\\nAll four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A7",
+		"value": "Tower: 7th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A7",
+		"value": "Clear the seventh stratum of the Training\\nTower. All four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A8",
+		"value": "Tower: 8th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A8",
+		"value": "Clear the eighth stratum of the Training Tower.\\nAll four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A9",
+		"value": "Tower: 9th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A9",
+		"value": "Clear the ninth stratum of the Training Tower.\\nAll four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A10",
+		"value": "Tower: 10th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A10",
+		"value": "Clear the tenth stratum of the Training Tower.\\nAll four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A11",
+		"value": "Tower: 10th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A11",
+		"value": "Clear the tenth stratum of the Training Tower\\nusing only infantry allies. (Allies deployed as\\ncohorts using Pair Up do not count.) All four\\nallies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A12",
+		"value": "Tower: 10th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A12",
+		"value": "Clear the tenth stratum of the Training Tower\\nusing only armored allies. (Allies deployed as\\ncohorts using Pair Up do not count.) All four\\nallies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A13",
+		"value": "Tower: 10th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A13",
+		"value": "Clear the tenth stratum of the Training Tower\\nusing only cavalry allies. (Allies deployed as\\ncohorts using Pair Up do not count.) All four\\nallies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A14",
+		"value": "Tower: 10th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A14",
+		"value": "Clear the tenth stratum of the Training Tower\\nusing only flying allies. (Allies deployed as\\ncohorts using Pair Up do not count.) All four\\nallies must survive."
+	},
+	{
+		"key": "MPID_\u4f1d\u627f\u6f06\u9ed2\u306e\u9a0e\u58eb",
+		"value": "Black Knight"
+	},
+	{
+		"key": "MPID_SEARCH_\u4f1d\u627f\u6f06\u9ed2\u306e\u9a0e\u58eb",
+		"value": "Black Knight"
+	},
+	{
+		"key": "MPID_HONOR_\u4f1d\u627f\u6f06\u9ed2\u306e\u9a0e\u58eb",
+		"value": "Mortal Legend"
+	},
+	{
+		"key": "MPID_H_\u4f1d\u627f\u6f06\u9ed2\u306e\u9a0e\u58eb",
+		"value": "A swordsman and general, revered as the\\nstrongest of Daein's Four Riders under Mad\\nKing Ashnard. It is said he protected the Dawn\\nMaiden, who sought to restore Daein's former\\nprosperity. Appears in Fire Emblem:\\nRadiant Dawn."
+	},
+	{
+		"key": "MPID_VOICE_\u4f1d\u627f\u6f06\u9ed2\u306e\u9a0e\u58eb",
+		"value": "Robert Clotworthy"
+	},
+	{
+		"key": "MPID_ILLUST_\u4f1d\u627f\u6f06\u9ed2\u306e\u9a0e\u58eb",
+		"value": "Kita Senri (\u5317\u5343\u91cc)"
+	},
+	{
+		"key": "MPID_LEGEND_\u4f1d\u627f\u6f06\u9ed2\u306e\u9a0e\u58eb",
+		"value": "Legendary Effect: Fire\\nAlly Boost: HP+3, Atk+2\\n\\nGrants allies this Legendary Effect\\nduring Fire season, if the Fire\\nblessing has been conferred and if\\nthis unit enters battle with them.\\n\\nStandard Effect 1: Duel\\nIf unit is 5\u2605 and level 40 and unit's stats total\\nless than 215, treats unit's stats as 215 in\\nmodes like Arena. (Higher-scoring opponents\\nwill appear. Stat total calculation excludes any\\nvalues added by merges and skills.)\\nStandard Effect 2: Pair Up\\nAn ability that can only be used under certain\\ncircumstances. Pair Up can be accessed from\\nthe Interact with Allies menu, and allows this\\nunit to join battle in a group with another ally."
+	},
+	{
+		"key": "MID_TIPS_Summon_v0905c_legend_01_\u4f1d\u627f\u6f06\u9ed2\u306e\u9a0e\u58eb",
+		"value": "Reduces damage from foe attacks and\\ncounters with an intense Luna! Can\\nalso grant allies the power of \"Imbue\"!"
+	},
+	{
+		"key": "MSID_\u7d42\u7740\u306e\u5263",
+		"value": "Final Sword"
+	},
+	{
+		"key": "MSID_SEARCH_\u7d42\u7740\u306e\u5263",
+		"value": "Final Sword"
+	},
+	{
+		"key": "MSID_\u6f06\u95c7\u306e\u6708\u5149",
+		"value": "Pitch-Dark Luna"
+	},
+	{
+		"key": "MSID_SEARCH_\u6f06\u95c7\u306e\u6708\u5149",
+		"value": "Pitch-Dark Luna"
+	},
+	{
+		"key": "MSID_\u9060\u53cd\u30fb\u653b\u5b88\u306e\u5bc6\u96c6",
+		"value": "Distant A/D Form"
+	},
+	{
+		"key": "MSID_SEARCH_\u9060\u53cd\u30fb\u653b\u5b88\u306e\u5bc6\u96c6",
+		"value": "Distant A/D Form"
+	},
+	{
+		"key": "MSID_\u53cd\u653b\u968a\u5f62",
+		"value": "Counter Fighter"
+	},
+	{
+		"key": "MSID_SEARCH_\u53cd\u653b\u968a\u5f62",
+		"value": "Counter Fighter"
+	},
+	{
+		"key": "MSID_\u6cbb\u7652\u72b6\u614b",
+		"value": "Imbue"
+	},
+	{
+		"key": "MSID_SEARCH_\u6cbb\u7652\u72b6\u614b",
+		"value": "Imbue"
+	},
+	{
+		"key": "MSID_H_\u7d42\u7740\u306e\u5263",
+		"value": "$aAccelerates Special trigger (cooldown count-1).\\n\\nAt start of player phase or enemy phase, if\\nunit's HP \u2265 25%, grants Atk/Def+6,\u3010Imbue\u3011,\\nand\u3010Reflex\u3011to unit and allies within 2 spaces\\nof unit for 1 turn.\\n\\nIf foe initiates combat or if unit's HP \u2265 25% at\\nstart of combat, grants Atk+X to unit, inflicts\\nAtk-X on foe (X = 20% of unit's Def at start of\\ncombat, + 6), unit deals +Y damage (excluding\\narea-of-effect Specials), reduces damage from\\nfoe's attacks by Y (excluding area-of-effect\\nSpecials), reduces damage from foe's Specials\\nby Y (excluding area-of-effect Specials; if foe's\\nHP \u2265 70% at start of combat, Y = 16; otherwise\\nY = 10), and neutralizes\u3010Deep Wounds\u3011during\\ncombat, and also, when unit's Special triggers,\\nneutralizes foe's \"reduces damage by X%\"\\neffects from foe's non-Special skills (excluding\\narea-of-effect Specials).\\n\\n\u3010Imbue\u3011\\nReduces the effect of\u3010Deep Wounds\u3011on unit by\\n50% during combat, and restores 40% of unit's\\nmaximum HP as unit's combat begins for 1 turn\\n(triggers after effects that deal damage as\\ncombat begins; only highest value applied;\\ndoes not stack).\\n\\n\u3010Reflex\u3011\\nReduces damage from foe's first attack by 7\\nduring combat (\"first attack\" normally means\\nonly the first strike; for effects that grant \"unit\\nattacks twice,\" it means the first and second\\nstrikes) and unit's next attack deals damage =\\ntotal damage reduced from foe's first attack\\n(by any source, including other skills; resets at\\nend of combat). (For 1 turn.)\\n\\n\u3010Deep Wounds\u3011\\nUnit's HP cannot be healed through its\\nnext action."
+	},
+	{
+		"key": "MSID_H_\u7d42\u7740\u306e\u5263_NOSKW",
+		"value": "$aAccelerates Special trigger (cooldown count-1).\\n\\nAt start of player phase or enemy phase, if\\nunit's HP \u2265 25%, grants Atk/Def+6,\u3010Imbue\u3011,\\nand\u3010Reflex\u3011to unit and allies within 2 spaces\\nof unit for 1 turn.\\n\\nIf foe initiates combat or if unit's HP \u2265 25% at\\nstart of combat, grants Atk+X to unit, inflicts\\nAtk-X on foe (X = 20% of unit's Def at start of\\ncombat, + 6), unit deals +Y damage (excluding\\narea-of-effect Specials), reduces damage from\\nfoe's attacks by Y (excluding area-of-effect\\nSpecials), reduces damage from foe's Specials\\nby Y (excluding area-of-effect Specials; if foe's\\nHP \u2265 70% at start of combat, Y = 16; otherwise\\nY = 10), and neutralizes\u3010Deep Wounds\u3011during\\ncombat, and also, when unit's Special triggers,\\nneutralizes foe's \"reduces damage by X%\"\\neffects from foe's non-Special skills (excluding\\narea-of-effect Specials)."
+	},
+	{
+		"key": "MSID_H_\u6f06\u95c7\u306e\u6708\u5149",
+		"value": "When Special triggers, boosts damage by 80%\\nof the greater of foe's Spd or Def.\\n\\nNeutralizes effects that prevent unit's\\ncounterattacks and reduces damage from\\nattacks by X% during combat (X = 50 - current\\nSpecial cooldown count value \u00d7 10, but if unit's\\nSpecial triggered during this combat, X = 50;\\nexcluding area-of-effect Specials), and also, if\\nunit's Def \u2265 foe's Def+5, disables unit's and\\nfoe's skills that change attack priority\\nduring combat."
+	},
+	{
+		"key": "MSID_H_\u9060\u53cd\u30fb\u653b\u5b88\u306e\u5bc6\u96c6",
+		"value": "Unit can counterattack regardless of foe's range.\\n\\nIf unit is within 3 spaces of an ally, grants\\nbonus to unit's Atk/Def during combat =\\nnumber of allies within 3 spaces of unit \u00d7 3\\n(max 9; if unit triggers Savior, value is treated\\nas 9)."
+	},
+	{
+		"key": "MSID_H_\u53cd\u653b\u968a\u5f62",
+		"value": "If foe initiates combat or if unit's HP \u2265 25%\\nat start of combat, inflicts Atk-5 on foe, deals\\ndamage = 15% of unit's Atk (excluding area-\\nof-effect Specials), and reduces damage from\\nfoe's attacks by 15% of unit's Atk during\\ncombat (excluding area-of-effect Specials),\\nand restores 7 HP to unit when unit deals\\ndamage to foe during combat, and also, if\\nunit's attack can trigger unit's Special, grants\\nSpecial cooldown count-2 to unit before foe's\\nfirst attack during combat."
+	},
+	{
+		"key": "MID_STAGE_HONOR_L0087",
+		"value": "Mortal Legend"
+	},
+	{
+		"key": "MID_STAGE_L0087",
+		"value": "Black Knight"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PB274",
+		"value": "Skill Studies 274"
+	},
+	{
+		"key": "MID_STAGE_PB274",
+		"value": "Mortal Legend"
+	}
+]

@@ -1,0 +1,746 @@
+[
+	{
+		"key": "MDAID_\u30de\u30c3\u30c9\u30e1\u30ac\u30cd\u30fb\u91d1",
+		"value": "\u00d3culos malucos: ouro"
+	},
+	{
+		"key": "MDAID_H_\u30de\u30c3\u30c9\u30e1\u30ac\u30cd\u30fb\u91d1",
+		"value": "Prova de vit\u00f3ria sobre o lend\u00e1rio\\nCavaleiro Negro."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_84",
+		"value": "Reduz em 50% o efeito de Feridas profundas\\ndurante o combate e restaura 40% dos PV\\nm\u00e1ximos no in\u00edcio do combate da unidade\\n(ativada depois de efeitos que infligem dano\\nno in\u00edcio do combate; s\u00f3 o valor mais alto\\nse aplica; n\u00e3o cumulativo).\\n(Por uma rodada.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_85",
+		"value": "Reduz o dano do primeiro ataque do inimigo\\nem 7 pontos durante o combate (\"primeiro\\nataque\" normalmente significa apenas o\\nprimeiro golpe; para efeitos que concedem\\n\"unidade ataca duas vezes\", significa o primeiro\\ne o segundo golpes) e o pr\u00f3ximo ataque da\\nunidade inflige dano = dano total reduzido do\\nprimeiro ataque do inimigo (de qualquer\\norigem, inclusive outras habilidades). Reinicia\\nao fim do combate.\\n(Por uma rodada.)"
+	},
+	{
+		"key": "MID_ENHANCE_HELP_84",
+		"value": "Reduz Feridas profundas em 50% e restaura\\n40% dos PV m\u00e1ximos no in\u00edcio do combate"
+	},
+	{
+		"key": "MID_ENHANCE_HELP_85",
+		"value": "-7 pontos de dano de primeiros ataques, e o\\npr\u00f3ximo ataque da unidade = redu\u00e7\u00e3o total\\nde dano"
+	},
+	{
+		"key": "MID_MISSION_M202506A_TITLE",
+		"value": "Objetivos: junho"
+	},
+	{
+		"key": "MID_MISSION_M202506A_A1",
+		"value": "OA: 1 mapa"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A1",
+		"value": "Ven\u00e7a uma batalha na Ofensiva na Arena."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A2",
+		"value": "OA: 3 mapas seguidos"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A2",
+		"value": "Ven\u00e7a tr\u00eas batalhas seguidas\\nna Ofensiva na Arena."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A3",
+		"value": "OA: 5 mapas seguidos"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A3",
+		"value": "Ven\u00e7a cinco batalhas seguidas\\nna Ofensiva na Arena."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A4",
+		"value": "Derrotar com Alfonse"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A4",
+		"value": "Derrote um inimigo com Alfonse:\\nPr\u00edncipe de Askr."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A5",
+		"value": "Derrotar com Sharena"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A5",
+		"value": "Derrote um inimigo com Sharena:\\nPrincesa de Askr."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A6",
+		"value": "Derrotar com Anna"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A6",
+		"value": "Derrote um inimigo com Anna:\\nComandante."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A7",
+		"value": "Derrotar inimigo vermelho"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A7",
+		"value": "Derrote um inimigo vermelho."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A8",
+		"value": "Derrotar inimigo azul"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A8",
+		"value": "Derrote um inimigo azul."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A9",
+		"value": "Derrotar inimigo verde"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A9",
+		"value": "Derrote um inimigo verde."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A10",
+		"value": "Derrotar inimigo cinza"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A10",
+		"value": "Derrote um inimigo cinza."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A11",
+		"value": "Derrotar inimigo infantaria"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A11",
+		"value": "Derrote um inimigo de infantaria."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A12",
+		"value": "Derrotar inimigo armadura"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A12",
+		"value": "Derrote um inimigo de armadura."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A13",
+		"value": "Derrotar inimigo cavalaria"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A13",
+		"value": "Derrote um inimigo de cavalaria."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A14",
+		"value": "Derrotar inimigo voador"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A14",
+		"value": "Derrote um inimigo voador."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A15",
+		"value": "Cap. 1 - Parte 1"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A15",
+		"value": "Complete a 1\u00aa parte do cap\u00edtulo 1 do Livro VII\\nno modo extremo. Todos os quatro aliados\\nprecisam sobreviver."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A16",
+		"value": "Cap. 1 - Parte 2"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A16",
+		"value": "Complete a 2\u00aa parte do cap\u00edtulo 1 do Livro VII\\nno modo extremo. Todos os quatro aliados\\nprecisam sobreviver."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A17",
+		"value": "Cap. 1 - Parte 3"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A17",
+		"value": "Complete a 3\u00aa parte do cap\u00edtulo 1 do Livro VII\\nno modo extremo. Todos os quatro aliados\\nprecisam sobreviver."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A18",
+		"value": "Cap. 1 - Parte 4"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A18",
+		"value": "Complete a 4\u00aa parte do cap\u00edtulo 1 do Livro VII\\nno modo extremo. Todos os quatro aliados\\nprecisam sobreviver."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A19",
+		"value": "Cap. 1 - Parte 5"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A19",
+		"value": "Complete a 5\u00aa parte do cap\u00edtulo 1 do Livro VII\\nno modo extremo. Todos os quatro aliados\\nprecisam sobreviver."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A20",
+		"value": "IE: Ataque bem-sucedido"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A20",
+		"value": "Ataque com \u00eaxito nas Investidas et\u00e9reas."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A21",
+		"value": "IE: Ataque bem-sucedido"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A21",
+		"value": "Ataque com \u00eaxito nas Investidas et\u00e9reas."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A22",
+		"value": "IE: Ataque bem-sucedido"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A22",
+		"value": "Ataque com \u00eaxito nas Investidas et\u00e9reas."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A23",
+		"value": "Vit\u00f3ria na Arena"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A23",
+		"value": "Ven\u00e7a combates na Arena em\\nqualquer modo de dificuldade."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A24",
+		"value": "Vit\u00f3ria na Arena"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A24",
+		"value": "Ven\u00e7a combates na Arena em\\nqualquer modo de dificuldade."
+	},
+	{
+		"key": "MID_MISSION_M202506A_A25",
+		"value": "Vit\u00f3ria na Arena"
+	},
+	{
+		"key": "MID_MISSION_H_M202506A_A25",
+		"value": "Ven\u00e7a combates na Arena em\\nqualquer modo de dificuldade."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_TITLE",
+		"value": "Torneio de votos"
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A1",
+		"value": "Torneio de votos"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A1",
+		"value": "Ven\u00e7a uma batalha no torneio de votos."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A2",
+		"value": "Torneio de votos"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A2",
+		"value": "Ven\u00e7a uma batalha no torneio de votos."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A3",
+		"value": "Torneio de votos"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A3",
+		"value": "Ven\u00e7a uma batalha no torneio de votos."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A4",
+		"value": "Torneio de votos"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A4",
+		"value": "Ven\u00e7a uma batalha no torneio de votos."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A5",
+		"value": "Torneio de votos"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A5",
+		"value": "Ven\u00e7a uma batalha no torneio de votos."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A6",
+		"value": "Torre de treino: 2\u00ba estrato"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A6",
+		"value": "Complete o segundo estrato da torre de treino."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A7",
+		"value": "Torre de treino: 5\u00ba estrato"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A7",
+		"value": "Complete o quinto estrato da torre de treino."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A8",
+		"value": "Torre de treino: 8\u00ba estrato"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A8",
+		"value": "Complete o oitavo estrato da torre de treino."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A9",
+		"value": "Vit\u00f3ria na Arena"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A9",
+		"value": "Ven\u00e7a combates na Arena em\\nqualquer modo de dificuldade."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A10",
+		"value": "Vit\u00f3ria na Arena"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A10",
+		"value": "Ven\u00e7a combates na Arena em\\nqualquer modo de dificuldade."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A11",
+		"value": "M\u00e9rito na Arena"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A11",
+		"value": "Ven\u00e7a combates na Arena no modo de\\ndificuldade intermedi\u00e1rio ou superior."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A12",
+		"value": "M\u00e9rito na Arena"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A12",
+		"value": "Ven\u00e7a combates na Arena no modo de\\ndificuldade intermedi\u00e1rio ou superior."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A13",
+		"value": "Torneio de votos"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A13",
+		"value": "Ven\u00e7a uma batalha no torneio de votos\\ncom um aliado vermelho na sua equipe."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A14",
+		"value": "Torneio de votos"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A14",
+		"value": "Ven\u00e7a uma batalha no torneio de votos\\ncom um aliado azul na sua equipe."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A15",
+		"value": "Torneio de votos"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A15",
+		"value": "Ven\u00e7a uma batalha no torneio de votos\\ncom um aliado verde na sua equipe."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A16",
+		"value": "Torneio de votos"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A16",
+		"value": "Ven\u00e7a uma batalha no torneio de votos\\ncom um aliado cinza na sua equipe."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A17",
+		"value": "Torneio de votos"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A17",
+		"value": "Ven\u00e7a uma batalha no torneio de votos\\ncom um aliado vermelho na sua equipe."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A18",
+		"value": "Torneio de votos"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A18",
+		"value": "Ven\u00e7a uma batalha no torneio de votos\\ncom um aliado azul na sua equipe."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A19",
+		"value": "Torneio de votos"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A19",
+		"value": "Ven\u00e7a uma batalha no torneio de votos\\ncom um aliado verde na sua equipe."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A20",
+		"value": "Torneio de votos"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A20",
+		"value": "Ven\u00e7a uma batalha no torneio de votos\\ncom um aliado cinza na sua equipe."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A21",
+		"value": "Torneio de votos"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A21",
+		"value": "Ven\u00e7a uma batalha no torneio de votos\\ncom um aliado vermelho na sua equipe."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A22",
+		"value": "Torneio de votos"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A22",
+		"value": "Ven\u00e7a uma batalha no torneio de votos\\ncom um aliado azul na sua equipe."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A23",
+		"value": "Torneio de votos"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A23",
+		"value": "Ven\u00e7a uma batalha no torneio de votos\\ncom um aliado verde na sua equipe."
+	},
+	{
+		"key": "MID_MISSION_S202505VOTE02_A24",
+		"value": "Torneio de votos"
+	},
+	{
+		"key": "MID_MISSION_H_S202505VOTE02_A24",
+		"value": "Ven\u00e7a uma batalha no torneio de votos\\ncom um aliado cinza na sua equipe."
+	},
+	{
+		"key": "MID_MISSION_S202506MJOLNIR01_TITLE",
+		"value": "Embate de Mj\u00f6lnir"
+	},
+	{
+		"key": "MID_MISSION_S202506MJOLNIR01_A1",
+		"value": "Derrotar com seu avatar"
+	},
+	{
+		"key": "MID_MISSION_H_S202506MJOLNIR01_A1",
+		"value": "Derrote um inimigo com o seu avatar no\\nEmbate de Mj\u00f6lnir."
+	},
+	{
+		"key": "MID_MISSION_S202506MJOLNIR01_A2",
+		"value": "Derrotar com seu avatar"
+	},
+	{
+		"key": "MID_MISSION_H_S202506MJOLNIR01_A2",
+		"value": "Derrote um inimigo com o seu avatar no\\nEmbate de Mj\u00f6lnir."
+	},
+	{
+		"key": "MID_MISSION_S202506TAPBTL01_TITLE",
+		"value": "Batalha t\u00e1til"
+	},
+	{
+		"key": "MID_MISSION_S202506TAPBTL01_A1",
+		"value": "Pisos 1-5"
+	},
+	{
+		"key": "MID_MISSION_H_S202506TAPBTL01_A1",
+		"value": "Complete os pisos 1-5 na batalha t\u00e1til."
+	},
+	{
+		"key": "MID_MISSION_S202506TAPBTL01_A2",
+		"value": "Pisos 16-20"
+	},
+	{
+		"key": "MID_MISSION_H_S202506TAPBTL01_A2",
+		"value": "Complete os pisos 16-20 na batalha t\u00e1til."
+	},
+	{
+		"key": "MID_MISSION_S202506TAPBTL01_A3",
+		"value": "Pisos 36-40"
+	},
+	{
+		"key": "MID_MISSION_H_S202506TAPBTL01_A3",
+		"value": "Complete os pisos 36-40 na batalha t\u00e1til."
+	},
+	{
+		"key": "MID_MISSION_S202506TAPBTL01_A4",
+		"value": "Pisos 56-60"
+	},
+	{
+		"key": "MID_MISSION_H_S202506TAPBTL01_A4",
+		"value": "Complete os pisos 56-60 na batalha t\u00e1til."
+	},
+	{
+		"key": "MID_MISSION_S202506TAPBTL01_A5",
+		"value": "Pisos 76-80"
+	},
+	{
+		"key": "MID_MISSION_H_S202506TAPBTL01_A5",
+		"value": "Complete os pisos 76-80 na batalha t\u00e1til."
+	},
+	{
+		"key": "MID_MISSION_S202506TAPBTL01_A6",
+		"value": "Pisos 96-100"
+	},
+	{
+		"key": "MID_MISSION_H_S202506TAPBTL01_A6",
+		"value": "Complete os pisos 96-100 na batalha t\u00e1til."
+	},
+	{
+		"key": "MID_MISSION_S202506TAPBTL01_A7",
+		"value": "Etapa extra 2"
+	},
+	{
+		"key": "MID_MISSION_H_S202506TAPBTL01_A7",
+		"value": "Complete a etapa extra 2 na batalha t\u00e1til.\\n(\u00c9 poss\u00edvel jogar essa etapa depois que\\nela for desbloqueada.)"
+	},
+	{
+		"key": "MID_MISSION_S202506TAPBTL01_A8",
+		"value": "Etapa extra 3"
+	},
+	{
+		"key": "MID_MISSION_H_S202506TAPBTL01_A8",
+		"value": "Complete a etapa extra 3 na batalha t\u00e1til.\\n(\u00c9 poss\u00edvel jogar essa etapa depois que\\nela for desbloqueada.)"
+	},
+	{
+		"key": "MID_MISSION_S202506TAPBTL01_A9",
+		"value": "Etapa extra 4"
+	},
+	{
+		"key": "MID_MISSION_H_S202506TAPBTL01_A9",
+		"value": "Complete a etapa extra 4 na batalha t\u00e1til.\\n(\u00c9 poss\u00edvel jogar essa etapa depois que\\nela for desbloqueada.)"
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_TITLE",
+		"value": "Treinos de junho"
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A1",
+		"value": "Torre de treino: 1\u00ba estrato"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A1",
+		"value": "Complete o primeiro estrato da torre de treino.\\nTodos os quatro aliados precisam sobreviver."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A2",
+		"value": "Torre de treino: 2\u00ba estrato"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A2",
+		"value": "Complete o segundo estrato da torre de treino.\\nTodos os quatro aliados precisam sobreviver."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A3",
+		"value": "Torre de treino: 3\u00ba estrato"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A3",
+		"value": "Complete o terceiro estrato da torre de treino.\\nTodos os quatro aliados precisam sobreviver."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A4",
+		"value": "Torre de treino: 4\u00ba estrato"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A4",
+		"value": "Complete o quarto estrato da torre de treino.\\nTodos os quatro aliados precisam sobreviver."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A5",
+		"value": "Torre de treino: 5\u00ba estrato"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A5",
+		"value": "Complete o quinto estrato da torre de treino.\\nTodos os quatro aliados precisam sobreviver."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A6",
+		"value": "Torre de treino: 6\u00ba estrato"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A6",
+		"value": "Complete o sexto estrato da torre de treino.\\nTodos os quatro aliados precisam sobreviver."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A7",
+		"value": "Torre de treino: 7\u00ba estrato"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A7",
+		"value": "Complete o s\u00e9timo estrato da torre de treino.\\nTodos os quatro aliados precisam sobreviver."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A8",
+		"value": "Torre de treino: 8\u00ba estrato"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A8",
+		"value": "Complete o oitavo estrato da torre de treino.\\nTodos os quatro aliados precisam sobreviver."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A9",
+		"value": "Torre de treino: 9\u00ba estrato"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A9",
+		"value": "Complete o nono estrato da torre de treino.\\nTodos os quatro aliados precisam sobreviver."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A10",
+		"value": "Torre de treino: 10\u00ba estrato"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A10",
+		"value": "Complete o d\u00e9cimo estrato da torre de treino.\\nTodos os quatro aliados precisam sobreviver."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A11",
+		"value": "Torre de treino: 10\u00ba estrato"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A11",
+		"value": "Complete o d\u00e9cimo estrato da torre de treino\\nusando apenas aliados de infantaria. (Aliados\\nenviados \u00e0 batalha em parceria como\\nauxiliares n\u00e3o contam.) Todos os quatro\\naliados precisam sobreviver."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A12",
+		"value": "Torre de treino: 10\u00ba estrato"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A12",
+		"value": "Complete o d\u00e9cimo estrato da torre de treino\\nusando apenas aliados de armadura. (Aliados\\nenviados \u00e0 batalha em parceria como\\nauxiliares n\u00e3o contam.) Todos os quatro\\naliados precisam sobreviver."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A13",
+		"value": "Torre de treino: 10\u00ba estrato"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A13",
+		"value": "Complete o d\u00e9cimo estrato da torre de treino\\nusando apenas aliados de cavalaria. (Aliados\\nenviados \u00e0 batalha em parceria como\\nauxiliares n\u00e3o contam.) Todos os quatro\\naliados precisam sobreviver."
+	},
+	{
+		"key": "MID_MISSION_W_M202506B_A14",
+		"value": "Torre de treino: 10\u00ba estrato"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202506B_A14",
+		"value": "Complete o d\u00e9cimo estrato da torre de treino\\nusando apenas aliados voadores. (Aliados\\nenviados \u00e0 batalha em parceria como\\nauxiliares n\u00e3o contam.) Todos os quatro\\naliados precisam sobreviver."
+	},
+	{
+		"key": "MPID_\u4f1d\u627f\u6f06\u9ed2\u306e\u9a0e\u58eb",
+		"value": "Cavaleiro Negro"
+	},
+	{
+		"key": "MPID_SEARCH_\u4f1d\u627f\u6f06\u9ed2\u306e\u9a0e\u58eb",
+		"value": "Cavaleiro Negro"
+	},
+	{
+		"key": "MPID_HONOR_\u4f1d\u627f\u6f06\u9ed2\u306e\u9a0e\u58eb",
+		"value": "Lend\u00e1rio mortal"
+	},
+	{
+		"key": "MPID_H_\u4f1d\u627f\u6f06\u9ed2\u306e\u9a0e\u58eb",
+		"value": "Espadachim e general venerado como o mais\\nforte dos Quatro Ginetes de Daein, sob servi\u00e7o\\ndo rei louco de Ashnard. Sabe-se que ele\\nprotegeu a dama da alva, a qual buscava\\nrestaurar a prosperidade da antiga Daien.\\nAparece em Fire Emblem: Radiant Dawn."
+	},
+	{
+		"key": "MPID_VOICE_\u4f1d\u627f\u6f06\u9ed2\u306e\u9a0e\u58eb",
+		"value": "Robert Clotworthy"
+	},
+	{
+		"key": "MPID_ILLUST_\u4f1d\u627f\u6f06\u9ed2\u306e\u9a0e\u58eb",
+		"value": "Kita Senri (\u5317\u5343\u91cc)"
+	},
+	{
+		"key": "MPID_LEGEND_\u4f1d\u627f\u6f06\u9ed2\u306e\u9a0e\u58eb",
+		"value": "Efeito lend\u00e1rio: Fogo\\nMelhora dos aliados: PV +3, Atq. +2\\n\\nConcede este efeito lend\u00e1rio a aliados\\ndurante a temporada de fogo, se a d\u00e1diva\\nde fogo foi conferida aos aliados e se esta\\nunidade participar de uma batalha com eles.\\n\\nEfeito padr\u00e3o 1: Duelo\\nSe a unidade tiver raridade 5 \u2605, n\u00edvel 40\\ne o total de seus atributos for menor do que\\n215, considera os atributos da unidade como\\n215 em modos como a Arena. (Oponentes com\\npontua\u00e7\u00e3o mais alta aparecer\u00e3o. O c\u00e1lculo do\\ntotal de atributos exclui valores adicionados\\npor combina\u00e7\u00f5es de her\u00f3is e por habilidades.)\\nEfeito padr\u00e3o 2: Em parceria\\nUsado s\u00f3 em certas situa\u00e7\u00f5es. Se \"Em parceria\"\\nfor usado em \"Interagir com aliados\", a unidade\\nlutar\u00e1 junto a outra quando enviada ao combate."
+	},
+	{
+		"key": "MID_TIPS_Summon_v0905c_legend_01_\u4f1d\u627f\u6f06\u9ed2\u306e\u9a0e\u58eb",
+		"value": "Reduz o dano de ataques inimigos e\\ncontra-ataca com uma Lua intensa!\\nTamb\u00e9m pode conceder a aliados o\\npoder de \"Interven\u00e7\u00e3o\"!"
+	},
+	{
+		"key": "MSID_\u7d42\u7740\u306e\u5263",
+		"value": "Espada final"
+	},
+	{
+		"key": "MSID_SEARCH_\u7d42\u7740\u306e\u5263",
+		"value": "Espada final"
+	},
+	{
+		"key": "MSID_\u6f06\u95c7\u306e\u6708\u5149",
+		"value": "Escurid\u00e3o lunar"
+	},
+	{
+		"key": "MSID_SEARCH_\u6f06\u95c7\u306e\u6708\u5149",
+		"value": "Escuridao lunar"
+	},
+	{
+		"key": "MSID_\u9060\u53cd\u30fb\u653b\u5b88\u306e\u5bc6\u96c6",
+		"value": "Forma dist. A/D"
+	},
+	{
+		"key": "MSID_SEARCH_\u9060\u53cd\u30fb\u653b\u5b88\u306e\u5bc6\u96c6",
+		"value": "Forma dist. A/D"
+	},
+	{
+		"key": "MSID_\u53cd\u653b\u968a\u5f62",
+		"value": "Luta reativa"
+	},
+	{
+		"key": "MSID_SEARCH_\u53cd\u653b\u968a\u5f62",
+		"value": "Luta reativa"
+	},
+	{
+		"key": "MSID_\u6cbb\u7652\u72b6\u614b",
+		"value": "Interven\u00e7\u00e3o"
+	},
+	{
+		"key": "MSID_SEARCH_\u6cbb\u7652\u72b6\u614b",
+		"value": "Intervencao"
+	},
+	{
+		"key": "MSID_H_\u7d42\u7740\u306e\u5263",
+		"value": "$aAcelera a execu\u00e7\u00e3o de habilidades especiais\\n(contagem regressiva -1).\\n\\nNo in\u00edcio da fase do jogador ou da fase\\ndo inimigo, se PV (uni.) \u2265 25%, concede\\nAtq./Def. +6,\u3010Interven\u00e7\u00e3o\u3011e\u3010Reflexo\u3011\u00e0\\nunidade e aos aliados em um raio de\\n2 espa\u00e7os da unidade por uma rodada.\\n\\nSe o inimigo inicia o combate ou se PV (uni.)\\n\u2265 25% no in\u00edcio do combate, concede Atq. +X\\n\u00e0 unidade, inflige Atq. -X ao inimigo (X = 20%\\nda Def. (uni.) no in\u00edcio do combate, +6), a\\nunidade inflige +Y de dano (exclui habilidades\\nespeciais com \u00e1rea de efeito), reduz em Y o\\ndano de ataques do inimigo (exclui habilidades\\nespeciais com \u00e1rea de efeito), reduz em Y o\\ndano dos ataques do inimigo (exclui habilidades\\nespeciais com \u00e1rea de efeito); se PV (ini.) \u2265 70%\\nno in\u00edcio do combate, Y = 16; caso contr\u00e1rio,\\nY = 10), neutraliza\u3010Feridas profundas\u3011durante\\no combate, e tamb\u00e9m, quando ativa a\\nhabilidade especial da unidade, neutraliza\\nefeitos do inimigo que \"reduzem uma\\npercentagem do dano\" infligido por habilidades\\nn\u00e3o especiais do inimigo (exclui habilidades\\nespeciais com \u00e1rea de efeito).\\n\\n\u3010Interven\u00e7\u00e3o\u3011\\nReduz em 50% o efeito de\u3010Feridas profundas\u3011\u00e0\\nunidade durante o combate, restaura 40% dos\\nPV m\u00e1ximos da unidade no in\u00edcio do combate\\nda unidade por uma rodada (ativada depois de\\nefeitos que infligem dano no in\u00edcio do combate;\\ns\u00f3 o valor mais alto se aplica; n\u00e3o cumulativo).\\n\\n\u3010Reflexo\u3011\\nReduz o dano do primeiro ataque do inimigo\\nem 7 pontos durante o combate (\u201cprimeiro\\nataque\" normalmente significa apenas o\\nprimeiro golpe; para efeitos que concedem\\n\"unidade ataca duas vezes\", significa o primeiro\\ne o segundo golpes) e o pr\u00f3ximo ataque da\\nunidade inflige dano = dano total reduzido do\\nprimeiro ataque do inimigo (de qualquer\\norigem, inclusive outras habilidades; o efeito\\n\u00e9 reiniciado ao final do combate). (Durante\\numa rodada)\\n\\n\u3010Feridas profundas\u3011\\nOs PV da unidade n\u00e3o s\u00e3o restaurados\\nem sua pr\u00f3xima a\u00e7\u00e3o."
+	},
+	{
+		"key": "MSID_H_\u7d42\u7740\u306e\u5263_NOSKW",
+		"value": "$aAcelera a execu\u00e7\u00e3o de habilidades especiais\\n(contagem regressiva -1).\\n\\nNo in\u00edcio da fase do jogador ou da fase\\ndo inimigo, se PV (uni.) \u2265 25%, concede\\nAtq./Def. +6,\u3010Interven\u00e7\u00e3o\u3011e\u3010Reflexo\u3011\u00e0\\nunidade e aos aliados em um raio de\\n2 espa\u00e7os da unidade por uma rodada.\\n\\nSe o inimigo inicia o combate ou se PV (uni.)\\n\u2265 25% no in\u00edcio do combate, concede Atq. +X\\n\u00e0 unidade, inflige Atq. -X ao inimigo (X = 20%\\nda Def. (uni.) no in\u00edcio do combate, +6), a\\nunidade inflige +Y de dano (exclui habilidades\\nespeciais com \u00e1rea de efeito), reduz em Y o\\ndano de ataques do inimigo (exclui habilidades\\nespeciais com \u00e1rea de efeito), reduz em Y o\\ndano dos ataques do inimigo (exclui habilidades\\nespeciais com \u00e1rea de efeito); se PV (ini.) \u2265 70%\\nno in\u00edcio do combate, Y = 16; caso contr\u00e1rio,\\nY = 10), neutraliza\u3010Feridas profundas\u3011durante\\no combate, e tamb\u00e9m, quando ativa a\\nhabilidade especial da unidade, neutraliza\\nefeitos do inimigo que \"reduzem uma\\npercentagem do dano\" infligido por habilidades\\nn\u00e3o especiais do inimigo (exclui habilidades\\nespeciais com \u00e1rea de efeito)."
+	},
+	{
+		"key": "MSID_H_\u6f06\u95c7\u306e\u6708\u5149",
+		"value": "Quando a habilidade especial \u00e9 ativada,\\naumenta o dano infligido pela habilidade\\nespecial em 80% usando Vel. (ini.) ou\\nDef. (ini.) (a que tiver valor mais alto).\\n\\nNeutraliza efeitos que impedem contra-ataques\\nda unidade e reduz a percentagem do dano de\\nataques durante o combate (X = 50 - valor\\natual da contagem regressiva da habilidade\\nespecial \u00d7 10, mas se a habilidade especial\\nda unidade \u00e9 ativada durante este combate,\\nX = 50; exclui habilidades especiais com \u00e1rea\\nde efeito), e tamb\u00e9m, se Def. (uni.) \u2265 Def. (ini.)\\n+5, desativa habilidades da unidade e do\\ninimigo que alteram prioridade de ataque\\ndurante o combate."
+	},
+	{
+		"key": "MSID_H_\u9060\u53cd\u30fb\u653b\u5b88\u306e\u5bc6\u96c6",
+		"value": "A unidade pode contra-atacar,\\nindependentemente do alcance\\ndo inimigo.\\n\\nSe a unidade est\u00e1 em um raio de 3 espa\u00e7os\\nde um aliado, concede b\u00f4nus de Atq./Def.\\n\u00e0 unidade durante o combate = n\u00famero\\nde aliados em um raio de 3 espa\u00e7os da\\nunidade \u00d7 3 (m\u00e1x.: 9; se a unidade ativa\\nSalvador, o valor ser\u00e1 considerado como 9)."
+	},
+	{
+		"key": "MSID_H_\u53cd\u653b\u968a\u5f62",
+		"value": "Se o inimigo inicia o combate ou se PV (uni.)\\n\u2265 25% no in\u00edcio do combate, inflige Atq. -5 ao\\ninimigo, inflige dano = 15% do Atq. (uni.)\\n(exclui habilidades especiais com \u00e1rea de\\nefeito), reduz o dano dos ataques do inimigo\\nem 15% do Atq. (uni.) durante o combate\\n(exclui habilidades especiais com \u00e1rea de\\nefeito) e restaura 7 PV \u00e0 unidade quando ela\\ninflige dano ao inimigo, e tamb\u00e9m, se o ataque\\nda unidade pode ativar a habilidade especial\\ndela, concede -2 \u00e0 contagem regressiva da\\nhabilidade especial \u00e0 unidade antes do\\nprimeiro ataque do inimigo durante o combate."
+	},
+	{
+		"key": "MID_STAGE_HONOR_L0087",
+		"value": "Lend\u00e1rio mortal"
+	},
+	{
+		"key": "MID_STAGE_L0087",
+		"value": "Cavaleiro Negro"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PB274",
+		"value": "Habilidades 274"
+	},
+	{
+		"key": "MID_STAGE_PB274",
+		"value": "Lend\u00e1rio mortal"
+	}
+]
