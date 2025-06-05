@@ -1,0 +1,36 @@
+[
+	{
+		"id_tag": "EID_\u30d8\u30a4\u30e0\u30c0\u30eb",
+		"roman": "HEIMDALL",
+		"face_name": "ch00_67_Heimdall_F_Normal",
+		"face_name2": "ch00_67_Heimdall_F_Normal",
+		"top_weapon": "SID_\u30ae\u30e3\u30e9\u30eb\u30db\u30eb\u30f3",
+		"unique_assist1": null,
+		"unique_assist2": null,
+		"unique_special": null,
+		"timestamp": null,
+		"id_num": 115,
+		"is_npc": false,
+		"weapon_type": 12,
+		"tome_class": 4,
+		"move_type": 2,
+		"random_allowed": false,
+		"is_boss": true,
+		"refresher": false,
+		"is_enemy": true,
+		"base_stats": {
+			"hp": 17,
+			"atk": 12,
+			"spd": 2,
+			"def": 4,
+			"res": 9
+		},
+		"growth_rates": {
+			"hp": 50,
+			"atk": 80,
+			"spd": 30,
+			"def": 50,
+			"res": 90
+		}
+	}
+]
