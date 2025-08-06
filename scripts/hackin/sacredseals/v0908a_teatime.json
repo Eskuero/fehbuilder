@@ -1,0 +1,83 @@
+[
+	{
+		"id_tag": "SID_\u6012\u308a1",
+		"next_seal": "SID_\u6012\u308a2",
+		"prev_seal": null,
+		"ss_coin": 40,
+		"ss_badge_type": 0,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u6012\u308a2",
+		"next_seal": "SID_\u6012\u308a3",
+		"prev_seal": "SID_\u6012\u308a1",
+		"ss_coin": 50,
+		"ss_badge_type": 0,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u6012\u308a3",
+		"next_seal": null,
+		"prev_seal": "SID_\u6012\u308a2",
+		"ss_coin": 100,
+		"ss_badge_type": 0,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u901f\u3055\u5b88\u5099\u306e\u5099\u30481",
+		"next_seal": "SID_\u901f\u3055\u5b88\u5099\u306e\u5099\u30482",
+		"prev_seal": null,
+		"ss_coin": 20,
+		"ss_badge_type": 2,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u901f\u3055\u5b88\u5099\u306e\u5099\u30482",
+		"next_seal": "SID_\u901f\u3055\u5b88\u5099\u306e\u5099\u30483",
+		"prev_seal": "SID_\u901f\u3055\u5b88\u5099\u306e\u5099\u30481",
+		"ss_coin": 50,
+		"ss_badge_type": 2,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u901f\u3055\u5b88\u5099\u306e\u5099\u30483",
+		"next_seal": null,
+		"prev_seal": "SID_\u901f\u3055\u5b88\u5099\u306e\u5099\u30482",
+		"ss_coin": 100,
+		"ss_badge_type": 2,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u7b2c97\u8ff7\u5bae\u306e\u8987\u80051",
+		"next_seal": "SID_\u7b2c97\u8ff7\u5bae\u306e\u8987\u80052",
+		"prev_seal": null,
+		"ss_coin": 0,
+		"ss_badge_type": 0,
+		"ss_badge": 0,
+		"ss_great_badge": 0
+	},
+	{
+		"id_tag": "SID_\u7b2c97\u8ff7\u5bae\u306e\u8987\u80052",
+		"next_seal": "SID_\u7b2c97\u8ff7\u5bae\u306e\u8987\u80053",
+		"prev_seal": "SID_\u7b2c97\u8ff7\u5bae\u306e\u8987\u80051",
+		"ss_coin": 50,
+		"ss_badge_type": 3,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u7b2c97\u8ff7\u5bae\u306e\u8987\u80053",
+		"next_seal": null,
+		"prev_seal": "SID_\u7b2c97\u8ff7\u5bae\u306e\u8987\u80052",
+		"ss_coin": 100,
+		"ss_badge_type": 3,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	}
+]
