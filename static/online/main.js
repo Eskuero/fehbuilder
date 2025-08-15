@@ -66,7 +66,7 @@ selectotherworldbond = document.getElementById("otherworldbond");
 
 // Some static variables
 const MAXHM = 9000
-const MAXFLOWERS = 35
+const MAXFLOWERS = 40
 
 // We store languages data for display of strings within the browser
 languages = {};

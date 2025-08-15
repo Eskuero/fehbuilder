@@ -853,7 +853,7 @@
 	},
 	{
 		"key": "MSID_H_\u53cc\u7d0b\u7ae0\u306e\u529bR",
-		"value": "$aAt start of turn, if unit's HP \u2265 25%, inflicts\\nAtk/Def-7,\u3010Panic\u3011, and\u3010Exposure\u3011on closest\\nfoes and any foe within 2 spaces of those foes\\nthrough their next actions.\\n\\nAt start of combat, if unit's HP \u2265 25%, inflicts\\npenalty on foe's Atk/Def = number of foes\\nwithin 3 rows or 3 columns centered on unit\\n\u00d7 2, + 6 (max 12), and reduces damage from\\nfoe's attacks by 20% of unit's Def during\\ncombat (excluding area-of-effect Specials).\\n\\n\u3010Panic\u3011\\nConverts bonuses on target into penalties\\nthrough its next action.\\n\\n\u3010Exposure\u3011\\nFoe's attacks deal +10 damage."
+		"value": "$aAt start of turn, if unit's HP \u2265 25%, inflicts\\nAtk/Def-7,\u3010Panic\u3011, and\u3010Exposure\u3011on closest\\nfoes and any foe within 2 spaces of those foes\\nthrough their next actions.\\n\\nAt start of combat, if unit's HP \u2265 25%, inflicts\\npenalty on foe's Atk/Def = number of foes\\nwithin 3 rows or 3 columns centered on unit\\n\u00d7 2, + 6 (max 12), and reduces damage from\\nfoe's attacks by 20% of unit's Def during\\ncombat (excluding area-of-effect Specials).\\n\\n\u3010Panic\u3011\\nConverts bonuses on unit into penalties through\\nits next action.\\n\\n\u3010Exposure\u3011\\nFoe's attacks deal +10 damage."
 	},
 	{
 		"key": "MSID_H_\u53cc\u7d0b\u7ae0\u306e\u529bR_NOSKW",

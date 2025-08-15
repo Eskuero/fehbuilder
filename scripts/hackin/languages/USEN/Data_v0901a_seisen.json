@@ -429,7 +429,7 @@
 	},
 	{
 		"key": "MPID_VOICE_\u30c7\u30e5\u30fc",
-		"value": "Kiba Walker"
+		"value": "Akeno Watanabe"
 	},
 	{
 		"key": "MPID_VOICE_\u30db\u30ea\u30f3",
@@ -697,7 +697,7 @@
 	},
 	{
 		"key": "MSID_H_\u672a\u6765\u3092\u77e5\u308b\u529b\u30fb\u627f",
-		"value": "$aAt start of turn, if any foes have the highest\\nAtk, Spd, Def, or Res on the enemy team,\\ninflicts\u3010Sabotage\u3011and\u3010Panic\u3011on\\nthose foes and inflicts -7 on the corresponding\\nstat of those foes and foes within 2 spaces of\\nthose foes through their next actions.\\n\\nInflicts Atk/Spd/Res-5 on foe, inflicts\\npenalty on foe's Spd/Res = highest total\\npenalties among target and foes within\\n2 spaces of target, reduces damage\\nfrom foe's attacks by 30% (excluding\\narea-of-effect Specials), and neutralizes\\neffects that inflict \"Special cooldown\\ncharge -X\" on unit during combat.\\n\\n\u3010Sabotage\u3011\\nInflicts penalty on unit's Atk/Spd/Def/Res\\nduring combat = highest penalty on each\\nstat between unit and allies within 2 spaces\\nof unit through its next action. Calculates\\neach stat penalty independently.\\n\\n\u3010Panic\u3011\\nConverts bonuses on target into penalties\\nthrough its next action."
+		"value": "$aAt start of turn, if any foes have the highest\\nAtk, Spd, Def, or Res on the enemy team,\\ninflicts\u3010Sabotage\u3011and\u3010Panic\u3011on\\nthose foes and inflicts -7 on the corresponding\\nstat of those foes and foes within 2 spaces of\\nthose foes through their next actions.\\n\\nInflicts Atk/Spd/Res-5 on foe, inflicts\\npenalty on foe's Spd/Res = highest total\\npenalties among target and foes within\\n2 spaces of target, reduces damage\\nfrom foe's attacks by 30% (excluding\\narea-of-effect Specials), and neutralizes\\neffects that inflict \"Special cooldown\\ncharge -X\" on unit during combat.\\n\\n\u3010Sabotage\u3011\\nInflicts penalty on unit's Atk/Spd/Def/Res\\nduring combat = highest penalty on each\\nstat between unit and allies within 2 spaces\\nof unit through its next action. Calculates\\neach stat penalty independently.\\n\\n\u3010Panic\u3011\\nConverts bonuses on unit into penalties through\\nits next action."
 	},
 	{
 		"key": "MSID_H_\u672a\u6765\u3092\u77e5\u308b\u529b\u30fb\u627f_NOSKW",
@@ -761,7 +761,7 @@
 	},
 	{
 		"key": "MSID_H_\u8a18\u61b6\u304c\u8607\u308b\u2026",
-		"value": "$aAt start of player phase or enemy phase, if\\nunit is within 2 spaces of an ally, inflicts\\nSpd/Def-7,\u3010Panic\u3011, and\u3010Sabotage\u3011on closest\\nfoes and foes within 2 spaces of those foes\\nthrough their next actions.\\n\\nIf unit initiates combat or is within 2 spaces\\nof an ally, inflicts Spd/Def-5 on foe and deals\\ndamage = 20% of unit's Spd during combat\\n(excluding area-of-effect Specials), and also,\\nif unit's HP > 1 and foe would reduce unit's\\nHP to 0, unit survives with 1 HP (once per\\ncombat; does not stack with non-Special\\neffects that allow unit to survive with 1 HP\\nif foe's attack would reduce HP to 0).\\n\\nIf unit initiates combat or is within 2 spaces of\\nan ally, restores 7 HP to unit after combat.\\n\\n\u3010Panic\u3011\\nConverts bonuses on target into penalties\\nthrough its next action.\\n\\n\u3010Sabotage\u3011\\nInflicts penalty on unit's Atk/Spd/Def/Res\\nduring combat = highest penalty on each\\nstat between unit and allies within 2 spaces\\nof unit through its next action. Calculates\\neach stat penalty independently."
+		"value": "$aAt start of player phase or enemy phase, if\\nunit is within 2 spaces of an ally, inflicts\\nSpd/Def-7,\u3010Panic\u3011, and\u3010Sabotage\u3011on closest\\nfoes and foes within 2 spaces of those foes\\nthrough their next actions.\\n\\nIf unit initiates combat or is within 2 spaces\\nof an ally, inflicts Spd/Def-5 on foe and deals\\ndamage = 20% of unit's Spd during combat\\n(excluding area-of-effect Specials), and also,\\nif unit's HP > 1 and foe would reduce unit's\\nHP to 0, unit survives with 1 HP (once per\\ncombat; does not stack with non-Special\\neffects that allow unit to survive with 1 HP\\nif foe's attack would reduce HP to 0).\\n\\nIf unit initiates combat or is within 2 spaces of\\nan ally, restores 7 HP to unit after combat.\\n\\n\u3010Panic\u3011\\nConverts bonuses on unit into penalties through\\nits next action.\\n\\n\u3010Sabotage\u3011\\nInflicts penalty on unit's Atk/Spd/Def/Res\\nduring combat = highest penalty on each\\nstat between unit and allies within 2 spaces\\nof unit through its next action. Calculates\\neach stat penalty independently."
 	},
 	{
 		"key": "MSID_H_\u8a18\u61b6\u304c\u8607\u308b\u2026_NOSKW",

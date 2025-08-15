@@ -825,7 +825,7 @@
 	},
 	{
 		"key": "MSID_H_\u95c7\u9b54\u9053\u306e\u7814\u7a76\u66f8R",
-		"value": "$aAt start of turn, if unit's HP \u2265 25%, inflicts\\nAtk/Res-7,\u3010Panic\u3011, and\u3010Deep Wounds\u3011\\non closest foes and foes within 2 spaces of\\nthose foes through their next actions.\\n\\nAt start of combat, if unit's HP \u2265 25%, inflicts\\nAtk/Spd/Res-5 on foe, neutralizes unit's\\npenalties to Atk/Spd/Res, and unit makes\\nguaranteed follow-up attack during combat.\\n\\n\u3010Panic\u3011\\nConverts bonuses on target into penalties\\nthrough its next action.\\n\\n\u3010Deep Wounds\u3011\\nUnit's HP cannot be healed through its\\nnext action."
+		"value": "$aAt start of turn, if unit's HP \u2265 25%, inflicts\\nAtk/Res-7,\u3010Panic\u3011, and\u3010Deep Wounds\u3011\\non closest foes and foes within 2 spaces of\\nthose foes through their next actions.\\n\\nAt start of combat, if unit's HP \u2265 25%, inflicts\\nAtk/Spd/Res-5 on foe, neutralizes unit's\\npenalties to Atk/Spd/Res, and unit makes\\nguaranteed follow-up attack during combat.\\n\\n\u3010Panic\u3011\\nConverts bonuses on unit into penalties through\\nits next action.\\n\\n\u3010Deep Wounds\u3011\\nUnit's HP cannot be healed through its\\nnext action."
 	},
 	{
 		"key": "MSID_H_\u95c7\u9b54\u9053\u306e\u7814\u7a76\u66f8R_NOSKW",
