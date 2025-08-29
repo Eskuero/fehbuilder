@@ -136,26 +136,26 @@ for icon in icons:
 		# The starting object is the entire spritesheett, which we copy
 		with open(f"{spritesheetdir}/Skill_Passive{str(sheet+1)}.png", "rb+") as tempimage:
 			iconimage = Image.open(tempimage)
-		# Initially we are cropping all icons to 76 x 76 for ease on some checks
-		# We calculate the coordinates of each icon box knowing that each line is 13 icons wide
-		line = math.floor(idwithin / 13)
-		top = 76 * line
-		left = 76 * (idwithin - (line * 13))
-		iconimage = iconimage.crop((left, top, left + 76, top + 76))
-		# But we crop even further to different sizes depending on the existance of the shiny border or not, for that we get an specific pixel
-		# If the color of the pixel at 37,9 is (255, 241, 3, 255) that means we have a shiny border, if at 37,70 is (255, 241, 3, 252) it means emblem skill and we treat it the same
-		try:
-			# FIXME: FIXME: THIS IS HORRIBLE
-			isshiny = (iconimage.getpixel((37, 9)) == (255, 241, 3, 255)) or (iconimage.getpixel((37, 70)) == (82, 25, 25, 252))
-			# When that happens we crop and resize less than usual
-			if isshiny:
-				iconimage = iconimage.crop((0, 0, 75, 76)).resize((48, 48))
-			else:
-				iconimage = iconimage.crop((6, 6, 6 + 66, 6 + 68)).resize((44, 44))
-			iconimage.save(LOCAL_BASE_PATH + icons[icon]["localpath"], 'WEBP', lossless = True, quality = 100, method = 6)
-			print("Successful")
-		except:
-			print("Failed")
+			# Initially we are cropping all icons to 76 x 76 for ease on some checks
+			# We calculate the coordinates of each icon box knowing that each line is 13 icons wide
+			line = math.floor(idwithin / 13)
+			top = 76 * line
+			left = 76 * (idwithin - (line * 13))
+			iconimage = iconimage.crop((left, top, left + 76, top + 76))
+			# But we crop even further to different sizes depending on the existance of the shiny border or not, for that we get an specific pixel
+			# If the color of the pixel at 37,9 is (255, 241, 3, 255) that means we have a shiny border, if at 37,70 is (255, 241, 3, 252) it means emblem skill and we treat it the same
+			try:
+				# FIXME: FIXME: THIS IS HORRIBLE
+				isshiny = (iconimage.getpixel((37, 9)) == (255, 241, 3, 255)) or (iconimage.getpixel((37, 70)) == (82, 25, 25, 252))
+				# When that happens we crop and resize less than usual
+				if isshiny:
+					iconimage = iconimage.crop((0, 0, 75, 76)).resize((48, 48))
+				else:
+					iconimage = iconimage.crop((6, 6, 6 + 66, 6 + 68)).resize((44, 44))
+				iconimage.save(LOCAL_BASE_PATH + icons[icon]["localpath"], 'WEBP', lossless = True, quality = 100, method = 6)
+				print("Successful")
+			except:
+				print("Failed")
 
 
 
