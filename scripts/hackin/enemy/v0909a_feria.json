@@ -1,0 +1,36 @@
+[
+	{
+		"id_tag": "EID_\u30a2\u30b7\u30e52",
+		"roman": "ASH2",
+		"face_name": "ch00_39_Ash2_F_Normal",
+		"face_name2": "ch00_39_Ash2_F_Normal",
+		"top_weapon": "SID_\u7d50\u3076\u8005\u306e\u89d2",
+		"unique_assist1": null,
+		"unique_assist2": null,
+		"unique_special": null,
+		"timestamp": null,
+		"id_num": 118,
+		"is_npc": false,
+		"weapon_type": 23,
+		"tome_class": 0,
+		"move_type": 0,
+		"random_allowed": false,
+		"is_boss": true,
+		"refresher": false,
+		"is_enemy": true,
+		"base_stats": {
+			"hp": 20,
+			"atk": 12,
+			"spd": 2,
+			"def": 9,
+			"res": 10
+		},
+		"growth_rates": {
+			"hp": 55,
+			"atk": 80,
+			"spd": 35,
+			"def": 90,
+			"res": 75
+		}
+	}
+]
