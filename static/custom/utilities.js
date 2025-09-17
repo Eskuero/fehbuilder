@@ -227,7 +227,8 @@ summonerranks = {
 	"C": [3, 0, 0, 0, 2],
 	"B": [4, 0, 0, 2, 2],
 	"A": [4, 0, 2, 2, 2],
-	"S": [5, 2, 2, 2, 2]
+	"S": [5, 2, 2, 2, 2],
+	"S+": [7, 2, 2, 2, 2]
 };
 
 // Canvas position to render images passive icons at
