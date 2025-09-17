@@ -1,0 +1,150 @@
+[
+	{
+		"key": "MID_UNIT_INFO_BLESSING_CONNECT",
+		"value": "$aEntwined Hero\\n\\n\u30fb Ally and Summoner Support Ranks increase\\nwith each deployment, up to Support Rank S+,\\nsurpassing S.\\n\u30fb When an Entwined Hero and their support\\npartner are receiving support benefits, they also\\ngain $a0/$a1+$a2 during combat.\\n\u30fb When you give it to a Hero other than the\\nEntwined Hero, they receive the above benefits\\nof $a3."
+	},
+	{
+		"key": "MID_ITEM_BOUQUET",
+		"value": "$a$a0's Bouquet"
+	},
+	{
+		"key": "MID_ITEM_HELP_BOUQUET",
+		"value": "$a\u30fb Ally and Summoner Support Ranks increase\\nwith each deployment, up to Support Rank S+,\\nsurpassing S.\\n\u30fb When an Entwined Hero and their support\\npartner are receiving support benefits, they also\\ngain $a0/$a1+$a2 during combat."
+	},
+	{
+		"key": "MID_ITEM_HELP_TAMER_SOUL_FOR_INFO",
+		"value": "\u30fb The Hero can equip an Aide.\\n\u30fb The Hero gains HP/Atk/Spd/Def/Res+1."
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_9",
+		"value": "Entwined"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_USED_BOUQUET_WARNING",
+		"value": "You are about to use Send Home on\\na Hero with a Bouquet.\\n\\nAre you sure you want to send this\\nHero home?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_USED_BOUQUET_WARNING",
+		"value": "You are about to use Inherit Skill on\\na Hero with a Bouquet.\\n\\nAre you sure you want to inherit the\\nskill of this Hero?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMIT_BREAK_USED_BOUQUET_WARNING",
+		"value": "You are about to merge a Hero with\\na Bouquet.\\n\\nAre you sure you want to merge\\nthis Hero?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_GENERATE_USED_BOUQUET_WARNING",
+		"value": "You are about to compile a Combat\\nManual from a Hero with a Bouquet.\\n\\nAre you sure you want to compile\\na Combat Manual using this Hero?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_RECOLLECTION_5",
+		"value": "View Rank S+"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_EMPTY",
+		"value": "No Bouquets."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET",
+		"value": "Give Bouquet"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP1",
+		"value": "Choose a Bouquet."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP2",
+		"value": "Select the Hero to receive a Bouquet."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_SELECT_LEFT",
+		"value": "Lose"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_SELECT_RIGHT",
+		"value": "Give"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_DIALOG_CONFIRM",
+		"value": "$aGive $a0?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_DIALOG_WARNING",
+		"value": "The current Bouquet effect will be\\nremoved if a new Bouquet is given."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_DIALOG_BUTTON_DECIDE",
+		"value": "Give"
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_RANK_5",
+		"value": "S+"
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_EFFECT_PAIR_5",
+		"value": "If support partner is on player team,\\ngain Atk/Spd/Def/Res+2\\nduring combat."
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_EFFECT_PLAYER_5",
+		"value": "HP+7, Atk/Spd/Def/Res+2"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_00",
+		"value": "Giving Bouquets:\\nWhen you give a Bouquet to a\\nHero, they gain the effects of the\\nEntwined Hero."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_01",
+		"value": "Effect 1:\\nAlly and Summoner Support\\nRanks increase with each\\ndeployment, up to a maximum\\nSupport Rank of S+, surpassing S."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_02",
+		"value": "Summoner Support Rank S+ adds\\nHP+2, and Ally Support Rank S+\\nremoves the distance requirement\\nof the Rank S support benefit that\\ngrants Atk/Spd/Def/Res+2 when\\nthey fight right next to each other."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_03",
+		"value": "Effect 2:\\nWhen an Entwined Hero and their\\nsupport partner are receiving\\nsupport benefits, they also gain a\\nstat boost during combat (differs\\nbased on the Bouquet)."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_04",
+		"value": "More Information:\\nBouquets can be given to Heroes\\nother than Entwined Heroes.\\n\\nIf a Hero gains stat boosts from\\ntheirs and their support partner's\\nBouquets, only the highest value\\nboost for each stat will apply."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_05_v0909b",
+		"value": "What Forma Do Not Inherit:\\n\u30fb Merges\\n\u30fb Ascended Assets\\n\u30fb Resplendent Attire\\n\u30fb Aide's Essences\\n\u30fb Bouquets\\n\u30fb Blessings\\n\u30fb Sacred Seals\\n\u30fb Accessories"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202509",
+		"value": "Archive of the West"
+	},
+	{
+		"key": "MID_SPR21_Feast_Title",
+		"value": "Doughnut Feast"
+	},
+	{
+		"key": "MID_SPR21_Feast_Common",
+		"value": "Three days without a proper meal...\\nI wonder, who will claim what's left?"
+	},
+	{
+		"key": "MID_SPR21_Feast_3",
+		"value": "A mouse stealing the food? Oh no...\\nQuick reflexes never cease to amaze."
+	},
+	{
+		"key": "MID_SPR21_Feast_4",
+		"value": "Do we have a doughnut hog?\\nWhy not share food so delicious?!"
+	},
+	{
+		"key": "MID_SPR21_Feast_5",
+		"value": "Wow! A whole tower of doughnuts?!\\nThey'll surely stave off hunger now."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202509",
+		"value": "To Bring Smiles"
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_PROCESS_RANK_S_PLUS",
+		"value": "The allies share a bond beyond measure!\\nFighting at any distance yields a stat boost."
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_PROCESS_RANK_S_PLUS_WITH_USER",
+		"value": "You share a bond beyond measure!\\nYour ally's stats are further increased."
+	}
+]

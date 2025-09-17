@@ -1,0 +1,150 @@
+[
+	{
+		"key": "MID_UNIT_INFO_BLESSING_CONNECT",
+		"value": "$aH\u00e9roe vinculado\\n\\n\u30fb El nivel de apoyo de invocador y entre\\nunidades aumenta con cada despliegue, hasta\\nalcanzar el nivel S+, sobrepasando el nivel S.\\n\u30fbCuando se establece una relaci\u00f3n de apoyo\\ncon una unidad, obtiene $a0 y $a1 +$a2\\nen combate.\\n\u30fb Al otorgarle un ramo a un h\u00e9roe que no sea\\nel h\u00e9roe vinculado, dicha unidad recibir\u00e1 los\\nbeneficios anteriores del $a3."
+	},
+	{
+		"key": "MID_ITEM_BOUQUET",
+		"value": "$aRamo de $a0"
+	},
+	{
+		"key": "MID_ITEM_HELP_BOUQUET",
+		"value": "$a\u30fb El nivel de apoyo de invocador y entre\\nunidades aumenta con cada despliegue, hasta\\nalcanzar el nivel S+, sobrepasando el nivel S.\\n\u30fb Cuando se establece una relaci\u00f3n de apoyo\\ncon una unidad, obtiene $a0 y $a1 +$a2\\nen combate."
+	},
+	{
+		"key": "MID_ITEM_HELP_TAMER_SOUL_FOR_INFO",
+		"value": "\u30fb El h\u00e9roe puede equipar un auxilio.\\n\u30fb El h\u00e9roe obtiene PV, Atq., Vel., Def. y Res. +1."
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_9",
+		"value": "Vinculado"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_USED_BOUQUET_WARNING",
+		"value": "Est\u00e1s a punto de usar la opci\u00f3n\\n\"Enviar a casa\" con un h\u00e9roe que\\ntiene un ramo.\\n\\n\u00bfSeguro que quieres enviar\\na casa a este h\u00e9roe?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_USED_BOUQUET_WARNING",
+		"value": "Est\u00e1s a punto de usar la opci\u00f3n\\n\"Legar habilidad\" con un h\u00e9roe que\\ntiene un ramo.\\n\\n\u00bfSeguro que quieres hacerlo?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMIT_BREAK_USED_BOUQUET_WARNING",
+		"value": "Est\u00e1s a punto de combinar a un h\u00e9roe\\nque tiene un ramo.\\n\\n\u00bfSeguro que quieres combinarlo?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_GENERATE_USED_BOUQUET_WARNING",
+		"value": "Est\u00e1s a punto de recopilar un manual\\nde combate de un h\u00e9roe que tiene\\nun ramo.\\n\\n\u00bfSeguro que quieres hacerlo?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_RECOLLECTION_5",
+		"value": "Ver nivel S+"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_EMPTY",
+		"value": "Sin ramos."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET",
+		"value": "Dar ramo"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP1",
+		"value": "Elegir ramo."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP2",
+		"value": "Elige cu\u00e1l h\u00e9roe recibir\u00e1 un ramo."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_SELECT_LEFT",
+		"value": "Perder\u00e1"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_SELECT_RIGHT",
+		"value": "Dar"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_DIALOG_CONFIRM",
+		"value": "$a\u00bfDar $a0?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_DIALOG_WARNING",
+		"value": "Se quitar\u00e1 el efecto de ramo activo si\\nse da un nuevo ramo."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_DIALOG_BUTTON_DECIDE",
+		"value": "Dar"
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_RANK_5",
+		"value": "S+"
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_EFFECT_PAIR_5",
+		"value": "Si el batall\u00f3n cuenta con un aliado\\ncon el que la unidad comparta una\\nrelaci\u00f3n de apoyo, obtiene Atq., Vel.,\\nDef. y Res. +2 en combate."
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_EFFECT_PLAYER_5",
+		"value": "PV +7; Atq., Vel., Def. y Res. +2"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_00",
+		"value": "-Dar ramos-\\nCuando le das un ramo a un\\nh\u00e9roe, obtiene los efectos de\\nh\u00e9roe vinculado."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_01",
+		"value": "-Efecto 1-\\nEl nivel de apoyo de invocador y\\nentre unidades aumenta con cada\\ndespliegue, hasta alcanzar el nivel\\nS+, sobrepasando el nivel S."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_02",
+		"value": "\u30fb Apoyo de invocador S+\\nOtorga PV +2\\n\\n\u30fb Apoyo entre unidades S+\\nOtorga Atq., Vel., Def. y Res. +2\\nal luchar juntos sin el requisito de\\ndistancia del efecto de apoyo S."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_03",
+		"value": "-Efecto 2-\\nCuando se establece una relaci\u00f3n\\nde apoyo entre una unidad y un\\nh\u00e9roe vinculado, ambas unidades\\nobtienen una mejora de atributos\\nen combate (seg\u00fan el ramo)."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_04",
+		"value": "-M\u00e1s informaci\u00f3n-\\n\\n\u30fb Se pueden dar ramos a h\u00e9roes\\nque no sean vinculados.\\n\\n\u30fb Si un h\u00e9roe obtiene una mejora\\nde atributos a partir de distintos\\nramos, solo se aplica el valor\\nm\u00e1s alto para cada atributo."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_05_v0909b",
+		"value": "-\u00bfQu\u00e9 no heredan las quimeras?-\\n\u30fb Las combinaciones\\n\u30fb Los puntos fuertes florecientes\\n\u30fb El atuendo resplandeciente\\n\u30fb Las esencias auxiliadoras\\n\u30fb Los ramos\\n\u30fb Las bendiciones\\n\u30fb Los sellos sacros\\n\u30fb Los accesorios"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202509",
+		"value": "Archivo del oeste"
+	},
+	{
+		"key": "MID_SPR21_Feast_Title",
+		"value": "Fest\u00edn de donas"
+	},
+	{
+		"key": "MID_SPR21_Feast_Common",
+		"value": "Tres d\u00edas sin una comida decente...\\n\u00bfQui\u00e9n tomar\u00e1 el \u00faltimo bocado?"
+	},
+	{
+		"key": "MID_SPR21_Feast_3",
+		"value": "\u00bfUn rat\u00f3n que roba comida? Ay...\\nSu r\u00e1pida reacci\u00f3n es impresionante."
+	},
+	{
+		"key": "MID_SPR21_Feast_4",
+		"value": "\u00bfQuiere acaparar todas las donas?\\n\u00a1\u00bfPor qu\u00e9 no mejor compartirlas?!"
+	},
+	{
+		"key": "MID_SPR21_Feast_5",
+		"value": "\u00a1Vaya! \u00a1\u00bfUna torre de donas?! As\u00ed\\nseguro que ya no tendr\u00e1n hambre."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202509",
+		"value": "Por las sonrisas"
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_PROCESS_RANK_S_PLUS",
+		"value": "El v\u00ednculo entre unidades es inmensurable.\\nSus atributos mejorar\u00e1n incluso a distancia."
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_PROCESS_RANK_S_PLUS_WITH_USER",
+		"value": "El v\u00ednculo que comparten es inmensurable.\\nLos atributos de tu unidad han mejorado."
+	}
+]

@@ -1,0 +1,150 @@
+[
+	{
+		"key": "MID_UNIT_INFO_BLESSING_CONNECT",
+		"value": "$aH\u00e9roe enlazado\\n\\n\u30fb El apoyo de aliados y de invocador aumenta\\ncon cada despliegue de unidades, hasta un\\nnivel m\u00e1ximo de S+ (superior al nivel S).\\n\u30fb Cuando un h\u00e9roe enlazado y su compa\u00f1ero\\nreciben beneficios de apoyo, tambi\u00e9n obtienen\\n$a0 y $a1 + $a2 en combate.\\n\u30fb Un h\u00e9roe no enlazado recibir\u00e1 los beneficios\\nmencionados anteriormente cuando le des:\\n$a3."
+	},
+	{
+		"key": "MID_ITEM_BOUQUET",
+		"value": "$aRamo de $a0"
+	},
+	{
+		"key": "MID_ITEM_HELP_BOUQUET",
+		"value": "$a\u30fb El apoyo de aliados y de invocador aumenta\\ncon cada despliegue de unidades, hasta un\\nnivel m\u00e1ximo de S+ (superior al nivel S).\\n\u30fb Cuando un h\u00e9roe enlazado y su compa\u00f1ero\\nreciben beneficios de apoyo, tambi\u00e9n obtienen\\n$a0 y $a1 + $a2 en combate."
+	},
+	{
+		"key": "MID_ITEM_HELP_TAMER_SOUL_FOR_INFO",
+		"value": "\u30fb El h\u00e9roe puede equiparse un auxilio.\\n\u30fb El h\u00e9roe obtiene PV, Ata, Vel, Def y Res + 1."
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_9",
+		"value": "Enlazad."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_USED_BOUQUET_WARNING",
+		"value": "Est\u00e1s a punto de usar la opci\u00f3n\\n\"Enviar a casa\" con un h\u00e9roe que\\ntiene un ramo.\\n\u00bfSeguro que quieres enviar\\na casa a este h\u00e9roe?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_USED_BOUQUET_WARNING",
+		"value": "Est\u00e1s a punto de usar la opci\u00f3n\\n\"Legar habilidad\" con un h\u00e9roe que\\ntiene un ramo.\\n\\n\u00bfSeguro que quieres hacerlo?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMIT_BREAK_USED_BOUQUET_WARNING",
+		"value": "Est\u00e1s a punto de combinar a un h\u00e9roe\\nque tiene un ramo.\\n\\n\u00bfSeguro que quieres combinarlo?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_GENERATE_USED_BOUQUET_WARNING",
+		"value": "Est\u00e1s a punto de recopilar un manual\\nde combate de un h\u00e9roe que tiene\\nun ramo.\\n\\n\u00bfSeguro que quieres hacerlo?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_RECOLLECTION_5",
+		"value": "Ver nivel S+"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_EMPTY",
+		"value": "No tienes ramos."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET",
+		"value": "Dar ramo"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP1",
+		"value": "Elegir un ramo."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP2",
+		"value": "Elige al h\u00e9roe a quien quieres dar un ramo."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_SELECT_LEFT",
+		"value": "Perder"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_SELECT_RIGHT",
+		"value": "Dar"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_DIALOG_CONFIRM",
+		"value": "$a\u00bfDar: $a0?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_DIALOG_WARNING",
+		"value": "Se anular\u00e1 el efecto del ramo actual\\nsi se da un nuevo ramo."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_DIALOG_BUTTON_DECIDE",
+		"value": "Dar"
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_RANK_5",
+		"value": "S+"
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_EFFECT_PAIR_5",
+		"value": "Si el batall\u00f3n cuenta con un aliado\\ncon el que la unidad comparta una\\nrelaci\u00f3n de apoyo, obtiene Ata, Vel,\\nDef y Res + 2 en combate."
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_EFFECT_PLAYER_5",
+		"value": "PV + 7; Ata, Vel, Def y Res + 2"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_00",
+		"value": "-Uso de los ramos-\\nCuando das un ramo a un h\u00e9roe,\\nobtiene los efectos de un h\u00e9roe\\nenlazado."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_01",
+		"value": "-Efecto 1-\\nEl apoyo de aliados y de invocador\\naumenta con cada despliegue de\\nunidades, hasta un nivel m\u00e1ximo\\nde S+ (superior al nivel S)."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_02",
+		"value": "\u30fb El nivel de apoyo de invocador S+\\na\u00f1ade PV + 2.\\n\\n\u30fb El nivel de apoyo de aliado S+\\nanula la condici\u00f3n de distancia\\ndel beneficio de apoyo de nivel S,\\nque otorga Ata, Vel, Def y Res + 2\\nal luchar juntos."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_03",
+		"value": "-Efecto 2-\\nCuando un h\u00e9roe enlazado y su\\ncompa\u00f1ero reciben beneficios de\\napoyo, tambi\u00e9n obtienen una\\nmejora de atributos en combate\\n(que var\u00eda seg\u00fan el ramo)."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_04",
+		"value": "-M\u00e1s informaci\u00f3n-\\n\u30fb Puedes dar ramos a h\u00e9roes no\\nenlazados.\\n\\n\u30fb Si un h\u00e9roe recibe una mejora de\\natributos de su ramo y otra del\\nramo de su compa\u00f1ero, solo se\\naplicar\u00e1 la mejora de valor m\u00e1s\\nalto para cada atributo."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_05_v0909b",
+		"value": "-\u00bfQu\u00e9 no heredan las quimeras?-\\n\u30fb Las combinaciones\\n\u30fb Los puntos fuertes florecientes\\n\u30fb El atuendo resplandeciente\\n\u30fb Las esencias auxiliadoras\\n\u30fb Los ramos\\n\u30fb Las bendiciones\\n\u30fb Los sellos sacros\\n\u30fb Los accesorios"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202509",
+		"value": "Archivo del oeste"
+	},
+	{
+		"key": "MID_SPR21_Feast_Title",
+		"value": "Fest\u00edn de rosquillas"
+	},
+	{
+		"key": "MID_SPR21_Feast_Common",
+		"value": "Tres d\u00edas sin comer como es debido...\\n\u00bfPara qui\u00e9n ser\u00e1 la \u00faltima rosquilla?"
+	},
+	{
+		"key": "MID_SPR21_Feast_3",
+		"value": "\u00a1Un rat\u00f3n se la ha llevado! Ha sido\\ntan veloz que no han podido evitarlo..."
+	},
+	{
+		"key": "MID_SPR21_Feast_4",
+		"value": "\u00bfQui\u00e9n ser\u00eda tan glot\u00f3n de acaparar\\nla rosquilla? \u00a1Es mejor compartirla!"
+	},
+	{
+		"key": "MID_SPR21_Feast_5",
+		"value": "\u00a1Hala! \u00a1\u00bfUna torre de rosquillas?!\\nEs imposible quedarse con hambre."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202509",
+		"value": "Sonrisas por doquier"
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_PROCESS_RANK_S_PLUS",
+		"value": "\u00a1Los aliados comparten un v\u00ednculo\\nincalculable!\\nLuchar a cualquier distancia otorga\\nuna mejora de atributos."
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_PROCESS_RANK_S_PLUS_WITH_USER",
+		"value": "\u00a1Compart\u00eds un v\u00ednculo incalculable!\\nTus aliados reciben mayores\\nmejoras de atributos."
+	}
+]

@@ -1,0 +1,150 @@
+[
+	{
+		"key": "MID_UNIT_INFO_BLESSING_CONNECT",
+		"value": "$aEroe intrecciato\\n\\n\u30fb I livelli di sostegno Evocat. e sostegno alleati\\naumentano a ogni schieramento, fino al livello\\ndi sostegno S+, oltre il livello S.\\n\u30fb Quando un eroe intrecciato e l'alleato che\\nsostiene stanno ricevendo vantaggi del\\nsostegno, ottengono anche $a0/$a1 +$a2 durante\\nlo scontro.\\n\u30fb I benefici sopra menzionati saranno ricevuti\\nanche dagli eroi non intrecciati a cui doni\\nun $a3."
+	},
+	{
+		"key": "MID_ITEM_BOUQUET",
+		"value": "$aBouquet di $a0"
+	},
+	{
+		"key": "MID_ITEM_HELP_BOUQUET",
+		"value": "$a\u30fb I livelli di sostegno Evocat. e sostegno alleati\\naumentano a ogni schieramento, fino al livello\\ndi sostegno S+, oltre il livello S.\\n\u30fb Quando un eroe intrecciato e l'alleato che\\nsostiene ricevono vantaggi del sostegno,\\nottengono anche $a0/$a1+$a2 durante lo scontro."
+	},
+	{
+		"key": "MID_ITEM_HELP_TAMER_SOUL_FOR_INFO",
+		"value": "\u30fb L'eroe pu\u00f2 equipaggiare un Assistente.\\n\u30fb L'eroe ottiene PS/Att/Vel/Dif/Res +1."
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_9",
+		"value": "Intrecc."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_USED_BOUQUET_WARNING",
+		"value": "Stai per usare Congeda su un eroe\\ncon un bouquet.\\n\\nVuoi davvero congedare questo eroe?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_USED_BOUQUET_WARNING",
+		"value": "Stai per usare Eredita abilit\u00e0 su\\nun eroe con un bouquet.\\n\\nVuoi davvero ereditare l'abilit\u00e0 di\\nquesto eroe?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMIT_BREAK_USED_BOUQUET_WARNING",
+		"value": "Stai per fondere un eroe con\\nun bouquet.\\n\\nVuoi davvero fondere questo eroe?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_GENERATE_USED_BOUQUET_WARNING",
+		"value": "Stai per usare un eroe con\\nun bouquet per creare un manuale\\ndi lotta.\\n\\nVuoi davvero compilare un manuale\\ndi lotta usando questo eroe?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_RECOLLECTION_5",
+		"value": "Vedi livello S+"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_EMPTY",
+		"value": "Nessun bouquet."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET",
+		"value": "Dai bouquet"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP1",
+		"value": "Scegli un bouquet."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP2",
+		"value": "Scegli l'eroe a cui dare un bouquet."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_SELECT_LEFT",
+		"value": "Perdi"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_SELECT_RIGHT",
+		"value": "Dai"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_DIALOG_CONFIRM",
+		"value": "$aDai $a0?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_DIALOG_WARNING",
+		"value": "L'effetto del bouquet attuale verr\u00e0\\nrimosso se consegni un nuovo\\nbouquet."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_DIALOG_BUTTON_DECIDE",
+		"value": "Dai"
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_RANK_5",
+		"value": "S+"
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_EFFECT_PAIR_5",
+		"value": "Se l'alleato sostenuto si trova nella\\nsquadra del giocatore, ottiene\\nAtt/Vel/Dif/Res +2 durante lo scontro."
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_EFFECT_PLAYER_5",
+		"value": "PS +7, Att/Vel/Dif/Res +2"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_00",
+		"value": "\u25c6Dare un bouquet\u25c6\\nQuando dai un bouquet a un eroe,\\nquesti ottiene gli effetti di un eroe\\nintrecciato."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_01",
+		"value": "\u25c6Effetto 1\u25c6\\nI livelli di sostegno Evocat. e\\nsostegno alleati aumentano a ogni\\nschieramento, fino al livello di\\nsostegno S+, oltre il livello S."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_02",
+		"value": "\u30fbIl livello di sostegno Evocat. S+\\naggiunge PS +2.\\n\u30fbIl livello di sostegno alleati S+\\nrimuove il requisito di distanza\\ndal vantaggio del livello S che\\nconferisce Att/Vel/Dif/Res +2\\nquando lottano adiacenti."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_03",
+		"value": "\u25c6Effetto 2\u25c6\\nQuando un eroe intrecciato e\\nl'alleato che sostiene stanno\\nricevendo vantaggi del sostegno,\\nottengono anche un aumento ai\\nparametri durante lo scontro\\n(cambia a seconda del bouquet)."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_04",
+		"value": "\u25c6Ulteriori informazioni\u25c6\\n\u30fbAnche gli eroi non intrecciati\\npossono ricevere bouquet.\\n\\n\u30fbSe un eroe ottiene aumenti ai\\nparametri dal suo bouquet e da\\nquello dell'alleato sostenuto, sono\\napplicati quelli col valore pi\u00f9 alto."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_05_v0909b",
+		"value": "\u25c6Cosa non ereditano gli eidos\u25c6\\n\u30fb Fusioni\\n\u30fb Pregi ascesi\\n\u30fb Completo fulgente\\n\u30fb Spiriti d'assistenza\\n\u30fb Bouquet\\n\u30fb Doni\\n\u30fb Sigilli sacri\\n\u30fb Accessori"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202509",
+		"value": "Archivio dell'Ovest"
+	},
+	{
+		"key": "MID_SPR21_Feast_Title",
+		"value": "Ciambelle a volont\u00e0"
+	},
+	{
+		"key": "MID_SPR21_Feast_Common",
+		"value": "Dopo tre giorni, finalmente un pasto\\nvero! Chi prender\u00e0 l'ultima ciambella?"
+	},
+	{
+		"key": "MID_SPR21_Feast_3",
+		"value": "Un topolino! Oh, no... Per fortuna\\nqualcuno ha i riflessi pronti!"
+	},
+	{
+		"key": "MID_SPR21_Feast_4",
+		"value": "Che voglia tenere tutto per s\u00e9? No!\\nDel cibo cos\u00ec buono va condiviso!"
+	},
+	{
+		"key": "MID_SPR21_Feast_5",
+		"value": "Una torre di ciambelle?! La fame di\\ncerto non sar\u00e0 pi\u00f9 un problema!"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202509",
+		"value": "Per quei sorrisi"
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_PROCESS_RANK_S_PLUS",
+		"value": "Gli alleati hanno un legame smisurato!\\nI parametri aumentano a qualsiasi distanza."
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_PROCESS_RANK_S_PLUS_WITH_USER",
+		"value": "Avete un legame smisurato! I parametri\\ndel tuo alleato aumentano ancora."
+	}
+]

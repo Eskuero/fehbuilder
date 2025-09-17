@@ -1,0 +1,36 @@
+[
+	{
+		"id_tag": "EID_\u5929\u306e\u738b",
+		"roman": "WODEN",
+		"face_name": "ch00_66_Woden_M_Normal",
+		"face_name2": "ch00_66_Woden_M_Normal",
+		"top_weapon": "SID_\u5929\u4e0a\u30b0\u30f3\u30b0\u30cb\u30eb",
+		"unique_assist1": null,
+		"unique_assist2": null,
+		"unique_special": null,
+		"timestamp": null,
+		"id_num": 119,
+		"is_npc": false,
+		"weapon_type": 12,
+		"tome_class": 2,
+		"move_type": 3,
+		"random_allowed": false,
+		"is_boss": true,
+		"refresher": false,
+		"is_enemy": true,
+		"base_stats": {
+			"hp": 15,
+			"atk": 11,
+			"spd": 5,
+			"def": 6,
+			"res": 10
+		},
+		"growth_rates": {
+			"hp": 50,
+			"atk": 85,
+			"spd": 50,
+			"def": 40,
+			"res": 90
+		}
+	}
+]
