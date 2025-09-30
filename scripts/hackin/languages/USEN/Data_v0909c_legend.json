@@ -1,0 +1,826 @@
+[
+	{
+		"key": "MDAID_\u65a7\u6226\u58eb\u306e\u30d0\u30f3\u30c0\u30ca\u30fb\u91d1",
+		"value": "Gold Axeman Bandana"
+	},
+	{
+		"key": "MDAID_H_\u65a7\u6226\u58eb\u306e\u30d0\u30f3\u30c0\u30ca\u30fb\u91d1",
+		"value": "Proof of victory over Emblem Corrin\\nand Mythic Lyn."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_96",
+		"value": "$aUnit can use the following\u3010Style\u3011:\\n\u2015\u2015\u2015\u2015\u2015 Range: 2 Style \u2015\u2015\u2015\u2015\u2015\\nUnit can attack foes 2 spaces away (unit cannot\\nattack adjacent foes).\\n\\nCannot move through spaces within 2 spaces\\nof foe that has triggered the Bulwark effect\\n(does not apply if unit has a Pass skill). Unit\\nsuffers a counterattack if any of the following\\nconditions are met: foe is armored with\\nRange = 1, foe can counterattack regardless\\nof unit's range, or foe's Range is the same as\\nthe distance between unit and foe.\\nAfter-combat movement effects do not occur.\\nSkill effect's Range is treated as 1. This Style\\ncan only be used if unit has Range = 1.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\nThis Style is disabled when unit has another\\n\u3010Style\u3011.\\nAfter combat where this\u3010Style\u3011\\nis used, removes this status.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\n(1 turn)\\n\\n\u3010Style\u3011\\nChange Style using the Style button at the\\nbottom of the screen.\\n\\nA unit's Style is only active when that unit\\nis taking an action. When unit has a status or a\\nskill that enables use of a Style, Duo Skills and\\nHarmonized Skills cannot be used while unit\\ncan take an action (those skills can be used\\nafter unit has acted).\\nStyle use is disabled when unit is deployed\\nusing Pair Up or when unit is equipped with\\nmultiple skills that have a Style."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_96_NOSKW",
+		"value": "$aUnit can use the following\u3010Style\u3011:\\n\u2015\u2015\u2015\u2015\u2015 Range: 2 Style \u2015\u2015\u2015\u2015\u2015\\nUnit can attack foes 2 spaces away (unit cannot\\nattack adjacent foes).\\n\\nCannot move through spaces within 2 spaces\\nof foe that has triggered the Bulwark effect\\n(does not apply if unit has a Pass skill). Unit\\nsuffers a counterattack if any of the following\\nconditions are met: foe is armored with\\nRange = 1, foe can counterattack regardless\\nof unit's range, or foe's Range is the same as\\nthe distance between unit and foe.\\nAfter-combat movement effects do not occur.\\nSkill effect's Range is treated as 1. This Style\\ncan only be used if unit has Range = 1.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\nThis Style is disabled when unit has another\\n\u3010Style\u3011.\\nAfter combat where this\u3010Style\u3011\\nis used, removes this status.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\n(1 turn)"
+	},
+	{
+		"key": "MID_ENHANCE_HELP_96",
+		"value": "Enables Range: 2 Style"
+	},
+	{
+		"key": "MID_MISSION_M202510A_TITLE",
+		"value": "Oct Quests"
+	},
+	{
+		"key": "MID_MISSION_M202510A_A1",
+		"value": "Arena Assault: Win 1"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A1",
+		"value": "Win one battle in Arena Assault."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A2",
+		"value": "Arena Assault: 3 in a Row"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A2",
+		"value": "Win three consecutive battles\\nin Arena Assault."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A3",
+		"value": "Arena Assault: 5 in a Row"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A3",
+		"value": "Win five consecutive battles\\nin Arena Assault."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A4",
+		"value": "KO w/Alfonse"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A4",
+		"value": "Defeat a foe with Alfonse: Prince of Askr."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A5",
+		"value": "KO w/Sharena"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A5",
+		"value": "Defeat a foe with Sharena: Princess of Askr."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A6",
+		"value": "KO w/Anna"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A6",
+		"value": "Defeat a foe with Anna: Commander."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A7",
+		"value": "KO Red Foe"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A7",
+		"value": "Defeat a red foe."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A8",
+		"value": "KO Blue Foe"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A8",
+		"value": "Defeat a blue foe."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A9",
+		"value": "KO Green Foe"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A9",
+		"value": "Defeat a green foe."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A10",
+		"value": "KO Colorless Foe"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A10",
+		"value": "Defeat a colorless foe."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A11",
+		"value": "KO Infantry Foe"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A11",
+		"value": "Defeat an infantry foe."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A12",
+		"value": "KO Armored Foe"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A12",
+		"value": "Defeat an armored foe."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A13",
+		"value": "KO Cavalry Foe"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A13",
+		"value": "Defeat a cavalry foe."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A14",
+		"value": "KO Flying Foe"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A14",
+		"value": "Defeat a flying foe."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A15",
+		"value": "Clear 4-1"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A15",
+		"value": "Clear Book VIII, Chapter 4: Part 1 on Lunatic\\ndifficulty. All four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A16",
+		"value": "Clear 4-2"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A16",
+		"value": "Clear Book VIII, Chapter 4: Part 2 on Lunatic\\ndifficulty. All four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A17",
+		"value": "Clear 4-3"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A17",
+		"value": "Clear Book VIII, Chapter 4: Part 3 on Lunatic\\ndifficulty. All four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A18",
+		"value": "Clear 4-4"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A18",
+		"value": "Clear Book VIII, Chapter 4: Part 4 on Lunatic\\ndifficulty. All four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A19",
+		"value": "Clear 4-5"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A19",
+		"value": "Clear Book VIII, Chapter 4: Part 5 on Lunatic\\ndifficulty. All four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A20",
+		"value": "AR: Attack Successfully"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A20",
+		"value": "Successfully attack in Aether Raids."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A21",
+		"value": "AR: Attack Successfully"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A21",
+		"value": "Successfully attack in Aether Raids."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A22",
+		"value": "AR: Attack Successfully"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A22",
+		"value": "Successfully attack in Aether Raids."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A23",
+		"value": "Win Arena Duel"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A23",
+		"value": "Win an Arena Duel at any difficulty."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A24",
+		"value": "Win Arena Duel"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A24",
+		"value": "Win an Arena Duel at any difficulty."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A25",
+		"value": "Win Arena Duel"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A25",
+		"value": "Win an Arena Duel at any difficulty."
+	},
+	{
+		"key": "MID_MISSION_S202510MJOLNIR01_TITLE",
+		"value": "Mj\u00f6lnir's Strike"
+	},
+	{
+		"key": "MID_MISSION_S202510MJOLNIR01_A1",
+		"value": "KO w/Summoner"
+	},
+	{
+		"key": "MID_MISSION_H_S202510MJOLNIR01_A1",
+		"value": "Defeat a foe with the My Summoner unit\\nin Mj\u00f6lnir's Strike."
+	},
+	{
+		"key": "MID_MISSION_S202510MJOLNIR01_A2",
+		"value": "KO w/Summoner"
+	},
+	{
+		"key": "MID_MISSION_H_S202510MJOLNIR01_A2",
+		"value": "Defeat a foe with the My Summoner unit\\nin Mj\u00f6lnir's Strike."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_TITLE",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A1",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A1",
+		"value": "Win a battle in the Voting Gauntlet."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A2",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A2",
+		"value": "Win a battle in the Voting Gauntlet."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A3",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A3",
+		"value": "Win a battle in the Voting Gauntlet."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A4",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A4",
+		"value": "Win a battle in the Voting Gauntlet."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A5",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A5",
+		"value": "Win a battle in the Voting Gauntlet."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A6",
+		"value": "Tower: 2nd Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A6",
+		"value": "Clear the second stratum of the Training Tower."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A7",
+		"value": "Tower: 5th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A7",
+		"value": "Clear the fifth stratum of the Training Tower."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A8",
+		"value": "Tower: 8th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A8",
+		"value": "Clear the eighth stratum of the Training Tower."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A9",
+		"value": "Win Arena Duel"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A9",
+		"value": "Win an Arena Duel at any difficulty."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A10",
+		"value": "Win Arena Duel"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A10",
+		"value": "Win an Arena Duel at any difficulty."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A11",
+		"value": "Win Int.+ Arena Duel"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A11",
+		"value": "Win an Arena Duel on Intermediate or higher\\ndifficulty."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A12",
+		"value": "Win Int.+ Arena Duel"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A12",
+		"value": "Win an Arena Duel on Intermediate or higher\\ndifficulty."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A13",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A13",
+		"value": "Win a battle in the Voting Gauntlet with a red\\nally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A14",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A14",
+		"value": "Win a battle in the Voting Gauntlet with a blue\\nally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A15",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A15",
+		"value": "Win a battle in the Voting Gauntlet with a green\\nally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A16",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A16",
+		"value": "Win a battle in the Voting Gauntlet with a\\ncolorless ally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A17",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A17",
+		"value": "Win a battle in the Voting Gauntlet with a red\\nally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A18",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A18",
+		"value": "Win a battle in the Voting Gauntlet with a blue\\nally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A19",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A19",
+		"value": "Win a battle in the Voting Gauntlet with a green\\nally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A20",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A20",
+		"value": "Win a battle in the Voting Gauntlet with a\\ncolorless ally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A21",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A21",
+		"value": "Win a battle in the Voting Gauntlet with a red\\nally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A22",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A22",
+		"value": "Win a battle in the Voting Gauntlet with a blue\\nally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A23",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A23",
+		"value": "Win a battle in the Voting Gauntlet with a green\\nally on your team."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A24",
+		"value": "Voting Gauntlet"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A24",
+		"value": "Win a battle in the Voting Gauntlet with a\\ncolorless ally on your team."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_TITLE",
+		"value": "Oct Training"
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A1",
+		"value": "Tower: 1st Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A1",
+		"value": "Clear the first stratum of the Training Tower.\\nAll four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A2",
+		"value": "Tower: 2nd Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A2",
+		"value": "Clear the second stratum of the Training Tower.\\nAll four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A3",
+		"value": "Tower: 3rd Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A3",
+		"value": "Clear the third stratum of the Training Tower.\\nAll four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A4",
+		"value": "Tower: 4th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A4",
+		"value": "Clear the fourth stratum of the Training Tower.\\nAll four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A5",
+		"value": "Tower: 5th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A5",
+		"value": "Clear the fifth stratum of the Training Tower.\\nAll four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A6",
+		"value": "Tower: 6th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A6",
+		"value": "Clear the sixth stratum of the Training Tower.\\nAll four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A7",
+		"value": "Tower: 7th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A7",
+		"value": "Clear the seventh stratum of the Training\\nTower. All four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A8",
+		"value": "Tower: 8th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A8",
+		"value": "Clear the eighth stratum of the Training Tower.\\nAll four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A9",
+		"value": "Tower: 9th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A9",
+		"value": "Clear the ninth stratum of the Training Tower.\\nAll four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A10",
+		"value": "Tower: 10th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A10",
+		"value": "Clear the tenth stratum of the Training Tower.\\nAll four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A11",
+		"value": "Tower: 10th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A11",
+		"value": "Clear the tenth stratum of the Training Tower\\nusing only infantry allies. (Allies deployed as\\ncohorts using Pair Up do not count.) All four\\nallies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A12",
+		"value": "Tower: 10th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A12",
+		"value": "Clear the tenth stratum of the Training Tower\\nusing only armored allies. (Allies deployed as\\ncohorts using Pair Up do not count.) All four\\nallies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A13",
+		"value": "Tower: 10th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A13",
+		"value": "Clear the tenth stratum of the Training Tower\\nusing only cavalry allies. (Allies deployed as\\ncohorts using Pair Up do not count.) All four\\nallies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A14",
+		"value": "Tower: 10th Stratum"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A14",
+		"value": "Clear the tenth stratum of the Training Tower\\nusing only flying allies. (Allies deployed as\\ncohorts using Pair Up do not count.) All four\\nallies must survive."
+	},
+	{
+		"key": "MPID_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "Corrin"
+	},
+	{
+		"key": "MPID_SEARCH_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "Corrin"
+	},
+	{
+		"key": "MPID_\u7363\u4eba\u30ea\u30f3",
+		"value": "Lyn"
+	},
+	{
+		"key": "MPID_SEARCH_\u7363\u4eba\u30ea\u30f3",
+		"value": "Lyn"
+	},
+	{
+		"key": "MPID_HONOR_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "Of Fates"
+	},
+	{
+		"key": "MPID_HONOR_\u7363\u4eba\u30ea\u30f3",
+		"value": "Plains Wind"
+	},
+	{
+		"key": "MPID_H_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "One of the Emblems who were summoned to\\nElyos. Resides in the Ring of the Crux of Fate.\\nAppears in Fire Emblem Fates / Fire\\nEmblem Engage."
+	},
+	{
+		"key": "MPID_H_\u7363\u4eba\u30ea\u30f3",
+		"value": "Disciple of the light goddess Naga. Though she\\ncannot remember her past, she remains firm in\\nher convictions. Appears in Fire Emblem:\\nThe Blazing Blade / Shadows."
+	},
+	{
+		"key": "MPID_VOICE_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "Marcella Lentz-Pope"
+	},
+	{
+		"key": "MPID_VOICE_\u7363\u4eba\u30ea\u30f3",
+		"value": "Wendee Lee"
+	},
+	{
+		"key": "MPID_ILLUST_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "Kousei Horiguchi (\u6052\u661f\u30db\u30ea\u30b0\u30c1)"
+	},
+	{
+		"key": "MPID_ILLUST_\u7363\u4eba\u30ea\u30f3",
+		"value": "\uff2b\uff45\uff27"
+	},
+	{
+		"key": "MPID_LEGEND_\u7363\u4eba\u30ea\u30f3",
+		"value": "Mythic Effect: Light\\nBoost: HP+5, Res+5\\n\\nGrants allies this Mythic Effect during Light\\nseason, if the Light blessing has been conferred\\nand if this unit enters battle in Aether Raids with\\nthem: Light-blessed allies boost the Aetheric\\nLift acquired for successful attacks during Light\\nseason. (This boost is limited to the number of\\nMythic Heroes \u00d7 the number of Heroes with the\\nblessing conferred \u00d7 10.)\\n\\nDuring Light season, this Mythic Hero will\\nboost Aetheric Lift acquisition for successful\\nattacks depending on number of merges. (This\\nboost is limited to the number of times the unit\\nhas been merged \u00d7 1.)\\n\\nMythic Effect 2: Light\\nBoost: Raiding Party Bonus\\n\\nMythic Effect 3: Light\\nBoost: Raiding Party Call\\n(Details can be found in Edit Raiding Parties.)"
+	},
+	{
+		"key": "MID_TIPS_Summon_v0909c_legend_01_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "Covers the area with Divine Vein\\n(Vert)! Shields allies from magic foes\\nand uses counters to destroy enemies!"
+	},
+	{
+		"key": "MID_TIPS_Summon_v0909c_legend_01_\u7363\u4eba\u30ea\u30f3",
+		"value": "Her Style allows allies on the map to\\nattack at a distance. Strikes with a\\nfierce Special and exposes weakness."
+	},
+	{
+		"key": "MSID_\u672a\u6765\u3092\u9078\u3073\u3057\u8005\u306e\u5263",
+		"value": "Sword of Fate"
+	},
+	{
+		"key": "MSID_SEARCH_\u672a\u6765\u3092\u9078\u3073\u3057\u8005\u306e\u5263",
+		"value": "Sword of Fate"
+	},
+	{
+		"key": "MSID_\u5149\u3068\u95c7\u306e\u75be\u98a8",
+		"value": "Winds of Duality"
+	},
+	{
+		"key": "MSID_SEARCH_\u5149\u3068\u95c7\u306e\u75be\u98a8",
+		"value": "Winds of Duality"
+	},
+	{
+		"key": "MSID_\u7adc\u7a7f\u7832",
+		"value": "Torrential Roar"
+	},
+	{
+		"key": "MSID_SEARCH_\u7adc\u7a7f\u7832",
+		"value": "Torrential Roar"
+	},
+	{
+		"key": "MSID_\u66b4\u8650\u3078\u306e\u6012\u308a",
+		"value": "Reject Tyranny"
+	},
+	{
+		"key": "MSID_SEARCH_\u66b4\u8650\u3078\u306e\u6012\u308a",
+		"value": "Reject Tyranny"
+	},
+	{
+		"key": "MSID_\u706b\u98a8\u6c34\u306e\u547d\u8108",
+		"value": "Torrential Boost"
+	},
+	{
+		"key": "MSID_SEARCH_\u706b\u98a8\u6c34\u306e\u547d\u8108",
+		"value": "Torrential Boost"
+	},
+	{
+		"key": "MSID_\u9632\u96631",
+		"value": "Pair Up 1"
+	},
+	{
+		"key": "MSID_SEARCH_\u9632\u96631",
+		"value": "Pair Up 1"
+	},
+	{
+		"key": "MSID_\u9632\u96632",
+		"value": "Pair Up 2"
+	},
+	{
+		"key": "MSID_SEARCH_\u9632\u96632",
+		"value": "Pair Up 2"
+	},
+	{
+		"key": "MSID_\u9632\u96633",
+		"value": "Pair Up 3"
+	},
+	{
+		"key": "MSID_SEARCH_\u9632\u96633",
+		"value": "Pair Up 3"
+	},
+	{
+		"key": "MSID_\u9632\u96634",
+		"value": "Pair Up 4"
+	},
+	{
+		"key": "MSID_SEARCH_\u9632\u96634",
+		"value": "Pair Up 4"
+	},
+	{
+		"key": "MSID_\u8863\u306e\u8b77\u308a\u624b\u30fb\u9b54\u30fb\u8328",
+		"value": "S/R Briar M Save"
+	},
+	{
+		"key": "MSID_SEARCH_\u8863\u306e\u8b77\u308a\u624b\u30fb\u9b54\u30fb\u8328",
+		"value": "S/R Briar M Save"
+	},
+	{
+		"key": "MSID_\u6697\u7363\u30fb\u4e0d\u5c48",
+		"value": "Dark Beast Force"
+	},
+	{
+		"key": "MSID_SEARCH_\u6697\u7363\u30fb\u4e0d\u5c48",
+		"value": "Dark Beast Force"
+	},
+	{
+		"key": "MSID_\u5929\u8108\u30fb\u6df1\u7dd1",
+		"value": "Divine Vein (Vert)"
+	},
+	{
+		"key": "MSID_SEARCH_\u5929\u8108\u30fb\u6df1\u7dd1",
+		"value": "Divine Vein (Vert)"
+	},
+	{
+		"key": "MSID_H_\u672a\u6765\u3092\u9078\u3073\u3057\u8005\u306e\u5263",
+		"value": "$aAccelerates Special trigger (cooldown count-1).\\nUnit can counterattack regardless of foe's range.\\n\\nAt start of player phase or enemy phase,\\nif unit is within 2 spaces of an ally, grants\\n\u3010Draconic Hex\u3011and \"reduces the percentage\\nof foe's non-Special 'reduce damage by X%'\\nskills by 50% during combat (excluding\\narea-of-effect Specials)\" to unit and allies\\nwithin 2 spaces of unit for 1 turn.\\n\\nIf unit is within 3 spaces of an ally, grants\\nbonus to unit's Atk/Spd/Def/Res = number of\\nallies within 3 spaces of unit \u00d7 3, + 5 (max 14;\\nif unit triggers Savior, value is treated as 14),\\ndeals damage = 20% of unit's Res (excluding\\narea-of-effect Specials), reduces damage from\\nfoe's attacks by 20% of unit's Res (excluding\\narea-of-effect Specials), reduces damage from\\nfoe's Specials by an additional 20% of unit's\\nRes (excluding area-of-effect Specials), and\\nneutralizes effects that guarantee foe's follow-\\nup attacks and effects that prevent unit's\\nfollow-up attacks during combat.\\n\\n\u3010Draconic Hex\u3011\\nInflicts Atk/Spd/Def/Res-5 on foe during\\ncombat and inflicts penalty on each of those\\nstats = 5 - current penalty on each of those\\nstats during combat for 1 turn (min 0;\\ncalculates each stat penalty independently)."
+	},
+	{
+		"key": "MSID_H_\u672a\u6765\u3092\u9078\u3073\u3057\u8005\u306e\u5263_NOSKW",
+		"value": "$aAccelerates Special trigger (cooldown count-1).\\nUnit can counterattack regardless of foe's range.\\n\\nAt start of player phase or enemy phase,\\nif unit is within 2 spaces of an ally, grants\\n\u3010Draconic Hex\u3011and \"reduces the percentage\\nof foe's non-Special 'reduce damage by X%'\\nskills by 50% during combat (excluding\\narea-of-effect Specials)\" to unit and allies\\nwithin 2 spaces of unit for 1 turn.\\n\\nIf unit is within 3 spaces of an ally, grants\\nbonus to unit's Atk/Spd/Def/Res = number of\\nallies within 3 spaces of unit \u00d7 3, + 5 (max 14;\\nif unit triggers Savior, value is treated as 14),\\ndeals damage = 20% of unit's Res (excluding\\narea-of-effect Specials), reduces damage from\\nfoe's attacks by 20% of unit's Res (excluding\\narea-of-effect Specials), reduces damage from\\nfoe's Specials by an additional 20% of unit's\\nRes (excluding area-of-effect Specials), and\\nneutralizes effects that guarantee foe's follow-\\nup attacks and effects that prevent unit's\\nfollow-up attacks during combat."
+	},
+	{
+		"key": "MSID_H_\u5149\u3068\u95c7\u306e\u75be\u98a8",
+		"value": "$aAccelerates Special trigger (cooldown count-1).\\nEffective against flying foes.\\n\\nAt start of turn, if unit's HP \u2265 25%, inflicts\\n\u3010Exposure\u3011,\u3010Spd Shackle\u3011, and\u3010Def Shackle\u3011\\non closest foes and any foe within 2 spaces of\\nthose foes through their next actions.\\n\\nIf unit is transformed or unit's HP \u2265 25% at\\nstart of combat, grants bonus to unit's\\nAtk/Spd/Def/Res = number of foes within 3\\nrows or 3 columns centered on unit \u00d7 3, + 5\\n(max 14), unit deals +X \u00d7 5 damage (excluding\\narea-of-effect Specials), and reduces damage\\nfrom foe's attacks by X \u00d7 3 during combat\\n(excluding area-of-effect Specials; X = number\\nof Bonus effects active on unit, excluding stat\\nbonuses + number of Penalty effects active on\\nfoe, excluding stat penalties; max 5), and also,\\nif decreasing the Spd difference necessary to\\nmake a follow-up attack by 10 would allow unit\\nto trigger a follow-up attack (excluding\\nguaranteed or prevented follow-ups), triggers\\n\u3010Potent Follow 100%\u3011during combat.\\n\\nAt start of turn, if unit is adjacent to only beast\\nor dragon allies or if unit is not adjacent to any\\nally, unit transforms (otherwise, unit reverts).\\nIf unit transforms, grants Atk+2, inflicts\\nAtk/Def-Y on foe during combat (Y = number\\nof spaces from start position to end position\\nof whoever initiated combat + 3; max 6), and\\nalso, if Y \u2265 5, reduces damage from foe's first\\nattack during combat by 30%.\\n\\n\u3010Exposure\u3011\\nFoe's attacks deal +10 damage.\\n\\n\u3010Spd Shackle\u3011\\nInflicts penalty on unit's Spd during combat =\\nnumber of Penalty effects active on unit + 4,\\nexcluding stat penalties (max 8).\\n\\n\u3010Def Shackle\u3011\\nInflicts penalty on unit's Def during combat =\\nnumber of Penalty effects active on unit + 4,\\nexcluding stat penalties (max 8).\\n\\n\u3010Potent Follow 100%\u3011\\nTriggers an additional follow-up attack\\nimmediately after unit's standard follow-up\\nattack and deals damage = 100% of\\nunit's normal attack damage (if unit cannot\\nmake a follow-up attack, this effect triggers\\nwhen the standard follow-up attack would\\noccur; this effect is treated like a follow-up\\nattack, so effects like \"reduce damage by\\nX%\" still apply, but this effect is not affected\\nby effects that prevent follow-ups or\\n\"attacks twice\" effects; only highest\\nvalue applied; does not stack)."
+	},
+	{
+		"key": "MSID_H_\u5149\u3068\u95c7\u306e\u75be\u98a8_NOSKW",
+		"value": "$aAccelerates Special trigger (cooldown count-1).\\nEffective against flying foes.\\n\\nAt start of turn, if unit's HP \u2265 25%, inflicts\\n\u3010Exposure\u3011,\u3010Spd Shackle\u3011, and\u3010Def Shackle\u3011\\non closest foes and any foe within 2 spaces of\\nthose foes through their next actions.\\n\\nIf unit is transformed or unit's HP \u2265 25% at\\nstart of combat, grants bonus to unit's\\nAtk/Spd/Def/Res = number of foes within 3\\nrows or 3 columns centered on unit \u00d7 3, + 5\\n(max 14), unit deals +X \u00d7 5 damage (excluding\\narea-of-effect Specials), and reduces damage\\nfrom foe's attacks by X \u00d7 3 during combat\\n(excluding area-of-effect Specials; X = number\\nof Bonus effects active on unit, excluding stat\\nbonuses + number of Penalty effects active on\\nfoe, excluding stat penalties; max 5), and also,\\nif decreasing the Spd difference necessary to\\nmake a follow-up attack by 10 would allow unit\\nto trigger a follow-up attack (excluding\\nguaranteed or prevented follow-ups), triggers\\n\u3010Potent Follow 100%\u3011during combat.\\n\\nAt start of turn, if unit is adjacent to only beast\\nor dragon allies or if unit is not adjacent to any\\nally, unit transforms (otherwise, unit reverts).\\nIf unit transforms, grants Atk+2, inflicts\\nAtk/Def-Y on foe during combat (Y = number\\nof spaces from start position to end position\\nof whoever initiated combat + 3; max 6), and\\nalso, if Y \u2265 5, reduces damage from foe's first\\nattack during combat by 30%."
+	},
+	{
+		"key": "MSID_H_\u7adc\u7a7f\u7832",
+		"value": "$aBoosts damage by 60% of unit's Res when\\nSpecial triggers.\\n\\nNeutralizes effects that inflict \"Special\\ncooldown charge -X\" on unit and reduces\\ndamage from foe's attacks by 40% during\\ncombat (excluding area-of-effect Specials).\\nIf unit's Res > foe's Res, decreases Spd\\ndifference necessary for unit to make a\\nfollow-up attack by X and increases Spd\\ndifference necessary for foe to make a\\nfollow-up attack by X during combat (X =\\ndifference between Res stats; max 10).\\n\\nAt start of enemy phase (except for in Pawns\\nof Loki), if there is no\u3010Divine Vein (Icicle)\u3011\\ncurrently applied by unit or allies, applies\\n\u3010Divine Vein (Icicle)\u3011to spaces 2 spaces away\\nfrom both unit and certain target ally within 2\\nspaces of unit for 1 turn (excluding spaces\\nadjacent to or occupied by unit or target ally,\\nspaces occupied by a foe, destructible terrain\\nother than Divine Vein, or warp spaces in\\nRival Domains) and\u3010Divine Vein (Vert)\u3011\\nto unit's space and spaces within 4 spaces of\\nunit for 1 turn (excluding spaces with\\n\u3010Divine Vein (Icicle)\u3011applied). (If support\\npartner is on player team, targets any support\\npartner; otherwise, targets ally with the highest\\nDef at start of battle, excluding unit; \"at start\\nof battle\" excludes increases to Def granted\\nafter ally is deployed, such as Legendary\\nEffects, Mythic Effects, Bonus Heroes, Great\\nTalent, etc.; if number of allies that qualify \u2265 2,\\nit's treated as though there is no target ally.)\\n\\n\u3010Divine Vein (Icicle)\u3011\\nApplies the following status on space:\\nFoes treat space as impassable terrain while\\nstatus is active, but status is destructible (with\\n1 HP). When destroyed, it changes to\\n\u3010Divine Vein (Vert)\u3011. Allies can move into and\\noccupy space. If any allies occupy spaces with\\nDivine Vein (Icicle) applied, attacks targeting\\nthose spaces will hit the ally over destroying\\nthe Divine Vein (Icicle).\\n\\n\u3010Divine Vein (Vert)\u3011\\nApplies the following effects on space for foes:\\nFoe cannot warp from this space or into this\\nspace (does not affect units with Pass skills or\\nwarp effects from structures like camps and\\nfortresses in Rival Domains). Inflicts\\n\u3010Canto Control\u3011on foes that trigger Canto\\nin this space through their next action. Inflicts\\nAtk/Spd-5 and Special cooldown charge -1 on\\nfoe per attack during combat (only highest\\nvalue applied; does not stack), and also, if foe's\\nattack can trigger foe's Special, inflicts Special\\ncooldown count+1 on foe before foe's first\\nattack during combat (cannot exceed the foe's\\nmaximum Special cooldown).\\n\\n\u3010Canto Control\u3011\\nIf unit's Range = 1, unit can move 1 space\\nwhen Canto triggers. If unit's Range = 2,\\ntheir action ends when Canto triggers."
+	},
+	{
+		"key": "MSID_H_\u7adc\u7a7f\u7832_NOSKW",
+		"value": "$aBoosts damage by 60% of unit's Res when\\nSpecial triggers.\\n\\nNeutralizes effects that inflict \"Special\\ncooldown charge -X\" on unit and reduces\\ndamage from foe's attacks by 40% during\\ncombat (excluding area-of-effect Specials).\\nIf unit's Res > foe's Res, decreases Spd\\ndifference necessary for unit to make a\\nfollow-up attack by X and increases Spd\\ndifference necessary for foe to make a\\nfollow-up attack by X during combat (X =\\ndifference between Res stats; max 10).\\n\\nAt start of enemy phase (except for in Pawns\\nof Loki), if there is no\u3010Divine Vein (Icicle)\u3011\\ncurrently applied by unit or allies, applies\\n\u3010Divine Vein (Icicle)\u3011to spaces 2 spaces away\\nfrom both unit and certain target ally within 2\\nspaces of unit for 1 turn (excluding spaces\\nadjacent to or occupied by unit or target ally,\\nspaces occupied by a foe, destructible terrain\\nother than Divine Vein, or warp spaces in\\nRival Domains) and\u3010Divine Vein (Vert)\u3011\\nto unit's space and spaces within 4 spaces of\\nunit for 1 turn (excluding spaces with\\n\u3010Divine Vein (Icicle)\u3011applied). (If support\\npartner is on player team, targets any support\\npartner; otherwise, targets ally with the highest\\nDef at start of battle, excluding unit; \"at start\\nof battle\" excludes increases to Def granted\\nafter ally is deployed, such as Legendary\\nEffects, Mythic Effects, Bonus Heroes, Great\\nTalent, etc.; if number of allies that qualify \u2265 2,\\nit's treated as though there is no target ally.)"
+	},
+	{
+		"key": "MSID_H_\u66b4\u8650\u3078\u306e\u6012\u308a",
+		"value": "$aIf unit can transform, transformation effects\\ngain \"if any foe is within 3 columns or 3 rows\\ncentered on unit\" as a trigger condition (in\\naddition to existing conditions).\\n\\nIf defending in Aether Raids, at the start of\\nenemy turn 1, if conditions for transforming\\nare met, unit transforms.\\n\\nAt start of turn, if unit's HP \u2265 25%, grants\\n\"reduces the percentage of foe's non-Special\\n'reduce damage by X%' skills by 50% during\\ncombat (excluding area-of-effect Specials)\" to\\nunit and allies within 2 spaces of unit for 1\\nturn, and grants\u3010Range: 2 Style\u3011to unit\\nand sword, lance, axe, dragon, or beast allies\\nwithin 2 spaces of unit for 1 turn.\\n\\nIf unit is transformed or unit's HP \u2265 25% at\\nstart of combat, grants Atk/Spd/Def/Res+X+8\\nto unit, unit deals +X \u00d7 4 damage (excluding\\narea-of-effect Specials), reduces damage from\\nfoe's attacks by X \u00d7 4 (excluding area-of-effect\\nSpecials), reduces damage from foe's Specials\\nby an additional X \u00d7 4 (excluding area-of-effect\\nSpecials; X = number of spaces from start\\nposition to end position of whoever initiated\\ncombat; max 3), neutralizes effects that inflict\\n\"Special cooldown charge -X\" on unit, and\\ngrants Special cooldown count-Y to unit\\nbefore unit's first attack during combat (Y =\\nnumber of Penalty effects active on foe,\\nexcluding stat penalties; max 2).\\n\\n\u3010Range: 2 Style\u3011\\nUnit can use the following\u3010Style\u3011:\\n\u2015\u2015\u2015\u2015\u2015 Range: 2 Style \u2015\u2015\u2015\u2015\u2015\\nUnit can attack foes 2 spaces away (unit cannot\\nattack adjacent foes).\\n\\nCannot move through spaces within 2 spaces\\nof foe that has triggered the Bulwark effect\\n(does not apply if unit has a Pass skill). Unit\\nsuffers a counterattack if any of the following\\nconditions are met: foe is armored with\\nRange = 1, foe can counterattack regardless\\nof unit's range, or foe's Range is the same as\\nthe distance between unit and foe.\\nAfter-combat movement effects do not occur.\\nSkill effect's Range is treated as 1. This Style\\ncan only be used if unit has Range = 1.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\nThis Style is disabled when unit has another\\n\u3010Style\u3011.\\nAfter combat where this\u3010Style\u3011\\nis used, removes this status.\\n\\n\u3010Style\u3011\\nChange Style using the Style button at the\\nbottom of the screen.\\n\\nA unit's Style is only active when that unit\\nis taking an action. When unit has a status or a\\nskill that enables use of a Style, Duo Skills and\\nHarmonized Skills cannot be used while unit\\ncan take an action (those skills can be used\\nafter unit has acted).\\nStyle use is disabled when unit is deployed\\nusing Pair Up or when unit is equipped with\\nmultiple skills that have a Style."
+	},
+	{
+		"key": "MSID_H_\u66b4\u8650\u3078\u306e\u6012\u308a_NOSKW",
+		"value": "$aIf unit can transform, transformation effects\\ngain \"if any foe is within 3 columns or 3 rows\\ncentered on unit\" as a trigger condition (in\\naddition to existing conditions).\\n\\nIf defending in Aether Raids, at the start of\\nenemy turn 1, if conditions for transforming\\nare met, unit transforms.\\n\\nAt start of turn, if unit's HP \u2265 25%, grants\\n\"reduces the percentage of foe's non-Special\\n'reduce damage by X%' skills by 50% during\\ncombat (excluding area-of-effect Specials)\" to\\nunit and allies within 2 spaces of unit for 1\\nturn, and grants\u3010Range: 2 Style\u3011to unit\\nand sword, lance, axe, dragon, or beast allies\\nwithin 2 spaces of unit for 1 turn.\\n\\nIf unit is transformed or unit's HP \u2265 25% at\\nstart of combat, grants Atk/Spd/Def/Res+X+8\\nto unit, unit deals +X \u00d7 4 damage (excluding\\narea-of-effect Specials), reduces damage from\\nfoe's attacks by X \u00d7 4 (excluding area-of-effect\\nSpecials), reduces damage from foe's Specials\\nby an additional X \u00d7 4 (excluding area-of-effect\\nSpecials; X = number of spaces from start\\nposition to end position of whoever initiated\\ncombat; max 3), neutralizes effects that inflict\\n\"Special cooldown charge -X\" on unit, and\\ngrants Special cooldown count-Y to unit\\nbefore unit's first attack during combat (Y =\\nnumber of Penalty effects active on foe,\\nexcluding stat penalties; max 2)."
+	},
+	{
+		"key": "MSID_H_\u706b\u98a8\u6c34\u306e\u547d\u8108",
+		"value": "Grants HP+5.\\n\\nIf foe initiates combat or if unit's HP \u2265 50%\\nat start of combat, grants Atk/Spd/Res+9 to\\nunit during combat and restores 7 HP to unit\\nafter combat."
+	},
+	{
+		"key": "MSID_H_\u9632\u96631",
+		"value": "If unit is within 3 spaces of an ally, unit\\ndeals +5 damage (excluding area-of-effect\\nSpecials) and reduces damage from foe's\\nattacks by 3 during combat (excluding\\narea-of-effect Specials), and also, if foe\\ntriggers the \"attacks twice\" effect during\\ncombat, reduces damage by an additional 3\\n(excluding area-of-effect Specials).\\n\\nIf unit is within 3 spaces of an ally and foe\\ninitiates combat, reduces damage by an\\nadditional X (X = distance from unit to foe;\\nexcluding area-of-effect Specials)."
+	},
+	{
+		"key": "MSID_H_\u9632\u96632",
+		"value": "If unit is within 3 spaces of an ally, unit\\ndeals +7 damage (excluding area-of-effect\\nSpecials) and reduces damage from foe's\\nattacks by 5 during combat (excluding\\narea-of-effect Specials), and also, if foe\\ntriggers the \"attacks twice\" effect during\\ncombat, reduces damage by an additional 4\\n(excluding area-of-effect Specials).\\n\\nIf unit is within 3 spaces of an ally and foe\\ninitiates combat, reduces damage by an\\nadditional X (X = distance from unit to foe;\\nexcluding area-of-effect Specials)."
+	},
+	{
+		"key": "MSID_H_\u9632\u96633",
+		"value": "If unit is within 3 spaces of an ally, unit\\ndeals +10 damage (excluding area-of-effect\\nSpecials) and reduces damage from foe's\\nattacks by 7 during combat (excluding\\narea-of-effect Specials), and also, if foe\\ntriggers the \"attacks twice\" effect during\\ncombat, reduces damage by an additional 5\\n(excluding area-of-effect Specials).\\n\\nIf unit is within 3 spaces of an ally and\\nfoe initiates combat, reduces damage by an\\nadditional X \u00d7 2 (X = distance from unit to\\nfoe; excluding area-of-effect Specials)."
+	},
+	{
+		"key": "MSID_H_\u9632\u96634",
+		"value": "If unit is within 3 spaces of an ally, inflicts\\nAtk/Spd-4 on foe, increases Spd difference\\nnecessary for foe to make a follow-up attack\\nby 10, neutralizes penalties on unit, unit\\ndeals +15 damage (excluding area-of-effect\\nSpecials), and reduces damage from foe's\\nattacks by 10 during combat (excluding\\narea-of-effect Specials), and also, if foe\\ntriggers the \"attacks twice\" effect during\\ncombat, reduces damage by an additional 7\\n(excluding area-of-effect Specials).\\n\\nIf unit is within 3 spaces of an ally and\\nfoe initiates combat, reduces damage by an\\nadditional X \u00d7 2 (X = distance from unit to\\nfoe; excluding area-of-effect Specials)."
+	},
+	{
+		"key": "MSID_H_\u8863\u306e\u8b77\u308a\u624b\u30fb\u9b54\u30fb\u8328",
+		"value": "$aIf magic, staff, or dragon foe initiates combat\\nagainst an ally within 2 spaces of unit,\\ntriggers\u3010Savior\u3011on unit.\\n\\nIf foe uses magic, staff, or dragonstone,\\ngrants Spd/Res+4 to unit, disables foe's\\neffects that \"calculate damage using the\\nlower of foe's Def or Res\" (including\\narea-of-effect Specials), and reduces\\ndamage from foe's first attack by 5 during\\ncombat (\"first attack\" normally means only\\nthe first strike; for effects that grant \"unit\\nattacks twice,\" it means the first and second\\nstrikes), and unit's next attack deals damage\\n= 40% of foe's attack damage prior to\\nreductions (resets at end of combat; only\\nhighest value applied; does not stack).\\n\\n\u3010Savior\u3011\\nUnit takes ally's space, enters combat in ally's\\nplace, and receives all after-combat effects.\\n\\nSavior will not trigger if ally is on terrain that\\nunit cannot move to or if multiple units are able\\nto use Savior during the same combat. If Savior\\ntriggers, after-combat movement effects do\\nnot occur."
+	},
+	{
+		"key": "MSID_H_\u8863\u306e\u8b77\u308a\u624b\u30fb\u9b54\u30fb\u8328_NOSKW",
+		"value": "$aIf magic, staff, or dragon foe initiates combat\\nagainst an ally within 2 spaces of unit,\\ntriggers\u3010Savior\u3011on unit.\\n\\nIf foe uses magic, staff, or dragonstone,\\ngrants Spd/Res+4 to unit, disables foe's\\neffects that \"calculate damage using the\\nlower of foe's Def or Res\" (including\\narea-of-effect Specials), and reduces\\ndamage from foe's first attack by 5 during\\ncombat (\"first attack\" normally means only\\nthe first strike; for effects that grant \"unit\\nattacks twice,\" it means the first and second\\nstrikes), and unit's next attack deals damage\\n= 40% of foe's attack damage prior to\\nreductions (resets at end of combat; only\\nhighest value applied; does not stack)."
+	},
+	{
+		"key": "MSID_H_\u6697\u7363\u30fb\u4e0d\u5c48",
+		"value": "Inflicts Spd/Def-4 on foe, disables skills of all\\nfoes excluding foe in combat, neutralizes\\npenalties on unit, and unit deals +5 damage\\nduring combat (excluding area-of-effect\\nSpecials)."
+	},
+	{
+		"key": "MSID_H_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "$aWhen Special triggers, boosts damage by\\nunit's max Special cooldown count value \u00d7 4\\n(excluding area-of-effect Specials).\\n\\nAt start of enemy phase (except for in Pawns\\nof Loki), if there is no\u3010Divine Vein (Icicle)\u3011\\ncurrently applied by unit or allies, applies\\n\u3010Divine Vein (Icicle)\u3011to spaces 2 spaces away\\nfrom unit for 1 turn (excluding spaces occupied\\nby a foe, destructible terrain other than Divine\\nVein, or warp spaces in Rival Domains), and\\n\u3010Divine Vein (Vert)\u3011to unit's space and spaces\\nwithin 3 spaces of unit for 1 turn (excluding\\nspaces with\u3010Divine Vein (Icicle)\u3011applied).\\n\\n\u3010Divine Vein (Icicle)\u3011\\nApplies the following status on space:\\nFoes treat space as impassable terrain while\\nstatus is active, but status is destructible (with\\n1 HP). When destroyed, it changes to\\n\u3010Divine Vein (Vert)\u3011. Allies can move into and\\noccupy space. If any allies occupy spaces with\\nDivine Vein (Icicle) applied, attacks targeting\\nthose spaces will hit the ally over destroying\\nthe Divine Vein (Icicle).\\n\\n\u3010Divine Vein (Vert)\u3011\\nApplies the following effects on space for foes:\\nFoe cannot warp from this space or into this\\nspace (does not affect units with Pass skills or\\nwarp effects from structures like camps and\\nfortresses in Rival Domains). Inflicts\\n\u3010Canto Control\u3011on foes that trigger Canto\\nin this space through their next action. Inflicts\\nAtk/Spd-5 and Special cooldown charge -1 on\\nfoe per attack during combat (only highest\\nvalue applied; does not stack), and also, if foe's\\nattack can trigger foe's Special, inflicts Special\\ncooldown count+1 on foe before foe's first\\nattack during combat (cannot exceed the foe's\\nmaximum Special cooldown).\\n\\n\u3010Canto Control\u3011\\nIf unit's Range = 1, unit can move 1 space\\nwhen Canto triggers. If unit's Range = 2,\\ntheir action ends when Canto triggers."
+	},
+	{
+		"key": "MSID_H_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973_NOSKW",
+		"value": "$aWhen Special triggers, boosts damage by\\nunit's max Special cooldown count value \u00d7 4\\n(excluding area-of-effect Specials).\\n\\nAt start of enemy phase (except for in Pawns\\nof Loki), if there is no\u3010Divine Vein (Icicle)\u3011\\ncurrently applied by unit or allies, applies\\n\u3010Divine Vein (Icicle)\u3011to spaces 2 spaces away\\nfrom unit for 1 turn (excluding spaces occupied\\nby a foe, destructible terrain other than Divine\\nVein, or warp spaces in Rival Domains), and\\n\u3010Divine Vein (Vert)\u3011to unit's space and spaces\\nwithin 3 spaces of unit for 1 turn (excluding\\nspaces with\u3010Divine Vein (Icicle)\u3011applied)."
+	},
+	{
+		"key": "MID_STAGE_HONOR_L0091",
+		"value": "E & M Hero Battle"
+	},
+	{
+		"key": "MID_STAGE_L0091",
+		"value": "C & L"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PB288",
+		"value": "Skill Studies 288"
+	},
+	{
+		"key": "MID_STAGE_PB288",
+		"value": "Of Fates"
+	},
+	{
+		"key": "MID_VEIN_6",
+		"value": "Divine Vein (Vert)"
+	},
+	{
+		"key": "MID_H_VEIN_6",
+		"value": "$aApplies the following effects on space\\nfor foes: Foe cannot warp from this\\nspace or into this space (does not\\naffect units with Pass skills or warp\\neffects from structures like camps and\\nfortresses in Rival Domains).\\n\\nInflicts\u3010Canto Control\u3011on foes that\\ntrigger Canto in this space through\\ntheir next action.\\n\\nInflicts Atk/Spd-5 and Special\\ncooldown charge -1 on foe per attack\\nduring combat (only highest value\\napplied; does not stack), and also,\\nif foe's attack can trigger foe's\\nSpecial, inflicts Special cooldown\\ncount+1 on foe before foe's first\\nattack during combat (cannot exceed\\nthe foe's maximum Special cooldown).\\n\\n\u3010Canto Control\u3011\\nIf unit's Range = 1, unit can move 1 space\\nwhen Canto triggers. If unit's Range = 2,\\ntheir action ends when Canto triggers."
+	},
+	{
+		"key": "MID_H_VEIN_6_NOSKW",
+		"value": "$aApplies the following effects on space\\nfor foes: Foe cannot warp from this\\nspace or into this space (does not\\naffect units with Pass skills or warp\\neffects from structures like camps and\\nfortresses in Rival Domains).\\n\\nInflicts\u3010Canto Control\u3011on foes that\\ntrigger Canto in this space through\\ntheir next action.\\n\\nInflicts Atk/Spd-5 and Special\\ncooldown charge -1 on foe per attack\\nduring combat (only highest value\\napplied; does not stack), and also,\\nif foe's attack can trigger foe's\\nSpecial, inflicts Special cooldown\\ncount+1 on foe before foe's first\\nattack during combat (cannot exceed\\nthe foe's maximum Special cooldown)."
+	},
+	{
+		"key": "MID_VEIN_7",
+		"value": "Divine Vein (Icicle)"
+	},
+	{
+		"key": "MID_H_VEIN_7",
+		"value": "$aApplies the following status on space:\\nFoes treat space as impassable terrain\\nwhile status is active, but status is\\ndestructible (with 1 HP). When\\ndestroyed, it changes to\u3010Divine Vein (Vert)\u3011.\\nAllies can move into and occupy space.\\n\\nIf any allies occupy spaces with\\nDivine Vein (Icicle) applied, attacks\\ntargeting those spaces will hit the\\nally over destroying the\\nDivine Vein (Icicle).\\n\\n\u3010Divine Vein (Vert)\u3011\\nApplies the following effects on space for foes:\\n\\nFoe cannot warp from this space or into this\\nspace (does not affect units with Pass skills or\\nwarp effects from structures like camps and\\nfortresses in Rival Domains).\\n\\nInflicts\u3010Canto Control\u3011on foes that trigger\\nCanto in this space through their next action.\\n\\nInflicts Atk/Spd-5 and Special cooldown charge\\n-1 on foe per attack during combat (only\\nhighest value applied; does not stack), and\\nalso, if foe's attack can trigger foe's Special,\\ninflicts Special cooldown count+1 on foe\\nbefore foe's first attack during combat (cannot\\nexceed the foe's maximum Special cooldown).\\n\\n(Divine Vein effects do not stack; replaces any\\nexisting Divine Vein effect; Divine Vein effects\\napplied simultaneously cancel each other out.)\\n\\n\u3010Canto Control\u3011\\nIf unit's Range = 1, unit can move 1 space\\nwhen Canto triggers. If unit's Range = 2,\\ntheir action ends when Canto triggers."
+	},
+	{
+		"key": "MID_H_VEIN_7_NOSKW",
+		"value": "$aApplies the following status on space:\\nFoes treat space as impassable terrain\\nwhile status is active, but status is\\ndestructible (with 1 HP). When\\ndestroyed, it changes to\u3010Divine Vein (Vert)\u3011.\\nAllies can move into and occupy space.\\n\\nIf any allies occupy spaces with\\nDivine Vein (Icicle) applied, attacks\\ntargeting those spaces will hit the\\nally over destroying the\\nDivine Vein (Icicle)."
+	}
+]

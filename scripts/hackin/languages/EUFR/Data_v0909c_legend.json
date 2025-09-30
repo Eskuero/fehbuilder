@@ -1,0 +1,826 @@
+[
+	{
+		"key": "MDAID_\u65a7\u6226\u58eb\u306e\u30d0\u30f3\u30c0\u30ca\u30fb\u91d1",
+		"value": "Bandana (hache) d'or"
+	},
+	{
+		"key": "MDAID_H_\u65a7\u6226\u58eb\u306e\u30d0\u30f3\u30c0\u30ca\u30fb\u91d1",
+		"value": "Troph\u00e9e pour une victoire contre\\nla version Embl\u00e8me de Corrin et\\nla version mythique de Lyn."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_96",
+		"value": "$aL'unit\u00e9 peut utiliser le\u3010Style\u3011suivant :\\n\u2015\u2015\u2015\u2015\u2015 Style Port\u00e9e : 2 \u2015\u2015\u2015\u2015\u2015\\nL'unit\u00e9 peut attaquer les ennemis \u00e0 2\u00a0cases\\n(l'unit\u00e9 ne peut pas attaquer les ennemis\\nadjacents).\\n\\nL'unit\u00e9 ne peut pas traverser les cases \u00e0\\n2 cases ou moins de l'ennemi ayant d\u00e9clench\u00e9\\nl'effet Muraille (n'affecte pas les unit\u00e9s dot\u00e9es\\nde l'aptitude Passage). L'unit\u00e9 subit une riposte\\nsi l'une des conditions suivantes est remplie\u00a0:\\nl'ennemi est une unit\u00e9 en armure avec une\\nport\u00e9e de 1, l'ennemi peut riposter peu importe\\nla distance \u00e0 laquelle se trouve l'unit\u00e9, ou\\nla port\u00e9e de l'ennemi est \u00e9gale \u00e0 la distance\\nentre l'unit\u00e9 et l'ennemi.\\nLes effets de d\u00e9placement d'apr\u00e8s combat\\nn'ont pas lieu. La port\u00e9e de l'effet d'aptitude\\nest consid\u00e9r\u00e9e comme \u00e9tant de 1. Ce style\\nne peut \u00eatre utilis\u00e9 que si l'unit\u00e9 a une port\u00e9e\\nde 1.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\nCe style est d\u00e9sactiv\u00e9 lorsqu'un autre\u3010Style\u3011est\\n\u00e9quip\u00e9 par l'unit\u00e9. L'effet de ce\u3010Style\u3011prend fin\\napr\u00e8s le combat dans lequel il est utilis\u00e9.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\n(Pendant 1 tour)\\n\\n\u3010Style\u3011\\nChangez de style en utilisant le bouton \u00ab Style \u00bb\\nen bas de l'\u00e9cran.\\n\\nLe style d'une unit\u00e9 est actif uniquement lorsque\\ncette unit\u00e9 est en train d'agir. Quand l'unit\u00e9\\nposs\u00e8de un effet ou une aptitude activant\\nun style, elle ne pourra pas utiliser de doubles\\naptitudes ou d'aptitudes harmonis\u00e9es lorsqu'elle\\npeut agir (ces aptitudes peuvent \u00eatre utilis\u00e9es\\napr\u00e8s l'action de l'unit\u00e9). L'utilisation du style\\nest d\u00e9sactiv\u00e9e quand l'unit\u00e9 est d\u00e9ploy\u00e9e avec\\nDuo ou qu'elle est \u00e9quip\u00e9e de plusieurs aptitudes\\nayant un style."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_96_NOSKW",
+		"value": "$aL'unit\u00e9 peut utiliser le\u3010Style\u3011suivant :\\n\u2015\u2015\u2015\u2015\u2015 Style Port\u00e9e : 2 \u2015\u2015\u2015\u2015\u2015\\nL'unit\u00e9 peut attaquer les ennemis \u00e0 2\u00a0cases\\n(l'unit\u00e9 ne peut pas attaquer les ennemis\\nadjacents).\\n\\nL'unit\u00e9 ne peut pas traverser les cases \u00e0\\n2 cases ou moins de l'ennemi ayant d\u00e9clench\u00e9\\nl'effet Muraille (n'affecte pas les unit\u00e9s dot\u00e9es\\nde l'aptitude Passage). L'unit\u00e9 subit une riposte\\nsi l'une des conditions suivantes est remplie\u00a0:\\nl'ennemi est une unit\u00e9 en armure avec une\\nport\u00e9e de 1, l'ennemi peut riposter peu importe\\nla distance \u00e0 laquelle se trouve l'unit\u00e9, ou\\nla port\u00e9e de l'ennemi est \u00e9gale \u00e0 la distance\\nentre l'unit\u00e9 et l'ennemi.\\nLes effets de d\u00e9placement d'apr\u00e8s combat\\nn'ont pas lieu. La port\u00e9e de l'effet d'aptitude\\nest consid\u00e9r\u00e9e comme \u00e9tant de 1. Ce style\\nne peut \u00eatre utilis\u00e9 que si l'unit\u00e9 a une port\u00e9e\\nde 1.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\nCe style est d\u00e9sactiv\u00e9 lorsqu'un autre\u3010Style\u3011est\\n\u00e9quip\u00e9 par l'unit\u00e9. L'effet de ce\u3010Style\u3011prend fin\\napr\u00e8s le combat dans lequel il est utilis\u00e9.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\n(Pendant 1 tour)"
+	},
+	{
+		"key": "MID_ENHANCE_HELP_96",
+		"value": "Active Style Port\u00e9e : 2"
+	},
+	{
+		"key": "MID_MISSION_M202510A_TITLE",
+		"value": "Qu\u00eates d'oct."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A1",
+		"value": "Assaut (ar\u00e8ne) :\u00a01 carte"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A1",
+		"value": "Remporter une bataille dans l'assaut de l'ar\u00e8ne."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A2",
+		"value": "Assaut (ar\u00e8ne) :\u00a03 cartes"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A2",
+		"value": "Remporter trois batailles cons\u00e9cutives dans\\nl'assaut de l'ar\u00e8ne."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A3",
+		"value": "Assaut (ar\u00e8ne) :\u00a05 cartes"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A3",
+		"value": "Remporter cinq batailles cons\u00e9cutives dans\\nl'assaut de l'ar\u00e8ne."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A4",
+		"value": "Victoire : Alfonse"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A4",
+		"value": "Vaincre des ennemis avec Alfonse,\\nprince d'Askr."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A5",
+		"value": "Victoire : Sharena"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A5",
+		"value": "Vaincre des ennemis avec Sharena,\\nprincesse d'Askr."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A6",
+		"value": "Victoire : Anna"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A6",
+		"value": "Vaincre des ennemis avec Anna, commandant."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A7",
+		"value": "Cible : unit\u00e9s rouges"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A7",
+		"value": "Vaincre des unit\u00e9s rouges."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A8",
+		"value": "Cible : unit\u00e9s bleues"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A8",
+		"value": "Vaincre des unit\u00e9s bleues."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A9",
+		"value": "Cible : unit\u00e9s vertes"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A9",
+		"value": "Vaincre des unit\u00e9s vertes."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A10",
+		"value": "Cible : unit\u00e9s grises"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A10",
+		"value": "Vaincre des unit\u00e9s grises."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A11",
+		"value": "Cible : infanterie"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A11",
+		"value": "Vaincre des fantassins."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A12",
+		"value": "Cible : unit\u00e9s en armure"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A12",
+		"value": "Vaincre des unit\u00e9s en armure."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A13",
+		"value": "Cible : cavaliers"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A13",
+		"value": "Vaincre des cavaliers."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A14",
+		"value": "Cible : unit\u00e9s volantes"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A14",
+		"value": "Vaincre des unit\u00e9s volantes."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A15",
+		"value": "Chapitre 4 - Acte 1"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A15",
+		"value": "Terminer Livre VIII, Chap. 4, Acte 1 (Expert)\\navec une \u00e9quipe de quatre h\u00e9ros et sans essuyer\\nla moindre perte."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A16",
+		"value": "Chapitre 4 - Acte 2"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A16",
+		"value": "Terminer Livre VIII, Chap. 4, Acte 2 (Expert)\\navec une \u00e9quipe de quatre h\u00e9ros et sans essuyer\\nla moindre perte."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A17",
+		"value": "Chapitre 4 - Acte 3"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A17",
+		"value": "Terminer Livre VIII, Chap. 4, Acte 3 (Expert)\\navec une \u00e9quipe de quatre h\u00e9ros et sans essuyer\\nla moindre perte."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A18",
+		"value": "Chapitre 4 - Acte 4"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A18",
+		"value": "Terminer Livre VIII, Chap. 4, Acte 4 (Expert)\\navec une \u00e9quipe de quatre h\u00e9ros et sans essuyer\\nla moindre perte."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A19",
+		"value": "Chapitre 4 - Acte 5"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A19",
+		"value": "Terminer Livre VIII, Chap. 4, Acte 5 (Expert)\\navec une \u00e9quipe de quatre h\u00e9ros et sans essuyer\\nla moindre perte."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A20",
+		"value": "Raid c\u00e9leste : victoire"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A20",
+		"value": "R\u00e9ussir des attaques dans le mode\\nRaid c\u00e9leste."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A21",
+		"value": "Raid c\u00e9leste : victoire"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A21",
+		"value": "R\u00e9ussir des attaques dans le mode\\nRaid c\u00e9leste."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A22",
+		"value": "Raid c\u00e9leste : victoire"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A22",
+		"value": "R\u00e9ussir des attaques dans le mode\\nRaid c\u00e9leste."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A23",
+		"value": "Duelliste"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A23",
+		"value": "Remporter des duels en ar\u00e8ne dans n'importe\\nquelle cat\u00e9gorie."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A24",
+		"value": "Duelliste"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A24",
+		"value": "Remporter des duels en ar\u00e8ne dans n'importe\\nquelle cat\u00e9gorie."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A25",
+		"value": "Duelliste"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A25",
+		"value": "Remporter des duels en ar\u00e8ne dans n'importe\\nquelle cat\u00e9gorie."
+	},
+	{
+		"key": "MID_MISSION_S202510MJOLNIR01_TITLE",
+		"value": "Assaut de Mj\u00f6lnir"
+	},
+	{
+		"key": "MID_MISSION_S202510MJOLNIR01_A1",
+		"value": "Victoire : avatar"
+	},
+	{
+		"key": "MID_MISSION_H_S202510MJOLNIR01_A1",
+		"value": "Vaincre des ennemis avec votre avatar dans\\nl'Assaut de Mj\u00f6lnir."
+	},
+	{
+		"key": "MID_MISSION_S202510MJOLNIR01_A2",
+		"value": "Victoire : avatar"
+	},
+	{
+		"key": "MID_MISSION_H_S202510MJOLNIR01_A2",
+		"value": "Vaincre des ennemis avec votre avatar dans\\nl'Assaut de Mj\u00f6lnir."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_TITLE",
+		"value": "Qu\u00eates : tournoi"
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A1",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A1",
+		"value": "Remporter des batailles au cours d'un tournoi."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A2",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A2",
+		"value": "Remporter des batailles au cours d'un tournoi."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A3",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A3",
+		"value": "Remporter des batailles au cours d'un tournoi."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A4",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A4",
+		"value": "Remporter des batailles au cours d'un tournoi."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A5",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A5",
+		"value": "Remporter des batailles au cours d'un tournoi."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A6",
+		"value": "Tour : deuxi\u00e8me strate"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A6",
+		"value": "Terminer la 2e strate de la tour d'entra\u00eenement."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A7",
+		"value": "Tour : cinqui\u00e8me strate"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A7",
+		"value": "Terminer la 5e strate de la tour d'entra\u00eenement."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A8",
+		"value": "Tour : huiti\u00e8me strate"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A8",
+		"value": "Terminer la 8e strate de la tour d'entra\u00eenement."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A9",
+		"value": "Duelliste"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A9",
+		"value": "Remporter des duels en ar\u00e8ne dans n'importe\\nquelle cat\u00e9gorie."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A10",
+		"value": "Duelliste"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A10",
+		"value": "Remporter des duels en ar\u00e8ne dans n'importe\\nquelle cat\u00e9gorie."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A11",
+		"value": "Duelliste interm\u00e9diaire"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A11",
+		"value": "Remporter des duels en ar\u00e8ne de cat\u00e9gorie\\nInterm\u00e9diaire ou sup\u00e9rieure."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A12",
+		"value": "Duelliste interm\u00e9diaire"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A12",
+		"value": "Remporter des duels en ar\u00e8ne de cat\u00e9gorie\\nInterm\u00e9diaire ou sup\u00e9rieure."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A13",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A13",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 rouge dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A14",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A14",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 bleue dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A15",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A15",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 verte dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A16",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A16",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 grise dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A17",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A17",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 rouge dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A18",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A18",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 bleue dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A19",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A19",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 verte dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A20",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A20",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 grise dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A21",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A21",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 rouge dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A22",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A22",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 bleue dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A23",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A23",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 verte dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A24",
+		"value": "Tournoi"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A24",
+		"value": "Remporter des batailles au cours d'un tournoi\\navec une unit\u00e9 grise dans votre \u00e9quipe."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_TITLE",
+		"value": "Tour d'octobre"
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A1",
+		"value": "Tour : premi\u00e8re strate"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A1",
+		"value": "Terminer la 1re strate de la tour d'entra\u00eenement\\navec une \u00e9quipe de quatre h\u00e9ros et sans\\nessuyer la moindre perte."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A2",
+		"value": "Tour : deuxi\u00e8me strate"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A2",
+		"value": "Terminer la 2e strate de la tour d'entra\u00eenement\\navec une \u00e9quipe de quatre h\u00e9ros et sans\\nessuyer la moindre perte."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A3",
+		"value": "Tour : troisi\u00e8me strate"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A3",
+		"value": "Terminer la 3e strate de la tour d'entra\u00eenement\\navec une \u00e9quipe de quatre h\u00e9ros et sans\\nessuyer la moindre perte."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A4",
+		"value": "Tour : quatri\u00e8me strate"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A4",
+		"value": "Terminer la 4e strate de la tour d'entra\u00eenement\\navec une \u00e9quipe de quatre h\u00e9ros et sans\\nessuyer la moindre perte."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A5",
+		"value": "Tour : cinqui\u00e8me strate"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A5",
+		"value": "Terminer la 5e strate de la tour d'entra\u00eenement\\navec une \u00e9quipe de quatre h\u00e9ros et sans\\nessuyer la moindre perte."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A6",
+		"value": "Tour : sixi\u00e8me strate"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A6",
+		"value": "Terminer la 6e strate de la tour d'entra\u00eenement\\navec une \u00e9quipe de quatre h\u00e9ros et sans\\nessuyer la moindre perte."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A7",
+		"value": "Tour : septi\u00e8me strate"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A7",
+		"value": "Terminer la 7e strate de la tour d'entra\u00eenement\\navec une \u00e9quipe de quatre h\u00e9ros et sans\\nessuyer la moindre perte."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A8",
+		"value": "Tour : huiti\u00e8me strate"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A8",
+		"value": "Terminer la 8e strate de la tour d'entra\u00eenement\\navec une \u00e9quipe de quatre h\u00e9ros et sans\\nessuyer la moindre perte."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A9",
+		"value": "Tour : neuvi\u00e8me strate"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A9",
+		"value": "Terminer la 9e strate de la tour d'entra\u00eenement\\navec une \u00e9quipe de quatre h\u00e9ros et sans\\nessuyer la moindre perte."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A10",
+		"value": "Tour : dixi\u00e8me strate"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A10",
+		"value": "Terminer la 10e strate de la tour d'entra\u00eenement\\navec une \u00e9quipe de quatre h\u00e9ros et sans\\nessuyer la moindre perte."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A11",
+		"value": "Tour : dixi\u00e8me strate"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A11",
+		"value": "Terminer la 10e strate de la tour d'entra\u00eenement\\navec quatre fantassins et sans essuyer\\nla moindre perte. (Les alli\u00e9s d\u00e9ploy\u00e9s comme\\npartenaires gr\u00e2ce \u00e0 Duo ne comptent pas.)"
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A12",
+		"value": "Tour : dixi\u00e8me strate"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A12",
+		"value": "Terminer la 10e strate de la tour d'entra\u00eenement\\navec quatre unit\u00e9s en armure et sans essuyer\\nla moindre perte. (Les alli\u00e9s d\u00e9ploy\u00e9s comme\\npartenaires gr\u00e2ce \u00e0 Duo ne comptent pas.)"
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A13",
+		"value": "Tour : dixi\u00e8me strate"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A13",
+		"value": "Terminer la 10e strate de la tour d'entra\u00eenement\\navec quatre cavaliers et sans essuyer\\nla moindre perte. (Les alli\u00e9s d\u00e9ploy\u00e9s comme\\npartenaires gr\u00e2ce \u00e0 Duo ne comptent pas.)"
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A14",
+		"value": "Tour : dixi\u00e8me strate"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A14",
+		"value": "Terminer la 10e strate de la tour d'entra\u00eenement\\navec quatre unit\u00e9s volantes et sans essuyer\\nla moindre perte. (Les alli\u00e9s d\u00e9ploy\u00e9s comme\\npartenaires gr\u00e2ce \u00e0 Duo ne comptent pas.)"
+	},
+	{
+		"key": "MPID_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "Corrin"
+	},
+	{
+		"key": "MPID_SEARCH_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "Corrin"
+	},
+	{
+		"key": "MPID_\u7363\u4eba\u30ea\u30f3",
+		"value": "Lyn"
+	},
+	{
+		"key": "MPID_SEARCH_\u7363\u4eba\u30ea\u30f3",
+		"value": "Lyn"
+	},
+	{
+		"key": "MPID_HONOR_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "Destin\u00e9es"
+	},
+	{
+		"key": "MPID_HONOR_\u7363\u4eba\u30ea\u30f3",
+		"value": "Vent des plaines"
+	},
+	{
+		"key": "MPID_H_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "L'un des Embl\u00e8mes ayant \u00e9t\u00e9 invoqu\u00e9s en Elyos.\\nElle r\u00e9side dans l'Anneau de la Main du Destin.\\nAppara\u00eet dans Fire Emblem Fates /\\nFire Emblem Engage."
+	},
+	{
+		"key": "MPID_H_\u7363\u4eba\u30ea\u30f3",
+		"value": "Disciple de la d\u00e9esse de la lumi\u00e8re, Naga.\\nElle ne se souvient pas de son pass\u00e9,\\nmais elle est pr\u00eate \u00e0 se battre pour ses\\nconvictions. Appara\u00eet dans Fire Emblem:\\nThe Blazing Blade / Shadows."
+	},
+	{
+		"key": "MPID_VOICE_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "Marcella Lentz-Pope"
+	},
+	{
+		"key": "MPID_VOICE_\u7363\u4eba\u30ea\u30f3",
+		"value": "Wendee Lee"
+	},
+	{
+		"key": "MPID_ILLUST_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "Kousei Horiguchi (\u6052\u661f\u30db\u30ea\u30b0\u30c1)"
+	},
+	{
+		"key": "MPID_ILLUST_\u7363\u4eba\u30ea\u30f3",
+		"value": "\uff2b\uff45\uff27"
+	},
+	{
+		"key": "MPID_LEGEND_\u7363\u4eba\u30ea\u30f3",
+		"value": "Effet mythique : lumi\u00e8re\\nBoost pour les alli\u00e9s : PV +5, R\u00e9s +5\\n\\nPendant la saison de la lumi\u00e8re, si cette\\nunit\u00e9 combat avec eux dans le mode\\nRaid c\u00e9leste, les alli\u00e9s ayant re\u00e7u\\nla b\u00e9n\u00e9diction de la lumi\u00e8re b\u00e9n\u00e9ficient de\\nl'effet mythique et font augmenter le gain\\nd'altitude en cas d'attaque r\u00e9ussie.\\n(Boost d'altitude maximum : nombre de h\u00e9ros\\nmythiques \u00d7 nombre de h\u00e9ros b\u00e9nis \u00d7 10.)\\n\\nPendant la saison de la lumi\u00e8re, le h\u00e9ros\\nmythique fait augmenter le gain d'altitude en\\nfonction du nombre de fois o\u00f9 il a \u00e9t\u00e9 fusionn\u00e9.\\n(Boost maximum : nombre de fusions \u00d7 1.)\\n\\nEffet mythique 2 : lumi\u00e8re\\nBoost : bonus \u00e9quipe d'attaque\\n\\nEffet mythique 3 : lumi\u00e8re\\nBoost : appel \u00e9quipe d'attaque\\n(Pour plus de d\u00e9tails, consultez\\nModifier \u00e9q. attaque.)"
+	},
+	{
+		"key": "MID_TIPS_Summon_v0909c_legend_01_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "Elle applique Veine divine (\u00e9meraude)\\ndans la zone ! Elle prot\u00e8ge les alli\u00e9s\\ndes ennemis utilisant la magie et\\nriposte pour an\u00e9antir les ennemis !"
+	},
+	{
+		"key": "MID_TIPS_Summon_v0909c_legend_01_\u7363\u4eba\u30ea\u30f3",
+		"value": "Son style permet aux alli\u00e9s pr\u00e9sents\\nsur la carte d'attaquer \u00e0 distance. Elle\\nfrappe avec une puissante aptitude\\nsp\u00e9ciale et d\u00e9voile les faiblesses."
+	},
+	{
+		"key": "MSID_\u672a\u6765\u3092\u9078\u3073\u3057\u8005\u306e\u5263",
+		"value": "\u00c9p\u00e9e du destin"
+	},
+	{
+		"key": "MSID_SEARCH_\u672a\u6765\u3092\u9078\u3073\u3057\u8005\u306e\u5263",
+		"value": "Epee du destin"
+	},
+	{
+		"key": "MSID_\u5149\u3068\u95c7\u306e\u75be\u98a8",
+		"value": "Vents dualistes"
+	},
+	{
+		"key": "MSID_SEARCH_\u5149\u3068\u95c7\u306e\u75be\u98a8",
+		"value": "Vents dualistes"
+	},
+	{
+		"key": "MSID_\u7adc\u7a7f\u7832",
+		"value": "Rugiss. torrentiel"
+	},
+	{
+		"key": "MSID_SEARCH_\u7adc\u7a7f\u7832",
+		"value": "Rugiss. torrentiel"
+	},
+	{
+		"key": "MSID_\u66b4\u8650\u3078\u306e\u6012\u308a",
+		"value": "\u00c0 bas la tyrannie"
+	},
+	{
+		"key": "MSID_SEARCH_\u66b4\u8650\u3078\u306e\u6012\u308a",
+		"value": "A bas la tyrannie"
+	},
+	{
+		"key": "MSID_\u706b\u98a8\u6c34\u306e\u547d\u8108",
+		"value": "Boost torrentueux"
+	},
+	{
+		"key": "MSID_SEARCH_\u706b\u98a8\u6c34\u306e\u547d\u8108",
+		"value": "Boost torrentueux"
+	},
+	{
+		"key": "MSID_\u9632\u96631",
+		"value": "Duo 1"
+	},
+	{
+		"key": "MSID_SEARCH_\u9632\u96631",
+		"value": "Duo 1"
+	},
+	{
+		"key": "MSID_\u9632\u96632",
+		"value": "Duo 2"
+	},
+	{
+		"key": "MSID_SEARCH_\u9632\u96632",
+		"value": "Duo 2"
+	},
+	{
+		"key": "MSID_\u9632\u96633",
+		"value": "Duo 3"
+	},
+	{
+		"key": "MSID_SEARCH_\u9632\u96633",
+		"value": "Duo 3"
+	},
+	{
+		"key": "MSID_\u9632\u96634",
+		"value": "Duo 4"
+	},
+	{
+		"key": "MSID_SEARCH_\u9632\u96634",
+		"value": "Duo 4"
+	},
+	{
+		"key": "MSID_\u8863\u306e\u8b77\u308a\u624b\u30fb\u9b54\u30fb\u8328",
+		"value": "S. mag. ronce V/R"
+	},
+	{
+		"key": "MSID_SEARCH_\u8863\u306e\u8b77\u308a\u624b\u30fb\u9b54\u30fb\u8328",
+		"value": "S. mag. ronce V/R"
+	},
+	{
+		"key": "MSID_\u6697\u7363\u30fb\u4e0d\u5c48",
+		"value": "Force de b\u00eate"
+	},
+	{
+		"key": "MSID_SEARCH_\u6697\u7363\u30fb\u4e0d\u5c48",
+		"value": "Force de bete"
+	},
+	{
+		"key": "MSID_\u5929\u8108\u30fb\u6df1\u7dd1",
+		"value": "Veine divine (\u00e9m.)"
+	},
+	{
+		"key": "MSID_SEARCH_\u5929\u8108\u30fb\u6df1\u7dd1",
+		"value": "Veine divine (em.)"
+	},
+	{
+		"key": "MSID_H_\u672a\u6765\u3092\u9078\u3073\u3057\u8005\u306e\u5263",
+		"value": "$aAcc\u00e9l\u00e8re l'activation des aptitudes sp\u00e9ciales\\n(compteur -1). L'unit\u00e9 riposte peu importe\\nla distance \u00e0 laquelle se trouve son assaillant.\\n\\nEn d\u00e9but de phase joueur ou ennemie, si l'unit\u00e9\\nse trouve \u00e0 2 cases ou moins d'un alli\u00e9, conf\u00e8re\\n\u3010Aura dragunaire\u3011et l'effet suivant \u00e0 l'unit\u00e9 et\\naux alli\u00e9s \u00e0 2 cases ou moins de l'unit\u00e9 pendant\\nun tour\u00a0: \u00ab\u00a0r\u00e9duit de 50\u00a0% le pourcentage\\ndes aptitudes des ennemis (sauf aptitudes\\nsp\u00e9ciales) qui r\u00e9duisent les d\u00e9g\u00e2ts \u00e0 hauteur\\nd'un certain pourcentage pendant le combat\\n(aptitudes sp\u00e9ciales \u00e0 effet de zone exclues)\u00a0\u00bb.\\n\\nSi l'unit\u00e9 se trouve \u00e0 3 cases ou moins d'un alli\u00e9,\\nconf\u00e8re un boost d'Atq/Vit/D\u00e9f/R\u00e9s \u00e0 l'unit\u00e9\\n\u00e9quivalent au nombre d'alli\u00e9s \u00e0 3 cases ou moins\\nde l'unit\u00e9 \u00d73, +5 (14\u00a0maximum\u00a0; si l'unit\u00e9\\nd\u00e9clenche Sauveur, la valeur sera consid\u00e9r\u00e9e\\ncomme \u00e9tant de 14), inflige des d\u00e9g\u00e2ts\\nsuppl\u00e9mentaires \u00e0 hauteur de 20\u00a0% de la R\u00e9s\\nde l'unit\u00e9 (aptitudes sp\u00e9ciales \u00e0 effet de zone\\nexclues), r\u00e9duit les d\u00e9g\u00e2ts des attaques de\\nl'ennemi \u00e0 hauteur de 20\u00a0% de la R\u00e9s de l'unit\u00e9\\n(aptitudes sp\u00e9ciales \u00e0 effet de zone exclues),\\nr\u00e9duit les d\u00e9g\u00e2ts des aptitudes sp\u00e9ciales\\nde l'ennemi \u00e0 hauteur de 20\u00a0% de la R\u00e9s de\\nl'unit\u00e9 en plus (aptitudes sp\u00e9ciales \u00e0 effet\\nde zone exclues), et neutralise les effets qui\\ngarantissent \u00e0 l'ennemi de r\u00e9aliser des doubles\\nfrappes ou emp\u00eachent l'unit\u00e9 d'en r\u00e9aliser\\npendant le combat.\\n\\n\u3010Aura dragunaire\u3011\\nInflige Atq/Vit/D\u00e9f/R\u00e9s -5 \u00e0 l'ennemi pendant\\nle combat et inflige \u00e0 chacune de ces\\ncaract\u00e9ristiques un malus \u00e9gal \u00e0 5 - le malus\\nactuel affectant chacune de ces caract\u00e9ristiques\\npendant le combat pendant un tour (0\u00a0minimum ;\\nles malus de caract\u00e9ristiques sont calcul\u00e9s\\ns\u00e9par\u00e9ment)."
+	},
+	{
+		"key": "MSID_H_\u672a\u6765\u3092\u9078\u3073\u3057\u8005\u306e\u5263_NOSKW",
+		"value": "$aAcc\u00e9l\u00e8re l'activation des aptitudes sp\u00e9ciales\\n(compteur -1). L'unit\u00e9 riposte peu importe\\nla distance \u00e0 laquelle se trouve son assaillant.\\n\\nEn d\u00e9but de phase joueur ou ennemie, si l'unit\u00e9\\nse trouve \u00e0 2 cases ou moins d'un alli\u00e9, conf\u00e8re\\n\u3010Aura dragunaire\u3011et l'effet suivant \u00e0 l'unit\u00e9 et\\naux alli\u00e9s \u00e0 2 cases ou moins de l'unit\u00e9 pendant\\nun tour\u00a0: \u00ab\u00a0r\u00e9duit de 50\u00a0% le pourcentage\\ndes aptitudes des ennemis (sauf aptitudes\\nsp\u00e9ciales) qui r\u00e9duisent les d\u00e9g\u00e2ts \u00e0 hauteur\\nd'un certain pourcentage pendant le combat\\n(aptitudes sp\u00e9ciales \u00e0 effet de zone exclues)\u00a0\u00bb.\\n\\nSi l'unit\u00e9 se trouve \u00e0 3 cases ou moins d'un alli\u00e9,\\nconf\u00e8re un boost d'Atq/Vit/D\u00e9f/R\u00e9s \u00e0 l'unit\u00e9\\n\u00e9quivalent au nombre d'alli\u00e9s \u00e0 3 cases ou moins\\nde l'unit\u00e9 \u00d73, +5 (14\u00a0maximum\u00a0; si l'unit\u00e9\\nd\u00e9clenche Sauveur, la valeur sera consid\u00e9r\u00e9e\\ncomme \u00e9tant de 14), inflige des d\u00e9g\u00e2ts\\nsuppl\u00e9mentaires \u00e0 hauteur de 20\u00a0% de la R\u00e9s\\nde l'unit\u00e9 (aptitudes sp\u00e9ciales \u00e0 effet de zone\\nexclues), r\u00e9duit les d\u00e9g\u00e2ts des attaques de\\nl'ennemi \u00e0 hauteur de 20\u00a0% de la R\u00e9s de l'unit\u00e9\\n(aptitudes sp\u00e9ciales \u00e0 effet de zone exclues),\\nr\u00e9duit les d\u00e9g\u00e2ts des aptitudes sp\u00e9ciales\\nde l'ennemi \u00e0 hauteur de 20\u00a0% de la R\u00e9s de\\nl'unit\u00e9 en plus (aptitudes sp\u00e9ciales \u00e0 effet\\nde zone exclues), et neutralise les effets qui\\ngarantissent \u00e0 l'ennemi de r\u00e9aliser des doubles\\nfrappes ou emp\u00eachent l'unit\u00e9 d'en r\u00e9aliser\\npendant le combat."
+	},
+	{
+		"key": "MSID_H_\u5149\u3068\u95c7\u306e\u75be\u98a8",
+		"value": "$aAcc\u00e9l\u00e8re l'activation des aptitudes sp\u00e9ciales\\n(compteur -1). Efficace contre les unit\u00e9s volantes.\\n\\nEn d\u00e9but de tour, si PV de l'unit\u00e9 \u2265 25\u00a0%,\\ninflige\u3010Vuln\u00e9rabilit\u00e9\u3011,\u3010Vit entrav\u00e9e\u3011, et\\n\u3010D\u00e9f entrav\u00e9e\u3011aux ennemis les plus proches\\net aux ennemis \u00e0 2\u00a0cases ou moins de ces\\nderniers jusqu'\u00e0 la fin de leur phase.\\n\\nSi l'unit\u00e9 est transform\u00e9e ou si PV de l'unit\u00e9\\n\u2265 25\u00a0% au d\u00e9but du combat, conf\u00e8re un boost\\nd'Atq/Vit/D\u00e9f/R\u00e9s \u00e0 l'unit\u00e9 \u00e9quivalent au nombre\\nd'ennemis situ\u00e9s dans une croix de 3 cases\\nde long sur 3 de haut ayant pour centre l'unit\u00e9\\n\u00d73, +5 (14\u00a0maximum), l'unit\u00e9 inflige X d\u00e9g\u00e2ts\\nsuppl\u00e9mentaires \u00d75 (aptitudes sp\u00e9ciales \u00e0 effet\\nde zone exclues), et r\u00e9duit les d\u00e9g\u00e2ts des\\nattaques de l'ennemi de X \u00d73 pendant le combat\\n(aptitudes sp\u00e9ciales \u00e0 effet de zone exclues\u00a0;\\nX = nombre d'effets de boost affectant l'unit\u00e9\\n+ nombre d'effets de malus affectant l'ennemi,\\nbonus et malus de caract\u00e9ristiques exclus\u00a0;\\n5\u00a0maximum), et si r\u00e9duire de 10 la diff\u00e9rence\\nde Vit n\u00e9cessaire pour r\u00e9aliser une double frappe\\ndevait d\u00e9clencher une double frappe de l'unit\u00e9\\n(doubles frappes garanties ou annul\u00e9es exclues),\\n\u3010Double puissant 100 %\u3011se d\u00e9clenche\\npendant le combat.\\n\\nEn d\u00e9but de tour, si l'unit\u00e9 n'est pas \u00e0 c\u00f4t\u00e9\\nd'un alli\u00e9 qui n'est pas une b\u00eate ou un dragon,\\nelle se transforme (dans le cas contraire, retour\\n\u00e0 la forme initiale). Si l'unit\u00e9 se transforme,\\nlui conf\u00e8re Atq +2, inflige Atq/D\u00e9f -Y \u00e0 l'ennemi\\npendant le combat (Y = nombre de cases\\nparcourues depuis le point de d\u00e9part jusqu'au\\npoint d'arriv\u00e9e par celui qui a initi\u00e9 le combat,\\n+3\u00a0; 6\u00a0maximum), et si Y \u2265 5, r\u00e9duit les d\u00e9g\u00e2ts\\nde la premi\u00e8re attaque de l'ennemi de 30\u00a0%\\npendant le combat.\\n\\n\u3010Vuln\u00e9rabilit\u00e9\u3011\\nLes attaques de l'ennemi infligent 10 d\u00e9g\u00e2ts\\nsuppl\u00e9mentaires.\\n\\n\u3010Vit entrav\u00e9e\u3011\\nInflige un malus de Vit \u00e0 l'unit\u00e9 pendant\\nle combat \u00e9quivalent au nombre d'effets\\nde malus affectant l'unit\u00e9 +4, malus\\nde caract\u00e9ristiques exclus (8 maximum).\\n\\n\u3010D\u00e9f entrav\u00e9e\u3011\\nInflige un malus de D\u00e9f \u00e0 l'unit\u00e9 pendant\\nle combat \u00e9quivalent au nombre d'effets\\nde malus affectant l'unit\u00e9 +4, malus\\nde caract\u00e9ristiques exclus (8 maximum).\\n\\n\u3010Double puissant 100 %\u3011\\nD\u00e9clenche une frappe suppl\u00e9mentaire\\ndirectement apr\u00e8s une double frappe standard\\nde l'unit\u00e9 et inflige des d\u00e9g\u00e2ts suppl\u00e9mentaires\\n\u00e0 hauteur de 100\u00a0% des d\u00e9g\u00e2ts de\\nl'attaque normale de l'unit\u00e9 (si l'unit\u00e9 ne peut pas\\nr\u00e9aliser une double frappe, cet effet se d\u00e9clenche\\nau moment o\u00f9 la double frappe standard aurait\\nlieu ; cet effet \u00e9tant trait\u00e9 comme une double\\nfrappe, les effets qui r\u00e9duisent les d\u00e9g\u00e2ts \u00e0\\nhauteur d'un certain pourcentage s'appliquent,\\nmais les effets emp\u00eachant les doubles frappes\\nou ceux permettant d'attaquer deux fois ne\\ns\u2019appliquent pas ; s'il y a plusieurs effets\\nsimilaires, seul le plus puissant s'applique)."
+	},
+	{
+		"key": "MSID_H_\u5149\u3068\u95c7\u306e\u75be\u98a8_NOSKW",
+		"value": "$aAcc\u00e9l\u00e8re l'activation des aptitudes sp\u00e9ciales\\n(compteur -1). Efficace contre les unit\u00e9s volantes.\\n\\nEn d\u00e9but de tour, si PV de l'unit\u00e9 \u2265 25\u00a0%,\\ninflige\u3010Vuln\u00e9rabilit\u00e9\u3011,\u3010Vit entrav\u00e9e\u3011, et\\n\u3010D\u00e9f entrav\u00e9e\u3011aux ennemis les plus proches\\net aux ennemis \u00e0 2\u00a0cases ou moins de ces\\nderniers jusqu'\u00e0 la fin de leur phase.\\n\\nSi l'unit\u00e9 est transform\u00e9e ou si PV de l'unit\u00e9\\n\u2265 25\u00a0% au d\u00e9but du combat, conf\u00e8re un boost\\nd'Atq/Vit/D\u00e9f/R\u00e9s \u00e0 l'unit\u00e9 \u00e9quivalent au nombre\\nd'ennemis situ\u00e9s dans une croix de 3 cases\\nde long sur 3 de haut ayant pour centre l'unit\u00e9\\n\u00d73, +5 (14\u00a0maximum), l'unit\u00e9 inflige X d\u00e9g\u00e2ts\\nsuppl\u00e9mentaires \u00d75 (aptitudes sp\u00e9ciales \u00e0 effet\\nde zone exclues), et r\u00e9duit les d\u00e9g\u00e2ts des\\nattaques de l'ennemi de X \u00d73 pendant le combat\\n(aptitudes sp\u00e9ciales \u00e0 effet de zone exclues\u00a0;\\nX = nombre d'effets de boost affectant l'unit\u00e9\\n+ nombre d'effets de malus affectant l'ennemi,\\nbonus et malus de caract\u00e9ristiques exclus\u00a0;\\n5\u00a0maximum), et si r\u00e9duire de 10 la diff\u00e9rence\\nde Vit n\u00e9cessaire pour r\u00e9aliser une double frappe\\ndevait d\u00e9clencher une double frappe de l'unit\u00e9\\n(doubles frappes garanties ou annul\u00e9es exclues),\\n\u3010Double puissant 100 %\u3011se d\u00e9clenche\\npendant le combat.\\n\\nEn d\u00e9but de tour, si l'unit\u00e9 n'est pas \u00e0 c\u00f4t\u00e9\\nd'un alli\u00e9 qui n'est pas une b\u00eate ou un dragon,\\nelle se transforme (dans le cas contraire, retour\\n\u00e0 la forme initiale). Si l'unit\u00e9 se transforme,\\nlui conf\u00e8re Atq +2, inflige Atq/D\u00e9f -Y \u00e0 l'ennemi\\npendant le combat (Y = nombre de cases\\nparcourues depuis le point de d\u00e9part jusqu'au\\npoint d'arriv\u00e9e par celui qui a initi\u00e9 le combat,\\n+3\u00a0; 6\u00a0maximum), et si Y \u2265 5, r\u00e9duit les d\u00e9g\u00e2ts\\nde la premi\u00e8re attaque de l'ennemi de 30\u00a0%\\npendant le combat."
+	},
+	{
+		"key": "MSID_H_\u7adc\u7a7f\u7832",
+		"value": "$aSi l'aptitude sp\u00e9ciale se d\u00e9clenche, augmente\\nles d\u00e9g\u00e2ts \u00e0 hauteur de 60\u00a0% de la R\u00e9s de l'unit\u00e9.\\n\\nNeutralise les effets qui infligent compteur +X\\n\u00e0 l'unit\u00e9 et r\u00e9duit les d\u00e9g\u00e2ts des attaques de\\nl'ennemi de 40\u00a0% pendant le combat (aptitudes\\nsp\u00e9ciales \u00e0 effet de zone exclues). Si R\u00e9s\\nde l'unit\u00e9 > R\u00e9s de l'ennemi, r\u00e9duit de X la\\ndiff\u00e9rence de Vit n\u00e9cessaire pour que l'unit\u00e9\\nr\u00e9alise une double frappe et augmente de X\\nla diff\u00e9rence de Vit n\u00e9cessaire pour que l'ennemi\\nr\u00e9alise une double frappe pendant le combat\\n(X = diff\u00e9rence entre les R\u00e9s respectives\u00a0;\\n10\u00a0maximum).\\n\\nEn d\u00e9but de phase ennemie (sauf dans Pions\\nde Loki), si aucune\u3010Veine divine (stalactite)\u3011\\nn'est actuellement appliqu\u00e9e par l'unit\u00e9 ou\\nles alli\u00e9s, applique\u3010Veine divine (stalactite)\u3011aux\\ncases parmi celles qui sont \u00e0 2\u00a0cases de l'unit\u00e9\\net d'une cible alli\u00e9e sp\u00e9cifique \u00e0 2 cases ou moins\\nde l'unit\u00e9 pendant un tour (cases adjacentes\\n\u00e0 l'unit\u00e9 ou la cible alli\u00e9e, ou occup\u00e9es par ces\\nderni\u00e8res, cases occup\u00e9es par un ennemi, terrain\\ndestructible autre que les Veines divines et cases\\nde t\u00e9l\u00e9portation dans Domaines rivaux exclus),\\net applique aussi\u3010Veine divine (\u00e9meraude)\u3011\\nsur la case de l'unit\u00e9 et les cases \u00e0 4 cases\\nou moins de l'unit\u00e9 pendant un tour (cases o\u00f9\\n\u3010Veine divine (stalactite)\u3011est appliqu\u00e9e\\nexclues). (Si le partenaire est dans l'\u00e9quipe\\ndu joueur, cible n'importe quel partenaire\u00a0;\\ndans le cas contraire, cible l'alli\u00e9 avec la D\u00e9f\\nla plus \u00e9lev\u00e9e au d\u00e9but du combat, unit\u00e9 exclue\u00a0;\\n\u00ab\u00a0au d\u00e9but du combat\u00a0\u00bb exclut les augmentations\\nde D\u00e9f conf\u00e9r\u00e9es apr\u00e8s que l'alli\u00e9 a \u00e9t\u00e9 d\u00e9ploy\u00e9,\\nnotamment gr\u00e2ce \u00e0 des effets l\u00e9gendaires\\net mythiques, \u00e0 l'Appel aux armes, \u00e0 Grand talent,\\netc.\u00a0; si 2 alli\u00e9s ou plus remplissent les conditions,\\nalors le nombre de cibles alli\u00e9es est consid\u00e9r\u00e9\\ncomme \u00e9tant de 0.)\\n\\n\u3010Veine divine (stalactite)\u3011\\nLe statut suivant s'applique \u00e0 la case : la case\\nest consid\u00e9r\u00e9e comme un terrain impraticable\\npour les ennemis tant que le statut est actif,\\nmais le statut est destructible (il a 1 PV). Lorsqu'il\\nest d\u00e9truit, il devient\u3010Veine divine (\u00e9meraude)\u3011.\\nLes alli\u00e9s peuvent se d\u00e9placer jusqu'\u00e0 la case\\net l'occuper. Si des alli\u00e9s occupent des cases\\naffect\u00e9es par Veine divine (stalactite), les\\nattaques ciblant ces cases frapperont l'alli\u00e9\\nau lieu de d\u00e9truire la Veine divine (stalactite).\\n\\n\u3010Veine divine (\u00e9meraude)\u3011\\nLes effets suivants s'appliquent \u00e0 la case pour\\nles ennemis : l'ennemi ne peut pas se\\nt\u00e9l\u00e9porter depuis ou sur cette case (n'affecte\\npas les ennemis dot\u00e9s de l'aptitude Passage ou\\nles effets de t\u00e9l\u00e9portation des structures,\\ntelles que les camps et les forteresses dans\\nDomaines rivaux). Inflige\u3010Mobilit\u00e9 limit\u00e9e\u3011aux\\nennemis d\u00e9clenchant Mobilit\u00e9 dans cette case\\njusqu'\u00e0 la fin de leur phase. Inflige Atq/Vit -5\\net compteur +1 par attaque pour l'ennemi\\npendant le combat (s'il y a plusieurs effets\\nsimilaires, seul le plus puissant s'applique),\\net si l'aptitude sp\u00e9ciale de l'ennemi peut \u00eatre\\nactiv\u00e9e par les attaques ennemies, inflige\\ncompteur +1 \u00e0 l'ennemi avant sa premi\u00e8re\\nattaque pendant le combat (ne peut exc\u00e9der\\nla valeur max du compteur d'aptitude sp\u00e9ciale\\nde l'ennemi).\\n\\n\u3010Mobilit\u00e9 limit\u00e9e\u3011\\nSi l'unit\u00e9 a une port\u00e9e de 1, elle peut\\nse d\u00e9placer d'une case lorsque Mobilit\u00e9\\nse d\u00e9clenche ; si l'unit\u00e9 a une port\u00e9e de 2,\\nson action prend fin lorsque Mobilit\u00e9\\nse d\u00e9clenche."
+	},
+	{
+		"key": "MSID_H_\u7adc\u7a7f\u7832_NOSKW",
+		"value": "$aSi l'aptitude sp\u00e9ciale se d\u00e9clenche, augmente\\nles d\u00e9g\u00e2ts \u00e0 hauteur de 60\u00a0% de la R\u00e9s de l'unit\u00e9.\\n\\nNeutralise les effets qui infligent compteur +X\\n\u00e0 l'unit\u00e9 et r\u00e9duit les d\u00e9g\u00e2ts des attaques de\\nl'ennemi de 40\u00a0% pendant le combat (aptitudes\\nsp\u00e9ciales \u00e0 effet de zone exclues). Si R\u00e9s\\nde l'unit\u00e9 > R\u00e9s de l'ennemi, r\u00e9duit de X la\\ndiff\u00e9rence de Vit n\u00e9cessaire pour que l'unit\u00e9\\nr\u00e9alise une double frappe et augmente de X\\nla diff\u00e9rence de Vit n\u00e9cessaire pour que l'ennemi\\nr\u00e9alise une double frappe pendant le combat\\n(X = diff\u00e9rence entre les R\u00e9s respectives\u00a0;\\n10\u00a0maximum).\\n\\nEn d\u00e9but de phase ennemie (sauf dans Pions\\nde Loki), si aucune\u3010Veine divine (stalactite)\u3011\\nn'est actuellement appliqu\u00e9e par l'unit\u00e9 ou\\nles alli\u00e9s, applique\u3010Veine divine (stalactite)\u3011aux\\ncases parmi celles qui sont \u00e0 2\u00a0cases de l'unit\u00e9\\net d'une cible alli\u00e9e sp\u00e9cifique \u00e0 2 cases ou moins\\nde l'unit\u00e9 pendant un tour (cases adjacentes\\n\u00e0 l'unit\u00e9 ou la cible alli\u00e9e, ou occup\u00e9es par ces\\nderni\u00e8res, cases occup\u00e9es par un ennemi, terrain\\ndestructible autre que les Veines divines et cases\\nde t\u00e9l\u00e9portation dans Domaines rivaux exclus),\\net applique aussi\u3010Veine divine (\u00e9meraude)\u3011\\nsur la case de l'unit\u00e9 et les cases \u00e0 4 cases\\nou moins de l'unit\u00e9 pendant un tour (cases o\u00f9\\n\u3010Veine divine (stalactite)\u3011est appliqu\u00e9e\\nexclues). (Si le partenaire est dans l'\u00e9quipe\\ndu joueur, cible n'importe quel partenaire\u00a0;\\ndans le cas contraire, cible l'alli\u00e9 avec la D\u00e9f\\nla plus \u00e9lev\u00e9e au d\u00e9but du combat, unit\u00e9 exclue\u00a0;\\n\u00ab\u00a0au d\u00e9but du combat\u00a0\u00bb exclut les augmentations\\nde D\u00e9f conf\u00e9r\u00e9es apr\u00e8s que l'alli\u00e9 a \u00e9t\u00e9 d\u00e9ploy\u00e9,\\nnotamment gr\u00e2ce \u00e0 des effets l\u00e9gendaires\\net mythiques, \u00e0 l'Appel aux armes, \u00e0 Grand talent,\\netc.\u00a0; si 2 alli\u00e9s ou plus remplissent les conditions,\\nalors le nombre de cibles alli\u00e9es est consid\u00e9r\u00e9\\ncomme \u00e9tant de 0.)"
+	},
+	{
+		"key": "MSID_H_\u66b4\u8650\u3078\u306e\u6012\u308a",
+		"value": "$aSi l'unit\u00e9 peut se transformer, les effets de\\ntransformation s'activent d\u00e9sormais aussi en\\nremplissant la condition suivante\u00a0: \u00ab\u00a0si un ennemi\\nse trouve dans une croix de 3 cases de long sur 3\\nde haut ayant pour centre l'unit\u00e9\u00a0\u00bb (cette\\ncondition s'ajoute aux conditions existantes).\\n\\nSi l'unit\u00e9 est dans une \u00e9quipe de d\u00e9fense\\ndans le mode Raid c\u00e9leste, au d\u00e9but du tour 1\\nde l'ennemi, si les conditions de transformation\\nsont remplies, l'unit\u00e9 se transforme.\\n\\nEn d\u00e9but de tour, si PV de l'unit\u00e9 \u2265 25\u00a0%,\\nconf\u00e8re l'effet suivant \u00e0 l'unit\u00e9 et aux alli\u00e9s\\n\u00e0 2\u00a0cases ou moins de l'unit\u00e9 pendant un tour\u00a0:\\n\u00ab\u00a0r\u00e9duit de 50\u00a0% le pourcentage des aptitudes\\ndes ennemis (sauf aptitudes sp\u00e9ciales) qui\\nr\u00e9duisent les d\u00e9g\u00e2ts \u00e0 hauteur d'un certain\\npourcentage pendant le combat (aptitudes\\nsp\u00e9ciales \u00e0 effet de zone exclues)\u00a0\u00bb, et conf\u00e8re\\n\u3010Style Port\u00e9e : 2\u3011\u00e0 l'unit\u00e9 et aux alli\u00e9s utilisant\\nune \u00e9p\u00e9e, une lance, une hache, une dracopierre\\nou des attaques de b\u00eate \u00e0 2 cases ou moins\\nde l'unit\u00e9 pendant un tour.\\n\\nSi l'unit\u00e9 est transform\u00e9e ou si PV de l'unit\u00e9\\n\u2265 25\u00a0% au d\u00e9but du combat, conf\u00e8re\\nAtq/Vit/D\u00e9f/R\u00e9s +X +8 \u00e0 l'unit\u00e9, l'unit\u00e9 inflige\\nX d\u00e9g\u00e2ts suppl\u00e9mentaires \u00d74 (aptitudes sp\u00e9ciales\\n\u00e0 effet de zone exclues), r\u00e9duit les d\u00e9g\u00e2ts\\ndes attaques de l'ennemi de X \u00d74 (aptitudes\\nsp\u00e9ciales \u00e0 effet de zone exclues), r\u00e9duit\\nles d\u00e9g\u00e2ts des aptitudes sp\u00e9ciales de l'ennemi\\nde X \u00d74 en plus (aptitudes sp\u00e9ciales \u00e0 effet de\\nzone exclues\u00a0; X = nombre de cases parcourues\\ndepuis le point de d\u00e9part jusqu'au point d'arriv\u00e9e\\npar celui qui a initi\u00e9 le combat, 3\u00a0maximum),\\nneutralise les effets qui infligent compteur +X\\n\u00e0 l'unit\u00e9, et conf\u00e8re compteur -Y \u00e0 l'unit\u00e9 avant\\nsa premi\u00e8re attaque pendant le combat\\n(Y = nombre d'effets de malus affectant l'ennemi,\\nmalus de caract\u00e9ristiques exclus\u00a0; 2\u00a0maximum).\\n\\n\u3010Style Port\u00e9e : 2\u3011\\nL'unit\u00e9 peut utiliser le\u3010Style\u3011suivant :\\n\u2015\u2015\u2015\u2015\u2015 Style Port\u00e9e : 2 \u2015\u2015\u2015\u2015\u2015\\nL'unit\u00e9 peut attaquer les ennemis \u00e0 2\u00a0cases\\n(l'unit\u00e9 ne peut pas attaquer les ennemis\\nadjacents).\\n\\nL'unit\u00e9 ne peut pas traverser les cases \u00e0\\n2 cases ou moins de l'ennemi ayant d\u00e9clench\u00e9\\nl'effet Muraille (n'affecte pas les unit\u00e9s dot\u00e9es\\nde l'aptitude Passage). L'unit\u00e9 subit une riposte\\nsi l'une des conditions suivantes est remplie\u00a0:\\nl'ennemi est une unit\u00e9 en armure avec une\\nport\u00e9e de 1, l'ennemi peut riposter peu importe\\nla distance \u00e0 laquelle se trouve l'unit\u00e9, ou\\nla port\u00e9e de l'ennemi est \u00e9gale \u00e0 la distance\\nentre l'unit\u00e9 et l'ennemi. Les effets de\\nd\u00e9placement d'apr\u00e8s combat n'ont pas lieu.\\nLa port\u00e9e de l'effet d'aptitude est consid\u00e9r\u00e9e\\ncomme \u00e9tant de 1. Ce style ne peut \u00eatre utilis\u00e9\\nque si l'unit\u00e9 a une port\u00e9e de 1.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\nCe style est d\u00e9sactiv\u00e9 lorsqu'un autre\u3010Style\u3011est\\n\u00e9quip\u00e9 par l'unit\u00e9. L'effet de ce\u3010Style\u3011prend fin\\napr\u00e8s le combat dans lequel il est utilis\u00e9.\\n\\n\u3010Style\u3011\\nChangez de style en utilisant le bouton \u00ab Style \u00bb\\nen bas de l'\u00e9cran.\\n\\nLe style d'une unit\u00e9 est actif uniquement lorsque\\ncette unit\u00e9 est en train d'agir. Quand l'unit\u00e9\\nposs\u00e8de un effet ou une aptitude activant\\nun style, elle ne pourra pas utiliser de doubles\\naptitudes ou d'aptitudes harmonis\u00e9es lorsqu'elle\\npeut agir (ces aptitudes peuvent \u00eatre utilis\u00e9es\\napr\u00e8s l'action de l'unit\u00e9). L'utilisation du style\\nest d\u00e9sactiv\u00e9e quand l'unit\u00e9 est d\u00e9ploy\u00e9e avec\\nDuo ou qu'elle est \u00e9quip\u00e9e de plusieurs aptitudes\\nayant un style."
+	},
+	{
+		"key": "MSID_H_\u66b4\u8650\u3078\u306e\u6012\u308a_NOSKW",
+		"value": "$aSi l'unit\u00e9 peut se transformer, les effets de\\ntransformation s'activent d\u00e9sormais aussi en\\nremplissant la condition suivante\u00a0: \u00ab\u00a0si un ennemi\\nse trouve dans une croix de 3 cases de long sur 3\\nde haut ayant pour centre l'unit\u00e9\u00a0\u00bb (cette\\ncondition s'ajoute aux conditions existantes).\\n\\nSi l'unit\u00e9 est dans une \u00e9quipe de d\u00e9fense\\ndans le mode Raid c\u00e9leste, au d\u00e9but du tour 1\\nde l'ennemi, si les conditions de transformation\\nsont remplies, l'unit\u00e9 se transforme.\\n\\nEn d\u00e9but de tour, si PV de l'unit\u00e9 \u2265 25\u00a0%,\\nconf\u00e8re l'effet suivant \u00e0 l'unit\u00e9 et aux alli\u00e9s\\n\u00e0 2\u00a0cases ou moins de l'unit\u00e9 pendant un tour\u00a0:\\n\u00ab\u00a0r\u00e9duit de 50\u00a0% le pourcentage des aptitudes\\ndes ennemis (sauf aptitudes sp\u00e9ciales) qui\\nr\u00e9duisent les d\u00e9g\u00e2ts \u00e0 hauteur d'un certain\\npourcentage pendant le combat (aptitudes\\nsp\u00e9ciales \u00e0 effet de zone exclues)\u00a0\u00bb, et conf\u00e8re\\n\u3010Style Port\u00e9e : 2\u3011\u00e0 l'unit\u00e9 et aux alli\u00e9s utilisant\\nune \u00e9p\u00e9e, une lance, une hache, une dracopierre\\nou des attaques de b\u00eate \u00e0 2 cases ou moins\\nde l'unit\u00e9 pendant un tour.\\n\\nSi l'unit\u00e9 est transform\u00e9e ou si PV de l'unit\u00e9\\n\u2265 25\u00a0% au d\u00e9but du combat, conf\u00e8re\\nAtq/Vit/D\u00e9f/R\u00e9s +X +8 \u00e0 l'unit\u00e9, l'unit\u00e9 inflige\\nX d\u00e9g\u00e2ts suppl\u00e9mentaires \u00d74 (aptitudes sp\u00e9ciales\\n\u00e0 effet de zone exclues), r\u00e9duit les d\u00e9g\u00e2ts\\ndes attaques de l'ennemi de X \u00d74 (aptitudes\\nsp\u00e9ciales \u00e0 effet de zone exclues), r\u00e9duit\\nles d\u00e9g\u00e2ts des aptitudes sp\u00e9ciales de l'ennemi\\nde X \u00d74 en plus (aptitudes sp\u00e9ciales \u00e0 effet de\\nzone exclues\u00a0; X = nombre de cases parcourues\\ndepuis le point de d\u00e9part jusqu'au point d'arriv\u00e9e\\npar celui qui a initi\u00e9 le combat, 3\u00a0maximum),\\nneutralise les effets qui infligent compteur +X\\n\u00e0 l'unit\u00e9, et conf\u00e8re compteur -Y \u00e0 l'unit\u00e9 avant\\nsa premi\u00e8re attaque pendant le combat\\n(Y = nombre d'effets de malus affectant l'ennemi,\\nmalus de caract\u00e9ristiques exclus\u00a0; 2\u00a0maximum)."
+	},
+	{
+		"key": "MSID_H_\u706b\u98a8\u6c34\u306e\u547d\u8108",
+		"value": "Conf\u00e8re PV +5.\\n\\nSi l'ennemi initie le combat ou si PV de l'unit\u00e9\\n\u2265 50\u00a0% au d\u00e9but du combat, conf\u00e8re Atq/Vit/R\u00e9s\\n+9 \u00e0 l'unit\u00e9 pendant le combat et rend 7 PV\\n\u00e0 l'unit\u00e9 apr\u00e8s le combat."
+	},
+	{
+		"key": "MSID_H_\u9632\u96631",
+		"value": "Si l'unit\u00e9 se trouve \u00e0 3\u00a0cases ou moins d'un alli\u00e9,\\nl'unit\u00e9 inflige 5\u00a0d\u00e9g\u00e2ts suppl\u00e9mentaires\\n(aptitudes sp\u00e9ciales \u00e0 effet de zone exclues)\\net r\u00e9duit les d\u00e9g\u00e2ts des attaques de l'ennemi\\nde 3 pendant le combat (aptitudes sp\u00e9ciales\\n\u00e0 effet de zone exclues), et si l'ennemi d\u00e9clenche\\nl'effet permettant d'attaquer deux fois pendant\\nle combat, r\u00e9duit les d\u00e9g\u00e2ts de 3 de plus\\n(aptitudes sp\u00e9ciales \u00e0 effet de zone exclues).\\n\\nSi l'unit\u00e9 se trouve \u00e0 3\u00a0cases ou moins d'un alli\u00e9\\net que l'ennemi initie le combat, r\u00e9duit les d\u00e9g\u00e2ts\\nde X de plus (X = distance entre l'unit\u00e9\\net l'ennemi\u00a0; aptitudes sp\u00e9ciales \u00e0 effet\\nde zone exclues)."
+	},
+	{
+		"key": "MSID_H_\u9632\u96632",
+		"value": "Si l'unit\u00e9 se trouve \u00e0 3\u00a0cases ou moins d'un alli\u00e9,\\nl'unit\u00e9 inflige 7\u00a0d\u00e9g\u00e2ts suppl\u00e9mentaires\\n(aptitudes sp\u00e9ciales \u00e0 effet de zone exclues)\\net r\u00e9duit les d\u00e9g\u00e2ts des attaques de l'ennemi\\nde 5 pendant le combat (aptitudes sp\u00e9ciales\\n\u00e0 effet de zone exclues), et si l'ennemi d\u00e9clenche\\nl'effet permettant d'attaquer deux fois pendant\\nle combat, r\u00e9duit les d\u00e9g\u00e2ts de 4 de plus\\n(aptitudes sp\u00e9ciales \u00e0 effet de zone exclues).\\n\\nSi l'unit\u00e9 se trouve \u00e0 3\u00a0cases ou moins d'un alli\u00e9\\net que l'ennemi initie le combat, r\u00e9duit les d\u00e9g\u00e2ts\\nde X de plus (X = distance entre l'unit\u00e9\\net l'ennemi\u00a0; aptitudes sp\u00e9ciales \u00e0 effet\\nde zone exclues)."
+	},
+	{
+		"key": "MSID_H_\u9632\u96633",
+		"value": "Si l'unit\u00e9 se trouve \u00e0 3\u00a0cases ou moins d'un alli\u00e9,\\nl'unit\u00e9 inflige 10\u00a0d\u00e9g\u00e2ts suppl\u00e9mentaires\\n(aptitudes sp\u00e9ciales \u00e0 effet de zone exclues)\\net r\u00e9duit les d\u00e9g\u00e2ts des attaques de l'ennemi\\nde 7 pendant le combat (aptitudes sp\u00e9ciales\\n\u00e0 effet de zone exclues), et si l'ennemi d\u00e9clenche\\nl'effet permettant d'attaquer deux fois pendant\\nle combat, r\u00e9duit les d\u00e9g\u00e2ts de 5 de plus\\n(aptitudes sp\u00e9ciales \u00e0 effet de zone exclues).\\n\\nSi l'unit\u00e9 se trouve \u00e0 3\u00a0cases ou moins d'un alli\u00e9\\net que l'ennemi initie le combat, r\u00e9duit les d\u00e9g\u00e2ts\\nde X \u00d72 de plus (X = distance entre l'unit\u00e9\\net l'ennemi\u00a0; aptitudes sp\u00e9ciales \u00e0 effet\\nde zone exclues)."
+	},
+	{
+		"key": "MSID_H_\u9632\u96634",
+		"value": "Si l'unit\u00e9 se trouve \u00e0 3\u00a0cases ou moins d'un alli\u00e9,\\ninflige Atq/Vit -4 \u00e0 l'ennemi, augmente de 10\\nla diff\u00e9rence de Vit n\u00e9cessaire pour que\\nl'ennemi r\u00e9alise une double frappe, neutralise\\nles malus de l'unit\u00e9, l'unit\u00e9 inflige 15\u00a0d\u00e9g\u00e2ts\\nsuppl\u00e9mentaires (aptitudes sp\u00e9ciales \u00e0 effet\\nde zone exclues) et r\u00e9duit les d\u00e9g\u00e2ts des\\nattaques de l'ennemi de 10 pendant le combat\\n(aptitudes sp\u00e9ciales \u00e0 effet de zone exclues),\\net si l'ennemi d\u00e9clenche l'effet permettant\\nd'attaquer deux fois pendant le combat, r\u00e9duit\\nles d\u00e9g\u00e2ts de 7 de plus (aptitudes sp\u00e9ciales\\n\u00e0 effet de zone exclues).\\n\\nSi l'unit\u00e9 se trouve \u00e0 3\u00a0cases ou moins d'un alli\u00e9\\net que l'ennemi initie le combat, r\u00e9duit les d\u00e9g\u00e2ts\\nde X \u00d72 de plus (X = distance entre l'unit\u00e9\\net l'ennemi\u00a0; aptitudes sp\u00e9ciales \u00e0 effet\\nde zone exclues)."
+	},
+	{
+		"key": "MSID_H_\u8863\u306e\u8b77\u308a\u624b\u30fb\u9b54\u30fb\u8328",
+		"value": "$aSi un ennemi utilisant la magie, un b\u00e2ton, ou\\nune dracopierre initie le combat contre un alli\u00e9\\n\u00e0 2 cases ou moins de l'unit\u00e9, d\u00e9clenche\\n\u3010Sauveur\u3011sur l'unit\u00e9.\\n\\nSi l'ennemi utilise la magie, un b\u00e2ton ou des\\ndracopierres, conf\u00e8re Vit/R\u00e9s +4 \u00e0 l'unit\u00e9,\\nd\u00e9sactive les effets de l'ennemi pour lesquels\\nles d\u00e9g\u00e2ts sont calcul\u00e9s avec la D\u00e9f ou la R\u00e9s\\nde l'ennemi (la valeur la plus faible\u00a0; aptitudes\\nsp\u00e9ciales \u00e0 effet de zone incluses), et r\u00e9duit\\nles d\u00e9g\u00e2ts de la premi\u00e8re attaque de l'ennemi\\nde 5 pendant le combat (de fa\u00e7on g\u00e9n\u00e9rale,\\nla \u00ab\u00a0premi\u00e8re attaque\u00a0\u00bb se r\u00e9f\u00e8re uniquement\\n\u00e0 la premi\u00e8re frappe\u00a0; pour les effets qui\\nconf\u00e8rent \u00ab\u00a0l'unit\u00e9 attaque deux fois\u00a0\u00bb, se r\u00e9f\u00e8re\\n\u00e0 la premi\u00e8re et la deuxi\u00e8me frappe), et la\\nprochaine attaque de l'unit\u00e9 inflige des d\u00e9g\u00e2ts\\nsuppl\u00e9mentaires \u00e0 hauteur de 40\u00a0% des d\u00e9g\u00e2ts\\nde l'attaque de l'ennemi avant les r\u00e9ductions\\n(effet r\u00e9initialis\u00e9 \u00e0 la fin du combat\u00a0; s'il y a\\nplusieurs effets similaires, seul le plus puissant\\ns'applique).\\n\\n\u3010Sauveur\u3011\\nL'unit\u00e9 se positionne sur la case de l'alli\u00e9,\\ncombat \u00e0 sa place et re\u00e7oit tous les effets\\nd'apr\u00e8s combat.\\n\\nSauveur ne se d\u00e9clenchera pas si l'alli\u00e9 se\\ntrouve sur un terrain sur lequel l'unit\u00e9 ne peut\\npas se d\u00e9placer ou si plusieurs unit\u00e9s peuvent\\nutiliser Sauveur pendant le m\u00eame combat.\\nSi Sauveur se d\u00e9clenche, les effets de\\nd\u00e9placement d'apr\u00e8s combat n'ont pas lieu."
+	},
+	{
+		"key": "MSID_H_\u8863\u306e\u8b77\u308a\u624b\u30fb\u9b54\u30fb\u8328_NOSKW",
+		"value": "$aSi un ennemi utilisant la magie, un b\u00e2ton, ou\\nune dracopierre initie le combat contre un alli\u00e9\\n\u00e0 2 cases ou moins de l'unit\u00e9, d\u00e9clenche\\n\u3010Sauveur\u3011sur l'unit\u00e9.\\n\\nSi l'ennemi utilise la magie, un b\u00e2ton ou des\\ndracopierres, conf\u00e8re Vit/R\u00e9s +4 \u00e0 l'unit\u00e9,\\nd\u00e9sactive les effets de l'ennemi pour lesquels\\nles d\u00e9g\u00e2ts sont calcul\u00e9s avec la D\u00e9f ou la R\u00e9s\\nde l'ennemi (la valeur la plus faible\u00a0; aptitudes\\nsp\u00e9ciales \u00e0 effet de zone incluses), et r\u00e9duit\\nles d\u00e9g\u00e2ts de la premi\u00e8re attaque de l'ennemi\\nde 5 pendant le combat (de fa\u00e7on g\u00e9n\u00e9rale,\\nla \u00ab\u00a0premi\u00e8re attaque\u00a0\u00bb se r\u00e9f\u00e8re uniquement\\n\u00e0 la premi\u00e8re frappe\u00a0; pour les effets qui\\nconf\u00e8rent \u00ab\u00a0l'unit\u00e9 attaque deux fois\u00a0\u00bb, se r\u00e9f\u00e8re\\n\u00e0 la premi\u00e8re et la deuxi\u00e8me frappe), et la\\nprochaine attaque de l'unit\u00e9 inflige des d\u00e9g\u00e2ts\\nsuppl\u00e9mentaires \u00e0 hauteur de 40\u00a0% des d\u00e9g\u00e2ts\\nde l'attaque de l'ennemi avant les r\u00e9ductions\\n(effet r\u00e9initialis\u00e9 \u00e0 la fin du combat\u00a0; s'il y a\\nplusieurs effets similaires, seul le plus puissant\\ns'applique)."
+	},
+	{
+		"key": "MSID_H_\u6697\u7363\u30fb\u4e0d\u5c48",
+		"value": "Inflige Vit/D\u00e9f -4 \u00e0 l'ennemi, d\u00e9sactive les\\naptitudes de tous les ennemis \u00e0 l'exception\\nde l'ennemi en combat, neutralise les malus\\nde l'unit\u00e9, et l'unit\u00e9 inflige 5\u00a0d\u00e9g\u00e2ts\\nsuppl\u00e9mentaires pendant le combat (aptitudes\\nsp\u00e9ciales \u00e0 effet de zone exclues)."
+	},
+	{
+		"key": "MSID_H_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "$aSi l'aptitude sp\u00e9ciale se d\u00e9clenche, augmente\\nles d\u00e9g\u00e2ts d'une valeur \u00e9gale \u00e0 la valeur\\nmaximale du compteur d'aptitude sp\u00e9ciale\\nde l'unit\u00e9 \u00d74 (aptitudes sp\u00e9ciales \u00e0 effet\\nde zone exclues).\\n\\nEn d\u00e9but de phase ennemie (sauf dans Pions\\nde Loki), si aucune\u3010Veine divine (stalactite)\u3011\\nn'est actuellement appliqu\u00e9e par l'unit\u00e9 ou\\nles alli\u00e9s, applique\u3010Veine divine (stalactite)\u3011aux\\ncases parmi celles qui sont \u00e0 2\u00a0cases de l'unit\u00e9\\npendant un tour (cases occup\u00e9es par un ennemi,\\nterrain destructible autre que les Veines divines\\net cases de t\u00e9l\u00e9portation dans Domaines rivaux\\nexclus), et\u3010Veine divine (\u00e9meraude)\u3011sur la case\\nde l'unit\u00e9 et les cases \u00e0 3 cases ou moins\\nde l'unit\u00e9 pendant un tour (cases o\u00f9\\n\u3010Veine divine (stalactite)\u3011est appliqu\u00e9e exclues).\\n\\n\u3010Veine divine (stalactite)\u3011\\nLe statut suivant s'applique \u00e0 la case : la case\\nest consid\u00e9r\u00e9e comme un terrain impraticable\\npour les ennemis tant que le statut est actif,\\nmais le statut est destructible (il a 1 PV). Lorsqu'il\\nest d\u00e9truit, il devient\u3010Veine divine (\u00e9meraude)\u3011.\\nLes alli\u00e9s peuvent se d\u00e9placer jusqu'\u00e0 la case\\net l'occuper. Si des alli\u00e9s occupent des cases\\naffect\u00e9es par Veine divine (stalactite), les\\nattaques ciblant ces cases frapperont l'alli\u00e9\\nau lieu de d\u00e9truire la Veine divine (stalactite).\\n\\n\u3010Veine divine (\u00e9meraude)\u3011\\nLes effets suivants s'appliquent \u00e0 la case pour\\nles ennemis : l'ennemi ne peut pas se\\nt\u00e9l\u00e9porter depuis ou sur cette case (n'affecte\\npas les ennemis dot\u00e9s de l'aptitude Passage ou\\nles effets de t\u00e9l\u00e9portation des structures,\\ntelles que les camps et les forteresses dans\\nDomaines rivaux). Inflige\u3010Mobilit\u00e9 limit\u00e9e\u3011aux\\nennemis d\u00e9clenchant Mobilit\u00e9 dans cette case\\njusqu'\u00e0 la fin de leur phase. Inflige Atq/Vit -5\\net compteur +1 par attaque pour l'ennemi\\npendant le combat (s'il y a plusieurs effets\\nsimilaires, seul le plus puissant s'applique),\\net si l'aptitude sp\u00e9ciale de l'ennemi peut \u00eatre\\nactiv\u00e9e par les attaques ennemies, inflige\\ncompteur +1 \u00e0 l'ennemi avant sa premi\u00e8re\\nattaque pendant le combat (ne peut exc\u00e9der\\nla valeur max du compteur d'aptitude sp\u00e9ciale\\nde l'ennemi).\\n\\n\u3010Mobilit\u00e9 limit\u00e9e\u3011\\nSi l'unit\u00e9 a une port\u00e9e de 1, elle peut\\nse d\u00e9placer d'une case lorsque Mobilit\u00e9\\nse d\u00e9clenche ; si l'unit\u00e9 a une port\u00e9e de 2,\\nson action prend fin lorsque Mobilit\u00e9\\nse d\u00e9clenche."
+	},
+	{
+		"key": "MSID_H_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973_NOSKW",
+		"value": "$aSi l'aptitude sp\u00e9ciale se d\u00e9clenche, augmente\\nles d\u00e9g\u00e2ts d'une valeur \u00e9gale \u00e0 la valeur\\nmaximale du compteur d'aptitude sp\u00e9ciale\\nde l'unit\u00e9 \u00d74 (aptitudes sp\u00e9ciales \u00e0 effet\\nde zone exclues).\\n\\nEn d\u00e9but de phase ennemie (sauf dans Pions\\nde Loki), si aucune\u3010Veine divine (stalactite)\u3011\\nn'est actuellement appliqu\u00e9e par l'unit\u00e9 ou\\nles alli\u00e9s, applique\u3010Veine divine (stalactite)\u3011aux\\ncases parmi celles qui sont \u00e0 2\u00a0cases de l'unit\u00e9\\npendant un tour (cases occup\u00e9es par un ennemi,\\nterrain destructible autre que les Veines divines\\net cases de t\u00e9l\u00e9portation dans Domaines rivaux\\nexclus), et\u3010Veine divine (\u00e9meraude)\u3011sur la case\\nde l'unit\u00e9 et les cases \u00e0 3 cases ou moins\\nde l'unit\u00e9 pendant un tour (cases o\u00f9\\n\u3010Veine divine (stalactite)\u3011est appliqu\u00e9e exclues)."
+	},
+	{
+		"key": "MID_STAGE_HONOR_L0091",
+		"value": "Emb. et myth."
+	},
+	{
+		"key": "MID_STAGE_L0091",
+		"value": "C & L"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PB288",
+		"value": "Aptitudes 288"
+	},
+	{
+		"key": "MID_STAGE_PB288",
+		"value": "Destin\u00e9es"
+	},
+	{
+		"key": "MID_VEIN_6",
+		"value": "Veine divine (\u00e9meraude)"
+	},
+	{
+		"key": "MID_H_VEIN_6",
+		"value": "$aLes effets suivants s'appliquent \u00e0 la\\ncase pour les ennemis : l'ennemi ne\\npeut pas se t\u00e9l\u00e9porter depuis ou sur\\ncette case (n'affecte pas les ennemis\\ndot\u00e9s de l'aptitude Passage ou les\\neffets de t\u00e9l\u00e9portation des structures,\\ntelles que les camps et les forteresses\\ndans Domaines rivaux).\\n\\nInflige\u3010Mobilit\u00e9 limit\u00e9e\u3011aux ennemis\\nd\u00e9clenchant Mobilit\u00e9 dans cette case\\njusqu'\u00e0 la fin de leur phase.\\n\\nInflige Atq/Vit -5 et compteur +1 par\\nattaque pour l'ennemi pendant\\nle combat (s'il y a plusieurs effets\\nsimilaires, seul le plus puissant\\ns'applique), et si l'aptitude sp\u00e9ciale\\nde l'ennemi peut \u00eatre activ\u00e9e par\\nles attaques ennemies, inflige\\ncompteur +1 \u00e0 l'ennemi avant sa\\npremi\u00e8re attaque pendant le combat\\n(ne peut exc\u00e9der la valeur max\\ndu compteur d'aptitude sp\u00e9ciale\\nde l'ennemi).\\n\\n\u3010Mobilit\u00e9 limit\u00e9e\u3011\\nSi l'unit\u00e9 a une port\u00e9e de 1, elle peut\\nse d\u00e9placer d'une case lorsque Mobilit\u00e9\\nse d\u00e9clenche ; si l'unit\u00e9 a une port\u00e9e de 2,\\nson action prend fin lorsque Mobilit\u00e9\\nse d\u00e9clenche."
+	},
+	{
+		"key": "MID_H_VEIN_6_NOSKW",
+		"value": "$aLes effets suivants s'appliquent \u00e0 la\\ncase pour les ennemis : l'ennemi ne\\npeut pas se t\u00e9l\u00e9porter depuis ou sur\\ncette case (n'affecte pas les ennemis\\ndot\u00e9s de l'aptitude Passage ou les\\neffets de t\u00e9l\u00e9portation des structures,\\ntelles que les camps et les forteresses\\ndans Domaines rivaux).\\n\\nInflige\u3010Mobilit\u00e9 limit\u00e9e\u3011aux ennemis\\nd\u00e9clenchant Mobilit\u00e9 dans cette case\\njusqu'\u00e0 la fin de leur phase.\\n\\nInflige Atq/Vit -5 et compteur +1 par\\nattaque pour l'ennemi pendant\\nle combat (s'il y a plusieurs effets\\nsimilaires, seul le plus puissant\\ns'applique), et si l'aptitude sp\u00e9ciale\\nde l'ennemi peut \u00eatre activ\u00e9e par\\nles attaques ennemies, inflige\\ncompteur +1 \u00e0 l'ennemi avant sa\\npremi\u00e8re attaque pendant le combat\\n(ne peut exc\u00e9der la valeur max\\ndu compteur d'aptitude sp\u00e9ciale\\nde l'ennemi)."
+	},
+	{
+		"key": "MID_VEIN_7",
+		"value": "Veine divine (stalactite)"
+	},
+	{
+		"key": "MID_H_VEIN_7",
+		"value": "$aLe statut suivant s'applique \u00e0 la case :\\nla case est consid\u00e9r\u00e9e comme\\nun terrain impraticable pour les\\nennemis tant que le statut est actif,\\nmais le statut est destructible (il a\\n1 PV). Lorsqu'il est d\u00e9truit, il devient\\n\u3010Veine divine (\u00e9meraude)\u3011. Les alli\u00e9s peuvent\\nse d\u00e9placer jusqu'\u00e0 la case et l'occuper.\\n\\nSi des alli\u00e9s occupent des cases\\naffect\u00e9es par Veine divine (stalactite),\\nles attaques ciblant ces cases\\nfrapperont l'alli\u00e9 au lieu de d\u00e9truire\\nla Veine divine (stalactite).\\n\\n\u3010Veine divine (\u00e9meraude)\u3011\\nLes effets suivants s'appliquent \u00e0 la\\ncase pour les ennemis :\\n\\nL'ennemi ne peut pas se t\u00e9l\u00e9porter depuis\\nou sur cette case (n'affecte pas les ennemis\\ndot\u00e9s de l'aptitude Passage ou les\\neffets de t\u00e9l\u00e9portation des structures,\\ntelles que les camps et les forteresses\\ndans Domaines rivaux).\\n\\nInflige\u3010Mobilit\u00e9 limit\u00e9e\u3011aux ennemis\\nd\u00e9clenchant Mobilit\u00e9 dans cette case\\njusqu'\u00e0 la fin de leur phase.\\n\\nInflige Atq/Vit -5 et compteur +1 par attaque\\npour l'ennemi pendant le combat (s'il y a\\nplusieurs effets similaires, seul le plus puissant\\ns'applique), et si l'aptitude sp\u00e9ciale de l'ennemi\\npeut \u00eatre activ\u00e9e par les attaques ennemies,\\ninflige compteur +1 \u00e0 l'ennemi avant\\nsa premi\u00e8re attaque pendant le combat\\n(ne peut exc\u00e9der la valeur max du compteur\\nd'aptitude sp\u00e9ciale de l'ennemi).\\n\\n(Les effets de Veine divine ne sont pas\\ncumulables. Remplace tout effet de Veine divine\\nactif. Les effets de Veine divine s'appliquant\\nen m\u00eame temps s'annulent.)\\n\\n\u3010Mobilit\u00e9 limit\u00e9e\u3011\\nSi l'unit\u00e9 a une port\u00e9e de 1, elle peut\\nse d\u00e9placer d'une case lorsque Mobilit\u00e9\\nse d\u00e9clenche ; si l'unit\u00e9 a une port\u00e9e de 2,\\nson action prend fin lorsque Mobilit\u00e9\\nse d\u00e9clenche."
+	},
+	{
+		"key": "MID_H_VEIN_7_NOSKW",
+		"value": "$aLe statut suivant s'applique \u00e0 la case :\\nla case est consid\u00e9r\u00e9e comme\\nun terrain impraticable pour les\\nennemis tant que le statut est actif,\\nmais le statut est destructible (il a\\n1 PV). Lorsqu'il est d\u00e9truit, il devient\\n\u3010Veine divine (\u00e9meraude)\u3011. Les alli\u00e9s peuvent\\nse d\u00e9placer jusqu'\u00e0 la case et l'occuper.\\n\\nSi des alli\u00e9s occupent des cases\\naffect\u00e9es par Veine divine (stalactite),\\nles attaques ciblant ces cases\\nfrapperont l'alli\u00e9 au lieu de d\u00e9truire\\nla Veine divine (stalactite)."
+	}
+]

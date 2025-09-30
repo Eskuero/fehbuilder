@@ -1,0 +1,826 @@
+[
+	{
+		"key": "MDAID_\u65a7\u6226\u58eb\u306e\u30d0\u30f3\u30c0\u30ca\u30fb\u91d1",
+		"value": "Gold. Axtk\u00e4mpferband"
+	},
+	{
+		"key": "MDAID_H_\u65a7\u6226\u58eb\u306e\u30d0\u30f3\u30c0\u30ca\u30fb\u91d1",
+		"value": "Beweis f\u00fcr den Sieg \u00fcber Emblem\\nCorrin und die Mythische Heldin Lyn."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_96",
+		"value": "$aDie Einheit kann den folgenden\u3010Stil\u3011verwenden:\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015 Stil: Reichweite 2 \u2015\u2015\u2015\u2015\u2015\u2015\u2015\\nDie Einheit kann Gegner in 2 Feldern Entfernung\\nangreifen (aber keine benachbarten Gegner).\\n\\nKann nicht durch Felder im Umkreis von 2 Fel-\\ndern eines Gegners ziehen, der den Wall-Effekt\\nausgel\u00f6st hat (gilt nicht, wenn die Einheit eine\\nPassieren-F\u00e4higkeit besitzt). Wird mindestens\\neine der folgenden Bedingungen erf\u00fcllt, erleidet\\ndie Einheit einen Gegenangriff: Der Gegner ist\\ngepanzert mit Rw. = 1, er kann unabh\u00e4ngig vom\\nAbstand zur Einheit kontern oder die Rw. des\\nGegners = Distanz zwischen Einheit und Gegner.\\nEffekte, die sich auf die Bewegung nach dem\\nKampf auswirken, erfolgen nicht. Die Reichweite\\ndes Effekts dieser F\u00e4higkeit wird als 1 gewertet.\\nDieser Stil kann nur eingesetzt werden, wenn Rw.\\nder Einheit = 1 ist.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\nDieser Stil wird deaktiviert, wenn die Einheit\\neinen anderen\u3010Stil\u3011besitzt. Nach dem Kampf,\\nin dem dieser\u3010Stil\u3011verwendet wurde, wird\\ndieser Status entfernt.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\n(F\u00fcr 1 Zug.)\\n\\n\u3010Stil\u3011\\nWechsle den Stil, indem du unten auf dem Bild-\\nschirm auf das Stil-Symbol tippst.\\n\\nDer Stil einer Einheit ist nur aktiv, wenn sie eine\\nAktion ausf\u00fchrt. Wenn die Einheit durch einen\\nStatus oder eine F\u00e4higkeit \u00fcber einen Stil ver-\\nf\u00fcgt, kann sie keine F\u00e4higkeiten wie Heldenduo-\\nF\u00e4higkeiten oder Harmonief\u00e4higkeiten verwen-\\nden, solange sie eine Aktion ausf\u00fchren kann\\n(diese F\u00e4higkeiten k\u00f6nnen verwendet werden,\\nnachdem die Einheit agiert hat).\\nEs ist nicht m\u00f6glich, einen Stil zu verwenden,\\nwenn die Einheit \u00fcber \"Kombi\" entsandt wird\\noder wenn die Einheit \u00fcber mehrere F\u00e4higkeiten\\nverf\u00fcgt, die einen Stil haben."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_96_NOSKW",
+		"value": "$aDie Einheit kann den folgenden\u3010Stil\u3011verwenden:\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015 Stil: Reichweite 2 \u2015\u2015\u2015\u2015\u2015\u2015\u2015\\nDie Einheit kann Gegner in 2 Feldern Entfernung\\nangreifen (aber keine benachbarten Gegner).\\n\\nKann nicht durch Felder im Umkreis von 2 Fel-\\ndern eines Gegners ziehen, der den Wall-Effekt\\nausgel\u00f6st hat (gilt nicht, wenn die Einheit eine\\nPassieren-F\u00e4higkeit besitzt). Wird mindestens\\neine der folgenden Bedingungen erf\u00fcllt, erleidet\\ndie Einheit einen Gegenangriff: Der Gegner ist\\ngepanzert mit Rw. = 1, er kann unabh\u00e4ngig vom\\nAbstand zur Einheit kontern oder die Rw. des\\nGegners = Distanz zwischen Einheit und Gegner.\\nEffekte, die sich auf die Bewegung nach dem\\nKampf auswirken, erfolgen nicht. Die Reichweite\\ndes Effekts dieser F\u00e4higkeit wird als 1 gewertet.\\nDieser Stil kann nur eingesetzt werden, wenn Rw.\\nder Einheit = 1 ist.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\nDieser Stil wird deaktiviert, wenn die Einheit\\neinen anderen\u3010Stil\u3011besitzt. Nach dem Kampf,\\nin dem dieser\u3010Stil\u3011verwendet wurde, wird\\ndieser Status entfernt.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\n(F\u00fcr 1 Zug.)"
+	},
+	{
+		"key": "MID_ENHANCE_HELP_96",
+		"value": "Gew\u00e4hrt Stil: Reichweite 2"
+	},
+	{
+		"key": "MID_MISSION_M202510A_TITLE",
+		"value": "Oktober-Quests"
+	},
+	{
+		"key": "MID_MISSION_M202510A_A1",
+		"value": "Arena\u00fcberfall: 1 Sieg"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A1",
+		"value": "Gewinne einen Kampf beim Arena\u00fcberfall."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A2",
+		"value": "Arena\u00fcberfall: 3 Siege"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A2",
+		"value": "Gewinne beim Arena\u00fcberfall drei K\u00e4mpfe\\nin Folge."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A3",
+		"value": "Arena\u00fcberfall: 5 Siege"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A3",
+		"value": "Gewinne beim Arena\u00fcberfall f\u00fcnf K\u00e4mpfe\\nin Folge."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A4",
+		"value": "Alfonse greift an"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A4",
+		"value": "Lass Alfonse: Prinz von Askr\\neinen Gegner besiegen."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A5",
+		"value": "Sharena greift an"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A5",
+		"value": "Lass Sharena: Askra. Prinzessin\\neinen Gegner besiegen."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A6",
+		"value": "Anna greift an"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A6",
+		"value": "Lass Kommandantin Anna einen Gegner\\nbesiegen."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A7",
+		"value": "Rot besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A7",
+		"value": "Besiege rote Gegner."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A8",
+		"value": "Blau besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A8",
+		"value": "Besiege blaue Gegner."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A9",
+		"value": "Gr\u00fcn besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A9",
+		"value": "Besiege gr\u00fcne Gegner."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A10",
+		"value": "Farblos besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A10",
+		"value": "Besiege farblose Gegner."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A11",
+		"value": "Infanterie besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A11",
+		"value": "Besiege Infanterieeinheiten."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A12",
+		"value": "Gepanzerte besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A12",
+		"value": "Besiege gepanzerte Einheiten."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A13",
+		"value": "Reiter besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A13",
+		"value": "Besiege berittene Einheiten."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A14",
+		"value": "Flieger besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A14",
+		"value": "Besiege Flugeinheiten."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A15",
+		"value": "Kap. 4 Tl. 1"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A15",
+		"value": "Bew\u00e4ltige Buch VIII, Kapitel 4 - Teil 1 auf\\nExtrem. Alle vier Verb\u00fcndeten m\u00fcssen\\n\u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A16",
+		"value": "Kap. 4 Tl. 2"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A16",
+		"value": "Bew\u00e4ltige Buch VIII, Kapitel 4 - Teil 2 auf\\nExtrem. Alle vier Verb\u00fcndeten m\u00fcssen\\n\u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A17",
+		"value": "Kap. 4 Tl. 3"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A17",
+		"value": "Bew\u00e4ltige Buch VIII, Kapitel 4 - Teil 3 auf\\nExtrem. Alle vier Verb\u00fcndeten m\u00fcssen\\n\u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A18",
+		"value": "Kap. 4 Tl. 4"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A18",
+		"value": "Bew\u00e4ltige Buch VIII, Kapitel 4 - Teil 4 auf\\nExtrem. Alle vier Verb\u00fcndeten m\u00fcssen\\n\u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A19",
+		"value": "Kap. 4 Tl. 5"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A19",
+		"value": "Bew\u00e4ltige Buch VIII, Kapitel 4 - Teil 5 auf\\nExtrem. Alle vier Verb\u00fcndeten m\u00fcssen\\n\u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A20",
+		"value": "\u00c4R: Erfolgreicher Angriff"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A20",
+		"value": "Greife im Modus \"\u00c4therraubz\u00fcge\"\\nerfolgreich an."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A21",
+		"value": "\u00c4R: Erfolgreicher Angriff"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A21",
+		"value": "Greife im Modus \"\u00c4therraubz\u00fcge\"\\nerfolgreich an."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A22",
+		"value": "\u00c4R: Erfolgreicher Angriff"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A22",
+		"value": "Greife im Modus \"\u00c4therraubz\u00fcge\"\\nerfolgreich an."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A23",
+		"value": "Gewinne Arenaduelle"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A23",
+		"value": "Gewinne Arenaduelle eines\\nbeliebigen Schwierigkeitsgrads."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A24",
+		"value": "Gewinne Arenaduelle"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A24",
+		"value": "Gewinne Arenaduelle eines\\nbeliebigen Schwierigkeitsgrads."
+	},
+	{
+		"key": "MID_MISSION_M202510A_A25",
+		"value": "Gewinne Arenaduelle"
+	},
+	{
+		"key": "MID_MISSION_H_M202510A_A25",
+		"value": "Gewinne Arenaduelle eines\\nbeliebigen Schwierigkeitsgrads."
+	},
+	{
+		"key": "MID_MISSION_S202510MJOLNIR01_TITLE",
+		"value": "Mj\u00f6lnirs Schlag"
+	},
+	{
+		"key": "MID_MISSION_S202510MJOLNIR01_A1",
+		"value": "Avatar greift an"
+	},
+	{
+		"key": "MID_MISSION_H_S202510MJOLNIR01_A1",
+		"value": "Lass deinen Avatar in Mj\u00f6lnirs Schlag\\neinen Gegner besiegen."
+	},
+	{
+		"key": "MID_MISSION_S202510MJOLNIR01_A2",
+		"value": "Avatar greift an"
+	},
+	{
+		"key": "MID_MISSION_H_S202510MJOLNIR01_A2",
+		"value": "Lass deinen Avatar in Mj\u00f6lnirs Schlag\\nGegner besiegen."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_TITLE",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A1",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A1",
+		"value": "Gewinne einen Kampf\\nim Wahlturnier."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A2",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A2",
+		"value": "Gewinne K\u00e4mpfe\\nim Wahlturnier."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A3",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A3",
+		"value": "Gewinne K\u00e4mpfe\\nim Wahlturnier."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A4",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A4",
+		"value": "Gewinne K\u00e4mpfe\\nim Wahlturnier."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A5",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A5",
+		"value": "Gewinne K\u00e4mpfe\\nim Wahlturnier."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A6",
+		"value": "\u00dcbungsturm: 2. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A6",
+		"value": "Bew\u00e4ltige die zweite Stufe\\ndes \u00dcbungsturms."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A7",
+		"value": "\u00dcbungsturm: 5. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A7",
+		"value": "Bew\u00e4ltige die f\u00fcnfte Stufe\\ndes \u00dcbungsturms."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A8",
+		"value": "\u00dcbungsturm: 8. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A8",
+		"value": "Bew\u00e4ltige die achte Stufe\\ndes \u00dcbungsturms."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A9",
+		"value": "Gewinne Arenaduelle"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A9",
+		"value": "Gewinne ein Arenaduell eines\\nbeliebigen Schwierigkeitsgrads."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A10",
+		"value": "Gewinne Arenaduelle"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A10",
+		"value": "Gewinne Arenaduelle eines\\nbeliebigen Schwierigkeitsgrads."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A11",
+		"value": "Arenaduelle / Mittel+"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A11",
+		"value": "Gewinne Arenaduelle auf\\nmittlerem oder h\u00f6herem\\nSchwierigkeitsgrad."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A12",
+		"value": "Arenaduelle / Mittel+"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A12",
+		"value": "Gewinne Arenaduelle auf\\nmittlerem oder h\u00f6herem\\nSchwierigkeitsgrad."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A13",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A13",
+		"value": "Gewinne einen Kampf im\\nWahlturnier mit einem roten\\nVerb\u00fcndeten in deinem Team."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A14",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A14",
+		"value": "Gewinne einen Kampf im\\nWahlturnier mit einem blauen\\nVerb\u00fcndeten in deinem Team."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A15",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A15",
+		"value": "Gewinne einen Kampf im\\nWahlturnier mit einem gr\u00fcnen\\nVerb\u00fcndeten in deinem Team."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A16",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A16",
+		"value": "Gewinne einen Kampf im\\nWahlturnier mit einem farblosen\\nVerb\u00fcndeten in deinem Team."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A17",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A17",
+		"value": "Gewinne K\u00e4mpfe im Wahlturnier\\nmit einem roten Verb\u00fcndeten in\\ndeinem Team."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A18",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A18",
+		"value": "Gewinne K\u00e4mpfe im Wahlturnier\\nmit einem blauen Verb\u00fcndeten in\\ndeinem Team."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A19",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A19",
+		"value": "Gewinne K\u00e4mpfe im Wahlturnier\\nmit einem gr\u00fcnen Verb\u00fcndeten in\\ndeinem Team."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A20",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A20",
+		"value": "Gewinne K\u00e4mpfe im Wahlturnier\\nmit einem farblosen Verb\u00fcndeten\\nin deinem Team."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A21",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A21",
+		"value": "Gewinne K\u00e4mpfe im Wahlturnier\\nmit einem roten Verb\u00fcndeten in\\ndeinem Team."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A22",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A22",
+		"value": "Gewinne K\u00e4mpfe im Wahlturnier\\nmit einem blauen Verb\u00fcndeten in\\ndeinem Team."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A23",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A23",
+		"value": "Gewinne K\u00e4mpfe im Wahlturnier\\nmit einem gr\u00fcnen Verb\u00fcndeten in\\ndeinem Team."
+	},
+	{
+		"key": "MID_MISSION_S202510VOTE01_A24",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202510VOTE01_A24",
+		"value": "Gewinne K\u00e4mpfe im Wahlturnier\\nmit einem farblosen Verb\u00fcndeten\\nin deinem Team."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_TITLE",
+		"value": "Oktober-\u00dcbung"
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A1",
+		"value": "\u00dcbungsturm: 1. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A1",
+		"value": "Bew\u00e4ltige die erste Stufe des \u00dcbungsturms.\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A2",
+		"value": "\u00dcbungsturm: 2. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A2",
+		"value": "Bew\u00e4ltige die zweite Stufe des \u00dcbungsturms.\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A3",
+		"value": "\u00dcbungsturm: 3. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A3",
+		"value": "Bew\u00e4ltige die dritte Stufe des \u00dcbungsturms.\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A4",
+		"value": "\u00dcbungsturm: 4. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A4",
+		"value": "Bew\u00e4ltige die vierte Stufe des \u00dcbungsturms.\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A5",
+		"value": "\u00dcbungsturm: 5. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A5",
+		"value": "Bew\u00e4ltige die f\u00fcnfte Stufe des \u00dcbungsturms.\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A6",
+		"value": "\u00dcbungsturm: 6. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A6",
+		"value": "Bew\u00e4ltige die sechste Stufe des \u00dcbungsturms.\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A7",
+		"value": "\u00dcbungsturm: 7. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A7",
+		"value": "Bew\u00e4ltige die siebte Stufe des \u00dcbungsturms.\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A8",
+		"value": "\u00dcbungsturm: 8. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A8",
+		"value": "Bew\u00e4ltige die achte Stufe des \u00dcbungsturms.\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A9",
+		"value": "\u00dcbungsturm: 9. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A9",
+		"value": "Bew\u00e4ltige die neunte Stufe des \u00dcbungsturms.\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A10",
+		"value": "\u00dcbungsturm: 10. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A10",
+		"value": "Bew\u00e4ltige die zehnte Stufe des \u00dcbungsturms.\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A11",
+		"value": "\u00dcbungsturm: 10. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A11",
+		"value": "Bew\u00e4ltige die zehnte Stufe des \u00dcbungsturms\\nnur mit Infanterieeinheiten. (\u00dcber \"Kombi\" als\\nHelfer entsandte Verb\u00fcndete z\u00e4hlen nicht.)\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A12",
+		"value": "\u00dcbungsturm: 10. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A12",
+		"value": "Bew\u00e4ltige die zehnte Stufe des \u00dcbungsturms\\nnur mit gepanzerten Einheiten. (\u00dcber \"Kombi\"\\nals Helfer entsandte Verb\u00fcndete z\u00e4hlen nicht.)\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A13",
+		"value": "\u00dcbungsturm: 10. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A13",
+		"value": "Bew\u00e4ltige die zehnte Stufe des \u00dcbungsturms\\nnur mit berittenen Einheiten. (\u00dcber \"Kombi\" als\\nHelfer entsandte Verb\u00fcndete z\u00e4hlen nicht.)\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202510B_A14",
+		"value": "\u00dcbungsturm: 10. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202510B_A14",
+		"value": "Bew\u00e4ltige die zehnte Stufe des \u00dcbungsturms\\nnur mit Flugeinheiten. (\u00dcber \"Kombi\" als\\nHelfer entsandte Verb\u00fcndete z\u00e4hlen nicht.)\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MPID_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "Corrin"
+	},
+	{
+		"key": "MPID_SEARCH_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "Corrin"
+	},
+	{
+		"key": "MPID_\u7363\u4eba\u30ea\u30f3",
+		"value": "Lyn"
+	},
+	{
+		"key": "MPID_SEARCH_\u7363\u4eba\u30ea\u30f3",
+		"value": "Lyn"
+	},
+	{
+		"key": "MPID_HONOR_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "Von Fates"
+	},
+	{
+		"key": "MPID_HONOR_\u7363\u4eba\u30ea\u30f3",
+		"value": "Wind der Ebenen"
+	},
+	{
+		"key": "MPID_H_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "Eines der Embleme, die nach Elyos gerufen\\nwurden. Ist im Ring der Weltver\u00e4nderin zu\\nHause. Erscheint in Fire Emblem Fates /\\nFire Emblem Engage."
+	},
+	{
+		"key": "MPID_H_\u7363\u4eba\u30ea\u30f3",
+		"value": "Paladin der Lichtg\u00f6ttin Naga. Obwohl sie nicht\\nmehr wei\u00df, wer sie ist oder wo sie herkommt,\\nh\u00e4lt sie an ihren \u00dcberzeugungen fest.\\nErscheint in Fire Emblem: The Blazing Blade /\\nFire Emblem Shadows."
+	},
+	{
+		"key": "MPID_VOICE_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "Marcella Lentz-Pope"
+	},
+	{
+		"key": "MPID_VOICE_\u7363\u4eba\u30ea\u30f3",
+		"value": "Wendee Lee"
+	},
+	{
+		"key": "MPID_ILLUST_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "Kousei Horiguchi (\u6052\u661f\u30db\u30ea\u30b0\u30c1)"
+	},
+	{
+		"key": "MPID_ILLUST_\u7363\u4eba\u30ea\u30f3",
+		"value": "\uff2b\uff45\uff27"
+	},
+	{
+		"key": "MPID_LEGEND_\u7363\u4eba\u30ea\u30f3",
+		"value": "Mythischer Effekt: Licht\\nVerb\u00fcndetenbonus: KP +5, Res. +5\\n\\nGew\u00e4hrt Verb\u00fcndeten diesen mythischen Effekt\\nin der Lichtsaison, wenn sie mit Licht gesegnet\\nsind und mit dieser Einheit in \u00c4therraubz\u00fcgen\\nK\u00e4mpfe austragen: Helden mit Lichtsegen\\nst\u00e4rken die Erh\u00f6hung des \u00c4therniveaus durch\\nerfolgreiche Angriffe w\u00e4hrend der Lichtsaison.\\n(Die Verst\u00e4rkung ist beschr\u00e4nkt auf: Anzahl\\nmythischer Helden x Anzahl der Helden mit\\ndem Segen x 10.)\\n\\nW\u00e4hrend der Lichtsaison verst\u00e4rkt dieser\\nMythische Held die Erh\u00f6hung des \u00c4therniveaus\\ndurch erfolgreiche Angriffe je nach Anzahl der\\nVerbindungen. (Die Verst\u00e4rkung ist beschr\u00e4nkt\\nauf: Anzahl der Verbindungen der Einheit x 1.)\\n\\nMythischer Effekt 2: Licht\\nVerb\u00fcndetenbonus: Raubgruppen-Bonus\\n\\nMythischer Effekt 3: Licht\\nVerb\u00fcndetenbonus: Raubgruppen-Ruf\\n(Weitere Informationen findest du bei\\n\"Raubgruppen \u00e4ndern\".)"
+	},
+	{
+		"key": "MID_TIPS_Summon_v0909c_legend_01_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "Erzeugt G\u00f6ttliche Adern (Tiefgr\u00fcn)!\\nBesch\u00fctzt Verb\u00fcndete vor Magie-\\nanwendern und kontert vernichtend!"
+	},
+	{
+		"key": "MID_TIPS_Summon_v0909c_legend_01_\u7363\u4eba\u30ea\u30f3",
+		"value": "Ihr Stil erm\u00f6glicht es allen Verb., aus\\nder Ferne anzugreifen. Legt gegneri-\\nsche Schw\u00e4chen offen und greift mit\\neinem starken Spezialangriff an."
+	},
+	{
+		"key": "MSID_\u672a\u6765\u3092\u9078\u3073\u3057\u8005\u306e\u5263",
+		"value": "Schicksalsschwert"
+	},
+	{
+		"key": "MSID_SEARCH_\u672a\u6765\u3092\u9078\u3073\u3057\u8005\u306e\u5263",
+		"value": "Schicksalsschwert"
+	},
+	{
+		"key": "MSID_\u5149\u3068\u95c7\u306e\u75be\u98a8",
+		"value": "Dualit\u00e4tswinde"
+	},
+	{
+		"key": "MSID_SEARCH_\u5149\u3068\u95c7\u306e\u75be\u98a8",
+		"value": "Dualitatswinde"
+	},
+	{
+		"key": "MSID_\u7adc\u7a7f\u7832",
+		"value": "Rei\u00dfendes Gebr\u00fcll"
+	},
+	{
+		"key": "MSID_SEARCH_\u7adc\u7a7f\u7832",
+		"value": "Rei\u00dfendes Gebrull"
+	},
+	{
+		"key": "MSID_\u66b4\u8650\u3078\u306e\u6012\u308a",
+		"value": "Tyrannenruin"
+	},
+	{
+		"key": "MSID_SEARCH_\u66b4\u8650\u3078\u306e\u6012\u308a",
+		"value": "Tyrannenruin"
+	},
+	{
+		"key": "MSID_\u706b\u98a8\u6c34\u306e\u547d\u8108",
+		"value": "Rei\u00dfender Schub"
+	},
+	{
+		"key": "MSID_SEARCH_\u706b\u98a8\u6c34\u306e\u547d\u8108",
+		"value": "Rei\u00dfender Schub"
+	},
+	{
+		"key": "MSID_\u9632\u96631",
+		"value": "Kombi 1"
+	},
+	{
+		"key": "MSID_SEARCH_\u9632\u96631",
+		"value": "Kombi 1"
+	},
+	{
+		"key": "MSID_\u9632\u96632",
+		"value": "Kombi 2"
+	},
+	{
+		"key": "MSID_SEARCH_\u9632\u96632",
+		"value": "Kombi 2"
+	},
+	{
+		"key": "MSID_\u9632\u96633",
+		"value": "Kombi 3"
+	},
+	{
+		"key": "MSID_SEARCH_\u9632\u96633",
+		"value": "Kombi 3"
+	},
+	{
+		"key": "MSID_\u9632\u96634",
+		"value": "Kombi 4"
+	},
+	{
+		"key": "MSID_SEARCH_\u9632\u96634",
+		"value": "Kombi 4"
+	},
+	{
+		"key": "MSID_\u8863\u306e\u8b77\u308a\u624b\u30fb\u9b54\u30fb\u8328",
+		"value": "G/R Dornschutz M"
+	},
+	{
+		"key": "MSID_SEARCH_\u8863\u306e\u8b77\u308a\u624b\u30fb\u9b54\u30fb\u8328",
+		"value": "G/R Dornschutz M"
+	},
+	{
+		"key": "MSID_\u6697\u7363\u30fb\u4e0d\u5c48",
+		"value": "Gewalt der Bestie"
+	},
+	{
+		"key": "MSID_SEARCH_\u6697\u7363\u30fb\u4e0d\u5c48",
+		"value": "Gewalt der Bestie"
+	},
+	{
+		"key": "MSID_\u5929\u8108\u30fb\u6df1\u7dd1",
+		"value": "G\u00f6ttl. Ader (Tiefgr\u00fcn)"
+	},
+	{
+		"key": "MSID_SEARCH_\u5929\u8108\u30fb\u6df1\u7dd1",
+		"value": "Gottl. Ader (Tiefgrun)"
+	},
+	{
+		"key": "MSID_H_\u672a\u6765\u3092\u9078\u3073\u3057\u8005\u306e\u5263",
+		"value": "$aBeschleunigt Spezialangriffe (Erholungszeit -1).\\nDie Einheit kann unabh\u00e4ngig vom Abstand zum\\nGegner kontern.\\n\\nBefindet sich die Einheit zu Beginn der Spieler-\\noder Gegnerphase im Umkreis von 2 Feldern ei-\\nnes Verb\u00fcndeten, erhalten die Einheit und Ver-\\nb\u00fcndete im Umkreis von 2 Feldern der Einheit\\nf\u00fcr 1 Zug\u3010Drachenfluch\u3011und \"die Reduzierung\\ndes Schadens bei Gegnern mit der Nicht-Spezial-\\nf\u00e4higkeit 'der erlittene Schaden wird um X % ver-\\nringert' ist im Kampf um 50 % geringer (ausge-\\nnommen Spezialangriffe mit Fl\u00e4chenwirkung)\".\\n\\nBefindet sich die Einheit im Umkreis von 3 Fel-\\ndern eines Verb\u00fcndeten, erh\u00e4lt sie Angr./Ges./\\nVer./Res. +X (X = Anzahl an Verb\u00fcndeten inner-\\nhalb von 3 Feldern der Einheit x3, +5; max. 14;\\nl\u00f6st die Einheit Schutz aus, gilt: X = 14), sie f\u00fcgt\\nzus\u00e4tzlichen Schaden in H\u00f6he von 20 % ihres\\nRes.-Werts zu (ausgenommen Spezialangriffe mit\\nFl\u00e4chenwirkung), der Schaden durch gegnerische\\nAngriffe wird um 20 % des Res.-Werts der Einheit\\nreduziert (ausgenommen Spezialangriffe mit Fl\u00e4-\\nchenwirkung), der Schaden durch gegnerische\\nSpezialangriffe wird erneut um 20 % des Res.-\\nWerts der Einheit reduziert (ausgenommen Spe-\\nzialangriffe mit Fl\u00e4chenwirkung) und Effekte, die\\ndem Gegner Folgeangriffe garantieren oder Fol-\\ngeangriffe der Einheit verhindern, werden im\\nKampf aufgehoben.\\n\\n\u3010Drachenfluch\u3011\\nDer Gegner erleidet im Kampf Angr./Ges./Ver./\\nRes. -5 und jeder dieser Werte wird im Kampf\\nzus\u00e4tzlich f\u00fcr 1 Zug um X verringert (X = 5 - ak-\\ntuell g\u00fcltige Werteverringerungen auf jeden die-\\nser Statuswerte; mind. 0; jeder Werteabzug wird\\neinzeln berechnet)."
+	},
+	{
+		"key": "MSID_H_\u672a\u6765\u3092\u9078\u3073\u3057\u8005\u306e\u5263_NOSKW",
+		"value": "$aBeschleunigt Spezialangriffe (Erholungszeit -1).\\nDie Einheit kann unabh\u00e4ngig vom Abstand zum\\nGegner kontern.\\n\\nBefindet sich die Einheit zu Beginn der Spieler-\\noder Gegnerphase im Umkreis von 2 Feldern ei-\\nnes Verb\u00fcndeten, erhalten die Einheit und Ver-\\nb\u00fcndete im Umkreis von 2 Feldern der Einheit\\nf\u00fcr 1 Zug\u3010Drachenfluch\u3011und \"die Reduzierung\\ndes Schadens bei Gegnern mit der Nicht-Spezial-\\nf\u00e4higkeit 'der erlittene Schaden wird um X % ver-\\nringert' ist im Kampf um 50 % geringer (ausge-\\nnommen Spezialangriffe mit Fl\u00e4chenwirkung)\".\\n\\nBefindet sich die Einheit im Umkreis von 3 Fel-\\ndern eines Verb\u00fcndeten, erh\u00e4lt sie Angr./Ges./\\nVer./Res. +X (X = Anzahl an Verb\u00fcndeten inner-\\nhalb von 3 Feldern der Einheit x3, +5; max. 14;\\nl\u00f6st die Einheit Schutz aus, gilt: X = 14), sie f\u00fcgt\\nzus\u00e4tzlichen Schaden in H\u00f6he von 20 % ihres\\nRes.-Werts zu (ausgenommen Spezialangriffe mit\\nFl\u00e4chenwirkung), der Schaden durch gegnerische\\nAngriffe wird um 20 % des Res.-Werts der Einheit\\nreduziert (ausgenommen Spezialangriffe mit Fl\u00e4-\\nchenwirkung), der Schaden durch gegnerische\\nSpezialangriffe wird erneut um 20 % des Res.-\\nWerts der Einheit reduziert (ausgenommen Spe-\\nzialangriffe mit Fl\u00e4chenwirkung) und Effekte, die\\ndem Gegner Folgeangriffe garantieren oder Fol-\\ngeangriffe der Einheit verhindern, werden im\\nKampf aufgehoben."
+	},
+	{
+		"key": "MSID_H_\u5149\u3068\u95c7\u306e\u75be\u98a8",
+		"value": "$aBeschleunigt Spezialangriffe (Erholungszeit -1).\\nEffektiv gegen Flugeinheiten.\\n\\nSind die KP der Einheit zu Beginn des Zuges\\n\u2265 25 %, erleiden die Gegner mit der geringsten\\nEntfernung sowie jeder Gegner im Umkreis von\\n2 Feldern dieser Gegner bis nach ihren n\u00e4chsten\\nAktionen\u3010Schutzlos\u3011,\u3010Ges.-Ketten\u3011und\\n\u3010Ver.-Ketten\u3011.\\n\\nHat sich die Einheit verwandelt oder sind ihre KP\\nzu Beginn des Kampfes \u2265 25 %, erh\u00e4lt sie Angr./\\nGes./Ver./Res. +X (X = Anzahl an Gegnern inner-\\nhalb von 3 Reihen oder 3 Spalten um die Einheit\\nx3, +5; max. 14), die Einheit f\u00fcgt +Y x5 Schaden\\nzu (ausgenommen Spezialangriffe mit Fl\u00e4chen-\\nwirkung), der Schaden durch gegnerische Angrif-\\nfe wird im Kampf um Y x3 verringert (ausgenom-\\nmen Spezialangriffe mit Fl\u00e4chenwirkung; Y = An-\\nzahl der auf die Einheit aktiven Bonus-Effekte,\\nausgenommen Werteboni + Anzahl der auf den\\nGegner aktiven negativen Effekte, ausgenommen\\nWerteverringerungen; max. 5). K\u00f6nnte die Einheit\\nzudem durch die Verringerung des f\u00fcr die Aus-\\nf\u00fchrung eines Folgeangriffs n\u00f6tigen Ges.-Wert-\\nunterschieds um 10 einen Folgeangriff ausf\u00fch-\\nren (garantierte oder verhinderte Folgeangriffe\\nausgenommen), wird im Kampf\\n\u3010Kr\u00e4ftiger Folgeangriff 100 %\u3011ausgel\u00f6st.\\n\\nHat die Einheit zu Beginn des Zuges keine be-\\nnachbarten Verb\u00fcndeten oder nur solche, die\\nBestien oder Drachen sind, verwandelt sie sich\\n(andernfalls verwandelt sie sich zur\u00fcck). Ver-\\nwandelt sich die Einheit, erh\u00e4lt sie Angr. +2 und\\nder Gegner erleidet im Kampf Angr./Ver. -Z\\n(Z = Anzahl der Felder zwischen Anfangs- und\\nEndposition des Kampfinitiators +3; max. 6). Ist\\nzudem Z \u2265 5, wird der Schaden durch den ersten\\nAngriff des Gegners im Kampf um 30 % ver-\\nringert.\\n\\n\u3010Schutzlos\u3011\\nGegnerische Angriffe f\u00fcgen +10 Schaden zu.\\n\\n\u3010Ges.-Ketten\u3011\\nDie Einheit erleidet im Kampf Ges. -X (X = An-\\nzahl an Strafe-Effekten, die auf die Einheit\\nwirken, +4, ausgenommen Werteverringe-\\nrungen; max. 8).\\n\\n\u3010Ver.-Ketten\u3011\\nDie Einheit erleidet im Kampf Ver. -X (X = An-\\nzahl an Strafe-Effekten, die auf die Einheit\\nwirken +4, ausgenommen Werteverringerungen;\\nmax. 8; bis nach ihrer n\u00e4chsten Aktion).\\n\\n\u3010Kr\u00e4ftiger Folgeangriff 100 %\u3011\\nL\u00f6st umgehend nach dem Standard-Folgeangriff\\nder Einheit einen zus\u00e4tzl. Folgeangriff aus und\\ndie Einheit f\u00fcgt zus\u00e4tzl. Schaden in H\u00f6he von\\n100 % ihres normalen Angriffsschadens zu.\\n(Kann die Einheit keinen Folgeangriff ausf\u00fchren,\\nwird dieser Effekt ausgel\u00f6st, wenn der Standard-\\nFolgeangr. ausgel\u00f6st werden w\u00fcrde. Dieser Effekt\\nwird als Folgeangr. gewertet, wodurch Effekte\\nwie \"der Schaden wird um X % verringert\" weiter-\\nhin gelten. Effekte, die Folgeangr. verhindern\\noder \"Einh. greift 2-mal an\" gew\u00e4hren, haben\\njedoch keine Wirkung. Bei mehreren \u00e4hnlichen\\nEffekten wird nur der h\u00f6chste angewandt.)"
+	},
+	{
+		"key": "MSID_H_\u5149\u3068\u95c7\u306e\u75be\u98a8_NOSKW",
+		"value": "$aBeschleunigt Spezialangriffe (Erholungszeit -1).\\nEffektiv gegen Flugeinheiten.\\n\\nSind die KP der Einheit zu Beginn des Zuges\\n\u2265 25 %, erleiden die Gegner mit der geringsten\\nEntfernung sowie jeder Gegner im Umkreis von\\n2 Feldern dieser Gegner bis nach ihren n\u00e4chsten\\nAktionen\u3010Schutzlos\u3011,\u3010Ges.-Ketten\u3011und\\n\u3010Ver.-Ketten\u3011.\\n\\nHat sich die Einheit verwandelt oder sind ihre KP\\nzu Beginn des Kampfes \u2265 25 %, erh\u00e4lt sie Angr./\\nGes./Ver./Res. +X (X = Anzahl an Gegnern inner-\\nhalb von 3 Reihen oder 3 Spalten um die Einheit\\nx3, +5; max. 14), die Einheit f\u00fcgt +Y x5 Schaden\\nzu (ausgenommen Spezialangriffe mit Fl\u00e4chen-\\nwirkung), der Schaden durch gegnerische Angrif-\\nfe wird im Kampf um Y x3 verringert (ausgenom-\\nmen Spezialangriffe mit Fl\u00e4chenwirkung; Y = An-\\nzahl der auf die Einheit aktiven Bonus-Effekte,\\nausgenommen Werteboni + Anzahl der auf den\\nGegner aktiven negativen Effekte, ausgenommen\\nWerteverringerungen; max. 5). K\u00f6nnte die Einheit\\nzudem durch die Verringerung des f\u00fcr die Aus-\\nf\u00fchrung eines Folgeangriffs n\u00f6tigen Ges.-Wert-\\nunterschieds um 10 einen Folgeangriff ausf\u00fch-\\nren (garantierte oder verhinderte Folgeangriffe\\nausgenommen), wird im Kampf\\n\u3010Kr\u00e4ftiger Folgeangriff 100 %\u3011ausgel\u00f6st.\\n\\nHat die Einheit zu Beginn des Zuges keine be-\\nnachbarten Verb\u00fcndeten oder nur solche, die\\nBestien oder Drachen sind, verwandelt sie sich\\n(andernfalls verwandelt sie sich zur\u00fcck). Ver-\\nwandelt sich die Einheit, erh\u00e4lt sie Angr. +2 und\\nder Gegner erleidet im Kampf Angr./Ver. -Z\\n(Z = Anzahl der Felder zwischen Anfangs- und\\nEndposition des Kampfinitiators +3; max. 6). Ist\\nzudem Z \u2265 5, wird der Schaden durch den ersten\\nAngriff des Gegners im Kampf um 30 % ver-\\nringert."
+	},
+	{
+		"key": "MSID_H_\u7adc\u7a7f\u7832",
+		"value": "$aWird der Spezialangriff ausgel\u00f6st, wird der Scha-\\nden um 60 % des Res.-Werts der Einheit erh\u00f6ht.\\n\\nEffekte, die der Einheit \"Erholungszeit wird um X\\nzur\u00fcckgesetzt\" zuf\u00fcgen, werden aufgehoben und\\nder Schaden durch gegnerische Angriffe wird im\\nKampf um 40 % reduziert (ausgenommen Spezial-\\nangriffe mit Fl\u00e4chenwirkung). Ist zudem Res. der\\nEinheit > Res. des Gegners, wird der Ges.-Wert-\\nunterschied, der n\u00f6tig ist, damit die Einheit einen\\nFolgeangriff ausf\u00fchren kann, um X verringert und\\nder Ges.-Wertunterschied, der n\u00f6tig ist, damit der\\nGegner einen Folgeangriff ausf\u00fchren kann, wird\\nim Kampf um X erh\u00f6ht (max. 10; X = Res.-Wert-\\nunterschied).\\n\\nSind zu Beginn der Gegnerphase (au\u00dfer in Lokis\\nBauern) gegenw\u00e4rtig keine Felder durch die\\nEinheit oder durch Verb\u00fcndete mit\\n\u3010G\u00f6ttliche Ader (Eiszapfen)\u3011belegt worden,\\nwirken\u3010G\u00f6ttliche Ader (Eiszapfen)\u3011f\u00fcr 1 Zug\\nauf Felder, die sowohl 2 Felder von der Einheit\\nals auch vom verb\u00fcndeten Ziel im Umkreis von\\n2 Feldern der Einheit entfernt sind (ausgenom-\\nmen Felder, die von der Einheit oder dem\\nverb\u00fcndeten Ziel besetzt werden oder an sie\\nangrenzen, Felder, auf denen sich ein Gegner\\nbefindet, zerst\u00f6rbares Gel\u00e4nde bis auf G\u00f6ttliche\\nAder oder Teleport-Felder im Revierkampf)\\nund\u3010G\u00f6ttliche Ader (Tiefgr\u00fcn)\u3011f\u00fcr 1 Zug auf das\\nFeld der Einheit sowie auf Felder im Umkreis\\nvon 4 Feldern der Einheit (au\u00dfer Felder, die\\nmit\u3010G\u00f6ttliche Ader (Eiszapfen)\u3011belegt sind).\\n(Ist der Unterst\u00fctzungspartner im Team des\\nSpielers, bezieht sich der Effekt auf den Unter-\\nst\u00fctzungspartner; andernfalls bezieht er sich auf\\nden Verb\u00fcndeten mit dem h\u00f6chsten Ver.-Wert\\nzu Beginn des Kampfes, Einheit ausgenommen;\\n\"zu Beginn des Kampfes\" grenzt jegliche Ver.-Boni\\naus, die nach dem Entsenden des Verb\u00fcndeten\\ngew\u00e4hrt werden, wie etwa Legend\u00e4re Effekte,\\nMythische Effekte, Bonushelden, Gro\u00dfes Talent\\netc.; ist die Anzahl an qualifizierten Verb\u00fcndeten\\n\u2265 2, wird es so gewertet, als g\u00e4be es kein verb\u00fcn-\\ndetes Ziel.)\\n\\n\u3010G\u00f6ttliche Ader (Eiszapfen)\u3011\\nAuf diesem Feld gilt folgender Status: F\u00fcr Gegner\\nz\u00e4hlt das Feld als unpassierbares Gel\u00e4nde, w\u00e4h-\\nrend der Status aktiv ist. Der Status ist zerst\u00f6rbar\\n(mit 1 KP). Wird er zerst\u00f6rt, wird er zu\\n\u3010G\u00f6ttliche Ader (Tiefgr\u00fcn)\u3011. Verb\u00fcndete k\u00f6nnen\\nauf das Feld ziehen und es besetzen. Besetzt\\nein Verb\u00fcndeter ein Feld, auf das G\u00f6ttliche Ader\\n(Eiszapfen) wirkt, wird bei Angriffen auf die-\\nses Feld vorrangig nicht die G\u00f6ttliche Ader\\n(Eiszapfen) zerst\u00f6rt, sondern der Verb\u00fcndete\\nwird getroffen.\\n\\n\u3010G\u00f6ttliche Ader (Tiefgr\u00fcn)\u3011\\nF\u00fcr Gegner gelten auf diesem Feld die folgenden\\nEffekte: Der Gegner kann sich nicht auf dieses\\nFeld oder von diesem auf ein anderes Feld tele-\\nportieren (beeintr\u00e4chtigt weder Gegner mit der\\nF\u00e4higkeit Passieren noch Teleportier-Effekte von\\nObjekten wie Lager und Festungen im Revier-\\nkampf). Gegner, die auf diesem Feld 2. Schritt\\nausl\u00f6sen, erleiden\u3010Schrittlimit\u3011bis nach ihrer\\nn\u00e4chsten Aktion. Der Gegner erleidet Angr./\\nGes. - 5 und seine Erholungszeit wird pro Angriff\\num 1 zur\u00fcckgesetzt (bei mehreren \u00e4hnlichen Ef-\\nfekten wird nur der h\u00f6chste angewandt). Kann\\nzudem der gegnerische Angriff den gegnerischen\\nSpezialangriff ausl\u00f6sen, wird die Erholungszeit\\ndes Gegners vor seinem ersten Angriff im Kampf\\num 1 zur\u00fcckgesetzt (maximale Erholungszeit des\\nGegners kann nicht \u00fcberschritten werden).\\n\\n\u3010Schrittlimit\u3011\\nIst die Reichweite der Einheit = 1, kann sie sich\\n1 Feld weit bewegen, wenn 2. Schritt ausgel\u00f6st\\nwird. Ist die Reichweite der Einheit = 2, endet\\nihre Aktion, wenn 2. Schritt ausgel\u00f6st wird."
+	},
+	{
+		"key": "MSID_H_\u7adc\u7a7f\u7832_NOSKW",
+		"value": "$aWird der Spezialangriff ausgel\u00f6st, wird der Scha-\\nden um 60 % des Res.-Werts der Einheit erh\u00f6ht.\\n\\nEffekte, die der Einheit \"Erholungszeit wird um X\\nzur\u00fcckgesetzt\" zuf\u00fcgen, werden aufgehoben und\\nder Schaden durch gegnerische Angriffe wird im\\nKampf um 40 % reduziert (ausgenommen Spezial-\\nangriffe mit Fl\u00e4chenwirkung). Ist zudem Res. der\\nEinheit > Res. des Gegners, wird der Ges.-Wert-\\nunterschied, der n\u00f6tig ist, damit die Einheit einen\\nFolgeangriff ausf\u00fchren kann, um X verringert und\\nder Ges.-Wertunterschied, der n\u00f6tig ist, damit der\\nGegner einen Folgeangriff ausf\u00fchren kann, wird\\nim Kampf um X erh\u00f6ht (max. 10; X = Res.-Wert-\\nunterschied).\\n\\nSind zu Beginn der Gegnerphase (au\u00dfer in Lokis\\nBauern) gegenw\u00e4rtig keine Felder durch die\\nEinheit oder durch Verb\u00fcndete mit\\n\u3010G\u00f6ttliche Ader (Eiszapfen)\u3011belegt worden,\\nwirken\u3010G\u00f6ttliche Ader (Eiszapfen)\u3011f\u00fcr 1 Zug\\nauf Felder, die sowohl 2 Felder von der Einheit\\nals auch vom verb\u00fcndeten Ziel im Umkreis von\\n2 Feldern der Einheit entfernt sind (ausgenom-\\nmen Felder, die von der Einheit oder dem\\nverb\u00fcndeten Ziel besetzt werden oder an sie\\nangrenzen, Felder, auf denen sich ein Gegner\\nbefindet, zerst\u00f6rbares Gel\u00e4nde bis auf G\u00f6ttliche\\nAder oder Teleport-Felder im Revierkampf)\\nund\u3010G\u00f6ttliche Ader (Tiefgr\u00fcn)\u3011f\u00fcr 1 Zug auf das\\nFeld der Einheit sowie auf Felder im Umkreis\\nvon 4 Feldern der Einheit (au\u00dfer Felder, die\\nmit\u3010G\u00f6ttliche Ader (Eiszapfen)\u3011belegt sind).\\n(Ist der Unterst\u00fctzungspartner im Team des\\nSpielers, bezieht sich der Effekt auf den Unter-\\nst\u00fctzungspartner; andernfalls bezieht er sich auf\\nden Verb\u00fcndeten mit dem h\u00f6chsten Ver.-Wert\\nzu Beginn des Kampfes, Einheit ausgenommen;\\n\"zu Beginn des Kampfes\" grenzt jegliche Ver.-Boni\\naus, die nach dem Entsenden des Verb\u00fcndeten\\ngew\u00e4hrt werden, wie etwa Legend\u00e4re Effekte,\\nMythische Effekte, Bonushelden, Gro\u00dfes Talent\\netc.; ist die Anzahl an qualifizierten Verb\u00fcndeten\\n\u2265 2, wird es so gewertet, als g\u00e4be es kein verb\u00fcn-\\ndetes Ziel.)"
+	},
+	{
+		"key": "MSID_H_\u66b4\u8650\u3078\u306e\u6012\u308a",
+		"value": "$aKann sich die Einheit verwandeln, wird die Be-\\ndingung \"befindet sich ein Gegner innerhalb von\\n3 Spalten oder 3 Reihen um die Einheit\" zu den\\nAusl\u00f6sebedingungen der Verwandlungseffekte\\nhinzugef\u00fcgt (zus\u00e4tzlich zu bereits existierenden\\nBedingungen).\\n\\nWerden beim Verteidigen in \u00c4therraubz\u00fcgen zu\\nBeginn des 1. gegnerischen Zuges die Bedingun-\\ngen zur Verwandlung erf\u00fcllt, verwandelt sich die\\nEinheit.\\n\\nSind die KP der Einheit zu Beginn des Zuges\\n\u2265 25 %, erhalten die Einheit und Verb\u00fcndete im\\nUmkreis von 2 Feldern der Einheit f\u00fcr 1 Zug \"die\\nReduzierung des Schadens bei Gegnern mit der\\nNicht-Spezialf\u00e4higkeit 'der erlittene Schaden wird\\num X % verringert' ist im Kampf um 50 % gerin-\\nger (ausgenommen Spezialangriffe mit Fl\u00e4chen-\\nwirkung)\" und die Einheit sowie s\u00e4mtliche verb\u00fcn-\\ndete Schwert-, Lanzen- oder Axteinheiten, Dra-\\nchen oder Bestien im Umkreis von 2 Feldern der\\nEinheit erhalten\u3010Stil: Reichweite 2\u3011 f\u00fcr 1 Zug.\\n\\nHat sich die Einheit verwandelt oder sind ihre KP\\nzu Beginn des Kampfes \u2265 25 %, erh\u00e4lt sie Angr./\\nGes./Ver./Res. +X +8, sie f\u00fcgt +X x4 Schaden zu\\n(ausgenommen Spezialangriffe mit Fl\u00e4chenwir-\\nkung), der Schaden durch gegnerische Angriffe\\nwird um X x4 verringert (ausgenommen Spezial-\\nangriffe mit Fl\u00e4chenwirkung; X = Anzahl der Fel-\\nder zwischen Anfangs- und Endposition des\\nKampfinitiators, max. 3), Effekte, die der Einheit\\n\"Erholungszeit wird um X zur\u00fcckgesetzt\" zuf\u00fcgen,\\nwerden aufgehoben und die Erholungszeit der\\nEinheit wird vor ihrem ersten Angriff im Kampf\\num Y beschleunigt (Y = Anzahl der auf den Geg-\\nner aktiven negativen Effekte, ausgenommen\\nWerteverringerungen; max. 2).\\n\\n\u3010Stil: Reichweite 2\u3011\\nDie Einheit kann den folgenden\u3010Stil\u3011verwenden:\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015 Stil: Reichweite 2 \u2015\u2015\u2015\u2015\u2015\u2015\u2015\\nDie Einheit kann Gegner in 2 Feldern Entfernung\\nangreifen (aber keine benachbarten Gegner).\\n\\nKann nicht durch Felder im Umkreis von 2 Fel-\\ndern eines Gegners ziehen, der den Wall-Effekt\\nausgel\u00f6st hat (gilt nicht, wenn die Einheit eine\\nPassieren-F\u00e4higkeit besitzt). Wird mindestens\\neine der folgenden Bedingungen erf\u00fcllt, erleidet\\ndie Einheit einen Gegenangriff: Der Gegner ist\\ngepanzert mit Rw. = 1, er kann unabh\u00e4ngig vom\\nAbstand zur Einheit kontern oder die Rw. des\\nGegners = Distanz zwischen Einheit und Gegner.\\nEffekte, die sich auf die Bewegung nach dem\\nKampf auswirken, erfolgen nicht. Die Reichweite\\ndes Effekts dieser F\u00e4higkeit wird als 1 gewertet.\\nDieser Stil kann nur eingesetzt werden, wenn Rw.\\nder Einheit = 1 ist.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\nDieser Stil wird deaktiviert, wenn die Einheit\\neinen anderen\u3010Stil\u3011besitzt. Nach dem Kampf,\\nin dem dieser\u3010Stil\u3011verwendet wurde, wird\\ndieser Status entfernt.\\n\\n\u3010Stil\u3011\\nWechsle den Stil, indem du unten auf dem Bild-\\nschirm auf das Stil-Symbol tippst.\\n\\nDer Stil einer Einheit ist nur aktiv, wenn sie eine\\nAktion ausf\u00fchrt. Wenn die Einheit durch einen\\nStatus oder eine F\u00e4higkeit \u00fcber einen Stil ver-\\nf\u00fcgt, kann sie keine F\u00e4higkeiten wie Heldenduo-\\nF\u00e4higkeiten oder Harmonief\u00e4higkeiten verwen-\\nden, solange sie eine Aktion ausf\u00fchren kann\\n(diese F\u00e4higkeiten k\u00f6nnen verwendet werden,\\nnachdem die Einheit agiert hat).\\nEs ist nicht m\u00f6glich, einen Stil zu verwenden,\\nwenn die Einheit \u00fcber \"Kombi\" entsandt wird\\noder wenn die Einheit \u00fcber mehrere F\u00e4higkeiten\\nverf\u00fcgt, die einen Stil haben."
+	},
+	{
+		"key": "MSID_H_\u66b4\u8650\u3078\u306e\u6012\u308a_NOSKW",
+		"value": "$aKann sich die Einheit verwandeln, wird die Be-\\ndingung \"befindet sich ein Gegner innerhalb von\\n3 Spalten oder 3 Reihen um die Einheit\" zu den\\nAusl\u00f6sebedingungen der Verwandlungseffekte\\nhinzugef\u00fcgt (zus\u00e4tzlich zu bereits existierenden\\nBedingungen).\\n\\nWerden beim Verteidigen in \u00c4therraubz\u00fcgen zu\\nBeginn des 1. gegnerischen Zuges die Bedingun-\\ngen zur Verwandlung erf\u00fcllt, verwandelt sich die\\nEinheit.\\n\\nSind die KP der Einheit zu Beginn des Zuges\\n\u2265 25 %, erhalten die Einheit und Verb\u00fcndete im\\nUmkreis von 2 Feldern der Einheit f\u00fcr 1 Zug \"die\\nReduzierung des Schadens bei Gegnern mit der\\nNicht-Spezialf\u00e4higkeit 'der erlittene Schaden wird\\num X % verringert' ist im Kampf um 50 % gerin-\\nger (ausgenommen Spezialangriffe mit Fl\u00e4chen-\\nwirkung)\" und die Einheit sowie s\u00e4mtliche verb\u00fcn-\\ndete Schwert-, Lanzen- oder Axteinheiten, Dra-\\nchen oder Bestien im Umkreis von 2 Feldern der\\nEinheit erhalten\u3010Stil: Reichweite 2\u3011 f\u00fcr 1 Zug.\\n\\nHat sich die Einheit verwandelt oder sind ihre KP\\nzu Beginn des Kampfes \u2265 25 %, erh\u00e4lt sie Angr./\\nGes./Ver./Res. +X +8, sie f\u00fcgt +X x4 Schaden zu\\n(ausgenommen Spezialangriffe mit Fl\u00e4chenwir-\\nkung), der Schaden durch gegnerische Angriffe\\nwird um X x4 verringert (ausgenommen Spezial-\\nangriffe mit Fl\u00e4chenwirkung; X = Anzahl der Fel-\\nder zwischen Anfangs- und Endposition des\\nKampfinitiators, max. 3), Effekte, die der Einheit\\n\"Erholungszeit wird um X zur\u00fcckgesetzt\" zuf\u00fcgen,\\nwerden aufgehoben und die Erholungszeit der\\nEinheit wird vor ihrem ersten Angriff im Kampf\\num Y beschleunigt (Y = Anzahl der auf den Geg-\\nner aktiven negativen Effekte, ausgenommen\\nWerteverringerungen; max. 2)."
+	},
+	{
+		"key": "MSID_H_\u706b\u98a8\u6c34\u306e\u547d\u8108",
+		"value": "Verleiht KP +5.\\n\\nInitiiert der Gegner den Kampf oder sind die KP\\nder Einheit zu Beginn des Kampfes \u2265 50 %, erh\u00e4lt\\ndie Einheit im Kampf Angr./Ges./Res. +9 und nach\\ndem Kampf werden bei ihr 7 KP wiederher-\\ngestellt."
+	},
+	{
+		"key": "MSID_H_\u9632\u96631",
+		"value": "Befindet sich die Einheit im Umkreis von 3 Fel-\\ndern eines Verb\u00fcndeten, f\u00fcgt sie +5 Schaden zu\\n(ausgenommen Spezialangriffe mit Fl\u00e4chenwir-\\nkung) und der Schaden durch gegnerische An-\\ngriffe wird im Kampf um 3 verringert (ausgenom-\\nmen Spezialangriffe mit Fl\u00e4chenwirkung). L\u00f6st\\nder Gegner im Kampf zudem den Effekt \"greift\\n2-mal an\" aus, wird der Schaden erneut um 3\\nverringert (ausgenommen Spezialangriffe mit\\nFl\u00e4chenwirkung).\\n\\nBefindet sich die Einheit im Umkreis von 3 Fel-\\ndern eines Verb\u00fcndeten und initiiert der Gegner\\nden Kampf, wird der Schaden erneut um X ver-\\nringert (X = Abstand von Einheit zu Gegner; aus-\\ngenommen Spezialangriffe mit Fl\u00e4chenwirkung)."
+	},
+	{
+		"key": "MSID_H_\u9632\u96632",
+		"value": "Befindet sich die Einheit im Umkreis von 3 Fel-\\ndern eines Verb\u00fcndeten, f\u00fcgt sie +7 Schaden zu\\n(ausgenommen Spezialangriffe mit Fl\u00e4chenwir-\\nkung) und der Schaden durch gegnerische An-\\ngriffe wird im Kampf um 5 verringert (ausgenom-\\nmen Spezialangriffe mit Fl\u00e4chenwirkung). L\u00f6st\\nder Gegner im Kampf zudem den Effekt \"greift\\n2-mal an\" aus, wird der Schaden erneut um 4\\nverringert (ausgenommen Spezialangriffe mit\\nFl\u00e4chenwirkung).\\n\\nBefindet sich die Einheit im Umkreis von 3 Fel-\\ndern eines Verb\u00fcndeten und initiiert der Gegner\\nden Kampf, wird der Schaden erneut um X ver-\\nringert (X = Abstand von Einheit zu Gegner; aus-\\ngenommen Spezialangriffe mit Fl\u00e4chenwirkung)."
+	},
+	{
+		"key": "MSID_H_\u9632\u96633",
+		"value": "Befindet sich die Einheit im Umkreis von 3 Fel-\\ndern eines Verb\u00fcndeten, f\u00fcgt sie +10 Schaden zu\\n(ausgenommen Spezialangriffe mit Fl\u00e4chenwir-\\nkung) und der Schaden durch gegnerische An-\\ngriffe wird im Kampf um 7 verringert (ausgenom-\\nmen Spezialangriffe mit Fl\u00e4chenwirkung). L\u00f6st\\nder Gegner im Kampf zudem den Effekt \"greift\\n2-mal an\" aus, wird der Schaden erneut um 5\\nverringert (ausgenommen Spezialangriffe mit\\nFl\u00e4chenwirkung).\\n\\nBefindet sich die Einheit im Umkreis von 3 Fel-\\ndern eines Verb\u00fcndeten und initiiert der Gegner\\nden Kampf, wird der Schaden erneut um X x2\\nverringert (X = Abstand von Einheit zu Gegner;\\nausgenommen Spezialangriffe mit Fl\u00e4chen-\\nwirkung)."
+	},
+	{
+		"key": "MSID_H_\u9632\u96634",
+		"value": "Befindet sich die Einheit im Umkreis von 3 Fel-\\ndern eines Verb\u00fcndeten, erleidet der Gegner\\nAngr./Ges. -4, der Ges.-Wertunterschied, der\\nn\u00f6tig ist, damit der Gegner einen Folgeangriff\\nausf\u00fchren kann, wird im Kampf um 10 erh\u00f6ht,\\ndie Werteverringerungen der Einheit werden auf-\\ngehoben, sie f\u00fcgt +15 Schaden zu (ausgenommen\\nSpezialangriffe mit Fl\u00e4chenwirkung) und der\\nSchaden durch gegnerische Angriffe wird im\\nKampf um 10 verringert (ausgenommen Spezial-\\nangriffe mit Fl\u00e4chenwirkung). L\u00f6st der Gegner im\\nKampf zudem den Effekt \"greift 2-mal an\" aus,\\nwird der Schaden erneut um 7 verringert (ausge-\\nnommen Spezialangriffe mit Fl\u00e4chenwirkung).\\n\\nBefindet sich die Einheit im Umkreis von 3 Fel-\\ndern eines Verb\u00fcndeten und initiiert der Gegner\\nden Kampf, wird der Schaden erneut um X x2\\nverringert (X = Abstand von Einheit zu Gegner;\\nausgenommen Spezialangriffe mit Fl\u00e4chen-\\nwirkung)."
+	},
+	{
+		"key": "MSID_H_\u8863\u306e\u8b77\u308a\u624b\u30fb\u9b54\u30fb\u8328",
+		"value": "$aNutzt der Gegner Magie, Stab oder Drachenscha-\\nden und greift einen Verb\u00fcndeten im Umkreis von\\n2 Feldern der Einheit an, wirkt\u3010Schutz\u3011auf die\\nEinheit.\\n\\nNutzt der Gegner Magie, Stab oder Drachenscha-\\nden, erh\u00e4lt die Einheit Ges./Res. +4, gegnerische\\nEffekte, bei denen Folgendes gilt, werden aufge-\\nhoben: \"Schaden wird durch Ver. oder Res. des\\nGegners berechnet (geringerer Wert gilt)\" (ein-\\nschlie\u00dflich Spezialangriffe mit Fl\u00e4chenwirkung),\\nder Schaden durch den ersten Angriff des Geg-\\nners wird im Kampf um 5 verringert (normaler-\\nweise bezieht sich \"erster Angriff\" auf den ersten\\nSchlag; bei Effekten, die \"Einheit greift 2-mal an\"\\ngew\u00e4hren, sind der erste und zweite Schlag ge-\\nmeint) und der n\u00e4chste Angriff der Einheit f\u00fcgt\\nzus\u00e4tzlichen Schaden in H\u00f6he von 40 % des\\ndurch den Angriff des Gegners zugef\u00fcgten Scha-\\nden vor s\u00e4mtlichen Verringerungen zu (wird nach\\ndem Kampf zur\u00fcckgesetzt; bei mehreren \u00e4hnli-\\nchen Effekten wird nur der h\u00f6chste angewandt).\\n\\n\u3010Schutz\u3011\\nDie Einheit nimmt anstelle des Verb\u00fcndeten\\nseinen Platz auf dem Feld ein, tritt an dessen\\nStelle in den Kampf und erh\u00e4lt alle Effekte, die\\nnach dem Kampf zum Tragen kommen.\\n\\n\"Schutz\" wird nicht ausgel\u00f6st, wenn der\\nVerb\u00fcndete auf einem Feld steht, auf das sich\\ndie Einheit nicht bewegen kann, oder wenn\\nmehrere Einheiten w\u00e4hrend des gleichen\\nKampfs f\u00fcr \"Schutz\" infrage kommen. Wird\\n\"Schutz\" ausgel\u00f6st, werden jene F\u00e4higkeiten\\naufgehoben, die sich auf die Bewegung nach\\ndem Kampf auswirken."
+	},
+	{
+		"key": "MSID_H_\u8863\u306e\u8b77\u308a\u624b\u30fb\u9b54\u30fb\u8328_NOSKW",
+		"value": "$aNutzt der Gegner Magie, Stab oder Drachenscha-\\nden und greift einen Verb\u00fcndeten im Umkreis von\\n2 Feldern der Einheit an, wirkt\u3010Schutz\u3011auf die\\nEinheit.\\n\\nNutzt der Gegner Magie, Stab oder Drachenscha-\\nden, erh\u00e4lt die Einheit Ges./Res. +4, gegnerische\\nEffekte, bei denen Folgendes gilt, werden aufge-\\nhoben: \"Schaden wird durch Ver. oder Res. des\\nGegners berechnet (geringerer Wert gilt)\" (ein-\\nschlie\u00dflich Spezialangriffe mit Fl\u00e4chenwirkung),\\nder Schaden durch den ersten Angriff des Geg-\\nners wird im Kampf um 5 verringert (normaler-\\nweise bezieht sich \"erster Angriff\" auf den ersten\\nSchlag; bei Effekten, die \"Einheit greift 2-mal an\"\\ngew\u00e4hren, sind der erste und zweite Schlag ge-\\nmeint) und der n\u00e4chste Angriff der Einheit f\u00fcgt\\nzus\u00e4tzlichen Schaden in H\u00f6he von 40 % des\\ndurch den Angriff des Gegners zugef\u00fcgten Scha-\\nden vor s\u00e4mtlichen Verringerungen zu (wird nach\\ndem Kampf zur\u00fcckgesetzt; bei mehreren \u00e4hnli-\\nchen Effekten wird nur der h\u00f6chste angewandt)."
+	},
+	{
+		"key": "MSID_H_\u6697\u7363\u30fb\u4e0d\u5c48",
+		"value": "Der Gegner erleidet Ges./Ver. -4, die F\u00e4higkeiten\\naller Gegner (aktueller Gegner ausgenommen)\\nwerden aufgehoben, die Werteverringerungen der\\nEinheit werden aufgehoben und die Einheit f\u00fcgt\\nim Kampf +5 Schaden zu (ausgenommen Spezial-\\nangriffe mit Fl\u00e4chenwirkung)."
+	},
+	{
+		"key": "MSID_H_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973",
+		"value": "$aWird der Spezialangriff ausgel\u00f6st, wird der Scha-\\nden um die maximale Erholungszeit der Einheit x4\\nerh\u00f6ht (ausgenommen Spezialangriffe mit\\nFl\u00e4chenwirkung).\\n\\nSind zu Beginn der Gegnerphase (au\u00dfer in\\nLokis Bauern) gegenw\u00e4rtig keine Felder durch\\ndie Einheit oder durch Verb\u00fcndete mit\\n\u3010G\u00f6ttliche Ader (Eiszapfen)\u3011belegt worden,\\nwirkt auf Felder, die 2 Felder von der Einheit ent-\\nfernt sind, f\u00fcr 1 Zug\u3010G\u00f6ttliche Ader (Eiszapfen)\u3011\\n(ausgenommen Felder, auf denen sich ein Gegner\\nbefindet, zerst\u00f6rbares Gel\u00e4nde bis auf G\u00f6ttliche\\nAder oder Teleport-Felder im Revierkampf) und\\n\u3010G\u00f6ttliche Ader (Tiefgr\u00fcn)\u3011auf das Feld der\\nEinheit sowie auf Felder im Umkreis von 3 Fel-\\ndern der Einheit f\u00fcr 1 Zug (ausgenommen Felder,\\nauf die\u3010G\u00f6ttliche Ader (Eiszapfen)\u3011wirkt).\\n\\n\u3010G\u00f6ttliche Ader (Eiszapfen)\u3011\\nAuf diesem Feld gilt folgender Status: F\u00fcr Gegner\\nz\u00e4hlt das Feld als unpassierbares Gel\u00e4nde, w\u00e4h-\\nrend der Status aktiv ist. Der Status ist zerst\u00f6rbar\\n(mit 1 KP). Wird er zerst\u00f6rt, wird er zu\\n\u3010G\u00f6ttliche Ader (Tiefgr\u00fcn)\u3011. Verb\u00fcndete k\u00f6nnen\\nauf das Feld ziehen und es besetzen. Besetzt\\nein Verb\u00fcndeter ein Feld, auf das G\u00f6ttliche Ader\\n(Eiszapfen) wirkt, wird bei Angriffen auf die-\\nses Feld vorrangig nicht die G\u00f6ttliche Ader\\n(Eiszapfen) zerst\u00f6rt, sondern der Verb\u00fcndete\\nwird getroffen.\\n\\n\u3010G\u00f6ttliche Ader (Tiefgr\u00fcn)\u3011\\nF\u00fcr Gegner gelten auf diesem Feld die folgenden\\nEffekte: Der Gegner kann sich nicht auf dieses\\nFeld oder von diesem auf ein anderes Feld tele-\\nportieren (beeintr\u00e4chtigt weder Gegner mit der\\nF\u00e4higkeit Passieren noch Teleportier-Effekte von\\nObjekten wie Lager und Festungen im Revier-\\nkampf). Gegner, die auf diesem Feld 2. Schritt\\nausl\u00f6sen, erleiden\u3010Schrittlimit\u3011bis nach ihrer\\nn\u00e4chsten Aktion. Der Gegner erleidet Angr./\\nGes. - 5 und seine Erholungszeit wird pro Angriff\\num 1 zur\u00fcckgesetzt (bei mehreren \u00e4hnlichen Ef-\\nfekten wird nur der h\u00f6chste angewandt). Kann\\nzudem der gegnerische Angriff den gegnerischen\\nSpezialangriff ausl\u00f6sen, wird die Erholungszeit\\ndes Gegners vor seinem ersten Angriff im Kampf\\num 1 zur\u00fcckgesetzt (maximale Erholungszeit des\\nGegners kann nicht \u00fcberschritten werden).\\n\\n\u3010Schrittlimit\u3011\\nIst die Reichweite der Einheit = 1, kann sie sich\\n1 Feld weit bewegen, wenn 2. Schritt ausgel\u00f6st\\nwird. Ist die Reichweite der Einheit = 2, endet\\nihre Aktion, wenn 2. Schritt ausgel\u00f6st wird."
+	},
+	{
+		"key": "MSID_H_\u7d0b\u7ae0\u30ab\u30e0\u30a4\u5973_NOSKW",
+		"value": "$aWird der Spezialangriff ausgel\u00f6st, wird der Scha-\\nden um die maximale Erholungszeit der Einheit x4\\nerh\u00f6ht (ausgenommen Spezialangriffe mit\\nFl\u00e4chenwirkung).\\n\\nSind zu Beginn der Gegnerphase (au\u00dfer in\\nLokis Bauern) gegenw\u00e4rtig keine Felder durch\\ndie Einheit oder durch Verb\u00fcndete mit\\n\u3010G\u00f6ttliche Ader (Eiszapfen)\u3011belegt worden,\\nwirkt auf Felder, die 2 Felder von der Einheit ent-\\nfernt sind, f\u00fcr 1 Zug\u3010G\u00f6ttliche Ader (Eiszapfen)\u3011\\n(ausgenommen Felder, auf denen sich ein Gegner\\nbefindet, zerst\u00f6rbares Gel\u00e4nde bis auf G\u00f6ttliche\\nAder oder Teleport-Felder im Revierkampf) und\\n\u3010G\u00f6ttliche Ader (Tiefgr\u00fcn)\u3011auf das Feld der\\nEinheit sowie auf Felder im Umkreis von 3 Fel-\\ndern der Einheit f\u00fcr 1 Zug (ausgenommen Felder,\\nauf die\u3010G\u00f6ttliche Ader (Eiszapfen)\u3011wirkt)."
+	},
+	{
+		"key": "MID_STAGE_HONOR_L0091",
+		"value": "E & M Heldenk."
+	},
+	{
+		"key": "MID_STAGE_L0091",
+		"value": "C & L"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PB288",
+		"value": "F\u00e4higkeiten 288"
+	},
+	{
+		"key": "MID_STAGE_PB288",
+		"value": "Von Fates"
+	},
+	{
+		"key": "MID_VEIN_6",
+		"value": "G\u00f6ttliche Ader (Tiefgr\u00fcn)"
+	},
+	{
+		"key": "MID_H_VEIN_6",
+		"value": "$aF\u00fcr Gegner gelten auf diesem Feld\\ndie folgenden Effekte: Der Gegner\\nkann sich nicht auf dieses Feld oder\\nvon diesem auf ein anderes Feld tele-\\nportieren (beeintr\u00e4chtigt weder Geg-\\nner mit der F\u00e4higkeit Passieren noch\\nTeleportier-Effekte von Objekten wie\\nLager und Festungen im Revier-\\nkampf).\\n\\nGegner, die auf diesem Feld 2. Schritt\\nausl\u00f6sen, erleiden\u3010Schrittlimit\u3011bis\\nnach ihrer n\u00e4chsten Aktion.\\n\\nDer Gegner erleidet Angr./Ges. - 5\\nund seine Erholungszeit wird pro An-\\ngriff um 1 zur\u00fcckgesetzt (bei mehre-\\nren \u00e4hnlichen Effekten wird nur der\\nh\u00f6chste angewandt). Kann zudem der\\ngegnerische Angriff den gegnerischen\\nSpezialangriff ausl\u00f6sen, wird die Er-\\nholungszeit des Gegners vor seinem\\nersten Angriff im Kampf um 1 zur\u00fcck-\\ngesetzt (maximale Erholungszeit des\\nGegners kann nicht \u00fcberschritten\\nwerden).\\n\\n\u3010Schrittlimit\u3011\\nIst die Reichweite der Einheit = 1, kann sie sich\\n1 Feld weit bewegen, wenn 2. Schritt ausgel\u00f6st\\nwird. Ist die Reichweite der Einheit = 2, endet\\nihre Aktion, wenn 2. Schritt ausgel\u00f6st wird."
+	},
+	{
+		"key": "MID_H_VEIN_6_NOSKW",
+		"value": "$aF\u00fcr Gegner gelten auf diesem Feld\\ndie folgenden Effekte: Der Gegner\\nkann sich nicht auf dieses Feld oder\\nvon diesem auf ein anderes Feld tele-\\nportieren (beeintr\u00e4chtigt weder Geg-\\nner mit der F\u00e4higkeit Passieren noch\\nTeleportier-Effekte von Objekten wie\\nLager und Festungen im Revier-\\nkampf).\\n\\nGegner, die auf diesem Feld 2. Schritt\\nausl\u00f6sen, erleiden\u3010Schrittlimit\u3011bis\\nnach ihrer n\u00e4chsten Aktion.\\n\\nDer Gegner erleidet Angr./Ges. - 5\\nund seine Erholungszeit wird pro An-\\ngriff um 1 zur\u00fcckgesetzt (bei mehre-\\nren \u00e4hnlichen Effekten wird nur der\\nh\u00f6chste angewandt). Kann zudem der\\ngegnerische Angriff den gegnerischen\\nSpezialangriff ausl\u00f6sen, wird die Er-\\nholungszeit des Gegners vor seinem\\nersten Angriff im Kampf um 1 zur\u00fcck-\\ngesetzt (maximale Erholungszeit des\\nGegners kann nicht \u00fcberschritten\\nwerden)."
+	},
+	{
+		"key": "MID_VEIN_7",
+		"value": "G\u00f6ttliche Ader (Eiszapfen)"
+	},
+	{
+		"key": "MID_H_VEIN_7",
+		"value": "$aAuf diesem Feld gilt folgender Status:\\nF\u00fcr Gegner z\u00e4hlt das Feld als unpa-\\nssierbares Gel\u00e4nde, w\u00e4hrend der Sta-\\ntus aktiv ist. Der Status ist zerst\u00f6rbar\\n(mit 1 KP). Wird er zerst\u00f6rt, wird er\\nzu\u3010G\u00f6ttliche Ader (Tiefgr\u00fcn)\u3011. Verb\u00fcndete\\nk\u00f6nnen auf das Feld ziehen und es\\nbesetzen.\\n\\nBesetzt ein Verb\u00fcndeter ein Feld, auf\\ndas G\u00f6ttliche Ader (Eiszapfen) wirkt,\\nwird bei Angriffen auf dieses Feld\\nvorrangig nicht die G\u00f6ttliche Ader\\n(Eiszapfen) zerst\u00f6rt, sondern der Ver-\\nb\u00fcndete wird getroffen.\\n\\n\u3010G\u00f6ttliche Ader (Tiefgr\u00fcn)\u3011\\nF\u00fcr Gegner gelten auf diesem Feld die folgen-\\nden Effekte:\\n\\nDer Gegner kann sich nicht auf dieses Feld oder\\nvon diesem auf ein anderes Feld teleportieren\\n(beeintr\u00e4chtigt weder Gegner mit der F\u00e4higkeit\\nPassieren noch Teleportier-Effekte von Objekten\\nwie Lager und Festungen im Revierkampf).\\n\\nGegner, die auf diesem Feld 2. Schritt ausl\u00f6sen,\\nerleiden\u3010Schrittlimit\u3011bis nach ihrer n\u00e4chsten\\nAktion.\\n\\nDer Gegner erleidet Angr./Ges. - 5 und seine Er-\\nholungszeit wird pro Angriff um 1 zur\u00fcckgesetzt\\n(bei mehreren \u00e4hnlichen Effekten wird nur der\\nh\u00f6chste angewandt). Kann zudem der gegneri-\\nsche Angriff den gegnerischen Spezialangriff\\nausl\u00f6sen, wird die Erholungszeit des Gegners\\nvor seinem ersten Angriff im Kampf um 1 zu-\\nr\u00fcckgesetzt (maximale Erholungszeit des Geg-\\nners kann nicht \u00fcberschritten werden).\\n\\n(\"G\u00f6ttliche Ader\"-Effekte k\u00f6nnen nicht kombiniert\\nwerden; eventuelle bereits wirkende \"G\u00f6ttliche\\nAder\"-Effekte werden ersetzt; gleichzeitig ein-\\ngesetzte \"G\u00f6ttliche Ader\"-Effekte heben sich\\ngegenseitig auf.)\\n\\n\u3010Schrittlimit\u3011\\nIst die Reichweite der Einheit = 1, kann sie sich\\n1 Feld weit bewegen, wenn 2. Schritt ausgel\u00f6st\\nwird. Ist die Reichweite der Einheit = 2, endet\\nihre Aktion, wenn 2. Schritt ausgel\u00f6st wird."
+	},
+	{
+		"key": "MID_H_VEIN_7_NOSKW",
+		"value": "$aAuf diesem Feld gilt folgender Status:\\nF\u00fcr Gegner z\u00e4hlt das Feld als unpa-\\nssierbares Gel\u00e4nde, w\u00e4hrend der Sta-\\ntus aktiv ist. Der Status ist zerst\u00f6rbar\\n(mit 1 KP). Wird er zerst\u00f6rt, wird er\\nzu\u3010G\u00f6ttliche Ader (Tiefgr\u00fcn)\u3011. Verb\u00fcndete\\nk\u00f6nnen auf das Feld ziehen und es\\nbesetzen.\\n\\nBesetzt ein Verb\u00fcndeter ein Feld, auf\\ndas G\u00f6ttliche Ader (Eiszapfen) wirkt,\\nwird bei Angriffen auf dieses Feld\\nvorrangig nicht die G\u00f6ttliche Ader\\n(Eiszapfen) zerst\u00f6rt, sondern der Ver-\\nb\u00fcndete wird getroffen."
+	}
+]
