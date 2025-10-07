@@ -1,0 +1,36 @@
+[
+	{
+		"id_tag": "EID_\u30b7\u30e3\u30ed\u30f32",
+		"roman": "SHARON2_ENEMY",
+		"face_name": "ch00_02_Sharon2_F_Normal",
+		"face_name2": "ch00_02_Sharon2_F_Normal",
+		"top_weapon": "SID_\u958b\u795e\u306e\u52a0\u8b77\u5bbf\u3059\u5203",
+		"unique_assist1": null,
+		"unique_assist2": null,
+		"unique_special": null,
+		"timestamp": null,
+		"id_num": 120,
+		"is_npc": false,
+		"weapon_type": 1,
+		"tome_class": 0,
+		"move_type": 2,
+		"random_allowed": false,
+		"is_boss": true,
+		"refresher": false,
+		"is_enemy": true,
+		"base_stats": {
+			"hp": 17,
+			"atk": 10,
+			"spd": 9,
+			"def": 8,
+			"res": 5
+		},
+		"growth_rates": {
+			"hp": 50,
+			"atk": 85,
+			"spd": 90,
+			"def": 60,
+			"res": 40
+		}
+	}
+]
