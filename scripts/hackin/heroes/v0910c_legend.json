@@ -1,0 +1,147 @@
+[
+	{
+		"id_tag": "PID_\u30d8\u30a4\u30e0\u30c0\u30eb\u5473\u65b9",
+		"roman": "HEIMDALL_GOD01",
+		"face_name": "ch00_67_Heimdall_F_Normal",
+		"face_name2": "ch00_67_Heimdall_F_Normal",
+		"legendary": {
+			"duo_skill_id": "",
+			"bonus_effect": {
+				"hp": 5,
+				"atk": 3,
+				"spd": 0,
+				"def": 0,
+				"res": 0
+			},
+			"kind": 1,
+			"element": 8,
+			"bst": 0,
+			"pair_up": false,
+			"ae_extra": 3
+		},
+		"dragonflowers": {
+			"max_count": 5,
+			"costs": [
+				40,
+				80,
+				120,
+				160,
+				200
+			]
+		},
+		"timestamp": null,
+		"id_num": 1307,
+		"version_num": 910,
+		"sort_value": 900500,
+		"origins": 1,
+		"weapon_type": 12,
+		"tome_class": 4,
+		"move_type": 2,
+		"series": 0,
+		"random_pool": 0,
+		"permanent_hero": false,
+		"base_vactor_id": 147,
+		"refresher": false,
+		"base_stats": {
+			"hp": 18,
+			"atk": 14,
+			"spd": 3,
+			"def": 5,
+			"res": 10
+		},
+		"growth_rates": {
+			"hp": 55,
+			"atk": 80,
+			"spd": 30,
+			"def": 55,
+			"res": 90
+		},
+		"skills": [
+			[
+				"SID_\u30e9\u30a4\u30c8",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			[
+				"SID_\u30a8\u30eb\u30e9\u30a4\u30c8",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u653b\u6483\u9b54\u9632\u306e\u7d461",
+				null,
+				"SID_\u9b54\u9632\u306e\u9f13\u821e1",
+				null,
+				null
+			],
+			[
+				"SID_\u30a8\u30eb\u30e9\u30a4\u30c8",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u30b7\u30e3\u30a4\u30f3",
+				null,
+				"SID_\u6c37\u70b9",
+				"SID_\u653b\u6483\u9b54\u9632\u306e\u7d462",
+				null,
+				"SID_\u9b54\u9632\u306e\u9f13\u821e2",
+				null,
+				null
+			],
+			[
+				"SID_\u30b7\u30e3\u30a4\u30f3",
+				null,
+				"SID_\u6c37\u70b9",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u6c37\u83ef",
+				"SID_\u653b\u6483\u9b54\u9632\u306e\u7d463",
+				null,
+				"SID_\u9b54\u9632\u306e\u9f13\u821e3",
+				null,
+				null
+			],
+			[
+				"SID_\u9b54\u7b1b\u30ae\u30e3\u30e9\u30eb\u30db\u30eb\u30f3",
+				null,
+				"SID_\u6c37\u70b9",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u6c37\u58c1",
+				"SID_\u653b\u6483\u9b54\u9632\u306e\u8a60\u5531",
+				"SID_\u3059\u3079\u3066\u8aad\u3081\u3066\u3044\u305f",
+				"SID_\u653b\u9b54\u9f13\u821e\u30fb\u5f37\u8972",
+				null,
+				null
+			]
+		]
+	}
+]
