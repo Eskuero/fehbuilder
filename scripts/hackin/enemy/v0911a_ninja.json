@@ -1,0 +1,36 @@
+[
+	{
+		"id_tag": "EID_\u9b54\u5668\u30f4\u30a1\u30cb\u30bf\u30b9",
+		"roman": "VANITAS_ENEMY",
+		"face_name": "ch00_69_Vanitas_F_Weapon01",
+		"face_name2": "ch00_69_Vanitas_F_Weapon01",
+		"top_weapon": "SID_\u9b54\u5668\u30fb\u5e7c\u795e\u306e\u30d6\u30ec\u30b9",
+		"unique_assist1": null,
+		"unique_assist2": null,
+		"unique_special": null,
+		"timestamp": null,
+		"id_num": 121,
+		"is_npc": false,
+		"weapon_type": 18,
+		"tome_class": 0,
+		"move_type": 1,
+		"random_allowed": false,
+		"is_boss": true,
+		"refresher": false,
+		"is_enemy": true,
+		"base_stats": {
+			"hp": 22,
+			"atk": 12,
+			"spd": 2,
+			"def": 12,
+			"res": 9
+		},
+		"growth_rates": {
+			"hp": 65,
+			"atk": 80,
+			"spd": 35,
+			"def": 75,
+			"res": 90
+		}
+	}
+]
