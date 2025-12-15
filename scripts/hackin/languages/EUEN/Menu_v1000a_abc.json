@@ -1,0 +1,194 @@
+[
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_02_v1000",
+		"value": "Recruitable Heroes:\\nYou can only recruit Heroes that\\nwere released between Ver. 1.0\\nand Ver. 7.11.\\n\\nYou cannot recruit Heroes you\\ndispatch, or the Alfonse, Sharena,\\nAnna, or Ash you begin with."
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING10",
+		"value": "Book X Opening"
+	},
+	{
+		"key": "MID_HERO_TRIAL_HELP_DIALOG_06_v1000a",
+		"value": "Merged Ordeals:\\nSpecial Ordeals that require\\nLegendary, Mythic, Emblem, or\\nChosen Heroes added to the game\\nsince version 8.4 who have also\\nbeen merged. Merged Ordeals are\\nmore difficult, and you can earn\\n600 Dragonflowers from them."
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_V1000A",
+		"value": "To celebrate the arrival of\\nBook X, a new castle design\\nis ready for you to use!\\n\\nTake a look!"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_V1000A_DIALOG",
+		"value": "Having checked out the\\nRite of Frost Temple design,\\ndo you want to use it?"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_V1000A_REVERT_AFTER",
+		"value": "If you change your mind, tap\\nUpgrade Castle, then Change\\nDesign, then Rite of Frost Temple."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202512",
+		"value": "For Tomorrow"
+	},
+	{
+		"key": "MID_BLESSING_1",
+		"value": "Fire"
+	},
+	{
+		"key": "MID_BLESSING_2",
+		"value": "Water"
+	},
+	{
+		"key": "MID_BLESSING_3",
+		"value": "Wind"
+	},
+	{
+		"key": "MID_BLESSING_4",
+		"value": "Earth"
+	},
+	{
+		"key": "MID_UNIT_INFO_BLESSING_SAVIOR",
+		"value": "$aChosen Unit Effect 1: $a0 Clash\\nDuring $a0 season, higher-scoring\\nopponents will appear in places like the Arena.\\n(Total stat calculation excludes any values\\nadded by merges and skills and is treated\\nas $a1.)\\n(Skills and Sacred Seals are treated as\\nhaving the highest SP. When calculating the\\nhighest SP, the SP of non-weapon exclusive\\nskills is not included.)\\n\\nSelect a target Hero to receive powers.\\nNote: This Hero can be changed at any time.\\n\\nChosen Target Effect 1: Stat Boosts\\nGrants target Hero stat increases based\\non the Chosen Hero's merge count. Every\\nmerge grants the effect of a Dragonflower.\\nThis does not impact how stats influence\\nopponent selection in modes like Arena.\\n\\nChosen Target Effect 2: Powerful Foes\\nDuring $a0 season, higher-scoring\\nopponents will appear in places like the Arena\\n(calculates score based on the higher of the two\\nscores between the Chosen Hero and the target\\nHero). If target Hero is a Legendary Hero, this\\neffect is only active if their Legendary\\nHero type is $a0.\\n\\nChosen Target Effect 3: Boosted in Arena\\nDuring $a0 season, if the target Hero\\nhas weapon-triangle advantage, target\\ndeals +20 damage and takes -20 damage\\nduring combat (excluding area-of-effect\\nSpecials for both). If target is colorless, the\\ntarget has weapon-triangle advantage against\\ncolorless foes. If target Hero is a Legendary\\nHero, this effect is only active if their Legendary\\nHero type is $a0.\\n\\nChosen Target Effect 4: Blessed in Arena\\nDuring $a0 season, if target Hero is not\\na Legendary Hero, the target is treated as\\nhaving the blessing of the $a0 element,\\nregardless of their type."
+	},
+	{
+		"key": "MID_UNIT_INFO_BLESSING_GRANTED_SAVIOR",
+		"value": "$aChosen Target Effect 1: Stat Boosts\\nGrants target Hero stat increases based\\non the Chosen Hero's merge count. Every\\nmerge grants the effect of a Dragonflower.\\nThis does not impact how stats influence\\nopponent selection in modes like Arena.\\n\\nChosen Target Effect 2: Powerful Foes\\nDuring $a0 season, higher-scoring\\nopponents will appear in places like the Arena\\n(calculates score based on the higher of the two\\nscores between the Chosen Hero and the target\\nHero). If target Hero is a Legendary Hero, this\\neffect is only active if their Legendary\\nHero type is $a0.\\n\\nChosen Target Effect 3: Boosted in Arena\\nDuring $a0 season, if the target Hero\\nhas weapon-triangle advantage, target\\ndeals +20 damage and takes -20 damage\\nduring combat (excluding area-of-effect\\nSpecials for both). If target is colorless, the\\ntarget has weapon-triangle advantage against\\ncolorless foes. If target Hero is a Legendary\\nHero, this effect is only active if their Legendary\\nHero type is $a0.\\n\\nChosen Target Effect 4: Blessed in Arena\\nDuring $a0 season, if target Hero is not\\na Legendary Hero, the target is treated as\\nhaving the blessing of the $a0 element,\\nregardless of their type."
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_10",
+		"value": "Chosen"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR",
+		"value": "Grant Powers"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_HELP1",
+		"value": "Select a Chosen Hero."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_HELP2",
+		"value": "Select Hero to receive special powers."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_DIALOG_BEFORE",
+		"value": "Before"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_DIALOG_AFTER",
+		"value": "After"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_DIALOG_CONFIRM",
+		"value": "$aTarget Hero will gain the following:\\n\u30fb Stat Boosts\\n\u30fb Powerful Foes in Arena\\n\u30fb Boosted in Arena\\n\u30fb Blessed in Arena\\n\\nUse $a0\\nfor $a1?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_DIALOG_CONFIRM_LEGENED_MISMATHCH",
+		"value": "$aTarget Hero will gain the following:\\n\u30fb Stat Boosts\\nUse $a0\\nfor $a1?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_DIALOG_WARNING",
+		"value": "Chosen Heroes can grant effects to a\\nmaximum of one target Hero at a time.\\nThe target Hero can be changed at\\nany time."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_DIALOG_WARNING_LEGENED_MISMATHCH",
+		"value": "If the target Hero is a Legendary Hero\\nwith a different blessing, some effects\\nare nullified. Chosen Heroes can\\nselect one Hero at a time, maximum.\\nThis Hero can be changed at any time."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_DIALOG_BUTTON_DECIDE",
+		"value": "Confirm Hero"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_DIALOG_RESET",
+		"value": "$aRevert $a0 for $a1?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_DIALOG_BUTTON_RESET",
+		"value": "Revert Status"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_DIALOG_SUCCESS",
+		"value": "Changes complete."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_EMPTY",
+		"value": "No Chosen Heroes."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_HELP_DIALOG_00",
+		"value": "\u25c6Select\u25c6\\nChosen Heroes can select a target\\nHero to grant special powers."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_HELP_DIALOG_01",
+		"value": "Chosen Effect - Stat Boosts:\\nGrants target Hero stat increases\\nbased on the Chosen Hero's\\nmerge count. Every merge grants\\nthe effect of a Dragonflower.\\nThese increases do not impact\\nhow stats influence opponent\\nselection in modes like Arena."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_HELP_DIALOG_02",
+		"value": "Chosen Effect - Powerful Foes:\\nDuring the Chosen Hero's season,\\nhigher-scoring opponents will\\nappear in places like the Arena\\nfor the target Hero. The higher\\nscore between the Chosen Hero\\nand the target Hero will be used\\nfor score calculation."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_HELP_DIALOG_03",
+		"value": "If target Hero is a Legendary\\nHero, this effect is only active if\\nboth the target and the Chosen\\nHero's blessing types match."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_HELP_DIALOG_04",
+		"value": "Chosen Effect - Boosted in Arena:\\nDuring the Chosen Hero's season,\\nthe following are active on the\\ntarget Hero. If target Hero is a\\nLegendary Hero, this effect is only\\nactive if both the target and the\\nChosen Hero's elements match."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_HELP_DIALOG_05",
+		"value": "If target Hero has weapon-triangle\\nadvantage, deals +20 damage and\\ntakes -20 damage during combat\\n(excluding area-of-effect Specials\\nfor both.) If target Hero is colorless,\\nhas weapon-triangle advantage\\nagainst colorless foes."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_HELP_DIALOG_06",
+		"value": "Chosen Effect - Blessed in Arena:\\nDuring the Chosen Hero's season,\\nthe target Hero is treated as\\nthough they have the blessing of\\nthe Chosen Hero as well,\\nregardless of the target's blessing.\\n(Only for non-Legendary Heroes.)"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_HELP_DIALOG_07",
+		"value": "Note: When the Hero is treated as\\nhaving two blessings, the 2\u00d7 EXP\\nand SP blessing effects do\\nnot stack."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_HELP_DIALOG_08",
+		"value": "More Information:\\n\"In Arena\" effects apply to Arena,\\nArena Assault, and Allegiance\\nBattles."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_HELP_DIALOG_09",
+		"value": "More Information:\\nChosen effects that have the\\nfollowing are only active when\\nyou are in control of your units\\nin places like the Arena:\\n\u30fb Higher-scoring opponents\\n\u30fb Target deals more damage"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SAVIOR_HELP_DIALOG_10",
+		"value": "More Information:\\nChosen effects only impact the\\ntarget Hero. Example: Chosen\\nHero A selects Chosen Hero B,\\nand Hero B selects Hero C.\\nHero A's effects do not impact\\nHero C; they only impact Hero B."
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV65552",
+		"value": "Rite of Frost Temple"
+	},
+	{
+		"key": "MID_SCF_\u4e5d\u306e\u4e16\u754c\u306e\u7e2e\u56f3",
+		"value": "Nine-Realm Model"
+	},
+	{
+		"key": "MID_SCF_\u4e5d\u306e\u4e16\u754c\u306e\u7e2e\u56f3_HELP",
+		"value": "A model of the World-Tree and the nine realms.\\nIt's strange to think you're looking down at the\\nentirety of existence. It's an event item."
+	},
+	{
+		"key": "MID_SCF_\u6551\u4e16\u306e\u5263\u306e\u50cf",
+		"value": "Chosen-Sword Icon"
+	},
+	{
+		"key": "MID_SCF_\u6551\u4e16\u306e\u5263\u306e\u50cf_HELP",
+		"value": "A model of Alfonse's sword after he took the\\nwill of the world upon his shoulders. Looking at\\nit incites determination to take on the winter of\\nannihilation. It's an event item."
+	},
+	{
+		"key": "MID_SCF_\u6551\u4e16\u306e\u69cd\u306e\u50cf",
+		"value": "Chosen-Spear Icon"
+	},
+	{
+		"key": "MID_SCF_\u6551\u4e16\u306e\u69cd\u306e\u50cf_HELP",
+		"value": "A model of Fjorm's spear after she took the will\\nof the world upon her shoulders. Looking at it\\nkindles serenity within one's heart to take on\\nthe winter of annihilation. It's an event item."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202512",
+		"value": "Frosty Aether Stones"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202512",
+		"value": "Used in Aether Raids to build structures that\\nare available for a limited time. If that period\\nhas elapsed, these stones will be lost."
+	}
+]

@@ -1,0 +1,29 @@
+[
+	{
+		"id_tag": "SID_\u7b2c101\u8ff7\u5bae\u306e\u8987\u80051",
+		"next_seal": "SID_\u7b2c101\u8ff7\u5bae\u306e\u8987\u80052",
+		"prev_seal": null,
+		"ss_coin": 0,
+		"ss_badge_type": 0,
+		"ss_badge": 0,
+		"ss_great_badge": 0
+	},
+	{
+		"id_tag": "SID_\u7b2c101\u8ff7\u5bae\u306e\u8987\u80052",
+		"next_seal": "SID_\u7b2c101\u8ff7\u5bae\u306e\u8987\u80053",
+		"prev_seal": "SID_\u7b2c101\u8ff7\u5bae\u306e\u8987\u80051",
+		"ss_coin": 50,
+		"ss_badge_type": 1,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u7b2c101\u8ff7\u5bae\u306e\u8987\u80053",
+		"next_seal": null,
+		"prev_seal": "SID_\u7b2c101\u8ff7\u5bae\u306e\u8987\u80052",
+		"ss_coin": 100,
+		"ss_badge_type": 1,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	}
+]
