@@ -1,0 +1,982 @@
+[
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_100",
+		"value": "$aL'Att aumenta durante lo scontro di un valore\\npari al numero di\u3010Bonus\u3011attivi sull'unit\u00e0,\\nesclusi i bonus ai parametri, +4 (massimo 8).\\n(Per 1 turno.)\\n\\n\u3010Bonus\u3011\\nTutti gli effetti che durano \"per 1 turno\" o \"solo\\nper 1 turno\". Compresi i bonus conferiti da\\nabilit\u00e0 come Sprone o Incita ed effetti di\\nstato positivi (movimenti extra o effetti\\ntipo Dominio)."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_100_NOSKW",
+		"value": "$aL'Att aumenta durante lo scontro di un valore\\npari al numero di\u3010Bonus\u3011attivi sull'unit\u00e0,\\nesclusi i bonus ai parametri, +4 (massimo 8).\\n(Per 1 turno.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_101",
+		"value": "$aLa Res aumenta durante lo scontro di un valore\\npari al numero di\u3010Bonus\u3011attivi sull'unit\u00e0,\\nesclusi i bonus ai parametri, +4 (massimo 8).\\n(Per 1 turno.)\\n\\n\u3010Bonus\u3011\\nTutti gli effetti che durano \"per 1 turno\" o \"solo\\nper 1 turno\". Compresi i bonus conferiti da\\nabilit\u00e0 come Sprone o Incita ed effetti di\\nstato positivi (movimenti extra o effetti\\ntipo Dominio)."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_101_NOSKW",
+		"value": "$aLa Res aumenta durante lo scontro di un valore\\npari al numero di\u3010Bonus\u3011attivi sull'unit\u00e0,\\nesclusi i bonus ai parametri, +4 (massimo 8).\\n(Per 1 turno.)"
+	},
+	{
+		"key": "MID_ENHANCE_HELP_100",
+		"value": "L'Att aumenta di un valore pari al numero di\\n  bonus attivi sull'unit\u00e0 +4 (massimo 8)."
+	},
+	{
+		"key": "MID_ENHANCE_HELP_101",
+		"value": "La Res aumenta di un valore pari al numero di\\n  bonus attivi sull'unit\u00e0 +4 (massimo 8)."
+	},
+	{
+		"key": "MID_MISSION_M202601A_TITLE",
+		"value": "Imprese gen. (A)"
+	},
+	{
+		"key": "MID_MISSION_M202601A_A1",
+		"value": "Assalto arena: 1 vittoria"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A1",
+		"value": "Vinci 1 battaglia in Assalto arena."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A2",
+		"value": "Assalto arena: 3 di fila"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A2",
+		"value": "Vinci tre battaglie consecutive\\nin Assalto arena."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A3",
+		"value": "Assalto arena: 5 di fila"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A3",
+		"value": "Vinci cinque battaglie consecutive\\nin Assalto arena."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A4",
+		"value": "Vinci con Alfonse"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A4",
+		"value": "Sconfiggi un nemico con Alfonse, il principe\\ndi Askr."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A5",
+		"value": "Vinci con Sharena"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A5",
+		"value": "Sconfiggi un nemico con Sharena,\\nla principessa di Askr."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A6",
+		"value": "Vinci con Anna"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A6",
+		"value": "Sconfiggi un nemico con Anna, la comandante."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A7",
+		"value": "Batti nemici rossi"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A7",
+		"value": "Sconfiggi un nemico di tipo rosso."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A8",
+		"value": "Batti nemici blu"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A8",
+		"value": "Sconfiggi un nemico di tipo blu."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A9",
+		"value": "Batti nemici verdi"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A9",
+		"value": "Sconfiggi un nemico di tipo verde."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A10",
+		"value": "Batti nemici neutri"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A10",
+		"value": "Sconfiggi un nemico di tipo neutro."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A11",
+		"value": "Batti unit\u00e0 di fanteria"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A11",
+		"value": "Sconfiggi un'unit\u00e0 di fanteria nemica."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A12",
+		"value": "Batti unit\u00e0 corazzate"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A12",
+		"value": "Sconfiggi un nemico corazzato."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A13",
+		"value": "Batti unit\u00e0 a cavallo"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A13",
+		"value": "Sconfiggi un nemico a cavallo."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A14",
+		"value": "Batti unit\u00e0 volanti"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A14",
+		"value": "Sconfiggi un nemico volante."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A15",
+		"value": "Completa 7-1"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A15",
+		"value": "Completa il libro VIII, cap. 7-1 alla difficolt\u00e0\\nfolle. Tutti e 4 gli alleati devono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A16",
+		"value": "Completa 7-2"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A16",
+		"value": "Completa il libro VIII, cap. 7-2 alla difficolt\u00e0\\nfolle. Tutti e 4 gli alleati devono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A17",
+		"value": "Completa 7-3"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A17",
+		"value": "Completa il libro VIII, cap. 7-3 alla difficolt\u00e0\\nfolle. Tutti e 4 gli alleati devono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A18",
+		"value": "Completa 7-4"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A18",
+		"value": "Completa il libro VIII, cap. 7-4 alla difficolt\u00e0\\nfolle. Tutti e 4 gli alleati devono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A19",
+		"value": "Completa 7-5"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A19",
+		"value": "Completa il libro VIII, cap. 7-5 alla difficolt\u00e0\\nfolle. Tutti e 4 gli alleati devono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A20",
+		"value": "BE: attacca con successo"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A20",
+		"value": "Attacca con successo in Blitz eterei."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A21",
+		"value": "BE: attacca con successo"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A21",
+		"value": "Attacca con successo in Blitz eterei."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A22",
+		"value": "BE: attacca con successo"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A22",
+		"value": "Attacca con successo in Blitz eterei."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A23",
+		"value": "Arena: vinci duelli"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A23",
+		"value": "Vinci duelli nell'arena a qualsiasi livello di\\ndifficolt\u00e0."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A24",
+		"value": "Arena: vinci duelli"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A24",
+		"value": "Vinci duelli nell'arena a qualsiasi livello di\\ndifficolt\u00e0."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A25",
+		"value": "Arena: vinci duelli"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A25",
+		"value": "Vinci duelli nell'arena a qualsiasi livello di\\ndifficolt\u00e0."
+	},
+	{
+		"key": "MID_MISSION_S202601HERO01_TITLE",
+		"value": "Grandi battaglie"
+	},
+	{
+		"key": "MID_MISSION_S202601HERO01_A1",
+		"value": "Batti Vaida"
+	},
+	{
+		"key": "MID_MISSION_H_S202601HERO01_A1",
+		"value": "Vinci la Grande battaglia contro Vaida,\\nla generale drago, con Anna, la comandante,\\nin squadra."
+	},
+	{
+		"key": "MID_MISSION_S202601HERO01_A2",
+		"value": "Batti Vaida"
+	},
+	{
+		"key": "MID_MISSION_H_S202601HERO01_A2",
+		"value": "Vinci la Grande battaglia contro Vaida,\\nla generale drago, alla difficolt\u00e0 folle o pi\u00f9\\ncon Vaida, la generale drago, in squadra."
+	},
+	{
+		"key": "MID_MISSION_S202601HERO01_A3",
+		"value": "Batti Vaida"
+	},
+	{
+		"key": "MID_MISSION_H_S202601HERO01_A3",
+		"value": "Sconfiggi Vaida, la generale drago, di livello 40\\no superiore con Anna, la comandante."
+	},
+	{
+		"key": "MID_MISSION_S202601HERO01_A4",
+		"value": "Batti Vaida"
+	},
+	{
+		"key": "MID_MISSION_H_S202601HERO01_A4",
+		"value": "Sconfiggi Vaida, la generale drago, di livello 40\\no superiore con Vaida, la generale drago."
+	},
+	{
+		"key": "MID_MISSION_S202601HERO01_A5",
+		"value": "Batti Vaida"
+	},
+	{
+		"key": "MID_MISSION_H_S202601HERO01_A5",
+		"value": "Vinci la Grande battaglia contro Vaida,\\nla generale drago, alla difficolt\u00e0 folle o pi\u00f9\\ncon una squadra di sole unit\u00e0 volanti."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_TITLE",
+		"value": "Anno nuovo!"
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A1",
+		"value": "Vinci"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A1",
+		"value": "Sconfiggi un nemico."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A2",
+		"value": "Vinci"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A2",
+		"value": "Sconfiggi un nemico."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A3",
+		"value": "Vinci con spada"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A3",
+		"value": "Sconfiggi un nemico con un alleato armato\\ndi spada."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A4",
+		"value": "Vinci con lancia"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A4",
+		"value": "Sconfiggi un nemico con un alleato armato\\ndi lancia"
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A5",
+		"value": "Vinci con ascia"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A5",
+		"value": "Sconfiggi un nemico con un alleato armato\\ndi ascia."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A6",
+		"value": "Vinci con arco neutro"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A6",
+		"value": "Sconfiggi un nemico con un alleato armato\\ndi arco neutro."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A7",
+		"value": "Vinci con pugnale neutro"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A7",
+		"value": "Sconfiggi un nemico con un alleato armato\\ndi pugnale neutro."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A8",
+		"value": "Vinci con bastone"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A8",
+		"value": "Sconfiggi un nemico con un alleato armato\\ndi bastone."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A9",
+		"value": "Arena: vinci duelli"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A9",
+		"value": "Vinci duelli nell'arena a qualsiasi livello di\\ndifficolt\u00e0."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A10",
+		"value": "Arena: vinci duelli"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A10",
+		"value": "Vinci duelli nell'arena a qualsiasi livello di\\ndifficolt\u00e0."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A11",
+		"value": "Arena: vinci duelli"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A11",
+		"value": "Vinci duelli nell'arena a qualsiasi livello di\\ndifficolt\u00e0."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A12",
+		"value": "Scontri risonanti: punti"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A12",
+		"value": "Ottieni un punteggio in Scontri risonanti a\\nqualsiasi livello di difficolt\u00e0."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A13",
+		"value": "Completa Ordalie eroiche"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A13",
+		"value": "Supera un'ordalia eroica."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A14",
+		"value": "BE: attacca con successo"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A14",
+		"value": "Attacca con successo in Blitz eterei."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A15",
+		"value": "BE: attacca con successo"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A15",
+		"value": "Attacca con successo in Blitz eterei."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A16",
+		"value": "BE: attacca con successo"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A16",
+		"value": "Attacca con successo in Blitz eterei."
+	},
+	{
+		"key": "MID_MISSION_S202601SENKA01_DAILY_TITLE",
+		"value": "Prove Tempesta"
+	},
+	{
+		"key": "MID_MISSION_S202601SENKA01_DAILY_A1",
+		"value": "Completa prove"
+	},
+	{
+		"key": "MID_MISSION_H_S202601SENKA01_DAILY_A1",
+		"value": "Completa una delle mappe finali delle prove\\nTempesta."
+	},
+	{
+		"key": "MID_MISSION_S202601SENKA01_DAILY_A2",
+		"value": "Completa prove"
+	},
+	{
+		"key": "MID_MISSION_H_S202601SENKA01_DAILY_A2",
+		"value": "Completa una delle mappe finali delle prove\\nTempesta."
+	},
+	{
+		"key": "MID_MISSION_S202601SENKA01_DAILY_A3",
+		"value": "Completa prove"
+	},
+	{
+		"key": "MID_MISSION_H_S202601SENKA01_DAILY_A3",
+		"value": "Completa una delle mappe finali delle prove\\nTempesta."
+	},
+	{
+		"key": "MID_MISSION_S202601SENKA01_DAILY_A4",
+		"value": "Completa prove"
+	},
+	{
+		"key": "MID_MISSION_H_S202601SENKA01_DAILY_A4",
+		"value": "Completa una delle mappe finali delle prove\\nTempesta."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_TITLE",
+		"value": "Arte della spada"
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A1",
+		"value": "Vinci con spada"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A1",
+		"value": "Sconfiggi un nemico con ascia con un alleato\\narmato di spada."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A2",
+		"value": "Vinci con spada"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A2",
+		"value": "Sconfiggi un nemico con spada con un alleato\\narmato di spada."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A3",
+		"value": "Vinci con spada"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A3",
+		"value": "Sconfiggi un nemico con lancia con un alleato\\narmato di spada."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A4",
+		"value": "Vinci con spada"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A4",
+		"value": "Sconfiggi un nemico con arco neutro con\\nun alleato armato di spada."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A5",
+		"value": "Vinci con spada"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A5",
+		"value": "Sconfiggi un nemico con pugnale neutro con\\nun alleato armato di spada."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A6",
+		"value": "Vinci con spada"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A6",
+		"value": "Sconfiggi un nemico con bastone con un alleato\\narmato di spada."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A7",
+		"value": "Spada batte nem. 30+"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A7",
+		"value": "Sconfiggi un nemico con ascia di livello 30 o\\nsuperiore con un alleato armato di spada."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A8",
+		"value": "Spada batte nem. 30+"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A8",
+		"value": "Sconfiggi un nemico con spada di livello 30 o\\nsuperiore con un alleato armato di spada."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A9",
+		"value": "Spada batte nem. 30+"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A9",
+		"value": "Sconfiggi un nemico con lancia di livello 30 o\\nsuperiore con un alleato armato di spada."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A10",
+		"value": "Spada batte nem. 30+"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A10",
+		"value": "Sconfiggi un nemico con arco neutro di livello\\n30 o superiore con un alleato armato di spada."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A11",
+		"value": "Spada batte nem. 30+"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A11",
+		"value": "Sconfiggi un nemico con pugnale neutro di\\nlivello 30 o superiore con un alleato armato di\\nspada."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A12",
+		"value": "Spada batte nem. 30+"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A12",
+		"value": "Sconfiggi un nemico con bastone di livello 30 o\\nsuperiore con un alleato armato di spada."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_TITLE",
+		"value": "Imprese gen. (B)"
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A1",
+		"value": "Torre: vinci al 1\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A1",
+		"value": "Completa il primo piano della torre\\ndi allenamento. Tutti e 4 gli alleati\\ndevono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A2",
+		"value": "Torre: vinci al 2\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A2",
+		"value": "Completa il secondo piano della torre\\ndi allenamento. Tutti e 4 gli alleati\\ndevono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A3",
+		"value": "Torre: vinci al 3\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A3",
+		"value": "Completa il terzo piano della torre\\ndi allenamento. Tutti e 4 gli alleati\\ndevono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A4",
+		"value": "Torre: vinci al 4\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A4",
+		"value": "Completa il quarto piano della torre\\ndi allenamento. Tutti e 4 gli alleati\\ndevono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A5",
+		"value": "Torre: vinci al 5\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A5",
+		"value": "Completa il quinto piano della torre\\ndi allenamento. Tutti e 4 gli alleati\\ndevono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A6",
+		"value": "Torre: vinci al 6\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A6",
+		"value": "Completa il sesto piano della torre\\ndi allenamento. Tutti e 4 gli alleati\\ndevono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A7",
+		"value": "Torre: vinci al 7\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A7",
+		"value": "Completa il settimo piano della torre\\ndi allenamento. Tutti e 4 gli alleati\\ndevono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A8",
+		"value": "Torre: vinci all'8\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A8",
+		"value": "Completa l'ottavo piano della torre\\ndi allenamento. Tutti e 4 gli alleati\\ndevono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A9",
+		"value": "Torre: vinci al 9\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A9",
+		"value": "Completa il nono piano della torre\\ndi allenamento. Tutti e 4 gli alleati\\ndevono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A10",
+		"value": "Torre: vinci al 10\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A10",
+		"value": "Completa il decimo piano della torre\\ndi allenamento. Tutti e 4 gli alleati\\ndevono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A11",
+		"value": "Torre: vinci al 10\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A11",
+		"value": "Completa il decimo piano della torre di\\nallenamento con sole unit\u00e0 di fanteria (le unit\u00e0\\npartner schierate usando Duo non contano).\\nTutti e 4 gli alleati devono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A12",
+		"value": "Torre: vinci al 10\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A12",
+		"value": "Completa il decimo piano della torre di\\nallenamento con sole unit\u00e0 corazzate (le unit\u00e0\\npartner schierate usando Duo non contano).\\nTutti e 4 gli alleati devono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A13",
+		"value": "Torre: vinci al 10\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A13",
+		"value": "Completa il decimo piano della torre di\\nallenamento con sole unit\u00e0 a cavallo (le unit\u00e0\\npartner schierate usando Duo non contano).\\nTutti e 4 gli alleati devono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A14",
+		"value": "Torre: vinci al 10\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A14",
+		"value": "Completa il decimo piano della torre di\\nallenamento con sole unit\u00e0 volanti (le unit\u00e0\\npartner schierate usando Duo non contano).\\nTutti e 4 gli alleati devono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_S202601STORY_P01_TITLE",
+		"value": "Buon anno, mortali"
+	},
+	{
+		"key": "MID_MISSION_W_S202601STORY_P01_A1",
+		"value": "Completa app. 119-1 folle"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202601STORY_P01_A1",
+		"value": "Completa l'app. 119, parte 1 alla difficolt\u00e0 folle\\ncon un'unit\u00e0 armata di spada in squadra\\n(le unit\u00e0 partner schierate usando Duo\\nnon contano). Tutti e 4 gli alleati devono\\nsopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_S202601STORY_P01_A2",
+		"value": "Completa app. 119-2 folle"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202601STORY_P01_A2",
+		"value": "Completa l'app. 119, parte 2 alla difficolt\u00e0 folle\\ncon un'unit\u00e0 armata di lancia in squadra\\n(le unit\u00e0 partner schierate usando Duo\\nnon contano). Tutti e 4 gli alleati devono\\nsopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_S202601STORY_P01_A3",
+		"value": "Completa app. 119-3 folle"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202601STORY_P01_A3",
+		"value": "Completa l'app. 119, parte 3 alla difficolt\u00e0 folle\\ncon un'unit\u00e0 armata di ascia in squadra\\n(le unit\u00e0 partner schierate usando Duo\\nnon contano). Tutti e 4 gli alleati devono\\nsopravvivere."
+	},
+	{
+		"key": "MPID_\u6bd4\u7ffc\u30d0\u30eb\u30c9\u30eb",
+		"value": "Baldr"
+	},
+	{
+		"key": "MPID_SEARCH_\u6bd4\u7ffc\u30d0\u30eb\u30c9\u30eb",
+		"value": "Baldr"
+	},
+	{
+		"key": "MPID_\u5e74\u660e\u30f4\u30a1\u30fc\u30ea",
+		"value": "V\u00e1li"
+	},
+	{
+		"key": "MPID_SEARCH_\u5e74\u660e\u30f4\u30a1\u30fc\u30ea",
+		"value": "Vali"
+	},
+	{
+		"key": "MPID_\u5e74\u660e\u30d8\u30a4\u30e0\u30c0\u30eb",
+		"value": "Heimdallr"
+	},
+	{
+		"key": "MPID_SEARCH_\u5e74\u660e\u30d8\u30a4\u30e0\u30c0\u30eb",
+		"value": "Heimdallr"
+	},
+	{
+		"key": "MPID_\u5e74\u660e\u30b6\u30ac\u30ed",
+		"value": "Sedgar"
+	},
+	{
+		"key": "MPID_SEARCH_\u5e74\u660e\u30b6\u30ac\u30ed",
+		"value": "Sedgar"
+	},
+	{
+		"key": "MPID_HONOR_\u6bd4\u7ffc\u30d0\u30eb\u30c9\u30eb",
+		"value": "Il duo celebrativo"
+	},
+	{
+		"key": "MPID_HONOR_\u5e74\u660e\u30f4\u30a1\u30fc\u30ea",
+		"value": "Sorella devota"
+	},
+	{
+		"key": "MPID_HONOR_\u5e74\u660e\u30d8\u30a4\u30e0\u30c0\u30eb",
+		"value": "Visione dell'anno"
+	},
+	{
+		"key": "MPID_HONOR_\u5e74\u660e\u30b6\u30ac\u30ed",
+		"value": "Cavaliere festivo"
+	},
+	{
+		"key": "MPID_H_\u6bd4\u7ffc\u30d0\u30eb\u30c9\u30eb",
+		"value": "Due divinit\u00e0 di \u00c1sgar\u00f0r, il regno celeste, che\\nscendono dal cielo per donare il miglior\\nanno nuovo possibile."
+	},
+	{
+		"key": "MPID_H_\u5e74\u660e\u30f4\u30a1\u30fc\u30ea",
+		"value": "Divinit\u00e0 di \u00c1sgar\u00f0r, il regno celeste, che adora\\nsua sorella Baldr e celebra con lei l'anno nuovo\\ne tutto il suo splendore"
+	},
+	{
+		"key": "MPID_H_\u5e74\u660e\u30d8\u30a4\u30e0\u30c0\u30eb",
+		"value": "Divinit\u00e0 di \u00c1sgar\u00f0r, il regno celeste, conosciuta\\nper il suo potere di veggente. Pianifica l'anno\\nperfetto gi\u00e0 dal primo giorno."
+	},
+	{
+		"key": "MPID_H_\u5e74\u660e\u30b6\u30ac\u30ed",
+		"value": "Vicecomandante degli uomini del Coyote di\\nAurelis, sotto il comando di Hardin. \u00c8 calmo\\ne composto nella luce del mattino, indifferente\\nai festeggiamenti per l'anno nuovo. Compare in\\nFire Emblem: Mystery of the Emblem."
+	},
+	{
+		"key": "MPID_VOICE_\u6bd4\u7ffc\u30d0\u30eb\u30c9\u30eb",
+		"value": "Sam Slade + Emi Lo"
+	},
+	{
+		"key": "MPID_VOICE_\u5e74\u660e\u30f4\u30a1\u30fc\u30ea",
+		"value": "Mia Paige"
+	},
+	{
+		"key": "MPID_VOICE_\u5e74\u660e\u30d8\u30a4\u30e0\u30c0\u30eb",
+		"value": "Elsie Lovelock"
+	},
+	{
+		"key": "MPID_VOICE_\u5e74\u660e\u30b6\u30ac\u30ed",
+		"value": "Brandon Jay"
+	},
+	{
+		"key": "MPID_ILLUST_\u6bd4\u7ffc\u30d0\u30eb\u30c9\u30eb",
+		"value": "HACCAN"
+	},
+	{
+		"key": "MPID_ILLUST_\u5e74\u660e\u30f4\u30a1\u30fc\u30ea",
+		"value": "ecu (\u3048\u304f)"
+	},
+	{
+		"key": "MPID_ILLUST_\u5e74\u660e\u30d8\u30a4\u30e0\u30c0\u30eb",
+		"value": "Homare (\u8a89)"
+	},
+	{
+		"key": "MPID_ILLUST_\u5e74\u660e\u30b6\u30ac\u30ed",
+		"value": "motsutsu / Trys Inc."
+	},
+	{
+		"key": "MPID_LEGEND_\u6bd4\u7ffc\u30d0\u30eb\u30c9\u30eb",
+		"value": "(Le abilit\u00e0 Coppia possono essere usate\\nuna volta per mappa toccando il relativo\\npulsante. Non possono essere usate da\\nunit\u00e0 schierate usando l'abilit\u00e0 Duo.)\\n(Quando l'unit\u00e0 \u00e8 dotata di un effetto o\\nun'abilit\u00e0 che hanno uno Stile, le abilit\u00e0 Coppia\\ne armoniche non possono essere usate mentre\\nl'unit\u00e0 pu\u00f2 agire, ma possono essere usate dopo\\nl'azione dell'unit\u00e0).\\n\\nEffetto standard 1: Sfida\\nSe l'unit\u00e0 ha 5\u2605, \u00e8 di liv. 40 e il totale dei suoi\\nparametri \u00e8 minore di 220, considera i suoi\\nparametri pari a 220 in modalit\u00e0 come l'arena.\\n(Appariranno nemici che assicurano punteggi\\npi\u00f9 alti. Il totale dei parametri esclude i valori\\nderivanti da abilit\u00e0 e da Fondi alleati.)"
+	},
+	{
+		"key": "MID_TIPS_Summon_v1000d_newyear_01_\u6bd4\u7ffc\u30d0\u30eb\u30c9\u30eb",
+		"value": "Si liberano dei nemici verdi con Stile!\\nAttaccano a 5 spazi di distanza e\\nbattono brillantemente in ritirata."
+	},
+	{
+		"key": "MID_TIPS_Summon_v1000d_newyear_01_\u5e74\u660e\u30f4\u30a1\u30fc\u30ea",
+		"value": "Guarisce prima dello scontro e pu\u00f2\\nsostenere attacchi letali! Anche i suoi\\nalleati possono recuperare PS!"
+	},
+	{
+		"key": "MID_TIPS_Summon_v1000d_newyear_01_\u5e74\u660e\u30d8\u30a4\u30e0\u30c0\u30eb",
+		"value": "Trappola veggente blocca i nemici. Si\\nrafforza con gli effetti di Liberazione e\\ndomina i nemici con l'abilit\u00e0 speciale!"
+	},
+	{
+		"key": "MID_TIPS_Summon_v1000d_newyear_01_\u5e74\u660e\u30b6\u30ac\u30ed",
+		"value": "Infligge +10 di danno ai nemici in\\nun'ampia area! Usa Sposamento e\\nmette in mostra le debolezze nemiche."
+	},
+	{
+		"key": "MSID_\u5929\u306e\u5973\u795e\u59c9\u59b9\u306e\u796d\u5668",
+		"value": "Dispositivi divini"
+	},
+	{
+		"key": "MSID_SEARCH_\u5929\u306e\u5973\u795e\u59c9\u59b9\u306e\u796d\u5668",
+		"value": "Dispositivi divini"
+	},
+	{
+		"key": "MSID_\u611b\u3057\u304d\u59c9\u306e\u7fbd\u5b50\u677f",
+		"value": "Sorella hagoita"
+	},
+	{
+		"key": "MSID_SEARCH_\u611b\u3057\u304d\u59c9\u306e\u7fbd\u5b50\u677f",
+		"value": "Sorella hagoita"
+	},
+	{
+		"key": "MSID_\u4e00\u5e74\u306e\u8a08\u306e\u6247\u5b50",
+		"value": "Ventaglio festivo"
+	},
+	{
+		"key": "MSID_SEARCH_\u4e00\u5e74\u306e\u8a08\u306e\u6247\u5b50",
+		"value": "Ventaglio festivo"
+	},
+	{
+		"key": "MSID_\u5348\u5e74\u306e\u5f13",
+		"value": "Arco equino"
+	},
+	{
+		"key": "MSID_SEARCH_\u5348\u5e74\u306e\u5f13",
+		"value": "Arco equino"
+	},
+	{
+		"key": "MSID_\u5348\u5e74\u306e\u5f13\uff0b",
+		"value": "Arco equino+"
+	},
+	{
+		"key": "MSID_SEARCH_\u5348\u5e74\u306e\u5f13\uff0b",
+		"value": "Arco equino+"
+	},
+	{
+		"key": "MSID_\u5929\u306b\u4ee3\u308f\u308a\u3066\u30fb\u8fd1",
+		"value": "Voce dei cieli V"
+	},
+	{
+		"key": "MSID_SEARCH_\u5929\u306b\u4ee3\u308f\u308a\u3066\u30fb\u8fd1",
+		"value": "Voce dei cieli V"
+	},
+	{
+		"key": "MSID_\u5929\u821e\u3044\u7acb\u3064",
+		"value": "Volo sublime"
+	},
+	{
+		"key": "MSID_SEARCH_\u5929\u821e\u3044\u7acb\u3064",
+		"value": "Volo sublime"
+	},
+	{
+		"key": "MSID_\u653b\u901f\u5341\u7d0b\u7ae0\u30fb\u6cbb\u7652",
+		"value": "Sollievo salus A/V"
+	},
+	{
+		"key": "MSID_SEARCH_\u653b\u901f\u5341\u7d0b\u7ae0\u30fb\u6cbb\u7652",
+		"value": "Sollievo salus A/V"
+	},
+	{
+		"key": "MSID_\u653b\u6483\u9b54\u9632\u306e\u89e3\u653e",
+		"value": "Liberazione A/R"
+	},
+	{
+		"key": "MSID_SEARCH_\u653b\u6483\u9b54\u9632\u306e\u89e3\u653e",
+		"value": "Liberazione A/R"
+	},
+	{
+		"key": "MSID_H_\u5929\u306e\u5973\u795e\u59c9\u59b9\u306e\u796d\u5668",
+		"value": "$aAnticipa l'attivazione dell'abilit\u00e0 speciale\\n(contatore -1). Annulla i bonus derivanti\\ndall'effetto \"efficace contro le unit\u00e0 volanti\".\\n\\nInfligge Att/Vel/Dif/Res -5 ai nemici in un'area\\ndi 3 righe o 3 colonne con al centro l'unit\u00e0,\\nAtt/Vel/Dif/Res di quei nemici diminuiscono\\nulteriormente di un valore pari al bonus attivo\\nsu ogni parametro del nemico moltiplicato per 2\\n(ogni parametro \u00e8 calcolato singolarmente)\\ne riduce del 50% la percentuale delle abilit\u00e0\\nnon speciali di quei nemici con \"riduce di X%\\ni danni\" durante lo scontro (escluse le abilit\u00e0\\nspeciali con area d'effetto).\\n\\nConferisce Att/Vel/Dif/Res +10 all'unit\u00e0, l'unit\u00e0\\ninfligge +25 di danno (escluse le abilit\u00e0 speciali\\ncon area d'effetto), riduce di X il danno da\\nattacchi del nemico (escluse le abilit\u00e0 speciali\\ncon area d'effetto), riduce ulteriormente di X\\nil danno da abilit\u00e0 speciali del nemico (escluse\\nle abilit\u00e0 speciali con area d'effetto; se l'unit\u00e0\\n\u00e8 in svantaggio nel triangolo delle armi, il valore\\ndi X \u00e8 pari al 20% della Vel dell'unit\u00e0; altrimenti,\\n\u00e8 pari al 50% della Vel dell'unit\u00e0) e annulla\\ngli effetti che infliggono \"contatore +X\" all'unit\u00e0\\ndurante lo scontro.\\n\\nL'unit\u00e0 pu\u00f2 usare il seguente\u3010Stile\u3011:\\n\u2015\u2015\u2015\u2015 Stile Triangolo delle armi: rosso \u2015\u2015\u2015\u2015\\nL'unit\u00e0 viene considerata come rossa nel\\ntriangolo delle armi (non ha effetto sulle abilit\u00e0\\nche si attivano in base agli attributi, come \"se\\nin lotta contro un nemico di tipo rosso\"). Questo\\nStile pu\u00f2 essere usato una sola volta per turno.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\n\\n\u3010Stile\u3011\\nCambia Stile usando il pulsante Stile in basso\\nsullo schermo.\\n\\nLo Stile di un'unit\u00e0 si attiva solo quando questa\\nagisce. L'uso di Stile viene disattivato quando\\nl'unit\u00e0 viene schierata usando l'abilit\u00e0 Duo o\\nquando \u00e8 dotata di molteplici abilit\u00e0 con\\nuno Stile."
+	},
+	{
+		"key": "MSID_H_\u5929\u306e\u5973\u795e\u59c9\u59b9\u306e\u796d\u5668_NOSKW",
+		"value": "$aAnticipa l'attivazione dell'abilit\u00e0 speciale\\n(contatore -1). Annulla i bonus derivanti\\ndall'effetto \"efficace contro le unit\u00e0 volanti\".\\n\\nInfligge Att/Vel/Dif/Res -5 ai nemici in un'area\\ndi 3 righe o 3 colonne con al centro l'unit\u00e0,\\nAtt/Vel/Dif/Res di quei nemici diminuiscono\\nulteriormente di un valore pari al bonus attivo\\nsu ogni parametro del nemico moltiplicato per 2\\n(ogni parametro \u00e8 calcolato singolarmente)\\ne riduce del 50% la percentuale delle abilit\u00e0\\nnon speciali di quei nemici con \"riduce di X%\\ni danni\" durante lo scontro (escluse le abilit\u00e0\\nspeciali con area d'effetto).\\n\\nConferisce Att/Vel/Dif/Res +10 all'unit\u00e0, l'unit\u00e0\\ninfligge +25 di danno (escluse le abilit\u00e0 speciali\\ncon area d'effetto), riduce di X il danno da\\nattacchi del nemico (escluse le abilit\u00e0 speciali\\ncon area d'effetto), riduce ulteriormente di X\\nil danno da abilit\u00e0 speciali del nemico (escluse\\nle abilit\u00e0 speciali con area d'effetto; se l'unit\u00e0\\n\u00e8 in svantaggio nel triangolo delle armi, il valore\\ndi X \u00e8 pari al 20% della Vel dell'unit\u00e0; altrimenti,\\n\u00e8 pari al 50% della Vel dell'unit\u00e0) e annulla\\ngli effetti che infliggono \"contatore +X\" all'unit\u00e0\\ndurante lo scontro.\\n\\nL'unit\u00e0 pu\u00f2 usare il seguente\u3010Stile\u3011:\\n\u2015\u2015\u2015\u2015 Stile Triangolo delle armi: rosso \u2015\u2015\u2015\u2015\\nL'unit\u00e0 viene considerata come rossa nel\\ntriangolo delle armi (non ha effetto sulle abilit\u00e0\\nche si attivano in base agli attributi, come \"se\\nin lotta contro un nemico di tipo rosso\"). Questo\\nStile pu\u00f2 essere usato una sola volta per turno.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015"
+	},
+	{
+		"key": "MSID_H_\u611b\u3057\u304d\u59c9\u306e\u7fbd\u5b50\u677f",
+		"value": "$aPermette l'uso di\u3010Mobilit\u00e0 (resto; min. \uff11)\u3011.\\n\\nAnnulla i bonus derivanti dall'effetto \"efficace\\ncontro le unit\u00e0 volanti\". Conferisce Vel +3.\\nL'unit\u00e0 pu\u00f2 contrattaccare da qualunque\\ndistanza.\\n\\nConferisce Att/Vel +5 agli alleati entro 3 spazi\\ndall'unit\u00e0 durante lo scontro e quegli alleati\\npossono contrattaccare da qualunque distanza.\\n\\nSe gli alleati entro 3 spazi dall'unit\u00e0 hanno pi\u00f9\\ndi 1 PS, sopravvivono a un attacco letale durante\\nlo scontro e rimangono con 1 PS, ripristina 40 PS\\na quegli alleati dopo lo scontro e conferisce loro\\nil valore di Att/Vel di\u3010Grande talento\u3011+10\\n(l'effetto si attiva per la squadra del giocatore\\nuna sola volta per mappa; non cumulabile con\\neffetti di abilit\u00e0 non speciali che permettono\\nall'unit\u00e0 di sopravvivere a un attacco letale e\\nrimanere con 1 PS; quando viene attivato\\nun effetto di questo tipo su un alleato che riceve\\nquesto effetto, anche l'effetto di questa abilit\u00e0\\nverr\u00e0 attivato).\\n\\nConferisce Att/Vel/Dif/Res +15 all'unit\u00e0, i bonus\\ndel nemico sono annullati, l'unit\u00e0 infligge +X\\ndi danno (escluse le abilit\u00e0 speciali con area\\nd'effetto; il valore di X \u00e8 pari a 15 pi\u00f9 il valore\\ntotale di Att e Vel di\u3010Grande talento\u3011), riduce\\ndi 15 il danno del primo attacco del nemico\\n(con \"primo attacco\" si intende normalmente\\nil primo colpo, mentre per gli effetti che\\nconferiscono \"esegue due attacchi\", si intende\\nil primo e il secondo colpo) e annulla gli effetti\\nche garantiscono attacchi doppi al nemico e\\nquelli che impediscono attacchi doppi all'unit\u00e0\\ndurante lo scontro.\\n\\n(Conferisce massimo\u3010Grande talento\u3011+10.)\\n\\n\u3010Mobilit\u00e0 (resto; min. \uff11)\u3011\\nDopo un attacco, un'abilit\u00e0 di aiuto o\\nla distruzione di una struttura, l'unit\u00e0 pu\u00f2\\nspostarsi di un numero di spazi pari al\\nmovimento non ancora usato in quel turno\\n(minimo \uff11; se l'unit\u00e0 ha usato un'abilit\u00e0\\ndi movimento che l'ha fatta trasferire, pu\u00f2\\nspostarsi di \uff11 spazio/i). (Una volta per\\nturno. Non cumulabile; si applica solo il valore\\npi\u00f9 alto.)\\n\\n\u3010Grande talento\u3011\\nAggiunge il valore di Grande talento (+X) ai\\nparametri specificati (fino alla fine dello scontro;\\nil valore massimo di X \u00e8 determinato dal\\nparametro che raggiunge il limite di 99, ogni\\nparametro \u00e8 calcolato separatamente e non\\npu\u00f2 superare il limite massimo di ogni abilit\u00e0;\\ngli aumenti ai parametri non si considerano\\ncome bonus)."
+	},
+	{
+		"key": "MSID_H_\u611b\u3057\u304d\u59c9\u306e\u7fbd\u5b50\u677f_NOSKW",
+		"value": "$aPermette l'uso di\u3010Mobilit\u00e0 (resto; min. \uff11)\u3011.\\n\\nAnnulla i bonus derivanti dall'effetto \"efficace\\ncontro le unit\u00e0 volanti\". Conferisce Vel +3.\\nL'unit\u00e0 pu\u00f2 contrattaccare da qualunque\\ndistanza.\\n\\nConferisce Att/Vel +5 agli alleati entro 3 spazi\\ndall'unit\u00e0 durante lo scontro e quegli alleati\\npossono contrattaccare da qualunque distanza.\\n\\nSe gli alleati entro 3 spazi dall'unit\u00e0 hanno pi\u00f9\\ndi 1 PS, sopravvivono a un attacco letale durante\\nlo scontro e rimangono con 1 PS, ripristina 40 PS\\na quegli alleati dopo lo scontro e conferisce loro\\nil valore di Att/Vel di\u3010Grande talento\u3011+10\\n(l'effetto si attiva per la squadra del giocatore\\nuna sola volta per mappa; non cumulabile con\\neffetti di abilit\u00e0 non speciali che permettono\\nall'unit\u00e0 di sopravvivere a un attacco letale e\\nrimanere con 1 PS; quando viene attivato\\nun effetto di questo tipo su un alleato che riceve\\nquesto effetto, anche l'effetto di questa abilit\u00e0\\nverr\u00e0 attivato).\\n\\nConferisce Att/Vel/Dif/Res +15 all'unit\u00e0, i bonus\\ndel nemico sono annullati, l'unit\u00e0 infligge +X\\ndi danno (escluse le abilit\u00e0 speciali con area\\nd'effetto; il valore di X \u00e8 pari a 15 pi\u00f9 il valore\\ntotale di Att e Vel di\u3010Grande talento\u3011), riduce\\ndi 15 il danno del primo attacco del nemico\\n(con \"primo attacco\" si intende normalmente\\nil primo colpo, mentre per gli effetti che\\nconferiscono \"esegue due attacchi\", si intende\\nil primo e il secondo colpo) e annulla gli effetti\\nche garantiscono attacchi doppi al nemico e\\nquelli che impediscono attacchi doppi all'unit\u00e0\\ndurante lo scontro.\\n\\n(Conferisce massimo\u3010Grande talento\u3011+10.)"
+	},
+	{
+		"key": "MSID_H_\u4e00\u5e74\u306e\u8a08\u306e\u6247\u5b50",
+		"value": "$aAnticipa l'attivazione dell'abilit\u00e0 speciale\\n(contatore -1).\\n\\nSe in difesa in Blitz eterei, conferisce\\nla condizione\u3010Trappola veggente\u3011agli\\nalleati pi\u00f9 vicini alla parte bassa della mappa\\ne posti sulla stessa colonna dell'unit\u00e0 e su\\nquelle adiacenti all'inizio della fase nemica\\nper 1 turno.\\n\\nSe non si \u00e8 in difesa in Blitz eterei, se tra\\ngli alleati pi\u00f9 vicini al nemico c'\u00e8 un solo\\nalleato con la Dif pi\u00f9 alta all'inizio della fase\\nnemica (esclusa l'unit\u00e0), conferisce\\nla condizione\u3010Trappola veggente\u3011a\\nquell'alleato per 1 turno.\\n\\nInfligge Att/Dif/Res -5 ai nemici in un'area\\ndi 3 righe o 3 colonne con al centro l'unit\u00e0\\ndurante lo scontro. Inoltre, se l'attacco del\\nnemico pu\u00f2 attivare la sua abilit\u00e0 speciale\\ne se ha 39 o meno di Res all'inizio dello scontro,\\ninfligge contatore +1 al nemico prima del suo\\nprimo attacco durante lo scontro (non \u00e8 possibile\\noltrepassare il limite massimo del contatore\\nnemico; con \"all'inizio dello scontro\" si escludono\\ngli aumenti alla Res conferiti dopo che il nemico\\n\u00e8 stato schierato, come effetti leggendari, mitici,\\neroi bonus, Grande talento ecc.).\\n\\nConferisce Att/Dif/Res +11 all'unit\u00e0, l'unit\u00e0\\ninfligge +25 di danno (escluse le abilit\u00e0 speciali\\ncon area d'effetto), riduce di 15 il danno da\\nattacchi del nemico (escluse le abilit\u00e0 speciali\\ncon area d'effetto) e conferisce contatore -X\\nall'unit\u00e0 prima del suo primo attacco durante\\nlo scontro (il valore di X \u00e8 pari al numero di\\npenalit\u00e0 attive sul nemico, escluse le penalit\u00e0\\nai parametri; massimo 2).\\n\\n\u3010Trappola veggente\u3011\\nSe il nemico attacca per primo ed \u00e8 il primo\\nattacco del turno in corso (la fase del giocatore\\ne quella nemica sono considerate\\nseparatamente), attiva i seguenti effetti:\\n- Annulla l'attacco del nemico e la sua azione\\nrisulta completata.\\n- Infligge\u3010Isolamento\u3011e lo stato che impedisce\\ndi contrattaccare il nemico durante la sua\\nprossima azione.\\n- Annulla Trappola veggente sul tuo esercito.\\n\\n(Questi effetti si attivano dopo le trappole in\\nBlitz eterei, ma prima di Aiuto; non si attivano\\nin Pedine di Loki.)\\n\\n\u3010Isolamento\u3011\\nIl bersaglio non pu\u00f2 usare n\u00e9 beneficiare di\\nabilit\u00e0 di aiuto durante la sua prossima azione.\\n(Il bersaglio non pu\u00f2 usare n\u00e9 beneficiare di\\nabilit\u00e0 come Danza e Canto, abilit\u00e0 che rimuovono\\npenalit\u00e0 come Ripristino e Ordine perentorio+,\\necc.)"
+	},
+	{
+		"key": "MSID_H_\u4e00\u5e74\u306e\u8a08\u306e\u6247\u5b50_NOSKW",
+		"value": "$aAnticipa l'attivazione dell'abilit\u00e0 speciale\\n(contatore -1).\\n\\nSe in difesa in Blitz eterei, conferisce\\nla condizione\u3010Trappola veggente\u3011agli\\nalleati pi\u00f9 vicini alla parte bassa della mappa\\ne posti sulla stessa colonna dell'unit\u00e0 e su\\nquelle adiacenti all'inizio della fase nemica\\nper 1 turno.\\n\\nSe non si \u00e8 in difesa in Blitz eterei, se tra\\ngli alleati pi\u00f9 vicini al nemico c'\u00e8 un solo\\nalleato con la Dif pi\u00f9 alta all'inizio della fase\\nnemica (esclusa l'unit\u00e0), conferisce\\nla condizione\u3010Trappola veggente\u3011a\\nquell'alleato per 1 turno.\\n\\nInfligge Att/Dif/Res -5 ai nemici in un'area\\ndi 3 righe o 3 colonne con al centro l'unit\u00e0\\ndurante lo scontro. Inoltre, se l'attacco del\\nnemico pu\u00f2 attivare la sua abilit\u00e0 speciale\\ne se ha 39 o meno di Res all'inizio dello scontro,\\ninfligge contatore +1 al nemico prima del suo\\nprimo attacco durante lo scontro (non \u00e8 possibile\\noltrepassare il limite massimo del contatore\\nnemico; con \"all'inizio dello scontro\" si escludono\\ngli aumenti alla Res conferiti dopo che il nemico\\n\u00e8 stato schierato, come effetti leggendari, mitici,\\neroi bonus, Grande talento ecc.).\\n\\nConferisce Att/Dif/Res +11 all'unit\u00e0, l'unit\u00e0\\ninfligge +25 di danno (escluse le abilit\u00e0 speciali\\ncon area d'effetto), riduce di 15 il danno da\\nattacchi del nemico (escluse le abilit\u00e0 speciali\\ncon area d'effetto) e conferisce contatore -X\\nall'unit\u00e0 prima del suo primo attacco durante\\nlo scontro (il valore di X \u00e8 pari al numero di\\npenalit\u00e0 attive sul nemico, escluse le penalit\u00e0\\nai parametri; massimo 2)."
+	},
+	{
+		"key": "MSID_H_\u5348\u5e74\u306e\u5f13",
+		"value": "Efficace contro le unit\u00e0 volanti.\\n\\nInfligge Att/Vel/Dif/Res -5 ai nemici in un'area\\ndi 3 righe o 3 colonne con al centro l'unit\u00e0, quei\\nnemici subiscono +10 di danno da attacchi\\n(escluse le abilit\u00e0 speciali con area d'effetto)\\ne riduce del 50% la percentuale delle abilit\u00e0\\nnon speciali del nemico con \"riduce di X% i danni\"\\ndurante lo scontro (escluse le abilit\u00e0 speciali con\\narea d'effetto).\\n\\nL'unit\u00e0 infligge +20 di danno (escluse le abilit\u00e0\\nspeciali con area d'effetto) e riduce di 10 il danno\\nda attacchi del nemico durante lo scontro\\n(escluse le abilit\u00e0 speciali con area d'effetto)."
+	},
+	{
+		"key": "MSID_H_\u5348\u5e74\u306e\u5f13\uff0b",
+		"value": "Efficace contro le unit\u00e0 volanti.\\n\\nInfligge Att/Vel/Dif/Res -5 ai nemici in un'area\\ndi 3 righe o 3 colonne con al centro l'unit\u00e0, quei\\nnemici subiscono +10 di danno da attacchi\\n(escluse le abilit\u00e0 speciali con area d'effetto)\\ne riduce del 50% la percentuale delle abilit\u00e0\\nnon speciali del nemico con \"riduce di X% i danni\"\\ndurante lo scontro (escluse le abilit\u00e0 speciali con\\narea d'effetto).\\n\\nL'unit\u00e0 infligge +20 di danno (escluse le abilit\u00e0\\nspeciali con area d'effetto) e riduce di 10 il danno\\nda attacchi del nemico durante lo scontro\\n(escluse le abilit\u00e0 speciali con area d'effetto)."
+	},
+	{
+		"key": "MSID_H_\u5929\u306b\u4ee3\u308f\u308a\u3066\u30fb\u8fd1",
+		"value": "$aPermette l'uso di\u3010Mobilit\u00e0 (dist. +1; max \uff14)\u3011.\\n\\nInfligge\u3010Adepto triangolo\u3011e\u3010Fragilit\u00e0\u3011ai nemici\\npi\u00f9 vicini e ai nemici entro 2 spazi da quei nemici\\ndurante le loro prossime azioni all'inizio del turno.\\n\\nConferisce Att/Vel/Dif/Res +9 all'unit\u00e0, l'unit\u00e0\\ninfligge +7 di danno (escluse le abilit\u00e0 speciali\\ncon area d'effetto), riduce di 7 il danno da\\nattacchi del nemico (escluse le abilit\u00e0 speciali\\ncon area d'effetto) e annulla gli effetti che\\ngarantiscono attacchi doppi al nemico e quelli\\nche impediscono attacchi doppi all'unit\u00e0 durante\\nlo scontro. Se\u3010Fragilit\u00e0\u3011\u00e8 attiva sul nemico,\\nse l'unit\u00e0 \u00e8 in vantaggio nel triangolo delle armi\\no se il nemico attacca per primo, l'unit\u00e0 esegue\\ndue attacchi durante lo scontro.\\n\\n\u3010Mobilit\u00e0 (dist. +1; max \uff14)\u3011\\nDopo un attacco, abilit\u00e0 di aiuto o distruzione\\ndi una struttura, l'unit\u00e0 pu\u00f2 spostarsi di\\nun numero di spazi pari al numero di spazi\\ntra la posizione di partenza e quella di arrivo\\ndell'unit\u00e0 prima di eseguire l'azione indicata\\nin precedenza, pi\u00f9 1. (Massimo \uff14.)\\n\\nL'unit\u00e0 si sposta in base al tipo di movimento.\\nUna volta per turno. Non pu\u00f2 attaccare n\u00e9\\naiutare. Non cumulabile; si applica solo il valore\\npi\u00f9 alto. Dopo lo spostamento, se un'abilit\u00e0 che\\nconferisce un'altra azione si dovesse attivare\\n(come Assalto impetuoso), Mobilit\u00e0 si attiver\u00e0\\ndopo l'azione conferita. Il movimento base\\ndell'unit\u00e0 non ha effetti su quello conferito.\\nNon pu\u00f2 trasferirsi (usando abilit\u00e0 come Ali di\\npiet\u00e0) a una distanza superiore al movimento\\nconcesso normalmente da Mobilit\u00e0.\\n\\n\u3010Adepto triangolo\u3011\\nConferisce Att +20% in caso di vantaggio\\nnel triangolo delle armi durante la sua\\nprossima azione e Att -20% in caso\\ndi svantaggio durante la sua prossima\\nazione.\\n\\n\u3010Fragilit\u00e0\u3011\\nGli attacchi del nemico infliggono +10 danni."
+	},
+	{
+		"key": "MSID_H_\u5929\u306b\u4ee3\u308f\u308a\u3066\u30fb\u8fd1_NOSKW",
+		"value": "$aPermette l'uso di\u3010Mobilit\u00e0 (dist. +1; max \uff14)\u3011.\\n\\nInfligge\u3010Adepto triangolo\u3011e\u3010Fragilit\u00e0\u3011ai nemici\\npi\u00f9 vicini e ai nemici entro 2 spazi da quei nemici\\ndurante le loro prossime azioni all'inizio del turno.\\n\\nConferisce Att/Vel/Dif/Res +9 all'unit\u00e0, l'unit\u00e0\\ninfligge +7 di danno (escluse le abilit\u00e0 speciali\\ncon area d'effetto), riduce di 7 il danno da\\nattacchi del nemico (escluse le abilit\u00e0 speciali\\ncon area d'effetto) e annulla gli effetti che\\ngarantiscono attacchi doppi al nemico e quelli\\nche impediscono attacchi doppi all'unit\u00e0 durante\\nlo scontro. Se\u3010Fragilit\u00e0\u3011\u00e8 attiva sul nemico,\\nse l'unit\u00e0 \u00e8 in vantaggio nel triangolo delle armi\\no se il nemico attacca per primo, l'unit\u00e0 esegue\\ndue attacchi durante lo scontro."
+	},
+	{
+		"key": "MSID_H_\u5929\u821e\u3044\u7acb\u3064",
+		"value": "L'unit\u00e0 pu\u00f2 spostarsi attraverso gli spazi del\\nnemico.\\n\\nPer ogni nemico entro 5 spazi dall'unit\u00e0, l'unit\u00e0\\npu\u00f2 spostarsi in uno qualsiasi degli spazi pi\u00f9\\nvicini adiacenti a quel nemico (a meno che non\\nsia terreno inaccessibile).\\n\\nInfligge Att/Vel/Dif -4 al nemico, annulla gli effetti\\nche conferiscono \"contatore -X\" al nemico, l'unit\u00e0\\ninfligge danni aggiuntivi pari al 20% della Vel\\no Dif dell'unit\u00e0 (il valore pi\u00f9 alto; escluse le abilit\u00e0\\nspeciali con area d'effetto) e riduce il danno da\\nattacchi del nemico di un valore pari al 20%\\ndella Vel o Dif dell'unit\u00e0 durante lo scontro\\n(il valore pi\u00f9 alto; escluse le abilit\u00e0 speciali\\ncon area d'effetto)."
+	},
+	{
+		"key": "MSID_H_\u653b\u901f\u5341\u7d0b\u7ae0\u30fb\u6cbb\u7652",
+		"value": "$aConferisce Att/Vel +5 all'unit\u00e0 e agli alleati in\\nun'area di 3 righe o 3 colonne con al centro\\nl'unit\u00e0, riduce di 5 il danno del primo attacco\\ndel nemico per l'unit\u00e0 e quegli alleati (con\\n\"primo attacco\" si intende normalmente il primo\\ncolpo, mentre per gli effetti che conferiscono\\n\"esegue due attacchi\", si intende il primo e\\nil secondo colpo) e riduce del 50% gli effetti\\ndi\u3010Ferite profonde\u3011per l'unit\u00e0 e quegli alleati\\ndurante lo scontro. Inoltre, ripristina il 40% dei PS\\nmassimi dopo l'inizio del loro scontro (si attiva\\ndopo gli effetti che infliggono danni dopo l'inizio\\ndello scontro; non cumulabile; si applica solo\\nil valore pi\u00f9 alto).\\n\\n\u3010Ferite profonde\u3011\\nI PS dell'unit\u00e0 non possono essere ripristinati\\ndurante la sua prossima azione."
+	},
+	{
+		"key": "MSID_H_\u653b\u901f\u5341\u7d0b\u7ae0\u30fb\u6cbb\u7652_NOSKW",
+		"value": "$aConferisce Att/Vel +5 all'unit\u00e0 e agli alleati in\\nun'area di 3 righe o 3 colonne con al centro\\nl'unit\u00e0, riduce di 5 il danno del primo attacco\\ndel nemico per l'unit\u00e0 e quegli alleati (con\\n\"primo attacco\" si intende normalmente il primo\\ncolpo, mentre per gli effetti che conferiscono\\n\"esegue due attacchi\", si intende il primo e\\nil secondo colpo) e riduce del 50% gli effetti\\ndi\u3010Ferite profonde\u3011per l'unit\u00e0 e quegli alleati\\ndurante lo scontro. Inoltre, ripristina il 40% dei PS\\nmassimi dopo l'inizio del loro scontro (si attiva\\ndopo gli effetti che infliggono danni dopo l'inizio\\ndello scontro; non cumulabile; si applica solo\\nil valore pi\u00f9 alto)."
+	},
+	{
+		"key": "MSID_H_\u653b\u6483\u9b54\u9632\u306e\u89e3\u653e",
+		"value": "$aConferisce\u3010Liberazione Att\u3011\\ne\u3010Liberazione Res\u3011all'unit\u00e0 e agli alleati\\npi\u00f9 vicini al nemico (unit\u00e0 esclusa) all'inizio\\ndella fase del giocatore o di quella nemica\\nper 1 turno.\\n\\nConferisce Att/Res +4 all'unit\u00e0 durante lo scontro.\\n\\nInfligge danni aggiuntivi durante lo scontro pari\\na 5 pi\u00f9 il numero di\u3010Bonus\u3011attivi sull'unit\u00e0 o\\nsugli alleati, esclusi i bonus ai parametri, all'unit\u00e0\\ne agli alleati sulla mappa con\u3010Liberazione Att\u3011\\no\u3010Liberazione Res\u3011attive (massimo 10; escluse\\nle abilit\u00e0 speciali con area d'effetto).\\n\\n\u3010Liberazione Att\u3011\\nL'Att aumenta durante lo scontro di un valore\\npari al numero di\u3010Bonus\u3011attivi sull'unit\u00e0,\\nesclusi i bonus ai parametri, +4 (massimo 8).\\n\\n\u3010Liberazione Res\u3011\\nLa Res aumenta durante lo scontro di un valore\\npari al numero di\u3010Bonus\u3011attivi sull'unit\u00e0,\\nesclusi i bonus ai parametri, +4 (massimo 8).\\n\\n\u3010Bonus\u3011\\nTutti gli effetti che durano \"per 1 turno\" o \"solo\\nper 1 turno\". Compresi i bonus conferiti da\\nabilit\u00e0 come Sprone o Incita ed effetti di\\nstato positivi (movimenti extra o effetti\\ntipo Dominio)."
+	},
+	{
+		"key": "MSID_H_\u653b\u6483\u9b54\u9632\u306e\u89e3\u653e_NOSKW",
+		"value": "$aConferisce\u3010Liberazione Att\u3011\\ne\u3010Liberazione Res\u3011all'unit\u00e0 e agli alleati\\npi\u00f9 vicini al nemico (unit\u00e0 esclusa) all'inizio\\ndella fase del giocatore o di quella nemica\\nper 1 turno.\\n\\nConferisce Att/Res +4 all'unit\u00e0 durante lo scontro.\\n\\nInfligge danni aggiuntivi durante lo scontro pari\\na 5 pi\u00f9 il numero di\u3010Bonus\u3011attivi sull'unit\u00e0 o\\nsugli alleati, esclusi i bonus ai parametri, all'unit\u00e0\\ne agli alleati sulla mappa con\u3010Liberazione Att\u3011\\no\u3010Liberazione Res\u3011attive (massimo 10; escluse\\nle abilit\u00e0 speciali con area d'effetto)."
+	},
+	{
+		"key": "MSID_H_\u6bd4\u7ffc\u30d0\u30eb\u30c9\u30eb",
+		"value": "$aAnnulla\u3010Penalit\u00e0\u3011e conferisce\\nAtt/Vel/Dif/Res +6,\u3010Bonus estremo\u3011\\ne\u3010Cancella affinit\u00e0\u3011all'unit\u00e0 e agli alleati\\nentro 3 spazi dall'unit\u00e0 per 1 turno.\\n\\n\u3010Penalit\u00e0\u3011\\nTutti gli effetti inflitti \"al nemico durante la sua\\nprossima azione\". Comprese le penalit\u00e0 causate\\nda abilit\u00e0 come Panico o Mina ed effetti di stato\\nnegativi (come incapacit\u00e0 di contrattaccare,\\nmovimenti limitati o gli effetti di abilit\u00e0 come\\nAdepto triangolo o Neutralizza).\\n\\n\u3010Bonus estremo\u3011\\nAtt/Vel/Dif/Res aumentano durante lo scontro\\ndi un valore pari al pi\u00f9 alto tra i bonus attivi\\nsu ognuno di quei parametri dell'unit\u00e0 e degli\\nalleati entro 2 spazi dall'unit\u00e0 per 1 turno.\\nOgni parametro \u00e8 calcolato singolarmente.\\n\\n\u3010Cancella affinit\u00e0\u3011\\nSe l'unit\u00e0 \u00e8 in svantaggio nel triangolo delle\\narmi, inverte anche l\u2019eventuale vantaggio\\nderivante dalle abilit\u00e0 del nemico per 1 turno."
+	},
+	{
+		"key": "MSID_H_\u6bd4\u7ffc\u30d0\u30eb\u30c9\u30eb_NOSKW",
+		"value": "$aAnnulla\u3010Penalit\u00e0\u3011e conferisce\\nAtt/Vel/Dif/Res +6,\u3010Bonus estremo\u3011\\ne\u3010Cancella affinit\u00e0\u3011all'unit\u00e0 e agli alleati\\nentro 3 spazi dall'unit\u00e0 per 1 turno."
+	},
+	{
+		"key": "MID_CHAPTER_TITLE_CX118",
+		"value": "Appendice 119"
+	},
+	{
+		"key": "MID_CHAPTER_CX118",
+		"value": "Buon anno, mortali"
+	},
+	{
+		"key": "MID_STAGE_TITLE_X1181",
+		"value": "Appendice 119-1"
+	},
+	{
+		"key": "MID_STAGE_TITLE_X1182",
+		"value": "Appendice 119-2"
+	},
+	{
+		"key": "MID_STAGE_TITLE_X1183",
+		"value": "Appendice 119-3"
+	},
+	{
+		"key": "MID_STAGE_X1181",
+		"value": "Sorella imbattibile"
+	},
+	{
+		"key": "MID_STAGE_X1182",
+		"value": "Vittoria prevista"
+	},
+	{
+		"key": "MID_STAGE_X1183",
+		"value": "Un futuro rilassante"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PB298",
+		"value": "Le abilit\u00e0: 298"
+	},
+	{
+		"key": "MID_STAGE_PB298",
+		"value": "Nuovo anno tra sorelle"
+	}
+]

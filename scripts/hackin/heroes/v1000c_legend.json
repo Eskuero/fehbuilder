@@ -1,0 +1,147 @@
+[
+	{
+		"id_tag": "PID_\u7d0b\u7ae0\u30a8\u30fc\u30c7\u30eb",
+		"roman": "EDELGARD_EMBLEM01",
+		"face_name": "ch17_02_Edelgardr_F_Emblem01",
+		"face_name2": "ch17_02_Edelgardr_F_Emblem01",
+		"legendary": {
+			"duo_skill_id": "SID_\u7d0b\u7ae0\u30a8\u30fc\u30c7\u30eb",
+			"bonus_effect": {
+				"hp": 0,
+				"atk": 0,
+				"spd": 0,
+				"def": 0,
+				"res": 0
+			},
+			"kind": 7,
+			"element": 0,
+			"bst": 0,
+			"pair_up": false,
+			"ae_extra": 0
+		},
+		"dragonflowers": {
+			"max_count": 5,
+			"costs": [
+				40,
+				80,
+				120,
+				160,
+				200
+			]
+		},
+		"timestamp": null,
+		"id_num": 1328,
+		"version_num": 1000,
+		"sort_value": 200100,
+		"origins": 20480,
+		"weapon_type": 2,
+		"tome_class": 0,
+		"move_type": 1,
+		"series": 12,
+		"random_pool": 0,
+		"permanent_hero": false,
+		"base_vactor_id": 225,
+		"refresher": false,
+		"base_stats": {
+			"hp": 23,
+			"atk": 10,
+			"spd": 8,
+			"def": 14,
+			"res": 7
+		},
+		"growth_rates": {
+			"hp": 55,
+			"atk": 90,
+			"spd": 50,
+			"def": 80,
+			"res": 70
+		},
+		"skills": [
+			[
+				"SID_\u9244\u306e\u65a7",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			[
+				"SID_\u92fc\u306e\u65a7",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u8a08\u7565\u30fb\u731b\u706b\u8a081",
+				"SID_\u5207\u308a\u8fd4\u30571",
+				"SID_\u8a08\u7565\u30fb\u4e00\u6589\u7a81\u64831",
+				null,
+				null
+			],
+			[
+				"SID_\u92fc\u306e\u65a7",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u9280\u306e\u65a7",
+				null,
+				"SID_\u86cd\u706b",
+				"SID_\u8a08\u7565\u30fb\u731b\u706b\u8a082",
+				"SID_\u5207\u308a\u8fd4\u30572",
+				"SID_\u8a08\u7565\u30fb\u4e00\u6589\u7a81\u64832",
+				null,
+				null
+			],
+			[
+				"SID_\u9280\u306e\u65a7",
+				null,
+				"SID_\u86cd\u706b",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u83ef\u708e",
+				"SID_\u8a08\u7565\u30fb\u731b\u706b\u8a083",
+				"SID_\u5207\u308a\u8fd4\u30573",
+				"SID_\u8a08\u7565\u30fb\u4e00\u6589\u7a81\u64833",
+				null,
+				null
+			],
+			[
+				"SID_\u9ed2\u9df2\u306e\u65a7",
+				null,
+				"SID_\u86cd\u706b",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u9023\u82b1\u6708\u98a8\u9583\u30fb\u72c2\u5d50",
+				"SID_\u8a08\u7565\u30fb\u731b\u706b\u8a084",
+				"SID_\u5f8c\u306e\u5148",
+				"SID_\u8a08\u7565\u30fb\u4e00\u6589\u7a81\u64834",
+				null,
+				null
+			]
+		]
+	}
+]

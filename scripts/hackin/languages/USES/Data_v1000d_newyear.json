@@ -1,0 +1,982 @@
+[
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_100",
+		"value": "$aEl Atq. de la unidad aumenta en combate\\nen una cuant\u00eda equivalente a 4 + el n\u00famero\\nde efectos de\u3010Bonificaci\u00f3n\u3011activos en la unidad\\n(m\u00e1x.: 8; sin contar las bonificaciones\\na los atributos). (Hasta el final del turno).\\n\\n\u3010Bonificaci\u00f3n\u3011\\nComprende todos los efectos que se activan\\n\"hasta el final del turno\" o \"solo ese turno\".\\nIncluye las bonificaciones de habilidades\\ncomo Potenciar o Impulso y los efectos\\npositivos, como movimiento extra o los\\nefectos de habilidades como Predominio."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_100_NOSKW",
+		"value": "$aEl Atq. de la unidad aumenta en combate\\nen una cuant\u00eda equivalente a 4 + el n\u00famero\\nde efectos de\u3010Bonificaci\u00f3n\u3011activos en la unidad\\n(m\u00e1x.: 8; sin contar las bonificaciones\\na los atributos). (Hasta el final del turno)."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_101",
+		"value": "$aLa Res. de la unidad aumenta en combate\\nen una cuant\u00eda equivalente a 4 + el n\u00famero\\nde efectos de\u3010Bonificaci\u00f3n\u3011activos en la unidad\\n(m\u00e1x.: 8; sin contar las bonificaciones\\na los atributos). (Hasta el final del turno).\\n\\n\u3010Bonificaci\u00f3n\u3011\\nComprende todos los efectos que se activan\\n\"hasta el final del turno\" o \"solo ese turno\".\\nIncluye las bonificaciones de habilidades\\ncomo Potenciar o Impulso y los efectos\\npositivos, como movimiento extra o los\\nefectos de habilidades como Predominio."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_101_NOSKW",
+		"value": "$aLa Res. de la unidad aumenta en combate\\nen una cuant\u00eda equivalente a 4 + el n\u00famero\\nde efectos de\u3010Bonificaci\u00f3n\u3011activos en la unidad\\n(m\u00e1x.: 8; sin contar las bonificaciones\\na los atributos). (Hasta el final del turno)."
+	},
+	{
+		"key": "MID_ENHANCE_HELP_100",
+		"value": "El Atq. de la unidad aumenta en una cuant\u00eda\\nequivalente al n\u00famero de bonificaciones\\nactivas en la unidad +4 (m\u00e1x.: 8)."
+	},
+	{
+		"key": "MID_ENHANCE_HELP_101",
+		"value": "La Res. de la unidad aumenta en una cuant\u00eda\\nequivalente al n\u00famero de bonificaciones\\nactivas en la unidad +4 (m\u00e1x.: 8)."
+	},
+	{
+		"key": "MID_MISSION_M202601A_TITLE",
+		"value": "Retos: enero"
+	},
+	{
+		"key": "MID_MISSION_M202601A_A1",
+		"value": "Asalto del coliseo: 1 mapa"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A1",
+		"value": "Gana una batalla en el asalto del coliseo."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A2",
+		"value": "Asalto del coliseo: 3 mapas"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A2",
+		"value": "Gana tres batallas seguidas\\nen el asalto del coliseo."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A3",
+		"value": "Asalto del coliseo: 5 mapas"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A3",
+		"value": "Gana cinco batallas seguidas en\\nel asalto del coliseo."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A4",
+		"value": "Vencer con Alfonse"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A4",
+		"value": "Vence a enemigos con Alfonse,\\nPr\u00edncipe de Askr."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A5",
+		"value": "Vencer con Sharena"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A5",
+		"value": "Vence a enemigos con Sharena,\\nPrincesa de Askr."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A6",
+		"value": "Vencer con Anna"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A6",
+		"value": "Vence a enemigos con Anna, Comandante."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A7",
+		"value": "Objetivo: rojo"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A7",
+		"value": "Vence a enemigos de tipo rojo."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A8",
+		"value": "Objetivo: azul"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A8",
+		"value": "Vence a enemigos de tipo azul."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A9",
+		"value": "Objetivo: verde"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A9",
+		"value": "Vence a enemigos de tipo verde."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A10",
+		"value": "Objetivo: gris"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A10",
+		"value": "Vence a enemigos de tipo gris."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A11",
+		"value": "Objetivo: infanter\u00eda"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A11",
+		"value": "Vence a enemigos de infanter\u00eda."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A12",
+		"value": "Objetivo: acorazados"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A12",
+		"value": "Vence a enemigos acorazados."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A13",
+		"value": "Poder anticaballer\u00eda"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A13",
+		"value": "Vence a unidades de caballer\u00eda."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A14",
+		"value": "Poder antia\u00e9reo"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A14",
+		"value": "Vence a enemigos a\u00e9reos."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A15",
+		"value": "Cap. 7 - Parte 1"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A15",
+		"value": "En el libro VIII, supera la 1.\u00aa parte del cap\u00edtulo 7\\nen modo extremo. Los cuatro aliados deben\\nsobrevivir."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A16",
+		"value": "Cap. 7 - Parte 2"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A16",
+		"value": "En el libro VIII, supera la 2.\u00aa parte del cap\u00edtulo 7\\nen modo extremo. Los cuatro aliados deben\\nsobrevivir."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A17",
+		"value": "Cap. 7 - Parte 3"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A17",
+		"value": "En el libro VIII, supera la 3.\u00aa parte del cap\u00edtulo 7\\nen modo extremo. Los cuatro aliados deben\\nsobrevivir."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A18",
+		"value": "Cap. 7 - Parte 4"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A18",
+		"value": "En el libro VIII, supera la 4.\u00aa parte del cap\u00edtulo 7\\nen modo extremo. Los cuatro aliados deben\\nsobrevivir."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A19",
+		"value": "Cap. 7 - Parte 5"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A19",
+		"value": "En el libro VIII, supera la 5.\u00aa parte del cap\u00edtulo 7\\nen modo extremo. Los cuatro aliados deben\\nsobrevivir."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A20",
+		"value": "AE: Ataque victorioso"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A20",
+		"value": "Vence al atacar en Asaltos et\u00e9reos."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A21",
+		"value": "AE: Ataque victorioso"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A21",
+		"value": "Vence al atacar en Asaltos et\u00e9reos."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A22",
+		"value": "AE: Ataque victorioso"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A22",
+		"value": "Vence al atacar en Asaltos et\u00e9reos."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A23",
+		"value": "Gladiador"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A23",
+		"value": "Vence a rivales de cualquier\\nnivel de dificultad en el coliseo."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A24",
+		"value": "Gladiador"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A24",
+		"value": "Vence a rivales de cualquier\\nnivel de dificultad en el coliseo."
+	},
+	{
+		"key": "MID_MISSION_M202601A_A25",
+		"value": "Gladiador"
+	},
+	{
+		"key": "MID_MISSION_H_M202601A_A25",
+		"value": "Vence a rivales de cualquier\\nnivel de dificultad en el coliseo."
+	},
+	{
+		"key": "MID_MISSION_S202601HERO01_TITLE",
+		"value": "Batallas m\u00edticas"
+	},
+	{
+		"key": "MID_MISSION_S202601HERO01_A1",
+		"value": "Derrotar a Vaida"
+	},
+	{
+		"key": "MID_MISSION_H_S202601HERO01_A1",
+		"value": "Gana la batalla m\u00edtica contra Vaida,\\nGeneral dragontina, con Anna, Comandante,\\nen tu batall\u00f3n."
+	},
+	{
+		"key": "MID_MISSION_S202601HERO01_A2",
+		"value": "Vaida contra Vaida"
+	},
+	{
+		"key": "MID_MISSION_H_S202601HERO01_A2",
+		"value": "Gana la batalla m\u00edtica contra Vaida, General\\ndragontina, en modo extremo o superior\\ncon Vaida, General dragontina, en tu batall\u00f3n."
+	},
+	{
+		"key": "MID_MISSION_S202601HERO01_A3",
+		"value": "Derrotar a Vaida: Anna"
+	},
+	{
+		"key": "MID_MISSION_H_S202601HERO01_A3",
+		"value": "Con Anna, Comandante, derrota a Vaida,\\nGeneral dragontina, en su versi\u00f3n de nivel\\n40 o superior."
+	},
+	{
+		"key": "MID_MISSION_S202601HERO01_A4",
+		"value": "Derrotar a Vaida: 40+"
+	},
+	{
+		"key": "MID_MISSION_H_S202601HERO01_A4",
+		"value": "Con Vaida, General dragontina, derrota a\\nVaida, General dragontina, en su versi\u00f3n\\nde nivel 40 o superior."
+	},
+	{
+		"key": "MID_MISSION_S202601HERO01_A5",
+		"value": "Derrotar a Vaida: a\u00e9reas"
+	},
+	{
+		"key": "MID_MISSION_H_S202601HERO01_A5",
+		"value": "Gana la batalla m\u00edtica contra Vaida, General\\ndragontina, en modo extremo o superior\\ncon un batall\u00f3n de unidades a\u00e9reas."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_TITLE",
+		"value": "\u00a1A\u00f1o Nuevo!"
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A1",
+		"value": "Vencer enemigos"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A1",
+		"value": "Vence a un enemigo."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A2",
+		"value": "Vencer enemigos"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A2",
+		"value": "Vence a un enemigo."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A3",
+		"value": "Victoria con espada"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A3",
+		"value": "Vence a enemigos con unidades con espada."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A4",
+		"value": "Victoria con lanza"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A4",
+		"value": "Vence a enemigos con unidades con lanza."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A5",
+		"value": "Victoria con hacha"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A5",
+		"value": "Vence a enemigos con unidades con hacha."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A6",
+		"value": "Victoria con arco gris"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A6",
+		"value": "Vence a enemigos con unidades\\nde tipo gris con arco."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A7",
+		"value": "Victoria con daga gris"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A7",
+		"value": "Vence a enemigos con unidades\\nde tipo gris con daga."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A8",
+		"value": "Victoria con bast\u00f3n"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A8",
+		"value": "Vence a enemigos con unidades con bast\u00f3n."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A9",
+		"value": "Gladiador"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A9",
+		"value": "Vence a rivales de cualquier\\nnivel de dificultad en el coliseo."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A10",
+		"value": "Gladiador"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A10",
+		"value": "Vence a rivales de cualquier\\nnivel de dificultad en el coliseo."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A11",
+		"value": "Gladiador"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A11",
+		"value": "Vence a rivales de cualquier\\nnivel de dificultad en el coliseo."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A12",
+		"value": "Puntuaci\u00f3n fragorosa"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A12",
+		"value": "Gana puntos en cualquier nivel de dificultad\\nen las batallas fragorosas."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A13",
+		"value": "Pruebas \u00e9picas"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A13",
+		"value": "Supera pruebas \u00e9picas."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A14",
+		"value": "AE: Ataque victorioso"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A14",
+		"value": "Vence al atacar en Asaltos et\u00e9reos."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A15",
+		"value": "AE: Ataque victorioso"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A15",
+		"value": "Vence al atacar en Asaltos et\u00e9reos."
+	},
+	{
+		"key": "MID_MISSION_S202601NEWYEAR01_A16",
+		"value": "AE: Ataque victorioso"
+	},
+	{
+		"key": "MID_MISSION_H_S202601NEWYEAR01_A16",
+		"value": "Vence al atacar en Asaltos et\u00e9reos."
+	},
+	{
+		"key": "MID_MISSION_S202601SENKA01_DAILY_TITLE",
+		"value": "La Tormenta"
+	},
+	{
+		"key": "MID_MISSION_S202601SENKA01_DAILY_A1",
+		"value": "Superar mapa"
+	},
+	{
+		"key": "MID_MISSION_H_S202601SENKA01_DAILY_A1",
+		"value": "Supera uno de los \u00faltimos\\nmapas de la Tormenta."
+	},
+	{
+		"key": "MID_MISSION_S202601SENKA01_DAILY_A2",
+		"value": "Superar mapa"
+	},
+	{
+		"key": "MID_MISSION_H_S202601SENKA01_DAILY_A2",
+		"value": "Supera uno de los \u00faltimos\\nmapas de la Tormenta."
+	},
+	{
+		"key": "MID_MISSION_S202601SENKA01_DAILY_A3",
+		"value": "Superar mapa"
+	},
+	{
+		"key": "MID_MISSION_H_S202601SENKA01_DAILY_A3",
+		"value": "Supera uno de los \u00faltimos\\nmapas de la Tormenta."
+	},
+	{
+		"key": "MID_MISSION_S202601SENKA01_DAILY_A4",
+		"value": "Superar mapa"
+	},
+	{
+		"key": "MID_MISSION_H_S202601SENKA01_DAILY_A4",
+		"value": "Supera uno de los \u00faltimos\\nmapas de la Tormenta."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_TITLE",
+		"value": "Pericia: espada"
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A1",
+		"value": "Victoria con espada"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A1",
+		"value": "Vence a enemigos que usen hacha\\ncon unidades con espada."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A2",
+		"value": "Victoria con espada"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A2",
+		"value": "Vence a enemigos que usen espada\\ncon unidades con espada."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A3",
+		"value": "Victoria con espada"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A3",
+		"value": "Vence a enemigos que usen lanza\\ncon unidades con espada."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A4",
+		"value": "Victoria con espada"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A4",
+		"value": "Vence a enemigos grises que usen arco\\ncon unidades con espada."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A5",
+		"value": "Victoria con espada"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A5",
+		"value": "Vence a enemigos grises que usen daga\\ncon unidades con espada."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A6",
+		"value": "Victoria con espada"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A6",
+		"value": "Vence a enemigos que usen bast\u00f3n\\ncon unidades con espada."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A7",
+		"value": "Triunfo con espada"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A7",
+		"value": "Vence a enemigos de nivel 30 o superior\\nque usen hacha con unidades con espada."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A8",
+		"value": "Triunfo con espada"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A8",
+		"value": "Vence a enemigos de nivel 30 o superior\\nque usen espada con unidades con espada."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A9",
+		"value": "Triunfo con espada"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A9",
+		"value": "Vence a enemigos de nivel 30 o superior\\nque usen lanza con unidades con espada."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A10",
+		"value": "Triunfo con espada"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A10",
+		"value": "Vence a enemigos grises de nivel 30 o superior\\nque usen arco con unidades con espada."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A11",
+		"value": "Triunfo con espada"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A11",
+		"value": "Vence a enemigos grises de nivel 30 o superior\\nque usen daga con unidades con espada."
+	},
+	{
+		"key": "MID_MISSION_S202601USEWEAPON01_A12",
+		"value": "Triunfo con espada"
+	},
+	{
+		"key": "MID_MISSION_H_S202601USEWEAPON01_A12",
+		"value": "Vence a enemigos de nivel 30 o superior\\nque usen bast\u00f3n con unidades con espada."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_TITLE",
+		"value": "Pr\u00e1ctica: enero"
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A1",
+		"value": "T. de pr\u00e1ctica - Estrato 1"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A1",
+		"value": "Supera el primer estrato de la torre de pr\u00e1ctica.\\nLos cuatro aliados deben sobrevivir."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A2",
+		"value": "T. de pr\u00e1ctica - Estrato 2"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A2",
+		"value": "Supera el segundo estrato de la torre de pr\u00e1ctica.\\nLos cuatro aliados deben sobrevivir."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A3",
+		"value": "T. de pr\u00e1ctica - Estrato 3"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A3",
+		"value": "Supera el tercer estrato de la torre de pr\u00e1ctica.\\nLos cuatro aliados deben sobrevivir."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A4",
+		"value": "T. de pr\u00e1ctica - Estrato 4"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A4",
+		"value": "Supera el cuarto estrato de la torre de pr\u00e1ctica.\\nLos cuatro aliados deben sobrevivir."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A5",
+		"value": "T. de pr\u00e1ctica - Estrato 5"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A5",
+		"value": "Supera el quinto estrato de la torre de pr\u00e1ctica.\\nLos cuatro aliados deben sobrevivir."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A6",
+		"value": "T. de pr\u00e1ctica - Estrato 6"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A6",
+		"value": "Supera el sexto estrato de la torre de pr\u00e1ctica.\\nLos cuatro aliados deben sobrevivir."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A7",
+		"value": "T. de pr\u00e1ctica - Estrato 7"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A7",
+		"value": "Supera el s\u00e9ptimo estrato de la torre de pr\u00e1ctica.\\nLos cuatro aliados deben sobrevivir."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A8",
+		"value": "T. de pr\u00e1ctica - Estrato 8"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A8",
+		"value": "Supera el octavo estrato de la torre de pr\u00e1ctica.\\nLos cuatro aliados deben sobrevivir."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A9",
+		"value": "T. de pr\u00e1ctica - Estrato 9"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A9",
+		"value": "Supera el noveno estrato de la torre de pr\u00e1ctica.\\nLos cuatro aliados deben sobrevivir."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A10",
+		"value": "T. de pr\u00e1ctica - Estrato 10"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A10",
+		"value": "Supera el d\u00e9cimo estrato de la torre de pr\u00e1ctica.\\nLos cuatro aliados deben sobrevivir."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A11",
+		"value": "T. de pr\u00e1ctica - Estrato 10"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A11",
+		"value": "Supera el d\u00e9cimo estrato de la torre de pr\u00e1ctica\\nusando solo unidades de infanter\u00eda en tu batall\u00f3n.\\n(Las unidades de apoyo desplegadas al usar\\nAgrupar no cuentan). Los cuatro aliados deben\\nsobrevivir."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A12",
+		"value": "T. de pr\u00e1ctica - Estrato 10"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A12",
+		"value": "Supera el d\u00e9cimo estrato de la torre de pr\u00e1ctica\\nusando solo unidades acorazadas en tu batall\u00f3n.\\n(Las unidades de apoyo desplegadas al usar\\nAgrupar no cuentan). Los cuatro aliados deben\\nsobrevivir."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A13",
+		"value": "T. de pr\u00e1ctica - Estrato 10"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A13",
+		"value": "Supera el d\u00e9cimo estrato de la torre de pr\u00e1ctica\\nusando solo unidades de caballer\u00eda en tu batall\u00f3n.\\n(Las unidades de apoyo desplegadas al usar\\nAgrupar no cuentan). Los cuatro aliados deben\\nsobrevivir."
+	},
+	{
+		"key": "MID_MISSION_W_M202601B_A14",
+		"value": "T. de pr\u00e1ctica - Estrato 10"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202601B_A14",
+		"value": "Supera el d\u00e9cimo estrato de la torre de pr\u00e1ctica\\nusando solo unidades a\u00e9reas en tu batall\u00f3n.\\n(Las unidades de apoyo desplegadas al usar\\nAgrupar no cuentan). Los cuatro aliados deben\\nsobrevivir."
+	},
+	{
+		"key": "MID_MISSION_W_S202601STORY_P01_TITLE",
+		"value": "A\u00f1o Nuevo terrenal"
+	},
+	{
+		"key": "MID_MISSION_W_S202601STORY_P01_A1",
+		"value": "Anexo 119-1: extremo"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202601STORY_P01_A1",
+		"value": "Supera la 1.\u00aa parte del anexo 119 en modo\\nextremo con un espadach\u00edn en tu batall\u00f3n.\\n(Las unidades de apoyo desplegadas al usar\\nAgrupar no cuentan). Los cuatro aliados deben\\nsobrevivir."
+	},
+	{
+		"key": "MID_MISSION_W_S202601STORY_P01_A2",
+		"value": "Anexo 119-2: extremo"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202601STORY_P01_A2",
+		"value": "Supera la 2.\u00aa parte del anexo 119 en modo\\nextremo con un lancero en tu batall\u00f3n.\\n(Las unidades de apoyo desplegadas al usar\\nAgrupar no cuentan). Los cuatro aliados deben\\nsobrevivir."
+	},
+	{
+		"key": "MID_MISSION_W_S202601STORY_P01_A3",
+		"value": "Anexo 119-3: extremo"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202601STORY_P01_A3",
+		"value": "Supera la 3.\u00aa parte del anexo 119 en modo\\nextremo con una unidad con hacha en tu\\nbatall\u00f3n. (Las unidades de apoyo desplegadas\\nal usar Agrupar no cuentan). Los cuatro aliados\\ndeben sobrevivir."
+	},
+	{
+		"key": "MPID_\u6bd4\u7ffc\u30d0\u30eb\u30c9\u30eb",
+		"value": "Baldr"
+	},
+	{
+		"key": "MPID_SEARCH_\u6bd4\u7ffc\u30d0\u30eb\u30c9\u30eb",
+		"value": "Baldr"
+	},
+	{
+		"key": "MPID_\u5e74\u660e\u30f4\u30a1\u30fc\u30ea",
+		"value": "V\u00e1li"
+	},
+	{
+		"key": "MPID_SEARCH_\u5e74\u660e\u30f4\u30a1\u30fc\u30ea",
+		"value": "Vali"
+	},
+	{
+		"key": "MPID_\u5e74\u660e\u30d8\u30a4\u30e0\u30c0\u30eb",
+		"value": "Heimdallr"
+	},
+	{
+		"key": "MPID_SEARCH_\u5e74\u660e\u30d8\u30a4\u30e0\u30c0\u30eb",
+		"value": "Heimdallr"
+	},
+	{
+		"key": "MPID_\u5e74\u660e\u30b6\u30ac\u30ed",
+		"value": "Sedgar"
+	},
+	{
+		"key": "MPID_SEARCH_\u5e74\u660e\u30b6\u30ac\u30ed",
+		"value": "Sedgar"
+	},
+	{
+		"key": "MPID_HONOR_\u6bd4\u7ffc\u30d0\u30eb\u30c9\u30eb",
+		"value": "\u00c9lite festiva"
+	},
+	{
+		"key": "MPID_HONOR_\u5e74\u660e\u30f4\u30a1\u30fc\u30ea",
+		"value": "Hermana devota"
+	},
+	{
+		"key": "MPID_HONOR_\u5e74\u660e\u30d8\u30a4\u30e0\u30c0\u30eb",
+		"value": "Fortuna prevista"
+	},
+	{
+		"key": "MPID_HONOR_\u5e74\u660e\u30b6\u30ac\u30ed",
+		"value": "Jinete festivo"
+	},
+	{
+		"key": "MPID_H_\u6bd4\u7ffc\u30d0\u30eb\u30c9\u30eb",
+		"value": "Diosas de \u00c1sgar\u00f0r, el reino celestial, que\\ndescendieron de los cielos para celebrar\\nel mejor A\u00f1o Nuevo posible."
+	},
+	{
+		"key": "MPID_H_\u5e74\u660e\u30f4\u30a1\u30fc\u30ea",
+		"value": "Una diosa de \u00c1sgar\u00f0r, el reino celestial, que\\nadora a su hermana Baldr y que busca celebrar\\nel A\u00f1o Nuevo con ella y con todo su esplendor."
+	},
+	{
+		"key": "MPID_H_\u5e74\u660e\u30d8\u30a4\u30e0\u30c0\u30eb",
+		"value": "Una diosa de \u00c1sgar\u00f0r, el reino celestial, que es\\nconocida por su clarividencia. Puede planear un\\na\u00f1o perfecto desde el primer d\u00eda."
+	},
+	{
+		"key": "MPID_H_\u5e74\u660e\u30b6\u30ac\u30ed",
+		"value": "Miembro de los hombres de Coyote de Aurelis\\ny segundo al mando bajo el liderazgo de Hardin.\\nSe mantiene calmado y confiado frente al fulgor\\nde la ma\u00f1ana, indiferente al bullicio del A\u00f1o\\nNuevo. Aparece en Fire Emblem: Mystery\\nof the Emblem."
+	},
+	{
+		"key": "MPID_VOICE_\u6bd4\u7ffc\u30d0\u30eb\u30c9\u30eb",
+		"value": "Sam Slade + Emi Lo"
+	},
+	{
+		"key": "MPID_VOICE_\u5e74\u660e\u30f4\u30a1\u30fc\u30ea",
+		"value": "Mia Paige"
+	},
+	{
+		"key": "MPID_VOICE_\u5e74\u660e\u30d8\u30a4\u30e0\u30c0\u30eb",
+		"value": "Elsie Lovelock"
+	},
+	{
+		"key": "MPID_VOICE_\u5e74\u660e\u30b6\u30ac\u30ed",
+		"value": "Brandon Jay"
+	},
+	{
+		"key": "MPID_ILLUST_\u6bd4\u7ffc\u30d0\u30eb\u30c9\u30eb",
+		"value": "HACCAN"
+	},
+	{
+		"key": "MPID_ILLUST_\u5e74\u660e\u30f4\u30a1\u30fc\u30ea",
+		"value": "ecu (\u3048\u304f)"
+	},
+	{
+		"key": "MPID_ILLUST_\u5e74\u660e\u30d8\u30a4\u30e0\u30c0\u30eb",
+		"value": "Homare (\u8a89)"
+	},
+	{
+		"key": "MPID_ILLUST_\u5e74\u660e\u30b6\u30ac\u30ed",
+		"value": "motsutsu / Trys Inc."
+	},
+	{
+		"key": "MPID_LEGEND_\u6bd4\u7ffc\u30d0\u30eb\u30c9\u30eb",
+		"value": "(Las habilidades dobles se pueden usar una vez\\npor mapa tocando el bot\u00f3n correspondiente. Las\\nparejas de unidades desplegadas con Agrupar\\nno cuentan).\\n(Si una unidad cuenta con un estado o una\\nhabilidad que le permita usar un Estilo, no podr\u00e1\\nusar habilidades dobles o armonizadas mientras\\ntodav\u00eda pueda realizar una acci\u00f3n, y s\u00ed podr\u00e1\\nusarlas despu\u00e9s de que la unidad haya actuado).\\n\\nEfecto est\u00e1ndar 1: Lid\\nSi la unidad es de rareza 5 \u2605, nivel 40 y la suma\\nde sus atributos es inferior a 220, contar\u00e1 como\\n220 en modos como el coliseo. (Aparecer\u00e1n\\nrivales que otorgan m\u00e1s puntos. La suma de\\natributos se calcula sin tener en cuenta las\\nbonificaciones obtenidas al combinar h\u00e9roes o\\nmediante habilidades)."
+	},
+	{
+		"key": "MID_TIPS_Summon_v1000d_newyear_01_\u6bd4\u7ffc\u30d0\u30eb\u30c9\u30eb",
+		"value": "Pueden derrotar a los rivales de tipo\\nverde con Estilo. Atraviesan 5 casillas\\npara ponerse a salvo con gran porte."
+	},
+	{
+		"key": "MID_TIPS_Summon_v1000d_newyear_01_\u5e74\u660e\u30f4\u30a1\u30fc\u30ea",
+		"value": "Se recupera antes de la batalla y\\npuede sobrevivir a ataques letales.\\nTambi\u00e9n otorga este poder sanador\\na sus aliados."
+	},
+	{
+		"key": "MID_TIPS_Summon_v1000d_newyear_01_\u5e74\u660e\u30d8\u30a4\u30e0\u30c0\u30eb",
+		"value": "Restringe a los enemigos con Trampa\\nprof\u00e9tica. Aumenta su poder con\\nefectos de Liberaci\u00f3n y abruma a los\\nenemigos con su habilidad especial."
+	},
+	{
+		"key": "MID_TIPS_Summon_v1000d_newyear_01_\u5e74\u660e\u30b6\u30ac\u30ed",
+		"value": "Inflige +10 de da\u00f1o a rivales en una\\ngran \u00e1rea. Usa Refugio a la vez que\\nexpone las debilidades del enemigo."
+	},
+	{
+		"key": "MSID_\u5929\u306e\u5973\u795e\u59c9\u59b9\u306e\u796d\u5668",
+		"value": "Objetos divinos"
+	},
+	{
+		"key": "MSID_SEARCH_\u5929\u306e\u5973\u795e\u59c9\u59b9\u306e\u796d\u5668",
+		"value": "Objetos divinos"
+	},
+	{
+		"key": "MSID_\u611b\u3057\u304d\u59c9\u306e\u7fbd\u5b50\u677f",
+		"value": "Hagoita Baldr"
+	},
+	{
+		"key": "MSID_SEARCH_\u611b\u3057\u304d\u59c9\u306e\u7fbd\u5b50\u677f",
+		"value": "Hagoita Baldr"
+	},
+	{
+		"key": "MSID_\u4e00\u5e74\u306e\u8a08\u306e\u6247\u5b50",
+		"value": "Abanico festivo"
+	},
+	{
+		"key": "MSID_SEARCH_\u4e00\u5e74\u306e\u8a08\u306e\u6247\u5b50",
+		"value": "Abanico festivo"
+	},
+	{
+		"key": "MSID_\u5348\u5e74\u306e\u5f13",
+		"value": "Arco caballo"
+	},
+	{
+		"key": "MSID_SEARCH_\u5348\u5e74\u306e\u5f13",
+		"value": "Arco caballo"
+	},
+	{
+		"key": "MSID_\u5348\u5e74\u306e\u5f13\uff0b",
+		"value": "Arco caballo +"
+	},
+	{
+		"key": "MSID_SEARCH_\u5348\u5e74\u306e\u5f13\uff0b",
+		"value": "Arco caballo +"
+	},
+	{
+		"key": "MSID_\u5929\u306b\u4ee3\u308f\u308a\u3066\u30fb\u8fd1",
+		"value": "Portavoz cel. cer."
+	},
+	{
+		"key": "MSID_SEARCH_\u5929\u306b\u4ee3\u308f\u308a\u3066\u30fb\u8fd1",
+		"value": "Portavoz cel. cer."
+	},
+	{
+		"key": "MSID_\u5929\u821e\u3044\u7acb\u3064",
+		"value": "Ascenso divino"
+	},
+	{
+		"key": "MSID_SEARCH_\u5929\u821e\u3044\u7acb\u3064",
+		"value": "Ascenso divino"
+	},
+	{
+		"key": "MSID_\u653b\u901f\u5341\u7d0b\u7ae0\u30fb\u6cbb\u7652",
+		"value": "Est\u00edmulo reg. A/V"
+	},
+	{
+		"key": "MSID_SEARCH_\u653b\u901f\u5341\u7d0b\u7ae0\u30fb\u6cbb\u7652",
+		"value": "Estimulo reg. A/V"
+	},
+	{
+		"key": "MSID_\u653b\u6483\u9b54\u9632\u306e\u89e3\u653e",
+		"value": "Liberaci\u00f3n A/R"
+	},
+	{
+		"key": "MSID_SEARCH_\u653b\u6483\u9b54\u9632\u306e\u89e3\u653e",
+		"value": "Liberacion A/R"
+	},
+	{
+		"key": "MSID_H_\u5929\u306e\u5973\u795e\u59c9\u59b9\u306e\u796d\u5668",
+		"value": "$aFacilita la ejecuci\u00f3n de habilidades especiales: -1\\na la cuenta regresiva. Anula las bonificaciones de\\neficacia contra las unidades a\u00e9reas.\\n\\nInflige Atq., Vel., Def. y Res. -5 a los enemigos\\nsituados en una cruz de 3 columnas y 3 filas\\nrespecto a la unidad, y una penalizaci\u00f3n\\nadicional a su Atq., Vel., Def. y Res. equivalente\\na la bonificaci\u00f3n actual de dichos atributos del\\nrival \u00d7 2 (cada penalizaci\u00f3n se aplica por\\nseparado) y, si el rival cuenta con habilidades\\nque no sean especiales y que reduzcan el da\u00f1o\\nporcentualmente, el efecto de dichas habilidades\\ndisminuye a la mitad en combate (sin contar las\\nhabilidades especiales con \u00e1rea de efecto).\\n\\nLa unidad obtiene Atq., Vel., Def. y Res. +10, e\\ninflige +25 puntos de da\u00f1o (sin contar las\\nhabilidades especiales con \u00e1rea de efecto). Se\\nreduce en X puntos el da\u00f1o de los ataques\\nenemigos (sin contar las habilidades especiales\\ncon \u00e1rea de efecto) y el da\u00f1o de la habilidad\\nespecial del rival se vuelve a reducir en X (sin\\ncontar las habilidades especiales con \u00e1rea de\\nefecto; con desventaja en el tri\u00e1ngulo de armas,\\nX = 20 % de la Vel. de la unidad; de lo contrario,\\nX = 50 % de su Vel.), y se anulan los efectos que\\ninfligen +X a su cuenta regresiva en combate.\\n\\nLa unidad puede usar el\u3010Estilo\u3011siguiente:\\n\u2015\u2015\u2015 Tri\u00e1ngulo de las armas: Estilo Rojo \u2015\u2015\u2015\\nAl determinar el tri\u00e1ngulo de armas, se considera\\nque la unidad es roja (sin efecto frente a los\\nefectos de habilidad que se activan seg\u00fan el\\natributo, como \"en combate con un rival rojo\").\\nEste estilo solo se puede usar una vez por turno.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\n\\n\u3010Estilo\u3011\\nCambia de estilo tocando el bot\u00f3n \"Estilo\"\\nen la parte inferior de la pantalla.\\n\\nEl estilo de una unidad solo se activa cuando\\nesta act\u00faa. El uso de Estilo se desactiva\\ncuando la unidad se despliega con Agrupar o\\ncuando esta est\u00e9 equipada con varias\\nhabilidades que tengan un estilo."
+	},
+	{
+		"key": "MSID_H_\u5929\u306e\u5973\u795e\u59c9\u59b9\u306e\u796d\u5668_NOSKW",
+		"value": "$aFacilita la ejecuci\u00f3n de habilidades especiales: -1\\na la cuenta regresiva. Anula las bonificaciones de\\neficacia contra las unidades a\u00e9reas.\\n\\nInflige Atq., Vel., Def. y Res. -5 a los enemigos\\nsituados en una cruz de 3 columnas y 3 filas\\nrespecto a la unidad, y una penalizaci\u00f3n\\nadicional a su Atq., Vel., Def. y Res. equivalente\\na la bonificaci\u00f3n actual de dichos atributos del\\nrival \u00d7 2 (cada penalizaci\u00f3n se aplica por\\nseparado) y, si el rival cuenta con habilidades\\nque no sean especiales y que reduzcan el da\u00f1o\\nporcentualmente, el efecto de dichas habilidades\\ndisminuye a la mitad en combate (sin contar las\\nhabilidades especiales con \u00e1rea de efecto).\\n\\nLa unidad obtiene Atq., Vel., Def. y Res. +10, e\\ninflige +25 puntos de da\u00f1o (sin contar las\\nhabilidades especiales con \u00e1rea de efecto). Se\\nreduce en X puntos el da\u00f1o de los ataques\\nenemigos (sin contar las habilidades especiales\\ncon \u00e1rea de efecto) y el da\u00f1o de la habilidad\\nespecial del rival se vuelve a reducir en X (sin\\ncontar las habilidades especiales con \u00e1rea de\\nefecto; con desventaja en el tri\u00e1ngulo de armas,\\nX = 20 % de la Vel. de la unidad; de lo contrario,\\nX = 50 % de su Vel.), y se anulan los efectos que\\ninfligen +X a su cuenta regresiva en combate.\\n\\nLa unidad puede usar el\u3010Estilo\u3011siguiente:\\n\u2015\u2015\u2015 Tri\u00e1ngulo de las armas: Estilo Rojo \u2015\u2015\u2015\\nAl determinar el tri\u00e1ngulo de armas, se considera\\nque la unidad es roja (sin efecto frente a los\\nefectos de habilidad que se activan seg\u00fan el\\natributo, como \"en combate con un rival rojo\").\\nEste estilo solo se puede usar una vez por turno.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015"
+	},
+	{
+		"key": "MSID_H_\u611b\u3057\u304d\u59c9\u306e\u7fbd\u5b50\u677f",
+		"value": "$aPermite usar\u3010Movilidad (Rest.; M\u00ednimo: \uff11)\u3011.\\n\\nAnula las bonificaciones de eficacia contra las\\nunidades a\u00e9reas. Otorga Vel. +3. Permite\\ncontratacar independientemente de lo lejos que\\nest\u00e9 el enemigo.\\n\\nOtorga Atq. y Vel. +5 a los aliados situados\\nen un radio de 3 casillas de la unidad en\\ncombate y dichos aliados pueden contratacar\\nindependientemente de lo lejos que est\u00e9 el\\nenemigo.\\n\\nLos aliados situados en un radio de 3 casillas\\nde la unidad obtienen el siguiente efecto: si\\ndicho aliado tiene PV > 1, sobrevive a un ataque\\nmortal con 1 PV restante y, tras el combate,\\nrecupera 40 PV y obtiene una bonificaci\u00f3n\\nde\u3010Gran talento\u3011+10 a su Atq. y Vel. (el efecto\\nsolo se activa una vez por mapa para el batall\u00f3n\\ndel jugador; no acumulable con efectos\\nde habilidades no especiales que permitan\\na la unidad sobrevivir con 1 PV a un ataque\\nmortal; cuando se active otro efecto semejante\\nen un aliado al que se haya otorgado este efecto,\\nel efecto de esta habilidad tambi\u00e9n se activar\u00e1).\\n\\nLa unidad obtiene Atq., Vel., Def. y Res. +15,\\nse anulan las bonificaciones del rival, la unidad\\ninflige X puntos de da\u00f1o adicionales (sin contar\\nlas habilidades especiales con \u00e1rea de efecto;\\ndonde X equivale a 15 m\u00e1s el valor total de la\\nbonificaci\u00f3n de\u3010Gran talento\u3011a su Atq. y Vel.),\\nse reduce en 15 puntos el da\u00f1o que inflige el\\nprimer ataque del rival (\"primer ataque\" suele\\nreferirse solo al primer golpe; en cambio, con\\nefectos que otorgan \"la unidad ataca dos veces\",\\nse refiere al primero y al segundo) y se anulan\\nlos efectos que garantizan un ataque doble de\\nlos enemigos y los que impiden que sea la unidad\\nquien ejecute uno en combate.\\n\\n(Esta habilidad otorga un m\u00e1ximo\\nde\u3010Gran talento\u3011+10).\\n\\n\u3010Movilidad (Rest.; M\u00ednimo: \uff11)\u3011\\nDespu\u00e9s de atacar, usar una habilidad de apoyo\\no destruir una estructura, la unidad puede\\ndesplazarse una cantidad de casillas igual\\nal n.\u00ba de movimientos que no haya usado\\nen ese turno (m\u00ednimo: \uff11; si la unidad\\nha usado una habilidad de desplazamiento que\\nla ha teletransportado, el n.\u00ba de movimientos\\nrestantes es \uff11 casilla(s)). (Solo una\\nvez por turno. Solo se aplica el valor m\u00e1s alto.\\nNo acumulable).\\n\\n\u3010Gran talento\u3011\\nA\u00f1ade el valor de Gran talento (+X) a los\\natributos especificados (hasta el final de la\\nbatalla; el valor m\u00e1ximo de X est\u00e1 determinado\\npor el valor de cada uno de los atributos,\\ncon un l\u00edmite de 99, calculando cada atributo\\npor separado, y no puede superar el valor\\nm\u00e1ximo definido en cada habilidad; las mejoras\\nde los atributos no cuentan como efectos\\nde bonificaci\u00f3n)."
+	},
+	{
+		"key": "MSID_H_\u611b\u3057\u304d\u59c9\u306e\u7fbd\u5b50\u677f_NOSKW",
+		"value": "$aPermite usar\u3010Movilidad (Rest.; M\u00ednimo: \uff11)\u3011.\\n\\nAnula las bonificaciones de eficacia contra las\\nunidades a\u00e9reas. Otorga Vel. +3. Permite\\ncontratacar independientemente de lo lejos que\\nest\u00e9 el enemigo.\\n\\nOtorga Atq. y Vel. +5 a los aliados situados\\nen un radio de 3 casillas de la unidad en\\ncombate y dichos aliados pueden contratacar\\nindependientemente de lo lejos que est\u00e9 el\\nenemigo.\\n\\nLos aliados situados en un radio de 3 casillas\\nde la unidad obtienen el siguiente efecto: si\\ndicho aliado tiene PV > 1, sobrevive a un ataque\\nmortal con 1 PV restante y, tras el combate,\\nrecupera 40 PV y obtiene una bonificaci\u00f3n\\nde\u3010Gran talento\u3011+10 a su Atq. y Vel. (el efecto\\nsolo se activa una vez por mapa para el batall\u00f3n\\ndel jugador; no acumulable con efectos\\nde habilidades no especiales que permitan\\na la unidad sobrevivir con 1 PV a un ataque\\nmortal; cuando se active otro efecto semejante\\nen un aliado al que se haya otorgado este efecto,\\nel efecto de esta habilidad tambi\u00e9n se activar\u00e1).\\n\\nLa unidad obtiene Atq., Vel., Def. y Res. +15,\\nse anulan las bonificaciones del rival, la unidad\\ninflige X puntos de da\u00f1o adicionales (sin contar\\nlas habilidades especiales con \u00e1rea de efecto;\\ndonde X equivale a 15 m\u00e1s el valor total de la\\nbonificaci\u00f3n de\u3010Gran talento\u3011a su Atq. y Vel.),\\nse reduce en 15 puntos el da\u00f1o que inflige el\\nprimer ataque del rival (\"primer ataque\" suele\\nreferirse solo al primer golpe; en cambio, con\\nefectos que otorgan \"la unidad ataca dos veces\",\\nse refiere al primero y al segundo) y se anulan\\nlos efectos que garantizan un ataque doble de\\nlos enemigos y los que impiden que sea la unidad\\nquien ejecute uno en combate.\\n\\n(Esta habilidad otorga un m\u00e1ximo\\nde\u3010Gran talento\u3011+10)."
+	},
+	{
+		"key": "MSID_H_\u4e00\u5e74\u306e\u8a08\u306e\u6247\u5b50",
+		"value": "$aFacilita la ejecuci\u00f3n de habilidades especiales:\\n-1 a la cuenta regresiva.\\n\\nSi se est\u00e1 librando una batalla defensiva\\nen los asaltos et\u00e9reos, al inicio del primer\\nturno del enemigo, otorga\u3010Trampa prof\u00e9tica\u3011\\na los aliados m\u00e1s cercanos al borde inferior\\ndel mapa situados en la misma columna que\\nla unidad y en las 2 adyacentes hasta el\\nfinal del turno.\\n\\nSi no se est\u00e1 librando una batalla defensiva\\nen los asaltos et\u00e9reos, al inicio del primer\\nturno del enemigo, si hay solo un aliado con\\nla Def. m\u00e1s alta de entre los aliados cercanos\\nal enemigo (excluyendo a la unidad), a dicho\\naliado se le otorga el efecto\u3010Trampa prof\u00e9tica\u3011\\nhasta el final del turno.\\n\\nInflige Atq., Def. y Res. -5 a los enemigos situados\\nen una cruz de 3 columnas y 3 filas respecto a\\nla unidad durante el combate. Y, si la habilidad\\nespecial del rival puede activarse al atacar este\\ny su Res. al inicio del combate es \u2264 39, inflige\\n+1 a la cuenta regresiva del rival antes de su\\nprimer ataque durante el combate (no puede\\nsuperar el valor m\u00e1ximo de la cuenta regresiva\\ndel enemigo; \"al inicio del combate\" excluye los\\naumentos a la Res. otorgados cuando se\\ndespliega un enemigo, como con efectos\\nlegendarios, m\u00edticos, h\u00e9roes de temporada,\\nGran talento, etc.).\\n\\nLa unidad obtiene Atq., Def. y Res. +11 e inflige\\n25 puntos de da\u00f1o adicionales (sin contar las\\nhabilidades especiales con \u00e1rea de efecto), se\\nreduce en 15 el da\u00f1o de los ataques enemigos\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto) y la unidad obtiene -X a su cuenta\\nregresiva antes de su primer ataque en combate,\\ndonde X equivale al n\u00famero total de efectos\\nde penalizaci\u00f3n activos en el rival (sin contar\\nlas penalizaciones a los atributos; m\u00e1x.: 2).\\n\\n\u3010Trampa prof\u00e9tica\u3011\\nSi el rival inicia el ataque y es\\nel primer combate del turno actual\\n(el turno del jugador y el turno del rival\\nse cuentan por separado), se activan\\nlos siguientes efectos:\\n- Se anula el ataque del rival,\\nlo que concluye su acci\u00f3n.\\n- Inflige\u3010Aislamiento\u3011y un estado alterado\\nque impide contratacar al rival en su\\npr\u00f3xima acci\u00f3n.\\n- Anula la habilidad Trampa prof\u00e9tica\\notorgada a tu ej\u00e9rcito.\\n\\n(Estos efectos se activan despu\u00e9s de las\\ntrampas de los asaltos et\u00e9reos, pero antes que\\nProtecci\u00f3n. No se activa en Peones de Loki).\\n\\n\u3010Aislamiento\u3011\\nEl objetivo no puede usar ni recibir habilidades\\nde apoyo en su pr\u00f3xima acci\u00f3n. (Estas engloban\\nlas habilidades como Bailar o Cantar y las que\\nanulan las penalizaciones de los aliados, como\\nRestaurar u Orden Imperiosa +)."
+	},
+	{
+		"key": "MSID_H_\u4e00\u5e74\u306e\u8a08\u306e\u6247\u5b50_NOSKW",
+		"value": "$aFacilita la ejecuci\u00f3n de habilidades especiales:\\n-1 a la cuenta regresiva.\\n\\nSi se est\u00e1 librando una batalla defensiva\\nen los asaltos et\u00e9reos, al inicio del primer\\nturno del enemigo, otorga\u3010Trampa prof\u00e9tica\u3011\\na los aliados m\u00e1s cercanos al borde inferior\\ndel mapa situados en la misma columna que\\nla unidad y en las 2 adyacentes hasta el\\nfinal del turno.\\n\\nSi no se est\u00e1 librando una batalla defensiva\\nen los asaltos et\u00e9reos, al inicio del primer\\nturno del enemigo, si hay solo un aliado con\\nla Def. m\u00e1s alta de entre los aliados cercanos\\nal enemigo (excluyendo a la unidad), a dicho\\naliado se le otorga el efecto\u3010Trampa prof\u00e9tica\u3011\\nhasta el final del turno.\\n\\nInflige Atq., Def. y Res. -5 a los enemigos situados\\nen una cruz de 3 columnas y 3 filas respecto a\\nla unidad durante el combate. Y, si la habilidad\\nespecial del rival puede activarse al atacar este\\ny su Res. al inicio del combate es \u2264 39, inflige\\n+1 a la cuenta regresiva del rival antes de su\\nprimer ataque durante el combate (no puede\\nsuperar el valor m\u00e1ximo de la cuenta regresiva\\ndel enemigo; \"al inicio del combate\" excluye los\\naumentos a la Res. otorgados cuando se\\ndespliega un enemigo, como con efectos\\nlegendarios, m\u00edticos, h\u00e9roes de temporada,\\nGran talento, etc.).\\n\\nLa unidad obtiene Atq., Def. y Res. +11 e inflige\\n25 puntos de da\u00f1o adicionales (sin contar las\\nhabilidades especiales con \u00e1rea de efecto), se\\nreduce en 15 el da\u00f1o de los ataques enemigos\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto) y la unidad obtiene -X a su cuenta\\nregresiva antes de su primer ataque en combate,\\ndonde X equivale al n\u00famero total de efectos\\nde penalizaci\u00f3n activos en el rival (sin contar\\nlas penalizaciones a los atributos; m\u00e1x.: 2)."
+	},
+	{
+		"key": "MSID_H_\u5348\u5e74\u306e\u5f13",
+		"value": "Eficaz contra unidades a\u00e9reas.\\n\\nInflige Atq., Vel., Def. y Res. -5 a los enemigos\\nsituados en una cruz de 3 columnas y 3 filas\\nrespecto a la unidad. Los enemigos sufren\\n10 puntos de da\u00f1o adicionales de los ataques\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto) y, si el rival cuenta con habilidades\\nque no sean especiales y que reduzcan el da\u00f1o\\nporcentualmente, el efecto de dichas habilidades\\ndisminuye a la mitad en combate (sin contar\\nlas habilidades especiales con \u00e1rea de efecto).\\n\\nLa unidad inflige 20 puntos de da\u00f1o adicionales\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto) y se reduce el da\u00f1o de los ataques\\nenemigos en 10 puntos durante el combate\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto)."
+	},
+	{
+		"key": "MSID_H_\u5348\u5e74\u306e\u5f13\uff0b",
+		"value": "Eficaz contra unidades a\u00e9reas.\\n\\nInflige Atq., Vel., Def. y Res. -5 a los enemigos\\nsituados en una cruz de 3 columnas y 3 filas\\nrespecto a la unidad. Los enemigos sufren\\n10 puntos de da\u00f1o adicionales de los ataques\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto) y, si el rival cuenta con habilidades\\nque no sean especiales y que reduzcan el da\u00f1o\\nporcentualmente, el efecto de dichas habilidades\\ndisminuye a la mitad en combate (sin contar\\nlas habilidades especiales con \u00e1rea de efecto).\\n\\nLa unidad inflige 20 puntos de da\u00f1o adicionales\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto) y se reduce el da\u00f1o de los ataques\\nenemigos en 10 puntos durante el combate\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto)."
+	},
+	{
+		"key": "MSID_H_\u5929\u306b\u4ee3\u308f\u308a\u3066\u30fb\u8fd1",
+		"value": "$aPermite usar\u3010Movilidad (Dist. +1; M\u00e1ximo: \uff14)\u3011.\\n\\nAl inicio del turno, inflige\u3010Triadepto\u3011y\\n\u3010Exposici\u00f3n\u3011a los enemigos m\u00e1s cercanos\\ny a los rivales situados en un radio de\\n2 casillas de dichos enemigos en su pr\u00f3xima\\nacci\u00f3n.\\n\\nLa unidad obtiene Atq., Vel., Def. y Res. +9 e\\ninflige 7 puntos de da\u00f1o adicionales (sin contar\\nlas habilidades especiales con \u00e1rea de efecto),\\nse reduce en 7 el da\u00f1o de los ataques enemigos\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto) y se anulan los efectos que garantizan\\nun ataque doble de los enemigos y los que\\nimpiden que sea la unidad quien ejecute uno en\\ncombate. Si el rival tiene efectos de\u3010Exposici\u00f3n\u3011\\nactivos, si la unidad tiene la ventaja en el tri\u00e1ngulo\\nde armas o si el rival inicia el ataque, la unidad\\nataca 2 veces durante el combate.\\n\\n\u3010Movilidad (Dist. +1; M\u00e1ximo: \uff14)\u3011\\nDespu\u00e9s de atacar, usar una habilidad de apoyo\\no destruir una estructura, la unidad puede\\nmoverse un n\u00famero de casillas igual a las que\\nhaya entre su posici\u00f3n inicial y final antes\\nde haber actuado +1 (m\u00e1ximo: \uff14).\\n\\n(La unidad se desplaza seg\u00fan su tipo\\nde movimiento y una vez por turno. No puede\\natacar ni usar habilidades de apoyo. Solo se\\naplica el valor m\u00e1s alto. No acumulable.\\nDespu\u00e9s de moverse, si se activa una habilidad\\nque otorgue otra acci\u00f3n (como Asalto impetuoso),\\nMovilidad se activar\u00e1 despu\u00e9s de la acci\u00f3n\\notorgada. El movimiento base de la unidad no\\ntiene efecto en el movimiento otorgado. No puede\\ndesplazarse (usando habilidades como Alas\\npiadosas) m\u00e1s casillas de las que le permitir\u00eda\\nel efecto normal de Movilidad).\\n\\n\u3010Triadepto\u3011\\nCon ventaja en el tri\u00e1ngulo de armas,\\nAtq. +20 % en su pr\u00f3xima acci\u00f3n. Con\\ndesventaja, Atq. -20 % en su pr\u00f3xima acci\u00f3n.\\n\\n\u3010Exposici\u00f3n\u3011\\nLos ataques del enemigo infligen 10 puntos\\nde da\u00f1o adicional."
+	},
+	{
+		"key": "MSID_H_\u5929\u306b\u4ee3\u308f\u308a\u3066\u30fb\u8fd1_NOSKW",
+		"value": "$aPermite usar\u3010Movilidad (Dist. +1; M\u00e1ximo: \uff14)\u3011.\\n\\nAl inicio del turno, inflige\u3010Triadepto\u3011y\\n\u3010Exposici\u00f3n\u3011a los enemigos m\u00e1s cercanos\\ny a los rivales situados en un radio de\\n2 casillas de dichos enemigos en su pr\u00f3xima\\nacci\u00f3n.\\n\\nLa unidad obtiene Atq., Vel., Def. y Res. +9 e\\ninflige 7 puntos de da\u00f1o adicionales (sin contar\\nlas habilidades especiales con \u00e1rea de efecto),\\nse reduce en 7 el da\u00f1o de los ataques enemigos\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto) y se anulan los efectos que garantizan\\nun ataque doble de los enemigos y los que\\nimpiden que sea la unidad quien ejecute uno en\\ncombate. Si el rival tiene efectos de\u3010Exposici\u00f3n\u3011\\nactivos, si la unidad tiene la ventaja en el tri\u00e1ngulo\\nde armas o si el rival inicia el ataque, la unidad\\nataca 2 veces durante el combate."
+	},
+	{
+		"key": "MSID_H_\u5929\u821e\u3044\u7acb\u3064",
+		"value": "La unidad puede atravesar casillas ocupadas\\npor rivales.\\n\\nPor cada enemigo que est\u00e9 situado en un radio\\nde 5 casillas de la unidad, esta puede moverse\\na cualquiera de las casillas m\u00e1s cercanas\\nadyacentes a dicho enemigo (excepto a casillas\\ninfranqueables).\\n\\nInflige Atq., Vel. y Def. -4 al rival, se anulan los\\nefectos que aceleran su cuenta regresiva, la\\nunidad inflige un 20 % de su Vel. o su Def. como\\nda\u00f1o adicional (la que tenga el valor m\u00e1s alto;\\nsin contar las habilidades especiales con \u00e1rea\\nde efecto) y se reduce el da\u00f1o de los ataques\\nenemigos en un 20 % de la Vel. o la Def. de la\\nunidad en combate (la que tenga el valor m\u00e1s\\nalto; sin contar las habilidades especiales con\\n\u00e1rea de efecto)."
+	},
+	{
+		"key": "MSID_H_\u653b\u901f\u5341\u7d0b\u7ae0\u30fb\u6cbb\u7652",
+		"value": "$aOtorga Atq. y Vel. +5 a la unidad y a los aliados\\nsituados en una cruz de 3 columnas y 3 filas\\nrespecto a la unidad, se reduce en 5 puntos el\\nda\u00f1o que inflige el primer ataque del rival\\n(\"primer ataque\" suele referirse solo al primer\\ngolpe; en cambio, con efectos que otorgan \"la\\nunidad ataca dos veces\", se refiere al primero\\ny al segundo) y se reduce el efecto de\\n\u3010Heridas profundas\u3011en un 50 % en combate.\\nAdem\u00e1s, se recupera el 40 % de los PV m\u00e1ximos\\nal inicio del combate (se activa tras los efectos\\nque infligen da\u00f1o cuando empieza el combate;\\nsolo se aplica el valor m\u00e1s alto; no acumulable).\\n\\n\u3010Heridas profundas\u3011\\nNo se pueden curar los PV de la unidad en su\\nsiguiente acci\u00f3n."
+	},
+	{
+		"key": "MSID_H_\u653b\u901f\u5341\u7d0b\u7ae0\u30fb\u6cbb\u7652_NOSKW",
+		"value": "$aOtorga Atq. y Vel. +5 a la unidad y a los aliados\\nsituados en una cruz de 3 columnas y 3 filas\\nrespecto a la unidad, se reduce en 5 puntos el\\nda\u00f1o que inflige el primer ataque del rival\\n(\"primer ataque\" suele referirse solo al primer\\ngolpe; en cambio, con efectos que otorgan \"la\\nunidad ataca dos veces\", se refiere al primero\\ny al segundo) y se reduce el efecto de\\n\u3010Heridas profundas\u3011en un 50 % en combate.\\nAdem\u00e1s, se recupera el 40 % de los PV m\u00e1ximos\\nal inicio del combate (se activa tras los efectos\\nque infligen da\u00f1o cuando empieza el combate;\\nsolo se aplica el valor m\u00e1s alto; no acumulable)."
+	},
+	{
+		"key": "MSID_H_\u653b\u6483\u9b54\u9632\u306e\u89e3\u653e",
+		"value": "$aAl inicio del turno del jugador o del turno del\\nrival, otorga\u3010Liberaci\u00f3n Atq.\u3011y\u3010Liberaci\u00f3n Res.\u3011\\na la unidad y a los aliados m\u00e1s cercanos al\\nenemigo (excluyendo a la unidad) hasta el final\\ndel turno.\\n\\nLa unidad obtiene Atq. y Res. +4 en combate.\\n\\nLa unidad y los aliados en el mapa que tengan\\nefectos de\u3010Liberaci\u00f3n Atq.\u3011o\u3010Liberaci\u00f3n Res.\u3011\\nactivos infligen da\u00f1o durante el combate\\nequivalente al n\u00famero de efectos de\\n\u3010Bonificaci\u00f3n\u3011activos en la unidad o el aliado\\n+5, sin contar las bonificaciones a los\\natributos (m\u00e1x.: 10; sin contar las habilidades\\nespeciales con \u00e1rea de efecto).\\n\\n\u3010Liberaci\u00f3n Atq.\u3011\\nEl Atq. de la unidad aumenta en una cuant\u00eda\\nequivalente al n\u00famero de efectos de\\n\u3010Bonificaci\u00f3n\u3011activos en la unidad durante\\nel combate +4 (m\u00e1x.: 8; sin contar las\\nbonificaciones a los atributos).\\n\\n\u3010Liberaci\u00f3n Res.\u3011\\nLa Res. de la unidad aumenta en una cuant\u00eda\\nequivalente al n\u00famero de efectos de\\n\u3010Bonificaci\u00f3n\u3011activos en la unidad durante\\nel combate +4 (m\u00e1x.: 8; sin contar las\\nbonificaciones a los atributos).\\n\\n\u3010Bonificaci\u00f3n\u3011\\nComprende todos los efectos que se activan\\n\"hasta el final del turno\" o \"solo ese turno\".\\nIncluye las bonificaciones de habilidades\\ncomo Potenciar o Impulso y los efectos\\npositivos, como movimiento extra o los\\nefectos de habilidades como Predominio."
+	},
+	{
+		"key": "MSID_H_\u653b\u6483\u9b54\u9632\u306e\u89e3\u653e_NOSKW",
+		"value": "$aAl inicio del turno del jugador o del turno del\\nrival, otorga\u3010Liberaci\u00f3n Atq.\u3011y\u3010Liberaci\u00f3n Res.\u3011\\na la unidad y a los aliados m\u00e1s cercanos al\\nenemigo (excluyendo a la unidad) hasta el final\\ndel turno.\\n\\nLa unidad obtiene Atq. y Res. +4 en combate.\\n\\nLa unidad y los aliados en el mapa que tengan\\nefectos de\u3010Liberaci\u00f3n Atq.\u3011o\u3010Liberaci\u00f3n Res.\u3011\\nactivos infligen da\u00f1o durante el combate\\nequivalente al n\u00famero de efectos de\\n\u3010Bonificaci\u00f3n\u3011activos en la unidad o el aliado\\n+5, sin contar las bonificaciones a los\\natributos (m\u00e1x.: 10; sin contar las habilidades\\nespeciales con \u00e1rea de efecto)."
+	},
+	{
+		"key": "MSID_H_\u6bd4\u7ffc\u30d0\u30eb\u30c9\u30eb",
+		"value": "$aAnula cualquier efecto de\u3010Penalizaci\u00f3n\u3011\\nactivo en la unidad y los aliados situados en\\nun radio de 3 casillas de esta, y otorga Atq.,\\nVel., Def. y Res. +6,\u3010Megabonificaci\u00f3n\u3011y\\n\u3010Anular afinidad\u3011a la unidad y a dichos\\naliados hasta el final del turno.\\n\\n\u3010Penalizaci\u00f3n\u3011\\nComprende todos los efectos que se infligen\\n\"al rival en su pr\u00f3xima acci\u00f3n\". Incluye las\\npenalizaciones de habilidades como P\u00e1nico\\no Reducir y los efectos negativos, como\\nlas restricciones de desplazamiento o de\\ncontrataque y los efectos de habilidades\\ncomo Triadepto o Cancelar.\\n\\n\u3010Megabonificaci\u00f3n\u3011\\nLa unidad obtiene una bonificaci\u00f3n a su Atq.,\\nVel., Def. y Res. en combate equivalente a la\\nbonificaci\u00f3n m\u00e1s alta de cada atributo entre los\\nde la unidad y los aliados situados en un radio\\nde 2 casillas de esta hasta el final del turno.\\nCada mejora se aplica por separado.\\n\\n\u3010Anular afinidad\u3011\\nSi hay desventaja de afinidad, invierte las\\nbonificaciones del tri\u00e1ngulo de las armas\\nque otorguen las habilidades del rival\\nhasta el final del turno."
+	},
+	{
+		"key": "MSID_H_\u6bd4\u7ffc\u30d0\u30eb\u30c9\u30eb_NOSKW",
+		"value": "$aAnula cualquier efecto de\u3010Penalizaci\u00f3n\u3011\\nactivo en la unidad y los aliados situados en\\nun radio de 3 casillas de esta, y otorga Atq.,\\nVel., Def. y Res. +6,\u3010Megabonificaci\u00f3n\u3011y\\n\u3010Anular afinidad\u3011a la unidad y a dichos\\naliados hasta el final del turno."
+	},
+	{
+		"key": "MID_CHAPTER_TITLE_CX118",
+		"value": "Anexo 119"
+	},
+	{
+		"key": "MID_CHAPTER_CX118",
+		"value": "A\u00f1o Nuevo terrenal"
+	},
+	{
+		"key": "MID_STAGE_TITLE_X1181",
+		"value": "Anexo 119-1"
+	},
+	{
+		"key": "MID_STAGE_TITLE_X1182",
+		"value": "Anexo 119-2"
+	},
+	{
+		"key": "MID_STAGE_TITLE_X1183",
+		"value": "Anexo 119-3"
+	},
+	{
+		"key": "MID_STAGE_X1181",
+		"value": "Mi hermana invencible"
+	},
+	{
+		"key": "MID_STAGE_X1182",
+		"value": "Victoria prevista"
+	},
+	{
+		"key": "MID_STAGE_X1183",
+		"value": "Futuro relajante"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PB298",
+		"value": "Habilidades 298"
+	},
+	{
+		"key": "MID_STAGE_PB298",
+		"value": "Sororidad de A\u00f1o Nuevo"
+	}
+]
