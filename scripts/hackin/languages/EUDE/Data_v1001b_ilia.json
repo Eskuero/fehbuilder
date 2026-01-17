@@ -1,0 +1,750 @@
+[
+	{
+		"key": "MDAID_\u65c5\u5148\u306e\u5e74\u59cb\u306e\u9aea\u98fe\u308a",
+		"value": "Neujahrszierde"
+	},
+	{
+		"key": "MDAID_H_\u65c5\u5148\u306e\u5e74\u59cb\u306e\u9aea\u98fe\u308a",
+		"value": "Beweis, dass zwei Helden auf ihren\\ngemeinsamen Reisen einen Boss\\nbezwangen. Dient als Souvenir."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_103",
+		"value": "Verleiht im Kampf Angr./Ges./Ver./Res. +X\\n(X = Anzahl der Felder zwischen Anfangs- und\\nEndposition des Kampfinitiators x2; max. 8).\\n(F\u00fcr 1 Zug.)"
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_104",
+		"value": "$aGew\u00e4hrt im Kampf Bonus auf Ges. in H\u00f6he der\\nAnzahl an\u3010Auftrieb\u3011-Effekten, die auf die\\nEinheit wirken, ausgenommen Werteboni, +4\\n(max. 8).\\n(F\u00fcr 1 Zug.)\\n\\n\u3010Auftrieb\u3011\\nAlle Effekte, die \"f\u00fcr 1 Zug\" oder \"nur in diesem\\nZug\" gelten. Beinhaltet Boni durch F\u00e4higkeiten\\nwie Sammeln/Verbessern und positive\\nStatuseffekte (zus\u00e4tzliche Bewegung oder\\nEffekte wie \"Dominanz\")."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_104_NOSKW",
+		"value": "$aGew\u00e4hrt im Kampf Bonus auf Ges. in H\u00f6he der\\nAnzahl an\u3010Auftrieb\u3011-Effekten, die auf die\\nEinheit wirken, ausgenommen Werteboni, +4\\n(max. 8).\\n(F\u00fcr 1 Zug.)"
+	},
+	{
+		"key": "MID_ENHANCE_HELP_102",
+		"value": "Statuseffekt, der andere F\u00e4higkeiteneffekte\\n  ausl\u00f6sen kann"
+	},
+	{
+		"key": "MID_ENHANCE_HELP_103",
+		"value": "Gew\u00e4hrt Bonus auf Angr./Ges./Ver./Res. =\\n  Anzahl zur\u00fcckgelegter Felder durch den\\n  Angreifer x2 (max. 8)"
+	},
+	{
+		"key": "MID_ENHANCE_HELP_104",
+		"value": "Gew\u00e4hrt Bonus auf Ges. in H\u00f6he der Anzahl\\n  an Auftrieb-Effekten der Einheit +4 (max. 8)"
+	},
+	{
+		"key": "MID_MISSION_S202601CHARA01_TITLE",
+		"value": "Drei Helden"
+	},
+	{
+		"key": "MID_MISSION_S202601CHARA01_A1",
+		"value": "Gegner besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601CHARA01_A1",
+		"value": "Besiege einen Gegner."
+	},
+	{
+		"key": "MID_MISSION_S202601CHARA01_A2",
+		"value": "Sully greift an"
+	},
+	{
+		"key": "MID_MISSION_H_S202601CHARA01_A2",
+		"value": "Lass Sully Gegner besiegen."
+	},
+	{
+		"key": "MID_MISSION_S202601CHARA01_A3",
+		"value": "Miriel greift an"
+	},
+	{
+		"key": "MID_MISSION_H_S202601CHARA01_A3",
+		"value": "Lass Miriel Gegner besiegen."
+	},
+	{
+		"key": "MID_MISSION_S202601CHARA01_B1",
+		"value": "Gegner Lv. 20+ besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601CHARA01_B1",
+		"value": "Lass Sully Gegner besiegen, die Level 20 oder\\nh\u00f6her sind."
+	},
+	{
+		"key": "MID_MISSION_S202601CHARA01_B2",
+		"value": "Gegner Lv. 20+ besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601CHARA01_B2",
+		"value": "Lass Miriel Gegner besiegen, die Level 20 oder\\nh\u00f6her sind."
+	},
+	{
+		"key": "MID_MISSION_S202601CHARA01_B3",
+		"value": "Gegner Lv. 20+ besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601CHARA01_B3",
+		"value": "Lass Emmeryn: Sanfte Erhabene Gegner\\nbesiegen, die Level 20 oder h\u00f6her sind."
+	},
+	{
+		"key": "MID_MISSION_S202601CHARA01_C1",
+		"value": "Gegner Lv. 35+ besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601CHARA01_C1",
+		"value": "Lass Sully Gegner besiegen, die Level 35 oder\\nh\u00f6her sind."
+	},
+	{
+		"key": "MID_MISSION_S202601CHARA01_C2",
+		"value": "Gegner Lv. 35+ besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601CHARA01_C2",
+		"value": "Lass Miriel Gegner besiegen, die Level 35 oder\\nh\u00f6her sind."
+	},
+	{
+		"key": "MID_MISSION_S202601CHARA01_C3",
+		"value": "Gegner Lv. 35+ besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601CHARA01_C3",
+		"value": "Lass Emmeryn: Sanfte Erhabene Gegner\\nbesiegen, die Level 35 oder h\u00f6her sind."
+	},
+	{
+		"key": "MID_MISSION_S202601HERO02_TITLE",
+		"value": "Gro\u00dfe Heldenk\u00e4mpfe"
+	},
+	{
+		"key": "MID_MISSION_S202601HERO02_A1",
+		"value": "Chulainn besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601HERO02_A1",
+		"value": "Gewinne den Gro\u00dfen Heldenkampf gegen\\nChulainn: Der Unbesiegte mit Sharena:\\nAskra. Prinzessin im Team."
+	},
+	{
+		"key": "MID_MISSION_S202601HERO02_A2",
+		"value": "Chulainn besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601HERO02_A2",
+		"value": "Gewinne den Gro\u00dfen Heldenkampf gegen\\nChulainn: Der Unbesiegte auf Extrem oder\\nh\u00f6her mit Chulainn: Der Unbesiegte im Team."
+	},
+	{
+		"key": "MID_MISSION_S202601HERO02_A3",
+		"value": "Chulainn besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601HERO02_A3",
+		"value": "Besiege Chulainn: Der Unbesiegte, der Level 40\\noder h\u00f6her ist, mit Sharena: Askra. Prinzessin."
+	},
+	{
+		"key": "MID_MISSION_S202601HERO02_A4",
+		"value": "Chulainn besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601HERO02_A4",
+		"value": "Besiege Chulainn: Der Unbesiegte, der Level 40\\noder h\u00f6her ist, mit Chulainn: Der Unbesiegte."
+	},
+	{
+		"key": "MID_MISSION_S202601HERO02_A5",
+		"value": "Chulainn besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601HERO02_A5",
+		"value": "Gewinne den Gro\u00dfen Heldenkampf gegen\\nChulainn: Der Unbesiegte auf Extrem oder\\nh\u00f6her nur mit gepanzerten Einheiten."
+	},
+	{
+		"key": "MID_MISSION_S202601JOURNEY01_TITLE",
+		"value": "Heldenreise"
+	},
+	{
+		"key": "MID_MISSION_S202601JOURNEY01_A1",
+		"value": "Heldenreise bew\u00e4ltigen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601JOURNEY01_A1",
+		"value": "Bew\u00e4ltige die Heldenreise."
+	},
+	{
+		"key": "MID_MISSION_S202601JOURNEY01_A2",
+		"value": "Heldenreise bew\u00e4ltigen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601JOURNEY01_A2",
+		"value": "Bew\u00e4ltige die Heldenreise."
+	},
+	{
+		"key": "MID_MISSION_S202601KIZUNA01_TITLE",
+		"value": "Treue-Heldenkampf"
+	},
+	{
+		"key": "MID_MISSION_S202601KIZUNA01_A1",
+		"value": "Treue-Heldenkampf"
+	},
+	{
+		"key": "MID_MISSION_H_S202601KIZUNA01_A1",
+		"value": "Gewinne den Treue-Heldenkampf gegen\\nNergal & Ursula mit Kommandantin Anna\\nim Team."
+	},
+	{
+		"key": "MID_MISSION_S202601KIZUNA01_A2",
+		"value": "Treue-Heldenkampf"
+	},
+	{
+		"key": "MID_MISSION_H_S202601KIZUNA01_A2",
+		"value": "Gewinne den Treue-Heldenkampf gegen\\nNergal & Ursula auf Extrem oder h\u00f6her\\nmit Alfonse: Prinz von Askr im Team."
+	},
+	{
+		"key": "MID_MISSION_S202601KIZUNA01_A3",
+		"value": "Ursula besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601KIZUNA01_A3",
+		"value": "Besiege Ursula: Dunkle Kr\u00e4he, die Level 40\\noder h\u00f6her ist, mit Kommandantin Anna."
+	},
+	{
+		"key": "MID_MISSION_S202601KIZUNA01_A4",
+		"value": "Nergal besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601KIZUNA01_A4",
+		"value": "Besiege Nergal, der Level 40 oder h\u00f6her ist,\\nmit Alfonse: Prinz von Askr"
+	},
+	{
+		"key": "MID_MISSION_S202601KIZUNA01_A5",
+		"value": "Treue-Heldenkampf"
+	},
+	{
+		"key": "MID_MISSION_H_S202601KIZUNA01_A5",
+		"value": "Gewinne den Treue-Heldenkampf gegen\\nNergal & Ursula auf Extrem oder h\u00f6her\\nnur mit Infanterieeinheiten."
+	},
+	{
+		"key": "MID_MISSION_S202601MJOLNIR02_TITLE",
+		"value": "Mj\u00f6lnirs Schlag"
+	},
+	{
+		"key": "MID_MISSION_S202601MJOLNIR02_A1",
+		"value": "Avatar greift an"
+	},
+	{
+		"key": "MID_MISSION_H_S202601MJOLNIR02_A1",
+		"value": "Lass deinen Avatar in Mj\u00f6lnirs Schlag\\neinen Gegner besiegen."
+	},
+	{
+		"key": "MID_MISSION_S202601MJOLNIR02_A2",
+		"value": "Avatar greift an"
+	},
+	{
+		"key": "MID_MISSION_H_S202601MJOLNIR02_A2",
+		"value": "Lass deinen Avatar in Mj\u00f6lnirs Schlag\\nGegner besiegen."
+	},
+	{
+		"key": "MID_MISSION_S202601SENKA03_DAILY_TITLE",
+		"value": "Sturmpr\u00fcfung"
+	},
+	{
+		"key": "MID_MISSION_S202601SENKA03_DAILY_A1",
+		"value": "Pr\u00fcfung abschlie\u00dfen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601SENKA03_DAILY_A1",
+		"value": "Bew\u00e4ltige eine der letzten\\nKarten der Sturmpr\u00fcfung."
+	},
+	{
+		"key": "MID_MISSION_S202601SENKA03_DAILY_A2",
+		"value": "Pr\u00fcfung abschlie\u00dfen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601SENKA03_DAILY_A2",
+		"value": "Bew\u00e4ltige eine der letzten\\nKarten der Sturmpr\u00fcfung."
+	},
+	{
+		"key": "MID_MISSION_S202601SENKA03_DAILY_A3",
+		"value": "Pr\u00fcfung abschlie\u00dfen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601SENKA03_DAILY_A3",
+		"value": "Bew\u00e4ltige einige der letzten\\nKarten der Sturmpr\u00fcfung."
+	},
+	{
+		"key": "MID_MISSION_S202601SENKA03_DAILY_A4",
+		"value": "Pr\u00fcfung abschlie\u00dfen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601SENKA03_DAILY_A4",
+		"value": "Bew\u00e4ltige einige der letzten\\nKarten der Sturmpr\u00fcfung."
+	},
+	{
+		"key": "MID_MISSION_S202601SENKA04_DAILY_TITLE",
+		"value": "Sturmpr\u00fcfung"
+	},
+	{
+		"key": "MID_MISSION_S202601SENKA04_DAILY_A1",
+		"value": "Pr\u00fcfung abschlie\u00dfen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601SENKA04_DAILY_A1",
+		"value": "Bew\u00e4ltige eine der letzten\\nKarten der Sturmpr\u00fcfung."
+	},
+	{
+		"key": "MID_MISSION_S202601SENKA04_DAILY_A2",
+		"value": "Pr\u00fcfung abschlie\u00dfen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601SENKA04_DAILY_A2",
+		"value": "Bew\u00e4ltige eine der letzten\\nKarten der Sturmpr\u00fcfung."
+	},
+	{
+		"key": "MID_MISSION_S202601SENKA04_DAILY_A3",
+		"value": "Pr\u00fcfung abschlie\u00dfen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601SENKA04_DAILY_A3",
+		"value": "Bew\u00e4ltige einige der letzten\\nKarten der Sturmpr\u00fcfung."
+	},
+	{
+		"key": "MID_MISSION_S202601SENKA04_DAILY_A4",
+		"value": "Pr\u00fcfung abschlie\u00dfen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601SENKA04_DAILY_A4",
+		"value": "Bew\u00e4ltige einige der letzten\\nKarten der Sturmpr\u00fcfung."
+	},
+	{
+		"key": "MID_MISSION_S202601SUBSC02_TITLE",
+		"value": "Feh-Pass"
+	},
+	{
+		"key": "MID_MISSION_S202601SUBSC02_A1",
+		"value": "Gegner besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601SUBSC02_A1",
+		"value": "Besiege Gegner."
+	},
+	{
+		"key": "MID_MISSION_S202601SUBSC02_A2",
+		"value": "Gegner besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601SUBSC02_A2",
+		"value": "Besiege Gegner."
+	},
+	{
+		"key": "MID_MISSION_S202601SUBSC02_A3",
+		"value": "Gewinne Arenaduelle"
+	},
+	{
+		"key": "MID_MISSION_H_S202601SUBSC02_A3",
+		"value": "Gewinne ein Arenaduell eines\\nbeliebigen Schwierigkeitsgrads."
+	},
+	{
+		"key": "MID_MISSION_S202601SUBSC02_A4",
+		"value": "Gewinne Arenaduelle"
+	},
+	{
+		"key": "MID_MISSION_H_S202601SUBSC02_A4",
+		"value": "Gewinne Arenaduelle eines\\nbeliebigen Schwierigkeitsgrads."
+	},
+	{
+		"key": "MID_MISSION_S202601SUBSC02_A5",
+		"value": "Gepanzerten besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601SUBSC02_A5",
+		"value": "Besiege eine gepanzerte Einheit."
+	},
+	{
+		"key": "MID_MISSION_S202601SUBSC02_A6",
+		"value": "Flieger besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_S202601SUBSC02_A6",
+		"value": "Besiege eine Flugeinheit."
+	},
+	{
+		"key": "MID_MISSION_W_S202601STORY_P02_TITLE",
+		"value": "Zaghafte Ritterin"
+	},
+	{
+		"key": "MID_MISSION_W_S202601STORY_P02_A1",
+		"value": "Nebenq. 120 Tl. 1 - Extrem"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202601STORY_P02_A1",
+		"value": "Bew\u00e4ltige Nebenquest 120: Teil 1 auf Extrem\\nmit einem Lanzenk\u00e4mpfer im Team. (\u00dcber\\n\"Kombi\" als Helfer entsandte Verb\u00fcndete\\nz\u00e4hlen nicht.) Alle vier Verb\u00fcndeten m\u00fcssen\\n\u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_S202601STORY_P02_A2",
+		"value": "Nebenq. 120 Tl. 2 - Extrem"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202601STORY_P02_A2",
+		"value": "Bew\u00e4ltige Nebenquest 120: Teil 2 auf Extrem\\nmit einem Axtk\u00e4mpfer im Team. (\u00dcber \"Kombi\"\\nals Helfer entsandte Verb\u00fcndete z\u00e4hlen nicht.)\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_S202601STORY_P02_A3",
+		"value": "Nebenq. 120 Tl. 3 - Extrem"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202601STORY_P02_A3",
+		"value": "Bew\u00e4ltige Nebenquest 120: Teil 3 auf Extrem\\nmit einem Schwertk\u00e4mpfer im Team. (\u00dcber\\n\"Kombi\" als Helfer entsandte Verb\u00fcndete\\nz\u00e4hlen nicht.) Alle vier Verb\u00fcndeten m\u00fcssen\\n\u00fcberleben."
+	},
+	{
+		"key": "MPID_\u53cc\u754c\u30d2\u30eb\u30c0",
+		"value": "Hilda"
+	},
+	{
+		"key": "MPID_SEARCH_\u53cc\u754c\u30d2\u30eb\u30c0",
+		"value": "Hilda"
+	},
+	{
+		"key": "MPID_\u30a4\u30ea\u30a2\u30a2\u30af\u30a2",
+		"value": "Azura"
+	},
+	{
+		"key": "MPID_SEARCH_\u30a4\u30ea\u30a2\u30a2\u30af\u30a2",
+		"value": "Azura"
+	},
+	{
+		"key": "MPID_\u30a4\u30ea\u30a2\u30ef\u30e6",
+		"value": "Mia"
+	},
+	{
+		"key": "MPID_SEARCH_\u30a4\u30ea\u30a2\u30ef\u30e6",
+		"value": "Mia"
+	},
+	{
+		"key": "MPID_\u30a4\u30ea\u30a2\u30df\u30cd\u30eb\u30d0",
+		"value": "Minerva"
+	},
+	{
+		"key": "MPID_SEARCH_\u30a4\u30ea\u30a2\u30df\u30cd\u30eb\u30d0",
+		"value": "Minerva"
+	},
+	{
+		"key": "MPID_HONOR_\u53cc\u754c\u30d2\u30eb\u30c0",
+		"value": "Himmelsschwingen"
+	},
+	{
+		"key": "MPID_HONOR_\u30a4\u30ea\u30a2\u30a2\u30af\u30a2",
+		"value": "Herrin der Himmel"
+	},
+	{
+		"key": "MPID_HONOR_\u30a4\u30ea\u30a2\u30ef\u30e6",
+		"value": "Streiterin am Zenit"
+	},
+	{
+		"key": "MPID_HONOR_\u30a4\u30ea\u30a2\u30df\u30cd\u30eb\u30d0",
+		"value": "Jenseits der Sterne"
+	},
+	{
+		"key": "MPID_H_\u53cc\u754c\u30d2\u30eb\u30c0",
+		"value": "Hilda, die arbeitsscheue Tochter einer wohl-\\nhabenden Adelsfamilie, und Florina aus Ilia\\nfliegen herbei, um am Ilia-Fest teilzunehmen!\\nErscheinen in Fire Emblem: Three Houses /\\nFire Emblem: The Blazing Blade."
+	},
+	{
+		"key": "MPID_H_\u30a4\u30ea\u30a2\u30a2\u30af\u30a2",
+		"value": "Eine Skaldin, die in Hoshido aufgewachsen ist.\\nSie nimmt am Ilia-Fest teil und erf\u00fcllt den\\nHimmel mit ihrem Gesang.\\nErscheint in Fire Emblem Fates."
+	},
+	{
+		"key": "MPID_H_\u30a4\u30ea\u30a2\u30ef\u30e6",
+		"value": "Eine Schwertk\u00e4mpferin und ein Mitglied von\\nGreils S\u00f6ldnern. Zusammen mit vielen anderen\\nS\u00f6ldnern besucht sie das Ilia-Fest, an dem sie\\nauf dem R\u00fccken eines Pegasus teilnimmt.\\nErscheint in Fire Emblem: Radiant Dawn."
+	},
+	{
+		"key": "MPID_H_\u30a4\u30ea\u30a2\u30df\u30cd\u30eb\u30d0",
+		"value": "\u00c4lteste Prinzessin von Medon. Auf dem Ilia-Fest,\\ndas S\u00f6ldner von \u00fcberallher anzieht, reitet sie\\nzum ersten Mal seit langer Zeit auf einem\\nPegasus. Erscheint in\\nFire Emblem: Mystery of the Emblem."
+	},
+	{
+		"key": "MPID_VOICE_\u53cc\u754c\u30d2\u30eb\u30c0",
+		"value": "Salli Saffioti + Julie Maddalena"
+	},
+	{
+		"key": "MPID_VOICE_\u30a4\u30ea\u30a2\u30a2\u30af\u30a2",
+		"value": "Rena Strober"
+	},
+	{
+		"key": "MPID_VOICE_\u30a4\u30ea\u30a2\u30ef\u30e6",
+		"value": "Anne Yatco"
+	},
+	{
+		"key": "MPID_VOICE_\u30a4\u30ea\u30a2\u30df\u30cd\u30eb\u30d0",
+		"value": "Cindy Robinson"
+	},
+	{
+		"key": "MPID_VOICE_\u30d9\u30eb\u30d9\u30c3\u30c8EX01",
+		"value": "Jessica Gee-George"
+	},
+	{
+		"key": "MPID_ILLUST_\u53cc\u754c\u30d2\u30eb\u30c0",
+		"value": "GomashioPonzu (\u3054\u307e\u3057\u304a\u30dd\u30f3\u9162)"
+	},
+	{
+		"key": "MPID_ILLUST_\u30a4\u30ea\u30a2\u30a2\u30af\u30a2",
+		"value": "Saine (\u3055\u3044\u306d)"
+	},
+	{
+		"key": "MPID_ILLUST_\u30a4\u30ea\u30a2\u30ef\u30e6",
+		"value": "Mai Okuma (\u5927\u718a\u307e\u3044)"
+	},
+	{
+		"key": "MPID_ILLUST_\u30a4\u30ea\u30a2\u30df\u30cd\u30eb\u30d0",
+		"value": "RIZ3"
+	},
+	{
+		"key": "MPID_ILLUST_\u30d9\u30eb\u30d9\u30c3\u30c8EX01",
+		"value": "GENKIENJIN / Trys Inc."
+	},
+	{
+		"key": "MPID_LEGEND_\u53cc\u754c\u30d2\u30eb\u30c0",
+		"value": "(Harmonief\u00e4h. durch Tippen auf Harmonie-\\nSymbol verwendbar. Diese F\u00e4higkeit ist nur 1 x\\npro Karte verwendbar. Nicht von Einh. verwend-\\nbar, die \u00fcber \"Kombi\" entsandt wurden.)\\n(Wenn die Einheit durch einen Status oder eine\\nF\u00e4higkeit \u00fcber einen Stil verf\u00fcgt, kann sie keine\\nF\u00e4higkeiten wie Heldenduo-F\u00e4higkeiten oder\\nHarmonief\u00e4higkeiten verwenden, solange sie\\neine Aktion ausf\u00fchren kann; diese F\u00e4higkeiten\\nk\u00f6nnen verwendet werden, nachdem die Einheit\\nagiert hat.)\\n\\nHarmonieeffekt: Three Houses /\\nThe Blazing Blade\\nErh\u00f6ht Punkte in Resonanzk\u00e4mpfen. (Weitere\\nEinzelheiten findest du in den Hilfenachrichten\\nbei den Resonanzk\u00e4mpfen.)"
+	},
+	{
+		"key": "MID_TIPS_Summon_v1001b_ilia_01_\u53cc\u754c\u30d2\u30eb\u30c0",
+		"value": "Sie k\u00f6nnen 2-mal angreifen und dies\\nauch ihren Verb\u00fcndeten erm\u00f6glichen.\\nSie schenken Hindernissen keine\\nBeachtung und besiegen Gegner!"
+	},
+	{
+		"key": "MID_TIPS_Summon_v1001b_ilia_01_\u30a4\u30ea\u30a2\u30a2\u30af\u30a2",
+		"value": "Ihr Lied hat eine Reichweite von\\n2 Feldern. Sie unterst\u00fctzt Verb\u00fcn-\\ndete und schl\u00e4gt Gegner mit drei\\naufeinanderfolgenden Angriffen!"
+	},
+	{
+		"key": "MID_TIPS_Summon_v1001b_ilia_01_\u30a4\u30ea\u30a2\u30ef\u30e6",
+		"value": "Verleiht ihren Verb\u00fcndeten die Macht,\\nAngriffe abzulenken, und st\u00e4rkt deren\\nn\u00e4chsten Schl\u00e4ge. Schadet Gegnern\\nund bringt sich in Sicherheit!"
+	},
+	{
+		"key": "MID_TIPS_Summon_v1001b_ilia_01_\u30a4\u30ea\u30a2\u30df\u30cd\u30eb\u30d0",
+		"value": "Bietet Bogensch\u00fctzen die Stirn! Wird\\nsie von vielen verb\u00fcndeten Flugeinhei-\\nten oder solchen mit Stab begleitet, ist\\nihr Spezialangriff erbarmungslos."
+	},
+	{
+		"key": "MSID_\u30a4\u30ea\u30a2\u306e\u9577\u5263",
+		"value": "Ilia-Langschwert"
+	},
+	{
+		"key": "MSID_SEARCH_\u30a4\u30ea\u30a2\u306e\u9577\u5263",
+		"value": "Ilia-Langschwert"
+	},
+	{
+		"key": "MSID_\u30a4\u30ea\u30a2\u306e\u9577\u69cd",
+		"value": "Ilia-Gro\u00dflanze"
+	},
+	{
+		"key": "MSID_SEARCH_\u30a4\u30ea\u30a2\u306e\u9577\u69cd",
+		"value": "Ilia-Gro\u00dflanze"
+	},
+	{
+		"key": "MSID_\u30a4\u30ea\u30a2\u306e\u6226\u65a7",
+		"value": "Ilia-Axt"
+	},
+	{
+		"key": "MSID_SEARCH_\u30a4\u30ea\u30a2\u306e\u6226\u65a7",
+		"value": "Ilia-Axt"
+	},
+	{
+		"key": "MSID_\u6b66\u9580\u306e\u59b9\u4e8c\u4eba\u306e\u525b\u5f13",
+		"value": "Himml. Bogen"
+	},
+	{
+		"key": "MSID_SEARCH_\u6b66\u9580\u306e\u59b9\u4e8c\u4eba\u306e\u525b\u5f13",
+		"value": "Himml. Bogen"
+	},
+	{
+		"key": "MSID_\u3046\u305f\u3046\u305b\u3044\u3072\u3064",
+		"value": "Klangvolle Essenz"
+	},
+	{
+		"key": "MSID_SEARCH_\u3046\u305f\u3046\u305b\u3044\u3072\u3064",
+		"value": "Klangvolle Essenz"
+	},
+	{
+		"key": "MSID_\u30a6\u30a3\u30fc\u30af\u30b7\u30e7\u30c3\u30c8",
+		"value": "Schwindschuss"
+	},
+	{
+		"key": "MSID_SEARCH_\u30a6\u30a3\u30fc\u30af\u30b7\u30e7\u30c3\u30c8",
+		"value": "Schwindschuss"
+	},
+	{
+		"key": "MSID_\u771f\u30fb\u8d64\u3044\u7adc\u9a0e\u58eb",
+		"value": "Dragonerwall"
+	},
+	{
+		"key": "MSID_SEARCH_\u771f\u30fb\u8d64\u3044\u7adc\u9a0e\u58eb",
+		"value": "Dragonerwall"
+	},
+	{
+		"key": "MSID_\u653b\u6483\u901f\u3055\u306e\u9818\u7a7a",
+		"value": "A/G-Luftraum"
+	},
+	{
+		"key": "MSID_SEARCH_\u653b\u6483\u901f\u3055\u306e\u9818\u7a7a",
+		"value": "A/G-Luftraum"
+	},
+	{
+		"key": "MSID_\u84bc\u7a79\u30fb\u9b3c\u6ca1",
+		"value": "Blaue-Himmel-B\u00f6"
+	},
+	{
+		"key": "MSID_SEARCH_\u84bc\u7a79\u30fb\u9b3c\u6ca1",
+		"value": "Blaue-Himmel-Bo"
+	},
+	{
+		"key": "MSID_\u901f\u5b88\u5341\u727d\u5236\u30fb\u8b00\u7b56",
+		"value": "G/V Kreuz: Trick"
+	},
+	{
+		"key": "MSID_SEARCH_\u901f\u5b88\u5341\u727d\u5236\u30fb\u8b00\u7b56",
+		"value": "G/V Kreuz: Trick"
+	},
+	{
+		"key": "MSID_H_\u30a4\u30ea\u30a2\u306e\u9577\u5263",
+		"value": "$aBeschleunigt Spezialangriffe (Erholungszeit -1).\\n\\nWenn eine F\u00e4higkeit den Ges.-Wert der Einheit\\nmit dem eines Gegners oder eines Verb\u00fcndeten\\nvergleicht, wird er als der tats\u00e4chliche Wert +7\\ngez\u00e4hlt.\\n\\nZu Beginn der Spieler- oder Gegnerphase erhal-\\nten die Einheit und Verb\u00fcndete im Umkreis von\\n2 Feldern der Einheit\u3010Reflex\u3011,\u3010Ausweichen\u3011\\nund\u3010Wahrlich befl\u00fcgelt\u3011f\u00fcr 1 Zug.\\n\\nDie Einheit erh\u00e4lt Angr./Ges./Ver./Res. +15, sie\\nf\u00fcgt +25 Schaden zu (ausgenommen Spezialan-\\ngriffe mit Fl\u00e4chenwirkung), der Schaden durch\\ngegnerische Angriffe wird um 15 verringert (aus-\\ngenommen Spezialangriffe mit Fl\u00e4chenwirkung),\\nder Schaden durch gegnerische Spezialangriffe\\nwird erneut um 15 verringert (ausgenommen\\nSpezialangriffe mit Fl\u00e4chenwirkung) und Effekte,\\ndie der Einheit \"Erholungszeit wird um X zur\u00fcck-\\ngesetzt\" zuf\u00fcgen, werden im Kampf aufgehoben.\\nK\u00f6nnte die Einheit durch die Verringerung des f\u00fcr\\ndie Ausf\u00fchrung eines Folgeangriffs n\u00f6tigen Ges.-\\nWertunterschieds um 10 einen Folgeangriff aus-\\nf\u00fchren (garantierte oder verhinderte Folgeangriffe\\nausgenommen), wird im Kampf\\n\u3010Kr\u00e4ftiger Folgeangriff 100 %\u3011ausgel\u00f6st.\\n\\n\u3010Reflex\u3011\\nDer Schaden durch den ersten Angriff des Geg-\\nners wird im Kampf um 7 verringert (normaler-\\nweise bezieht sich \"erster Angriff\" auf den ersten\\nSchlag; bei Effekten, die \"Einheit greift 2-mal an\"\\ngew\u00e4hren, sind der erste und zweite Schlag ge-\\nmeint) und der n\u00e4chste Angriff der Einheit f\u00fcgt\\nzus\u00e4tzlichen Schaden in H\u00f6he des Gesamtwerts\\ndes beim ersten Angriff des Gegners reduzierten\\nSchadens zu (auch durch andere F\u00e4higkeiten;\\nwird am Ende des Kampfes zur\u00fcckgesetzt).\\n(F\u00fcr 1 Zug.)\\n\\n\u3010Ausweichen\u3011\\nIst Ges. der Einheit h\u00f6her als Ges. des Gegners,\\nwird der erlittene Schaden durch Angriffe im\\nKampf und Spezialangriffe mit Fl\u00e4chenwirkung\\n(au\u00dfer Spezialangriffe mit Fl\u00e4chenwirkung von\\nR\u00f8kkr) um X % verringert (X = Wertunter-\\nschied x 4, max. 40).\\n\\n\u3010Wahrlich befl\u00fcgelt\u3011\\nVerleiht im Kampf Angr./Ges./Ver./Res. +X\\n(X = Anzahl der Felder zwischen Anfangs- und\\nEndposition des Kampfinitiators x2; max. 8).\\n\\n\u3010Kr\u00e4ftiger Folgeangriff 100 %\u3011\\nL\u00f6st umgehend nach dem Standard-Folgeangriff\\nder Einheit einen zus\u00e4tzl. Folgeangriff aus und\\ndie Einheit f\u00fcgt zus\u00e4tzl. Schaden in H\u00f6he von\\n100 % ihres normalen Angriffsschadens zu.\\n(Kann die Einheit keinen Folgeangriff ausf\u00fchren,\\nwird dieser Effekt ausgel\u00f6st, wenn der Standard-\\nFolgeangr. ausgel\u00f6st werden w\u00fcrde. Dieser Effekt\\nwird als Folgeangr. gewertet, wodurch Effekte\\nwie \"der Schaden wird um X % verringert\" weiter-\\nhin gelten. Effekte, die Folgeangr. verhindern\\noder \"Einh. greift 2-mal an\" gew\u00e4hren, haben\\njedoch keine Wirkung. Bei mehreren \u00e4hnlichen\\nEffekten wird nur der h\u00f6chste angewandt.)"
+	},
+	{
+		"key": "MSID_H_\u30a4\u30ea\u30a2\u306e\u9577\u5263_NOSKW",
+		"value": "$aBeschleunigt Spezialangriffe (Erholungszeit -1).\\n\\nWenn eine F\u00e4higkeit den Ges.-Wert der Einheit\\nmit dem eines Gegners oder eines Verb\u00fcndeten\\nvergleicht, wird er als der tats\u00e4chliche Wert +7\\ngez\u00e4hlt.\\n\\nZu Beginn der Spieler- oder Gegnerphase erhal-\\nten die Einheit und Verb\u00fcndete im Umkreis von\\n2 Feldern der Einheit\u3010Reflex\u3011,\u3010Ausweichen\u3011\\nund\u3010Wahrlich befl\u00fcgelt\u3011f\u00fcr 1 Zug.\\n\\nDie Einheit erh\u00e4lt Angr./Ges./Ver./Res. +15, sie\\nf\u00fcgt +25 Schaden zu (ausgenommen Spezialan-\\ngriffe mit Fl\u00e4chenwirkung), der Schaden durch\\ngegnerische Angriffe wird um 15 verringert (aus-\\ngenommen Spezialangriffe mit Fl\u00e4chenwirkung),\\nder Schaden durch gegnerische Spezialangriffe\\nwird erneut um 15 verringert (ausgenommen\\nSpezialangriffe mit Fl\u00e4chenwirkung) und Effekte,\\ndie der Einheit \"Erholungszeit wird um X zur\u00fcck-\\ngesetzt\" zuf\u00fcgen, werden im Kampf aufgehoben.\\nK\u00f6nnte die Einheit durch die Verringerung des f\u00fcr\\ndie Ausf\u00fchrung eines Folgeangriffs n\u00f6tigen Ges.-\\nWertunterschieds um 10 einen Folgeangriff aus-\\nf\u00fchren (garantierte oder verhinderte Folgeangriffe\\nausgenommen), wird im Kampf\\n\u3010Kr\u00e4ftiger Folgeangriff 100 %\u3011ausgel\u00f6st."
+	},
+	{
+		"key": "MSID_H_\u30a4\u30ea\u30a2\u306e\u9577\u69cd",
+		"value": "$aGew\u00e4hrt\u30102. Schritt (Entf. +1; Max. \uff14)\u3011.\\nVerleiht Res. +3.\\n\\nDie Einheit und Verb\u00fcndete innerhalb von 3 Rei-\\nhen oder 3 Spalten um die Einheit erhalten Angr./\\nGes./Ver./Res. +Z (Einheit: Z = 15; Verb\u00fcndete:\\nZ = 5) und sie f\u00fcgen im Kampf +Y Schaden zu\\n(ausgenommen Spezialangriffe mit Fl\u00e4chenwir-\\nkung; Einheit: Y = 25; Verb\u00fcndete: Y = 10). K\u00f6nn-\\nte die Einheit oder der Verb\u00fcndete zudem durch\\ndie Verringerung des f\u00fcr die Ausf\u00fchrung eines\\nFolgeangriffs n\u00f6tigen Ges.-Wertunterschieds\\num 25 einen Folgeangriff ausf\u00fchren (garantierte\\noder verhinderte Folgeangriffe ausgenommen),\\nwird im Kampf\u3010Kr\u00e4ftiger Folgeangriff X %\u3011\\nausgel\u00f6st (kann die Einheit oder der Verb\u00fcndete\\nkeinen Folgeangriff ausl\u00f6sen und nicht 2-mal\\nangreifen, gilt: X = 100; ansonsten gilt: X = 50).\\n\\nDer Schaden durch gegnerische Angriffe wird im\\nKampf um 15 verringert (ausgenommen Spezial-\\nangriffe mit Fl\u00e4chenwirkung). Initiiert die Einheit\\nden Kampf, kann sie vor dem n\u00e4chsten Angriff\\ndes Gegners einen Folgeangriff ausf\u00fchren.\\n\\n\u30102. Schritt (Entf. +1; Max. \uff14)\u3011\\nNach einem Angriff, einer Beistehf\u00e4higkeit oder\\nnach der Zerst\u00f6rung eines Objektes kann sich\\ndie Einheit X Felder weit bewegen (X = Anzahl\\nan Feldern zwischen Anfangs- und Endposition\\nder Einheit vor ihrer Aktion +1; max. \uff14).\\n\\n\u3010Kr\u00e4ftiger Folgeangriff X %\u3011\\nL\u00f6st umgehend nach dem Standard-Folgeangriff\\nder Einheit einen zus\u00e4tzl. Folgeangriff aus und\\ndie Einheit f\u00fcgt zus\u00e4tzl. Schaden in H\u00f6he von X %\\nihres normalen Angriffsschadens zu. (Kann die\\nEinheit keinen Folgeangriff ausf\u00fchren, wird dieser\\nEffekt ausgel\u00f6st, wenn der Standard-Folgeangr.\\nausgel\u00f6st werden w\u00fcrde. Dieser Effekt wird als\\nFolgeangr. gewertet, wodurch Effekte wie \"der\\nSchaden wird um X % verringert\" weiterhin gelten.\\nEffekte, die Folgeangr. verhindern oder \"Einh.\\ngreift 2-mal an\" gew\u00e4hren, haben jedoch keine\\nWirkung. Bei mehreren \u00e4hnlichen Effekten wird\\nnur der h\u00f6chste angewandt.)"
+	},
+	{
+		"key": "MSID_H_\u30a4\u30ea\u30a2\u306e\u9577\u69cd_NOSKW",
+		"value": "$aGew\u00e4hrt\u30102. Schritt (Entf. +1; Max. \uff14)\u3011.\\nVerleiht Res. +3.\\n\\nDie Einheit und Verb\u00fcndete innerhalb von 3 Rei-\\nhen oder 3 Spalten um die Einheit erhalten Angr./\\nGes./Ver./Res. +Z (Einheit: Z = 15; Verb\u00fcndete:\\nZ = 5) und sie f\u00fcgen im Kampf +Y Schaden zu\\n(ausgenommen Spezialangriffe mit Fl\u00e4chenwir-\\nkung; Einheit: Y = 25; Verb\u00fcndete: Y = 10). K\u00f6nn-\\nte die Einheit oder der Verb\u00fcndete zudem durch\\ndie Verringerung des f\u00fcr die Ausf\u00fchrung eines\\nFolgeangriffs n\u00f6tigen Ges.-Wertunterschieds\\num 25 einen Folgeangriff ausf\u00fchren (garantierte\\noder verhinderte Folgeangriffe ausgenommen),\\nwird im Kampf\u3010Kr\u00e4ftiger Folgeangriff X %\u3011\\nausgel\u00f6st (kann die Einheit oder der Verb\u00fcndete\\nkeinen Folgeangriff ausl\u00f6sen und nicht 2-mal\\nangreifen, gilt: X = 100; ansonsten gilt: X = 50).\\n\\nDer Schaden durch gegnerische Angriffe wird im\\nKampf um 15 verringert (ausgenommen Spezial-\\nangriffe mit Fl\u00e4chenwirkung). Initiiert die Einheit\\nden Kampf, kann sie vor dem n\u00e4chsten Angriff\\ndes Gegners einen Folgeangriff ausf\u00fchren."
+	},
+	{
+		"key": "MSID_H_\u30a4\u30ea\u30a2\u306e\u6226\u65a7",
+		"value": "$aGew\u00e4hrt\u30102. Schritt (Entf. +1; Max. \uff14)\u3011.\\nBeschleunigt Spezialangriffe (Erholungszeit -1).\\n\\nGegner mit der geringsten Entfernung sowie\\nGegner im Umkreis von 2 Feldern dieser Gegner\\nerleiden zu Beginn des Zuges und nach der Ak-\\ntion der Einheit (wird 2. Schritt ausgel\u00f6st, nach\\n2. Schritt) bis nach ihren n\u00e4chsten Aktionen\\n\u3010Gefroren\u3011,\u3010Sabotage\u3011und Ges./Ver. -7.\\n\\nDie Einheit erh\u00e4lt Angr./Ges./Ver./Res. +15, sie\\nf\u00fcgt +25 Schaden zu (ausgenommen Spezialan-\\ngriffe mit Fl\u00e4chenwirkung), der Schaden durch\\ngegnerische Angriffe wird um 15 reduziert (aus-\\ngenommen Spezialangriffe mit Fl\u00e4chenwirkung)\\nund der Schaden durch gegnerische Spezialan-\\ngriffe wird erneut um 15 reduziert (ausgenommen\\nSpezialangriffe mit Fl\u00e4chenwirkung). Wird zudem\\nder Spezialangriff der Einheit ausgel\u00f6st, werden\\nEffekte von Nicht-Spezialf\u00e4higkeiten des Gegners\\naufgehoben, bei denen Folgendes gilt: \"Schaden\\nwird um X % verringert\" (ausgenommen Spezial-\\nangriffe mit Fl\u00e4chenwirkung).\\n\\n\u30102. Schritt (Entf. +1; Max. \uff14)\u3011\\nNach einem Angriff, einer Beistehf\u00e4higkeit oder\\nnach der Zerst\u00f6rung eines Objektes kann sich\\ndie Einheit X Felder weit bewegen (X = Anzahl\\nan Feldern zwischen Anfangs- und Endposition\\nder Einheit vor ihrer Aktion +1; max. \uff14).\\n\\n\u3010Gefroren\u3011\\nDer Ges.-Unterschied, der n\u00f6tig ist, damit die\\nEinheit Folgeangriffe ausf\u00fchren kann, wird um\\nX erh\u00f6ht und der Ges.-Unterschied, der n\u00f6tig ist,\\ndamit der Gegner Folgeangriffe ausf\u00fchren kann,\\nwird im Kampf um X verringert (ist Ver. des\\nGegners > Ver. der Einheit, gilt: X = 10 + Wert-\\nunterschied zwischen Ver.-Werten x2; ansonsten\\ngilt: X = 10).\\n\\n\u3010Sabotage\u3011\\nDie Einheit erleidet im Kampf Angr./Ges./Ver./\\nRes. -X (X = h\u00f6chste Werteverringerung auf\\nden jeweiligen Wert der Einheit oder von Ver-\\nb\u00fcndeten im Umkreis von 2 Feldern der Einheit).\\nJeder Werteabzug wird einzeln berechnet."
+	},
+	{
+		"key": "MSID_H_\u30a4\u30ea\u30a2\u306e\u6226\u65a7_NOSKW",
+		"value": "$aGew\u00e4hrt\u30102. Schritt (Entf. +1; Max. \uff14)\u3011.\\nBeschleunigt Spezialangriffe (Erholungszeit -1).\\n\\nGegner mit der geringsten Entfernung sowie\\nGegner im Umkreis von 2 Feldern dieser Gegner\\nerleiden zu Beginn des Zuges und nach der Ak-\\ntion der Einheit (wird 2. Schritt ausgel\u00f6st, nach\\n2. Schritt) bis nach ihren n\u00e4chsten Aktionen\\n\u3010Gefroren\u3011,\u3010Sabotage\u3011und Ges./Ver. -7.\\n\\nDie Einheit erh\u00e4lt Angr./Ges./Ver./Res. +15, sie\\nf\u00fcgt +25 Schaden zu (ausgenommen Spezialan-\\ngriffe mit Fl\u00e4chenwirkung), der Schaden durch\\ngegnerische Angriffe wird um 15 reduziert (aus-\\ngenommen Spezialangriffe mit Fl\u00e4chenwirkung)\\nund der Schaden durch gegnerische Spezialan-\\ngriffe wird erneut um 15 reduziert (ausgenommen\\nSpezialangriffe mit Fl\u00e4chenwirkung). Wird zudem\\nder Spezialangriff der Einheit ausgel\u00f6st, werden\\nEffekte von Nicht-Spezialf\u00e4higkeiten des Gegners\\naufgehoben, bei denen Folgendes gilt: \"Schaden\\nwird um X % verringert\" (ausgenommen Spezial-\\nangriffe mit Fl\u00e4chenwirkung)."
+	},
+	{
+		"key": "MSID_H_\u6b66\u9580\u306e\u59b9\u4e8c\u4eba\u306e\u525b\u5f13",
+		"value": "$aBeschleunigt Spezialangriffe (Erholungszeit -1).\\nEffektiv gegen Flugeinheiten.\\n\\nVerwendet die Einheit eine Sammeln- oder\\nBeistehf\u00e4higkeit, erh\u00e4lt das Ziel f\u00fcr 1 Zug\\n\u3010Ermutigung\u3011und die Einheit erh\u00e4lt eine\\nweitere Aktion (1-mal pro Zug).\\n\\nVerwendet die Einheit eine Sammeln- oder Bei-\\nstehf\u00e4higkeit bzw. wirkt eine solche auf sie, erlei-\\nden nach der Bewegung der Einheit bzw. des ver-\\nb\u00fcndeten Anwenders Gegner mit der geringsten\\nEntfernung zu Einheit und verb\u00fcndetem Ziel bzw.\\nEinheit und verb\u00fcndetem Anwender der Beisteh-\\nf\u00e4higkeit und Gegner im Umkreis von 2 Feldern\\ndieser Gegner bis nach ihren n\u00e4chsten Aktionen\\n\u3010Schutzlos\u3011,\u3010Panik\u3011und\\nAngr./Ges./Ver. -7.\\n\\nVerb\u00fcndete auf der Karte, auf die ein\\n\u3010Ermutigung\u3011-Effekt wirkt, f\u00fcgen im Kampf +7\\nSchaden zu (ausgenommen Spezialangriffe mit\\nFl\u00e4chenwirkung). Wurde Schutz nicht ausgel\u00f6st,\\ngreifen diese Verb\u00fcndeten im Kampf 2-mal an.\\n\\nDie Einheit erh\u00e4lt Angr./Ges./Ver./Res. +15, sie\\nf\u00fcgt im Kampf +25 Schaden zu (ausgenommen\\nSpezialangriffe mit Fl\u00e4chenwirkung), ihre Erho-\\nlungszeit wird pro Angriff um 1 beschleunigt (bei\\nmehreren \u00e4hnlichen Effekten wird nur der h\u00f6chste\\nangewandt) und der Schaden durch gegnerische\\nAngriffe wird im Kampf um 15 verringert (ausge-\\nnommen Spezialangriffe mit Fl\u00e4chenwirkung).\\nIst Ges. der Einheit > Ges. des Gegners oder\\nhat sie keine benachbarten Verb\u00fcndeten, auf die\\nein\u3010Ermutigung\u3011-Effekt wirkt, greift sie im\\nKampf 2-mal an.\\n\\n\u3010Ermutigung\u3011\\nGew\u00e4hrt einen Status, der bei der Einheit\\nbestimmte F\u00e4higkeiteneffekte ausl\u00f6sen kann.\\n\\n\u3010Schutzlos\u3011\\nGegnerische Angriffe f\u00fcgen +10 Schaden zu.\\n\\n\u3010Panik\u3011\\nBoni der Einheit werden ins Gegenteil\\numgewandelt."
+	},
+	{
+		"key": "MSID_H_\u6b66\u9580\u306e\u59b9\u4e8c\u4eba\u306e\u525b\u5f13_NOSKW",
+		"value": "$aBeschleunigt Spezialangriffe (Erholungszeit -1).\\nEffektiv gegen Flugeinheiten.\\n\\nVerwendet die Einheit eine Sammeln- oder\\nBeistehf\u00e4higkeit, erh\u00e4lt das Ziel f\u00fcr 1 Zug\\n\u3010Ermutigung\u3011und die Einheit erh\u00e4lt eine\\nweitere Aktion (1-mal pro Zug).\\n\\nVerwendet die Einheit eine Sammeln- oder Bei-\\nstehf\u00e4higkeit bzw. wirkt eine solche auf sie, erlei-\\nden nach der Bewegung der Einheit bzw. des ver-\\nb\u00fcndeten Anwenders Gegner mit der geringsten\\nEntfernung zu Einheit und verb\u00fcndetem Ziel bzw.\\nEinheit und verb\u00fcndetem Anwender der Beisteh-\\nf\u00e4higkeit und Gegner im Umkreis von 2 Feldern\\ndieser Gegner bis nach ihren n\u00e4chsten Aktionen\\n\u3010Schutzlos\u3011,\u3010Panik\u3011und\\nAngr./Ges./Ver. -7.\\n\\nVerb\u00fcndete auf der Karte, auf die ein\\n\u3010Ermutigung\u3011-Effekt wirkt, f\u00fcgen im Kampf +7\\nSchaden zu (ausgenommen Spezialangriffe mit\\nFl\u00e4chenwirkung). Wurde Schutz nicht ausgel\u00f6st,\\ngreifen diese Verb\u00fcndeten im Kampf 2-mal an.\\n\\nDie Einheit erh\u00e4lt Angr./Ges./Ver./Res. +15, sie\\nf\u00fcgt im Kampf +25 Schaden zu (ausgenommen\\nSpezialangriffe mit Fl\u00e4chenwirkung), ihre Erho-\\nlungszeit wird pro Angriff um 1 beschleunigt (bei\\nmehreren \u00e4hnlichen Effekten wird nur der h\u00f6chste\\nangewandt) und der Schaden durch gegnerische\\nAngriffe wird im Kampf um 15 verringert (ausge-\\nnommen Spezialangriffe mit Fl\u00e4chenwirkung).\\nIst Ges. der Einheit > Ges. des Gegners oder\\nhat sie keine benachbarten Verb\u00fcndeten, auf die\\nein\u3010Ermutigung\u3011-Effekt wirkt, greift sie im\\nKampf 2-mal an."
+	},
+	{
+		"key": "MSID_H_\u3046\u305f\u3046\u305b\u3044\u3072\u3064",
+		"value": "$aErm\u00f6glicht dem verb\u00fcndeten Ziel eine weitere\\nAktion. Wurde durch das verb\u00fcndete Ziel bereits\\n2. Schritt ausgel\u00f6st, wird es erneut gew\u00e4hrt.\\n\\nZu Beginn der Spieler- oder Gegnerphase erhal-\\nten die Einheit und Verb\u00fcndete im Umkreis von\\n3 Feldern der Einheit\u3010Drachenfluch\u3011und\\n\u3010Vorsorge-Puls\u3011f\u00fcr 1 Zug.\\n\\nZu Beginn des Zuges erhalten verb\u00fcndete Ziele\\nim Umkreis von 3 Feldern der Einheit \"Einheit\\nkann sich 1 zus\u00e4tzliches Feld bewegen\" (nur in\\ndiesem Zug, nicht kombinierbar; ist ein Unter-\\nst\u00fctzungspartner, der keine berittene Einheit mit\\nRw. = 2 ist, im Team des Spielers, bezieht sich\\nder Effekt auf den Unterst\u00fctzungspartner; an-\\ndernfalls bezieht er sich auf den Verb\u00fcndeten\\nmit dem h\u00f6chsten Angr.-Wert zu Beginn des\\nKampfes im Umkreis von 2 Feldern der Einheit,\\nausgenommen Einheit und berittene Verb\u00fcndete\\nmit Rw. = 2; \"zu Beginn des Kampfes\" grenzt jeg-\\nliche Angr.-Boni aus, die nach dem Entsenden des\\nVerb\u00fcndeten gew\u00e4hrt werden, wie etwa Legen-\\nd\u00e4re Effekte, Mythische Effekte, Bonushelden,\\nGro\u00dfes Talent etc.).\\n\\n(Kann nicht auf Verb\u00fcndete, die Singen oder\\nTanzen beherrschen, angewandt werden; diese\\nF\u00e4higkeit wird als Singen oder Tanzen behandelt.)\\n\\n\u3010Drachenfluch\u3011\\nDer Gegner erleidet im Kampf Angr./Ges./Ver./\\nRes. -5 und jeder dieser Werte wird im Kampf\\nzus\u00e4tzlich f\u00fcr 1 Zug um X verringert (X = 5 - ak-\\ntuell g\u00fcltige Werteverringerungen auf jeden die-\\nser Statuswerte; mind. 0; jeder Werteabzug wird\\neinzeln berechnet).\\n\\n\u3010Vorsorge-Puls\u3011\\nDie Erholungszeit der Einheit wird vor ihrem\\nersten Angriff im Kampf um 1 beschleunigt."
+	},
+	{
+		"key": "MSID_H_\u3046\u305f\u3046\u305b\u3044\u3072\u3064_NOSKW",
+		"value": "$aErm\u00f6glicht dem verb\u00fcndeten Ziel eine weitere\\nAktion. Wurde durch das verb\u00fcndete Ziel bereits\\n2. Schritt ausgel\u00f6st, wird es erneut gew\u00e4hrt.\\n\\nZu Beginn der Spieler- oder Gegnerphase erhal-\\nten die Einheit und Verb\u00fcndete im Umkreis von\\n3 Feldern der Einheit\u3010Drachenfluch\u3011und\\n\u3010Vorsorge-Puls\u3011f\u00fcr 1 Zug.\\n\\nZu Beginn des Zuges erhalten verb\u00fcndete Ziele\\nim Umkreis von 3 Feldern der Einheit \"Einheit\\nkann sich 1 zus\u00e4tzliches Feld bewegen\" (nur in\\ndiesem Zug, nicht kombinierbar; ist ein Unter-\\nst\u00fctzungspartner, der keine berittene Einheit mit\\nRw. = 2 ist, im Team des Spielers, bezieht sich\\nder Effekt auf den Unterst\u00fctzungspartner; an-\\ndernfalls bezieht er sich auf den Verb\u00fcndeten\\nmit dem h\u00f6chsten Angr.-Wert zu Beginn des\\nKampfes im Umkreis von 2 Feldern der Einheit,\\nausgenommen Einheit und berittene Verb\u00fcndete\\nmit Rw. = 2; \"zu Beginn des Kampfes\" grenzt jeg-\\nliche Angr.-Boni aus, die nach dem Entsenden des\\nVerb\u00fcndeten gew\u00e4hrt werden, wie etwa Legen-\\nd\u00e4re Effekte, Mythische Effekte, Bonushelden,\\nGro\u00dfes Talent etc.).\\n\\n(Kann nicht auf Verb\u00fcndete, die Singen oder\\nTanzen beherrschen, angewandt werden; diese\\nF\u00e4higkeit wird als Singen oder Tanzen behandelt.)"
+	},
+	{
+		"key": "MSID_H_\u30a6\u30a3\u30fc\u30af\u30b7\u30e7\u30c3\u30c8",
+		"value": "Wird der Spezialangriff ausgel\u00f6st, wird der\\nSchaden um 80 % des Ges.- oder Ver.-Werts\\nder Einheit erh\u00f6ht (h\u00f6herer Wert gilt).\\n\\nDer Gegner erleidet Angr./Ver. -X (X = h\u00f6chste\\nWerteverringerung auf den jeweiligen Wert des\\nZiels oder von Gegnern im Umkreis von 2 Feldern\\ndes Ziels; jeder Werteabzug wird einzeln berech-\\nnet) und der Schaden durch den ersten Angriff\\ndes Gegners wird im Kampf um 40 % verringert\\n(normalerweise bezieht sich \"erster Angriff\" auf\\nden ersten Schlag; bei Effekten, die \"Einheit greift\\n2-mal an\" gew\u00e4hren, sind der erste und zweite\\nSchlag gemeint)."
+	},
+	{
+		"key": "MSID_H_\u771f\u30fb\u8d64\u3044\u7adc\u9a0e\u58eb",
+		"value": "$aZu Beginn der Spieler- oder Gegnerphase erhal-\\nten die Einheit und Verb\u00fcndete im Umkreis von\\n2 Feldern der Einheit f\u00fcr 1 Zug\\n\u3010Angr.-Befreiung\u3011,\u3010Ges.-Befreiung\u3011und\\n\"hebt 'Effektiv gegen Flugeinheiten'-Boni auf\".\\n\\nDie Einheit erh\u00e4lt Angr./Ges./Ver./Res. +9, sie\\nf\u00fcgt +7 Schaden zu (ausgenommen Spezialan-\\ngriffe mit Fl\u00e4chenwirkung), der Schaden durch\\ngegnerische Angriffe wird um 7 verringert (aus-\\ngenommen Spezialangriffe mit Fl\u00e4chenwirkung),\\ndie Erholungszeit des Gegners wird pro Angriff\\nim Kampf um 1 zur\u00fcckgesetzt (bei mehreren\\n\u00e4hnlichen Effekten wird nur der h\u00f6chste ange-\\nwandt) und die Erholungszeit der Einheit wird\\nvor ihrem ersten Angriff und vor ihrem ersten\\nFolgeangriff im Kampf um X beschleunigt (X =\\nAnzahl an verb\u00fcndeten Flugeinheiten und Ver-\\nb\u00fcndeten mit Stab auf der Karte, inkl. Einheit;\\nmax. 3). Nach dem Kampf werden bei der Einheit\\n7 KP wiederhergestellt.\\n\\n\u3010Angr.-Befreiung\u3011\\nGew\u00e4hrt im Kampf Bonus auf Angr. in H\u00f6he der\\nAnzahl an\u3010Auftrieb\u3011-Effekten, die auf die\\nEinheit wirken, ausgenommen Werteboni, +4\\n(max. 8).\\n\\n\u3010Ges.-Befreiung\u3011\\nGew\u00e4hrt im Kampf Bonus auf Ges. in H\u00f6he der\\nAnzahl an\u3010Auftrieb\u3011-Effekten, die auf die\\nEinheit wirken, ausgenommen Werteboni, +4\\n(max. 8).\\n\\n\u3010Auftrieb\u3011\\nAlle Effekte, die \"f\u00fcr 1 Zug\" oder \"nur in diesem\\nZug\" gelten. Beinhaltet Boni durch F\u00e4higkeiten\\nwie Sammeln/Verbessern und positive\\nStatuseffekte (zus\u00e4tzliche Bewegung oder\\nEffekte wie \"Dominanz\")."
+	},
+	{
+		"key": "MSID_H_\u771f\u30fb\u8d64\u3044\u7adc\u9a0e\u58eb_NOSKW",
+		"value": "$aZu Beginn der Spieler- oder Gegnerphase erhal-\\nten die Einheit und Verb\u00fcndete im Umkreis von\\n2 Feldern der Einheit f\u00fcr 1 Zug\\n\u3010Angr.-Befreiung\u3011,\u3010Ges.-Befreiung\u3011und\\n\"hebt 'Effektiv gegen Flugeinheiten'-Boni auf\".\\n\\nDie Einheit erh\u00e4lt Angr./Ges./Ver./Res. +9, sie\\nf\u00fcgt +7 Schaden zu (ausgenommen Spezialan-\\ngriffe mit Fl\u00e4chenwirkung), der Schaden durch\\ngegnerische Angriffe wird um 7 verringert (aus-\\ngenommen Spezialangriffe mit Fl\u00e4chenwirkung),\\ndie Erholungszeit des Gegners wird pro Angriff\\nim Kampf um 1 zur\u00fcckgesetzt (bei mehreren\\n\u00e4hnlichen Effekten wird nur der h\u00f6chste ange-\\nwandt) und die Erholungszeit der Einheit wird\\nvor ihrem ersten Angriff und vor ihrem ersten\\nFolgeangriff im Kampf um X beschleunigt (X =\\nAnzahl an verb\u00fcndeten Flugeinheiten und Ver-\\nb\u00fcndeten mit Stab auf der Karte, inkl. Einheit;\\nmax. 3). Nach dem Kampf werden bei der Einheit\\n7 KP wiederhergestellt."
+	},
+	{
+		"key": "MSID_H_\u653b\u6483\u901f\u3055\u306e\u9818\u7a7a",
+		"value": "$aGew\u00e4hrt\u30102. Schritt (\uff12)\u3011.\\n\\nInitiiert die Einheit den Kampf oder befindet sie\\nsich im Umkreis von 3 Feldern eines Verb\u00fcndeten,\\nerh\u00e4lt sie Angr./Ges. +10, sie f\u00fcgt im Kampf +X\\nSchaden zu (ausgenommen Spezialangriffe mit\\nFl\u00e4chenwirkung; wirkt auf ein Feld im Umkreis\\nvon 2 Feldern der Einheit oder des Gegners ein\\nG\u00f6ttliche Ader-Effekt, handelt es sich bei einem\\ndieser Felder um ein Verteidigungsgebiet oder\\nz\u00e4hlt eines dieser Felder f\u00fcr Einheiten, au\u00dfer\\nFlugeinheiten, als schwieriges oder unpassier-\\nbares Gel\u00e4nde, gilt: X = 12; ansonsten gilt: X = 7)\\nund nach dem Kampf werden bei der Einheit\\n7 KP wiederhergestellt.\\n\\n\u30102. Schritt (\uff12)\u3011\\nNach einem Angriff, einer Beistehf\u00e4higkeit oder\\nnach der Zerst\u00f6rung eines Objektes kann sich\\ndie Einheit \uff12 Feld(er) bewegen.\\n\\n(Einheit bewegt sich je nach Bewegungstyp und\\nkann keine Angriffe oder Beistehf\u00e4higkeiten mehr\\nausf\u00fchren. 1x pro Zug. Bei mehreren \u00e4hnlichen\\nEffekten wird nur der h\u00f6chste angewandt. Hat\\ndie Einheit sich bewegt und wird eine F\u00e4higkeit\\nausgel\u00f6st, die eine weitere Aktion gew\u00e4hrt (wie\\nWirbelwind), wird 2. Schritt nach der gew\u00e4hrten\\nAktion ausgel\u00f6st. Die Basisbewegung der Einheit\\nhat keinen Einfluss auf die gew\u00e4hrte Bewegung.\\nKann sich mit F\u00e4higkeiten wie Gnadenfl\u00fcgel\\nnicht weiter teleportieren, als sie sich mit\\n2. Schritt bewegen k\u00f6nnte.)"
+	},
+	{
+		"key": "MSID_H_\u653b\u6483\u901f\u3055\u306e\u9818\u7a7a_NOSKW",
+		"value": "$aGew\u00e4hrt\u30102. Schritt (\uff12)\u3011.\\n\\nInitiiert die Einheit den Kampf oder befindet sie\\nsich im Umkreis von 3 Feldern eines Verb\u00fcndeten,\\nerh\u00e4lt sie Angr./Ges. +10, sie f\u00fcgt im Kampf +X\\nSchaden zu (ausgenommen Spezialangriffe mit\\nFl\u00e4chenwirkung; wirkt auf ein Feld im Umkreis\\nvon 2 Feldern der Einheit oder des Gegners ein\\nG\u00f6ttliche Ader-Effekt, handelt es sich bei einem\\ndieser Felder um ein Verteidigungsgebiet oder\\nz\u00e4hlt eines dieser Felder f\u00fcr Einheiten, au\u00dfer\\nFlugeinheiten, als schwieriges oder unpassier-\\nbares Gel\u00e4nde, gilt: X = 12; ansonsten gilt: X = 7)\\nund nach dem Kampf werden bei der Einheit\\n7 KP wiederhergestellt."
+	},
+	{
+		"key": "MSID_H_\u84bc\u7a79\u30fb\u9b3c\u6ca1",
+		"value": "$aGew\u00e4hrt\u30102. Schritt (Entf. +1; Max. \uff14)\u3011.\\n\\nInitiiert die Einheit den Kampf oder befindet sich\\nein Verb\u00fcndeter innerhalb von 3 Spalten oder\\n3 Reihen um die Einheit, erh\u00e4lt die Einheit Angr./\\nGes. +10, sie f\u00fcgt +X x4 Schaden zu (ausgenom-\\nmen Spezialangriffe mit Fl\u00e4chenwirkung) und der\\nSchaden durch den ersten Angriff des Gegners\\nwird im Kampf um X x3 verringert (normalerweise\\nbezieht sich \"erster Angriff\" auf den ersten Schlag;\\nbei Effekten, die \"Einheit greift 2-mal an\" gew\u00e4h-\\nren, sind der erste und zweite Schlag gemeint;\\nX = Anzahl an Verb\u00fcndeten innerhalb von 3 Rei-\\nhen oder 3 Spalten um die Einheit; max. 3).\\n\\n\u30102. Schritt (Entf. +1; Max. \uff14)\u3011\\nNach einem Angriff, einer Beistehf\u00e4higkeit oder\\nnach der Zerst\u00f6rung eines Objektes kann sich\\ndie Einheit X Felder weit bewegen (X = Anzahl\\nan Feldern zwischen Anfangs- und Endposition\\nder Einheit vor ihrer Aktion +1; max. \uff14).\\n\\n(Einheit bewegt sich entsprechend ihres\\nBewegungstyps. 1-mal pro Zug. Kann keine\\nAngriffe oder Beistehf\u00e4higkeiten ausf\u00fchren. Bei\\nmehreren \u00e4hnlichen Effekten wird nur der\\nh\u00f6chste angewandt. Hat die Einheit sich\\nbewegt und wird eine F\u00e4higkeit ausgel\u00f6st, die\\neine weitere Aktion gew\u00e4hrt (wie Wirbelwind),\\nwird 2. Schritt nach der gew\u00e4hrten Aktion\\nausgel\u00f6st. Die Basisbewegung der Einheit hat\\nkeinen Einfluss auf die gew\u00e4hrte Bewegung.\\nKann sich mit F\u00e4higkeiten wie Gnadenfl\u00fcgel\\nnicht weiter teleportieren, als sie sich mit\\n2. Schritt bewegen k\u00f6nnte.)"
+	},
+	{
+		"key": "MSID_H_\u84bc\u7a79\u30fb\u9b3c\u6ca1_NOSKW",
+		"value": "$aGew\u00e4hrt\u30102. Schritt (Entf. +1; Max. \uff14)\u3011.\\n\\nInitiiert die Einheit den Kampf oder befindet sich\\nein Verb\u00fcndeter innerhalb von 3 Spalten oder\\n3 Reihen um die Einheit, erh\u00e4lt die Einheit Angr./\\nGes. +10, sie f\u00fcgt +X x4 Schaden zu (ausgenom-\\nmen Spezialangriffe mit Fl\u00e4chenwirkung) und der\\nSchaden durch den ersten Angriff des Gegners\\nwird im Kampf um X x3 verringert (normalerweise\\nbezieht sich \"erster Angriff\" auf den ersten Schlag;\\nbei Effekten, die \"Einheit greift 2-mal an\" gew\u00e4h-\\nren, sind der erste und zweite Schlag gemeint;\\nX = Anzahl an Verb\u00fcndeten innerhalb von 3 Rei-\\nhen oder 3 Spalten um die Einheit; max. 3)."
+	},
+	{
+		"key": "MSID_H_\u901f\u5b88\u5341\u727d\u5236\u30fb\u8b00\u7b56",
+		"value": "$aGegner, die sich zu Beginn der Spieler- oder\\nGegnerphase innerhalb von 3 Reihen oder\\n3 Spalten um die Einheit befinden und deren\\nRes.-Wert < Res.-Wert der Einheit +5 ist, erlei-\\nden bis nach ihren n\u00e4chsten Aktionen\\n\u3010Trick\u3011und\u3010Schutzlos\u3011.\\n\\nGegner innerhalb von 3 Reihen oder 3 Spalten\\num die Einheit erleiden Ges./Ver. -4 sowie im\\nKampf garantierte Folgeangriffe.\\n\\n\u3010Trick\u3011\\nNeutralisiert bis nach der n\u00e4chsten Aktion der\\nEinheit\u3010Bonus-Doppler\u3011,\u3010Verrat\u3011 und\\n\u3010Gro\u00dfe Strategie\u3011-Effekte, die im Kampf auf die\\nEinheit wirken.\\n\\n\u3010Schutzlos\u3011\\nGegnerische Angriffe f\u00fcgen +10 Schaden zu.\\n\\n\u3010Bonus-Doppler\u3011\\nGew\u00e4hrt im Kampf Bonus auf\\nAngr./Ges./Ver./Res. = aktueller Bonus\\nauf jeden Statuswert der Einheit f\u00fcr 1 Zug.\\nJeder Wertebonus wird einzeln berechnet.\\n\\n\u3010Verrat\u3011\\nDie Einheit verursacht f\u00fcr 1 Zug zus\u00e4tzlichen\\nSchaden in H\u00f6he der gesamten Boni der\\nEinheit.\\n\\n\u3010Gro\u00dfe Strategie\u3011\\nErh\u00f6ht Angr./Ges./Ver./Res. im Kampf f\u00fcr 1 Zug\\num die aktuelle Verringerung der jeweiligen Werte\\nder Einheit \u00d7 2. (Beispiel: Ist Angr. der Einheit um\\n7 verringert, erh\u00e4lt sie Angr. +14, sodass sie\\ninsgesamt Angr. +7 hat.)\\nJeder Wertebonus wird einzeln berechnet.\\n\\nNegative Statuseffekte der Einheit, die \"bis\\nnach der n\u00e4chsten Aktion\" gelten, bleiben aktiv,\\nbis dieser Status (Gro\u00dfe Strategie) neutralisiert\\nwird."
+	},
+	{
+		"key": "MSID_H_\u901f\u5b88\u5341\u727d\u5236\u30fb\u8b00\u7b56_NOSKW",
+		"value": "$aGegner, die sich zu Beginn der Spieler- oder\\nGegnerphase innerhalb von 3 Reihen oder\\n3 Spalten um die Einheit befinden und deren\\nRes.-Wert < Res.-Wert der Einheit +5 ist, erlei-\\nden bis nach ihren n\u00e4chsten Aktionen\\n\u3010Trick\u3011und\u3010Schutzlos\u3011.\\n\\nGegner innerhalb von 3 Reihen oder 3 Spalten\\num die Einheit erleiden Ges./Ver. -4 sowie im\\nKampf garantierte Folgeangriffe."
+	},
+	{
+		"key": "MSID_H_\u53cc\u754c\u30d2\u30eb\u30c0",
+		"value": "$aVerleiht der Einheit und Verb\u00fcndeten aus\\ndenselben Spielen wie die Einheit\\n\u3010Resonanz: Klingen\u3011.\\n\\nDie Gegner mit der geringsten Entfernung sowie\\njeder Gegner im Umkreis von 2 Feldern dieser\\nGegner erleiden bis nach ihren n\u00e4chsten Aktionen\\n\u3010Gefroren\u3011und\u3010Geteilte Ausbeute+\u3011.\\n\\n\u3010Resonanz: Klingen\u3011\\nVerleiht Angr./Ges. +4 im Kampf f\u00fcr 1 Zug.\\n\\n\u3010Gefroren\u3011\\nDer Ges.-Unterschied, der n\u00f6tig ist, damit die\\nEinheit Folgeangriffe ausf\u00fchren kann, wird um\\nX erh\u00f6ht und der Ges.-Unterschied, der n\u00f6tig ist,\\ndamit der Gegner Folgeangriffe ausf\u00fchren kann,\\nwird im Kampf um X verringert (ist Ver. des\\nGegners > Ver. der Einheit, gilt: X = 10 + Wert-\\nunterschied zwischen Ver.-Werten x2; ansonsten\\ngilt: X = 10).\\n\\n\u3010Geteilte Ausbeute+\u3011\\nDie Einheit erleidet im Kampf Angr./Ges./Ver./\\nRes. -5 und durch Nicht-Spezialf\u00e4higkeiten der\\nEinheit ausgel\u00f6ste \"Schaden wird um X % ver-\\nringert\"-Effekte werden aufgehoben (ausgenom-\\nmen Spezialangriffe mit Fl\u00e4chenwirkung).\\n\\nFolgendes gilt f\u00fcr die gesamte Karte einmal pro\\nZug: Initiiert der Gegner den Kampf und wird die\\nEinheit im Kampf besiegt, erh\u00e4lt dieser Gegner\\nnach dem Kampf eine weitere Aktion (dieser Ef-\\nfekt hat Vorrang vor anderen \u00e4hnlichen Effekten\\nbis auf Geteilte Ausbeute; sind dieser Status und\\nGeteilte Ausbeute zur gleichen Zeit aktiv, gelten\\nsie beide als ausgel\u00f6st; \u00e4hnliche Effekte bis auf\\nGeteilte Ausbeute gelten als nicht ausgel\u00f6st)."
+	},
+	{
+		"key": "MSID_H_\u53cc\u754c\u30d2\u30eb\u30c0_NOSKW",
+		"value": "$aVerleiht der Einheit und Verb\u00fcndeten aus\\ndenselben Spielen wie die Einheit\\n\u3010Resonanz: Klingen\u3011.\\n\\nDie Gegner mit der geringsten Entfernung sowie\\njeder Gegner im Umkreis von 2 Feldern dieser\\nGegner erleiden bis nach ihren n\u00e4chsten Aktionen\\n\u3010Gefroren\u3011und\u3010Geteilte Ausbeute+\u3011."
+	},
+	{
+		"key": "MID_CHAPTER_TITLE_CX119",
+		"value": "Nebenquest 120"
+	},
+	{
+		"key": "MID_CHAPTER_CX119",
+		"value": "Zaghafte Ritterin"
+	},
+	{
+		"key": "MID_STAGE_TITLE_X1191",
+		"value": "Nebenq. 120: 1"
+	},
+	{
+		"key": "MID_STAGE_TITLE_X1192",
+		"value": "Nebenq. 120: 2"
+	},
+	{
+		"key": "MID_STAGE_TITLE_X1193",
+		"value": "Nebenq. 120: 3"
+	},
+	{
+		"key": "MID_STAGE_X1191",
+		"value": "Das ist meine Heimat"
+	},
+	{
+		"key": "MID_STAGE_X1192",
+		"value": "Sch\u00f6ne Erinnerungen"
+	},
+	{
+		"key": "MID_STAGE_X1193",
+		"value": "Eine hilfreiche Hand"
+	},
+	{
+		"key": "MID_STAGE_HONOR_T0215",
+		"value": "Treue-Heldenkampf"
+	},
+	{
+		"key": "MID_STAGE_T0215",
+		"value": "M & H"
+	},
+	{
+		"key": "MID_CHAPTER_ST_CX060",
+		"value": "Nebenq. 119+120"
+	},
+	{
+		"key": "MID_STAGE_TITLE_ST_X0118",
+		"value": "Nebenquest 119"
+	},
+	{
+		"key": "MID_STAGE_TITLE_ST_X0119",
+		"value": "Nebenquest 120"
+	},
+	{
+		"key": "MID_STAGE_TITLE_ST_X1119",
+		"value": "Nq. 119+120"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PB300",
+		"value": "F\u00e4higkeiten 300"
+	},
+	{
+		"key": "MID_STAGE_PB300",
+		"value": "Himmelssterne von Ilia"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PC148",
+		"value": "Gro\u00dfmeister 148"
+	},
+	{
+		"key": "MID_STAGE_PC148",
+		"value": "B\u00fcndnis im Geiste"
+	}
+]
