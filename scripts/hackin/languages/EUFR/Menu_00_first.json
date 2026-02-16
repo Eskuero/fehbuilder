@@ -25030,5 +25030,1417 @@
 	{
 		"key": "MID_VOTE_TERM_202411",
 		"value": "Ninjas, regroupez-vous !"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_02_v0900",
+		"value": "\u25c6 H\u00e9ros pouvant \u00eatre recrut\u00e9s \u25c6\\nVous pouvez uniquement recruter\\ndes h\u00e9ros ayant \u00e9t\u00e9 ajout\u00e9s entre\\nla version 1.0 et la version 6.11.\\n\\nVous ne pouvez pas recruter les\\nh\u00e9ros que vous d\u00e9ployez, ou les\\nversions d'Alfonse, Sharena ou\\nAnna d'un autre monde."
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING9",
+		"value": "Ouverture du livre IX"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_V0900A",
+		"value": "\u00c0 l'occasion du lancement du livre\\nIX, un nouveau style de ch\u00e2teau\\nest disponible !\\n\\nD\u00e9couvrez-le !"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_V0900A_DIALOG",
+		"value": "Voulez-vous utiliser le style de\\nch\u00e2teau C\u00e9leste ?"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_V0900A_REVERT_AFTER",
+		"value": "Si vous changez d'avis, touchez\\nFortifier le ch\u00e2teau, puis Changer\\nle style et enfin C\u00e9leste."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202412",
+		"value": "Souffle d'Ositia"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV65544",
+		"value": "C\u00e9leste"
+	},
+	{
+		"key": "MID_SCF_\u9632\u5897\u63f4\u9b54\u6cd5\u9663",
+		"value": "Cercle d'appel (D)"
+	},
+	{
+		"key": "MID_SCF_\u9632\u5897\u63f4\u9b54\u6cd5\u9663_HELP",
+		"value": "$aUn renfort appara\u00eet au tour $a0 si un\\nh\u00e9ros mythique avec appel \u00e9quipe de d\u00e9fense\\nest dans votre \u00e9quipe de d\u00e9fense. Note : plus\\nde d\u00e9tails dans le menu d'aide Modifier\\n\u00e9q. d\u00e9fense de la citadelle."
+	},
+	{
+		"key": "MID_SCF_\u653b\u5897\u63f4\u9b54\u6cd5\u9663",
+		"value": "Cercle d'appel (A)"
+	},
+	{
+		"key": "MID_SCF_\u653b\u5897\u63f4\u9b54\u6cd5\u9663_HELP",
+		"value": "$aUn renfort appara\u00eet au tour $a0 et peut effectuer\\nune action en plus par tour si un h\u00e9ros myth.\\navec appel \u00e9quipe d'attaque est dans votre \u00e9q.\\nd'attaque. Note : plus de d\u00e9tails dans le menu\\nd'aide Modifier \u00e9q. attaque du menu Combat."
+	},
+	{
+		"key": "MID_SCF_\u5897\u63f4\u9b54\u6cd5\u9663",
+		"value": "Cercle d'appel"
+	},
+	{
+		"key": "MID_SCF_\u5897\u63f4\u9b54\u6cd5\u9663_HOLIDAYHELP",
+		"value": "Un cercle magique invoquant un renfort."
+	},
+	{
+		"key": "MID_SCF_\u5929\u306e\u56fd\u306e\u7389\u5ea7",
+		"value": "Tr\u00f4ne c\u00e9leste"
+	},
+	{
+		"key": "MID_SCF_\u5929\u306e\u56fd\u306e\u7389\u5ea7_HELP",
+		"value": "Un tr\u00f4ne plein de noblesse occup\u00e9 par\\nle roi c\u00e9leste. Ses pieds sont pointus\\net quelque chose se cache sous son\\nsocle noir. De quoi s'agit-il ?"
+	},
+	{
+		"key": "MID_SCF_\u5929\u306e\u56fd\u306e\u65d7",
+		"value": "Drapeau c\u00e9leste"
+	},
+	{
+		"key": "MID_SCF_\u5929\u306e\u56fd\u306e\u65d7_HELP",
+		"value": "Drapeau d'\u00c1sgar\u00f0r, le berceau de Rune\\net des divinit\u00e9s."
+	},
+	{
+		"key": "MID_SCF_\u4e0d\u601d\u8b70\u306a\u77f3\u677f",
+		"value": "Plaque myst\u00e9rieuse"
+	},
+	{
+		"key": "MID_SCF_\u4e0d\u601d\u8b70\u306a\u77f3\u677f_HELP",
+		"value": "Une plaque de pierre similaire \u00e0 celle de Rune.\\nUn certain pouvoir myst\u00e9rieux s'en d\u00e9gage."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_OFFENSE_HELP_DIALOG_09_v0900a",
+		"value": "\u25c6Eff. mythique \u00e9quipe d'attaq. 2\u25c6\\nSi un h\u00e9ros avec l'effet mythique\\n\u00ab bonus \u00e9quipe d'attaque \u00bb est\\ndans une \u00e9quipe d'attaque (y\\ncompris dans un emplacement\\nsp\u00e9cial ou de renfort) pendant la\\nsaison correspondante, alors vous\\npourrez utiliser un emplacement\\nsp\u00e9cial."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_OFFENSE_HELP_DIALOG_16",
+		"value": "\u25c6Eff. mythique \u00e9quipe d'attaq. 3\u25c6\\nSi un h\u00e9ros avec l'effet mythique\\n\u00ab appel \u00e9quipe d'attaque \u00bb est\\ndans une \u00e9quipe d'attaque (y\\ncompris dans un emplacement\\nsp\u00e9cial ou de renfort) pendant la\\nsaison correspondante, alors vous\\npourrez utiliser un emplacement\\nde renfort. Note : ceux-ci ont les\\nm\u00eames crit\u00e8res pour les h\u00e9ros\\nque les emplacements sp\u00e9ciaux\\net ils n'affectent pas l'altitude."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_OFFENSE_HELP_DIALOG_17",
+		"value": "Les caract\u00e9ristiques des renforts\\naugmentent en fonction du total\\nde fusions du h\u00e9ros mythique\\n(+2 dracofleurs par fusion)."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_OFFENSE_HELP_DIALOG_18",
+		"value": "Vous devez avoir un cercle d'appel\\n(A) pour utiliser l'emplacement\\nde renfort.\\n\\nLe cercle d'appel (A) ne peut pas\\n\u00eatre d\u00e9truit."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_DEFENSE_HELP_DIALOG_08_v0900a",
+		"value": "\u25c6Eff. mythique \u00e9quipe de d\u00e9f. 2\u25c6\\nSi un h\u00e9ros avec l'effet mythique\\n\u00ab bonus \u00e9quipe de d\u00e9fense \u00bb est\\ndans une \u00e9quipe de d\u00e9fense (y\\ncompris dans un emplacement\\nsp\u00e9cial ou de renfort) pendant la\\nsaison correspondante, alors vous\\npourrez utiliser un emplacement\\nsp\u00e9cial."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_DEFENSE_HELP_DIALOG_16",
+		"value": "\u25c6Eff. mythique \u00e9quipe de d\u00e9f. 3\u25c6\\nSi un h\u00e9ros avec l'effet mythique\\n\u00ab appel \u00e9quipe de d\u00e9fense \u00bb est\\ndans une \u00e9quipe de d\u00e9fense (y\\ncompris dans un emplacement\\nsp\u00e9cial ou de renfort) pendant la\\nsaison correspondante, alors vous\\npourrez utiliser un emplacement\\nde renfort. Note : ceux-ci ont les\\nm\u00eames crit\u00e8res pour les h\u00e9ros\\nque les emplacements sp\u00e9ciaux\\net ils n'affectent pas l'altitude."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_DEFENSE_HELP_DIALOG_17",
+		"value": "Les caract\u00e9ristiques des renforts\\naugmentent en fonction du total\\nde fusions du h\u00e9ros mythique\\n(+2 dracofleurs par fusion)."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_DEFENSE_HELP_DIALOG_18",
+		"value": "Vous devez avoir un cercle d'appel\\n(D) pour utiliser l'emplacement\\nde renfort.\\n\\nLe cercle d'appel (D) ne peut pas\\n\u00eatre d\u00e9truit."
+	},
+	{
+		"key": "MID_SKYCASTLE_BATTLE_TOP_HELP_DIALOG_22_v0900a",
+		"value": "\u25c6 Chaos - effets d\u00e9sactiv\u00e9s \u25c6\\nLes effets l\u00e9gendaires et mythiques\\nde saison suivants seront d\u00e9sactiv\u00e9s\\nlors de la saison du chaos :\\n\u30fb Les effets am\u00e9liorant les\\ncaract\u00e9ristiques des alli\u00e9s.\\n\u30fb Les effets modifiant le gain ou\\nla perte d'altitude gr\u00e2ce \u00e0 des\\nb\u00e9n\u00e9dictions ou des fusions.\\n\u30fb Les emplacements sp\u00e9ciaux\\net de renfort."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_OFFENSE_HELP_DIALOG_14_v0900a",
+		"value": "\u25c6 Chaos - effets d\u00e9sactiv\u00e9s \u25c6\\nLes effets l\u00e9gendaires et mythiques\\nde saison suivants seront d\u00e9sactiv\u00e9s\\nlors de la saison du chaos :\\n\u30fb Les effets am\u00e9liorant les\\ncaract\u00e9ristiques des alli\u00e9s.\\n\u30fb Les effets modifiant le gain ou\\nla perte d'altitude gr\u00e2ce \u00e0 des\\nb\u00e9n\u00e9dictions ou des fusions.\\n\u30fb Les emplacements sp\u00e9ciaux\\net de renfort."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_DEFENSE_HELP_DIALOG_14_v0900a",
+		"value": "\u25c6 Chaos - effets d\u00e9sactiv\u00e9s \u25c6\\nLes effets l\u00e9gendaires et mythiques\\nde saison suivants seront d\u00e9sactiv\u00e9s\\nlors de la saison du chaos :\\n\u30fb Les effets am\u00e9liorant les\\ncaract\u00e9ristiques des alli\u00e9s.\\n\u30fb Les effets modifiant le gain ou\\nla perte d'altitude gr\u00e2ce \u00e0 des\\nb\u00e9n\u00e9dictions ou des fusions.\\n\u30fb Les emplacements sp\u00e9ciaux\\net de renfort."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202412",
+		"value": "Pierres d'\u00e9ther gel\u00e9es"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202412",
+		"value": "Servent \u00e0 construire des structures \u00e0 dur\u00e9e\\nlimit\u00e9e dans le mode Raid c\u00e9leste. Une fois\\nla p\u00e9riode termin\u00e9e, les pierres sont perdues."
+	},
+	{
+		"key": "MID_SKYCASTLE_MAGIC_CIRCLE_SLOT_CONFIRM_DIALOG_TEXT_BATTLE",
+		"value": "Commencer le combat ?"
+	},
+	{
+		"key": "MID_SKYCASTLE_MAGIC_CIRCLE_SLOT_CONFIRM_DIALOG_TEXT_TESTPLAY",
+		"value": "Commencer le combat amical ?"
+	},
+	{
+		"key": "MID_SKYCASTLE_MAGIC_CIRCLE_SLOT_CONFIRM_DIALOG_TEXT_DISPATCH",
+		"value": "Commencer le combat ?"
+	},
+	{
+		"key": "MID_SKYCASTLE_MAGIC_CIRCLE_SLOT_CONFIRM_DIALOG_WARNING_LEGEND_NOT_FOUND",
+		"value": "L'emplacement de renfort ne peut pas\\n\u00eatre utilis\u00e9 avec cette \u00e9quipe, car elle\\nne comprend pas de h\u00e9ros remplissant\\nles conditions. (Plus de d\u00e9tails dans\\nles messages d'aide de l'option\\nCr\u00e9er \u00e9quipe.)"
+	},
+	{
+		"key": "MID_SKYCASTLE_MAGIC_CIRCLE_SLOT_CONFIRM_DIALOG_WARNING_NOT_BLESSED",
+		"value": "L'emplacement de renfort ne peut pas\\n\u00eatre utilis\u00e9 avec cette \u00e9quipe, car elle\\nne comprend pas de h\u00e9ros remplissant\\nces conditions :\\n\\n\u30fb H\u00e9ros l\u00e9gendaires saisonniers\\n\u30fb H\u00e9ros mythiques ou b\u00e9nis\\nsaisonniers de type Lumi\u00e8re/Astra"
+	},
+	{
+		"key": "MID_SKYCASTLE_MAGIC_CIRCLE_SLOT_CONFIRM_DIALOG_WARNING_FACILITY_NOT_FOUND",
+		"value": "Un cercle d'appel (A), qui permet\\nde faire appara\u00eetre le h\u00e9ros de\\nl'emplacement de renfort de votre\\n\u00e9quipe d'attaque, n'a pas \u00e9t\u00e9 plac\u00e9."
+	},
+	{
+		"key": "MID_SKYCASTLE_MAGIC_CIRCLE_SLOT_CONFIRM_DIALOG_WARNING_NOT_ORGANIZED",
+		"value": "Un cercle d'appel (A) a \u00e9t\u00e9 plac\u00e9,\\nmais l'emplacement de renfort de\\nvotre \u00e9quipe d'attaque est vide."
+	},
+	{
+		"key": "MID_SKYCASTLE_MAGIC_CIRCLE_SLOT_CONFIRM_DIALOG_WARNING_UNABLE",
+		"value": "L'emplacement de renfort n'est pas\\ndisponible pendant cette saison et le\\nh\u00e9ros qui l'occupe sera d\u00e9sactiv\u00e9."
+	},
+	{
+		"key": "MID_SKYCASTLE_MAGIC_CIRCLE_SLOT_CONFIRM_DIALOG_DECIDE_BATTLE",
+		"value": "Continuer"
+	},
+	{
+		"key": "MID_SKYCASTLE_MAGIC_CIRCLE_SLOT_CONFIRM_DIALOG_DECIDE_TESTPLAY",
+		"value": "Combattre"
+	},
+	{
+		"key": "MID_SKYCASTLE_MAGIC_CIRCLE_SLOT_CONFIRM_DIALOG_DECIDE_DISPATCH",
+		"value": "Envoyer"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_DEFENSE_TROOP_ONLY_MAGIC_CIRCLE_UNIT_WARNING",
+		"value": "Vous n'avez plus de h\u00e9ros dans votre\\n\u00e9quipe en dehors de l'emplacement\\nde renfort."
+	},
+	{
+		"key": "MID_SKYCASTLE_DEFENSE_MAGIC_CIRCLE_SLOT_CONFIRM_DIALOG_TEXT",
+		"value": "Arr\u00eater de modifier la carte ?"
+	},
+	{
+		"key": "MID_SKYCASTLE_DEFENSE_MAGIC_CIRCLE_SLOT_CONFIRM_DIALOG_WARNING_LEGEND_NOT_FOUND",
+		"value": "L'emplacement de renfort ne peut pas\\n\u00eatre utilis\u00e9 avec cette \u00e9quipe, car elle\\nne comprend pas de h\u00e9ros remplissant\\nles conditions."
+	},
+	{
+		"key": "MID_SKYCASTLE_DEFENSE_MAGIC_CIRCLE_SLOT_CONFIRM_DIALOG_WARNING_NOT_ORGANIZED",
+		"value": "Un cercle d'appel (D) a \u00e9t\u00e9 plac\u00e9,\\nmais l'emplacement de renfort de\\nvotre \u00e9quipe de d\u00e9fense est vide."
+	},
+	{
+		"key": "MID_SKYCASTLE_DEFENSE_MAGIC_CIRCLE_SLOT_CONFIRM_DIALOG_WARNING_FACILITY_NOT_FOUND",
+		"value": "Un cercle d'appel (D), qui permet\\nde faire appara\u00eetre le h\u00e9ros de\\nl'emplacement de renfort de votre\\n\u00e9quipe de d\u00e9fense, n'a pas \u00e9t\u00e9 plac\u00e9."
+	},
+	{
+		"key": "MID_SKYCASTLE_DEFENSE_MAGIC_CIRCLE_SLOT_CONFIRM_DIALOG_DECIDE",
+		"value": "Arr\u00eater"
+	},
+	{
+		"key": "MID_SKYCASTLE_TROOP_REINFORCEMENT",
+		"value": "Renfort"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202412",
+		"value": "Archives de l'ouest"
+	},
+	{
+		"key": "MID_SPR19_RiverFlow_Title",
+		"value": "Le sens du courant"
+	},
+	{
+		"key": "MID_SPR19_RiverFlow_Common",
+		"value": "Le doux soleil printanier, une rivi\u00e8re qui\\ncoule... L'atmosph\u00e8re apaise leur c\u0153ur."
+	},
+	{
+		"key": "MID_SPR19_RiverFlow_3",
+		"value": "Qu'est-ce que cette chose emport\u00e9e\\npar le courant ? Le duo est d\u00e9concert\u00e9."
+	},
+	{
+		"key": "MID_SPR19_RiverFlow_4",
+		"value": "Oh ! De jolis p\u00e9tales tapissent la rivi\u00e8re...\\nDes fleurs de cerisiers attendent en amont."
+	},
+	{
+		"key": "MID_SPR19_RiverFlow_5",
+		"value": "Un tr\u00e9sor ? L'un des membres saute pour\\nle r\u00e9cup\u00e9rer. Le duo a de quoi \u00eatre fier !"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202412",
+		"value": "Ancien roi, future reine (fin)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202412",
+		"value": "\u00c9chauffement enneig\u00e9"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202501",
+		"value": "Devenir moi-m\u00eame"
+	},
+	{
+		"key": "MID_OCCUPATION_RECOLLECTION_TITLE_202501",
+		"value": "Fiora et ses s\u0153urs 1"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202501",
+		"value": "En qu\u00eate de lumi\u00e8re"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_OFFENSE_HELP_DIALOG_17_2_v0901a",
+		"value": "Les renforts peuvent obtenir\\nles bonus de caract\u00e9ristiques\\ndes effets mythiques, m\u00eame si\\nce sont des h\u00e9ros mythiques.\\n\\nSi le renfort est un h\u00e9ros\\nmythique, il n'obtient pas le bonus\\nde caract\u00e9ristique de son propre\\neffet mythique et ne le conf\u00e8re\\npas non plus \u00e0 ses alli\u00e9s."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKYCASTLE_DEFENSE_HELP_DIALOG_17_2_v0901a",
+		"value": "Les renforts peuvent obtenir\\nles bonus de caract\u00e9ristiques\\ndes effets mythiques, m\u00eame si\\nce sont des h\u00e9ros mythiques.\\n\\nSi le renfort est un h\u00e9ros\\nmythique, il n'obtient pas le bonus\\nde caract\u00e9ristique de son propre\\neffet mythique et ne le conf\u00e8re\\npas non plus \u00e0 ses alli\u00e9s."
+	},
+	{
+		"key": "MID_SKYCASTLE_DEFENSE_MAGIC_CIRCLE_SLOT_CONFIRM_DIALOG_WARNING_ONLY_MAGIC_CIRCLE_SLOT",
+		"value": "$aAvec la configuration n\u00b0\u00a0$a0, si\\nvous n'avez plus de h\u00e9ros dans votre\\n\u00e9quipe de d\u00e9fense en dehors de\\nl'emplacement de renfort, les versions\\nde niveau 40 d'Alfonse, Sharena et\\nAnna se chargeront de la d\u00e9fense\\net le h\u00e9ros de renfort appara\u00eetra."
+	},
+	{
+		"key": "MID_SKYCASTLE_DEFENSE_MAGIC_CIRCLE_SLOT_CONFIRM_DIALOG_WARNING_LEGEND_NOT_FOUND_MAP_INDEX",
+		"value": "$aLa configuration n\u00b0\u00a0$a0 de\\nl'\u00e9quipe de d\u00e9fense ne comprend pas\\nde h\u00e9ros mythique pouvant activer\\nl'emplacement de renfort, celui-ci\\nest donc inactif."
+	},
+	{
+		"key": "MID_SKYCASTLE_DEFENSE_MAGIC_CIRCLE_SLOT_CONFIRM_DIALOG_WARNING_NOT_ORGANIZED_MAP_INDEX",
+		"value": "$aUn cercle d'appel (D) a \u00e9t\u00e9 plac\u00e9 dans\\nla configuration n\u00b0\u00a0$a0, mais\\nl'emplacement de renfort de votre\\n\u00e9quipe de d\u00e9fense est vide."
+	},
+	{
+		"key": "MID_SKYCASTLE_DEFENSE_MAGIC_CIRCLE_SLOT_CONFIRM_DIALOG_WARNING_FACILITY_NOT_FOUND_MAP_INDEX",
+		"value": "$aUn cercle d'appel (D), qui permet\\nde faire appara\u00eetre le h\u00e9ros de\\nl'emplacement de renfort de\\nvotre \u00e9quipe de d\u00e9fense dans la\\nconfiguration n\u00b0\u00a0$a0, n'a pas\\n\u00e9t\u00e9 plac\u00e9."
+	},
+	{
+		"key": "MID_SKYCASTLE_DEFENSE_MAGIC_CIRCLE_SLOT_CONFIRM_DIALOG_WARNING_NOT_BLESSED",
+		"value": "$aL'emplacement ne s'activera pas, car\\nle h\u00e9ros plac\u00e9 dans l'emplacement de\\nrenfort dans la configuration n\u00b0\u00a0$a0\\nde l'\u00e9quipe de d\u00e9fense ne remplit\\naucune des conditions ci-dessous :\\n\u30fb H\u00e9ros l\u00e9gendaires saisonniers\\n\u30fb H\u00e9ros mythiques saisonniers\\nde type T\u00e9n\u00e8bres ou Anima, et h\u00e9ros\\nb\u00e9nis."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202501R",
+		"value": "Portail vers le n\u00e9ant, le retour"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202501_2",
+		"value": "Un futur cadeau"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202501",
+		"value": "Archives du nord"
+	},
+	{
+		"key": "MID_SUM21_FlowerCrown_Title",
+		"value": "Couronnement surprise"
+	},
+	{
+		"key": "MID_SUM21_FlowerCrown_Common",
+		"value": "L'un des membres du duo a une id\u00e9e !\\nLa surprise sera pr\u00e9par\u00e9e en secret."
+	},
+	{
+		"key": "MID_SUM21_FlowerCrown_3",
+		"value": "La couronne est pr\u00eate \u00e0 \u00eatre montr\u00e9e...\\nmais le vent en a d\u00e9cid\u00e9 autrement..."
+	},
+	{
+		"key": "MID_SUM21_FlowerCrown_4",
+		"value": "Ha ! Un couronnement floral a lieu. Ce\\nsourire fait de la concurrence aux fleurs."
+	},
+	{
+		"key": "MID_SUM21_FlowerCrown_5",
+		"value": "Oh, les membres du duo ont eu la m\u00eame\\nid\u00e9e ! Des oiseaux volent et le duo exulte."
+	},
+	{
+		"key": "MID_SCF_\uff18\u5468\u5e74\u30b1\u30fc\u30ad",
+		"value": "G\u00e2teau d'anniv."
+	},
+	{
+		"key": "MID_SCF_\uff18\u5468\u5e74\u30b1\u30fc\u30ad_HELP",
+		"value": "G\u00e2teau gigantesque pr\u00e9par\u00e9 pour le\\nhuiti\u00e8me anniversaire du jeu. Il s'agit\\nd'un objet d'\u00e9v\u00e9nement."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202502",
+		"value": "Pierres d'\u00e9ther sp\u00e9ciales"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202502",
+		"value": "Servent \u00e0 construire des structures \u00e0 dur\u00e9e\\nlimit\u00e9e dans le mode Raid c\u00e9leste. Une fois\\nla p\u00e9riode termin\u00e9e, les pierres sont perdues."
+	},
+	{
+		"key": "MID_VOTE_TERM_202502",
+		"value": "Survivre dans le d\u00e9sert"
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_BUTTON_SCOUTED_PERSON",
+		"value": "Vous avez d\u00e9j\u00e0 recrut\u00e9 ce h\u00e9ros."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_09",
+		"value": "\u30fbVous ne pouvez pas recruter un\\nh\u00e9ros plus d'une fois lors du m\u00eame\\n\u00e9v\u00e9nement. Par exemple, si vous\\nrecrutez Takumi, \u00e9lectron libre,\\npendant l'\u00e9v\u00e9nement, vous ne\\npourrez pas le recruter \u00e0 nouveau.\\n\u30fbVous pourrez recruter ce h\u00e9ros\\n\u00e0 nouveau \u00e0 partir du prochain\\n\u00e9v\u00e9nement."
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202502",
+		"value": "Attente \u00e9ternelle"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202502",
+		"value": "Archives de l'est"
+	},
+	{
+		"key": "MID_AUT18_Water_Title",
+		"value": "Sous le sable chaud"
+	},
+	{
+		"key": "MID_AUT18_Water_Common",
+		"value": "Il fait chaud et le duo a tr\u00e8s soif ! Il est\\ntemps de creuser le sable br\u00fblant..."
+	},
+	{
+		"key": "MID_AUT18_Water_3",
+		"value": "Oh, non ! Ce n'est pas de l'eau, mais un\\nscorpion ! Le duo transpire encore plus..."
+	},
+	{
+		"key": "MID_AUT18_Water_4",
+		"value": "Une petite flaque d'eau appara\u00eet. Le duo\\npeut enfin \u00e9tancher sa soif. Ouf !"
+	},
+	{
+		"key": "MID_AUT18_Water_5",
+		"value": "Une oasis appara\u00eet, sous les yeux \u00e9bahis\\ndu duo. Corps et esprits sont revigor\u00e9s !"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202502",
+		"value": "\u00c0 travers un miroir"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_11",
+		"value": "Serre ensoleill\u00e9e"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_11",
+		"value": "$aLes ennemis conf\u00e8rent PA x 5 pendant $a0,\\npuis PA x 2 apr\u00e8s cette p\u00e9riode ! (S'il y a\\nplusieurs effets similaires, seul le plus puissant\\ns'applique.)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202503",
+		"value": "UH\u00c9 2025 - finale"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202503",
+		"value": "Archives du sud"
+	},
+	{
+		"key": "MID_WIN19_Wind_Title",
+		"value": "Aux quatre vents"
+	},
+	{
+		"key": "MID_WIN19_Wind_Common",
+		"value": "Un vent violent emp\u00eache le duo d'avancer.\\nC'est certain, ce bouton est la solution."
+	},
+	{
+		"key": "MID_WIN19_Wind_3",
+		"value": "Le duo y \u00e9tait presque, mais incapable\\nde faire face au vent, il est emport\u00e9..."
+	},
+	{
+		"key": "MID_WIN19_Wind_4",
+		"value": "Un des membres r\u00e9agit vite et sauve\\nl'autre ! Mais les rafales les balaient."
+	},
+	{
+		"key": "MID_WIN19_Wind_5",
+		"value": "Le bouton change la direction des rafales.\\nLe duo s'\u00e9chappe, le vent en poupe !"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202503",
+		"value": "Nouvelle amiti\u00e9"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2025_0",
+		"value": "Heroes / Mystery / Echoes"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2025_1",
+		"value": "Heroes / Genealogy / Thracia 776"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2025_2",
+		"value": "Binding / Blazing / Sacred Stones"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2025_3",
+		"value": "Path of Radiance / Radiant Dawn"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2025_4",
+		"value": "Fates / Three Houses"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_SHOP_TREE_2025_5",
+		"value": "Awakening / Engage"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202503",
+		"value": "R\u00e9sister au chaos"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202503R",
+		"value": "D\u00e9vou\u00e9e \u00e0 la protection, le retour"
+	},
+	{
+		"key": "MID_VOTE_TERM_202503_01",
+		"value": "En garde, pr\u00eats..."
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202504",
+		"value": "Petits h\u00e9ros"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_202504",
+		"value": "\u00c0 l'occasion du 35e anniversaire\\nde Fire Emblem, un nouveau style\\nde ch\u00e2teau R\u00e9tro est disponible !\\n\\nD\u00e9couvrez-le !"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_202504_DIALOG",
+		"value": "Voulez-vous utiliser le style\\nde ch\u00e2teau R\u00e9tro ?"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_202504_REVERT_AFTER",
+		"value": "Si vous changez d'avis, touchez\\nFortifier le ch\u00e2teau, puis Changer\\nle style et enfin R\u00e9tro."
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202504",
+		"value": "Archives de l'ouest"
+	},
+	{
+		"key": "MID_SPR20_EatWalking_Title",
+		"value": "H\u00e9ros affam\u00e9"
+	},
+	{
+		"key": "MID_SPR20_EatWalking_Common",
+		"value": "On ne mange pas en marchant ! Mais\\nla faim s\u00e9vit d\u00e9j\u00e0 et a pris le dessus."
+	},
+	{
+		"key": "MID_SPR20_EatWalking_3",
+		"value": "Le membre affam\u00e9 d\u00e9vore tout d'un coup\\net s'\u00e9touffe ! Pfiou, c'\u00e9tait moins une..."
+	},
+	{
+		"key": "MID_SPR20_EatWalking_4",
+		"value": "Le membre affam\u00e9 montre sa gratitude\\n\u00e0 son acolyte en lui offrant le plus gros bout."
+	},
+	{
+		"key": "MID_SPR20_EatWalking_5",
+		"value": "Le bruit attire des animaux. Le duo\\nfinit le c\u0153ur et l'estomac satisfaits."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202504",
+		"value": "Lign\u00e9e des dragons"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV65545",
+		"value": "R\u00e9tro"
+	},
+	{
+		"key": "MID_SCF_\u30de\u30eb\u30b9\u306e\u50cf",
+		"value": "Statue de Marth"
+	},
+	{
+		"key": "MID_SCF_\u30de\u30eb\u30b9\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Shadow Dragon ou Fire Emblem:\\nMystery of the Emblem est votre jeu pr\u00e9f\u00e9r\u00e9 ?\\nAlors mettez cette statue r\u00e9tro dans votre\\ncitadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30a2\u30eb\u30e0\u306e\u50cf",
+		"value": "Statue d'Alm"
+	},
+	{
+		"key": "MID_SCF_\u30a2\u30eb\u30e0\u306e\u50cf_HELP",
+		"value": "Fire Emblem Echoes: Shadows of Valentia est\\nvotre jeu pr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue\\nr\u00e9tro dans votre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30bb\u30ea\u30ab\u306e\u50cf",
+		"value": "Statue de Celica"
+	},
+	{
+		"key": "MID_SCF_\u30bb\u30ea\u30ab\u306e\u50cf_HELP",
+		"value": "Fire Emblem Echoes: Shadows of Valentia est\\nvotre jeu pr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue\\nr\u00e9tro dans votre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30b7\u30b0\u30eb\u30c9\u306e\u50cf",
+		"value": "Statue de Sigurd"
+	},
+	{
+		"key": "MID_SCF_\u30b7\u30b0\u30eb\u30c9\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Genealogy of the Holy War est\\nvotre jeu pr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue\\nr\u00e9tro dans votre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30bb\u30ea\u30b9\u306e\u50cf",
+		"value": "Statue de Seliph"
+	},
+	{
+		"key": "MID_SCF_\u30bb\u30ea\u30b9\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Genealogy of the Holy War est\\nvotre jeu pr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue\\nr\u00e9tro dans votre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30ea\u30fc\u30d5\u306e\u50cf",
+		"value": "Statue de Leif"
+	},
+	{
+		"key": "MID_SCF_\u30ea\u30fc\u30d5\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Thracia 776 est votre jeu\\npr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue r\u00e9tro\\ndans votre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30ed\u30a4\u306e\u50cf",
+		"value": "Statue de Roy"
+	},
+	{
+		"key": "MID_SCF_\u30ed\u30a4\u306e\u50cf_HELP",
+		"value": "Fire Emblem: The Binding Blade est votre jeu\\npr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue r\u00e9tro\\ndans votre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30ea\u30f3\u306e\u50cf",
+		"value": "Statue de Lyn"
+	},
+	{
+		"key": "MID_SCF_\u30ea\u30f3\u306e\u50cf_HELP",
+		"value": "Fire Emblem: The Blazing Blade est votre jeu\\npr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue r\u00e9tro\\ndans votre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30a8\u30ea\u30a6\u30c3\u30c9\u306e\u50cf",
+		"value": "Statue d'Eliwood"
+	},
+	{
+		"key": "MID_SCF_\u30a8\u30ea\u30a6\u30c3\u30c9\u306e\u50cf_HELP",
+		"value": "Fire Emblem: The Blazing Blade est votre jeu\\npr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue r\u00e9tro\\ndans votre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30d8\u30af\u30c8\u30eb\u306e\u50cf",
+		"value": "Statue d'Hector"
+	},
+	{
+		"key": "MID_SCF_\u30d8\u30af\u30c8\u30eb\u306e\u50cf_HELP",
+		"value": "Fire Emblem: The Blazing Blade est votre jeu\\npr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue r\u00e9tro\\ndans votre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30a8\u30a4\u30ea\u30fc\u30af\u306e\u50cf",
+		"value": "Statue d'Eirika"
+	},
+	{
+		"key": "MID_SCF_\u30a8\u30a4\u30ea\u30fc\u30af\u306e\u50cf_HELP",
+		"value": "Fire Emblem: The Sacred Stones est votre jeu\\npr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue r\u00e9tro\\ndans votre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30a8\u30d5\u30e9\u30e0\u306e\u50cf",
+		"value": "Statue d'Ephraim"
+	},
+	{
+		"key": "MID_SCF_\u30a8\u30d5\u30e9\u30e0\u306e\u50cf_HELP",
+		"value": "Fire Emblem: The Sacred Stones est votre jeu\\npr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue r\u00e9tro\\ndans votre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30a2\u30a4\u30af\u306e\u50cf",
+		"value": "Statue d'Ike"
+	},
+	{
+		"key": "MID_SCF_\u30a2\u30a4\u30af\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Path of Radiance ou\\nFire Emblem: Radiant Dawn est votre\\njeu pr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue\\nr\u00e9tro dans votre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30df\u30ab\u30e4\u306e\u50cf",
+		"value": "Statue de Micaiah"
+	},
+	{
+		"key": "MID_SCF_\u30df\u30ab\u30e4\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Radiant Dawn est votre jeu\\npr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue r\u00e9tro\\ndans votre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30b5\u30b6\u306e\u50cf",
+		"value": "Statue de Sothe"
+	},
+	{
+		"key": "MID_SCF_\u30b5\u30b6\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Radiant Dawn est votre jeu\\npr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue r\u00e9tro\\ndans votre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30af\u30ed\u30e0\u306e\u50cf",
+		"value": "Statue de Chrom"
+	},
+	{
+		"key": "MID_SCF_\u30af\u30ed\u30e0\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Awakening est votre jeu pr\u00e9f\u00e9r\u00e9 ?\\nAlors mettez cette statue r\u00e9tro dans\\nvotre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30eb\u30ad\u30ca\u306e\u50cf",
+		"value": "Statue de Lucina"
+	},
+	{
+		"key": "MID_SCF_\u30eb\u30ad\u30ca\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Awakening est votre jeu pr\u00e9f\u00e9r\u00e9 ?\\nAlors mettez cette statue r\u00e9tro dans\\nvotre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30eb\u30d5\u30ec\u7537\u306e\u50cf",
+		"value": "Statue Daraen (M)"
+	},
+	{
+		"key": "MID_SCF_\u30eb\u30d5\u30ec\u7537\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Awakening est votre jeu pr\u00e9f\u00e9r\u00e9 ?\\nAlors mettez cette statue r\u00e9tro dans\\nvotre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30eb\u30d5\u30ec\u5973\u306e\u50cf",
+		"value": "Statue Daraen (F)"
+	},
+	{
+		"key": "MID_SCF_\u30eb\u30d5\u30ec\u5973\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Awakening est votre jeu pr\u00e9f\u00e9r\u00e9 ?\\nAlors mettez cette statue r\u00e9tro dans\\nvotre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30ab\u30e0\u30a4\u7537\u306e\u50cf",
+		"value": "Statue Corrin (M)"
+	},
+	{
+		"key": "MID_SCF_\u30ab\u30e0\u30a4\u7537\u306e\u50cf_HELP",
+		"value": "Fire Emblem Fates est votre jeu pr\u00e9f\u00e9r\u00e9 ?\\nAlors mettez cette statue r\u00e9tro dans\\nvotre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30ab\u30e0\u30a4\u5973\u306e\u50cf",
+		"value": "Statue Corrin (F)"
+	},
+	{
+		"key": "MID_SCF_\u30ab\u30e0\u30a4\u5973\u306e\u50cf_HELP",
+		"value": "Fire Emblem Fates est votre jeu pr\u00e9f\u00e9r\u00e9 ?\\nAlors mettez cette statue r\u00e9tro dans\\nvotre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30d9\u30ec\u30c8\u306e\u50cf",
+		"value": "Statue Byleth (M)"
+	},
+	{
+		"key": "MID_SCF_\u30d9\u30ec\u30c8\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Three Houses est votre jeu\\npr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue r\u00e9tro\\ndans votre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30d9\u30ec\u30b9\u306e\u50cf",
+		"value": "Statue Byleth (F)"
+	},
+	{
+		"key": "MID_SCF_\u30d9\u30ec\u30b9\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Three Houses est votre jeu\\npr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue r\u00e9tro\\ndans votre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30a8\u30fc\u30c7\u30eb\u306e\u50cf",
+		"value": "Statue d'Edelgard"
+	},
+	{
+		"key": "MID_SCF_\u30a8\u30fc\u30c7\u30eb\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Three Houses est votre jeu\\npr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue r\u00e9tro\\ndans votre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30c7\u30a3\u30df\u30c8\u30ea\u306e\u50cf",
+		"value": "Statue de Dimitri"
+	},
+	{
+		"key": "MID_SCF_\u30c7\u30a3\u30df\u30c8\u30ea\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Three Houses est votre jeu\\npr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue r\u00e9tro\\ndans votre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30af\u30ed\u30fc\u30c9\u306e\u50cf",
+		"value": "Statue de Claude"
+	},
+	{
+		"key": "MID_SCF_\u30af\u30ed\u30fc\u30c9\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Three Houses est votre jeu\\npr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue r\u00e9tro\\ndans votre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30ea\u30e5\u30fc\u30eb\u7537\u306e\u50cf",
+		"value": "Statue d'Alear (M)"
+	},
+	{
+		"key": "MID_SCF_\u30ea\u30e5\u30fc\u30eb\u7537\u306e\u50cf_HELP",
+		"value": "Fire Emblem Engage est votre jeu pr\u00e9f\u00e9r\u00e9 ?\\nAlors mettez cette statue r\u00e9tro dans votre\\ncitadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30ea\u30e5\u30fc\u30eb\u5973\u306e\u50cf",
+		"value": "Statue d'Alear (F)"
+	},
+	{
+		"key": "MID_SCF_\u30ea\u30e5\u30fc\u30eb\u5973\u306e\u50cf_HELP",
+		"value": "Fire Emblem Engage est votre jeu pr\u00e9f\u00e9r\u00e9 ?\\nAlors mettez cette statue r\u00e9tro dans votre\\ncitadelle !"
+	},
+	{
+		"key": "MID_SCF_\u6a39\u306e\u50cf",
+		"value": "Statue d'Itsuki"
+	},
+	{
+		"key": "MID_SCF_\u6a39\u306e\u50cf_HELP",
+		"value": "Tokyo Mirage Sessions \u266fFE Encore est votre\\njeu pr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue r\u00e9tro\\ndans votre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30a2\u30eb\u30d5\u30a9\u30f3\u30b9\u306e\u50cf",
+		"value": "Statue d'Alfonse"
+	},
+	{
+		"key": "MID_SCF_\u30a2\u30eb\u30d5\u30a9\u30f3\u30b9\u306e\u50cf_HELP",
+		"value": "Fire Emblem Heroes est votre jeu pr\u00e9f\u00e9r\u00e9 ?\\nAlors mettez cette statue r\u00e9tro dans votre\\ncitadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30b7\u30e3\u30ed\u30f3\u306e\u50cf",
+		"value": "Statue de Sharena"
+	},
+	{
+		"key": "MID_SCF_\u30b7\u30e3\u30ed\u30f3\u306e\u50cf_HELP",
+		"value": "Fire Emblem Heroes est votre jeu pr\u00e9f\u00e9r\u00e9 ?\\nAlors mettez cette statue r\u00e9tro dans votre\\ncitadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30a2\u30f3\u30ca\u306e\u50cf",
+		"value": "Statue d'Anna"
+	},
+	{
+		"key": "MID_SCF_\u30a2\u30f3\u30ca\u306e\u50cf_HELP",
+		"value": "Fire Emblem Heroes est votre jeu pr\u00e9f\u00e9r\u00e9 ?\\nAlors mettez cette statue r\u00e9tro dans votre\\ncitadelle !"
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202504",
+		"value": "Pierres d'\u00e9ther sp\u00e9ciales"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202504",
+		"value": "Servent \u00e0 construire des structures \u00e0 dur\u00e9e\\nlimit\u00e9e dans le mode Raid c\u00e9leste. Une fois\\nla p\u00e9riode termin\u00e9e, les pierres sont perdues."
+	},
+	{
+		"key": "MID_VOTE_TERM_202505",
+		"value": "L'avenir comme fardeau"
+	},
+	{
+		"key": "MID_CHAIN_ARENA_HELP_DIALOG_10_v0905",
+		"value": "\u25c6 Repli strat\u00e9gique \u25c6\\nTrois fois par s\u00e9rie de victoires,\\nvous pouvez retourner sur l'\u00e9cran\\npr\u00e9c\u00e9dent sans perdre votre score\\nou votre s\u00e9rie. Si vous r\u00e9initialisez\\nvotre s\u00e9rie, cette option sera \u00e0\\nnouveau disponible."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_02_v0905",
+		"value": "\u25c6 H\u00e9ros pouvant \u00eatre recrut\u00e9s \u25c6\\nVous pouvez uniquement recruter\\ndes h\u00e9ros ayant \u00e9t\u00e9 ajout\u00e9s entre\\nla version 1.0 et la version 6.11.\\n\\nVous ne pouvez pas recruter les\\nh\u00e9ros que vous d\u00e9ployez, ou les\\nversions d'Alfonse, Sharena, Anna\\nou Ash avec lesquelles vous\\ncommencez."
+	},
+	{
+		"key": "MID_IDOL_TOWER_HELP_DIALOG_06_v0905",
+		"value": "\u25c6 Formez vos \u00e9veill\u00e9s - infos \u25c6\\n\u30fb\u00c0 partir de la salle 13, deux\\naptitudes dont le co\u00fbt en PA\\nd\u00e9passe un certain seuil seront\\naffich\u00e9es par emplacement.\\n\u30fbDans la salle 25, trois aptitudes\\nayant un co\u00fbt particuli\u00e8rement\\n\u00e9lev\u00e9 en PA seront affich\u00e9es."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202505",
+		"value": "Sombre co\u00efncidence"
+	},
+	{
+		"key": "MID_RESERVE_BARRACKS_TOP_HELP_DIALOG_03_v0905",
+		"value": "\u25c6 Autres informations \u25c6\\nQuand un h\u00e9ros est plac\u00e9 dans\\nune r\u00e9serve, il perd ses sceaux,\\nses accessoires, son effet Duo,\\nson soutien d'invocateur et ses\\nfusions."
+	},
+	{
+		"key": "MID_HOME_YOU_ARE_HERO_MISSION_NOTIFICATION",
+		"value": "Obtenez une r\u00e9compense par jour\\ndurant Moment de gloire."
+	},
+	{
+		"key": "MID_HOME_YOU_ARE_HERO_NAVIGATION_JUMP",
+		"value": "Moment de gloire"
+	},
+	{
+		"key": "MID_CONFIG_HOME_NOTIFICATION_YOU_ARE_HERO",
+		"value": "Notif. d'accueil\\nMoment de gloire"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_TITLE",
+		"value": "Moment de gloire"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_REMAINING_DAYS",
+		"value": "$aEncore $a0 j."
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_REMAINING_HOURS",
+		"value": "$aEncore $a0 h."
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_REMAINING_MINUTES",
+		"value": "$aEncore $a0 min."
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_CLOSED",
+		"value": "\u00c9v\u00e9nement termin\u00e9."
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_STAMINA",
+		"value": "\u00c9nergie h\u00e9ro\u00efque"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_WARNING_NO_STAMINA",
+		"value": "\u00c9nergie h\u00e9ro\u00efque insuffisante."
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_WARNING_TERM_EXPIRED",
+		"value": "\u00c9v\u00e9nement termin\u00e9."
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_DAILY_BONUS_REWARD",
+		"value": "Une r\u00e9compense \u00e0 gagner chaque jour !"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_DAILY_BONUS_INFO",
+		"value": "Gagnez une r\u00e9compense chaque jour\\nen terminant une carte. (5 jours max.)"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_FIRST_REWARD",
+		"value": "R\u00e9compense 1re victoire :"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_ENTRANCE_BUTTON_STAGE_SELECT",
+		"value": "Choix du niveau"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_ENTRANCE_BUTTON_GAIN_ENHANCE",
+		"value": "Effets d'aptitudes"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_ENTRANCE_BUTTON_SYSTEM_MENU",
+		"value": "Recommencer"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_ENTRANCE_BUTTON_REWARD",
+		"value": "R\u00e9compenses"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_ENTRANCE_BONUS_TITLE",
+		"value": "H\u00e9ros bonus"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_ENTRANCE_BONUS_VERSION",
+		"value": "$aVersion : $a0"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_ENTRANCE_SET_TROOP_DIALOG_CONFIRM",
+		"value": "Commencer l'\u00e9v\u00e9nement ?"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_ENTRANCE_SET_TROOP_DIALOG_WARNING",
+		"value": "Pendant l'\u00e9v\u00e9nement, votre \u00e9quipe\\nne peut pas \u00eatre modifi\u00e9e, \u00e0 moins\\nde recommencer depuis le d\u00e9but en\\ns\u00e9lectionnant \u00ab Recommencer \u00bb."
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_ENTRANCE_SET_TROOP_DIALOG_DECIDE",
+		"value": "Commencer"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_ENTRANCE_SET_TROOP_DIALOG_FAILED",
+		"value": "Impossible de commencer l'\u00e9v\u00e9nement."
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_ENTRANCE_SET_TROOP_DIALOG_FAILED_WARNING_TROOP_RESTRICTION",
+		"value": "Tous les emplacements de votre\\n\u00e9quipe doivent \u00eatre occup\u00e9s par\\nun h\u00e9ros.\\n\\nImpossible d'utiliser plusieurs\\nexemplaires du m\u00eame h\u00e9ros.\\n\\nVous ne pouvez pas utiliser plus\\nd'un alli\u00e9 avec l'aptitude Chant ou\\nDanse.\\n\\nVous ne pouvez pas utiliser plus\\nd'un alli\u00e9 avec l'aptitude Sauveur."
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_ENTRANCE_GAIN_BONUS_ENHANCE_DIALOG_CONFIRM",
+		"value": "Les h\u00e9ros avec bonus de version\\nre\u00e7oivent des effets d'aptitudes\\npositifs."
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_SYSTEM_MENU_START_OVER_FROM_FIRST",
+		"value": "Recommencer"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_SYSTEM_MENU_START_OVER_FROM_FIRST_DIALOG_CONFIRM",
+		"value": "Recommencer depuis le d\u00e9but\u00a0?"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_SYSTEM_MENU_START_OVER_FROM_FIRST_DIALOG_WARNING",
+		"value": "Toute la progression sera perdue,\\nsauf les r\u00e9compenses. L'\u00e9nergie\\nh\u00e9ro\u00efque consomm\u00e9e sera restaur\u00e9e."
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_SYSTEM_MENU_START_OVER_FROM_FIRST_DIALOG_DECIDE",
+		"value": "Recommencer"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_STAGE",
+		"value": "$aStrate $a0"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_GAIN_ENHANCE_HELP",
+		"value": "$aChoisir un effet d'aptitude. (Encore : $a0)"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_GAIN_ENHANCE_NONE",
+		"value": "Ne pas obtenir"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_GAIN_ENHANCE_DIALOG_CONFIRM",
+		"value": "Obtenir cet effet d'aptitude ?"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_GAIN_ENHANCE_DIALOG_DECIDE",
+		"value": "Obtenir"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_GAIN_ENHANCE_DIALOG_NONE_CONFIRM",
+		"value": "Fermer sans obtenir ?"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_GAIN_ENHANCE_DIALOG_NONE_DECIDE",
+		"value": "Fermer"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_HELP_DIALOG_00",
+		"value": "Vos h\u00e9ros pr\u00e9f\u00e9r\u00e9s luttent avec\\ndes effets d'aptitudes positifs !"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_HELP_DIALOG_01",
+		"value": "\u25c6 Moment de gloire \u25c6\\nD\u00e9ployez vos h\u00e9ros pr\u00e9f\u00e9r\u00e9s.\\n\\nLes h\u00e9ros accumulent des effets\\nd'aptitudes positifs pour devenir\\nplus puissants."
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_HELP_DIALOG_02",
+		"value": "\u25c6 D\u00e9ploiement \u25c6\\n\u30fb1 \u00e9nergie h\u00e9ro\u00efque consomm\u00e9e\\nlorsque vous d\u00e9ployez des h\u00e9ros.\\n\\n\u30fbL'\u00e9nergie h\u00e9ro\u00efque est restaur\u00e9e\\nenti\u00e8rement lorsque vous perdez\\ndans la strate o\u00f9 se trouve le boss\\nfinal. (Elle n'est pas restaur\u00e9e si\\nvotre \u00e9nergie h\u00e9ro\u00efque est d\u00e9j\u00e0\\nau maximum.)\\n"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_HELP_DIALOG_03",
+		"value": "\u25c6 \u00c0 propos de l'\u00e9v\u00e9nement \u25c6\\nAu d\u00e9but de chaque tour, chaque\\nh\u00e9ros re\u00e7oit tous les effets\\nd'aptitudes obtenus en ayant\\ntermin\u00e9 des cartes ou gr\u00e2ce\\naux bonus."
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_HELP_DIALOG_04",
+		"value": "\u25c6 Formation des \u00e9quipes \u25c6\\n\u30fbImpossible d'utiliser plusieurs\\nexemplaires du m\u00eame h\u00e9ros.\\n\u30fbVous ne pouvez pas utiliser plus\\nd'un alli\u00e9 avec l'aptitude Chant ou\\nDanse.\\n\u30fbVous ne pouvez pas utiliser plus\\nd'un alli\u00e9 avec l'aptitude Sauveur."
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_HELP_DIALOG_05",
+		"value": "\u25c6 H\u00e9ros avec bonus de version \u25c6\\nLes h\u00e9ros issus des versions du\\njeu qui les rendent \u00e9ligibles pour\\nle bonus de version peuvent\\nrecevoir trois effets d'aptitudes\\npositifs au d\u00e9but de l'\u00e9v\u00e9nement.\\n\\n(Les effets d'aptitudes sont\\nal\u00e9atoires et d\u00e9termin\u00e9s\\nautomatiquement.)"
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_HELP_DIALOG_06",
+		"value": "\u25c6 Chances de bonus \u25c6\\nApr\u00e8s avoir termin\u00e9 des cartes,\\nvous pouvez conf\u00e9rer des effets\\nd'aptitudes aux h\u00e9ros en\\nchoisissant parmi les options\\nqui s'affichent."
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_HELP_DIALOG_07",
+		"value": "\u25c6 Gain de force avec les bonus \u25c6\\nUne fois que vos h\u00e9ros sont\\nd\u00e9ploy\u00e9s sur chaque carte, ils\\nobtiennent PV/Atq/Vit/D\u00e9f/R\u00e9s +X\\n(X = nombre d'effets d'aptitudes\\nobtenus jusque-l\u00e0 x2 ; h\u00e9ros avec\\nbonus de version : 26 maximum ;\\nautres h\u00e9ros : 20 maximum)."
+	},
+	{
+		"key": "MID_YOU_ARE_HERO_HELP_DIALOG_08",
+		"value": "\u25c6 Autres informations \u25c6\\n\u30fb Les effets de saison des h\u00e9ros\\nl\u00e9gendaires et mythiques sont\\nd\u00e9sactiv\u00e9s.\\n\u30fb Les doubles aptitudes et les\\naptitudes harmonis\u00e9es ne peuvent\\npas \u00eatre utilis\u00e9es.\\n\u30fb Vous ne gagnez pas d'EXP ou\\nde PA.\\n\u30fb Il est possible de gagner\\ndu m\u00e9rite h\u00e9ro\u00efque."
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202505",
+		"value": "Archives du nord"
+	},
+	{
+		"key": "MID_SUM22_RainLeak_Title",
+		"value": "Une fuite dans le toit"
+	},
+	{
+		"key": "MID_SUM22_RainLeak_Common",
+		"value": "Le toit du cellier fuit et l'eau tombe\\ndans un grand seau..."
+	},
+	{
+		"key": "MID_SUM22_RainLeak_3",
+		"value": "L'eau suit le duo \u00e0 la trace. Quelqu'un\\ncontr\u00f4le-t-il sa trajectoire ?"
+	},
+	{
+		"key": "MID_SUM22_RainLeak_4",
+		"value": "Ah ! Une grenouille est apparue d'un coup !\\nVue de pr\u00e8s, elle est plut\u00f4t adorable..."
+	},
+	{
+		"key": "MID_SUM22_RainLeak_5",
+		"value": "Il y a des fuites partout ! Alors, c'est parti !\\nR\u00e9cup\u00e9rer les gouttes amuse le duo !"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202505R",
+		"value": "Esprits en \u00e9bullition, le retour"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202505",
+		"value": "Mari\u00e9es solitaires"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_12",
+		"value": "Navire oc\u00e9anique"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_12",
+		"value": "$aLes ennemis conf\u00e8rent PA x 5 pendant $a0,\\npuis PA x 2 apr\u00e8s cette p\u00e9riode ! (S'il y a\\nplusieurs effets similaires, seul le plus puissant\\ns'applique.)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202505_01",
+		"value": "Succomber aux t\u00e9n\u00e8bres"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING9_2",
+		"value": "2e partie du livre IX"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202506",
+		"value": "\u00c9veil de l'obscurit\u00e9"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202506",
+		"value": "Archives de l'est"
+	},
+	{
+		"key": "MID_AUT19_Turnip_Title",
+		"value": "Navet colossal"
+	},
+	{
+		"key": "MID_AUT19_Turnip_Common",
+		"value": "Un navet g\u00e9ant pousse dans le champ !\\nMais comment faire pour le r\u00e9colter ?"
+	},
+	{
+		"key": "MID_AUT19_Turnip_3",
+		"value": "Le duo n'arrive pas \u00e0 l'arracher ! Il est\\ntrop gros... La frustration se fait sentir."
+	},
+	{
+		"key": "MID_AUT19_Turnip_4",
+		"value": "Le duo doit coop\u00e9rer... mais il n'arrive\\nqu'\u00e0 arracher une feuille !"
+	},
+	{
+		"key": "MID_AUT19_Turnip_5",
+		"value": "Le duo allait abandonner, mais Feh\\nest apparue et a r\u00e9ussi \u00e0 le d\u00e9terrer."
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202506",
+		"value": "Une s\u0153ur mod\u00e8le"
+	},
+	{
+		"key": "MID_VOTE_TERM_202507",
+		"value": "Ma s\u0153ur est la meilleure !"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202507R",
+		"value": "Symbole d'espoir, le retour"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202507",
+		"value": "Filles d'Askr 1"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202507_1",
+		"value": "Ouverture du livre VI"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202507_2",
+		"value": "2e partie du livre VI"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_SPECIAL_STORY_202507_3",
+		"value": "\u00c9pilogue du livre VI"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202507",
+		"value": "Archives du sud"
+	},
+	{
+		"key": "MID_WIN20_WhiteOut_Title",
+		"value": "Temp\u00eate de neige"
+	},
+	{
+		"key": "MID_WIN20_WhiteOut_Common",
+		"value": "Quelle violente temp\u00eate, on n'y voit rien !\\nO\u00f9 se trouve l'autre membre du duo ?"
+	},
+	{
+		"key": "MID_WIN20_WhiteOut_3",
+		"value": "La temp\u00eate a cess\u00e9, mais il n'y a personne.\\nLe monde est un endroit vaste et brutal."
+	},
+	{
+		"key": "MID_WIN20_WhiteOut_4",
+		"value": "La temp\u00eate est pass\u00e9e... Oh, une source\\nchaude ! Quelle b\u00e9n\u00e9diction de la nature !"
+	},
+	{
+		"key": "MID_WIN20_WhiteOut_5",
+		"value": "Des pingouins se blottissent les uns\\ncontre les autres pour survivre au froid !"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202507",
+		"value": "Espoirs de lib\u00e9ration"
+	},
+	{
+		"key": "MID_SCF_\u5411\u65e5\u8475\u7551\u3068\u30d5\u30a7\u30fc",
+		"value": "Tournesols de Feh"
+	},
+	{
+		"key": "MID_SCF_\u5411\u65e5\u8475\u7551\u3068\u30d5\u30a7\u30fc_HELP",
+		"value": "Une statue de Feh ayant l'air heureuse lors\\nde ses vacances au beau milieu des tournesols\\nen pleine floraison."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202508",
+		"value": "Pierres d'\u00e9ther sp\u00e9ciales"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202508",
+		"value": "Servent \u00e0 construire des structures \u00e0 dur\u00e9e\\nlimit\u00e9e dans le mode Raid c\u00e9leste. Une fois\\nla p\u00e9riode termin\u00e9e, les pierres sont perdues."
+	},
+	{
+		"key": "MID_VOTE_TERM_202508",
+		"value": "\u00c9viter un coup de soleil"
+	},
+	{
+		"key": "MID_IDOL_TOWER_HELP_DIALOG_06_v0908",
+		"value": "\u25c6 Formez vos \u00e9veill\u00e9s - infos \u25c6\\n\u30fbDes salles 13 \u00e0 20, deux\\naptitudes dont le co\u00fbt en PA\\nd\u00e9passe un certain seuil seront\\naffich\u00e9es par emplacement.\\n\u30fbDes salles 21 \u00e0 24, deux\\naptitudes ayant un co\u00fbt\\nparticuli\u00e8rement \u00e9lev\u00e9 en PA\\nseront affich\u00e9es."
+	},
+	{
+		"key": "MID_IDOL_TOWER_HELP_DIALOG_07_v0908",
+		"value": "\u30fbDans la salle 25, trois aptitudes\\napparues \u00e0 partir de la version 8\\net ayant un co\u00fbt particuli\u00e8rement\\n\u00e9lev\u00e9 en PA seront affich\u00e9es."
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202508",
+		"value": "Filles d'Askr 2"
+	},
+	{
+		"key": "MID_SKYCASTLEHOLIDAY_EXCHANGE_CATEGORY_TITLE_MISC",
+		"value": "Ornements"
+	},
+	{
+		"key": "MID_SKYCASTLEHOLIDAY_EXCHANGE_CATEGORY_HELP_MISC",
+		"value": "Structures d\u00e9coratives."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202508",
+		"value": "Brillante volont\u00e9"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_13",
+		"value": "Palace d\u00e9sertique"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_13",
+		"value": "$aLes ennemis conf\u00e8rent PA x 5 pendant $a0,\\npuis PA x 2 apr\u00e8s cette p\u00e9riode ! (S'il y a\\nplusieurs effets similaires, seul le plus puissant\\ns'applique.)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202508_01",
+		"value": "Allez, courage !"
+	},
+	{
+		"key": "MID_OCCUPATION_RECOLLECTION_TITLE_202509",
+		"value": "Ross et les siens 1"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202509R",
+		"value": "Avenir potentiel, le retour"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202509",
+		"value": "Filles d'Askr 3"
+	},
+	{
+		"key": "MID_UNIT_INFO_BLESSING_CONNECT",
+		"value": "$aH\u00e9ros m\u00eal\u00e9\\n\\n\u30fb Les rangs de soutien d'alli\u00e9 et d'invocateur\\naugmentent avec chaque d\u00e9ploiement, jusqu'\u00e0\\natteindre le rang de soutien S+, sup\u00e9rieur \u00e0 S.\\n\u30fb Quand un h\u00e9ros m\u00eal\u00e9 et son partenaire\\nre\u00e7oivent des avantages de soutien, ils gagnent\\naussi $a0/$a1 +$a2 pendant le combat.\\n\u30fb Un h\u00e9ros autre qu'un h\u00e9ros m\u00eal\u00e9 obtient\\nles avantages mentionn\u00e9s ci-dessus lorsque\\nvous lui donnez un $a3."
+	},
+	{
+		"key": "MID_ITEM_BOUQUET",
+		"value": "$aBouquet ($a0)"
+	},
+	{
+		"key": "MID_ITEM_HELP_BOUQUET",
+		"value": "$a\u30fb Les rangs de soutien d'alli\u00e9 et d'invocateur\\naugmentent avec chaque d\u00e9ploiement, jusqu'\u00e0\\natteindre le rang de soutien S+, sup\u00e9rieur \u00e0 S.\\n\u30fb Quand un h\u00e9ros m\u00eal\u00e9 et son partenaire\\nre\u00e7oivent des avantages de soutien, ils gagnent\\naussi $a0/$a1 +$a2 pendant le combat."
+	},
+	{
+		"key": "MID_ITEM_HELP_TAMER_SOUL_FOR_INFO",
+		"value": "\u30fb Le h\u00e9ros peut s'\u00e9quiper d'un renfort.\\n\u30fb Le h\u00e9ros gagne PV/Atq/Vit/D\u00e9f/R\u00e9s +1."
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_9",
+		"value": "M\u00eal\u00e9"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_USED_BOUQUET_WARNING",
+		"value": "Vous allez lib\u00e9rer un h\u00e9ros ayant\\nun bouquet.\\n\\nVoulez-vous vraiment lib\u00e9rer\\nce h\u00e9ros ?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_USED_BOUQUET_WARNING",
+		"value": "Vous allez utiliser \u00ab Transmettre\\naptitudes \u00bb sur un h\u00e9ros ayant\\nun bouquet.\\n\\nVoulez-vous vraiment utiliser\\n\u00ab Transmettre aptitudes \u00bb sur\\nce h\u00e9ros ?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMIT_BREAK_USED_BOUQUET_WARNING",
+		"value": "Vous allez fusionner un h\u00e9ros ayant\\nun bouquet.\\n\\nVoulez-vous vraiment fusionner\\nce h\u00e9ros ?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_GENERATE_USED_BOUQUET_WARNING",
+		"value": "Vous allez compiler un livret militaire\\nen utilisant un h\u00e9ros ayant\\nun bouquet.\\n\\nVoulez-vous vraiment compiler un\\nlivret militaire en utilisant ce h\u00e9ros ?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_RECOLLECTION_5",
+		"value": "Rang S+"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_EMPTY",
+		"value": "Aucun bouquet."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET",
+		"value": "Donner bouquet"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP1",
+		"value": "Choisir un bouquet"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP2",
+		"value": "Choisissez le h\u00e9ros auquel donner un bouquet."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_SELECT_LEFT",
+		"value": "Perdra"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_SELECT_RIGHT",
+		"value": "Recevra"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_DIALOG_CONFIRM",
+		"value": "$aDonner le $a0 ?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_DIALOG_WARNING",
+		"value": "L'effet du bouquet actuel sera annul\u00e9\\nsi un nouveau bouquet est donn\u00e9."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_DIALOG_BUTTON_DECIDE",
+		"value": "Donner"
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_RANK_5",
+		"value": "S+"
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_EFFECT_PAIR_5",
+		"value": "Si le partenaire est dans l'\u00e9quipe\\ndu joueur, obtient Atq/Vit/D\u00e9f/R\u00e9s +2\\npendant le combat."
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_EFFECT_PLAYER_5",
+		"value": "PV +7, Atq/Vit/D\u00e9f/R\u00e9s +2"
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_00",
+		"value": "\u25c6 Donner des bouquets \u25c6\\nLorsque vous donnez un bouquet\\n\u00e0 un h\u00e9ros, ce dernier obtient les\\neffets du h\u00e9ros m\u00eal\u00e9."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_01",
+		"value": "\u25c6 Effet 1 \u25c6\\nLes rangs de soutien d'alli\u00e9\\net d'invocateur augmentent avec\\nchaque d\u00e9ploiement, jusqu'au\\nrang de soutien maximum S+,\\nsup\u00e9rieur \u00e0 S."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_02",
+		"value": "\u30fb Le rang de soutien\\nd'invocateur S+ conf\u00e8re PV +2.\\n\\n\u30fb Le rang de soutien d'alli\u00e9 S+\\nannule la condition de distance de\\nl'avantage de soutien qui conf\u00e8re\\nAtq/Vit/D\u00e9f/R\u00e9s +2 lorsqu'ils\\ncombattent c\u00f4te \u00e0 c\u00f4te."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_03",
+		"value": "\u25c6 Effet 2 \u25c6\\nQuand un h\u00e9ros m\u00eal\u00e9 et son\\npartenaire re\u00e7oivent des avantages\\nde soutien, ils obtiennent aussi\\nun boost de caract\u00e9ristiques\\npendant le combat (varie en\\nfonction du bouquet)."
+	},
+	{
+		"key": "MID_UNIT_EDIT_BOUQUET_HELP_DIALOG_04",
+		"value": "\u25c6 Autres informations \u25c6\\n\u30fb Les bouquets peuvent \u00eatre\\ndonn\u00e9s \u00e0 des h\u00e9ros non m\u00eal\u00e9s.\\n\\n\u30fb Si un h\u00e9ros obtient des boosts\\nde caract\u00e9ristiques gr\u00e2ce \u00e0 ses\\nbouquets ou ceux du partenaire,\\nseul le boost le plus puissant de\\nchaque caract\u00e9ristique s'applique."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_05_v0909b",
+		"value": "\u25c6 Les \u00e9veill\u00e9s n'h\u00e9ritent pas \u25c6\\n\u30fb Fusions\\n\u30fb Atouts \u00e9minents\\n\u30fb Tenues resplendissantes\\n\u30fb Essences de renfort\\n\u30fb Bouquets\\n\u30fb B\u00e9n\u00e9dictions\\n\u30fb Sceaux sacr\u00e9s\\n\u30fb Accessoires"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202509",
+		"value": "Archives de l'ouest"
+	},
+	{
+		"key": "MID_SPR21_Feast_Title",
+		"value": "Festin de beignets"
+	},
+	{
+		"key": "MID_SPR21_Feast_Common",
+		"value": "Trois jours sans un vrai repas...\\nQui terminera donc ce qui reste ?"
+	},
+	{
+		"key": "MID_SPR21_Feast_3",
+		"value": "Une souris vole la nourriture\u00a0? Oh non...\\nSes r\u00e9flexes sont vraiment \u00e9tonnants."
+	},
+	{
+		"key": "MID_SPR21_Feast_4",
+		"value": "Qui pourrait manger \u00e7a tout seul ?\\nUn mets si d\u00e9licieux doit \u00eatre partag\u00e9 !"
+	},
+	{
+		"key": "MID_SPR21_Feast_5",
+		"value": "Ouah\u00a0! Une montagne de beignets\u00a0?!\\nCela suffira s\u00fbrement \u00e0 les rassasier."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202509",
+		"value": "Des sourires \u00e0 n'en plus finir"
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_PROCESS_RANK_S_PLUS",
+		"value": "Les alli\u00e9s sont profond\u00e9ment li\u00e9s !\\nSe battre \u00e0 n'importe quelle distance\\nrapporte un boost de caract\u00e9ristiques."
+	},
+	{
+		"key": "MID_UNIT_EDIT_RELIANCE_PROCESS_RANK_S_PLUS_WITH_USER",
+		"value": "Vous \u00eates profond\u00e9ment li\u00e9s !\\nL'alli\u00e9 re\u00e7oit un boost."
+	},
+	{
+		"key": "MID_VOTE_TERM_202510",
+		"value": "En garde !"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202510",
+		"value": "Filles d'Askr 4"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202510",
+		"value": "Archives du nord"
+	},
+	{
+		"key": "MID_SUM23_Ship_Title",
+		"value": "Mal de mer"
+	},
+	{
+		"key": "MID_SUM23_Ship_Common",
+		"value": "Malade \u00e0 cause du remous des vagues,\\nle duo se regarde..."
+	},
+	{
+		"key": "MID_SUM23_Ship_3",
+		"value": "Une pomme pourrait soulager ces naus\u00e9es.\\nMais impossible d'avaler quoi que ce soit..."
+	},
+	{
+		"key": "MID_SUM23_Ship_4",
+		"value": "D'un seul coup, la pomme dispara\u00eet !\\nUn oiseau l'a vol\u00e9e !"
+	},
+	{
+		"key": "MID_SUM23_Ship_5",
+		"value": "Leur amiti\u00e9 emp\u00eache un accident !\\nLa gratitude remplace le mal de mer !"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202510",
+		"value": "Un pour tous, tous pour un"
+	},
+	{
+		"key": "MID_VOTE_TERM_202510_01",
+		"value": "Une b\u00eate ou un sort !"
+	},
+	{
+		"key": "MID_CONFIG_SHOW_MAP_VEIN",
+		"value": "Affichage\\nVeine divine"
+	},
+	{
+		"key": "MID_CONFIG_SHOW_MAP_VEIN_RICH",
+		"value": "Complet"
+	},
+	{
+		"key": "MID_CONFIG_SHOW_MAP_VEIN_SIMPLE_WITHOUT_ICE",
+		"value": "Simple, sauf glace"
+	},
+	{
+		"key": "MID_CONFIG_SHOW_MAP_VEIN_SIMPLE",
+		"value": "Simple"
+	},
+	{
+		"key": "MID_JOURNEY_EVENT_TERM_202511",
+		"value": "Archives de l'est"
+	},
+	{
+		"key": "MID_AUT20_Defoliation_Title",
+		"value": "Feuilles mortes"
+	},
+	{
+		"key": "MID_AUT20_Defoliation_Common",
+		"value": "La chute gracieuse des feuilles est source\\nd'inspiration... Une f\u00e9e de la for\u00eat dansant..."
+	},
+	{
+		"key": "MID_AUT20_Defoliation_3",
+		"value": "La honte l'envahit face au regard\\nper\u00e7ant de l'autre membre du duo."
+	},
+	{
+		"key": "MID_AUT20_Defoliation_4",
+		"value": "Le duo danse ensemble ? Bien\\nentendu ! Et c'est une danse joyeuse."
+	},
+	{
+		"key": "MID_AUT20_Defoliation_5",
+		"value": "Une danse \u00e0 deux ? Pourquoi pas avec\\ntoute la for\u00eat ? Quel merveilleux moment !"
+	},
+	{
+		"key": "MID_SEQUENTIAL_MAP_TERM_202511",
+		"value": "Filles d'Askr 5"
+	},
+	{
+		"key": "MID_EXTRA_MOVIELIST_OPENING9_3",
+		"value": "Fin du livre IX"
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202511R",
+		"value": "\u00c0 travers un miroir, le retour"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_14",
+		"value": "Bains d'Hoshido"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_SP_HELP_14",
+		"value": "$aLes ennemis conf\u00e8rent PA x 5 pendant $a0,\\npuis PA x 2 apr\u00e8s cette p\u00e9riode ! (S'il y a\\nplusieurs effets similaires, seul le plus puissant\\ns'applique.)"
+	},
+	{
+		"key": "MID_VOTE_TERM_202511",
+		"value": "Le muscle ne ment pas"
 	}
 ]
