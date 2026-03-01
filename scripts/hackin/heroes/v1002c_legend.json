@@ -1,0 +1,147 @@
+[
+	{
+		"id_tag": "PID_\u795e\u968e\u30c1\u30ad\u899a\u9192",
+		"roman": "TIKI_A_GOD01",
+		"face_name": "ch04_12_Tiki_F_God01",
+		"face_name2": "ch04_12_Tiki_F_God01",
+		"legendary": {
+			"duo_skill_id": "",
+			"bonus_effect": {
+				"hp": 5,
+				"atk": 0,
+				"spd": 0,
+				"def": 5,
+				"res": 0
+			},
+			"kind": 1,
+			"element": 5,
+			"bst": 0,
+			"pair_up": false,
+			"ae_extra": 3
+		},
+		"dragonflowers": {
+			"max_count": 5,
+			"costs": [
+				40,
+				80,
+				120,
+				160,
+				200
+			]
+		},
+		"timestamp": null,
+		"id_num": 1351,
+		"version_num": 1002,
+		"sort_value": 900100,
+		"origins": 1024,
+		"weapon_type": 19,
+		"tome_class": 0,
+		"move_type": 1,
+		"series": 10,
+		"random_pool": 0,
+		"permanent_hero": false,
+		"base_vactor_id": 38,
+		"refresher": false,
+		"base_stats": {
+			"hp": 26,
+			"atk": 11,
+			"spd": 3,
+			"def": 12,
+			"res": 10
+		},
+		"growth_rates": {
+			"hp": 60,
+			"atk": 85,
+			"spd": 30,
+			"def": 80,
+			"res": 90
+		},
+		"skills": [
+			[
+				"SID_\u706b\u306e\u30d6\u30ec\u30b9",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			[
+				"SID_\u706b\u708e\u306e\u30d6\u30ec\u30b9",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u751f\u547d\u306e\u9759\u6c341",
+				null,
+				"SID_\u9060\u8ddd\u96e2\u8b66\u62121",
+				null,
+				null
+			],
+			[
+				"SID_\u706b\u708e\u306e\u30d6\u30ec\u30b9",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u707c\u71b1\u306e\u30d6\u30ec\u30b9",
+				null,
+				"SID_\u6c37\u70b9",
+				"SID_\u751f\u547d\u306e\u9759\u6c342",
+				null,
+				"SID_\u9060\u8ddd\u96e2\u8b66\u62122",
+				null,
+				null
+			],
+			[
+				"SID_\u707c\u71b1\u306e\u30d6\u30ec\u30b9",
+				null,
+				"SID_\u6c37\u70b9",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u6c37\u83ef",
+				"SID_\u751f\u547d\u306e\u9759\u6c343",
+				null,
+				"SID_\u9060\u8ddd\u96e2\u8b66\u62123",
+				null,
+				null
+			],
+			[
+				"SID_\u899a\u9192\u306e\u30d6\u30ec\u30b9",
+				null,
+				"SID_\u6c37\u70b9",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u91cd\u88c5\u306e\u53cc\u6c37",
+				"SID_\u706b\u5730\u6c34\u306e\u547d\u8108",
+				"SID_\u771f\u65b0\u305f\u306a\u308b\u795e\u7adc\u738b",
+				"SID_\u7e04\u5f35\u308a\u30fb\u8b77\u308a\u624b\u30fb\u9060",
+				null,
+				null
+			]
+		]
+	}
+]
