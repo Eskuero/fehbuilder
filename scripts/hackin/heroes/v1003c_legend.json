@@ -1,0 +1,147 @@
+[
+	{
+		"id_tag": "PID_\u7d0b\u7ae0\u30eb\u30ad\u30ca",
+		"roman": "LUCINA_EMBLEM01",
+		"face_name": "ch04_01_Lucina_F_Emblem01",
+		"face_name2": "ch04_01_Lucina_F_Emblem01",
+		"legendary": {
+			"duo_skill_id": "SID_\u7d0b\u7ae0\u30eb\u30ad\u30ca",
+			"bonus_effect": {
+				"hp": 0,
+				"atk": 0,
+				"spd": 0,
+				"def": 0,
+				"res": 0
+			},
+			"kind": 7,
+			"element": 0,
+			"bst": 0,
+			"pair_up": false,
+			"ae_extra": 0
+		},
+		"dragonflowers": {
+			"max_count": 5,
+			"costs": [
+				40,
+				80,
+				120,
+				160,
+				200
+			]
+		},
+		"timestamp": null,
+		"id_num": 1361,
+		"version_num": 1003,
+		"sort_value": 6900100,
+		"origins": 17408,
+		"weapon_type": 3,
+		"tome_class": 0,
+		"move_type": 0,
+		"series": 10,
+		"random_pool": 0,
+		"permanent_hero": false,
+		"base_vactor_id": 237,
+		"refresher": false,
+		"base_stats": {
+			"hp": 18,
+			"atk": 11,
+			"spd": 10,
+			"def": 8,
+			"res": 8
+		},
+		"growth_rates": {
+			"hp": 50,
+			"atk": 80,
+			"spd": 90,
+			"def": 60,
+			"res": 50
+		},
+		"skills": [
+			[
+				"SID_\u9244\u306e\u5f13",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			[
+				"SID_\u92fc\u306e\u5f13",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u653b\u6483\u901f\u3055\u306e\u4e07\u51681",
+				"SID_\u653b\u6483\u901f\u3055\u306e\u9023\u643a1",
+				"SID_\u30c7\u30e5\u30a2\u30eb\u30b5\u30dd\u30fc\u30c81",
+				null,
+				null
+			],
+			[
+				"SID_\u92fc\u306e\u5f13",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u9280\u306e\u5f13",
+				"SID_\u5165\u308c\u66ff\u3048",
+				"SID_\u661f\u5f71",
+				"SID_\u653b\u6483\u901f\u3055\u306e\u4e07\u51682",
+				"SID_\u653b\u6483\u901f\u3055\u306e\u9023\u643a2",
+				"SID_\u30c7\u30e5\u30a2\u30eb\u30b5\u30dd\u30fc\u30c82",
+				null,
+				null
+			],
+			[
+				"SID_\u9280\u306e\u5f13",
+				"SID_\u5165\u308c\u66ff\u3048",
+				"SID_\u661f\u5f71",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u6d41\u661f",
+				"SID_\u653b\u6483\u901f\u3055\u306e\u4e07\u51683",
+				"SID_\u653b\u6483\u901f\u3055\u306e\u9023\u643a3",
+				"SID_\u30c7\u30e5\u30a2\u30eb\u30b5\u30dd\u30fc\u30c83",
+				null,
+				null
+			],
+			[
+				"SID_\u8056\u738b\u5973\u306e\u5f13",
+				"SID_\u5165\u308c\u66ff\u3048",
+				"SID_\u661f\u5f71",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u30aa\u30fc\u30eb\u30d5\u30a9\u30fc\u30ef\u30f3",
+				"SID_\u653b\u6483\u901f\u3055\u306e\u5b8c\u5168",
+				"SID_\u653b\u6483\u901f\u3055\u306e\u5171\u611f",
+				"SID_\u30c7\u30e5\u30a2\u30eb\u30b5\u30dd\u30fc\u30c84",
+				null,
+				null
+			]
+		]
+	}
+]
