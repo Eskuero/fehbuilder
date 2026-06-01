@@ -97,7 +97,8 @@ for file in files:
 			elif entry["category"] == 10:
 				category = entry["category"]
 				categories[category][entry["id_tag"]] = {
-					"iconid": entry["icon_id"]
+					"iconid": entry["icon_id"],
+					"stats": [value for value in entry["stats"].values()]
 				}
 
 refinenames = {"神": "Wrathful", "幻": "Dazzling", "ATK": "Atk", "AGI": "Spd", "DEF": "Def", "RES": "Res"}
@@ -192,7 +193,8 @@ skillsonline = {
 		for passivecategory in ["A", "B", "C", "X", "S"]
     },
 	"assists": skills["assists"],
-	"specials": skills["specials"]
+	"specials": skills["specials"],
+	"emblemskills": skills["emblemskills"]
 }
 # FIXME: Can't we just ignore iconids from within the dict comprehession?
 for weapon in skillsonline["weapons"]:

@@ -217,7 +217,7 @@ function setupdownload() {
 }
 
 // Simple housekeeping function to add the stats boost from different static modifiers
-function staticmodifiers(passives, summoner, buffs) {
+function staticmodifiers(passives, summoner, buffs, emblemskill) {
 	var othermodifiers = [0, 0, 0, 0, 0];
 
 	// Add visible stats from skills
@@ -249,6 +249,13 @@ function staticmodifiers(passives, summoner, buffs) {
 	if (summoner) {
 		othermodifiers = othermodifiers.map(function (value, index) {
 			return value + summonerranks[summoner][index];
+		});
+	}
+	// Add emblem hero skill stats
+	if (selectemblemhero.value != "None") {
+		emblemstats = skills["emblemskills"]["S" + selectemblemhero.value.slice(1)]["stats"]
+		othermodifiers = othermodifiers.map(function (value, index) {
+			return value + emblemstats[index];
 		});
 	}
 
