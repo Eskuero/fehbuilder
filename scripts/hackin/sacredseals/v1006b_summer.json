@@ -1,0 +1,56 @@
+[
+	{
+		"id_tag": "SID_\u653b\u6483\u5b88\u5099\u306e\u5e72\u6e091",
+		"next_seal": "SID_\u653b\u6483\u5b88\u5099\u306e\u5e72\u6e092",
+		"prev_seal": null,
+		"ss_coin": 40,
+		"ss_badge_type": 2,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u5b88\u5099\u306e\u5e72\u6e092",
+		"next_seal": "SID_\u653b\u6483\u5b88\u5099\u306e\u5e72\u6e093",
+		"prev_seal": "SID_\u653b\u6483\u5b88\u5099\u306e\u5e72\u6e091",
+		"ss_coin": 50,
+		"ss_badge_type": 2,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u653b\u6483\u5b88\u5099\u306e\u5e72\u6e093",
+		"next_seal": null,
+		"prev_seal": "SID_\u653b\u6483\u5b88\u5099\u306e\u5e72\u6e092",
+		"ss_coin": 100,
+		"ss_badge_type": 2,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	},
+	{
+		"id_tag": "SID_\u5f71\u52a9\u30fb\u4f53\u5f53\u305f\u308a1",
+		"next_seal": "SID_\u5f71\u52a9\u30fb\u4f53\u5f53\u305f\u308a2",
+		"prev_seal": null,
+		"ss_coin": 40,
+		"ss_badge_type": 1,
+		"ss_badge": 100,
+		"ss_great_badge": 20
+	},
+	{
+		"id_tag": "SID_\u5f71\u52a9\u30fb\u4f53\u5f53\u305f\u308a2",
+		"next_seal": "SID_\u5f71\u52a9\u30fb\u4f53\u5f53\u305f\u308a3",
+		"prev_seal": "SID_\u5f71\u52a9\u30fb\u4f53\u5f53\u305f\u308a1",
+		"ss_coin": 50,
+		"ss_badge_type": 1,
+		"ss_badge": 200,
+		"ss_great_badge": 60
+	},
+	{
+		"id_tag": "SID_\u5f71\u52a9\u30fb\u4f53\u5f53\u305f\u308a3",
+		"next_seal": null,
+		"prev_seal": "SID_\u5f71\u52a9\u30fb\u4f53\u5f53\u305f\u308a2",
+		"ss_coin": 100,
+		"ss_badge_type": 1,
+		"ss_badge": 1000,
+		"ss_great_badge": 400
+	}
+]
