@@ -1,0 +1,626 @@
+[
+	{
+		"key": "MDAID_\u541f\u904a\u8a69\u4eba\u306e\u30c8\u30eb\u30b9\u30fb\u91d1",
+		"value": "Gol. Barden-Helmwulst"
+	},
+	{
+		"key": "MDAID_H_\u541f\u904a\u8a69\u4eba\u306e\u30c8\u30eb\u30b9\u30fb\u91d1",
+		"value": "Beweis f\u00fcr den Sieg \u00fcber die\\nMythische Heldin J\u00f6rmungandr."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_112",
+		"value": "Die Einheit erh\u00e4lt Angr./Ges./Ver./Res +4 sowie\\nzus\u00e4tzlich Angr./Ges./Ver./Res +X (X = h\u00f6chste\\nWerteverringerung auf den jeweiligen Wert von\\nVerb\u00fcndeten im Umkreis von 2 Feldern der Ein-\\nheit; jeder Wertebonus wird einzeln berechnet),\\ndie Werteverringerungen der Einheit werden\\naufgehoben und der Schaden durch gegnerische\\nAngriffe wird im Kampf um 7 verringert (ein-\\nschlie\u00dflich Spezialangriffe mit Fl\u00e4chenwirkung;\\nau\u00dfer Spezialangriffe mit Fl\u00e4chenwirkung von\\nR\u00f8kkr).\\n(F\u00fcr 1 Zug.)"
+	},
+	{
+		"key": "MID_ENHANCE_HELP_112",
+		"value": "Statuswerte werden abh\u00e4ngig von den Werte-\\n  verringerungen naher Verb\u00fcndeter erh\u00f6ht;\\n  hebt Werteverringerungen der Einheit auf"
+	},
+	{
+		"key": "MID_MISSION_M202607A_TITLE",
+		"value": "Juli-Quests"
+	},
+	{
+		"key": "MID_MISSION_M202607A_A1",
+		"value": "Arena\u00fcberfall: 1 Sieg"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A1",
+		"value": "Gewinne einen Kampf beim Arena\u00fcberfall."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A2",
+		"value": "Arena\u00fcberfall: 3 Siege"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A2",
+		"value": "Gewinne beim Arena\u00fcberfall drei K\u00e4mpfe\\nin Folge."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A3",
+		"value": "Arena\u00fcberfall: 5 Siege"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A3",
+		"value": "Gewinne beim Arena\u00fcberfall f\u00fcnf K\u00e4mpfe\\nin Folge."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A4",
+		"value": "Alfonse greift an"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A4",
+		"value": "Lass Alfonse: Prinz von Askr\\neinen Gegner besiegen."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A5",
+		"value": "Sharena greift an"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A5",
+		"value": "Lass Sharena: Askra. Prinzessin\\neinen Gegner besiegen."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A6",
+		"value": "Anna greift an"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A6",
+		"value": "Lass Kommandantin Anna einen Gegner\\nbesiegen."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A7",
+		"value": "Rot besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A7",
+		"value": "Besiege rote Gegner."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A8",
+		"value": "Blau besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A8",
+		"value": "Besiege blaue Gegner."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A9",
+		"value": "Gr\u00fcn besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A9",
+		"value": "Besiege gr\u00fcne Gegner."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A10",
+		"value": "Farblos besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A10",
+		"value": "Besiege farblose Gegner."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A11",
+		"value": "Infanterie besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A11",
+		"value": "Besiege Infanterieeinheiten."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A12",
+		"value": "Gepanzerte besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A12",
+		"value": "Besiege gepanzerte Einheiten."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A13",
+		"value": "Reiter besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A13",
+		"value": "Besiege berittene Einheiten."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A14",
+		"value": "Flieger besiegen"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A14",
+		"value": "Besiege Flugeinheiten."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A15",
+		"value": "Kap. 13 Tl. 1"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A15",
+		"value": "Bew\u00e4ltige Buch VIII, Kapitel 13 - Teil 1 auf\\nExtrem. Alle vier Verb\u00fcndeten m\u00fcssen\\n\u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A16",
+		"value": "Kap. 13 Tl. 2"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A16",
+		"value": "Bew\u00e4ltige Buch VIII, Kapitel 13 - Teil 2 auf\\nExtrem. Alle vier Verb\u00fcndeten m\u00fcssen\\n\u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A17",
+		"value": "Kap. 13 Tl. 3"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A17",
+		"value": "Bew\u00e4ltige Buch VIII, Kapitel 13 - Teil 3 auf\\nExtrem. Alle vier Verb\u00fcndeten m\u00fcssen\\n\u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A18",
+		"value": "Kap. 13 Tl. 4"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A18",
+		"value": "Bew\u00e4ltige Buch VIII, Kapitel 13 - Teil 4 auf\\nExtrem. Alle vier Verb\u00fcndeten m\u00fcssen\\n\u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A19",
+		"value": "Kap. 13 Tl. 5"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A19",
+		"value": "Bew\u00e4ltige Buch VIII, Kapitel 13 - Teil 5 auf\\nExtrem. Alle vier Verb\u00fcndeten m\u00fcssen\\n\u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A20",
+		"value": "\u00c4R: Erfolgreicher Angriff"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A20",
+		"value": "Greife im Modus \"\u00c4therraubz\u00fcge\"\\nerfolgreich an."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A21",
+		"value": "\u00c4R: Erfolgreicher Angriff"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A21",
+		"value": "Greife im Modus \"\u00c4therraubz\u00fcge\"\\nerfolgreich an."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A22",
+		"value": "\u00c4R: Erfolgreicher Angriff"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A22",
+		"value": "Greife im Modus \"\u00c4therraubz\u00fcge\"\\nerfolgreich an."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A23",
+		"value": "Gewinne Arenaduelle"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A23",
+		"value": "Gewinne Arenaduelle eines\\nbeliebigen Schwierigkeitsgrads."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A24",
+		"value": "Gewinne Arenaduelle"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A24",
+		"value": "Gewinne Arenaduelle eines\\nbeliebigen Schwierigkeitsgrads."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A25",
+		"value": "Gewinne Arenaduelle"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A25",
+		"value": "Gewinne Arenaduelle eines\\nbeliebigen Schwierigkeitsgrads."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_TITLE",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A1",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A1",
+		"value": "Gewinne einen Kampf\\nim Wahlturnier."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A2",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A2",
+		"value": "Gewinne K\u00e4mpfe\\nim Wahlturnier."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A3",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A3",
+		"value": "Gewinne K\u00e4mpfe\\nim Wahlturnier."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A4",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A4",
+		"value": "Gewinne K\u00e4mpfe\\nim Wahlturnier."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A5",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A5",
+		"value": "Gewinne K\u00e4mpfe\\nim Wahlturnier."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A6",
+		"value": "\u00dcbungsturm: 2. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A6",
+		"value": "Bew\u00e4ltige die zweite Stufe\\ndes \u00dcbungsturms."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A7",
+		"value": "\u00dcbungsturm: 5. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A7",
+		"value": "Bew\u00e4ltige die f\u00fcnfte Stufe\\ndes \u00dcbungsturms."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A8",
+		"value": "\u00dcbungsturm: 8. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A8",
+		"value": "Bew\u00e4ltige die achte Stufe\\ndes \u00dcbungsturms."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A9",
+		"value": "Gewinne Arenaduelle"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A9",
+		"value": "Gewinne ein Arenaduell eines\\nbeliebigen Schwierigkeitsgrads."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A10",
+		"value": "Gewinne Arenaduelle"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A10",
+		"value": "Gewinne Arenaduelle eines\\nbeliebigen Schwierigkeitsgrads."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A11",
+		"value": "Arenaduelle / Mittel+"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A11",
+		"value": "Gewinne Arenaduelle auf\\nmittlerem oder h\u00f6herem\\nSchwierigkeitsgrad."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A12",
+		"value": "Arenaduelle / Mittel+"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A12",
+		"value": "Gewinne Arenaduelle auf\\nmittlerem oder h\u00f6herem\\nSchwierigkeitsgrad."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A13",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A13",
+		"value": "Gewinne einen Kampf im\\nWahlturnier mit einem roten\\nVerb\u00fcndeten in deinem Team."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A14",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A14",
+		"value": "Gewinne einen Kampf im\\nWahlturnier mit einem blauen\\nVerb\u00fcndeten in deinem Team."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A15",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A15",
+		"value": "Gewinne einen Kampf im\\nWahlturnier mit einem gr\u00fcnen\\nVerb\u00fcndeten in deinem Team."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A16",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A16",
+		"value": "Gewinne einen Kampf im\\nWahlturnier mit einem farblosen\\nVerb\u00fcndeten in deinem Team."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A17",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A17",
+		"value": "Gewinne K\u00e4mpfe im Wahlturnier\\nmit einem roten Verb\u00fcndeten in\\ndeinem Team."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A18",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A18",
+		"value": "Gewinne K\u00e4mpfe im Wahlturnier\\nmit einem blauen Verb\u00fcndeten in\\ndeinem Team."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A19",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A19",
+		"value": "Gewinne K\u00e4mpfe im Wahlturnier\\nmit einem gr\u00fcnen Verb\u00fcndeten in\\ndeinem Team."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A20",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A20",
+		"value": "Gewinne K\u00e4mpfe im Wahlturnier\\nmit einem farblosen Verb\u00fcndeten\\nin deinem Team."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A21",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A21",
+		"value": "Gewinne K\u00e4mpfe im Wahlturnier\\nmit einem roten Verb\u00fcndeten in\\ndeinem Team."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A22",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A22",
+		"value": "Gewinne K\u00e4mpfe im Wahlturnier\\nmit einem blauen Verb\u00fcndeten in\\ndeinem Team."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A23",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A23",
+		"value": "Gewinne K\u00e4mpfe im Wahlturnier\\nmit einem gr\u00fcnen Verb\u00fcndeten in\\ndeinem Team."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A24",
+		"value": "Wahlturnier"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A24",
+		"value": "Gewinne K\u00e4mpfe im Wahlturnier\\nmit einem farblosen Verb\u00fcndeten\\nin deinem Team."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_TITLE",
+		"value": "Juli-\u00dcbung"
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A1",
+		"value": "\u00dcbungsturm: 1. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A1",
+		"value": "Bew\u00e4ltige die erste Stufe des \u00dcbungsturms.\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A2",
+		"value": "\u00dcbungsturm: 2. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A2",
+		"value": "Bew\u00e4ltige die zweite Stufe des \u00dcbungsturms.\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A3",
+		"value": "\u00dcbungsturm: 3. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A3",
+		"value": "Bew\u00e4ltige die dritte Stufe des \u00dcbungsturms.\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A4",
+		"value": "\u00dcbungsturm: 4. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A4",
+		"value": "Bew\u00e4ltige die vierte Stufe des \u00dcbungsturms.\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A5",
+		"value": "\u00dcbungsturm: 5. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A5",
+		"value": "Bew\u00e4ltige die f\u00fcnfte Stufe des \u00dcbungsturms.\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A6",
+		"value": "\u00dcbungsturm: 6. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A6",
+		"value": "Bew\u00e4ltige die sechste Stufe des \u00dcbungsturms.\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A7",
+		"value": "\u00dcbungsturm: 7. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A7",
+		"value": "Bew\u00e4ltige die siebte Stufe des \u00dcbungsturms.\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A8",
+		"value": "\u00dcbungsturm: 8. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A8",
+		"value": "Bew\u00e4ltige die achte Stufe des \u00dcbungsturms.\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A9",
+		"value": "\u00dcbungsturm: 9. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A9",
+		"value": "Bew\u00e4ltige die neunte Stufe des \u00dcbungsturms.\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A10",
+		"value": "\u00dcbungsturm: 10. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A10",
+		"value": "Bew\u00e4ltige die zehnte Stufe des \u00dcbungsturms.\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A11",
+		"value": "\u00dcbungsturm: 10. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A11",
+		"value": "Bew\u00e4ltige die zehnte Stufe des \u00dcbungsturms\\nnur mit Infanterieeinheiten. (\u00dcber \"Kombi\" als\\nHelfer entsandte Verb\u00fcndete z\u00e4hlen nicht.)\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A12",
+		"value": "\u00dcbungsturm: 10. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A12",
+		"value": "Bew\u00e4ltige die zehnte Stufe des \u00dcbungsturms\\nnur mit gepanzerten Einheiten. (\u00dcber \"Kombi\"\\nals Helfer entsandte Verb\u00fcndete z\u00e4hlen nicht.)\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A13",
+		"value": "\u00dcbungsturm: 10. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A13",
+		"value": "Bew\u00e4ltige die zehnte Stufe des \u00dcbungsturms\\nnur mit berittenen Einheiten. (\u00dcber \"Kombi\" als\\nHelfer entsandte Verb\u00fcndete z\u00e4hlen nicht.)\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A14",
+		"value": "\u00dcbungsturm: 10. Stufe"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A14",
+		"value": "Bew\u00e4ltige die zehnte Stufe des \u00dcbungsturms\\nnur mit Flugeinheiten. (\u00dcber \"Kombi\" als\\nHelfer entsandte Verb\u00fcndete z\u00e4hlen nicht.)\\nAlle vier Verb\u00fcndeten m\u00fcssen \u00fcberleben."
+	},
+	{
+		"key": "MPID_\u30e8\u30eb\u30e0\u30f3\u30ac\u30f3\u30c9\u5473\u65b9",
+		"value": "J\u00f6rmungandr"
+	},
+	{
+		"key": "MPID_SEARCH_\u30e8\u30eb\u30e0\u30f3\u30ac\u30f3\u30c9\u5473\u65b9",
+		"value": "Jormungandr"
+	},
+	{
+		"key": "MPID_HONOR_\u30e8\u30eb\u30e0\u30f3\u30ac\u30f3\u30c9\u5473\u65b9",
+		"value": "Ruhende G\u00f6ttin"
+	},
+	{
+		"key": "MPID_H_\u30e8\u30eb\u30e0\u30f3\u30ac\u30f3\u30c9\u5473\u65b9",
+		"value": "G\u00f6ttin der Erholung und des M\u00fc\u00dfiggangs. Sie\\nw\u00fcnscht den Menschen, dass sie ihr Leben in\\nMu\u00dfe f\u00fchren k\u00f6nnen."
+	},
+	{
+		"key": "MPID_VOICE_\u30e8\u30eb\u30e0\u30f3\u30ac\u30f3\u30c9\u5473\u65b9",
+		"value": "Jennifer Sun Bell"
+	},
+	{
+		"key": "MPID_ILLUST_\u30e8\u30eb\u30e0\u30f3\u30ac\u30f3\u30c9\u5473\u65b9",
+		"value": "Yoshiku (\u56db\u3005\u4e5d)"
+	},
+	{
+		"key": "MPID_LEGEND_\u30e8\u30eb\u30e0\u30f3\u30ac\u30f3\u30c9\u5473\u65b9",
+		"value": "Mythischer Effekt: Astra\\nVerb\u00fcndetenbonus: KP +5, Ver. +5\\n\\nGew\u00e4hrt Verb\u00fcndeten diesen mythischen Effekt\\nin der Astrasaison, wenn sie mit Astra gesegnet\\nsind und mit dieser Einheit in \u00c4therraubz\u00fcgen\\nK\u00e4mpfe austragen: Helden mit Astrasegen\\nst\u00e4rken die Erh\u00f6hung des \u00c4therniveaus durch\\nerfolgreiche Angriffe w\u00e4hrend der Astrasaison.\\n(Die Verst\u00e4rkung ist beschr\u00e4nkt auf: Anzahl\\nmythischer Helden x Anzahl der Helden mit\\ndem Segen x 10.)\\n\\nW\u00e4hrend der Astrasaison verst\u00e4rkt dieser\\nMythische Held die Erh\u00f6hung des \u00c4therniveaus\\ndurch erfolgreiche Angriffe je nach Anzahl der\\nVerbindungen. (Die Verst\u00e4rkung ist beschr\u00e4nkt\\nauf: Anzahl der Verbindungen der Einheit x 1.)\\n\\nMythischer Effekt 2: Astra\\nVerb\u00fcndetenbonus: Raubgruppen-Bonus\\n\\nMythischer Effekt 3: Astra\\nVerb\u00fcndetenbonus: Raubgruppen-Ruf\\n(Weitere Informationen findest du bei\\n\"Raubgruppen \u00e4ndern\".)"
+	},
+	{
+		"key": "MID_TIPS_Summon_v1006c_legend_01_\u30e8\u30eb\u30e0\u30f3\u30ac\u30f3\u30c9\u5473\u65b9",
+		"value": "Sie reduziert den Schaden von Folge-\\nangriffen auf 1! Mit ihrem Schutz bringt\\nsie Verb\u00fcndeten Ruhe und stellt deren\\nGesundheit wieder her!"
+	},
+	{
+		"key": "MSID_\u306e\u3093\u3073\u308a\u3060\u3089\u30fc\u3093",
+		"value": "Entspannen"
+	},
+	{
+		"key": "MSID_SEARCH_\u306e\u3093\u3073\u308a\u3060\u3089\u30fc\u3093",
+		"value": "Entspannen"
+	},
+	{
+		"key": "MSID_\u9244\u58c1\u968a\u5f62",
+		"value": "Eisenfest"
+	},
+	{
+		"key": "MSID_SEARCH_\u9244\u58c1\u968a\u5f62",
+		"value": "Eisenfest"
+	},
+	{
+		"key": "MSID_\u76fe\u306e\u8b77\u308a\u624b\u30fb\u9060\u30fb\u8328",
+		"value": "V/R Dornschutz F"
+	},
+	{
+		"key": "MSID_SEARCH_\u76fe\u306e\u8b77\u308a\u624b\u30fb\u9060\u30fb\u8328",
+		"value": "V/R Dornschutz F"
+	},
+	{
+		"key": "MSID_H_\u306e\u3093\u3073\u308a\u3060\u3089\u30fc\u3093",
+		"value": "$aVerleiht KP +5.\\n\\nKann sich die Einheit verwandeln, wird die Bedin-\\ngung \"befindet sich die Einheit im Umkreis von\\n2 Feldern einer verb\u00fcndeten Bestie oder eines\\nverb\u00fcndeten Drachen oder ist die Anzahl an be-\\nnachbarten Verb\u00fcndeten (Drachen und Bestien\\nausgenommen) \u2264 2\" zu den Ausl\u00f6sebedingungen\\nder Verwandlungseffekte hinzugef\u00fcgt (zus\u00e4tzlich\\nzu bereits existierenden Bedingungen).\\n\\nWerden beim Verteidigen in \u00c4therraubz\u00fcgen zu\\nBeginn des 1. gegnerischen Zuges die Bedingun-\\ngen zur Verwandlung erf\u00fcllt, verwandelt sich die\\nEinheit.\\n\\nDie Einheit und Verb\u00fcndete im Umkreis von\\n3 Feldern der Einheit erhalten zu Beginn der\\nSpieler- oder Gegnerphase\u3010Entspannen\u3011und\\n\u3010Inspiration\u3011f\u00fcr 1 Zug.\\n\\nDie Einheit erh\u00e4lt Angr./Ges./Ver./Res. +9, sie f\u00fcgt\\n+7 Schaden zu (ausgenommen Spezialangriffe\\nmit Fl\u00e4chenwirkung), der Schaden durch gegne-\\nrische Angriffe wird um 7 verringert (einschlie\u00df-\\nlich Spezialangriffe mit Fl\u00e4chenwirkung; au\u00dfer\\nSpezialangriffe mit Fl\u00e4chenwirkung von R\u00f8kkr)\\nund die Erholungszeit der Einheit wird vor dem\\nersten Angriff des Gegners im Kampf um 2\\nbeschleunigt.\\n\\n\u3010Entspannen\u3011\\nDie Einheit erh\u00e4lt Angr./Ges./Ver./Res +4 sowie\\nzus\u00e4tzlich Angr./Ges./Ver./Res +X (X = h\u00f6chste\\nWerteverringerung auf den jeweiligen Wert von\\nVerb\u00fcndeten im Umkreis von 2 Feldern der Ein-\\nheit; jeder Wertebonus wird einzeln berechnet),\\ndie Werteverringerungen der Einheit werden\\naufgehoben und der Schaden durch gegnerische\\nAngriffe wird im Kampf um 7 verringert (ein-\\nschlie\u00dflich Spezialangriffe mit Fl\u00e4chenwirkung;\\nau\u00dfer Spezialangriffe mit Fl\u00e4chenwirkung von\\nR\u00f8kkr).\\n\\n\u3010Inspiration\u3011\\nF\u00fcr 1 Zug ist der Effekt von\u3010Tiefe Wunden\u3011auf\\ndie Einheit im Kampf um 50 % geringer und bei\\nihr werden, sobald ihr Kampf beginnt, 40 % ihrer\\nmax. KP wiederhergestellt (wird nach Effekten\\nausgel\u00f6st, die, sobald der Kampf beginnt, Scha-\\nden zuf\u00fcgen; bei mehreren \u00e4hnlichen Effekten\\nwird nur der h\u00f6chste angewandt).\\n\\n\u3010Tiefe Wunden\u3011\\nDie KP der Einheit k\u00f6nnen bis nach ihrer\\nn\u00e4chsten Aktion nicht geheilt werden."
+	},
+	{
+		"key": "MSID_H_\u306e\u3093\u3073\u308a\u3060\u3089\u30fc\u3093_NOSKW",
+		"value": "$aVerleiht KP +5.\\n\\nKann sich die Einheit verwandeln, wird die Bedin-\\ngung \"befindet sich die Einheit im Umkreis von\\n2 Feldern einer verb\u00fcndeten Bestie oder eines\\nverb\u00fcndeten Drachen oder ist die Anzahl an be-\\nnachbarten Verb\u00fcndeten (Drachen und Bestien\\nausgenommen) \u2264 2\" zu den Ausl\u00f6sebedingungen\\nder Verwandlungseffekte hinzugef\u00fcgt (zus\u00e4tzlich\\nzu bereits existierenden Bedingungen).\\n\\nWerden beim Verteidigen in \u00c4therraubz\u00fcgen zu\\nBeginn des 1. gegnerischen Zuges die Bedingun-\\ngen zur Verwandlung erf\u00fcllt, verwandelt sich die\\nEinheit.\\n\\nDie Einheit und Verb\u00fcndete im Umkreis von\\n3 Feldern der Einheit erhalten zu Beginn der\\nSpieler- oder Gegnerphase\u3010Entspannen\u3011und\\n\u3010Inspiration\u3011f\u00fcr 1 Zug.\\n\\nDie Einheit erh\u00e4lt Angr./Ges./Ver./Res. +9, sie f\u00fcgt\\n+7 Schaden zu (ausgenommen Spezialangriffe\\nmit Fl\u00e4chenwirkung), der Schaden durch gegne-\\nrische Angriffe wird um 7 verringert (einschlie\u00df-\\nlich Spezialangriffe mit Fl\u00e4chenwirkung; au\u00dfer\\nSpezialangriffe mit Fl\u00e4chenwirkung von R\u00f8kkr)\\nund die Erholungszeit der Einheit wird vor dem\\nersten Angriff des Gegners im Kampf um 2\\nbeschleunigt."
+	},
+	{
+		"key": "MSID_H_\u9244\u58c1\u968a\u5f62",
+		"value": "Der Gegner erleidet Angr./Ver./Res. -4, die Einheit\\nf\u00fcgt zus\u00e4tzlichen Schaden in H\u00f6he von 25 % ihres\\nVer.-Werts zu (ausgenommen Spezialangriffe mit\\nFl\u00e4chenwirkung), der Schaden durch gegnerische\\nAngriffe wird um 25 % des Ver.-Werts der Einheit\\nreduziert (ausgenommen Spezialangriffe mit Fl\u00e4-\\nchenwirkung) und sie f\u00fchrt im Kampf einen garan-\\ntierten Folgeangriff aus.\\n\\nInitiiert der Gegner den Kampf, ist Ver. der Ein-\\nheit \u2265 Ver. des Gegners +5 und ist die Anzahl der\\nFelder vom Feld der Einheit bis zum Feld des\\nGegners \u2265 4 oder handelt es sich in diesem Zug\\num den ersten Kampf der Einheit, der durch den\\nGegner initiiert wurde, bei dem die Anzahl der\\nFelder vom Feld der Einheit bis zum Feld des\\nGegners \u2264 3 ist, wird der Schaden durch den\\nFolgeangriff des Gegners im Kampf auf max. 1\\nreduziert."
+	},
+	{
+		"key": "MSID_H_\u76fe\u306e\u8b77\u308a\u624b\u30fb\u9060\u30fb\u8328",
+		"value": "$aGreift ein Gegner mit Rw. = 2 einen Verb\u00fcndeten\\nim Umkreis von 2 Feldern der Einheit an, wirkt\\n\u3010Schutz\u3011auf die Einheit.\\n\\nIst die Rw. des Gegners = 2, erh\u00e4lt die Einheit\\nVer./Res. +4, der Schaden durch den ersten\\nAngriff des Gegners wird im Kampf um 5 ver-\\nringert (normalerweise bezieht sich \"erster An-\\ngriff\" auf den ersten Schlag; bei Effekten, die \"Ein-\\nheit greift 2-mal an\" gew\u00e4hren, sind der erste und\\nzweite Schlag gemeint) und der n\u00e4chste Angriff\\nder Einheit f\u00fcgt zus\u00e4tzlichen Schaden in H\u00f6he\\nvon 40 % des durch den Angriff des Gegners\\nzugef\u00fcgten Schadens vor s\u00e4mtlichen Verrin-\\ngerungen zu (wird nach dem Kampf zur\u00fcckge-\\nsetzt; bei mehreren \u00e4hnlichen Effekten wird nur\\nder h\u00f6chste angewandt).\\n\\n\u3010Schutz\u3011\\nDie Einheit nimmt anstelle des Verb\u00fcndeten\\nseinen Platz auf dem Feld ein, tritt an dessen\\nStelle in den Kampf und erh\u00e4lt alle Effekte, die\\nnach dem Kampf zum Tragen kommen.\\n\\n\"Schutz\" wird nicht ausgel\u00f6st, wenn der\\nVerb\u00fcndete auf einem Feld steht, auf das sich\\ndie Einheit nicht bewegen kann, oder wenn\\nmehrere Einheiten w\u00e4hrend des gleichen\\nKampfs f\u00fcr \"Schutz\" infrage kommen. Wird\\n\"Schutz\" ausgel\u00f6st, werden jene F\u00e4higkeiten\\naufgehoben, die sich auf die Bewegung nach\\ndem Kampf auswirken."
+	},
+	{
+		"key": "MSID_H_\u76fe\u306e\u8b77\u308a\u624b\u30fb\u9060\u30fb\u8328_NOSKW",
+		"value": "$aGreift ein Gegner mit Rw. = 2 einen Verb\u00fcndeten\\nim Umkreis von 2 Feldern der Einheit an, wirkt\\n\u3010Schutz\u3011auf die Einheit.\\n\\nIst die Rw. des Gegners = 2, erh\u00e4lt die Einheit\\nVer./Res. +4, der Schaden durch den ersten\\nAngriff des Gegners wird im Kampf um 5 ver-\\nringert (normalerweise bezieht sich \"erster An-\\ngriff\" auf den ersten Schlag; bei Effekten, die \"Ein-\\nheit greift 2-mal an\" gew\u00e4hren, sind der erste und\\nzweite Schlag gemeint) und der n\u00e4chste Angriff\\nder Einheit f\u00fcgt zus\u00e4tzlichen Schaden in H\u00f6he\\nvon 40 % des durch den Angriff des Gegners\\nzugef\u00fcgten Schadens vor s\u00e4mtlichen Verrin-\\ngerungen zu (wird nach dem Kampf zur\u00fcckge-\\nsetzt; bei mehreren \u00e4hnlichen Effekten wird nur\\nder h\u00f6chste angewandt)."
+	},
+	{
+		"key": "MID_STAGE_HONOR_L0102",
+		"value": "Ruhende G\u00f6ttin"
+	},
+	{
+		"key": "MID_STAGE_L0102",
+		"value": "J\u00f6rmungandr"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PB318",
+		"value": "F\u00e4higkeiten 318"
+	},
+	{
+		"key": "MID_STAGE_PB318",
+		"value": "Gegens\u00e4tze"
+	}
+]

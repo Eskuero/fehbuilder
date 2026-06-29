@@ -1,0 +1,147 @@
+[
+	{
+		"id_tag": "PID_\u30e8\u30eb\u30e0\u30f3\u30ac\u30f3\u30c9\u5473\u65b9",
+		"roman": "JOMUN_MIKATA01",
+		"face_name": "ch00_71_Jomun_F_Normal",
+		"face_name2": "ch00_71_Jomun_F_Normal",
+		"legendary": {
+			"duo_skill_id": "",
+			"bonus_effect": {
+				"hp": 5,
+				"atk": 0,
+				"spd": 0,
+				"def": 5,
+				"res": 0
+			},
+			"kind": 1,
+			"element": 7,
+			"bst": 0,
+			"pair_up": false,
+			"ae_extra": 3
+		},
+		"dragonflowers": {
+			"max_count": 5,
+			"costs": [
+				40,
+				80,
+				120,
+				160,
+				200
+			]
+		},
+		"timestamp": null,
+		"id_num": 1390,
+		"version_num": 1006,
+		"sort_value": 1000200,
+		"origins": 1,
+		"weapon_type": 23,
+		"tome_class": 0,
+		"move_type": 1,
+		"series": 0,
+		"random_pool": 0,
+		"permanent_hero": false,
+		"base_vactor_id": 154,
+		"refresher": false,
+		"base_stats": {
+			"hp": 24,
+			"atk": 14,
+			"spd": 3,
+			"def": 10,
+			"res": 11
+		},
+		"growth_rates": {
+			"hp": 60,
+			"atk": 75,
+			"spd": 35,
+			"def": 90,
+			"res": 85
+		},
+		"skills": [
+			[
+				"SID_\u5e7c\u7363\u306e\u5316\u8eab\u30fb\u91cd\u88c5",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			[
+				"SID_\u82e5\u7363\u306e\u5316\u8eab\u30fb\u91cd\u88c5",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u5b88\u5099\u968a\u5f621",
+				"SID_\u76fe\u306e\u8b77\u308a\u624b\u30fb\u9060\u95931",
+				null,
+				null
+			],
+			[
+				"SID_\u82e5\u7363\u306e\u5316\u8eab\u30fb\u91cd\u88c5",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u6210\u7363\u306e\u5316\u8eab\u30fb\u91cd\u88c5",
+				null,
+				"SID_\u86cd\u706b",
+				null,
+				"SID_\u5b88\u5099\u968a\u5f622",
+				"SID_\u76fe\u306e\u8b77\u308a\u624b\u30fb\u9060\u95932",
+				null,
+				null
+			],
+			[
+				"SID_\u6210\u7363\u306e\u5316\u8eab\u30fb\u91cd\u88c5",
+				null,
+				"SID_\u86cd\u706b",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u83ef\u708e",
+				null,
+				"SID_\u5b88\u5099\u968a\u5f623",
+				"SID_\u76fe\u306e\u8b77\u308a\u624b\u30fb\u9060\u95933",
+				null,
+				null
+			],
+			[
+				"SID_\u4e16\u754c\u86c7\u306e\u795e\u7259",
+				null,
+				"SID_\u86cd\u706b",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u91cd\u88c5\u306e\u53cc\u708e",
+				"SID_\u306e\u3093\u3073\u308a\u3060\u3089\u30fc\u3093",
+				"SID_\u9244\u58c1\u968a\u5f62",
+				"SID_\u76fe\u306e\u8b77\u308a\u624b\u30fb\u9060\u30fb\u8328",
+				null,
+				null
+			]
+		]
+	}
+]

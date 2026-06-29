@@ -1,0 +1,626 @@
+[
+	{
+		"key": "MDAID_\u541f\u904a\u8a69\u4eba\u306e\u30c8\u30eb\u30b9\u30fb\u91d1",
+		"value": "Burletto da bardo oro"
+	},
+	{
+		"key": "MDAID_H_\u541f\u904a\u8a69\u4eba\u306e\u30c8\u30eb\u30b9\u30fb\u91d1",
+		"value": "Un trofeo per la vittoria contro\\nla versione mitica di J\u00f6rmungandr."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_112",
+		"value": "Conferisce Att/Vel/Dif/Res +4 all'unit\u00e0,\\nAtt/Vel/Dif/Res dell'unit\u00e0 aumentano\\nulteriormente di un valore pari alla pi\u00f9 alta\\ntra le penalit\u00e0 attive su ognuno di quei\\nparametri degli alleati entro 2 spazi dall'unit\u00e0\\n(ogni parametro \u00e8 calcolato singolarmente),\\nrimuove le penalit\u00e0 dall'unit\u00e0 e riduce di 7\\nil danno da attacchi del nemico durante\\nlo scontro (incluse le abilit\u00e0 speciali con\\narea d'effetto; escluse quelle dei r\u00f8kkr).\\n(Solo per 1 turno.)"
+	},
+	{
+		"key": "MID_ENHANCE_HELP_112",
+		"value": "Aumento param. in base alle penalit\u00e0 ai param.\\n  degli alleati vicini; rimuove penalit\u00e0 dall'unit\u00e0"
+	},
+	{
+		"key": "MID_MISSION_M202607A_TITLE",
+		"value": "Imprese lug. (A)"
+	},
+	{
+		"key": "MID_MISSION_M202607A_A1",
+		"value": "Assalto arena: 1 vittoria"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A1",
+		"value": "Vinci 1 battaglia in Assalto arena."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A2",
+		"value": "Assalto arena: 3 di fila"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A2",
+		"value": "Vinci tre battaglie consecutive\\nin Assalto arena."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A3",
+		"value": "Assalto arena: 5 di fila"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A3",
+		"value": "Vinci cinque battaglie consecutive\\nin Assalto arena."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A4",
+		"value": "Vinci con Alfonse"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A4",
+		"value": "Sconfiggi un nemico con Alfonse, il principe\\ndi Askr."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A5",
+		"value": "Vinci con Sharena"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A5",
+		"value": "Sconfiggi un nemico con Sharena,\\nla principessa di Askr."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A6",
+		"value": "Vinci con Anna"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A6",
+		"value": "Sconfiggi un nemico con Anna, la comandante."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A7",
+		"value": "Batti nemici rossi"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A7",
+		"value": "Sconfiggi un nemico di tipo rosso."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A8",
+		"value": "Batti nemici blu"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A8",
+		"value": "Sconfiggi un nemico di tipo blu."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A9",
+		"value": "Batti nemici verdi"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A9",
+		"value": "Sconfiggi un nemico di tipo verde."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A10",
+		"value": "Batti nemici neutri"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A10",
+		"value": "Sconfiggi un nemico di tipo neutro."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A11",
+		"value": "Batti unit\u00e0 di fanteria"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A11",
+		"value": "Sconfiggi un'unit\u00e0 di fanteria nemica."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A12",
+		"value": "Batti unit\u00e0 corazzate"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A12",
+		"value": "Sconfiggi un nemico corazzato."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A13",
+		"value": "Batti unit\u00e0 a cavallo"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A13",
+		"value": "Sconfiggi un nemico a cavallo."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A14",
+		"value": "Batti unit\u00e0 volanti"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A14",
+		"value": "Sconfiggi un nemico volante."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A15",
+		"value": "Completa 13-1"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A15",
+		"value": "Completa il libro VIII, cap. 13-1 alla difficolt\u00e0\\nfolle. Tutti e 4 gli alleati devono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A16",
+		"value": "Completa 13-2"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A16",
+		"value": "Completa il libro VIII, cap. 13-2 alla difficolt\u00e0\\nfolle. Tutti e 4 gli alleati devono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A17",
+		"value": "Completa 13-3"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A17",
+		"value": "Completa il libro VIII, cap. 13-3 alla difficolt\u00e0\\nfolle. Tutti e 4 gli alleati devono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A18",
+		"value": "Completa 13-4"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A18",
+		"value": "Completa il libro VIII, cap. 13-4 alla difficolt\u00e0\\nfolle. Tutti e 4 gli alleati devono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A19",
+		"value": "Completa 13-5"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A19",
+		"value": "Completa il libro VIII, cap. 13-5 alla difficolt\u00e0\\nfolle. Tutti e 4 gli alleati devono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A20",
+		"value": "BE: attacca con successo"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A20",
+		"value": "Attacca con successo in Blitz eterei."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A21",
+		"value": "BE: attacca con successo"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A21",
+		"value": "Attacca con successo in Blitz eterei."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A22",
+		"value": "BE: attacca con successo"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A22",
+		"value": "Attacca con successo in Blitz eterei."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A23",
+		"value": "Arena: vinci duelli"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A23",
+		"value": "Vinci duelli nell'arena a qualsiasi livello di\\ndifficolt\u00e0."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A24",
+		"value": "Arena: vinci duelli"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A24",
+		"value": "Vinci duelli nell'arena a qualsiasi livello di\\ndifficolt\u00e0."
+	},
+	{
+		"key": "MID_MISSION_M202607A_A25",
+		"value": "Arena: vinci duelli"
+	},
+	{
+		"key": "MID_MISSION_H_M202607A_A25",
+		"value": "Vinci duelli nell'arena a qualsiasi livello di\\ndifficolt\u00e0."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_TITLE",
+		"value": "Sfida ai voti"
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A1",
+		"value": "Sfida ai voti"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A1",
+		"value": "Vinci una battaglia nella sfida ai voti."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A2",
+		"value": "Sfida ai voti"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A2",
+		"value": "Vinci battaglie nella sfida ai voti."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A3",
+		"value": "Sfida ai voti"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A3",
+		"value": "Vinci battaglie nella sfida ai voti."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A4",
+		"value": "Sfida ai voti"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A4",
+		"value": "Vinci battaglie nella sfida ai voti."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A5",
+		"value": "Sfida ai voti"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A5",
+		"value": "Vinci battaglie nella sfida ai voti."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A6",
+		"value": "Torre: vinci al 2\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A6",
+		"value": "Vinci al secondo piano della torre di\\nallenamento."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A7",
+		"value": "Torre: vinci al 5\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A7",
+		"value": "Vinci al quinto piano della torre di\\nallenamento."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A8",
+		"value": "Torre: vinci all'8\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A8",
+		"value": "Vinci all'ottavo piano della torre di\\nallenamento."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A9",
+		"value": "Arena: vinci duelli"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A9",
+		"value": "Vinci duelli nell'arena a qualsiasi\\nlivello di difficolt\u00e0."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A10",
+		"value": "Arena: vinci duelli"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A10",
+		"value": "Vinci duelli nell'arena a qualsiasi\\nlivello di difficolt\u00e0."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A11",
+		"value": "Arena: vinci duelli int.+"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A11",
+		"value": "Vinci duelli nell'arena di livello\\nintermedio o superiore."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A12",
+		"value": "Arena: vinci duelli int.+"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A12",
+		"value": "Vinci duelli nell'arena di livello\\nintermedio o superiore."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A13",
+		"value": "Sfida ai voti"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A13",
+		"value": "Vinci una battaglia nella sfida ai voti\\ncon un'unit\u00e0 rossa nella tua squadra."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A14",
+		"value": "Sfida ai voti"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A14",
+		"value": "Vinci una battaglia nella sfida ai voti\\ncon un'unit\u00e0 blu nella tua squadra."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A15",
+		"value": "Sfida ai voti"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A15",
+		"value": "Vinci una battaglia nella sfida ai voti\\ncon un'unit\u00e0 verde nella tua squadra."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A16",
+		"value": "Sfida ai voti"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A16",
+		"value": "Vinci una battaglia nella sfida ai voti\\ncon un'unit\u00e0 neutra nella tua squadra."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A17",
+		"value": "Sfida ai voti"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A17",
+		"value": "Vinci battaglie nella sfida ai voti\\ncon un'unit\u00e0 rossa nella tua squadra."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A18",
+		"value": "Sfida ai voti"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A18",
+		"value": "Vinci battaglie nella sfida ai voti\\ncon un'unit\u00e0 blu nella tua squadra."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A19",
+		"value": "Sfida ai voti"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A19",
+		"value": "Vinci battaglie nella sfida ai voti\\ncon un'unit\u00e0 verde nella tua squadra."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A20",
+		"value": "Sfida ai voti"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A20",
+		"value": "Vinci battaglie nella sfida ai voti\\ncon un'unit\u00e0 neutra nella tua squadra."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A21",
+		"value": "Sfida ai voti"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A21",
+		"value": "Vinci battaglie nella sfida ai voti\\ncon un'unit\u00e0 rossa nella tua squadra."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A22",
+		"value": "Sfida ai voti"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A22",
+		"value": "Vinci battaglie nella sfida ai voti\\ncon un'unit\u00e0 blu nella tua squadra."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A23",
+		"value": "Sfida ai voti"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A23",
+		"value": "Vinci battaglie nella sfida ai voti\\ncon un'unit\u00e0 verde nella tua squadra."
+	},
+	{
+		"key": "MID_MISSION_S202607VOTE01_A24",
+		"value": "Sfida ai voti"
+	},
+	{
+		"key": "MID_MISSION_H_S202607VOTE01_A24",
+		"value": "Vinci battaglie nella sfida ai voti\\ncon un'unit\u00e0 neutra nella tua squadra."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_TITLE",
+		"value": "Imprese lug. (B)"
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A1",
+		"value": "Torre: vinci al 1\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A1",
+		"value": "Completa il primo piano della torre\\ndi allenamento. Tutti e 4 gli alleati\\ndevono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A2",
+		"value": "Torre: vinci al 2\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A2",
+		"value": "Completa il secondo piano della torre\\ndi allenamento. Tutti e 4 gli alleati\\ndevono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A3",
+		"value": "Torre: vinci al 3\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A3",
+		"value": "Completa il terzo piano della torre\\ndi allenamento. Tutti e 4 gli alleati\\ndevono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A4",
+		"value": "Torre: vinci al 4\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A4",
+		"value": "Completa il quarto piano della torre\\ndi allenamento. Tutti e 4 gli alleati\\ndevono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A5",
+		"value": "Torre: vinci al 5\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A5",
+		"value": "Completa il quinto piano della torre\\ndi allenamento. Tutti e 4 gli alleati\\ndevono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A6",
+		"value": "Torre: vinci al 6\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A6",
+		"value": "Completa il sesto piano della torre\\ndi allenamento. Tutti e 4 gli alleati\\ndevono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A7",
+		"value": "Torre: vinci al 7\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A7",
+		"value": "Completa il settimo piano della torre\\ndi allenamento. Tutti e 4 gli alleati\\ndevono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A8",
+		"value": "Torre: vinci all'8\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A8",
+		"value": "Completa l'ottavo piano della torre\\ndi allenamento. Tutti e 4 gli alleati\\ndevono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A9",
+		"value": "Torre: vinci al 9\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A9",
+		"value": "Completa il nono piano della torre\\ndi allenamento. Tutti e 4 gli alleati\\ndevono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A10",
+		"value": "Torre: vinci al 10\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A10",
+		"value": "Completa il decimo piano della torre\\ndi allenamento. Tutti e 4 gli alleati\\ndevono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A11",
+		"value": "Torre: vinci al 10\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A11",
+		"value": "Completa il decimo piano della torre di\\nallenamento con sole unit\u00e0 di fanteria (le unit\u00e0\\npartner schierate usando Duo non contano).\\nTutti e 4 gli alleati devono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A12",
+		"value": "Torre: vinci al 10\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A12",
+		"value": "Completa il decimo piano della torre di\\nallenamento con sole unit\u00e0 corazzate (le unit\u00e0\\npartner schierate usando Duo non contano).\\nTutti e 4 gli alleati devono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A13",
+		"value": "Torre: vinci al 10\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A13",
+		"value": "Completa il decimo piano della torre di\\nallenamento con sole unit\u00e0 a cavallo (le unit\u00e0\\npartner schierate usando Duo non contano).\\nTutti e 4 gli alleati devono sopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_M202607B_A14",
+		"value": "Torre: vinci al 10\u00ba piano"
+	},
+	{
+		"key": "MID_MISSION_H_W_M202607B_A14",
+		"value": "Completa il decimo piano della torre di\\nallenamento con sole unit\u00e0 volanti (le unit\u00e0\\npartner schierate usando Duo non contano).\\nTutti e 4 gli alleati devono sopravvivere."
+	},
+	{
+		"key": "MPID_\u30e8\u30eb\u30e0\u30f3\u30ac\u30f3\u30c9\u5473\u65b9",
+		"value": "J\u00f6rmungandr"
+	},
+	{
+		"key": "MPID_SEARCH_\u30e8\u30eb\u30e0\u30f3\u30ac\u30f3\u30c9\u5473\u65b9",
+		"value": "Jormungandr"
+	},
+	{
+		"key": "MPID_HONOR_\u30e8\u30eb\u30e0\u30f3\u30ac\u30f3\u30c9\u5473\u65b9",
+		"value": "Divinit\u00e0 dormiente"
+	},
+	{
+		"key": "MPID_H_\u30e8\u30eb\u30e0\u30f3\u30ac\u30f3\u30c9\u5473\u65b9",
+		"value": "Divinit\u00e0 del riposo e della pigrizia. Desidera\\nche l'umanit\u00e0 possa trascorrere la propria\\nesistenza oziando."
+	},
+	{
+		"key": "MPID_VOICE_\u30e8\u30eb\u30e0\u30f3\u30ac\u30f3\u30c9\u5473\u65b9",
+		"value": "Jennifer Sun Bell"
+	},
+	{
+		"key": "MPID_ILLUST_\u30e8\u30eb\u30e0\u30f3\u30ac\u30f3\u30c9\u5473\u65b9",
+		"value": "Yoshiku (\u56db\u3005\u4e5d)"
+	},
+	{
+		"key": "MPID_LEGEND_\u30e8\u30eb\u30e0\u30f3\u30ac\u30f3\u30c9\u5473\u65b9",
+		"value": "Effetto mitico: spirito\\nIncremento: PS +5, Dif +5\\n\\nSe l'unit\u00e0 scende in battaglia in Blitz eterei\\ndurante la stagione dello spirito con alleati che\\nhanno il Dono dello spirito, quest'ultimi ricevono\\nl'effetto mitico: gli alleati con Dono dello spirito\\naumentano la quota ottenuta per gli attacchi\\nriusciti durante la stagione dello spirito.\\nL'aumento \u00e8 limitato al numero di eroi mitici\\n\u00d7 quello degli eroi con Dono \u00d7 10.\\n\\nDurante la stagione dello spirito, questa eroina\\nmitica incrementa la quota ottenuta per gli\\nattacchi riusciti in base al numero di fusioni.\\nL'aumento \u00e8 limitato al numero di volte che\\n\u00e8 stata fusa.\\n\\nEffetto mitico 2: spirito\\nIncremento: bonus squadra offensiva\\n\\nEffetto mitico 3: spirito\\nIncremento: invito squadra offensiva\\n(Per dettagli, vedi Modifica squadre offensive.)"
+	},
+	{
+		"key": "MID_TIPS_Summon_v1006c_legend_01_\u30e8\u30eb\u30e0\u30f3\u30ac\u30f3\u30c9\u5473\u65b9",
+		"value": "Riduce il danno da attacco doppio a\\n1! Tranquillizza gli alleati con la sua\\nprotezione e li cura."
+	},
+	{
+		"key": "MSID_\u306e\u3093\u3073\u308a\u3060\u3089\u30fc\u3093",
+		"value": "Ozio"
+	},
+	{
+		"key": "MSID_SEARCH_\u306e\u3093\u3073\u308a\u3060\u3089\u30fc\u3093",
+		"value": "Ozio"
+	},
+	{
+		"key": "MSID_\u9244\u58c1\u968a\u5f62",
+		"value": "Solidit\u00e0"
+	},
+	{
+		"key": "MSID_SEARCH_\u9244\u58c1\u968a\u5f62",
+		"value": "Solidita"
+	},
+	{
+		"key": "MSID_\u76fe\u306e\u8b77\u308a\u624b\u30fb\u9060\u30fb\u8328",
+		"value": "Aiuto D rovo D/R"
+	},
+	{
+		"key": "MSID_SEARCH_\u76fe\u306e\u8b77\u308a\u624b\u30fb\u9060\u30fb\u8328",
+		"value": "Aiuto D rovo D/R"
+	},
+	{
+		"key": "MSID_H_\u306e\u3093\u3073\u308a\u3060\u3089\u30fc\u3093",
+		"value": "$aConferisce PS +5.\\n\\nSe l'unit\u00e0 pu\u00f2 trasformarsi, le trasformazioni\\nottengono la condizione di attivazione \"se l'unit\u00e0\\nsi trova entro 2 spazi da un alleato drago o\\nbestia, o se \u00e8 adiacente a 2 o meno alleati che\\nnon sono drago o bestia\" in aggiunta a quelle\\npreesistenti.\\n\\nSe in difesa in Blitz eterei e se le condizioni per\\nla trasformazione sono soddisfatte all'inizio del\\nturno 1 del nemico, l'unit\u00e0 si trasforma.\\n\\nConferisce\u3010Ozio\u3011e\u3010Salus\u3011all'unit\u00e0 e agli alleati\\nentro 3 spazi dall'unit\u00e0 per 1 turno all'inizio della\\nfase del giocatore o di quella nemica.\\n\\nConferisce Att/Vel/Dif/Res +9 all'unit\u00e0, l'unit\u00e0\\ninfligge +7 di danno (escluse le abilit\u00e0 speciali\\ncon area d'effetto), riduce di 7 il danno da\\nattacchi del nemico (incluse le abilit\u00e0 speciali\\ncon area d'effetto; escluse quelle dei r\u00f8kkr) e\\nconferisce contatore -2 all'unit\u00e0 prima del primo\\nattacco del nemico durante lo scontro.\\n\\n\u3010Ozio\u3011\\nConferisce Att/Vel/Dif/Res +4 all'unit\u00e0,\\nAtt/Vel/Dif/Res dell'unit\u00e0 aumentano\\nulteriormente di un valore pari alla pi\u00f9 alta\\ntra le penalit\u00e0 attive su ognuno di quei\\nparametri degli alleati entro 2 spazi dall'unit\u00e0\\n(ogni parametro \u00e8 calcolato singolarmente),\\nrimuove le penalit\u00e0 dall'unit\u00e0 e riduce di 7\\nil danno da attacchi del nemico durante\\nlo scontro (incluse le abilit\u00e0 speciali con\\narea d'effetto; escluse quelle dei r\u00f8kkr).\\n\\n\u3010Salus\u3011\\nRiduce l'effetto di\u3010Ferite profonde\u3011sull'unit\u00e0\\ndel 50% durante lo scontro e ripristina il 40%\\ndei PS massimi dell'unit\u00e0 dopo l'inizio dello\\nscontro dell'unit\u00e0 per 1 turno (si attiva dopo\\ngli effetti che infliggono danni dopo l'inizio\\ndello scontro; non cumulabile; si applica solo\\nil valore pi\u00f9 alto).\\n\\n\u3010Ferite profonde\u3011\\nI PS dell'unit\u00e0 non possono essere ripristinati\\ndurante la sua prossima azione."
+	},
+	{
+		"key": "MSID_H_\u306e\u3093\u3073\u308a\u3060\u3089\u30fc\u3093_NOSKW",
+		"value": "$aConferisce PS +5.\\n\\nSe l'unit\u00e0 pu\u00f2 trasformarsi, le trasformazioni\\nottengono la condizione di attivazione \"se l'unit\u00e0\\nsi trova entro 2 spazi da un alleato drago o\\nbestia, o se \u00e8 adiacente a 2 o meno alleati che\\nnon sono drago o bestia\" in aggiunta a quelle\\npreesistenti.\\n\\nSe in difesa in Blitz eterei e se le condizioni per\\nla trasformazione sono soddisfatte all'inizio del\\nturno 1 del nemico, l'unit\u00e0 si trasforma.\\n\\nConferisce\u3010Ozio\u3011e\u3010Salus\u3011all'unit\u00e0 e agli alleati\\nentro 3 spazi dall'unit\u00e0 per 1 turno all'inizio della\\nfase del giocatore o di quella nemica.\\n\\nConferisce Att/Vel/Dif/Res +9 all'unit\u00e0, l'unit\u00e0\\ninfligge +7 di danno (escluse le abilit\u00e0 speciali\\ncon area d'effetto), riduce di 7 il danno da\\nattacchi del nemico (incluse le abilit\u00e0 speciali\\ncon area d'effetto; escluse quelle dei r\u00f8kkr) e\\nconferisce contatore -2 all'unit\u00e0 prima del primo\\nattacco del nemico durante lo scontro."
+	},
+	{
+		"key": "MSID_H_\u9244\u58c1\u968a\u5f62",
+		"value": "Infligge Att/Dif/Res -4 al nemico, infligge danni\\naggiuntivi pari al 25% della Dif dell'unit\u00e0 (escluse\\nle abilit\u00e0 speciali con area d'effetto), riduce del\\n25% della Dif dell'unit\u00e0 il danno da attacchi del\\nnemico (escluse le abilit\u00e0 speciali con area\\nd'effetto) e l'unit\u00e0 esegue un attacco doppio\\ndurante lo scontro.\\n\\nSe il nemico attacca per primo e se l'unit\u00e0 ha\\nDif uguale o superiore alla Dif del nemico +5 e\\nil numero di spazi dallo spazio dell'unit\u00e0 allo\\nspazio del nemico \u00e8 uguale o superiore a 4 o,\\nse \u00e8 il primo scontro di questo turno in cui\\nil nemico attacca per primo l'unit\u00e0 e il numero di\\nspazi dallo spazio dell'unit\u00e0 allo spazio del\\nnemico \u00e8 minore o uguale a 3, riduce di\\nun massimo di 1 il danno dell'attacco doppio\\ndel nemico durante lo scontro."
+	},
+	{
+		"key": "MSID_H_\u76fe\u306e\u8b77\u308a\u624b\u30fb\u9060\u30fb\u8328",
+		"value": "$aSe un nemico con 2 di Rgg attacca per primo\\nun alleato entro 2 spazi dall'unit\u00e0,\\nattiva\u3010Aiuto\u3011sull'unit\u00e0.\\n\\nSe il nemico ha 2 di Rgg, conferisce Dif/Res +4\\nall'unit\u00e0 e riduce di 5 il danno del primo attacco\\ndel nemico durante lo scontro (con \"primo\\nattacco\" si intende normalmente il primo colpo,\\nmentre per gli effetti che conferiscono \"esegue\\ndue attacchi\", si intende il primo e il secondo\\ncolpo) e l'attacco successivo dell'unit\u00e0 infligge\\ndanni aggiuntivi pari al 40% del danno inflitto\\ndall'attacco del nemico prima della riduzione\\n(si azzera alla fine dello scontro; non cumulabile;\\nsi applica solo il valore pi\u00f9 alto).\\n\\n\u3010Aiuto\u3011\\nL'unit\u00e0 occupa lo spazio dell'alleato, partecipa\\nallo scontro al posto di quell'alleato e riceve\\ntutti gli effetti che si verificano dopo lo scontro.\\n\\nAiuto non si attiva se l'alleato \u00e8 su un terreno in\\ncui l'unit\u00e0 non pu\u00f2 spostarsi o se pi\u00f9 unit\u00e0 sono\\nin grado di usare Aiuto durante lo stesso scontro.\\nSe Aiuto si attiva, gli effetti sul movimento dopo\\nlo scontro non si verificano."
+	},
+	{
+		"key": "MSID_H_\u76fe\u306e\u8b77\u308a\u624b\u30fb\u9060\u30fb\u8328_NOSKW",
+		"value": "$aSe un nemico con 2 di Rgg attacca per primo\\nun alleato entro 2 spazi dall'unit\u00e0,\\nattiva\u3010Aiuto\u3011sull'unit\u00e0.\\n\\nSe il nemico ha 2 di Rgg, conferisce Dif/Res +4\\nall'unit\u00e0 e riduce di 5 il danno del primo attacco\\ndel nemico durante lo scontro (con \"primo\\nattacco\" si intende normalmente il primo colpo,\\nmentre per gli effetti che conferiscono \"esegue\\ndue attacchi\", si intende il primo e il secondo\\ncolpo) e l'attacco successivo dell'unit\u00e0 infligge\\ndanni aggiuntivi pari al 40% del danno inflitto\\ndall'attacco del nemico prima della riduzione\\n(si azzera alla fine dello scontro; non cumulabile;\\nsi applica solo il valore pi\u00f9 alto)."
+	},
+	{
+		"key": "MID_STAGE_HONOR_L0102",
+		"value": "Div. dormiente"
+	},
+	{
+		"key": "MID_STAGE_L0102",
+		"value": "J\u00f6rmungandr"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PB318",
+		"value": "Le abilit\u00e0: 318"
+	},
+	{
+		"key": "MID_STAGE_PB318",
+		"value": "Diametralmente opposte"
+	}
+]
