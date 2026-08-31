@@ -1,0 +1,846 @@
+[
+	{
+		"key": "MDAID_\u30df\u30e9\u30fc\u30b8\u30e5\u306e\u982d\u98fe\u308a",
+		"value": "Elmo Mirage"
+	},
+	{
+		"key": "MDAID_H_\u30df\u30e9\u30fc\u30b8\u30e5\u306e\u982d\u98fe\u308a",
+		"value": "Elmo mistico da cavaliera pegaso di\\nTsubasa. Sembra fragile, ma \u00e8\\nresistente."
+	},
+	{
+		"key": "MDAID_\u30df\u30e9\u30fc\u30b8\u30e5\u306e\u982d\u98fe\u308a\u30fb\u6975",
+		"value": "Elmo Mirage+"
+	},
+	{
+		"key": "MDAID_H_\u30df\u30e9\u30fc\u30b8\u30e5\u306e\u982d\u98fe\u308a\u30fb\u6975",
+		"value": "Elmo mistico da cavaliera falco di\\nTsubasa. \u00c8 realizzato con materiali\\ntraslucidi straordinari."
+	},
+	{
+		"key": "MDAID_\u8000\u304f\u6b4c\u59eb\u306e\u30d9\u30fc\u30eb",
+		"value": "Velo da diva radioso"
+	},
+	{
+		"key": "MDAID_H_\u8000\u304f\u6b4c\u59eb\u306e\u30d9\u30fc\u30eb",
+		"value": "Elegante velo da diva di Azura. Si dice\\nche chi lo indossa canti meglio.\\nPreparati a brillare."
+	},
+	{
+		"key": "MDAID_\u8000\u304f\u6b4c\u59eb\u306e\u30d9\u30fc\u30eb\u30fb\u6975",
+		"value": "Velo da diva radioso+"
+	},
+	{
+		"key": "MDAID_H_\u8000\u304f\u6b4c\u59eb\u306e\u30d9\u30fc\u30eb\u30fb\u6975",
+		"value": "Elegante velo da diva di Azura. \u00c8 stato\\nconfezionato per commemorare\\nil legame fra l'Hoshido e il Nohr."
+	},
+	{
+		"key": "MDAID_\u58eb\u5b98\u5b66\u6821\u6642\u4ee3\u306e\u5236\u5e3d",
+		"value": "Berretto accademico"
+	},
+	{
+		"key": "MDAID_H_\u58eb\u5b98\u5b66\u6821\u6642\u4ee3\u306e\u5236\u5e3d",
+		"value": "Berretto di Sigurd, usato dagli studenti\\ndell'accademia. Indossarlo rafforza\\nil senso del dovere."
+	},
+	{
+		"key": "MDAID_\u58eb\u5b98\u5b66\u6821\u6642\u4ee3\u306e\u5236\u5e3d\u30fb\u6975",
+		"value": "Berretto accademico+"
+	},
+	{
+		"key": "MDAID_H_\u58eb\u5b98\u5b66\u6821\u6642\u4ee3\u306e\u5236\u5e3d\u30fb\u6975",
+		"value": "Berretto di Sigurd, usato dagli studenti\\ndell'accademia. \u00c8 realizzato con\\ntessuti di alta qualit\u00e0."
+	},
+	{
+		"key": "MDAID_\u6d12\u843d\u305f\u8272\u4ed8\u304d\u773c\u93e1",
+		"value": "Occhiali alla moda"
+	},
+	{
+		"key": "MDAID_H_\u6d12\u843d\u305f\u8272\u4ed8\u304d\u773c\u93e1",
+		"value": "Paio di occhiali eleganti di Sylvain.\\nPortati in testa, creano uno stile\\ndavvero alla moda!"
+	},
+	{
+		"key": "MDAID_\u6d12\u843d\u305f\u8272\u4ed8\u304d\u773c\u93e1\u30fb\u6975",
+		"value": "Occhiali alla moda+"
+	},
+	{
+		"key": "MDAID_H_\u6d12\u843d\u305f\u8272\u4ed8\u304d\u773c\u93e1\u30fb\u6975",
+		"value": "Paio di occhiali eleganti di Sylvain.\\nBasta indossarli per sentirsi come\\nin vacanza su un'isola tropicale."
+	},
+	{
+		"key": "MDAID_\u65c5\u5148\u306e\u6e29\u6cc9\u306e\u98a8\u5442\u6876",
+		"value": "Secchio terme"
+	},
+	{
+		"key": "MDAID_H_\u65c5\u5148\u306e\u6e29\u6cc9\u306e\u98a8\u5442\u6876",
+		"value": "La prova che due eroi hanno sconfitto\\nun boss durante i loro viaggi insieme.\\n\u00c8 un ricordo delle avventure vissute."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_116",
+		"value": "Conferisce Att/Vel/Dif/Res +X all'unit\u00e0 durante\\nlo scontro (il valore di X \u00e8 pari al numero di\\nalleati sulla mappa con l'effetto Nesso attivo,\\nunit\u00e0 inclusa, moltiplicato per 2; massimo 8).\\n\\nSe l'unit\u00e0 usa un'abilit\u00e0 Sprone o di aiuto al\\nmovimento su un alleato o viceversa, conferisce\\nNesso all'alleato per 1 turno.\\n\\nSe l'unit\u00e0 attacca per prima, conferisce Nesso\\nagli alleati entro 3 spazi dall'unit\u00e0 dopo\\nlo scontro per 1 turno.\\n\\nSe un alleato entro 3 spazi dall'unit\u00e0 attacca\\nper primo, conferisce Nesso a quell'alleato\\ndopo lo scontro per 1 turno.\\n(Per 1 turno.)"
+	},
+	{
+		"key": "MID_ENHANCE_HELP_115",
+		"value": "Conferisce un'ulteriore azione all'unit\u00e0 dopo\\n  l'azione dell'unit\u00e0."
+	},
+	{
+		"key": "MID_ENHANCE_HELP_116",
+		"value": "Conferisce Nesso agli alleati e aumenta\\n  i parametri in base al loro numero."
+	},
+	{
+		"key": "MID_MISSION_S202608HERO01_TITLE",
+		"value": "Grandi battaglie"
+	},
+	{
+		"key": "MID_MISSION_S202608HERO01_A1",
+		"value": "Batti Bruno"
+	},
+	{
+		"key": "MID_MISSION_H_S202608HERO01_A1",
+		"value": "Vinci la Grande battaglia contro Bruno,\\nil cavaliere mascherato, con Anna,\\nla comandante, in squadra."
+	},
+	{
+		"key": "MID_MISSION_S202608HERO01_A2",
+		"value": "Batti Bruno"
+	},
+	{
+		"key": "MID_MISSION_H_S202608HERO01_A2",
+		"value": "Vinci la Grande battaglia contro Bruno,\\nil cavaliere mascherato, alla difficolt\u00e0 folle o\\nsuperiore con Bruno, il cavaliere mascherato,\\nin squadra."
+	},
+	{
+		"key": "MID_MISSION_S202608HERO01_A3",
+		"value": "Batti Bruno"
+	},
+	{
+		"key": "MID_MISSION_H_S202608HERO01_A3",
+		"value": "Batti Bruno, il cavaliere mascherato, di livello\\n40 o superiore con Anna, la comandante."
+	},
+	{
+		"key": "MID_MISSION_S202608HERO01_A4",
+		"value": "Batti Bruno"
+	},
+	{
+		"key": "MID_MISSION_H_S202608HERO01_A4",
+		"value": "Batti Bruno, il cavaliere mascherato, di livello\\n40 o superiore con Bruno, il cavaliere\\nmascherato."
+	},
+	{
+		"key": "MID_MISSION_S202608HERO01_A5",
+		"value": "Batti Bruno"
+	},
+	{
+		"key": "MID_MISSION_H_S202608HERO01_A5",
+		"value": "Vinci la Grande battaglia contro Bruno,\\nil cavaliere mascherato, alla difficolt\u00e0 folle o\\nsuperiore con una squadra di sole unit\u00e0 volanti."
+	},
+	{
+		"key": "MID_MISSION_S202608JOURNEY01_TITLE",
+		"value": "Viaggio eroico"
+	},
+	{
+		"key": "MID_MISSION_S202608JOURNEY01_A1",
+		"value": "Completa Viaggio eroico"
+	},
+	{
+		"key": "MID_MISSION_H_S202608JOURNEY01_A1",
+		"value": "Completa il Viaggio eroico."
+	},
+	{
+		"key": "MID_MISSION_S202608JOURNEY01_A2",
+		"value": "Completa Viaggio eroico"
+	},
+	{
+		"key": "MID_MISSION_H_S202608JOURNEY01_A2",
+		"value": "Completa il Viaggio eroico."
+	},
+	{
+		"key": "MID_MISSION_S202608MJOLNIR02_TITLE",
+		"value": "Rombo di Mj\u00f6lnir"
+	},
+	{
+		"key": "MID_MISSION_S202608MJOLNIR02_A1",
+		"value": "Vinci con avatar"
+	},
+	{
+		"key": "MID_MISSION_H_S202608MJOLNIR02_A1",
+		"value": "Sconfiggi un nemico con l'avatar in\\nRombo di Mj\u00f6lnir."
+	},
+	{
+		"key": "MID_MISSION_S202608MJOLNIR02_A2",
+		"value": "Vinci con avatar"
+	},
+	{
+		"key": "MID_MISSION_H_S202608MJOLNIR02_A2",
+		"value": "Sconfiggi un nemico con l'avatar in\\nRombo di Mj\u00f6lnir."
+	},
+	{
+		"key": "MID_MISSION_S202608SUBSC02_TITLE",
+		"value": "Tessera Feh"
+	},
+	{
+		"key": "MID_MISSION_S202608SUBSC02_A1",
+		"value": "Vinci"
+	},
+	{
+		"key": "MID_MISSION_H_S202608SUBSC02_A1",
+		"value": "Sconfiggi un nemico."
+	},
+	{
+		"key": "MID_MISSION_S202608SUBSC02_A2",
+		"value": "Vinci"
+	},
+	{
+		"key": "MID_MISSION_H_S202608SUBSC02_A2",
+		"value": "Sconfiggi un nemico."
+	},
+	{
+		"key": "MID_MISSION_S202608SUBSC02_A3",
+		"value": "Vinci"
+	},
+	{
+		"key": "MID_MISSION_H_S202608SUBSC02_A3",
+		"value": "Sconfiggi un nemico."
+	},
+	{
+		"key": "MID_MISSION_S202608SUBSC02_A4",
+		"value": "Arena: vinci duelli"
+	},
+	{
+		"key": "MID_MISSION_H_S202608SUBSC02_A4",
+		"value": "Vinci duelli nell'arena a qualsiasi\\nlivello di difficolt\u00e0."
+	},
+	{
+		"key": "MID_MISSION_S202608SUBSC02_A5",
+		"value": "Arena: vinci duelli"
+	},
+	{
+		"key": "MID_MISSION_H_S202608SUBSC02_A5",
+		"value": "Vinci duelli nell'arena a qualsiasi\\nlivello di difficolt\u00e0."
+	},
+	{
+		"key": "MID_MISSION_S202608SUBSC02_A6",
+		"value": "Batti unit\u00e0 corazzate"
+	},
+	{
+		"key": "MID_MISSION_H_S202608SUBSC02_A6",
+		"value": "Sconfiggi un nemico corazzato."
+	},
+	{
+		"key": "MID_MISSION_S202608SUBSC02_A7",
+		"value": "Batti unit\u00e0 volanti"
+	},
+	{
+		"key": "MID_MISSION_H_S202608SUBSC02_A7",
+		"value": "Sconfiggi un nemico volante."
+	},
+	{
+		"key": "MID_MISSION_S202608USEWEAPON01_TITLE",
+		"value": "Arte dell'ascia"
+	},
+	{
+		"key": "MID_MISSION_S202608USEWEAPON01_A1",
+		"value": "Vinci con ascia"
+	},
+	{
+		"key": "MID_MISSION_H_S202608USEWEAPON01_A1",
+		"value": "Sconfiggi un nemico con lancia con un alleato\\narmato di ascia."
+	},
+	{
+		"key": "MID_MISSION_S202608USEWEAPON01_A2",
+		"value": "Vinci con ascia"
+	},
+	{
+		"key": "MID_MISSION_H_S202608USEWEAPON01_A2",
+		"value": "Sconfiggi un nemico con ascia con un alleato\\narmato di ascia."
+	},
+	{
+		"key": "MID_MISSION_S202608USEWEAPON01_A3",
+		"value": "Vinci con ascia"
+	},
+	{
+		"key": "MID_MISSION_H_S202608USEWEAPON01_A3",
+		"value": "Sconfiggi un nemico con spada con un alleato\\narmato di ascia."
+	},
+	{
+		"key": "MID_MISSION_S202608USEWEAPON01_A4",
+		"value": "Vinci con ascia"
+	},
+	{
+		"key": "MID_MISSION_H_S202608USEWEAPON01_A4",
+		"value": "Sconfiggi un nemico con arco neutro con\\nun alleato armato di ascia."
+	},
+	{
+		"key": "MID_MISSION_S202608USEWEAPON01_A5",
+		"value": "Vinci con ascia"
+	},
+	{
+		"key": "MID_MISSION_H_S202608USEWEAPON01_A5",
+		"value": "Sconfiggi un nemico con pugnale neutro con\\nun alleato armato di ascia."
+	},
+	{
+		"key": "MID_MISSION_S202608USEWEAPON01_A6",
+		"value": "Vinci con ascia"
+	},
+	{
+		"key": "MID_MISSION_H_S202608USEWEAPON01_A6",
+		"value": "Sconfiggi un nemico con bastone con un alleato\\narmato di ascia."
+	},
+	{
+		"key": "MID_MISSION_S202608USEWEAPON01_A7",
+		"value": "Ascia batte nem. 30+"
+	},
+	{
+		"key": "MID_MISSION_H_S202608USEWEAPON01_A7",
+		"value": "Sconfiggi un nemico con lancia di livello 30 o\\nsuperiore con un alleato armato di ascia."
+	},
+	{
+		"key": "MID_MISSION_S202608USEWEAPON01_A8",
+		"value": "Ascia batte nem. 30+"
+	},
+	{
+		"key": "MID_MISSION_H_S202608USEWEAPON01_A8",
+		"value": "Sconfiggi un nemico con ascia di livello 30 o\\nsuperiore con un alleato armato di ascia."
+	},
+	{
+		"key": "MID_MISSION_S202608USEWEAPON01_A9",
+		"value": "Ascia batte nem. 30+"
+	},
+	{
+		"key": "MID_MISSION_H_S202608USEWEAPON01_A9",
+		"value": "Sconfiggi un nemico con spada di livello 30 o\\nsuperiore con un alleato armato di ascia."
+	},
+	{
+		"key": "MID_MISSION_S202608USEWEAPON01_A10",
+		"value": "Ascia batte nem. 30+"
+	},
+	{
+		"key": "MID_MISSION_H_S202608USEWEAPON01_A10",
+		"value": "Sconfiggi un nemico con arco neutro di livello\\n30 o superiore con un alleato armato di ascia."
+	},
+	{
+		"key": "MID_MISSION_S202608USEWEAPON01_A11",
+		"value": "Ascia batte nem. 30+"
+	},
+	{
+		"key": "MID_MISSION_H_S202608USEWEAPON01_A11",
+		"value": "Sconfiggi un nemico con pugnale neutro di\\nlivello 30 o superiore con un alleato armato di\\nascia."
+	},
+	{
+		"key": "MID_MISSION_S202608USEWEAPON01_A12",
+		"value": "Ascia batte nem. 30+"
+	},
+	{
+		"key": "MID_MISSION_H_S202608USEWEAPON01_A12",
+		"value": "Sconfiggi un nemico con bastone di livello 30 o\\nsuperiore con un alleato armato di ascia."
+	},
+	{
+		"key": "MID_MISSION_W_S202608STORY_C01_TITLE",
+		"value": "Sovrana dei morti"
+	},
+	{
+		"key": "MID_MISSION_W_S202608STORY_C01_A1",
+		"value": "Completa 10-1 folle"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202608STORY_C01_A1",
+		"value": "Completa il libro X, cap. 10-1 alla difficolt\u00e0 folle\\ncon un'unit\u00e0 armata di ascia in squadra\\n(le unit\u00e0 partner schierate usando Duo non\\ncontano). Tutti e 4 gli alleati devono\\nsopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_S202608STORY_C01_A2",
+		"value": "Completa 10-2 folle"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202608STORY_C01_A2",
+		"value": "Completa il libro X, cap. 10-2 alla difficolt\u00e0 folle\\ncon un'unit\u00e0 armata di spada in squadra\\n(le unit\u00e0 partner schierate usando Duo non\\ncontano). Tutti e 4 gli alleati devono\\nsopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_S202608STORY_C01_A3",
+		"value": "Completa 10-3 folle"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202608STORY_C01_A3",
+		"value": "Completa il libro X, cap. 10-3 alla difficolt\u00e0 folle\\ncon un'unit\u00e0 armata di lancia in squadra\\n(le unit\u00e0 partner schierate usando Duo non\\ncontano). Tutti e 4 gli alleati devono\\nsopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_S202608STORY_C01_A4",
+		"value": "Completa 10-4 folle"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202608STORY_C01_A4",
+		"value": "Completa il libro X, cap. 10-4 alla difficolt\u00e0\\nfolle con un'unit\u00e0 armata di ascia in squadra\\n(le unit\u00e0 partner schierate usando Duo non\\ncontano). Tutti e 4 gli alleati devono\\nsopravvivere."
+	},
+	{
+		"key": "MID_MISSION_W_S202608STORY_C01_A5",
+		"value": "Completa 10-5 folle"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202608STORY_C01_A5",
+		"value": "Completa il libro X, cap. 10-5 alla difficolt\u00e0 folle\\ncon un'unit\u00e0 armata di spada in squadra\\n(le unit\u00e0 partner schierate usando Duo non\\ncontano). Tutti e 4 gli alleati devono\\nsopravvivere."
+	},
+	{
+		"key": "MPID_\u7dcf\u9078\u6319\u3064\u3070\u3055",
+		"value": "Tsubasa"
+	},
+	{
+		"key": "MPID_SEARCH_\u7dcf\u9078\u6319\u3064\u3070\u3055",
+		"value": "Tsubasa"
+	},
+	{
+		"key": "MPID_\u7dcf\u9078\u6319\u30a2\u30af\u30a2",
+		"value": "Azura"
+	},
+	{
+		"key": "MPID_SEARCH_\u7dcf\u9078\u6319\u30a2\u30af\u30a2",
+		"value": "Azura"
+	},
+	{
+		"key": "MPID_\u7dcf\u9078\u6319\u30b7\u30b0\u30eb\u30c9",
+		"value": "Sigurd"
+	},
+	{
+		"key": "MPID_SEARCH_\u7dcf\u9078\u6319\u30b7\u30b0\u30eb\u30c9",
+		"value": "Sigurd"
+	},
+	{
+		"key": "MPID_\u7dcf\u9078\u6319\u30b7\u30eb\u30f4\u30a1\u30f3",
+		"value": "Sylvain"
+	},
+	{
+		"key": "MPID_SEARCH_\u7dcf\u9078\u6319\u30b7\u30eb\u30f4\u30a1\u30f3",
+		"value": "Sylvain"
+	},
+	{
+		"key": "MPID_\u30ed\u30c9\u30ea\u30b0",
+		"value": "Rodrigue"
+	},
+	{
+		"key": "MPID_SEARCH_\u30ed\u30c9\u30ea\u30b0",
+		"value": "Rodrigue"
+	},
+	{
+		"key": "MPID_HONOR_\u7dcf\u9078\u6319\u3064\u3070\u3055",
+		"value": "Ragazza evocata"
+	},
+	{
+		"key": "MPID_HONOR_\u7dcf\u9078\u6319\u30a2\u30af\u30a2",
+		"value": "Lady del riverbero"
+	},
+	{
+		"key": "MPID_HONOR_\u7dcf\u9078\u6319\u30b7\u30b0\u30eb\u30c9",
+		"value": "Equit\u00e0 tramandata"
+	},
+	{
+		"key": "MPID_HONOR_\u7dcf\u9078\u6319\u30b7\u30eb\u30f4\u30a1\u30f3",
+		"value": "Caval. delle dame"
+	},
+	{
+		"key": "MPID_HONOR_\u30ed\u30c9\u30ea\u30b0",
+		"value": "Scudo Faerghus"
+	},
+	{
+		"key": "MPID_H_\u7dcf\u9078\u6319\u3064\u3070\u3055",
+		"value": "Studentessa energetica e aspirante cantante che\\nfa squadra con Shiida. Evocata nell'Askr perch\u00e9\\nacclamata dalle folle. Compare in\\nTokyo Mirage Sessions \u266fFE Encore."
+	},
+	{
+		"key": "MPID_H_\u7dcf\u9078\u6319\u30a2\u30af\u30a2",
+		"value": "Cantrice con un insolito legame con il Nohr,\\nl'Hoshido e il Valla. Ha la meglio sul destino\\ngrazie ai suoi vincoli con le persone e canta in\\nmodo sublime. Compare in Fire Emblem Fates."
+	},
+	{
+		"key": "MPID_H_\u7dcf\u9078\u6319\u30b7\u30b0\u30eb\u30c9",
+		"value": "Futuro duca di Chalphy, discendente di Baldr,\\nuno dei crociati. Ha stretto amicizie durature\\nnegli anni di studio all'accademia militare nella\\ncapitale reale, Belhalla. Compare in\\nFire Emblem: Genealogy of the Holy War."
+	},
+	{
+		"key": "MPID_H_\u7dcf\u9078\u6319\u30b7\u30eb\u30f4\u30a1\u30f3",
+		"value": "Secondogenito del margravio Gautier del Sacro\\nRegno di Faerghus. Detesta essere limitato da\\npatrimoni familiari e segni. Compare in\\nFire Emblem: Three Houses."
+	},
+	{
+		"key": "MPID_H_\u30ed\u30c9\u30ea\u30b0",
+		"value": "Capofamiglia del casato dei Fraldarius. Possiede\\nun ducato nel Sacro Regno di Faerghus,\\nconsiderato la terra dei cavalieri. Compare\\nin Fire Emblem: Three Houses."
+	},
+	{
+		"key": "MPID_VOICE_\u7dcf\u9078\u6319\u3064\u3070\u3055",
+		"value": "Kayli Mills + Cherami Leigh"
+	},
+	{
+		"key": "MPID_VOICE_\u7dcf\u9078\u6319\u30a2\u30af\u30a2",
+		"value": "Rena Strober"
+	},
+	{
+		"key": "MPID_VOICE_\u7dcf\u9078\u6319\u30b7\u30b0\u30eb\u30c9",
+		"value": "Grant George"
+	},
+	{
+		"key": "MPID_VOICE_\u7dcf\u9078\u6319\u30b7\u30eb\u30f4\u30a1\u30f3",
+		"value": "Joe Brogie"
+	},
+	{
+		"key": "MPID_VOICE_\u30ed\u30c9\u30ea\u30b0",
+		"value": "Jake Eberle"
+	},
+	{
+		"key": "MPID_VOICE_\u30d9\u30eb\u30ca\u30c7\u30c3\u30bfEX01",
+		"value": "Erica Mendez"
+	},
+	{
+		"key": "MPID_ILLUST_\u7dcf\u9078\u6319\u3064\u3070\u3055",
+		"value": "ne-on"
+	},
+	{
+		"key": "MPID_ILLUST_\u7dcf\u9078\u6319\u30a2\u30af\u30a2",
+		"value": "Hagiwara Rin (\u8429\u539f\u51db)"
+	},
+	{
+		"key": "MPID_ILLUST_\u7dcf\u9078\u6319\u30b7\u30b0\u30eb\u30c9",
+		"value": "Wada Sachiko (\u30ef\u30c0\u30b5\u30c1\u30b3)"
+	},
+	{
+		"key": "MPID_ILLUST_\u7dcf\u9078\u6319\u30b7\u30eb\u30f4\u30a1\u30f3",
+		"value": "Nishiki Areku (\u897f\u6728\u3042\u308c\u304f)"
+	},
+	{
+		"key": "MPID_ILLUST_\u30ed\u30c9\u30ea\u30b0",
+		"value": "Meisai (\u3081\u3044\u3055\u3044)"
+	},
+	{
+		"key": "MPID_ILLUST_\u30d9\u30eb\u30ca\u30c7\u30c3\u30bfEX01",
+		"value": "kobuta"
+	},
+	{
+		"key": "MID_TIPS_Summon_v1008b_pop_01_\u7dcf\u9078\u6319\u3064\u3070\u3055",
+		"value": "Conferisce attacchi aggiuntivi alla\\nsquadra e usa Sessioni per abbattere\\nun nemico dopo l'altro! Non si\\narrende mai!"
+	},
+	{
+		"key": "MID_TIPS_Summon_v1008b_pop_01_\u7dcf\u9078\u6319\u30a2\u30af\u30a2",
+		"value": "Usa l'abilit\u00e0 di aiuto 2 volte per turno!\\nConferisce Virtuosismo, consentendo\\nagli alleati di agire 2 volte! Assiste\\ngli alleati distanti usando Stile."
+	},
+	{
+		"key": "MID_TIPS_Summon_v1008b_pop_01_\u7dcf\u9078\u6319\u30b7\u30b0\u30eb\u30c9",
+		"value": "Quando sferra l'abilit\u00e0 speciale con\\narea d'effetto, pu\u00f2 ottenere attacchi\\nextra! Conferisce un movimento extra\\nagli alleati."
+	},
+	{
+		"key": "MID_TIPS_Summon_v1008b_pop_01_\u7dcf\u9078\u6319\u30b7\u30eb\u30f4\u30a1\u30f3",
+		"value": "Si lega agli alleati per rafforzare\\nl'unit\u00e0 della squadra! Pu\u00f2 agire fino a\\ntre volte! Usa Stile contro le unit\u00e0\\nvolanti!"
+	},
+	{
+		"key": "MSID_\u6c17\u9ad8\u304d\u5fd7\u306e\u8056\u5263",
+		"value": "Ambizione sacra"
+	},
+	{
+		"key": "MSID_SEARCH_\u6c17\u9ad8\u304d\u5fd7\u306e\u8056\u5263",
+		"value": "Ambizione sacra"
+	},
+	{
+		"key": "MSID_\u7834\u88c2\u306e\u69cd",
+		"value": "Lan. Distruzione"
+	},
+	{
+		"key": "MSID_SEARCH_\u7834\u88c2\u306e\u69cd",
+		"value": "Lan. Distruzione"
+	},
+	{
+		"key": "MSID_\u5e7b\u5f71\u30a8\u30af\u30b9\u30ab\u30ea\u30d0\u30fc",
+		"value": "Excalibur Mirage"
+	},
+	{
+		"key": "MSID_SEARCH_\u5e7b\u5f71\u30a8\u30af\u30b9\u30ab\u30ea\u30d0\u30fc",
+		"value": "Excalibur Mirage"
+	},
+	{
+		"key": "MSID_\u4e09\u591c\u306e\u6b4c\u306e\u66f8",
+		"value": "Triplice inno"
+	},
+	{
+		"key": "MSID_SEARCH_\u4e09\u591c\u306e\u6b4c\u306e\u66f8",
+		"value": "Triplice inno"
+	},
+	{
+		"key": "MSID_\u7df4\u9054\u30aa\u30fc\u30e9",
+		"value": "Aura magistrale"
+	},
+	{
+		"key": "MSID_SEARCH_\u7df4\u9054\u30aa\u30fc\u30e9",
+		"value": "Aura magistrale"
+	},
+	{
+		"key": "MSID_\u305d\u306e\u624b\u304c\u62d3\u304f\u672a\u6765\u306f",
+		"value": "Tuo \u00e8 il destino"
+	},
+	{
+		"key": "MSID_SEARCH_\u305d\u306e\u624b\u304c\u62d3\u304f\u672a\u6765\u306f",
+		"value": "Tuo e il destino"
+	},
+	{
+		"key": "MSID_\u8056\u9a0e\u58eb\u30d0\u30eb\u30c9\u306e\u672b\u88d4",
+		"value": "Erede crociato"
+	},
+	{
+		"key": "MSID_SEARCH_\u8056\u9a0e\u58eb\u30d0\u30eb\u30c9\u306e\u672b\u88d4",
+		"value": "Erede crociato"
+	},
+	{
+		"key": "MSID_\u30b8\u30e3\u30e0\u30bb\u30c3\u30b7\u30e7\u30f3",
+		"value": "Session lampo"
+	},
+	{
+		"key": "MSID_SEARCH_\u30b8\u30e3\u30e0\u30bb\u30c3\u30b7\u30e7\u30f3",
+		"value": "Session lampo"
+	},
+	{
+		"key": "MSID_\u30ea\u30ba\u30e0\u30bb\u30c3\u30b7\u30e7\u30f3",
+		"value": "Session ritmo"
+	},
+	{
+		"key": "MSID_SEARCH_\u30ea\u30ba\u30e0\u30bb\u30c3\u30b7\u30e7\u30f3",
+		"value": "Session ritmo"
+	},
+	{
+		"key": "MSID_\u864e\u7a74\u864e\u5b50",
+		"value": "Chi non osa..."
+	},
+	{
+		"key": "MSID_SEARCH_\u864e\u7a74\u864e\u5b50",
+		"value": "Chi non osa..."
+	},
+	{
+		"key": "MSID_\u901f\u3055\u5b88\u5099\u306e\u56e3\u7d50",
+		"value": "Nesso Vel/Dif"
+	},
+	{
+		"key": "MSID_SEARCH_\u901f\u3055\u5b88\u5099\u306e\u56e3\u7d50",
+		"value": "Nesso Vel/Dif"
+	},
+	{
+		"key": "MSID_\u9b54\u306e\u795e\u9ac4\u30fb\u67b7",
+		"value": "Frena demone"
+	},
+	{
+		"key": "MSID_SEARCH_\u9b54\u306e\u795e\u9ac4\u30fb\u67b7",
+		"value": "Frena demone"
+	},
+	{
+		"key": "MSID_\u7fbd\u3070\u305f\u3051\u3001\u79c1\uff01",
+		"value": "Voler\u00f2 pi\u00f9 in alto"
+	},
+	{
+		"key": "MSID_SEARCH_\u7fbd\u3070\u305f\u3051\u3001\u79c1\uff01",
+		"value": "Volero piu in alto"
+	},
+	{
+		"key": "MSID_\u5973\u597d\u304d",
+		"value": "Amante donne"
+	},
+	{
+		"key": "MSID_SEARCH_\u5973\u597d\u304d",
+		"value": "Amante donne"
+	},
+	{
+		"key": "MSID_\u5f71\u52a9\u30fb\u7a81\u9032\u30fb\u5341\u7d0b\u7ae0",
+		"value": "Impeto ombra X"
+	},
+	{
+		"key": "MSID_SEARCH_\u5f71\u52a9\u30fb\u7a81\u9032\u30fb\u5341\u7d0b\u7ae0",
+		"value": "Impeto ombra X"
+	},
+	{
+		"key": "MSID_H_\u6c17\u9ad8\u304d\u5fd7\u306e\u8056\u5263",
+		"value": "$aPermette l'uso di\u3010Mobilit\u00e0 (dist. +1; max \uff14)\u3011.\\nAnticipa l'attivazione dell'abilit\u00e0 speciale\\n(contatore -1).\\n\\nConferisce\u3010Vera ispirazione\u3011,\u3010Liberazione Dif\u3011\\ne \"riduce del 50% la percentuale delle abilit\u00e0\\nnon speciali del nemico con 'riduce di X% i danni'\\n(escluse le abilit\u00e0 speciali con area d'effetto)\"\\nall'unit\u00e0 e agli alleati entro 2 spazi dall'unit\u00e0\\nper 1 turno all'inizio della fase del giocatore o\\ndi quella nemica.\\n\\nConferisce Att/Vel/Dif/Res +15 all'unit\u00e0, l'unit\u00e0\\ninfligge +25 di danno (incluse le abilit\u00e0 speciali\\ncon area d'effetto), riduce di 15 il danno da\\nattacchi del nemico (escluse le abilit\u00e0 speciali con\\narea d'effetto) e riduce ulteriormente di 15\\nil danno da abilit\u00e0 speciali del nemico durante\\nlo scontro (escluse le abilit\u00e0 speciali con area\\nd'effetto).\\n\\nSe l'unit\u00e0 attacca per prima dopo essersi\\nspostata in uno spazio differente, si verificano\\ni seguenti effetti in base all'abilit\u00e0 speciale\\ndell'unit\u00e0: se l'unit\u00e0 \u00e8 dotata di un'abilit\u00e0 speciale\\ncon area d'effetto, conferisce contatore -X\\nall'unit\u00e0 prima dello scontro prima che l'abilit\u00e0\\nspeciale si attivi; se l'unit\u00e0 \u00e8 dotata di un'abilit\u00e0\\nche si attiva quando l'unit\u00e0 attacca (escluse\\nle abilit\u00e0 speciali con area d'effetto), conferisce\\ncontatore -X all'unit\u00e0 prima del suo primo attacco\\ndurante lo scontro (il valore di X \u00e8 pari al numero\\ndi spazi tra la posizione di partenza e quella di\\narrivo; massimo 3).\\n\\n\u3010Mobilit\u00e0 (dist. +1; max \uff14)\u3011\\nDopo un attacco, abilit\u00e0 di aiuto o distruzione\\ndi una struttura, l'unit\u00e0 pu\u00f2 spostarsi di\\nun numero di spazi pari al numero di spazi tra\\nla posizione di partenza e quella di arrivo\\ndell'unit\u00e0 prima di eseguire l'azione indicata\\nin precedenza, pi\u00f9 1. (Massimo \uff14.)\\n\\n\u3010Vera ispirazione\u3011\\nAtt/Vel/Dif/Res aumentano durante lo scontro\\ndi un valore pari al numero di spazi tra\\nla posizione di partenza e quella di arrivo\\ndi chi ha attaccato per primo moltiplicato\\nper 2 (massimo 8).\\n\\n\u3010Liberazione Dif\u3011\\nLa Dif aumenta durante lo scontro di un valore\\npari al numero di bonus attivi sull'unit\u00e0,\\nesclusi i bonus ai parametri, +4 (massimo 8)."
+	},
+	{
+		"key": "MSID_H_\u6c17\u9ad8\u304d\u5fd7\u306e\u8056\u5263_NOSKW",
+		"value": "$aPermette l'uso di\u3010Mobilit\u00e0 (dist. +1; max \uff14)\u3011.\\nAnticipa l'attivazione dell'abilit\u00e0 speciale\\n(contatore -1).\\n\\nConferisce\u3010Vera ispirazione\u3011,\u3010Liberazione Dif\u3011\\ne \"riduce del 50% la percentuale delle abilit\u00e0\\nnon speciali del nemico con 'riduce di X% i danni'\\n(escluse le abilit\u00e0 speciali con area d'effetto)\"\\nall'unit\u00e0 e agli alleati entro 2 spazi dall'unit\u00e0\\nper 1 turno all'inizio della fase del giocatore o\\ndi quella nemica.\\n\\nConferisce Att/Vel/Dif/Res +15 all'unit\u00e0, l'unit\u00e0\\ninfligge +25 di danno (incluse le abilit\u00e0 speciali\\ncon area d'effetto), riduce di 15 il danno da\\nattacchi del nemico (escluse le abilit\u00e0 speciali con\\narea d'effetto) e riduce ulteriormente di 15\\nil danno da abilit\u00e0 speciali del nemico durante\\nlo scontro (escluse le abilit\u00e0 speciali con area\\nd'effetto).\\n\\nSe l'unit\u00e0 attacca per prima dopo essersi\\nspostata in uno spazio differente, si verificano\\ni seguenti effetti in base all'abilit\u00e0 speciale\\ndell'unit\u00e0: se l'unit\u00e0 \u00e8 dotata di un'abilit\u00e0 speciale\\ncon area d'effetto, conferisce contatore -X\\nall'unit\u00e0 prima dello scontro prima che l'abilit\u00e0\\nspeciale si attivi; se l'unit\u00e0 \u00e8 dotata di un'abilit\u00e0\\nche si attiva quando l'unit\u00e0 attacca (escluse\\nle abilit\u00e0 speciali con area d'effetto), conferisce\\ncontatore -X all'unit\u00e0 prima del suo primo attacco\\ndurante lo scontro (il valore di X \u00e8 pari al numero\\ndi spazi tra la posizione di partenza e quella di\\narrivo; massimo 3)."
+	},
+	{
+		"key": "MSID_H_\u7834\u88c2\u306e\u69cd",
+		"value": "$aPermette l'uso di\u3010Mobilit\u00e0 (dist. +1; max \uff14)\u3011.\\nAnticipa l'attivazione dell'abilit\u00e0 speciale\\n(contatore -1).\\n\\nInfligge Att/Vel/Dif -7,\u3010Congelamento\u3011\\ne\u3010Sabotaggio\u3011ai nemici pi\u00f9 vicini e ai nemici\\nentro 2 spazi da quei nemici durante le loro\\nprossime azioni all'inizio del turno o dopo l'azione\\ndell'unit\u00e0 (se Mobilit\u00e0 si attiva, dopo Mobilit\u00e0).\\n\\nConferisce Att/Vel/Dif/Res +15 all'unit\u00e0, l'unit\u00e0\\ninfligge +25 di danno (escluse le abilit\u00e0 speciali\\ncon area d'effetto), riduce di 15 il danno da\\nattacchi del nemico (escluse le abilit\u00e0 speciali con\\narea d'effetto) e riduce ulteriormente di 15\\nil danno da abilit\u00e0 speciali del nemico durante\\nlo scontro (escluse le abilit\u00e0 speciali con area\\nd'effetto).\\n\\nL'unit\u00e0 pu\u00f2 usare il seguente\u3010Stile\u3011:\\n\u2015\u2015\u2015\u2015\u2015 Stile Cielo caduto \u2015\u2015\u2015\u2015\u2015\\nL'unit\u00e0 pu\u00f2 attaccare i nemici a distanza di\\n2 spazi (non pu\u00f2 attaccare i nemici adiacenti).\\n\\nL'unit\u00e0 infligge +10 di danno durante lo scontro\\n(escluse le abilit\u00e0 speciali con area d'effetto).\\nConferisce un vantaggio nel triangolo delle armi\\nsui nemici volanti durante lo scontro.\\n\\nNon pu\u00f2 spostarsi attraverso spazi entro 2 spazi\\ndal nemico che ha attivato l'effetto Barricata (non\\nha effetto se l'unit\u00e0 ha un'abilit\u00e0 Passaggio). Se\\nuna delle seguenti condizioni si verifica, l'unit\u00e0\\nsubisce un contrattacco: il nemico \u00e8 corazzato e\\nha 1 di Rgg, il nemico pu\u00f2 contrattaccare da\\nqualunque distanza o il nemico ha Rgg pari alla\\ndistanza tra l'unit\u00e0 e il nemico.\\n\\nGli effetti sul movimento dopo lo scontro non si\\nverificano. Il Rgg degli effetti delle abilit\u00e0 viene\\nconsiderato pari a 1. Questo Stile pu\u00f2 essere\\nusato una sola volta per turno.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\n\\n\u3010Mobilit\u00e0 (dist. +1; max \uff14)\u3011\\nDopo un attacco, abilit\u00e0 di aiuto o distruzione\\ndi una struttura, l'unit\u00e0 pu\u00f2 spostarsi di\\nun numero di spazi pari al numero di spazi tra\\nla posizione di partenza e quella di arrivo\\ndell'unit\u00e0 prima di eseguire l'azione indicata\\nin precedenza, pi\u00f9 1. (Massimo \uff14.)\\n\\n\u3010Congelamento\u3011\\nAumenta di X la differenza di Vel necessaria\\nall'unit\u00e0 per eseguire un attacco doppio e\\ndiminuisce di X la differenza di Vel necessaria\\nal nemico per eseguire un attacco doppio\\ndurante lo scontro (se il nemico ha Dif superiore\\nrispetto all'unit\u00e0, il valore di X \u00e8 pari a 10 pi\u00f9\\nla differenza tra la Dif dell'unit\u00e0 e quella del\\nnemico moltiplicata per 2; altrimenti, \u00e8 pari\\na 10).\\n\\n\u3010Sabotaggio\u3011\\nAtt/Vel/Dif/Res dell'unit\u00e0 diminuiscono durante\\nlo scontro di un valore pari alla pi\u00f9 alta tra\\nle penalit\u00e0 attive su ognuno di quei parametri\\ndell'unit\u00e0 e degli alleati entro 2 spazi dall'unit\u00e0.\\nOgni parametro \u00e8 calcolato singolarmente.\\n\\n\u3010Stile\u3011\\nCambia Stile usando il pulsante Stile in basso\\nsullo schermo.\\n\\nLo Stile di un'unit\u00e0 si attiva solo quando questa\\nagisce. L'uso di Stile viene disattivato quando\\nl'unit\u00e0 viene schierata usando l'abilit\u00e0 Duo o\\nquando \u00e8 dotata di molteplici abilit\u00e0 con\\nuno Stile."
+	},
+	{
+		"key": "MSID_H_\u7834\u88c2\u306e\u69cd_NOSKW",
+		"value": "$aPermette l'uso di\u3010Mobilit\u00e0 (dist. +1; max \uff14)\u3011.\\nAnticipa l'attivazione dell'abilit\u00e0 speciale\\n(contatore -1).\\n\\nInfligge Att/Vel/Dif -7,\u3010Congelamento\u3011\\ne\u3010Sabotaggio\u3011ai nemici pi\u00f9 vicini e ai nemici\\nentro 2 spazi da quei nemici durante le loro\\nprossime azioni all'inizio del turno o dopo l'azione\\ndell'unit\u00e0 (se Mobilit\u00e0 si attiva, dopo Mobilit\u00e0).\\n\\nConferisce Att/Vel/Dif/Res +15 all'unit\u00e0, l'unit\u00e0\\ninfligge +25 di danno (escluse le abilit\u00e0 speciali\\ncon area d'effetto), riduce di 15 il danno da\\nattacchi del nemico (escluse le abilit\u00e0 speciali con\\narea d'effetto) e riduce ulteriormente di 15\\nil danno da abilit\u00e0 speciali del nemico durante\\nlo scontro (escluse le abilit\u00e0 speciali con area\\nd'effetto).\\n\\nL'unit\u00e0 pu\u00f2 usare il seguente\u3010Stile\u3011:\\n\u2015\u2015\u2015\u2015\u2015 Stile Cielo caduto \u2015\u2015\u2015\u2015\u2015\\nL'unit\u00e0 pu\u00f2 attaccare i nemici a distanza di\\n2 spazi (non pu\u00f2 attaccare i nemici adiacenti).\\n\\nL'unit\u00e0 infligge +10 di danno durante lo scontro\\n(escluse le abilit\u00e0 speciali con area d'effetto).\\nConferisce un vantaggio nel triangolo delle armi\\nsui nemici volanti durante lo scontro.\\n\\nNon pu\u00f2 spostarsi attraverso spazi entro 2 spazi\\ndal nemico che ha attivato l'effetto Barricata (non\\nha effetto se l'unit\u00e0 ha un'abilit\u00e0 Passaggio). Se\\nuna delle seguenti condizioni si verifica, l'unit\u00e0\\nsubisce un contrattacco: il nemico \u00e8 corazzato e\\nha 1 di Rgg, il nemico pu\u00f2 contrattaccare da\\nqualunque distanza o il nemico ha Rgg pari alla\\ndistanza tra l'unit\u00e0 e il nemico.\\n\\nGli effetti sul movimento dopo lo scontro non si\\nverificano. Il Rgg degli effetti delle abilit\u00e0 viene\\nconsiderato pari a 1. Questo Stile pu\u00f2 essere\\nusato una sola volta per turno.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015"
+	},
+	{
+		"key": "MSID_H_\u5e7b\u5f71\u30a8\u30af\u30b9\u30ab\u30ea\u30d0\u30fc",
+		"value": "$aPermette l'uso di\u3010Mobilit\u00e0 (\uff12)\u3011.\\nEfficace contro le unit\u00e0 volanti. Anticipa\\nl'attivazione dell'abilit\u00e0 speciale (contatore -1).\\n\\nSe un alleato entro 2 spazi dall'unit\u00e0 attacca per\\nprimo, permette l'uso di\u3010Cadenza\u3011sui nemici\\nentro una distanza di X dopo lo scontro\\n(escluso dopo l'uso di\u3010Cadenza\u3011; il valore di\\nX \u00e8 pari al Rgg di attacco dell'alleato pi\u00f9 1; fino\\na due volte per turno per l'intera squadra).\\n\\nConferisce Att/Vel/Dif/Res +15 all'unit\u00e0, l'unit\u00e0\\ninfligge +25 di danno (escluse le abilit\u00e0 speciali\\ncon area d'effetto) e riduce di 15 il danno da\\nattacchi del nemico durante lo scontro (escluse\\nle abilit\u00e0 speciali con area d'effetto). Se l'unit\u00e0 ha\\npi\u00f9 di 1 PS, sopravvive a un attacco letale\\ndurante lo scontro e rimane con 1 PS (una volta\\nper scontro; non cumulabile con effetti di abilit\u00e0\\nnon speciali che permettono all'unit\u00e0 di\\nsopravvivere a un attacco letale e rimanere\\ncon 1 PS).\\n\\nRipristina 7 PS all'unit\u00e0 dopo lo scontro.\\n\\n\u3010Mobilit\u00e0 (\uff12)\u3011\\nDopo un attacco, un'abilit\u00e0 di aiuto o\\nla distruzione di una struttura, l'unit\u00e0 pu\u00f2\\nspostarsi di \uff12 spazio/i.\\n\\n(Una volta per turno e non cumulabile.\\nSi applica solo il valore pi\u00f9 alto.)\\n\\n\u3010Cadenza\u3011\\nL'unit\u00e0 pu\u00f2 attaccare il nemico di nuovo\\nuna volta, entro una determinata distanza, da\\nqualunque distanza dopo lo scontro in cui l'unit\u00e0\\nattacca per prima (dopo l'attivazione di effetti\\ndopo lo scontro; prima dell'attivazione di effetti\\ne di Mobilit\u00e0 dopo l'azione; le penalit\u00e0 attive che\\ndurano fino all'azione dell'unit\u00e0 sono annullate).\\n\\nSe una delle seguenti condizioni si verifica, l'unit\u00e0\\nsubisce un contrattacco: il nemico pu\u00f2\\ncontrattaccare da qualsiasi distanza, l'unit\u00e0 ha\\nRgg pari al Rgg del nemico o il nemico ha Rgg\\npari alla distanza tra l'unit\u00e0 e il nemico. Il Rgg\\ndegli effetti delle abilit\u00e0 \u00e8 determinato dal Rgg\\ndell'arma dell'unit\u00e0. Lo spazio dell'unit\u00e0 prima\\ndel movimento e il movimento restante dell'unit\u00e0\\na cui si riferisce l'abilit\u00e0 rimarranno invariati\\nprima dell'uso di Cadenza. L'unit\u00e0 non pu\u00f2\\nspostarsi, usare Stile o attaccare strutture;\\nle abilit\u00e0 speciali con area d'effetto dell'unit\u00e0\\nnon si attivano e gli effetti sul movimento dopo\\nlo scontro non si verificano. Se l'unit\u00e0 usa\\nCadenza su un nemico nel Rgg di un altro\\neffetto Cadenza, l'effetto si considerer\u00e0\\nattivato, incluso l'altro effetto; non cumulabile;\\nsi applica solo il valore pi\u00f9 alto. Non si attiva\\nquando subisce gli effetti di Trappola veggente\\no delle trappole in Blitz eterei. Cadenza pu\u00f2\\nessere usato una sola volta per turno per\\nla squadra del giocatore in Duelli Evocat. Non si\\nattiva in Pedine di Loki."
+	},
+	{
+		"key": "MSID_H_\u5e7b\u5f71\u30a8\u30af\u30b9\u30ab\u30ea\u30d0\u30fc_NOSKW",
+		"value": "$aPermette l'uso di\u3010Mobilit\u00e0 (\uff12)\u3011.\\nEfficace contro le unit\u00e0 volanti. Anticipa\\nl'attivazione dell'abilit\u00e0 speciale (contatore -1).\\n\\nSe un alleato entro 2 spazi dall'unit\u00e0 attacca per\\nprimo, permette l'uso di\u3010Cadenza\u3011sui nemici\\nentro una distanza di X dopo lo scontro\\n(escluso dopo l'uso di\u3010Cadenza\u3011; il valore di\\nX \u00e8 pari al Rgg di attacco dell'alleato pi\u00f9 1; fino\\na due volte per turno per l'intera squadra).\\n\\nConferisce Att/Vel/Dif/Res +15 all'unit\u00e0, l'unit\u00e0\\ninfligge +25 di danno (escluse le abilit\u00e0 speciali\\ncon area d'effetto) e riduce di 15 il danno da\\nattacchi del nemico durante lo scontro (escluse\\nle abilit\u00e0 speciali con area d'effetto). Se l'unit\u00e0 ha\\npi\u00f9 di 1 PS, sopravvive a un attacco letale\\ndurante lo scontro e rimane con 1 PS (una volta\\nper scontro; non cumulabile con effetti di abilit\u00e0\\nnon speciali che permettono all'unit\u00e0 di\\nsopravvivere a un attacco letale e rimanere\\ncon 1 PS).\\n\\nRipristina 7 PS all'unit\u00e0 dopo lo scontro."
+	},
+	{
+		"key": "MSID_H_\u4e09\u591c\u306e\u6b4c\u306e\u66f8",
+		"value": "$aPermette l'uso\\ndi\u3010Mobilit\u00e0 (dist. +1; max \uff14, min \uff12)\u3011. Anticipa\\nl'attivazione dell'abilit\u00e0 speciale (contatore -1).\\n\\nQuando un'abilit\u00e0 compara la Res di quest'unit\u00e0\\ncon quella di un'altra, durante l'analisi verr\u00e0\\naggiunto +5 alla Res reale di quest'unit\u00e0.\\n\\nConferisce un vantaggio sui nemici equipaggiati\\ncon armi non previste dal triangolo delle armi\\ndurante lo scontro.\\n\\nConferisce Att/Vel/Dif/Res +X all'unit\u00e0 e agli\\nalleati in un'area di 3 righe o 3 colonne con al\\ncentro l'unit\u00e0 (per l'unit\u00e0, il valore di X \u00e8 pari\\na 15; per gli alleati, \u00e8 pari a 5) e conferisce\\ncontatore -1 prima del loro primo attacco durante\\nlo scontro. Inoltre, se l'unit\u00e0 o l'alleato\\nattaccano per primi e sono in vantaggio nel\\ntriangolo delle armi, conferisce Att + 20% all'unit\u00e0\\no all'alleato e riduce l'Att del nemico del 20%\\ndurante lo scontro.\\n\\nL'unit\u00e0 infligge +25 di danno (escluse le abilit\u00e0\\nspeciali con area d'effetto) e riduce di 15 il danno\\nda attacchi del nemico durante lo scontro\\n(escluse le abilit\u00e0 speciali con area d'effetto).\\n\\n\u3010Mobilit\u00e0 (dist. +1; max \uff14, min \uff12)\u3011\\nDopo un attacco, abilit\u00e0 di aiuto o distruzione\\ndi una struttura, l'unit\u00e0 pu\u00f2 spostarsi di\\nun numero di spazi pari al numero di spazi\\ntra la posizione di partenza e quella di arrivo\\ndell'unit\u00e0 prima di eseguire l'azione indicata\\nin precedenza, pi\u00f9 1 (massimo \uff14;\\nminimo \uff12; se l'unit\u00e0 ha usato un'abilit\u00e0\\ndi movimento che l'ha fatta trasferire, pu\u00f2\\nspostarsi di \uff12 spazio/i.)"
+	},
+	{
+		"key": "MSID_H_\u4e09\u591c\u306e\u6b4c\u306e\u66f8_NOSKW",
+		"value": "$aPermette l'uso\\ndi\u3010Mobilit\u00e0 (dist. +1; max \uff14, min \uff12)\u3011. Anticipa\\nl'attivazione dell'abilit\u00e0 speciale (contatore -1).\\n\\nQuando un'abilit\u00e0 compara la Res di quest'unit\u00e0\\ncon quella di un'altra, durante l'analisi verr\u00e0\\naggiunto +5 alla Res reale di quest'unit\u00e0.\\n\\nConferisce un vantaggio sui nemici equipaggiati\\ncon armi non previste dal triangolo delle armi\\ndurante lo scontro.\\n\\nConferisce Att/Vel/Dif/Res +X all'unit\u00e0 e agli\\nalleati in un'area di 3 righe o 3 colonne con al\\ncentro l'unit\u00e0 (per l'unit\u00e0, il valore di X \u00e8 pari\\na 15; per gli alleati, \u00e8 pari a 5) e conferisce\\ncontatore -1 prima del loro primo attacco durante\\nlo scontro. Inoltre, se l'unit\u00e0 o l'alleato\\nattaccano per primi e sono in vantaggio nel\\ntriangolo delle armi, conferisce Att + 20% all'unit\u00e0\\no all'alleato e riduce l'Att del nemico del 20%\\ndurante lo scontro.\\n\\nL'unit\u00e0 infligge +25 di danno (escluse le abilit\u00e0\\nspeciali con area d'effetto) e riduce di 15 il danno\\nda attacchi del nemico durante lo scontro\\n(escluse le abilit\u00e0 speciali con area d'effetto)."
+	},
+	{
+		"key": "MSID_H_\u7df4\u9054\u30aa\u30fc\u30e9",
+		"value": "$aPermette l'uso\\ndi\u3010Mobilit\u00e0 (dist.; max \uff13, min \uff11)\u3011. Anticipa\\nl'attivazione dell'abilit\u00e0 speciale (contatore -1).\\n\\nConferisce Att/Res +6,\u3010Bonus estremo\u3011e\\n\"contatore -1 a ogni attacco durante lo scontro\\n(non cumulabile; si applica solo il valore pi\u00f9 alto)\"\\nall'unit\u00e0 e agli alleati entro 2 spazi dall'unit\u00e0\\nper 1 turno all'inizio della fase del giocatore o di\\nquella nemica.\\n\\nConferisce\u3010Aiuto gemello magico\u3011all'unit\u00e0\\nper 1 turno all'inizio della fase nemica.\\n\\nConferisce Att/Vel/Dif/Res +15 all'unit\u00e0, l'unit\u00e0\\ninfligge +25 di danno (escluse le abilit\u00e0 speciali\\ncon area d'effetto) e riduce di 15 il danno da\\nattacchi del nemico (escluse le abilit\u00e0 speciali con\\narea d'effetto) durante lo scontro.\\n\\nSe l'unit\u00e0 attiva Aiuto, il danno da attacco del\\nnemico \u00e8 calcolato al 50% (escluse le abilit\u00e0\\nspeciali con area d'effetto; cumulabile con altri\\neffetti che calcolano il danno all'X%, come\\nDoppio potente).\\n\\nL'unit\u00e0 pu\u00f2 usare il seguente\u3010Stile\u3011:\\n\u2015\u2015\u2015\u2015\u2015 Stile Scudo Egida \u2015\u2015\u2015\u2015\u2015\\nIl danno da attacco del nemico \u00e8 calcolato al 50%\\n(escluse le abilit\u00e0 speciali con area d'effetto;\\ncumulabile con altri effetti che calcolano il danno\\nall'X%, come Doppio potente) e\\nattiva\u3010Doppio potente 100%\u3011durante lo scontro.\\n\\nUna volta usato, questo Stile non pu\u00f2 essere\\nusato di nuovo per 2 turni.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\n\\n\u3010Mobilit\u00e0 (dist.; max \uff13, min \uff11)\u3011\\nDopo un attacco, abilit\u00e0 di aiuto o distruzione\\ndi una struttura, l'unit\u00e0 pu\u00f2 spostarsi di\\nun numero di spazi pari al numero di spazi\\ntra la posizione di partenza e quella di arrivo\\ndell'unit\u00e0 prima di eseguire l'azione (massimo\\n\uff13; minimo \uff11; se l'unit\u00e0 ha\\nusato un'abilit\u00e0 di movimento che l'ha fatta\\ntrasferire, pu\u00f2 spostarsi di \uff11 spazio/i.)\\n\\n\u3010Bonus estremo\u3011\\nAtt/Vel/Dif/Res aumentano durante lo scontro\\ndi un valore pari al pi\u00f9 alto tra i bonus attivi\\nsu ognuno di quei parametri dell'unit\u00e0 e degli\\nalleati entro 2 spazi dall'unit\u00e0 per 1 turno.\\nOgni parametro \u00e8 calcolato singolarmente.\\n\\n\u3010Aiuto gemello magico\u3011\\nSe un nemico drago o che usa tomo o bastone\\nattacca per primo un alleato entro 2 spazi\\ndall'unit\u00e0, attiva Aiuto sull'unit\u00e0 (l'effetto si attiva\\nsolo se l'unit\u00e0 non \u00e8 dotata di un'abilit\u00e0 che pu\u00f2\\nattivare nuovamente Aiuto; se all'unit\u00e0 sono\\nconferiti pi\u00f9 stati che attivano gli effetti di Aiuto,\\nAiuto non si attiva).\\n\\nSe un nemico \u00e8 drago o usa tomo o bastone,\\ndisattiva gli effetti del nemico che calcolano\\nil danno usando il valore pi\u00f9 basso tra Dif e Res\\ndel nemico (incluse le abilit\u00e0 speciali con area\\nd'effetto). Inoltre, tutti gli effetti \"riduce di X%\\ni danni\" che possono essere attivati una sola\\nvolta per scontro dall'abilit\u00e0 speciale dell'unit\u00e0\\npossono essere attivati fino a 2 volte per scontro\\ndurante lo scontro (esclusi gli effetti delle abilit\u00e0\\nspeciali amplificati dalle unioni; non cumulabile;\\nsi applica solo il valore pi\u00f9 alto).\\n\\n\u3010Stile\u3011\\nCambia Stile usando il pulsante Stile in basso\\nsullo schermo.\\n\\nLo Stile di un'unit\u00e0 si attiva solo quando questa\\nagisce. L'uso di Stile viene disattivato quando\\nl'unit\u00e0 viene schierata usando l'abilit\u00e0 Duo o\\nquando \u00e8 dotata di molteplici abilit\u00e0 con\\nuno Stile.\\n\\n\u3010Doppio potente 100%\u3011\\nAttiva un attacco doppio aggiuntivo subito\\ndopo l'attacco doppio dell'unit\u00e0 e infligge\\ndanni aggiuntivi pari al 100% del danno inflitto\\ndall'attacco dell'unit\u00e0 (se l'unit\u00e0 non pu\u00f2\\neseguire un attacco doppio, questo effetto\\nsi attiva quando l'attacco doppio avrebbe\\navuto luogo; questo effetto viene considerato\\nun attacco doppio, quindi si applicano gli effetti\\ncome \"riduce di X% i danni\", ma non gli effetti\\nche impediscono gli attacchi doppi o gli effetti\\n\"esegue due attacchi\"; non cumulabile;\\nsi applica solo il valore pi\u00f9 alto)."
+	},
+	{
+		"key": "MSID_H_\u7df4\u9054\u30aa\u30fc\u30e9_NOSKW",
+		"value": "$aPermette l'uso\\ndi\u3010Mobilit\u00e0 (dist.; max \uff13, min \uff11)\u3011. Anticipa\\nl'attivazione dell'abilit\u00e0 speciale (contatore -1).\\n\\nConferisce Att/Res +6,\u3010Bonus estremo\u3011e\\n\"contatore -1 a ogni attacco durante lo scontro\\n(non cumulabile; si applica solo il valore pi\u00f9 alto)\"\\nall'unit\u00e0 e agli alleati entro 2 spazi dall'unit\u00e0\\nper 1 turno all'inizio della fase del giocatore o di\\nquella nemica.\\n\\nConferisce\u3010Aiuto gemello magico\u3011all'unit\u00e0\\nper 1 turno all'inizio della fase nemica.\\n\\nConferisce Att/Vel/Dif/Res +15 all'unit\u00e0, l'unit\u00e0\\ninfligge +25 di danno (escluse le abilit\u00e0 speciali\\ncon area d'effetto) e riduce di 15 il danno da\\nattacchi del nemico (escluse le abilit\u00e0 speciali con\\narea d'effetto) durante lo scontro.\\n\\nSe l'unit\u00e0 attiva Aiuto, il danno da attacco del\\nnemico \u00e8 calcolato al 50% (escluse le abilit\u00e0\\nspeciali con area d'effetto; cumulabile con altri\\neffetti che calcolano il danno all'X%, come\\nDoppio potente).\\n\\nL'unit\u00e0 pu\u00f2 usare il seguente\u3010Stile\u3011:\\n\u2015\u2015\u2015\u2015\u2015 Stile Scudo Egida \u2015\u2015\u2015\u2015\u2015\\nIl danno da attacco del nemico \u00e8 calcolato al 50%\\n(escluse le abilit\u00e0 speciali con area d'effetto;\\ncumulabile con altri effetti che calcolano il danno\\nall'X%, come Doppio potente) e\\nattiva\u3010Doppio potente 100%\u3011durante lo scontro.\\n\\nUna volta usato, questo Stile non pu\u00f2 essere\\nusato di nuovo per 2 turni.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015"
+	},
+	{
+		"key": "MSID_H_\u305d\u306e\u624b\u304c\u62d3\u304f\u672a\u6765\u306f",
+		"value": "$aSe il bersaglio alleato ha gi\u00e0 agito, conferisce\\nun'altra azione al bersaglio alleato e permette di\\nnuovo l'uso di Mobilit\u00e0 se questa \u00e8 gi\u00e0 stata\\nattivata.\\n\\nSe il bersaglio alleato pu\u00f2 agire,\\nconferisce\u3010Virtuosismo\u3011a quell'alleato\\nper 1 turno.\\n\\nInoltre, conferisce\u3010Dracosortilegio\u3011e \"l'unit\u00e0 ha\\n1 spazio di movimento extra\" al bersaglio alleato\\nper 1 turno (non cumulabile).\\n\\nSe l'unit\u00e0 ha usato un'abilit\u00e0 di aiuto nel turno in\\ncorso, conferisce un'altra azione all'unit\u00e0 dopo\\nMobilit\u00e0 (inclusi i casi in cui l'azione si \u00e8 conclusa\\na causa di Mobilit\u00e0 limitata) e permette di nuovo\\nl'uso di Mobilit\u00e0 se questa \u00e8 gi\u00e0 stata attivata\\n(una volta per turno; non si attiva quando subisce\\ngli effetti delle trappole in Blitz eterei durante\\nMobilit\u00e0).\\n\\nL'unit\u00e0 pu\u00f2 usare il seguente\u3010Stile\u3011:\\n\u2015\u2015\u2015\u2015\u2015 Stile Tuo \u00e8 il destino \u2015\u2015\u2015\u2015\u2015\\nL'unit\u00e0 pu\u00f2 usare abilit\u00e0 di aiuto sugli alleati entro\\n5 spazi dall'unit\u00e0 e in un'area di 3 righe o\\n3 colonne con al centro l'unit\u00e0 da qualsiasi\\ndistanza.\\n\\nL'unit\u00e0 non pu\u00f2 spostarsi e il movimento restante\\nconferito da Mobilit\u00e0 viene considerato pari a 0.\\nQuesto Stile pu\u00f2 essere usato una sola volta per\\nturno.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\n(Non pu\u00f2 essere usato su alleati che hanno\\nappreso le abilit\u00e0 Canto o Danza. Quest'abilit\u00e0 si\\nconsidera come Canto o Danza.)\\n\\n\u3010Virtuosismo\u3011\\nConferisce un'ulteriore azione all'unit\u00e0 dopo\\nl'azione dell'unit\u00e0 (se Mobilit\u00e0 si attiva, dopo\\nMobilit\u00e0; inclusi i casi in cui l'azione si \u00e8 conclusa\\na causa di Mobilit\u00e0 limitata) e permette di nuovo\\nl'uso di Mobilit\u00e0 se questa \u00e8 gi\u00e0 stata attivata\\n(non si attiva quando \u00e8 stato attivato un altro\\neffetto che conferisce un'ulteriore azione\\nall'unit\u00e0).\\n\\nDopo l'attivazione di questo effetto, annulla\\nVirtuosismo sul tuo esercito (incluso\\nil partner di Duo).\\n\\n(Non \u00e8 possibile conferire questo stato agli eroi\\ncon Canto o Danza.)\\n\\n\u3010Dracosortilegio\u3011\\nInfligge Att/Vel/Dif/Res -5 al nemico durante\\nlo scontro e Att/Vel/Dif/Res del nemico\\ndiminuiscono di un valore pari a 5 meno\\nla penalit\u00e0 attiva su ciascuno di quei parametri\\ndurante lo scontro per 1 turno (minimo 0; ogni\\nparametro \u00e8 calcolato singolarmente).\\n\\n\u3010Stile\u3011\\nCambia Stile usando il pulsante Stile in basso\\nsullo schermo.\\n\\nLo Stile di un'unit\u00e0 si attiva solo quando questa\\nagisce. L'uso di Stile viene disattivato quando\\nl'unit\u00e0 viene schierata usando l'abilit\u00e0 Duo o\\nquando \u00e8 dotata di molteplici abilit\u00e0 con\\nuno Stile."
+	},
+	{
+		"key": "MSID_H_\u305d\u306e\u624b\u304c\u62d3\u304f\u672a\u6765\u306f_NOSKW",
+		"value": "$aSe il bersaglio alleato ha gi\u00e0 agito, conferisce\\nun'altra azione al bersaglio alleato e permette di\\nnuovo l'uso di Mobilit\u00e0 se questa \u00e8 gi\u00e0 stata\\nattivata.\\n\\nSe il bersaglio alleato pu\u00f2 agire,\\nconferisce\u3010Virtuosismo\u3011a quell'alleato\\nper 1 turno.\\n\\nInoltre, conferisce\u3010Dracosortilegio\u3011e \"l'unit\u00e0 ha\\n1 spazio di movimento extra\" al bersaglio alleato\\nper 1 turno (non cumulabile).\\n\\nSe l'unit\u00e0 ha usato un'abilit\u00e0 di aiuto nel turno in\\ncorso, conferisce un'altra azione all'unit\u00e0 dopo\\nMobilit\u00e0 (inclusi i casi in cui l'azione si \u00e8 conclusa\\na causa di Mobilit\u00e0 limitata) e permette di nuovo\\nl'uso di Mobilit\u00e0 se questa \u00e8 gi\u00e0 stata attivata\\n(una volta per turno; non si attiva quando subisce\\ngli effetti delle trappole in Blitz eterei durante\\nMobilit\u00e0).\\n\\nL'unit\u00e0 pu\u00f2 usare il seguente\u3010Stile\u3011:\\n\u2015\u2015\u2015\u2015\u2015 Stile Tuo \u00e8 il destino \u2015\u2015\u2015\u2015\u2015\\nL'unit\u00e0 pu\u00f2 usare abilit\u00e0 di aiuto sugli alleati entro\\n5 spazi dall'unit\u00e0 e in un'area di 3 righe o\\n3 colonne con al centro l'unit\u00e0 da qualsiasi\\ndistanza.\\n\\nL'unit\u00e0 non pu\u00f2 spostarsi e il movimento restante\\nconferito da Mobilit\u00e0 viene considerato pari a 0.\\nQuesto Stile pu\u00f2 essere usato una sola volta per\\nturno.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\n(Non pu\u00f2 essere usato su alleati che hanno\\nappreso le abilit\u00e0 Canto o Danza. Quest'abilit\u00e0 si\\nconsidera come Canto o Danza.)"
+	},
+	{
+		"key": "MSID_H_\u8056\u9a0e\u58eb\u30d0\u30eb\u30c9\u306e\u672b\u88d4",
+		"value": "$aSe l'abilit\u00e0 speciale dell'unit\u00e0 \u00e8 pronta, prima che\\nl'unit\u00e0 attacchi, i nemici in un'area vicino al\\nbersaglio subiscono danni per un valore pari\\nall'Att dell'unit\u00e0 meno la Dif o Res del nemico,\\nmoltiplicato per 1,5.\\n\\nConferisce\u3010Galoppo\u3011all'unit\u00e0 all'inizio del turno.\\n\\nRiduce del 40% il danno da attacchi del nemico\\ndurante lo scontro (escluse le abilit\u00e0 speciali con\\narea d'effetto).\\n\\nSe l'abilit\u00e0 speciale con area d'effetto dell'unit\u00e0\\nsi \u00e8 attivata prima di questo scontro, se l'abilit\u00e0\\nspeciale dell'unit\u00e0 \u00e8 pronta all'inizio dello\\nscontro o l'unit\u00e0 attiva\u3010Cadenza\u3011, il primo\\nattacco doppio dell'unit\u00e0 infligge danni aggiuntivi\\npari all'80% della Dif dell'unit\u00e0 durante lo scontro.\\n\\nSe l'abilit\u00e0 speciale dell'unit\u00e0 si \u00e8 attivata prima\\ndello scontro iniziale, permette l'uso\\ndi\u3010Cadenza\u3011sui nemici entro una distanza pari\\nal Rgg dell'abilit\u00e0 speciale con area d'effetto\\ndell'unit\u00e0 dopo lo scontro e dopo l'uso\\ndi\u3010Cadenza\u3011durante lo scontro (fino a due\\nvolte per turno; non si attiva dopo l'uso\\ndi\u3010Cadenza\u3011se\u3010Cadenza\u3011viene usato su\\nnemici al di fuori del Rgg dell'abilit\u00e0 speciale\\ncon area d'effetto dell'unit\u00e0).\\n\\nSe l'abilit\u00e0 speciale dell'unit\u00e0 si \u00e8 attivata,\\nconferisce \"l'unit\u00e0 ha 1 spazio di movimento\\nextra\" e rimuove Stallo dagli alleati sulla mappa\\ndopo lo scontro (unit\u00e0 esclusa; solo per 1 turno;\\nnon cumulabile).\\n\\n\u3010Galoppo\u3011\\nL'unit\u00e0 ha 2 spazi di movimento extra (solo per\\n1 turno e non cumulabile; si applica solo il valore\\npi\u00f9 alto).\\n\\n\u3010Cadenza\u3011\\nL'unit\u00e0 pu\u00f2 attaccare il nemico di nuovo\\nuna volta, entro una determinata distanza, da\\nqualunque distanza dopo lo scontro in cui l'unit\u00e0\\nattacca per prima (dopo l'attivazione di effetti\\ndopo lo scontro; prima dell'attivazione di effetti\\ne di Mobilit\u00e0 dopo l'azione; le penalit\u00e0 attive che\\ndurano fino all'azione dell'unit\u00e0 sono annullate).\\n\\nSe una delle seguenti condizioni si verifica, l'unit\u00e0\\nsubisce un contrattacco: il nemico pu\u00f2\\ncontrattaccare da qualsiasi distanza, l'unit\u00e0 ha\\nRgg pari al Rgg del nemico o il nemico ha Rgg\\npari alla distanza tra l'unit\u00e0 e il nemico. Il Rgg\\ndegli effetti delle abilit\u00e0 \u00e8 determinato dal Rgg\\ndell'arma dell'unit\u00e0. Lo spazio dell'unit\u00e0 prima\\ndel movimento e il movimento restante dell'unit\u00e0\\na cui si riferisce l'abilit\u00e0 rimarranno invariati\\nprima dell'uso di Cadenza. L'unit\u00e0 non pu\u00f2\\nspostarsi, usare Stile o attaccare strutture;\\nle abilit\u00e0 speciali con area d'effetto dell'unit\u00e0\\nnon si attivano e gli effetti sul movimento dopo\\nlo scontro non si verificano. Se l'unit\u00e0 usa\\nCadenza su un nemico nel Rgg di un altro\\neffetto Cadenza, l'effetto si considerer\u00e0\\nattivato, incluso l'altro effetto; non cumulabile;\\nsi applica solo il valore pi\u00f9 alto. Non si attiva\\nquando subisce gli effetti di Trappola veggente\\no delle trappole in Blitz eterei. Cadenza pu\u00f2\\nessere usato una sola volta per turno per\\nla squadra del giocatore in Duelli Evocat. Non si\\nattiva in Pedine di Loki."
+	},
+	{
+		"key": "MSID_H_\u8056\u9a0e\u58eb\u30d0\u30eb\u30c9\u306e\u672b\u88d4_NOSKW",
+		"value": "$aSe l'abilit\u00e0 speciale dell'unit\u00e0 \u00e8 pronta, prima che\\nl'unit\u00e0 attacchi, i nemici in un'area vicino al\\nbersaglio subiscono danni per un valore pari\\nall'Att dell'unit\u00e0 meno la Dif o Res del nemico,\\nmoltiplicato per 1,5.\\n\\nConferisce\u3010Galoppo\u3011all'unit\u00e0 all'inizio del turno.\\n\\nRiduce del 40% il danno da attacchi del nemico\\ndurante lo scontro (escluse le abilit\u00e0 speciali con\\narea d'effetto).\\n\\nSe l'abilit\u00e0 speciale con area d'effetto dell'unit\u00e0\\nsi \u00e8 attivata prima di questo scontro, se l'abilit\u00e0\\nspeciale dell'unit\u00e0 \u00e8 pronta all'inizio dello\\nscontro o l'unit\u00e0 attiva\u3010Cadenza\u3011, il primo\\nattacco doppio dell'unit\u00e0 infligge danni aggiuntivi\\npari all'80% della Dif dell'unit\u00e0 durante lo scontro.\\n\\nSe l'abilit\u00e0 speciale dell'unit\u00e0 si \u00e8 attivata prima\\ndello scontro iniziale, permette l'uso\\ndi\u3010Cadenza\u3011sui nemici entro una distanza pari\\nal Rgg dell'abilit\u00e0 speciale con area d'effetto\\ndell'unit\u00e0 dopo lo scontro e dopo l'uso\\ndi\u3010Cadenza\u3011durante lo scontro (fino a due\\nvolte per turno; non si attiva dopo l'uso\\ndi\u3010Cadenza\u3011se\u3010Cadenza\u3011viene usato su\\nnemici al di fuori del Rgg dell'abilit\u00e0 speciale\\ncon area d'effetto dell'unit\u00e0).\\n\\nSe l'abilit\u00e0 speciale dell'unit\u00e0 si \u00e8 attivata,\\nconferisce \"l'unit\u00e0 ha 1 spazio di movimento\\nextra\" e rimuove Stallo dagli alleati sulla mappa\\ndopo lo scontro (unit\u00e0 esclusa; solo per 1 turno;\\nnon cumulabile)."
+	},
+	{
+		"key": "MSID_H_\u30b8\u30e3\u30e0\u30bb\u30c3\u30b7\u30e7\u30f3",
+		"value": "Conferisce Att/Vel +X all'unit\u00e0 (il valore di X \u00e8\\npari al numero di alleati che hanno gi\u00e0 agito\\nalmeno una volta nel turno in corso moltiplicato\\nper 2, pi\u00f9 10; massimo 14), l'unit\u00e0 infligge +7 di\\ndanno (escluse le abilit\u00e0 speciali con area\\nd'effetto), riduce di 7 il danno del primo attacco\\ndel nemico (con \"primo attacco\" si intende\\nnormalmente il primo colpo, mentre per gli effetti\\nche conferiscono \"esegue due attacchi\", si intende\\nil primo e il secondo colpo) e conferisce\\ncontatore -1 all'unit\u00e0 a ogni attacco durante\\nlo scontro (non cumulabile; si applica solo\\nil valore pi\u00f9 alto).\\n\\nSe l'unit\u00e0 ha gi\u00e0 agito almeno una volta nel\\nturno in corso, conferisce Att/Vel/Dif/Res +4\\nagli alleati entro 3 spazi dall'unit\u00e0 durante il loro\\nscontro."
+	},
+	{
+		"key": "MSID_H_\u30ea\u30ba\u30e0\u30bb\u30c3\u30b7\u30e7\u30f3",
+		"value": "Quando l'unit\u00e0 \u00e8 dotata di Canto o Danza come\\nabilit\u00e0 di aiuto, si attiva quanto segue: conferisce\\nAtt/Vel/Dif/Res +10, l'unit\u00e0 infligge +7 di danno\\n(escluse le abilit\u00e0 speciali con area d'effetto),\\nriduce di 7 il danno del primo attacco del nemico\\n(con \"primo attacco\" si intende normalmente\\nil primo colpo, mentre per gli effetti che\\nconferiscono \"esegue due attacchi\", si intende\\nil primo e il secondo colpo), annulla gli effetti che\\nconferiscono \"contatore -X\" al nemico e infligge\\ncontatore +1 al nemico a ogni attacco durante\\nlo scontro (non cumulabile; si applica solo il valore\\npi\u00f9 alto); se l'unit\u00e0 ha gi\u00e0 agito almeno una volta\\nnel turno in corso, conferisce Att/Vel/Dif/Res +4\\nagli alleati in un'area di 3 righe o 3 colonne con al\\ncentro l'unit\u00e0 durante lo scontro."
+	},
+	{
+		"key": "MSID_H_\u864e\u7a74\u864e\u5b50",
+		"value": "$aSe l'unit\u00e0 ha almeno 30 di Vel all'inizio dello\\nscontro, infligge Att/Dif/Res -4 al nemico, infligge\\ndanni aggiuntivi pari al 20% della Dif dell'unit\u00e0\\n(escluse le abilit\u00e0 speciali con area d'effetto),\\nriduce del 20% della Dif dell'unit\u00e0 il danno da\\nattacchi del nemico (escluse le abilit\u00e0 speciali con\\narea d'effetto) e l'attacco successivo dell'unit\u00e0\\ninfligge danni aggiuntivi pari al 40% dei danni del\\nprimo attacco del nemico prima della riduzione\\ndurante lo scontro (si azzera alla fine dello\\nscontro; non cumulabile; si applica solo il valore\\npi\u00f9 alto). Inoltre, se l'unit\u00e0 ha Dif superiore\\nrispetto al nemico, attiva\u3010Doppio potente X%\u3011\\ndurante lo scontro (se l'unit\u00e0 non pu\u00f2 eseguire\\nun attacco doppio e attaccare due volte, il valore\\ndi X \u00e8 pari a 100; altrimenti, \u00e8 pari a 50; con\\n\"all'inizio dello scontro\" si escludono gli aumenti\\nalla Vel conferiti dopo che l'alleato \u00e8 stato\\nschierato, come effetti leggendari, mitici, eroi\\nbonus, Grande talento ecc.).\\n\\n\u3010Doppio potente X%\u3011\\nAttiva un attacco doppio aggiuntivo subito\\ndopo l'attacco doppio dell'unit\u00e0 e infligge\\ndanni aggiuntivi pari all'X% del danno inflitto\\ndall'attacco dell'unit\u00e0 (se l'unit\u00e0 non pu\u00f2\\neseguire un attacco doppio, questo effetto\\nsi attiva quando l'attacco doppio avrebbe\\navuto luogo; questo effetto viene considerato\\nun attacco doppio, quindi si applicano gli effetti\\ncome \"riduce di X% i danni\", ma non gli effetti\\nche impediscono gli attacchi doppi o gli effetti\\n\"esegue due attacchi\"; non cumulabile;\\nsi applica solo il valore pi\u00f9 alto)."
+	},
+	{
+		"key": "MSID_H_\u864e\u7a74\u864e\u5b50_NOSKW",
+		"value": "$aSe l'unit\u00e0 ha almeno 30 di Vel all'inizio dello\\nscontro, infligge Att/Dif/Res -4 al nemico, infligge\\ndanni aggiuntivi pari al 20% della Dif dell'unit\u00e0\\n(escluse le abilit\u00e0 speciali con area d'effetto),\\nriduce del 20% della Dif dell'unit\u00e0 il danno da\\nattacchi del nemico (escluse le abilit\u00e0 speciali con\\narea d'effetto) e l'attacco successivo dell'unit\u00e0\\ninfligge danni aggiuntivi pari al 40% dei danni del\\nprimo attacco del nemico prima della riduzione\\ndurante lo scontro (si azzera alla fine dello\\nscontro; non cumulabile; si applica solo il valore\\npi\u00f9 alto). Inoltre, se l'unit\u00e0 ha Dif superiore\\nrispetto al nemico, attiva\u3010Doppio potente X%\u3011\\ndurante lo scontro (se l'unit\u00e0 non pu\u00f2 eseguire\\nun attacco doppio e attaccare due volte, il valore\\ndi X \u00e8 pari a 100; altrimenti, \u00e8 pari a 50; con\\n\"all'inizio dello scontro\" si escludono gli aumenti\\nalla Vel conferiti dopo che l'alleato \u00e8 stato\\nschierato, come effetti leggendari, mitici, eroi\\nbonus, Grande talento ecc.)."
+	},
+	{
+		"key": "MSID_H_\u901f\u3055\u5b88\u5099\u306e\u56e3\u7d50",
+		"value": "$aConferisce\u3010Nesso\u3011all'unit\u00e0 per 1 turno all'inizio\\ndella fase del giocatore o di quella nemica.\\n\\nL'unit\u00e0 e gli alleati sulla mappa con\u3010Nesso\u3011\\nattivo infliggono +X di danno (escluse le abilit\u00e0\\nspeciali con area d'effetto; il valore di X \u00e8 pari al\\nnumero di alleati sulla mappa con\u3010Nesso\u3011attivo,\\ninclusa l'unit\u00e0, moltiplicato per 3; massimo 12),\\nannulla gli effetti che infliggono \"contatore +X\"\\nall'unit\u00e0 e a quegli alleati e riduce del 50% la\\npercentuale delle abilit\u00e0 non speciali del nemico\\ncon \"riduce di X% i danni\" durante lo scontro\\n(escluse le abilit\u00e0 speciali con area d'effetto).\\n\\nInfligge Vel/Dif -4 ai nemici, l'unit\u00e0 infligge\\n+10 di danno (escluse le abilit\u00e0 speciali con area\\nd'effetto) e riduce di 10 il danno da attacchi del\\nnemico durante lo scontro (escluse le abilit\u00e0\\nspeciali con area d'effetto).\\n\\n\u3010Nesso\u3011\\nConferisce Att/Vel/Dif/Res +X all'unit\u00e0 durante\\nlo scontro (il valore di X \u00e8 pari al numero di\\nalleati sulla mappa con l'effetto Nesso attivo,\\nunit\u00e0 inclusa, moltiplicato per 2; massimo 8).\\n\\nSe l'unit\u00e0 usa un'abilit\u00e0 Sprone o di aiuto al\\nmovimento su un alleato o viceversa, conferisce\\nNesso all'alleato per 1 turno.\\n\\nSe l'unit\u00e0 attacca per prima, conferisce Nesso\\nagli alleati entro 3 spazi dall'unit\u00e0 dopo\\nlo scontro per 1 turno.\\n\\nSe un alleato entro 3 spazi dall'unit\u00e0 attacca\\nper primo, conferisce Nesso a quell'alleato\\ndopo lo scontro per 1 turno."
+	},
+	{
+		"key": "MSID_H_\u901f\u3055\u5b88\u5099\u306e\u56e3\u7d50_NOSKW",
+		"value": "$aConferisce\u3010Nesso\u3011all'unit\u00e0 per 1 turno all'inizio\\ndella fase del giocatore o di quella nemica.\\n\\nL'unit\u00e0 e gli alleati sulla mappa con\u3010Nesso\u3011\\nattivo infliggono +X di danno (escluse le abilit\u00e0\\nspeciali con area d'effetto; il valore di X \u00e8 pari al\\nnumero di alleati sulla mappa con\u3010Nesso\u3011attivo,\\ninclusa l'unit\u00e0, moltiplicato per 3; massimo 12),\\nannulla gli effetti che infliggono \"contatore +X\"\\nall'unit\u00e0 e a quegli alleati e riduce del 50% la\\npercentuale delle abilit\u00e0 non speciali del nemico\\ncon \"riduce di X% i danni\" durante lo scontro\\n(escluse le abilit\u00e0 speciali con area d'effetto).\\n\\nInfligge Vel/Dif -4 ai nemici, l'unit\u00e0 infligge\\n+10 di danno (escluse le abilit\u00e0 speciali con area\\nd'effetto) e riduce di 10 il danno da attacchi del\\nnemico durante lo scontro (escluse le abilit\u00e0\\nspeciali con area d'effetto)."
+	},
+	{
+		"key": "MSID_H_\u9b54\u306e\u795e\u9ac4\u30fb\u67b7",
+		"value": "$aInfligge\u3010Frena Res\u3011ai nemici pi\u00f9 vicini e ai\\nnemici entro 2 spazi da quei nemici durante\\nle loro prossime azioni all'inizio del turno e dopo\\nl'azione dell'unit\u00e0 (se Mobilit\u00e0 si attiva, dopo\\nMobilit\u00e0).\\n\\nInfligge Vel/Res -4 al nemico, l'unit\u00e0 infligge danni\\naggiuntivi pari al limite massimo del contatore\\ndell'unit\u00e0 moltiplicato per 5 (escluse le abilit\u00e0\\nspeciali con area d'effetto), riduce del limite\\nmassimo del contatore dell'unit\u00e0 moltiplicato\\nper 3 il danno da attacchi del nemico (escluse\\nle abilit\u00e0 speciali con area d'effetto) e conferisce\\ncontatore -1 all'unit\u00e0 prima del suo primo attacco\\ndurante lo scontro.\\n\\n\u3010Frena Res\u3011\\nLa Res dell'unit\u00e0 diminuisce durante lo scontro\\ndi un valore pari al numero di penalit\u00e0 attive\\nsull'unit\u00e0 pi\u00f9 4, escluse le penalit\u00e0 ai parametri\\n(massimo 8)."
+	},
+	{
+		"key": "MSID_H_\u9b54\u306e\u795e\u9ac4\u30fb\u67b7_NOSKW",
+		"value": "$aInfligge\u3010Frena Res\u3011ai nemici pi\u00f9 vicini e ai\\nnemici entro 2 spazi da quei nemici durante\\nle loro prossime azioni all'inizio del turno e dopo\\nl'azione dell'unit\u00e0 (se Mobilit\u00e0 si attiva, dopo\\nMobilit\u00e0).\\n\\nInfligge Vel/Res -4 al nemico, l'unit\u00e0 infligge danni\\naggiuntivi pari al limite massimo del contatore\\ndell'unit\u00e0 moltiplicato per 5 (escluse le abilit\u00e0\\nspeciali con area d'effetto), riduce del limite\\nmassimo del contatore dell'unit\u00e0 moltiplicato\\nper 3 il danno da attacchi del nemico (escluse\\nle abilit\u00e0 speciali con area d'effetto) e conferisce\\ncontatore -1 all'unit\u00e0 prima del suo primo attacco\\ndurante lo scontro."
+	},
+	{
+		"key": "MSID_H_\u7fbd\u3070\u305f\u3051\u3001\u79c1\uff01",
+		"value": "$aIl movimento di trasferimento conferito da\\nquesta abilit\u00e0 non subisce gli effetti di\\nostruzione al movimento dalle abilit\u00e0.\\n\\nGli alleati che si trovano entro 2 spazi dall'unit\u00e0\\npossono spostarsi in uno spazio entro 2 spazi\\ndall'unit\u00e0.\\n\\nL'unit\u00e0 pu\u00f2 spostarsi in uno spazio entro 2 spazi\\nda un alleato che si trova entro 2 spazi.\\n\\nSe l'unit\u00e0 ha gi\u00e0 agito almeno una volta nel turno\\nin corso, gli alleati possono spostarsi in\\nuno spazio entro 2 spazi dall'unit\u00e0.\\n\\nConferisce Att/Vel/Dif/Res +5 all'unit\u00e0 e agli\\nalleati in un'area di 3 righe o 3 colonne con al\\ncentro l'unit\u00e0 durante lo scontro.\\n\\nL'unit\u00e0 infligge +7 di danno (escluse le abilit\u00e0\\nspeciali con area d'effetto), riduce di 7 il danno\\nda attacchi del nemico (escluse le abilit\u00e0 speciali\\ncon area d'effetto) e annulla gli effetti che\\ngarantiscono attacchi doppi al nemico e quelli che\\nimpediscono attacchi doppi all'unit\u00e0 durante\\nlo scontro. Inoltre, se l'unit\u00e0 pu\u00f2 eseguire\\nun attacco doppio riducendo di 10 la differenza\\ndi Vel necessaria all'unit\u00e0 per eseguirlo (esclusi\\nquelli garantiti o annullati),\\nattiva\u3010Doppio potente 100%\u3011durante lo scontro.\\n\\n\u3010Doppio potente 100%\u3011\\nAttiva un attacco doppio aggiuntivo subito\\ndopo l'attacco doppio dell'unit\u00e0 e infligge\\ndanni aggiuntivi pari al 100% del danno inflitto\\ndall'attacco dell'unit\u00e0 (se l'unit\u00e0 non pu\u00f2\\neseguire un attacco doppio, questo effetto\\nsi attiva quando l'attacco doppio avrebbe\\navuto luogo; questo effetto viene considerato\\nun attacco doppio, quindi si applicano gli effetti\\ncome \"riduce di X% i danni\", ma non gli effetti\\nche impediscono gli attacchi doppi o gli effetti\\n\"esegue due attacchi\"; non cumulabile;\\nsi applica solo il valore pi\u00f9 alto)."
+	},
+	{
+		"key": "MSID_H_\u7fbd\u3070\u305f\u3051\u3001\u79c1\uff01_NOSKW",
+		"value": "$aIl movimento di trasferimento conferito da\\nquesta abilit\u00e0 non subisce gli effetti di\\nostruzione al movimento dalle abilit\u00e0.\\n\\nGli alleati che si trovano entro 2 spazi dall'unit\u00e0\\npossono spostarsi in uno spazio entro 2 spazi\\ndall'unit\u00e0.\\n\\nL'unit\u00e0 pu\u00f2 spostarsi in uno spazio entro 2 spazi\\nda un alleato che si trova entro 2 spazi.\\n\\nSe l'unit\u00e0 ha gi\u00e0 agito almeno una volta nel turno\\nin corso, gli alleati possono spostarsi in\\nuno spazio entro 2 spazi dall'unit\u00e0.\\n\\nConferisce Att/Vel/Dif/Res +5 all'unit\u00e0 e agli\\nalleati in un'area di 3 righe o 3 colonne con al\\ncentro l'unit\u00e0 durante lo scontro.\\n\\nL'unit\u00e0 infligge +7 di danno (escluse le abilit\u00e0\\nspeciali con area d'effetto), riduce di 7 il danno\\nda attacchi del nemico (escluse le abilit\u00e0 speciali\\ncon area d'effetto) e annulla gli effetti che\\ngarantiscono attacchi doppi al nemico e quelli che\\nimpediscono attacchi doppi all'unit\u00e0 durante\\nlo scontro. Inoltre, se l'unit\u00e0 pu\u00f2 eseguire\\nun attacco doppio riducendo di 10 la differenza\\ndi Vel necessaria all'unit\u00e0 per eseguirlo (esclusi\\nquelli garantiti o annullati),\\nattiva\u3010Doppio potente 100%\u3011durante lo scontro."
+	},
+	{
+		"key": "MSID_H_\u5973\u597d\u304d",
+		"value": "$aSe l'unit\u00e0 usa un'abilit\u00e0 Sprone o di aiuto al\\nmovimento, conferisce\u3010Unione\u3011al bersaglio\\nalleato.\\n\\nSe l'unit\u00e0 attacca per prima, conferisce\u3010Unione\u3011\\nagli alleati entro 3 spazi dall'unit\u00e0 dopo\\nlo scontro.\\n\\nSe sulla mappa ci sono alleati con\\nl'effetto\u3010Unione\u3011attivo, conferisce un'altra\\nazione all'unit\u00e0 dopo Mobilit\u00e0 e permette di\\nnuovo l'uso di Mobilit\u00e0 se questa \u00e8 gi\u00e0 stata\\nattivata (una volta per turno; non si attiva quando\\nsubisce gli effetti delle trappole in Blitz eterei\\ndurante Mobilit\u00e0).\\n\\nSe l'unit\u00e0 ha gi\u00e0 agito, conferisce un'altra azione\\nall'unit\u00e0 al termine dell'azione dell'alleato con\\nl'effetto\u3010Unione\u3011attivo entro 3 spazi dall'unit\u00e0\\n(esclusi i casi in cui l'azione si \u00e8 conclusa a causa\\ndegli effetti dell'abilit\u00e0) e permette di nuovo l'uso\\ndi Mobilit\u00e0 se questa \u00e8 gi\u00e0 stata attivata (una\\nvolta per turno; considerata separatamente\\nrispetto al limite d'uso dell'effetto indicato sopra;\\nse viene attivato un altro effetto che concede\\nun'ulteriore azione all'unit\u00e0 allo stesso tempo,\\nanche questo effetto si considera come attivato).\\n\\nConferisce Att/Vel/Dif/Res +5 all'unit\u00e0, agli alleati\\ncon l'effetto\u3010Unione\u3011attivo e agli alleati in\\nun'area di 3 righe o 3 colonne con al centro\\nl'unit\u00e0, infligge +7 di danno (escluse le abilit\u00e0\\nspeciali con area d'effetto) e riduce di 7 il danno\\nda attacchi del nemico durante lo scontro\\n(escluse le abilit\u00e0 speciali con area d'effetto).\\nInoltre, se l'unit\u00e0 o l'alleato hanno Vel superiore\\nrispetto al nemico, annulla gli effetti che\\ngarantiscono attacchi doppi al nemico e quelli\\nche impediscono attacchi doppi all'unit\u00e0 o\\nall'alleato durante lo scontro.\\n\\nSe l'unit\u00e0 pu\u00f2 eseguire un attacco doppio\\nriducendo di 10 la differenza di Vel necessaria\\nall'unit\u00e0 per eseguirlo (esclusi quelli garantiti o\\nannullati), attiva\u3010Doppio potente 100%\u3011durante\\nlo scontro.\\n\\n\u3010Unione\u3011\\nConferisce uno stato che pu\u00f2 attivare alcuni\\neffetti delle abilit\u00e0 all'unit\u00e0 per 1 turno.\\n\\n\u3010Doppio potente 100%\u3011\\nAttiva un attacco doppio aggiuntivo subito\\ndopo l'attacco doppio dell'unit\u00e0 e infligge\\ndanni aggiuntivi pari al 100% del danno inflitto\\ndall'attacco dell'unit\u00e0 (se l'unit\u00e0 non pu\u00f2\\neseguire un attacco doppio, questo effetto\\nsi attiva quando l'attacco doppio avrebbe\\navuto luogo; questo effetto viene considerato\\nun attacco doppio, quindi si applicano gli effetti\\ncome \"riduce di X% i danni\", ma non gli effetti\\nche impediscono gli attacchi doppi o gli effetti\\n\"esegue due attacchi\"; non cumulabile;\\nsi applica solo il valore pi\u00f9 alto)."
+	},
+	{
+		"key": "MSID_H_\u5973\u597d\u304d_NOSKW",
+		"value": "$aSe l'unit\u00e0 usa un'abilit\u00e0 Sprone o di aiuto al\\nmovimento, conferisce\u3010Unione\u3011al bersaglio\\nalleato.\\n\\nSe l'unit\u00e0 attacca per prima, conferisce\u3010Unione\u3011\\nagli alleati entro 3 spazi dall'unit\u00e0 dopo\\nlo scontro.\\n\\nSe sulla mappa ci sono alleati con\\nl'effetto\u3010Unione\u3011attivo, conferisce un'altra\\nazione all'unit\u00e0 dopo Mobilit\u00e0 e permette di\\nnuovo l'uso di Mobilit\u00e0 se questa \u00e8 gi\u00e0 stata\\nattivata (una volta per turno; non si attiva quando\\nsubisce gli effetti delle trappole in Blitz eterei\\ndurante Mobilit\u00e0).\\n\\nSe l'unit\u00e0 ha gi\u00e0 agito, conferisce un'altra azione\\nall'unit\u00e0 al termine dell'azione dell'alleato con\\nl'effetto\u3010Unione\u3011attivo entro 3 spazi dall'unit\u00e0\\n(esclusi i casi in cui l'azione si \u00e8 conclusa a causa\\ndegli effetti dell'abilit\u00e0) e permette di nuovo l'uso\\ndi Mobilit\u00e0 se questa \u00e8 gi\u00e0 stata attivata (una\\nvolta per turno; considerata separatamente\\nrispetto al limite d'uso dell'effetto indicato sopra;\\nse viene attivato un altro effetto che concede\\nun'ulteriore azione all'unit\u00e0 allo stesso tempo,\\nanche questo effetto si considera come attivato).\\n\\nConferisce Att/Vel/Dif/Res +5 all'unit\u00e0, agli alleati\\ncon l'effetto\u3010Unione\u3011attivo e agli alleati in\\nun'area di 3 righe o 3 colonne con al centro\\nl'unit\u00e0, infligge +7 di danno (escluse le abilit\u00e0\\nspeciali con area d'effetto) e riduce di 7 il danno\\nda attacchi del nemico durante lo scontro\\n(escluse le abilit\u00e0 speciali con area d'effetto).\\nInoltre, se l'unit\u00e0 o l'alleato hanno Vel superiore\\nrispetto al nemico, annulla gli effetti che\\ngarantiscono attacchi doppi al nemico e quelli\\nche impediscono attacchi doppi all'unit\u00e0 o\\nall'alleato durante lo scontro.\\n\\nSe l'unit\u00e0 pu\u00f2 eseguire un attacco doppio\\nriducendo di 10 la differenza di Vel necessaria\\nall'unit\u00e0 per eseguirlo (esclusi quelli garantiti o\\nannullati), attiva\u3010Doppio potente 100%\u3011durante\\nlo scontro."
+	},
+	{
+		"key": "MSID_H_\u5f71\u52a9\u30fb\u7a81\u9032\u30fb\u5341\u7d0b\u7ae0",
+		"value": "$aQuando si attiva Mobilit\u00e0, permette all'unit\u00e0 l'uso\\ndi\u3010Urto\u3011su un alleato (questo effetto non si\\nconsidera come un'abilit\u00e0 di aiuto; se effetti simili\\nsono attivi, questo effetto non si attiva).\\n\\nConferisce Att/Vel/Dif/Res +4 all'unit\u00e0 e agli\\nalleati in un'area di 3 righe o 3 colonne con al\\ncentro l'unit\u00e0 durante lo scontro e ripristina 7 PS\\ndopo lo scontro.\\n\\nL'unit\u00e0 infligge +5 di danno (escluse le abilit\u00e0\\nspeciali con area d'effetto) e riduce di 5 il danno\\ndel primo attacco del nemico durante lo scontro\\n(con \"primo attacco\" si intende normalmente\\nil primo colpo, mentre per gli effetti che\\nconferiscono \"esegue due attacchi\", si intende\\nil primo e il secondo colpo).\\n\\n\u3010Urto\u3011\\nRgg = 1. Allontana un'unit\u00e0 alleata di 2 spazi."
+	},
+	{
+		"key": "MSID_H_\u5f71\u52a9\u30fb\u7a81\u9032\u30fb\u5341\u7d0b\u7ae0_NOSKW",
+		"value": "$aQuando si attiva Mobilit\u00e0, permette all'unit\u00e0 l'uso\\ndi\u3010Urto\u3011su un alleato (questo effetto non si\\nconsidera come un'abilit\u00e0 di aiuto; se effetti simili\\nsono attivi, questo effetto non si attiva).\\n\\nConferisce Att/Vel/Dif/Res +4 all'unit\u00e0 e agli\\nalleati in un'area di 3 righe o 3 colonne con al\\ncentro l'unit\u00e0 durante lo scontro e ripristina 7 PS\\ndopo lo scontro.\\n\\nL'unit\u00e0 infligge +5 di danno (escluse le abilit\u00e0\\nspeciali con area d'effetto) e riduce di 5 il danno\\ndel primo attacco del nemico durante lo scontro\\n(con \"primo attacco\" si intende normalmente\\nil primo colpo, mentre per gli effetti che\\nconferiscono \"esegue due attacchi\", si intende\\nil primo e il secondo colpo)."
+	},
+	{
+		"key": "MID_CHAPTER_TITLE_C1010",
+		"value": "Libro X, cap. 10"
+	},
+	{
+		"key": "MID_CHAPTER_C1010",
+		"value": "Sovrana dei morti"
+	},
+	{
+		"key": "MID_STAGE_TITLE_SA101",
+		"value": "Capitolo 10-1"
+	},
+	{
+		"key": "MID_STAGE_TITLE_SA102",
+		"value": "Capitolo 10-2"
+	},
+	{
+		"key": "MID_STAGE_TITLE_SA103",
+		"value": "Capitolo 10-3"
+	},
+	{
+		"key": "MID_STAGE_TITLE_SA104",
+		"value": "Capitolo 10-4"
+	},
+	{
+		"key": "MID_STAGE_TITLE_SA105",
+		"value": "Capitolo 10-5"
+	},
+	{
+		"key": "MID_STAGE_SA101",
+		"value": "La strada da seguire"
+	},
+	{
+		"key": "MID_STAGE_SA102",
+		"value": "Lady del riverbero"
+	},
+	{
+		"key": "MID_STAGE_SA103",
+		"value": "Equit\u00e0 tramandata"
+	},
+	{
+		"key": "MID_STAGE_SA104",
+		"value": "Ragazza evocata"
+	},
+	{
+		"key": "MID_STAGE_SA105",
+		"value": "Sar\u00f2 io a farti fuori"
+	},
+	{
+		"key": "MID_STAGE_HONOR_T0226",
+		"value": "Scudo Faerghus"
+	},
+	{
+		"key": "MID_STAGE_T0226",
+		"value": "Rodrigue"
+	},
+	{
+		"key": "MID_STAGE_HONOR_T0227",
+		"value": "Battaglia legame"
+	},
+	{
+		"key": "MID_STAGE_T0227",
+		"value": "N. e R."
+	},
+	{
+		"key": "MID_CHAPTER_ST_C0A09",
+		"value": "Capitoli 9 e 10"
+	},
+	{
+		"key": "MID_STAGE_TITLE_ST_S0A09",
+		"value": "Capitolo 9"
+	},
+	{
+		"key": "MID_STAGE_TITLE_ST_S0A10",
+		"value": "Capitolo 10"
+	},
+	{
+		"key": "MID_STAGE_TITLE_ST_S1A10",
+		"value": "Capitoli 9 e 10"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PB323",
+		"value": "Le abilit\u00e0: 323"
+	},
+	{
+		"key": "MID_STAGE_PB323",
+		"value": "La celebrit\u00e0 e il cavaliere"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PB324",
+		"value": "Le abilit\u00e0: 324"
+	},
+	{
+		"key": "MID_STAGE_PB324",
+		"value": "Melodia e nobilt\u00e0"
+	}
+]

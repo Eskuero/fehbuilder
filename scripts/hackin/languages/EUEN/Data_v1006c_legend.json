@@ -597,7 +597,7 @@
 	},
 	{
 		"key": "MSID_H_\u9244\u58c1\u968a\u5f62",
-		"value": "Inflicts Atk/Def/Res-4 on foe, deals damage\\n= 25% of unit's Def (excluding area-of-effect\\nSpecials), reduces damage from foe's attacks\\nby 25% of unit's Def (excluding area-of-effect\\nSpecials), and unit makes a guaranteed\\nfollow-up attack during combat.\\n\\nIf foe initiates combat and unit's Def \u2265 foe's\\nDef+5, and if the number of spaces from\\nunit's space to foe's space is \u2265 4 or if it is\\nunit's first combat initiated by foe this turn\\nwhere the number of spaces from unit's\\nspace to foe's space is \u2264 3, reduces damage\\nfrom foe's follow-up attack to a maximum of 1\\nduring combat."
+		"value": "Inflicts Atk/Def/Res-4 on foe, deals damage\\n= 25% of unit's Def (excluding area-of-effect\\nSpecials), reduces damage from foe's attacks\\nby 25% of unit's Def (excluding area-of-effect\\nSpecials), and unit makes a guaranteed\\nfollow-up attack during combat.\\n\\nIf foe initiates combat and unit's Def \u2265 foe's\\nDef+5, and if the number of spaces from\\nunit's space to foe's space \u2265 4 or if it is\\nunit's first combat initiated by foe this turn\\nwhere the number of spaces from unit's\\nspace to foe's space \u2264 3, reduces damage\\nfrom foe's follow-up attack to a maximum of 1\\nduring combat."
 	},
 	{
 		"key": "MSID_H_\u76fe\u306e\u8b77\u308a\u624b\u30fb\u9060\u30fb\u8328",
