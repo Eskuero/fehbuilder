@@ -1,0 +1,498 @@
+[
+	{
+		"key": "MID_ARENA_DIALOG_HELP_08_v1009",
+		"value": "Taktischer R\u00fcckzug:\\nViermal pro Siegesserie kannst\\ndu zum Arenabildschirm zur\u00fcck-\\nkehren, ohne deine Punkte oder\\ndeine Siegesserie aufzugeben.\\nWenn du deine Serie zur\u00fccksetzt,\\nist der taktische R\u00fcckzug wieder\\nverf\u00fcgbar."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_05_v1009",
+		"value": "Was Forma-Einheiten nicht erben:\\n\u30fb Verbindungen\\n\u30fb Erleuchteten-Vorteile\\n\u30fb Pr\u00e4chtige Kleidung\\n\u30fb Begleiteressenzen\\n\u30fb Bouquets\\n\u30fb Szenarien\\n\u30fb Segen\\n\u30fb Heilige Siegel\\n\u30fb Accessoires"
+	},
+	{
+		"key": "MID_HOME_GRACE_FESTIVAL_MISSION_NOTIFICATION",
+		"value": "Verdiene Pr\u00e4mien in G\u00f6ttliche\\nSpiele. G\u00f6ttliche Spiele aufrufen?"
+	},
+	{
+		"key": "MID_HOME_GRACE_FESTIVAL_NAVIGATION_JUMP",
+		"value": "G\u00f6ttliche Spiele"
+	},
+	{
+		"key": "MID_CONFIG_HOME_NOTIFICATION_GRACE_FESTIVAL",
+		"value": "G\u00f6ttliche Spiele:\\nSchloss-Mitteilung"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_TITLE",
+		"value": "G\u00f6ttliche Spiele"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REMAINING_DAYS",
+		"value": "$aNoch $a0 Tag(e)."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REMAINING_HOURS",
+		"value": "$aEndet in $a0 Std."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REMAINING_MINUTES",
+		"value": "$aNoch $a0 Min."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_CLOSED",
+		"value": "Der Event ist beendet."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_AGGREGATING",
+		"value": "Ergebnis wird berechnet."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_NEXT_FEATURE_INFO",
+		"value": "Gesamtpunktepr\u00e4mie"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HIGH_SCORE",
+		"value": "Rekord"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANK_OUT_OF_RANGE",
+		"value": "- keiner -"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANK_AGGREGATING",
+		"value": "Berechnung..."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_ENTRANCE_HELP",
+		"value": "5 einfache Schlachten in Folge! Nutze\\nG\u00f6ttl. Techniken & Brandtechniken!"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_DIFFICULTY_SELECT",
+		"value": "Schwierigkeit"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_DIFFICULTY_0",
+		"value": "Leicht"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_DIFFICULTY_1",
+		"value": "Mittel"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_DIFFICULTY_2",
+		"value": "F\u00fcr Kenner"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_ENTRANCE_BONUS_TITLE",
+		"value": "Bonushelden"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_ENTRANCE_BONUS_VERSION",
+		"value": "$aVersion: $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_ENTRANCE_START_DIALOG_FAILED",
+		"value": "Event kann nicht gestartet werden."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_ENTRANCE_START_DIALOG_FAILED_WARNING_TROOP_RESTRICTION",
+		"value": "Jeder Platz in deinem Team muss\\nmit einem Helden besetzt sein."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_ENTRANCE_BUTTON_REWARD",
+		"value": "Pr\u00e4mien"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REWARD_SORT",
+		"value": "$aPr\u00e4mientyp: $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REWARD_SORT_COMULATIVE_SCORE",
+		"value": "Gesamtpunkte"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REWARD_SORT_HIGH_SCORE",
+		"value": "Rekord"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REWARD_SORT_RANK",
+		"value": "Rang"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REWARD_COMULATIVE_SCORE",
+		"value": "Punkte"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REWARD_HIGH_SCORE",
+		"value": "Rekord"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REWARD_RANK",
+		"value": "Rang"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_GAINED_REWARDTYPE_COMULATIVE_SCORE",
+		"value": "$aGesamtpunktepr\u00e4mie: $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_GAINED_REWARDTYPE_HIGH_SCORE",
+		"value": "$aRekord-Pr\u00e4mien: $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_GAINED_REWARDTYPE_RANK",
+		"value": "$aRangpr\u00e4mie: $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_ENTRANCE_BUTTON_RANKING",
+		"value": "Aktueller Stand"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_WARNING_TERM_EXPIRED",
+		"value": "Der Event ist beendet."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANK",
+		"value": "Rang"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANKING_AROUND_ME",
+		"value": "Eigener Rang"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANKING_TOP",
+		"value": "Beste Spieler"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANKING_FRIEND",
+		"value": "Freunde"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANKING_UNCALCULATED_TOP",
+		"value": "Platzierungen werden berechnet."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANKING_UNCALCULATED_AROUND_ME",
+		"value": "Du bist nicht platziert."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANKING_UNCALCULATED_FRIEND",
+		"value": "Es nehmen keine Freunde von dir teil."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANKING_SORT_DIALOG",
+		"value": "Option w\u00e4hlen"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RESULT_SCORE_SURVIVAL",
+		"value": "\u00dcberleben"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RESULT_SCORE_HP",
+		"value": "KP"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RESULT_SCORE_TURN",
+		"value": "Geschwindigkeit"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RESULT_SCORE_COMPLETE",
+		"value": "Abschlussbonus"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RESULT_SCORE_DIFFICULTY",
+		"value": "Schwierigkeit"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RESULT_SCORE_TOTAL",
+		"value": "Punkte"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RESULT_SCORE_CUMULATIVE_SCORE",
+		"value": "Gesamtpunkte"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_DIALOG_END_OF_TERM",
+		"value": "Die Saison ist beendet. Die\\nErgebnisse werden nicht\\ngewertet."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_GAIN_SKILL_HELP",
+		"value": "$aW\u00e4hle $a0 G\u00f6ttliche Techniken aus."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_GAIN_SKILL_GAINED",
+		"value": "Gelernt"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_GAIN_SKILL_SELECTING",
+		"value": "Gew\u00e4hlt"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_GAIN_SKILL_BUTTON_VIEWER",
+		"value": "Karte ansehen"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_MAP_BLAZE_ARTS_COMBINE",
+		"value": "$a$a0: $a1"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_MAP_BLAZE_ARTS_EFFECT_DAMAGE",
+		"value": "$aSchd.: $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_MAP_BLAZE_ARTS_EFFECT_DEBUFF_1",
+		"value": "$aAngr.: $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_MAP_BLAZE_ARTS_EFFECT_DEBUFF_2",
+		"value": "$aGes.: $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_MAP_BLAZE_ARTS_EFFECT_DEBUFF_3",
+		"value": "$aVer.: $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_MAP_BLAZE_ARTS_EFFECT_DEBUFF_4",
+		"value": "$aRes.: $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_MAP_BLAZE_ARTS_TEXT",
+		"value": "Gedr\u00fcckt halten und Bereich ziehen. Zum Akti-\\nvieren loslassen. (Im Bereich m\u00fcssen Gegn. sein.)"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_00",
+		"value": "Nutze G\u00f6ttliche Techniken &\\nBrandtechniken!"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_01",
+		"value": "G\u00f6ttliche Spiele:\\nK\u00e4mpfe dich durch 5 Schlachten\\nin Folge beim Turnier der G\u00f6tter.\\n\\nMit G\u00f6ttlichen Techniken werden\\nHelden so stark wie G\u00f6tter und sie\\nk\u00f6nnen Brandtechniken einsetzen,\\num ihre Gegner mit einem Streich\\nzu eliminieren."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_02",
+		"value": "Details zu den Schlachten:\\nDie Regeln sind einfach - nutze\\nStatuswerte, um zu k\u00e4mpfen."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_03",
+		"value": "\u30fb Die F\u00e4higkeiten und Waffen der\\nHelden werden durch besondere,\\nin den G\u00f6ttlichen Spielen verf\u00fcg-\\nbare F\u00e4higkeiten und Waffen\\nersetzt.\\n\u30fb Verb\u00fcndetenhilfe, Beschw\u00f6rer-\\nhilfe, Legend\u00e4re Effekte etc.\\nwerden deaktiviert."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_04",
+		"value": "Erhalte G\u00f6ttliche Techniken:\\nAm Beginn jeder Karte kannst du\\n2 G\u00f6ttliche Techniken w\u00e4hlen,\\ndie deine Verb\u00fcndeten st\u00e4rken."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_05",
+		"value": "Brandtechniken:\\nEinige G\u00f6ttliche Techniken sind\\nBrandtechniken, wie zum Beispiel\\nReinigender Blitz. Die Brandtech-\\nniken, die du erhalten kannst, sind\\nvon der Saison der G\u00f6ttlichen\\nSpiele abh\u00e4ngig."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_06",
+		"value": "Brandtechniken einsetzen:\\n\u30fb Tippe und halte ein Feld zu\\nBeginn der Schlacht, um den\\nWirkungsbereich anzuzeigen.\\n\u30fb Ziehe den Bereich auf die ge-\\nw\u00fcnschte Position und lass los,\\num die Brandtechnik zu aktivieren."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_07",
+		"value": "Bonushelden:\\nHelden der entsprechenden\\nVersion erhalten KP +10 und\\nAngr./Ges./Ver./Res. +4."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_08",
+		"value": "Zusatzinfo:\\n\u30fbJeder Angriff f\u00fcgt mindestens\\n5 Schaden zu.\\n\u30fbSchaden von Stabangriffen wird\\nwie bei anderen Waffen berechnet\\n\u30fbHelden erhalten weder Erf. noch\\nFP.\\n\u30fbHelden erhalten Heldenverdienst."
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_COLOR",
+		"value": "Zur Feier der Ver\u00f6ffentlichung von\\nFire Emblem: Fortune's Weave\\ngibt es jetzt ein neues\\nSchlossdesign!\\n\\nSieh es dir an!"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_COLOR_DIALOG",
+		"value": "M\u00f6chtest du jetzt zum Schloss-\\nentwurf \"Tempel von Dagsion\"\\nwechseln?"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_COLOR_REVERT_AFTER",
+		"value": "Falls du es dir anders \u00fcberlegst,\\nw\u00e4hle \"Schloss aufwerten\", \"Um-\\ngestalten\", \"Tempel von Dagsion\"."
+	},
+	{
+		"key": "MID_ITEM_MAJESTIC_ITEM",
+		"value": "Szenarium"
+	},
+	{
+		"key": "MID_ITEM_HELP_MAJESTIC_ITEM",
+		"value": "$aWird einem Helden ein Szenarium verliehen,\\nkann seine Hintergrundszene zu der eines\\nbeliebigen, bereits beschworenen Szenerie-\\nhelden ge\u00e4ndert werden und er erh\u00e4lt\\nAngr./Ges./Ver./Res./KP +2.\\n\\nHelden aus Versionen bis zu Version $a0\\n(zwei Versionen \u00e4lter als die aktuelle) kann ein\\nzweites Szenarium verliehen werden, wodurch\\nsie erneut Angr./Ges./Ver./Res./KP +2 erhalten."
+	},
+	{
+		"key": "MID_ITEM_HELP_MAJESTIC_ITEM_FOR_INFO",
+		"value": "$aDu hast $a0-mal Szenarien verwendet."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202609",
+		"value": "Dagdas Elite"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV65553",
+		"value": "Tempel von Dagsion"
+	},
+	{
+		"key": "MID_SCF_\u30ab\u30a4\u306e\u50cf",
+		"value": "Cai-Statue"
+	},
+	{
+		"key": "MID_SCF_\u30ab\u30a4\u306e\u50cf_HELP",
+		"value": "Du bist ein Fan von Fire Emblem:\\nFortune's Weave? Dann platziere diese\\n8-Bit-Statue in deinen \u00c4therschl\u00f6ssern!"
+	},
+	{
+		"key": "MID_SCF_\u30c7\u30a3\u30fc\u30c8\u30ea\u30d2\u306e\u50cf",
+		"value": "Dietrich-Statue"
+	},
+	{
+		"key": "MID_SCF_\u30c7\u30a3\u30fc\u30c8\u30ea\u30d2\u306e\u50cf_HELP",
+		"value": "Du bist ein Fan von Fire Emblem:\\nFortune's Weave? Dann platziere diese\\n8-Bit-Statue in deinen \u00c4therschl\u00f6ssern!"
+	},
+	{
+		"key": "MID_SCF_\u30bb\u30aa\u30c9\u30e9\u306e\u50cf",
+		"value": "Theodora-Statue"
+	},
+	{
+		"key": "MID_SCF_\u30bb\u30aa\u30c9\u30e9\u306e\u50cf_HELP",
+		"value": "Du bist ein Fan von Fire Emblem:\\nFortune's Weave? Dann platziere diese\\n8-Bit-Statue in deinen \u00c4therschl\u00f6ssern!"
+	},
+	{
+		"key": "MID_SCF_\u30ec\u30c0\u306e\u50cf",
+		"value": "Leda-Statue"
+	},
+	{
+		"key": "MID_SCF_\u30ec\u30c0\u306e\u50cf_HELP",
+		"value": "Du bist ein Fan von Fire Emblem:\\nFortune's Weave? Dann platziere diese\\n8-Bit-Statue in deinen \u00c4therschl\u00f6ssern!"
+	},
+	{
+		"key": "MID_DISHES_AUTHORITY_15_1",
+		"value": "nach Bestien-Art"
+	},
+	{
+		"key": "MID_DISHES_AUTHORITY_16_1",
+		"value": "nach Dagda-Art"
+	},
+	{
+		"key": "MID_SCH_\u307f\u307e\u3082\u308a\u30d5\u30a9\u30c8\u30ca",
+		"value": "Achtsame Fortuna"
+	},
+	{
+		"key": "MID_SCH_\u307f\u307e\u3082\u308a\u30d5\u30a9\u30c8\u30ca_HOLIDAYHELP",
+		"value": "Ein Stofftier, das auf ein Bett gelegt wird."
+	},
+	{
+		"key": "MID_SCH_\u30aa\u30c3\u30c8\u30fc\u3061\u3083\u3093",
+		"value": "Babbu"
+	},
+	{
+		"key": "MID_SCH_\u30aa\u30c3\u30c8\u30fc\u3061\u3083\u3093_HOLIDAYHELP",
+		"value": "Ein Stofftier, das auf ein Bett gelegt wird."
+	},
+	{
+		"key": "MID_SCH_\u3077\u304b\u3077\u304b\u30aa\u30eb\u30cb\u30a6",
+		"value": "Bade-Ornius"
+	},
+	{
+		"key": "MID_SCH_\u3077\u304b\u3077\u304b\u30aa\u30eb\u30cb\u30a6_HOLIDAYHELP",
+		"value": "Ein Badeartikel, der auf dem Wasser treibt."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202609",
+		"value": "Herbst-\u00c4thersteine"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202609",
+		"value": "F\u00fcr den Bau von zeitlich begrenzten Objekten\\nin den \u00c4therraubz\u00fcgen. Verschwinden, sobald\\ndas Objekt nicht mehr erh\u00e4ltlich ist."
+	},
+	{
+		"key": "MID_STAGE_TITLE_DIFFICULTY5",
+		"value": "\u00dcberirdisch"
+	},
+	{
+		"key": "MID_STAGE_SELECT_DETAIL_SORTIE_RISTRICTION_AUTHORITY_15",
+		"value": "\u30fb Helden aus FE Shadows"
+	},
+	{
+		"key": "MID_STAGE_SELECT_DETAIL_SORTIE_RISTRICTION_AUTHORITY_16",
+		"value": "\u30fb Helden aus FE: Fortune's Weave"
+	},
+	{
+		"key": "MID_TWIN_WORLD_AUTHORITY_15",
+		"value": "Shadows"
+	},
+	{
+		"key": "MID_TWIN_WORLD_AUTHORITY_16",
+		"value": "Fortune's Weave"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_11",
+		"value": "Szenerie"
+	},
+	{
+		"key": "MID_UNIT_INFO_BLESSING_MAJESTIC",
+		"value": "$aSzenerieheld\\n\\n\u30fbAngr./Ges./Ver./Res./KP +2\\n\u30fbKann zur Hintergrundszene eines\\nSzeneriehelden wechseln\\n\\nVerleihe einem Helden, der kein Szenerieheld\\nist, ein Szenarium und er erh\u00e4lt dieselben\\nOptionen wie Szeneriehelden.\\n\\nHelden aus Versionen bis zu Version $a0\\n(zwei Versionen \u00e4lter als die aktuelle) kann ein\\nzweites Szenarium verliehen werden, wodurch\\nsie erneut Angr./Ges./Ver./Res./KP +2 erhalten."
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM",
+		"value": "Szenarium nutzen"
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_USE_COUNT",
+		"value": "$aBenutzt: $a0/$a1"
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_INFO",
+		"value": "Welcher Held soll ein Szenarium erhalten?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_COUNT_INFO",
+		"value": "Wie viele Szenarien m\u00f6chtest du nutzen?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_PLUS",
+		"value": "$a+ $a0"
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_CONFIRM",
+		"value": "$aSzenarium x$a0 nutzen?\\n\\nBei Helden, die ein Szenarium erhal-\\nten, kann ihre Hintergrundszene zu\\nder eines Szeneriehelden ge\u00e4ndert\\nwerden und sie erhalten Angr./Ges./\\nVer./Res./KP +2 pro Szenarium."
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_CONFIRM_DECIDE",
+		"value": "Szenarium nutzen"
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_HELP_DIALOG_00",
+		"value": "Szenarien nutzen:\\nVerleihst du einem Helden ein\\nSzenarium, erh\u00e4lt dieser Held\\nAngr./Ges./Ver./Res./KP +2 und\\nkann zudem seine Hintergrund-\\nszene zu der Hintergrundszene\\neines Szeneriehelden wechseln."
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_HELP_DIALOG_01",
+		"value": "Arenaeffekte:\\nVerbesserungen durch Szenarien\\nbeeinflussen nicht, wie Status-\\nwerte f\u00fcr die Gegnerwahl in Modi\\nwie Arena behandelt werden."
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_HELP_DIALOG_02",
+		"value": "Weitere Informationen:\\n\u30fbAlle Helden, die keine Szenerie-\\nhelden sind, k\u00f6nnen ein Szenarium\\nerhalten.\\n\u30fbAlle Helden, die keine Szenerie-\\nhelden sind und aus einer mind.\\n2 Versionen \u00e4lteren Version sind,\\nk\u00f6nnen 2 Szenarien erhalten."
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_HELP_DIALOG_03",
+		"value": "\u30fbSzeneriehelden, die aus Versio-\\nnen stammen, die mindestens\\n2 Versionen \u00e4lter sind als die\\naktuelle Version, k\u00f6nnen ein\\nSzenarium erhalten."
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_HELP_DIALOG_04",
+		"value": "Verb\u00fcndete verbinden:\\nWerden 2 Helden (au\u00dfer Szene-\\nriehelden) aus einer mindestens\\n2 Versionen \u00e4lteren Vers. verbun-\\nden u. haben sowohl Quelle als\\nauch Ziel Szenarien erhalten, wird\\nder entstandene Held behandelt,\\nals habe er 2 Szenarien erhalten."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_USED_MAJESTIC_ITEM_WARNING",
+		"value": "Du bist im Begriff, einen Helden mit\\neinem Szenarium nach Hause zu\\nsenden.\\nBist du sicher, dass du diesen Helden\\nnach Hause senden willst?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_USED_MAJESTIC_ITEM_WARNING",
+		"value": "Du bist im Begriff, \"F\u00e4higkeit erben\"\\nauf einen Helden mit einem\\nSzenarium anzuwenden.\\nBist du sicher, dass du \"F\u00e4higk. erben\"\\nauf diesen Helden anwenden willst?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMIT_BREAK_USED_MAJESTIC_ITEM_WARNING",
+		"value": "Du bist im Begriff, einen Helden mit\\neinem Szenarium zu verbinden.\\n\\nBist du sicher, dass du diesen Helden\\nverbinden willst?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_GENERATE_USED_MAJESTIC_ITEM_WARNING",
+		"value": "Du bist im Begriff, eine Kampfanlei-\\ntung mit einem Helden mit einem\\nSzenarium herzustellen. Bist du\\nsicher, dass du mit diesem Helden\\neine Kampfanleitung herstellen willst?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_AUTHORITY_15",
+		"value": "Shadows"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_AUTHORITY_16",
+		"value": "Fortune's Weave"
+	}
+]

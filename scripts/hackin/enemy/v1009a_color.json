@@ -1,0 +1,36 @@
+[
+	{
+		"id_tag": "EID_\u6551\u4e16\u30ea\u30fc\u30f4",
+		"roman": "LIF_SAVIOR01",
+		"face_name": "ch00_17_Lif_M_SAVIOR01",
+		"face_name2": "ch00_17_Lif_M_SAVIOR01",
+		"top_weapon": "SID_\u6b7b\u306e\u6551\u4e16\u306e\u938c",
+		"unique_assist1": null,
+		"unique_assist2": null,
+		"unique_special": null,
+		"timestamp": null,
+		"id_num": 125,
+		"is_npc": false,
+		"weapon_type": 2,
+		"tome_class": 0,
+		"move_type": 2,
+		"random_allowed": false,
+		"is_boss": true,
+		"refresher": false,
+		"is_enemy": true,
+		"base_stats": {
+			"hp": 17,
+			"atk": 10,
+			"spd": 7,
+			"def": 9,
+			"res": 7
+		},
+		"growth_rates": {
+			"hp": 50,
+			"atk": 90,
+			"spd": 50,
+			"def": 90,
+			"res": 55
+		}
+	}
+]

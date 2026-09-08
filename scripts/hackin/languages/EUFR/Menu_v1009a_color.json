@@ -1,0 +1,498 @@
+[
+	{
+		"key": "MID_ARENA_DIALOG_HELP_08_v1009",
+		"value": "\u25c6 Repli strat\u00e9gique \u25c6\\nQuatre fois par s\u00e9rie de victoires,\\nvous pouvez retourner sur l'\u00e9cran\\nde l'ar\u00e8ne sans perdre votre score\\nou votre s\u00e9rie. Si vous r\u00e9initialisez\\nvotre s\u00e9rie, cette option sera \u00e0\\nnouveau disponible."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_05_v1009",
+		"value": "\u25c6 Les \u00e9veill\u00e9s n'h\u00e9ritent pas \u25c6\\n\u30fb Fusions\\n\u30fb Atouts \u00e9minents\\n\u30fb Tenues resplendissantes\\n\u30fb Essences de renfort\\n\u30fb Bouquets\\n\u30fb Vignettes\\n\u30fb B\u00e9n\u00e9dictions\\n\u30fb Sceaux sacr\u00e9s\\n\u30fb Accessoires"
+	},
+	{
+		"key": "MID_HOME_GRACE_FESTIVAL_MISSION_NOTIFICATION",
+		"value": "Gagnez des r\u00e9compenses.\\nOuvrir le menu Jeux Divins ?"
+	},
+	{
+		"key": "MID_HOME_GRACE_FESTIVAL_NAVIGATION_JUMP",
+		"value": "Jeux Divins"
+	},
+	{
+		"key": "MID_CONFIG_HOME_NOTIFICATION_GRACE_FESTIVAL",
+		"value": "Notif. d'accueil\\nJeux Divins"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_TITLE",
+		"value": "Jeux Divins"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REMAINING_DAYS",
+		"value": "$aEncore $a0 j"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REMAINING_HOURS",
+		"value": "$aEncore $a0 h"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REMAINING_MINUTES",
+		"value": "$aEncore $a0 min"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_CLOSED",
+		"value": "\u00c9v\u00e9nement termin\u00e9."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_AGGREGATING",
+		"value": "Calcul du r\u00e9sultat."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_NEXT_FEATURE_INFO",
+		"value": "R\u00e9compenses (score cumul\u00e9)"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HIGH_SCORE",
+		"value": "Record"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANK_OUT_OF_RANGE",
+		"value": "aucun"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANK_AGGREGATING",
+		"value": "Calcul"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_ENTRANCE_HELP",
+		"value": "5 combats \u00e0 la suite ! Capacit\u00e9s\\ndivines et ardentes \u00e0 obtenir !"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_DIFFICULTY_SELECT",
+		"value": "Difficult\u00e9"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_DIFFICULTY_0",
+		"value": "Novice"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_DIFFICULTY_1",
+		"value": "Interm."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_DIFFICULTY_2",
+		"value": "V\u00e9t\u00e9ran"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_ENTRANCE_BONUS_TITLE",
+		"value": "H\u00e9ros bonus"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_ENTRANCE_BONUS_VERSION",
+		"value": "$aVersion : $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_ENTRANCE_START_DIALOG_FAILED",
+		"value": "Impossible de commencer l'\u00e9v\u00e9nement."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_ENTRANCE_START_DIALOG_FAILED_WARNING_TROOP_RESTRICTION",
+		"value": "Tous les emplacements de votre\\n\u00e9quipe doivent \u00eatre occup\u00e9s par\\nun h\u00e9ros."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_ENTRANCE_BUTTON_REWARD",
+		"value": "R\u00e9compenses"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REWARD_SORT",
+		"value": "$aR\u00e9compenses : $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REWARD_SORT_COMULATIVE_SCORE",
+		"value": "Score cum."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REWARD_SORT_HIGH_SCORE",
+		"value": "Record"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REWARD_SORT_RANK",
+		"value": "Rang"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REWARD_COMULATIVE_SCORE",
+		"value": "Score"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REWARD_HIGH_SCORE",
+		"value": "Record"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REWARD_RANK",
+		"value": "Rang"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_GAINED_REWARDTYPE_COMULATIVE_SCORE",
+		"value": "$aR\u00e9compenses (score) : $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_GAINED_REWARDTYPE_HIGH_SCORE",
+		"value": "$aR\u00e9compenses (record) : $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_GAINED_REWARDTYPE_RANK",
+		"value": "$aR\u00e9compenses (rang) : $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_ENTRANCE_BUTTON_RANKING",
+		"value": "Classement"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_WARNING_TERM_EXPIRED",
+		"value": "\u00c9v\u00e9nement termin\u00e9."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANK",
+		"value": "Rang"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANKING_AROUND_ME",
+		"value": "Votre rang"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANKING_TOP",
+		"value": "Podium"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANKING_FRIEND",
+		"value": "Amis"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANKING_UNCALCULATED_TOP",
+		"value": "Calcul du rang..."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANKING_UNCALCULATED_AROUND_ME",
+		"value": "Vous n'avez pas de rang."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANKING_UNCALCULATED_FRIEND",
+		"value": "Aucun de vos amis ne participe."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANKING_SORT_DIALOG",
+		"value": "Choisir option"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RESULT_SCORE_SURVIVAL",
+		"value": "Survie"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RESULT_SCORE_HP",
+		"value": "PV"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RESULT_SCORE_TURN",
+		"value": "Vitesse"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RESULT_SCORE_COMPLETE",
+		"value": "Bonus (fin)"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RESULT_SCORE_DIFFICULTY",
+		"value": "Difficult\u00e9"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RESULT_SCORE_TOTAL",
+		"value": "Score"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RESULT_SCORE_CUMULATIVE_SCORE",
+		"value": "Score cum."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_DIALOG_END_OF_TERM",
+		"value": "Les r\u00e9sultats n'ont pas \u00e9t\u00e9 pris\\nen compte car la saison est d\u00e9j\u00e0\\ntermin\u00e9e."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_GAIN_SKILL_HELP",
+		"value": "$aChoisir $a0 capacit\u00e9s divines \u00e0 obtenir."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_GAIN_SKILL_GAINED",
+		"value": "Apprise(s)"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_GAIN_SKILL_SELECTING",
+		"value": "Choisie(s)"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_GAIN_SKILL_BUTTON_VIEWER",
+		"value": "Carte"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_MAP_BLAZE_ARTS_COMBINE",
+		"value": "$a$a0 : $a1"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_MAP_BLAZE_ARTS_EFFECT_DAMAGE",
+		"value": "$aDgt : $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_MAP_BLAZE_ARTS_EFFECT_DEBUFF_1",
+		"value": "$aAtq : $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_MAP_BLAZE_ARTS_EFFECT_DEBUFF_2",
+		"value": "$aVit : $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_MAP_BLAZE_ARTS_EFFECT_DEBUFF_3",
+		"value": "$aD\u00e9f : $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_MAP_BLAZE_ARTS_EFFECT_DEBUFF_4",
+		"value": "$aR\u00e9s : $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_MAP_BLAZE_ARTS_TEXT",
+		"value": "Maintenez et glissez pour choisir une zone. Rel\u00e2chez\\npour activer. (Les ennemis doivent se trouver dedans.)"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_00",
+		"value": "Obtenez des capacit\u00e9s divines\\net utilisez des capacit\u00e9s ardentes !"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_01",
+		"value": "\u25c6 Jeux Divins \u25c6\\nTerminez 5 combats \u00e0 la suite lors\\ndu tournoi des divinit\u00e9s.\\n\\nLes h\u00e9ros deviennent aussi forts\\nque les divinit\u00e9s avec les capacit\u00e9s\\ndivines et peuvent utiliser des\\ncapacit\u00e9s ardentes pour \u00e9liminer\\nles ennemis en un seul coup."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_02",
+		"value": "\u25c6 D\u00e9tails \u25c6\\nLes r\u00e8gles sont simples : utilisez\\nles caract\u00e9ristiques pour lutter."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_03",
+		"value": "\u30fb Les aptitudes des h\u00e9ros sont\\nremplac\u00e9es par des aptitudes\\nsp\u00e9cifiques aux Jeux Divins.\\n\\n\u30fb Les effets tels que les effets\\nl\u00e9gendaires, les soutiens et les\\nsoutiens d'invocateur sont\\nd\u00e9sactiv\u00e9s."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_04",
+		"value": "\u25c6 Capacit\u00e9s divines \u25c6\\nAu d\u00e9but de chaque carte, vous\\npouvez choisir deux capacit\u00e9s\\ndivines \u00e0 obtenir, qui renforceront\\nvos alli\u00e9s."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_05",
+		"value": "\u25c6 Capacit\u00e9s ardentes \u25c6\\nCertaines capacit\u00e9s divines sont\\ndes capacit\u00e9s ardentes, comme\\n\u00c9clair purifiant. Elles diff\u00e8rent\\nselon la saison des Jeux Divins."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_06",
+		"value": "\u25c6 Capacit\u00e9s ardentes : usage \u25c6\\n\u30fb En d\u00e9but de carte, touchez\\nlonguement pour afficher la zone\\nd'effet.\\n\u30fb D\u00e9placez la zone en faisant\\nglisser et rel\u00e2chez pour activer."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_07",
+		"value": "\u25c6 H\u00e9ros de l'Appel aux armes \u25c6\\nLes h\u00e9ros correspondant \u00e0 la\\nversion se voient conf\u00e9rer PV +10\\net Atq/Vit/D\u00e9f/R\u00e9s +4."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_08",
+		"value": "\u25c6 Autres informations \u25c6\\n\u30fb Chaque attaque inflige\\nun minimum de 5 d\u00e9g\u00e2ts.\\n\u30fb Les d\u00e9g\u00e2ts inflig\u00e9s par un b\u00e2ton\\nsont calcul\u00e9s comme ceux des\\nautres armes.\\n\u30fb Aucun gain d'EXP ou de PA.\\n\u30fb Obtention de m\u00e9rite h\u00e9ro\u00efque."
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_COLOR",
+		"value": "\u00c0 l'occasion de la sortie de\\nFire Emblem: Fortune's Weave,\\nun nouveau style de ch\u00e2teau\\nest disponible !\\n\\nD\u00e9couvrez-le !"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_COLOR_DIALOG",
+		"value": "Voulez-vous utiliser le style de\\nch\u00e2teau Temples Dagsion ?"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_COLOR_REVERT_AFTER",
+		"value": "Si vous changez d'avis, touchez\\nFortifier le ch\u00e2teau, puis Changer\\nle style et enfin Temples Dagsion."
+	},
+	{
+		"key": "MID_ITEM_MAJESTIC_ITEM",
+		"value": "Vignette"
+	},
+	{
+		"key": "MID_ITEM_HELP_MAJESTIC_ITEM",
+		"value": "$aApr\u00e8s avoir utilis\u00e9 une vignette sur un h\u00e9ros,\\nvous pouvez changer son image de statut pour\\nafficher une illustration de h\u00e9ros horizon\\nqui lui conf\u00e8re PV/Atq/Vit/D\u00e9f/R\u00e9s +2.\\n\\nUtilisez jusqu'\u00e0 2 vignettes sur des h\u00e9ros issus\\ndes versions $a0 (2 versions ant\u00e9rieures\\n\u00e0 la plus r\u00e9cente) ou de versions encore\\nant\u00e9rieures \u00e0 celle-ci pour leur conf\u00e9rer\\nPV/Atq/Vit/D\u00e9f/R\u00e9s +2."
+	},
+	{
+		"key": "MID_ITEM_HELP_MAJESTIC_ITEM_FOR_INFO",
+		"value": "$aVous avez utilis\u00e9 des vignettes $a0 fois."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202609",
+		"value": "\u00c9lite de Dagda"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV65553",
+		"value": "Temples Dagsion"
+	},
+	{
+		"key": "MID_SCF_\u30ab\u30a4\u306e\u50cf",
+		"value": "Statue de Cai"
+	},
+	{
+		"key": "MID_SCF_\u30ab\u30a4\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Fortune's Weave est votre jeu\\npr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue r\u00e9tro dans\\nvotre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30c7\u30a3\u30fc\u30c8\u30ea\u30d2\u306e\u50cf",
+		"value": "Statue de Dietrich"
+	},
+	{
+		"key": "MID_SCF_\u30c7\u30a3\u30fc\u30c8\u30ea\u30d2\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Fortune's Weave est votre jeu\\npr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue r\u00e9tro dans\\nvotre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30bb\u30aa\u30c9\u30e9\u306e\u50cf",
+		"value": "Statue Theodora"
+	},
+	{
+		"key": "MID_SCF_\u30bb\u30aa\u30c9\u30e9\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Fortune's Weave est votre jeu\\npr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue r\u00e9tro dans\\nvotre citadelle !"
+	},
+	{
+		"key": "MID_SCF_\u30ec\u30c0\u306e\u50cf",
+		"value": "Statue de Leda"
+	},
+	{
+		"key": "MID_SCF_\u30ec\u30c0\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Fortune's Weave est votre jeu\\npr\u00e9f\u00e9r\u00e9 ? Alors mettez cette statue r\u00e9tro dans\\nvotre citadelle !"
+	},
+	{
+		"key": "MID_DISHES_AUTHORITY_15_1",
+		"value": "fa\u00e7on bestiale"
+	},
+	{
+		"key": "MID_DISHES_AUTHORITY_16_1",
+		"value": "fa\u00e7on Dagda"
+	},
+	{
+		"key": "MID_SCH_\u307f\u307e\u3082\u308a\u30d5\u30a9\u30c8\u30ca",
+		"value": "Fortuna attentive"
+	},
+	{
+		"key": "MID_SCH_\u307f\u307e\u3082\u308a\u30d5\u30a9\u30c8\u30ca_HOLIDAYHELP",
+		"value": "Une peluche \u00e0 placer sur un lit."
+	},
+	{
+		"key": "MID_SCH_\u30aa\u30c3\u30c8\u30fc\u3061\u3083\u3093",
+		"value": "Babbu"
+	},
+	{
+		"key": "MID_SCH_\u30aa\u30c3\u30c8\u30fc\u3061\u3083\u3093_HOLIDAYHELP",
+		"value": "Une peluche \u00e0 placer sur un lit."
+	},
+	{
+		"key": "MID_SCH_\u3077\u304b\u3077\u304b\u30aa\u30eb\u30cb\u30a6",
+		"value": "Ornius flottant"
+	},
+	{
+		"key": "MID_SCH_\u3077\u304b\u3077\u304b\u30aa\u30eb\u30cb\u30a6_HOLIDAYHELP",
+		"value": "Un accessoire de bain flottant sur l'eau."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202609",
+		"value": "Pierres d'\u00e9ther automn."
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202609",
+		"value": "Servent \u00e0 construire des structures \u00e0 dur\u00e9e\\nlimit\u00e9e dans le mode Raid c\u00e9leste. Une fois\\nla p\u00e9riode termin\u00e9e, les pierres sont perdues."
+	},
+	{
+		"key": "MID_STAGE_TITLE_DIFFICULTY5",
+		"value": "C\u00e9leste"
+	},
+	{
+		"key": "MID_STAGE_SELECT_DETAIL_SORTIE_RISTRICTION_AUTHORITY_15",
+		"value": "\u30fb H\u00e9ros de FE Shadows"
+	},
+	{
+		"key": "MID_STAGE_SELECT_DETAIL_SORTIE_RISTRICTION_AUTHORITY_16",
+		"value": "\u30fb H\u00e9ros de FE: Fortune's Weave"
+	},
+	{
+		"key": "MID_TWIN_WORLD_AUTHORITY_15",
+		"value": "Shadows"
+	},
+	{
+		"key": "MID_TWIN_WORLD_AUTHORITY_16",
+		"value": "Fortune's Weave"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_11",
+		"value": "Horizon"
+	},
+	{
+		"key": "MID_UNIT_INFO_BLESSING_MAJESTIC",
+		"value": "$aH\u00e9ros horizon\\n\\n\u30fbPV/Atq/Vit/D\u00e9f/R\u00e9s +2\\n\u30fbPossibilit\u00e9 de changer l'image de statut pour\\nune illustration de h\u00e9ros horizon\\n\\nUtilisez les vignettes sur des h\u00e9ros autres que\\ndes h\u00e9ros horizon pour leur conf\u00e9rer les\\nm\u00eames avantages qu'un h\u00e9ros horizon.\\n\\nUtilisez jusqu'\u00e0 2 vignettes sur des h\u00e9ros issus\\ndes versions $a0 (2 versions\\nant\u00e9rieures \u00e0 la plus r\u00e9cente) ou de versions\\nencore ant\u00e9rieures pour leur conf\u00e9rer\\nPV/Atq/Vit/D\u00e9f/R\u00e9s +2."
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM",
+		"value": "Utiliser vignettes"
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_USE_COUNT",
+		"value": "$aUtilise : $a0/$a1"
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_INFO",
+		"value": "Choisissez le h\u00e9ros qui recevra une vignette."
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_COUNT_INFO",
+		"value": "Choisissez combien de vignettes utiliser."
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_PLUS",
+		"value": "$a+ $a0"
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_CONFIRM",
+		"value": "$aUtiliser $a0 vignette(s) ?\\n\\nLes h\u00e9ros sur lesquels des vignettes\\nsont utilis\u00e9es peuvent changer leur\\nimage de statut pour une illustration\\nde h\u00e9ros horizon et se voir conf\u00e9rer\\nPV/Atq/Vit/D\u00e9f/R\u00e9s +2 par vignette."
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_CONFIRM_DECIDE",
+		"value": "Utiliser vignettes"
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_HELP_DIALOG_00",
+		"value": "\u25c6 Utiliser des vignettes \u25c6\\nQuand vous utilisez une vignette\\nsur un h\u00e9ros, il se voit conf\u00e9rer\\nPV/Atq/Vit/D\u00e9f/R\u00e9s +2 et peut\\nchanger son image de statut pour\\nune illustration de h\u00e9ros horizon."
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_HELP_DIALOG_01",
+		"value": "\u25c6 Ar\u00e8ne \u25c6\\nLes am\u00e9liorations obtenues gr\u00e2ce\\naux vignettes ne sont pas prises\\nen compte lors de la s\u00e9lection des\\nadversaires dans les modes\\ncomme l'ar\u00e8ne."
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_HELP_DIALOG_02",
+		"value": "\u25c6 Autres informations \u25c6\\n\u30fbVous pouvez utiliser une\\nvignette sur des h\u00e9ros autres\\nque les h\u00e9ros horizon.\\n\u30fbPour les h\u00e9ros autres que les\\nh\u00e9ros horizon, vous pouvez\\nutiliser jusqu'\u00e0 2 vignettes\\ns'ils sont issus d'au moins deux\\nversions ant\u00e9rieures \u00e0 la version\\nactuelle."
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_HELP_DIALOG_03",
+		"value": "\u30fbVous pouvez utiliser une\\nvignette sur les h\u00e9ros horizon\\nissus d'au moins deux versions\\nant\u00e9rieures \u00e0 la version actuelle."
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_HELP_DIALOG_04",
+		"value": "\u25c6 Effets sur les fusions \u25c6\\nLorsque vous fusionnez des h\u00e9ros\\n(autres que des h\u00e9ros horizon)\\nissus d'au moins deux versions\\nant\u00e9rieures \u00e0 la version actuelle,\\nsi les deux h\u00e9ros sont dot\u00e9s de\\nvignettes, le h\u00e9ros r\u00e9sultant de\\nla fusion sera consid\u00e9r\u00e9 comme\\nayant deux vignettes."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_USED_MAJESTIC_ITEM_WARNING",
+		"value": "Vous allez lib\u00e9rer un h\u00e9ros ayant\\nune vignette.\\n\\nVoulez-vous vraiment lib\u00e9rer\\nce h\u00e9ros ?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_USED_MAJESTIC_ITEM_WARNING",
+		"value": "Vous allez utiliser \u00ab Transmettre\\naptitudes \u00bb sur un h\u00e9ros ayant\\nune vignette.\\n\\nVoulez-vous vraiment utiliser\\n\u00ab Transmettre aptitudes \u00bb sur ce\\nh\u00e9ros ?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMIT_BREAK_USED_MAJESTIC_ITEM_WARNING",
+		"value": "Vous allez fusionner un h\u00e9ros ayant\\nune vignette.\\n\\nVoulez-vous vraiment fusionner\\nce h\u00e9ros ?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_GENERATE_USED_MAJESTIC_ITEM_WARNING",
+		"value": "Vous allez compiler un livret militaire\\nen utilisant un h\u00e9ros ayant\\nune vignette.\\n\\nVoulez-vous vraiment compiler un\\nlivret militaire en utilisant ce h\u00e9ros ?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_AUTHORITY_15",
+		"value": "Shadows"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_AUTHORITY_16",
+		"value": "Fortune's Weave"
+	}
+]

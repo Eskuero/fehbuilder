@@ -1,0 +1,498 @@
+[
+	{
+		"key": "MID_ARENA_DIALOG_HELP_08_v1009",
+		"value": "-Retirada t\u00e1tica-\\nQuatro vezes por sequ\u00eancia de\\nvit\u00f3rias, voc\u00ea pode voltar \u00e0 tela\\nanterior sem perder a pontua\u00e7\u00e3o,\\nnem sua sequ\u00eancia de vit\u00f3rias.\\nMas, se voc\u00ea reiniciar a sua\\nsequ\u00eancia, as retiradas t\u00e1ticas\\nficar\u00e3o dispon\u00edveis novamente."
+	},
+	{
+		"key": "MID_CONNECT_BONDS_IDOLIZE_HELP_DIALOG_05_v1009",
+		"value": "-O que as r\u00e9plicas n\u00e3o herdam-\\n\u30fb Combina\u00e7\u00f5es\\n\u30fb Pontos fortes ascendentes\\n\u30fb Trajes resplandecentes\\n\u30fb Ess\u00eancias de amparo\\n\u30fb Buqu\u00eas\\n\u30fb Vinhetas\\n\u30fb D\u00e1divas\\n\u30fb Selos sagrados\\n\u30fb Acess\u00f3rios"
+	},
+	{
+		"key": "MID_HOME_GRACE_FESTIVAL_MISSION_NOTIFICATION",
+		"value": "Obtenha recompensas nos Jogos divinos.\\nIr para os Jogos divinos?"
+	},
+	{
+		"key": "MID_HOME_GRACE_FESTIVAL_NAVIGATION_JUMP",
+		"value": "Jogos divinos"
+	},
+	{
+		"key": "MID_CONFIG_HOME_NOTIFICATION_GRACE_FESTIVAL",
+		"value": "Notif. do castelo:\\nJogos divinos"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_TITLE",
+		"value": "Jogos divinos"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REMAINING_DAYS",
+		"value": "$aTermina em $a0 dia(s)."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REMAINING_HOURS",
+		"value": "$aTermina em $a0 h(s)."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REMAINING_MINUTES",
+		"value": "$aTermina em $a0 min(s)."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_CLOSED",
+		"value": "Evento encerrado."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_AGGREGATING",
+		"value": "Calculando..."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_NEXT_FEATURE_INFO",
+		"value": "Recompensa por pontos acumulados"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HIGH_SCORE",
+		"value": "Recorde"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANK_OUT_OF_RANGE",
+		"value": "\u2014"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANK_AGGREGATING",
+		"value": "Calculando"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_ENTRANCE_HELP",
+		"value": "5 batalhas simples seguidas! Obtenha\\nArtes divinas e ative Artes ardentes!"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_DIFFICULTY_SELECT",
+		"value": "Modo"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_DIFFICULTY_0",
+		"value": "Iniciante"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_DIFFICULTY_1",
+		"value": "Intermed."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_DIFFICULTY_2",
+		"value": "Avan\u00e7ado"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_ENTRANCE_BONUS_TITLE",
+		"value": "Her\u00f3is b\u00f4nus"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_ENTRANCE_BONUS_VERSION",
+		"value": "$aVers\u00e3o: $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_ENTRANCE_START_DIALOG_FAILED",
+		"value": "N\u00e3o foi poss\u00edvel inciar o evento."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_ENTRANCE_START_DIALOG_FAILED_WARNING_TROOP_RESTRICTION",
+		"value": "Cada espa\u00e7o na sua equipe deve\\nser ocupado por um her\u00f3i."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_ENTRANCE_BUTTON_REWARD",
+		"value": "Recompensas"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REWARD_SORT",
+		"value": "$aRecompensa: $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REWARD_SORT_COMULATIVE_SCORE",
+		"value": "Acumulada"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REWARD_SORT_HIGH_SCORE",
+		"value": "Recorde"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REWARD_SORT_RANK",
+		"value": "Classif."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REWARD_COMULATIVE_SCORE",
+		"value": "Pontua\u00e7\u00e3o"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REWARD_HIGH_SCORE",
+		"value": "Recorde"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_REWARD_RANK",
+		"value": "Classif."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_GAINED_REWARDTYPE_COMULATIVE_SCORE",
+		"value": "$aRecomp. de pontua\u00e7\u00e3o: $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_GAINED_REWARDTYPE_HIGH_SCORE",
+		"value": "$aRecomp. de recorde: $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_GAINED_REWARDTYPE_RANK",
+		"value": "$aRecomp. de classifica\u00e7\u00e3o: $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_ENTRANCE_BUTTON_RANKING",
+		"value": "Posi\u00e7\u00e3o atual"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_WARNING_TERM_EXPIRED",
+		"value": "Evento encerrado."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANK",
+		"value": "Classif."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANKING_AROUND_ME",
+		"value": "Sua classifica\u00e7\u00e3o"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANKING_TOP",
+		"value": "Melhores"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANKING_FRIEND",
+		"value": "Amigos"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANKING_UNCALCULATED_TOP",
+		"value": "Calculando classifica\u00e7\u00f5es..."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANKING_UNCALCULATED_AROUND_ME",
+		"value": "Sem classifica\u00e7\u00e3o."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANKING_UNCALCULATED_FRIEND",
+		"value": "Voc\u00ea n\u00e3o tem amigos participando."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RANKING_SORT_DIALOG",
+		"value": "Escolha uma op\u00e7\u00e3o."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RESULT_SCORE_SURVIVAL",
+		"value": "Sobreviv\u00eancia"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RESULT_SCORE_HP",
+		"value": "PV"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RESULT_SCORE_TURN",
+		"value": "Velocidade"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RESULT_SCORE_COMPLETE",
+		"value": "B\u00f4nus ao concluir"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RESULT_SCORE_DIFFICULTY",
+		"value": "Modo"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RESULT_SCORE_TOTAL",
+		"value": "Pontua\u00e7\u00e3o"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_RESULT_SCORE_CUMULATIVE_SCORE",
+		"value": "Acumulada"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_DIALOG_END_OF_TERM",
+		"value": "O resultado n\u00e3o conta porque\\na temporada j\u00e1 foi finalizada."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_GAIN_SKILL_HELP",
+		"value": "$aEscolha $a0 Artes divinas."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_GAIN_SKILL_GAINED",
+		"value": "Obtida"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_GAIN_SKILL_SELECTING",
+		"value": "Escolheu"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_GAIN_SKILL_BUTTON_VIEWER",
+		"value": "Ver mapa"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_MAP_BLAZE_ARTS_COMBINE",
+		"value": "$a$a0: $a1"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_MAP_BLAZE_ARTS_EFFECT_DAMAGE",
+		"value": "$aDano: $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_MAP_BLAZE_ARTS_EFFECT_DEBUFF_1",
+		"value": "$aAtq.: $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_MAP_BLAZE_ARTS_EFFECT_DEBUFF_2",
+		"value": "$aVel.: $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_MAP_BLAZE_ARTS_EFFECT_DEBUFF_3",
+		"value": "$aDef.: $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_MAP_BLAZE_ARTS_EFFECT_DEBUFF_4",
+		"value": "$aRes.: $a0"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_MAP_BLAZE_ARTS_TEXT",
+		"value": "Segure e arraste para escolher uma \u00e1rea. Solte\\npara ativar. (Inimigos devem estar nessa \u00e1rea.)"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_00",
+		"value": "Ganhe Artes divinas,\\nuse Artes ardentes!"
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_01",
+		"value": "-Jogos divinos-\\nEnfrente cinco batalhas seguidas\\nneste torneio dos deuses.\\n\\nCom Artes divinas, her\u00f3is ficam\\nfortes como deuses e podem usar\\nArtes ardentes para eliminar\\ninimigos em apenas um golpe."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_02",
+		"value": "-Detalhes da batalha-\\nAs regras s\u00e3o simples: lute usando\\nseus atributos."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_03",
+		"value": "\u30fb As habilidades dos her\u00f3is\\ns\u00e3o substitu\u00eddas por outras,\\nespec\u00edficas aos Jogos divinos.\\n\\n\u30fb Efeitos como efeitos lend\u00e1rios,\\napoios e apoio do invocador n\u00e3o\\ns\u00e3o aplicados."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_04",
+		"value": "-Obtendo Artes divinas-\\nNo in\u00edcio de cada mapa, voc\u00ea pode\\nescolher duas Artes divinas para\\nobter e fortalecer seus aliados."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_05",
+		"value": "-Artes ardentes-\\nAlgumas Artes divinas s\u00e3o Artes\\nardentes, como Lume de pureza.\\nVoc\u00ea pode obter diferentes Artes\\nardentes a depender da temporada\\ndos Jogos divinos."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_06",
+		"value": "-Usando Artes ardentes-\\n\u30fb No in\u00edcio do mapa, toque e\\nsegure para exibir a \u00e1rea de efeito.\\n\u30fb Arraste para mover a \u00e1rea e\\nsolte para ativar."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_07",
+		"value": "-Her\u00f3is b\u00f4nus-\\nHer\u00f3is que coincidem com a Ver.\\nde lan\u00e7amento recebem PV +10\\ne Atq./Vel./Def./Res. +4."
+	},
+	{
+		"key": "MID_GRACE_FESTIVAL_HELP_DIALOG_08",
+		"value": "-Mais informa\u00e7\u00f5es-\\n\u30fb Cada ataque inflige um m\u00ednimo\\nde 5 pontos de dano.\\n\u30fb Dano de bast\u00e3o \u00e9 calculado\\nigual ao de outras armas.\\n\u30fb N\u00e3o h\u00e1 ganhos de EXP e PH.\\n\u30fb H\u00e1 ganhos de m\u00e9rito de her\u00f3i."
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_COLOR",
+		"value": "Para celebrar o lan\u00e7amento de\\nFire Emblem: Fortune's Weave,\\num novo estilo de castelo est\u00e1\\ndispon\u00edvel para voc\u00ea!\\n\\nConfira!"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_COLOR_DIALOG",
+		"value": "Agora que voc\u00ea viu o estilo de\\ncastelo Templos Dagsion, voc\u00ea\\nquer us\u00e1-lo?"
+	},
+	{
+		"key": "MID_HOME_PRESENT_ELITE_CASTLE_COLOR_REVERT_AFTER",
+		"value": "Se voc\u00ea mudar de ideia, toque\\nem \"Melhorar o castelo\", \"Mudar\\nestilo\" e \"Templos Dagsion\"."
+	},
+	{
+		"key": "MID_ITEM_MAJESTIC_ITEM",
+		"value": "Vinheta"
+	},
+	{
+		"key": "MID_ITEM_HELP_MAJESTIC_ITEM",
+		"value": "$aAp\u00f3s usar uma vinheta em um her\u00f3i, esse her\u00f3i\\npoder\u00e1 trocar sua imagem de estado pela\\nimagem de estado de um her\u00f3i imag\u00e9tico e\\nobter\u00e1 PV, Atq., Vel., Def. e Res. +2.\\n\\nVoc\u00ea pode usar duas vinhetas em her\u00f3is de\\nqualquer vers\u00e3o at\u00e9 a vers\u00e3o $a0 (duas\\nvers\u00f5es abaixo da mais recente) e o her\u00f3i\\nobter\u00e1 PV, Atq., Vel., Def. e Res. +2."
+	},
+	{
+		"key": "MID_ITEM_HELP_MAJESTIC_ITEM_FOR_INFO",
+		"value": "$aVoc\u00ea usou vinhetas $a0 vez(es)."
+	},
+	{
+		"key": "MID_PORTRAIT_TITLE_202609",
+		"value": "Elite de Dagda"
+	},
+	{
+		"key": "MID_SHOP_ELITE_CASTLE_LV65553",
+		"value": "Templos Dagsion"
+	},
+	{
+		"key": "MID_SCF_\u30ab\u30a4\u306e\u50cf",
+		"value": "Est\u00e1tua de Cai"
+	},
+	{
+		"key": "MID_SCF_\u30ab\u30a4\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Fortune's Weave \u00e9 o seu\\nfavorito? Ent\u00e3o, coloque essa est\u00e1tua\\nde 8 bits em sua torre et\u00e9rea!"
+	},
+	{
+		"key": "MID_SCF_\u30c7\u30a3\u30fc\u30c8\u30ea\u30d2\u306e\u50cf",
+		"value": "Est\u00e1tua de Dietrich"
+	},
+	{
+		"key": "MID_SCF_\u30c7\u30a3\u30fc\u30c8\u30ea\u30d2\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Fortune's Weave \u00e9 o seu\\nfavorito? Ent\u00e3o, coloque essa est\u00e1tua\\nde 8 bits em sua torre et\u00e9rea!"
+	},
+	{
+		"key": "MID_SCF_\u30bb\u30aa\u30c9\u30e9\u306e\u50cf",
+		"value": "Est. de Theodora"
+	},
+	{
+		"key": "MID_SCF_\u30bb\u30aa\u30c9\u30e9\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Fortune's Weave \u00e9 o seu\\nfavorito? Ent\u00e3o, coloque essa est\u00e1tua\\nde 8 bits em sua torre et\u00e9rea!"
+	},
+	{
+		"key": "MID_SCF_\u30ec\u30c0\u306e\u50cf",
+		"value": "Est\u00e1tua de Leda"
+	},
+	{
+		"key": "MID_SCF_\u30ec\u30c0\u306e\u50cf_HELP",
+		"value": "Fire Emblem: Fortune's Weave \u00e9 o seu\\nfavorito? Ent\u00e3o, coloque essa est\u00e1tua\\nde 8 bits em sua torre et\u00e9rea!"
+	},
+	{
+		"key": "MID_DISHES_AUTHORITY_15_1",
+		"value": "Estilo: Fera"
+	},
+	{
+		"key": "MID_DISHES_AUTHORITY_16_1",
+		"value": "Estilo: Dagda"
+	},
+	{
+		"key": "MID_SCH_\u307f\u307e\u3082\u308a\u30d5\u30a9\u30c8\u30ca",
+		"value": "Fortuna vigilante"
+	},
+	{
+		"key": "MID_SCH_\u307f\u307e\u3082\u308a\u30d5\u30a9\u30c8\u30ca_HOLIDAYHELP",
+		"value": "Um brinquedo de pel\u00facia feito\\npara decorar a cama."
+	},
+	{
+		"key": "MID_SCH_\u30aa\u30c3\u30c8\u30fc\u3061\u3083\u3093",
+		"value": "Babbu"
+	},
+	{
+		"key": "MID_SCH_\u30aa\u30c3\u30c8\u30fc\u3061\u3083\u3093_HOLIDAYHELP",
+		"value": "Um brinquedo de pel\u00facia feito\\npara decorar a cama."
+	},
+	{
+		"key": "MID_SCH_\u3077\u304b\u3077\u304b\u30aa\u30eb\u30cb\u30a6",
+		"value": "Ornius flutuante"
+	},
+	{
+		"key": "MID_SCH_\u3077\u304b\u3077\u304b\u30aa\u30eb\u30cb\u30a6_HOLIDAYHELP",
+		"value": "Um item de banho que boia na \u00e1gua."
+	},
+	{
+		"key": "MID_ITEM_SKYCASTLE_202609",
+		"value": "Pedras et\u00e9reas outonais"
+	},
+	{
+		"key": "MID_ITEM_HELP_SKYCASTLE_202609",
+		"value": "Usadas nas Investidas et\u00e9reas para construir\\nestruturas dispon\u00edveis por tempo limitado.\\nAp\u00f3s esse per\u00edodo, as pedras ser\u00e3o perdidas."
+	},
+	{
+		"key": "MID_STAGE_TITLE_DIFFICULTY5",
+		"value": "Celestial"
+	},
+	{
+		"key": "MID_STAGE_SELECT_DETAIL_SORTIE_RISTRICTION_AUTHORITY_15",
+		"value": "\u30fb Her\u00f3is de FE Shadows"
+	},
+	{
+		"key": "MID_STAGE_SELECT_DETAIL_SORTIE_RISTRICTION_AUTHORITY_16",
+		"value": "\u30fb Her\u00f3is de FE: Fortune's Weave"
+	},
+	{
+		"key": "MID_TWIN_WORLD_AUTHORITY_15",
+		"value": "Shadows"
+	},
+	{
+		"key": "MID_TWIN_WORLD_AUTHORITY_16",
+		"value": "Fortune's Weave"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_HERO_KIND_11",
+		"value": "Imag\u00e9tico"
+	},
+	{
+		"key": "MID_UNIT_INFO_BLESSING_MAJESTIC",
+		"value": "$aHer\u00f3i imag\u00e9tico\\n\\n\u30fbPV/Atq./Vel./Def./Res.+2\\n\u30fbOp\u00e7\u00e3o de trocar a imagem de estado do\\nher\u00f3i imag\u00e9tico\\n\\nUse vinhetas em her\u00f3is que n\u00e3o s\u00e3o imag\u00e9ticos\\npara conceder-lhes os mesmos benef\u00edcios de\\num her\u00f3i imag\u00e9tico.\\n\\nUse at\u00e9 2 vinhetas em her\u00f3is de qualquer\\nvers\u00e3o at\u00e9 a vers\u00e3o $a0 (2 vers\u00f5es abaixo\\nda mais recente) e o her\u00f3i obter\u00e1 PV, Atq., Vel.,\\nDef. e Res. +2."
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM",
+		"value": "Usar vinheta"
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_USE_COUNT",
+		"value": "$aUsos: $a0/$a1"
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_INFO",
+		"value": "Escolha o her\u00f3i que receber\u00e1 uma vinheta."
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_COUNT_INFO",
+		"value": "Escolha quantas vinhetas usar."
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_PLUS",
+		"value": "$a+ $a0"
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_CONFIRM",
+		"value": "$aUsar $a0 vinheta(s)?\\n\\nHer\u00f3is nos quais voc\u00ea usou vinhetas\\npodem mudar suas imagens de\\nestado para uma igual \u00e0s de her\u00f3is\\nimag\u00e9ticos, al\u00e9m de receber +2\\nde PV, Atq., Vel., Def. e Res. por\\ncada vinheta."
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_CONFIRM_DECIDE",
+		"value": "Usar vinheta"
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_HELP_DIALOG_00",
+		"value": "-Usando vinhetas-\\nAo usar uma vinheta em um her\u00f3i,\\nele tamb\u00e9m recebe +2 de PV, Atq.,\\nVel., Def. e Res., al\u00e9m de poder\\nmudar sua imagem de estado para\\numa igual \u00e0 de um her\u00f3i imag\u00e9tico."
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_HELP_DIALOG_01",
+		"value": "-Efeitos na Arena-\\nMelhoras obtidas com vinhetas\\nn\u00e3o influenciam como atributos\\ns\u00e3o tratados na sele\u00e7\u00e3o de\\nadvers\u00e1rios em modos como\\na Arena."
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_HELP_DIALOG_02",
+		"value": "-Mais informa\u00e7\u00f5es-\\n\u30fbVoc\u00ea pode dar uma vinheta\\na her\u00f3is que n\u00e3o s\u00e3o her\u00f3is\\nimag\u00e9ticos.\\n\u30fbVoc\u00ea pode dar duas vinhetas a\\nher\u00f3is de duas ou mais vers\u00f5es\\nanteriores \u00e0 atual que n\u00e3o s\u00e3o\\nher\u00f3is imag\u00e9ticos."
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_HELP_DIALOG_03",
+		"value": "\u30fbVoc\u00ea pode dar uma vinheta a\\nher\u00f3is imag\u00e9ticos que s\u00e3o de duas\\nou mais vers\u00f5es anteriores \u00e0 atual."
+	},
+	{
+		"key": "MID_UNIT_EDIT_MAJESTIC_ITEM_HELP_DIALOG_04",
+		"value": "-Efeitos em her\u00f3is combinados-\\nQuando voc\u00ea combina her\u00f3is\\n(exceto her\u00f3is imag\u00e9ticos) que\\ns\u00e3o de duas ou mais vers\u00f5es\\nanteriores \u00e0 atual, caso ambos\\nher\u00f3is possuam vinhetas, o her\u00f3i\\nresultante ser\u00e1 tratado como se\\npossu\u00edsse duas vinhetas."
+	},
+	{
+		"key": "MID_UNIT_EDIT_SELL_USED_MAJESTIC_ITEM_WARNING",
+		"value": "Voc\u00ea est\u00e1 prestes a usar \"mandar\\npara casa\" em um her\u00f3i com\\numa vinheta.\\n\\nTem certeza de que quer mandar\\neste her\u00f3i para casa?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_SKILL_TALENT_USED_MAJESTIC_ITEM_WARNING",
+		"value": "Voc\u00ea est\u00e1 prestes a usar \"herdar\\nhabilidade\" em um her\u00f3i com\\numa vinheta.\\n\\nTem certeza de que quer herdar a\\nhabilidade deste her\u00f3i?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_LIMIT_BREAK_USED_MAJESTIC_ITEM_WARNING",
+		"value": "Voc\u00ea est\u00e1 prestes a combinar\\num her\u00f3i com uma vinheta.\\n\\nTem certeza de que quer combinar\\neste her\u00f3i?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_STOCK_GENERATE_USED_MAJESTIC_ITEM_WARNING",
+		"value": "Voc\u00ea est\u00e1 prestes a compilar\\num manual de combate de\\num her\u00f3i com uma vinheta.\\n\\nTem certeza de que quer compilar um\\nmanual de combate com este her\u00f3i?"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_AUTHORITY_15",
+		"value": "Shadows"
+	},
+	{
+		"key": "MID_UNIT_EDIT_GENERAL_FILTER_AUTHORITY_16",
+		"value": "Fortune's Weave"
+	}
+]
