@@ -39,6 +39,7 @@ selectattire = document.getElementById('attire');
 selectbonusunit = document.getElementById('bonusunit');
 selectallies = document.getElementById('allies');
 selectaide = document.getElementById('aide');
+selectmajestic = document.getElementById('majestic');
 selectatk = document.getElementById('atk');
 selectspd = document.getElementById('spd');
 selectdef = document.getElementById('def');
@@ -75,11 +76,11 @@ languages = {};
 buildslot = 0;
 	// Initial data for each build slot
 builds = [
-	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","0","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,MAXHM,"Portrait","MyUnit","0","0","None","base","1","None", "", true, "level40", "no"],
-	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","0","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,MAXHM,"Portrait","MyUnit","0","0","None","base","1","None", "", true, "level40", "no"],
-	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","0","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,MAXHM,"Portrait","MyUnit","0","0","None","base","1","None", "", true, "level40", "no"],
-	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","0","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,MAXHM,"Portrait","MyUnit","0","0","None","base","1","None", "", true, "level40", "no"],
-	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","0","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,MAXHM,"Portrait","MyUnit","0","0","None","base","1","None", "", true, "level40", "no"]
+	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","0","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,MAXHM,"Portrait","MyUnit","0","0","None","base","1","None", "", true, "level40", "no", "0"],
+	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","0","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,MAXHM,"Portrait","MyUnit","0","0","None","base","1","None", "", true, "level40", "no", "0"],
+	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","0","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,MAXHM,"Portrait","MyUnit","0","0","None","base","1","None", "", true, "level40", "no", "0"],
+	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","0","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,MAXHM,"Portrait","MyUnit","0","0","None","base","1","None", "", true, "level40", "no", "0"],
+	["None", false, true, "USEN", "None", "None", {},"5","0","0","None","None","None","no","None","None","None","0","None","None","None","None","None","None","None","Normal","no","0","0","0","0","0","0","0","0",9999,MAXHM,"Portrait","MyUnit","0","0","None","base","1","None", "", true, "level40", "no", "0"]
 ];
 
 // This array will be used as rendering queue

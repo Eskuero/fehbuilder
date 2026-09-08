@@ -11,7 +11,7 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers, emblemmerges, aide) {
+function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers, emblemmerges, aide, majestic) {
 	// Modify the level 1 stats based on the rarity provided
 	var almosttruelevel1 = {"HP": stats[0], "Atk": stats[1], "Spd": stats[2], "Def": stats[3], "Res": stats[4]};
 	// For 3 and 5 star rarity we can simply bump everything by 1 point
@@ -123,6 +123,15 @@ function statcalc(stats, growths, rarity, boon, bane, ascendent, merges, flowers
 		Object.keys(truelevel1).forEach(key => {
 			truelevel1[key] += 1;
 		});
+	}
+
+	// If the hero has an vignette applied, increase all stats by two for each vignette
+	if (majestic) {
+		for (i = 0; i < majestic; i++) {
+			Object.keys(truelevel1).forEach(key => {
+				truelevel1[key] += 2;
+			});
+		}
 	}
 
 	// Decide if we will add growth values or not

@@ -41,6 +41,8 @@ async function populateall(clean, bypass = []) {
 	beastcheck();
 	// Disable or enable aide select based on unit
 	aidecheck();
+	// Disable or enable majestic select based on unit
+	majesticcheck();
 }
 
 async function reload(scroll = false) {
@@ -417,7 +419,7 @@ async function switchbuild(build) {
 	var selects = [selectrarity, selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials, selectemblemhero,
 		selectemblemmerges, selectassists, selectA, selectB, selectC, selectS, selectX, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef,
 		selectres, selectatkpairup, selectspdpairup, selectdefpairup, selectrespairup, selectsp, selecthm, selectartstyle, selecttemplate,
-		selectoffsetY, selectoffsetX, selectmirror, selectbackground, selectfavorite, selectaccessory, selectotherworldbond, appui, selectlevel, selectaide];
+		selectoffsetY, selectoffsetX, selectmirror, selectbackground, selectfavorite, selectaccessory, selectotherworldbond, appui, selectlevel, selectaide, selectmajestic];
 
 	// First save changes to current slot (heroes, cheats, language, maxskill, weapons and blessings are to be done first because they affect the content of other selects)
 	builds[buildslot][0] = selectheroes.value;
@@ -460,7 +462,7 @@ async function switchbuild(build) {
 	var selects = [selectrarity, selectmerges, selectflowers, selectboons, selectbanes, selectascendent, selectbeast, selectrefines, selectspecials, selectemblemhero,
 		selectemblemmerges, selectassists, selectA, selectB, selectC, selectS, selectX, selectsummoner, selectattire, selectbonusunit, selectatk, selectspd, selectdef,
 		selectres, selectatkpairup, selectspdpairup, selectdefpairup, selectrespairup, selectsp, selecthm, selectartstyle, selecttemplate,
-		selectoffsetY, selectoffsetX, selectmirror, selectbackground, selectfavorite, selectaccessory, selectotherworldbond, appui, selectlevel, selectaide];
+		selectoffsetY, selectoffsetX, selectmirror, selectbackground, selectfavorite, selectaccessory, selectotherworldbond, appui, selectlevel, selectaide, selectmajestic];
 	// Trigger a rebuild of the refine select based on the selection of weapon
 	selectweapons.value = builds[buildslot][4];
 	updateRefine();
@@ -508,6 +510,15 @@ function aidecheck() {
 		selectaide.value = "yes";
 	} else {
 		selectaide.disabled = false;
+	}
+}
+
+function majesticcheck() {
+	if (other["majestic"].includes(selectheroes.value)) {
+		selectmajestic.disabled = true;
+		selectmajestic.value = "1";
+	} else {
+		selectmajestic.disabled = false;
 	}
 }
 

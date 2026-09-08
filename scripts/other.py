@@ -39,6 +39,7 @@ other = {
 	"attuned" : [],
 	"emblem" : [],
 	"aided": [],
+	"majestic": [],
 	"duokeywords": hardcoded["duokeywords"],
 	"images": hardcoded["images"],
 	"seasonals": hardcoded["seasonals"],
@@ -75,9 +76,9 @@ for file in files:
 				# Extra slots in AR always give out stats
 				if entry["legendary"]["ae_extra"] > 0:
 					other["blessed"][entry["id_tag"]]["variant"] += ae_extra_bitmask(entry["legendary"]["ae_extra"])
-			# If the unit doesn't have element but is of kind 2, 3, 4, 5, 6 is a rare special type we remember separately
-			elif entry["legendary"]["kind"] in [2, 3, 4, 5, 6, 7, 8]:
-				specialtype = [None, None, "duo", "resonant", "ascended", "rearmed", "attuned", "emblem", "aided"][entry["legendary"]["kind"]]
+			# If the unit doesn't have element but is of kind 2, 3, 4, 5, 6, 7, 8, 11 is a rare special type we remember separately
+			elif entry["legendary"]["kind"] in [2, 3, 4, 5, 6, 7, 8, 11]:
+				specialtype = [None, None, "duo", "resonant", "ascended", "rearmed", "attuned", "emblem", "aided", None, None, "majestic"][entry["legendary"]["kind"]]
 				other[specialtype].append(entry["id_tag"])
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -95,6 +96,7 @@ otheronline = {
 	"attuned": other["attuned"],
 	"emblem": other["emblem"],
 	"aided": other["aided"],
+	"majestic": other["majestic"],
 	"resonant": other["resonant"],
 	"duokeywords": hardcoded["duokeywords"],
 	"images": hardcoded["images"]
@@ -154,6 +156,7 @@ othertier = {
 	"attuned": other["attuned"],
 	"emblem": other["emblem"],
 	"aided": other["aided"],
+	"majestic": other["majestic"],
 	"seasonals": hardcoded["seasonals"]
 }
 with open("tierother.json", "w") as outfile:

@@ -429,6 +429,12 @@
 		"path": "Common/UI/tamer/Icon_tamerPlayer.png",
 		"scale": [147,160]
 	},
+	"Majestic": {
+		"actions": ["plist", "resize"],
+		"path": "Common/UI/Majestic/Majestic.png",
+		"entry": "Icon_MajesticPlayer.png",
+		"scale": [147,160]
+	},
 	"0-move": {
 		"actions": ["crop", "resize"],
 		"path": "Common/UI/Status.png",
@@ -2208,5 +2214,11 @@
 		"actions": ["resize"],
 		"path": "Common/UI/tamer/Icon_tamer.png",
 		"scale": [55,55]
+	},
+	"majestic": {
+		"actions": ["plist","resize"],
+		"path": "Common/UI/Majestic/Majestic.png",
+		"scale": [55,55],
+		"entry": "Icon_Majestic.png"
 	}
 }
