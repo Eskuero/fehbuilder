@@ -555,6 +555,9 @@ function maximize() {
 	selectflowers.value = units[selectheroes.value]["flowers"];
 	selectsummoner.value = "S";
 	selectaide.value = "yes";
+	if (!selectmajestic.disabled) {
+		selectmajestic.value = "2";
+	}
 	// Only choose resplendent if it's a legit one
 	if (languages[selectlanguage.value][selectheroes.value.replace("PID", "MPID_VOICE") + "EX01"]) {
 		selectattire.value = "Resplendent";
@@ -595,6 +598,12 @@ function reset(section) {
 			// Reset aided status only if it's not locked (otherwise it means we have an aided hero)
 			if (!selectaide.disabled) {
 				selectaide.value = "no";
+			}
+			// Reset vignette status only if it's not locked (otherwise it means we have an Vista hero)
+			if (!selectmajestic.disabled) {
+				selectmajestic.value = "0";
+			} else {
+				selectmajestic.value = "1";
 			}
 			selectlevel.value = "level40";
 		break;
