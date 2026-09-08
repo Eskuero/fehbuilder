@@ -108,8 +108,9 @@ async function echoes() {
 	var flowers = parseInt(selectflowers.value);
 	var emblemmerges = selectemblemhero.value == "None" ? 0 : parseInt(selectemblemmerges.value);
 	var aide = selectaide.value == "no" ? false : true;
+	var majestic = parseInt(selectmajestic.value);
 	// Obtain the calculated stats to draw
-	var statsmodifier = statcalc(units[hero]["stats"], units[hero]["growths"], rarity, boon, bane, ascendent, merges, flowers, emblemmerges, aide);
+	var statsmodifier = statcalc(units[hero]["stats"], units[hero]["growths"], rarity, boon, bane, ascendent, merges, flowers, emblemmerges, aide, majestic);
 
 	var weapon = selectweapons.value == "None" ? false : selectweapons.value; var refine = selectrefines.value == "None" ? false : selectrefines.value;
 	// We have a couple of stats modifiers based on weapon, summoner support, attire, bonus unit, visible buffs and maybe not completely parsed A/S skills that we must add
@@ -397,9 +398,9 @@ async function condensed() {
 	var flowers = parseInt(selectflowers.value);
 	var emblemmerges = selectemblemhero.value == "None" ? 0 : parseInt(selectemblemmerges.value);
 	var aide = selectaide.value == "no" ? false : true;
-	console.log(aide)
+	var majestic = parseInt(selectmajestic.value);
 	// Obtain the calculated stats to draw
-	var statsmodifier = statcalc(units[hero]["stats"], units[hero]["growths"], rarity, boon, bane, ascendent, merges, flowers, emblemmerges, aide);
+	var statsmodifier = statcalc(units[hero]["stats"], units[hero]["growths"], rarity, boon, bane, ascendent, merges, flowers, emblemmerges, aide, majestic);
 
 	var weapon = selectweapons.value == "None" ? false : selectweapons.value; var refine = selectrefines.value == "None" ? false : selectrefines.value;
 	// We have a couple of stats modifiers based on weapon, summoner support, attire, bonus unit, visible buffs and maybe not completely parsed A/S skills that we must add
