@@ -1,0 +1,786 @@
+[
+	{
+		"key": "MDAID_\u65c5\u5148\u306e\u904a\u7267\u6c11\u306e\u982d\u98fe\u308a",
+		"value": "Diadema n\u00f3mada"
+	},
+	{
+		"key": "MDAID_H_\u65c5\u5148\u306e\u904a\u7267\u6c11\u306e\u982d\u98fe\u308a",
+		"value": "Prueba de que dos h\u00e9roes derrotaron\\na un jefe durante un viaje juntos.\\nEs un recuerdo de su aventura."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_118",
+		"value": "$aOtorga Atq., Vel., Def. y Res. +X \u00d7 2 a la unidad,\\nesta inflige +X \u00d7 3 puntos de da\u00f1o adicionales\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto) y se reduce el da\u00f1o de los ataques\\nenemigos en X \u00d7 3 durante el combate (sin\\ncontar las habilidades especiales con \u00e1rea de\\nefecto), donde X equivale al n\u00famero de aliados\\nen el mapa con el efecto Leyes de Sacae activo\\n(incluyendo a la unidad; m\u00e1x.: 3).\\n\\nSi la unidad inicia el combate, inflige\u3010Altruismo +\u3011\\nal rival y a todos los enemigos situados en un\\nradio de 2 casillas de dicho rival en su pr\u00f3xima\\nacci\u00f3n tras el combate. (Hasta el final del turno).\\n\\n\u3010Altruismo +\u3011\\nInflige Atq., Vel., Def. y Res. -5 a la unidad\\nen combate y anula los efectos de las\\nhabilidades no especiales de la unidad que\\nreducen el da\u00f1o porcentualmente (sin contar\\nlas habilidades especiales con \u00e1rea de efecto).\\n\\nUna vez por turno para cada mapa,\\nsi el rival inicia el ataque y la unidad cae\\nen el combate, dicho rival obtiene\\nuna acci\u00f3n adicional tras el combate\\n(este efecto tiene prioridad sobre otros\\nefectos similares, excepto Altruismo;\\nsi se activan este estado y Altruismo\\nal mismo tiempo, se considera que ambos\\nse han activado; en caso de conflicto,\\nse considera que otros efectos,\\nexcepto Altruismo, no se han activado)."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_118_NOSKW",
+		"value": "$aOtorga Atq., Vel., Def. y Res. +X \u00d7 2 a la unidad,\\nesta inflige +X \u00d7 3 puntos de da\u00f1o adicionales\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto) y se reduce el da\u00f1o de los ataques\\nenemigos en X \u00d7 3 durante el combate (sin\\ncontar las habilidades especiales con \u00e1rea de\\nefecto), donde X equivale al n\u00famero de aliados\\nen el mapa con el efecto Leyes de Sacae activo\\n(incluyendo a la unidad; m\u00e1x.: 3).\\n\\nSi la unidad inicia el combate, inflige\u3010Altruismo +\u3011\\nal rival y a todos los enemigos situados en un\\nradio de 2 casillas de dicho rival en su pr\u00f3xima\\nacci\u00f3n tras el combate. (Hasta el final del turno)."
+	},
+	{
+		"key": "MID_ENHANCE_HELP_118",
+		"value": "Se fortalece conforme comparte este estado\\ncon m\u00e1s aliados; inflige Altruismo despu\u00e9s\\ndel combate."
+	},
+	{
+		"key": "MID_MISSION_S202609BOARDGAME01_TITLE",
+		"value": "Peones de Loki"
+	},
+	{
+		"key": "MID_MISSION_S202609BOARDGAME01_A1",
+		"value": "PdL: Completar partida"
+	},
+	{
+		"key": "MID_MISSION_H_S202609BOARDGAME01_A1",
+		"value": "Completa una partida de Peones de Loki."
+	},
+	{
+		"key": "MID_MISSION_S202609HERO01_TITLE",
+		"value": "Batallas m\u00edticas"
+	},
+	{
+		"key": "MID_MISSION_S202609HERO01_A1",
+		"value": "Derrotar a Haitaka"
+	},
+	{
+		"key": "MID_MISSION_H_S202609HERO01_A1",
+		"value": "Gana la batalla m\u00edtica contra Haitaka, General\\ntenaz, con Anna, Comandante, en tu batall\u00f3n."
+	},
+	{
+		"key": "MID_MISSION_S202609HERO01_A2",
+		"value": "Haitaka contra Haitaka"
+	},
+	{
+		"key": "MID_MISSION_H_S202609HERO01_A2",
+		"value": "Gana la batalla m\u00edtica contra Haitaka, General\\ntenaz, en modo extremo o superior con\\nHaitaka, General tenaz, en tu batall\u00f3n."
+	},
+	{
+		"key": "MID_MISSION_S202609HERO01_A3",
+		"value": "Derrotar a Haitaka: Anna"
+	},
+	{
+		"key": "MID_MISSION_H_S202609HERO01_A3",
+		"value": "Con Anna, Comandante, derrota a Haitaka,\\nGeneral tenaz, en su versi\u00f3n de nivel 40 o\\nsuperior."
+	},
+	{
+		"key": "MID_MISSION_S202609HERO01_A4",
+		"value": "Derrotar a Haitaka: 40+"
+	},
+	{
+		"key": "MID_MISSION_H_S202609HERO01_A4",
+		"value": "Con Haitaka, General tenaz, derrota a Haitaka,\\nGeneral tenaz, en su versi\u00f3n de nivel 40 o\\nsuperior."
+	},
+	{
+		"key": "MID_MISSION_S202609HERO01_A5",
+		"value": "Derrotar a Haitaka: inf."
+	},
+	{
+		"key": "MID_MISSION_H_S202609HERO01_A5",
+		"value": "Gana la batalla m\u00edtica contra Haitaka, General\\ntenaz, en modo extremo o superior con un\\nbatall\u00f3n de unidades de infanter\u00eda."
+	},
+	{
+		"key": "MID_MISSION_S202609JOURNEY01_TITLE",
+		"value": "Viaje heroico"
+	},
+	{
+		"key": "MID_MISSION_S202609JOURNEY01_A1",
+		"value": "Superar Viaje heroico"
+	},
+	{
+		"key": "MID_MISSION_H_S202609JOURNEY01_A1",
+		"value": "Superar Viaje heroico."
+	},
+	{
+		"key": "MID_MISSION_S202609JOURNEY01_A2",
+		"value": "Superar Viaje heroico"
+	},
+	{
+		"key": "MID_MISSION_H_S202609JOURNEY01_A2",
+		"value": "Superar Viaje heroico."
+	},
+	{
+		"key": "MID_MISSION_S202609MJOLNIR01_TITLE",
+		"value": "Embate de Mj\u00f6lnir"
+	},
+	{
+		"key": "MID_MISSION_S202609MJOLNIR01_A1",
+		"value": "Vencer con tu invocador"
+	},
+	{
+		"key": "MID_MISSION_H_S202609MJOLNIR01_A1",
+		"value": "Vence a enemigos con tu invocador\\nen el Embate de Mj\u00f6lnir."
+	},
+	{
+		"key": "MID_MISSION_S202609MJOLNIR01_A2",
+		"value": "Vencer con tu invocador"
+	},
+	{
+		"key": "MID_MISSION_H_S202609MJOLNIR01_A2",
+		"value": "Vence a enemigos con tu invocador\\nen el Embate de Mj\u00f6lnir."
+	},
+	{
+		"key": "MID_MISSION_S202609SENKA01_DAILY_TITLE",
+		"value": "La Tormenta"
+	},
+	{
+		"key": "MID_MISSION_S202609SENKA01_DAILY_A1",
+		"value": "Superar mapa"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SENKA01_DAILY_A1",
+		"value": "Supera uno de los \u00faltimos\\nmapas de la Tormenta."
+	},
+	{
+		"key": "MID_MISSION_S202609SENKA01_DAILY_A2",
+		"value": "Superar mapa"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SENKA01_DAILY_A2",
+		"value": "Supera uno de los \u00faltimos\\nmapas de la Tormenta."
+	},
+	{
+		"key": "MID_MISSION_S202609SENKA01_DAILY_A3",
+		"value": "Superar mapa"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SENKA01_DAILY_A3",
+		"value": "Supera uno de los \u00faltimos\\nmapas de la Tormenta."
+	},
+	{
+		"key": "MID_MISSION_S202609SENKA01_DAILY_A4",
+		"value": "Superar mapa"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SENKA01_DAILY_A4",
+		"value": "Supera uno de los \u00faltimos\\nmapas de la Tormenta."
+	},
+	{
+		"key": "MID_MISSION_S202609SENKA02_DAILY_TITLE",
+		"value": "La Tormenta"
+	},
+	{
+		"key": "MID_MISSION_S202609SENKA02_DAILY_A1",
+		"value": "Superar mapa"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SENKA02_DAILY_A1",
+		"value": "Supera uno de los \u00faltimos\\nmapas de la Tormenta."
+	},
+	{
+		"key": "MID_MISSION_S202609SENKA02_DAILY_A2",
+		"value": "Superar mapa"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SENKA02_DAILY_A2",
+		"value": "Supera uno de los \u00faltimos\\nmapas de la Tormenta."
+	},
+	{
+		"key": "MID_MISSION_S202609SENKA02_DAILY_A3",
+		"value": "Superar mapa"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SENKA02_DAILY_A3",
+		"value": "Supera uno de los \u00faltimos\\nmapas de la Tormenta."
+	},
+	{
+		"key": "MID_MISSION_S202609SENKA02_DAILY_A4",
+		"value": "Superar mapa"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SENKA02_DAILY_A4",
+		"value": "Supera uno de los \u00faltimos\\nmapas de la Tormenta."
+	},
+	{
+		"key": "MID_MISSION_S202609SUBSC02_TITLE",
+		"value": "\u00a0Pase de Feh"
+	},
+	{
+		"key": "MID_MISSION_S202609SUBSC02_A1",
+		"value": "Vencer enemigos"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SUBSC02_A1",
+		"value": "Vence a un enemigo."
+	},
+	{
+		"key": "MID_MISSION_S202609SUBSC02_A2",
+		"value": "Vencer enemigos"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SUBSC02_A2",
+		"value": "Vence a un enemigo."
+	},
+	{
+		"key": "MID_MISSION_S202609SUBSC02_A3",
+		"value": "Vencer enemigos"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SUBSC02_A3",
+		"value": "Vence a un enemigo."
+	},
+	{
+		"key": "MID_MISSION_S202609SUBSC02_A4",
+		"value": "Gladiador"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SUBSC02_A4",
+		"value": "Vence a rivales de cualquier\\nnivel de dificultad en el coliseo."
+	},
+	{
+		"key": "MID_MISSION_S202609SUBSC02_A5",
+		"value": "Gladiador"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SUBSC02_A5",
+		"value": "Vence a rivales de cualquier\\nnivel de dificultad en el coliseo."
+	},
+	{
+		"key": "MID_MISSION_S202609SUBSC02_A6",
+		"value": "Objetivo: acorazados"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SUBSC02_A6",
+		"value": "Vence a enemigos acorazados."
+	},
+	{
+		"key": "MID_MISSION_S202609SUBSC02_A7",
+		"value": "Poder antia\u00e9reo"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SUBSC02_A7",
+		"value": "Vence a enemigos a\u00e9reos."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_TITLE",
+		"value": "Asalto a a\u00e9reos"
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A1",
+		"value": "Objetivo: a\u00e9reos"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A1",
+		"value": "Vence a enemigos a\u00e9reos."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A2",
+		"value": "Objetivo: nivel 20+ a\u00e9reos"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A2",
+		"value": "Vence a enemigos a\u00e9reos\\nde nivel 20 o superior."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A3",
+		"value": "Objetivo: a\u00e9reos"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A3",
+		"value": "Vence a enemigos a\u00e9reos de nivel 20\\no superior con unidades con espada."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A4",
+		"value": "Objetivo: a\u00e9reos"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A4",
+		"value": "Vence a enemigos a\u00e9reos de nivel 20\\no superior con unidades con lanza."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A5",
+		"value": "Objetivo: a\u00e9reos"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A5",
+		"value": "Vence a enemigos a\u00e9reos de nivel 20\\no superior con unidades con hacha."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A6",
+		"value": "Objetivo: a\u00e9reos"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A6",
+		"value": "Vence a enemigos a\u00e9reos de nivel 20\\no superior con unidades con arco gris."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A7",
+		"value": "Objetivo: a\u00e9reos"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A7",
+		"value": "Vence a enemigos a\u00e9reos de nivel 20\\no superior con unidades de infanter\u00eda."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A8",
+		"value": "Objetivo: a\u00e9reos"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A8",
+		"value": "Vence a enemigos a\u00e9reos de nivel 20\\no superior con unidades acorazadas."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A9",
+		"value": "Objetivo: nivel 30+ a\u00e9reos"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A9",
+		"value": "Vence a enemigos a\u00e9reos\\nde nivel 30 o superior."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A10",
+		"value": "Objetivo: a\u00e9reos"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A10",
+		"value": "Vence a enemigos a\u00e9reos de nivel 30\\no superior con unidades con grimorio rojo."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A11",
+		"value": "Objetivo: a\u00e9reos"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A11",
+		"value": "Vence a enemigos a\u00e9reos de nivel 30\\no superior con unidades con grimorio azul."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A12",
+		"value": "Objetivo: a\u00e9reos"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A12",
+		"value": "Vence a enemigos a\u00e9reos de nivel 30\\no superior con unidades con grimorio verde."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A13",
+		"value": "Objetivo: a\u00e9reos"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A13",
+		"value": "Vence a enemigos a\u00e9reos de nivel 30\\no superior con unidades con daga gris."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A14",
+		"value": "Objetivo: a\u00e9reos"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A14",
+		"value": "Vence a enemigos a\u00e9reos de nivel 30\\no superior con unidades de caballer\u00eda."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A15",
+		"value": "Objetivo: a\u00e9reos"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A15",
+		"value": "Vence a enemigos a\u00e9reos de nivel 30\\no superior con unidades a\u00e9reas."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A16",
+		"value": "Objetivo: nivel 40+ a\u00e9reos"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A16",
+		"value": "Vence a enemigos a\u00e9reos\\nde nivel 40 o superior."
+	},
+	{
+		"key": "MID_MISSION_W_S202609STORY_P01_TITLE",
+		"value": "De cara al viento"
+	},
+	{
+		"key": "MID_MISSION_W_S202609STORY_P01_A1",
+		"value": "Anexo 128-1: extremo"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202609STORY_P01_A1",
+		"value": "Supera la 1.\u00aa parte del anexo 128 en modo\\nextremo con un espadach\u00edn en tu batall\u00f3n.\\n(Las unidades de apoyo desplegadas al usar\\nAgrupar no cuentan). Los cuatro aliados\\ndeben sobrevivir."
+	},
+	{
+		"key": "MID_MISSION_W_S202609STORY_P01_A2",
+		"value": "Anexo 128-2: extremo"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202609STORY_P01_A2",
+		"value": "Supera la 2.\u00aa parte del anexo 128 en modo\\nextremo con un lancero en tu batall\u00f3n.\\n(Las unidades de apoyo desplegadas al usar\\nAgrupar no cuentan). Los cuatro aliados\\ndeben sobrevivir."
+	},
+	{
+		"key": "MID_MISSION_W_S202609STORY_P01_A3",
+		"value": "Anexo 128-3: extremo"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202609STORY_P01_A3",
+		"value": "Supera la 3.\u00aa parte del anexo 128 en modo\\nextremo con una unidad con hacha en tu\\nbatall\u00f3n. (Las unidades de apoyo desplegadas\\nal usar Agrupar no cuentan). Los cuatro aliados\\ndeben sobrevivir."
+	},
+	{
+		"key": "MPID_\u53cc\u754c\u30ea\u30f32",
+		"value": "Lyn"
+	},
+	{
+		"key": "MPID_SEARCH_\u53cc\u754c\u30ea\u30f32",
+		"value": "Lyn"
+	},
+	{
+		"key": "MPID_\u30b5\u30ab\u30ec\u30d9\u30c3\u30ab",
+		"value": "Rebecca"
+	},
+	{
+		"key": "MPID_SEARCH_\u30b5\u30ab\u30ec\u30d9\u30c3\u30ab",
+		"value": "Rebecca"
+	},
+	{
+		"key": "MPID_\u30b5\u30ab\u30b7\u30e3\u30df\u30a2",
+		"value": "Shamir"
+	},
+	{
+		"key": "MPID_SEARCH_\u30b5\u30ab\u30b7\u30e3\u30df\u30a2",
+		"value": "Shamir"
+	},
+	{
+		"key": "MPID_\u3064\u306a\u304c\u308a\u30b5\u30ab\u30bf\u30af\u30df",
+		"value": "Takumi"
+	},
+	{
+		"key": "MPID_SEARCH_\u3064\u306a\u304c\u308a\u30b5\u30ab\u30bf\u30af\u30df",
+		"value": "Takumi"
+	},
+	{
+		"key": "MEID_\u30bb\u30a4\u30ba2",
+		"value": "Sei\u00f0r"
+	},
+	{
+		"key": "MPID_HONOR_\u53cc\u754c\u30ea\u30f32",
+		"value": "Tierra y cielo"
+	},
+	{
+		"key": "MPID_HONOR_\u30b5\u30ab\u30ec\u30d9\u30c3\u30ab",
+		"value": "Bajo la luz del sol"
+	},
+	{
+		"key": "MPID_HONOR_\u30b5\u30ab\u30b7\u30e3\u30df\u30a2",
+		"value": "Senda del arco"
+	},
+	{
+		"key": "MPID_HONOR_\u3064\u306a\u304c\u308a\u30b5\u30ab\u30bf\u30af\u30df",
+		"value": "Pr\u00edncipe arquero"
+	},
+	{
+		"key": "MEID_HONOR_\u30bb\u30a4\u30ba2",
+		"value": "Luz renacida"
+	},
+	{
+		"key": "MPID_H_\u53cc\u754c\u30ea\u30f32",
+		"value": "Criadas por la abundante tierra y el viento de las\\nllanuras, ambas siguen orgullosas de sus ra\u00edces\\nsacaenas. Aparecen en Fire Emblem: The\\nBlazing Blade / Fire Emblem: The Binding Blade."
+	},
+	{
+		"key": "MPID_H_\u30b5\u30ab\u30ec\u30d9\u30c3\u30ab",
+		"value": "Usando el atuendo t\u00edpico de los n\u00f3madas de\\nSacae, ella avanza con energ\u00eda y experimenta\\nla brisa de las llanuras que est\u00e1 en su interior.\\nAparece en Fire Emblem: The Blazing Blade."
+	},
+	{
+		"key": "MPID_H_\u30b5\u30ab\u30b7\u30e3\u30df\u30a2",
+		"value": "Vestida como una habitante de las llanuras\\nde Sacae, admira lo funcional y c\u00f3modo\\nque es el atuendo. Aparece en Fire Emblem:\\nThree Houses."
+	},
+	{
+		"key": "MPID_H_\u3064\u306a\u304c\u308a\u30b5\u30ab\u30bf\u30af\u30df",
+		"value": "Un pr\u00edncipe de Hoshido poseedor del arco\\nsagrado Yumi Fujin. Lleva el atuendo de los\\nsacaenos y se enfrenta a nuevos horizontes.\\nAparece en Fire Emblem Fates."
+	},
+	{
+		"key": "MEID_H_\u30bb\u30a4\u30ba2",
+		"value": "Diosa de Vanaheimr que obtuvo nuevamente\\nel poder del \u00c1r. Est\u00e1 en busca de su hija,\\nquien se perdi\u00f3 en el futuro."
+	},
+	{
+		"key": "MPID_VOICE_\u53cc\u754c\u30ea\u30f32",
+		"value": "Wendee Lee + Megan Taylor Harvey"
+	},
+	{
+		"key": "MPID_VOICE_\u30b5\u30ab\u30ec\u30d9\u30c3\u30ab",
+		"value": "Hunter Mackenzie Austin"
+	},
+	{
+		"key": "MPID_VOICE_\u30b5\u30ab\u30b7\u30e3\u30df\u30a2",
+		"value": "Allegra Clark"
+	},
+	{
+		"key": "MPID_VOICE_\u3064\u306a\u304c\u308a\u30b5\u30ab\u30bf\u30af\u30df",
+		"value": "Michael Sinterniklaas"
+	},
+	{
+		"key": "MEID_VOICE_\u30bb\u30a4\u30ba2",
+		"value": "Valeria Rodriguez"
+	},
+	{
+		"key": "MPID_VOICE_\u4f1d\u627f\u30a8\u30ea\u30a6\u30c3\u30c9EX01",
+		"value": "Yuri Lowenthal"
+	},
+	{
+		"key": "MPID_ILLUST_\u53cc\u754c\u30ea\u30f32",
+		"value": "Essual (\u30a8\u30b7\u30e5\u30a2\u30eb)"
+	},
+	{
+		"key": "MPID_ILLUST_\u30b5\u30ab\u30ec\u30d9\u30c3\u30ab",
+		"value": "\uff2b\uff45\uff27"
+	},
+	{
+		"key": "MPID_ILLUST_\u30b5\u30ab\u30b7\u30e3\u30df\u30a2",
+		"value": "Yamada Kotaro (\u5c71\u7530\u5b5d\u592a\u90ce)"
+	},
+	{
+		"key": "MPID_ILLUST_\u3064\u306a\u304c\u308a\u30b5\u30ab\u30bf\u30af\u30df",
+		"value": "Tobi"
+	},
+	{
+		"key": "MEID_ILLUST_\u30bb\u30a4\u30ba2",
+		"value": "sasa (\u4f50\u3005)"
+	},
+	{
+		"key": "MPID_ILLUST_\u4f1d\u627f\u30a8\u30ea\u30a6\u30c3\u30c9EX01",
+		"value": "azu\u2010taro (azu\u30bf\u30ed\u30a6)"
+	},
+	{
+		"key": "MPID_LEGEND_\u53cc\u754c\u30ea\u30f32",
+		"value": "(Las habilidades armonizadas se pueden usar\\ntocando el bot\u00f3n correspondiente. Esta habilidad\\nse puede usar solo una vez por mapa. Las parejas\\nde unidades desplegadas con Agrupar no\\npueden utilizar habilidades armonizadas).\\n(Si una unidad cuenta con un estado o una\\nhabilidad que le permita usar un Estilo, no podr\u00e1\\nusar habilidades dobles o armonizadas mientras\\ntodav\u00eda pueda realizar una acci\u00f3n, y s\u00ed podr\u00e1\\nusarlas despu\u00e9s de que la unidad haya actuado).\\n\\nEfecto fragoroso: The Blazing Blade /\\nThe Binding Blade\\nOtorga puntos adicionales en Batallas fragorosas.\\n(M\u00e1s informaci\u00f3n disponible en la secci\u00f3n\\nde ayuda de Batallas fragorosas)."
+	},
+	{
+		"key": "MID_TIPS_Summon_v1009b_saka_01_\u53cc\u754c\u30ea\u30f32",
+		"value": "Lideran la ofensiva antes de enviar al\\nfrente a sus aliados. \u00a1Unen fuerzas con\\nsus aliados y arrasan a sus enemigos\\nde un golpe!"
+	},
+	{
+		"key": "MID_TIPS_Summon_v1009b_saka_01_\u3064\u306a\u304c\u308a\u30b5\u30ab\u30bf\u30af\u30df",
+		"value": "Se teletransporta 4 casillas hasta las\\nfilas enemigas. \u00a1Evita el primer ataque\\ndel enemigo y contrataca con fuerza\\npara cazarlos a todos!"
+	},
+	{
+		"key": "MID_TIPS_Summon_v1009b_saka_01_\u30b5\u30ab\u30b7\u30e3\u30df\u30a2",
+		"value": "Expone los puntos d\u00e9biles del objetivo\\ny fortalece sus filas con Gran talento.\\n\u00a1Anula las habilidades del resto\\nde los enemigos en combate!"
+	},
+	{
+		"key": "MID_TIPS_Summon_v1009b_saka_01_\u30b5\u30ab\u30ec\u30d9\u30c3\u30ab",
+		"value": "\u00a1Arrasa a unidades bestias, a\u00e9reas y\\nde caballer\u00eda! Cuando ataca, su rival\\nno puede activar el efecto Protecci\u00f3n."
+	},
+	{
+		"key": "MSID_\u5e0c\u671b\u306e\u5973\u795e\u306e\u8056\u5177",
+		"value": "Esperanza sacra"
+	},
+	{
+		"key": "MSID_SEARCH_\u5e0c\u671b\u306e\u5973\u795e\u306e\u8056\u5177",
+		"value": "Esperanza sacra"
+	},
+	{
+		"key": "MSID_\u30b5\u30ab\u306e\u5a18\u4e8c\u4eba\u306e\u5f13",
+		"value": "Arco del llano"
+	},
+	{
+		"key": "MSID_SEARCH_\u30b5\u30ab\u306e\u5a18\u4e8c\u4eba\u306e\u5f13",
+		"value": "Arco del llano"
+	},
+	{
+		"key": "MSID_\u8349\u539f\u306e\u98fe\u308a\u5f13",
+		"value": "Arco decorado"
+	},
+	{
+		"key": "MSID_SEARCH_\u8349\u539f\u306e\u98fe\u308a\u5f13",
+		"value": "Arco decorado"
+	},
+	{
+		"key": "MSID_\u8349\u539f\u306e\u72e9\u4eba\u306e\u5f13",
+		"value": "Sacaeno de caza"
+	},
+	{
+		"key": "MSID_SEARCH_\u8349\u539f\u306e\u72e9\u4eba\u306e\u5f13",
+		"value": "Sacaeno de caza"
+	},
+	{
+		"key": "MSID_\u8349\u539f\u306e\u98a8\u547c\u3073\u306e\u5f13",
+		"value": "Arco c\u00e9firo"
+	},
+	{
+		"key": "MSID_SEARCH_\u8349\u539f\u306e\u98a8\u547c\u3073\u306e\u5f13",
+		"value": "Arco cefiro"
+	},
+	{
+		"key": "MSID_\u30cf\u30f3\u30bf\u30fc\u30dc\u30ec\u30fc",
+		"value": "Cazador"
+	},
+	{
+		"key": "MSID_SEARCH_\u30cf\u30f3\u30bf\u30fc\u30dc\u30ec\u30fc",
+		"value": "Cazador"
+	},
+	{
+		"key": "MSID_\u6b63\u771f\u30b5\u30ab\u306e\u639f",
+		"value": "Edictos de Sacae"
+	},
+	{
+		"key": "MSID_SEARCH_\u6b63\u771f\u30b5\u30ab\u306e\u639f",
+		"value": "Edictos de Sacae"
+	},
+	{
+		"key": "MSID_\u51f6\u9ce5\u306e\u4e00\u6483",
+		"value": "Golpe certero"
+	},
+	{
+		"key": "MSID_SEARCH_\u51f6\u9ce5\u306e\u4e00\u6483",
+		"value": "Golpe certero"
+	},
+	{
+		"key": "MSID_\u653b\u9632\u4e00\u4f53\u306e\u9663",
+		"value": "Adem\u00e1n audaz"
+	},
+	{
+		"key": "MSID_SEARCH_\u653b\u9632\u4e00\u4f53\u306e\u9663",
+		"value": "Ademan audaz"
+	},
+	{
+		"key": "MSID_\u727d\u5236\u5c04\u6483\u30fb\u5f37\u5316\u7121\u52b9",
+		"value": "Cobijo supresor"
+	},
+	{
+		"key": "MSID_SEARCH_\u727d\u5236\u5c04\u6483\u30fb\u5f37\u5316\u7121\u52b9",
+		"value": "Cobijo supresor"
+	},
+	{
+		"key": "MSID_\u59cb\u9f13\u52d5\u30fb\u898b\u5207\u308a",
+		"value": "Aceleraci\u00f3n nula"
+	},
+	{
+		"key": "MSID_SEARCH_\u59cb\u9f13\u52d5\u30fb\u898b\u5207\u308a",
+		"value": "Aceleracion nula"
+	},
+	{
+		"key": "MSID_H_\u5e0c\u671b\u306e\u5973\u795e\u306e\u8056\u5177",
+		"value": "$aFacilita la ejecuci\u00f3n de habilidades especiales:\\n-1 a la cuenta regresiva.\\n\\nAl inicio del turno del jugador o del turno del\\nrival, otorga Atq. y Res. +6,\u3010Portal del tiempo\u3011\\ny\u3010Empat\u00eda\u3011a la unidad y a los aliados\\nsituados en un radio de 2 casillas de esta hasta\\nel final del turno.\\n\\nSi un aliado inicia el ataque y tiene efectos\\nde\u3010Portal del tiempo\u3011activos, este recibe una\\nacci\u00f3n adicional tras el combate (si una habilidad\\nde este aliado activa un efecto que le otorga\\nuna acci\u00f3n adicional, como Asalto impetuoso,\\nse considera que dicho efecto no se ha activado;\\nsi una habilidad que no sea del aliado activa un\\nefecto que le otorga a dicho aliado una acci\u00f3n\\nadicional al mismo tiempo que este efecto, se\\nconsidera que este efecto ha sido activado; una\\nvez por turno).\\n\\nOtorga Atq., Vel., Def. y Res. +15 a la unidad,\\nesta inflige 25 puntos de da\u00f1o adicionales\\n(incluyendo las habilidades especiales con \u00e1rea\\nde efecto) y se reduce el da\u00f1o de los ataques\\nenemigos en 15 puntos durante el combate\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto).\\n\\nSi la unidad inicia el ataque, se activan los\\nsiguientes efectos en funci\u00f3n de la habilidad\\nespecial equipada por la unidad: si tiene equipada\\nuna habilidad especial con \u00e1rea de efecto, -X a\\nla cuenta regresiva de la unidad antes de que\\nse active la habilidad especial antes del combate;\\nsi tiene equipada una habilidad especial que\\nse activa al atacar (sin contar las habilidades\\nespeciales con \u00e1rea de efecto), -X a su cuenta\\nregresiva antes de su primer ataque durante el\\ncombate, donde X equivale al n\u00famero de casillas\\nexistentes entre la posici\u00f3n inicial y la final de\\nla unidad y al n\u00famero de turnos (el que sea\\nmayor; m\u00e1x.: 3).\\n\\n\u3010Portal del tiempo\u3011\\nLos aliados situados en un radio de 4 casillas\\nde la unidad podr\u00e1n moverse a una de sus\\ncasillas adyacentes (solo ese turno).\\n\\n\u3010Empat\u00eda\u3011\\nEl Atq., Vel., Def. y Res. de la unidad aumentan\\nen una cuant\u00eda equivalente al n\u00famero de tipos\\nde efectos de bonificaci\u00f3n y penalizaci\u00f3n\\nactivos en el batall\u00f3n del jugador y del rival en\\ncombate (m\u00e1x.: 7; sin contar las bonificaciones\\ny las penalizaciones a los atributos)."
+	},
+	{
+		"key": "MSID_H_\u5e0c\u671b\u306e\u5973\u795e\u306e\u8056\u5177_NOSKW",
+		"value": "$aFacilita la ejecuci\u00f3n de habilidades especiales:\\n-1 a la cuenta regresiva.\\n\\nAl inicio del turno del jugador o del turno del\\nrival, otorga Atq. y Res. +6,\u3010Portal del tiempo\u3011\\ny\u3010Empat\u00eda\u3011a la unidad y a los aliados\\nsituados en un radio de 2 casillas de esta hasta\\nel final del turno.\\n\\nSi un aliado inicia el ataque y tiene efectos\\nde\u3010Portal del tiempo\u3011activos, este recibe una\\nacci\u00f3n adicional tras el combate (si una habilidad\\nde este aliado activa un efecto que le otorga\\nuna acci\u00f3n adicional, como Asalto impetuoso,\\nse considera que dicho efecto no se ha activado;\\nsi una habilidad que no sea del aliado activa un\\nefecto que le otorga a dicho aliado una acci\u00f3n\\nadicional al mismo tiempo que este efecto, se\\nconsidera que este efecto ha sido activado; una\\nvez por turno).\\n\\nOtorga Atq., Vel., Def. y Res. +15 a la unidad,\\nesta inflige 25 puntos de da\u00f1o adicionales\\n(incluyendo las habilidades especiales con \u00e1rea\\nde efecto) y se reduce el da\u00f1o de los ataques\\nenemigos en 15 puntos durante el combate\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto).\\n\\nSi la unidad inicia el ataque, se activan los\\nsiguientes efectos en funci\u00f3n de la habilidad\\nespecial equipada por la unidad: si tiene equipada\\nuna habilidad especial con \u00e1rea de efecto, -X a\\nla cuenta regresiva de la unidad antes de que\\nse active la habilidad especial antes del combate;\\nsi tiene equipada una habilidad especial que\\nse activa al atacar (sin contar las habilidades\\nespeciales con \u00e1rea de efecto), -X a su cuenta\\nregresiva antes de su primer ataque durante el\\ncombate, donde X equivale al n\u00famero de casillas\\nexistentes entre la posici\u00f3n inicial y la final de\\nla unidad y al n\u00famero de turnos (el que sea\\nmayor; m\u00e1x.: 3)."
+	},
+	{
+		"key": "MSID_H_\u30b5\u30ab\u306e\u5a18\u4e8c\u4eba\u306e\u5f13",
+		"value": "$aPermite usar\u3010Movilidad (\uff12)\u3011.\\nFacilita la ejecuci\u00f3n de habilidades especiales:\\n-1 a la cuenta regresiva. Eficaz contra unidades\\na\u00e9reas.\\n\\nLa unidad y los aliados situados en una cruz de\\n3 columnas y 3 filas respecto a esta obtienen\\nAtq., Vel., Def. y Res. +X, donde X equivale a 15\\npara la unidad y a 5 para los aliados. La unidad\\ny dichos aliados infligen Y puntos de da\u00f1o\\nadicionales, donde Y equivale a 25 para la unidad\\ny a 10 para los aliados (sin contar las habilidades\\nespeciales con \u00e1rea de efecto), y obtienen -2\\na la cuenta regresiva antes de su primer ataque\\ndoble en combate.\\n\\nSe reduce el da\u00f1o de los ataques enemigos en\\n15 puntos (sin contar las habilidades especiales\\ncon \u00e1rea de efecto), se anulan los efectos que\\ninfligen +X a la cuenta regresiva de la unidad en\\ncombate y esta recupera 7 PV tras el combate.\\n\\nLa unidad puede usar el\u3010Estilo\u3011siguiente:\\n\u2015\u2015\u2015\u2015\u2015\u2015 Estilo Tormenta Astrea \u2015\u2015\u2015\u2015\u2015\u2015\\nLa unidad puede atacar a enemigos situados en\\nun radio de 6 casillas a su alrededor y en una\\ncruz de 3 columnas y 3 filas respecto a ella\\nindependientemente de su alcance.\\n\\nLa unidad sufre un contrataque si se cumple\\nuna de las condiciones siguientes: si el rival\\nes una unidad acorazada con un alcance de 2;\\nsi el rival puede contratacar independientemente\\ndel alcance de la unidad; o si el alcance del rival\\nes igual a la distancia entre la unidad y dicho\\nenemigo.\\n\\nLa unidad no se puede mover o atacar\\nestructuras, se anulan los efectos que alteran\\nel movimiento tras el combate, no puede activar\\nhabilidades especiales con \u00e1rea de efecto y el\\nmovimiento restante otorgado por Movilidad\\nse considera 0. El alcance del efecto de esta\\nhabilidad se considera 2. Este estilo solo se\\npuede usar una vez por turno.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\n\\n\u3010Movilidad (\uff12)\u3011\\nLa unidad puede desplazarse \uff12 casilla(s)\\ndespu\u00e9s de atacar, usar una habilidad de apoyo\\no destruir una estructura.\\n\\n(Solo una vez por turno. Solo se aplica el valor\\nm\u00e1s alto. No acumulable.)\\n\\n\u3010Estilo\u3011\\nCambia de Estilo tocando el bot\u00f3n \"Estilo\"\\nen la parte inferior de la pantalla.\\n\\nEl Estilo de una unidad solo se activa cuando\\nesta realiza una acci\u00f3n. El uso de Estilo se\\ndesactiva cuando la unidad se despliega\\ncon Agrupar o cuando esta est\u00e9 equipada\\ncon varias habilidades que tengan un Estilo."
+	},
+	{
+		"key": "MSID_H_\u30b5\u30ab\u306e\u5a18\u4e8c\u4eba\u306e\u5f13_NOSKW",
+		"value": "$aPermite usar\u3010Movilidad (\uff12)\u3011.\\nFacilita la ejecuci\u00f3n de habilidades especiales:\\n-1 a la cuenta regresiva. Eficaz contra unidades\\na\u00e9reas.\\n\\nLa unidad y los aliados situados en una cruz de\\n3 columnas y 3 filas respecto a esta obtienen\\nAtq., Vel., Def. y Res. +X, donde X equivale a 15\\npara la unidad y a 5 para los aliados. La unidad\\ny dichos aliados infligen Y puntos de da\u00f1o\\nadicionales, donde Y equivale a 25 para la unidad\\ny a 10 para los aliados (sin contar las habilidades\\nespeciales con \u00e1rea de efecto), y obtienen -2\\na la cuenta regresiva antes de su primer ataque\\ndoble en combate.\\n\\nSe reduce el da\u00f1o de los ataques enemigos en\\n15 puntos (sin contar las habilidades especiales\\ncon \u00e1rea de efecto), se anulan los efectos que\\ninfligen +X a la cuenta regresiva de la unidad en\\ncombate y esta recupera 7 PV tras el combate.\\n\\nLa unidad puede usar el\u3010Estilo\u3011siguiente:\\n\u2015\u2015\u2015\u2015\u2015\u2015 Estilo Tormenta Astrea \u2015\u2015\u2015\u2015\u2015\u2015\\nLa unidad puede atacar a enemigos situados en\\nun radio de 6 casillas a su alrededor y en una\\ncruz de 3 columnas y 3 filas respecto a ella\\nindependientemente de su alcance.\\n\\nLa unidad sufre un contrataque si se cumple\\nuna de las condiciones siguientes: si el rival\\nes una unidad acorazada con un alcance de 2;\\nsi el rival puede contratacar independientemente\\ndel alcance de la unidad; o si el alcance del rival\\nes igual a la distancia entre la unidad y dicho\\nenemigo.\\n\\nLa unidad no se puede mover o atacar\\nestructuras, se anulan los efectos que alteran\\nel movimiento tras el combate, no puede activar\\nhabilidades especiales con \u00e1rea de efecto y el\\nmovimiento restante otorgado por Movilidad\\nse considera 0. El alcance del efecto de esta\\nhabilidad se considera 2. Este estilo solo se\\npuede usar una vez por turno.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015"
+	},
+	{
+		"key": "MSID_H_\u8349\u539f\u306e\u98fe\u308a\u5f13",
+		"value": "$aPermite usar\\n\u3010Movilidad (Dist.; m\u00e1ximo: \uff13, m\u00ednimo: \uff11)\u3011.\\nFacilita la ejecuci\u00f3n de habilidades especiales:\\n-1 a la cuenta regresiva. Eficaz contra bestias,\\nunidades a\u00e9reas y de caballer\u00eda.\\n\\nSi el rival al que se enfrenta es una bestia o\\nuna unidad a\u00e9rea o de caballer\u00eda, el rival no\\npuede activar el efecto Protecci\u00f3n.\\n\\nAl inicio del turno del jugador o del turno del\\nrival, otorga Atq. y Vel. +6,\u3010Instigaci\u00f3n real\u3011y\\n\"si el rival cuenta con habilidades que no\\nsean especiales y que reduzcan el da\u00f1o\\nporcentualmente, el efecto de dichas habilidades\\ndisminuye a la mitad en combate (sin contar las\\nhabilidades especiales con \u00e1rea de efecto)\" a la\\nunidad y los aliados situados en un radio de 2\\ncasillas de esta hasta el final del turno.\\n\\nOtorga Atq., Vel., Def. y Res. +15 a la unidad,\\nesta inflige 25 puntos de da\u00f1o adicionales\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto) y se reduce el da\u00f1o de los ataques\\nenemigos en 15 puntos durante el combate (sin\\ncontar las habilidades especiales con \u00e1rea de\\nefecto). Adem\u00e1s, si el rival es una bestia o una\\nunidad a\u00e9rea o de caballer\u00eda, o si la unidad\\npuede realizar un ataque doble al reducirse en\\n10 puntos la diferencia de Vel. necesaria para\\nejecutarlo (sin contar los ataques dobles que se\\nhan garantizado o impedido), activa\\n\u3010Ataque incesante 100 %\u3011durante el combate.\\n\\n\u3010Movilidad (Dist.; m\u00e1ximo: \uff13, m\u00ednimo: \uff11)\u3011\\nDespu\u00e9s de atacar, usar una habilidad de apoyo\\no destruir una estructura, la unidad puede\\nmoverse un n\u00famero de casillas igual a las que\\nhaya entre su posici\u00f3n inicial y final antes\\nde haber actuado (m\u00e1ximo: \uff13;\\nm\u00ednimo: \uff11; si la unidad utiliz\u00f3 una\\nhabilidad de desplazamiento que la haya\\nteletransportado, el n.\u00ba de movimientos\\nrestantes es \uff11 casilla(s)).\\n\\n\u3010Instigaci\u00f3n real\u3011\\nEl Atq., Vel., Def. y Res. aumentan durante el\\ncombate en una cuant\u00eda equivalente al n\u00famero\\nde casillas existentes entre la posici\u00f3n inicial y\\nla final de quien haya iniciado el ataque \u00d7 2\\n(m\u00e1x.: 8).\\n\\n\u3010Ataque incesante 100 %\u3011\\nInmediatamente despu\u00e9s de ejecutar un ataque\\ndoble, la unidad realiza otro ataque adicional\\ne inflige un 100 % de su da\u00f1o normal\\n(si la unidad no puede ejecutar un ataque doble,\\neste efecto se activa en el momento en el que\\nel segundo ataque hubiera tenido lugar; este\\nefecto se considera un ataque doble, as\u00ed que\\nlos efectos que reducen el da\u00f1o en combate\\nse siguen aplicando, pero se ignoran los que\\nimpiden los ataques dobles o que se ataque\\ndos veces; solo se aplica el valor m\u00e1s alto;\\nno acumulable)."
+	},
+	{
+		"key": "MSID_H_\u8349\u539f\u306e\u98fe\u308a\u5f13_NOSKW",
+		"value": "$aPermite usar\\n\u3010Movilidad (Dist.; m\u00e1ximo: \uff13, m\u00ednimo: \uff11)\u3011.\\nFacilita la ejecuci\u00f3n de habilidades especiales:\\n-1 a la cuenta regresiva. Eficaz contra bestias,\\nunidades a\u00e9reas y de caballer\u00eda.\\n\\nSi el rival al que se enfrenta es una bestia o\\nuna unidad a\u00e9rea o de caballer\u00eda, el rival no\\npuede activar el efecto Protecci\u00f3n.\\n\\nAl inicio del turno del jugador o del turno del\\nrival, otorga Atq. y Vel. +6,\u3010Instigaci\u00f3n real\u3011y\\n\"si el rival cuenta con habilidades que no\\nsean especiales y que reduzcan el da\u00f1o\\nporcentualmente, el efecto de dichas habilidades\\ndisminuye a la mitad en combate (sin contar las\\nhabilidades especiales con \u00e1rea de efecto)\" a la\\nunidad y los aliados situados en un radio de 2\\ncasillas de esta hasta el final del turno.\\n\\nOtorga Atq., Vel., Def. y Res. +15 a la unidad,\\nesta inflige 25 puntos de da\u00f1o adicionales\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto) y se reduce el da\u00f1o de los ataques\\nenemigos en 15 puntos durante el combate (sin\\ncontar las habilidades especiales con \u00e1rea de\\nefecto). Adem\u00e1s, si el rival es una bestia o una\\nunidad a\u00e9rea o de caballer\u00eda, o si la unidad\\npuede realizar un ataque doble al reducirse en\\n10 puntos la diferencia de Vel. necesaria para\\nejecutarlo (sin contar los ataques dobles que se\\nhan garantizado o impedido), activa\\n\u3010Ataque incesante 100 %\u3011durante el combate."
+	},
+	{
+		"key": "MSID_H_\u8349\u539f\u306e\u72e9\u4eba\u306e\u5f13",
+		"value": "$aFacilita la ejecuci\u00f3n de habilidades especiales:\\n-1 a la cuenta regresiva. Eficaz contra unidades\\na\u00e9reas.\\n\\nAl inicio del turno y despu\u00e9s de que la unidad\\nact\u00fae (si usa Movilidad, despu\u00e9s de utilizarla),\\ninflige Vel. y Def. -7,\u3010Exposici\u00f3n\u3011y\u3010Sabotaje\u3011\\na los enemigos m\u00e1s cercanos y a los rivales\\nen un radio de 2 casillas de dichos enemigos\\nen su pr\u00f3xima acci\u00f3n.\\n\\nSi la unidad o un aliado en el mapa derrotan a\\nun enemigo que tenga el efecto\u3010Exposici\u00f3n\u3011\\nactivo en un combate iniciado por la unidad o\\nun aliado, otorga Atq., Vel. y\u3010Gran talento\u3011+4 a la\\nunidad y a los aliados en el mapa despu\u00e9s del\\ncombate.\\n\\nOtorga Atq., Vel., Def. y Res. +15 a la unidad,\\nesta inflige 25 puntos de da\u00f1o adicionales\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto), se reduce el da\u00f1o de los ataques\\nenemigos en 15 puntos (sin contar las habilidades\\nespeciales con \u00e1rea de efecto) y se anulan las\\nhabilidades de todos los enemigos en combate,\\nexcepto las de aquel al que se enfrenta.\\n\\n(Esta habilidad otorga un m\u00e1ximo\\nde\u3010Gran talento\u3011+24 a la unidad y\\nde\u3010Gran talento\u3011+12 a los aliados).\\n\\n\u3010Exposici\u00f3n\u3011\\nLos ataques del enemigo infligen 10 puntos\\nde da\u00f1o adicional.\\n\\n\u3010Sabotaje\u3011\\nInflige una penalizaci\u00f3n en combate a Atq., Vel.,\\nDef. y Res. de la unidad igual a la penalizaci\u00f3n\\nm\u00e1s alta de cada atributo entre los aliados que\\nhaya en un radio de 2 casillas y la propia\\nunidad. Cada penalizaci\u00f3n se calcula por\\nseparado.\\n\\n\u3010Gran talento\u3011\\nA\u00f1ade el valor de Gran talento (+X) a los\\natributos especificados (hasta el final de la\\nbatalla; el valor m\u00e1ximo de X est\u00e1 determinado\\npor el valor de cada uno de los atributos,\\ncon un l\u00edmite de 99, calculando cada atributo\\npor separado, y no puede superar el valor\\nm\u00e1ximo definido en cada habilidad; las mejoras\\nde los atributos no cuentan como efectos\\nde bonificaci\u00f3n)."
+	},
+	{
+		"key": "MSID_H_\u8349\u539f\u306e\u72e9\u4eba\u306e\u5f13_NOSKW",
+		"value": "$aFacilita la ejecuci\u00f3n de habilidades especiales:\\n-1 a la cuenta regresiva. Eficaz contra unidades\\na\u00e9reas.\\n\\nAl inicio del turno y despu\u00e9s de que la unidad\\nact\u00fae (si usa Movilidad, despu\u00e9s de utilizarla),\\ninflige Vel. y Def. -7,\u3010Exposici\u00f3n\u3011y\u3010Sabotaje\u3011\\na los enemigos m\u00e1s cercanos y a los rivales\\nen un radio de 2 casillas de dichos enemigos\\nen su pr\u00f3xima acci\u00f3n.\\n\\nSi la unidad o un aliado en el mapa derrotan a\\nun enemigo que tenga el efecto\u3010Exposici\u00f3n\u3011\\nactivo en un combate iniciado por la unidad o\\nun aliado, otorga Atq., Vel. y\u3010Gran talento\u3011+4 a la\\nunidad y a los aliados en el mapa despu\u00e9s del\\ncombate.\\n\\nOtorga Atq., Vel., Def. y Res. +15 a la unidad,\\nesta inflige 25 puntos de da\u00f1o adicionales\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto), se reduce el da\u00f1o de los ataques\\nenemigos en 15 puntos (sin contar las habilidades\\nespeciales con \u00e1rea de efecto) y se anulan las\\nhabilidades de todos los enemigos en combate,\\nexcepto las de aquel al que se enfrenta.\\n\\n(Esta habilidad otorga un m\u00e1ximo\\nde\u3010Gran talento\u3011+24 a la unidad y\\nde\u3010Gran talento\u3011+12 a los aliados)."
+	},
+	{
+		"key": "MSID_H_\u8349\u539f\u306e\u98a8\u547c\u3073\u306e\u5f13",
+		"value": "$aFacilita la ejecuci\u00f3n de habilidades especiales:\\n-1 a la cuenta regresiva. Eficaz contra unidades\\na\u00e9reas. Permite contratacar independientemente\\nde lo lejos que est\u00e9 el enemigo.\\n\\nLa unidad puede atravesar casillas ocupadas\\npor rivales.\\n\\nLa unidad puede desplazarse a una casilla en\\nun radio de 4 alrededor de esta (se considera\\ncomo una acci\u00f3n de teletransporte).\\n\\nAl inicio del turno del jugador o del turno del rival,\\notorga los efectos\u3010Empat\u00eda\u3011,\u3010Reflejar\u3011y\\n\"aumenta en 10 puntos la diferencia de Vel.\\nnecesaria para que el rival ejecute un ataque\\ndoble en combate\" a la unidad y los aliados en\\nun radio de 2 casillas de la unidad hasta el final\\ndel turno.\\n\\nOtorga Atq., Vel., Def. y Res. +15 a la unidad,\\nesta inflige 25 puntos de da\u00f1o adicionales\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto) y se reduce el da\u00f1o de los ataques\\nenemigos en 15 puntos durante el combate (sin\\ncontar las habilidades especiales con \u00e1rea de\\nefecto). Adem\u00e1s, si la unidad puede realizar un\\nataque doble al reducirse en 10 puntos la\\ndiferencia de Vel. necesaria para ejecutarlo (sin\\ncontar los ataques dobles que se han garantizado\\no impedido), activa\u3010Ataque incesante 100 %\u3011\\nen combate.\\n\\n\u3010Empat\u00eda\u3011\\nEl Atq., Vel., Def. y Res. de la unidad aumentan\\nen una cuant\u00eda equivalente al n\u00famero de tipos\\nde efectos de bonificaci\u00f3n y penalizaci\u00f3n\\nactivos en el batall\u00f3n del jugador y del rival en\\ncombate (m\u00e1x.: 7; sin contar las bonificaciones\\ny las penalizaciones a los atributos).\\n\\n\u3010Reflejar\u3011\\nSe reduce en 7 puntos el da\u00f1o que inflige\\nel primer ataque del enemigo en combate\\n(\"primer ataque\" suele referirse solo\\nal primer golpe; en cambio, con efectos que\\notorgan \"la unidad ataca dos veces\", se refiere\\nal primero y al segundo) y el siguiente ataque\\nde la unidad inflige una cantidad de da\u00f1o\\nadicional equivalente a la penalizaci\u00f3n que\\nsufre el primer ataque del rival (de cualquier\\norigen, habilidades incluidas; el efecto\\nse reinicia al final del combate). (Hasta\\nel final del turno).\\n\\n\u3010Ataque incesante 100 %\u3011\\nInmediatamente despu\u00e9s de ejecutar un ataque\\ndoble, la unidad realiza otro ataque adicional\\ne inflige un 100 % de su da\u00f1o normal\\n(si la unidad no puede ejecutar un ataque doble,\\neste efecto se activa en el momento en el que\\nel segundo ataque hubiera tenido lugar; este\\nefecto se considera un ataque doble, as\u00ed que\\nlos efectos que reducen el da\u00f1o en combate\\nse siguen aplicando, pero se ignoran los que\\nimpiden los ataques dobles o que se ataque\\ndos veces; solo se aplica el valor m\u00e1s alto;\\nno acumulable)."
+	},
+	{
+		"key": "MSID_H_\u8349\u539f\u306e\u98a8\u547c\u3073\u306e\u5f13_NOSKW",
+		"value": "$aFacilita la ejecuci\u00f3n de habilidades especiales:\\n-1 a la cuenta regresiva. Eficaz contra unidades\\na\u00e9reas. Permite contratacar independientemente\\nde lo lejos que est\u00e9 el enemigo.\\n\\nLa unidad puede atravesar casillas ocupadas\\npor rivales.\\n\\nLa unidad puede desplazarse a una casilla en\\nun radio de 4 alrededor de esta (se considera\\ncomo una acci\u00f3n de teletransporte).\\n\\nAl inicio del turno del jugador o del turno del rival,\\notorga los efectos\u3010Empat\u00eda\u3011,\u3010Reflejar\u3011y\\n\"aumenta en 10 puntos la diferencia de Vel.\\nnecesaria para que el rival ejecute un ataque\\ndoble en combate\" a la unidad y los aliados en\\nun radio de 2 casillas de la unidad hasta el final\\ndel turno.\\n\\nOtorga Atq., Vel., Def. y Res. +15 a la unidad,\\nesta inflige 25 puntos de da\u00f1o adicionales\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto) y se reduce el da\u00f1o de los ataques\\nenemigos en 15 puntos durante el combate (sin\\ncontar las habilidades especiales con \u00e1rea de\\nefecto). Adem\u00e1s, si la unidad puede realizar un\\nataque doble al reducirse en 10 puntos la\\ndiferencia de Vel. necesaria para ejecutarlo (sin\\ncontar los ataques dobles que se han garantizado\\no impedido), activa\u3010Ataque incesante 100 %\u3011\\nen combate."
+	},
+	{
+		"key": "MSID_H_\u30cf\u30f3\u30bf\u30fc\u30dc\u30ec\u30fc",
+		"value": "Cuando se ejecutan habilidades especiales,\\naumenta el da\u00f1o en una cuant\u00eda equivalente\\nal 70 % del Atq. de la unidad.\\n\\nSe reduce en un 40 % el da\u00f1o que inflige\\nel primer ataque del rival (\"primer ataque\"\\nsuele referirse solo al primer golpe; en cambio,\\ncon efectos que otorgan \"la unidad ataca dos\\nveces\", se refiere al primero y al segundo).\\n\\nSi es el primer combate iniciado por la unidad\\ndurante el turno actual, y si el n\u00famero de casillas\\nexistentes entre la unidad y el rival es \u2264 2, la\\nunidad ataca dos veces durante el combate.\\nAhora bien, si la unidad puede ejecutar un ataque\\ndoble, el da\u00f1o de los ataques de la unidad se\\ncalcula al 80 % (este c\u00e1lculo se acumula con\\notros efectos en los que se calcula el da\u00f1o al\\nX %, como Ataque incesante)."
+	},
+	{
+		"key": "MSID_H_\u6b63\u771f\u30b5\u30ab\u306e\u639f",
+		"value": "$aAl inicio del turno del jugador o del turno del rival,\\notorga\u3010Leyes de Sacae\u3011y\u3010Ataque doble nulo\u3011\\na la unidad y a los aliados en un radio de 2\\ncasillas de esta hasta el final del turno.\\n\\nOtorga Atq., Vel., Def. y Res. +10 a la unidad,\\nesta inflige 7 puntos de da\u00f1o adicionales (sin\\ncontar las habilidades especiales con \u00e1rea de\\nefecto), se reduce el da\u00f1o de los ataques\\nenemigos en 7 puntos (sin contar las habilidades\\nespeciales con \u00e1rea de efecto) y se anulan las\\nhabilidades de todos los enemigos en combate,\\nexcepto las de aquel al que se enfrenta. Adem\u00e1s,\\nsi la unidad puede realizar un ataque doble al\\nreducirse en 10 puntos la diferencia de Vel.\\nnecesaria para ejecutarlo (sin contar los ataques\\ndobles que se han garantizado o impedido),\\nactiva\u3010Ataque incesante 100 %\u3011en combate.\\n\\nSi la unidad se encuentra en un radio de 3 casillas\\nde un aliado con efectos de\u3010Leyes de Sacae\u3011\\nactivos y si esta tiene PV > 1, esta sobrevive a\\nun ataque mortal en combate con 1 PV restante\\n(solo una vez por combate; no acumulable con\\nefectos de habilidades no especiales que\\npermitan a la unidad sobrevivir con 1 PV a un\\nataque mortal).\\n\\n\u3010Leyes de Sacae\u3011\\nOtorga Atq., Vel., Def. y Res. +X \u00d7 2 a la unidad,\\nesta inflige +X \u00d7 3 puntos de da\u00f1o adicionales\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto) y se reduce el da\u00f1o de los ataques\\nenemigos en X \u00d7 3 durante el combate (sin\\ncontar las habilidades especiales con \u00e1rea de\\nefecto), donde X equivale al n\u00famero de aliados\\nen el mapa con el efecto Leyes de Sacae activo\\n(incluyendo a la unidad; m\u00e1x.: 3).\\n\\nSi la unidad inicia el combate, inflige\u3010Altruismo +\u3011\\nal rival y a todos los enemigos situados en un\\nradio de 2 casillas de dicho rival en su\\npr\u00f3xima acci\u00f3n tras el combate.\\n\\n\u3010Ataque doble nulo\u3011\\nSi supera la Vel. del enemigo en 1 punto o m\u00e1s,\\nanula los efectos que garantizan un ataque\\ndoble a los enemigos y los que impiden un\\nataque doble de la unidad en combate.\\n\\n\u3010Ataque incesante 100 %\u3011\\nInmediatamente despu\u00e9s de ejecutar un ataque\\ndoble, la unidad realiza otro ataque adicional\\ne inflige un 100 % de su da\u00f1o normal\\n(si la unidad no puede ejecutar un ataque doble,\\neste efecto se activa en el momento en el que\\nel segundo ataque hubiera tenido lugar; este\\nefecto se considera un ataque doble, as\u00ed que\\nlos efectos que reducen el da\u00f1o en combate\\nse siguen aplicando, pero se ignoran los que\\nimpiden los ataques dobles o que se ataque\\ndos veces; solo se aplica el valor m\u00e1s alto;\\nno acumulable).\\n\\n\u3010Altruismo +\u3011\\nInflige Atq., Vel., Def. y Res. -5 a la unidad\\nen combate y anula los efectos de las\\nhabilidades no especiales de la unidad que\\nreducen el da\u00f1o porcentualmente (sin contar\\nlas habilidades especiales con \u00e1rea de efecto).\\n\\nUna vez por turno para cada mapa,\\nsi el rival inicia el ataque y la unidad cae\\nen el combate, dicho rival obtiene\\nuna acci\u00f3n adicional tras el combate\\n(este efecto tiene prioridad sobre otros\\nefectos similares, excepto Altruismo;\\nsi se activan este estado y Altruismo\\nal mismo tiempo, se considera que ambos\\nse han activado; en caso de conflicto,\\nse considera que otros efectos,\\nexcepto Altruismo, no se han activado)."
+	},
+	{
+		"key": "MSID_H_\u6b63\u771f\u30b5\u30ab\u306e\u639f_NOSKW",
+		"value": "$aAl inicio del turno del jugador o del turno del rival,\\notorga\u3010Leyes de Sacae\u3011y\u3010Ataque doble nulo\u3011\\na la unidad y a los aliados en un radio de 2\\ncasillas de esta hasta el final del turno.\\n\\nOtorga Atq., Vel., Def. y Res. +10 a la unidad,\\nesta inflige 7 puntos de da\u00f1o adicionales (sin\\ncontar las habilidades especiales con \u00e1rea de\\nefecto), se reduce el da\u00f1o de los ataques\\nenemigos en 7 puntos (sin contar las habilidades\\nespeciales con \u00e1rea de efecto) y se anulan las\\nhabilidades de todos los enemigos en combate,\\nexcepto las de aquel al que se enfrenta. Adem\u00e1s,\\nsi la unidad puede realizar un ataque doble al\\nreducirse en 10 puntos la diferencia de Vel.\\nnecesaria para ejecutarlo (sin contar los ataques\\ndobles que se han garantizado o impedido),\\nactiva\u3010Ataque incesante 100 %\u3011en combate.\\n\\nSi la unidad se encuentra en un radio de 3 casillas\\nde un aliado con efectos de\u3010Leyes de Sacae\u3011\\nactivos y si esta tiene PV > 1, esta sobrevive a\\nun ataque mortal en combate con 1 PV restante\\n(solo una vez por combate; no acumulable con\\nefectos de habilidades no especiales que\\npermitan a la unidad sobrevivir con 1 PV a un\\nataque mortal)."
+	},
+	{
+		"key": "MSID_H_\u51f6\u9ce5\u306e\u4e00\u6483",
+		"value": "$aPermite usar\u3010Movilidad (\uff12)\u3011.\\n\\nAl inicio del turno y despu\u00e9s de que la unidad\\nact\u00fae (si usa Movilidad, despu\u00e9s de utilizarla),\\ninflige Atq., Vel. y Def. -7 a los enemigos m\u00e1s\\ncercanos y a los rivales en un radio de 2 casillas\\nde dichos enemigos en su pr\u00f3xima acci\u00f3n.\\n\\nSi la unidad inicia el ataque, o si tiene el efecto\\n\u3010Bonificaci\u00f3n\u3011activo, esta obtiene Atq., Vel. y\\nDef. +10 e inflige X puntos de da\u00f1o adicionales\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto), donde X equivale al 60 % del valor\\nde la mayor penalizaci\u00f3n total de entre las que\\nposeen el rival y los enemigos situados en un\\nradio de 2 casillas de este), y se reduce el da\u00f1o\\nque inflige el primer ataque del enemigo en 7\\npuntos durante el combate (\"primer ataque\"\\nsuele referirse solo al primer golpe; en cambio,\\ncon efectos que otorgan \"la unidad ataca dos\\nveces\", se refiere al primero y al segundo).\\n\\n\u3010Movilidad (\uff12)\u3011\\nLa unidad puede desplazarse \uff12 casilla(s)\\ndespu\u00e9s de atacar, usar una habilidad de apoyo\\no destruir una estructura.\\n\\n(Solo una vez por turno. Solo se aplica el valor\\nm\u00e1s alto. No acumulable.)\\n\\n\u3010Bonificaci\u00f3n\u3011\\nComprende todos los efectos que se activan\\n\"hasta el final del turno\" o \"solo ese turno\".\\nIncluye las bonificaciones de habilidades\\ncomo Potenciar o Impulso y los efectos\\npositivos, como movimiento extra o los\\nefectos de habilidades como Predominio."
+	},
+	{
+		"key": "MSID_H_\u51f6\u9ce5\u306e\u4e00\u6483_NOSKW",
+		"value": "$aPermite usar\u3010Movilidad (\uff12)\u3011.\\n\\nAl inicio del turno y despu\u00e9s de que la unidad\\nact\u00fae (si usa Movilidad, despu\u00e9s de utilizarla),\\ninflige Atq., Vel. y Def. -7 a los enemigos m\u00e1s\\ncercanos y a los rivales en un radio de 2 casillas\\nde dichos enemigos en su pr\u00f3xima acci\u00f3n.\\n\\nSi la unidad inicia el ataque, o si tiene el efecto\\n\u3010Bonificaci\u00f3n\u3011activo, esta obtiene Atq., Vel. y\\nDef. +10 e inflige X puntos de da\u00f1o adicionales\\n(sin contar las habilidades especiales con \u00e1rea\\nde efecto), donde X equivale al 60 % del valor\\nde la mayor penalizaci\u00f3n total de entre las que\\nposeen el rival y los enemigos situados en un\\nradio de 2 casillas de este), y se reduce el da\u00f1o\\nque inflige el primer ataque del enemigo en 7\\npuntos durante el combate (\"primer ataque\"\\nsuele referirse solo al primer golpe; en cambio,\\ncon efectos que otorgan \"la unidad ataca dos\\nveces\", se refiere al primero y al segundo)."
+	},
+	{
+		"key": "MSID_H_\u653b\u9632\u4e00\u4f53\u306e\u9663",
+		"value": "Inflige Atq., Vel., Def. y Res. -5 a los enemigos\\nsituados en una cruz de 3 columnas y 3 filas\\nrespecto a la unidad, se anulan las bonificaciones\\ndel rival y aumenta en 10 puntos la diferencia\\nde Vel. necesaria para que el rival ejecute un\\nataque doble durante el combate.\\n\\nSi la unidad se encuentra en un radio de 3 casillas\\nde un aliado o si hay uno o m\u00e1s aliados con los\\nque la unidad haya alcanzado el nivel de apoyo\\nS+ en el mapa, inflige Atq., Vel. y Def. -5 al rival,\\nla unidad inflige un 20 % de su Vel. como da\u00f1o\\nadicional al rival (sin contar las habilidades\\nespeciales con \u00e1rea de efecto), se reduce el da\u00f1o\\nde los ataques enemigos en un 20 % de la Vel.\\nde la unidad (sin contar las habilidades especiales\\ncon \u00e1rea de efecto) y la unidad obtiene -2 a\\nsu cuenta regresiva antes del primer ataque\\ndel rival en combate. Adem\u00e1s, si la habilidad\\nespecial de la unidad est\u00e1 activa (o bien si\\nse activa antes de este combate o durante\\nel mismo), se reduce el da\u00f1o de los ataques\\nenemigos a m\u00e1ximo 1 punto en combate\\n(solo una vez por combate; sin contar las\\nhabilidades especiales con \u00e1rea de efecto)."
+	},
+	{
+		"key": "MSID_H_\u727d\u5236\u5c04\u6483\u30fb\u5f37\u5316\u7121\u52b9",
+		"value": "Inflige Atq., Vel. y Def. -5 a los enemigos situados\\nen una cruz de 3 columnas y 3 filas respecto a\\nla unidad en combate.\\n\\nInflige Atq., Vel. y Def. -4 al rival, anula sus\\nbonificaciones, la unidad inflige 15 puntos\\nde da\u00f1o adicionales (sin contar las habilidades\\nespeciales con \u00e1rea de efecto) y se reduce el\\nda\u00f1o de los ataques enemigos en 15 puntos\\ndurante el combate (sin contar las habilidades\\nespeciales con \u00e1rea de efecto)."
+	},
+	{
+		"key": "MSID_H_\u59cb\u9f13\u52d5\u30fb\u898b\u5207\u308a",
+		"value": "Al inicio del turno, al inicio del turno del rival\\n(excepto en Duelos de invocadores) y tras el\\ncombate, si la cuenta regresiva de la unidad\\nest\u00e1 al m\u00e1ximo, esta obtiene -1 a su cuenta\\nregresiva.\\n\\nEl Atq., Vel., Def. y Res. de la unidad aumentan\\nen una cuant\u00eda equivalente al valor m\u00e1ximo de\\nla cuenta regresiva de la unidad +2, la unidad\\ninflige 5 puntos de da\u00f1o adicionales (sin contar\\nlas habilidades especiales con \u00e1rea de efecto),\\ny se reduce el da\u00f1o que inflige el primer ataque\\ndel rival en 5 puntos durante el combate\\n(\"primer ataque\" suele referirse solo al primer\\ngolpe; en cambio, con efectos que otorgan\\n\"la unidad ataca dos veces\", se refiere al\\nprimero y al segundo). Adem\u00e1s, si la Vel. de la\\nunidad supera la Vel. del enemigo en 1 punto o\\nm\u00e1s, se anulan los efectos que garantizan un\\nataque doble de los enemigos y los que\\nimpiden que sea la unidad quien ejecute\\nuno en combate."
+	},
+	{
+		"key": "MSID_H_\u53cc\u754c\u30ea\u30f32",
+		"value": "$aOtorga\u3010Fragor: Hojas\u3011a la unidad, a los aliados\\nprovenientes del mismo t\u00edtulo que la unidad y a\\nlos aliados con el efecto Leyes de Sacae activo.\\n\\nOtorga a cierto objetivo una acci\u00f3n adicional y,\\nsi Movilidad ya se ha activado, permite volver a\\nusarla (si hay aliados que pertenezcan al mismo\\nt\u00edtulo que la unidad o que tengan el efecto Leyes\\nde Sacae activo en el mapa, el objetivo ser\u00e1\\nel aliado que tenga m\u00e1s PV de entre dichos\\naliados que ya hayan actuado; si varios objetivos\\ncumplen las condiciones, no se activar\u00e1 el efecto).\\n\\n\u3010Fragor: Hojas\u3011\\nOtorga Atq. y Vel. +4 en combate\\ndurante el resto del turno."
+	},
+	{
+		"key": "MSID_H_\u53cc\u754c\u30ea\u30f32_NOSKW",
+		"value": "$aOtorga\u3010Fragor: Hojas\u3011a la unidad, a los aliados\\nprovenientes del mismo t\u00edtulo que la unidad y a\\nlos aliados con el efecto Leyes de Sacae activo.\\n\\nOtorga a cierto objetivo una acci\u00f3n adicional y,\\nsi Movilidad ya se ha activado, permite volver a\\nusarla (si hay aliados que pertenezcan al mismo\\nt\u00edtulo que la unidad o que tengan el efecto Leyes\\nde Sacae activo en el mapa, el objetivo ser\u00e1\\nel aliado que tenga m\u00e1s PV de entre dichos\\naliados que ya hayan actuado; si varios objetivos\\ncumplen las condiciones, no se activar\u00e1 el efecto)."
+	},
+	{
+		"key": "MID_CHAPTER_TITLE_CX127",
+		"value": "Anexo 128"
+	},
+	{
+		"key": "MID_CHAPTER_CX127",
+		"value": "De cara al viento"
+	},
+	{
+		"key": "MID_STAGE_TITLE_X1271",
+		"value": "Anexo 128-1"
+	},
+	{
+		"key": "MID_STAGE_TITLE_X1272",
+		"value": "Anexo 128-2"
+	},
+	{
+		"key": "MID_STAGE_TITLE_X1273",
+		"value": "Anexo 128-3"
+	},
+	{
+		"key": "MID_STAGE_X1271",
+		"value": "Honor sacaeno"
+	},
+	{
+		"key": "MID_STAGE_X1272",
+		"value": "Orgullo de arquero"
+	},
+	{
+		"key": "MID_STAGE_X1273",
+		"value": "Incluso a la distancia..."
+	},
+	{
+		"key": "MID_CHAPTER_ST_CX064",
+		"value": "A. 127 y 128"
+	},
+	{
+		"key": "MID_STAGE_TITLE_ST_X0126",
+		"value": "Anexo 127"
+	},
+	{
+		"key": "MID_STAGE_TITLE_ST_X0127",
+		"value": "Anexo 128"
+	},
+	{
+		"key": "MID_STAGE_TITLE_ST_X1127",
+		"value": "A. 127 y 128"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PB328",
+		"value": "Habilidades 328"
+	},
+	{
+		"key": "MID_STAGE_PB328",
+		"value": "Arqueros de las llanuras"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PC157",
+		"value": "Maestr\u00eda 157"
+	},
+	{
+		"key": "MID_STAGE_PC157",
+		"value": "Mujeres formidables"
+	}
+]

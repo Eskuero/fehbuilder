@@ -1,0 +1,786 @@
+[
+	{
+		"key": "MDAID_\u65c5\u5148\u306e\u904a\u7267\u6c11\u306e\u982d\u98fe\u308a",
+		"value": "Nomad Headband"
+	},
+	{
+		"key": "MDAID_H_\u65c5\u5148\u306e\u904a\u7267\u6c11\u306e\u982d\u98fe\u308a",
+		"value": "Proof that two Heroes bested a boss\\non their journeys together. Serves as\\na souvenir from their travels."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_118",
+		"value": "$aGrants Atk/Spd/Def/Res+X \u00d7 2 to unit, unit\\ndeals +X \u00d7 3 damage (excluding area-of-effect\\nSpecials), and reduces damage from foe's\\nattacks by X \u00d7 3 (excluding area-of-effect\\nSpecials) during combat (X = number of allies\\non the map with the Laws of Sacae effect\\nactive, including unit; max 3).\\n\\nIf unit initiates combat, inflicts\u3010Share Spoils+\u3011\\non target and foes within 2 spaces of target\\nthrough their next actions after combat.\\n(For 1 turn.)\\n\\n\u3010Share Spoils+\u3011\\nInflicts Atk/Spd/Def/Res-5 on unit during\\ncombat and neutralizes \"reduces damage\\nby X%\" effects from unit's non-Special skills\\n(excluding area-of-effect Specials).\\n\\nOnce per turn for the entire map, if foe\\ninitiates combat and if unit is defeated in\\ncombat, grants another action to that foe\\nafter combat (this effect has priority over\\nother similar effects aside from Share Spoils;\\nif this status and Share Spoils are both active\\nat the same time, they are both treated as\\nhaving been triggered; other similar effects\\naside from Share Spoils are treated as not\\nhaving triggered)."
+	},
+	{
+		"key": "MID_ENHANCE_FORMAL_HELP_118_NOSKW",
+		"value": "$aGrants Atk/Spd/Def/Res+X \u00d7 2 to unit, unit\\ndeals +X \u00d7 3 damage (excluding area-of-effect\\nSpecials), and reduces damage from foe's\\nattacks by X \u00d7 3 (excluding area-of-effect\\nSpecials) during combat (X = number of allies\\non the map with the Laws of Sacae effect\\nactive, including unit; max 3).\\n\\nIf unit initiates combat, inflicts\u3010Share Spoils+\u3011\\non target and foes within 2 spaces of target\\nthrough their next actions after combat.\\n(For 1 turn.)"
+	},
+	{
+		"key": "MID_ENHANCE_HELP_118",
+		"value": "Gains power as more allies share this status;\\n  inflicts Share Spoils after combat"
+	},
+	{
+		"key": "MID_MISSION_S202609BOARDGAME01_TITLE",
+		"value": "Pawns of Loki"
+	},
+	{
+		"key": "MID_MISSION_S202609BOARDGAME01_A1",
+		"value": "PoL: Complete a Game"
+	},
+	{
+		"key": "MID_MISSION_H_S202609BOARDGAME01_A1",
+		"value": "Finish all turns to complete a game of Pawns\\nof Loki."
+	},
+	{
+		"key": "MID_MISSION_S202609HERO01_TITLE",
+		"value": "Grand Hero Battles"
+	},
+	{
+		"key": "MID_MISSION_S202609HERO01_A1",
+		"value": "Defeat Haitaka"
+	},
+	{
+		"key": "MID_MISSION_H_S202609HERO01_A1",
+		"value": "Clear the Grand Hero Battle against Haitaka:\\nPersistent General with Anna: Commander on\\nyour team."
+	},
+	{
+		"key": "MID_MISSION_S202609HERO01_A2",
+		"value": "Defeat Haitaka"
+	},
+	{
+		"key": "MID_MISSION_H_S202609HERO01_A2",
+		"value": "Clear the Grand Hero Battle against Haitaka:\\nPersistent General on Lunatic or higher difficulty\\nwith Haitaka: Persistent General on your team."
+	},
+	{
+		"key": "MID_MISSION_S202609HERO01_A3",
+		"value": "Defeat Haitaka"
+	},
+	{
+		"key": "MID_MISSION_H_S202609HERO01_A3",
+		"value": "Defeat Haitaka: Persistent General at level 40\\nor higher with Anna: Commander."
+	},
+	{
+		"key": "MID_MISSION_S202609HERO01_A4",
+		"value": "Defeat Haitaka"
+	},
+	{
+		"key": "MID_MISSION_H_S202609HERO01_A4",
+		"value": "Defeat Haitaka: Persistent General at level 40\\nor higher with Haitaka: Persistent General."
+	},
+	{
+		"key": "MID_MISSION_S202609HERO01_A5",
+		"value": "Defeat Haitaka"
+	},
+	{
+		"key": "MID_MISSION_H_S202609HERO01_A5",
+		"value": "Clear the Grand Hero Battle against Haitaka:\\nPersistent General on Lunatic or higher\\ndifficulty using only infantry allies."
+	},
+	{
+		"key": "MID_MISSION_S202609JOURNEY01_TITLE",
+		"value": "Heroes Journey"
+	},
+	{
+		"key": "MID_MISSION_S202609JOURNEY01_A1",
+		"value": "Clear Heroes Journey"
+	},
+	{
+		"key": "MID_MISSION_H_S202609JOURNEY01_A1",
+		"value": "Clear Heroes Journey."
+	},
+	{
+		"key": "MID_MISSION_S202609JOURNEY01_A2",
+		"value": "Clear Heroes Journey"
+	},
+	{
+		"key": "MID_MISSION_H_S202609JOURNEY01_A2",
+		"value": "Clear Heroes Journey."
+	},
+	{
+		"key": "MID_MISSION_S202609MJOLNIR01_TITLE",
+		"value": "Mj\u00f6lnir's Strike"
+	},
+	{
+		"key": "MID_MISSION_S202609MJOLNIR01_A1",
+		"value": "KO w/Summoner"
+	},
+	{
+		"key": "MID_MISSION_H_S202609MJOLNIR01_A1",
+		"value": "Defeat a foe with the My Summoner unit\\nin Mj\u00f6lnir's Strike."
+	},
+	{
+		"key": "MID_MISSION_S202609MJOLNIR01_A2",
+		"value": "KO w/Summoner"
+	},
+	{
+		"key": "MID_MISSION_H_S202609MJOLNIR01_A2",
+		"value": "Defeat a foe with the My Summoner unit\\nin Mj\u00f6lnir's Strike."
+	},
+	{
+		"key": "MID_MISSION_S202609SENKA01_DAILY_TITLE",
+		"value": "Tempest Trials"
+	},
+	{
+		"key": "MID_MISSION_S202609SENKA01_DAILY_A1",
+		"value": "Clear Trial"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SENKA01_DAILY_A1",
+		"value": "Clear one of the final maps in Tempest Trials."
+	},
+	{
+		"key": "MID_MISSION_S202609SENKA01_DAILY_A2",
+		"value": "Clear Trial"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SENKA01_DAILY_A2",
+		"value": "Clear one of the final maps in Tempest Trials."
+	},
+	{
+		"key": "MID_MISSION_S202609SENKA01_DAILY_A3",
+		"value": "Clear Trial"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SENKA01_DAILY_A3",
+		"value": "Clear one of the final maps in Tempest Trials."
+	},
+	{
+		"key": "MID_MISSION_S202609SENKA01_DAILY_A4",
+		"value": "Clear Trial"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SENKA01_DAILY_A4",
+		"value": "Clear one of the final maps in Tempest Trials."
+	},
+	{
+		"key": "MID_MISSION_S202609SENKA02_DAILY_TITLE",
+		"value": "Tempest Trials"
+	},
+	{
+		"key": "MID_MISSION_S202609SENKA02_DAILY_A1",
+		"value": "Clear Trial"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SENKA02_DAILY_A1",
+		"value": "Clear one of the final maps in Tempest Trials."
+	},
+	{
+		"key": "MID_MISSION_S202609SENKA02_DAILY_A2",
+		"value": "Clear Trial"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SENKA02_DAILY_A2",
+		"value": "Clear one of the final maps in Tempest Trials."
+	},
+	{
+		"key": "MID_MISSION_S202609SENKA02_DAILY_A3",
+		"value": "Clear Trial"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SENKA02_DAILY_A3",
+		"value": "Clear one of the final maps in Tempest Trials."
+	},
+	{
+		"key": "MID_MISSION_S202609SENKA02_DAILY_A4",
+		"value": "Clear Trial"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SENKA02_DAILY_A4",
+		"value": "Clear one of the final maps in Tempest Trials."
+	},
+	{
+		"key": "MID_MISSION_S202609SUBSC02_TITLE",
+		"value": " Feh Pass"
+	},
+	{
+		"key": "MID_MISSION_S202609SUBSC02_A1",
+		"value": "KO Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SUBSC02_A1",
+		"value": "Defeat a foe."
+	},
+	{
+		"key": "MID_MISSION_S202609SUBSC02_A2",
+		"value": "KO Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SUBSC02_A2",
+		"value": "Defeat a foe."
+	},
+	{
+		"key": "MID_MISSION_S202609SUBSC02_A3",
+		"value": "KO Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SUBSC02_A3",
+		"value": "Defeat a foe."
+	},
+	{
+		"key": "MID_MISSION_S202609SUBSC02_A4",
+		"value": "Win Arena Duel"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SUBSC02_A4",
+		"value": "Win an Arena Duel at any difficulty."
+	},
+	{
+		"key": "MID_MISSION_S202609SUBSC02_A5",
+		"value": "Win Arena Duel"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SUBSC02_A5",
+		"value": "Win an Arena Duel at any difficulty."
+	},
+	{
+		"key": "MID_MISSION_S202609SUBSC02_A6",
+		"value": "KO Armored Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SUBSC02_A6",
+		"value": "Defeat an armored foe."
+	},
+	{
+		"key": "MID_MISSION_S202609SUBSC02_A7",
+		"value": "KO Flying Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202609SUBSC02_A7",
+		"value": "Defeat a flying foe."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_TITLE",
+		"value": "Flying Assault"
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A1",
+		"value": "KO Flying Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A1",
+		"value": "Defeat a flying foe."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A2",
+		"value": "KO Level 20+ Flying Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A2",
+		"value": "Defeat a flying foe that is level 20 or higher."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A3",
+		"value": "KO Flying Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A3",
+		"value": "Defeat a flying foe that is level 20 or higher\\nwith a sword ally."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A4",
+		"value": "KO Flying Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A4",
+		"value": "Defeat a flying foe that is level 20 or higher\\nwith a lance ally."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A5",
+		"value": "KO Flying Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A5",
+		"value": "Defeat a flying foe that is level 20 or higher\\nwith an axe ally."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A6",
+		"value": "KO Flying Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A6",
+		"value": "Defeat a flying foe that is level 20 or higher\\nwith a colorless bow ally."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A7",
+		"value": "KO Flying Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A7",
+		"value": "Defeat a flying foe that is level 20 or higher\\nwith an infantry ally."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A8",
+		"value": "KO Flying Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A8",
+		"value": "Defeat a flying foe that is level 20 or higher\\nwith an armored ally."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A9",
+		"value": "KO Level 30+ Flying Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A9",
+		"value": "Defeat a flying foe that is level 30 or higher."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A10",
+		"value": "KO Flying Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A10",
+		"value": "Defeat a flying foe that is level 30 or higher\\nwith a red tome ally."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A11",
+		"value": "KO Flying Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A11",
+		"value": "Defeat a flying foe that is level 30 or higher\\nwith a blue tome ally."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A12",
+		"value": "KO Flying Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A12",
+		"value": "Defeat a flying foe that is level 30 or higher\\nwith a green tome ally."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A13",
+		"value": "KO Flying Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A13",
+		"value": "Defeat a flying foe that is level 30 or higher\\nwith a colorless dagger ally."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A14",
+		"value": "KO Flying Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A14",
+		"value": "Defeat a flying foe that is level 30 or higher\\nwith a cavalry ally."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A15",
+		"value": "KO Flying Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A15",
+		"value": "Defeat a flying foe that is level 30 or higher\\nwith a flying ally."
+	},
+	{
+		"key": "MID_MISSION_S202609VSMOVE01_A16",
+		"value": "KO Level 40+ Flying Foe"
+	},
+	{
+		"key": "MID_MISSION_H_S202609VSMOVE01_A16",
+		"value": "Defeat a flying foe that is level 40 or higher."
+	},
+	{
+		"key": "MID_MISSION_W_S202609STORY_P01_TITLE",
+		"value": "Wind Bound"
+	},
+	{
+		"key": "MID_MISSION_W_S202609STORY_P01_A1",
+		"value": "Clear P128-1 on Lunatic"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202609STORY_P01_A1",
+		"value": "Clear Paralogue 128: Part 1 on Lunatic\\ndifficulty with a sword ally on your team.\\n(Allies deployed as cohorts using Pair Up\\ndo not count.) All four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_S202609STORY_P01_A2",
+		"value": "Clear P128-2 on Lunatic"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202609STORY_P01_A2",
+		"value": "Clear Paralogue 128: Part 2 on Lunatic\\ndifficulty with a lance ally on your team.\\n(Allies deployed as cohorts using Pair Up\\ndo not count.) All four allies must survive."
+	},
+	{
+		"key": "MID_MISSION_W_S202609STORY_P01_A3",
+		"value": "Clear P128-3 on Lunatic"
+	},
+	{
+		"key": "MID_MISSION_H_W_S202609STORY_P01_A3",
+		"value": "Clear Paralogue 128: Part 3 on Lunatic\\ndifficulty with an axe ally on your team.\\n(Allies deployed as cohorts using Pair Up\\ndo not count.) All four allies must survive."
+	},
+	{
+		"key": "MPID_\u53cc\u754c\u30ea\u30f32",
+		"value": "Lyn"
+	},
+	{
+		"key": "MPID_SEARCH_\u53cc\u754c\u30ea\u30f32",
+		"value": "Lyn"
+	},
+	{
+		"key": "MPID_\u30b5\u30ab\u30ec\u30d9\u30c3\u30ab",
+		"value": "Rebecca"
+	},
+	{
+		"key": "MPID_SEARCH_\u30b5\u30ab\u30ec\u30d9\u30c3\u30ab",
+		"value": "Rebecca"
+	},
+	{
+		"key": "MPID_\u30b5\u30ab\u30b7\u30e3\u30df\u30a2",
+		"value": "Shamir"
+	},
+	{
+		"key": "MPID_SEARCH_\u30b5\u30ab\u30b7\u30e3\u30df\u30a2",
+		"value": "Shamir"
+	},
+	{
+		"key": "MPID_\u3064\u306a\u304c\u308a\u30b5\u30ab\u30bf\u30af\u30df",
+		"value": "Takumi"
+	},
+	{
+		"key": "MPID_SEARCH_\u3064\u306a\u304c\u308a\u30b5\u30ab\u30bf\u30af\u30df",
+		"value": "Takumi"
+	},
+	{
+		"key": "MEID_\u30bb\u30a4\u30ba2",
+		"value": "Sei\u00f0r"
+	},
+	{
+		"key": "MPID_HONOR_\u53cc\u754c\u30ea\u30f32",
+		"value": "Earth and Sky"
+	},
+	{
+		"key": "MPID_HONOR_\u30b5\u30ab\u30ec\u30d9\u30c3\u30ab",
+		"value": "In the Sun's Rays"
+	},
+	{
+		"key": "MPID_HONOR_\u30b5\u30ab\u30b7\u30e3\u30df\u30a2",
+		"value": "Sniper's Path"
+	},
+	{
+		"key": "MPID_HONOR_\u3064\u306a\u304c\u308a\u30b5\u30ab\u30bf\u30af\u30df",
+		"value": "Divine Bow Prince"
+	},
+	{
+		"key": "MEID_HONOR_\u30bb\u30a4\u30ba2",
+		"value": "Hope Reborn"
+	},
+	{
+		"key": "MPID_H_\u53cc\u754c\u30ea\u30f32",
+		"value": "Raised by the abundant land and winds of the\\nplains, they remain proud Sacaens amidst\\ndifferent times. They appear in Fire Emblem:\\nThe Blazing Blade / The Binding Blade."
+	},
+	{
+		"key": "MPID_H_\u30b5\u30ab\u30ec\u30d9\u30c3\u30ab",
+		"value": "Wearing the garb of the Sacaens, who live a\\nnomadic lifestyle, she moves with vigor and\\nexperiences the breath of the plains within her.\\nAppears in Fire Emblem: The Blazing Blade."
+	},
+	{
+		"key": "MPID_H_\u30b5\u30ab\u30b7\u30e3\u30df\u30a2",
+		"value": "Dressed like someone who lives on the plains\\nof Sacae, she praises the functional attire that\\nadapts to her movements. Appears in Fire\\nEmblem: Three Houses."
+	},
+	{
+		"key": "MPID_H_\u3064\u306a\u304c\u308a\u30b5\u30ab\u30bf\u30af\u30df",
+		"value": "A prince of Hoshido who considers himself the\\nwielder of the divine bow, Fujin Yumi. Dons the\\ngarb of the Sacaens and realizes a new frontier\\nfor himself. Appears in Fire Emblem Fates."
+	},
+	{
+		"key": "MEID_H_\u30bb\u30a4\u30ba2",
+		"value": "Goddess of Vanaheimr who has once again\\nobtained the power of the \u00c1r. Searches for her\\ndaughter, who went missing in the future."
+	},
+	{
+		"key": "MPID_VOICE_\u53cc\u754c\u30ea\u30f32",
+		"value": "Wendee Lee + Megan Taylor Harvey"
+	},
+	{
+		"key": "MPID_VOICE_\u30b5\u30ab\u30ec\u30d9\u30c3\u30ab",
+		"value": "Hunter Mackenzie Austin"
+	},
+	{
+		"key": "MPID_VOICE_\u30b5\u30ab\u30b7\u30e3\u30df\u30a2",
+		"value": "Allegra Clark"
+	},
+	{
+		"key": "MPID_VOICE_\u3064\u306a\u304c\u308a\u30b5\u30ab\u30bf\u30af\u30df",
+		"value": "Michael Sinterniklaas"
+	},
+	{
+		"key": "MEID_VOICE_\u30bb\u30a4\u30ba2",
+		"value": "Valeria Rodriguez"
+	},
+	{
+		"key": "MPID_VOICE_\u4f1d\u627f\u30a8\u30ea\u30a6\u30c3\u30c9EX01",
+		"value": "Yuri Lowenthal"
+	},
+	{
+		"key": "MPID_ILLUST_\u53cc\u754c\u30ea\u30f32",
+		"value": "Essual (\u30a8\u30b7\u30e5\u30a2\u30eb)"
+	},
+	{
+		"key": "MPID_ILLUST_\u30b5\u30ab\u30ec\u30d9\u30c3\u30ab",
+		"value": "\uff2b\uff45\uff27"
+	},
+	{
+		"key": "MPID_ILLUST_\u30b5\u30ab\u30b7\u30e3\u30df\u30a2",
+		"value": "Yamada Kotaro (\u5c71\u7530\u5b5d\u592a\u90ce)"
+	},
+	{
+		"key": "MPID_ILLUST_\u3064\u306a\u304c\u308a\u30b5\u30ab\u30bf\u30af\u30df",
+		"value": "Tobi"
+	},
+	{
+		"key": "MEID_ILLUST_\u30bb\u30a4\u30ba2",
+		"value": "sasa (\u4f50\u3005)"
+	},
+	{
+		"key": "MPID_ILLUST_\u4f1d\u627f\u30a8\u30ea\u30a6\u30c3\u30c9EX01",
+		"value": "azu\u2010taro (azu\u30bf\u30ed\u30a6)"
+	},
+	{
+		"key": "MPID_LEGEND_\u53cc\u754c\u30ea\u30f32",
+		"value": "(Harmonized Skills can be used by tapping the\\nHarmonized button. This skill can be used only\\nonce per map. Harmonized Skills cannot be\\nused by units deployed using Pair Up.)\\n(When unit has a status or a skill that enables\\nuse of a Style, Duo Skills and Harmonized Skills\\ncannot be used while unit can take an action\\n(those skills can be used after unit has acted).)\\n\\nResonance Effect: The Blazing Blade /\\nThe Binding Blade\\nIncreases scores in Resonant Battles.\\n(More details can be found in the Help\\nmessages within Resonant Battles.)"
+	},
+	{
+		"key": "MID_TIPS_Summon_v1009b_saka_01_\u53cc\u754c\u30ea\u30f32",
+		"value": "They lead the charge before sending\\nallies to the front lines. By linking\\nwith allies, they crush foes in one go!"
+	},
+	{
+		"key": "MID_TIPS_Summon_v1009b_saka_01_\u3064\u306a\u304c\u308a\u30b5\u30ab\u30bf\u30af\u30df",
+		"value": "Warps four spaces into foes' midst.\\nDeflects enemy's first attack, then\\ncounters fiercely, hunting down all!"
+	},
+	{
+		"key": "MID_TIPS_Summon_v1009b_saka_01_\u30b5\u30ab\u30b7\u30e3\u30df\u30a2",
+		"value": "Exposes the target's weak points and\\nboosts your army with Great Talent.\\nCancels other foes' skills in combat."
+	},
+	{
+		"key": "MID_TIPS_Summon_v1009b_saka_01_\u30b5\u30ab\u30ec\u30d9\u30c3\u30ab",
+		"value": "Overwhelms beasts, cavalry, and\\nflying foes. The enemy can't trigger\\nSavior effects when she attacks!"
+	},
+	{
+		"key": "MSID_\u5e0c\u671b\u306e\u5973\u795e\u306e\u8056\u5177",
+		"value": "Sacred Hope"
+	},
+	{
+		"key": "MSID_SEARCH_\u5e0c\u671b\u306e\u5973\u795e\u306e\u8056\u5177",
+		"value": "Sacred Hope"
+	},
+	{
+		"key": "MSID_\u30b5\u30ab\u306e\u5a18\u4e8c\u4eba\u306e\u5f13",
+		"value": "Bow of Sacae"
+	},
+	{
+		"key": "MSID_SEARCH_\u30b5\u30ab\u306e\u5a18\u4e8c\u4eba\u306e\u5f13",
+		"value": "Bow of Sacae"
+	},
+	{
+		"key": "MSID_\u8349\u539f\u306e\u98fe\u308a\u5f13",
+		"value": "Ornate Bow"
+	},
+	{
+		"key": "MSID_SEARCH_\u8349\u539f\u306e\u98fe\u308a\u5f13",
+		"value": "Ornate Bow"
+	},
+	{
+		"key": "MSID_\u8349\u539f\u306e\u72e9\u4eba\u306e\u5f13",
+		"value": "Sacaen Hunter"
+	},
+	{
+		"key": "MSID_SEARCH_\u8349\u539f\u306e\u72e9\u4eba\u306e\u5f13",
+		"value": "Sacaen Hunter"
+	},
+	{
+		"key": "MSID_\u8349\u539f\u306e\u98a8\u547c\u3073\u306e\u5f13",
+		"value": "Zephyr Bow"
+	},
+	{
+		"key": "MSID_SEARCH_\u8349\u539f\u306e\u98a8\u547c\u3073\u306e\u5f13",
+		"value": "Zephyr Bow"
+	},
+	{
+		"key": "MSID_\u30cf\u30f3\u30bf\u30fc\u30dc\u30ec\u30fc",
+		"value": "Hunter's Volley"
+	},
+	{
+		"key": "MSID_SEARCH_\u30cf\u30f3\u30bf\u30fc\u30dc\u30ec\u30fc",
+		"value": "Hunter's Volley"
+	},
+	{
+		"key": "MSID_\u6b63\u771f\u30b5\u30ab\u306e\u639f",
+		"value": "Sacaen Edicts"
+	},
+	{
+		"key": "MSID_SEARCH_\u6b63\u771f\u30b5\u30ab\u306e\u639f",
+		"value": "Sacaen Edicts"
+	},
+	{
+		"key": "MSID_\u51f6\u9ce5\u306e\u4e00\u6483",
+		"value": "Certain Blow"
+	},
+	{
+		"key": "MSID_SEARCH_\u51f6\u9ce5\u306e\u4e00\u6483",
+		"value": "Certain Blow"
+	},
+	{
+		"key": "MSID_\u653b\u9632\u4e00\u4f53\u306e\u9663",
+		"value": "Bold Stance"
+	},
+	{
+		"key": "MSID_SEARCH_\u653b\u9632\u4e00\u4f53\u306e\u9663",
+		"value": "Bold Stance"
+	},
+	{
+		"key": "MSID_\u727d\u5236\u5c04\u6483\u30fb\u5f37\u5316\u7121\u52b9",
+		"value": "Dull Suppress"
+	},
+	{
+		"key": "MSID_SEARCH_\u727d\u5236\u5c04\u6483\u30fb\u5f37\u5316\u7121\u52b9",
+		"value": "Dull Suppress"
+	},
+	{
+		"key": "MSID_\u59cb\u9f13\u52d5\u30fb\u898b\u5207\u308a",
+		"value": "Quicken Null"
+	},
+	{
+		"key": "MSID_SEARCH_\u59cb\u9f13\u52d5\u30fb\u898b\u5207\u308a",
+		"value": "Quicken Null"
+	},
+	{
+		"key": "MSID_H_\u5e0c\u671b\u306e\u5973\u795e\u306e\u8056\u5177",
+		"value": "$aAccelerates Special trigger (cooldown count-1).\\n\\nAt start of player phase or enemy phase, grants\\nAtk/Res+6,\u3010Time's Gate\u3011, and\u3010Empathy\u3011\\nto unit and allies within 2 spaces of unit for 1\\nturn.\\n\\nIf ally initiated combat and\u3010Time's Gate\u3011is\\nactive on that ally, grants another action to that\\nally after combat (if a skill belonging to that\\nally triggers an effect that grants them another\\naction, such as Galeforce, this effect is treated\\nas not having triggered; if a skill not belonging\\nto that ally triggers an effect that grants that\\nally another action at the same time as this\\neffect, this effect is also considered to have\\nbeen triggered; once per turn).\\n\\nGrants Atk/Spd/Def/Res+15 to unit, unit deals\\n+25 damage (including area-of-effect Specials),\\nand reduces damage from foe's attacks by 15\\nduring combat (excluding area-of-effect\\nSpecials).\\n\\nIf unit initiates combat, triggers the following\\neffects depending on unit's equipped Special:\\nif unit has an area-of-effect Special equipped,\\ngrants Special cooldown count-X to unit before\\nSpecial triggers before combat; if unit has a\\nSpecial that triggers when unit attacks (excluding\\narea-of-effect Specials), grants Special\\ncooldown count-X to unit before unit's first\\nattack during combat (X = the greater value of\\nthe number of spaces from start position to end\\nposition of unit and the number of turns; max 3).\\n\\n\u3010Time's Gate\u3011\\nAllies within 4 spaces of unit can move to\\na space adjacent to unit (that turn only).\\n\\n\u3010Empathy\u3011\\nGrants bonus to unit's Atk/Spd/Def/Res =\\nnumber of types of Bonus effects, excluding\\nstat bonuses, and Penalty effects, excluding\\nstat penalties, active on player team and\\nenemy team during combat (max 7)."
+	},
+	{
+		"key": "MSID_H_\u5e0c\u671b\u306e\u5973\u795e\u306e\u8056\u5177_NOSKW",
+		"value": "$aAccelerates Special trigger (cooldown count-1).\\n\\nAt start of player phase or enemy phase, grants\\nAtk/Res+6,\u3010Time's Gate\u3011, and\u3010Empathy\u3011\\nto unit and allies within 2 spaces of unit for 1\\nturn.\\n\\nIf ally initiated combat and\u3010Time's Gate\u3011is\\nactive on that ally, grants another action to that\\nally after combat (if a skill belonging to that\\nally triggers an effect that grants them another\\naction, such as Galeforce, this effect is treated\\nas not having triggered; if a skill not belonging\\nto that ally triggers an effect that grants that\\nally another action at the same time as this\\neffect, this effect is also considered to have\\nbeen triggered; once per turn).\\n\\nGrants Atk/Spd/Def/Res+15 to unit, unit deals\\n+25 damage (including area-of-effect Specials),\\nand reduces damage from foe's attacks by 15\\nduring combat (excluding area-of-effect\\nSpecials).\\n\\nIf unit initiates combat, triggers the following\\neffects depending on unit's equipped Special:\\nif unit has an area-of-effect Special equipped,\\ngrants Special cooldown count-X to unit before\\nSpecial triggers before combat; if unit has a\\nSpecial that triggers when unit attacks (excluding\\narea-of-effect Specials), grants Special\\ncooldown count-X to unit before unit's first\\nattack during combat (X = the greater value of\\nthe number of spaces from start position to end\\nposition of unit and the number of turns; max 3)."
+	},
+	{
+		"key": "MSID_H_\u30b5\u30ab\u306e\u5a18\u4e8c\u4eba\u306e\u5f13",
+		"value": "$aEnables\u3010Canto (\uff12)\u3011.\\nAccelerates Special trigger (cooldown count-1).\\nEffective against flying foes.\\n\\nFor unit and allies within 3 rows or 3 columns\\ncentered on unit, grants Atk/Spd/Def/Res+X\\n(for unit, X = 15; for allies, X = 5), deals +Y\\ndamage (excluding area-of-effect Specials; for\\nunit, Y = 25; for allies, Y = 10), and grants\\nSpecial cooldown count-2 before unit's or\\nally's first follow-up attack during combat.\\n\\nReduces damage from foe's attacks by 15\\n(excluding area-of-effect Specials) and\\nneutralizes effects that inflict \"Special cooldown\\ncharge -X\" on unit during combat, and restores\\n7 HP to unit after combat.\\n\\nUnit can use the following\u3010Style\u3011:\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015 Astra Storm Style \u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\nUnit can attack foes within 6 spaces of unit\\nand 3 rows or 3 columns centered on unit\\nregardless of unit's range.\\n\\nUnit suffers a counterattack if any of the\\nfollowing conditions are met: foe is armored\\nwith Range = 2, foe can counterattack\\nregardless of unit's range, or foe's Range is the\\nsame as the distance between unit and foe.\\n\\nUnit cannot move or attack structures,\\nafter-combat movement effects do not occur,\\nunit's area-of-effect Specials cannot be\\ntriggered, and remaining movement granted\\nfrom Canto is treated as 0. Skill effect's Range\\nis treated as 2. This Style can be used only\\nonce per turn.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\n\\n\u3010Canto (\uff12)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move \uff12 space(s).\\n(Once per turn. Only highest value applied.\\nDoes not stack.)\\n\\n\u3010Style\u3011\\nChange Style using the Style button at the\\nbottom of the screen.\\n\\nA unit's Style is only active when that unit\\nis taking an action. Style use is disabled when\\nunit is deployed using Pair Up or when unit is\\nequipped with multiple skills that have a Style."
+	},
+	{
+		"key": "MSID_H_\u30b5\u30ab\u306e\u5a18\u4e8c\u4eba\u306e\u5f13_NOSKW",
+		"value": "$aEnables\u3010Canto (\uff12)\u3011.\\nAccelerates Special trigger (cooldown count-1).\\nEffective against flying foes.\\n\\nFor unit and allies within 3 rows or 3 columns\\ncentered on unit, grants Atk/Spd/Def/Res+X\\n(for unit, X = 15; for allies, X = 5), deals +Y\\ndamage (excluding area-of-effect Specials; for\\nunit, Y = 25; for allies, Y = 10), and grants\\nSpecial cooldown count-2 before unit's or\\nally's first follow-up attack during combat.\\n\\nReduces damage from foe's attacks by 15\\n(excluding area-of-effect Specials) and\\nneutralizes effects that inflict \"Special cooldown\\ncharge -X\" on unit during combat, and restores\\n7 HP to unit after combat.\\n\\nUnit can use the following\u3010Style\u3011:\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015 Astra Storm Style \u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\\nUnit can attack foes within 6 spaces of unit\\nand 3 rows or 3 columns centered on unit\\nregardless of unit's range.\\n\\nUnit suffers a counterattack if any of the\\nfollowing conditions are met: foe is armored\\nwith Range = 2, foe can counterattack\\nregardless of unit's range, or foe's Range is the\\nsame as the distance between unit and foe.\\n\\nUnit cannot move or attack structures,\\nafter-combat movement effects do not occur,\\nunit's area-of-effect Specials cannot be\\ntriggered, and remaining movement granted\\nfrom Canto is treated as 0. Skill effect's Range\\nis treated as 2. This Style can be used only\\nonce per turn.\\n\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015\u2015"
+	},
+	{
+		"key": "MSID_H_\u8349\u539f\u306e\u98fe\u308a\u5f13",
+		"value": "$aEnables\u3010Canto (Dist.; Max \uff13, Min \uff11)\u3011.\\nAccelerates Special trigger (cooldown count-1).\\nEffective against beast, cavalry, and flying foes.\\n\\nIf foe in combat is a beast, cavalry, or flying foe,\\nfoes' Savior effects will not trigger.\\n\\nAt start of player phase or enemy phase, grants\\nAtk/Spd+6,\u3010Truly Incited\u3011, and \"reduces the\\npercentage of foe's non-Special 'reduce damage\\nby X%' skills by 50% during combat (excluding\\narea-of-effect Specials)\" to unit and allies within\\n2 spaces of unit for 1 turn.\\n\\nGrants Atk/Spd/Def/Res+15 to unit, unit deals\\n+25 damage (excluding area-of-effect Specials),\\nand reduces damage from foe's attacks by 15\\nduring combat (excluding area-of-effect Specials),\\nand also, if foe is beast, cavalry, or flying, or if\\ndecreasing the Spd difference necessary to\\nmake a follow-up attack by 10 would allow unit\\nto trigger a follow-up attack (excluding\\nguaranteed or prevented follow-ups), triggers\\n\u3010Potent Follow 100%\u3011during combat.\\n\\n\u3010Canto (Dist.; Max \uff13, Min \uff11)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move spaces = number\\nof spaces from start position to end position\\nunit moved prior to taking action (max \uff13;\\nmin \uff11; if unit used a movement skill\\nthat warped them, unit can move \uff11 space(s).)\\n\\n\u3010Truly Incited\u3011\\nGrants bonus to Atk/Spd/Def/Res during\\ncombat = number of spaces from start\\nposition to end position of whoever\\ninitiated combat \u00d7 2 (max 8).\\n\\n\u3010Potent Follow 100%\u3011\\nTriggers an additional follow-up attack\\nimmediately after unit's standard follow-up\\nattack and deals damage = 100% of\\nunit's normal attack damage (if unit cannot\\nmake a follow-up attack, this effect triggers\\nwhen the standard follow-up attack would\\noccur; this effect is treated like a follow-up\\nattack, so effects like \"reduce damage by\\nX%\" still apply, but this effect is not affected\\nby effects that prevent follow-ups or\\n\"attacks twice\" effects; only highest\\nvalue applied; does not stack)."
+	},
+	{
+		"key": "MSID_H_\u8349\u539f\u306e\u98fe\u308a\u5f13_NOSKW",
+		"value": "$aEnables\u3010Canto (Dist.; Max \uff13, Min \uff11)\u3011.\\nAccelerates Special trigger (cooldown count-1).\\nEffective against beast, cavalry, and flying foes.\\n\\nIf foe in combat is a beast, cavalry, or flying foe,\\nfoes' Savior effects will not trigger.\\n\\nAt start of player phase or enemy phase, grants\\nAtk/Spd+6,\u3010Truly Incited\u3011, and \"reduces the\\npercentage of foe's non-Special 'reduce damage\\nby X%' skills by 50% during combat (excluding\\narea-of-effect Specials)\" to unit and allies within\\n2 spaces of unit for 1 turn.\\n\\nGrants Atk/Spd/Def/Res+15 to unit, unit deals\\n+25 damage (excluding area-of-effect Specials),\\nand reduces damage from foe's attacks by 15\\nduring combat (excluding area-of-effect Specials),\\nand also, if foe is beast, cavalry, or flying, or if\\ndecreasing the Spd difference necessary to\\nmake a follow-up attack by 10 would allow unit\\nto trigger a follow-up attack (excluding\\nguaranteed or prevented follow-ups), triggers\\n\u3010Potent Follow 100%\u3011during combat."
+	},
+	{
+		"key": "MSID_H_\u8349\u539f\u306e\u72e9\u4eba\u306e\u5f13",
+		"value": "$aAccelerates Special trigger (cooldown count-1).\\nEffective against flying foes.\\n\\nAt start of turn, and after unit acts (if Canto\\ntriggers, after Canto), inflicts Spd/Def-7,\\n\u3010Exposure\u3011, and\u3010Sabotage\u3011on closest foes\\nand foes within 2 spaces of those foes through\\ntheir next actions.\\n\\nIf unit or ally on the map initiates combat\\nand defeats a foe with the\u3010Exposure\u3011\\neffect active during combat, grants\\nAtk/Spd\u3010Great Talent\u3011+4 to unit and allies\\non the map after combat.\\n\\nGrants Atk/Spd/Def/Res+15 to unit, unit deals\\n+25 damage (excluding area-of-effect\\nSpecials), reduces damage from foe's attacks\\nby 15 (excluding area-of-effect Specials),\\nand disables skills of all foes excluding foe in\\ncombat during combat.\\n\\n(This skill grants max of\u3010Great Talent\u3011+24\\nfor unit and\u3010Great Talent\u3011+12 for allies.)\\n\\n\u3010Exposure\u3011\\nFoe's attacks deal +10 damage.\\n\\n\u3010Sabotage\u3011\\nInflicts penalty on unit's Atk/Spd/Def/Res\\nduring combat = highest penalty on each\\nstat between unit and allies within 2 spaces\\nof unit. Calculates each stat penalty\\nindependently.\\n\\n\u3010Great Talent\u3011\\nAdds value of Great Talent (+X) to specified\\nstats (until end of battle; max value of X is\\ndetermined by the stat reaching the limit of 99,\\neach stat calculated separately and cannot\\nexceed max value for each skill; stat increases\\nare not treated as Bonus effects)."
+	},
+	{
+		"key": "MSID_H_\u8349\u539f\u306e\u72e9\u4eba\u306e\u5f13_NOSKW",
+		"value": "$aAccelerates Special trigger (cooldown count-1).\\nEffective against flying foes.\\n\\nAt start of turn, and after unit acts (if Canto\\ntriggers, after Canto), inflicts Spd/Def-7,\\n\u3010Exposure\u3011, and\u3010Sabotage\u3011on closest foes\\nand foes within 2 spaces of those foes through\\ntheir next actions.\\n\\nIf unit or ally on the map initiates combat\\nand defeats a foe with the\u3010Exposure\u3011\\neffect active during combat, grants\\nAtk/Spd\u3010Great Talent\u3011+4 to unit and allies\\non the map after combat.\\n\\nGrants Atk/Spd/Def/Res+15 to unit, unit deals\\n+25 damage (excluding area-of-effect\\nSpecials), reduces damage from foe's attacks\\nby 15 (excluding area-of-effect Specials),\\nand disables skills of all foes excluding foe in\\ncombat during combat.\\n\\n(This skill grants max of\u3010Great Talent\u3011+24\\nfor unit and\u3010Great Talent\u3011+12 for allies.)"
+	},
+	{
+		"key": "MSID_H_\u8349\u539f\u306e\u98a8\u547c\u3073\u306e\u5f13",
+		"value": "$aAccelerates Special trigger (cooldown count-1).\\nEffective against flying foes.\\nUnit can counterattack regardless of foe's\\nrange.\\n\\nUnit can move through foes' spaces.\\n\\nUnit can move to a space within 4 spaces of\\nunit (treated as Warp movement).\\n\\nAt start of player phase or enemy phase, grants\\n\u3010Empathy\u3011,\u3010Reflex\u3011,and \"increases Spd\\ndifference necessary for foe to make a\\nfollow-up attack by 10 during combat\" to unit\\nand allies within 2 spaces of unit for 1 turn.\\n\\nGrants Atk/Spd/Def/Res+15 to unit, unit deals\\n+25 damage (excluding area-of-effect\\nSpecials), and reduces damage from foe's\\nattacks by 15 during combat (excluding\\narea-of-effect Specials), and also, if decreasing\\nthe Spd difference necessary to make a\\nfollow-up attack by 10 would allow unit to\\ntrigger a follow-up attack (excluding\\nguaranteed or prevented follow-ups), triggers\\n\u3010Potent Follow 100%\u3011during combat.\\n\\n\u3010Empathy\u3011\\nGrants bonus to unit's Atk/Spd/Def/Res =\\nnumber of types of Bonus effects, excluding\\nstat bonuses, and Penalty effects, excluding\\nstat penalties, active on player team and\\nenemy team during combat (max 7).\\n\\n\u3010Reflex\u3011\\nReduces damage from foe's first attack by 7\\nduring combat (\"first attack\" normally means\\nonly the first strike; for effects that grant \"unit\\nattacks twice,\" it means the first and second\\nstrikes) and unit's next attack deals damage =\\ntotal damage reduced from foe's first attack\\n(by any source, including other skills; resets at\\nend of combat). (For 1 turn.)\\n\\n\u3010Potent Follow 100%\u3011\\nTriggers an additional follow-up attack\\nimmediately after unit's standard follow-up\\nattack and deals damage = 100% of\\nunit's normal attack damage (if unit cannot\\nmake a follow-up attack, this effect triggers\\nwhen the standard follow-up attack would\\noccur; this effect is treated like a follow-up\\nattack, so effects like \"reduce damage by\\nX%\" still apply, but this effect is not affected\\nby effects that prevent follow-ups or\\n\"attacks twice\" effects; only highest\\nvalue applied; does not stack)."
+	},
+	{
+		"key": "MSID_H_\u8349\u539f\u306e\u98a8\u547c\u3073\u306e\u5f13_NOSKW",
+		"value": "$aAccelerates Special trigger (cooldown count-1).\\nEffective against flying foes.\\nUnit can counterattack regardless of foe's\\nrange.\\n\\nUnit can move through foes' spaces.\\n\\nUnit can move to a space within 4 spaces of\\nunit (treated as Warp movement).\\n\\nAt start of player phase or enemy phase, grants\\n\u3010Empathy\u3011,\u3010Reflex\u3011,and \"increases Spd\\ndifference necessary for foe to make a\\nfollow-up attack by 10 during combat\" to unit\\nand allies within 2 spaces of unit for 1 turn.\\n\\nGrants Atk/Spd/Def/Res+15 to unit, unit deals\\n+25 damage (excluding area-of-effect\\nSpecials), and reduces damage from foe's\\nattacks by 15 during combat (excluding\\narea-of-effect Specials), and also, if decreasing\\nthe Spd difference necessary to make a\\nfollow-up attack by 10 would allow unit to\\ntrigger a follow-up attack (excluding\\nguaranteed or prevented follow-ups), triggers\\n\u3010Potent Follow 100%\u3011during combat."
+	},
+	{
+		"key": "MSID_H_\u30cf\u30f3\u30bf\u30fc\u30dc\u30ec\u30fc",
+		"value": "When Special triggers, boosts damage by 70%\\nof unit's Atk.\\n\\nReduces damage from foe's first attack by 40%\\nduring combat (\"first attack\" normally means\\nonly the first strike; for effects that grant \"unit\\nattacks twice,\" it means the first and second\\nstrikes).\\n\\nIf it is unit's first combat initiated by unit this\\nturn, and if the distance from unit's space to\\nfoe's space \u2264 2, unit attacks twice during\\ncombat, but if unit can make a follow-up attack,\\ncalculates damage from unit's attacks at 80%.\\n(This calculation stacks with other effects that\\ncalculate damage at X% such as Potent Follow.)"
+	},
+	{
+		"key": "MSID_H_\u6b63\u771f\u30b5\u30ab\u306e\u639f",
+		"value": "$aAt start of player phase or enemy phase,\\ngrants\u3010Laws of Sacae\u3011and\u3010Null Follow-Up\u3011\\nto unit and allies within 2 spaces of unit for 1\\nturn.\\n\\nGrants Atk/Spd/Def/Res+10 to unit, unit deals\\n+7 damage (excluding area-of-effect Specials),\\nreduces damage from foe's attacks by 7\\n(excluding area-of-effect Specials), and\\ndisables skills of all foes excluding foe in\\ncombat during combat, and also, if decreasing\\nthe Spd difference necessary to make a\\nfollow-up attack by 10 would allow unit to\\ntrigger a follow-up attack (excluding\\nguaranteed or prevented follow-ups), triggers\\n\u3010Potent Follow 100%\u3011during combat.\\n\\nIf unit is within 3 spaces of an ally with the\\n\u3010Laws of Sacae\u3011effect active, and unit's HP > 1\\nand foe would reduce unit's HP to 0, unit\\nsurvives with 1 HP (once per combat; does not\\nstack with non-Special effects that allow unit to\\nsurvive with 1 HP if foe's attack would reduce\\nHP to 0).\\n\\n\u3010Laws of Sacae\u3011\\nGrants Atk/Spd/Def/Res+X \u00d7 2 to unit, unit\\ndeals +X \u00d7 3 damage (excluding area-of-effect\\nSpecials), and reduces damage from foe's\\nattacks by X \u00d7 3 (excluding area-of-effect\\nSpecials) during combat (X = number of allies\\non the map with the Laws of Sacae effect\\nactive, including unit; max 3).\\n\\nIf unit initiates combat, inflicts\u3010Share Spoils+\u3011\\non target and foes within 2 spaces of target\\nthrough their next actions after combat.\\n\\n\u3010Null Follow-Up\u3011\\nIf unit's Spd > foe's Spd, neutralizes effects\\nthat guarantee foe's follow-up attacks and\\neffects that prevent unit's follow-up\\nattacks during combat.\\n\\n\u3010Potent Follow 100%\u3011\\nTriggers an additional follow-up attack\\nimmediately after unit's standard follow-up\\nattack and deals damage = 100% of\\nunit's normal attack damage (if unit cannot\\nmake a follow-up attack, this effect triggers\\nwhen the standard follow-up attack would\\noccur; this effect is treated like a follow-up\\nattack, so effects like \"reduce damage by\\nX%\" still apply, but this effect is not affected\\nby effects that prevent follow-ups or\\n\"attacks twice\" effects; only highest\\nvalue applied; does not stack).\\n\\n\u3010Share Spoils+\u3011\\nInflicts Atk/Spd/Def/Res-5 on unit during\\ncombat and neutralizes \"reduces damage\\nby X%\" effects from unit's non-Special skills\\n(excluding area-of-effect Specials).\\n\\nOnce per turn for the entire map, if foe\\ninitiates combat and if unit is defeated in\\ncombat, grants another action to that foe\\nafter combat (this effect has priority over\\nother similar effects aside from Share Spoils;\\nif this status and Share Spoils are both active\\nat the same time, they are both treated as\\nhaving been triggered; other similar effects\\naside from Share Spoils are treated as not\\nhaving triggered)."
+	},
+	{
+		"key": "MSID_H_\u6b63\u771f\u30b5\u30ab\u306e\u639f_NOSKW",
+		"value": "$aAt start of player phase or enemy phase,\\ngrants\u3010Laws of Sacae\u3011and\u3010Null Follow-Up\u3011\\nto unit and allies within 2 spaces of unit for 1\\nturn.\\n\\nGrants Atk/Spd/Def/Res+10 to unit, unit deals\\n+7 damage (excluding area-of-effect Specials),\\nreduces damage from foe's attacks by 7\\n(excluding area-of-effect Specials), and\\ndisables skills of all foes excluding foe in\\ncombat during combat, and also, if decreasing\\nthe Spd difference necessary to make a\\nfollow-up attack by 10 would allow unit to\\ntrigger a follow-up attack (excluding\\nguaranteed or prevented follow-ups), triggers\\n\u3010Potent Follow 100%\u3011during combat.\\n\\nIf unit is within 3 spaces of an ally with the\\n\u3010Laws of Sacae\u3011effect active, and unit's HP > 1\\nand foe would reduce unit's HP to 0, unit\\nsurvives with 1 HP (once per combat; does not\\nstack with non-Special effects that allow unit to\\nsurvive with 1 HP if foe's attack would reduce\\nHP to 0)."
+	},
+	{
+		"key": "MSID_H_\u51f6\u9ce5\u306e\u4e00\u6483",
+		"value": "$aEnables\u3010Canto (\uff12)\u3011.\\n\\nAt start of turn, and after unit acts (if Canto\\ntriggers, after Canto), inflicts Atk/Spd/Def-7 on\\nclosest foes and foes within 2 spaces of those\\nfoes through their next actions.\\n\\nIf unit initiates combat or if\u3010Bonus\u3011is active\\non unit, grants Atk/Spd/Def+10 to unit, unit\\ndeals +X damage (excluding area-of-effect\\nSpecials; X = 60% of the highest value of total\\npenalties among target and foes within 2\\nspaces of target), and reduces damage from\\nfoe's first attack by 7 during combat (\"first\\nattack\" normally means only the first strike; for\\neffects that grant \"unit attacks twice,\" it means\\nthe first and second strikes).\\n\\n\u3010Canto (\uff12)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move \uff12 space(s).\\n(Once per turn. Only highest value applied.\\nDoes not stack.)\\n\\n\u3010Bonus\u3011\\nAll effects that last \"for 1 turn\" or \"that turn\\nonly.\" Includes bonuses granted by a skill\\nlike Rally or Hone and positive status effects\\n(extra movement or effects like Dominance)."
+	},
+	{
+		"key": "MSID_H_\u51f6\u9ce5\u306e\u4e00\u6483_NOSKW",
+		"value": "$aEnables\u3010Canto (\uff12)\u3011.\\n\\nAt start of turn, and after unit acts (if Canto\\ntriggers, after Canto), inflicts Atk/Spd/Def-7 on\\nclosest foes and foes within 2 spaces of those\\nfoes through their next actions.\\n\\nIf unit initiates combat or if\u3010Bonus\u3011is active\\non unit, grants Atk/Spd/Def+10 to unit, unit\\ndeals +X damage (excluding area-of-effect\\nSpecials; X = 60% of the highest value of total\\npenalties among target and foes within 2\\nspaces of target), and reduces damage from\\nfoe's first attack by 7 during combat (\"first\\nattack\" normally means only the first strike; for\\neffects that grant \"unit attacks twice,\" it means\\nthe first and second strikes)."
+	},
+	{
+		"key": "MSID_H_\u653b\u9632\u4e00\u4f53\u306e\u9663",
+		"value": "For foes within 3 rows or 3 columns centered\\non unit, inflicts Atk/Spd/Def/Res-5, neutralizes\\nfoe's bonuses, and increases the Spd difference\\nnecessary for foe to make a follow-up attack\\nby 10 during combat.\\n\\nIf unit is within 3 spaces of an ally or if there is\\na support partner with Support Rank of S+ on\\nthe map, inflicts Atk/Spd/Def-5 on foe, unit\\ndeals damage = 20% of unit's Spd (excluding\\narea-of-effect Specials), reduces damage from\\nfoe's attacks by 20% of unit's Spd (excluding\\narea-of-effect Specials), and grants Special\\ncooldown count-2 to unit before foe's first\\nattack during combat, and also, if unit's Special\\nis ready or triggered before or during this\\ncombat, reduces damage from foe's attacks to\\na maximum of 1 during combat (once per\\ncombat; excluding area-of-effect Specials)."
+	},
+	{
+		"key": "MSID_H_\u727d\u5236\u5c04\u6483\u30fb\u5f37\u5316\u7121\u52b9",
+		"value": "Inflicts Atk/Spd/Def-5 on foes within 3 rows or\\n3 columns centered on unit during combat.\\n\\nInflicts Atk/Spd/Def-4 on foe, neutralizes foe's\\nbonuses, unit deals +15 damage (excluding\\narea-of-effect Specials), and reduces damage\\nfrom foe's attacks by 15 during combat\\n(excluding area-of-effect Specials)."
+	},
+	{
+		"key": "MSID_H_\u59cb\u9f13\u52d5\u30fb\u898b\u5207\u308a",
+		"value": "At start of turn, at start of enemy phase (except\\nfor in Summoner Duels), and after combat, if\\nSpecial cooldown count is at its maximum\\nvalue, grants Special cooldown count-1 to unit.\\n\\nGrants bonus to unit's Atk/Spd/Def/Res = unit's\\nmaximum Special cooldown count value + 2,\\nunit deals +5 damage (excluding area-of-effect\\nSpecials), and reduces damage from foe's first\\nattack by 5 during combat (\"first attack\"\\nnormally means only the first strike; for effects\\nthat grant \"unit attacks twice,\" it means the\\nfirst and second strikes), and also, if unit's\\nSpd > foe's Spd, neutralizes effects that\\nguarantee foe's follow-up attacks and effects\\nthat prevent unit's follow-up attacks during\\ncombat."
+	},
+	{
+		"key": "MSID_H_\u53cc\u754c\u30ea\u30f32",
+		"value": "$aGrants\u3010Resonance: Blades\u3011to unit, allies\\nfrom the same titles as unit, and allies with the\\nLaws of Sacae effect active.\\n\\nGrants another action to certain target, and if\\nCanto has already been triggered, re-enables\\nCanto (if there are allies from the same titles\\nas unit or allies with the Laws of Sacae effect\\nactive on the map, targets ally with the highest\\nHP among those allies who have already acted;\\nif multiple targets meet the conditions, effect\\nwill not trigger).\\n\\n\u3010Resonance: Blades\u3011\\nGrants Atk/Spd+4 during combat for 1 turn."
+	},
+	{
+		"key": "MSID_H_\u53cc\u754c\u30ea\u30f32_NOSKW",
+		"value": "$aGrants\u3010Resonance: Blades\u3011to unit, allies\\nfrom the same titles as unit, and allies with the\\nLaws of Sacae effect active.\\n\\nGrants another action to certain target, and if\\nCanto has already been triggered, re-enables\\nCanto (if there are allies from the same titles\\nas unit or allies with the Laws of Sacae effect\\nactive on the map, targets ally with the highest\\nHP among those allies who have already acted;\\nif multiple targets meet the conditions, effect\\nwill not trigger)."
+	},
+	{
+		"key": "MID_CHAPTER_TITLE_CX127",
+		"value": "Paralogue 128"
+	},
+	{
+		"key": "MID_CHAPTER_CX127",
+		"value": "Wind Bound"
+	},
+	{
+		"key": "MID_STAGE_TITLE_X1271",
+		"value": "Paralogue 128-1"
+	},
+	{
+		"key": "MID_STAGE_TITLE_X1272",
+		"value": "Paralogue 128-2"
+	},
+	{
+		"key": "MID_STAGE_TITLE_X1273",
+		"value": "Paralogue 128-3"
+	},
+	{
+		"key": "MID_STAGE_X1271",
+		"value": "Sacaen Honor"
+	},
+	{
+		"key": "MID_STAGE_X1272",
+		"value": "An Archer's Pride"
+	},
+	{
+		"key": "MID_STAGE_X1273",
+		"value": "Even When Apart..."
+	},
+	{
+		"key": "MID_CHAPTER_ST_CX064",
+		"value": "P. 127 & 128"
+	},
+	{
+		"key": "MID_STAGE_TITLE_ST_X0126",
+		"value": "Paralogue 127"
+	},
+	{
+		"key": "MID_STAGE_TITLE_ST_X0127",
+		"value": "Paralogue 128"
+	},
+	{
+		"key": "MID_STAGE_TITLE_ST_X1127",
+		"value": "P. 127 & 128"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PB328",
+		"value": "Skill Studies 328"
+	},
+	{
+		"key": "MID_STAGE_PB328",
+		"value": "Archers of the Plains"
+	},
+	{
+		"key": "MID_STAGE_TITLE_PC157",
+		"value": "Grandmaster 157"
+	},
+	{
+		"key": "MID_STAGE_PC157",
+		"value": "Formidable Women"
+	}
+]
