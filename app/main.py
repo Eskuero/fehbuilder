@@ -69,6 +69,8 @@ def getimage():
 
 		# Decide on the filename we will use to save and retrieve this particular hero and pose
 		filename = name + ("_Resplendent_" + hero["artstyle"] + ".webp" if hero["attire"] == "Resplendent" and languages[hero["language"]].get(hero["name"].replace("PID", "MPID_VOICE") + "EX01", False) else "_" + hero["artstyle"] + ".webp")
+		# Strip any directory components to guarantee the resulting path cannot escape the heroes art folder
+		filename = pathlib.Path(filename).name
 		# Check if the heroes art is already downloaded
 		if (pathlib.Path("../data/img/heroes/" + filename).is_file()):
 			art = Image.open("../data/img/heroes/" + filename)
