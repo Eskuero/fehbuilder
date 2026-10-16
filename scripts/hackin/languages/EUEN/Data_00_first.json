@@ -180313,7 +180313,7 @@
 	},
 	{
 		"key": "MSID_H_\u30af\u30ea\u30df\u30a2\u5973\u738b\u306e\u738b\u7b0f",
-		"value": "Calculates damage from staff like other weapons.\\nAccelerates Special trigger (cooldown count-1;\\nmax cooldown count cannot be reduced\\nbelow 1). At start of turn, if unit is within\\n2 spaces of an ally, grants Atk/Spd+6 and\\nthe following status to unit and allies within\\n2 spaces for 1 turn: \"If unit initiates combat,\\nunit makes a guaranteed follow-up attack.\"\\nIf unit initiates combat or is within 2 spaces\\nof an ally, grants Atk/Spd+6 to unit and grants\\nbonus to unit's Atk/Spd = highest respective\\nAtk/Spd bonuses among unit and allies within\\n2 spaces \u00d7 1.5 (calculates each stat bonus\\nindependently) during combat."
+		"value": "Calculates damage from staff like other weapons.\\nAccelerates Special trigger (cooldown count-1;\\nmax cooldown count value cannot be reduced\\nbelow 1). At start of turn, if unit is within\\n2 spaces of an ally, grants Atk/Spd+6 and\\nthe following status to unit and allies within\\n2 spaces for 1 turn: \"If unit initiates combat,\\nunit makes a guaranteed follow-up attack.\"\\nIf unit initiates combat or is within 2 spaces\\nof an ally, grants Atk/Spd+6 to unit and grants\\nbonus to unit's Atk/Spd = highest respective\\nAtk/Spd bonuses among unit and allies within\\n2 spaces \u00d7 1.5 (calculates each stat bonus\\nindependently) during combat."
 	},
 	{
 		"key": "MSID_H_\u5730\u306e\u5973\u795e\u306e\u89d2",
@@ -181885,7 +181885,7 @@
 	},
 	{
 		"key": "MSID_H_\u3046\u305f\u305f\u5bdd\u306e\u6625\u306e\u5f13",
-		"value": "Accelerates Special trigger (cooldown count-1).\\nEffective against flying foes. At start of turn,\\nif unit's HP = 100% and unit is within 2 spaces\\nof an ally, deals 1 damage to unit and allies\\nwithin 2 spaces of unit. At start of combat, if\\nunit's HP \u2264 99%, grants Atk/Spd/Def/Res+5\\nto unit and inflicts Spd/Def-X on foe during\\ncombat (X = number of spaces from start\\nposition to end position of whoever initiates\\ncombat \u00d7 2, + 3; max 11), and also, the\\nfollowing effects will occur based on that\\nnumber of spaces: if \u2265 1 space, reduces\\ndamage from foe's first attack during combat\\nby 30%; if \u2265 2, also neutralizes effects that\\nprevent unit's follow-up attacks during combat\\nand effects that inflict \"Special cooldown\\ncharge -X\" on unit during combat."
+		"value": "Accelerates Special trigger (cooldown count-1).\\nEffective against flying foes. At start of turn,\\nif unit's HP = 100% and unit is within 2 spaces\\nof an ally, deals 1 damage to unit and allies\\nwithin 2 spaces of unit. At start of combat, if\\nunit's HP \u2264 99%, grants Atk/Spd/Def/Res+5\\nto unit and inflicts Spd/Def-X on foe during\\ncombat (X = number of spaces from start\\nposition to end position of whoever initiated\\ncombat \u00d7 2, + 3; max 11), and also, the\\nfollowing effects will occur based on that\\nnumber of spaces: if \u2265 1 space, reduces\\ndamage from foe's first attack during combat\\nby 30%; if \u2265 2, also neutralizes effects that\\nprevent unit's follow-up attacks during combat\\nand effects that inflict \"Special cooldown\\ncharge -X\" on unit during combat."
 	},
 	{
 		"key": "MSID_H_\u767d\u514e\u306e\u5375",
@@ -182813,11 +182813,11 @@
 	},
 	{
 		"key": "MSID_H_\u5929\u304b\u3051\u308b\u7ffc",
-		"value": "$aEnables\u3010Canto (\uff11)\u3011.\\n\\nUnit can move to a space within 2 spaces of\\nany ally within 2 spaces. At start of combat,\\nif unit's HP \u2265 25%, inflicts Spd/Def-X on foe\\nduring combat (X = 4 + number of spaces\\nfrom start position to end position of whoever\\ninitiates combat; max 8).\\n\\n\u3010Canto (\uff11)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move \uff11 space(s).\\n\\n(Unit moves according to movement type. Once\\nper turn. Cannot attack or assist. Only highest\\nvalue applied. Does not stack. After moving,\\nif a skill that grants another action would be\\ntriggered (like with Galeforce), Canto will\\ntrigger after the granted action. Unit's base\\nmovement has no effect on movement granted.\\nCannot warp (using skills like Wings of Mercy)\\na distance greater than unit would be able to\\nmove with normal Canto movement.)"
+		"value": "$aEnables\u3010Canto (\uff11)\u3011.\\n\\nUnit can move to a space within 2 spaces of\\nany ally within 2 spaces. At start of combat,\\nif unit's HP \u2265 25%, inflicts Spd/Def-X on foe\\nduring combat (X = 4 + number of spaces\\nfrom start position to end position of whoever\\ninitiated combat; max 8).\\n\\n\u3010Canto (\uff11)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move \uff11 space(s).\\n\\n(Unit moves according to movement type. Once\\nper turn. Cannot attack or assist. Only highest\\nvalue applied. Does not stack. After moving,\\nif a skill that grants another action would be\\ntriggered (like with Galeforce), Canto will\\ntrigger after the granted action. Unit's base\\nmovement has no effect on movement granted.\\nCannot warp (using skills like Wings of Mercy)\\na distance greater than unit would be able to\\nmove with normal Canto movement.)"
 	},
 	{
 		"key": "MSID_H_\u5929\u304b\u3051\u308b\u7ffc_NOSKW",
-		"value": "$aEnables\u3010Canto (\uff11)\u3011.\\n\\nUnit can move to a space within 2 spaces of\\nany ally within 2 spaces. At start of combat,\\nif unit's HP \u2265 25%, inflicts Spd/Def-X on foe\\nduring combat (X = 4 + number of spaces\\nfrom start position to end position of whoever\\ninitiates combat; max 8)."
+		"value": "$aEnables\u3010Canto (\uff11)\u3011.\\n\\nUnit can move to a space within 2 spaces of\\nany ally within 2 spaces. At start of combat,\\nif unit's HP \u2265 25%, inflicts Spd/Def-X on foe\\nduring combat (X = 4 + number of spaces\\nfrom start position to end position of whoever\\ninitiated combat; max 8)."
 	},
 	{
 		"key": "MSID_H_\u5b8c\u5168\u306a\u308b\u9ec4\u91d1",
@@ -210961,7 +210961,7 @@
 	},
 	{
 		"key": "MSID_H_\u7d0b\u7ae0\u30de\u30eb\u30b9",
-		"value": "Accelerates Special trigger (cooldown count-1;\\nmax cooldown count cannot be reduced\\nbelow 1). If unit triggers the \"unit attacks twice\"\\neffect, reduces Special damage by 8."
+		"value": "Accelerates Special trigger (cooldown count-1;\\nmax cooldown count value cannot be reduced\\nbelow 1). If unit triggers the \"unit attacks twice\"\\neffect, reduces Special damage by 8."
 	},
 	{
 		"key": "MID_STAGE_HONOR_T0168",
@@ -212845,7 +212845,7 @@
 	},
 	{
 		"key": "MSID_H_\u9b54\u5668\u30fb\u611b\u3089\u3057\u3044\u96ea\u6756",
-		"value": "Accelerates Special trigger (cooldown count-1;\\nmax cooldown count cannot be reduced below 1).\\nRestores 7 HP to allies within 3 spaces of unit\\nafter their combat. At start of combat, if unit's\\nHP \u2265 25%, grants Atk/Spd/Def/Res+5 to unit\\nduring combat, unit makes a guaranteed\\nfollow-up attack, grants Special cooldown\\ncharge +1 to unit per attack during combat\\n(only highest value applied; does not stack),\\nand deals +7 damage during combat (except\\nwhen dealing damage with area-of-effect\\nSpecials)."
+		"value": "Accelerates Special trigger (cooldown count-1;\\nmax cooldown count value cannot be reduced\\nbelow 1). Restores 7 HP to allies within\\n3 spaces of unit after their combat. At start of\\ncombat, if unit's HP \u2265 25%, grants\\nAtk/Spd/Def/Res+5 to unit during combat, unit\\nmakes a guaranteed follow-up attack, grants\\nSpecial cooldown charge +1 to unit per attack\\nduring combat (only highest value applied; does\\nnot stack), and deals +7 damage during combat\\n(except when dealing damage with\\narea-of-effect Specials)."
 	},
 	{
 		"key": "MSID_H_\u8f1d\u6620\u306e\u8056\u5149",
@@ -218661,11 +218661,11 @@
 	},
 	{
 		"key": "MSID_H_\u795e\u6756\u30bb\u30c3\u30af",
-		"value": "$aEnables\u3010Canto (\uff11)\u3011.\\n\\nCalculates damage from staff like other weapons.\\nAccelerates Special trigger (cooldown count-1;\\nmax cooldown count cannot be reduced below\\n1). At start of turn, if unit's HP \u2265 25%, grants\\nSpecial cooldown count-1 to unit. At start of\\ncombat, if unit's HP \u2265 25%, grants Atk/Res+X\\nto unit (X = 6 + 20% of unit's Res at start of\\ncombat), unit makes a guaranteed follow-up\\nattack, and unit deals damage = 20% of\\nunit's Res during combat (excluding\\narea-of-effect Specials).\\n\\n\u3010Canto (\uff11)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move \uff11 space(s).\\n\\n(Unit moves according to movement type. Once\\nper turn. Cannot attack or assist. Only highest\\nvalue applied. Does not stack. After moving,\\nif a skill that grants another action would be\\ntriggered (like with Galeforce), Canto will\\ntrigger after the granted action. Unit's base\\nmovement has no effect on movement granted.\\nCannot warp (using skills like Wings of Mercy)\\na distance greater than unit would be able to\\nmove with normal Canto movement.)"
+		"value": "$aEnables\u3010Canto (\uff11)\u3011.\\n\\nCalculates damage from staff like other weapons.\\nAccelerates Special trigger (cooldown count-1;\\nmax cooldown count value cannot be reduced\\nbelow 1). At start of turn, if unit's HP \u2265 25%,\\ngrants Special cooldown count-1 to unit. At\\nstart of combat, if unit's HP \u2265 25%, grants\\nAtk/Res+X to unit (X = 6 + 20% of unit's Res at\\nstart of combat), unit makes a guaranteed\\nfollow-up attack, and unit deals damage = 20%\\nof unit's Res during combat (excluding\\narea-of-effect Specials).\\n\\n\u3010Canto (\uff11)\u3011\\nAfter an attack, Assist skill, or structure\\ndestruction, unit can move \uff11 space(s).\\n\\n(Unit moves according to movement type. Once\\nper turn. Cannot attack or assist. Only highest\\nvalue applied. Does not stack. After moving,\\nif a skill that grants another action would be\\ntriggered (like with Galeforce), Canto will\\ntrigger after the granted action. Unit's base\\nmovement has no effect on movement granted.\\nCannot warp (using skills like Wings of Mercy)\\na distance greater than unit would be able to\\nmove with normal Canto movement.)"
 	},
 	{
 		"key": "MSID_H_\u795e\u6756\u30bb\u30c3\u30af_NOSKW",
-		"value": "$aEnables\u3010Canto (\uff11)\u3011.\\n\\nCalculates damage from staff like other weapons.\\nAccelerates Special trigger (cooldown count-1;\\nmax cooldown count cannot be reduced below\\n1). At start of turn, if unit's HP \u2265 25%, grants\\nSpecial cooldown count-1 to unit. At start of\\ncombat, if unit's HP \u2265 25%, grants Atk/Res+X\\nto unit (X = 6 + 20% of unit's Res at start of\\ncombat), unit makes a guaranteed follow-up\\nattack, and unit deals damage = 20% of\\nunit's Res during combat (excluding\\narea-of-effect Specials)."
+		"value": "$aEnables\u3010Canto (\uff11)\u3011.\\n\\nCalculates damage from staff like other weapons.\\nAccelerates Special trigger (cooldown count-1;\\nmax cooldown count value cannot be reduced\\nbelow 1). At start of turn, if unit's HP \u2265 25%,\\ngrants Special cooldown count-1 to unit. At\\nstart of combat, if unit's HP \u2265 25%, grants\\nAtk/Res+X to unit (X = 6 + 20% of unit's Res at\\nstart of combat), unit makes a guaranteed\\nfollow-up attack, and unit deals damage = 20%\\nof unit's Res during combat (excluding\\narea-of-effect Specials)."
 	},
 	{
 		"key": "MSID_H_\u5e7b\u60d1\u30fb\u4e0d\u548c\u306e\u70d9\u5370",
@@ -262225,7 +262225,7 @@
 	},
 	{
 		"key": "MSID_H_\u4eee\u9762\u306e\u5c06\u306e\u5263R",
-		"value": "For foes within 3 rows and 3 columns centered\\non unit, inflicts Atk/Spd/Def/Res-5 on foe,\\ninflicts Special cooldown charge -1 on foe\\nper attack (only highest value applied; does\\nnot stack), and foe suffers guaranteed\\nfollow-up attacks during combat.\\n\\nAt start of combat, if unit's HP \u2265 25%, deals\\ndamage = 20% of unit's Def during combat\\n(excluding area-of-effect Specials)."
+		"value": "For foes within 3 rows or 3 columns centered\\non unit, inflicts Atk/Spd/Def/Res-5 on foe,\\ninflicts Special cooldown charge -1 on foe\\nper attack (only highest value applied; does\\nnot stack), and foe suffers guaranteed\\nfollow-up attacks during combat.\\n\\nAt start of combat, if unit's HP \u2265 25%, deals\\ndamage = 20% of unit's Def during combat\\n(excluding area-of-effect Specials)."
 	},
 	{
 		"key": "MSID_H_\u9589\u754c\u30fb\u627f",
