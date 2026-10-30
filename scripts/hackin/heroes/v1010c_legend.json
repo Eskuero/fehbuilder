@@ -1,0 +1,147 @@
+[
+	{
+		"id_tag": "PID_\u7d0b\u7ae0\u30d8\u30af\u30c8\u30eb",
+		"roman": "HECTOR_EMBLEM01",
+		"face_name": "ch03_05_Hector_M_Emblem01",
+		"face_name2": "ch03_05_Hector_M_Emblem01",
+		"legendary": {
+			"duo_skill_id": "SID_\u7d0b\u7ae0\u30d8\u30af\u30c8\u30eb",
+			"bonus_effect": {
+				"hp": 0,
+				"atk": 0,
+				"spd": 0,
+				"def": 0,
+				"res": 0
+			},
+			"kind": 7,
+			"element": 0,
+			"bst": 0,
+			"pair_up": false,
+			"ae_extra": 0
+		},
+		"dragonflowers": {
+			"max_count": 5,
+			"costs": [
+				40,
+				80,
+				120,
+				160,
+				200
+			]
+		},
+		"timestamp": null,
+		"id_num": 1428,
+		"version_num": 1010,
+		"sort_value": 100300,
+		"origins": 16448,
+		"weapon_type": 2,
+		"tome_class": 0,
+		"move_type": 1,
+		"series": 6,
+		"random_pool": 0,
+		"permanent_hero": false,
+		"base_vactor_id": 133,
+		"refresher": false,
+		"base_stats": {
+			"hp": 27,
+			"atk": 11,
+			"spd": 3,
+			"def": 11,
+			"res": 11
+		},
+		"growth_rates": {
+			"hp": 65,
+			"atk": 90,
+			"spd": 30,
+			"def": 90,
+			"res": 80
+		},
+		"skills": [
+			[
+				"SID_\u9244\u306e\u65a7",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			[
+				"SID_\u92fc\u306e\u65a7",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u89d2\u306e\u7768\u307f1",
+				"SID_\u8fce\u6483\u968a\u5f621",
+				"SID_\u93a7\u306e\u8b77\u308a\u624b\u30fb\u9060\u95931",
+				null,
+				null
+			],
+			[
+				"SID_\u92fc\u306e\u65a7",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u9280\u306e\u65a7",
+				null,
+				"SID_\u86cd\u706b",
+				"SID_\u89d2\u306e\u7768\u307f2",
+				"SID_\u8fce\u6483\u968a\u5f622",
+				"SID_\u93a7\u306e\u8b77\u308a\u624b\u30fb\u9060\u95932",
+				null,
+				null
+			],
+			[
+				"SID_\u9280\u306e\u65a7",
+				null,
+				"SID_\u86cd\u706b",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u83ef\u708e",
+				"SID_\u89d2\u306e\u7768\u307f3",
+				"SID_\u8fce\u6483\u968a\u5f623",
+				"SID_\u93a7\u306e\u8b77\u308a\u624b\u30fb\u9060\u95933",
+				null,
+				null
+			],
+			[
+				"SID_\u71b1\u304d\u731b\u5c06\u306e\u65a7",
+				null,
+				"SID_\u86cd\u706b",
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"SID_\u6b62\u6c34\u96f7\u8f5f\u306e\u69cb\u3048",
+				"SID_\u89d2\u306e\u7768\u307f4",
+				"SID_\u53cd\u653b\u968a\u5f62\u30fb\u898b\u5207\u53cd\u6483",
+				"SID_\u93a7\u306e\u8b77\u308a\u624b\u30fb\u9060\u30fb\u8328",
+				null,
+				null
+			]
+		]
+	}
+]
