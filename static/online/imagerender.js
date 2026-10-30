@@ -128,6 +128,8 @@ async function echoes() {
 		"S": selectS.value == "None" ? false : selectS.value
 	};
 	var summoner = selectsummoner.value == "None" ? false : selectsummoner.value;
+	var assist = selectassists.value == "None" ? false : selectassists.value;
+	var special = selectspecials.value == "None" ? false : selectspecials.value;
 	var buffs = [
 		0,
 		parseInt(selectatk.value) ? parseInt(selectatk.value) : 0,
@@ -137,7 +139,7 @@ async function echoes() {
 	];
 	// Add visible stats from multiple simple origins like passives, SS, resplendent, beast transformation and bonus
 	statsmodifier = statsmodifier.map(function (value, index) {
-		return value + staticmodifiers(passives, summoner, buffs)[index];
+		return value + staticmodifiers(passives, summoner, buffs, special)[index];
 	});
 
 	// Fix stats, cannot go beyond 99 or below 0
@@ -417,6 +419,8 @@ async function condensed() {
 		"C": selectC.value == "None" ? false : selectC.value,
 		"S": selectS.value == "None" ? false : selectS.value
 	};
+	var assist = selectassists.value == "None" ? false : selectassists.value;
+	var special = selectspecials.value == "None" ? false : selectspecials.value;
 	// Add the X slot only if it exists
 	if (selectX.value != "None") {
 		passives["X"] = selectX.value;
@@ -431,7 +435,7 @@ async function condensed() {
 	];
 	// Add visible stats from multiple simple origins like passives, SS, resplendent, beast transformation and bonus
 	statsmodifier = statsmodifier.map(function (value, index) {
-		return value + staticmodifiers(passives, summoner, buffs)[index];
+		return value + staticmodifiers(passives, summoner, buffs, special)[index];
 	});
 
 	// Now write the calculated stats with right anchoring to not missplace single digits (damm you LnD abusers).
@@ -757,6 +761,8 @@ async function myunit() {
 		"C": selectC.value == "None" ? false : selectC.value,
 		"S": selectS.value == "None" ? false : selectS.value
 	};
+	var assist = selectassists.value == "None" ? false : selectassists.value;
+	var special = selectspecials.value == "None" ? false : selectspecials.value;
 	// Only add X if the value is not "None"
 	if (selectX.value != "None") {
 		passives["X"] = selectX.value;
@@ -775,7 +781,7 @@ async function myunit() {
 	];
 	// Add visible stats from multiple simple origins like passives, SS, resplendent, beast transformation and bonus
 	statsmodifier = statsmodifier.map(function (value, index) {
-		return value + staticmodifiers(passives, summoner, buffs)[index];
+		return value + staticmodifiers(passives, summoner, buffs, special)[index];
 	});
 
 	// Fix stats, cannot go beyond 99 or below 0

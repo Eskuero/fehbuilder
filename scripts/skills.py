@@ -69,7 +69,7 @@ for file in files:
 				if not entry["next_skill"] and not entry["passive_next"] and category != 7:
 					categories[category][entry["id_tag"]]["max"] = True
 				# Specials and Assists do not provide visible stats
-				if category not in [1,2]:
+				if category not in [1]:
 					categories[category][entry["id_tag"]]["stats"] = [value for value in entry["stats"].values()]
 				# For weapons add the might as part of the statsmodifiers for Atk, emtpy refines definition and indication of being arcane
 				if category == 0:

@@ -226,7 +226,7 @@ function setupdownload() {
 }
 
 // Simple housekeeping function to add the stats boost from different static modifiers
-function staticmodifiers(passives, summoner, buffs, emblemskill) {
+function staticmodifiers(passives, summoner, buffs, special) {
 	var othermodifiers = [0, 0, 0, 0, 0];
 
 	// Add visible stats from skills
@@ -236,6 +236,12 @@ function staticmodifiers(passives, summoner, buffs, emblemskill) {
 				return value + allpassives[skill]["stats"][index];
 			});
 		}
+	}
+	// Add visible stats from special
+	if (special) {
+		othermodifiers = othermodifiers.map(function (value, index) {
+			return value + skills["specials"][special]["stats"][index];
+		});
 	}
 
 	// Add resplendent stats
